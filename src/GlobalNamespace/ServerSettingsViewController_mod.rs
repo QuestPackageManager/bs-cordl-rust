@@ -10,24 +10,24 @@ pub struct ServerSettingsViewController {
 }
 #[cfg(feature = "ServerSettingsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ServerSettingsViewController => ""
-    ."ServerSettingsViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ServerSettingsViewController =>
+    ""."ServerSettingsViewController"
 );
 #[cfg(feature = "ServerSettingsViewController")]
-impl std::ops::Deref for ServerSettingsViewController {
+impl std::ops::Deref for crate::GlobalNamespace::ServerSettingsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ServerSettingsViewController")]
-impl std::ops::DerefMut for ServerSettingsViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::ServerSettingsViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ServerSettingsViewController")]
-impl ServerSettingsViewController {
+impl crate::GlobalNamespace::ServerSettingsViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -108,7 +108,8 @@ impl ServerSettingsViewController {
     }
 }
 #[cfg(feature = "ServerSettingsViewController")]
-impl quest_hook::libil2cpp::ObjectType for ServerSettingsViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ServerSettingsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

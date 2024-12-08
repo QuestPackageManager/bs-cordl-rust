@@ -5,52 +5,52 @@ pub struct MultiplayerScoreRingManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _delayBetweenScoreUpdates: f32,
     pub _centerDistanceOffset: f32,
-    pub _multiplayerController: *mut MultiplayerController,
-    pub _multiplayerPlayersManager: *mut MultiplayerPlayersManager,
-    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
-    pub _spawnCenter: *mut BeatmapObjectSpawnCenter,
-    pub _layoutProvider: *mut MultiplayerLayoutProvider,
-    pub _scoreProvider: *mut MultiplayerScoreProvider,
+    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
+    pub _multiplayerPlayersManager: *mut crate::GlobalNamespace::MultiplayerPlayersManager,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _spawnCenter: *mut crate::GlobalNamespace::BeatmapObjectSpawnCenter,
+    pub _layoutProvider: *mut crate::GlobalNamespace::MultiplayerLayoutProvider,
+    pub _scoreProvider: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
     pub _scoreRingItemPool: *mut crate::GlobalNamespace::MultiplayerScoreRingItem_Pool,
     pub _scoreRingItems: *mut crate::System::Collections::Generic::Dictionary_2<
         *mut crate::System::String,
-        *mut MultiplayerScoreRingItem,
+        *mut crate::GlobalNamespace::MultiplayerScoreRingItem,
     >,
     pub _allActivePlayers: *mut crate::System::Collections::Generic::List_1<
-        *mut IConnectedPlayer,
+        *mut crate::GlobalNamespace::IConnectedPlayer,
     >,
     pub _currentlyScoreUpdateIndex: i32,
     pub _timeSinceLastScoreUpdate: f32,
-    pub _firstPlayerItem: *mut MultiplayerScoreRingItem,
+    pub _firstPlayerItem: *mut crate::GlobalNamespace::MultiplayerScoreRingItem,
     pub _spawnCenterDistanceFound: bool,
     pub _playersSpawned: bool,
 }
 #[cfg(feature = "MultiplayerScoreRingManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerScoreRingManager => ""
-    ."MultiplayerScoreRingManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerScoreRingManager =>
+    ""."MultiplayerScoreRingManager"
 );
 #[cfg(feature = "MultiplayerScoreRingManager")]
-impl std::ops::Deref for MultiplayerScoreRingManager {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerScoreRingManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerScoreRingManager")]
-impl std::ops::DerefMut for MultiplayerScoreRingManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerScoreRingManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerScoreRingManager")]
-impl MultiplayerScoreRingManager {
+impl crate::GlobalNamespace::MultiplayerScoreRingManager {
     pub fn AnimateColorsForAllPlayers(
         &mut self,
         nameColor: crate::UnityEngine::Color,
         scoreColor: crate::UnityEngine::Color,
         duration: f32,
-        easeType: EaseType,
+        easeType: crate::GlobalNamespace::EaseType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -68,7 +68,7 @@ impl MultiplayerScoreRingManager {
         nameColor: crate::UnityEngine::Color,
         scoreColor: crate::UnityEngine::Color,
         duration: f32,
-        easeType: EaseType,
+        easeType: crate::GlobalNamespace::EaseType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -83,11 +83,13 @@ impl MultiplayerScoreRingManager {
     pub fn GetScoreRingItem(
         &mut self,
         userId: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut MultiplayerScoreRingItem> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::MultiplayerScoreRingItem,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MultiplayerScoreRingItem = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MultiplayerScoreRingItem = __cordl_object
             .invoke("GetScoreRingItem", (userId))?;
         Ok(__cordl_ret)
     }
@@ -106,7 +108,7 @@ impl MultiplayerScoreRingManager {
     }
     pub fn HandlePlayerDisconnected(
         &mut self,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -127,7 +129,7 @@ impl MultiplayerScoreRingManager {
     }
     pub fn HandlePlayerStateChanged(
         &mut self,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -177,7 +179,7 @@ impl MultiplayerScoreRingManager {
     }
     pub fn SetPlayerToFailedState(
         &mut self,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -228,7 +230,7 @@ impl MultiplayerScoreRingManager {
     }
     pub fn UpdateScore(
         &mut self,
-        playerToUpdate: *mut IConnectedPlayer,
+        playerToUpdate: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -249,7 +251,8 @@ impl MultiplayerScoreRingManager {
     }
 }
 #[cfg(feature = "MultiplayerScoreRingManager")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerScoreRingManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerScoreRingManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

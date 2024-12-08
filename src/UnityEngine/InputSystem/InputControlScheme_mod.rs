@@ -309,12 +309,12 @@ for crate::UnityEngine::InputSystem::InputControlScheme {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme")]
 impl crate::UnityEngine::InputSystem::InputControlScheme {
+    #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+DeviceRequirement")]
+    pub type DeviceRequirement = crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement;
     #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult")]
     pub type MatchResult = crate::UnityEngine::InputSystem::InputControlScheme_MatchResult;
     #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+SchemeJson")]
     pub type SchemeJson = crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson;
-    #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+DeviceRequirement")]
-    pub type DeviceRequirement = crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement;
     pub fn Equals_InputControlScheme0(
         &mut self,
         other: crate::UnityEngine::InputSystem::InputControlScheme,
@@ -577,12 +577,12 @@ for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult")]
 impl crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
-    #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Result")]
-    pub type Result = crate::UnityEngine::InputSystem::MatchResult_Result;
     #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Enumerator")]
     pub type Enumerator = crate::UnityEngine::InputSystem::MatchResult_Enumerator;
     #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Match")]
     pub type Match = crate::UnityEngine::InputSystem::MatchResult_Match;
+    #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Result")]
+    pub type Result = crate::UnityEngine::InputSystem::MatchResult_Result;
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

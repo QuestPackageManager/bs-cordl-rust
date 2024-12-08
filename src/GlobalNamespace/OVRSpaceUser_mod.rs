@@ -6,10 +6,12 @@ pub struct OVRSpaceUser {
 }
 #[cfg(feature = "OVRSpaceUser")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for OVRSpaceUser => ""."OVRSpaceUser"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRSpaceUser => ""
+    ."OVRSpaceUser"
 );
 #[cfg(feature = "OVRSpaceUser")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for OVRSpaceUser {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRSpaceUser {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -19,7 +21,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for OVRSpaceUser {
     }
 }
 #[cfg(feature = "OVRSpaceUser")]
-impl OVRSpaceUser {
+impl crate::GlobalNamespace::OVRSpaceUser {
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

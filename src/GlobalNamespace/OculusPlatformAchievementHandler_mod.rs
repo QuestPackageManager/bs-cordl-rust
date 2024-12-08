@@ -3,42 +3,43 @@
 #[derive(Debug)]
 pub struct OculusPlatformAchievementHandler {
     __cordl_parent: crate::System::Object,
-    pub _achievementIdsModel: *mut AchievementIdsModelSO,
+    pub _achievementIdsModel: *mut crate::GlobalNamespace::AchievementIdsModelSO,
 }
 #[cfg(feature = "OculusPlatformAchievementHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OculusPlatformAchievementHandler => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OculusPlatformAchievementHandler => ""
     ."OculusPlatformAchievementHandler"
 );
 #[cfg(feature = "OculusPlatformAchievementHandler")]
-impl std::ops::Deref for OculusPlatformAchievementHandler {
+impl std::ops::Deref for crate::GlobalNamespace::OculusPlatformAchievementHandler {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusPlatformAchievementHandler")]
-impl std::ops::DerefMut for OculusPlatformAchievementHandler {
+impl std::ops::DerefMut for crate::GlobalNamespace::OculusPlatformAchievementHandler {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusPlatformAchievementHandler")]
-impl OculusPlatformAchievementHandler {
+impl crate::GlobalNamespace::OculusPlatformAchievementHandler {
+    #[cfg(feature = "OculusPlatformAchievementHandler+__c__DisplayClass2_0")]
+    pub type __c__DisplayClass2_0 = crate::GlobalNamespace::OculusPlatformAchievementHandler___c__DisplayClass2_0;
     #[cfg(feature = "OculusPlatformAchievementHandler+__c__DisplayClass3_0")]
     pub type __c__DisplayClass3_0 = crate::GlobalNamespace::OculusPlatformAchievementHandler___c__DisplayClass3_0;
     #[cfg(feature = "OculusPlatformAchievementHandler+__c__DisplayClass3_1")]
     pub type __c__DisplayClass3_1 = crate::GlobalNamespace::OculusPlatformAchievementHandler___c__DisplayClass3_1;
-    #[cfg(feature = "OculusPlatformAchievementHandler+__c__DisplayClass2_0")]
-    pub type __c__DisplayClass2_0 = crate::GlobalNamespace::OculusPlatformAchievementHandler___c__DisplayClass2_0;
     pub fn GetUnlockedAchievements(
         &mut self,
         completionHandler: *mut crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsCompletionHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut HMAsyncRequest> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::HMAsyncRequest> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut HMAsyncRequest = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::HMAsyncRequest = __cordl_object
             .invoke("GetUnlockedAchievements", (completionHandler))?;
         Ok(__cordl_ret)
     }
@@ -63,11 +64,11 @@ impl OculusPlatformAchievementHandler {
         &mut self,
         achievementId: *mut crate::System::String,
         completionHandler: *mut crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompletionHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut HMAsyncRequest> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::HMAsyncRequest> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut HMAsyncRequest = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::HMAsyncRequest = __cordl_object
             .invoke("UnlockAchievement", (achievementId, completionHandler))?;
         Ok(__cordl_ret)
     }
@@ -83,7 +84,8 @@ impl OculusPlatformAchievementHandler {
     }
 }
 #[cfg(feature = "OculusPlatformAchievementHandler")]
-impl quest_hook::libil2cpp::ObjectType for OculusPlatformAchievementHandler {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OculusPlatformAchievementHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

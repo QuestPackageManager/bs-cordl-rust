@@ -29,12 +29,12 @@ for crate::Newtonsoft::Json::Linq::JsonPath::FieldMultipleFilter {
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+FieldMultipleFilter")]
 impl crate::Newtonsoft::Json::Linq::JsonPath::FieldMultipleFilter {
-    #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+FieldMultipleFilter+__c")]
-    pub type __c = crate::Newtonsoft::Json::Linq::JsonPath::FieldMultipleFilter___c;
     #[cfg(
         feature = "Newtonsoft+Json+Linq+JsonPath+FieldMultipleFilter+_ExecuteFilter_d__2"
     )]
     pub type _ExecuteFilter_d__2 = crate::Newtonsoft::Json::Linq::JsonPath::FieldMultipleFilter__ExecuteFilter_d__2;
+    #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+FieldMultipleFilter+__c")]
+    pub type __c = crate::Newtonsoft::Json::Linq::JsonPath::FieldMultipleFilter___c;
     pub fn ExecuteFilter(
         &mut self,
         root: *mut crate::Newtonsoft::Json::Linq::JToken,

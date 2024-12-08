@@ -142,31 +142,31 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
 #[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
 impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
     #[cfg(
-        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+__c__DisplayClass25_0"
-    )]
-    pub type __c__DisplayClass25_0 = crate::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
-    )]
-    pub type ParameterOverride = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride;
-    #[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter")]
-    pub type Parameter = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
-    )]
-    pub type ParameterEnumerator = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator;
-    #[cfg(
         feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
     )]
     pub type DeferBindingResolutionWrapper = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper;
+    #[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter")]
+    pub type Parameter = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter;
     #[cfg(
         feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
     )]
     pub type ParameterEnumerable = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable;
     #[cfg(
+        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+    )]
+    pub type ParameterEnumerator = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
+    )]
+    pub type ParameterOverride = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride;
+    #[cfg(
         feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
     )]
     pub type RebindingOperation = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+__c__DisplayClass25_0"
+    )]
+    pub type __c__DisplayClass25_0 = crate::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0;
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
 impl quest_hook::libil2cpp::ObjectType
@@ -616,13 +616,13 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOpe
 impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation {
     pub const kDefaultMagnitudeThreshold: f32 = 0.2f32;
     #[cfg(
-        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+__c__DisplayClass32_0"
-    )]
-    pub type __c__DisplayClass32_0 = crate::UnityEngine::InputSystem::RebindingOperation___c__DisplayClass32_0;
-    #[cfg(
         feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
     )]
     pub type Flags = crate::UnityEngine::InputSystem::RebindingOperation_Flags;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+__c__DisplayClass32_0"
+    )]
+    pub type __c__DisplayClass32_0 = crate::UnityEngine::InputSystem::RebindingOperation___c__DisplayClass32_0;
     pub fn AddCandidate(
         &mut self,
         control: *mut crate::UnityEngine::InputSystem::InputControl,

@@ -115,13 +115,13 @@ for crate::UnityEngine::Rendering::ScriptableCullingParameters {
 #[cfg(feature = "UnityEngine+Rendering+ScriptableCullingParameters")]
 impl crate::UnityEngine::Rendering::ScriptableCullingParameters {
     #[cfg(
-        feature = "UnityEngine+Rendering+ScriptableCullingParameters+_m_LayerFarCullDistances_e__FixedBuffer"
-    )]
-    pub type _m_LayerFarCullDistances_e__FixedBuffer = crate::UnityEngine::Rendering::ScriptableCullingParameters__m_LayerFarCullDistances_e__FixedBuffer;
-    #[cfg(
         feature = "UnityEngine+Rendering+ScriptableCullingParameters+_m_CullingPlanes_e__FixedBuffer"
     )]
     pub type _m_CullingPlanes_e__FixedBuffer = crate::UnityEngine::Rendering::ScriptableCullingParameters__m_CullingPlanes_e__FixedBuffer;
+    #[cfg(
+        feature = "UnityEngine+Rendering+ScriptableCullingParameters+_m_LayerFarCullDistances_e__FixedBuffer"
+    )]
+    pub type _m_LayerFarCullDistances_e__FixedBuffer = crate::UnityEngine::Rendering::ScriptableCullingParameters__m_LayerFarCullDistances_e__FixedBuffer;
     pub fn Equals_Object1(
         &mut self,
         obj: *mut crate::System::Object,

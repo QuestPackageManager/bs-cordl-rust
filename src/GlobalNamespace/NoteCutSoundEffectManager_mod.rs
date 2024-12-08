@@ -65,7 +65,7 @@ for crate::GlobalNamespace::NoteCutSoundEffectManager_InitData {
 #[derive(Debug)]
 pub struct NoteCutSoundEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioManager: *mut AudioManagerSO,
+    pub _audioManager: *mut crate::GlobalNamespace::AudioManagerSO,
     pub _audioSamplesBeatAlignOffset: f32,
     pub _longCutEffectsAudioClips: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::AudioClip,
@@ -75,47 +75,47 @@ pub struct NoteCutSoundEffectManager {
     >,
     pub _testAudioClip: *mut crate::UnityEngine::AudioClip,
     pub _initData: *mut crate::GlobalNamespace::NoteCutSoundEffectManager_InitData,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
-    pub _saberManager: *mut SaberManager,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
+    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
     pub _noteCutSoundEffectPool: *mut crate::GlobalNamespace::NoteCutSoundEffect_Pool,
-    pub _audioTimeSyncController: *mut AudioTimeSyncController,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
     pub _handleWrongSaberTypeAsGood_k__BackingField: bool,
-    pub _randomLongCutSoundPicker: *mut RandomObjectPicker_1<
+    pub _randomLongCutSoundPicker: *mut crate::GlobalNamespace::RandomObjectPicker_1<
         *mut crate::UnityEngine::AudioClip,
     >,
-    pub _randomShortCutSoundPicker: *mut RandomObjectPicker_1<
+    pub _randomShortCutSoundPicker: *mut crate::GlobalNamespace::RandomObjectPicker_1<
         *mut crate::UnityEngine::AudioClip,
     >,
     pub _prevNoteATime: f32,
     pub _prevNoteBTime: f32,
-    pub _prevNoteASoundEffect: *mut NoteCutSoundEffect,
-    pub _prevNoteBSoundEffect: *mut NoteCutSoundEffect,
+    pub _prevNoteASoundEffect: *mut crate::GlobalNamespace::NoteCutSoundEffect,
+    pub _prevNoteBSoundEffect: *mut crate::GlobalNamespace::NoteCutSoundEffect,
     pub _beatAlignOffset: f32,
     pub _useTestAudioClips: bool,
-    pub _noteCutSoundEffectPoolContainer: *mut MemoryPoolContainer_1<
-        *mut NoteCutSoundEffect,
+    pub _noteCutSoundEffectPoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
+        *mut crate::GlobalNamespace::NoteCutSoundEffect,
     >,
 }
 #[cfg(feature = "NoteCutSoundEffectManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteCutSoundEffectManager => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteCutSoundEffectManager => ""
     ."NoteCutSoundEffectManager"
 );
 #[cfg(feature = "NoteCutSoundEffectManager")]
-impl std::ops::Deref for NoteCutSoundEffectManager {
+impl std::ops::Deref for crate::GlobalNamespace::NoteCutSoundEffectManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteCutSoundEffectManager")]
-impl std::ops::DerefMut for NoteCutSoundEffectManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteCutSoundEffectManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteCutSoundEffectManager")]
-impl NoteCutSoundEffectManager {
+impl crate::GlobalNamespace::NoteCutSoundEffectManager {
     pub const kDenseNotesVolumeMul: f32 = 0.9f32;
     pub const kMaxNumberOfEffects: i32 = 64i32;
     pub const kTwoNotesAtTheSameTimeVolumeMul: f32 = 0.9f32;
@@ -123,7 +123,7 @@ impl NoteCutSoundEffectManager {
     pub type InitData = crate::GlobalNamespace::NoteCutSoundEffectManager_InitData;
     pub fn HandleNoteCutSoundEffectDidFinish(
         &mut self,
-        noteCutSoundEffect: *mut NoteCutSoundEffect,
+        noteCutSoundEffect: *mut crate::GlobalNamespace::NoteCutSoundEffect,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -134,7 +134,7 @@ impl NoteCutSoundEffectManager {
     }
     pub fn HandleNoteDidStartDissolving(
         &mut self,
-        noteController: *mut NoteControllerBase,
+        noteController: *mut crate::GlobalNamespace::NoteControllerBase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -145,8 +145,8 @@ impl NoteCutSoundEffectManager {
     }
     pub fn HandleNoteWasCut(
         &mut self,
-        noteController: *mut NoteController,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -157,7 +157,7 @@ impl NoteCutSoundEffectManager {
     }
     pub fn HandleNoteWasSpawned(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -168,7 +168,7 @@ impl NoteCutSoundEffectManager {
     }
     pub fn IsSupportedNote(
         &mut self,
-        noteData: *mut NoteData,
+        noteData: *mut crate::GlobalNamespace::NoteData,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -246,7 +246,8 @@ impl NoteCutSoundEffectManager {
     }
 }
 #[cfg(feature = "NoteCutSoundEffectManager")]
-impl quest_hook::libil2cpp::ObjectType for NoteCutSoundEffectManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NoteCutSoundEffectManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

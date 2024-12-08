@@ -64,23 +64,24 @@ pub struct MainCameraCullingMask {
 }
 #[cfg(feature = "MainCameraCullingMask")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MainCameraCullingMask => ""."MainCameraCullingMask"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MainCameraCullingMask => ""
+    ."MainCameraCullingMask"
 );
 #[cfg(feature = "MainCameraCullingMask")]
-impl std::ops::Deref for MainCameraCullingMask {
+impl std::ops::Deref for crate::GlobalNamespace::MainCameraCullingMask {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainCameraCullingMask")]
-impl std::ops::DerefMut for MainCameraCullingMask {
+impl std::ops::DerefMut for crate::GlobalNamespace::MainCameraCullingMask {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainCameraCullingMask")]
-impl MainCameraCullingMask {
+impl crate::GlobalNamespace::MainCameraCullingMask {
     #[cfg(feature = "MainCameraCullingMask+InitData")]
     pub type InitData = crate::GlobalNamespace::MainCameraCullingMask_InitData;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -112,7 +113,8 @@ impl MainCameraCullingMask {
     }
 }
 #[cfg(feature = "MainCameraCullingMask")]
-impl quest_hook::libil2cpp::ObjectType for MainCameraCullingMask {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MainCameraCullingMask {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -16,5 +16,6 @@ pub enum ServiceEnvironment {
 }
 #[cfg(feature = "ServiceEnvironment")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for ServiceEnvironment => ""."ServiceEnvironment"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ServiceEnvironment => ""
+    ."ServiceEnvironment"
 );

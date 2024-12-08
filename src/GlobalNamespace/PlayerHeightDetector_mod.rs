@@ -64,12 +64,12 @@ for crate::GlobalNamespace::PlayerHeightDetector_InitData {
 #[derive(Debug)]
 pub struct PlayerHeightDetector {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _playerTransforms: *mut PlayerTransforms,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
-    pub _audioTimeSyncController: *mut IAudioTimeSource,
+    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::IAudioTimeSource,
     pub _initData: *mut crate::GlobalNamespace::PlayerHeightDetector_InitData,
     pub playerHeightDidChangeEvent: *mut crate::System::Action_1<f32>,
-    pub _beatmapObjectCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _beatmapObjectCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     pub _noTopObstaclesStartTime: f32,
     pub _computedPlayerHeight: f32,
     pub _changeWeight: f32,
@@ -77,28 +77,29 @@ pub struct PlayerHeightDetector {
 }
 #[cfg(feature = "PlayerHeightDetector")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerHeightDetector => ""."PlayerHeightDetector"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerHeightDetector => ""
+    ."PlayerHeightDetector"
 );
 #[cfg(feature = "PlayerHeightDetector")]
-impl std::ops::Deref for PlayerHeightDetector {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerHeightDetector {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerHeightDetector")]
-impl std::ops::DerefMut for PlayerHeightDetector {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerHeightDetector {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerHeightDetector")]
-impl PlayerHeightDetector {
+impl crate::GlobalNamespace::PlayerHeightDetector {
     #[cfg(feature = "PlayerHeightDetector+InitData")]
     pub type InitData = crate::GlobalNamespace::PlayerHeightDetector_InitData;
     pub fn BeatmapObjectSpawnCallback(
         &mut self,
-        obstacleData: *mut ObstacleData,
+        obstacleData: *mut crate::GlobalNamespace::ObstacleData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -185,7 +186,7 @@ impl PlayerHeightDetector {
     }
 }
 #[cfg(feature = "PlayerHeightDetector")]
-impl quest_hook::libil2cpp::ObjectType for PlayerHeightDetector {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerHeightDetector {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

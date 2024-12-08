@@ -47,14 +47,14 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::DefaultInputActions
 }
 #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions")]
 impl crate::UnityEngine::InputSystem::DefaultInputActions {
-    #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+UIActions")]
-    pub type UIActions = crate::UnityEngine::InputSystem::DefaultInputActions_UIActions;
-    #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
-    pub type PlayerActions = crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions;
     #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IPlayerActions")]
     type IPlayerActions = crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions;
     #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IUIActions")]
     type IUIActions = crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions;
+    #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
+    pub type PlayerActions = crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions;
+    #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+UIActions")]
+    pub type UIActions = crate::UnityEngine::InputSystem::DefaultInputActions_UIActions;
     pub fn Contains(
         &mut self,
         action: *mut crate::UnityEngine::InputSystem::InputAction,

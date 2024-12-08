@@ -6,25 +6,39 @@ pub struct LocalMultiplayerSyncState_3<
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: MultiplayerSyncState_3<TStateTable, TType, TState>,
-    pub _player: *mut IConnectedPlayer,
-    pub _stateBuffer: *mut LocalStateBuffer_3<TStateTable, TType, TState>,
+    __cordl_parent: crate::GlobalNamespace::MultiplayerSyncState_3<
+        TStateTable,
+        TType,
+        TState,
+    >,
+    pub _player: *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _stateBuffer: *mut crate::GlobalNamespace::LocalStateBuffer_3<
+        TStateTable,
+        TType,
+        TState,
+    >,
     __cordl_phantom_TStateTable: std::marker::PhantomData<TStateTable>,
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
     __cordl_phantom_TState: std::marker::PhantomData<TState>,
 }
 #[cfg(feature = "LocalMultiplayerSyncState_3")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LocalMultiplayerSyncState_3 < TStateTable, TType, TState
-    > => ""."LocalMultiplayerSyncState`3" < TStateTable, TType, TState >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LocalMultiplayerSyncState_3 <
+    TStateTable, TType, TState > => ""."LocalMultiplayerSyncState`3" < TStateTable,
+    TType, TState >
 );
 #[cfg(feature = "LocalMultiplayerSyncState_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
-> std::ops::Deref for LocalMultiplayerSyncState_3<TStateTable, TType, TState> {
-    type Target = MultiplayerSyncState_3<TStateTable, TType, TState>;
+> std::ops::Deref
+for crate::GlobalNamespace::LocalMultiplayerSyncState_3<TStateTable, TType, TState> {
+    type Target = crate::GlobalNamespace::MultiplayerSyncState_3<
+        TStateTable,
+        TType,
+        TState,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +48,8 @@ impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
-> std::ops::DerefMut for LocalMultiplayerSyncState_3<TStateTable, TType, TState> {
+> std::ops::DerefMut
+for crate::GlobalNamespace::LocalMultiplayerSyncState_3<TStateTable, TType, TState> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -44,7 +59,7 @@ impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
-> LocalMultiplayerSyncState_3<TStateTable, TType, TState> {
+> crate::GlobalNamespace::LocalMultiplayerSyncState_3<TStateTable, TType, TState> {
     pub fn GetState(
         &mut self,
         _cordl_type: TType,
@@ -64,7 +79,7 @@ impl<
         Ok(__cordl_ret)
     }
     pub fn New(
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
         fullStateUpdateFrequency: i64,
         deltaUpdateFrequency: i64,
         _cordl_size: i32,
@@ -154,7 +169,7 @@ impl<
     }
     pub fn TryGetSerializedState<T>(
         &mut self,
-        pool: *mut IPacketPool_1<T>,
+        pool: *mut crate::GlobalNamespace::IPacketPool_1<T>,
         serializable: quest_hook::libil2cpp::ByRefMut<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -176,7 +191,7 @@ impl<
     }
     pub fn TryGetSerializedStateDelta<T>(
         &mut self,
-        pool: *mut IPacketPool_1<T>,
+        pool: *mut crate::GlobalNamespace::IPacketPool_1<T>,
         serializable: quest_hook::libil2cpp::ByRefMut<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -198,7 +213,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
         fullStateUpdateFrequency: i64,
         deltaUpdateFrequency: i64,
         _cordl_size: i32,
@@ -253,7 +268,9 @@ impl<
         let __cordl_ret: TState = __cordl_object.invoke("get_Item", (t))?;
         Ok(__cordl_ret)
     }
-    pub fn get_player(&mut self) -> quest_hook::libil2cpp::Result<*mut IConnectedPlayer>
+    pub fn get_player(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IConnectedPlayer>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -265,13 +282,15 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IConnectedPlayer = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IConnectedPlayer = __cordl_object
             .invoke("get_player", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_stateBuffer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut StateBuffer_3<TStateTable, TType, TState>>
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState>,
+    >
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -283,8 +302,11 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut StateBuffer_3<TStateTable, TType, TState> = __cordl_object
-            .invoke("get_stateBuffer", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::StateBuffer_3<
+            TStateTable,
+            TType,
+            TState,
+        > = __cordl_object.invoke("get_stateBuffer", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_Item(
@@ -314,7 +336,7 @@ impl<
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
 > quest_hook::libil2cpp::ObjectType
-for LocalMultiplayerSyncState_3<TStateTable, TType, TState> {
+for crate::GlobalNamespace::LocalMultiplayerSyncState_3<TStateTable, TType, TState> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

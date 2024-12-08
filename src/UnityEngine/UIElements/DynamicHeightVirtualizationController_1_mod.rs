@@ -134,13 +134,13 @@ impl<
         T,
     >;
     #[cfg(
-        feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1+VirtualizationChange"
-    )]
-    pub type VirtualizationChange = crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_VirtualizationChange;
-    #[cfg(
         feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1+ScrollDirection"
     )]
     pub type ScrollDirection = crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_ScrollDirection;
+    #[cfg(
+        feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1+VirtualizationChange"
+    )]
+    pub type VirtualizationChange = crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_VirtualizationChange;
     pub fn ApplyScrollViewUpdate(
         &mut self,
         dimensionsOnly: bool,

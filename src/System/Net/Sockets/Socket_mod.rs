@@ -404,26 +404,26 @@ impl crate::System::Net::Sockets::Socket {
     pub const DefaultCloseTimeout: i32 = -1i32;
     pub const SOCKET_CLOSED_CODE: i32 = 10004i32;
     pub const TIMEOUT_EXCEPTION_MSG: &'static str = "A connection attempt failed because the connected party did not properly respondafter a period of time, or established connection failed because connected host has failed to respond";
-    #[cfg(feature = "System+Net+Sockets+Socket+__c__DisplayClass298_0")]
-    pub type __c__DisplayClass298_0 = crate::System::Net::Sockets::Socket___c__DisplayClass298_0;
-    #[cfg(feature = "System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
-    pub type Int32TaskSocketAsyncEventArgs = crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs;
     #[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
     pub type AwaitableSocketAsyncEventArgs = crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs;
-    #[cfg(feature = "System+Net+Sockets+Socket+WSABUF")]
-    pub type WSABUF = crate::System::Net::Sockets::Socket_WSABUF;
-    #[cfg(feature = "System+Net+Sockets+Socket+__c")]
-    pub type __c = crate::System::Net::Sockets::Socket___c;
+    #[cfg(feature = "System+Net+Sockets+Socket+CachedEventArgs")]
+    pub type CachedEventArgs = crate::System::Net::Sockets::Socket_CachedEventArgs;
+    #[cfg(feature = "System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
+    pub type Int32TaskSocketAsyncEventArgs = crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs;
     #[cfg(feature = "System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
     pub type TaskSocketAsyncEventArgs_1<TResult: quest_hook::libil2cpp::Type> = crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<
         TResult,
     >;
-    #[cfg(feature = "System+Net+Sockets+Socket+__c__DisplayClass355_0")]
-    pub type __c__DisplayClass355_0 = crate::System::Net::Sockets::Socket___c__DisplayClass355_0;
+    #[cfg(feature = "System+Net+Sockets+Socket+WSABUF")]
+    pub type WSABUF = crate::System::Net::Sockets::Socket_WSABUF;
+    #[cfg(feature = "System+Net+Sockets+Socket+__c")]
+    pub type __c = crate::System::Net::Sockets::Socket___c;
     #[cfg(feature = "System+Net+Sockets+Socket+__c__DisplayClass240_0")]
     pub type __c__DisplayClass240_0 = crate::System::Net::Sockets::Socket___c__DisplayClass240_0;
-    #[cfg(feature = "System+Net+Sockets+Socket+CachedEventArgs")]
-    pub type CachedEventArgs = crate::System::Net::Sockets::Socket_CachedEventArgs;
+    #[cfg(feature = "System+Net+Sockets+Socket+__c__DisplayClass298_0")]
+    pub type __c__DisplayClass298_0 = crate::System::Net::Sockets::Socket___c__DisplayClass298_0;
+    #[cfg(feature = "System+Net+Sockets+Socket+__c__DisplayClass355_0")]
+    pub type __c__DisplayClass355_0 = crate::System::Net::Sockets::Socket___c__DisplayClass355_0;
     pub fn AcceptAsync(
         &mut self,
         e: *mut crate::System::Net::Sockets::SocketAsyncEventArgs,

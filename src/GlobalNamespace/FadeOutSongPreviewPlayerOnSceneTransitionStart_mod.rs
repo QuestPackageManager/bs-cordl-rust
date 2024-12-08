@@ -3,29 +3,32 @@
 #[derive(Debug)]
 pub struct FadeOutSongPreviewPlayerOnSceneTransitionStart {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _songPreviewPlayer: *mut AudioPlayerBase,
-    pub _gameScenesManager: *mut GameScenesManager,
+    pub _songPreviewPlayer: *mut crate::GlobalNamespace::AudioPlayerBase,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
 }
 #[cfg(feature = "FadeOutSongPreviewPlayerOnSceneTransitionStart")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FadeOutSongPreviewPlayerOnSceneTransitionStart => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::FadeOutSongPreviewPlayerOnSceneTransitionStart => ""
     ."FadeOutSongPreviewPlayerOnSceneTransitionStart"
 );
 #[cfg(feature = "FadeOutSongPreviewPlayerOnSceneTransitionStart")]
-impl std::ops::Deref for FadeOutSongPreviewPlayerOnSceneTransitionStart {
+impl std::ops::Deref
+for crate::GlobalNamespace::FadeOutSongPreviewPlayerOnSceneTransitionStart {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FadeOutSongPreviewPlayerOnSceneTransitionStart")]
-impl std::ops::DerefMut for FadeOutSongPreviewPlayerOnSceneTransitionStart {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::FadeOutSongPreviewPlayerOnSceneTransitionStart {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FadeOutSongPreviewPlayerOnSceneTransitionStart")]
-impl FadeOutSongPreviewPlayerOnSceneTransitionStart {
+impl crate::GlobalNamespace::FadeOutSongPreviewPlayerOnSceneTransitionStart {
     pub fn HandleGameScenesManagerTransitionDidStart(
         &mut self,
         duration: f32,
@@ -77,7 +80,7 @@ impl FadeOutSongPreviewPlayerOnSceneTransitionStart {
 }
 #[cfg(feature = "FadeOutSongPreviewPlayerOnSceneTransitionStart")]
 impl quest_hook::libil2cpp::ObjectType
-for FadeOutSongPreviewPlayerOnSceneTransitionStart {
+for crate::GlobalNamespace::FadeOutSongPreviewPlayerOnSceneTransitionStart {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

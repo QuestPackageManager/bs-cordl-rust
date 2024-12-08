@@ -3,33 +3,34 @@
 #[derive(Debug)]
 pub struct EnterPlayerGuestNameViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _playerNameWasEnteredSignal: *mut StringSignal,
+    pub _playerNameWasEnteredSignal: *mut crate::GlobalNamespace::StringSignal,
     pub _uiKeyboard: *mut crate::HMUI::UIKeyboard,
     pub _nameInputFieldView: *mut crate::HMUI::InputFieldView,
-    pub _guestNameButtonsListItemsList: *mut GuestNameButtonsListItemsList,
-    pub _playerDataModel: *mut PlayerDataModel,
+    pub _guestNameButtonsListItemsList: *mut crate::GlobalNamespace::GuestNameButtonsListItemsList,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
     pub _didFinishCallback: *mut crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate,
 }
 #[cfg(feature = "EnterPlayerGuestNameViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnterPlayerGuestNameViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::EnterPlayerGuestNameViewController => ""
     ."EnterPlayerGuestNameViewController"
 );
 #[cfg(feature = "EnterPlayerGuestNameViewController")]
-impl std::ops::Deref for EnterPlayerGuestNameViewController {
+impl std::ops::Deref for crate::GlobalNamespace::EnterPlayerGuestNameViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnterPlayerGuestNameViewController")]
-impl std::ops::DerefMut for EnterPlayerGuestNameViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnterPlayerGuestNameViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnterPlayerGuestNameViewController")]
-impl EnterPlayerGuestNameViewController {
+impl crate::GlobalNamespace::EnterPlayerGuestNameViewController {
     pub const kMaxPlayerNameCompoundLength: i32 = 40i32;
     pub const kMaxShowPlayer: i32 = 5i32;
     #[cfg(feature = "EnterPlayerGuestNameViewController+FinishDelegate")]
@@ -106,7 +107,8 @@ impl EnterPlayerGuestNameViewController {
     }
 }
 #[cfg(feature = "EnterPlayerGuestNameViewController")]
-impl quest_hook::libil2cpp::ObjectType for EnterPlayerGuestNameViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EnterPlayerGuestNameViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -145,7 +147,7 @@ for crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate {
 impl crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate {
     pub fn BeginInvoke(
         &mut self,
-        viewController: *mut EnterPlayerGuestNameViewController,
+        viewController: *mut crate::GlobalNamespace::EnterPlayerGuestNameViewController,
         playerName: *mut crate::System::String,
         callback: *mut crate::System::AsyncCallback,
         object: *mut crate::System::Object,
@@ -170,7 +172,7 @@ impl crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate {
     }
     pub fn Invoke(
         &mut self,
-        viewController: *mut EnterPlayerGuestNameViewController,
+        viewController: *mut crate::GlobalNamespace::EnterPlayerGuestNameViewController,
         playerName: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

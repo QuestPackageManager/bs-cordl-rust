@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 pub struct OVRInputModule {
     __cordl_parent: crate::UnityEngine::EventSystems::PointerInputModule,
     pub rayTransform: *mut crate::UnityEngine::Transform,
-    pub m_Cursor: *mut OVRCursor,
+    pub m_Cursor: *mut crate::GlobalNamespace::OVRCursor,
     pub joyPadClickButton: crate::GlobalNamespace::OVRInput_Button,
     pub gazeClickKey: crate::UnityEngine::KeyCode,
     pub performSphereCastForGazepointer: bool,
@@ -27,7 +27,7 @@ pub struct OVRInputModule {
     pub swipeDragThreshold: f32,
     pub swipeDragScale: f32,
     pub InvertSwipeXAxis: bool,
-    pub activeGraphicRaycaster: *mut OVRRaycaster,
+    pub activeGraphicRaycaster: *mut crate::GlobalNamespace::OVRRaycaster,
     pub angleDragThreshold: f32,
     pub m_SpherecastRadius: f32,
     pub m_NextAction: f32,

@@ -2,32 +2,33 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameSongController {
-    __cordl_parent: SongController,
-    pub _audioTimeSyncController: *mut AudioTimeSyncController,
-    pub _failAudioPitchGainEffect: *mut AudioPitchGainEffect,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
-    pub _beatmapCallbacksUpdater: *mut BeatmapCallbacksUpdater,
+    __cordl_parent: crate::GlobalNamespace::SongController,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
+    pub _failAudioPitchGainEffect: *mut crate::GlobalNamespace::AudioPitchGainEffect,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _beatmapCallbacksUpdater: *mut crate::GlobalNamespace::BeatmapCallbacksUpdater,
     pub _songDidFinish: bool,
 }
 #[cfg(feature = "GameSongController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameSongController => ""."GameSongController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameSongController => ""
+    ."GameSongController"
 );
 #[cfg(feature = "GameSongController")]
-impl std::ops::Deref for GameSongController {
-    type Target = SongController;
+impl std::ops::Deref for crate::GlobalNamespace::GameSongController {
+    type Target = crate::GlobalNamespace::SongController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameSongController")]
-impl std::ops::DerefMut for GameSongController {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameSongController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameSongController")]
-impl GameSongController {
+impl crate::GlobalNamespace::GameSongController {
     pub fn FailStopSong(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -146,7 +147,7 @@ impl GameSongController {
     }
 }
 #[cfg(feature = "GameSongController")]
-impl quest_hook::libil2cpp::ObjectType for GameSongController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameSongController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

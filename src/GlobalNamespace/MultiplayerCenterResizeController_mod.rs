@@ -4,34 +4,35 @@
 pub struct MultiplayerCenterResizeController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _platformWidth: f32,
-    pub _layoutProvider: *mut MultiplayerLayoutProvider,
+    pub _layoutProvider: *mut crate::GlobalNamespace::MultiplayerLayoutProvider,
     pub edgeDistanceFromCenterWasCalculatedEvent: *mut crate::System::Action_1<f32>,
     pub _isEdgeDistanceFromCenterCalculated_k__BackingField: bool,
     pub _edgeDistanceFromCenter_k__BackingField: f32,
 }
 #[cfg(feature = "MultiplayerCenterResizeController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerCenterResizeController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerCenterResizeController => ""
     ."MultiplayerCenterResizeController"
 );
 #[cfg(feature = "MultiplayerCenterResizeController")]
-impl std::ops::Deref for MultiplayerCenterResizeController {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerCenterResizeController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerCenterResizeController")]
-impl std::ops::DerefMut for MultiplayerCenterResizeController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerCenterResizeController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerCenterResizeController")]
-impl MultiplayerCenterResizeController {
+impl crate::GlobalNamespace::MultiplayerCenterResizeController {
     pub fn HandlePlayersLayoutWasCalculated(
         &mut self,
-        layout: MultiplayerPlayerLayout,
+        layout: crate::GlobalNamespace::MultiplayerPlayerLayout,
         numberOfPlayers: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -141,7 +142,8 @@ impl MultiplayerCenterResizeController {
     }
 }
 #[cfg(feature = "MultiplayerCenterResizeController")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerCenterResizeController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerCenterResizeController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

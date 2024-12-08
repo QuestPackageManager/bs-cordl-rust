@@ -68,10 +68,10 @@ impl std::ops::DerefMut for crate::UnityEngine::TextSelectingUtilities {
 impl crate::UnityEngine::TextSelectingUtilities {
     pub const kMoveDownHeight: i32 = 5i32;
     pub const kNewLineChar: char = '\n';
-    #[cfg(feature = "UnityEngine+TextSelectingUtilities+Direction")]
-    pub type Direction = crate::UnityEngine::TextSelectingUtilities_Direction;
     #[cfg(feature = "UnityEngine+TextSelectingUtilities+CharacterType")]
     pub type CharacterType = crate::UnityEngine::TextSelectingUtilities_CharacterType;
+    #[cfg(feature = "UnityEngine+TextSelectingUtilities+Direction")]
+    pub type Direction = crate::UnityEngine::TextSelectingUtilities_Direction;
     pub fn ClampTextIndex(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

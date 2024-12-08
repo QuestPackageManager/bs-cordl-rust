@@ -35,13 +35,13 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerSessionManager {
-    __cordl_parent: StandaloneMonobehavior,
-    pub _packetSerializer: *mut NetworkPacketSerializer_2<
+    __cordl_parent: crate::GlobalNamespace::StandaloneMonobehavior,
+    pub _packetSerializer: *mut crate::GlobalNamespace::NetworkPacketSerializer_2<
         crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
-        *mut IConnectedPlayer,
+        *mut crate::GlobalNamespace::IConnectedPlayer,
     >,
     pub _connectedPlayers: *mut crate::System::Collections::Generic::List_1<
-        *mut IConnectedPlayer,
+        *mut crate::GlobalNamespace::IConnectedPlayer,
     >,
     pub _localPlayerState: *mut crate::System::Collections::Generic::HashSet_1<
         *mut crate::System::String,
@@ -50,46 +50,58 @@ pub struct MultiplayerSessionManager {
     pub _connectionState: crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState,
     pub _freeSortIndices: *mut crate::System::Collections::Generic::Queue_1<i32>,
     pub connectedEvent: *mut crate::System::Action,
-    pub connectionFailedEvent: *mut crate::System::Action_1<ConnectionFailedReason>,
-    pub playerConnectedEvent: *mut crate::System::Action_1<*mut IConnectedPlayer>,
-    pub playerDisconnectedEvent: *mut crate::System::Action_1<*mut IConnectedPlayer>,
-    pub playerAvatarChangedEvent: *mut crate::System::Action_1<*mut IConnectedPlayer>,
-    pub playerStateChangedEvent: *mut crate::System::Action_1<*mut IConnectedPlayer>,
-    pub connectionOwnerStateChangedEvent: *mut crate::System::Action_1<
-        *mut IConnectedPlayer,
+    pub connectionFailedEvent: *mut crate::System::Action_1<
+        crate::GlobalNamespace::ConnectionFailedReason,
     >,
-    pub disconnectedEvent: *mut crate::System::Action_1<DisconnectedReason>,
+    pub playerConnectedEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::IConnectedPlayer,
+    >,
+    pub playerDisconnectedEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::IConnectedPlayer,
+    >,
+    pub playerAvatarChangedEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::IConnectedPlayer,
+    >,
+    pub playerStateChangedEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::IConnectedPlayer,
+    >,
+    pub connectionOwnerStateChangedEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::IConnectedPlayer,
+    >,
+    pub disconnectedEvent: *mut crate::System::Action_1<
+        crate::GlobalNamespace::DisconnectedReason,
+    >,
     pub pollUpdateEvent: *mut crate::System::Action,
-    pub _connectionOwner_k__BackingField: *mut IConnectedPlayer,
-    pub _connectedPlayerManager: *mut ConnectedPlayerManager,
+    pub _connectionOwner_k__BackingField: *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _connectedPlayerManager: *mut crate::GlobalNamespace::ConnectedPlayerManager,
 }
 #[cfg(feature = "MultiplayerSessionManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerSessionManager => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerSessionManager => ""
     ."MultiplayerSessionManager"
 );
 #[cfg(feature = "MultiplayerSessionManager")]
-impl std::ops::Deref for MultiplayerSessionManager {
-    type Target = StandaloneMonobehavior;
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerSessionManager {
+    type Target = crate::GlobalNamespace::StandaloneMonobehavior;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerSessionManager")]
-impl std::ops::DerefMut for MultiplayerSessionManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerSessionManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerSessionManager")]
-impl MultiplayerSessionManager {
+impl crate::GlobalNamespace::MultiplayerSessionManager {
     pub const kMultiplayerSessionState: &'static str = "multiplayer_session";
-    #[cfg(feature = "MultiplayerSessionManager+SessionType")]
-    pub type SessionType = crate::GlobalNamespace::MultiplayerSessionManager_SessionType;
     #[cfg(feature = "MultiplayerSessionManager+ConnectionState")]
     pub type ConnectionState = crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState;
     #[cfg(feature = "MultiplayerSessionManager+MessageType")]
     pub type MessageType = crate::GlobalNamespace::MultiplayerSessionManager_MessageType;
+    #[cfg(feature = "MultiplayerSessionManager+SessionType")]
+    pub type SessionType = crate::GlobalNamespace::MultiplayerSessionManager_SessionType;
     #[cfg(feature = "MultiplayerSessionManager+__c")]
     pub type __c = crate::GlobalNamespace::MultiplayerSessionManager___c;
     #[cfg(feature = "MultiplayerSessionManager+__c__DisplayClass98_0")]
@@ -117,11 +129,11 @@ impl MultiplayerSessionManager {
     pub fn GetConnectedPlayer(
         &mut self,
         i: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut IConnectedPlayer> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IConnectedPlayer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IConnectedPlayer = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IConnectedPlayer = __cordl_object
             .invoke("GetConnectedPlayer", (i))?;
         Ok(__cordl_ret)
     }
@@ -135,11 +147,11 @@ impl MultiplayerSessionManager {
     pub fn GetPlayerByUserId(
         &mut self,
         userId: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut IConnectedPlayer> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IConnectedPlayer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IConnectedPlayer = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IConnectedPlayer = __cordl_object
             .invoke("GetPlayerByUserId", (userId))?;
         Ok(__cordl_ret)
     }
@@ -155,7 +167,7 @@ impl MultiplayerSessionManager {
     }
     pub fn HandleConnectionFailed(
         &mut self,
-        reason: ConnectionFailedReason,
+        reason: crate::GlobalNamespace::ConnectionFailedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -166,7 +178,7 @@ impl MultiplayerSessionManager {
     }
     pub fn HandleDisconnected(
         &mut self,
-        disconnectedReason: DisconnectedReason,
+        disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -187,7 +199,7 @@ impl MultiplayerSessionManager {
     }
     pub fn HandlePlayerAvatarChanged(
         &mut self,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -198,7 +210,7 @@ impl MultiplayerSessionManager {
     }
     pub fn HandlePlayerConnected(
         &mut self,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -209,7 +221,7 @@ impl MultiplayerSessionManager {
     }
     pub fn HandlePlayerDisconnected(
         &mut self,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -220,7 +232,7 @@ impl MultiplayerSessionManager {
     }
     pub fn HandlePlayerLatencyInitialized(
         &mut self,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -231,7 +243,7 @@ impl MultiplayerSessionManager {
     }
     pub fn HandlePlayerOrderChanged(
         &mut self,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -242,7 +254,7 @@ impl MultiplayerSessionManager {
     }
     pub fn HandlePlayerStateChanged(
         &mut self,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -323,7 +335,10 @@ impl MultiplayerSessionManager {
     pub fn RegisterCallback<T>(
         &mut self,
         serializerType: crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
-        callback: *mut crate::System::Action_2<T, *mut IConnectedPlayer>,
+        callback: *mut crate::System::Action_2<
+            T,
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
         constructor: *mut crate::System::Func_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -340,7 +355,9 @@ impl MultiplayerSessionManager {
     pub fn RegisterSerializer(
         &mut self,
         serializerType: crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
-        subSerializer: *mut INetworkPacketSubSerializer_1<*mut IConnectedPlayer>,
+        subSerializer: *mut crate::GlobalNamespace::INetworkPacketSubSerializer_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -367,7 +384,7 @@ impl MultiplayerSessionManager {
     pub fn SendToPlayer<T>(
         &mut self,
         message: T,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -398,7 +415,7 @@ impl MultiplayerSessionManager {
     pub fn SendUnreliableEncryptedToPlayer<T>(
         &mut self,
         message: T,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -414,8 +431,8 @@ impl MultiplayerSessionManager {
     pub fn SendUnreliableFromPlayerToPlayer<T>(
         &mut self,
         message: T,
-        fromPlayer: *mut IConnectedPlayer,
-        toPlayer: *mut IConnectedPlayer,
+        fromPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+        toPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -482,7 +499,7 @@ impl MultiplayerSessionManager {
     pub fn StartSession(
         &mut self,
         sessionType: crate::GlobalNamespace::MultiplayerSessionManager_SessionType,
-        connectedPlayerManager: *mut ConnectedPlayerManager,
+        connectedPlayerManager: *mut crate::GlobalNamespace::ConnectedPlayerManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -493,7 +510,7 @@ impl MultiplayerSessionManager {
     }
     pub fn TryUpdateConnectedPlayer(
         &mut self,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
         isPlayerConnected: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -521,7 +538,9 @@ impl MultiplayerSessionManager {
     pub fn UnregisterSerializer(
         &mut self,
         serializerType: crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
-        subSerializer: *mut INetworkPacketSubSerializer_1<*mut IConnectedPlayer>,
+        subSerializer: *mut crate::GlobalNamespace::INetworkPacketSubSerializer_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -542,9 +561,9 @@ impl MultiplayerSessionManager {
     }
     pub fn UpdateConnectionState(
         &mut self,
-        updateReason: UpdateConnectionStateReason,
-        disconnectedReason: DisconnectedReason,
-        connectionFailedReason: ConnectionFailedReason,
+        updateReason: crate::GlobalNamespace::UpdateConnectionStateReason,
+        disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
+        connectionFailedReason: crate::GlobalNamespace::ConnectionFailedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -579,7 +598,9 @@ impl MultiplayerSessionManager {
     }
     pub fn add_connectionFailedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<ConnectionFailedReason>,
+        value: *mut crate::System::Action_1<
+            crate::GlobalNamespace::ConnectionFailedReason,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -590,7 +611,9 @@ impl MultiplayerSessionManager {
     }
     pub fn add_connectionOwnerStateChangedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -601,7 +624,7 @@ impl MultiplayerSessionManager {
     }
     pub fn add_disconnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<DisconnectedReason>,
+        value: *mut crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -612,7 +635,9 @@ impl MultiplayerSessionManager {
     }
     pub fn add_playerAvatarChangedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -623,7 +648,9 @@ impl MultiplayerSessionManager {
     }
     pub fn add_playerConnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -634,7 +661,9 @@ impl MultiplayerSessionManager {
     }
     pub fn add_playerDisconnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -645,7 +674,9 @@ impl MultiplayerSessionManager {
     }
     pub fn add_playerStateChangedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -674,34 +705,38 @@ impl MultiplayerSessionManager {
     }
     pub fn get_connectedPlayerManager(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut ConnectedPlayerManager> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::ConnectedPlayerManager,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ConnectedPlayerManager = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::ConnectedPlayerManager = __cordl_object
             .invoke("get_connectedPlayerManager", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_connectedPlayers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyList_1<*mut IConnectedPlayer>,
+        *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut IConnectedPlayer,
+            *mut crate::GlobalNamespace::IConnectedPlayer,
         > = __cordl_object.invoke("get_connectedPlayers", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_connectionOwner(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IConnectedPlayer> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IConnectedPlayer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IConnectedPlayer = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IConnectedPlayer = __cordl_object
             .invoke("get_connectionOwner", ())?;
         Ok(__cordl_ret)
     }
@@ -759,11 +794,11 @@ impl MultiplayerSessionManager {
     }
     pub fn get_localPlayer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IConnectedPlayer> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IConnectedPlayer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IConnectedPlayer = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IConnectedPlayer = __cordl_object
             .invoke("get_localPlayer", ())?;
         Ok(__cordl_ret)
     }
@@ -794,7 +829,9 @@ impl MultiplayerSessionManager {
     }
     pub fn remove_connectionFailedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<ConnectionFailedReason>,
+        value: *mut crate::System::Action_1<
+            crate::GlobalNamespace::ConnectionFailedReason,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -805,7 +842,9 @@ impl MultiplayerSessionManager {
     }
     pub fn remove_connectionOwnerStateChangedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -816,7 +855,7 @@ impl MultiplayerSessionManager {
     }
     pub fn remove_disconnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<DisconnectedReason>,
+        value: *mut crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -827,7 +866,9 @@ impl MultiplayerSessionManager {
     }
     pub fn remove_playerAvatarChangedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -838,7 +879,9 @@ impl MultiplayerSessionManager {
     }
     pub fn remove_playerConnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -849,7 +892,9 @@ impl MultiplayerSessionManager {
     }
     pub fn remove_playerDisconnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -860,7 +905,9 @@ impl MultiplayerSessionManager {
     }
     pub fn remove_playerStateChangedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -882,7 +929,7 @@ impl MultiplayerSessionManager {
     }
     pub fn set_connectionOwner(
         &mut self,
-        value: *mut IConnectedPlayer,
+        value: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -893,7 +940,8 @@ impl MultiplayerSessionManager {
     }
 }
 #[cfg(feature = "MultiplayerSessionManager")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerSessionManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerSessionManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

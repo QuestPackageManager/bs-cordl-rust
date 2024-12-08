@@ -164,16 +164,16 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
 impl<
     TResult: quest_hook::libil2cpp::Type,
 > crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
+    #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator")]
+    pub type DelegateEnumerator = crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<
+        TResult,
+    >;
     #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate")]
     pub type FindPredicate = crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<
         TResult,
     >;
     #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindTransform")]
     pub type FindTransform = crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<
-        TResult,
-    >;
-    #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator")]
-    pub type DelegateEnumerator = crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<
         TResult,
     >;
     pub fn GetEnumerator(

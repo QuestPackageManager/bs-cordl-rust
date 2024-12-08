@@ -6,23 +6,23 @@ pub struct IPollable {
 }
 #[cfg(feature = "IPollable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IPollable => ""."IPollable"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IPollable => ""."IPollable"
 );
 #[cfg(feature = "IPollable")]
-impl std::ops::Deref for IPollable {
+impl std::ops::Deref for crate::GlobalNamespace::IPollable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IPollable")]
-impl std::ops::DerefMut for IPollable {
+impl std::ops::DerefMut for crate::GlobalNamespace::IPollable {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IPollable")]
-impl IPollable {
+impl crate::GlobalNamespace::IPollable {
     pub fn PollUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -40,7 +40,7 @@ impl IPollable {
     }
 }
 #[cfg(feature = "IPollable")]
-impl quest_hook::libil2cpp::ObjectType for IPollable {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IPollable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

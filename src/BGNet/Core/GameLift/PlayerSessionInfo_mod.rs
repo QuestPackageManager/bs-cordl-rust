@@ -7,8 +7,8 @@ pub struct PlayerSessionInfo {
     pub gameSessionId: *mut crate::System::String,
     pub dnsName: *mut crate::System::String,
     pub port: i32,
-    pub beatmapLevelSelectionMask: BeatmapLevelSelectionMask,
-    pub gameplayServerConfiguration: GameplayServerConfiguration,
+    pub beatmapLevelSelectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+    pub gameplayServerConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
     pub privateGameSecret: *mut crate::System::String,
     pub privateGameCode: *mut crate::System::String,
 }

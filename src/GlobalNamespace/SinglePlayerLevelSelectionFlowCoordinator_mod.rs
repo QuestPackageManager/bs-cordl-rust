@@ -2,39 +2,42 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SinglePlayerLevelSelectionFlowCoordinator {
-    __cordl_parent: LevelSelectionFlowCoordinator,
-    pub _degree360BeatmapCharacteristic: *mut BeatmapCharacteristicSO,
-    pub _practiceViewController: *mut PracticeViewController,
-    pub _gameplaySetupViewController: *mut GameplaySetupViewController,
-    pub _menuTransitionsHelper: *mut MenuTransitionsHelper,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
-    pub _appStaticSettings: *mut AppStaticSettingsSO,
-    pub _safeAreaFocusedSimpleDialogPromptViewController: *mut SafeAreaFocusedSimpleDialogPromptViewController,
-    pub _environmentsListModel: *mut EnvironmentsListModel,
+    __cordl_parent: crate::GlobalNamespace::LevelSelectionFlowCoordinator,
+    pub _degree360BeatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _practiceViewController: *mut crate::GlobalNamespace::PracticeViewController,
+    pub _gameplaySetupViewController: *mut crate::GlobalNamespace::GameplaySetupViewController,
+    pub _menuTransitionsHelper: *mut crate::GlobalNamespace::MenuTransitionsHelper,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
+    pub _appStaticSettings: *mut crate::GlobalNamespace::AppStaticSettingsSO,
+    pub _safeAreaFocusedSimpleDialogPromptViewController: *mut crate::GlobalNamespace::SafeAreaFocusedSimpleDialogPromptViewController,
+    pub _environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
     pub didFinishEvent: *mut crate::System::Action_1<
-        *mut SinglePlayerLevelSelectionFlowCoordinator,
+        *mut crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
     >,
 }
 #[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SinglePlayerLevelSelectionFlowCoordinator => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator => ""
     ."SinglePlayerLevelSelectionFlowCoordinator"
 );
 #[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator")]
-impl std::ops::Deref for SinglePlayerLevelSelectionFlowCoordinator {
-    type Target = LevelSelectionFlowCoordinator;
+impl std::ops::Deref
+for crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
+    type Target = crate::GlobalNamespace::LevelSelectionFlowCoordinator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator")]
-impl std::ops::DerefMut for SinglePlayerLevelSelectionFlowCoordinator {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator")]
-impl SinglePlayerLevelSelectionFlowCoordinator {
+impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
     #[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator+__c__DisplayClass38_0")]
     pub type __c__DisplayClass38_0 = crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator___c__DisplayClass38_0;
     pub fn ActionButtonWasPressed(
@@ -72,7 +75,7 @@ impl SinglePlayerLevelSelectionFlowCoordinator {
     }
     pub fn HandleBasicLevelCompletionResults(
         &mut self,
-        levelCompletionResults: *mut LevelCompletionResults,
+        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
         practice: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -97,8 +100,8 @@ impl SinglePlayerLevelSelectionFlowCoordinator {
     }
     pub fn HandleStandardLevelDidFinish(
         &mut self,
-        standardLevelScenesTransitionSetupData: *mut StandardLevelScenesTransitionSetupDataSO,
-        levelCompletionResults: *mut LevelCompletionResults,
+        standardLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -174,11 +177,11 @@ impl SinglePlayerLevelSelectionFlowCoordinator {
     }
     pub fn ProcessLevelCompletionResultsAfterLevelDidFinish(
         &mut self,
-        levelCompletionResults: *mut LevelCompletionResults,
-        transformedBeatmapData: *mut IReadonlyBeatmapData,
-        beatmapKey: BeatmapKey,
-        beatmapLevel: *mut BeatmapLevel,
-        gameplayModifiers: *mut GameplayModifiers,
+        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
+        transformedBeatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
+        beatmapKey: crate::GlobalNamespace::BeatmapKey,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
         practice: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -200,8 +203,8 @@ impl SinglePlayerLevelSelectionFlowCoordinator {
     }
     pub fn SelectionDidChange(
         &mut self,
-        pack: *mut BeatmapLevelPack,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        pack: *mut crate::GlobalNamespace::BeatmapLevelPack,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -296,7 +299,7 @@ impl SinglePlayerLevelSelectionFlowCoordinator {
     pub fn add_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_1<
-            *mut SinglePlayerLevelSelectionFlowCoordinator,
+            *mut crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -325,11 +328,11 @@ impl SinglePlayerLevelSelectionFlowCoordinator {
     }
     pub fn get_gameplayModifiers(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut GameplayModifiers> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::GameplayModifiers> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut GameplayModifiers = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::GameplayModifiers = __cordl_object
             .invoke("get_gameplayModifiers", ())?;
         Ok(__cordl_ret)
     }
@@ -369,28 +372,32 @@ impl SinglePlayerLevelSelectionFlowCoordinator {
     }
     pub fn get_leaderboardViewController(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut LeaderboardViewController> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::LeaderboardViewController,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut LeaderboardViewController = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::LeaderboardViewController = __cordl_object
             .invoke("get_leaderboardViewController", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_playerSettings(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerSpecificSettings> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PlayerSpecificSettings,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PlayerSpecificSettings = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PlayerSpecificSettings = __cordl_object
             .invoke("get_playerSettings", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_1<
-            *mut SinglePlayerLevelSelectionFlowCoordinator,
+            *mut crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -402,7 +409,8 @@ impl SinglePlayerLevelSelectionFlowCoordinator {
     }
 }
 #[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator")]
-impl quest_hook::libil2cpp::ObjectType for SinglePlayerLevelSelectionFlowCoordinator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -4,7 +4,7 @@
 pub struct SaberManager_InitData {
     __cordl_parent: crate::System::Object,
     pub oneSaberMode: bool,
-    pub oneSaberType: SaberType,
+    pub oneSaberType: crate::GlobalNamespace::SaberType,
 }
 #[cfg(feature = "SaberManager+InitData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -28,7 +28,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SaberManager_InitData {
 impl crate::GlobalNamespace::SaberManager_InitData {
     pub fn New(
         oneSaberMode: bool,
-        oneSaberType: SaberType,
+        oneSaberType: crate::GlobalNamespace::SaberType,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -39,7 +39,7 @@ impl crate::GlobalNamespace::SaberManager_InitData {
     pub fn _ctor(
         &mut self,
         oneSaberMode: bool,
-        oneSaberType: SaberType,
+        oneSaberType: crate::GlobalNamespace::SaberType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -64,34 +64,35 @@ for crate::GlobalNamespace::SaberManager_InitData {
 #[derive(Debug)]
 pub struct SaberManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _leftSaber: *mut Saber,
-    pub _rightSaber: *mut Saber,
+    pub _leftSaber: *mut crate::GlobalNamespace::Saber,
+    pub _rightSaber: *mut crate::GlobalNamespace::Saber,
     pub _initData: *mut crate::GlobalNamespace::SaberManager_InitData,
     pub _started: bool,
     pub didUpdateSaberPositionsEvent: *mut crate::System::Action_2<
-        *mut Saber,
-        *mut Saber,
+        *mut crate::GlobalNamespace::Saber,
+        *mut crate::GlobalNamespace::Saber,
     >,
 }
 #[cfg(feature = "SaberManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SaberManager => ""."SaberManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SaberManager => ""
+    ."SaberManager"
 );
 #[cfg(feature = "SaberManager")]
-impl std::ops::Deref for SaberManager {
+impl std::ops::Deref for crate::GlobalNamespace::SaberManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberManager")]
-impl std::ops::DerefMut for SaberManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::SaberManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberManager")]
-impl SaberManager {
+impl crate::GlobalNamespace::SaberManager {
     #[cfg(feature = "SaberManager+InitData")]
     pub type InitData = crate::GlobalNamespace::SaberManager_InitData;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -133,12 +134,12 @@ impl SaberManager {
     }
     pub fn SaberForType(
         &mut self,
-        saberType: SaberType,
-    ) -> quest_hook::libil2cpp::Result<*mut Saber> {
+        saberType: crate::GlobalNamespace::SaberType,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::Saber> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut Saber = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::Saber = __cordl_object
             .invoke("SaberForType", (saberType))?;
         Ok(__cordl_ret)
     }
@@ -174,7 +175,10 @@ impl SaberManager {
     }
     pub fn add_didUpdateSaberPositionsEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut Saber, *mut Saber>,
+        value: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::Saber,
+            *mut crate::GlobalNamespace::Saber,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -183,23 +187,32 @@ impl SaberManager {
             .invoke("add_didUpdateSaberPositionsEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_leftSaber(&mut self) -> quest_hook::libil2cpp::Result<*mut Saber> {
+    pub fn get_leftSaber(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::Saber> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut Saber = __cordl_object.invoke("get_leftSaber", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::Saber = __cordl_object
+            .invoke("get_leftSaber", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_rightSaber(&mut self) -> quest_hook::libil2cpp::Result<*mut Saber> {
+    pub fn get_rightSaber(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::Saber> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut Saber = __cordl_object.invoke("get_rightSaber", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::Saber = __cordl_object
+            .invoke("get_rightSaber", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_didUpdateSaberPositionsEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut Saber, *mut Saber>,
+        value: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::Saber,
+            *mut crate::GlobalNamespace::Saber,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -221,7 +234,7 @@ impl SaberManager {
     }
 }
 #[cfg(feature = "SaberManager")]
-impl quest_hook::libil2cpp::ObjectType for SaberManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

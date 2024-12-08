@@ -63,28 +63,28 @@ pub struct Noise3DTexturesGenerator {
 }
 #[cfg(feature = "Noise3DTexturesGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for Noise3DTexturesGenerator => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::Noise3DTexturesGenerator => ""
     ."Noise3DTexturesGenerator"
 );
 #[cfg(feature = "Noise3DTexturesGenerator")]
-impl std::ops::Deref for Noise3DTexturesGenerator {
+impl std::ops::Deref for crate::GlobalNamespace::Noise3DTexturesGenerator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Noise3DTexturesGenerator")]
-impl std::ops::DerefMut for Noise3DTexturesGenerator {
+impl std::ops::DerefMut for crate::GlobalNamespace::Noise3DTexturesGenerator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "Noise3DTexturesGenerator")]
-impl Noise3DTexturesGenerator {
-    #[cfg(feature = "Noise3DTexturesGenerator+MaterialTextureParamsCouple")]
-    pub type MaterialTextureParamsCouple = crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple;
+impl crate::GlobalNamespace::Noise3DTexturesGenerator {
     #[cfg(feature = "Noise3DTexturesGenerator+MaterialPropertyNameCouple")]
     pub type MaterialPropertyNameCouple = crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple;
+    #[cfg(feature = "Noise3DTexturesGenerator+MaterialTextureParamsCouple")]
+    pub type MaterialTextureParamsCouple = crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -114,7 +114,8 @@ impl Noise3DTexturesGenerator {
     }
 }
 #[cfg(feature = "Noise3DTexturesGenerator")]
-impl quest_hook::libil2cpp::ObjectType for Noise3DTexturesGenerator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::Noise3DTexturesGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -7,24 +7,26 @@ pub struct GameLiftClientConnectionRequestHandler {
 }
 #[cfg(feature = "GameLiftClientConnectionRequestHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameLiftClientConnectionRequestHandler => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::GameLiftClientConnectionRequestHandler => ""
     ."GameLiftClientConnectionRequestHandler"
 );
 #[cfg(feature = "GameLiftClientConnectionRequestHandler")]
-impl std::ops::Deref for GameLiftClientConnectionRequestHandler {
+impl std::ops::Deref for crate::GlobalNamespace::GameLiftClientConnectionRequestHandler {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameLiftClientConnectionRequestHandler")]
-impl std::ops::DerefMut for GameLiftClientConnectionRequestHandler {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::GameLiftClientConnectionRequestHandler {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameLiftClientConnectionRequestHandler")]
-impl GameLiftClientConnectionRequestHandler {
+impl crate::GlobalNamespace::GameLiftClientConnectionRequestHandler {
     pub fn GetConnectionMessage(
         &mut self,
         writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
@@ -99,7 +101,8 @@ impl GameLiftClientConnectionRequestHandler {
     }
 }
 #[cfg(feature = "GameLiftClientConnectionRequestHandler")]
-impl quest_hook::libil2cpp::ObjectType for GameLiftClientConnectionRequestHandler {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GameLiftClientConnectionRequestHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

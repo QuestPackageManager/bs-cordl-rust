@@ -5,31 +5,31 @@ pub struct BeatmapKeyNetSerializable {
     __cordl_parent: crate::System::Object,
     pub _levelID_k__BackingField: *mut crate::System::String,
     pub _beatmapCharacteristicSerializedName_k__BackingField: *mut crate::System::String,
-    pub _difficulty_k__BackingField: BeatmapDifficulty,
+    pub _difficulty_k__BackingField: crate::GlobalNamespace::BeatmapDifficulty,
 }
 #[cfg(feature = "BeatmapKeyNetSerializable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapKeyNetSerializable => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapKeyNetSerializable => ""
     ."BeatmapKeyNetSerializable"
 );
 #[cfg(feature = "BeatmapKeyNetSerializable")]
-impl std::ops::Deref for BeatmapKeyNetSerializable {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapKeyNetSerializable {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapKeyNetSerializable")]
-impl std::ops::DerefMut for BeatmapKeyNetSerializable {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapKeyNetSerializable {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapKeyNetSerializable")]
-impl BeatmapKeyNetSerializable {
+impl crate::GlobalNamespace::BeatmapKeyNetSerializable {
     pub fn Equals_BeatmapKeyNetSerializable0(
         &mut self,
-        other: *mut BeatmapKeyNetSerializable,
+        other: *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -86,7 +86,7 @@ impl BeatmapKeyNetSerializable {
     pub fn New_String_String_BeatmapDifficulty1(
         levelID: *mut crate::System::String,
         beatmapCharacteristicSerializedName: *mut crate::System::String,
-        difficulty: BeatmapDifficulty,
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -121,7 +121,7 @@ impl BeatmapKeyNetSerializable {
         &mut self,
         levelID: *mut crate::System::String,
         beatmapCharacteristicSerializedName: *mut crate::System::String,
-        difficulty: BeatmapDifficulty,
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -145,11 +145,11 @@ impl BeatmapKeyNetSerializable {
     }
     pub fn get_difficulty(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BeatmapDifficulty> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapDifficulty> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapDifficulty = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::BeatmapDifficulty = __cordl_object
             .invoke("get_difficulty", ())?;
         Ok(__cordl_ret)
     }
@@ -176,7 +176,7 @@ impl BeatmapKeyNetSerializable {
     }
     pub fn set_difficulty(
         &mut self,
-        value: BeatmapDifficulty,
+        value: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -198,7 +198,8 @@ impl BeatmapKeyNetSerializable {
     }
 }
 #[cfg(feature = "BeatmapKeyNetSerializable")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapKeyNetSerializable {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapKeyNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

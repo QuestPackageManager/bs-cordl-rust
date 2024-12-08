@@ -2,16 +2,16 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct BeatmapKey {
-    pub beatmapCharacteristic: *mut BeatmapCharacteristicSO,
-    pub difficulty: BeatmapDifficulty,
+    pub beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub difficulty: crate::GlobalNamespace::BeatmapDifficulty,
     pub levelId: *mut crate::System::String,
 }
 #[cfg(feature = "BeatmapKey")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for BeatmapKey => ""."BeatmapKey"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapKey => ""."BeatmapKey"
 );
 #[cfg(feature = "BeatmapKey")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for BeatmapKey {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::BeatmapKey {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -21,10 +21,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for BeatmapKey {
     }
 }
 #[cfg(feature = "BeatmapKey")]
-impl BeatmapKey {
+impl crate::GlobalNamespace::BeatmapKey {
     pub fn Equals_BeatmapKey0(
         &mut self,
-        other: BeatmapKey,
+        other: crate::GlobalNamespace::BeatmapKey,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -54,8 +54,10 @@ impl BeatmapKey {
     }
     pub fn GetIdentifier(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapKeyNetSerializable> {
-        let __cordl_ret: *mut BeatmapKeyNetSerializable = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+    > {
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapKeyNetSerializable = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetIdentifier",
             (),
@@ -83,8 +85,8 @@ impl BeatmapKey {
     pub fn _ctor(
         &mut self,
         levelId: *mut crate::System::String,
-        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
-        difficulty: BeatmapDifficulty,
+        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

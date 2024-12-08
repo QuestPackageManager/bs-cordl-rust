@@ -8,23 +8,24 @@ pub struct ZenjectSafeBehaviour {
 }
 #[cfg(feature = "ZenjectSafeBehaviour")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ZenjectSafeBehaviour => ""."ZenjectSafeBehaviour"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ZenjectSafeBehaviour => ""
+    ."ZenjectSafeBehaviour"
 );
 #[cfg(feature = "ZenjectSafeBehaviour")]
-impl std::ops::Deref for ZenjectSafeBehaviour {
+impl std::ops::Deref for crate::GlobalNamespace::ZenjectSafeBehaviour {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ZenjectSafeBehaviour")]
-impl std::ops::DerefMut for ZenjectSafeBehaviour {
+impl std::ops::DerefMut for crate::GlobalNamespace::ZenjectSafeBehaviour {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ZenjectSafeBehaviour")]
-impl ZenjectSafeBehaviour {
+impl crate::GlobalNamespace::ZenjectSafeBehaviour {
     pub fn Inject(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -84,7 +85,7 @@ impl ZenjectSafeBehaviour {
     }
 }
 #[cfg(feature = "ZenjectSafeBehaviour")]
-impl quest_hook::libil2cpp::ObjectType for ZenjectSafeBehaviour {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ZenjectSafeBehaviour {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,32 +3,33 @@
 #[derive(Debug)]
 pub struct EnvironmentColorManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _defaultColorScheme: *mut ColorSchemeSO,
-    pub _environmentColor0: *mut SimpleColorSO,
-    pub _environmentColor1: *mut SimpleColorSO,
-    pub _environmentColor0Boost: *mut SimpleColorSO,
-    pub _environmentColor1Boost: *mut SimpleColorSO,
-    pub _colorScheme: *mut ColorScheme,
+    pub _defaultColorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
+    pub _environmentColor0: *mut crate::GlobalNamespace::SimpleColorSO,
+    pub _environmentColor1: *mut crate::GlobalNamespace::SimpleColorSO,
+    pub _environmentColor0Boost: *mut crate::GlobalNamespace::SimpleColorSO,
+    pub _environmentColor1Boost: *mut crate::GlobalNamespace::SimpleColorSO,
+    pub _colorScheme: *mut crate::GlobalNamespace::ColorScheme,
 }
 #[cfg(feature = "EnvironmentColorManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnvironmentColorManager => ""."EnvironmentColorManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnvironmentColorManager => ""
+    ."EnvironmentColorManager"
 );
 #[cfg(feature = "EnvironmentColorManager")]
-impl std::ops::Deref for EnvironmentColorManager {
+impl std::ops::Deref for crate::GlobalNamespace::EnvironmentColorManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentColorManager")]
-impl std::ops::DerefMut for EnvironmentColorManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentColorManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentColorManager")]
-impl EnvironmentColorManager {
+impl crate::GlobalNamespace::EnvironmentColorManager {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -58,7 +59,7 @@ impl EnvironmentColorManager {
     }
     pub fn SetColorScheme(
         &mut self,
-        colorScheme: *mut ColorScheme,
+        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -119,7 +120,8 @@ impl EnvironmentColorManager {
     }
 }
 #[cfg(feature = "EnvironmentColorManager")]
-impl quest_hook::libil2cpp::ObjectType for EnvironmentColorManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EnvironmentColorManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

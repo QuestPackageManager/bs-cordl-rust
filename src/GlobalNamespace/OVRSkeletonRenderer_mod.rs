@@ -106,7 +106,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization {
 pub struct OVRSkeletonRenderer_CapsuleVisualization {
     __cordl_parent: crate::System::Object,
     pub CapsuleGO: *mut crate::UnityEngine::GameObject,
-    pub BoneCapsule: *mut OVRBoneCapsule,
+    pub BoneCapsule: *mut crate::GlobalNamespace::OVRBoneCapsule,
     pub capsuleScale: crate::UnityEngine::Vector3,
     pub Renderer: *mut crate::UnityEngine::MeshRenderer,
     pub RenderMaterial: *mut crate::UnityEngine::Material,
@@ -140,7 +140,7 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
         renderMat: *mut crate::UnityEngine::Material,
         systemGestureMat: *mut crate::UnityEngine::Material,
         scale: f32,
-        boneCapsule: *mut OVRBoneCapsule,
+        boneCapsule: *mut crate::GlobalNamespace::OVRBoneCapsule,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -181,7 +181,7 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
         renderMat: *mut crate::UnityEngine::Material,
         systemGestureMat: *mut crate::UnityEngine::Material,
         scale: f32,
-        boneCapsule: *mut OVRBoneCapsule,
+        boneCapsule: *mut crate::GlobalNamespace::OVRBoneCapsule,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -292,7 +292,7 @@ pub struct OVRSkeletonRenderer {
     pub _capsuleVisualizations: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization,
     >,
-    pub _ovrSkeleton: *mut OVRSkeleton,
+    pub _ovrSkeleton: *mut crate::GlobalNamespace::OVRSkeleton,
     pub _skeletonGO: *mut crate::UnityEngine::GameObject,
     pub _scale: f32,
     pub _IsInitialized_k__BackingField: bool,
@@ -302,24 +302,29 @@ pub struct OVRSkeletonRenderer {
 }
 #[cfg(feature = "OVRSkeletonRenderer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRSkeletonRenderer => ""."OVRSkeletonRenderer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRSkeletonRenderer => ""
+    ."OVRSkeletonRenderer"
 );
 #[cfg(feature = "OVRSkeletonRenderer")]
-impl std::ops::Deref for OVRSkeletonRenderer {
+impl std::ops::Deref for crate::GlobalNamespace::OVRSkeletonRenderer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSkeletonRenderer")]
-impl std::ops::DerefMut for OVRSkeletonRenderer {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRSkeletonRenderer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSkeletonRenderer")]
-impl OVRSkeletonRenderer {
+impl crate::GlobalNamespace::OVRSkeletonRenderer {
     pub const LINE_RENDERER_WIDTH: f32 = 0.005f32;
+    #[cfg(feature = "OVRSkeletonRenderer+BoneVisualization")]
+    pub type BoneVisualization = crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization;
+    #[cfg(feature = "OVRSkeletonRenderer+CapsuleVisualization")]
+    pub type CapsuleVisualization = crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization;
     #[cfg(feature = "OVRSkeletonRenderer+ConfidenceBehavior")]
     pub type ConfidenceBehavior = crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior;
     #[cfg(feature = "OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
@@ -328,10 +333,6 @@ impl OVRSkeletonRenderer {
     pub type SkeletonRendererData = crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData;
     #[cfg(feature = "OVRSkeletonRenderer+SystemGestureBehavior")]
     pub type SystemGestureBehavior = crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior;
-    #[cfg(feature = "OVRSkeletonRenderer+BoneVisualization")]
-    pub type BoneVisualization = crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization;
-    #[cfg(feature = "OVRSkeletonRenderer+CapsuleVisualization")]
-    pub type CapsuleVisualization = crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -483,7 +484,7 @@ impl OVRSkeletonRenderer {
     }
 }
 #[cfg(feature = "OVRSkeletonRenderer")]
-impl quest_hook::libil2cpp::ObjectType for OVRSkeletonRenderer {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSkeletonRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,29 +3,30 @@
 #[derive(Debug)]
 pub struct MissionObjective {
     __cordl_parent: crate::System::Object,
-    pub _type: *mut MissionObjectiveTypeSO,
+    pub _type: *mut crate::GlobalNamespace::MissionObjectiveTypeSO,
     pub _referenceValueComparisonType: crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType,
     pub _referenceValue: i32,
 }
 #[cfg(feature = "MissionObjective")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionObjective => ""."MissionObjective"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissionObjective => ""
+    ."MissionObjective"
 );
 #[cfg(feature = "MissionObjective")]
-impl std::ops::Deref for MissionObjective {
+impl std::ops::Deref for crate::GlobalNamespace::MissionObjective {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionObjective")]
-impl std::ops::DerefMut for MissionObjective {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionObjective {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionObjective")]
-impl MissionObjective {
+impl crate::GlobalNamespace::MissionObjective {
     #[cfg(feature = "MissionObjective+ReferenceValueComparisonType")]
     pub type ReferenceValueComparisonType = crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType;
     pub fn Equals(
@@ -83,17 +84,19 @@ impl MissionObjective {
     }
     pub fn get_type(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut MissionObjectiveTypeSO> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::MissionObjectiveTypeSO,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MissionObjectiveTypeSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MissionObjectiveTypeSO = __cordl_object
             .invoke("get_type", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MissionObjective")]
-impl quest_hook::libil2cpp::ObjectType for MissionObjective {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissionObjective {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

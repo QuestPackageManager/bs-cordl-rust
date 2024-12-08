@@ -2,37 +2,41 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObstacleData {
-    __cordl_parent: BeatmapObjectData,
+    __cordl_parent: crate::GlobalNamespace::BeatmapObjectData,
     pub _lineIndex_k__BackingField: i32,
-    pub _lineLayer_k__BackingField: NoteLineLayer,
+    pub _lineLayer_k__BackingField: crate::GlobalNamespace::NoteLineLayer,
     pub _duration_k__BackingField: f32,
     pub _width_k__BackingField: i32,
     pub _height_k__BackingField: i32,
 }
 #[cfg(feature = "ObstacleData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ObstacleData => ""."ObstacleData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ObstacleData => ""
+    ."ObstacleData"
 );
 #[cfg(feature = "ObstacleData")]
-impl std::ops::Deref for ObstacleData {
-    type Target = BeatmapObjectData;
+impl std::ops::Deref for crate::GlobalNamespace::ObstacleData {
+    type Target = crate::GlobalNamespace::BeatmapObjectData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ObstacleData")]
-impl std::ops::DerefMut for ObstacleData {
+impl std::ops::DerefMut for crate::GlobalNamespace::ObstacleData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ObstacleData")]
-impl ObstacleData {
-    pub fn GetCopy(&mut self) -> quest_hook::libil2cpp::Result<*mut BeatmapDataItem> {
+impl crate::GlobalNamespace::ObstacleData {
+    pub fn GetCopy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapDataItem> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapDataItem = __cordl_object.invoke("GetCopy", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapDataItem = __cordl_object
+            .invoke("GetCopy", ())?;
         Ok(__cordl_ret)
     }
     pub fn Mirror(
@@ -49,7 +53,7 @@ impl ObstacleData {
     pub fn New(
         _cordl_time: f32,
         lineIndex: i32,
-        lineLayer: NoteLineLayer,
+        lineLayer: crate::GlobalNamespace::NoteLineLayer,
         duration: f32,
         width: i32,
         height: i32,
@@ -78,7 +82,7 @@ impl ObstacleData {
         &mut self,
         _cordl_time: f32,
         lineIndex: i32,
-        lineLayer: NoteLineLayer,
+        lineLayer: crate::GlobalNamespace::NoteLineLayer,
         duration: f32,
         width: i32,
         height: i32,
@@ -114,11 +118,14 @@ impl ObstacleData {
         let __cordl_ret: i32 = __cordl_object.invoke("get_lineIndex", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_lineLayer(&mut self) -> quest_hook::libil2cpp::Result<NoteLineLayer> {
+    pub fn get_lineLayer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteLineLayer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: NoteLineLayer = __cordl_object.invoke("get_lineLayer", ())?;
+        let __cordl_ret: crate::GlobalNamespace::NoteLineLayer = __cordl_object
+            .invoke("get_lineLayer", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -163,7 +170,7 @@ impl ObstacleData {
     }
     pub fn set_lineLayer(
         &mut self,
-        value: NoteLineLayer,
+        value: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -185,7 +192,7 @@ impl ObstacleData {
     }
 }
 #[cfg(feature = "ObstacleData")]
-impl quest_hook::libil2cpp::ObjectType for ObstacleData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ObstacleData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

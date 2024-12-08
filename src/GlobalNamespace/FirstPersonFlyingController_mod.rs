@@ -7,13 +7,13 @@ pub struct FirstPersonFlyingController {
     pub _transform: *mut crate::UnityEngine::Transform,
     pub _camera: *mut crate::UnityEngine::Camera,
     pub _cameraFov: f32,
-    pub _centerAdjust: *mut VRCenterAdjust,
-    pub _controller0: *mut VRController,
-    pub _controller1: *mut VRController,
+    pub _centerAdjust: *mut crate::GlobalNamespace::VRCenterAdjust,
+    pub _controller0: *mut crate::GlobalNamespace::VRController,
+    pub _controller1: *mut crate::GlobalNamespace::VRController,
     pub _controllerModels: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::GameObject,
     >,
-    pub _mouseLook: *mut MouseLook,
+    pub _mouseLook: *mut crate::GlobalNamespace::MouseLook,
     pub _trackedPoseDriver: *mut crate::UnityEngine::SpatialTracking::TrackedPoseDriver,
     pub _cameraTransform: *mut crate::UnityEngine::Transform,
     pub _originalStereoTargetEyeMask: crate::UnityEngine::StereoTargetEyeMask,
@@ -21,30 +21,30 @@ pub struct FirstPersonFlyingController {
 }
 #[cfg(feature = "FirstPersonFlyingController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FirstPersonFlyingController => ""
-    ."FirstPersonFlyingController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FirstPersonFlyingController =>
+    ""."FirstPersonFlyingController"
 );
 #[cfg(feature = "FirstPersonFlyingController")]
-impl std::ops::Deref for FirstPersonFlyingController {
+impl std::ops::Deref for crate::GlobalNamespace::FirstPersonFlyingController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FirstPersonFlyingController")]
-impl std::ops::DerefMut for FirstPersonFlyingController {
+impl std::ops::DerefMut for crate::GlobalNamespace::FirstPersonFlyingController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FirstPersonFlyingController")]
-impl FirstPersonFlyingController {
+impl crate::GlobalNamespace::FirstPersonFlyingController {
     pub fn Inject(
         &mut self,
         camera: *mut crate::UnityEngine::Camera,
-        centerAdjust: *mut VRCenterAdjust,
-        controller0: *mut VRController,
-        controller1: *mut VRController,
+        centerAdjust: *mut crate::GlobalNamespace::VRCenterAdjust,
+        controller0: *mut crate::GlobalNamespace::VRController,
+        controller1: *mut crate::GlobalNamespace::VRController,
         trackedPoseDriver: *mut crate::UnityEngine::SpatialTracking::TrackedPoseDriver,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -106,7 +106,8 @@ impl FirstPersonFlyingController {
     }
 }
 #[cfg(feature = "FirstPersonFlyingController")]
-impl quest_hook::libil2cpp::ObjectType for FirstPersonFlyingController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FirstPersonFlyingController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

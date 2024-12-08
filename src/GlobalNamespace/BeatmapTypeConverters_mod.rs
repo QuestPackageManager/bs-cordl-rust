@@ -6,25 +6,27 @@ pub struct BeatmapTypeConverters {
 }
 #[cfg(feature = "BeatmapTypeConverters")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapTypeConverters => ""."BeatmapTypeConverters"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapTypeConverters => ""
+    ."BeatmapTypeConverters"
 );
 #[cfg(feature = "BeatmapTypeConverters")]
-impl std::ops::Deref for BeatmapTypeConverters {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapTypeConverters {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapTypeConverters")]
-impl std::ops::DerefMut for BeatmapTypeConverters {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapTypeConverters {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapTypeConverters")]
-impl BeatmapTypeConverters {}
+impl crate::GlobalNamespace::BeatmapTypeConverters {}
 #[cfg(feature = "BeatmapTypeConverters")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapTypeConverters {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapTypeConverters {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

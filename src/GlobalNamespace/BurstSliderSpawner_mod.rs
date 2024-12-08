@@ -6,28 +6,29 @@ pub struct BurstSliderSpawner {
 }
 #[cfg(feature = "BurstSliderSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BurstSliderSpawner => ""."BurstSliderSpawner"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BurstSliderSpawner => ""
+    ."BurstSliderSpawner"
 );
 #[cfg(feature = "BurstSliderSpawner")]
-impl std::ops::Deref for BurstSliderSpawner {
+impl std::ops::Deref for crate::GlobalNamespace::BurstSliderSpawner {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BurstSliderSpawner")]
-impl std::ops::DerefMut for BurstSliderSpawner {
+impl std::ops::DerefMut for crate::GlobalNamespace::BurstSliderSpawner {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BurstSliderSpawner")]
-impl BurstSliderSpawner {
+impl crate::GlobalNamespace::BurstSliderSpawner {
     #[cfg(feature = "BurstSliderSpawner+ProcessNoteDataDelegate")]
     pub type ProcessNoteDataDelegate = crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate;
 }
 #[cfg(feature = "BurstSliderSpawner")]
-impl quest_hook::libil2cpp::ObjectType for BurstSliderSpawner {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BurstSliderSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -66,7 +67,7 @@ for crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate {
 impl crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate {
     pub fn BeginInvoke(
         &mut self,
-        noteData: *mut NoteData,
+        noteData: *mut crate::GlobalNamespace::NoteData,
         noteSpawnData: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
         >,
@@ -101,7 +102,7 @@ impl crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate {
     }
     pub fn Invoke(
         &mut self,
-        noteData: *mut NoteData,
+        noteData: *mut crate::GlobalNamespace::NoteData,
         noteSpawnData: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
         >,

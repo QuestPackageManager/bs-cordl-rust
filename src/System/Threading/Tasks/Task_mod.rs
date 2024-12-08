@@ -210,18 +210,18 @@ impl crate::System::Threading::Tasks::Task {
     pub const TASK_STATE_WAIT_COMPLETION_NOTIFICATION: i32 = 268435456i32;
     #[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
     pub type ContingentProperties = crate::System::Threading::Tasks::Task_ContingentProperties;
-    #[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise")]
-    pub type WhenAllPromise = crate::GlobalNamespace::Task_WhenAllPromise;
+    #[cfg(feature = "System+Threading+Tasks+Task+DelayPromise")]
+    pub type DelayPromise = crate::GlobalNamespace::Task_DelayPromise;
     #[cfg(feature = "System+Threading+Tasks+Task+SetOnInvokeMres")]
     pub type SetOnInvokeMres = crate::System::Threading::Tasks::Task_SetOnInvokeMres;
+    #[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise")]
+    pub type WhenAllPromise = crate::GlobalNamespace::Task_WhenAllPromise;
     #[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise_1")]
     pub type WhenAllPromise_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::Task_WhenAllPromise_1<
         T,
     >;
     #[cfg(feature = "System+Threading+Tasks+Task+__c")]
     pub type __c = crate::System::Threading::Tasks::Task___c;
-    #[cfg(feature = "System+Threading+Tasks+Task+DelayPromise")]
-    pub type DelayPromise = crate::GlobalNamespace::Task_DelayPromise;
     pub fn AddCompletionAction_ITaskCompletionAction0(
         &mut self,
         action: *mut crate::System::Threading::Tasks::ITaskCompletionAction,

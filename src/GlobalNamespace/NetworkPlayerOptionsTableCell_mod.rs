@@ -10,28 +10,28 @@ pub struct NetworkPlayerOptionsTableCell {
         *mut crate::TMPro::TextMeshProUGUI,
     >,
     pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
-    pub _player: *mut INetworkPlayer,
+    pub _player: *mut crate::GlobalNamespace::INetworkPlayer,
 }
 #[cfg(feature = "NetworkPlayerOptionsTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NetworkPlayerOptionsTableCell => ""
-    ."NetworkPlayerOptionsTableCell"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NetworkPlayerOptionsTableCell
+    => ""."NetworkPlayerOptionsTableCell"
 );
 #[cfg(feature = "NetworkPlayerOptionsTableCell")]
-impl std::ops::Deref for NetworkPlayerOptionsTableCell {
+impl std::ops::Deref for crate::GlobalNamespace::NetworkPlayerOptionsTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NetworkPlayerOptionsTableCell")]
-impl std::ops::DerefMut for NetworkPlayerOptionsTableCell {
+impl std::ops::DerefMut for crate::GlobalNamespace::NetworkPlayerOptionsTableCell {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NetworkPlayerOptionsTableCell")]
-impl NetworkPlayerOptionsTableCell {
+impl crate::GlobalNamespace::NetworkPlayerOptionsTableCell {
     pub fn Block(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -119,16 +119,19 @@ impl NetworkPlayerOptionsTableCell {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_player(&mut self) -> quest_hook::libil2cpp::Result<*mut INetworkPlayer> {
+    pub fn get_player(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::INetworkPlayer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut INetworkPlayer = __cordl_object.invoke("get_player", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::INetworkPlayer = __cordl_object
+            .invoke("get_player", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_player(
         &mut self,
-        value: *mut INetworkPlayer,
+        value: *mut crate::GlobalNamespace::INetworkPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -139,7 +142,8 @@ impl NetworkPlayerOptionsTableCell {
     }
 }
 #[cfg(feature = "NetworkPlayerOptionsTableCell")]
-impl quest_hook::libil2cpp::ObjectType for NetworkPlayerOptionsTableCell {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NetworkPlayerOptionsTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

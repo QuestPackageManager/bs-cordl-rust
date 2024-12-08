@@ -69,27 +69,28 @@ pub struct LocalizedAudioClipSO {
 }
 #[cfg(feature = "LocalizedAudioClipSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LocalizedAudioClipSO => ""."LocalizedAudioClipSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LocalizedAudioClipSO => ""
+    ."LocalizedAudioClipSO"
 );
 #[cfg(feature = "LocalizedAudioClipSO")]
-impl std::ops::Deref for LocalizedAudioClipSO {
+impl std::ops::Deref for crate::GlobalNamespace::LocalizedAudioClipSO {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LocalizedAudioClipSO")]
-impl std::ops::DerefMut for LocalizedAudioClipSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::LocalizedAudioClipSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LocalizedAudioClipSO")]
-impl LocalizedAudioClipSO {
-    #[cfg(feature = "LocalizedAudioClipSO+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::GlobalNamespace::LocalizedAudioClipSO___c__DisplayClass4_0;
+impl crate::GlobalNamespace::LocalizedAudioClipSO {
     #[cfg(feature = "LocalizedAudioClipSO+LocalizedAudioClipInfo")]
     pub type LocalizedAudioClipInfo = crate::GlobalNamespace::LocalizedAudioClipSO_LocalizedAudioClipInfo;
+    #[cfg(feature = "LocalizedAudioClipSO+__c__DisplayClass4_0")]
+    pub type __c__DisplayClass4_0 = crate::GlobalNamespace::LocalizedAudioClipSO___c__DisplayClass4_0;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -119,7 +120,7 @@ impl LocalizedAudioClipSO {
     }
 }
 #[cfg(feature = "LocalizedAudioClipSO")]
-impl quest_hook::libil2cpp::ObjectType for LocalizedAudioClipSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LocalizedAudioClipSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

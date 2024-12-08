@@ -3,27 +3,28 @@
 #[derive(Debug)]
 pub struct SliderInteractionEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _sliderInteractionManager: *mut SliderInteractionManager,
+    pub _sliderInteractionManager: *mut crate::GlobalNamespace::SliderInteractionManager,
 }
 #[cfg(feature = "SliderInteractionEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SliderInteractionEffect => ""."SliderInteractionEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SliderInteractionEffect => ""
+    ."SliderInteractionEffect"
 );
 #[cfg(feature = "SliderInteractionEffect")]
-impl std::ops::Deref for SliderInteractionEffect {
+impl std::ops::Deref for crate::GlobalNamespace::SliderInteractionEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderInteractionEffect")]
-impl std::ops::DerefMut for SliderInteractionEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::SliderInteractionEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderInteractionEffect")]
-impl SliderInteractionEffect {
+impl crate::GlobalNamespace::SliderInteractionEffect {
     pub fn EndEffect(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -36,7 +37,7 @@ impl SliderInteractionEffect {
     }
     pub fn HandleAllSliderWereRemovedFromActiveSliders(
         &mut self,
-        sliderInteractionManager: *mut SliderInteractionManager,
+        sliderInteractionManager: *mut crate::GlobalNamespace::SliderInteractionManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -50,7 +51,7 @@ impl SliderInteractionEffect {
     }
     pub fn HandleSliderWasAddedToActiveSliders(
         &mut self,
-        sliderInteractionManager: *mut SliderInteractionManager,
+        sliderInteractionManager: *mut crate::GlobalNamespace::SliderInteractionManager,
         saberInteractionParam: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -111,11 +112,14 @@ impl SliderInteractionEffect {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_colorType(&mut self) -> quest_hook::libil2cpp::Result<ColorType> {
+    pub fn get_colorType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ColorType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: ColorType = __cordl_object.invoke("get_colorType", ())?;
+        let __cordl_ret: crate::GlobalNamespace::ColorType = __cordl_object
+            .invoke("get_colorType", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_saberInteractionParam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -127,7 +131,8 @@ impl SliderInteractionEffect {
     }
 }
 #[cfg(feature = "SliderInteractionEffect")]
-impl quest_hook::libil2cpp::ObjectType for SliderInteractionEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SliderInteractionEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

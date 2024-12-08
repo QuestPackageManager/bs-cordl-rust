@@ -3,28 +3,29 @@
 #[derive(Debug)]
 pub struct SmoothCameraController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _smoothCamera: *mut SmoothCamera,
+    pub _smoothCamera: *mut crate::GlobalNamespace::SmoothCamera,
     pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
 }
 #[cfg(feature = "SmoothCameraController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SmoothCameraController => ""."SmoothCameraController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SmoothCameraController => ""
+    ."SmoothCameraController"
 );
 #[cfg(feature = "SmoothCameraController")]
-impl std::ops::Deref for SmoothCameraController {
+impl std::ops::Deref for crate::GlobalNamespace::SmoothCameraController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SmoothCameraController")]
-impl std::ops::DerefMut for SmoothCameraController {
+impl std::ops::DerefMut for crate::GlobalNamespace::SmoothCameraController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SmoothCameraController")]
-impl SmoothCameraController {
+impl crate::GlobalNamespace::SmoothCameraController {
     pub fn ActivateSmoothCameraIfNeeded(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -94,7 +95,8 @@ impl SmoothCameraController {
     }
 }
 #[cfg(feature = "SmoothCameraController")]
-impl quest_hook::libil2cpp::ObjectType for SmoothCameraController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SmoothCameraController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

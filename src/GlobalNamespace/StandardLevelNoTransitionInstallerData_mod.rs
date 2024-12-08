@@ -4,45 +4,47 @@
 pub struct StandardLevelNoTransitionInstallerData {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _beatmapLevel: *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-        *mut BeatmapLevelSO,
+        *mut crate::GlobalNamespace::BeatmapLevelSO,
     >,
-    pub _beatmapCharacteristic: *mut BeatmapCharacteristicSO,
-    pub _beatmapDifficulty: BeatmapDifficulty,
+    pub _beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
     pub _colorScheme: *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-        *mut ColorSchemeSO,
+        *mut crate::GlobalNamespace::ColorSchemeSO,
     >,
     pub _environmentInfo: *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-        *mut EnvironmentInfoSO,
+        *mut crate::GlobalNamespace::EnvironmentInfoSO,
     >,
-    pub _gameplayModifiers: *mut GameplayModifiers,
-    pub _playerSpecificSettings: *mut PlayerSpecificSettings,
-    pub _practiceSettings: *mut PracticeSettings,
+    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+    pub _playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+    pub _practiceSettings: *mut crate::GlobalNamespace::PracticeSettings,
     pub _backButtonText: *mut crate::System::String,
     pub _useTestNoteCutSoundEffects: bool,
-    pub _selectedBeatmapLevel: *mut BeatmapLevelSO,
-    pub _selectedColorScheme: *mut ColorSchemeSO,
-    pub _selectedEnvironmentInfo: *mut EnvironmentInfoSO,
+    pub _selectedBeatmapLevel: *mut crate::GlobalNamespace::BeatmapLevelSO,
+    pub _selectedColorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
+    pub _selectedEnvironmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
 }
 #[cfg(feature = "StandardLevelNoTransitionInstallerData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StandardLevelNoTransitionInstallerData => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::StandardLevelNoTransitionInstallerData => ""
     ."StandardLevelNoTransitionInstallerData"
 );
 #[cfg(feature = "StandardLevelNoTransitionInstallerData")]
-impl std::ops::Deref for StandardLevelNoTransitionInstallerData {
+impl std::ops::Deref for crate::GlobalNamespace::StandardLevelNoTransitionInstallerData {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelNoTransitionInstallerData")]
-impl std::ops::DerefMut for StandardLevelNoTransitionInstallerData {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::StandardLevelNoTransitionInstallerData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelNoTransitionInstallerData")]
-impl StandardLevelNoTransitionInstallerData {
+impl crate::GlobalNamespace::StandardLevelNoTransitionInstallerData {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -72,81 +74,85 @@ impl StandardLevelNoTransitionInstallerData {
     }
     pub fn get_beatmapCharacteristic(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapCharacteristicSO> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapCharacteristicSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapCharacteristicSO = __cordl_object
             .invoke("get_beatmapCharacteristic", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_beatmapDifficulty(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BeatmapDifficulty> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapDifficulty> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapDifficulty = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::BeatmapDifficulty = __cordl_object
             .invoke("get_beatmapDifficulty", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_beatmapLevel(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevelSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapLevelSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapLevelSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapLevelSO = __cordl_object
             .invoke("get_beatmapLevel", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_colorScheme(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut ColorSchemeSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::ColorSchemeSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ColorSchemeSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::ColorSchemeSO = __cordl_object
             .invoke("get_colorScheme", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_environmentInfo(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut EnvironmentInfoSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::EnvironmentInfoSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut EnvironmentInfoSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::EnvironmentInfoSO = __cordl_object
             .invoke("get_environmentInfo", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_gameplayModifiers(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut GameplayModifiers> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::GameplayModifiers> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut GameplayModifiers = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::GameplayModifiers = __cordl_object
             .invoke("get_gameplayModifiers", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_playerSpecificSettings(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerSpecificSettings> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PlayerSpecificSettings,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PlayerSpecificSettings = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PlayerSpecificSettings = __cordl_object
             .invoke("get_playerSpecificSettings", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_practiceSettings(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PracticeSettings> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::PracticeSettings> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PracticeSettings = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PracticeSettings = __cordl_object
             .invoke("get_practiceSettings", ())?;
         Ok(__cordl_ret)
     }
@@ -173,7 +179,7 @@ impl StandardLevelNoTransitionInstallerData {
     }
     pub fn set_beatmapCharacteristic(
         &mut self,
-        value: *mut BeatmapCharacteristicSO,
+        value: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -184,7 +190,7 @@ impl StandardLevelNoTransitionInstallerData {
     }
     pub fn set_beatmapDifficulty(
         &mut self,
-        value: BeatmapDifficulty,
+        value: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -195,7 +201,7 @@ impl StandardLevelNoTransitionInstallerData {
     }
     pub fn set_gameplayModifiers(
         &mut self,
-        value: *mut GameplayModifiers,
+        value: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -206,7 +212,7 @@ impl StandardLevelNoTransitionInstallerData {
     }
     pub fn set_playerSpecificSettings(
         &mut self,
-        value: *mut PlayerSpecificSettings,
+        value: *mut crate::GlobalNamespace::PlayerSpecificSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -217,7 +223,7 @@ impl StandardLevelNoTransitionInstallerData {
     }
     pub fn set_practiceSettings(
         &mut self,
-        value: *mut PracticeSettings,
+        value: *mut crate::GlobalNamespace::PracticeSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -239,7 +245,8 @@ impl StandardLevelNoTransitionInstallerData {
     }
 }
 #[cfg(feature = "StandardLevelNoTransitionInstallerData")]
-impl quest_hook::libil2cpp::ObjectType for StandardLevelNoTransitionInstallerData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StandardLevelNoTransitionInstallerData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

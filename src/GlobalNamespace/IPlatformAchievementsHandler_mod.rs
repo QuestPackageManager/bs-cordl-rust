@@ -122,42 +122,42 @@ pub struct IPlatformAchievementsHandler {
 }
 #[cfg(feature = "IPlatformAchievementsHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IPlatformAchievementsHandler => ""
-    ."IPlatformAchievementsHandler"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IPlatformAchievementsHandler =>
+    ""."IPlatformAchievementsHandler"
 );
 #[cfg(feature = "IPlatformAchievementsHandler")]
-impl std::ops::Deref for IPlatformAchievementsHandler {
+impl std::ops::Deref for crate::GlobalNamespace::IPlatformAchievementsHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IPlatformAchievementsHandler")]
-impl std::ops::DerefMut for IPlatformAchievementsHandler {
+impl std::ops::DerefMut for crate::GlobalNamespace::IPlatformAchievementsHandler {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IPlatformAchievementsHandler")]
-impl IPlatformAchievementsHandler {
+impl crate::GlobalNamespace::IPlatformAchievementsHandler {
     #[cfg(
         feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsCompletionHandler"
     )]
     pub type GetUnlockedAchievementsCompletionHandler = crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsCompletionHandler;
     #[cfg(feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsResult")]
     pub type GetUnlockedAchievementsResult = crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsResult;
-    #[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementResult")]
-    pub type UnlockAchievementResult = crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult;
     #[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementCompletionHandler")]
     pub type UnlockAchievementCompletionHandler = crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompletionHandler;
+    #[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementResult")]
+    pub type UnlockAchievementResult = crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult;
     pub fn GetUnlockedAchievements(
         &mut self,
         completionHandler: *mut crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsCompletionHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut HMAsyncRequest> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::HMAsyncRequest> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut HMAsyncRequest = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::HMAsyncRequest = __cordl_object
             .invoke("GetUnlockedAchievements", (completionHandler))?;
         Ok(__cordl_ret)
     }
@@ -175,11 +175,11 @@ impl IPlatformAchievementsHandler {
         &mut self,
         achievementId: *mut crate::System::String,
         completionHandler: *mut crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompletionHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut HMAsyncRequest> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::HMAsyncRequest> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut HMAsyncRequest = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::HMAsyncRequest = __cordl_object
             .invoke("UnlockAchievement", (achievementId, completionHandler))?;
         Ok(__cordl_ret)
     }
@@ -190,7 +190,8 @@ impl IPlatformAchievementsHandler {
     }
 }
 #[cfg(feature = "IPlatformAchievementsHandler")]
-impl quest_hook::libil2cpp::ObjectType for IPlatformAchievementsHandler {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IPlatformAchievementsHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TubeBloomPrePassLight {
-    __cordl_parent: BloomPrePassLight,
-    pub _mainEffectPostProcessEnabled: *mut BoolSO,
+    __cordl_parent: crate::GlobalNamespace::BloomPrePassLight,
+    pub _mainEffectPostProcessEnabled: *mut crate::GlobalNamespace::BoolSO,
     pub _width: f32,
     pub _overrideChildrenLength: bool,
     pub _length: f32,
@@ -37,8 +37,8 @@ pub struct TubeBloomPrePassLight {
     pub _overrideChildrenWidth: bool,
     pub _startWidth: f32,
     pub _endWidth: f32,
-    pub _parametricBoxController: *mut ParametricBoxController,
-    pub _dynamic3SliceSprite: *mut Parametric3SliceSpriteController,
+    pub _parametricBoxController: *mut crate::GlobalNamespace::ParametricBoxController,
+    pub _dynamic3SliceSprite: *mut crate::GlobalNamespace::Parametric3SliceSpriteController,
     pub _initialized: bool,
     pub _enabledRenderers: bool,
     pub _parametricBoxControllerOnceParInitialized: bool,
@@ -55,23 +55,24 @@ pub struct TubeBloomPrePassLight {
 }
 #[cfg(feature = "TubeBloomPrePassLight")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TubeBloomPrePassLight => ""."TubeBloomPrePassLight"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TubeBloomPrePassLight => ""
+    ."TubeBloomPrePassLight"
 );
 #[cfg(feature = "TubeBloomPrePassLight")]
-impl std::ops::Deref for TubeBloomPrePassLight {
-    type Target = BloomPrePassLight;
+impl std::ops::Deref for crate::GlobalNamespace::TubeBloomPrePassLight {
+    type Target = crate::GlobalNamespace::BloomPrePassLight;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TubeBloomPrePassLight")]
-impl std::ops::DerefMut for TubeBloomPrePassLight {
+impl std::ops::DerefMut for crate::GlobalNamespace::TubeBloomPrePassLight {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TubeBloomPrePassLight")]
-impl TubeBloomPrePassLight {
+impl crate::GlobalNamespace::TubeBloomPrePassLight {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -398,7 +399,8 @@ impl TubeBloomPrePassLight {
     }
 }
 #[cfg(feature = "TubeBloomPrePassLight")]
-impl quest_hook::libil2cpp::ObjectType for TubeBloomPrePassLight {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::TubeBloomPrePassLight {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

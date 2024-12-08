@@ -3,41 +3,42 @@
 #[derive(Debug)]
 pub struct AudioClipAsyncLoader {
     __cordl_parent: crate::System::Object,
-    pub _cache: *mut IReferenceCountingCache_2<
+    pub _cache: *mut crate::GlobalNamespace::IReferenceCountingCache_2<
         i32,
         *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
     >,
-    pub _mediaAsyncLoader: *mut IMediaAsyncLoader,
+    pub _mediaAsyncLoader: *mut crate::GlobalNamespace::IMediaAsyncLoader,
 }
 #[cfg(feature = "AudioClipAsyncLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AudioClipAsyncLoader => ""."AudioClipAsyncLoader"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AudioClipAsyncLoader => ""
+    ."AudioClipAsyncLoader"
 );
 #[cfg(feature = "AudioClipAsyncLoader")]
-impl std::ops::Deref for AudioClipAsyncLoader {
+impl std::ops::Deref for crate::GlobalNamespace::AudioClipAsyncLoader {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AudioClipAsyncLoader")]
-impl std::ops::DerefMut for AudioClipAsyncLoader {
+impl std::ops::DerefMut for crate::GlobalNamespace::AudioClipAsyncLoader {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AudioClipAsyncLoader")]
-impl AudioClipAsyncLoader {
+impl crate::GlobalNamespace::AudioClipAsyncLoader {
+    #[cfg(feature = "AudioClipAsyncLoader+LoadMethodDelegate")]
+    pub type LoadMethodDelegate = crate::GlobalNamespace::AudioClipAsyncLoader_LoadMethodDelegate;
+    #[cfg(feature = "AudioClipAsyncLoader+_Unload_d__18")]
+    pub type _Unload_d__18 = crate::GlobalNamespace::AudioClipAsyncLoader__Unload_d__18;
     #[cfg(feature = "AudioClipAsyncLoader+__c")]
     pub type __c = crate::GlobalNamespace::AudioClipAsyncLoader___c;
     #[cfg(feature = "AudioClipAsyncLoader+__c__DisplayClass13_0")]
     pub type __c__DisplayClass13_0 = crate::GlobalNamespace::AudioClipAsyncLoader___c__DisplayClass13_0;
     #[cfg(feature = "AudioClipAsyncLoader+__c__DisplayClass14_0")]
     pub type __c__DisplayClass14_0 = crate::GlobalNamespace::AudioClipAsyncLoader___c__DisplayClass14_0;
-    #[cfg(feature = "AudioClipAsyncLoader+LoadMethodDelegate")]
-    pub type LoadMethodDelegate = crate::GlobalNamespace::AudioClipAsyncLoader_LoadMethodDelegate;
-    #[cfg(feature = "AudioClipAsyncLoader+_Unload_d__18")]
-    pub type _Unload_d__18 = crate::GlobalNamespace::AudioClipAsyncLoader__Unload_d__18;
     pub fn GetCacheKey_AudioClip0(
         &mut self,
         audioClip: *mut crate::UnityEngine::AudioClip,
@@ -75,7 +76,7 @@ impl AudioClipAsyncLoader {
     }
     pub fn Load_IAssetSongAudioClipProvider1(
         &mut self,
-        source: *mut IAssetSongAudioClipProvider,
+        source: *mut crate::GlobalNamespace::IAssetSongAudioClipProvider,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
     > {
@@ -89,7 +90,7 @@ impl AudioClipAsyncLoader {
     }
     pub fn Load_IAssetSongPreviewAudioClipProvider0(
         &mut self,
-        source: *mut IAssetSongPreviewAudioClipProvider,
+        source: *mut crate::GlobalNamespace::IAssetSongPreviewAudioClipProvider,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
     > {
@@ -103,7 +104,7 @@ impl AudioClipAsyncLoader {
     }
     pub fn Load_IFilePathSongAudioClipProvider3(
         &mut self,
-        source: *mut IFilePathSongAudioClipProvider,
+        source: *mut crate::GlobalNamespace::IFilePathSongAudioClipProvider,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
     > {
@@ -117,7 +118,7 @@ impl AudioClipAsyncLoader {
     }
     pub fn Load_IFilePathSongPreviewAudioClipProvider2(
         &mut self,
-        source: *mut IFilePathSongPreviewAudioClipProvider,
+        source: *mut crate::GlobalNamespace::IFilePathSongPreviewAudioClipProvider,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
     > {
@@ -159,13 +160,13 @@ impl AudioClipAsyncLoader {
         Ok(__cordl_ret)
     }
     pub fn New(
-        cache: *mut IReferenceCountingCache_2<
+        cache: *mut crate::GlobalNamespace::IReferenceCountingCache_2<
             i32,
             *mut crate::System::Threading::Tasks::Task_1<
                 *mut crate::UnityEngine::AudioClip,
             >,
         >,
-        mediaAsyncLoader: *mut IMediaAsyncLoader,
+        mediaAsyncLoader: *mut crate::GlobalNamespace::IMediaAsyncLoader,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -186,7 +187,7 @@ impl AudioClipAsyncLoader {
     }
     pub fn Unload_IAssetSongAudioClipProvider1(
         &mut self,
-        source: *mut IAssetSongAudioClipProvider,
+        source: *mut crate::GlobalNamespace::IAssetSongAudioClipProvider,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -197,7 +198,7 @@ impl AudioClipAsyncLoader {
     }
     pub fn Unload_IAssetSongPreviewAudioClipProvider0(
         &mut self,
-        source: *mut IAssetSongPreviewAudioClipProvider,
+        source: *mut crate::GlobalNamespace::IAssetSongPreviewAudioClipProvider,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -208,7 +209,7 @@ impl AudioClipAsyncLoader {
     }
     pub fn Unload_IFilePathSongAudioClipProvider3(
         &mut self,
-        source: *mut IFilePathSongAudioClipProvider,
+        source: *mut crate::GlobalNamespace::IFilePathSongAudioClipProvider,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -219,7 +220,7 @@ impl AudioClipAsyncLoader {
     }
     pub fn Unload_IFilePathSongPreviewAudioClipProvider2(
         &mut self,
-        source: *mut IFilePathSongPreviewAudioClipProvider,
+        source: *mut crate::GlobalNamespace::IFilePathSongPreviewAudioClipProvider,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -253,13 +254,13 @@ impl AudioClipAsyncLoader {
     }
     pub fn _ctor(
         &mut self,
-        cache: *mut IReferenceCountingCache_2<
+        cache: *mut crate::GlobalNamespace::IReferenceCountingCache_2<
             i32,
             *mut crate::System::Threading::Tasks::Task_1<
                 *mut crate::UnityEngine::AudioClip,
             >,
         >,
-        mediaAsyncLoader: *mut IMediaAsyncLoader,
+        mediaAsyncLoader: *mut crate::GlobalNamespace::IMediaAsyncLoader,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -270,7 +271,7 @@ impl AudioClipAsyncLoader {
     }
 }
 #[cfg(feature = "AudioClipAsyncLoader")]
-impl quest_hook::libil2cpp::ObjectType for AudioClipAsyncLoader {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AudioClipAsyncLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

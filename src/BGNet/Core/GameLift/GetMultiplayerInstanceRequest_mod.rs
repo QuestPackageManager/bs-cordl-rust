@@ -3,10 +3,10 @@
 #[derive(Debug, Clone)]
 pub struct GetMultiplayerInstanceRequest {
     pub version: *mut crate::System::String,
-    pub serviceEnvironment: ServiceEnvironment,
+    pub serviceEnvironment: crate::GlobalNamespace::ServiceEnvironment,
     pub singleUseAuthToken: *mut crate::System::String,
-    pub beatmapLevelSelectionMask: BeatmapLevelSelectionMask,
-    pub gameplayServerConfiguration: GameplayServerConfiguration,
+    pub beatmapLevelSelectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+    pub gameplayServerConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
     pub userId: *mut crate::System::String,
     pub privateGameSecret: *mut crate::System::String,
     pub privateGameCode: *mut crate::System::String,
@@ -41,10 +41,10 @@ impl crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
     pub fn _ctor(
         &mut self,
         version: *mut crate::System::String,
-        serviceEnvironment: ServiceEnvironment,
+        serviceEnvironment: crate::GlobalNamespace::ServiceEnvironment,
         userId: *mut crate::System::String,
-        beatmapLevelSelectionMask: BeatmapLevelSelectionMask,
-        gameplayServerConfiguration: GameplayServerConfiguration,
+        beatmapLevelSelectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+        gameplayServerConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
         platform: crate::GlobalNamespace::AuthenticationToken_Platform,
         authUserId: *mut crate::System::String,
         singleUseAuthToken: *mut crate::System::String,

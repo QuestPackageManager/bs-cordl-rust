@@ -2,34 +2,35 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelPackSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _packID: *mut crate::System::String,
     pub _packName: *mut crate::System::String,
     pub _shortPackName: *mut crate::System::String,
     pub _coverImage: *mut crate::UnityEngine::Sprite,
     pub _smallCoverImage: *mut crate::UnityEngine::Sprite,
-    pub _contentRating: PlayerSensitivityFlag,
-    pub _beatmapLevelCollection: *mut BeatmapLevelCollectionSO,
+    pub _contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
+    pub _beatmapLevelCollection: *mut crate::GlobalNamespace::BeatmapLevelCollectionSO,
 }
 #[cfg(feature = "BeatmapLevelPackSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapLevelPackSO => ""."BeatmapLevelPackSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapLevelPackSO => ""
+    ."BeatmapLevelPackSO"
 );
 #[cfg(feature = "BeatmapLevelPackSO")]
-impl std::ops::Deref for BeatmapLevelPackSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelPackSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLevelPackSO")]
-impl std::ops::DerefMut for BeatmapLevelPackSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelPackSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLevelPackSO")]
-impl BeatmapLevelPackSO {
+impl crate::GlobalNamespace::BeatmapLevelPackSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -49,11 +50,13 @@ impl BeatmapLevelPackSO {
     }
     pub fn get_beatmapLevelCollection(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevelCollectionSO> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BeatmapLevelCollectionSO,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapLevelCollectionSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapLevelCollectionSO = __cordl_object
             .invoke("get_beatmapLevelCollection", ())?;
         Ok(__cordl_ret)
     }
@@ -69,11 +72,11 @@ impl BeatmapLevelPackSO {
     }
     pub fn get_contentRating(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<PlayerSensitivityFlag> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PlayerSensitivityFlag> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: PlayerSensitivityFlag = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::PlayerSensitivityFlag = __cordl_object
             .invoke("get_contentRating", ())?;
         Ok(__cordl_ret)
     }
@@ -129,7 +132,7 @@ impl BeatmapLevelPackSO {
     }
 }
 #[cfg(feature = "BeatmapLevelPackSO")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapLevelPackSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLevelPackSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

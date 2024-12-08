@@ -10,8 +10,8 @@ pub struct MultiplayerPositionDisplay {
     pub _fadeInDuration: f32,
     pub _crossFadeDuration: f32,
     pub _fadeOutDuration: f32,
-    pub _scoreProvider: *mut MultiplayerScoreProvider,
-    pub _connectedPlayer: *mut IConnectedPlayer,
+    pub _scoreProvider: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
+    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
     pub _wasFirst: bool,
     pub _isFailed: bool,
     pub _updatingColor: bool,
@@ -22,24 +22,24 @@ pub struct MultiplayerPositionDisplay {
 }
 #[cfg(feature = "MultiplayerPositionDisplay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerPositionDisplay => ""
-    ."MultiplayerPositionDisplay"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerPositionDisplay =>
+    ""."MultiplayerPositionDisplay"
 );
 #[cfg(feature = "MultiplayerPositionDisplay")]
-impl std::ops::Deref for MultiplayerPositionDisplay {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerPositionDisplay {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerPositionDisplay")]
-impl std::ops::DerefMut for MultiplayerPositionDisplay {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerPositionDisplay {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerPositionDisplay")]
-impl MultiplayerPositionDisplay {
+impl crate::GlobalNamespace::MultiplayerPositionDisplay {
     pub fn ChangeColor(
         &mut self,
         toColor: crate::UnityEngine::Color,
@@ -142,7 +142,8 @@ impl MultiplayerPositionDisplay {
     }
 }
 #[cfg(feature = "MultiplayerPositionDisplay")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerPositionDisplay {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerPositionDisplay {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

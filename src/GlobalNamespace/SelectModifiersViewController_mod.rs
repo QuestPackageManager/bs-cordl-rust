@@ -3,28 +3,28 @@
 #[derive(Debug)]
 pub struct SelectModifiersViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _gameplayModifiersPanelController: *mut GameplayModifiersPanelController,
+    pub _gameplayModifiersPanelController: *mut crate::GlobalNamespace::GameplayModifiersPanelController,
 }
 #[cfg(feature = "SelectModifiersViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SelectModifiersViewController => ""
-    ."SelectModifiersViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SelectModifiersViewController
+    => ""."SelectModifiersViewController"
 );
 #[cfg(feature = "SelectModifiersViewController")]
-impl std::ops::Deref for SelectModifiersViewController {
+impl std::ops::Deref for crate::GlobalNamespace::SelectModifiersViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SelectModifiersViewController")]
-impl std::ops::DerefMut for SelectModifiersViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::SelectModifiersViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SelectModifiersViewController")]
-impl SelectModifiersViewController {
+impl crate::GlobalNamespace::SelectModifiersViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -50,7 +50,7 @@ impl SelectModifiersViewController {
     }
     pub fn Setup(
         &mut self,
-        gameplayModifiers: *mut GameplayModifiers,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -71,17 +71,18 @@ impl SelectModifiersViewController {
     }
     pub fn get_gameplayModifiers(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut GameplayModifiers> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::GameplayModifiers> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut GameplayModifiers = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::GameplayModifiers = __cordl_object
             .invoke("get_gameplayModifiers", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "SelectModifiersViewController")]
-impl quest_hook::libil2cpp::ObjectType for SelectModifiersViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SelectModifiersViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

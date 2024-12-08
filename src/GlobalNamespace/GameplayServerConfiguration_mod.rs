@@ -3,19 +3,20 @@
 #[derive(Debug, Clone)]
 pub struct GameplayServerConfiguration {
     pub maxPlayerCount: i32,
-    pub discoveryPolicy: DiscoveryPolicy,
-    pub invitePolicy: InvitePolicy,
-    pub gameplayServerMode: GameplayServerMode,
-    pub songSelectionMode: SongSelectionMode,
-    pub gameplayServerControlSettings: GameplayServerControlSettings,
+    pub discoveryPolicy: crate::GlobalNamespace::DiscoveryPolicy,
+    pub invitePolicy: crate::GlobalNamespace::InvitePolicy,
+    pub gameplayServerMode: crate::GlobalNamespace::GameplayServerMode,
+    pub songSelectionMode: crate::GlobalNamespace::SongSelectionMode,
+    pub gameplayServerControlSettings: crate::GlobalNamespace::GameplayServerControlSettings,
 }
 #[cfg(feature = "GameplayServerConfiguration")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for GameplayServerConfiguration => ""
-    ."GameplayServerConfiguration"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameplayServerConfiguration =>
+    ""."GameplayServerConfiguration"
 );
 #[cfg(feature = "GameplayServerConfiguration")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for GameplayServerConfiguration {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::GameplayServerConfiguration {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -25,12 +26,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for GameplayServerConfiguration 
     }
 }
 #[cfg(feature = "GameplayServerConfiguration")]
-impl GameplayServerConfiguration {
+impl crate::GlobalNamespace::GameplayServerConfiguration {
     pub fn CreateFromSerializedData(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-    ) -> quest_hook::libil2cpp::Result<GameplayServerConfiguration> {
-        let __cordl_ret: GameplayServerConfiguration = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::GameplayServerConfiguration,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::GameplayServerConfiguration = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "CreateFromSerializedData",
             (reader),
@@ -39,7 +42,9 @@ impl GameplayServerConfiguration {
     }
     pub fn Equals_ByRefMut0(
         &mut self,
-        other: quest_hook::libil2cpp::ByRefMut<GameplayServerConfiguration>,
+        other: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::GameplayServerConfiguration,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -50,7 +55,7 @@ impl GameplayServerConfiguration {
     }
     pub fn Equals_GameplayServerConfiguration1(
         &mut self,
-        other: GameplayServerConfiguration,
+        other: crate::GlobalNamespace::GameplayServerConfiguration,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -92,8 +97,10 @@ impl GameplayServerConfiguration {
     pub fn WithMaxPlayerCount(
         &mut self,
         maxPlayerCount: i32,
-    ) -> quest_hook::libil2cpp::Result<GameplayServerConfiguration> {
-        let __cordl_ret: GameplayServerConfiguration = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::GameplayServerConfiguration,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::GameplayServerConfiguration = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "WithMaxPlayerCount",
             (maxPlayerCount),
@@ -103,11 +110,11 @@ impl GameplayServerConfiguration {
     pub fn _ctor(
         &mut self,
         maxPlayerCount: i32,
-        discoveryPolicy: DiscoveryPolicy,
-        invitePolicy: InvitePolicy,
-        gameplayServerMode: GameplayServerMode,
-        songSelectionMode: SongSelectionMode,
-        gameplayServerControlSettings: GameplayServerControlSettings,
+        discoveryPolicy: crate::GlobalNamespace::DiscoveryPolicy,
+        invitePolicy: crate::GlobalNamespace::InvitePolicy,
+        gameplayServerMode: crate::GlobalNamespace::GameplayServerMode,
+        songSelectionMode: crate::GlobalNamespace::SongSelectionMode,
+        gameplayServerControlSettings: crate::GlobalNamespace::GameplayServerControlSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

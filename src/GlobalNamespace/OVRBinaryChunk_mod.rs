@@ -8,10 +8,12 @@ pub struct OVRBinaryChunk {
 }
 #[cfg(feature = "OVRBinaryChunk")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for OVRBinaryChunk => ""."OVRBinaryChunk"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRBinaryChunk => ""
+    ."OVRBinaryChunk"
 );
 #[cfg(feature = "OVRBinaryChunk")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for OVRBinaryChunk {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRBinaryChunk {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -21,4 +23,4 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for OVRBinaryChunk {
     }
 }
 #[cfg(feature = "OVRBinaryChunk")]
-impl OVRBinaryChunk {}
+impl crate::GlobalNamespace::OVRBinaryChunk {}

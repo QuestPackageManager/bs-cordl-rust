@@ -31,13 +31,13 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
     pub const kDynamicStringFlag: u32 = 240u32;
     pub const kUnicodeStringFlag: u32 = 240u32;
     #[cfg(
+        feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
+    )]
+    pub type BuiltinTypesSerializer = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer;
+    #[cfg(
         feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString"
     )]
     pub type DynamicString = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString;
-    #[cfg(
-        feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
-    )]
-    pub type ObjectTypeData = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData;
     #[cfg(
         feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter"
     )]
@@ -48,6 +48,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
     type ISerializationAdapter_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
         T,
     >;
+    #[cfg(
+        feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
+    )]
+    pub type ObjectTypeData = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData;
     #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader")]
     pub type Reader = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader;
     #[cfg(
@@ -56,10 +60,6 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
     pub type TypeSerializer = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer;
     #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer")]
     pub type Writer = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer;
-    #[cfg(
-        feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-    )]
-    pub type BuiltinTypesSerializer = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -128,13 +128,13 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTyp
 )]
 impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
     #[cfg(
-        feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+__c__DisplayClass4_0"
-    )]
-    pub type __c__DisplayClass4_0 = crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer___c__DisplayClass4_0;
-    #[cfg(
         feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
     )]
     pub type ObjectToStringRemap = crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_ObjectToStringRemap;
+    #[cfg(
+        feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+__c__DisplayClass4_0"
+    )]
+    pub type __c__DisplayClass4_0 = crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer___c__DisplayClass4_0;
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader,
@@ -1084,13 +1084,13 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer")]
 impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
     #[cfg(
-        feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
-    )]
-    pub type StringParts = crate::UnityEngine::ResourceManagement::Util::Writer_StringParts;
-    #[cfg(
         feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk"
     )]
     pub type Chunk = crate::UnityEngine::ResourceManagement::Util::Writer_Chunk;
+    #[cfg(
+        feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
+    )]
+    pub type StringParts = crate::UnityEngine::ResourceManagement::Util::Writer_StringParts;
     pub fn FindChunkWithSpace(
         &mut self,
         length: u32,

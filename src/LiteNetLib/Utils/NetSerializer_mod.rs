@@ -2622,18 +2622,53 @@ impl std::ops::DerefMut for crate::LiteNetLib::Utils::NetSerializer {
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
 impl crate::LiteNetLib::Utils::NetSerializer {
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCall_1")]
-    pub type FastCall_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_FastCall_1<
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+BoolSerializer_1")]
+    pub type BoolSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_BoolSerializer_1<
         T,
     >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+UIntSerializer_1")]
-    pub type UIntSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_UIntSerializer_1<
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ByteSerializer_1")]
+    pub type ByteSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_ByteSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CharSerializer_1")]
+    pub type CharSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_CharSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ClassInfo_1")]
+    pub type ClassInfo_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomType")]
+    pub type CustomType = crate::LiteNetLib::Utils::NetSerializer_CustomType;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeClass_1")]
+    pub type CustomTypeClass_1<TProperty: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_CustomTypeClass_1<
+        TProperty,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeStatic_1")]
+    pub type CustomTypeStatic_1<TProperty: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_CustomTypeStatic_1<
+        TProperty,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeStruct_1")]
+    pub type CustomTypeStruct_1<TProperty: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_CustomTypeStruct_1<
+        TProperty,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+DoubleSerializer_1")]
+    pub type DoubleSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_DoubleSerializer_1<
         T,
     >;
     #[cfg(feature = "LiteNetLib+Utils+NetSerializer+EnumByteSerializer_1")]
     pub type EnumByteSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_EnumByteSerializer_1<
         T,
     >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+EnumIntSerializer_1")]
+    pub type EnumIntSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_EnumIntSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallClass_2")]
+    pub type FastCallClass_2<
+        TClass: quest_hook::libil2cpp::Type,
+        TProperty: quest_hook::libil2cpp::Type,
+    > = crate::LiteNetLib::Utils::NetSerializer_FastCallClass_2<TClass, TProperty>;
     #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallSpecificAuto_2")]
     pub type FastCallSpecificAuto_2<
         TClass: quest_hook::libil2cpp::Type,
@@ -2642,10 +2677,11 @@ impl crate::LiteNetLib::Utils::NetSerializer {
         TClass,
         TProperty,
     >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ByteSerializer_1")]
-    pub type ByteSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_ByteSerializer_1<
-        T,
-    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallSpecific_2")]
+    pub type FastCallSpecific_2<
+        TClass: quest_hook::libil2cpp::Type,
+        TProperty: quest_hook::libil2cpp::Type,
+    > = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<TClass, TProperty>;
     #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallStatic_2")]
     pub type FastCallStatic_2<
         TClass: quest_hook::libil2cpp::Type,
@@ -2656,21 +2692,29 @@ impl crate::LiteNetLib::Utils::NetSerializer {
         TClass: quest_hook::libil2cpp::Type,
         TProperty: quest_hook::libil2cpp::Type,
     > = crate::LiteNetLib::Utils::NetSerializer_FastCallStruct_2<TClass, TProperty>;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+UShortSerializer_1")]
-    pub type UShortSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_UShortSerializer_1<
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCall_1")]
+    pub type FastCall_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_FastCall_1<
         T,
     >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+SByteSerializer_1")]
-    pub type SByteSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_SByteSerializer_1<
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FloatSerializer_1")]
+    pub type FloatSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_FloatSerializer_1<
         T,
     >;
     #[cfg(feature = "LiteNetLib+Utils+NetSerializer+IPEndPointSerializer_1")]
     pub type IPEndPointSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_IPEndPointSerializer_1<
         T,
     >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeStruct_1")]
-    pub type CustomTypeStruct_1<TProperty: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_CustomTypeStruct_1<
-        TProperty,
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+IntSerializer_1")]
+    pub type IntSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_IntSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+LongSerializer_1")]
+    pub type LongSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_LongSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+SByteSerializer_1")]
+    pub type SByteSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_SByteSerializer_1<
+        T,
     >;
     #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ShortSerializer_1")]
     pub type ShortSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_ShortSerializer_1<
@@ -2680,61 +2724,17 @@ impl crate::LiteNetLib::Utils::NetSerializer {
     pub type StringSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_StringSerializer_1<
         T,
     >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FloatSerializer_1")]
-    pub type FloatSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_FloatSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CharSerializer_1")]
-    pub type CharSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_CharSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallSpecific_2")]
-    pub type FastCallSpecific_2<
-        TClass: quest_hook::libil2cpp::Type,
-        TProperty: quest_hook::libil2cpp::Type,
-    > = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<TClass, TProperty>;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallClass_2")]
-    pub type FastCallClass_2<
-        TClass: quest_hook::libil2cpp::Type,
-        TProperty: quest_hook::libil2cpp::Type,
-    > = crate::LiteNetLib::Utils::NetSerializer_FastCallClass_2<TClass, TProperty>;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+IntSerializer_1")]
-    pub type IntSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_IntSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+EnumIntSerializer_1")]
-    pub type EnumIntSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_EnumIntSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+DoubleSerializer_1")]
-    pub type DoubleSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_DoubleSerializer_1<
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+UIntSerializer_1")]
+    pub type UIntSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_UIntSerializer_1<
         T,
     >;
     #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ULongSerializer_1")]
     pub type ULongSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_ULongSerializer_1<
         T,
     >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeClass_1")]
-    pub type CustomTypeClass_1<TProperty: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_CustomTypeClass_1<
-        TProperty,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomType")]
-    pub type CustomType = crate::LiteNetLib::Utils::NetSerializer_CustomType;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+LongSerializer_1")]
-    pub type LongSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_LongSerializer_1<
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+UShortSerializer_1")]
+    pub type UShortSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_UShortSerializer_1<
         T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+BoolSerializer_1")]
-    pub type BoolSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_BoolSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ClassInfo_1")]
-    pub type ClassInfo_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeStatic_1")]
-    pub type CustomTypeStatic_1<TProperty: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_CustomTypeStatic_1<
-        TProperty,
     >;
     pub fn Deserialize_NetDataReader0<T>(
         &mut self,

@@ -9,10 +9,12 @@ pub struct AuthenticationToken {
 }
 #[cfg(feature = "AuthenticationToken")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for AuthenticationToken => ""."AuthenticationToken"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AuthenticationToken => ""
+    ."AuthenticationToken"
 );
 #[cfg(feature = "AuthenticationToken")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for AuthenticationToken {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::AuthenticationToken {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -22,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for AuthenticationToken {
     }
 }
 #[cfg(feature = "AuthenticationToken")]
-impl AuthenticationToken {
+impl crate::GlobalNamespace::AuthenticationToken {
     #[cfg(feature = "AuthenticationToken+Platform")]
     pub type Platform = crate::GlobalNamespace::AuthenticationToken_Platform;
     pub fn CreateFromSerializedData(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-    ) -> quest_hook::libil2cpp::Result<AuthenticationToken> {
-        let __cordl_ret: AuthenticationToken = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::AuthenticationToken> {
+        let __cordl_ret: crate::GlobalNamespace::AuthenticationToken = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "CreateFromSerializedData",
             (reader),

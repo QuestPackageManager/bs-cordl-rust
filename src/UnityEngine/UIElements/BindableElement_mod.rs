@@ -26,10 +26,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::BindableElement {
 }
 #[cfg(feature = "UnityEngine+UIElements+BindableElement")]
 impl crate::UnityEngine::UIElements::BindableElement {
-    #[cfg(feature = "UnityEngine+UIElements+BindableElement+UxmlTraits")]
-    pub type UxmlTraits = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
     #[cfg(feature = "UnityEngine+UIElements+BindableElement+UxmlFactory")]
     pub type UxmlFactory = crate::UnityEngine::UIElements::BindableElement_UxmlFactory;
+    #[cfg(feature = "UnityEngine+UIElements+BindableElement+UxmlTraits")]
+    pub type UxmlTraits = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

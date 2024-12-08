@@ -3,29 +3,32 @@
 #[derive(Debug)]
 pub struct MultiplayerSpectatingSpotPickerViewController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _stepValuePicker: *mut StepValuePicker,
-    pub _spectatorController: *mut MultiplayerSpectatorController,
+    pub _stepValuePicker: *mut crate::GlobalNamespace::StepValuePicker,
+    pub _spectatorController: *mut crate::GlobalNamespace::MultiplayerSpectatorController,
 }
 #[cfg(feature = "MultiplayerSpectatingSpotPickerViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerSpectatingSpotPickerViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerSpectatingSpotPickerViewController => ""
     ."MultiplayerSpectatingSpotPickerViewController"
 );
 #[cfg(feature = "MultiplayerSpectatingSpotPickerViewController")]
-impl std::ops::Deref for MultiplayerSpectatingSpotPickerViewController {
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerSpectatingSpotPickerViewController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerSpectatingSpotPickerViewController")]
-impl std::ops::DerefMut for MultiplayerSpectatingSpotPickerViewController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerSpectatingSpotPickerViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerSpectatingSpotPickerViewController")]
-impl MultiplayerSpectatingSpotPickerViewController {
+impl crate::GlobalNamespace::MultiplayerSpectatingSpotPickerViewController {
     pub fn HandleDecButtonWasPressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -48,7 +51,7 @@ impl MultiplayerSpectatingSpotPickerViewController {
     }
     pub fn HandleSpectatingSpotDidChangeEvent(
         &mut self,
-        spectatingSpot: *mut IMultiplayerSpectatingSpot,
+        spectatingSpot: *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -107,7 +110,7 @@ impl MultiplayerSpectatingSpotPickerViewController {
 }
 #[cfg(feature = "MultiplayerSpectatingSpotPickerViewController")]
 impl quest_hook::libil2cpp::ObjectType
-for MultiplayerSpectatingSpotPickerViewController {
+for crate::GlobalNamespace::MultiplayerSpectatingSpotPickerViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

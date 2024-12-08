@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct PlayAudioOnGameEventController_EventAudioBinding {
     __cordl_parent: crate::System::Object,
-    pub _signal: *mut Signal,
+    pub _signal: *mut crate::GlobalNamespace::Signal,
     pub _delay: f32,
     pub _localizedAudioClips: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut LocalizedAudioClipSO,
+        *mut crate::GlobalNamespace::LocalizedAudioClipSO,
     >,
-    pub _audioClipQueue: *mut AudioClipQueue,
-    pub _randomObjectPicker: *mut RandomObjectPicker_1<*mut LocalizedAudioClipSO>,
+    pub _audioClipQueue: *mut crate::GlobalNamespace::AudioClipQueue,
+    pub _randomObjectPicker: *mut crate::GlobalNamespace::RandomObjectPicker_1<
+        *mut crate::GlobalNamespace::LocalizedAudioClipSO,
+    >,
 }
 #[cfg(feature = "PlayAudioOnGameEventController+EventAudioBinding")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -56,7 +58,7 @@ impl crate::GlobalNamespace::PlayAudioOnGameEventController_EventAudioBinding {
     }
     pub fn Init(
         &mut self,
-        audioClipQueue: *mut AudioClipQueue,
+        audioClipQueue: *mut crate::GlobalNamespace::AudioClipQueue,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -98,31 +100,31 @@ for crate::GlobalNamespace::PlayAudioOnGameEventController_EventAudioBinding {
 #[derive(Debug)]
 pub struct PlayAudioOnGameEventController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioClipQueue: *mut AudioClipQueue,
+    pub _audioClipQueue: *mut crate::GlobalNamespace::AudioClipQueue,
     pub _eventAudioBindings: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::PlayAudioOnGameEventController_EventAudioBinding,
     >,
 }
 #[cfg(feature = "PlayAudioOnGameEventController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayAudioOnGameEventController => ""
-    ."PlayAudioOnGameEventController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayAudioOnGameEventController
+    => ""."PlayAudioOnGameEventController"
 );
 #[cfg(feature = "PlayAudioOnGameEventController")]
-impl std::ops::Deref for PlayAudioOnGameEventController {
+impl std::ops::Deref for crate::GlobalNamespace::PlayAudioOnGameEventController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayAudioOnGameEventController")]
-impl std::ops::DerefMut for PlayAudioOnGameEventController {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayAudioOnGameEventController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayAudioOnGameEventController")]
-impl PlayAudioOnGameEventController {
+impl crate::GlobalNamespace::PlayAudioOnGameEventController {
     #[cfg(feature = "PlayAudioOnGameEventController+EventAudioBinding")]
     pub type EventAudioBinding = crate::GlobalNamespace::PlayAudioOnGameEventController_EventAudioBinding;
     pub fn Awake(
@@ -164,7 +166,8 @@ impl PlayAudioOnGameEventController {
     }
 }
 #[cfg(feature = "PlayAudioOnGameEventController")]
-impl quest_hook::libil2cpp::ObjectType for PlayAudioOnGameEventController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayAudioOnGameEventController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

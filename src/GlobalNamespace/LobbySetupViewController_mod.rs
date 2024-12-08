@@ -7,10 +7,10 @@ pub struct LobbySetupViewController {
     pub _cancelGameUnreadyButton: *mut crate::UnityEngine::UI::Button,
     pub _startReadyText: *mut crate::BGLib::Polyglot::LocalizedTextMeshProUGUI,
     pub _cancelUnreadyText: *mut crate::BGLib::Polyglot::LocalizedTextMeshProUGUI,
-    pub _serverSettings: *mut GameServersFilterText,
+    pub _serverSettings: *mut crate::GlobalNamespace::GameServersFilterText,
     pub _suggestionHeader: *mut crate::UnityEngine::GameObject,
-    pub _beatmapSelectionView: *mut EditableBeatmapSelectionView,
-    pub _modifiersSelectionView: *mut EditableModifiersSelectionView,
+    pub _beatmapSelectionView: *mut crate::GlobalNamespace::EditableBeatmapSelectionView,
+    pub _modifiersSelectionView: *mut crate::GlobalNamespace::EditableModifiersSelectionView,
     pub _cantStartGameHoverHint: *mut crate::HMUI::HoverHint,
     pub _playerMissingLevelHoverHintWrapper: *mut crate::UnityEngine::GameObject,
     pub _playersMissingLevelHoverHint: *mut crate::HMUI::HoverHint,
@@ -27,24 +27,24 @@ pub struct LobbySetupViewController {
 }
 #[cfg(feature = "LobbySetupViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LobbySetupViewController => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LobbySetupViewController => ""
     ."LobbySetupViewController"
 );
 #[cfg(feature = "LobbySetupViewController")]
-impl std::ops::Deref for LobbySetupViewController {
+impl std::ops::Deref for crate::GlobalNamespace::LobbySetupViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LobbySetupViewController")]
-impl std::ops::DerefMut for LobbySetupViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::LobbySetupViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LobbySetupViewController")]
-impl LobbySetupViewController {
+impl crate::GlobalNamespace::LobbySetupViewController {
     pub const kCancelTextKey: &'static str = "BUTTON_CANCEL";
     pub const kReadyTextKey: &'static str = "LOBBY_READY";
     pub const kRetryTextKey: &'static str = "BUTTON_RETRY";
@@ -85,7 +85,7 @@ impl LobbySetupViewController {
     }
     pub fn SetLobbyPlayerData(
         &mut self,
-        lobbyPlayerData: *mut ILobbyPlayerData,
+        lobbyPlayerData: *mut crate::GlobalNamespace::ILobbyPlayerData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -96,7 +96,7 @@ impl LobbySetupViewController {
     }
     pub fn SetLobbyState(
         &mut self,
-        lobbyState: MultiplayerLobbyState,
+        lobbyState: crate::GlobalNamespace::MultiplayerLobbyState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -129,7 +129,7 @@ impl LobbySetupViewController {
     }
     pub fn SetStartGameEnabled(
         &mut self,
-        cannotStartGameReason: CannotStartGameReason,
+        cannotStartGameReason: crate::GlobalNamespace::CannotStartGameReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -140,7 +140,7 @@ impl LobbySetupViewController {
     }
     pub fn Setup(
         &mut self,
-        selectionMask: BeatmapLevelSelectionMask,
+        selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
         isPartyOwner: bool,
         allowSongSelection: bool,
         allowModifierSelection: bool,
@@ -368,7 +368,8 @@ impl LobbySetupViewController {
     }
 }
 #[cfg(feature = "LobbySetupViewController")]
-impl quest_hook::libil2cpp::ObjectType for LobbySetupViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LobbySetupViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,26 +6,27 @@ pub struct OperationResultExtensions {
 }
 #[cfg(feature = "OperationResultExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OperationResultExtensions => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OperationResultExtensions => ""
     ."OperationResultExtensions"
 );
 #[cfg(feature = "OperationResultExtensions")]
-impl std::ops::Deref for OperationResultExtensions {
+impl std::ops::Deref for crate::GlobalNamespace::OperationResultExtensions {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OperationResultExtensions")]
-impl std::ops::DerefMut for OperationResultExtensions {
+impl std::ops::DerefMut for crate::GlobalNamespace::OperationResultExtensions {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OperationResultExtensions")]
-impl OperationResultExtensions {}
+impl crate::GlobalNamespace::OperationResultExtensions {}
 #[cfg(feature = "OperationResultExtensions")]
-impl quest_hook::libil2cpp::ObjectType for OperationResultExtensions {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OperationResultExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -25,16 +25,16 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::OVR::OpenVR::IVRIOBuf
 }
 #[cfg(feature = "OVR+OpenVR+IVRIOBuffer")]
 impl crate::OVR::OpenVR::IVRIOBuffer {
-    #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Open")]
-    pub type _Open = crate::OVR::OpenVR::IVRIOBuffer__Open;
-    #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Read")]
-    pub type _Read = crate::OVR::OpenVR::IVRIOBuffer__Read;
     #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Close")]
     pub type _Close = crate::OVR::OpenVR::IVRIOBuffer__Close;
-    #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Write")]
-    pub type _Write = crate::OVR::OpenVR::IVRIOBuffer__Write;
+    #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Open")]
+    pub type _Open = crate::OVR::OpenVR::IVRIOBuffer__Open;
     #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_PropertyContainer")]
     pub type _PropertyContainer = crate::OVR::OpenVR::IVRIOBuffer__PropertyContainer;
+    #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Read")]
+    pub type _Read = crate::OVR::OpenVR::IVRIOBuffer__Read;
+    #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Write")]
+    pub type _Write = crate::OVR::OpenVR::IVRIOBuffer__Write;
 }
 #[cfg(feature = "OVR+OpenVR+IVRIOBuffer+_Close")]
 #[repr(C)]

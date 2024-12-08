@@ -8,23 +8,24 @@ pub struct AsyncComputeOperation {
 }
 #[cfg(feature = "AsyncComputeOperation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AsyncComputeOperation => ""."AsyncComputeOperation"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AsyncComputeOperation => ""
+    ."AsyncComputeOperation"
 );
 #[cfg(feature = "AsyncComputeOperation")]
-impl std::ops::Deref for AsyncComputeOperation {
+impl std::ops::Deref for crate::GlobalNamespace::AsyncComputeOperation {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AsyncComputeOperation")]
-impl std::ops::DerefMut for AsyncComputeOperation {
+impl std::ops::DerefMut for crate::GlobalNamespace::AsyncComputeOperation {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AsyncComputeOperation")]
-impl AsyncComputeOperation {
+impl crate::GlobalNamespace::AsyncComputeOperation {
     pub fn Execute(
         &mut self,
         disposed: bool,
@@ -70,7 +71,8 @@ impl AsyncComputeOperation {
     }
 }
 #[cfg(feature = "AsyncComputeOperation")]
-impl quest_hook::libil2cpp::ObjectType for AsyncComputeOperation {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::AsyncComputeOperation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

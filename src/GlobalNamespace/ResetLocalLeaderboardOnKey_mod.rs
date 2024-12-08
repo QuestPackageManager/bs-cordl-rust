@@ -4,29 +4,29 @@
 pub struct ResetLocalLeaderboardOnKey {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _keyCode: crate::UnityEngine::KeyCode,
-    pub _fileStorage: *mut IFileStorage,
-    pub _localLeaderboardsModel: *mut LocalLeaderboardsModel,
+    pub _fileStorage: *mut crate::GlobalNamespace::IFileStorage,
+    pub _localLeaderboardsModel: *mut crate::GlobalNamespace::LocalLeaderboardsModel,
 }
 #[cfg(feature = "ResetLocalLeaderboardOnKey")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ResetLocalLeaderboardOnKey => ""
-    ."ResetLocalLeaderboardOnKey"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ResetLocalLeaderboardOnKey =>
+    ""."ResetLocalLeaderboardOnKey"
 );
 #[cfg(feature = "ResetLocalLeaderboardOnKey")]
-impl std::ops::Deref for ResetLocalLeaderboardOnKey {
+impl std::ops::Deref for crate::GlobalNamespace::ResetLocalLeaderboardOnKey {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ResetLocalLeaderboardOnKey")]
-impl std::ops::DerefMut for ResetLocalLeaderboardOnKey {
+impl std::ops::DerefMut for crate::GlobalNamespace::ResetLocalLeaderboardOnKey {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ResetLocalLeaderboardOnKey")]
-impl ResetLocalLeaderboardOnKey {
+impl crate::GlobalNamespace::ResetLocalLeaderboardOnKey {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -56,7 +56,8 @@ impl ResetLocalLeaderboardOnKey {
     }
 }
 #[cfg(feature = "ResetLocalLeaderboardOnKey")]
-impl quest_hook::libil2cpp::ObjectType for ResetLocalLeaderboardOnKey {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ResetLocalLeaderboardOnKey {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

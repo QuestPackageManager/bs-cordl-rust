@@ -9,23 +9,24 @@ pub struct OVRHapticsClip {
 }
 #[cfg(feature = "OVRHapticsClip")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRHapticsClip => ""."OVRHapticsClip"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRHapticsClip => ""
+    ."OVRHapticsClip"
 );
 #[cfg(feature = "OVRHapticsClip")]
-impl std::ops::Deref for OVRHapticsClip {
+impl std::ops::Deref for crate::GlobalNamespace::OVRHapticsClip {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRHapticsClip")]
-impl std::ops::DerefMut for OVRHapticsClip {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRHapticsClip {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRHapticsClip")]
-impl OVRHapticsClip {
+impl crate::GlobalNamespace::OVRHapticsClip {
     pub fn InitializeFromAudioFloatTrack(
         &mut self,
         sourceData: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
@@ -71,8 +72,8 @@ impl OVRHapticsClip {
         Ok(__cordl_object)
     }
     pub fn New_OVRHapticsClip_OVRHapticsClip3(
-        a: *mut OVRHapticsClip,
-        b: *mut OVRHapticsClip,
+        a: *mut crate::GlobalNamespace::OVRHapticsClip,
+        b: *mut crate::GlobalNamespace::OVRHapticsClip,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -144,8 +145,8 @@ impl OVRHapticsClip {
     }
     pub fn _ctor_OVRHapticsClip_OVRHapticsClip3(
         &mut self,
-        a: *mut OVRHapticsClip,
-        b: *mut OVRHapticsClip,
+        a: *mut crate::GlobalNamespace::OVRHapticsClip,
+        b: *mut crate::GlobalNamespace::OVRHapticsClip,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -224,7 +225,7 @@ impl OVRHapticsClip {
     }
 }
 #[cfg(feature = "OVRHapticsClip")]
-impl quest_hook::libil2cpp::ObjectType for OVRHapticsClip {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHapticsClip {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

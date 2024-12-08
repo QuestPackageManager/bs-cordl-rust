@@ -4,7 +4,7 @@
 pub struct HierarchyManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _screenSystem: *mut crate::HMUI::ScreenSystem,
-    pub _gameScenesManager: *mut GameScenesManager,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
     pub _rootFlowCoordinator: *mut crate::HMUI::FlowCoordinator,
 }
 #[cfg(feature = "HMUI+HierarchyManager")]
@@ -39,7 +39,7 @@ impl crate::HMUI::HierarchyManager {
     }
     pub fn HandleSceneTransitionDidFinish(
         &mut self,
-        scenesTransitionSetupData: *mut ScenesTransitionSetupDataSO,
+        scenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
         container: *mut crate::Zenject::DiContainer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

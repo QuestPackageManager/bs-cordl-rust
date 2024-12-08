@@ -3,36 +3,39 @@
 #[derive(Debug)]
 pub struct PlayerHeadAndObstacleInteraction {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _playerTransforms: *mut PlayerTransforms,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
+    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
     pub headDidEnterObstaclesEvent: *mut crate::System::Action,
-    pub headDidEnterObstacleEvent: *mut crate::System::Action_1<*mut ObstacleController>,
+    pub headDidEnterObstacleEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::ObstacleController,
+    >,
     pub _lastFrameNumCheck: i32,
     pub _intersectingObstacles: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut ObstacleController,
+        *mut crate::GlobalNamespace::ObstacleController,
     >,
     pub _prevFrameNumberOfIntersectingObstaclesCount: i32,
 }
 #[cfg(feature = "PlayerHeadAndObstacleInteraction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerHeadAndObstacleInteraction => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PlayerHeadAndObstacleInteraction => ""
     ."PlayerHeadAndObstacleInteraction"
 );
 #[cfg(feature = "PlayerHeadAndObstacleInteraction")]
-impl std::ops::Deref for PlayerHeadAndObstacleInteraction {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerHeadAndObstacleInteraction {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerHeadAndObstacleInteraction")]
-impl std::ops::DerefMut for PlayerHeadAndObstacleInteraction {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerHeadAndObstacleInteraction {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerHeadAndObstacleInteraction")]
-impl PlayerHeadAndObstacleInteraction {
+impl crate::GlobalNamespace::PlayerHeadAndObstacleInteraction {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -73,7 +76,9 @@ impl PlayerHeadAndObstacleInteraction {
     }
     pub fn add_headDidEnterObstacleEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -102,7 +107,9 @@ impl PlayerHeadAndObstacleInteraction {
     }
     pub fn remove_headDidEnterObstacleEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -124,7 +131,8 @@ impl PlayerHeadAndObstacleInteraction {
     }
 }
 #[cfg(feature = "PlayerHeadAndObstacleInteraction")]
-impl quest_hook::libil2cpp::ObjectType for PlayerHeadAndObstacleInteraction {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayerHeadAndObstacleInteraction {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

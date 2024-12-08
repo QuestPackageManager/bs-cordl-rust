@@ -3,27 +3,28 @@
 #[derive(Debug)]
 pub struct ShaderWarmupSceneSetup {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _sharedWarmupColorScheme: *mut ColorSchemeSO,
+    pub _sharedWarmupColorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
 }
 #[cfg(feature = "ShaderWarmupSceneSetup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ShaderWarmupSceneSetup => ""."ShaderWarmupSceneSetup"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ShaderWarmupSceneSetup => ""
+    ."ShaderWarmupSceneSetup"
 );
 #[cfg(feature = "ShaderWarmupSceneSetup")]
-impl std::ops::Deref for ShaderWarmupSceneSetup {
+impl std::ops::Deref for crate::GlobalNamespace::ShaderWarmupSceneSetup {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ShaderWarmupSceneSetup")]
-impl std::ops::DerefMut for ShaderWarmupSceneSetup {
+impl std::ops::DerefMut for crate::GlobalNamespace::ShaderWarmupSceneSetup {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ShaderWarmupSceneSetup")]
-impl ShaderWarmupSceneSetup {
+impl crate::GlobalNamespace::ShaderWarmupSceneSetup {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -53,7 +54,8 @@ impl ShaderWarmupSceneSetup {
     }
 }
 #[cfg(feature = "ShaderWarmupSceneSetup")]
-impl quest_hook::libil2cpp::ObjectType for ShaderWarmupSceneSetup {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ShaderWarmupSceneSetup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

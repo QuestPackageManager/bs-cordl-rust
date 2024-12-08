@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AbTestExperimentDefinitionSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _experimentName: *mut crate::System::String,
     pub _test1GroupSize: f32,
     pub _test2GroupSize: f32,
@@ -12,24 +12,24 @@ pub struct AbTestExperimentDefinitionSO {
 }
 #[cfg(feature = "AbTestExperimentDefinitionSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AbTestExperimentDefinitionSO => ""
-    ."AbTestExperimentDefinitionSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AbTestExperimentDefinitionSO =>
+    ""."AbTestExperimentDefinitionSO"
 );
 #[cfg(feature = "AbTestExperimentDefinitionSO")]
-impl std::ops::Deref for AbTestExperimentDefinitionSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::AbTestExperimentDefinitionSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AbTestExperimentDefinitionSO")]
-impl std::ops::DerefMut for AbTestExperimentDefinitionSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::AbTestExperimentDefinitionSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AbTestExperimentDefinitionSO")]
-impl AbTestExperimentDefinitionSO {
+impl crate::GlobalNamespace::AbTestExperimentDefinitionSO {
     #[cfg(feature = "AbTestExperimentDefinitionSO+Group")]
     pub type Group = crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group;
     pub fn AbSplit(
@@ -132,7 +132,8 @@ impl AbTestExperimentDefinitionSO {
     }
 }
 #[cfg(feature = "AbTestExperimentDefinitionSO")]
-impl quest_hook::libil2cpp::ObjectType for AbTestExperimentDefinitionSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::AbTestExperimentDefinitionSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

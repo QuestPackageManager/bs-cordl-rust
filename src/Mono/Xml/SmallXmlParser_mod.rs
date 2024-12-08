@@ -412,12 +412,12 @@ impl std::ops::DerefMut for crate::Mono::Xml::SmallXmlParser {
 }
 #[cfg(feature = "Mono+Xml+SmallXmlParser")]
 impl crate::Mono::Xml::SmallXmlParser {
-    #[cfg(feature = "Mono+Xml+SmallXmlParser+IContentHandler")]
-    type IContentHandler = crate::Mono::Xml::SmallXmlParser_IContentHandler;
     #[cfg(feature = "Mono+Xml+SmallXmlParser+AttrListImpl")]
     pub type AttrListImpl = crate::Mono::Xml::SmallXmlParser_AttrListImpl;
     #[cfg(feature = "Mono+Xml+SmallXmlParser+IAttrList")]
     type IAttrList = crate::Mono::Xml::SmallXmlParser_IAttrList;
+    #[cfg(feature = "Mono+Xml+SmallXmlParser+IContentHandler")]
+    type IContentHandler = crate::Mono::Xml::SmallXmlParser_IContentHandler;
     pub fn Cleanup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

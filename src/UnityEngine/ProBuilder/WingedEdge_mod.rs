@@ -29,10 +29,10 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::WingedEdge {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+WingedEdge")]
 impl crate::UnityEngine::ProBuilder::WingedEdge {
-    #[cfg(feature = "UnityEngine+ProBuilder+WingedEdge+__c__DisplayClass32_0")]
-    pub type __c__DisplayClass32_0 = crate::UnityEngine::ProBuilder::WingedEdge___c__DisplayClass32_0;
     #[cfg(feature = "UnityEngine+ProBuilder+WingedEdge+__c")]
     pub type __c = crate::UnityEngine::ProBuilder::WingedEdge___c;
+    #[cfg(feature = "UnityEngine+ProBuilder+WingedEdge+__c__DisplayClass32_0")]
+    pub type __c__DisplayClass32_0 = crate::UnityEngine::ProBuilder::WingedEdge___c__DisplayClass32_0;
     pub fn Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -168,12 +168,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Vector3IntField {
 }
 #[cfg(feature = "UnityEngine+UIElements+Vector3IntField")]
 impl crate::UnityEngine::UIElements::Vector3IntField {
-    #[cfg(feature = "UnityEngine+UIElements+Vector3IntField+__c")]
-    pub type __c = crate::UnityEngine::UIElements::Vector3IntField___c;
     #[cfg(feature = "UnityEngine+UIElements+Vector3IntField+UxmlFactory")]
     pub type UxmlFactory = crate::UnityEngine::UIElements::Vector3IntField_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+Vector3IntField+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::Vector3IntField_UxmlTraits;
+    #[cfg(feature = "UnityEngine+UIElements+Vector3IntField+__c")]
+    pub type __c = crate::UnityEngine::UIElements::Vector3IntField___c;
     pub fn DescribeFields(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -6,23 +6,24 @@ pub struct IMenuRpcManager {
 }
 #[cfg(feature = "IMenuRpcManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IMenuRpcManager => ""."IMenuRpcManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IMenuRpcManager => ""
+    ."IMenuRpcManager"
 );
 #[cfg(feature = "IMenuRpcManager")]
-impl std::ops::Deref for IMenuRpcManager {
+impl std::ops::Deref for crate::GlobalNamespace::IMenuRpcManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IMenuRpcManager")]
-impl std::ops::DerefMut for IMenuRpcManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::IMenuRpcManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IMenuRpcManager")]
-impl IMenuRpcManager {
+impl crate::GlobalNamespace::IMenuRpcManager {
     pub fn CancelLevelStart(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -196,7 +197,7 @@ impl IMenuRpcManager {
     }
     pub fn RecommendBeatmap(
         &mut self,
-        key: *mut BeatmapKeyNetSerializable,
+        key: *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -207,7 +208,7 @@ impl IMenuRpcManager {
     }
     pub fn RecommendGameplayModifiers(
         &mut self,
-        gameplayModifiers: *mut GameplayModifiers,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -230,7 +231,7 @@ impl IMenuRpcManager {
     pub fn SetIsEntitledToLevel(
         &mut self,
         levelId: *mut crate::System::String,
-        entitlementStatus: EntitlementsStatus,
+        entitlementStatus: crate::GlobalNamespace::EntitlementsStatus,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -263,7 +264,7 @@ impl IMenuRpcManager {
     }
     pub fn SetIsStartButtonEnabled(
         &mut self,
-        reason: CannotStartGameReason,
+        reason: crate::GlobalNamespace::CannotStartGameReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -274,7 +275,7 @@ impl IMenuRpcManager {
     }
     pub fn SetMultiplayerGameState(
         &mut self,
-        lobbyState: MultiplayerGameState,
+        lobbyState: crate::GlobalNamespace::MultiplayerGameState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -285,7 +286,7 @@ impl IMenuRpcManager {
     }
     pub fn SetOwnedSongPacks(
         &mut self,
-        songPackMask: SongPackMask,
+        songPackMask: crate::GlobalNamespace::SongPackMask,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -296,7 +297,7 @@ impl IMenuRpcManager {
     }
     pub fn SetPlayersMissingEntitlementsToLevel(
         &mut self,
-        playersMissingEntitlements: *mut PlayersMissingEntitlementsNetSerializable,
+        playersMissingEntitlements: *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -310,7 +311,7 @@ impl IMenuRpcManager {
     }
     pub fn SetPlayersPermissionConfiguration(
         &mut self,
-        permissions: *mut PlayersLobbyPermissionConfigurationNetSerializable,
+        permissions: *mut crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -321,7 +322,7 @@ impl IMenuRpcManager {
     }
     pub fn SetSelectedBeatmap(
         &mut self,
-        key: *mut BeatmapKeyNetSerializable,
+        key: *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -332,7 +333,7 @@ impl IMenuRpcManager {
     }
     pub fn SetSelectedGameplayModifiers(
         &mut self,
-        gameplayModifiers: *mut GameplayModifiers,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -354,8 +355,8 @@ impl IMenuRpcManager {
     }
     pub fn StartLevel(
         &mut self,
-        beatmapKeySerializable: *mut BeatmapKeyNetSerializable,
-        gameplayModifiers: *mut GameplayModifiers,
+        beatmapKeySerializable: *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
         startTime: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -584,7 +585,7 @@ impl IMenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut BeatmapKeyNetSerializable,
+            *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -598,7 +599,7 @@ impl IMenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut GameplayModifiers,
+            *mut crate::GlobalNamespace::GameplayModifiers,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -638,7 +639,7 @@ impl IMenuRpcManager {
         value: *mut crate::System::Action_3<
             *mut crate::System::String,
             *mut crate::System::String,
-            EntitlementsStatus,
+            crate::GlobalNamespace::EntitlementsStatus,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -674,7 +675,7 @@ impl IMenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            CannotStartGameReason,
+            crate::GlobalNamespace::CannotStartGameReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -688,7 +689,7 @@ impl IMenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            MultiplayerGameState,
+            crate::GlobalNamespace::MultiplayerGameState,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -700,7 +701,10 @@ impl IMenuRpcManager {
     }
     pub fn add_setOwnedSongPacksEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut crate::System::String, SongPackMask>,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            crate::GlobalNamespace::SongPackMask,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -713,7 +717,7 @@ impl IMenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut PlayersMissingEntitlementsNetSerializable,
+            *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -727,7 +731,7 @@ impl IMenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut PlayersLobbyPermissionConfigurationNetSerializable,
+            *mut crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -741,7 +745,7 @@ impl IMenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut BeatmapKeyNetSerializable,
+            *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -755,7 +759,7 @@ impl IMenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut GameplayModifiers,
+            *mut crate::GlobalNamespace::GameplayModifiers,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -780,8 +784,8 @@ impl IMenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_4<
             *mut crate::System::String,
-            *mut BeatmapKeyNetSerializable,
-            *mut GameplayModifiers,
+            *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+            *mut crate::GlobalNamespace::GameplayModifiers,
             i64,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1020,7 +1024,7 @@ impl IMenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut BeatmapKeyNetSerializable,
+            *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1034,7 +1038,7 @@ impl IMenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut GameplayModifiers,
+            *mut crate::GlobalNamespace::GameplayModifiers,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1074,7 +1078,7 @@ impl IMenuRpcManager {
         value: *mut crate::System::Action_3<
             *mut crate::System::String,
             *mut crate::System::String,
-            EntitlementsStatus,
+            crate::GlobalNamespace::EntitlementsStatus,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1110,7 +1114,7 @@ impl IMenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            CannotStartGameReason,
+            crate::GlobalNamespace::CannotStartGameReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1124,7 +1128,7 @@ impl IMenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            MultiplayerGameState,
+            crate::GlobalNamespace::MultiplayerGameState,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1136,7 +1140,10 @@ impl IMenuRpcManager {
     }
     pub fn remove_setOwnedSongPacksEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut crate::System::String, SongPackMask>,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            crate::GlobalNamespace::SongPackMask,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1149,7 +1156,7 @@ impl IMenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut PlayersMissingEntitlementsNetSerializable,
+            *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1163,7 +1170,7 @@ impl IMenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut PlayersLobbyPermissionConfigurationNetSerializable,
+            *mut crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1177,7 +1184,7 @@ impl IMenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut BeatmapKeyNetSerializable,
+            *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1191,7 +1198,7 @@ impl IMenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut GameplayModifiers,
+            *mut crate::GlobalNamespace::GameplayModifiers,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1216,8 +1223,8 @@ impl IMenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_4<
             *mut crate::System::String,
-            *mut BeatmapKeyNetSerializable,
-            *mut GameplayModifiers,
+            *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+            *mut crate::GlobalNamespace::GameplayModifiers,
             i64,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1230,7 +1237,7 @@ impl IMenuRpcManager {
     }
 }
 #[cfg(feature = "IMenuRpcManager")]
-impl quest_hook::libil2cpp::ObjectType for IMenuRpcManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IMenuRpcManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

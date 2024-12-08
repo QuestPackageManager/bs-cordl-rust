@@ -6,23 +6,24 @@ pub struct IBpmController {
 }
 #[cfg(feature = "IBpmController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IBpmController => ""."IBpmController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IBpmController => ""
+    ."IBpmController"
 );
 #[cfg(feature = "IBpmController")]
-impl std::ops::Deref for IBpmController {
+impl std::ops::Deref for crate::GlobalNamespace::IBpmController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IBpmController")]
-impl std::ops::DerefMut for IBpmController {
+impl std::ops::DerefMut for crate::GlobalNamespace::IBpmController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IBpmController")]
-impl IBpmController {
+impl crate::GlobalNamespace::IBpmController {
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
@@ -44,7 +45,7 @@ impl IBpmController {
     }
 }
 #[cfg(feature = "IBpmController")]
-impl quest_hook::libil2cpp::ObjectType for IBpmController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IBpmController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

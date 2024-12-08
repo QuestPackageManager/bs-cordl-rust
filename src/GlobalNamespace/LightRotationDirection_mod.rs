@@ -8,5 +8,6 @@ pub enum LightRotationDirection {
 }
 #[cfg(feature = "LightRotationDirection")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for LightRotationDirection => ""."LightRotationDirection"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightRotationDirection => ""
+    ."LightRotationDirection"
 );

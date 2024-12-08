@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct EditAvatarAnalytics {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _avatarEditorFlowCoordinator: *mut BeatAvatarEditorFlowCoordinator,
-    pub _analyticsModel: *mut IAnalyticsModel,
+    pub _avatarEditorFlowCoordinator: *mut crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator,
+    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
     pub _avatarDataModel: *mut crate::BeatSaber::BeatAvatarSDK::AvatarDataModel,
     pub _lastEditMode: crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
 }

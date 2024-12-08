@@ -6,25 +6,27 @@ pub struct PlayerDataModelHelper {
 }
 #[cfg(feature = "PlayerDataModelHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerDataModelHelper => ""."PlayerDataModelHelper"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerDataModelHelper => ""
+    ."PlayerDataModelHelper"
 );
 #[cfg(feature = "PlayerDataModelHelper")]
-impl std::ops::Deref for PlayerDataModelHelper {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerDataModelHelper {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerDataModelHelper")]
-impl std::ops::DerefMut for PlayerDataModelHelper {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerDataModelHelper {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerDataModelHelper")]
-impl PlayerDataModelHelper {}
+impl crate::GlobalNamespace::PlayerDataModelHelper {}
 #[cfg(feature = "PlayerDataModelHelper")]
-impl quest_hook::libil2cpp::ObjectType for PlayerDataModelHelper {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayerDataModelHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

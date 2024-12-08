@@ -10,23 +10,24 @@ pub struct CommandBufferOwners {
 }
 #[cfg(feature = "CommandBufferOwners")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CommandBufferOwners => ""."CommandBufferOwners"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CommandBufferOwners => ""
+    ."CommandBufferOwners"
 );
 #[cfg(feature = "CommandBufferOwners")]
-impl std::ops::Deref for CommandBufferOwners {
+impl std::ops::Deref for crate::GlobalNamespace::CommandBufferOwners {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CommandBufferOwners")]
-impl std::ops::DerefMut for CommandBufferOwners {
+impl std::ops::DerefMut for crate::GlobalNamespace::CommandBufferOwners {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CommandBufferOwners")]
-impl CommandBufferOwners {
+impl crate::GlobalNamespace::CommandBufferOwners {
     pub fn AddOwner(
         &mut self,
         owner: *mut crate::UnityEngine::Object,
@@ -85,7 +86,7 @@ impl CommandBufferOwners {
     }
 }
 #[cfg(feature = "CommandBufferOwners")]
-impl quest_hook::libil2cpp::ObjectType for CommandBufferOwners {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CommandBufferOwners {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

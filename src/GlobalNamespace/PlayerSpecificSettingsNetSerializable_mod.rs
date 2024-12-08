@@ -9,28 +9,30 @@ pub struct PlayerSpecificSettingsNetSerializable {
     pub automaticPlayerHeight: bool,
     pub playerHeight: f32,
     pub headPosToPlayerHeightOffset: f32,
-    pub colorScheme: ColorSchemeNetSerializable,
+    pub colorScheme: crate::GlobalNamespace::ColorSchemeNetSerializable,
 }
 #[cfg(feature = "PlayerSpecificSettingsNetSerializable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerSpecificSettingsNetSerializable => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PlayerSpecificSettingsNetSerializable => ""
     ."PlayerSpecificSettingsNetSerializable"
 );
 #[cfg(feature = "PlayerSpecificSettingsNetSerializable")]
-impl std::ops::Deref for PlayerSpecificSettingsNetSerializable {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSpecificSettingsNetSerializable")]
-impl std::ops::DerefMut for PlayerSpecificSettingsNetSerializable {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSpecificSettingsNetSerializable")]
-impl PlayerSpecificSettingsNetSerializable {
+impl crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
@@ -150,7 +152,8 @@ impl PlayerSpecificSettingsNetSerializable {
     }
 }
 #[cfg(feature = "PlayerSpecificSettingsNetSerializable")]
-impl quest_hook::libil2cpp::ObjectType for PlayerSpecificSettingsNetSerializable {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

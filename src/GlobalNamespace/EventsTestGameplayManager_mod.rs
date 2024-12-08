@@ -5,18 +5,18 @@ pub struct EventsTestGameplayManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _moveTime: bool,
     pub _spawnTestBox: bool,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
-    pub _beatmapData: *mut BeatmapData,
-    pub _audioTimeSource: *mut IAudioTimeSource,
-    pub _basicBeatmapEventType: BasicBeatmapEventType,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _beatmapData: *mut crate::GlobalNamespace::BeatmapData,
+    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _basicBeatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _floatValue: f32,
     pub _beatmapEventDataBoxGroupLists: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut BeatmapEventDataBoxGroupList,
+        *mut crate::GlobalNamespace::BeatmapEventDataBoxGroupList,
     >,
     pub groupState: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
     pub _beatmapEventTypeBindings: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::UnityEngine::KeyCode,
-        BasicBeatmapEventType,
+        crate::GlobalNamespace::BasicBeatmapEventType,
     >,
     pub _intBindings: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::UnityEngine::KeyCode,
@@ -34,33 +34,33 @@ pub struct EventsTestGameplayManager {
 }
 #[cfg(feature = "EventsTestGameplayManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EventsTestGameplayManager => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EventsTestGameplayManager => ""
     ."EventsTestGameplayManager"
 );
 #[cfg(feature = "EventsTestGameplayManager")]
-impl std::ops::Deref for EventsTestGameplayManager {
+impl std::ops::Deref for crate::GlobalNamespace::EventsTestGameplayManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EventsTestGameplayManager")]
-impl std::ops::DerefMut for EventsTestGameplayManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::EventsTestGameplayManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EventsTestGameplayManager")]
-impl EventsTestGameplayManager {
+impl crate::GlobalNamespace::EventsTestGameplayManager {
     pub const kNumberOfLightGroups: i32 = 20i32;
-    #[cfg(feature = "EventsTestGameplayManager+__c__DisplayClass19_0")]
-    pub type __c__DisplayClass19_0 = crate::GlobalNamespace::EventsTestGameplayManager___c__DisplayClass19_0;
-    #[cfg(feature = "EventsTestGameplayManager+__c__DisplayClass20_0")]
-    pub type __c__DisplayClass20_0 = crate::GlobalNamespace::EventsTestGameplayManager___c__DisplayClass20_0;
     #[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
     pub type MockBeatToTimeConverter = crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter;
     #[cfg(feature = "EventsTestGameplayManager+__c__DisplayClass18_0")]
     pub type __c__DisplayClass18_0 = crate::GlobalNamespace::EventsTestGameplayManager___c__DisplayClass18_0;
+    #[cfg(feature = "EventsTestGameplayManager+__c__DisplayClass19_0")]
+    pub type __c__DisplayClass19_0 = crate::GlobalNamespace::EventsTestGameplayManager___c__DisplayClass19_0;
+    #[cfg(feature = "EventsTestGameplayManager+__c__DisplayClass20_0")]
+    pub type __c__DisplayClass20_0 = crate::GlobalNamespace::EventsTestGameplayManager___c__DisplayClass20_0;
     pub fn AddEventsForLightGroup(
         &mut self,
         lightGroupId: i32,
@@ -96,7 +96,7 @@ impl EventsTestGameplayManager {
     pub fn AddToggleEventsForLightGroup(
         &mut self,
         lightGroupId: i32,
-        color: EnvironmentColorType,
+        color: crate::GlobalNamespace::EnvironmentColorType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -144,7 +144,8 @@ impl EventsTestGameplayManager {
     }
 }
 #[cfg(feature = "EventsTestGameplayManager")]
-impl quest_hook::libil2cpp::ObjectType for EventsTestGameplayManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EventsTestGameplayManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

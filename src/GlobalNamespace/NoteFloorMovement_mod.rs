@@ -4,8 +4,8 @@
 pub struct NoteFloorMovement {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _rotatedObject: *mut crate::UnityEngine::Transform,
-    pub _playerTransforms: *mut PlayerTransforms,
-    pub _audioTimeSyncController: *mut IAudioTimeSource,
+    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::IAudioTimeSource,
     pub floorMovementDidFinishEvent: *mut crate::System::Action,
     pub _startPos: crate::UnityEngine::Vector3,
     pub _endPos: crate::UnityEngine::Vector3,
@@ -17,23 +17,24 @@ pub struct NoteFloorMovement {
 }
 #[cfg(feature = "NoteFloorMovement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteFloorMovement => ""."NoteFloorMovement"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteFloorMovement => ""
+    ."NoteFloorMovement"
 );
 #[cfg(feature = "NoteFloorMovement")]
-impl std::ops::Deref for NoteFloorMovement {
+impl std::ops::Deref for crate::GlobalNamespace::NoteFloorMovement {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteFloorMovement")]
-impl std::ops::DerefMut for NoteFloorMovement {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteFloorMovement {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteFloorMovement")]
-impl NoteFloorMovement {
+impl crate::GlobalNamespace::NoteFloorMovement {
     pub fn Init(
         &mut self,
         worldRotation: f32,
@@ -181,7 +182,7 @@ impl NoteFloorMovement {
     }
 }
 #[cfg(feature = "NoteFloorMovement")]
-impl quest_hook::libil2cpp::ObjectType for NoteFloorMovement {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteFloorMovement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

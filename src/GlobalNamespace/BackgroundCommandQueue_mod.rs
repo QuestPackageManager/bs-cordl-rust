@@ -5,34 +5,35 @@ pub struct BackgroundCommandQueue {
     __cordl_parent: crate::System::Object,
     pub _sync: *mut crate::System::Object,
     pub _commandsQueue: *mut crate::System::Collections::Generic::Queue_1<
-        *mut IBackgroundCommand,
+        *mut crate::GlobalNamespace::IBackgroundCommand,
     >,
     pub _isRunning: bool,
 }
 #[cfg(feature = "BackgroundCommandQueue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BackgroundCommandQueue => ""."BackgroundCommandQueue"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BackgroundCommandQueue => ""
+    ."BackgroundCommandQueue"
 );
 #[cfg(feature = "BackgroundCommandQueue")]
-impl std::ops::Deref for BackgroundCommandQueue {
+impl std::ops::Deref for crate::GlobalNamespace::BackgroundCommandQueue {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BackgroundCommandQueue")]
-impl std::ops::DerefMut for BackgroundCommandQueue {
+impl std::ops::DerefMut for crate::GlobalNamespace::BackgroundCommandQueue {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BackgroundCommandQueue")]
-impl BackgroundCommandQueue {
+impl crate::GlobalNamespace::BackgroundCommandQueue {
     #[cfg(feature = "BackgroundCommandQueue+_RunInternal_d__4")]
     pub type _RunInternal_d__4 = crate::GlobalNamespace::BackgroundCommandQueue__RunInternal_d__4;
     pub fn Enqueue(
         &mut self,
-        command: *mut IBackgroundCommand,
+        command: *mut crate::GlobalNamespace::IBackgroundCommand,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -70,7 +71,8 @@ impl BackgroundCommandQueue {
     }
 }
 #[cfg(feature = "BackgroundCommandQueue")]
-impl quest_hook::libil2cpp::ObjectType for BackgroundCommandQueue {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BackgroundCommandQueue {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,31 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockPlayerGamePoseGeneratorMirror {
-    __cordl_parent: MockPlayerGamePoseGenerator,
-    pub _nodePoseSyncStateManager: *mut NodePoseSyncStateManager,
-    pub _mirroredPlayer: *mut IConnectedPlayer,
+    __cordl_parent: crate::GlobalNamespace::MockPlayerGamePoseGenerator,
+    pub _nodePoseSyncStateManager: *mut crate::GlobalNamespace::NodePoseSyncStateManager,
+    pub _mirroredPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
     pub _onSongFinished: *mut crate::System::Action,
 }
 #[cfg(feature = "MockPlayerGamePoseGeneratorMirror")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MockPlayerGamePoseGeneratorMirror => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MockPlayerGamePoseGeneratorMirror => ""
     ."MockPlayerGamePoseGeneratorMirror"
 );
 #[cfg(feature = "MockPlayerGamePoseGeneratorMirror")]
-impl std::ops::Deref for MockPlayerGamePoseGeneratorMirror {
-    type Target = MockPlayerGamePoseGenerator;
+impl std::ops::Deref for crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
+    type Target = crate::GlobalNamespace::MockPlayerGamePoseGenerator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockPlayerGamePoseGeneratorMirror")]
-impl std::ops::DerefMut for MockPlayerGamePoseGeneratorMirror {
+impl std::ops::DerefMut for crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockPlayerGamePoseGeneratorMirror")]
-impl MockPlayerGamePoseGeneratorMirror {
+impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -50,7 +51,7 @@ impl MockPlayerGamePoseGeneratorMirror {
     pub fn HandleLevelFinished(
         &mut self,
         userId: *mut crate::System::String,
-        results: *mut MultiplayerLevelCompletionResults,
+        results: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -64,7 +65,7 @@ impl MockPlayerGamePoseGeneratorMirror {
         userId: *mut crate::System::String,
         syncTime: i64,
         songTime: f32,
-        noteCutInfo: *mut NoteCutInfoNetSerializable,
+        noteCutInfo: *mut crate::GlobalNamespace::NoteCutInfoNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -78,7 +79,7 @@ impl MockPlayerGamePoseGeneratorMirror {
         userId: *mut crate::System::String,
         syncTime: i64,
         songTime: f32,
-        noteMissInfo: *mut NoteMissInfoNetSerializable,
+        noteMissInfo: *mut crate::GlobalNamespace::NoteMissInfoNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -92,7 +93,7 @@ impl MockPlayerGamePoseGeneratorMirror {
         userId: *mut crate::System::String,
         syncTime: i64,
         songTime: f32,
-        noteSpawnInfoNetSerializable: *mut NoteSpawnInfoNetSerializable,
+        noteSpawnInfoNetSerializable: *mut crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -109,7 +110,7 @@ impl MockPlayerGamePoseGeneratorMirror {
         userId: *mut crate::System::String,
         syncTime: i64,
         songTime: f32,
-        obstacleSpawnInfoNetSerializable: *mut ObstacleSpawnInfoNetSerializable,
+        obstacleSpawnInfoNetSerializable: *mut crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -124,7 +125,7 @@ impl MockPlayerGamePoseGeneratorMirror {
     pub fn HandleOptionalAvatarDataReceived(
         &mut self,
         optionalAvatarDataPacket: *mut crate::BeatSaber::AvatarCore::OptionalAvatarDataPacket,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -138,8 +139,8 @@ impl MockPlayerGamePoseGeneratorMirror {
     }
     pub fn HandleScoreSyncStateUpdate(
         &mut self,
-        nodePose: *mut StandardScoreSyncStateNetSerializable,
-        player: *mut IConnectedPlayer,
+        nodePose: *mut crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -153,7 +154,7 @@ impl MockPlayerGamePoseGeneratorMirror {
         userId: *mut crate::System::String,
         syncTime: i64,
         songTime: f32,
-        sliderSpawnInfoNetSerializable: *mut SliderSpawnInfoNetSerializable,
+        sliderSpawnInfoNetSerializable: *mut crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -168,8 +169,8 @@ impl MockPlayerGamePoseGeneratorMirror {
     pub fn Init(
         &mut self,
         introStartTime: i64,
-        beatmapData: *mut MockBeatmapData,
-        gameplayModifiers: *mut GameplayModifiers,
+        beatmapData: *mut crate::GlobalNamespace::MockBeatmapData,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
         onSongFinished: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -183,10 +184,10 @@ impl MockPlayerGamePoseGeneratorMirror {
         Ok(__cordl_ret)
     }
     pub fn New(
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
-        gameplayRpcManager: *mut IGameplayRpcManager,
+        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+        gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
         leftHanded: bool,
-        nodePoseSyncStateManager: *mut NodePoseSyncStateManager,
+        nodePoseSyncStateManager: *mut crate::GlobalNamespace::NodePoseSyncStateManager,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -214,10 +215,10 @@ impl MockPlayerGamePoseGeneratorMirror {
     }
     pub fn _ctor(
         &mut self,
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
-        gameplayRpcManager: *mut IGameplayRpcManager,
+        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+        gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
         leftHanded: bool,
-        nodePoseSyncStateManager: *mut NodePoseSyncStateManager,
+        nodePoseSyncStateManager: *mut crate::GlobalNamespace::NodePoseSyncStateManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -236,7 +237,8 @@ impl MockPlayerGamePoseGeneratorMirror {
     }
 }
 #[cfg(feature = "MockPlayerGamePoseGeneratorMirror")]
-impl quest_hook::libil2cpp::ObjectType for MockPlayerGamePoseGeneratorMirror {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

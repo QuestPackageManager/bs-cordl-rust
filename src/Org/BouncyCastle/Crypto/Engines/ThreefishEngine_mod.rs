@@ -500,20 +500,20 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
     pub const ROUNDS_512: i32 = 72i32;
     pub const TWEAK_SIZE_BYTES: i32 = 16i32;
     pub const TWEAK_SIZE_WORDS: i32 = 2i32;
-    #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+ThreefishCipher")]
-    pub type ThreefishCipher = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher;
-    #[cfg(
-        feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish256Cipher"
-    )]
-    pub type Threefish256Cipher = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish256Cipher;
     #[cfg(
         feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish1024Cipher"
     )]
     pub type Threefish1024Cipher = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish1024Cipher;
     #[cfg(
+        feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish256Cipher"
+    )]
+    pub type Threefish256Cipher = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish256Cipher;
+    #[cfg(
         feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish512Cipher"
     )]
     pub type Threefish512Cipher = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish512Cipher;
+    #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+ThreefishCipher")]
+    pub type ThreefishCipher = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher;
     pub fn GetBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

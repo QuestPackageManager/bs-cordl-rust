@@ -3,28 +3,29 @@
 #[derive(Debug)]
 pub struct OVRSceneModelLoader {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _SceneManager_k__BackingField: *mut OVRSceneManager,
+    pub _SceneManager_k__BackingField: *mut crate::GlobalNamespace::OVRSceneManager,
     pub _sceneCaptureRequested: bool,
 }
 #[cfg(feature = "OVRSceneModelLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRSceneModelLoader => ""."OVRSceneModelLoader"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRSceneModelLoader => ""
+    ."OVRSceneModelLoader"
 );
 #[cfg(feature = "OVRSceneModelLoader")]
-impl std::ops::Deref for OVRSceneModelLoader {
+impl std::ops::Deref for crate::GlobalNamespace::OVRSceneModelLoader {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSceneModelLoader")]
-impl std::ops::DerefMut for OVRSceneModelLoader {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneModelLoader {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSceneModelLoader")]
-impl OVRSceneModelLoader {
+impl crate::GlobalNamespace::OVRSceneModelLoader {
     pub const RetryingReminderDelay: f32 = 10f32;
     #[cfg(feature = "OVRSceneModelLoader+_AttemptToLoadSceneModel_d__7")]
     pub type _AttemptToLoadSceneModel_d__7 = crate::GlobalNamespace::OVRSceneModelLoader__AttemptToLoadSceneModel_d__7;
@@ -137,17 +138,17 @@ impl OVRSceneModelLoader {
     }
     pub fn get_SceneManager(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut OVRSceneManager> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::OVRSceneManager> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut OVRSceneManager = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::OVRSceneManager = __cordl_object
             .invoke("get_SceneManager", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_SceneManager(
         &mut self,
-        value: *mut OVRSceneManager,
+        value: *mut crate::GlobalNamespace::OVRSceneManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -158,7 +159,7 @@ impl OVRSceneModelLoader {
     }
 }
 #[cfg(feature = "OVRSceneModelLoader")]
-impl quest_hook::libil2cpp::ObjectType for OVRSceneModelLoader {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneModelLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

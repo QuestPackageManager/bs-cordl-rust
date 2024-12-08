@@ -2,28 +2,29 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObstacleExecutionRating {
-    __cordl_parent: BeatmapObjectExecutionRating,
+    __cordl_parent: crate::GlobalNamespace::BeatmapObjectExecutionRating,
     pub _rating_k__BackingField: crate::GlobalNamespace::ObstacleExecutionRating_Rating,
 }
 #[cfg(feature = "ObstacleExecutionRating")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ObstacleExecutionRating => ""."ObstacleExecutionRating"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ObstacleExecutionRating => ""
+    ."ObstacleExecutionRating"
 );
 #[cfg(feature = "ObstacleExecutionRating")]
-impl std::ops::Deref for ObstacleExecutionRating {
-    type Target = BeatmapObjectExecutionRating;
+impl std::ops::Deref for crate::GlobalNamespace::ObstacleExecutionRating {
+    type Target = crate::GlobalNamespace::BeatmapObjectExecutionRating;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ObstacleExecutionRating")]
-impl std::ops::DerefMut for ObstacleExecutionRating {
+impl std::ops::DerefMut for crate::GlobalNamespace::ObstacleExecutionRating {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ObstacleExecutionRating")]
-impl ObstacleExecutionRating {
+impl crate::GlobalNamespace::ObstacleExecutionRating {
     #[cfg(feature = "ObstacleExecutionRating+Rating")]
     pub type Rating = crate::GlobalNamespace::ObstacleExecutionRating_Rating;
     pub fn New(
@@ -62,7 +63,8 @@ impl ObstacleExecutionRating {
     }
 }
 #[cfg(feature = "ObstacleExecutionRating")]
-impl quest_hook::libil2cpp::ObjectType for ObstacleExecutionRating {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ObstacleExecutionRating {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

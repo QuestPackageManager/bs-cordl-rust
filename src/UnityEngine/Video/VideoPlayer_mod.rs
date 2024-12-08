@@ -320,12 +320,12 @@ impl std::ops::DerefMut for crate::UnityEngine::Video::VideoPlayer {
 impl crate::UnityEngine::Video::VideoPlayer {
     #[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
     pub type ErrorEventHandler = crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler;
+    #[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
+    pub type EventHandler = crate::UnityEngine::Video::VideoPlayer_EventHandler;
     #[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
     pub type FrameReadyEventHandler = crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler;
     #[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
     pub type TimeEventHandler = crate::UnityEngine::Video::VideoPlayer_TimeEventHandler;
-    #[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
-    pub type EventHandler = crate::UnityEngine::Video::VideoPlayer_EventHandler;
     pub fn EnableAudioTrack(
         &mut self,
         trackIndex: u16,

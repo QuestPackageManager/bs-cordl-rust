@@ -3,29 +3,30 @@
 #[derive(Debug)]
 pub struct BpmController {
     __cordl_parent: crate::System::Object,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
-    pub _beatmapDataCallback: *mut BeatmapDataCallbackWrapper,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _beatmapDataCallback: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     pub _currentBpm: f32,
 }
 #[cfg(feature = "BpmController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BpmController => ""."BpmController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BpmController => ""
+    ."BpmController"
 );
 #[cfg(feature = "BpmController")]
-impl std::ops::Deref for BpmController {
+impl std::ops::Deref for crate::GlobalNamespace::BpmController {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BpmController")]
-impl std::ops::DerefMut for BpmController {
+impl std::ops::DerefMut for crate::GlobalNamespace::BpmController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BpmController")]
-impl BpmController {
+impl crate::GlobalNamespace::BpmController {
     #[cfg(feature = "BpmController+InitData")]
     pub type InitData = crate::GlobalNamespace::BpmController_InitData;
     pub fn Dispose(
@@ -40,7 +41,7 @@ impl BpmController {
     }
     pub fn HandleBpmChangeBeatmapEvent(
         &mut self,
-        bpmChangeBeatmapEventData: *mut BPMChangeBeatmapEventData,
+        bpmChangeBeatmapEventData: *mut crate::GlobalNamespace::BPMChangeBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -51,7 +52,7 @@ impl BpmController {
     }
     pub fn New(
         initData: *mut crate::GlobalNamespace::BpmController_InitData,
-        beatmapCallbacksController: *mut BeatmapCallbacksController,
+        beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -62,7 +63,7 @@ impl BpmController {
     pub fn _ctor(
         &mut self,
         initData: *mut crate::GlobalNamespace::BpmController_InitData,
-        beatmapCallbacksController: *mut BeatmapCallbacksController,
+        beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -87,7 +88,7 @@ impl BpmController {
     }
 }
 #[cfg(feature = "BpmController")]
-impl quest_hook::libil2cpp::ObjectType for BpmController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BpmController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

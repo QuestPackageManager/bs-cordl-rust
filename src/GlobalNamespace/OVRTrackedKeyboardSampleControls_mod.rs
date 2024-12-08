@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct OVRTrackedKeyboardSampleControls {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub trackedKeyboard: *mut OVRTrackedKeyboard,
+    pub trackedKeyboard: *mut crate::GlobalNamespace::OVRTrackedKeyboard,
     pub StartingFocusField: *mut crate::UnityEngine::UI::InputField,
     pub NameValue: *mut crate::UnityEngine::UI::Text,
     pub ConnectedValue: *mut crate::UnityEngine::UI::Text,
@@ -21,24 +21,25 @@ pub struct OVRTrackedKeyboardSampleControls {
 }
 #[cfg(feature = "OVRTrackedKeyboardSampleControls")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRTrackedKeyboardSampleControls => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRTrackedKeyboardSampleControls => ""
     ."OVRTrackedKeyboardSampleControls"
 );
 #[cfg(feature = "OVRTrackedKeyboardSampleControls")]
-impl std::ops::Deref for OVRTrackedKeyboardSampleControls {
+impl std::ops::Deref for crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTrackedKeyboardSampleControls")]
-impl std::ops::DerefMut for OVRTrackedKeyboardSampleControls {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTrackedKeyboardSampleControls")]
-impl OVRTrackedKeyboardSampleControls {
+impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
     #[cfg(feature = "OVRTrackedKeyboardSampleControls+_SetShaderCoroutine_d__19")]
     pub type _SetShaderCoroutine_d__19 = crate::GlobalNamespace::OVRTrackedKeyboardSampleControls__SetShaderCoroutine_d__19;
     pub fn LaunchKeyboardSelection(
@@ -162,7 +163,8 @@ impl OVRTrackedKeyboardSampleControls {
     }
 }
 #[cfg(feature = "OVRTrackedKeyboardSampleControls")]
-impl quest_hook::libil2cpp::ObjectType for OVRTrackedKeyboardSampleControls {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

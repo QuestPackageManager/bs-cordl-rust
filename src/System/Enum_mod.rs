@@ -24,10 +24,10 @@ impl std::ops::DerefMut for crate::System::Enum {
 #[cfg(feature = "System+Enum")]
 impl crate::System::Enum {
     pub const enumSeperator: &'static str = ", ";
-    #[cfg(feature = "System+Enum+ParseFailureKind")]
-    pub type ParseFailureKind = crate::GlobalNamespace::Enum_ParseFailureKind;
     #[cfg(feature = "System+Enum+EnumResult")]
     pub type EnumResult = crate::System::Enum_EnumResult;
+    #[cfg(feature = "System+Enum+ParseFailureKind")]
+    pub type ParseFailureKind = crate::GlobalNamespace::Enum_ParseFailureKind;
     #[cfg(feature = "System+Enum+ValuesAndNames")]
     pub type ValuesAndNames = crate::System::Enum_ValuesAndNames;
     pub fn CompareTo(

@@ -3,29 +3,30 @@
 #[derive(Debug)]
 pub struct ExternalCamerasManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _oculusMRCManager: *mut OculusMRCManager,
+    pub _oculusMRCManager: *mut crate::GlobalNamespace::OculusMRCManager,
     pub _mrcBackgroundCameraPrefab: *mut crate::UnityEngine::Camera,
     pub _mrcForegroundCameraPrefab: *mut crate::UnityEngine::Camera,
 }
 #[cfg(feature = "ExternalCamerasManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ExternalCamerasManager => ""."ExternalCamerasManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ExternalCamerasManager => ""
+    ."ExternalCamerasManager"
 );
 #[cfg(feature = "ExternalCamerasManager")]
-impl std::ops::Deref for ExternalCamerasManager {
+impl std::ops::Deref for crate::GlobalNamespace::ExternalCamerasManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ExternalCamerasManager")]
-impl std::ops::DerefMut for ExternalCamerasManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::ExternalCamerasManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ExternalCamerasManager")]
-impl ExternalCamerasManager {
+impl crate::GlobalNamespace::ExternalCamerasManager {
     pub fn InstantiateMixedRealityBackgroundCameraGameObject(
         &mut self,
         mainCameraGameObject: *mut crate::UnityEngine::GameObject,
@@ -83,7 +84,8 @@ impl ExternalCamerasManager {
     }
 }
 #[cfg(feature = "ExternalCamerasManager")]
-impl quest_hook::libil2cpp::ObjectType for ExternalCamerasManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ExternalCamerasManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

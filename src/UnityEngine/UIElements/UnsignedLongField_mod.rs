@@ -24,12 +24,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UnsignedLongField {
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField")]
 impl crate::UnityEngine::UIElements::UnsignedLongField {
-    #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UxmlTraits")]
-    pub type UxmlTraits = crate::UnityEngine::UIElements::UnsignedLongField_UxmlTraits;
     #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UnsignedLongInput")]
     pub type UnsignedLongInput = crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput;
     #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UxmlFactory")]
     pub type UxmlFactory = crate::UnityEngine::UIElements::UnsignedLongField_UxmlFactory;
+    #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UxmlTraits")]
+    pub type UxmlTraits = crate::UnityEngine::UIElements::UnsignedLongField_UxmlTraits;
     pub fn ApplyInputDeviceDelta(
         &mut self,
         delta: crate::UnityEngine::Vector3,

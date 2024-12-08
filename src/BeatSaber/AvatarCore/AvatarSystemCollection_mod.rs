@@ -39,13 +39,13 @@ impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::AvatarSystemCollection
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemCollection")]
 impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     #[cfg(
-        feature = "BeatSaber+AvatarCore+AvatarSystemCollection+_GetMultiplayerAvatarsData_d__16"
-    )]
-    pub type _GetMultiplayerAvatarsData_d__16 = crate::BeatSaber::AvatarCore::AvatarSystemCollection__GetMultiplayerAvatarsData_d__16;
-    #[cfg(
         feature = "BeatSaber+AvatarCore+AvatarSystemCollection+_CreateDefaultAvatarsForAvatarSystemsWithoutUserCreatedAvatarAsync_d__18"
     )]
     pub type _CreateDefaultAvatarsForAvatarSystemsWithoutUserCreatedAvatarAsync_d__18 = crate::BeatSaber::AvatarCore::AvatarSystemCollection__CreateDefaultAvatarsForAvatarSystemsWithoutUserCreatedAvatarAsync_d__18;
+    #[cfg(
+        feature = "BeatSaber+AvatarCore+AvatarSystemCollection+_GetMultiplayerAvatarsData_d__16"
+    )]
+    pub type _GetMultiplayerAvatarsData_d__16 = crate::BeatSaber::AvatarCore::AvatarSystemCollection__GetMultiplayerAvatarsData_d__16;
     #[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemCollection+__c")]
     pub type __c = crate::BeatSaber::AvatarCore::AvatarSystemCollection___c;
     pub fn CreateDefaultAvatarsForAvatarSystemsWithoutUserCreatedAvatarAsync(
@@ -133,13 +133,15 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
         &mut self,
         selectedAvatarTypeIdentifier: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<MultiplayerAvatarsData>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::MultiplayerAvatarsData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            MultiplayerAvatarsData,
+            crate::GlobalNamespace::MultiplayerAvatarsData,
         > = __cordl_object
             .invoke("GetMultiplayerAvatarsData", (selectedAvatarTypeIdentifier))?;
         Ok(__cordl_ret)

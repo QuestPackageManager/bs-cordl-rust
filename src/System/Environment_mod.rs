@@ -24,10 +24,10 @@ impl std::ops::DerefMut for crate::System::Environment {
 #[cfg(feature = "System+Environment")]
 impl crate::System::Environment {
     pub const mono_corlib_version: &'static str = "1A5E0066-58DC-428A-B21C-0AD6CDAE2789";
-    #[cfg(feature = "System+Environment+SpecialFolderOption")]
-    pub type SpecialFolderOption = crate::System::Environment_SpecialFolderOption;
     #[cfg(feature = "System+Environment+SpecialFolder")]
     pub type SpecialFolder = crate::System::Environment_SpecialFolder;
+    #[cfg(feature = "System+Environment+SpecialFolderOption")]
+    pub type SpecialFolderOption = crate::System::Environment_SpecialFolderOption;
 }
 #[cfg(feature = "System+Environment")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Environment {

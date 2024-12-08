@@ -8,32 +8,33 @@ pub struct FlyingScoreSpawner {
 }
 #[cfg(feature = "FlyingScoreSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FlyingScoreSpawner => ""."FlyingScoreSpawner"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FlyingScoreSpawner => ""
+    ."FlyingScoreSpawner"
 );
 #[cfg(feature = "FlyingScoreSpawner")]
-impl std::ops::Deref for FlyingScoreSpawner {
+impl std::ops::Deref for crate::GlobalNamespace::FlyingScoreSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FlyingScoreSpawner")]
-impl std::ops::DerefMut for FlyingScoreSpawner {
+impl std::ops::DerefMut for crate::GlobalNamespace::FlyingScoreSpawner {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FlyingScoreSpawner")]
-impl FlyingScoreSpawner {
-    #[cfg(feature = "FlyingScoreSpawner+_SpawnFlyingScoreNextFrameCoroutine_d__5")]
-    pub type _SpawnFlyingScoreNextFrameCoroutine_d__5 = crate::GlobalNamespace::FlyingScoreSpawner__SpawnFlyingScoreNextFrameCoroutine_d__5;
-    #[cfg(feature = "FlyingScoreSpawner+SpawnPosition")]
-    pub type SpawnPosition = crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition;
+impl crate::GlobalNamespace::FlyingScoreSpawner {
     #[cfg(feature = "FlyingScoreSpawner+InitData")]
     pub type InitData = crate::GlobalNamespace::FlyingScoreSpawner_InitData;
+    #[cfg(feature = "FlyingScoreSpawner+SpawnPosition")]
+    pub type SpawnPosition = crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition;
+    #[cfg(feature = "FlyingScoreSpawner+_SpawnFlyingScoreNextFrameCoroutine_d__5")]
+    pub type _SpawnFlyingScoreNextFrameCoroutine_d__5 = crate::GlobalNamespace::FlyingScoreSpawner__SpawnFlyingScoreNextFrameCoroutine_d__5;
     pub fn HandleFlyingObjectEffectDidFinish(
         &mut self,
-        flyingObjectEffect: *mut FlyingObjectEffect,
+        flyingObjectEffect: *mut crate::GlobalNamespace::FlyingObjectEffect,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -51,7 +52,7 @@ impl FlyingScoreSpawner {
     }
     pub fn SpawnFlyingScore(
         &mut self,
-        cutScoreBuffer: *mut IReadonlyCutScoreBuffer,
+        cutScoreBuffer: *mut crate::GlobalNamespace::IReadonlyCutScoreBuffer,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -63,7 +64,7 @@ impl FlyingScoreSpawner {
     }
     pub fn SpawnFlyingScoreNextFrame(
         &mut self,
-        cutScoreBuffer: *mut IReadonlyCutScoreBuffer,
+        cutScoreBuffer: *mut crate::GlobalNamespace::IReadonlyCutScoreBuffer,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -75,7 +76,7 @@ impl FlyingScoreSpawner {
     }
     pub fn SpawnFlyingScoreNextFrameCoroutine(
         &mut self,
-        cutScoreBuffer: *mut IReadonlyCutScoreBuffer,
+        cutScoreBuffer: *mut crate::GlobalNamespace::IReadonlyCutScoreBuffer,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -97,7 +98,7 @@ impl FlyingScoreSpawner {
     }
 }
 #[cfg(feature = "FlyingScoreSpawner")]
-impl quest_hook::libil2cpp::ObjectType for FlyingScoreSpawner {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlyingScoreSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

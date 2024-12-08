@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassDoubleKawaseBlurTextureEffectSO {
-    __cordl_parent: BloomPrePassEffectSO,
+    __cordl_parent: crate::GlobalNamespace::BloomPrePassEffectSO,
     pub _bloom1KernelSize: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
     pub _bloom1Boost: f32,
     pub _bloom2KernelSize: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
@@ -10,28 +10,31 @@ pub struct BloomPrePassDoubleKawaseBlurTextureEffectSO {
     pub _bloom2Alpha: f32,
     pub _downsample: i32,
     pub _gammaCorrection: bool,
-    pub _kawaseBlurRenderer: *mut KawaseBlurRendererSO,
+    pub _kawaseBlurRenderer: *mut crate::GlobalNamespace::KawaseBlurRendererSO,
 }
 #[cfg(feature = "BloomPrePassDoubleKawaseBlurTextureEffectSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomPrePassDoubleKawaseBlurTextureEffectSO => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BloomPrePassDoubleKawaseBlurTextureEffectSO => ""
     ."BloomPrePassDoubleKawaseBlurTextureEffectSO"
 );
 #[cfg(feature = "BloomPrePassDoubleKawaseBlurTextureEffectSO")]
-impl std::ops::Deref for BloomPrePassDoubleKawaseBlurTextureEffectSO {
-    type Target = BloomPrePassEffectSO;
+impl std::ops::Deref
+for crate::GlobalNamespace::BloomPrePassDoubleKawaseBlurTextureEffectSO {
+    type Target = crate::GlobalNamespace::BloomPrePassEffectSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassDoubleKawaseBlurTextureEffectSO")]
-impl std::ops::DerefMut for BloomPrePassDoubleKawaseBlurTextureEffectSO {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::BloomPrePassDoubleKawaseBlurTextureEffectSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassDoubleKawaseBlurTextureEffectSO")]
-impl BloomPrePassDoubleKawaseBlurTextureEffectSO {
+impl crate::GlobalNamespace::BloomPrePassDoubleKawaseBlurTextureEffectSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -63,7 +66,8 @@ impl BloomPrePassDoubleKawaseBlurTextureEffectSO {
     }
 }
 #[cfg(feature = "BloomPrePassDoubleKawaseBlurTextureEffectSO")]
-impl quest_hook::libil2cpp::ObjectType for BloomPrePassDoubleKawaseBlurTextureEffectSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BloomPrePassDoubleKawaseBlurTextureEffectSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

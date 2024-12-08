@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalActivePlayerInGameMenuController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _inGameMenuViewController: *mut MultiplayerLocalActivePlayerInGameMenuViewController,
-    pub _menuButtonTrigger: *mut IMenuButtonTrigger,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
-    pub _gamePause: *mut IGamePause,
-    pub _multiplayerController: *mut MultiplayerController,
-    pub _saberManager: *mut SaberManager,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
+    pub _inGameMenuViewController: *mut crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuViewController,
+    pub _menuButtonTrigger: *mut crate::GlobalNamespace::IMenuButtonTrigger,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
+    pub _gamePause: *mut crate::GlobalNamespace::IGamePause,
+    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
+    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
     pub didGiveUpEvent: *mut crate::System::Action,
     pub requestsDisconnectEvent: *mut crate::System::Action,
     pub _gameMenuIsShown: bool,
@@ -17,24 +17,27 @@ pub struct MultiplayerLocalActivePlayerInGameMenuController {
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerInGameMenuController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLocalActivePlayerInGameMenuController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController => ""
     ."MultiplayerLocalActivePlayerInGameMenuController"
 );
 #[cfg(feature = "MultiplayerLocalActivePlayerInGameMenuController")]
-impl std::ops::Deref for MultiplayerLocalActivePlayerInGameMenuController {
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerInGameMenuController")]
-impl std::ops::DerefMut for MultiplayerLocalActivePlayerInGameMenuController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerInGameMenuController")]
-impl MultiplayerLocalActivePlayerInGameMenuController {
+impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
     pub const kChangeStateDelay: f32 = 0.05f32;
     pub fn HandleInGameMenuViewControllerDidPressDisconnectButton(
         &mut self,
@@ -226,7 +229,7 @@ impl MultiplayerLocalActivePlayerInGameMenuController {
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerInGameMenuController")]
 impl quest_hook::libil2cpp::ObjectType
-for MultiplayerLocalActivePlayerInGameMenuController {
+for crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EditableBeatmapSelectionView {
-    __cordl_parent: BeatmapSelectionView,
+    __cordl_parent: crate::GlobalNamespace::BeatmapSelectionView,
     pub _editButton: *mut crate::UnityEngine::UI::Button,
     pub _clearButton: *mut crate::UnityEngine::UI::Button,
     pub _levelBarCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
@@ -11,24 +11,24 @@ pub struct EditableBeatmapSelectionView {
 }
 #[cfg(feature = "EditableBeatmapSelectionView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EditableBeatmapSelectionView => ""
-    ."EditableBeatmapSelectionView"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EditableBeatmapSelectionView =>
+    ""."EditableBeatmapSelectionView"
 );
 #[cfg(feature = "EditableBeatmapSelectionView")]
-impl std::ops::Deref for EditableBeatmapSelectionView {
-    type Target = BeatmapSelectionView;
+impl std::ops::Deref for crate::GlobalNamespace::EditableBeatmapSelectionView {
+    type Target = crate::GlobalNamespace::BeatmapSelectionView;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EditableBeatmapSelectionView")]
-impl std::ops::DerefMut for EditableBeatmapSelectionView {
+impl std::ops::DerefMut for crate::GlobalNamespace::EditableBeatmapSelectionView {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EditableBeatmapSelectionView")]
-impl EditableBeatmapSelectionView {
+impl crate::GlobalNamespace::EditableBeatmapSelectionView {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -38,7 +38,7 @@ impl EditableBeatmapSelectionView {
     }
     pub fn SetBeatmap(
         &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -137,7 +137,8 @@ impl EditableBeatmapSelectionView {
     }
 }
 #[cfg(feature = "EditableBeatmapSelectionView")]
-impl quest_hook::libil2cpp::ObjectType for EditableBeatmapSelectionView {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EditableBeatmapSelectionView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

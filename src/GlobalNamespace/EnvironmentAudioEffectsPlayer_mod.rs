@@ -7,24 +7,24 @@ pub struct EnvironmentAudioEffectsPlayer {
 }
 #[cfg(feature = "EnvironmentAudioEffectsPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnvironmentAudioEffectsPlayer => ""
-    ."EnvironmentAudioEffectsPlayer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnvironmentAudioEffectsPlayer
+    => ""."EnvironmentAudioEffectsPlayer"
 );
 #[cfg(feature = "EnvironmentAudioEffectsPlayer")]
-impl std::ops::Deref for EnvironmentAudioEffectsPlayer {
+impl std::ops::Deref for crate::GlobalNamespace::EnvironmentAudioEffectsPlayer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentAudioEffectsPlayer")]
-impl std::ops::DerefMut for EnvironmentAudioEffectsPlayer {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentAudioEffectsPlayer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentAudioEffectsPlayer")]
-impl EnvironmentAudioEffectsPlayer {
+impl crate::GlobalNamespace::EnvironmentAudioEffectsPlayer {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -66,7 +66,8 @@ impl EnvironmentAudioEffectsPlayer {
     }
 }
 #[cfg(feature = "EnvironmentAudioEffectsPlayer")]
-impl quest_hook::libil2cpp::ObjectType for EnvironmentAudioEffectsPlayer {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EnvironmentAudioEffectsPlayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

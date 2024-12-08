@@ -506,36 +506,6 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem")]
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
     #[cfg(
-        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundPosition"
-    )]
-    pub type ValuesBackgroundPosition = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundPosition;
-    #[cfg(
-        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundRepeat"
-    )]
-    pub type ValuesBackgroundRepeat = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundRepeat;
-    #[cfg(
-        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTextShadow"
-    )]
-    pub type ValuesTextShadow = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShadow;
-    #[cfg(
-        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundSize"
-    )]
-    pub type ValuesBackgroundSize = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundSize;
-    #[cfg(
-        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesDiscrete_1"
-    )]
-    pub type ValuesDiscrete_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
-        T,
-    >;
-    #[cfg(
-        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackground"
-    )]
-    pub type ValuesBackground = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackground;
-    #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesLength")]
-    pub type ValuesLength = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength;
-    #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesInt")]
-    pub type ValuesInt = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt;
-    #[cfg(
         feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+AnimationDataSet_2"
     )]
     pub type AnimationDataSet_2<
@@ -545,42 +515,72 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         TTimingData,
         TStyleData,
     >;
-    #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values")]
-    pub type Values = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values;
-    #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesScale")]
-    pub type ValuesScale = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale;
-    #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFloat")]
-    pub type ValuesFloat = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat;
-    #[cfg(
-        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTranslate"
-    )]
-    pub type ValuesTranslate = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslate;
-    #[cfg(
-        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+TransitionState"
-    )]
-    pub type TransitionState = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_TransitionState;
-    #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1")]
-    pub type Values_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
-        T,
-    >;
-    #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesColor")]
-    pub type ValuesColor = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor;
-    #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesRotate")]
-    pub type ValuesRotate = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate;
     #[cfg(
         feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair"
     )]
     pub type ElementPropertyPair = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair;
     #[cfg(
+        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+TransitionState"
+    )]
+    pub type TransitionState = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_TransitionState;
+    #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values")]
+    pub type Values = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values;
+    #[cfg(
+        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackground"
+    )]
+    pub type ValuesBackground = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackground;
+    #[cfg(
+        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundPosition"
+    )]
+    pub type ValuesBackgroundPosition = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundPosition;
+    #[cfg(
+        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundRepeat"
+    )]
+    pub type ValuesBackgroundRepeat = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundRepeat;
+    #[cfg(
+        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundSize"
+    )]
+    pub type ValuesBackgroundSize = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundSize;
+    #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesColor")]
+    pub type ValuesColor = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor;
+    #[cfg(
+        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesDiscrete_1"
+    )]
+    pub type ValuesDiscrete_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
+        T,
+    >;
+    #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFloat")]
+    pub type ValuesFloat = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat;
+    #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFont")]
+    pub type ValuesFont = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFont;
+    #[cfg(
         feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFontDefinition"
     )]
     pub type ValuesFontDefinition = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFontDefinition;
+    #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesInt")]
+    pub type ValuesInt = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt;
+    #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesLength")]
+    pub type ValuesLength = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength;
+    #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesRotate")]
+    pub type ValuesRotate = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate;
+    #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesScale")]
+    pub type ValuesScale = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale;
+    #[cfg(
+        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTextShadow"
+    )]
+    pub type ValuesTextShadow = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShadow;
     #[cfg(
         feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTransformOrigin"
     )]
     pub type ValuesTransformOrigin = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransformOrigin;
-    #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFont")]
-    pub type ValuesFont = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFont;
+    #[cfg(
+        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTranslate"
+    )]
+    pub type ValuesTranslate = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslate;
+    #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1")]
+    pub type Values_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+        T,
+    >;
     pub fn CancelAllAnimations_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -3227,12 +3227,6 @@ impl<
     )]
     pub type EmptyData = crate::UnityEngine::UIElements::Values_1_EmptyData<T>;
     #[cfg(
-        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
-    )]
-    pub type TransitionEventsFrameState = crate::UnityEngine::UIElements::Values_1_TransitionEventsFrameState<
-        T,
-    >;
-    #[cfg(
         feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+StyleData"
     )]
     pub type StyleData = crate::UnityEngine::UIElements::Values_1_StyleData<T>;
@@ -3240,6 +3234,12 @@ impl<
         feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TimingData"
     )]
     pub type TimingData = crate::UnityEngine::UIElements::Values_1_TimingData<T>;
+    #[cfg(
+        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
+    )]
+    pub type TransitionEventsFrameState = crate::UnityEngine::UIElements::Values_1_TransitionEventsFrameState<
+        T,
+    >;
     pub fn CancelAllAnimations_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

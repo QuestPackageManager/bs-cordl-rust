@@ -59,7 +59,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel {
 #[repr(C)]
 #[derive(Debug)]
 pub struct KawaseBlurRendererSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _kawaseBlurShader: *mut crate::UnityEngine::Shader,
     pub _additiveShader: *mut crate::UnityEngine::Shader,
     pub _tintShader: *mut crate::UnityEngine::Shader,
@@ -79,28 +79,29 @@ pub struct KawaseBlurRendererSO {
 }
 #[cfg(feature = "KawaseBlurRendererSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for KawaseBlurRendererSO => ""."KawaseBlurRendererSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::KawaseBlurRendererSO => ""
+    ."KawaseBlurRendererSO"
 );
 #[cfg(feature = "KawaseBlurRendererSO")]
-impl std::ops::Deref for KawaseBlurRendererSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::KawaseBlurRendererSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "KawaseBlurRendererSO")]
-impl std::ops::DerefMut for KawaseBlurRendererSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::KawaseBlurRendererSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "KawaseBlurRendererSO")]
-impl KawaseBlurRendererSO {
+impl crate::GlobalNamespace::KawaseBlurRendererSO {
     pub const kMaxBloomIterations: i32 = 5i32;
-    #[cfg(feature = "KawaseBlurRendererSO+KernelSize")]
-    pub type KernelSize = crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize;
     #[cfg(feature = "KawaseBlurRendererSO+BloomKernel")]
     pub type BloomKernel = crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel;
+    #[cfg(feature = "KawaseBlurRendererSO+KernelSize")]
+    pub type KernelSize = crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize;
     #[cfg(feature = "KawaseBlurRendererSO+Pass")]
     pub type Pass = crate::GlobalNamespace::KawaseBlurRendererSO_Pass;
     #[cfg(feature = "KawaseBlurRendererSO+WeightsType")]
@@ -315,7 +316,7 @@ impl KawaseBlurRendererSO {
     }
 }
 #[cfg(feature = "KawaseBlurRendererSO")]
-impl quest_hook::libil2cpp::ObjectType for KawaseBlurRendererSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::KawaseBlurRendererSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

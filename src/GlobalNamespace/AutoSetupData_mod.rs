@@ -10,23 +10,24 @@ pub struct AutoSetupData {
 }
 #[cfg(feature = "AutoSetupData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AutoSetupData => ""."AutoSetupData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AutoSetupData => ""
+    ."AutoSetupData"
 );
 #[cfg(feature = "AutoSetupData")]
-impl std::ops::Deref for AutoSetupData {
+impl std::ops::Deref for crate::GlobalNamespace::AutoSetupData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AutoSetupData")]
-impl std::ops::DerefMut for AutoSetupData {
+impl std::ops::DerefMut for crate::GlobalNamespace::AutoSetupData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AutoSetupData")]
-impl AutoSetupData {
+impl crate::GlobalNamespace::AutoSetupData {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -46,7 +47,7 @@ impl AutoSetupData {
     }
 }
 #[cfg(feature = "AutoSetupData")]
-impl quest_hook::libil2cpp::ObjectType for AutoSetupData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AutoSetupData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

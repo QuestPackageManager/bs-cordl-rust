@@ -89,12 +89,12 @@ impl std::ops::DerefMut for crate::System::Diagnostics::Process {
 }
 #[cfg(feature = "System+Diagnostics+Process")]
 impl crate::System::Diagnostics::Process {
-    #[cfg(feature = "System+Diagnostics+Process+StreamReadMode")]
-    pub type StreamReadMode = crate::System::Diagnostics::Process_StreamReadMode;
-    #[cfg(feature = "System+Diagnostics+Process+State")]
-    pub type State = crate::System::Diagnostics::Process_State;
     #[cfg(feature = "System+Diagnostics+Process+ProcInfo")]
     pub type ProcInfo = crate::System::Diagnostics::Process_ProcInfo;
+    #[cfg(feature = "System+Diagnostics+Process+State")]
+    pub type State = crate::System::Diagnostics::Process_State;
+    #[cfg(feature = "System+Diagnostics+Process+StreamReadMode")]
+    pub type StreamReadMode = crate::System::Diagnostics::Process_StreamReadMode;
     pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

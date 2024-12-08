@@ -3,32 +3,33 @@
 #[derive(Debug)]
 pub struct MissionLevelModifiersViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _gameplayModifiersModel: *mut GameplayModifiersModelSO,
-    pub _gameplayModifierInfoListItemsList: *mut GameplayModifierInfoListItemsList,
+    pub _gameplayModifiersModel: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
+    pub _gameplayModifierInfoListItemsList: *mut crate::GlobalNamespace::GameplayModifierInfoListItemsList,
     pub _modifiersPanel: *mut crate::UnityEngine::GameObject,
     pub _titleText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _gameplayModifiers: *mut GameplayModifiers,
+    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
 }
 #[cfg(feature = "MissionLevelModifiersViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionLevelModifiersViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MissionLevelModifiersViewController => ""
     ."MissionLevelModifiersViewController"
 );
 #[cfg(feature = "MissionLevelModifiersViewController")]
-impl std::ops::Deref for MissionLevelModifiersViewController {
+impl std::ops::Deref for crate::GlobalNamespace::MissionLevelModifiersViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionLevelModifiersViewController")]
-impl std::ops::DerefMut for MissionLevelModifiersViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionLevelModifiersViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionLevelModifiersViewController")]
-impl MissionLevelModifiersViewController {
+impl crate::GlobalNamespace::MissionLevelModifiersViewController {
     #[cfg(feature = "MissionLevelModifiersViewController+__c__DisplayClass7_0")]
     pub type __c__DisplayClass7_0 = crate::GlobalNamespace::MissionLevelModifiersViewController___c__DisplayClass7_0;
     pub fn DidActivate(
@@ -66,7 +67,7 @@ impl MissionLevelModifiersViewController {
     }
     pub fn Setup(
         &mut self,
-        gameplayModifiers: *mut GameplayModifiers,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -87,7 +88,8 @@ impl MissionLevelModifiersViewController {
     }
 }
 #[cfg(feature = "MissionLevelModifiersViewController")]
-impl quest_hook::libil2cpp::ObjectType for MissionLevelModifiersViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MissionLevelModifiersViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

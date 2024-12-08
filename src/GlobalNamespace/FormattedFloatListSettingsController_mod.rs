@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FormattedFloatListSettingsController {
-    __cordl_parent: ListSettingsController,
+    __cordl_parent: crate::GlobalNamespace::ListSettingsController,
     pub _values: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
     pub _formattingString: *mut crate::System::String,
     pub valueType: crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType,
     pub valueDidChangeEvent: *mut crate::System::Action_2<
-        *mut FormattedFloatListSettingsController,
+        *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
         f32,
     >,
     pub _value: f32,
@@ -17,24 +17,26 @@ pub struct FormattedFloatListSettingsController {
 }
 #[cfg(feature = "FormattedFloatListSettingsController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FormattedFloatListSettingsController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::FormattedFloatListSettingsController => ""
     ."FormattedFloatListSettingsController"
 );
 #[cfg(feature = "FormattedFloatListSettingsController")]
-impl std::ops::Deref for FormattedFloatListSettingsController {
-    type Target = ListSettingsController;
+impl std::ops::Deref for crate::GlobalNamespace::FormattedFloatListSettingsController {
+    type Target = crate::GlobalNamespace::ListSettingsController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FormattedFloatListSettingsController")]
-impl std::ops::DerefMut for FormattedFloatListSettingsController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::FormattedFloatListSettingsController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FormattedFloatListSettingsController")]
-impl FormattedFloatListSettingsController {
+impl crate::GlobalNamespace::FormattedFloatListSettingsController {
     #[cfg(feature = "FormattedFloatListSettingsController+ValueType")]
     pub type ValueType = crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType;
     pub fn ApplyValue(
@@ -103,7 +105,7 @@ impl FormattedFloatListSettingsController {
     pub fn add_valueDidChangeEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut FormattedFloatListSettingsController,
+            *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
             f32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -134,7 +136,7 @@ impl FormattedFloatListSettingsController {
     pub fn remove_valueDidChangeEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut FormattedFloatListSettingsController,
+            *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
             f32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -158,7 +160,8 @@ impl FormattedFloatListSettingsController {
     }
 }
 #[cfg(feature = "FormattedFloatListSettingsController")]
-impl quest_hook::libil2cpp::ObjectType for FormattedFloatListSettingsController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FormattedFloatListSettingsController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

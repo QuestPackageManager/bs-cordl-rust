@@ -42,12 +42,12 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake {
     pub const MessageHeaderLength: i32 = 12i32;
     #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReliableHandshake+Message")]
     pub type Message = crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_Message;
-    #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReliableHandshake+Retransmit")]
-    pub type Retransmit = crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_Retransmit;
     #[cfg(
         feature = "Org+BouncyCastle+Crypto+Tls+DtlsReliableHandshake+RecordLayerBuffer"
     )]
     pub type RecordLayerBuffer = crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_RecordLayerBuffer;
+    #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReliableHandshake+Retransmit")]
+    pub type Retransmit = crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_Retransmit;
     pub fn BackOff(&mut self, timeoutMillis: i32) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

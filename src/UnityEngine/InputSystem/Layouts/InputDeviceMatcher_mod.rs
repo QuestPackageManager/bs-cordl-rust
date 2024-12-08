@@ -62,14 +62,14 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
 impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
+    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson")]
+    pub type MatcherJson = crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson;
     #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+__c")]
     pub type __c = crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher___c;
     #[cfg(
         feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+_get_patterns_d__4"
     )]
     pub type _get_patterns_d__4 = crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher__get_patterns_d__4;
-    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson")]
-    pub type MatcherJson = crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson;
     pub fn Equals_InputDeviceMatcher0(
         &mut self,
         other: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,

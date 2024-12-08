@@ -197,12 +197,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::NavigateFocusRing {
 }
 #[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing")]
 impl crate::UnityEngine::UIElements::NavigateFocusRing {
+    #[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+ChangeDirection")]
+    pub type ChangeDirection = crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection;
     #[cfg(
         feature = "UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal"
     )]
     pub type FocusableHierarchyTraversal = crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal;
-    #[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+ChangeDirection")]
-    pub type ChangeDirection = crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection;
     pub fn GetFocusChangeDirection(
         &mut self,
         currentFocusable: *mut crate::UnityEngine::UIElements::Focusable,

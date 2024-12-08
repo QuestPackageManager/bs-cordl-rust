@@ -9,37 +9,37 @@ pub struct BeatmapEventDataBoxGroup {
         *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
     >,
     pub _unpackedBeatmapEventData: *mut crate::System::Collections::Generic::List_1<
-        *mut BeatmapEventData,
+        *mut crate::GlobalNamespace::BeatmapEventData,
     >,
     pub _beatmapEventDataBoxList: *mut crate::System::Collections::Generic::IReadOnlyCollection_1<
-        *mut BeatmapEventDataBox,
+        *mut crate::GlobalNamespace::BeatmapEventDataBox,
     >,
 }
 #[cfg(feature = "BeatmapEventDataBoxGroup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapEventDataBoxGroup => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapEventDataBoxGroup => ""
     ."BeatmapEventDataBoxGroup"
 );
 #[cfg(feature = "BeatmapEventDataBoxGroup")]
-impl std::ops::Deref for BeatmapEventDataBoxGroup {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapEventDataBoxGroup {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapEventDataBoxGroup")]
-impl std::ops::DerefMut for BeatmapEventDataBoxGroup {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapEventDataBoxGroup {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapEventDataBoxGroup")]
-impl BeatmapEventDataBoxGroup {
+impl crate::GlobalNamespace::BeatmapEventDataBoxGroup {
     #[cfg(feature = "BeatmapEventDataBoxGroup+ElementData")]
     pub type ElementData = crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData;
     pub fn CompareTo(
         &mut self,
-        b: *mut BeatmapEventDataBoxGroup,
+        b: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -50,18 +50,20 @@ impl BeatmapEventDataBoxGroup {
     pub fn GetCopyWithNewBeat(
         &mut self,
         newBeat: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapEventDataBoxGroup> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapEventDataBoxGroup = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup = __cordl_object
             .invoke("GetCopyWithNewBeat", (newBeat))?;
         Ok(__cordl_ret)
     }
     pub fn New(
         beat: f32,
         beatmapEventDataBoxList: *mut crate::System::Collections::Generic::IReadOnlyCollection_1<
-            *mut BeatmapEventDataBox,
+            *mut crate::GlobalNamespace::BeatmapEventDataBox,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -72,7 +74,7 @@ impl BeatmapEventDataBoxGroup {
     }
     pub fn RemoveBeatmapEventDataFromBeatmapData(
         &mut self,
-        beatmapData: *mut BeatmapData,
+        beatmapData: *mut crate::GlobalNamespace::BeatmapData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -84,8 +86,8 @@ impl BeatmapEventDataBoxGroup {
     pub fn SyncWithBeatmapData(
         &mut self,
         groupId: i32,
-        beatmapData: *mut BeatmapData,
-        beatToTimeConverter: *mut IBeatToTimeConverter,
+        beatmapData: *mut crate::GlobalNamespace::BeatmapData,
+        beatToTimeConverter: *mut crate::GlobalNamespace::IBeatToTimeConverter,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -98,7 +100,7 @@ impl BeatmapEventDataBoxGroup {
         &mut self,
         beat: f32,
         beatmapEventDataBoxList: *mut crate::System::Collections::Generic::IReadOnlyCollection_1<
-            *mut BeatmapEventDataBox,
+            *mut crate::GlobalNamespace::BeatmapEventDataBox,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -127,7 +129,8 @@ impl BeatmapEventDataBoxGroup {
     }
 }
 #[cfg(feature = "BeatmapEventDataBoxGroup")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapEventDataBoxGroup {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapEventDataBoxGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -146,8 +149,8 @@ pub struct BeatmapEventDataBoxGroup_ElementData {
     pub distributionOrderIndex: i32,
     pub eventBoxType: *mut crate::System::Type,
     pub eventBoxSubtypeIdentifier: i32,
-    pub eventBox: *mut BeatmapEventDataBox,
-    pub boxGroup: *mut BeatmapEventDataBoxGroup,
+    pub eventBox: *mut crate::GlobalNamespace::BeatmapEventDataBox,
+    pub boxGroup: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
     pub _next: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
     pub _previous: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData,
 }
@@ -196,8 +199,8 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData {
         Ok(__cordl_ret)
     }
     pub fn New(
-        boxGroup: *mut BeatmapEventDataBoxGroup,
-        eventBox: *mut BeatmapEventDataBox,
+        boxGroup: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+        eventBox: *mut crate::GlobalNamespace::BeatmapEventDataBox,
         elementId: i32,
         durationOrderIndex: i32,
         distributionOrderIndex: i32,
@@ -231,8 +234,8 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData {
     }
     pub fn _ctor(
         &mut self,
-        boxGroup: *mut BeatmapEventDataBoxGroup,
-        eventBox: *mut BeatmapEventDataBox,
+        boxGroup: *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
+        eventBox: *mut crate::GlobalNamespace::BeatmapEventDataBox,
         elementId: i32,
         durationOrderIndex: i32,
         distributionOrderIndex: i32,

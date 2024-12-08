@@ -185,23 +185,23 @@ pub struct ScoreModel {
 }
 #[cfg(feature = "ScoreModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ScoreModel => ""."ScoreModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ScoreModel => ""."ScoreModel"
 );
 #[cfg(feature = "ScoreModel")]
-impl std::ops::Deref for ScoreModel {
+impl std::ops::Deref for crate::GlobalNamespace::ScoreModel {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScoreModel")]
-impl std::ops::DerefMut for ScoreModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::ScoreModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScoreModel")]
-impl ScoreModel {
+impl crate::GlobalNamespace::ScoreModel {
     pub const kMaxAfterCutScore: i32 = 30i32;
     pub const kMaxBeforeCutScore: i32 = 70i32;
     pub const kMaxCenterDistanceCutScore: i32 = 15i32;
@@ -230,7 +230,7 @@ impl ScoreModel {
     }
 }
 #[cfg(feature = "ScoreModel")]
-impl quest_hook::libil2cpp::ObjectType for ScoreModel {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoreModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

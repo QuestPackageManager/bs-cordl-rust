@@ -85,14 +85,14 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ScrollView {
 impl crate::UnityEngine::UIElements::ScrollView {
     #[cfg(feature = "UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
     pub type NestedInteractionKind = crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind;
-    #[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
-    pub type TouchScrollingResult = crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult;
-    #[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlTraits")]
-    pub type UxmlTraits = crate::UnityEngine::UIElements::ScrollView_UxmlTraits;
-    #[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlFactory")]
-    pub type UxmlFactory = crate::UnityEngine::UIElements::ScrollView_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
     pub type TouchScrollBehavior = crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior;
+    #[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
+    pub type TouchScrollingResult = crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult;
+    #[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlFactory")]
+    pub type UxmlFactory = crate::UnityEngine::UIElements::ScrollView_UxmlFactory;
+    #[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlTraits")]
+    pub type UxmlTraits = crate::UnityEngine::UIElements::ScrollView_UxmlTraits;
     pub fn AdjustScrollers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

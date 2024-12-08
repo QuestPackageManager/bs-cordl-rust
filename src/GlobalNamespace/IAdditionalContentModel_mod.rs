@@ -6,35 +6,38 @@ pub struct IAdditionalContentModel {
 }
 #[cfg(feature = "IAdditionalContentModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IAdditionalContentModel => ""."IAdditionalContentModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IAdditionalContentModel => ""
+    ."IAdditionalContentModel"
 );
 #[cfg(feature = "IAdditionalContentModel")]
-impl std::ops::Deref for IAdditionalContentModel {
+impl std::ops::Deref for crate::GlobalNamespace::IAdditionalContentModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IAdditionalContentModel")]
-impl std::ops::DerefMut for IAdditionalContentModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::IAdditionalContentModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IAdditionalContentModel")]
-impl IAdditionalContentModel {
+impl crate::GlobalNamespace::IAdditionalContentModel {
     pub fn IsPackBetterBuyThanLevelAsync(
         &mut self,
         levelPackId: *mut crate::System::String,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<IsPackBetterBuyThanLevelResult>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            IsPackBetterBuyThanLevelResult,
+            crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
         > = __cordl_object
             .invoke("IsPackBetterBuyThanLevelAsync", (levelPackId, token))?;
         Ok(__cordl_ret)
@@ -44,13 +47,15 @@ impl IAdditionalContentModel {
         levelPackId: *mut crate::System::String,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<OpenProductStoreResult>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::OpenProductStoreResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            OpenProductStoreResult,
+            crate::GlobalNamespace::OpenProductStoreResult,
         > = __cordl_object
             .invoke("OpenLevelPackProductStoreAsync", (levelPackId, token))?;
         Ok(__cordl_ret)
@@ -60,13 +65,15 @@ impl IAdditionalContentModel {
         levelId: *mut crate::System::String,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<OpenProductStoreResult>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::OpenProductStoreResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            OpenProductStoreResult,
+            crate::GlobalNamespace::OpenProductStoreResult,
         > = __cordl_object.invoke("OpenLevelProductStoreAsync", (levelId, token))?;
         Ok(__cordl_ret)
     }
@@ -99,7 +106,8 @@ impl IAdditionalContentModel {
     }
 }
 #[cfg(feature = "IAdditionalContentModel")]
-impl quest_hook::libil2cpp::ObjectType for IAdditionalContentModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IAdditionalContentModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

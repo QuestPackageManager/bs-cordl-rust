@@ -13,27 +13,27 @@ pub struct OVRGridCube {
     pub gridSizeZ: i32,
     pub gridScale: f32,
     pub cubeScale: f32,
-    pub CameraController: *mut OVRCameraRig,
+    pub CameraController: *mut crate::GlobalNamespace::OVRCameraRig,
 }
 #[cfg(feature = "OVRGridCube")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRGridCube => ""."OVRGridCube"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRGridCube => ""."OVRGridCube"
 );
 #[cfg(feature = "OVRGridCube")]
-impl std::ops::Deref for OVRGridCube {
+impl std::ops::Deref for crate::GlobalNamespace::OVRGridCube {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRGridCube")]
-impl std::ops::DerefMut for OVRGridCube {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRGridCube {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRGridCube")]
-impl OVRGridCube {
+impl crate::GlobalNamespace::OVRGridCube {
     pub fn CreateCubeGrid(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -64,7 +64,9 @@ impl OVRGridCube {
     }
     pub fn SetOVRCameraController(
         &mut self,
-        cameraController: quest_hook::libil2cpp::ByRefMut<*mut OVRCameraRig>,
+        cameraController: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::GlobalNamespace::OVRCameraRig,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -105,7 +107,7 @@ impl OVRGridCube {
     }
 }
 #[cfg(feature = "OVRGridCube")]
-impl quest_hook::libil2cpp::ObjectType for OVRGridCube {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRGridCube {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

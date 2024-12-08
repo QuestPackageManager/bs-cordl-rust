@@ -2,29 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialPropertyBlockPositionUpdater {
-    __cordl_parent: MaterialPropertyBlockAnimator,
+    __cordl_parent: crate::GlobalNamespace::MaterialPropertyBlockAnimator,
     pub _targetTransform: *mut crate::UnityEngine::Transform,
 }
 #[cfg(feature = "MaterialPropertyBlockPositionUpdater")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MaterialPropertyBlockPositionUpdater => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MaterialPropertyBlockPositionUpdater => ""
     ."MaterialPropertyBlockPositionUpdater"
 );
 #[cfg(feature = "MaterialPropertyBlockPositionUpdater")]
-impl std::ops::Deref for MaterialPropertyBlockPositionUpdater {
-    type Target = MaterialPropertyBlockAnimator;
+impl std::ops::Deref for crate::GlobalNamespace::MaterialPropertyBlockPositionUpdater {
+    type Target = crate::GlobalNamespace::MaterialPropertyBlockAnimator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MaterialPropertyBlockPositionUpdater")]
-impl std::ops::DerefMut for MaterialPropertyBlockPositionUpdater {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MaterialPropertyBlockPositionUpdater {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MaterialPropertyBlockPositionUpdater")]
-impl MaterialPropertyBlockPositionUpdater {
+impl crate::GlobalNamespace::MaterialPropertyBlockPositionUpdater {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -54,7 +56,8 @@ impl MaterialPropertyBlockPositionUpdater {
     }
 }
 #[cfg(feature = "MaterialPropertyBlockPositionUpdater")]
-impl quest_hook::libil2cpp::ObjectType for MaterialPropertyBlockPositionUpdater {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MaterialPropertyBlockPositionUpdater {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

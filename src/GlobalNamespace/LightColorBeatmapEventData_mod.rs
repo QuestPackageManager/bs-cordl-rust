@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightColorBeatmapEventData {
-    __cordl_parent: BeatmapEventData,
+    __cordl_parent: crate::GlobalNamespace::BeatmapEventData,
     pub groupId: i32,
     pub elementId: i32,
     pub usePreviousValue: bool,
-    pub easeType: EaseType,
-    pub _colorType_k__BackingField: EnvironmentColorType,
+    pub easeType: crate::GlobalNamespace::EaseType,
+    pub _colorType_k__BackingField: crate::GlobalNamespace::EnvironmentColorType,
     pub _brightness_k__BackingField: f32,
     pub _strobeBeatFrequency_k__BackingField: i32,
     pub _strobeBrightness_k__BackingField: f32,
@@ -15,27 +15,27 @@ pub struct LightColorBeatmapEventData {
 }
 #[cfg(feature = "LightColorBeatmapEventData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightColorBeatmapEventData => ""
-    ."LightColorBeatmapEventData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightColorBeatmapEventData =>
+    ""."LightColorBeatmapEventData"
 );
 #[cfg(feature = "LightColorBeatmapEventData")]
-impl std::ops::Deref for LightColorBeatmapEventData {
-    type Target = BeatmapEventData;
+impl std::ops::Deref for crate::GlobalNamespace::LightColorBeatmapEventData {
+    type Target = crate::GlobalNamespace::BeatmapEventData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightColorBeatmapEventData")]
-impl std::ops::DerefMut for LightColorBeatmapEventData {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightColorBeatmapEventData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightColorBeatmapEventData")]
-impl LightColorBeatmapEventData {
+impl crate::GlobalNamespace::LightColorBeatmapEventData {
     pub fn CopyColorDataFrom(
         &mut self,
-        lightColorBeatmapEventData: *mut LightColorBeatmapEventData,
+        lightColorBeatmapEventData: *mut crate::GlobalNamespace::LightColorBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -54,20 +54,23 @@ impl LightColorBeatmapEventData {
             .invoke("DisableStrobe", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetCopy(&mut self) -> quest_hook::libil2cpp::Result<*mut BeatmapDataItem> {
+    pub fn GetCopy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapDataItem> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapDataItem = __cordl_object.invoke("GetCopy", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapDataItem = __cordl_object
+            .invoke("GetCopy", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetDefault(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapEventData> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapEventData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapEventData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapEventData = __cordl_object
             .invoke("GetDefault", ())?;
         Ok(__cordl_ret)
     }
@@ -76,8 +79,8 @@ impl LightColorBeatmapEventData {
         groupId: i32,
         elementId: i32,
         usePreviousValue: bool,
-        easeType: EaseType,
-        colorType: EnvironmentColorType,
+        easeType: crate::GlobalNamespace::EaseType,
+        colorType: crate::GlobalNamespace::EnvironmentColorType,
         brightness: f32,
         strobeBeatFrequency: i32,
         strobeBrightness: f32,
@@ -109,8 +112,8 @@ impl LightColorBeatmapEventData {
         groupId: i32,
         elementId: i32,
         usePreviousValue: bool,
-        easeType: EaseType,
-        colorType: EnvironmentColorType,
+        easeType: crate::GlobalNamespace::EaseType,
+        colorType: crate::GlobalNamespace::EnvironmentColorType,
         brightness: f32,
         strobeBeatFrequency: i32,
         strobeBrightness: f32,
@@ -146,11 +149,11 @@ impl LightColorBeatmapEventData {
     }
     pub fn get_colorType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<EnvironmentColorType> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EnvironmentColorType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: EnvironmentColorType = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentColorType = __cordl_object
             .invoke("get_colorType", ())?;
         Ok(__cordl_ret)
     }
@@ -188,7 +191,7 @@ impl LightColorBeatmapEventData {
     }
     pub fn set_colorType(
         &mut self,
-        value: EnvironmentColorType,
+        value: crate::GlobalNamespace::EnvironmentColorType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -232,7 +235,8 @@ impl LightColorBeatmapEventData {
     }
 }
 #[cfg(feature = "LightColorBeatmapEventData")]
-impl quest_hook::libil2cpp::ObjectType for LightColorBeatmapEventData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LightColorBeatmapEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

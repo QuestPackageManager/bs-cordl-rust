@@ -6,27 +6,27 @@ pub struct ISaberSwingRatingCounter {
 }
 #[cfg(feature = "ISaberSwingRatingCounter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ISaberSwingRatingCounter => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ISaberSwingRatingCounter => ""
     ."ISaberSwingRatingCounter"
 );
 #[cfg(feature = "ISaberSwingRatingCounter")]
-impl std::ops::Deref for ISaberSwingRatingCounter {
+impl std::ops::Deref for crate::GlobalNamespace::ISaberSwingRatingCounter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ISaberSwingRatingCounter")]
-impl std::ops::DerefMut for ISaberSwingRatingCounter {
+impl std::ops::DerefMut for crate::GlobalNamespace::ISaberSwingRatingCounter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ISaberSwingRatingCounter")]
-impl ISaberSwingRatingCounter {
+impl crate::GlobalNamespace::ISaberSwingRatingCounter {
     pub fn RegisterDidChangeReceiver(
         &mut self,
-        receiver: *mut ISaberSwingRatingCounterDidChangeReceiver,
+        receiver: *mut crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -37,7 +37,7 @@ impl ISaberSwingRatingCounter {
     }
     pub fn RegisterDidFinishReceiver(
         &mut self,
-        receiver: *mut ISaberSwingRatingCounterDidFinishReceiver,
+        receiver: *mut crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -48,7 +48,7 @@ impl ISaberSwingRatingCounter {
     }
     pub fn UnregisterDidChangeReceiver(
         &mut self,
-        receiver: *mut ISaberSwingRatingCounterDidChangeReceiver,
+        receiver: *mut crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -59,7 +59,7 @@ impl ISaberSwingRatingCounter {
     }
     pub fn UnregisterDidFinishReceiver(
         &mut self,
-        receiver: *mut ISaberSwingRatingCounterDidFinishReceiver,
+        receiver: *mut crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -89,7 +89,8 @@ impl ISaberSwingRatingCounter {
     }
 }
 #[cfg(feature = "ISaberSwingRatingCounter")]
-impl quest_hook::libil2cpp::ObjectType for ISaberSwingRatingCounter {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ISaberSwingRatingCounter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

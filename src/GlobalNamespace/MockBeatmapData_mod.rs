@@ -6,37 +6,38 @@ pub struct MockBeatmapData {
     pub _numberOfLines_k__BackingField: i32,
     pub _songEndTime_k__BackingField: f32,
     pub _leftNotes_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut MockNoteData,
+        *mut crate::GlobalNamespace::MockNoteData,
     >,
     pub _rightNotes_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut MockNoteData,
+        *mut crate::GlobalNamespace::MockNoteData,
     >,
     pub _bombNotes_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut MockNoteData,
+        *mut crate::GlobalNamespace::MockNoteData,
     >,
     pub _obstacles_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut MockObstacleData,
+        *mut crate::GlobalNamespace::MockObstacleData,
     >,
 }
 #[cfg(feature = "MockBeatmapData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MockBeatmapData => ""."MockBeatmapData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MockBeatmapData => ""
+    ."MockBeatmapData"
 );
 #[cfg(feature = "MockBeatmapData")]
-impl std::ops::Deref for MockBeatmapData {
+impl std::ops::Deref for crate::GlobalNamespace::MockBeatmapData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockBeatmapData")]
-impl std::ops::DerefMut for MockBeatmapData {
+impl std::ops::DerefMut for crate::GlobalNamespace::MockBeatmapData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockBeatmapData")]
-impl MockBeatmapData {
+impl crate::GlobalNamespace::MockBeatmapData {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -57,25 +58,31 @@ impl MockBeatmapData {
     pub fn get_bombNotes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut MockNoteData>,
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MockNoteData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<*mut MockNoteData> = __cordl_object
-            .invoke("get_bombNotes", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MockNoteData,
+        > = __cordl_object.invoke("get_bombNotes", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_leftNotes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut MockNoteData>,
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MockNoteData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<*mut MockNoteData> = __cordl_object
-            .invoke("get_leftNotes", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MockNoteData,
+        > = __cordl_object.invoke("get_leftNotes", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_numberOfLines(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -88,26 +95,31 @@ impl MockBeatmapData {
     pub fn get_obstacles(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut MockObstacleData>,
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MockObstacleData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut MockObstacleData,
+            *mut crate::GlobalNamespace::MockObstacleData,
         > = __cordl_object.invoke("get_obstacles", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_rightNotes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut MockNoteData>,
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MockNoteData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<*mut MockNoteData> = __cordl_object
-            .invoke("get_rightNotes", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MockNoteData,
+        > = __cordl_object.invoke("get_rightNotes", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_songEndTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -119,7 +131,9 @@ impl MockBeatmapData {
     }
     pub fn set_bombNotes(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<*mut MockNoteData>,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MockNoteData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -130,7 +144,9 @@ impl MockBeatmapData {
     }
     pub fn set_leftNotes(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<*mut MockNoteData>,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MockNoteData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -152,7 +168,9 @@ impl MockBeatmapData {
     }
     pub fn set_obstacles(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<*mut MockObstacleData>,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MockObstacleData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -163,7 +181,9 @@ impl MockBeatmapData {
     }
     pub fn set_rightNotes(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<*mut MockNoteData>,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MockNoteData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -185,7 +205,7 @@ impl MockBeatmapData {
     }
 }
 #[cfg(feature = "MockBeatmapData")]
-impl quest_hook::libil2cpp::ObjectType for MockBeatmapData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockBeatmapData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

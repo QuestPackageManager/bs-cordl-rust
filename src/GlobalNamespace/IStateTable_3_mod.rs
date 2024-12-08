@@ -13,15 +13,15 @@ pub struct IStateTable_3<
 }
 #[cfg(feature = "IStateTable_3")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IStateTable_3 < TStateTable, TType, TState > => ""
-    ."IStateTable`3" < TStateTable, TType, TState >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IStateTable_3 < TStateTable,
+    TType, TState > => ""."IStateTable`3" < TStateTable, TType, TState >
 );
 #[cfg(feature = "IStateTable_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
-> std::ops::Deref for IStateTable_3<TStateTable, TType, TState> {
+> std::ops::Deref for crate::GlobalNamespace::IStateTable_3<TStateTable, TType, TState> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -32,7 +32,8 @@ impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
-> std::ops::DerefMut for IStateTable_3<TStateTable, TType, TState> {
+> std::ops::DerefMut
+for crate::GlobalNamespace::IStateTable_3<TStateTable, TType, TState> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -42,7 +43,7 @@ impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
-> IStateTable_3<TStateTable, TType, TState> {
+> crate::GlobalNamespace::IStateTable_3<TStateTable, TType, TState> {
     pub fn ApplyDelta(
         &mut self,
         delta: quest_hook::libil2cpp::ByRefMut<TStateTable>,
@@ -143,7 +144,8 @@ impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::ObjectType for IStateTable_3<TStateTable, TType, TState> {
+> quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IStateTable_3<TStateTable, TType, TState> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

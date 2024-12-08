@@ -316,18 +316,18 @@ for crate::System::Threading::ThreadLocal_1<T> {
 }
 #[cfg(feature = "System+Threading+ThreadLocal_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::ThreadLocal_1<T> {
-    #[cfg(feature = "System+Threading+ThreadLocal_1+IdManager")]
-    pub type IdManager = crate::System::Threading::ThreadLocal_1_IdManager<T>;
     #[cfg(feature = "System+Threading+ThreadLocal_1+FinalizationHelper")]
     pub type FinalizationHelper = crate::System::Threading::ThreadLocal_1_FinalizationHelper<
         T,
     >;
+    #[cfg(feature = "System+Threading+ThreadLocal_1+IdManager")]
+    pub type IdManager = crate::System::Threading::ThreadLocal_1_IdManager<T>;
+    #[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlot")]
+    pub type LinkedSlot = crate::System::Threading::ThreadLocal_1_LinkedSlot<T>;
     #[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
     pub type LinkedSlotVolatile = crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<
         T,
     >;
-    #[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlot")]
-    pub type LinkedSlot = crate::System::Threading::ThreadLocal_1_LinkedSlot<T>;
     pub fn CreateLinkedSlot(
         &mut self,
         slotArray: *mut quest_hook::libil2cpp::Il2CppArray<

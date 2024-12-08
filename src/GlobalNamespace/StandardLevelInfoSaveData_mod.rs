@@ -273,7 +273,7 @@ pub struct StandardLevelInfoSaveData {
         *mut crate::System::String,
     >,
     pub _colorSchemes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut BeatmapLevelColorSchemeSaveData,
+        *mut crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData,
     >,
     pub _difficultyBeatmapSets: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet,
@@ -281,24 +281,24 @@ pub struct StandardLevelInfoSaveData {
 }
 #[cfg(feature = "StandardLevelInfoSaveData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StandardLevelInfoSaveData => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::StandardLevelInfoSaveData => ""
     ."StandardLevelInfoSaveData"
 );
 #[cfg(feature = "StandardLevelInfoSaveData")]
-impl std::ops::Deref for StandardLevelInfoSaveData {
+impl std::ops::Deref for crate::GlobalNamespace::StandardLevelInfoSaveData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelInfoSaveData")]
-impl std::ops::DerefMut for StandardLevelInfoSaveData {
+impl std::ops::DerefMut for crate::GlobalNamespace::StandardLevelInfoSaveData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelInfoSaveData")]
-impl StandardLevelInfoSaveData {
+impl crate::GlobalNamespace::StandardLevelInfoSaveData {
     pub const kCurrentVersion: &'static str = "2.1.0";
     pub const kDefaultBeatmapCharacteristicName: &'static str = "Standard";
     #[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
@@ -324,7 +324,7 @@ impl StandardLevelInfoSaveData {
             *mut crate::System::String,
         >,
         colorSchemes: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut BeatmapLevelColorSchemeSaveData,
+            *mut crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData,
         >,
         difficultyBeatmapSets: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet,
@@ -377,7 +377,7 @@ impl StandardLevelInfoSaveData {
             *mut crate::System::String,
         >,
         colorSchemes: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut BeatmapLevelColorSchemeSaveData,
+            *mut crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData,
         >,
         difficultyBeatmapSets: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet,
@@ -431,13 +431,15 @@ impl StandardLevelInfoSaveData {
     pub fn get_colorSchemes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut BeatmapLevelColorSchemeSaveData>,
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut BeatmapLevelColorSchemeSaveData,
+            *mut crate::GlobalNamespace::BeatmapLevelColorSchemeSaveData,
         > = __cordl_object.invoke("get_colorSchemes", ())?;
         Ok(__cordl_ret)
     }
@@ -593,7 +595,8 @@ impl StandardLevelInfoSaveData {
     }
 }
 #[cfg(feature = "StandardLevelInfoSaveData")]
-impl quest_hook::libil2cpp::ObjectType for StandardLevelInfoSaveData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StandardLevelInfoSaveData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

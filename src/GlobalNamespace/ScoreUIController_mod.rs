@@ -76,28 +76,29 @@ pub struct ScoreUIController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _scoreText: *mut crate::TMPro::TextMeshProUGUI,
     pub _initData: *mut crate::GlobalNamespace::ScoreUIController_InitData,
-    pub _scoreController: *mut IScoreController,
+    pub _scoreController: *mut crate::GlobalNamespace::IScoreController,
     pub _stringBuilder: *mut crate::System::Text::StringBuilder,
 }
 #[cfg(feature = "ScoreUIController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ScoreUIController => ""."ScoreUIController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ScoreUIController => ""
+    ."ScoreUIController"
 );
 #[cfg(feature = "ScoreUIController")]
-impl std::ops::Deref for ScoreUIController {
+impl std::ops::Deref for crate::GlobalNamespace::ScoreUIController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScoreUIController")]
-impl std::ops::DerefMut for ScoreUIController {
+impl std::ops::DerefMut for crate::GlobalNamespace::ScoreUIController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScoreUIController")]
-impl ScoreUIController {
+impl crate::GlobalNamespace::ScoreUIController {
     pub const kMaxNumberOfDigits: i32 = 9i32;
     #[cfg(feature = "ScoreUIController+InitData")]
     pub type InitData = crate::GlobalNamespace::ScoreUIController_InitData;
@@ -196,7 +197,7 @@ impl ScoreUIController {
     }
 }
 #[cfg(feature = "ScoreUIController")]
-impl quest_hook::libil2cpp::ObjectType for ScoreUIController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoreUIController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

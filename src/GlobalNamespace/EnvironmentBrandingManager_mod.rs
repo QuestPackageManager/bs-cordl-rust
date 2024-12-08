@@ -13,24 +13,24 @@ pub struct EnvironmentBrandingManager {
 }
 #[cfg(feature = "EnvironmentBrandingManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnvironmentBrandingManager => ""
-    ."EnvironmentBrandingManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnvironmentBrandingManager =>
+    ""."EnvironmentBrandingManager"
 );
 #[cfg(feature = "EnvironmentBrandingManager")]
-impl std::ops::Deref for EnvironmentBrandingManager {
+impl std::ops::Deref for crate::GlobalNamespace::EnvironmentBrandingManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentBrandingManager")]
-impl std::ops::DerefMut for EnvironmentBrandingManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentBrandingManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentBrandingManager")]
-impl EnvironmentBrandingManager {
+impl crate::GlobalNamespace::EnvironmentBrandingManager {
     #[cfg(feature = "EnvironmentBrandingManager+InitData")]
     pub type InitData = crate::GlobalNamespace::EnvironmentBrandingManager_InitData;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -62,7 +62,8 @@ impl EnvironmentBrandingManager {
     }
 }
 #[cfg(feature = "EnvironmentBrandingManager")]
-impl quest_hook::libil2cpp::ObjectType for EnvironmentBrandingManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EnvironmentBrandingManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

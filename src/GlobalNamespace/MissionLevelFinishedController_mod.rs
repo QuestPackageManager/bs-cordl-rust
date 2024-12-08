@@ -3,31 +3,31 @@
 #[derive(Debug)]
 pub struct MissionLevelFinishedController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _prepareLevelCompletionResults: *mut PrepareLevelCompletionResults,
-    pub _missionLevelSceneSetupData: *mut MissionLevelScenesTransitionSetupDataSO,
-    pub _missionObjectiveCheckersManager: *mut MissionObjectiveCheckersManager,
-    pub _gameplayManager: *mut ILevelEndActions,
+    pub _prepareLevelCompletionResults: *mut crate::GlobalNamespace::PrepareLevelCompletionResults,
+    pub _missionLevelSceneSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+    pub _missionObjectiveCheckersManager: *mut crate::GlobalNamespace::MissionObjectiveCheckersManager,
+    pub _gameplayManager: *mut crate::GlobalNamespace::ILevelEndActions,
 }
 #[cfg(feature = "MissionLevelFinishedController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionLevelFinishedController => ""
-    ."MissionLevelFinishedController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissionLevelFinishedController
+    => ""."MissionLevelFinishedController"
 );
 #[cfg(feature = "MissionLevelFinishedController")]
-impl std::ops::Deref for MissionLevelFinishedController {
+impl std::ops::Deref for crate::GlobalNamespace::MissionLevelFinishedController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionLevelFinishedController")]
-impl std::ops::DerefMut for MissionLevelFinishedController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionLevelFinishedController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionLevelFinishedController")]
-impl MissionLevelFinishedController {
+impl crate::GlobalNamespace::MissionLevelFinishedController {
     pub fn HandleLevelFinished(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -87,7 +87,8 @@ impl MissionLevelFinishedController {
     }
 }
 #[cfg(feature = "MissionLevelFinishedController")]
-impl quest_hook::libil2cpp::ObjectType for MissionLevelFinishedController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MissionLevelFinishedController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

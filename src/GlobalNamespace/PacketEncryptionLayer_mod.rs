@@ -220,11 +220,11 @@ pub struct PacketEncryptionLayer {
     __cordl_parent: crate::LiteNetLib::Layers::PacketLayerBase,
     pub statistics: *mut crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics,
     pub _taskUtility: *mut crate::BGNet::Core::ITaskUtility,
-    pub _encryptionStates: *mut ExpiringDictionary_2<
+    pub _encryptionStates: *mut crate::GlobalNamespace::ExpiringDictionary_2<
         *mut crate::System::Net::IPEndPoint,
         *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
     >,
-    pub _pendingEncryptionStates: *mut ExpiringDictionary_2<
+    pub _pendingEncryptionStates: *mut crate::GlobalNamespace::ExpiringDictionary_2<
         *mut crate::System::Net::IPAddress,
         *mut crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList,
     >,
@@ -234,33 +234,34 @@ pub struct PacketEncryptionLayer {
 }
 #[cfg(feature = "PacketEncryptionLayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PacketEncryptionLayer => ""."PacketEncryptionLayer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PacketEncryptionLayer => ""
+    ."PacketEncryptionLayer"
 );
 #[cfg(feature = "PacketEncryptionLayer")]
-impl std::ops::Deref for PacketEncryptionLayer {
+impl std::ops::Deref for crate::GlobalNamespace::PacketEncryptionLayer {
     type Target = crate::LiteNetLib::Layers::PacketLayerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PacketEncryptionLayer")]
-impl std::ops::DerefMut for PacketEncryptionLayer {
+impl std::ops::DerefMut for crate::GlobalNamespace::PacketEncryptionLayer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PacketEncryptionLayer")]
-impl PacketEncryptionLayer {
+impl crate::GlobalNamespace::PacketEncryptionLayer {
     pub const kEncryptedPacketType: u8 = 1u8;
     pub const kEncryptionStateTimeoutMs: i64 = 300000i64;
     pub const kPendingEncryptionStateTimeoutMs: i64 = 10000i64;
     pub const kPlaintextPacketType: u8 = 0u8;
     #[cfg(feature = "PacketEncryptionLayer+EncryptionStatistics")]
     pub type EncryptionStatistics = crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics;
-    #[cfg(feature = "PacketEncryptionLayer+_AddEncryptedEndpointAsync_d__25")]
-    pub type _AddEncryptedEndpointAsync_d__25 = crate::GlobalNamespace::PacketEncryptionLayer__AddEncryptedEndpointAsync_d__25;
     #[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]
     pub type PendingEncryptionStateList = crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList;
+    #[cfg(feature = "PacketEncryptionLayer+_AddEncryptedEndpointAsync_d__25")]
+    pub type _AddEncryptedEndpointAsync_d__25 = crate::GlobalNamespace::PacketEncryptionLayer__AddEncryptedEndpointAsync_d__25;
     #[cfg(feature = "PacketEncryptionLayer+_AddPendingEncryptedEndpointAsync_d__27")]
     pub type _AddPendingEncryptedEndpointAsync_d__27 = crate::GlobalNamespace::PacketEncryptionLayer__AddPendingEncryptedEndpointAsync_d__27;
     pub fn AddEncryptedEndpoint(
@@ -575,7 +576,8 @@ impl PacketEncryptionLayer {
     }
 }
 #[cfg(feature = "PacketEncryptionLayer")]
-impl quest_hook::libil2cpp::ObjectType for PacketEncryptionLayer {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PacketEncryptionLayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -619,13 +621,13 @@ impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
     #[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList+__c")]
     pub type __c = crate::GlobalNamespace::PendingEncryptionStateList___c;
     #[cfg(
-        feature = "PacketEncryptionLayer+PendingEncryptionStateList+__c__DisplayClass8_0"
-    )]
-    pub type __c__DisplayClass8_0 = crate::GlobalNamespace::PendingEncryptionStateList___c__DisplayClass8_0;
-    #[cfg(
         feature = "PacketEncryptionLayer+PendingEncryptionStateList+__c__DisplayClass4_0"
     )]
     pub type __c__DisplayClass4_0 = crate::GlobalNamespace::PendingEncryptionStateList___c__DisplayClass4_0;
+    #[cfg(
+        feature = "PacketEncryptionLayer+PendingEncryptionStateList+__c__DisplayClass8_0"
+    )]
+    pub type __c__DisplayClass8_0 = crate::GlobalNamespace::PendingEncryptionStateList___c__DisplayClass8_0;
     pub fn Add(
         &mut self,
         port: i32,

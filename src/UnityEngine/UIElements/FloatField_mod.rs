@@ -26,10 +26,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::FloatField {
 impl crate::UnityEngine::UIElements::FloatField {
     #[cfg(feature = "UnityEngine+UIElements+FloatField+FloatInput")]
     pub type FloatInput = crate::UnityEngine::UIElements::FloatField_FloatInput;
-    #[cfg(feature = "UnityEngine+UIElements+FloatField+UxmlTraits")]
-    pub type UxmlTraits = crate::UnityEngine::UIElements::FloatField_UxmlTraits;
     #[cfg(feature = "UnityEngine+UIElements+FloatField+UxmlFactory")]
     pub type UxmlFactory = crate::UnityEngine::UIElements::FloatField_UxmlFactory;
+    #[cfg(feature = "UnityEngine+UIElements+FloatField+UxmlTraits")]
+    pub type UxmlTraits = crate::UnityEngine::UIElements::FloatField_UxmlTraits;
     pub fn ApplyInputDeviceDelta(
         &mut self,
         delta: crate::UnityEngine::Vector3,

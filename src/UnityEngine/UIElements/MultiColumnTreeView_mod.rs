@@ -35,10 +35,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::MultiColumnTreeView 
 }
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnTreeView")]
 impl crate::UnityEngine::UIElements::MultiColumnTreeView {
-    #[cfg(feature = "UnityEngine+UIElements+MultiColumnTreeView+UxmlTraits")]
-    pub type UxmlTraits = crate::UnityEngine::UIElements::MultiColumnTreeView_UxmlTraits;
     #[cfg(feature = "UnityEngine+UIElements+MultiColumnTreeView+UxmlFactory")]
     pub type UxmlFactory = crate::UnityEngine::UIElements::MultiColumnTreeView_UxmlFactory;
+    #[cfg(feature = "UnityEngine+UIElements+MultiColumnTreeView+UxmlTraits")]
+    pub type UxmlTraits = crate::UnityEngine::UIElements::MultiColumnTreeView_UxmlTraits;
     pub fn CreateViewController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -4,9 +4,9 @@
 pub struct ColorNoteVisuals {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _defaultColorAlpha: f32,
-    pub _noteController: *mut NoteControllerBase,
+    pub _noteController: *mut crate::GlobalNamespace::NoteControllerBase,
     pub _materialPropertyBlockControllers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut MaterialPropertyBlockController,
+        *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     >,
     pub _arrowMeshRenderers: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::MeshRenderer,
@@ -14,32 +14,33 @@ pub struct ColorNoteVisuals {
     pub _circleMeshRenderers: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::MeshRenderer,
     >,
-    pub _colorManager: *mut ColorManager,
+    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
     pub didInitEvent: *mut crate::System::Action_2<
-        *mut ColorNoteVisuals,
-        *mut NoteControllerBase,
+        *mut crate::GlobalNamespace::ColorNoteVisuals,
+        *mut crate::GlobalNamespace::NoteControllerBase,
     >,
     pub _noteColor: crate::UnityEngine::Color,
 }
 #[cfg(feature = "ColorNoteVisuals")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ColorNoteVisuals => ""."ColorNoteVisuals"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ColorNoteVisuals => ""
+    ."ColorNoteVisuals"
 );
 #[cfg(feature = "ColorNoteVisuals")]
-impl std::ops::Deref for ColorNoteVisuals {
+impl std::ops::Deref for crate::GlobalNamespace::ColorNoteVisuals {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorNoteVisuals")]
-impl std::ops::DerefMut for ColorNoteVisuals {
+impl std::ops::DerefMut for crate::GlobalNamespace::ColorNoteVisuals {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorNoteVisuals")]
-impl ColorNoteVisuals {
+impl crate::GlobalNamespace::ColorNoteVisuals {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -52,7 +53,7 @@ impl ColorNoteVisuals {
     }
     pub fn HandleNoteControllerDidInit(
         &mut self,
-        noteController: *mut NoteControllerBase,
+        noteController: *mut crate::GlobalNamespace::NoteControllerBase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -63,7 +64,7 @@ impl ColorNoteVisuals {
     }
     pub fn HandleNoteControllerNoteDidPassJumpThreeQuarters(
         &mut self,
-        noteController: *mut NoteControllerBase,
+        noteController: *mut crate::GlobalNamespace::NoteControllerBase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -77,7 +78,7 @@ impl ColorNoteVisuals {
     }
     pub fn HandleNoteControllerNoteDidStartDissolving(
         &mut self,
-        noteController: *mut NoteControllerBase,
+        noteController: *mut crate::GlobalNamespace::NoteControllerBase,
         duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -120,8 +121,8 @@ impl ColorNoteVisuals {
     pub fn add_didInitEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut ColorNoteVisuals,
-            *mut NoteControllerBase,
+            *mut crate::GlobalNamespace::ColorNoteVisuals,
+            *mut crate::GlobalNamespace::NoteControllerBase,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -134,8 +135,8 @@ impl ColorNoteVisuals {
     pub fn remove_didInitEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut ColorNoteVisuals,
-            *mut NoteControllerBase,
+            *mut crate::GlobalNamespace::ColorNoteVisuals,
+            *mut crate::GlobalNamespace::NoteControllerBase,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -169,7 +170,7 @@ impl ColorNoteVisuals {
     }
 }
 #[cfg(feature = "ColorNoteVisuals")]
-impl quest_hook::libil2cpp::ObjectType for ColorNoteVisuals {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorNoteVisuals {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

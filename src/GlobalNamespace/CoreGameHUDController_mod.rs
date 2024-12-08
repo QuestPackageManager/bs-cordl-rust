@@ -11,23 +11,24 @@ pub struct CoreGameHUDController {
 }
 #[cfg(feature = "CoreGameHUDController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CoreGameHUDController => ""."CoreGameHUDController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CoreGameHUDController => ""
+    ."CoreGameHUDController"
 );
 #[cfg(feature = "CoreGameHUDController")]
-impl std::ops::Deref for CoreGameHUDController {
+impl std::ops::Deref for crate::GlobalNamespace::CoreGameHUDController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CoreGameHUDController")]
-impl std::ops::DerefMut for CoreGameHUDController {
+impl std::ops::DerefMut for crate::GlobalNamespace::CoreGameHUDController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CoreGameHUDController")]
-impl CoreGameHUDController {
+impl crate::GlobalNamespace::CoreGameHUDController {
     #[cfg(feature = "CoreGameHUDController+InitData")]
     pub type InitData = crate::GlobalNamespace::CoreGameHUDController_InitData;
     pub fn Initialize(
@@ -111,7 +112,8 @@ impl CoreGameHUDController {
     }
 }
 #[cfg(feature = "CoreGameHUDController")]
-impl quest_hook::libil2cpp::ObjectType for CoreGameHUDController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::CoreGameHUDController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

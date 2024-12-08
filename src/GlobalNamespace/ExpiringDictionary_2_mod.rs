@@ -103,7 +103,7 @@ pub struct ExpiringDictionary_2<
     __cordl_parent: crate::System::Object,
     pub _timeProvider: *mut crate::BGNet::Core::ITimeProvider,
     pub _expirationLengthMs: i64,
-    pub _expirationQueue: *mut OrderedSet_1<
+    pub _expirationQueue: *mut crate::GlobalNamespace::OrderedSet_1<
         *mut crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
     >,
     pub _entryLookup: *mut crate::System::Collections::Generic::Dictionary_2<
@@ -118,14 +118,14 @@ pub struct ExpiringDictionary_2<
 }
 #[cfg(feature = "ExpiringDictionary_2")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ExpiringDictionary_2 < TKey, TValue > => ""
-    ."ExpiringDictionary`2" < TKey, TValue >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ExpiringDictionary_2 < TKey,
+    TValue > => ""."ExpiringDictionary`2" < TKey, TValue >
 );
 #[cfg(feature = "ExpiringDictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> std::ops::Deref for ExpiringDictionary_2<TKey, TValue> {
+> std::ops::Deref for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -135,7 +135,7 @@ impl<
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> std::ops::DerefMut for ExpiringDictionary_2<TKey, TValue> {
+> std::ops::DerefMut for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -144,15 +144,15 @@ impl<
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> ExpiringDictionary_2<TKey, TValue> {
+> crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
     pub const kMaxReusableEntries: i32 = 1024i32;
+    #[cfg(feature = "ExpiringDictionary_2+Entry")]
+    pub type Entry = crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>;
     #[cfg(feature = "ExpiringDictionary_2+_Enumerate_d__14")]
     pub type _Enumerate_d__14 = crate::GlobalNamespace::ExpiringDictionary_2__Enumerate_d__14<
         TKey,
         TValue,
     >;
-    #[cfg(feature = "ExpiringDictionary_2+Entry")]
-    pub type Entry = crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>;
     pub fn Add(
         &mut self,
         key: TKey,
@@ -498,7 +498,8 @@ impl<
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::ObjectType for ExpiringDictionary_2<TKey, TValue> {
+> quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

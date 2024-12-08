@@ -186,14 +186,14 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::HashSe
     pub const ShrinkThreshold: i32 = 3i32;
     pub const StackAllocThreshold: i32 = 100i32;
     pub const VersionName: &'static str = "Version";
-    #[cfg(feature = "System+Collections+Generic+HashSet_1+Slot")]
-    pub type Slot = crate::System::Collections::Generic::HashSet_1_Slot<T>;
-    #[cfg(feature = "System+Collections+Generic+HashSet_1+Enumerator")]
-    pub type Enumerator = crate::System::Collections::Generic::HashSet_1_Enumerator<T>;
     #[cfg(feature = "System+Collections+Generic+HashSet_1+ElementCount")]
     pub type ElementCount = crate::System::Collections::Generic::HashSet_1_ElementCount<
         T,
     >;
+    #[cfg(feature = "System+Collections+Generic+HashSet_1+Enumerator")]
+    pub type Enumerator = crate::System::Collections::Generic::HashSet_1_Enumerator<T>;
+    #[cfg(feature = "System+Collections+Generic+HashSet_1+Slot")]
+    pub type Slot = crate::System::Collections::Generic::HashSet_1_Slot<T>;
     pub fn Add(&mut self, item: T) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

@@ -3,28 +3,29 @@
 #[derive(Debug)]
 pub struct BeatmapCallbacksUpdater {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
-    pub _audioTimeSource: *mut IAudioTimeSource,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
 }
 #[cfg(feature = "BeatmapCallbacksUpdater")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapCallbacksUpdater => ""."BeatmapCallbacksUpdater"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapCallbacksUpdater => ""
+    ."BeatmapCallbacksUpdater"
 );
 #[cfg(feature = "BeatmapCallbacksUpdater")]
-impl std::ops::Deref for BeatmapCallbacksUpdater {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapCallbacksUpdater {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapCallbacksUpdater")]
-impl std::ops::DerefMut for BeatmapCallbacksUpdater {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapCallbacksUpdater {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapCallbacksUpdater")]
-impl BeatmapCallbacksUpdater {
+impl crate::GlobalNamespace::BeatmapCallbacksUpdater {
     pub fn LateUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -74,7 +75,8 @@ impl BeatmapCallbacksUpdater {
     }
 }
 #[cfg(feature = "BeatmapCallbacksUpdater")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapCallbacksUpdater {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapCallbacksUpdater {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -4,27 +4,28 @@
 pub struct MockPlatformEntitlement {
     __cordl_parent: crate::System::Object,
     pub _id: *mut crate::System::String,
-    pub _status: EntitlementStatus,
+    pub _status: crate::GlobalNamespace::EntitlementStatus,
 }
 #[cfg(feature = "MockPlatformEntitlement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MockPlatformEntitlement => ""."MockPlatformEntitlement"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MockPlatformEntitlement => ""
+    ."MockPlatformEntitlement"
 );
 #[cfg(feature = "MockPlatformEntitlement")]
-impl std::ops::Deref for MockPlatformEntitlement {
+impl std::ops::Deref for crate::GlobalNamespace::MockPlatformEntitlement {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockPlatformEntitlement")]
-impl std::ops::DerefMut for MockPlatformEntitlement {
+impl std::ops::DerefMut for crate::GlobalNamespace::MockPlatformEntitlement {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockPlatformEntitlement")]
-impl MockPlatformEntitlement {
+impl crate::GlobalNamespace::MockPlatformEntitlement {
     pub fn GetIt(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -37,7 +38,7 @@ impl MockPlatformEntitlement {
     }
     pub fn New(
         id: *mut crate::System::String,
-        status: EntitlementStatus,
+        status: crate::GlobalNamespace::EntitlementStatus,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -48,7 +49,7 @@ impl MockPlatformEntitlement {
     pub fn _ctor(
         &mut self,
         id: *mut crate::System::String,
-        status: EntitlementStatus,
+        status: crate::GlobalNamespace::EntitlementStatus,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -67,16 +68,20 @@ impl MockPlatformEntitlement {
             .invoke("get_id", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_status(&mut self) -> quest_hook::libil2cpp::Result<EntitlementStatus> {
+    pub fn get_status(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EntitlementStatus> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: EntitlementStatus = __cordl_object.invoke("get_status", ())?;
+        let __cordl_ret: crate::GlobalNamespace::EntitlementStatus = __cordl_object
+            .invoke("get_status", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MockPlatformEntitlement")]
-impl quest_hook::libil2cpp::ObjectType for MockPlatformEntitlement {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MockPlatformEntitlement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

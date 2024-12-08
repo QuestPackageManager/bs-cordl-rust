@@ -6,23 +6,24 @@ pub struct GeometryTools {
 }
 #[cfg(feature = "GeometryTools")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GeometryTools => ""."GeometryTools"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GeometryTools => ""
+    ."GeometryTools"
 );
 #[cfg(feature = "GeometryTools")]
-impl std::ops::Deref for GeometryTools {
+impl std::ops::Deref for crate::GlobalNamespace::GeometryTools {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GeometryTools")]
-impl std::ops::DerefMut for GeometryTools {
+impl std::ops::DerefMut for crate::GlobalNamespace::GeometryTools {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GeometryTools")]
-impl GeometryTools {
+impl crate::GlobalNamespace::GeometryTools {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,7 +43,7 @@ impl GeometryTools {
     }
 }
 #[cfg(feature = "GeometryTools")]
-impl quest_hook::libil2cpp::ObjectType for GeometryTools {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GeometryTools {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

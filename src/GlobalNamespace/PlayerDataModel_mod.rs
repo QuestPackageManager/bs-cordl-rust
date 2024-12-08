@@ -3,35 +3,36 @@
 #[derive(Debug)]
 pub struct PlayerDataModel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _playerData: *mut PlayerData,
-    pub _playerDataFileModel: *mut PlayerDataFileModel,
+    pub _playerData: *mut crate::GlobalNamespace::PlayerData,
+    pub _playerDataFileModel: *mut crate::GlobalNamespace::PlayerDataFileModel,
 }
 #[cfg(feature = "PlayerDataModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerDataModel => ""."PlayerDataModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerDataModel => ""
+    ."PlayerDataModel"
 );
 #[cfg(feature = "PlayerDataModel")]
-impl std::ops::Deref for PlayerDataModel {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerDataModel {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerDataModel")]
-impl std::ops::DerefMut for PlayerDataModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerDataModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerDataModel")]
-impl PlayerDataModel {
+impl crate::GlobalNamespace::PlayerDataModel {
     pub const kPlayerDataSaveInjectID: &'static str = "SavedPlayerData";
     #[cfg(feature = "PlayerDataModel+_UndoUnsavedChangesAsync_d__11")]
     pub type _UndoUnsavedChangesAsync_d__11 = crate::GlobalNamespace::PlayerDataModel__UndoUnsavedChangesAsync_d__11;
     pub fn Inject(
         &mut self,
         playerDataJsonString: *mut crate::System::String,
-        playerDataFileModel: *mut PlayerDataFileModel,
+        playerDataFileModel: *mut crate::GlobalNamespace::PlayerDataFileModel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -118,26 +119,31 @@ impl PlayerDataModel {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_playerData(&mut self) -> quest_hook::libil2cpp::Result<*mut PlayerData> {
+    pub fn get_playerData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::PlayerData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PlayerData = __cordl_object.invoke("get_playerData", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::PlayerData = __cordl_object
+            .invoke("get_playerData", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_playerDataFileModel(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerDataFileModel> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PlayerDataFileModel,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PlayerDataFileModel = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PlayerDataFileModel = __cordl_object
             .invoke("get_playerDataFileModel", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PlayerDataModel")]
-impl quest_hook::libil2cpp::ObjectType for PlayerDataModel {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerDataModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

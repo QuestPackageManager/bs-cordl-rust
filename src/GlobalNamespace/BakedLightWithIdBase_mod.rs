@@ -6,23 +6,24 @@ pub struct BakedLightWithIdBase {
 }
 #[cfg(feature = "BakedLightWithIdBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BakedLightWithIdBase => ""."BakedLightWithIdBase"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BakedLightWithIdBase => ""
+    ."BakedLightWithIdBase"
 );
 #[cfg(feature = "BakedLightWithIdBase")]
-impl std::ops::Deref for BakedLightWithIdBase {
+impl std::ops::Deref for crate::GlobalNamespace::BakedLightWithIdBase {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BakedLightWithIdBase")]
-impl std::ops::DerefMut for BakedLightWithIdBase {
+impl std::ops::DerefMut for crate::GlobalNamespace::BakedLightWithIdBase {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BakedLightWithIdBase")]
-impl BakedLightWithIdBase {
+impl crate::GlobalNamespace::BakedLightWithIdBase {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -60,7 +61,7 @@ impl BakedLightWithIdBase {
     }
 }
 #[cfg(feature = "BakedLightWithIdBase")]
-impl quest_hook::libil2cpp::ObjectType for BakedLightWithIdBase {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BakedLightWithIdBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

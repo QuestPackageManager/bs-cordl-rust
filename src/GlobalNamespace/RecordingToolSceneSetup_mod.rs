@@ -3,27 +3,28 @@
 #[derive(Debug)]
 pub struct RecordingToolSceneSetup {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _sceneSetupData: *mut RecordingToolSceneSetupData,
+    pub _sceneSetupData: *mut crate::GlobalNamespace::RecordingToolSceneSetupData,
 }
 #[cfg(feature = "RecordingToolSceneSetup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RecordingToolSceneSetup => ""."RecordingToolSceneSetup"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RecordingToolSceneSetup => ""
+    ."RecordingToolSceneSetup"
 );
 #[cfg(feature = "RecordingToolSceneSetup")]
-impl std::ops::Deref for RecordingToolSceneSetup {
+impl std::ops::Deref for crate::GlobalNamespace::RecordingToolSceneSetup {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingToolSceneSetup")]
-impl std::ops::DerefMut for RecordingToolSceneSetup {
+impl std::ops::DerefMut for crate::GlobalNamespace::RecordingToolSceneSetup {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingToolSceneSetup")]
-impl RecordingToolSceneSetup {
+impl crate::GlobalNamespace::RecordingToolSceneSetup {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -53,7 +54,8 @@ impl RecordingToolSceneSetup {
     }
 }
 #[cfg(feature = "RecordingToolSceneSetup")]
-impl quest_hook::libil2cpp::ObjectType for RecordingToolSceneSetup {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::RecordingToolSceneSetup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

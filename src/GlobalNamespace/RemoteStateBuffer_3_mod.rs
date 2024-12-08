@@ -6,7 +6,7 @@ pub struct RemoteStateBuffer_3<
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: StateBuffer_3<TStateTable, TType, TState>,
+    __cordl_parent: crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState>,
     pub _receivedStates: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
             TStateTable,
@@ -31,16 +31,18 @@ pub struct RemoteStateBuffer_3<
 }
 #[cfg(feature = "RemoteStateBuffer_3")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RemoteStateBuffer_3 < TStateTable, TType, TState > => ""
-    ."RemoteStateBuffer`3" < TStateTable, TType, TState >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RemoteStateBuffer_3 <
+    TStateTable, TType, TState > => ""."RemoteStateBuffer`3" < TStateTable, TType, TState
+    >
 );
 #[cfg(feature = "RemoteStateBuffer_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
-> std::ops::Deref for RemoteStateBuffer_3<TStateTable, TType, TState> {
-    type Target = StateBuffer_3<TStateTable, TType, TState>;
+> std::ops::Deref
+for crate::GlobalNamespace::RemoteStateBuffer_3<TStateTable, TType, TState> {
+    type Target = crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +52,8 @@ impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
-> std::ops::DerefMut for RemoteStateBuffer_3<TStateTable, TType, TState> {
+> std::ops::DerefMut
+for crate::GlobalNamespace::RemoteStateBuffer_3<TStateTable, TType, TState> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -60,7 +63,7 @@ impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
-> RemoteStateBuffer_3<TStateTable, TType, TState> {
+> crate::GlobalNamespace::RemoteStateBuffer_3<TStateTable, TType, TState> {
     pub const kMaxDeltaQueueSize: i32 = 64i32;
     pub const kMaxStateQueueSize: i32 = 4i32;
     pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -118,7 +121,7 @@ impl<
     }
     pub fn PushDelta(
         &mut self,
-        baseId: SyncStateId,
+        baseId: crate::GlobalNamespace::SyncStateId,
         delta: TStateTable,
         timeOffset: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -139,7 +142,7 @@ impl<
     }
     pub fn PushState(
         &mut self,
-        id: SyncStateId,
+        id: crate::GlobalNamespace::SyncStateId,
         state: TStateTable,
         _cordl_time: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -193,7 +196,8 @@ impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::ObjectType for RemoteStateBuffer_3<TStateTable, TType, TState> {
+> quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::RemoteStateBuffer_3<TStateTable, TType, TState> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,31 +3,32 @@
 #[derive(Debug)]
 pub struct OVRSceneAnchor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _Space_k__BackingField: OVRSpace,
+    pub _Space_k__BackingField: crate::GlobalNamespace::OVRSpace,
     pub _Uuid_k__BackingField: crate::System::Guid,
-    pub _Anchor_k__BackingField: OVRAnchor,
+    pub _Anchor_k__BackingField: crate::GlobalNamespace::OVRAnchor,
     pub _IsTracked_k__BackingField: bool,
     pub _pose: crate::System::Nullable_1<crate::GlobalNamespace::OVRPlugin_Posef>,
 }
 #[cfg(feature = "OVRSceneAnchor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRSceneAnchor => ""."OVRSceneAnchor"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRSceneAnchor => ""
+    ."OVRSceneAnchor"
 );
 #[cfg(feature = "OVRSceneAnchor")]
-impl std::ops::Deref for OVRSceneAnchor {
+impl std::ops::Deref for crate::GlobalNamespace::OVRSceneAnchor {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSceneAnchor")]
-impl std::ops::DerefMut for OVRSceneAnchor {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneAnchor {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSceneAnchor")]
-impl OVRSceneAnchor {
+impl crate::GlobalNamespace::OVRSceneAnchor {
     pub fn ClearPoseCache(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -40,7 +41,7 @@ impl OVRSceneAnchor {
     }
     pub fn Initialize(
         &mut self,
-        anchor: OVRAnchor,
+        anchor: crate::GlobalNamespace::OVRAnchor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -51,7 +52,7 @@ impl OVRSceneAnchor {
     }
     pub fn InitializeFrom(
         &mut self,
-        other: *mut OVRSceneAnchor,
+        other: *mut crate::GlobalNamespace::OVRSceneAnchor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -123,11 +124,14 @@ impl OVRSceneAnchor {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Anchor(&mut self) -> quest_hook::libil2cpp::Result<OVRAnchor> {
+    pub fn get_Anchor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRAnchor> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: OVRAnchor = __cordl_object.invoke("get_Anchor", ())?;
+        let __cordl_ret: crate::GlobalNamespace::OVRAnchor = __cordl_object
+            .invoke("get_Anchor", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_IsTracked(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -137,11 +141,14 @@ impl OVRSceneAnchor {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsTracked", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Space(&mut self) -> quest_hook::libil2cpp::Result<OVRSpace> {
+    pub fn get_Space(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRSpace> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: OVRSpace = __cordl_object.invoke("get_Space", ())?;
+        let __cordl_ret: crate::GlobalNamespace::OVRSpace = __cordl_object
+            .invoke("get_Space", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Uuid(&mut self) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
@@ -153,7 +160,7 @@ impl OVRSceneAnchor {
     }
     pub fn set_Anchor(
         &mut self,
-        value: OVRAnchor,
+        value: crate::GlobalNamespace::OVRAnchor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -175,7 +182,7 @@ impl OVRSceneAnchor {
     }
     pub fn set_Space(
         &mut self,
-        value: OVRSpace,
+        value: crate::GlobalNamespace::OVRSpace,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -197,7 +204,7 @@ impl OVRSceneAnchor {
     }
 }
 #[cfg(feature = "OVRSceneAnchor")]
-impl quest_hook::libil2cpp::ObjectType for OVRSceneAnchor {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneAnchor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

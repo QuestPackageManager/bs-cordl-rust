@@ -3,51 +3,52 @@
 #[derive(Debug)]
 pub struct MultiplayerLevelFinishedController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _levelEndActionsPublisher: *mut IMultiplayerLevelEndActionsPublisher,
-    pub _rpcManager: *mut IGameplayRpcManager,
-    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
-    pub _beatmapBasicData: *mut BeatmapBasicData,
+    pub _levelEndActionsPublisher: *mut crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
+    pub _rpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _beatmapBasicData: *mut crate::GlobalNamespace::BeatmapBasicData,
     pub allResultsCollectedEvent: *mut crate::System::Action_2<
-        *mut MultiplayerLevelCompletionResults,
+        *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         *mut crate::System::Collections::Generic::Dictionary_2<
             *mut crate::System::String,
-            *mut MultiplayerLevelCompletionResults,
+            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
     >,
     pub _otherPlayersCompletionResults: *mut crate::System::Collections::Generic::Dictionary_2<
         *mut crate::System::String,
-        *mut MultiplayerLevelCompletionResults,
+        *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
     >,
-    pub _localPlayerResults: *mut MultiplayerLevelCompletionResults,
+    pub _localPlayerResults: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
     pub _gameFinishReported: bool,
     pub _sceneLoadTime: f32,
 }
 #[cfg(feature = "MultiplayerLevelFinishedController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLevelFinishedController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLevelFinishedController => ""
     ."MultiplayerLevelFinishedController"
 );
 #[cfg(feature = "MultiplayerLevelFinishedController")]
-impl std::ops::Deref for MultiplayerLevelFinishedController {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLevelFinishedController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLevelFinishedController")]
-impl std::ops::DerefMut for MultiplayerLevelFinishedController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLevelFinishedController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLevelFinishedController")]
-impl MultiplayerLevelFinishedController {
+impl crate::GlobalNamespace::MultiplayerLevelFinishedController {
     pub const kMinSceneDuration: f32 = 2f32;
     #[cfg(feature = "MultiplayerLevelFinishedController+_StartLevelFinished_d__20")]
     pub type _StartLevelFinished_d__20 = crate::GlobalNamespace::MultiplayerLevelFinishedController__StartLevelFinished_d__20;
     pub fn HandlePlayerDidFinish(
         &mut self,
-        levelCompletionResults: *mut MultiplayerLevelCompletionResults,
+        levelCompletionResults: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -58,7 +59,7 @@ impl MultiplayerLevelFinishedController {
     }
     pub fn HandlePlayerNetworkDidFailed(
         &mut self,
-        levelCompletionResults: *mut MultiplayerLevelCompletionResults,
+        levelCompletionResults: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -70,7 +71,7 @@ impl MultiplayerLevelFinishedController {
     pub fn HandleRpcLevelFinished(
         &mut self,
         userId: *mut crate::System::String,
-        results: *mut MultiplayerLevelCompletionResults,
+        results: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -108,7 +109,7 @@ impl MultiplayerLevelFinishedController {
     }
     pub fn StartLevelFinished(
         &mut self,
-        localPlayerResults: *mut MultiplayerLevelCompletionResults,
+        localPlayerResults: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -130,10 +131,10 @@ impl MultiplayerLevelFinishedController {
     pub fn add_allResultsCollectedEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut MultiplayerLevelCompletionResults,
+            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             *mut crate::System::Collections::Generic::Dictionary_2<
                 *mut crate::System::String,
-                *mut MultiplayerLevelCompletionResults,
+                *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -153,11 +154,13 @@ impl MultiplayerLevelFinishedController {
     }
     pub fn get_localPlayerResults(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut MultiplayerLevelCompletionResults> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MultiplayerLevelCompletionResults = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults = __cordl_object
             .invoke("get_localPlayerResults", ())?;
         Ok(__cordl_ret)
     }
@@ -166,7 +169,7 @@ impl MultiplayerLevelFinishedController {
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::Dictionary_2<
             *mut crate::System::String,
-            *mut MultiplayerLevelCompletionResults,
+            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -174,17 +177,17 @@ impl MultiplayerLevelFinishedController {
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
             *mut crate::System::String,
-            *mut MultiplayerLevelCompletionResults,
+            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         > = __cordl_object.invoke("get_otherPlayersCompletionResults", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_allResultsCollectedEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut MultiplayerLevelCompletionResults,
+            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             *mut crate::System::Collections::Generic::Dictionary_2<
                 *mut crate::System::String,
-                *mut MultiplayerLevelCompletionResults,
+                *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -197,7 +200,8 @@ impl MultiplayerLevelFinishedController {
     }
 }
 #[cfg(feature = "MultiplayerLevelFinishedController")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLevelFinishedController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLevelFinishedController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

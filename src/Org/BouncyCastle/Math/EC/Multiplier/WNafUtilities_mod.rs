@@ -440,13 +440,13 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities {
     )]
     pub type MapPointCallback = crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_MapPointCallback;
     #[cfg(
-        feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeWithPointMapCallback"
-    )]
-    pub type PrecomputeWithPointMapCallback = crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeWithPointMapCallback;
-    #[cfg(
         feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeCallback"
     )]
     pub type PrecomputeCallback = crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeCallback;
+    #[cfg(
+        feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeWithPointMapCallback"
+    )]
+    pub type PrecomputeWithPointMapCallback = crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeWithPointMapCallback;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -22,23 +22,24 @@ pub struct PlatformException {
 }
 #[cfg(feature = "PlatformException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlatformException => ""."PlatformException"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlatformException => ""
+    ."PlatformException"
 );
 #[cfg(feature = "PlatformException")]
-impl std::ops::Deref for PlatformException {
+impl std::ops::Deref for crate::GlobalNamespace::PlatformException {
     type Target = crate::System::Exception;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformException")]
-impl std::ops::DerefMut for PlatformException {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlatformException {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformException")]
-impl PlatformException {
+impl crate::GlobalNamespace::PlatformException {
     #[cfg(feature = "PlatformException+ErrorType")]
     pub type ErrorType = crate::GlobalNamespace::PlatformException_ErrorType;
     pub fn New_String_Exception0(
@@ -95,7 +96,7 @@ impl PlatformException {
     }
 }
 #[cfg(feature = "PlatformException")]
-impl quest_hook::libil2cpp::ObjectType for PlatformException {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlatformException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

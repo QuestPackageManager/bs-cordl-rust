@@ -8,23 +8,24 @@ pub struct NoteTrailParticleSystem {
 }
 #[cfg(feature = "NoteTrailParticleSystem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteTrailParticleSystem => ""."NoteTrailParticleSystem"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteTrailParticleSystem => ""
+    ."NoteTrailParticleSystem"
 );
 #[cfg(feature = "NoteTrailParticleSystem")]
-impl std::ops::Deref for NoteTrailParticleSystem {
+impl std::ops::Deref for crate::GlobalNamespace::NoteTrailParticleSystem {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteTrailParticleSystem")]
-impl std::ops::DerefMut for NoteTrailParticleSystem {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteTrailParticleSystem {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteTrailParticleSystem")]
-impl NoteTrailParticleSystem {
+impl crate::GlobalNamespace::NoteTrailParticleSystem {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -67,7 +68,8 @@ impl NoteTrailParticleSystem {
     }
 }
 #[cfg(feature = "NoteTrailParticleSystem")]
-impl quest_hook::libil2cpp::ObjectType for NoteTrailParticleSystem {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NoteTrailParticleSystem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

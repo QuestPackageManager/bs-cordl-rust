@@ -29,10 +29,10 @@ impl std::ops::DerefMut for crate::OVRSimpleJSON::JSONObject {
 }
 #[cfg(feature = "OVRSimpleJSON+JSONObject")]
 impl crate::OVRSimpleJSON::JSONObject {
-    #[cfg(feature = "OVRSimpleJSON+JSONObject+_get_Children_d__23")]
-    pub type _get_Children_d__23 = crate::OVRSimpleJSON::JSONObject__get_Children_d__23;
     #[cfg(feature = "OVRSimpleJSON+JSONObject+__c__DisplayClass21_0")]
     pub type __c__DisplayClass21_0 = crate::OVRSimpleJSON::JSONObject___c__DisplayClass21_0;
+    #[cfg(feature = "OVRSimpleJSON+JSONObject+_get_Children_d__23")]
+    pub type _get_Children_d__23 = crate::OVRSimpleJSON::JSONObject__get_Children_d__23;
     pub fn Add(
         &mut self,
         aKey: *mut crate::System::String,

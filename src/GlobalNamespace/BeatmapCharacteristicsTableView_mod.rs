@@ -4,36 +4,36 @@
 pub struct BeatmapCharacteristicsTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _tableView: *mut crate::HMUI::TableView,
-    pub _cellPrefab: *mut BeatmapCharacteristicTableCell,
+    pub _cellPrefab: *mut crate::GlobalNamespace::BeatmapCharacteristicTableCell,
     pub _cellReuseIdentifier: *mut crate::System::String,
     pub _cellWidth: f32,
     pub didSelectCharacteristic: *mut crate::System::Action_1<
-        *mut BeatmapCharacteristicSO,
+        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     >,
-    pub _beatmapCharacteristicCollection: *mut BeatmapCharacteristicCollection,
+    pub _beatmapCharacteristicCollection: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
     pub _isInitialized: bool,
     pub _selectedColumn: i32,
 }
 #[cfg(feature = "BeatmapCharacteristicsTableView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapCharacteristicsTableView => ""
-    ."BeatmapCharacteristicsTableView"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapCharacteristicsTableView
+    => ""."BeatmapCharacteristicsTableView"
 );
 #[cfg(feature = "BeatmapCharacteristicsTableView")]
-impl std::ops::Deref for BeatmapCharacteristicsTableView {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapCharacteristicsTableView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapCharacteristicsTableView")]
-impl std::ops::DerefMut for BeatmapCharacteristicsTableView {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapCharacteristicsTableView {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapCharacteristicsTableView")]
-impl BeatmapCharacteristicsTableView {
+impl crate::GlobalNamespace::BeatmapCharacteristicsTableView {
     pub fn CellForIdx(
         &mut self,
         tableView: *mut crate::HMUI::TableView,
@@ -122,7 +122,7 @@ impl BeatmapCharacteristicsTableView {
     }
     pub fn SetData(
         &mut self,
-        beatmapCharacteristicCollection: *mut BeatmapCharacteristicCollection,
+        beatmapCharacteristicCollection: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -143,7 +143,9 @@ impl BeatmapCharacteristicsTableView {
     }
     pub fn add_didSelectCharacteristic(
         &mut self,
-        value: *mut crate::System::Action_1<*mut BeatmapCharacteristicSO>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -154,7 +156,9 @@ impl BeatmapCharacteristicsTableView {
     }
     pub fn remove_didSelectCharacteristic(
         &mut self,
-        value: *mut crate::System::Action_1<*mut BeatmapCharacteristicSO>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -165,7 +169,8 @@ impl BeatmapCharacteristicsTableView {
     }
 }
 #[cfg(feature = "BeatmapCharacteristicsTableView")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapCharacteristicsTableView {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapCharacteristicsTableView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

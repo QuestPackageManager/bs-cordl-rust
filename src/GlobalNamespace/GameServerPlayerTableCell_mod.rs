@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServerPlayerTableCell {
-    __cordl_parent: TableCellWithSeparator,
+    __cordl_parent: crate::GlobalNamespace::TableCellWithSeparator,
     pub _playerNameText: *mut crate::HMUI::CurvedTextMeshPro,
     pub _localPlayerBackgroundImage: *mut crate::UnityEngine::UI::Image,
     pub _suggestedLevelText: *mut crate::HMUI::CurvedTextMeshPro,
     pub _suggestedCharacteristicIcon: *mut crate::HMUI::ImageView,
     pub _suggestedDifficultyText: *mut crate::TMPro::TextMeshProUGUI,
     pub _emptySuggestedLevelText: *mut crate::HMUI::CurvedTextMeshPro,
-    pub _suggestedModifiersList: *mut GameplayModifierInfoListItemsList,
+    pub _suggestedModifiersList: *mut crate::GlobalNamespace::GameplayModifierInfoListItemsList,
     pub _emptySuggestedModifiersText: *mut crate::HMUI::CurvedTextMeshPro,
     pub _mutePlayerButton: *mut crate::UnityEngine::UI::Button,
     pub _kickPlayerButton: *mut crate::UnityEngine::UI::Button,
@@ -21,8 +21,8 @@ pub struct GameServerPlayerTableCell {
     pub _readyIcon: *mut crate::UnityEngine::Sprite,
     pub _spectatingIcon: *mut crate::UnityEngine::Sprite,
     pub _hostIcon: *mut crate::UnityEngine::Sprite,
-    pub _gameplayModifiers: *mut GameplayModifiersModelSO,
-    pub _beatmapLevelsModel: *mut BeatmapLevelsModel,
+    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
+    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
     pub kickPlayerEvent: *mut crate::System::Action_1<i32>,
     pub useBeatmapEvent: *mut crate::System::Action_1<i32>,
     pub useModifiersEvent: *mut crate::System::Action_1<i32>,
@@ -31,28 +31,28 @@ pub struct GameServerPlayerTableCell {
 }
 #[cfg(feature = "GameServerPlayerTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameServerPlayerTableCell => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameServerPlayerTableCell => ""
     ."GameServerPlayerTableCell"
 );
 #[cfg(feature = "GameServerPlayerTableCell")]
-impl std::ops::Deref for GameServerPlayerTableCell {
-    type Target = TableCellWithSeparator;
+impl std::ops::Deref for crate::GlobalNamespace::GameServerPlayerTableCell {
+    type Target = crate::GlobalNamespace::TableCellWithSeparator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameServerPlayerTableCell")]
-impl std::ops::DerefMut for GameServerPlayerTableCell {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameServerPlayerTableCell {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameServerPlayerTableCell")]
-impl GameServerPlayerTableCell {
-    #[cfg(feature = "GameServerPlayerTableCell+__c__DisplayClass30_0")]
-    pub type __c__DisplayClass30_0 = crate::GlobalNamespace::GameServerPlayerTableCell___c__DisplayClass30_0;
+impl crate::GlobalNamespace::GameServerPlayerTableCell {
     #[cfg(feature = "GameServerPlayerTableCell+_SetBeatmapUseButtonEnabledAsync_d__36")]
     pub type _SetBeatmapUseButtonEnabledAsync_d__36 = crate::GlobalNamespace::GameServerPlayerTableCell__SetBeatmapUseButtonEnabledAsync_d__36;
+    #[cfg(feature = "GameServerPlayerTableCell+__c__DisplayClass30_0")]
+    pub type __c__DisplayClass30_0 = crate::GlobalNamespace::GameServerPlayerTableCell___c__DisplayClass30_0;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -103,7 +103,7 @@ impl GameServerPlayerTableCell {
     pub fn SetBeatmapUseButtonEnabledAsync(
         &mut self,
         getLevelEntitlementTask: *mut crate::System::Threading::Tasks::Task_1<
-            EntitlementStatus,
+            crate::GlobalNamespace::EntitlementStatus,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -115,12 +115,12 @@ impl GameServerPlayerTableCell {
     }
     pub fn SetData(
         &mut self,
-        connectedPlayer: *mut IConnectedPlayer,
-        playerData: *mut ILobbyPlayerData,
+        connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+        playerData: *mut crate::GlobalNamespace::ILobbyPlayerData,
         hasKickPermissions: bool,
         allowSelection: bool,
         getLevelEntitlementTask: *mut crate::System::Threading::Tasks::Task_1<
-            EntitlementStatus,
+            crate::GlobalNamespace::EntitlementStatus,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -217,7 +217,8 @@ impl GameServerPlayerTableCell {
     }
 }
 #[cfg(feature = "GameServerPlayerTableCell")]
-impl quest_hook::libil2cpp::ObjectType for GameServerPlayerTableCell {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GameServerPlayerTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,30 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RequiredArgument_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: ArgumentBase,
+    __cordl_parent: crate::GlobalNamespace::ArgumentBase,
     pub _value: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "RequiredArgument_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RequiredArgument_1 < T > => ""."RequiredArgument`1" < T
-    >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RequiredArgument_1 < T > => ""
+    ."RequiredArgument`1" < T >
 );
 #[cfg(feature = "RequiredArgument_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for RequiredArgument_1<T> {
-    type Target = ArgumentBase;
+impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
+for crate::GlobalNamespace::RequiredArgument_1<T> {
+    type Target = crate::GlobalNamespace::ArgumentBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RequiredArgument_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for RequiredArgument_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
+for crate::GlobalNamespace::RequiredArgument_1<T> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RequiredArgument_1")]
-impl<T: quest_hook::libil2cpp::Type> RequiredArgument_1<T> {
+impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RequiredArgument_1<T> {
     pub fn New(
         name: *mut crate::System::String,
         description: *mut crate::System::String,
@@ -119,7 +121,7 @@ impl<T: quest_hook::libil2cpp::Type> RequiredArgument_1<T> {
 }
 #[cfg(feature = "RequiredArgument_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for RequiredArgument_1<T> {
+for crate::GlobalNamespace::RequiredArgument_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

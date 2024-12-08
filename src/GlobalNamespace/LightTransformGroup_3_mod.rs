@@ -6,7 +6,7 @@ pub struct LightTransformGroup_3<
     TY: quest_hook::libil2cpp::Type,
     TZ: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: LightGroupSubsystem,
+    __cordl_parent: crate::GlobalNamespace::LightGroupSubsystem,
     pub _mirrorX: bool,
     pub _mirrorY: bool,
     pub _mirrorZ: bool,
@@ -25,16 +25,16 @@ pub struct LightTransformGroup_3<
 }
 #[cfg(feature = "LightTransformGroup_3")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightTransformGroup_3 < TX, TY, TZ > => ""
-    ."LightTransformGroup`3" < TX, TY, TZ >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightTransformGroup_3 < TX, TY,
+    TZ > => ""."LightTransformGroup`3" < TX, TY, TZ >
 );
 #[cfg(feature = "LightTransformGroup_3")]
 impl<
     TX: quest_hook::libil2cpp::Type,
     TY: quest_hook::libil2cpp::Type,
     TZ: quest_hook::libil2cpp::Type,
-> std::ops::Deref for LightTransformGroup_3<TX, TY, TZ> {
-    type Target = LightGroupSubsystem;
+> std::ops::Deref for crate::GlobalNamespace::LightTransformGroup_3<TX, TY, TZ> {
+    type Target = crate::GlobalNamespace::LightGroupSubsystem;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl<
     TX: quest_hook::libil2cpp::Type,
     TY: quest_hook::libil2cpp::Type,
     TZ: quest_hook::libil2cpp::Type,
-> std::ops::DerefMut for LightTransformGroup_3<TX, TY, TZ> {
+> std::ops::DerefMut for crate::GlobalNamespace::LightTransformGroup_3<TX, TY, TZ> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -54,7 +54,7 @@ impl<
     TX: quest_hook::libil2cpp::Type,
     TY: quest_hook::libil2cpp::Type,
     TZ: quest_hook::libil2cpp::Type,
-> LightTransformGroup_3<TX, TY, TZ> {
+> crate::GlobalNamespace::LightTransformGroup_3<TX, TY, TZ> {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -213,7 +213,8 @@ impl<
     TX: quest_hook::libil2cpp::Type,
     TY: quest_hook::libil2cpp::Type,
     TZ: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::ObjectType for LightTransformGroup_3<TX, TY, TZ> {
+> quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LightTransformGroup_3<TX, TY, TZ> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

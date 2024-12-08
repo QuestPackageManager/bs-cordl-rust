@@ -73,31 +73,32 @@ pub struct ISonyCommerceHelper {
 }
 #[cfg(feature = "ISonyCommerceHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ISonyCommerceHelper => ""."ISonyCommerceHelper"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ISonyCommerceHelper => ""
+    ."ISonyCommerceHelper"
 );
 #[cfg(feature = "ISonyCommerceHelper")]
-impl std::ops::Deref for ISonyCommerceHelper {
+impl std::ops::Deref for crate::GlobalNamespace::ISonyCommerceHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ISonyCommerceHelper")]
-impl std::ops::DerefMut for ISonyCommerceHelper {
+impl std::ops::DerefMut for crate::GlobalNamespace::ISonyCommerceHelper {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ISonyCommerceHelper")]
-impl ISonyCommerceHelper {
+impl crate::GlobalNamespace::ISonyCommerceHelper {
     #[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
     pub type AdditionalContentEntitlementsAsyncResult = crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult;
+    #[cfg(feature = "ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
+    pub type DisplayCategoryBrowseDialogResult = crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult;
     #[cfg(feature = "ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
     pub type DisplayProductBrowseDialogResult = crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult;
     #[cfg(feature = "ISonyCommerceHelper+GetAdditionalContentEntitlementsResult")]
     pub type GetAdditionalContentEntitlementsResult = crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlementsResult;
-    #[cfg(feature = "ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
-    pub type DisplayCategoryBrowseDialogResult = crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult;
     pub fn DisplayCategoryBrowseDialogAsync(
         &mut self,
         categoryLabel: *mut crate::System::String,
@@ -158,7 +159,7 @@ impl ISonyCommerceHelper {
     }
 }
 #[cfg(feature = "ISonyCommerceHelper")]
-impl quest_hook::libil2cpp::ObjectType for ISonyCommerceHelper {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ISonyCommerceHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

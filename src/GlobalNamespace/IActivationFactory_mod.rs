@@ -6,23 +6,24 @@ pub struct IActivationFactory {
 }
 #[cfg(feature = "IActivationFactory")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IActivationFactory => ""."IActivationFactory"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IActivationFactory => ""
+    ."IActivationFactory"
 );
 #[cfg(feature = "IActivationFactory")]
-impl std::ops::Deref for IActivationFactory {
+impl std::ops::Deref for crate::GlobalNamespace::IActivationFactory {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IActivationFactory")]
-impl std::ops::DerefMut for IActivationFactory {
+impl std::ops::DerefMut for crate::GlobalNamespace::IActivationFactory {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IActivationFactory")]
-impl IActivationFactory {
+impl crate::GlobalNamespace::IActivationFactory {
     pub fn ActivateInstance(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
@@ -40,7 +41,7 @@ impl IActivationFactory {
     }
 }
 #[cfg(feature = "IActivationFactory")]
-impl quest_hook::libil2cpp::ObjectType for IActivationFactory {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IActivationFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

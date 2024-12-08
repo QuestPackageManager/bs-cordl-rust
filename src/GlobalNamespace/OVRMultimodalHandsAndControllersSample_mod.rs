@@ -9,24 +9,26 @@ pub struct OVRMultimodalHandsAndControllersSample {
 }
 #[cfg(feature = "OVRMultimodalHandsAndControllersSample")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRMultimodalHandsAndControllersSample => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRMultimodalHandsAndControllersSample => ""
     ."OVRMultimodalHandsAndControllersSample"
 );
 #[cfg(feature = "OVRMultimodalHandsAndControllersSample")]
-impl std::ops::Deref for OVRMultimodalHandsAndControllersSample {
+impl std::ops::Deref for crate::GlobalNamespace::OVRMultimodalHandsAndControllersSample {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRMultimodalHandsAndControllersSample")]
-impl std::ops::DerefMut for OVRMultimodalHandsAndControllersSample {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::OVRMultimodalHandsAndControllersSample {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRMultimodalHandsAndControllersSample")]
-impl OVRMultimodalHandsAndControllersSample {
+impl crate::GlobalNamespace::OVRMultimodalHandsAndControllersSample {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -116,7 +118,8 @@ impl OVRMultimodalHandsAndControllersSample {
     }
 }
 #[cfg(feature = "OVRMultimodalHandsAndControllersSample")]
-impl quest_hook::libil2cpp::ObjectType for OVRMultimodalHandsAndControllersSample {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRMultimodalHandsAndControllersSample {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

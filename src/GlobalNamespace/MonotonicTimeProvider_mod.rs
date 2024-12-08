@@ -9,23 +9,24 @@ pub struct MonotonicTimeProvider {
 }
 #[cfg(feature = "MonotonicTimeProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MonotonicTimeProvider => ""."MonotonicTimeProvider"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MonotonicTimeProvider => ""
+    ."MonotonicTimeProvider"
 );
 #[cfg(feature = "MonotonicTimeProvider")]
-impl std::ops::Deref for MonotonicTimeProvider {
+impl std::ops::Deref for crate::GlobalNamespace::MonotonicTimeProvider {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MonotonicTimeProvider")]
-impl std::ops::DerefMut for MonotonicTimeProvider {
+impl std::ops::DerefMut for crate::GlobalNamespace::MonotonicTimeProvider {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MonotonicTimeProvider")]
-impl MonotonicTimeProvider {
+impl crate::GlobalNamespace::MonotonicTimeProvider {
     pub fn GetTicks(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -59,7 +60,8 @@ impl MonotonicTimeProvider {
     }
 }
 #[cfg(feature = "MonotonicTimeProvider")]
-impl quest_hook::libil2cpp::ObjectType for MonotonicTimeProvider {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MonotonicTimeProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

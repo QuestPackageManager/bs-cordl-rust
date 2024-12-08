@@ -290,12 +290,12 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
     pub const kDefaultBufferSize: i32 = 1048576i32;
     #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
     pub type DeviceInfo = crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo;
+    #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
+    pub type Enumerator = crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator;
     #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags")]
     pub type FileFlags = crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags;
     #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController")]
     pub type ReplayController = crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController;
-    #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
-    pub type Enumerator = crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator;
     pub fn Allocate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

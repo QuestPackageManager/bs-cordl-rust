@@ -8,30 +8,33 @@ pub struct AutoSetupController {
     pub _autoStartWhenAllReadyToggle: *mut crate::UnityEngine::UI::Toggle,
     pub _forceAutoStartAfterSongSelectionToggle: *mut crate::UnityEngine::UI::Toggle,
     pub _randomSongIfNoneSuggestedToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub didFinishEvent: *mut crate::System::Action_1<*mut AutoSetupData>,
+    pub didFinishEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::AutoSetupData,
+    >,
     pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
     pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
-    pub _autoSetupData: *mut AutoSetupData,
+    pub _autoSetupData: *mut crate::GlobalNamespace::AutoSetupData,
 }
 #[cfg(feature = "AutoSetupController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AutoSetupController => ""."AutoSetupController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AutoSetupController => ""
+    ."AutoSetupController"
 );
 #[cfg(feature = "AutoSetupController")]
-impl std::ops::Deref for AutoSetupController {
+impl std::ops::Deref for crate::GlobalNamespace::AutoSetupController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AutoSetupController")]
-impl std::ops::DerefMut for AutoSetupController {
+impl std::ops::DerefMut for crate::GlobalNamespace::AutoSetupController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AutoSetupController")]
-impl AutoSetupController {
+impl crate::GlobalNamespace::AutoSetupController {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -61,7 +64,7 @@ impl AutoSetupController {
     }
     pub fn Setup(
         &mut self,
-        autoSetupData: *mut AutoSetupData,
+        autoSetupData: *mut crate::GlobalNamespace::AutoSetupData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -136,7 +139,7 @@ impl AutoSetupController {
     }
     pub fn add_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut AutoSetupData>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::AutoSetupData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -147,7 +150,7 @@ impl AutoSetupController {
     }
     pub fn remove_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut AutoSetupData>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::AutoSetupData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -158,7 +161,7 @@ impl AutoSetupController {
     }
 }
 #[cfg(feature = "AutoSetupController")]
-impl quest_hook::libil2cpp::ObjectType for AutoSetupController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AutoSetupController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

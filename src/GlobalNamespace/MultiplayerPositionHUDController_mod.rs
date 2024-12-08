@@ -7,31 +7,32 @@ pub struct MultiplayerPositionHUDController {
     pub _positionText: *mut crate::TMPro::TextMeshProUGUI,
     pub _canvasGroup: *mut crate::UnityEngine::CanvasGroup,
     pub _firstPlayerAnimationGo: *mut crate::UnityEngine::GameObject,
-    pub _scoreProvider: *mut MultiplayerScoreProvider,
-    pub _playersManager: *mut MultiplayerPlayersManager,
+    pub _scoreProvider: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
+    pub _playersManager: *mut crate::GlobalNamespace::MultiplayerPlayersManager,
     pub _initData: *mut crate::GlobalNamespace::CoreGameHUDController_InitData,
     pub _prevPosition: i32,
 }
 #[cfg(feature = "MultiplayerPositionHUDController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerPositionHUDController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerPositionHUDController => ""
     ."MultiplayerPositionHUDController"
 );
 #[cfg(feature = "MultiplayerPositionHUDController")]
-impl std::ops::Deref for MultiplayerPositionHUDController {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerPositionHUDController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerPositionHUDController")]
-impl std::ops::DerefMut for MultiplayerPositionHUDController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerPositionHUDController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerPositionHUDController")]
-impl MultiplayerPositionHUDController {
+impl crate::GlobalNamespace::MultiplayerPositionHUDController {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -82,7 +83,8 @@ impl MultiplayerPositionHUDController {
     }
 }
 #[cfg(feature = "MultiplayerPositionHUDController")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerPositionHUDController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerPositionHUDController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

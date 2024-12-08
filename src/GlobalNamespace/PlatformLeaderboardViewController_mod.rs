@@ -2,22 +2,22 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformLeaderboardViewController {
-    __cordl_parent: LeaderboardViewController,
-    pub _leaderboardTableView: *mut LeaderboardTableView,
+    __cordl_parent: crate::GlobalNamespace::LeaderboardViewController,
+    pub _leaderboardTableView: *mut crate::GlobalNamespace::LeaderboardTableView,
     pub _scopeSegmentedControl: *mut crate::HMUI::IconSegmentedControl,
-    pub _loadingControl: *mut LoadingControl,
+    pub _loadingControl: *mut crate::GlobalNamespace::LoadingControl,
     pub _globalLeaderboardIcon: *mut crate::UnityEngine::Sprite,
     pub _aroundPlayerLeaderboardIcon: *mut crate::UnityEngine::Sprite,
     pub _friendsLeaderboardIcon: *mut crate::UnityEngine::Sprite,
-    pub _levelStatsView: *mut LevelStatsView,
-    pub _leaderboardsModel: *mut PlatformLeaderboardsModel,
-    pub _playerDataModel: *mut PlayerDataModel,
-    pub _getScoresAsyncRequest: *mut HMAsyncRequest,
+    pub _levelStatsView: *mut crate::GlobalNamespace::LevelStatsView,
+    pub _leaderboardsModel: *mut crate::GlobalNamespace::PlatformLeaderboardsModel,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _getScoresAsyncRequest: *mut crate::GlobalNamespace::HMAsyncRequest,
     pub _scores: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::LeaderboardTableView_ScoreData,
     >,
     pub _playerScorePos: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _beatmapKey: BeatmapKey,
+    pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
     pub _refreshIsNeeded: bool,
     pub _hasScoresData: bool,
     pub _scoreScopes: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -26,29 +26,30 @@ pub struct PlatformLeaderboardViewController {
 }
 #[cfg(feature = "PlatformLeaderboardViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlatformLeaderboardViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PlatformLeaderboardViewController => ""
     ."PlatformLeaderboardViewController"
 );
 #[cfg(feature = "PlatformLeaderboardViewController")]
-impl std::ops::Deref for PlatformLeaderboardViewController {
-    type Target = LeaderboardViewController;
+impl std::ops::Deref for crate::GlobalNamespace::PlatformLeaderboardViewController {
+    type Target = crate::GlobalNamespace::LeaderboardViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformLeaderboardViewController")]
-impl std::ops::DerefMut for PlatformLeaderboardViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlatformLeaderboardViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformLeaderboardViewController")]
-impl PlatformLeaderboardViewController {
+impl crate::GlobalNamespace::PlatformLeaderboardViewController {
     pub const kMaxLeaderboardResults: i32 = 10i32;
-    #[cfg(feature = "PlatformLeaderboardViewController+_Refresh_d__31")]
-    pub type _Refresh_d__31 = crate::GlobalNamespace::PlatformLeaderboardViewController__Refresh_d__31;
     #[cfg(feature = "PlatformLeaderboardViewController+_RefreshDelayed_d__33")]
     pub type _RefreshDelayed_d__33 = crate::GlobalNamespace::PlatformLeaderboardViewController__RefreshDelayed_d__33;
+    #[cfg(feature = "PlatformLeaderboardViewController+_Refresh_d__31")]
+    pub type _Refresh_d__31 = crate::GlobalNamespace::PlatformLeaderboardViewController__Refresh_d__31;
     pub fn ClearContent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -229,7 +230,7 @@ impl PlatformLeaderboardViewController {
     }
     pub fn SetData(
         &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -250,17 +251,20 @@ impl PlatformLeaderboardViewController {
     }
     pub fn get_leaderboardsModel(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PlatformLeaderboardsModel> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PlatformLeaderboardsModel,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PlatformLeaderboardsModel = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PlatformLeaderboardsModel = __cordl_object
             .invoke("get_leaderboardsModel", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PlatformLeaderboardViewController")]
-impl quest_hook::libil2cpp::ObjectType for PlatformLeaderboardViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlatformLeaderboardViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

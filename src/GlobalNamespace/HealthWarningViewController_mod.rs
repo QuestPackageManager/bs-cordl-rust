@@ -4,36 +4,36 @@
 pub struct HealthWarningViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _continueButton: *mut crate::UnityEngine::UI::Button,
-    pub _safeAreaRectChecker: *mut SafeAreaRectChecker,
+    pub _safeAreaRectChecker: *mut crate::GlobalNamespace::SafeAreaRectChecker,
     pub _duration: f32,
     pub _healthAndSafetyTextMesh: *mut crate::TMPro::TextMeshProUGUI,
     pub _healthAndSafetyLocalizationKey: *mut crate::System::String,
     pub _healthAndSafetyPSLocalizationKey: *mut crate::System::String,
-    pub _coroutineStarter: *mut ICoroutineStarter,
+    pub _coroutineStarter: *mut crate::GlobalNamespace::ICoroutineStarter,
     pub didFinishEvent: *mut crate::System::Action,
     pub _requiresInteraction: bool,
     pub _dismissCoroutine: *mut crate::UnityEngine::Coroutine,
 }
 #[cfg(feature = "HealthWarningViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for HealthWarningViewController => ""
-    ."HealthWarningViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::HealthWarningViewController =>
+    ""."HealthWarningViewController"
 );
 #[cfg(feature = "HealthWarningViewController")]
-impl std::ops::Deref for HealthWarningViewController {
+impl std::ops::Deref for crate::GlobalNamespace::HealthWarningViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HealthWarningViewController")]
-impl std::ops::DerefMut for HealthWarningViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::HealthWarningViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "HealthWarningViewController")]
-impl HealthWarningViewController {
+impl crate::GlobalNamespace::HealthWarningViewController {
     #[cfg(feature = "HealthWarningViewController+_DismissHealthAndSafety_d__15")]
     pub type _DismissHealthAndSafety_d__15 = crate::GlobalNamespace::HealthWarningViewController__DismissHealthAndSafety_d__15;
     pub fn DidActivate(
@@ -136,7 +136,8 @@ impl HealthWarningViewController {
     }
 }
 #[cfg(feature = "HealthWarningViewController")]
-impl quest_hook::libil2cpp::ObjectType for HealthWarningViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::HealthWarningViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

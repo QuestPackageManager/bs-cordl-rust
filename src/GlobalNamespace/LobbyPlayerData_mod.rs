@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LobbyPlayerData {
-    __cordl_parent: LevelGameplaySetupData,
+    __cordl_parent: crate::GlobalNamespace::LevelGameplaySetupData,
     pub _isPartyOwner_k__BackingField: bool,
     pub _isActive_k__BackingField: bool,
     pub _isReady_k__BackingField: bool,
@@ -10,23 +10,24 @@ pub struct LobbyPlayerData {
 }
 #[cfg(feature = "LobbyPlayerData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LobbyPlayerData => ""."LobbyPlayerData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LobbyPlayerData => ""
+    ."LobbyPlayerData"
 );
 #[cfg(feature = "LobbyPlayerData")]
-impl std::ops::Deref for LobbyPlayerData {
-    type Target = LevelGameplaySetupData;
+impl std::ops::Deref for crate::GlobalNamespace::LobbyPlayerData {
+    type Target = crate::GlobalNamespace::LevelGameplaySetupData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LobbyPlayerData")]
-impl std::ops::DerefMut for LobbyPlayerData {
+impl std::ops::DerefMut for crate::GlobalNamespace::LobbyPlayerData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LobbyPlayerData")]
-impl LobbyPlayerData {
+impl crate::GlobalNamespace::LobbyPlayerData {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -118,7 +119,7 @@ impl LobbyPlayerData {
     }
 }
 #[cfg(feature = "LobbyPlayerData")]
-impl quest_hook::libil2cpp::ObjectType for LobbyPlayerData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LobbyPlayerData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

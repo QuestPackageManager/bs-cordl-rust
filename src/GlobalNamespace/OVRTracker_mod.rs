@@ -32,23 +32,23 @@ pub struct OVRTracker {
 }
 #[cfg(feature = "OVRTracker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRTracker => ""."OVRTracker"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRTracker => ""."OVRTracker"
 );
 #[cfg(feature = "OVRTracker")]
-impl std::ops::Deref for OVRTracker {
+impl std::ops::Deref for crate::GlobalNamespace::OVRTracker {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTracker")]
-impl std::ops::DerefMut for OVRTracker {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRTracker {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTracker")]
-impl OVRTracker {
+impl crate::GlobalNamespace::OVRTracker {
     #[cfg(feature = "OVRTracker+Frustum")]
     pub type Frustum = crate::GlobalNamespace::OVRTracker_Frustum;
     pub fn GetFrustum(
@@ -62,11 +62,15 @@ impl OVRTracker {
             .invoke("GetFrustum", (tracker))?;
         Ok(__cordl_ret)
     }
-    pub fn GetPose(&mut self, tracker: i32) -> quest_hook::libil2cpp::Result<OVRPose> {
+    pub fn GetPose(
+        &mut self,
+        tracker: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPose> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: OVRPose = __cordl_object.invoke("GetPose", (tracker))?;
+        let __cordl_ret: crate::GlobalNamespace::OVRPose = __cordl_object
+            .invoke("GetPose", (tracker))?;
         Ok(__cordl_ret)
     }
     pub fn GetPoseValid(&mut self, tracker: i32) -> quest_hook::libil2cpp::Result<bool> {
@@ -141,7 +145,7 @@ impl OVRTracker {
     }
 }
 #[cfg(feature = "OVRTracker")]
-impl quest_hook::libil2cpp::ObjectType for OVRTracker {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTracker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,33 +3,34 @@
 #[derive(Debug)]
 pub struct MainSettingsAsyncLoader {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncInstaller,
-    pub _networkConfig: *mut NetworkConfigSO,
-    pub _hapticFeedbackControllerPrefab: *mut HapticFeedbackManager,
-    pub _audioManager: *mut AudioManagerSO,
-    pub _setupData: *mut AppInitSetupData,
+    pub _networkConfig: *mut crate::GlobalNamespace::NetworkConfigSO,
+    pub _hapticFeedbackControllerPrefab: *mut crate::GlobalNamespace::HapticFeedbackManager,
+    pub _audioManager: *mut crate::GlobalNamespace::AudioManagerSO,
+    pub _setupData: *mut crate::GlobalNamespace::AppInitSetupData,
     pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
     pub _graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
     pub _flushingService: *mut crate::BGLib::SaveDataCore::SaveDataFlushingService,
 }
 #[cfg(feature = "MainSettingsAsyncLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MainSettingsAsyncLoader => ""."MainSettingsAsyncLoader"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MainSettingsAsyncLoader => ""
+    ."MainSettingsAsyncLoader"
 );
 #[cfg(feature = "MainSettingsAsyncLoader")]
-impl std::ops::Deref for MainSettingsAsyncLoader {
+impl std::ops::Deref for crate::GlobalNamespace::MainSettingsAsyncLoader {
     type Target = crate::BGLib::AppFlow::Initialization::AsyncInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainSettingsAsyncLoader")]
-impl std::ops::DerefMut for MainSettingsAsyncLoader {
+impl std::ops::DerefMut for crate::GlobalNamespace::MainSettingsAsyncLoader {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainSettingsAsyncLoader")]
-impl MainSettingsAsyncLoader {
+impl crate::GlobalNamespace::MainSettingsAsyncLoader {
     #[cfg(feature = "MainSettingsAsyncLoader+_LoadResourcesBeforeInstallAsync_d__10")]
     pub type _LoadResourcesBeforeInstallAsync_d__10 = crate::GlobalNamespace::MainSettingsAsyncLoader__LoadResourcesBeforeInstallAsync_d__10;
     pub fn InstallBindings(
@@ -102,7 +103,8 @@ impl MainSettingsAsyncLoader {
     }
 }
 #[cfg(feature = "MainSettingsAsyncLoader")]
-impl quest_hook::libil2cpp::ObjectType for MainSettingsAsyncLoader {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MainSettingsAsyncLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

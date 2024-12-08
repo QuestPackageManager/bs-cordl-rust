@@ -18,24 +18,24 @@ pub struct BeatAvatarEditorFlowCoordinator {
 }
 #[cfg(feature = "BeatAvatarEditorFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatAvatarEditorFlowCoordinator => ""
-    ."BeatAvatarEditorFlowCoordinator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatAvatarEditorFlowCoordinator
+    => ""."BeatAvatarEditorFlowCoordinator"
 );
 #[cfg(feature = "BeatAvatarEditorFlowCoordinator")]
-impl std::ops::Deref for BeatAvatarEditorFlowCoordinator {
+impl std::ops::Deref for crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
     type Target = crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatAvatarEditorFlowCoordinator")]
-impl std::ops::DerefMut for BeatAvatarEditorFlowCoordinator {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatAvatarEditorFlowCoordinator")]
-impl BeatAvatarEditorFlowCoordinator {
+impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -174,7 +174,8 @@ impl BeatAvatarEditorFlowCoordinator {
     }
 }
 #[cfg(feature = "BeatAvatarEditorFlowCoordinator")]
-impl quest_hook::libil2cpp::ObjectType for BeatAvatarEditorFlowCoordinator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

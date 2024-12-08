@@ -99,7 +99,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
         &mut self,
         rm: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
         dependency: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-        updateCallbacks: *mut DelegateList_1<f32>,
+        updateCallbacks: *mut crate::GlobalNamespace::DelegateList_1<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

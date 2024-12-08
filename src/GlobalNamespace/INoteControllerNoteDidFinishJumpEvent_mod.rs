@@ -6,27 +6,29 @@ pub struct INoteControllerNoteDidFinishJumpEvent {
 }
 #[cfg(feature = "INoteControllerNoteDidFinishJumpEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for INoteControllerNoteDidFinishJumpEvent => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::INoteControllerNoteDidFinishJumpEvent => ""
     ."INoteControllerNoteDidFinishJumpEvent"
 );
 #[cfg(feature = "INoteControllerNoteDidFinishJumpEvent")]
-impl std::ops::Deref for INoteControllerNoteDidFinishJumpEvent {
+impl std::ops::Deref for crate::GlobalNamespace::INoteControllerNoteDidFinishJumpEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "INoteControllerNoteDidFinishJumpEvent")]
-impl std::ops::DerefMut for INoteControllerNoteDidFinishJumpEvent {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::INoteControllerNoteDidFinishJumpEvent {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "INoteControllerNoteDidFinishJumpEvent")]
-impl INoteControllerNoteDidFinishJumpEvent {
+impl crate::GlobalNamespace::INoteControllerNoteDidFinishJumpEvent {
     pub fn HandleNoteControllerNoteDidFinishJump(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -42,7 +44,8 @@ impl INoteControllerNoteDidFinishJumpEvent {
     }
 }
 #[cfg(feature = "INoteControllerNoteDidFinishJumpEvent")]
-impl quest_hook::libil2cpp::ObjectType for INoteControllerNoteDidFinishJumpEvent {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::INoteControllerNoteDidFinishJumpEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

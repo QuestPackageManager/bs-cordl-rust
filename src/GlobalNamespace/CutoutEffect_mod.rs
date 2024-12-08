@@ -3,31 +3,32 @@
 #[derive(Debug)]
 pub struct CutoutEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _materialPropertyBlockController: *mut MaterialPropertyBlockController,
-    pub _useRandomCutoutOffset: *mut BoolSO,
+    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _useRandomCutoutOffset: *mut crate::GlobalNamespace::BoolSO,
     pub _cutoutOffset: crate::UnityEngine::Vector3,
     pub _randomNoiseTexOffset: crate::UnityEngine::Vector3,
     pub _cutout: f32,
 }
 #[cfg(feature = "CutoutEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CutoutEffect => ""."CutoutEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CutoutEffect => ""
+    ."CutoutEffect"
 );
 #[cfg(feature = "CutoutEffect")]
-impl std::ops::Deref for CutoutEffect {
+impl std::ops::Deref for crate::GlobalNamespace::CutoutEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CutoutEffect")]
-impl std::ops::DerefMut for CutoutEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::CutoutEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CutoutEffect")]
-impl CutoutEffect {
+impl crate::GlobalNamespace::CutoutEffect {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -87,7 +88,7 @@ impl CutoutEffect {
     }
 }
 #[cfg(feature = "CutoutEffect")]
-impl quest_hook::libil2cpp::ObjectType for CutoutEffect {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CutoutEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -75,7 +75,7 @@ for crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyLevelPacksPriceModel {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _pricePerLevel: f32,
     pub _pricePairBundlePairs: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair,
@@ -83,24 +83,24 @@ pub struct SonyLevelPacksPriceModel {
 }
 #[cfg(feature = "SonyLevelPacksPriceModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SonyLevelPacksPriceModel => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SonyLevelPacksPriceModel => ""
     ."SonyLevelPacksPriceModel"
 );
 #[cfg(feature = "SonyLevelPacksPriceModel")]
-impl std::ops::Deref for SonyLevelPacksPriceModel {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::SonyLevelPacksPriceModel {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyLevelPacksPriceModel")]
-impl std::ops::DerefMut for SonyLevelPacksPriceModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::SonyLevelPacksPriceModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyLevelPacksPriceModel")]
-impl SonyLevelPacksPriceModel {
+impl crate::GlobalNamespace::SonyLevelPacksPriceModel {
     #[cfg(feature = "SonyLevelPacksPriceModel+PricePerBundlePair")]
     pub type PricePerBundlePair = crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair;
     pub fn GetPricePerBundlePair(
@@ -157,7 +157,8 @@ impl SonyLevelPacksPriceModel {
     }
 }
 #[cfg(feature = "SonyLevelPacksPriceModel")]
-impl quest_hook::libil2cpp::ObjectType for SonyLevelPacksPriceModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SonyLevelPacksPriceModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

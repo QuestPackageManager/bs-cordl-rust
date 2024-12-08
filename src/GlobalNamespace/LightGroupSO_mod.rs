@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightGroupSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _groupName: *mut crate::System::String,
     pub _groupDescription: *mut crate::System::String,
     pub _groupId: i32,
@@ -13,23 +13,24 @@ pub struct LightGroupSO {
 }
 #[cfg(feature = "LightGroupSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightGroupSO => ""."LightGroupSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightGroupSO => ""
+    ."LightGroupSO"
 );
 #[cfg(feature = "LightGroupSO")]
-impl std::ops::Deref for LightGroupSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::LightGroupSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightGroupSO")]
-impl std::ops::DerefMut for LightGroupSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightGroupSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightGroupSO")]
-impl LightGroupSO {
+impl crate::GlobalNamespace::LightGroupSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -97,7 +98,7 @@ impl LightGroupSO {
     }
 }
 #[cfg(feature = "LightGroupSO")]
-impl quest_hook::libil2cpp::ObjectType for LightGroupSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightGroupSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

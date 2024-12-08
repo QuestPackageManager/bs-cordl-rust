@@ -26,12 +26,12 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JProperty {
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JProperty")]
 impl crate::Newtonsoft::Json::Linq::JProperty {
-    #[cfg(feature = "Newtonsoft+Json+Linq+JProperty+_WriteToAsync_d__1")]
-    pub type _WriteToAsync_d__1 = crate::Newtonsoft::Json::Linq::JProperty__WriteToAsync_d__1;
     #[cfg(feature = "Newtonsoft+Json+Linq+JProperty+JPropertyList")]
     pub type JPropertyList = crate::Newtonsoft::Json::Linq::JProperty_JPropertyList;
     #[cfg(feature = "Newtonsoft+Json+Linq+JProperty+_LoadAsync_d__4")]
     pub type _LoadAsync_d__4 = crate::Newtonsoft::Json::Linq::JProperty__LoadAsync_d__4;
+    #[cfg(feature = "Newtonsoft+Json+Linq+JProperty+_WriteToAsync_d__1")]
+    pub type _WriteToAsync_d__1 = crate::Newtonsoft::Json::Linq::JProperty__WriteToAsync_d__1;
     pub fn ClearItems(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

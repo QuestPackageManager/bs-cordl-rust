@@ -6,23 +6,24 @@ pub struct SceneSetupData {
 }
 #[cfg(feature = "SceneSetupData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SceneSetupData => ""."SceneSetupData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SceneSetupData => ""
+    ."SceneSetupData"
 );
 #[cfg(feature = "SceneSetupData")]
-impl std::ops::Deref for SceneSetupData {
+impl std::ops::Deref for crate::GlobalNamespace::SceneSetupData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SceneSetupData")]
-impl std::ops::DerefMut for SceneSetupData {
+impl std::ops::DerefMut for crate::GlobalNamespace::SceneSetupData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SceneSetupData")]
-impl SceneSetupData {
+impl crate::GlobalNamespace::SceneSetupData {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,7 +43,7 @@ impl SceneSetupData {
     }
 }
 #[cfg(feature = "SceneSetupData")]
-impl quest_hook::libil2cpp::ObjectType for SceneSetupData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SceneSetupData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

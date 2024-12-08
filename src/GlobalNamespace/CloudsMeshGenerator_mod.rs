@@ -80,31 +80,32 @@ pub struct CloudsMeshGenerator {
 }
 #[cfg(feature = "CloudsMeshGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CloudsMeshGenerator => ""."CloudsMeshGenerator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CloudsMeshGenerator => ""
+    ."CloudsMeshGenerator"
 );
 #[cfg(feature = "CloudsMeshGenerator")]
-impl std::ops::Deref for CloudsMeshGenerator {
+impl std::ops::Deref for crate::GlobalNamespace::CloudsMeshGenerator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CloudsMeshGenerator")]
-impl std::ops::DerefMut for CloudsMeshGenerator {
+impl std::ops::DerefMut for crate::GlobalNamespace::CloudsMeshGenerator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CloudsMeshGenerator")]
-impl CloudsMeshGenerator {
-    #[cfg(feature = "CloudsMeshGenerator+RadiusChunk")]
-    pub type RadiusChunk = crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk;
+impl crate::GlobalNamespace::CloudsMeshGenerator {
     #[cfg(feature = "CloudsMeshGenerator+Cloud")]
     pub type Cloud = crate::GlobalNamespace::CloudsMeshGenerator_Cloud;
-    #[cfg(feature = "CloudsMeshGenerator+Ring")]
-    pub type Ring = crate::GlobalNamespace::CloudsMeshGenerator_Ring;
     #[cfg(feature = "CloudsMeshGenerator+ProhibitedRadius")]
     pub type ProhibitedRadius = crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius;
+    #[cfg(feature = "CloudsMeshGenerator+RadiusChunk")]
+    pub type RadiusChunk = crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk;
+    #[cfg(feature = "CloudsMeshGenerator+Ring")]
+    pub type Ring = crate::GlobalNamespace::CloudsMeshGenerator_Ring;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -124,7 +125,7 @@ impl CloudsMeshGenerator {
     }
 }
 #[cfg(feature = "CloudsMeshGenerator")]
-impl quest_hook::libil2cpp::ObjectType for CloudsMeshGenerator {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CloudsMeshGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

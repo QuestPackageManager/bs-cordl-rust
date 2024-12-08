@@ -38,10 +38,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ListView {
 }
 #[cfg(feature = "UnityEngine+UIElements+ListView")]
 impl crate::UnityEngine::UIElements::ListView {
-    #[cfg(feature = "UnityEngine+UIElements+ListView+UxmlTraits")]
-    pub type UxmlTraits = crate::UnityEngine::UIElements::ListView_UxmlTraits;
     #[cfg(feature = "UnityEngine+UIElements+ListView+UxmlFactory")]
     pub type UxmlFactory = crate::UnityEngine::UIElements::ListView_UxmlFactory;
+    #[cfg(feature = "UnityEngine+UIElements+ListView+UxmlTraits")]
+    pub type UxmlTraits = crate::UnityEngine::UIElements::ListView_UxmlTraits;
     pub fn CreateViewController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

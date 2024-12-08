@@ -7,11 +7,12 @@ pub struct ISortedListItemProcessor_1<T: quest_hook::libil2cpp::Type> {
 }
 #[cfg(feature = "ISortedListItemProcessor_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ISortedListItemProcessor_1 < T > => ""
-    ."ISortedListItemProcessor`1" < T >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ISortedListItemProcessor_1 < T
+    > => ""."ISortedListItemProcessor`1" < T >
 );
 #[cfg(feature = "ISortedListItemProcessor_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for ISortedListItemProcessor_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
+for crate::GlobalNamespace::ISortedListItemProcessor_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -19,13 +20,15 @@ impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for ISortedListItemProcesso
 }
 #[cfg(feature = "ISortedListItemProcessor_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for ISortedListItemProcessor_1<T> {
+for crate::GlobalNamespace::ISortedListItemProcessor_1<T> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ISortedListItemProcessor_1")]
-impl<T: quest_hook::libil2cpp::Type> ISortedListItemProcessor_1<T> {
+impl<
+    T: quest_hook::libil2cpp::Type,
+> crate::GlobalNamespace::ISortedListItemProcessor_1<T> {
     pub fn ProcessBeforeDeleteData(
         &mut self,
         nodeToDelete: *mut crate::System::Collections::Generic::LinkedListNode_1<T>,
@@ -64,7 +67,7 @@ impl<T: quest_hook::libil2cpp::Type> ISortedListItemProcessor_1<T> {
 }
 #[cfg(feature = "ISortedListItemProcessor_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for ISortedListItemProcessor_1<T> {
+for crate::GlobalNamespace::ISortedListItemProcessor_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

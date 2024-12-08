@@ -8,6 +8,6 @@ pub enum IsPackBetterBuyThanLevelResult {
 }
 #[cfg(feature = "IsPackBetterBuyThanLevelResult")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for IsPackBetterBuyThanLevelResult => ""
-    ."IsPackBetterBuyThanLevelResult"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IsPackBetterBuyThanLevelResult
+    => ""."IsPackBetterBuyThanLevelResult"
 );

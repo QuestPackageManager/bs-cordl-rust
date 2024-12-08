@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct QuickPlaySetupModel_QuickPlaySetupDataFB {
     __cordl_parent: crate::System::Object,
-    pub data: *mut quest_hook::libil2cpp::Il2CppArray<*mut QuickPlaySetupData>,
+    pub data: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::QuickPlaySetupData,
+    >,
 }
 #[cfg(feature = "QuickPlaySetupModel+QuickPlaySetupDataFB")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -61,60 +63,67 @@ for crate::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB {
 #[derive(Debug)]
 pub struct QuickPlaySetupModel {
     __cordl_parent: crate::System::Object,
-    pub _networkConfig: *mut INetworkConfig,
+    pub _networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
     pub _client: *mut crate::System::Net::Http::HttpClient,
-    pub _request: *mut crate::System::Threading::Tasks::Task_1<*mut QuickPlaySetupData>,
+    pub _request: *mut crate::System::Threading::Tasks::Task_1<
+        *mut crate::GlobalNamespace::QuickPlaySetupData,
+    >,
     pub _lastRequestTime: crate::System::DateTime,
 }
 #[cfg(feature = "QuickPlaySetupModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for QuickPlaySetupModel => ""."QuickPlaySetupModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::QuickPlaySetupModel => ""
+    ."QuickPlaySetupModel"
 );
 #[cfg(feature = "QuickPlaySetupModel")]
-impl std::ops::Deref for QuickPlaySetupModel {
+impl std::ops::Deref for crate::GlobalNamespace::QuickPlaySetupModel {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "QuickPlaySetupModel")]
-impl std::ops::DerefMut for QuickPlaySetupModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::QuickPlaySetupModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "QuickPlaySetupModel")]
-impl QuickPlaySetupModel {
+impl crate::GlobalNamespace::QuickPlaySetupModel {
     pub const kRequestCacheTimeoutMinutes: i32 = 5i32;
     pub const kRequestTimeoutSeconds: i32 = 60i32;
-    #[cfg(feature = "QuickPlaySetupModel+_GetQuickPlaySetupInternal_d__10")]
-    pub type _GetQuickPlaySetupInternal_d__10 = crate::GlobalNamespace::QuickPlaySetupModel__GetQuickPlaySetupInternal_d__10;
     #[cfg(feature = "QuickPlaySetupModel+QuickPlaySetupDataFB")]
     pub type QuickPlaySetupDataFB = crate::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB;
+    #[cfg(feature = "QuickPlaySetupModel+_GetQuickPlaySetupInternal_d__10")]
+    pub type _GetQuickPlaySetupInternal_d__10 = crate::GlobalNamespace::QuickPlaySetupModel__GetQuickPlaySetupInternal_d__10;
     pub fn GetQuickPlaySetupAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut QuickPlaySetupData>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::QuickPlaySetupData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut QuickPlaySetupData,
+            *mut crate::GlobalNamespace::QuickPlaySetupData,
         > = __cordl_object.invoke("GetQuickPlaySetupAsync", (cancellationToken))?;
         Ok(__cordl_ret)
     }
     pub fn GetQuickPlaySetupInternal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut QuickPlaySetupData>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::QuickPlaySetupData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut QuickPlaySetupData,
+            *mut crate::GlobalNamespace::QuickPlaySetupData,
         > = __cordl_object.invoke("GetQuickPlaySetupInternal", ())?;
         Ok(__cordl_ret)
     }
@@ -174,7 +183,7 @@ impl QuickPlaySetupModel {
     }
 }
 #[cfg(feature = "QuickPlaySetupModel")]
-impl quest_hook::libil2cpp::ObjectType for QuickPlaySetupModel {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::QuickPlaySetupModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

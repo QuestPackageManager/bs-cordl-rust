@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusLevelProductPacksSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _levelPackProductData: *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData,
     pub _levelPackRedirectionData: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackRedirectionData,
@@ -10,24 +10,24 @@ pub struct OculusLevelProductPacksSO {
 }
 #[cfg(feature = "OculusLevelProductPacksSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OculusLevelProductPacksSO => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OculusLevelProductPacksSO => ""
     ."OculusLevelProductPacksSO"
 );
 #[cfg(feature = "OculusLevelProductPacksSO")]
-impl std::ops::Deref for OculusLevelProductPacksSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::OculusLevelProductPacksSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusLevelProductPacksSO")]
-impl std::ops::DerefMut for OculusLevelProductPacksSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::OculusLevelProductPacksSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusLevelProductPacksSO")]
-impl OculusLevelProductPacksSO {
+impl crate::GlobalNamespace::OculusLevelProductPacksSO {
     pub fn ILevelPackProductDataContainer_OculusLevelProductCollectionModel_LevelPackProductData_OculusLevelProductCollectionModel_LevelProductData__SetLevelPackProductData(
         &mut self,
         newLevelPackProductData: *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData,
@@ -88,7 +88,8 @@ impl OculusLevelProductPacksSO {
     }
 }
 #[cfg(feature = "OculusLevelProductPacksSO")]
-impl quest_hook::libil2cpp::ObjectType for OculusLevelProductPacksSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OculusLevelProductPacksSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

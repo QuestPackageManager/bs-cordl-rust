@@ -3,31 +3,32 @@
 #[derive(Debug)]
 pub struct AnniversaryManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _fireworksController: *mut FireworksController,
-    pub _mainMenuViewController: *mut MainMenuViewController,
+    pub _fireworksController: *mut crate::GlobalNamespace::FireworksController,
+    pub _mainMenuViewController: *mut crate::GlobalNamespace::MainMenuViewController,
 }
 #[cfg(feature = "AnniversaryManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AnniversaryManager => ""."AnniversaryManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AnniversaryManager => ""
+    ."AnniversaryManager"
 );
 #[cfg(feature = "AnniversaryManager")]
-impl std::ops::Deref for AnniversaryManager {
+impl std::ops::Deref for crate::GlobalNamespace::AnniversaryManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AnniversaryManager")]
-impl std::ops::DerefMut for AnniversaryManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::AnniversaryManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AnniversaryManager")]
-impl AnniversaryManager {
+impl crate::GlobalNamespace::AnniversaryManager {
     pub fn HandleMainMenuViewControllerDidFinish(
         &mut self,
-        mainMenuViewController: *mut MainMenuViewController,
+        mainMenuViewController: *mut crate::GlobalNamespace::MainMenuViewController,
         menuButton: crate::GlobalNamespace::MainMenuViewController_MenuButton,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -110,7 +111,7 @@ impl AnniversaryManager {
     }
 }
 #[cfg(feature = "AnniversaryManager")]
-impl quest_hook::libil2cpp::ObjectType for AnniversaryManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AnniversaryManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

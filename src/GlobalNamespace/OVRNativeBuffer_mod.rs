@@ -9,23 +9,24 @@ pub struct OVRNativeBuffer {
 }
 #[cfg(feature = "OVRNativeBuffer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRNativeBuffer => ""."OVRNativeBuffer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRNativeBuffer => ""
+    ."OVRNativeBuffer"
 );
 #[cfg(feature = "OVRNativeBuffer")]
-impl std::ops::Deref for OVRNativeBuffer {
+impl std::ops::Deref for crate::GlobalNamespace::OVRNativeBuffer {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRNativeBuffer")]
-impl std::ops::DerefMut for OVRNativeBuffer {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRNativeBuffer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRNativeBuffer")]
-impl OVRNativeBuffer {
+impl crate::GlobalNamespace::OVRNativeBuffer {
     pub fn Dispose_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -127,7 +128,7 @@ impl OVRNativeBuffer {
     }
 }
 #[cfg(feature = "OVRNativeBuffer")]
-impl quest_hook::libil2cpp::ObjectType for OVRNativeBuffer {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRNativeBuffer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

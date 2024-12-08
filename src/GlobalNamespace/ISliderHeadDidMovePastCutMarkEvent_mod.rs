@@ -6,27 +6,28 @@ pub struct ISliderHeadDidMovePastCutMarkEvent {
 }
 #[cfg(feature = "ISliderHeadDidMovePastCutMarkEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ISliderHeadDidMovePastCutMarkEvent => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ISliderHeadDidMovePastCutMarkEvent => ""
     ."ISliderHeadDidMovePastCutMarkEvent"
 );
 #[cfg(feature = "ISliderHeadDidMovePastCutMarkEvent")]
-impl std::ops::Deref for ISliderHeadDidMovePastCutMarkEvent {
+impl std::ops::Deref for crate::GlobalNamespace::ISliderHeadDidMovePastCutMarkEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ISliderHeadDidMovePastCutMarkEvent")]
-impl std::ops::DerefMut for ISliderHeadDidMovePastCutMarkEvent {
+impl std::ops::DerefMut for crate::GlobalNamespace::ISliderHeadDidMovePastCutMarkEvent {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ISliderHeadDidMovePastCutMarkEvent")]
-impl ISliderHeadDidMovePastCutMarkEvent {
+impl crate::GlobalNamespace::ISliderHeadDidMovePastCutMarkEvent {
     pub fn HandleSliderStartDidMovePastCutMark(
         &mut self,
-        sliderController: *mut SliderController,
+        sliderController: *mut crate::GlobalNamespace::SliderController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -42,7 +43,8 @@ impl ISliderHeadDidMovePastCutMarkEvent {
     }
 }
 #[cfg(feature = "ISliderHeadDidMovePastCutMarkEvent")]
-impl quest_hook::libil2cpp::ObjectType for ISliderHeadDidMovePastCutMarkEvent {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ISliderHeadDidMovePastCutMarkEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

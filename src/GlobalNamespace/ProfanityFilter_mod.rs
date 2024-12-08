@@ -7,23 +7,24 @@ pub struct ProfanityFilter {
 }
 #[cfg(feature = "ProfanityFilter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ProfanityFilter => ""."ProfanityFilter"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ProfanityFilter => ""
+    ."ProfanityFilter"
 );
 #[cfg(feature = "ProfanityFilter")]
-impl std::ops::Deref for ProfanityFilter {
+impl std::ops::Deref for crate::GlobalNamespace::ProfanityFilter {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ProfanityFilter")]
-impl std::ops::DerefMut for ProfanityFilter {
+impl std::ops::DerefMut for crate::GlobalNamespace::ProfanityFilter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ProfanityFilter")]
-impl ProfanityFilter {
+impl crate::GlobalNamespace::ProfanityFilter {
     #[cfg(feature = "ProfanityFilter+TrieNode")]
     pub type TrieNode = crate::GlobalNamespace::ProfanityFilter_TrieNode;
     #[cfg(feature = "ProfanityFilter+_GetLookalikeLetters_d__4")]
@@ -64,7 +65,7 @@ impl ProfanityFilter {
     }
 }
 #[cfg(feature = "ProfanityFilter")]
-impl quest_hook::libil2cpp::ObjectType for ProfanityFilter {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ProfanityFilter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

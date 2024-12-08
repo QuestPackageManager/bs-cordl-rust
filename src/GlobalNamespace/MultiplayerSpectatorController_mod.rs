@@ -3,36 +3,36 @@
 #[derive(Debug)]
 pub struct MultiplayerSpectatorController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _spotManager: *mut MultiplayerSpectatingSpotManager,
-    pub _songController: *mut MultiplayerLocalInactivePlayerSongSyncController,
-    pub _multiplayerController: *mut MultiplayerController,
-    pub _fadeInOutController: *mut FadeInOutController,
+    pub _spotManager: *mut crate::GlobalNamespace::MultiplayerSpectatingSpotManager,
+    pub _songController: *mut crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController,
+    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
+    pub _fadeInOutController: *mut crate::GlobalNamespace::FadeInOutController,
     pub spectatingSpotDidChangeEvent: *mut crate::System::Action_1<
-        *mut IMultiplayerSpectatingSpot,
+        *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
     >,
     pub _transform: *mut crate::UnityEngine::Transform,
-    pub _currentSpot: *mut IMultiplayerSpectatingSpot,
+    pub _currentSpot: *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
 }
 #[cfg(feature = "MultiplayerSpectatorController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerSpectatorController => ""
-    ."MultiplayerSpectatorController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerSpectatorController
+    => ""."MultiplayerSpectatorController"
 );
 #[cfg(feature = "MultiplayerSpectatorController")]
-impl std::ops::Deref for MultiplayerSpectatorController {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerSpectatorController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerSpectatorController")]
-impl std::ops::DerefMut for MultiplayerSpectatorController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerSpectatorController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerSpectatorController")]
-impl MultiplayerSpectatorController {
+impl crate::GlobalNamespace::MultiplayerSpectatorController {
     #[cfg(
         feature = "MultiplayerSpectatorController+_SwitchToDefaultSpotCoroutine_d__18"
     )]
@@ -141,7 +141,7 @@ impl MultiplayerSpectatorController {
     }
     pub fn SwitchToSpectatingSpot(
         &mut self,
-        spectatingSpot: *mut IMultiplayerSpectatingSpot,
+        spectatingSpot: *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -162,7 +162,9 @@ impl MultiplayerSpectatorController {
     }
     pub fn add_spectatingSpotDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IMultiplayerSpectatingSpot>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -173,17 +175,21 @@ impl MultiplayerSpectatorController {
     }
     pub fn get_currentSpot(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IMultiplayerSpectatingSpot> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IMultiplayerSpectatingSpot = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot = __cordl_object
             .invoke("get_currentSpot", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_spectatingSpotDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IMultiplayerSpectatingSpot>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -194,7 +200,8 @@ impl MultiplayerSpectatorController {
     }
 }
 #[cfg(feature = "MultiplayerSpectatorController")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerSpectatorController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerSpectatorController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

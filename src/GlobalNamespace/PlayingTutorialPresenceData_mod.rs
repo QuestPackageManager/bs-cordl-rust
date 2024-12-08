@@ -7,24 +7,24 @@ pub struct PlayingTutorialPresenceData {
 }
 #[cfg(feature = "PlayingTutorialPresenceData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayingTutorialPresenceData => ""
-    ."PlayingTutorialPresenceData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayingTutorialPresenceData =>
+    ""."PlayingTutorialPresenceData"
 );
 #[cfg(feature = "PlayingTutorialPresenceData")]
-impl std::ops::Deref for PlayingTutorialPresenceData {
+impl std::ops::Deref for crate::GlobalNamespace::PlayingTutorialPresenceData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayingTutorialPresenceData")]
-impl std::ops::DerefMut for PlayingTutorialPresenceData {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayingTutorialPresenceData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayingTutorialPresenceData")]
-impl PlayingTutorialPresenceData {
+impl crate::GlobalNamespace::PlayingTutorialPresenceData {
     pub const kPlayingTutorialRichPresenceLocalizationKey: &'static str = "PLAYING_TUTORIAL_PRESENCE";
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -65,7 +65,8 @@ impl PlayingTutorialPresenceData {
     }
 }
 #[cfg(feature = "PlayingTutorialPresenceData")]
-impl quest_hook::libil2cpp::ObjectType for PlayingTutorialPresenceData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayingTutorialPresenceData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

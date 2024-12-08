@@ -153,13 +153,13 @@ for crate::UnityEngine::Rendering::CameraProperties {
 #[cfg(feature = "UnityEngine+Rendering+CameraProperties")]
 impl crate::UnityEngine::Rendering::CameraProperties {
     #[cfg(
-        feature = "UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
-    )]
-    pub type _m_CameraCullPlanes_e__FixedBuffer = crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer;
-    #[cfg(
         feature = "UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
     )]
     pub type _layerCullDistances_e__FixedBuffer = crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__FixedBuffer;
+    #[cfg(
+        feature = "UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
+    )]
+    pub type _m_CameraCullPlanes_e__FixedBuffer = crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__FixedBuffer;
     #[cfg(
         feature = "UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
     )]

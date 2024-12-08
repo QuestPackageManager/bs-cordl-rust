@@ -6,26 +6,27 @@ pub struct ICertificateValidator {
 }
 #[cfg(feature = "ICertificateValidator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ICertificateValidator => ""."ICertificateValidator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ICertificateValidator => ""
+    ."ICertificateValidator"
 );
 #[cfg(feature = "ICertificateValidator")]
-impl std::ops::Deref for ICertificateValidator {
+impl std::ops::Deref for crate::GlobalNamespace::ICertificateValidator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ICertificateValidator")]
-impl std::ops::DerefMut for ICertificateValidator {
+impl std::ops::DerefMut for crate::GlobalNamespace::ICertificateValidator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ICertificateValidator")]
-impl ICertificateValidator {
+impl crate::GlobalNamespace::ICertificateValidator {
     pub fn ValidateCertificateChain(
         &mut self,
-        endPoint: *mut DnsEndPoint,
+        endPoint: *mut crate::GlobalNamespace::DnsEndPoint,
         certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
         certificateChain: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -48,7 +49,8 @@ impl ICertificateValidator {
     }
 }
 #[cfg(feature = "ICertificateValidator")]
-impl quest_hook::libil2cpp::ObjectType for ICertificateValidator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ICertificateValidator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

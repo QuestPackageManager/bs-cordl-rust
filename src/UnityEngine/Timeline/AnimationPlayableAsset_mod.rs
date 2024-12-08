@@ -35,16 +35,16 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::AnimationPlayableAsset
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
 impl crate::UnityEngine::Timeline::AnimationPlayableAsset {
-    #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
-    pub type LoopMode = crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode;
-    #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+_get_outputs_d__45")]
-    pub type _get_outputs_d__45 = crate::UnityEngine::Timeline::AnimationPlayableAsset__get_outputs_d__45;
-    #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
-    pub type Versions = crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions;
     #[cfg(
         feature = "UnityEngine+Timeline+AnimationPlayableAsset+AnimationPlayableAssetUpgrade"
     )]
     pub type AnimationPlayableAssetUpgrade = crate::UnityEngine::Timeline::AnimationPlayableAsset_AnimationPlayableAssetUpgrade;
+    #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
+    pub type LoopMode = crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode;
+    #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
+    pub type Versions = crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions;
+    #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+_get_outputs_d__45")]
+    pub type _get_outputs_d__45 = crate::UnityEngine::Timeline::AnimationPlayableAsset__get_outputs_d__45;
     pub fn CreatePlayable(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,

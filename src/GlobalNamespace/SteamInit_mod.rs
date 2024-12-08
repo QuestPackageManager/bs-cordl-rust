@@ -2,27 +2,27 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SteamInit {
-    __cordl_parent: BasePlatformInit,
+    __cordl_parent: crate::GlobalNamespace::BasePlatformInit,
 }
 #[cfg(feature = "SteamInit")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SteamInit => ""."SteamInit"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SteamInit => ""."SteamInit"
 );
 #[cfg(feature = "SteamInit")]
-impl std::ops::Deref for SteamInit {
-    type Target = BasePlatformInit;
+impl std::ops::Deref for crate::GlobalNamespace::SteamInit {
+    type Target = crate::GlobalNamespace::BasePlatformInit;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SteamInit")]
-impl std::ops::DerefMut for SteamInit {
+impl std::ops::DerefMut for crate::GlobalNamespace::SteamInit {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SteamInit")]
-impl SteamInit {
+impl crate::GlobalNamespace::SteamInit {
     pub fn InitializeInternalAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -54,7 +54,7 @@ impl SteamInit {
     }
 }
 #[cfg(feature = "SteamInit")]
-impl quest_hook::libil2cpp::ObjectType for SteamInit {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SteamInit {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

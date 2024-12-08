@@ -2,30 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundColorsGradientTintColorWithLightIds {
-    __cordl_parent: LightWithIdMonoBehaviour,
-    pub _bloomPrePassBackgroundColorsGradient: *mut BloomPrePassBackgroundColorsGradient,
+    __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
+    pub _bloomPrePassBackgroundColorsGradient: *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient,
 }
 #[cfg(feature = "BloomPrePassBackgroundColorsGradientTintColorWithLightIds")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for
-    BloomPrePassBackgroundColorsGradientTintColorWithLightIds => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BloomPrePassBackgroundColorsGradientTintColorWithLightIds => ""
     ."BloomPrePassBackgroundColorsGradientTintColorWithLightIds"
 );
 #[cfg(feature = "BloomPrePassBackgroundColorsGradientTintColorWithLightIds")]
-impl std::ops::Deref for BloomPrePassBackgroundColorsGradientTintColorWithLightIds {
-    type Target = LightWithIdMonoBehaviour;
+impl std::ops::Deref
+for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientTintColorWithLightIds {
+    type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundColorsGradientTintColorWithLightIds")]
-impl std::ops::DerefMut for BloomPrePassBackgroundColorsGradientTintColorWithLightIds {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientTintColorWithLightIds {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundColorsGradientTintColorWithLightIds")]
-impl BloomPrePassBackgroundColorsGradientTintColorWithLightIds {
+impl crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientTintColorWithLightIds {
     pub fn ColorWasSet(
         &mut self,
         color: crate::UnityEngine::Color,
@@ -57,7 +59,7 @@ impl BloomPrePassBackgroundColorsGradientTintColorWithLightIds {
 }
 #[cfg(feature = "BloomPrePassBackgroundColorsGradientTintColorWithLightIds")]
 impl quest_hook::libil2cpp::ObjectType
-for BloomPrePassBackgroundColorsGradientTintColorWithLightIds {
+for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientTintColorWithLightIds {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

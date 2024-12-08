@@ -3,29 +3,29 @@
 #[derive(Debug)]
 pub struct StartupErrorFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub _startupErrorViewController: *mut StartupErrorViewController,
-    pub _startupErrorSceneSetupData: *mut StartupErrorSceneSetupData,
+    pub _startupErrorViewController: *mut crate::GlobalNamespace::StartupErrorViewController,
+    pub _startupErrorSceneSetupData: *mut crate::GlobalNamespace::StartupErrorSceneSetupData,
 }
 #[cfg(feature = "StartupErrorFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StartupErrorFlowCoordinator => ""
-    ."StartupErrorFlowCoordinator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::StartupErrorFlowCoordinator =>
+    ""."StartupErrorFlowCoordinator"
 );
 #[cfg(feature = "StartupErrorFlowCoordinator")]
-impl std::ops::Deref for StartupErrorFlowCoordinator {
+impl std::ops::Deref for crate::GlobalNamespace::StartupErrorFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StartupErrorFlowCoordinator")]
-impl std::ops::DerefMut for StartupErrorFlowCoordinator {
+impl std::ops::DerefMut for crate::GlobalNamespace::StartupErrorFlowCoordinator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StartupErrorFlowCoordinator")]
-impl StartupErrorFlowCoordinator {
+impl crate::GlobalNamespace::StartupErrorFlowCoordinator {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -61,7 +61,8 @@ impl StartupErrorFlowCoordinator {
     }
 }
 #[cfg(feature = "StartupErrorFlowCoordinator")]
-impl quest_hook::libil2cpp::ObjectType for StartupErrorFlowCoordinator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StartupErrorFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

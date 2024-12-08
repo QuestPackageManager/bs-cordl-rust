@@ -84,18 +84,18 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JObject {
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
 impl crate::Newtonsoft::Json::Linq::JObject {
+    #[cfg(feature = "Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
+    pub type JObjectDynamicProxy = crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicProxy;
+    #[cfg(feature = "Newtonsoft+Json+Linq+JObject+_GetEnumerator_d__64")]
+    pub type _GetEnumerator_d__64 = crate::Newtonsoft::Json::Linq::JObject__GetEnumerator_d__64;
+    #[cfg(feature = "Newtonsoft+Json+Linq+JObject+_LoadAsync_d__2")]
+    pub type _LoadAsync_d__2 = crate::Newtonsoft::Json::Linq::JObject__LoadAsync_d__2;
     #[cfg(
         feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d"
     )]
     pub type __WriteToAsync_g__AwaitProperties_0_0_d = crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d;
-    #[cfg(feature = "Newtonsoft+Json+Linq+JObject+_GetEnumerator_d__64")]
-    pub type _GetEnumerator_d__64 = crate::Newtonsoft::Json::Linq::JObject__GetEnumerator_d__64;
     #[cfg(feature = "Newtonsoft+Json+Linq+JObject+__c")]
     pub type __c = crate::Newtonsoft::Json::Linq::JObject___c;
-    #[cfg(feature = "Newtonsoft+Json+Linq+JObject+_LoadAsync_d__2")]
-    pub type _LoadAsync_d__2 = crate::Newtonsoft::Json::Linq::JObject__LoadAsync_d__2;
-    #[cfg(feature = "Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
-    pub type JObjectDynamicProxy = crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicProxy;
     pub fn Add(
         &mut self,
         propertyName: *mut crate::System::String,

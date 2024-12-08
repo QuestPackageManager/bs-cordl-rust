@@ -3,29 +3,29 @@
 #[derive(Debug)]
 pub struct InstantMenuButtonTrigger {
     __cordl_parent: crate::System::Object,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
     pub menuButtonTriggeredEvent: *mut crate::System::Action,
 }
 #[cfg(feature = "InstantMenuButtonTrigger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for InstantMenuButtonTrigger => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::InstantMenuButtonTrigger => ""
     ."InstantMenuButtonTrigger"
 );
 #[cfg(feature = "InstantMenuButtonTrigger")]
-impl std::ops::Deref for InstantMenuButtonTrigger {
+impl std::ops::Deref for crate::GlobalNamespace::InstantMenuButtonTrigger {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "InstantMenuButtonTrigger")]
-impl std::ops::DerefMut for InstantMenuButtonTrigger {
+impl std::ops::DerefMut for crate::GlobalNamespace::InstantMenuButtonTrigger {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "InstantMenuButtonTrigger")]
-impl InstantMenuButtonTrigger {
+impl crate::GlobalNamespace::InstantMenuButtonTrigger {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -77,7 +77,8 @@ impl InstantMenuButtonTrigger {
     }
 }
 #[cfg(feature = "InstantMenuButtonTrigger")]
-impl quest_hook::libil2cpp::ObjectType for InstantMenuButtonTrigger {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::InstantMenuButtonTrigger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

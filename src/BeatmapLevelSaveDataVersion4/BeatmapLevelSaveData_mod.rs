@@ -101,14 +101,14 @@ impl crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData {
     pub type AudioData = crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData;
     #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
     pub type BeatmapAuthors = crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors;
-    #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData")]
-    pub type SongData = crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData;
+    #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme")]
+    pub type ColorScheme = crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme;
     #[cfg(
         feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+DifficultyBeatmap"
     )]
     pub type DifficultyBeatmap = crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap;
-    #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme")]
-    pub type ColorScheme = crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme;
+    #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData")]
+    pub type SongData = crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -6,23 +6,24 @@ pub struct OculusAnalyticsModel {
 }
 #[cfg(feature = "OculusAnalyticsModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OculusAnalyticsModel => ""."OculusAnalyticsModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OculusAnalyticsModel => ""
+    ."OculusAnalyticsModel"
 );
 #[cfg(feature = "OculusAnalyticsModel")]
-impl std::ops::Deref for OculusAnalyticsModel {
+impl std::ops::Deref for crate::GlobalNamespace::OculusAnalyticsModel {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusAnalyticsModel")]
-impl std::ops::DerefMut for OculusAnalyticsModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::OculusAnalyticsModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusAnalyticsModel")]
-impl OculusAnalyticsModel {
+impl crate::GlobalNamespace::OculusAnalyticsModel {
     pub fn LogClick(
         &mut self,
         clickType: *mut crate::System::String,
@@ -137,7 +138,7 @@ impl OculusAnalyticsModel {
     }
 }
 #[cfg(feature = "OculusAnalyticsModel")]
-impl quest_hook::libil2cpp::ObjectType for OculusAnalyticsModel {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OculusAnalyticsModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -5,38 +5,41 @@ pub struct BeatEffectSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _effectDuration: f32,
     pub _bombColorEffect: crate::UnityEngine::Color,
-    pub _colorManager: *mut ColorManager,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
-    pub _audioTimeSyncController: *mut AudioTimeSyncController,
+    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
     pub _initData: *mut crate::GlobalNamespace::BeatEffectSpawner_InitData,
-    pub _bloomFog: *mut BloomFogSO,
-    pub _songController: *mut SongController,
-    pub _beatEffectPoolContainer: *mut MemoryPoolContainer_1<*mut BeatEffect>,
+    pub _bloomFog: *mut crate::GlobalNamespace::BloomFogSO,
+    pub _songController: *mut crate::GlobalNamespace::SongController,
+    pub _beatEffectPoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
+        *mut crate::GlobalNamespace::BeatEffect,
+    >,
 }
 #[cfg(feature = "BeatEffectSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatEffectSpawner => ""."BeatEffectSpawner"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatEffectSpawner => ""
+    ."BeatEffectSpawner"
 );
 #[cfg(feature = "BeatEffectSpawner")]
-impl std::ops::Deref for BeatEffectSpawner {
+impl std::ops::Deref for crate::GlobalNamespace::BeatEffectSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatEffectSpawner")]
-impl std::ops::DerefMut for BeatEffectSpawner {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatEffectSpawner {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatEffectSpawner")]
-impl BeatEffectSpawner {
+impl crate::GlobalNamespace::BeatEffectSpawner {
     #[cfg(feature = "BeatEffectSpawner+InitData")]
     pub type InitData = crate::GlobalNamespace::BeatEffectSpawner_InitData;
     pub fn HandleBeatEffectDidFinish(
         &mut self,
-        beatEffect: *mut BeatEffect,
+        beatEffect: *mut crate::GlobalNamespace::BeatEffect,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -47,7 +50,7 @@ impl BeatEffectSpawner {
     }
     pub fn HandleNoteDidStartJump(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -116,7 +119,7 @@ impl BeatEffectSpawner {
     }
 }
 #[cfg(feature = "BeatEffectSpawner")]
-impl quest_hook::libil2cpp::ObjectType for BeatEffectSpawner {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatEffectSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

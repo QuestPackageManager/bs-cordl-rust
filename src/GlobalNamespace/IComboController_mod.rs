@@ -6,23 +6,24 @@ pub struct IComboController {
 }
 #[cfg(feature = "IComboController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IComboController => ""."IComboController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IComboController => ""
+    ."IComboController"
 );
 #[cfg(feature = "IComboController")]
-impl std::ops::Deref for IComboController {
+impl std::ops::Deref for crate::GlobalNamespace::IComboController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IComboController")]
-impl std::ops::DerefMut for IComboController {
+impl std::ops::DerefMut for crate::GlobalNamespace::IComboController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IComboController")]
-impl IComboController {
+impl crate::GlobalNamespace::IComboController {
     pub fn add_comboBreakingEventHappenedEvent(
         &mut self,
         value: *mut crate::System::Action,
@@ -74,7 +75,7 @@ impl IComboController {
     }
 }
 #[cfg(feature = "IComboController")]
-impl quest_hook::libil2cpp::ObjectType for IComboController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IComboController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

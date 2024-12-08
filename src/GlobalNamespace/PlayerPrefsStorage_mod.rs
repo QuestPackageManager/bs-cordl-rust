@@ -6,23 +6,24 @@ pub struct PlayerPrefsStorage {
 }
 #[cfg(feature = "PlayerPrefsStorage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerPrefsStorage => ""."PlayerPrefsStorage"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerPrefsStorage => ""
+    ."PlayerPrefsStorage"
 );
 #[cfg(feature = "PlayerPrefsStorage")]
-impl std::ops::Deref for PlayerPrefsStorage {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerPrefsStorage {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerPrefsStorage")]
-impl std::ops::DerefMut for PlayerPrefsStorage {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerPrefsStorage {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerPrefsStorage")]
-impl PlayerPrefsStorage {
+impl crate::GlobalNamespace::PlayerPrefsStorage {
     pub fn FileExists(
         &mut self,
         filePath: *mut crate::System::String,
@@ -63,7 +64,7 @@ impl PlayerPrefsStorage {
     }
 }
 #[cfg(feature = "PlayerPrefsStorage")]
-impl quest_hook::libil2cpp::ObjectType for PlayerPrefsStorage {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerPrefsStorage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

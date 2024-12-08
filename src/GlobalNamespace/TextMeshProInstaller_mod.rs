@@ -11,10 +11,11 @@ pub struct TextMeshProInstaller {
 }
 #[cfg(feature = "TextMeshProInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TextMeshProInstaller => ""."TextMeshProInstaller"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TextMeshProInstaller => ""
+    ."TextMeshProInstaller"
 );
 #[cfg(feature = "TextMeshProInstaller")]
-impl std::ops::Deref for TextMeshProInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::TextMeshProInstaller {
     type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         *mut crate::TMPro::TMP_FontAsset,
     >;
@@ -23,13 +24,13 @@ impl std::ops::Deref for TextMeshProInstaller {
     }
 }
 #[cfg(feature = "TextMeshProInstaller")]
-impl std::ops::DerefMut for TextMeshProInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::TextMeshProInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TextMeshProInstaller")]
-impl TextMeshProInstaller {
+impl crate::GlobalNamespace::TextMeshProInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -83,7 +84,7 @@ impl TextMeshProInstaller {
     }
 }
 #[cfg(feature = "TextMeshProInstaller")]
-impl quest_hook::libil2cpp::ObjectType for TextMeshProInstaller {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TextMeshProInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

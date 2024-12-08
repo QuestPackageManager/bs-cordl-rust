@@ -271,10 +271,10 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
     pub const COORD_LAMBDA_AFFINE: i32 = 5i32;
     pub const COORD_LAMBDA_PROJECTIVE: i32 = 6i32;
     pub const COORD_SKEWED: i32 = 7i32;
-    #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+DefaultLookupTable")]
-    pub type DefaultLookupTable = crate::Org::BouncyCastle::Math::EC::ECCurve_DefaultLookupTable;
     #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+Config")]
     pub type Config = crate::Org::BouncyCastle::Math::EC::ECCurve_Config;
+    #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+DefaultLookupTable")]
+    pub type DefaultLookupTable = crate::Org::BouncyCastle::Math::EC::ECCurve_DefaultLookupTable;
     pub fn CheckPoint(
         &mut self,
         point: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,

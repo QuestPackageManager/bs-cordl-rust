@@ -192,10 +192,10 @@ impl std::ops::DerefMut for crate::System::Xml::XmlEventCache {
 }
 #[cfg(feature = "System+Xml+XmlEventCache")]
 impl crate::System::Xml::XmlEventCache {
-    #[cfg(feature = "System+Xml+XmlEventCache+XmlEventType")]
-    pub type XmlEventType = crate::System::Xml::XmlEventCache_XmlEventType;
     #[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
     pub type XmlEvent = crate::System::Xml::XmlEventCache_XmlEvent;
+    #[cfg(feature = "System+Xml+XmlEventCache+XmlEventType")]
+    pub type XmlEventType = crate::System::Xml::XmlEventCache_XmlEventType;
     pub fn AddEvent_Object5(
         &mut self,
         eventType: crate::System::Xml::XmlEventCache_XmlEventType,

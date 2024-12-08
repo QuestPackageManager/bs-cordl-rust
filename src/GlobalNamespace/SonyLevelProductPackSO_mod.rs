@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyLevelProductPackSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _levelPackProductData: *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
     pub _levelPackRedirectionData: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
@@ -10,23 +10,24 @@ pub struct SonyLevelProductPackSO {
 }
 #[cfg(feature = "SonyLevelProductPackSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SonyLevelProductPackSO => ""."SonyLevelProductPackSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SonyLevelProductPackSO => ""
+    ."SonyLevelProductPackSO"
 );
 #[cfg(feature = "SonyLevelProductPackSO")]
-impl std::ops::Deref for SonyLevelProductPackSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::SonyLevelProductPackSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyLevelProductPackSO")]
-impl std::ops::DerefMut for SonyLevelProductPackSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::SonyLevelProductPackSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyLevelProductPackSO")]
-impl SonyLevelProductPackSO {
+impl crate::GlobalNamespace::SonyLevelProductPackSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -97,7 +98,8 @@ impl SonyLevelProductPackSO {
     }
 }
 #[cfg(feature = "SonyLevelProductPackSO")]
-impl quest_hook::libil2cpp::ObjectType for SonyLevelProductPackSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SonyLevelProductPackSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

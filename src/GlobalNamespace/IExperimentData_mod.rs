@@ -6,23 +6,24 @@ pub struct IExperimentData {
 }
 #[cfg(feature = "IExperimentData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IExperimentData => ""."IExperimentData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IExperimentData => ""
+    ."IExperimentData"
 );
 #[cfg(feature = "IExperimentData")]
-impl std::ops::Deref for IExperimentData {
+impl std::ops::Deref for crate::GlobalNamespace::IExperimentData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IExperimentData")]
-impl std::ops::DerefMut for IExperimentData {
+impl std::ops::DerefMut for crate::GlobalNamespace::IExperimentData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IExperimentData")]
-impl IExperimentData {
+impl crate::GlobalNamespace::IExperimentData {
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
@@ -40,7 +41,7 @@ impl IExperimentData {
     }
 }
 #[cfg(feature = "IExperimentData")]
-impl quest_hook::libil2cpp::ObjectType for IExperimentData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IExperimentData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

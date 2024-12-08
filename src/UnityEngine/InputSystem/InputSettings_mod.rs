@@ -76,14 +76,14 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputSettings {
 #[cfg(feature = "UnityEngine+InputSystem+InputSettings")]
 impl crate::UnityEngine::InputSystem::InputSettings {
     pub const s_OldUnsupportedFixedAndDynamicUpdateSetting: i32 = 0i32;
-    #[cfg(feature = "UnityEngine+InputSystem+InputSettings+UpdateMode")]
-    pub type UpdateMode = crate::UnityEngine::InputSystem::InputSettings_UpdateMode;
+    #[cfg(feature = "UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
+    pub type BackgroundBehavior = crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior;
     #[cfg(
         feature = "UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode"
     )]
     pub type EditorInputBehaviorInPlayMode = crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode;
-    #[cfg(feature = "UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
-    pub type BackgroundBehavior = crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior;
+    #[cfg(feature = "UnityEngine+InputSystem+InputSettings+UpdateMode")]
+    pub type UpdateMode = crate::UnityEngine::InputSystem::InputSettings_UpdateMode;
     pub fn IsFeatureEnabled(
         &mut self,
         featureName: *mut crate::System::String,

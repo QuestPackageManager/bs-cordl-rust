@@ -3,39 +3,39 @@
 #[derive(Debug)]
 pub struct SmoothStepPositionEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _event: BasicBeatmapEventType,
+    pub _event: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _clampValue: bool,
     pub _eventValueMin: i32,
     pub _eventValueMax: i32,
     pub _movementVector: crate::UnityEngine::Vector3,
     pub _stepSize: f32,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
     pub _tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
     pub _positionTween: *mut crate::Tweening::Vector3Tween,
     pub _transform: *mut crate::UnityEngine::Transform,
     pub _startPos: crate::UnityEngine::Vector3,
-    pub _beatmapDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
 }
 #[cfg(feature = "SmoothStepPositionEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SmoothStepPositionEventEffect => ""
-    ."SmoothStepPositionEventEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SmoothStepPositionEventEffect
+    => ""."SmoothStepPositionEventEffect"
 );
 #[cfg(feature = "SmoothStepPositionEventEffect")]
-impl std::ops::Deref for SmoothStepPositionEventEffect {
+impl std::ops::Deref for crate::GlobalNamespace::SmoothStepPositionEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SmoothStepPositionEventEffect")]
-impl std::ops::DerefMut for SmoothStepPositionEventEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::SmoothStepPositionEventEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SmoothStepPositionEventEffect")]
-impl SmoothStepPositionEventEffect {
+impl crate::GlobalNamespace::SmoothStepPositionEventEffect {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -59,7 +59,7 @@ impl SmoothStepPositionEventEffect {
     }
     pub fn HandleBeatmapEvent(
         &mut self,
-        basicBeatmapEventData: *mut BasicBeatmapEventData,
+        basicBeatmapEventData: *mut crate::GlobalNamespace::BasicBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -118,7 +118,8 @@ impl SmoothStepPositionEventEffect {
     }
 }
 #[cfg(feature = "SmoothStepPositionEventEffect")]
-impl quest_hook::libil2cpp::ObjectType for SmoothStepPositionEventEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SmoothStepPositionEventEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

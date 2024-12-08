@@ -25,12 +25,12 @@ impl std::ops::DerefMut for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsPrel
 }
 #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsPreloader")]
 impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsPreloader {
-    #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsPreloader+__c")]
-    pub type __c = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsPreloader___c;
     #[cfg(
         feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsPreloader+_PreloadAsync_d__0"
     )]
     pub type _PreloadAsync_d__0 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsPreloader__PreloadAsync_d__0;
+    #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsPreloader+__c")]
+    pub type __c = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsPreloader___c;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

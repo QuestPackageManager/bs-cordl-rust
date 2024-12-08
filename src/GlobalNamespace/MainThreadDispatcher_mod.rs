@@ -9,23 +9,24 @@ pub struct MainThreadDispatcher {
 }
 #[cfg(feature = "MainThreadDispatcher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MainThreadDispatcher => ""."MainThreadDispatcher"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MainThreadDispatcher => ""
+    ."MainThreadDispatcher"
 );
 #[cfg(feature = "MainThreadDispatcher")]
-impl std::ops::Deref for MainThreadDispatcher {
+impl std::ops::Deref for crate::GlobalNamespace::MainThreadDispatcher {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainThreadDispatcher")]
-impl std::ops::DerefMut for MainThreadDispatcher {
+impl std::ops::DerefMut for crate::GlobalNamespace::MainThreadDispatcher {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainThreadDispatcher")]
-impl MainThreadDispatcher {
+impl crate::GlobalNamespace::MainThreadDispatcher {
     #[cfg(feature = "MainThreadDispatcher+__c__DisplayClass2_0_1")]
     pub type __c__DisplayClass2_0_1<A: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::MainThreadDispatcher___c__DisplayClass2_0_1<
         A,
@@ -182,7 +183,7 @@ impl MainThreadDispatcher {
     }
 }
 #[cfg(feature = "MainThreadDispatcher")]
-impl quest_hook::libil2cpp::ObjectType for MainThreadDispatcher {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MainThreadDispatcher {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -8,24 +8,24 @@ pub struct GameplayModifierInfoListItem {
 }
 #[cfg(feature = "GameplayModifierInfoListItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameplayModifierInfoListItem => ""
-    ."GameplayModifierInfoListItem"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameplayModifierInfoListItem =>
+    ""."GameplayModifierInfoListItem"
 );
 #[cfg(feature = "GameplayModifierInfoListItem")]
-impl std::ops::Deref for GameplayModifierInfoListItem {
+impl std::ops::Deref for crate::GlobalNamespace::GameplayModifierInfoListItem {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayModifierInfoListItem")]
-impl std::ops::DerefMut for GameplayModifierInfoListItem {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameplayModifierInfoListItem {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayModifierInfoListItem")]
-impl GameplayModifierInfoListItem {
+impl crate::GlobalNamespace::GameplayModifierInfoListItem {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -35,7 +35,7 @@ impl GameplayModifierInfoListItem {
     }
     pub fn SetModifier(
         &mut self,
-        modifierParam: *mut GameplayModifierParamsSO,
+        modifierParam: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
         showName: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -57,7 +57,8 @@ impl GameplayModifierInfoListItem {
     }
 }
 #[cfg(feature = "GameplayModifierInfoListItem")]
-impl quest_hook::libil2cpp::ObjectType for GameplayModifierInfoListItem {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GameplayModifierInfoListItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

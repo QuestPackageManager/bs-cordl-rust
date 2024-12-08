@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CPUMonitor {
     __cordl_parent: crate::System::Object,
-    pub _utilization: *mut RollingAverage,
+    pub _utilization: *mut crate::GlobalNamespace::RollingAverage,
     pub _currentProcess: *mut crate::System::Diagnostics::Process,
     pub _processorCount: i32,
     pub _lastSampleTime: i64,
@@ -11,23 +11,23 @@ pub struct CPUMonitor {
 }
 #[cfg(feature = "CPUMonitor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CPUMonitor => ""."CPUMonitor"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CPUMonitor => ""."CPUMonitor"
 );
 #[cfg(feature = "CPUMonitor")]
-impl std::ops::Deref for CPUMonitor {
+impl std::ops::Deref for crate::GlobalNamespace::CPUMonitor {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CPUMonitor")]
-impl std::ops::DerefMut for CPUMonitor {
+impl std::ops::DerefMut for crate::GlobalNamespace::CPUMonitor {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CPUMonitor")]
-impl CPUMonitor {
+impl crate::GlobalNamespace::CPUMonitor {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -64,7 +64,7 @@ impl CPUMonitor {
     }
 }
 #[cfg(feature = "CPUMonitor")]
-impl quest_hook::libil2cpp::ObjectType for CPUMonitor {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CPUMonitor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

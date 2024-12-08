@@ -15,5 +15,6 @@ pub enum NoteCutDirection {
 }
 #[cfg(feature = "NoteCutDirection")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for NoteCutDirection => ""."NoteCutDirection"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteCutDirection => ""
+    ."NoteCutDirection"
 );

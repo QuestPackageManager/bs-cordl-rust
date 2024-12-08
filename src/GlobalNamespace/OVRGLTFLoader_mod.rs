@@ -5,25 +5,27 @@ pub struct OVRGLTFLoader {
     __cordl_parent: crate::System::Object,
     pub m_jsonData: *mut crate::OVRSimpleJSON::JSONNode,
     pub m_glbStream: *mut crate::System::IO::Stream,
-    pub m_binaryChunk: OVRBinaryChunk,
+    pub m_binaryChunk: crate::GlobalNamespace::OVRBinaryChunk,
     pub m_Nodes: *mut crate::System::Collections::Generic::List_1<
         *mut crate::UnityEngine::GameObject,
     >,
     pub m_InputAnimationNodes: *mut crate::System::Collections::Generic::Dictionary_2<
-        OVRGLTFInputNode,
-        *mut OVRGLTFAnimatinonNode,
+        crate::GlobalNamespace::OVRGLTFInputNode,
+        *mut crate::GlobalNamespace::OVRGLTFAnimatinonNode,
     >,
     pub m_AnimationLookup: *mut crate::System::Collections::Generic::Dictionary_2<
         i32,
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut OVRGLTFAnimatinonNode>,
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::OVRGLTFAnimatinonNode,
+        >,
     >,
     pub m_morphTargetHandlers: *mut crate::System::Collections::Generic::Dictionary_2<
         i32,
-        *mut OVRGLTFAnimationNodeMorphTargetHandler,
+        *mut crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
     >,
     pub m_Shader: *mut crate::UnityEngine::Shader,
     pub m_AlphaBlendShader: *mut crate::UnityEngine::Shader,
-    pub m_TextureQuality: OVRTextureQualityFiltering,
+    pub m_TextureQuality: crate::GlobalNamespace::OVRTextureQualityFiltering,
     pub m_TextureMipmapBias: f32,
     pub textureUriHandler: *mut crate::System::Func_3<
         *mut crate::System::String,
@@ -33,28 +35,29 @@ pub struct OVRGLTFLoader {
 }
 #[cfg(feature = "OVRGLTFLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRGLTFLoader => ""."OVRGLTFLoader"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRGLTFLoader => ""
+    ."OVRGLTFLoader"
 );
 #[cfg(feature = "OVRGLTFLoader")]
-impl std::ops::Deref for OVRGLTFLoader {
+impl std::ops::Deref for crate::GlobalNamespace::OVRGLTFLoader {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRGLTFLoader")]
-impl std::ops::DerefMut for OVRGLTFLoader {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRGLTFLoader {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRGLTFLoader")]
-impl OVRGLTFLoader {
+impl crate::GlobalNamespace::OVRGLTFLoader {
     #[cfg(feature = "OVRGLTFLoader+__c__DisplayClass30_0")]
     pub type __c__DisplayClass30_0 = crate::GlobalNamespace::OVRGLTFLoader___c__DisplayClass30_0;
     pub fn CreateUnityMaterial(
         &mut self,
-        matData: OVRMaterialData,
+        matData: crate::GlobalNamespace::OVRMaterialData,
         loadMips: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Material> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -67,11 +70,11 @@ impl OVRGLTFLoader {
     pub fn GetInputNodeType(
         &mut self,
         name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<OVRGLTFInputNode> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRGLTFInputNode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: OVRGLTFInputNode = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::OVRGLTFInputNode = __cordl_object
             .invoke("GetInputNodeType", (name))?;
         Ok(__cordl_ret)
     }
@@ -79,11 +82,11 @@ impl OVRGLTFLoader {
         &mut self,
         supportAnimation: bool,
         loadMips: bool,
-    ) -> quest_hook::libil2cpp::Result<OVRGLTFScene> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRGLTFScene> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: OVRGLTFScene = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::OVRGLTFScene = __cordl_object
             .invoke("LoadGLB", (supportAnimation, loadMips))?;
         Ok(__cordl_ret)
     }
@@ -130,11 +133,11 @@ impl OVRGLTFLoader {
     pub fn ProcessMaterial(
         &mut self,
         matId: i32,
-    ) -> quest_hook::libil2cpp::Result<OVRMaterialData> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRMaterialData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: OVRMaterialData = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::OVRMaterialData = __cordl_object
             .invoke("ProcessMaterial", (matId))?;
         Ok(__cordl_ret)
     }
@@ -142,11 +145,11 @@ impl OVRGLTFLoader {
         &mut self,
         meshNode: *mut crate::OVRSimpleJSON::JSONNode,
         loadMips: bool,
-    ) -> quest_hook::libil2cpp::Result<OVRMeshData> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRMeshData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: OVRMeshData = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::OVRMeshData = __cordl_object
             .invoke("ProcessMesh", (meshNode, loadMips))?;
         Ok(__cordl_ret)
     }
@@ -178,18 +181,18 @@ impl OVRGLTFLoader {
     pub fn ProcessTexture(
         &mut self,
         textureId: i32,
-    ) -> quest_hook::libil2cpp::Result<OVRTextureData> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTextureData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: OVRTextureData = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::OVRTextureData = __cordl_object
             .invoke("ProcessTexture", (textureId))?;
         Ok(__cordl_ret)
     }
     pub fn ReadChunk(
         &mut self,
         glbStream: *mut crate::System::IO::Stream,
-        _cordl_type: OVRChunkType,
+        _cordl_type: crate::GlobalNamespace::OVRChunkType,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -203,11 +206,11 @@ impl OVRGLTFLoader {
         jsonAttributes: *mut crate::OVRSimpleJSON::JSONNode,
         totalVertexCount: i32,
         vertexOffset: i32,
-    ) -> quest_hook::libil2cpp::Result<OVRMeshAttributes> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRMeshAttributes> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: OVRMeshAttributes = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::OVRMeshAttributes = __cordl_object
             .invoke(
                 "ReadMeshAttributes",
                 (jsonAttributes, totalVertexCount, vertexOffset),
@@ -249,7 +252,7 @@ impl OVRGLTFLoader {
     }
     pub fn SetTextureQualityFiltering(
         &mut self,
-        loadedTexturesQuality: OVRTextureQualityFiltering,
+        loadedTexturesQuality: crate::GlobalNamespace::OVRTextureQualityFiltering,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -260,7 +263,9 @@ impl OVRGLTFLoader {
     }
     pub fn TranscodeTexture(
         &mut self,
-        textureData: quest_hook::libil2cpp::ByRefMut<OVRTextureData>,
+        textureData: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRTextureData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -272,7 +277,7 @@ impl OVRGLTFLoader {
     pub fn ValidateChunk(
         &mut self,
         glbStream: *mut crate::System::IO::Stream,
-        _cordl_type: OVRChunkType,
+        _cordl_type: crate::GlobalNamespace::OVRChunkType,
         chunkLength: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -316,7 +321,7 @@ impl OVRGLTFLoader {
     }
 }
 #[cfg(feature = "OVRGLTFLoader")]
-impl quest_hook::libil2cpp::ObjectType for OVRGLTFLoader {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRGLTFLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

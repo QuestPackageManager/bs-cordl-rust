@@ -106,23 +106,24 @@ pub struct OVRScenePlaneMeshFilter {
 }
 #[cfg(feature = "OVRScenePlaneMeshFilter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRScenePlaneMeshFilter => ""."OVRScenePlaneMeshFilter"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRScenePlaneMeshFilter => ""
+    ."OVRScenePlaneMeshFilter"
 );
 #[cfg(feature = "OVRScenePlaneMeshFilter")]
-impl std::ops::Deref for OVRScenePlaneMeshFilter {
+impl std::ops::Deref for crate::GlobalNamespace::OVRScenePlaneMeshFilter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRScenePlaneMeshFilter")]
-impl std::ops::DerefMut for OVRScenePlaneMeshFilter {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRScenePlaneMeshFilter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRScenePlaneMeshFilter")]
-impl OVRScenePlaneMeshFilter {
+impl crate::GlobalNamespace::OVRScenePlaneMeshFilter {
     #[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
     pub type TriangulateBoundaryJob = crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -194,7 +195,8 @@ impl OVRScenePlaneMeshFilter {
     }
 }
 #[cfg(feature = "OVRScenePlaneMeshFilter")]
-impl quest_hook::libil2cpp::ObjectType for OVRScenePlaneMeshFilter {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRScenePlaneMeshFilter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

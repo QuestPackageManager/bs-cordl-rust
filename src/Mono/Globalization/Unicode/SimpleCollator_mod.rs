@@ -170,14 +170,14 @@ impl std::ops::DerefMut for crate::Mono::Globalization::Unicode::SimpleCollator 
 }
 #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator")]
 impl crate::Mono::Globalization::Unicode::SimpleCollator {
-    #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
-    pub type PreviousInfo = crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo;
-    #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
-    pub type Escape = crate::Mono::Globalization::Unicode::SimpleCollator_Escape;
     #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
     pub type Context = crate::Mono::Globalization::Unicode::SimpleCollator_Context;
+    #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
+    pub type Escape = crate::Mono::Globalization::Unicode::SimpleCollator_Escape;
     #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
     pub type ExtenderType = crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType;
+    #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
+    pub type PreviousInfo = crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo;
     pub fn Category(&mut self, cp: i32) -> quest_hook::libil2cpp::Result<u8> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

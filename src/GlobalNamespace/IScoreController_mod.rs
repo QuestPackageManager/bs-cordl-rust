@@ -6,23 +6,24 @@ pub struct IScoreController {
 }
 #[cfg(feature = "IScoreController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IScoreController => ""."IScoreController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IScoreController => ""
+    ."IScoreController"
 );
 #[cfg(feature = "IScoreController")]
-impl std::ops::Deref for IScoreController {
+impl std::ops::Deref for crate::GlobalNamespace::IScoreController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IScoreController")]
-impl std::ops::DerefMut for IScoreController {
+impl std::ops::DerefMut for crate::GlobalNamespace::IScoreController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IScoreController")]
-impl IScoreController {
+impl crate::GlobalNamespace::IScoreController {
     pub fn SetEnabled(
         &mut self,
         enabled: bool,
@@ -58,7 +59,7 @@ impl IScoreController {
     }
     pub fn add_scoringForNoteFinishedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ScoringElement>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::ScoringElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -69,7 +70,7 @@ impl IScoreController {
     }
     pub fn add_scoringForNoteStartedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ScoringElement>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::ScoringElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -148,7 +149,7 @@ impl IScoreController {
     }
     pub fn remove_scoringForNoteFinishedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ScoringElement>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::ScoringElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -159,7 +160,7 @@ impl IScoreController {
     }
     pub fn remove_scoringForNoteStartedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ScoringElement>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::ScoringElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -170,7 +171,7 @@ impl IScoreController {
     }
 }
 #[cfg(feature = "IScoreController")]
-impl quest_hook::libil2cpp::ObjectType for IScoreController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IScoreController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

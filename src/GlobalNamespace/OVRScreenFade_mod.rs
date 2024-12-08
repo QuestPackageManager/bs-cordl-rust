@@ -17,23 +17,24 @@ pub struct OVRScreenFade {
 }
 #[cfg(feature = "OVRScreenFade")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRScreenFade => ""."OVRScreenFade"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRScreenFade => ""
+    ."OVRScreenFade"
 );
 #[cfg(feature = "OVRScreenFade")]
-impl std::ops::Deref for OVRScreenFade {
+impl std::ops::Deref for crate::GlobalNamespace::OVRScreenFade {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRScreenFade")]
-impl std::ops::DerefMut for OVRScreenFade {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRScreenFade {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRScreenFade")]
-impl OVRScreenFade {
+impl crate::GlobalNamespace::OVRScreenFade {
     #[cfg(feature = "OVRScreenFade+_Fade_d__25")]
     pub type _Fade_d__25 = crate::GlobalNamespace::OVRScreenFade__Fade_d__25;
     pub fn Fade(
@@ -167,7 +168,7 @@ impl OVRScreenFade {
     }
 }
 #[cfg(feature = "OVRScreenFade")]
-impl quest_hook::libil2cpp::ObjectType for OVRScreenFade {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRScreenFade {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

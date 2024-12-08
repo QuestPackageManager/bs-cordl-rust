@@ -3,29 +3,32 @@
 #[derive(Debug)]
 pub struct CutoutAnimateEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _cuttoutEffects: *mut quest_hook::libil2cpp::Il2CppArray<*mut CutoutEffect>,
+    pub _cuttoutEffects: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::CutoutEffect,
+    >,
     pub _transitionCurve: *mut crate::UnityEngine::AnimationCurve,
     pub _animating_k__BackingField: bool,
 }
 #[cfg(feature = "CutoutAnimateEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CutoutAnimateEffect => ""."CutoutAnimateEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CutoutAnimateEffect => ""
+    ."CutoutAnimateEffect"
 );
 #[cfg(feature = "CutoutAnimateEffect")]
-impl std::ops::Deref for CutoutAnimateEffect {
+impl std::ops::Deref for crate::GlobalNamespace::CutoutAnimateEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CutoutAnimateEffect")]
-impl std::ops::DerefMut for CutoutAnimateEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::CutoutAnimateEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CutoutAnimateEffect")]
-impl CutoutAnimateEffect {
+impl crate::GlobalNamespace::CutoutAnimateEffect {
     #[cfg(feature = "CutoutAnimateEffect+_AnimateToCutoutCoroutine_d__7")]
     pub type _AnimateToCutoutCoroutine_d__7 = crate::GlobalNamespace::CutoutAnimateEffect__AnimateToCutoutCoroutine_d__7;
     pub fn AnimateCutout(
@@ -122,7 +125,7 @@ impl CutoutAnimateEffect {
     }
 }
 #[cfg(feature = "CutoutAnimateEffect")]
-impl quest_hook::libil2cpp::ObjectType for CutoutAnimateEffect {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CutoutAnimateEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

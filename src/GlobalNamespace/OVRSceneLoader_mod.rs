@@ -21,32 +21,33 @@ pub struct OVRSceneLoader {
 }
 #[cfg(feature = "OVRSceneLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRSceneLoader => ""."OVRSceneLoader"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRSceneLoader => ""
+    ."OVRSceneLoader"
 );
 #[cfg(feature = "OVRSceneLoader")]
-impl std::ops::Deref for OVRSceneLoader {
+impl std::ops::Deref for crate::GlobalNamespace::OVRSceneLoader {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSceneLoader")]
-impl std::ops::DerefMut for OVRSceneLoader {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneLoader {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSceneLoader")]
-impl OVRSceneLoader {
+impl crate::GlobalNamespace::OVRSceneLoader {
     pub const externalStoragePath: &'static str = "/sdcard/Android/data";
     pub const resourceBundleName: &'static str = "asset_resources";
     pub const sceneLoadDataName: &'static str = "SceneLoadData.txt";
-    #[cfg(feature = "OVRSceneLoader+_onCheckSceneCoroutine_d__25")]
-    pub type _onCheckSceneCoroutine_d__25 = crate::GlobalNamespace::OVRSceneLoader__onCheckSceneCoroutine_d__25;
     #[cfg(feature = "OVRSceneLoader+SceneInfo")]
     pub type SceneInfo = crate::GlobalNamespace::OVRSceneLoader_SceneInfo;
     #[cfg(feature = "OVRSceneLoader+_DelayCanvasPosUpdate_d__24")]
     pub type _DelayCanvasPosUpdate_d__24 = crate::GlobalNamespace::OVRSceneLoader__DelayCanvasPosUpdate_d__24;
+    #[cfg(feature = "OVRSceneLoader+_onCheckSceneCoroutine_d__25")]
+    pub type _onCheckSceneCoroutine_d__25 = crate::GlobalNamespace::OVRSceneLoader__onCheckSceneCoroutine_d__25;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -170,7 +171,7 @@ impl OVRSceneLoader {
     }
 }
 #[cfg(feature = "OVRSceneLoader")]
-impl quest_hook::libil2cpp::ObjectType for OVRSceneLoader {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

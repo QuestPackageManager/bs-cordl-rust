@@ -27,6 +27,10 @@ for crate::System::Linq::Expressions::Interpreter::ModuloInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ModuloInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::ModuloInstruction {
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+ModuloInstruction+ModuloDouble"
+    )]
+    pub type ModuloDouble = crate::GlobalNamespace::ModuloInstruction_ModuloDouble;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+ModuloInstruction+ModuloInt16")]
     pub type ModuloInt16 = crate::GlobalNamespace::ModuloInstruction_ModuloInt16;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+ModuloInstruction+ModuloInt32")]
@@ -34,25 +38,21 @@ impl crate::System::Linq::Expressions::Interpreter::ModuloInstruction {
     #[cfg(feature = "System+Linq+Expressions+Interpreter+ModuloInstruction+ModuloInt64")]
     pub type ModuloInt64 = crate::GlobalNamespace::ModuloInstruction_ModuloInt64;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+ModuloInstruction+ModuloUInt64"
+        feature = "System+Linq+Expressions+Interpreter+ModuloInstruction+ModuloSingle"
     )]
-    pub type ModuloUInt64 = crate::GlobalNamespace::ModuloInstruction_ModuloUInt64;
+    pub type ModuloSingle = crate::GlobalNamespace::ModuloInstruction_ModuloSingle;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+ModuloInstruction+ModuloUInt16"
+    )]
+    pub type ModuloUInt16 = crate::GlobalNamespace::ModuloInstruction_ModuloUInt16;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+ModuloInstruction+ModuloUInt32"
     )]
     pub type ModuloUInt32 = crate::GlobalNamespace::ModuloInstruction_ModuloUInt32;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+ModuloInstruction+ModuloSingle"
+        feature = "System+Linq+Expressions+Interpreter+ModuloInstruction+ModuloUInt64"
     )]
-    pub type ModuloSingle = crate::GlobalNamespace::ModuloInstruction_ModuloSingle;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+ModuloInstruction+ModuloDouble"
-    )]
-    pub type ModuloDouble = crate::GlobalNamespace::ModuloInstruction_ModuloDouble;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+ModuloInstruction+ModuloUInt16"
-    )]
-    pub type ModuloUInt16 = crate::GlobalNamespace::ModuloInstruction_ModuloUInt16;
+    pub type ModuloUInt64 = crate::GlobalNamespace::ModuloInstruction_ModuloUInt64;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -142,12 +142,12 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Security::CipherUtilities 
 }
 #[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities")]
 impl crate::Org::BouncyCastle::Security::CipherUtilities {
-    #[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
-    pub type CipherPadding = crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding;
     #[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
     pub type CipherAlgorithm = crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm;
     #[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
     pub type CipherMode = crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode;
+    #[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
+    pub type CipherPadding = crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

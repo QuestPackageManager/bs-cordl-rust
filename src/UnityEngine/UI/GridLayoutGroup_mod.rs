@@ -69,12 +69,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::GridLayoutGroup {
 }
 #[cfg(feature = "UnityEngine+UI+GridLayoutGroup")]
 impl crate::UnityEngine::UI::GridLayoutGroup {
+    #[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Axis")]
+    pub type Axis = crate::UnityEngine::UI::GridLayoutGroup_Axis;
     #[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Constraint")]
     pub type Constraint = crate::UnityEngine::UI::GridLayoutGroup_Constraint;
     #[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Corner")]
     pub type Corner = crate::UnityEngine::UI::GridLayoutGroup_Corner;
-    #[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Axis")]
-    pub type Axis = crate::UnityEngine::UI::GridLayoutGroup_Axis;
     pub fn CalculateLayoutInputHorizontal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

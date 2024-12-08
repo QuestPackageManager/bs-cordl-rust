@@ -28,20 +28,20 @@ for crate::System::Linq::Expressions::Interpreter::MulInstruction {
 impl crate::System::Linq::Expressions::Interpreter::MulInstruction {
     #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulDouble")]
     pub type MulDouble = crate::GlobalNamespace::MulInstruction_MulDouble;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulUInt64")]
-    pub type MulUInt64 = crate::GlobalNamespace::MulInstruction_MulUInt64;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulInt16")]
     pub type MulInt16 = crate::GlobalNamespace::MulInstruction_MulInt16;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulInt32")]
     pub type MulInt32 = crate::GlobalNamespace::MulInstruction_MulInt32;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulInt64")]
     pub type MulInt64 = crate::GlobalNamespace::MulInstruction_MulInt64;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulUInt32")]
-    pub type MulUInt32 = crate::GlobalNamespace::MulInstruction_MulUInt32;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulSingle")]
     pub type MulSingle = crate::GlobalNamespace::MulInstruction_MulSingle;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulUInt16")]
     pub type MulUInt16 = crate::GlobalNamespace::MulInstruction_MulUInt16;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulUInt32")]
+    pub type MulUInt32 = crate::GlobalNamespace::MulInstruction_MulUInt32;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulUInt64")]
+    pub type MulUInt64 = crate::GlobalNamespace::MulInstruction_MulUInt64;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -9,5 +9,6 @@ pub enum SongSelectionMode {
 }
 #[cfg(feature = "SongSelectionMode")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for SongSelectionMode => ""."SongSelectionMode"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongSelectionMode => ""
+    ."SongSelectionMode"
 );

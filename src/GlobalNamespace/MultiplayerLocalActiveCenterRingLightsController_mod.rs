@@ -7,32 +7,35 @@ pub struct MultiplayerLocalActiveCenterRingLightsController {
     pub _horizontalLines: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::Transform,
     >,
-    pub _centerResizeController: *mut MultiplayerCenterResizeController,
-    pub _layoutProvider: *mut MultiplayerLayoutProvider,
-    pub _beatmapObjectSpawnCenter: *mut BeatmapObjectSpawnCenter,
+    pub _centerResizeController: *mut crate::GlobalNamespace::MultiplayerCenterResizeController,
+    pub _layoutProvider: *mut crate::GlobalNamespace::MultiplayerLayoutProvider,
+    pub _beatmapObjectSpawnCenter: *mut crate::GlobalNamespace::BeatmapObjectSpawnCenter,
     pub _edgeDistanceFromCenterCalculated: bool,
     pub _spawnCenterDistanceFound: bool,
 }
 #[cfg(feature = "MultiplayerLocalActiveCenterRingLightsController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLocalActiveCenterRingLightsController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLocalActiveCenterRingLightsController => ""
     ."MultiplayerLocalActiveCenterRingLightsController"
 );
 #[cfg(feature = "MultiplayerLocalActiveCenterRingLightsController")]
-impl std::ops::Deref for MultiplayerLocalActiveCenterRingLightsController {
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerLocalActiveCenterRingLightsController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalActiveCenterRingLightsController")]
-impl std::ops::DerefMut for MultiplayerLocalActiveCenterRingLightsController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerLocalActiveCenterRingLightsController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalActiveCenterRingLightsController")]
-impl MultiplayerLocalActiveCenterRingLightsController {
+impl crate::GlobalNamespace::MultiplayerLocalActiveCenterRingLightsController {
     pub fn HandleEdgeDistanceFromCenterWasCalculated(
         &mut self,
         constructEdgeDistanceFromCenter: f32,
@@ -118,7 +121,7 @@ impl MultiplayerLocalActiveCenterRingLightsController {
 }
 #[cfg(feature = "MultiplayerLocalActiveCenterRingLightsController")]
 impl quest_hook::libil2cpp::ObjectType
-for MultiplayerLocalActiveCenterRingLightsController {
+for crate::GlobalNamespace::MultiplayerLocalActiveCenterRingLightsController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

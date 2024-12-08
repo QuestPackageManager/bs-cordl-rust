@@ -3,32 +3,33 @@
 #[derive(Debug)]
 pub struct CuttingManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _saberManager: *mut SaberManager,
-    pub _noteCutter: *mut NoteCutter,
+    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
+    pub _noteCutter: *mut crate::GlobalNamespace::NoteCutter,
 }
 #[cfg(feature = "CuttingManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CuttingManager => ""."CuttingManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CuttingManager => ""
+    ."CuttingManager"
 );
 #[cfg(feature = "CuttingManager")]
-impl std::ops::Deref for CuttingManager {
+impl std::ops::Deref for crate::GlobalNamespace::CuttingManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CuttingManager")]
-impl std::ops::DerefMut for CuttingManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::CuttingManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CuttingManager")]
-impl CuttingManager {
+impl crate::GlobalNamespace::CuttingManager {
     pub fn HandleSaberManagerDidUpdateSaberPositions(
         &mut self,
-        leftSaber: *mut Saber,
-        rightSaber: *mut Saber,
+        leftSaber: *mut crate::GlobalNamespace::Saber,
+        rightSaber: *mut crate::GlobalNamespace::Saber,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -79,7 +80,7 @@ impl CuttingManager {
     }
 }
 #[cfg(feature = "CuttingManager")]
-impl quest_hook::libil2cpp::ObjectType for CuttingManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CuttingManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

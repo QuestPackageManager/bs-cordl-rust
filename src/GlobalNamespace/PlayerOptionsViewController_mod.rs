@@ -3,31 +3,31 @@
 #[derive(Debug)]
 pub struct PlayerOptionsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _playerSettingsPanelController: *mut PlayerSettingsPanelController,
+    pub _playerSettingsPanelController: *mut crate::GlobalNamespace::PlayerSettingsPanelController,
     pub _okButton: *mut crate::UnityEngine::UI::Button,
-    pub _playerDataModel: *mut PlayerDataModel,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
     pub didFinishEvent: *mut crate::System::Action_1<*mut crate::HMUI::ViewController>,
 }
 #[cfg(feature = "PlayerOptionsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerOptionsViewController => ""
-    ."PlayerOptionsViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerOptionsViewController =>
+    ""."PlayerOptionsViewController"
 );
 #[cfg(feature = "PlayerOptionsViewController")]
-impl std::ops::Deref for PlayerOptionsViewController {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerOptionsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerOptionsViewController")]
-impl std::ops::DerefMut for PlayerOptionsViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerOptionsViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerOptionsViewController")]
-impl PlayerOptionsViewController {
+impl crate::GlobalNamespace::PlayerOptionsViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -107,7 +107,8 @@ impl PlayerOptionsViewController {
     }
 }
 #[cfg(feature = "PlayerOptionsViewController")]
-impl quest_hook::libil2cpp::ObjectType for PlayerOptionsViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayerOptionsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

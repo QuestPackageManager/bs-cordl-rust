@@ -6,23 +6,24 @@ pub struct IPoolableSerializable {
 }
 #[cfg(feature = "IPoolableSerializable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IPoolableSerializable => ""."IPoolableSerializable"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IPoolableSerializable => ""
+    ."IPoolableSerializable"
 );
 #[cfg(feature = "IPoolableSerializable")]
-impl std::ops::Deref for IPoolableSerializable {
+impl std::ops::Deref for crate::GlobalNamespace::IPoolableSerializable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IPoolableSerializable")]
-impl std::ops::DerefMut for IPoolableSerializable {
+impl std::ops::DerefMut for crate::GlobalNamespace::IPoolableSerializable {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IPoolableSerializable")]
-impl IPoolableSerializable {
+impl crate::GlobalNamespace::IPoolableSerializable {
     pub fn Release(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -50,7 +51,8 @@ impl IPoolableSerializable {
     }
 }
 #[cfg(feature = "IPoolableSerializable")]
-impl quest_hook::libil2cpp::ObjectType for IPoolableSerializable {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IPoolableSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

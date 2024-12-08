@@ -48,7 +48,7 @@ impl crate::BeatSaber::GameSettings::MainSettingsHandler {
         Ok(__cordl_ret)
     }
     pub fn New_IFileStorage0(
-        fileStorage: *mut IFileStorage,
+        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -57,7 +57,7 @@ impl crate::BeatSaber::GameSettings::MainSettingsHandler {
         Ok(__cordl_object)
     }
     pub fn New_MainSettings1(
-        fileStorage: *mut IFileStorage,
+        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
         instance: *mut crate::BeatSaber::GameSettings::MainSettings,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -93,7 +93,7 @@ impl crate::BeatSaber::GameSettings::MainSettingsHandler {
     }
     pub fn _ctor_IFileStorage0(
         &mut self,
-        fileStorage: *mut IFileStorage,
+        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -104,7 +104,7 @@ impl crate::BeatSaber::GameSettings::MainSettingsHandler {
     }
     pub fn _ctor_MainSettings1(
         &mut self,
-        fileStorage: *mut IFileStorage,
+        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
         instance: *mut crate::BeatSaber::GameSettings::MainSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -136,11 +136,11 @@ impl crate::BeatSaber::GameSettings::MainSettingsHandler {
     }
     pub fn get_preferredStorageLocation(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<StoragePreference> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::StoragePreference> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: StoragePreference = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::StoragePreference = __cordl_object
             .invoke("get_preferredStorageLocation", ())?;
         Ok(__cordl_ret)
     }

@@ -610,25 +610,25 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
     pub type GetArray1ArgDel_1<T: quest_hook::libil2cpp::Type> = crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray1ArgDel_1<
         T,
     >;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetArray2ArgDel_2")]
+    pub type GetArray2ArgDel_2<
+        ARG2: quest_hook::libil2cpp::Type,
+        T: quest_hook::libil2cpp::Type,
+    > = crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2<ARG2, T>;
     #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetArray3ArgDel_3")]
     pub type GetArray3ArgDel_3<
         ARG3: quest_hook::libil2cpp::Type,
         ARG2: quest_hook::libil2cpp::Type,
         T: quest_hook::libil2cpp::Type,
     > = crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray3ArgDel_3<ARG3, ARG2, T>;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetArray2ArgDel_2")]
-    pub type GetArray2ArgDel_2<
-        ARG2: quest_hook::libil2cpp::Type,
-        T: quest_hook::libil2cpp::Type,
-    > = crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2<ARG2, T>;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+SetAttributeArrayFunc_1")]
-    pub type SetAttributeArrayFunc_1<T: quest_hook::libil2cpp::Type> = crate::HoudiniEngineUnity::HEU_GeneralUtility_SetAttributeArrayFunc_1<
-        T,
-    >;
     #[cfg(
         feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetAttributeArrayInputFunc_1"
     )]
     pub type GetAttributeArrayInputFunc_1<T: quest_hook::libil2cpp::Type> = crate::HoudiniEngineUnity::HEU_GeneralUtility_GetAttributeArrayInputFunc_1<
+        T,
+    >;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+SetAttributeArrayFunc_1")]
+    pub type SetAttributeArrayFunc_1<T: quest_hook::libil2cpp::Type> = crate::HoudiniEngineUnity::HEU_GeneralUtility_SetAttributeArrayFunc_1<
         T,
     >;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {

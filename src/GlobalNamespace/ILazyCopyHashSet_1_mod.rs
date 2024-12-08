@@ -7,24 +7,26 @@ pub struct ILazyCopyHashSet_1<T: quest_hook::libil2cpp::Type> {
 }
 #[cfg(feature = "ILazyCopyHashSet_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ILazyCopyHashSet_1 < T > => ""."ILazyCopyHashSet`1" < T
-    >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ILazyCopyHashSet_1 < T > => ""
+    ."ILazyCopyHashSet`1" < T >
 );
 #[cfg(feature = "ILazyCopyHashSet_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for ILazyCopyHashSet_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
+for crate::GlobalNamespace::ILazyCopyHashSet_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ILazyCopyHashSet_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for ILazyCopyHashSet_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
+for crate::GlobalNamespace::ILazyCopyHashSet_1<T> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ILazyCopyHashSet_1")]
-impl<T: quest_hook::libil2cpp::Type> ILazyCopyHashSet_1<T> {
+impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::ILazyCopyHashSet_1<T> {
     pub fn Add(
         &mut self,
         item: T,
@@ -63,7 +65,7 @@ impl<T: quest_hook::libil2cpp::Type> ILazyCopyHashSet_1<T> {
 }
 #[cfg(feature = "ILazyCopyHashSet_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for ILazyCopyHashSet_1<T> {
+for crate::GlobalNamespace::ILazyCopyHashSet_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

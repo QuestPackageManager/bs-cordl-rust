@@ -251,14 +251,14 @@ impl std::ops::DerefMut for crate::System::Threading::ThreadPoolWorkQueue {
 }
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueue")]
 impl crate::System::Threading::ThreadPoolWorkQueue {
-    #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+WorkStealingQueue")]
-    pub type WorkStealingQueue = crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue;
     #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+QueueSegment")]
     pub type QueueSegment = crate::System::Threading::ThreadPoolWorkQueue_QueueSegment;
     #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+SparseArray_1")]
     pub type SparseArray_1<T: quest_hook::libil2cpp::Type> = crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<
         T,
     >;
+    #[cfg(feature = "System+Threading+ThreadPoolWorkQueue+WorkStealingQueue")]
+    pub type WorkStealingQueue = crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue;
     pub fn Dequeue(
         &mut self,
         tl: *mut crate::System::Threading::ThreadPoolWorkQueueThreadLocals,

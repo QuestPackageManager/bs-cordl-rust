@@ -4,7 +4,7 @@
 pub struct SmoothCamera {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _camera: *mut crate::UnityEngine::Camera,
-    pub _mainCamera: *mut MainCamera,
+    pub _mainCamera: *mut crate::GlobalNamespace::MainCamera,
     pub _thirdPersonPosition: crate::UnityEngine::Vector3,
     pub _thirdPersonEulerAngles: crate::UnityEngine::Vector3,
     pub _thirdPersonEnabled: bool,
@@ -13,23 +13,24 @@ pub struct SmoothCamera {
 }
 #[cfg(feature = "SmoothCamera")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SmoothCamera => ""."SmoothCamera"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SmoothCamera => ""
+    ."SmoothCamera"
 );
 #[cfg(feature = "SmoothCamera")]
-impl std::ops::Deref for SmoothCamera {
+impl std::ops::Deref for crate::GlobalNamespace::SmoothCamera {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SmoothCamera")]
-impl std::ops::DerefMut for SmoothCamera {
+impl std::ops::DerefMut for crate::GlobalNamespace::SmoothCamera {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SmoothCamera")]
-impl SmoothCamera {
+impl crate::GlobalNamespace::SmoothCamera {
     pub fn Init(
         &mut self,
         fieldOfView: f32,
@@ -105,7 +106,7 @@ impl SmoothCamera {
     }
 }
 #[cfg(feature = "SmoothCamera")]
-impl quest_hook::libil2cpp::ObjectType for SmoothCamera {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SmoothCamera {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

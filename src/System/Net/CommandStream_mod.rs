@@ -39,12 +39,12 @@ impl std::ops::DerefMut for crate::System::Net::CommandStream {
 }
 #[cfg(feature = "System+Net+CommandStream")]
 impl crate::System::Net::CommandStream {
+    #[cfg(feature = "System+Net+CommandStream+PipelineEntry")]
+    pub type PipelineEntry = crate::System::Net::CommandStream_PipelineEntry;
     #[cfg(feature = "System+Net+CommandStream+PipelineEntryFlags")]
     pub type PipelineEntryFlags = crate::System::Net::CommandStream_PipelineEntryFlags;
     #[cfg(feature = "System+Net+CommandStream+PipelineInstruction")]
     pub type PipelineInstruction = crate::System::Net::CommandStream_PipelineInstruction;
-    #[cfg(feature = "System+Net+CommandStream+PipelineEntry")]
-    pub type PipelineEntry = crate::System::Net::CommandStream_PipelineEntry;
     pub fn Abort(
         &mut self,
         e: *mut crate::System::Exception,

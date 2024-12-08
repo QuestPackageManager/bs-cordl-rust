@@ -46,14 +46,14 @@ impl std::ops::DerefMut for crate::Zenject::TickableManager {
 }
 #[cfg(feature = "Zenject+TickableManager")]
 impl crate::Zenject::TickableManager {
-    #[cfg(feature = "Zenject+TickableManager+__c__DisplayClass18_0")]
-    pub type __c__DisplayClass18_0 = crate::Zenject::TickableManager___c__DisplayClass18_0;
-    #[cfg(feature = "Zenject+TickableManager+__c__DisplayClass19_0")]
-    pub type __c__DisplayClass19_0 = crate::Zenject::TickableManager___c__DisplayClass19_0;
     #[cfg(feature = "Zenject+TickableManager+__c")]
     pub type __c = crate::Zenject::TickableManager___c;
     #[cfg(feature = "Zenject+TickableManager+__c__DisplayClass17_0")]
     pub type __c__DisplayClass17_0 = crate::Zenject::TickableManager___c__DisplayClass17_0;
+    #[cfg(feature = "Zenject+TickableManager+__c__DisplayClass18_0")]
+    pub type __c__DisplayClass18_0 = crate::Zenject::TickableManager___c__DisplayClass18_0;
+    #[cfg(feature = "Zenject+TickableManager+__c__DisplayClass19_0")]
+    pub type __c__DisplayClass19_0 = crate::Zenject::TickableManager___c__DisplayClass19_0;
     pub fn AddFixed_IFixedTickable1(
         &mut self,
         tickable: *mut crate::Zenject::IFixedTickable,

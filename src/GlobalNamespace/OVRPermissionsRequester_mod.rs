@@ -6,34 +6,36 @@ pub struct OVRPermissionsRequester {
 }
 #[cfg(feature = "OVRPermissionsRequester")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRPermissionsRequester => ""."OVRPermissionsRequester"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRPermissionsRequester => ""
+    ."OVRPermissionsRequester"
 );
 #[cfg(feature = "OVRPermissionsRequester")]
-impl std::ops::Deref for OVRPermissionsRequester {
+impl std::ops::Deref for crate::GlobalNamespace::OVRPermissionsRequester {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRPermissionsRequester")]
-impl std::ops::DerefMut for OVRPermissionsRequester {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPermissionsRequester {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRPermissionsRequester")]
-impl OVRPermissionsRequester {
+impl crate::GlobalNamespace::OVRPermissionsRequester {
     pub const BodyTrackingPermission: &'static str = "com.oculus.permission.BODY_TRACKING";
     pub const EyeTrackingPermission: &'static str = "com.oculus.permission.EYE_TRACKING";
     pub const FaceTrackingPermission: &'static str = "com.oculus.permission.FACE_TRACKING";
     pub const ScenePermission: &'static str = "com.oculus.permission.USE_SCENE";
-    #[cfg(feature = "OVRPermissionsRequester+__c")]
-    pub type __c = crate::GlobalNamespace::OVRPermissionsRequester___c;
     #[cfg(feature = "OVRPermissionsRequester+Permission")]
     pub type Permission = crate::GlobalNamespace::OVRPermissionsRequester_Permission;
+    #[cfg(feature = "OVRPermissionsRequester+__c")]
+    pub type __c = crate::GlobalNamespace::OVRPermissionsRequester___c;
 }
 #[cfg(feature = "OVRPermissionsRequester")]
-impl quest_hook::libil2cpp::ObjectType for OVRPermissionsRequester {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPermissionsRequester {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

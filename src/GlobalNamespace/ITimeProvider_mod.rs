@@ -6,23 +6,24 @@ pub struct ITimeProvider {
 }
 #[cfg(feature = "ITimeProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ITimeProvider => ""."ITimeProvider"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ITimeProvider => ""
+    ."ITimeProvider"
 );
 #[cfg(feature = "ITimeProvider")]
-impl std::ops::Deref for ITimeProvider {
+impl std::ops::Deref for crate::GlobalNamespace::ITimeProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ITimeProvider")]
-impl std::ops::DerefMut for ITimeProvider {
+impl std::ops::DerefMut for crate::GlobalNamespace::ITimeProvider {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ITimeProvider")]
-impl ITimeProvider {
+impl crate::GlobalNamespace::ITimeProvider {
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
@@ -37,7 +38,7 @@ impl ITimeProvider {
     }
 }
 #[cfg(feature = "ITimeProvider")]
-impl quest_hook::libil2cpp::ObjectType for ITimeProvider {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ITimeProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

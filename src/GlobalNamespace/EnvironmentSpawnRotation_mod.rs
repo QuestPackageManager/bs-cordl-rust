@@ -5,32 +5,32 @@ pub struct EnvironmentSpawnRotation {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _aheadTime: f32,
     pub _smooth: f32,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
-    pub _beatmapDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     pub _currentRotation: f32,
     pub _prevRotation: f32,
     pub _targetRotation: f32,
 }
 #[cfg(feature = "EnvironmentSpawnRotation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnvironmentSpawnRotation => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnvironmentSpawnRotation => ""
     ."EnvironmentSpawnRotation"
 );
 #[cfg(feature = "EnvironmentSpawnRotation")]
-impl std::ops::Deref for EnvironmentSpawnRotation {
+impl std::ops::Deref for crate::GlobalNamespace::EnvironmentSpawnRotation {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentSpawnRotation")]
-impl std::ops::DerefMut for EnvironmentSpawnRotation {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentSpawnRotation {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentSpawnRotation")]
-impl EnvironmentSpawnRotation {
+impl crate::GlobalNamespace::EnvironmentSpawnRotation {
     pub fn FixedUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -43,7 +43,7 @@ impl EnvironmentSpawnRotation {
     }
     pub fn HandleSpawnRotationBeatmapEvent(
         &mut self,
-        beatmapEventData: *mut SpawnRotationBeatmapEventData,
+        beatmapEventData: *mut crate::GlobalNamespace::SpawnRotationBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -128,7 +128,8 @@ impl EnvironmentSpawnRotation {
     }
 }
 #[cfg(feature = "EnvironmentSpawnRotation")]
-impl quest_hook::libil2cpp::ObjectType for EnvironmentSpawnRotation {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EnvironmentSpawnRotation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

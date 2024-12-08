@@ -22,39 +22,42 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct OculusXPlatformAccessTokenRequestOperation {
     __cordl_parent: crate::System::Object,
-    pub _tokenData: XPlatformAccessTokenData,
+    pub _tokenData: crate::GlobalNamespace::XPlatformAccessTokenData,
     pub _operationState: crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState,
 }
 #[cfg(feature = "OculusXPlatformAccessTokenRequestOperation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OculusXPlatformAccessTokenRequestOperation => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation => ""
     ."OculusXPlatformAccessTokenRequestOperation"
 );
 #[cfg(feature = "OculusXPlatformAccessTokenRequestOperation")]
-impl std::ops::Deref for OculusXPlatformAccessTokenRequestOperation {
+impl std::ops::Deref
+for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusXPlatformAccessTokenRequestOperation")]
-impl std::ops::DerefMut for OculusXPlatformAccessTokenRequestOperation {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusXPlatformAccessTokenRequestOperation")]
-impl OculusXPlatformAccessTokenRequestOperation {
+impl crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
     pub const kMaxTokenRetry: i32 = 3i32;
     pub const kMillisecondsDelayToCheckCallbackResponse: i32 = 500i32;
-    #[cfg(
-        feature = "OculusXPlatformAccessTokenRequestOperation+_RequestXPlatformAccessToken_d__7"
-    )]
-    pub type _RequestXPlatformAccessToken_d__7 = crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation__RequestXPlatformAccessToken_d__7;
     #[cfg(
         feature = "OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
     )]
     pub type OculusTokenRequestOperationState = crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState;
+    #[cfg(
+        feature = "OculusXPlatformAccessTokenRequestOperation+_RequestXPlatformAccessToken_d__7"
+    )]
+    pub type _RequestXPlatformAccessToken_d__7 = crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation__RequestXPlatformAccessToken_d__7;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -87,13 +90,15 @@ impl OculusXPlatformAccessTokenRequestOperation {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<XPlatformAccessTokenData>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::XPlatformAccessTokenData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            XPlatformAccessTokenData,
+            crate::GlobalNamespace::XPlatformAccessTokenData,
         > = __cordl_object.invoke("RequestXPlatformAccessToken", (cancellationToken))?;
         Ok(__cordl_ret)
     }
@@ -109,7 +114,8 @@ impl OculusXPlatformAccessTokenRequestOperation {
     }
 }
 #[cfg(feature = "OculusXPlatformAccessTokenRequestOperation")]
-impl quest_hook::libil2cpp::ObjectType for OculusXPlatformAccessTokenRequestOperation {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

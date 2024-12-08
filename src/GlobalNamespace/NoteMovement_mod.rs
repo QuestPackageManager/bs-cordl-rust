@@ -16,8 +16,8 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct NoteMovement {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _floorMovement: *mut NoteFloorMovement,
-    pub _jump: *mut NoteJump,
+    pub _floorMovement: *mut crate::GlobalNamespace::NoteFloorMovement,
+    pub _jump: *mut crate::GlobalNamespace::NoteJump,
     pub _zOffset: f32,
     pub didInitEvent: *mut crate::System::Action,
     pub noteDidStartJumpEvent: *mut crate::System::Action,
@@ -25,7 +25,7 @@ pub struct NoteMovement {
     pub noteDidPassMissedMarkerEvent: *mut crate::System::Action,
     pub noteDidPassHalfJumpEvent: *mut crate::System::Action,
     pub noteDidPassJumpThreeQuartersEvent: *mut crate::System::Action_1<
-        *mut NoteMovement,
+        *mut crate::GlobalNamespace::NoteMovement,
     >,
     pub noteDidMoveInJumpPhaseEvent: *mut crate::System::Action,
     pub _movementPhase_k__BackingField: crate::GlobalNamespace::NoteMovement_MovementPhase,
@@ -36,23 +36,24 @@ pub struct NoteMovement {
 }
 #[cfg(feature = "NoteMovement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteMovement => ""."NoteMovement"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteMovement => ""
+    ."NoteMovement"
 );
 #[cfg(feature = "NoteMovement")]
-impl std::ops::Deref for NoteMovement {
+impl std::ops::Deref for crate::GlobalNamespace::NoteMovement {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteMovement")]
-impl std::ops::DerefMut for NoteMovement {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteMovement {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteMovement")]
-impl NoteMovement {
+impl crate::GlobalNamespace::NoteMovement {
     #[cfg(feature = "NoteMovement+MovementPhase")]
     pub type MovementPhase = crate::GlobalNamespace::NoteMovement_MovementPhase;
     pub fn Awake(
@@ -97,7 +98,7 @@ impl NoteMovement {
     }
     pub fn HandleNoteJumpDidPassThreeQuarters(
         &mut self,
-        noteJump: *mut NoteJump,
+        noteJump: *mut crate::GlobalNamespace::NoteJump,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -237,7 +238,7 @@ impl NoteMovement {
     }
     pub fn add_noteDidPassJumpThreeQuartersEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteMovement>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::NoteMovement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -444,7 +445,7 @@ impl NoteMovement {
     }
     pub fn remove_noteDidPassJumpThreeQuartersEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteMovement>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::NoteMovement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -488,7 +489,7 @@ impl NoteMovement {
     }
 }
 #[cfg(feature = "NoteMovement")]
-impl quest_hook::libil2cpp::ObjectType for NoteMovement {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteMovement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

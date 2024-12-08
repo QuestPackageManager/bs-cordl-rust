@@ -8,5 +8,6 @@ pub enum DiscoveryPolicy {
 }
 #[cfg(feature = "DiscoveryPolicy")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for DiscoveryPolicy => ""."DiscoveryPolicy"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::DiscoveryPolicy => ""
+    ."DiscoveryPolicy"
 );

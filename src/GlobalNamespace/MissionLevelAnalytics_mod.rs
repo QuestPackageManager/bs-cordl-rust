@@ -3,32 +3,33 @@
 #[derive(Debug)]
 pub struct MissionLevelAnalytics {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionLevelScenesTransitionSetupData: *mut MissionLevelScenesTransitionSetupDataSO,
-    pub _analyticsModel: *mut IAnalyticsModel,
+    pub _missionLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
 }
 #[cfg(feature = "MissionLevelAnalytics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionLevelAnalytics => ""."MissionLevelAnalytics"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissionLevelAnalytics => ""
+    ."MissionLevelAnalytics"
 );
 #[cfg(feature = "MissionLevelAnalytics")]
-impl std::ops::Deref for MissionLevelAnalytics {
+impl std::ops::Deref for crate::GlobalNamespace::MissionLevelAnalytics {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionLevelAnalytics")]
-impl std::ops::DerefMut for MissionLevelAnalytics {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionLevelAnalytics {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionLevelAnalytics")]
-impl MissionLevelAnalytics {
+impl crate::GlobalNamespace::MissionLevelAnalytics {
     pub fn HandleMissionLevelDidFinishEvent(
         &mut self,
-        missionLevelScenesTransitionSetupData: *mut MissionLevelScenesTransitionSetupDataSO,
-        missionCompletionResults: *mut MissionCompletionResults,
+        missionLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+        missionCompletionResults: *mut crate::GlobalNamespace::MissionCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -79,7 +80,8 @@ impl MissionLevelAnalytics {
     }
 }
 #[cfg(feature = "MissionLevelAnalytics")]
-impl quest_hook::libil2cpp::ObjectType for MissionLevelAnalytics {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MissionLevelAnalytics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

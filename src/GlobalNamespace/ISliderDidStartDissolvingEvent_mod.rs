@@ -6,27 +6,27 @@ pub struct ISliderDidStartDissolvingEvent {
 }
 #[cfg(feature = "ISliderDidStartDissolvingEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ISliderDidStartDissolvingEvent => ""
-    ."ISliderDidStartDissolvingEvent"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ISliderDidStartDissolvingEvent
+    => ""."ISliderDidStartDissolvingEvent"
 );
 #[cfg(feature = "ISliderDidStartDissolvingEvent")]
-impl std::ops::Deref for ISliderDidStartDissolvingEvent {
+impl std::ops::Deref for crate::GlobalNamespace::ISliderDidStartDissolvingEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ISliderDidStartDissolvingEvent")]
-impl std::ops::DerefMut for ISliderDidStartDissolvingEvent {
+impl std::ops::DerefMut for crate::GlobalNamespace::ISliderDidStartDissolvingEvent {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ISliderDidStartDissolvingEvent")]
-impl ISliderDidStartDissolvingEvent {
+impl crate::GlobalNamespace::ISliderDidStartDissolvingEvent {
     pub fn HandleSliderDidStartDissolving(
         &mut self,
-        sliderController: *mut SliderController,
+        sliderController: *mut crate::GlobalNamespace::SliderController,
         duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -43,7 +43,8 @@ impl ISliderDidStartDissolvingEvent {
     }
 }
 #[cfg(feature = "ISliderDidStartDissolvingEvent")]
-impl quest_hook::libil2cpp::ObjectType for ISliderDidStartDissolvingEvent {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ISliderDidStartDissolvingEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

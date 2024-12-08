@@ -3,27 +3,28 @@
 #[derive(Debug)]
 pub struct EnvironmentSceneSetup {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _sceneSetupData: *mut EnvironmentSceneSetupData,
+    pub _sceneSetupData: *mut crate::GlobalNamespace::EnvironmentSceneSetupData,
 }
 #[cfg(feature = "EnvironmentSceneSetup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnvironmentSceneSetup => ""."EnvironmentSceneSetup"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnvironmentSceneSetup => ""
+    ."EnvironmentSceneSetup"
 );
 #[cfg(feature = "EnvironmentSceneSetup")]
-impl std::ops::Deref for EnvironmentSceneSetup {
+impl std::ops::Deref for crate::GlobalNamespace::EnvironmentSceneSetup {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentSceneSetup")]
-impl std::ops::DerefMut for EnvironmentSceneSetup {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentSceneSetup {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentSceneSetup")]
-impl EnvironmentSceneSetup {
+impl crate::GlobalNamespace::EnvironmentSceneSetup {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -53,7 +54,8 @@ impl EnvironmentSceneSetup {
     }
 }
 #[cfg(feature = "EnvironmentSceneSetup")]
-impl quest_hook::libil2cpp::ObjectType for EnvironmentSceneSetup {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EnvironmentSceneSetup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

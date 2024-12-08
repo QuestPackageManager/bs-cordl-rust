@@ -118,10 +118,12 @@ pub struct OVRTriangleMesh {
 }
 #[cfg(feature = "OVRTriangleMesh")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for OVRTriangleMesh => ""."OVRTriangleMesh"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRTriangleMesh => ""
+    ."OVRTriangleMesh"
 );
 #[cfg(feature = "OVRTriangleMesh")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for OVRTriangleMesh {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRTriangleMesh {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -131,18 +133,18 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for OVRTriangleMesh {
     }
 }
 #[cfg(feature = "OVRTriangleMesh")]
-impl OVRTriangleMesh {
-    #[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
-    pub type GetMeshJob = crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob;
+impl crate::GlobalNamespace::OVRTriangleMesh {
     #[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
     pub type FlipTriangleWindingJob = crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob;
-    #[cfg(feature = "OVRTriangleMesh+Triangle")]
-    pub type Triangle = crate::GlobalNamespace::OVRTriangleMesh_Triangle;
+    #[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
+    pub type GetMeshJob = crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob;
     #[cfg(feature = "OVRTriangleMesh+NegateXJob")]
     pub type NegateXJob = crate::GlobalNamespace::OVRTriangleMesh_NegateXJob;
+    #[cfg(feature = "OVRTriangleMesh+Triangle")]
+    pub type Triangle = crate::GlobalNamespace::OVRTriangleMesh_Triangle;
     pub fn Equals_OVRTriangleMesh0(
         &mut self,
-        other: OVRTriangleMesh,
+        other: crate::GlobalNamespace::OVRTriangleMesh,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -172,9 +174,9 @@ impl OVRTriangleMesh {
     }
     pub fn IOVRAnchorComponent_OVRTriangleMesh__FromAnchor(
         &mut self,
-        anchor: OVRAnchor,
-    ) -> quest_hook::libil2cpp::Result<OVRTriangleMesh> {
-        let __cordl_ret: OVRTriangleMesh = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        anchor: crate::GlobalNamespace::OVRAnchor,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTriangleMesh> {
+        let __cordl_ret: crate::GlobalNamespace::OVRTriangleMesh = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "IOVRAnchorComponent<OVRTriangleMesh>.FromAnchor",
             (anchor),
@@ -185,8 +187,8 @@ impl OVRTriangleMesh {
         &mut self,
         enabled: bool,
         timeout: f64,
-    ) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
-        let __cordl_ret: OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
+        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "IOVRAnchorComponent<OVRTriangleMesh>.SetEnabledAsync",
             (enabled, timeout),
@@ -276,7 +278,7 @@ impl OVRTriangleMesh {
     }
     pub fn _ctor(
         &mut self,
-        anchor: OVRAnchor,
+        anchor: crate::GlobalNamespace::OVRAnchor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

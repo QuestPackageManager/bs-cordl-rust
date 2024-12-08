@@ -6,25 +6,27 @@ pub struct BeatmapDataLoaderUtils {
 }
 #[cfg(feature = "BeatmapDataLoaderUtils")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapDataLoaderUtils => ""."BeatmapDataLoaderUtils"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapDataLoaderUtils => ""
+    ."BeatmapDataLoaderUtils"
 );
 #[cfg(feature = "BeatmapDataLoaderUtils")]
-impl std::ops::Deref for BeatmapDataLoaderUtils {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapDataLoaderUtils {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDataLoaderUtils")]
-impl std::ops::DerefMut for BeatmapDataLoaderUtils {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDataLoaderUtils {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDataLoaderUtils")]
-impl BeatmapDataLoaderUtils {}
+impl crate::GlobalNamespace::BeatmapDataLoaderUtils {}
 #[cfg(feature = "BeatmapDataLoaderUtils")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapDataLoaderUtils {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapDataLoaderUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

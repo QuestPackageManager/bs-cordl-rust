@@ -2,31 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectLevelPackDestination {
-    __cordl_parent: MenuDestination,
-    pub beatmapLevelPack: *mut BeatmapLevelPack,
+    __cordl_parent: crate::GlobalNamespace::MenuDestination,
+    pub beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
 }
 #[cfg(feature = "SelectLevelPackDestination")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SelectLevelPackDestination => ""
-    ."SelectLevelPackDestination"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SelectLevelPackDestination =>
+    ""."SelectLevelPackDestination"
 );
 #[cfg(feature = "SelectLevelPackDestination")]
-impl std::ops::Deref for SelectLevelPackDestination {
-    type Target = MenuDestination;
+impl std::ops::Deref for crate::GlobalNamespace::SelectLevelPackDestination {
+    type Target = crate::GlobalNamespace::MenuDestination;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SelectLevelPackDestination")]
-impl std::ops::DerefMut for SelectLevelPackDestination {
+impl std::ops::DerefMut for crate::GlobalNamespace::SelectLevelPackDestination {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SelectLevelPackDestination")]
-impl SelectLevelPackDestination {
+impl crate::GlobalNamespace::SelectLevelPackDestination {
     pub fn New(
-        beatmapLevelPack: *mut BeatmapLevelPack,
+        beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -36,7 +36,7 @@ impl SelectLevelPackDestination {
     }
     pub fn _ctor(
         &mut self,
-        beatmapLevelPack: *mut BeatmapLevelPack,
+        beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -47,7 +47,8 @@ impl SelectLevelPackDestination {
     }
 }
 #[cfg(feature = "SelectLevelPackDestination")]
-impl quest_hook::libil2cpp::ObjectType for SelectLevelPackDestination {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SelectLevelPackDestination {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

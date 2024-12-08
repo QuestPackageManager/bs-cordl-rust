@@ -27,24 +27,24 @@ pub struct ReflectionProbeBakingOverride {
 }
 #[cfg(feature = "ReflectionProbeBakingOverride")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ReflectionProbeBakingOverride => ""
-    ."ReflectionProbeBakingOverride"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ReflectionProbeBakingOverride
+    => ""."ReflectionProbeBakingOverride"
 );
 #[cfg(feature = "ReflectionProbeBakingOverride")]
-impl std::ops::Deref for ReflectionProbeBakingOverride {
+impl std::ops::Deref for crate::GlobalNamespace::ReflectionProbeBakingOverride {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ReflectionProbeBakingOverride")]
-impl std::ops::DerefMut for ReflectionProbeBakingOverride {
+impl std::ops::DerefMut for crate::GlobalNamespace::ReflectionProbeBakingOverride {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ReflectionProbeBakingOverride")]
-impl ReflectionProbeBakingOverride {
+impl crate::GlobalNamespace::ReflectionProbeBakingOverride {
     #[cfg(feature = "ReflectionProbeBakingOverride+ActiveStateHandling")]
     pub type ActiveStateHandling = crate::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -76,7 +76,8 @@ impl ReflectionProbeBakingOverride {
     }
 }
 #[cfg(feature = "ReflectionProbeBakingOverride")]
-impl quest_hook::libil2cpp::ObjectType for ReflectionProbeBakingOverride {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ReflectionProbeBakingOverride {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

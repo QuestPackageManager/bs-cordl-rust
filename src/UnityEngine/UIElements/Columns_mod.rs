@@ -61,14 +61,14 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Columns {
 }
 #[cfg(feature = "UnityEngine+UIElements+Columns")]
 impl crate::UnityEngine::UIElements::Columns {
-    #[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectTraits_1")]
-    pub type UxmlObjectTraits_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::Columns_UxmlObjectTraits_1<
-        T,
-    >;
     #[cfg(feature = "UnityEngine+UIElements+Columns+StretchMode")]
     pub type StretchMode = crate::UnityEngine::UIElements::Columns_StretchMode;
     #[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectFactory_1")]
     pub type UxmlObjectFactory_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::Columns_UxmlObjectFactory_1<
+        T,
+    >;
+    #[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectTraits_1")]
+    pub type UxmlObjectTraits_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::Columns_UxmlObjectTraits_1<
         T,
     >;
     #[cfg(feature = "UnityEngine+UIElements+Columns+__c")]

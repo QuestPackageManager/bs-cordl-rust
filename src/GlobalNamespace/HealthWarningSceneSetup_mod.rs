@@ -3,27 +3,28 @@
 #[derive(Debug)]
 pub struct HealthWarningSceneSetup {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _sceneSetupData: *mut HealthWarningSceneSetupData,
+    pub _sceneSetupData: *mut crate::GlobalNamespace::HealthWarningSceneSetupData,
 }
 #[cfg(feature = "HealthWarningSceneSetup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for HealthWarningSceneSetup => ""."HealthWarningSceneSetup"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::HealthWarningSceneSetup => ""
+    ."HealthWarningSceneSetup"
 );
 #[cfg(feature = "HealthWarningSceneSetup")]
-impl std::ops::Deref for HealthWarningSceneSetup {
+impl std::ops::Deref for crate::GlobalNamespace::HealthWarningSceneSetup {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HealthWarningSceneSetup")]
-impl std::ops::DerefMut for HealthWarningSceneSetup {
+impl std::ops::DerefMut for crate::GlobalNamespace::HealthWarningSceneSetup {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "HealthWarningSceneSetup")]
-impl HealthWarningSceneSetup {
+impl crate::GlobalNamespace::HealthWarningSceneSetup {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -53,7 +54,8 @@ impl HealthWarningSceneSetup {
     }
 }
 #[cfg(feature = "HealthWarningSceneSetup")]
-impl quest_hook::libil2cpp::ObjectType for HealthWarningSceneSetup {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::HealthWarningSceneSetup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

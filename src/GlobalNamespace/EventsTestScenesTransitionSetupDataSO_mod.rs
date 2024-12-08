@@ -2,31 +2,33 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventsTestScenesTransitionSetupDataSO {
-    __cordl_parent: ScenesTransitionSetupDataSO,
-    pub _environmentInfo: *mut EnvironmentInfoSO,
-    pub _eventsTestSceneInfo: *mut SceneInfo,
-    pub _gameCoreSceneInfo: *mut SceneInfo,
+    __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    pub _environmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub _eventsTestSceneInfo: *mut crate::GlobalNamespace::SceneInfo,
+    pub _gameCoreSceneInfo: *mut crate::GlobalNamespace::SceneInfo,
 }
 #[cfg(feature = "EventsTestScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EventsTestScenesTransitionSetupDataSO => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::EventsTestScenesTransitionSetupDataSO => ""
     ."EventsTestScenesTransitionSetupDataSO"
 );
 #[cfg(feature = "EventsTestScenesTransitionSetupDataSO")]
-impl std::ops::Deref for EventsTestScenesTransitionSetupDataSO {
-    type Target = ScenesTransitionSetupDataSO;
+impl std::ops::Deref for crate::GlobalNamespace::EventsTestScenesTransitionSetupDataSO {
+    type Target = crate::GlobalNamespace::ScenesTransitionSetupDataSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EventsTestScenesTransitionSetupDataSO")]
-impl std::ops::DerefMut for EventsTestScenesTransitionSetupDataSO {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::EventsTestScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EventsTestScenesTransitionSetupDataSO")]
-impl EventsTestScenesTransitionSetupDataSO {
+impl crate::GlobalNamespace::EventsTestScenesTransitionSetupDataSO {
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -56,7 +58,8 @@ impl EventsTestScenesTransitionSetupDataSO {
     }
 }
 #[cfg(feature = "EventsTestScenesTransitionSetupDataSO")]
-impl quest_hook::libil2cpp::ObjectType for EventsTestScenesTransitionSetupDataSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EventsTestScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -5,29 +5,30 @@ pub struct ConditionalImageMaterialSwitcher {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _material0: *mut crate::UnityEngine::Material,
     pub _material1: *mut crate::UnityEngine::Material,
-    pub _value: *mut BoolSO,
+    pub _value: *mut crate::GlobalNamespace::BoolSO,
     pub _image: *mut crate::UnityEngine::UI::Image,
 }
 #[cfg(feature = "ConditionalImageMaterialSwitcher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ConditionalImageMaterialSwitcher => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ConditionalImageMaterialSwitcher => ""
     ."ConditionalImageMaterialSwitcher"
 );
 #[cfg(feature = "ConditionalImageMaterialSwitcher")]
-impl std::ops::Deref for ConditionalImageMaterialSwitcher {
+impl std::ops::Deref for crate::GlobalNamespace::ConditionalImageMaterialSwitcher {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ConditionalImageMaterialSwitcher")]
-impl std::ops::DerefMut for ConditionalImageMaterialSwitcher {
+impl std::ops::DerefMut for crate::GlobalNamespace::ConditionalImageMaterialSwitcher {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ConditionalImageMaterialSwitcher")]
-impl ConditionalImageMaterialSwitcher {
+impl crate::GlobalNamespace::ConditionalImageMaterialSwitcher {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -57,7 +58,8 @@ impl ConditionalImageMaterialSwitcher {
     }
 }
 #[cfg(feature = "ConditionalImageMaterialSwitcher")]
-impl quest_hook::libil2cpp::ObjectType for ConditionalImageMaterialSwitcher {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ConditionalImageMaterialSwitcher {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

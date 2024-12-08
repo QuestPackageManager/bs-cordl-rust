@@ -6,24 +6,26 @@ pub struct MainMenuAdditionalComponentsInstaller {
 }
 #[cfg(feature = "MainMenuAdditionalComponentsInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MainMenuAdditionalComponentsInstaller => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MainMenuAdditionalComponentsInstaller => ""
     ."MainMenuAdditionalComponentsInstaller"
 );
 #[cfg(feature = "MainMenuAdditionalComponentsInstaller")]
-impl std::ops::Deref for MainMenuAdditionalComponentsInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::MainMenuAdditionalComponentsInstaller {
     type Target = crate::Zenject::ScriptableObjectInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainMenuAdditionalComponentsInstaller")]
-impl std::ops::DerefMut for MainMenuAdditionalComponentsInstaller {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MainMenuAdditionalComponentsInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainMenuAdditionalComponentsInstaller")]
-impl MainMenuAdditionalComponentsInstaller {
+impl crate::GlobalNamespace::MainMenuAdditionalComponentsInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -53,7 +55,8 @@ impl MainMenuAdditionalComponentsInstaller {
     }
 }
 #[cfg(feature = "MainMenuAdditionalComponentsInstaller")]
-impl quest_hook::libil2cpp::ObjectType for MainMenuAdditionalComponentsInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MainMenuAdditionalComponentsInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

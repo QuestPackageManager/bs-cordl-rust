@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpriteLightWithId {
-    __cordl_parent: LightWithIdMonoBehaviour,
+    __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
     pub _spriteRenderer: *mut crate::UnityEngine::SpriteRenderer,
     pub _hideIfAlphaOutOfRange: bool,
     pub _hideAlphaRangeMin: f32,
@@ -30,23 +30,24 @@ pub struct SpriteLightWithId {
 }
 #[cfg(feature = "SpriteLightWithId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SpriteLightWithId => ""."SpriteLightWithId"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SpriteLightWithId => ""
+    ."SpriteLightWithId"
 );
 #[cfg(feature = "SpriteLightWithId")]
-impl std::ops::Deref for SpriteLightWithId {
-    type Target = LightWithIdMonoBehaviour;
+impl std::ops::Deref for crate::GlobalNamespace::SpriteLightWithId {
+    type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SpriteLightWithId")]
-impl std::ops::DerefMut for SpriteLightWithId {
+impl std::ops::DerefMut for crate::GlobalNamespace::SpriteLightWithId {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SpriteLightWithId")]
-impl SpriteLightWithId {
+impl crate::GlobalNamespace::SpriteLightWithId {
     #[cfg(feature = "SpriteLightWithId+MultiplyColorByAlphaType")]
     pub type MultiplyColorByAlphaType = crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType;
     pub fn ColorWasSet(
@@ -89,7 +90,7 @@ impl SpriteLightWithId {
     }
 }
 #[cfg(feature = "SpriteLightWithId")]
-impl quest_hook::libil2cpp::ObjectType for SpriteLightWithId {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SpriteLightWithId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

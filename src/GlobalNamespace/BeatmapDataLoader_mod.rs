@@ -3,85 +3,94 @@
 #[derive(Debug)]
 pub struct BeatmapDataLoader {
     __cordl_parent: crate::System::Object,
-    pub _lastUsedBeatmapDataCache: LastUsedBeatmapDataCache,
+    pub _lastUsedBeatmapDataCache: crate::GlobalNamespace::LastUsedBeatmapDataCache,
 }
 #[cfg(feature = "BeatmapDataLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapDataLoader => ""."BeatmapDataLoader"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapDataLoader => ""
+    ."BeatmapDataLoader"
 );
 #[cfg(feature = "BeatmapDataLoader")]
-impl std::ops::Deref for BeatmapDataLoader {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapDataLoader {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDataLoader")]
-impl std::ops::DerefMut for BeatmapDataLoader {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDataLoader {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDataLoader")]
-impl BeatmapDataLoader {
-    #[cfg(feature = "BeatmapDataLoader+_LoadBeatmapDataAsync_d__4")]
-    pub type _LoadBeatmapDataAsync_d__4 = crate::GlobalNamespace::BeatmapDataLoader__LoadBeatmapDataAsync_d__4;
+impl crate::GlobalNamespace::BeatmapDataLoader {
     #[cfg(feature = "BeatmapDataLoader+_LoadBasicBeatmapDataAsync_d__1")]
     pub type _LoadBasicBeatmapDataAsync_d__1 = crate::GlobalNamespace::BeatmapDataLoader__LoadBasicBeatmapDataAsync_d__1;
+    #[cfg(feature = "BeatmapDataLoader+_LoadBeatmapDataAsync_d__4")]
+    pub type _LoadBeatmapDataAsync_d__4 = crate::GlobalNamespace::BeatmapDataLoader__LoadBeatmapDataAsync_d__4;
     pub fn LoadBasicBeatmapDataAsync(
         &mut self,
-        beatmapLevelData: *mut IBeatmapLevelData,
-        beatmapKey: BeatmapKey,
+        beatmapLevelData: *mut crate::GlobalNamespace::IBeatmapLevelData,
+        beatmapKey: crate::GlobalNamespace::BeatmapKey,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut BeatmapDataBasicInfo>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::BeatmapDataBasicInfo,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut BeatmapDataBasicInfo,
+            *mut crate::GlobalNamespace::BeatmapDataBasicInfo,
         > = __cordl_object
             .invoke("LoadBasicBeatmapDataAsync", (beatmapLevelData, beatmapKey))?;
         Ok(__cordl_ret)
     }
     pub fn LoadBasicBeatmapData_IBeatmapLevelData_ByRefMut0(
         &mut self,
-        beatmapLevelData: *mut IBeatmapLevelData,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapDataBasicInfo> {
+        beatmapLevelData: *mut crate::GlobalNamespace::IBeatmapLevelData,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BeatmapDataBasicInfo,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapDataBasicInfo = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapDataBasicInfo = __cordl_object
             .invoke("LoadBasicBeatmapData", (beatmapLevelData, beatmapKey))?;
         Ok(__cordl_ret)
     }
     pub fn LoadBasicBeatmapData_String1(
         &mut self,
         beatmapJson: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapDataBasicInfo> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BeatmapDataBasicInfo,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapDataBasicInfo = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapDataBasicInfo = __cordl_object
             .invoke("LoadBasicBeatmapData", (beatmapJson))?;
         Ok(__cordl_ret)
     }
     pub fn LoadBeatmapData(
         &mut self,
-        beatmapLevelData: *mut IBeatmapLevelData,
-        beatmapKey: BeatmapKey,
+        beatmapLevelData: *mut crate::GlobalNamespace::IBeatmapLevelData,
+        beatmapKey: crate::GlobalNamespace::BeatmapKey,
         startBpm: f32,
         loadingForDesignatedEnvironment: bool,
-        environmentInfo: *mut IEnvironmentInfo,
-        beatmapLevelDataVersion: BeatmapLevelDataVersion,
-        gameplayModifiers: *mut GameplayModifiers,
-        playerSpecificSettings: *mut PlayerSpecificSettings,
-    ) -> quest_hook::libil2cpp::Result<*mut IReadonlyBeatmapData> {
+        environmentInfo: *mut crate::GlobalNamespace::IEnvironmentInfo,
+        beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+        playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::IReadonlyBeatmapData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IReadonlyBeatmapData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IReadonlyBeatmapData = __cordl_object
             .invoke(
                 "LoadBeatmapData",
                 (
@@ -99,23 +108,25 @@ impl BeatmapDataLoader {
     }
     pub fn LoadBeatmapDataAsync(
         &mut self,
-        beatmapLevelData: *mut IBeatmapLevelData,
-        beatmapKey: BeatmapKey,
+        beatmapLevelData: *mut crate::GlobalNamespace::IBeatmapLevelData,
+        beatmapKey: crate::GlobalNamespace::BeatmapKey,
         startBpm: f32,
         loadingForDesignatedEnvironment: bool,
-        environmentInfo: *mut IEnvironmentInfo,
-        beatmapLevelDataVersion: BeatmapLevelDataVersion,
-        gameplayModifiers: *mut GameplayModifiers,
-        playerSpecificSettings: *mut PlayerSpecificSettings,
+        environmentInfo: *mut crate::GlobalNamespace::IEnvironmentInfo,
+        beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+        playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
         enableBeatmapDataCaching: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut IReadonlyBeatmapData>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::IReadonlyBeatmapData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut IReadonlyBeatmapData,
+            *mut crate::GlobalNamespace::IReadonlyBeatmapData,
         > = __cordl_object
             .invoke(
                 "LoadBeatmapDataAsync",
@@ -152,7 +163,7 @@ impl BeatmapDataLoader {
     }
 }
 #[cfg(feature = "BeatmapDataLoader")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapDataLoader {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapDataLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -344,18 +344,18 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UQuery {
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery")]
 impl crate::UnityEngine::UIElements::UQuery {
-    #[cfg(feature = "UnityEngine+UIElements+UQuery+IVisualPredicateWrapper")]
-    type IVisualPredicateWrapper = crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper;
-    #[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher")]
-    pub type UQueryMatcher = crate::UnityEngine::UIElements::UQuery_UQueryMatcher;
     #[cfg(feature = "UnityEngine+UIElements+UQuery+FirstQueryMatcher")]
     pub type FirstQueryMatcher = crate::UnityEngine::UIElements::UQuery_FirstQueryMatcher;
-    #[cfg(feature = "UnityEngine+UIElements+UQuery+SingleQueryMatcher")]
-    pub type SingleQueryMatcher = crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher;
+    #[cfg(feature = "UnityEngine+UIElements+UQuery+IVisualPredicateWrapper")]
+    type IVisualPredicateWrapper = crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper;
     #[cfg(feature = "UnityEngine+UIElements+UQuery+IsOfType_1")]
     pub type IsOfType_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::UQuery_IsOfType_1<
         T,
     >;
+    #[cfg(feature = "UnityEngine+UIElements+UQuery+SingleQueryMatcher")]
+    pub type SingleQueryMatcher = crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher;
+    #[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher")]
+    pub type UQueryMatcher = crate::UnityEngine::UIElements::UQuery_UQueryMatcher;
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UQuery {

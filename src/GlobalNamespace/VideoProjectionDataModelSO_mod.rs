@@ -80,31 +80,31 @@ for crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId {
 #[repr(C)]
 #[derive(Debug)]
 pub struct VideoProjectionDataModelSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _videoClipsWithId: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId,
     >,
 }
 #[cfg(feature = "VideoProjectionDataModelSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for VideoProjectionDataModelSO => ""
-    ."VideoProjectionDataModelSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::VideoProjectionDataModelSO =>
+    ""."VideoProjectionDataModelSO"
 );
 #[cfg(feature = "VideoProjectionDataModelSO")]
-impl std::ops::Deref for VideoProjectionDataModelSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::VideoProjectionDataModelSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "VideoProjectionDataModelSO")]
-impl std::ops::DerefMut for VideoProjectionDataModelSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::VideoProjectionDataModelSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "VideoProjectionDataModelSO")]
-impl VideoProjectionDataModelSO {
+impl crate::GlobalNamespace::VideoProjectionDataModelSO {
     #[cfg(feature = "VideoProjectionDataModelSO+VideoClipWithId")]
     pub type VideoClipWithId = crate::GlobalNamespace::VideoProjectionDataModelSO_VideoClipWithId;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -141,7 +141,8 @@ impl VideoProjectionDataModelSO {
     }
 }
 #[cfg(feature = "VideoProjectionDataModelSO")]
-impl quest_hook::libil2cpp::ObjectType for VideoProjectionDataModelSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::VideoProjectionDataModelSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

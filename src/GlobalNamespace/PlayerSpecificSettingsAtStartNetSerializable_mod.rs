@@ -4,32 +4,35 @@
 pub struct PlayerSpecificSettingsAtStartNetSerializable {
     __cordl_parent: crate::System::Object,
     pub _activePlayerSpecificSettingsAtGameStart_k__BackingField: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut PlayerSpecificSettingsNetSerializable,
+        *mut crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
     >,
     pub _activePlayersAtGameStart: *mut crate::System::Collections::Generic::List_1<
-        *mut IConnectedPlayer,
+        *mut crate::GlobalNamespace::IConnectedPlayer,
     >,
 }
 #[cfg(feature = "PlayerSpecificSettingsAtStartNetSerializable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerSpecificSettingsAtStartNetSerializable => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable => ""
     ."PlayerSpecificSettingsAtStartNetSerializable"
 );
 #[cfg(feature = "PlayerSpecificSettingsAtStartNetSerializable")]
-impl std::ops::Deref for PlayerSpecificSettingsAtStartNetSerializable {
+impl std::ops::Deref
+for crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSpecificSettingsAtStartNetSerializable")]
-impl std::ops::DerefMut for PlayerSpecificSettingsAtStartNetSerializable {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSpecificSettingsAtStartNetSerializable")]
-impl PlayerSpecificSettingsAtStartNetSerializable {
+impl crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable {
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
@@ -50,7 +53,7 @@ impl PlayerSpecificSettingsAtStartNetSerializable {
     }
     pub fn New_List_1_1(
         activePlayerSpecificSettingsAtGameStart: *mut crate::System::Collections::Generic::List_1<
-            *mut PlayerSpecificSettingsNetSerializable,
+            *mut crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -83,7 +86,7 @@ impl PlayerSpecificSettingsAtStartNetSerializable {
     pub fn _ctor_List_1_1(
         &mut self,
         activePlayerSpecificSettingsAtGameStart: *mut crate::System::Collections::Generic::List_1<
-            *mut PlayerSpecificSettingsNetSerializable,
+            *mut crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -97,34 +100,36 @@ impl PlayerSpecificSettingsAtStartNetSerializable {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut PlayerSpecificSettingsNetSerializable,
+            *mut crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut PlayerSpecificSettingsNetSerializable,
+            *mut crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
         > = __cordl_object.invoke("get_activePlayerSpecificSettingsAtGameStart", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_activePlayersAtGameStart(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<*mut IConnectedPlayer>,
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut IConnectedPlayer,
+            *mut crate::GlobalNamespace::IConnectedPlayer,
         > = __cordl_object.invoke("get_activePlayersAtGameStart", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_activePlayerSpecificSettingsAtGameStart(
         &mut self,
         value: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut PlayerSpecificSettingsNetSerializable,
+            *mut crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -136,7 +141,8 @@ impl PlayerSpecificSettingsAtStartNetSerializable {
     }
 }
 #[cfg(feature = "PlayerSpecificSettingsAtStartNetSerializable")]
-impl quest_hook::libil2cpp::ObjectType for PlayerSpecificSettingsAtStartNetSerializable {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

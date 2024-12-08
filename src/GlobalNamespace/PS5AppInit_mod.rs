@@ -3,34 +3,34 @@
 #[derive(Debug)]
 pub struct PS5AppInit {
     __cordl_parent: crate::BeatSaber::Init::BSAppInit,
-    pub _mainSystemInit: *mut MainSystemInit,
-    pub _settingsApplicator: *mut SettingsApplicatorSO,
-    pub _defaultScenesTransitionsFromInit: *mut DefaultScenesTransitionsFromInit,
-    pub _appInitScenesTransitionSetupDataContainer: *mut AppInitScenesTransitionSetupDataContainerSO,
-    pub _ps5SharedPackageSKUs: *mut PS5SharedPackageSKUsSO,
-    pub _sonyOnGoingToBackgroundSaveHandler: *mut SonyOnGoingToBackgroundSaveHandler,
+    pub _mainSystemInit: *mut crate::GlobalNamespace::MainSystemInit,
+    pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
+    pub _defaultScenesTransitionsFromInit: *mut crate::GlobalNamespace::DefaultScenesTransitionsFromInit,
+    pub _appInitScenesTransitionSetupDataContainer: *mut crate::GlobalNamespace::AppInitScenesTransitionSetupDataContainerSO,
+    pub _ps5SharedPackageSKUs: *mut crate::GlobalNamespace::PS5SharedPackageSKUsSO,
+    pub _sonyOnGoingToBackgroundSaveHandler: *mut crate::GlobalNamespace::SonyOnGoingToBackgroundSaveHandler,
     pub _ps5AdvancedHapticPlayerPrefab: *mut crate::UnityEngine::GameObject,
-    pub _backgroundExecutionHelper: *mut SonyBackgroundExecutionHelper,
+    pub _backgroundExecutionHelper: *mut crate::GlobalNamespace::SonyBackgroundExecutionHelper,
 }
 #[cfg(feature = "PS5AppInit")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PS5AppInit => ""."PS5AppInit"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PS5AppInit => ""."PS5AppInit"
 );
 #[cfg(feature = "PS5AppInit")]
-impl std::ops::Deref for PS5AppInit {
+impl std::ops::Deref for crate::GlobalNamespace::PS5AppInit {
     type Target = crate::BeatSaber::Init::BSAppInit;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PS5AppInit")]
-impl std::ops::DerefMut for PS5AppInit {
+impl std::ops::DerefMut for crate::GlobalNamespace::PS5AppInit {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PS5AppInit")]
-impl PS5AppInit {
+impl crate::GlobalNamespace::PS5AppInit {
     #[cfg(feature = "PS5AppInit+_PreloadAsync_d__8")]
     pub type _PreloadAsync_d__8 = crate::GlobalNamespace::PS5AppInit__PreloadAsync_d__8;
     pub fn AppStartAndMultiSceneEditorSetup(
@@ -122,7 +122,7 @@ impl PS5AppInit {
     }
 }
 #[cfg(feature = "PS5AppInit")]
-impl quest_hook::libil2cpp::ObjectType for PS5AppInit {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PS5AppInit {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

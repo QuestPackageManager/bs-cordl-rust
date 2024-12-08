@@ -2,31 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteDebrisRigidbodyPhysics {
-    __cordl_parent: NoteDebrisPhysics,
+    __cordl_parent: crate::GlobalNamespace::NoteDebrisPhysics,
     pub _rigidbody: *mut crate::UnityEngine::Rigidbody,
-    pub _simplePhysics: *mut NoteDebrisSimplePhysics,
+    pub _simplePhysics: *mut crate::GlobalNamespace::NoteDebrisSimplePhysics,
     pub _firstUpdate: bool,
 }
 #[cfg(feature = "NoteDebrisRigidbodyPhysics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteDebrisRigidbodyPhysics => ""
-    ."NoteDebrisRigidbodyPhysics"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteDebrisRigidbodyPhysics =>
+    ""."NoteDebrisRigidbodyPhysics"
 );
 #[cfg(feature = "NoteDebrisRigidbodyPhysics")]
-impl std::ops::Deref for NoteDebrisRigidbodyPhysics {
-    type Target = NoteDebrisPhysics;
+impl std::ops::Deref for crate::GlobalNamespace::NoteDebrisRigidbodyPhysics {
+    type Target = crate::GlobalNamespace::NoteDebrisPhysics;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteDebrisRigidbodyPhysics")]
-impl std::ops::DerefMut for NoteDebrisRigidbodyPhysics {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteDebrisRigidbodyPhysics {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteDebrisRigidbodyPhysics")]
-impl NoteDebrisRigidbodyPhysics {
+impl crate::GlobalNamespace::NoteDebrisRigidbodyPhysics {
     pub fn AddVelocity(
         &mut self,
         force: crate::UnityEngine::Vector3,
@@ -89,7 +89,8 @@ impl NoteDebrisRigidbodyPhysics {
     }
 }
 #[cfg(feature = "NoteDebrisRigidbodyPhysics")]
-impl quest_hook::libil2cpp::ObjectType for NoteDebrisRigidbodyPhysics {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NoteDebrisRigidbodyPhysics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

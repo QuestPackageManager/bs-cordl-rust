@@ -2,17 +2,18 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct BeatmapLevelSelectionMask {
-    pub difficulties: BeatmapDifficultyMask,
-    pub modifiers: GameplayModifierMask,
-    pub songPacks: SongPackMask,
+    pub difficulties: crate::GlobalNamespace::BeatmapDifficultyMask,
+    pub modifiers: crate::GlobalNamespace::GameplayModifierMask,
+    pub songPacks: crate::GlobalNamespace::SongPackMask,
 }
 #[cfg(feature = "BeatmapLevelSelectionMask")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for BeatmapLevelSelectionMask => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapLevelSelectionMask => ""
     ."BeatmapLevelSelectionMask"
 );
 #[cfg(feature = "BeatmapLevelSelectionMask")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for BeatmapLevelSelectionMask {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::BeatmapLevelSelectionMask {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -22,10 +23,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for BeatmapLevelSelectionMask {
     }
 }
 #[cfg(feature = "BeatmapLevelSelectionMask")]
-impl BeatmapLevelSelectionMask {
+impl crate::GlobalNamespace::BeatmapLevelSelectionMask {
     pub fn Equals_BeatmapLevelSelectionMask1(
         &mut self,
-        other: BeatmapLevelSelectionMask,
+        other: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -67,9 +68,9 @@ impl BeatmapLevelSelectionMask {
     }
     pub fn _ctor(
         &mut self,
-        difficulties: BeatmapDifficultyMask,
-        modifiers: GameplayModifierMask,
-        songPacks: SongPackMask,
+        difficulties: crate::GlobalNamespace::BeatmapDifficultyMask,
+        modifiers: crate::GlobalNamespace::GameplayModifierMask,
+        songPacks: crate::GlobalNamespace::SongPackMask,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

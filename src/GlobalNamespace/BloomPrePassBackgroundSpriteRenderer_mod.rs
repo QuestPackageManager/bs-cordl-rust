@@ -2,29 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundSpriteRenderer {
-    __cordl_parent: BloomPrePassBackgroundNonLightRendererCore,
+    __cordl_parent: crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore,
     pub _spriteRenderer: *mut crate::UnityEngine::SpriteRenderer,
 }
 #[cfg(feature = "BloomPrePassBackgroundSpriteRenderer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomPrePassBackgroundSpriteRenderer => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BloomPrePassBackgroundSpriteRenderer => ""
     ."BloomPrePassBackgroundSpriteRenderer"
 );
 #[cfg(feature = "BloomPrePassBackgroundSpriteRenderer")]
-impl std::ops::Deref for BloomPrePassBackgroundSpriteRenderer {
-    type Target = BloomPrePassBackgroundNonLightRendererCore;
+impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassBackgroundSpriteRenderer {
+    type Target = crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundSpriteRenderer")]
-impl std::ops::DerefMut for BloomPrePassBackgroundSpriteRenderer {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::BloomPrePassBackgroundSpriteRenderer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundSpriteRenderer")]
-impl BloomPrePassBackgroundSpriteRenderer {
+impl crate::GlobalNamespace::BloomPrePassBackgroundSpriteRenderer {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -54,7 +56,8 @@ impl BloomPrePassBackgroundSpriteRenderer {
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundSpriteRenderer")]
-impl quest_hook::libil2cpp::ObjectType for BloomPrePassBackgroundSpriteRenderer {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BloomPrePassBackgroundSpriteRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

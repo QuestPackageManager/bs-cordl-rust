@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EditableModifiersSelectionView {
-    __cordl_parent: ModifiersSelectionView,
+    __cordl_parent: crate::GlobalNamespace::ModifiersSelectionView,
     pub _editButton: *mut crate::UnityEngine::UI::Button,
     pub _clearButton: *mut crate::UnityEngine::UI::Button,
     pub _modifiersListCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
@@ -11,24 +11,24 @@ pub struct EditableModifiersSelectionView {
 }
 #[cfg(feature = "EditableModifiersSelectionView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EditableModifiersSelectionView => ""
-    ."EditableModifiersSelectionView"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EditableModifiersSelectionView
+    => ""."EditableModifiersSelectionView"
 );
 #[cfg(feature = "EditableModifiersSelectionView")]
-impl std::ops::Deref for EditableModifiersSelectionView {
-    type Target = ModifiersSelectionView;
+impl std::ops::Deref for crate::GlobalNamespace::EditableModifiersSelectionView {
+    type Target = crate::GlobalNamespace::ModifiersSelectionView;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EditableModifiersSelectionView")]
-impl std::ops::DerefMut for EditableModifiersSelectionView {
+impl std::ops::DerefMut for crate::GlobalNamespace::EditableModifiersSelectionView {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EditableModifiersSelectionView")]
-impl EditableModifiersSelectionView {
+impl crate::GlobalNamespace::EditableModifiersSelectionView {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -38,7 +38,7 @@ impl EditableModifiersSelectionView {
     }
     pub fn SetGameplayModifiers(
         &mut self,
-        gameplayModifiers: *mut GameplayModifiers,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -137,7 +137,8 @@ impl EditableModifiersSelectionView {
     }
 }
 #[cfg(feature = "EditableModifiersSelectionView")]
-impl quest_hook::libil2cpp::ObjectType for EditableModifiersSelectionView {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EditableModifiersSelectionView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,29 +2,33 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FixedScenesScenesTransitionSetupDataSO {
-    __cordl_parent: ScenesTransitionSetupDataSO,
-    pub _sceneInfos: *mut quest_hook::libil2cpp::Il2CppArray<*mut SceneInfo>,
+    __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    pub _sceneInfos: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::SceneInfo,
+    >,
 }
 #[cfg(feature = "FixedScenesScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FixedScenesScenesTransitionSetupDataSO => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::FixedScenesScenesTransitionSetupDataSO => ""
     ."FixedScenesScenesTransitionSetupDataSO"
 );
 #[cfg(feature = "FixedScenesScenesTransitionSetupDataSO")]
-impl std::ops::Deref for FixedScenesScenesTransitionSetupDataSO {
-    type Target = ScenesTransitionSetupDataSO;
+impl std::ops::Deref for crate::GlobalNamespace::FixedScenesScenesTransitionSetupDataSO {
+    type Target = crate::GlobalNamespace::ScenesTransitionSetupDataSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FixedScenesScenesTransitionSetupDataSO")]
-impl std::ops::DerefMut for FixedScenesScenesTransitionSetupDataSO {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::FixedScenesScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FixedScenesScenesTransitionSetupDataSO")]
-impl FixedScenesScenesTransitionSetupDataSO {
+impl crate::GlobalNamespace::FixedScenesScenesTransitionSetupDataSO {
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -54,7 +58,8 @@ impl FixedScenesScenesTransitionSetupDataSO {
     }
 }
 #[cfg(feature = "FixedScenesScenesTransitionSetupDataSO")]
-impl quest_hook::libil2cpp::ObjectType for FixedScenesScenesTransitionSetupDataSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FixedScenesScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -4,34 +4,35 @@
 pub struct GameServersFilter {
     __cordl_parent: crate::System::Object,
     pub filterByDifficulty: bool,
-    pub filteredDifficulty: BeatmapDifficultyMask,
+    pub filteredDifficulty: crate::GlobalNamespace::BeatmapDifficultyMask,
     pub filterByModifiers: bool,
-    pub filteredModifiers: GameplayModifierMask,
+    pub filteredModifiers: crate::GlobalNamespace::GameplayModifierMask,
     pub filterBySongPacks: bool,
-    pub filteredSongPacks: SongPackMask,
+    pub filteredSongPacks: crate::GlobalNamespace::SongPackMask,
     pub showFull: bool,
     pub showProtected: bool,
     pub showInternetGames: bool,
 }
 #[cfg(feature = "GameServersFilter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameServersFilter => ""."GameServersFilter"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameServersFilter => ""
+    ."GameServersFilter"
 );
 #[cfg(feature = "GameServersFilter")]
-impl std::ops::Deref for GameServersFilter {
+impl std::ops::Deref for crate::GlobalNamespace::GameServersFilter {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameServersFilter")]
-impl std::ops::DerefMut for GameServersFilter {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameServersFilter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameServersFilter")]
-impl GameServersFilter {
+impl crate::GlobalNamespace::GameServersFilter {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -51,7 +52,7 @@ impl GameServersFilter {
     }
 }
 #[cfg(feature = "GameServersFilter")]
-impl quest_hook::libil2cpp::ObjectType for GameServersFilter {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameServersFilter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

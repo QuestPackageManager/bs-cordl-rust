@@ -182,10 +182,10 @@ for crate::System::Xml::Schema::XsdDateTime {
 impl crate::System::Xml::Schema::XsdDateTime {
     #[cfg(feature = "System+Xml+Schema+XsdDateTime+DateTimeTypeCode")]
     pub type DateTimeTypeCode = crate::System::Xml::Schema::XsdDateTime_DateTimeTypeCode;
-    #[cfg(feature = "System+Xml+Schema+XsdDateTime+XsdDateTimeKind")]
-    pub type XsdDateTimeKind = crate::System::Xml::Schema::XsdDateTime_XsdDateTimeKind;
     #[cfg(feature = "System+Xml+Schema+XsdDateTime+Parser")]
     pub type Parser = crate::System::Xml::Schema::XsdDateTime_Parser;
+    #[cfg(feature = "System+Xml+Schema+XsdDateTime+XsdDateTimeKind")]
+    pub type XsdDateTimeKind = crate::System::Xml::Schema::XsdDateTime_XsdDateTimeKind;
     pub fn InitiateXsdDateTime(
         &mut self,
         parser: crate::System::Xml::Schema::XsdDateTime_Parser,

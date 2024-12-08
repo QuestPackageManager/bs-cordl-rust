@@ -7,24 +7,27 @@ pub struct DisableSpatializerOnUnsupportedPlatforms {
 }
 #[cfg(feature = "DisableSpatializerOnUnsupportedPlatforms")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for DisableSpatializerOnUnsupportedPlatforms => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::DisableSpatializerOnUnsupportedPlatforms => ""
     ."DisableSpatializerOnUnsupportedPlatforms"
 );
 #[cfg(feature = "DisableSpatializerOnUnsupportedPlatforms")]
-impl std::ops::Deref for DisableSpatializerOnUnsupportedPlatforms {
+impl std::ops::Deref
+for crate::GlobalNamespace::DisableSpatializerOnUnsupportedPlatforms {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DisableSpatializerOnUnsupportedPlatforms")]
-impl std::ops::DerefMut for DisableSpatializerOnUnsupportedPlatforms {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::DisableSpatializerOnUnsupportedPlatforms {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "DisableSpatializerOnUnsupportedPlatforms")]
-impl DisableSpatializerOnUnsupportedPlatforms {
+impl crate::GlobalNamespace::DisableSpatializerOnUnsupportedPlatforms {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -44,7 +47,8 @@ impl DisableSpatializerOnUnsupportedPlatforms {
     }
 }
 #[cfg(feature = "DisableSpatializerOnUnsupportedPlatforms")]
-impl quest_hook::libil2cpp::ObjectType for DisableSpatializerOnUnsupportedPlatforms {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::DisableSpatializerOnUnsupportedPlatforms {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

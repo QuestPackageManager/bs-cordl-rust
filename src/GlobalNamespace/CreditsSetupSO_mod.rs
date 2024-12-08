@@ -14,23 +14,24 @@ pub struct CreditsSetupSO {
 }
 #[cfg(feature = "CreditsSetupSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CreditsSetupSO => ""."CreditsSetupSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CreditsSetupSO => ""
+    ."CreditsSetupSO"
 );
 #[cfg(feature = "CreditsSetupSO")]
-impl std::ops::Deref for CreditsSetupSO {
+impl std::ops::Deref for crate::GlobalNamespace::CreditsSetupSO {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CreditsSetupSO")]
-impl std::ops::DerefMut for CreditsSetupSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::CreditsSetupSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CreditsSetupSO")]
-impl CreditsSetupSO {
+impl crate::GlobalNamespace::CreditsSetupSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -50,7 +51,7 @@ impl CreditsSetupSO {
     }
 }
 #[cfg(feature = "CreditsSetupSO")]
-impl quest_hook::libil2cpp::ObjectType for CreditsSetupSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CreditsSetupSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

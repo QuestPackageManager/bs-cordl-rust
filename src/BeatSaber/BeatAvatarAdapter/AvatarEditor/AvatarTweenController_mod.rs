@@ -13,7 +13,7 @@ pub struct AvatarTweenController {
     pub _rightHandInnerTransform: *mut crate::UnityEngine::Transform,
     pub _bodyInnerTransform: *mut crate::UnityEngine::Transform,
     pub _popDuration: f32,
-    pub _popEaseType: EaseType,
+    pub _popEaseType: crate::GlobalNamespace::EaseType,
     pub _headPopAmount: f32,
     pub _handsPopAmount: f32,
     pub _clothesPopAmount: f32,
@@ -25,10 +25,10 @@ pub struct AvatarTweenController {
     pub _disappearDuration: f32,
     pub _disappearHeight: f32,
     pub _disappearSquash: crate::UnityEngine::Vector3,
-    pub _disappearScaleEase: EaseType,
-    pub _disappearPositionEase: EaseType,
+    pub _disappearScaleEase: crate::GlobalNamespace::EaseType,
+    pub _disappearPositionEase: crate::GlobalNamespace::EaseType,
     pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
-    pub _sharedCoroutineStarter: *mut ICoroutineStarter,
+    pub _sharedCoroutineStarter: *mut crate::GlobalNamespace::ICoroutineStarter,
     pub _popHeadTween: *mut crate::Tweening::Tween_1<f32>,
     pub _popLeftHandTween: *mut crate::Tweening::Tween_1<f32>,
     pub _popRightHandTween: *mut crate::Tweening::Tween_1<f32>,
@@ -88,10 +88,6 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController {
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController")]
 impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController {
     #[cfg(
-        feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController+__c__DisplayClass54_0"
-    )]
-    pub type __c__DisplayClass54_0 = crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController___c__DisplayClass54_0;
-    #[cfg(
         feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController+_AppearAnimation_d__55"
     )]
     pub type _AppearAnimation_d__55 = crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController__AppearAnimation_d__55;
@@ -99,6 +95,10 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController {
         feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController+_DisappearAnimation_d__60"
     )]
     pub type _DisappearAnimation_d__60 = crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController__DisappearAnimation_d__60;
+    #[cfg(
+        feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController+__c__DisplayClass54_0"
+    )]
+    pub type __c__DisplayClass54_0 = crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController___c__DisplayClass54_0;
     pub fn AppearAnimation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {

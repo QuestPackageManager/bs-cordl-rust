@@ -14,7 +14,7 @@ pub struct DiagnosticEventCollectorSingleton {
     pub m_UnhandledEvents: *mut crate::System::Collections::Generic::List_1<
         crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
     >,
-    pub s_EventHandlers: *mut DelegateList_1<
+    pub s_EventHandlers: *mut crate::GlobalNamespace::DelegateList_1<
         crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
     >,
     pub m_lastTickSent: f32,

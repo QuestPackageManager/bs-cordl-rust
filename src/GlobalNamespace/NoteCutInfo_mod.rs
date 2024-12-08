@@ -17,14 +17,14 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct NoteCutInfo {
-    pub noteData: *mut NoteData,
+    pub noteData: *mut crate::GlobalNamespace::NoteData,
     pub speedOK: bool,
     pub directionOK: bool,
     pub saberTypeOK: bool,
     pub wasCutTooSoon: bool,
     pub saberSpeed: f32,
     pub saberDir: crate::UnityEngine::Vector3,
-    pub saberType: SaberType,
+    pub saberType: crate::GlobalNamespace::SaberType,
     pub timeDeviation: f32,
     pub cutDirDeviation: f32,
     pub cutPoint: crate::UnityEngine::Vector3,
@@ -35,14 +35,14 @@ pub struct NoteCutInfo {
     pub inverseWorldRotation: crate::UnityEngine::Quaternion,
     pub noteRotation: crate::UnityEngine::Quaternion,
     pub notePosition: crate::UnityEngine::Vector3,
-    pub saberMovementData: *mut ISaberMovementData,
+    pub saberMovementData: *mut crate::GlobalNamespace::ISaberMovementData,
 }
 #[cfg(feature = "NoteCutInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for NoteCutInfo => ""."NoteCutInfo"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteCutInfo => ""."NoteCutInfo"
 );
 #[cfg(feature = "NoteCutInfo")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for NoteCutInfo {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::NoteCutInfo {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -52,19 +52,19 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for NoteCutInfo {
     }
 }
 #[cfg(feature = "NoteCutInfo")]
-impl NoteCutInfo {
+impl crate::GlobalNamespace::NoteCutInfo {
     #[cfg(feature = "NoteCutInfo+FailReason")]
     pub type FailReason = crate::GlobalNamespace::NoteCutInfo_FailReason;
     pub fn _ctor(
         &mut self,
-        noteData: *mut NoteData,
+        noteData: *mut crate::GlobalNamespace::NoteData,
         speedOK: bool,
         directionOK: bool,
         saberTypeOK: bool,
         wasCutTooSoon: bool,
         saberSpeed: f32,
         saberDir: crate::UnityEngine::Vector3,
-        saberType: SaberType,
+        saberType: crate::GlobalNamespace::SaberType,
         timeDeviation: f32,
         cutDirDeviation: f32,
         cutPoint: crate::UnityEngine::Vector3,
@@ -75,7 +75,7 @@ impl NoteCutInfo {
         inverseWorldRotation: crate::UnityEngine::Quaternion,
         noteRotation: crate::UnityEngine::Quaternion,
         notePosition: crate::UnityEngine::Vector3,
-        saberMovementData: *mut ISaberMovementData,
+        saberMovementData: *mut crate::GlobalNamespace::ISaberMovementData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

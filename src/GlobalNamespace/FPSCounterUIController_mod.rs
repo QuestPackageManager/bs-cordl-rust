@@ -8,29 +8,30 @@ pub struct FPSCounterUIController {
     pub _lowestFPSText: *mut crate::TMPro::TextMeshProUGUI,
     pub _highestFPSText: *mut crate::TMPro::TextMeshProUGUI,
     pub _droppedFramesText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _gameScenesManager: *mut GameScenesManager,
-    pub _fpsCounter: *mut FPSCounter,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
+    pub _fpsCounter: *mut crate::GlobalNamespace::FPSCounter,
     pub _timeToUpdateUI: f32,
 }
 #[cfg(feature = "FPSCounterUIController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FPSCounterUIController => ""."FPSCounterUIController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FPSCounterUIController => ""
+    ."FPSCounterUIController"
 );
 #[cfg(feature = "FPSCounterUIController")]
-impl std::ops::Deref for FPSCounterUIController {
+impl std::ops::Deref for crate::GlobalNamespace::FPSCounterUIController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FPSCounterUIController")]
-impl std::ops::DerefMut for FPSCounterUIController {
+impl std::ops::DerefMut for crate::GlobalNamespace::FPSCounterUIController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FPSCounterUIController")]
-impl FPSCounterUIController {
+impl crate::GlobalNamespace::FPSCounterUIController {
     #[cfg(feature = "FPSCounterUIController+_Start_d__9")]
     pub type _Start_d__9 = crate::GlobalNamespace::FPSCounterUIController__Start_d__9;
     pub fn Awake(
@@ -82,7 +83,8 @@ impl FPSCounterUIController {
     }
 }
 #[cfg(feature = "FPSCounterUIController")]
-impl quest_hook::libil2cpp::ObjectType for FPSCounterUIController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FPSCounterUIController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

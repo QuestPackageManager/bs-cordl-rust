@@ -7,34 +7,35 @@ pub struct CustomNetworkConfig {
     pub _discoveryPort_k__BackingField: i32,
     pub _partyPort_k__BackingField: i32,
     pub _multiplayerPort_k__BackingField: i32,
-    pub _masterServerEndPoint_k__BackingField: *mut DnsEndPoint,
+    pub _masterServerEndPoint_k__BackingField: *mut crate::GlobalNamespace::DnsEndPoint,
     pub _multiplayerStatusUrl_k__BackingField: *mut crate::System::String,
     pub _graphUrl_k__BackingField: *mut crate::System::String,
     pub _graphAccessToken_k__BackingField: *mut crate::System::String,
     pub _forceGameLift_k__BackingField: bool,
-    pub _serviceEnvironment_k__BackingField: ServiceEnvironment,
+    pub _serviceEnvironment_k__BackingField: crate::GlobalNamespace::ServiceEnvironment,
 }
 #[cfg(feature = "CustomNetworkConfig")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CustomNetworkConfig => ""."CustomNetworkConfig"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CustomNetworkConfig => ""
+    ."CustomNetworkConfig"
 );
 #[cfg(feature = "CustomNetworkConfig")]
-impl std::ops::Deref for CustomNetworkConfig {
+impl std::ops::Deref for crate::GlobalNamespace::CustomNetworkConfig {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CustomNetworkConfig")]
-impl std::ops::DerefMut for CustomNetworkConfig {
+impl std::ops::DerefMut for crate::GlobalNamespace::CustomNetworkConfig {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CustomNetworkConfig")]
-impl CustomNetworkConfig {
+impl crate::GlobalNamespace::CustomNetworkConfig {
     pub fn New(
-        fromNetworkConfig: *mut INetworkConfig,
+        fromNetworkConfig: *mut crate::GlobalNamespace::INetworkConfig,
         customServerHostName: *mut crate::System::String,
         port: i32,
         forceGameLift: bool,
@@ -50,7 +51,7 @@ impl CustomNetworkConfig {
     }
     pub fn _ctor(
         &mut self,
-        fromNetworkConfig: *mut INetworkConfig,
+        fromNetworkConfig: *mut crate::GlobalNamespace::INetworkConfig,
         customServerHostName: *mut crate::System::String,
         port: i32,
         forceGameLift: bool,
@@ -111,11 +112,11 @@ impl CustomNetworkConfig {
     }
     pub fn get_masterServerEndPoint(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut DnsEndPoint> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::DnsEndPoint> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut DnsEndPoint = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::DnsEndPoint = __cordl_object
             .invoke("get_masterServerEndPoint", ())?;
         Ok(__cordl_ret)
     }
@@ -162,17 +163,17 @@ impl CustomNetworkConfig {
     }
     pub fn get_serviceEnvironment(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<ServiceEnvironment> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ServiceEnvironment> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: ServiceEnvironment = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::ServiceEnvironment = __cordl_object
             .invoke("get_serviceEnvironment", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "CustomNetworkConfig")]
-impl quest_hook::libil2cpp::ObjectType for CustomNetworkConfig {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CustomNetworkConfig {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

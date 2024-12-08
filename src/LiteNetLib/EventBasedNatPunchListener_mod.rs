@@ -26,10 +26,10 @@ impl std::ops::DerefMut for crate::LiteNetLib::EventBasedNatPunchListener {
 }
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener")]
 impl crate::LiteNetLib::EventBasedNatPunchListener {
-    #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener+OnNatIntroductionSuccess")]
-    pub type OnNatIntroductionSuccess = crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionSuccess;
     #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener+OnNatIntroductionRequest")]
     pub type OnNatIntroductionRequest = crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionRequest;
+    #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener+OnNatIntroductionSuccess")]
+    pub type OnNatIntroductionSuccess = crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionSuccess;
     pub fn LiteNetLib_INatPunchListener_OnNatIntroductionRequest(
         &mut self,
         localEndPoint: *mut crate::System::Net::IPEndPoint,

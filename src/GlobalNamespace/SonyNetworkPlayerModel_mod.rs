@@ -2,27 +2,28 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyNetworkPlayerModel {
-    __cordl_parent: PlatformNetworkPlayerModel,
+    __cordl_parent: crate::GlobalNamespace::PlatformNetworkPlayerModel,
 }
 #[cfg(feature = "SonyNetworkPlayerModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SonyNetworkPlayerModel => ""."SonyNetworkPlayerModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SonyNetworkPlayerModel => ""
+    ."SonyNetworkPlayerModel"
 );
 #[cfg(feature = "SonyNetworkPlayerModel")]
-impl std::ops::Deref for SonyNetworkPlayerModel {
-    type Target = PlatformNetworkPlayerModel;
+impl std::ops::Deref for crate::GlobalNamespace::SonyNetworkPlayerModel {
+    type Target = crate::GlobalNamespace::PlatformNetworkPlayerModel;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyNetworkPlayerModel")]
-impl std::ops::DerefMut for SonyNetworkPlayerModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::SonyNetworkPlayerModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyNetworkPlayerModel")]
-impl SonyNetworkPlayerModel {
+impl crate::GlobalNamespace::SonyNetworkPlayerModel {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,7 +43,8 @@ impl SonyNetworkPlayerModel {
     }
 }
 #[cfg(feature = "SonyNetworkPlayerModel")]
-impl quest_hook::libil2cpp::ObjectType for SonyNetworkPlayerModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SonyNetworkPlayerModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

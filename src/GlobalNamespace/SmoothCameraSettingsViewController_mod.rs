@@ -4,29 +4,30 @@
 pub struct SmoothCameraSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _enabledToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _fovSettingsList: *mut FormattedFloatListSettingsController,
+    pub _fovSettingsList: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
     pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
 }
 #[cfg(feature = "SmoothCameraSettingsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SmoothCameraSettingsViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SmoothCameraSettingsViewController => ""
     ."SmoothCameraSettingsViewController"
 );
 #[cfg(feature = "SmoothCameraSettingsViewController")]
-impl std::ops::Deref for SmoothCameraSettingsViewController {
+impl std::ops::Deref for crate::GlobalNamespace::SmoothCameraSettingsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SmoothCameraSettingsViewController")]
-impl std::ops::DerefMut for SmoothCameraSettingsViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::SmoothCameraSettingsViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SmoothCameraSettingsViewController")]
-impl SmoothCameraSettingsViewController {
+impl crate::GlobalNamespace::SmoothCameraSettingsViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -68,7 +69,7 @@ impl SmoothCameraSettingsViewController {
     }
     pub fn HandleFovChanged(
         &mut self,
-        controller: *mut FormattedFloatListSettingsController,
+        controller: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
         newValue: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -97,7 +98,8 @@ impl SmoothCameraSettingsViewController {
     }
 }
 #[cfg(feature = "SmoothCameraSettingsViewController")]
-impl quest_hook::libil2cpp::ObjectType for SmoothCameraSettingsViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SmoothCameraSettingsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

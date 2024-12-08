@@ -193,16 +193,16 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimelineAsset {
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
 impl crate::UnityEngine::Timeline::TimelineAsset {
     pub const k_LatestVersion: i32 = 0i32;
-    #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+TimelineAssetUpgrade")]
-    pub type TimelineAssetUpgrade = crate::UnityEngine::Timeline::TimelineAsset_TimelineAssetUpgrade;
-    #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+MediaType")]
-    pub type MediaType = crate::UnityEngine::Timeline::TimelineAsset_MediaType;
     #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+DurationMode")]
     pub type DurationMode = crate::UnityEngine::Timeline::TimelineAsset_DurationMode;
-    #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+Versions")]
-    pub type Versions = crate::UnityEngine::Timeline::TimelineAsset_Versions;
     #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
     pub type EditorSettings = crate::UnityEngine::Timeline::TimelineAsset_EditorSettings;
+    #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+MediaType")]
+    pub type MediaType = crate::UnityEngine::Timeline::TimelineAsset_MediaType;
+    #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+TimelineAssetUpgrade")]
+    pub type TimelineAssetUpgrade = crate::UnityEngine::Timeline::TimelineAsset_TimelineAssetUpgrade;
+    #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+Versions")]
+    pub type Versions = crate::UnityEngine::Timeline::TimelineAsset_Versions;
     #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+_get_outputs_d__27")]
     pub type _get_outputs_d__27 = crate::UnityEngine::Timeline::TimelineAsset__get_outputs_d__27;
     pub fn AddTrackInternal(

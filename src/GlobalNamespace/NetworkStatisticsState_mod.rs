@@ -18,10 +18,12 @@ pub struct NetworkStatisticsState {
 }
 #[cfg(feature = "NetworkStatisticsState")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for NetworkStatisticsState => ""."NetworkStatisticsState"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NetworkStatisticsState => ""
+    ."NetworkStatisticsState"
 );
 #[cfg(feature = "NetworkStatisticsState")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for NetworkStatisticsState {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::NetworkStatisticsState {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -31,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for NetworkStatisticsState {
     }
 }
 #[cfg(feature = "NetworkStatisticsState")]
-impl NetworkStatisticsState {
+impl crate::GlobalNamespace::NetworkStatisticsState {
     #[cfg(feature = "NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
     pub type NetworkStatisticsUpdateDelegate = crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate;
     pub fn _ctor(
@@ -103,7 +105,9 @@ for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelega
 impl crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate {
     pub fn BeginInvoke(
         &mut self,
-        statisticsState: quest_hook::libil2cpp::ByRefMut<NetworkStatisticsState>,
+        statisticsState: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::NetworkStatisticsState,
+        >,
         callback: *mut crate::System::AsyncCallback,
         object: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
@@ -116,7 +120,9 @@ impl crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDeleg
     }
     pub fn EndInvoke(
         &mut self,
-        statisticsState: quest_hook::libil2cpp::ByRefMut<NetworkStatisticsState>,
+        statisticsState: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::NetworkStatisticsState,
+        >,
         result: *mut crate::System::IAsyncResult,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -128,7 +134,9 @@ impl crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDeleg
     }
     pub fn Invoke(
         &mut self,
-        statisticsState: quest_hook::libil2cpp::ByRefMut<NetworkStatisticsState>,
+        statisticsState: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::NetworkStatisticsState,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -6,31 +6,33 @@ pub struct IServerSongPackProviderManager {
 }
 #[cfg(feature = "IServerSongPackProviderManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IServerSongPackProviderManager => ""
-    ."IServerSongPackProviderManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IServerSongPackProviderManager
+    => ""."IServerSongPackProviderManager"
 );
 #[cfg(feature = "IServerSongPackProviderManager")]
-impl std::ops::Deref for IServerSongPackProviderManager {
+impl std::ops::Deref for crate::GlobalNamespace::IServerSongPackProviderManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IServerSongPackProviderManager")]
-impl std::ops::DerefMut for IServerSongPackProviderManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::IServerSongPackProviderManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IServerSongPackProviderManager")]
-impl IServerSongPackProviderManager {
+impl crate::GlobalNamespace::IServerSongPackProviderManager {
     pub fn GetServerSongPackProvider(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IServerSongPackProvider> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::IServerSongPackProvider,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IServerSongPackProvider = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IServerSongPackProvider = __cordl_object
             .invoke("GetServerSongPackProvider", ())?;
         Ok(__cordl_ret)
     }
@@ -51,7 +53,8 @@ impl IServerSongPackProviderManager {
     }
 }
 #[cfg(feature = "IServerSongPackProviderManager")]
-impl quest_hook::libil2cpp::ObjectType for IServerSongPackProviderManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IServerSongPackProviderManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

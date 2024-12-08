@@ -3,28 +3,28 @@
 #[derive(Debug)]
 pub struct LocalLeaderboardsInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _localLeaderboardsSettings: *mut LocalLeaderboardsSettingsSO,
+    pub _localLeaderboardsSettings: *mut crate::GlobalNamespace::LocalLeaderboardsSettingsSO,
 }
 #[cfg(feature = "LocalLeaderboardsInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LocalLeaderboardsInstaller => ""
-    ."LocalLeaderboardsInstaller"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LocalLeaderboardsInstaller =>
+    ""."LocalLeaderboardsInstaller"
 );
 #[cfg(feature = "LocalLeaderboardsInstaller")]
-impl std::ops::Deref for LocalLeaderboardsInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::LocalLeaderboardsInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LocalLeaderboardsInstaller")]
-impl std::ops::DerefMut for LocalLeaderboardsInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::LocalLeaderboardsInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LocalLeaderboardsInstaller")]
-impl LocalLeaderboardsInstaller {
+impl crate::GlobalNamespace::LocalLeaderboardsInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -54,7 +54,8 @@ impl LocalLeaderboardsInstaller {
     }
 }
 #[cfg(feature = "LocalLeaderboardsInstaller")]
-impl quest_hook::libil2cpp::ObjectType for LocalLeaderboardsInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LocalLeaderboardsInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

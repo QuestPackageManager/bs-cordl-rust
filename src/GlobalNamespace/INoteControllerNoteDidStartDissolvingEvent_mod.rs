@@ -6,27 +6,30 @@ pub struct INoteControllerNoteDidStartDissolvingEvent {
 }
 #[cfg(feature = "INoteControllerNoteDidStartDissolvingEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for INoteControllerNoteDidStartDissolvingEvent => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent => ""
     ."INoteControllerNoteDidStartDissolvingEvent"
 );
 #[cfg(feature = "INoteControllerNoteDidStartDissolvingEvent")]
-impl std::ops::Deref for INoteControllerNoteDidStartDissolvingEvent {
+impl std::ops::Deref
+for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "INoteControllerNoteDidStartDissolvingEvent")]
-impl std::ops::DerefMut for INoteControllerNoteDidStartDissolvingEvent {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "INoteControllerNoteDidStartDissolvingEvent")]
-impl INoteControllerNoteDidStartDissolvingEvent {
+impl crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
     pub fn HandleNoteControllerNoteDidStartDissolving(
         &mut self,
-        noteController: *mut NoteControllerBase,
+        noteController: *mut crate::GlobalNamespace::NoteControllerBase,
         duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -46,7 +49,8 @@ impl INoteControllerNoteDidStartDissolvingEvent {
     }
 }
 #[cfg(feature = "INoteControllerNoteDidStartDissolvingEvent")]
-impl quest_hook::libil2cpp::ObjectType for INoteControllerNoteDidStartDissolvingEvent {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

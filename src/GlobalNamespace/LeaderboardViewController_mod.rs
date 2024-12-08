@@ -6,24 +6,24 @@ pub struct LeaderboardViewController {
 }
 #[cfg(feature = "LeaderboardViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LeaderboardViewController => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LeaderboardViewController => ""
     ."LeaderboardViewController"
 );
 #[cfg(feature = "LeaderboardViewController")]
-impl std::ops::Deref for LeaderboardViewController {
+impl std::ops::Deref for crate::GlobalNamespace::LeaderboardViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LeaderboardViewController")]
-impl std::ops::DerefMut for LeaderboardViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LeaderboardViewController")]
-impl LeaderboardViewController {
+impl crate::GlobalNamespace::LeaderboardViewController {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -43,7 +43,9 @@ impl LeaderboardViewController {
     }
     pub fn SetData(
         &mut self,
-        previewDifficultyBeatmap: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        previewDifficultyBeatmap: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::BeatmapKey,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -64,7 +66,8 @@ impl LeaderboardViewController {
     }
 }
 #[cfg(feature = "LeaderboardViewController")]
-impl quest_hook::libil2cpp::ObjectType for LeaderboardViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LeaderboardViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

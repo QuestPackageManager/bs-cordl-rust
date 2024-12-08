@@ -2,43 +2,47 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatFxBeatmapEventData {
-    __cordl_parent: FxBeatmapEventData,
+    __cordl_parent: crate::GlobalNamespace::FxBeatmapEventData,
     pub _value_k__BackingField: f32,
-    pub _easeType_k__BackingField: EaseType,
+    pub _easeType_k__BackingField: crate::GlobalNamespace::EaseType,
 }
 #[cfg(feature = "FloatFxBeatmapEventData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FloatFxBeatmapEventData => ""."FloatFxBeatmapEventData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FloatFxBeatmapEventData => ""
+    ."FloatFxBeatmapEventData"
 );
 #[cfg(feature = "FloatFxBeatmapEventData")]
-impl std::ops::Deref for FloatFxBeatmapEventData {
-    type Target = FxBeatmapEventData;
+impl std::ops::Deref for crate::GlobalNamespace::FloatFxBeatmapEventData {
+    type Target = crate::GlobalNamespace::FxBeatmapEventData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatFxBeatmapEventData")]
-impl std::ops::DerefMut for FloatFxBeatmapEventData {
+impl std::ops::DerefMut for crate::GlobalNamespace::FloatFxBeatmapEventData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatFxBeatmapEventData")]
-impl FloatFxBeatmapEventData {
-    pub fn GetCopy(&mut self) -> quest_hook::libil2cpp::Result<*mut BeatmapDataItem> {
+impl crate::GlobalNamespace::FloatFxBeatmapEventData {
+    pub fn GetCopy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapDataItem> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapDataItem = __cordl_object.invoke("GetCopy", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapDataItem = __cordl_object
+            .invoke("GetCopy", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetDefault(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapEventData> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapEventData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapEventData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapEventData = __cordl_object
             .invoke("GetDefault", ())?;
         Ok(__cordl_ret)
     }
@@ -48,7 +52,7 @@ impl FloatFxBeatmapEventData {
         elementId: i32,
         usePreviousEventValue: bool,
         value: f32,
-        easeType: EaseType,
+        easeType: crate::GlobalNamespace::EaseType,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -61,7 +65,7 @@ impl FloatFxBeatmapEventData {
     }
     pub fn UpdateBy(
         &mut self,
-        other: *mut FloatFxBeatmapEventData,
+        other: *mut crate::GlobalNamespace::FloatFxBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -77,7 +81,7 @@ impl FloatFxBeatmapEventData {
         elementId: i32,
         usePreviousEventValue: bool,
         value: f32,
-        easeType: EaseType,
+        easeType: crate::GlobalNamespace::EaseType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -89,11 +93,14 @@ impl FloatFxBeatmapEventData {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn get_easeType(&mut self) -> quest_hook::libil2cpp::Result<EaseType> {
+    pub fn get_easeType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EaseType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: EaseType = __cordl_object.invoke("get_easeType", ())?;
+        let __cordl_ret: crate::GlobalNamespace::EaseType = __cordl_object
+            .invoke("get_easeType", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -105,7 +112,7 @@ impl FloatFxBeatmapEventData {
     }
     pub fn set_easeType(
         &mut self,
-        value: EaseType,
+        value: crate::GlobalNamespace::EaseType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -127,7 +134,8 @@ impl FloatFxBeatmapEventData {
     }
 }
 #[cfg(feature = "FloatFxBeatmapEventData")]
-impl quest_hook::libil2cpp::ObjectType for FloatFxBeatmapEventData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FloatFxBeatmapEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -13,43 +13,43 @@ pub struct LeaderboardScoreUploader {
     pub _uploadScoreCallback: *mut crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback,
     pub _playerId: *mut crate::System::String,
     pub _uploading: bool,
-    pub _fileStorage: *mut IFileStorage,
+    pub _fileStorage: *mut crate::GlobalNamespace::IFileStorage,
 }
 #[cfg(feature = "LeaderboardScoreUploader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LeaderboardScoreUploader => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LeaderboardScoreUploader => ""
     ."LeaderboardScoreUploader"
 );
 #[cfg(feature = "LeaderboardScoreUploader")]
-impl std::ops::Deref for LeaderboardScoreUploader {
+impl std::ops::Deref for crate::GlobalNamespace::LeaderboardScoreUploader {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LeaderboardScoreUploader")]
-impl std::ops::DerefMut for LeaderboardScoreUploader {
+impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardScoreUploader {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LeaderboardScoreUploader")]
-impl LeaderboardScoreUploader {
+impl crate::GlobalNamespace::LeaderboardScoreUploader {
     pub const kScoresToUploadFileName: &'static str = "ScoresToUpload.dat";
-    #[cfg(feature = "LeaderboardScoreUploader+ScoresToUploadData")]
-    pub type ScoresToUploadData = crate::GlobalNamespace::LeaderboardScoreUploader_ScoresToUploadData;
     #[cfg(feature = "LeaderboardScoreUploader+ScoreData")]
     pub type ScoreData = crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData;
+    #[cfg(feature = "LeaderboardScoreUploader+ScoresToUploadData")]
+    pub type ScoresToUploadData = crate::GlobalNamespace::LeaderboardScoreUploader_ScoresToUploadData;
     #[cfg(feature = "LeaderboardScoreUploader+UploadScoreCallback")]
     pub type UploadScoreCallback = crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback;
-    #[cfg(feature = "LeaderboardScoreUploader+__c__DisplayClass16_0")]
-    pub type __c__DisplayClass16_0 = crate::GlobalNamespace::LeaderboardScoreUploader___c__DisplayClass16_0;
     #[cfg(feature = "LeaderboardScoreUploader+_LoadScoresToUploadFromFile_d__17")]
     pub type _LoadScoresToUploadFromFile_d__17 = crate::GlobalNamespace::LeaderboardScoreUploader__LoadScoresToUploadFromFile_d__17;
     #[cfg(feature = "LeaderboardScoreUploader+_SaveScoresToUploadToFile_d__18")]
     pub type _SaveScoresToUploadToFile_d__18 = crate::GlobalNamespace::LeaderboardScoreUploader__SaveScoresToUploadToFile_d__18;
     #[cfg(feature = "LeaderboardScoreUploader+_UploadScoresCoroutine_d__16")]
     pub type _UploadScoresCoroutine_d__16 = crate::GlobalNamespace::LeaderboardScoreUploader__UploadScoresCoroutine_d__16;
+    #[cfg(feature = "LeaderboardScoreUploader+__c__DisplayClass16_0")]
+    pub type __c__DisplayClass16_0 = crate::GlobalNamespace::LeaderboardScoreUploader___c__DisplayClass16_0;
     pub fn AddScore(
         &mut self,
         scoreData: *mut crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
@@ -174,7 +174,8 @@ impl LeaderboardScoreUploader {
     }
 }
 #[cfg(feature = "LeaderboardScoreUploader")]
-impl quest_hook::libil2cpp::ObjectType for LeaderboardScoreUploader {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LeaderboardScoreUploader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -188,8 +189,8 @@ impl quest_hook::libil2cpp::ObjectType for LeaderboardScoreUploader {
 pub struct LeaderboardScoreUploader_ScoreData {
     __cordl_parent: crate::System::Object,
     pub _playerId_k__BackingField: *mut crate::System::String,
-    pub _beatmapKey_k__BackingField: BeatmapKey,
-    pub _gameplayModifiers_k__BackingField: *mut GameplayModifiers,
+    pub _beatmapKey_k__BackingField: crate::GlobalNamespace::BeatmapKey,
+    pub _gameplayModifiers_k__BackingField: *mut crate::GlobalNamespace::GameplayModifiers,
     pub _multipliedScore_k__BackingField: i32,
     pub _modifiedScore_k__BackingField: i32,
     pub _fullCombo_k__BackingField: bool,
@@ -223,7 +224,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardScoreUploader_Sco
 impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
     pub fn New(
         playerId: *mut crate::System::String,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         multipliedScore: i32,
         modifiedScore: i32,
         fullCombo: bool,
@@ -231,7 +232,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         badCutsCount: i32,
         missedCount: i32,
         maxCombo: i32,
-        gameplayModifiers: *mut GameplayModifiers,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -256,7 +257,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
     pub fn _ctor(
         &mut self,
         playerId: *mut crate::System::String,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         multipliedScore: i32,
         modifiedScore: i32,
         fullCombo: bool,
@@ -264,7 +265,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         badCutsCount: i32,
         missedCount: i32,
         maxCombo: i32,
-        gameplayModifiers: *mut GameplayModifiers,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -294,11 +295,14 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         let __cordl_ret: i32 = __cordl_object.invoke("get_badCutsCount", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_beatmapKey(&mut self) -> quest_hook::libil2cpp::Result<BeatmapKey> {
+    pub fn get_beatmapKey(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapKey> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapKey = __cordl_object.invoke("get_beatmapKey", ())?;
+        let __cordl_ret: crate::GlobalNamespace::BeatmapKey = __cordl_object
+            .invoke("get_beatmapKey", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_fullCombo(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -310,11 +314,11 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
     }
     pub fn get_gameplayModifiers(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut GameplayModifiers> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::GameplayModifiers> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut GameplayModifiers = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::GameplayModifiers = __cordl_object
             .invoke("get_gameplayModifiers", ())?;
         Ok(__cordl_ret)
     }
@@ -376,7 +380,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
     }
     pub fn set_beatmapKey(
         &mut self,
-        value: BeatmapKey,
+        value: crate::GlobalNamespace::BeatmapKey,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -398,7 +402,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
     }
     pub fn set_gameplayModifiers(
         &mut self,
-        value: *mut GameplayModifiers,
+        value: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -590,11 +594,11 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
     pub fn EndInvoke(
         &mut self,
         result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<*mut HMAsyncRequest> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::HMAsyncRequest> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut HMAsyncRequest = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::HMAsyncRequest = __cordl_object
             .invoke("EndInvoke", (result))?;
         Ok(__cordl_ret)
     }
@@ -602,11 +606,11 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
         &mut self,
         scoreData: *mut crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
         completionHandler: *mut crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut HMAsyncRequest> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::HMAsyncRequest> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut HMAsyncRequest = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::HMAsyncRequest = __cordl_object
             .invoke("Invoke", (scoreData, completionHandler))?;
         Ok(__cordl_ret)
     }

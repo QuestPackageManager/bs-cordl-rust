@@ -9,27 +9,28 @@ pub struct OVRSceneVolume {
     pub _Offset_k__BackingField: crate::UnityEngine::Vector3,
     pub _scaleChildren: bool,
     pub _offsetChildren: bool,
-    pub _sceneAnchor: *mut OVRSceneAnchor,
+    pub _sceneAnchor: *mut crate::GlobalNamespace::OVRSceneAnchor,
 }
 #[cfg(feature = "OVRSceneVolume")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRSceneVolume => ""."OVRSceneVolume"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRSceneVolume => ""
+    ."OVRSceneVolume"
 );
 #[cfg(feature = "OVRSceneVolume")]
-impl std::ops::Deref for OVRSceneVolume {
+impl std::ops::Deref for crate::GlobalNamespace::OVRSceneVolume {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSceneVolume")]
-impl std::ops::DerefMut for OVRSceneVolume {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneVolume {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSceneVolume")]
-impl OVRSceneVolume {
+impl crate::GlobalNamespace::OVRSceneVolume {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -220,7 +221,7 @@ impl OVRSceneVolume {
     }
 }
 #[cfg(feature = "OVRSceneVolume")]
-impl quest_hook::libil2cpp::ObjectType for OVRSceneVolume {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneVolume {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

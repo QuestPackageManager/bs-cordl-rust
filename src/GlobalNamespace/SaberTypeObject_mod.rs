@@ -3,27 +3,28 @@
 #[derive(Debug)]
 pub struct SaberTypeObject {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _saberType: SaberType,
+    pub _saberType: crate::GlobalNamespace::SaberType,
 }
 #[cfg(feature = "SaberTypeObject")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SaberTypeObject => ""."SaberTypeObject"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SaberTypeObject => ""
+    ."SaberTypeObject"
 );
 #[cfg(feature = "SaberTypeObject")]
-impl std::ops::Deref for SaberTypeObject {
+impl std::ops::Deref for crate::GlobalNamespace::SaberTypeObject {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberTypeObject")]
-impl std::ops::DerefMut for SaberTypeObject {
+impl std::ops::DerefMut for crate::GlobalNamespace::SaberTypeObject {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberTypeObject")]
-impl SaberTypeObject {
+impl crate::GlobalNamespace::SaberTypeObject {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -41,16 +42,19 @@ impl SaberTypeObject {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_saberType(&mut self) -> quest_hook::libil2cpp::Result<SaberType> {
+    pub fn get_saberType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SaberType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: SaberType = __cordl_object.invoke("get_saberType", ())?;
+        let __cordl_ret: crate::GlobalNamespace::SaberType = __cordl_object
+            .invoke("get_saberType", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "SaberTypeObject")]
-impl quest_hook::libil2cpp::ObjectType for SaberTypeObject {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberTypeObject {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

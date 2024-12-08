@@ -7,9 +7,11 @@ pub struct SaberBurnMarkSparkles {
     pub _sparklesPS: *mut crate::UnityEngine::ParticleSystem,
     pub _burnMarksPSPrefab: *mut crate::UnityEngine::ParticleSystem,
     pub _collider: *mut crate::UnityEngine::Collider,
-    pub _colorManager: *mut ColorManager,
-    pub _saberManager: *mut SaberManager,
-    pub _sabers: *mut quest_hook::libil2cpp::Il2CppArray<*mut Saber>,
+    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
+    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
+    pub _sabers: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::Saber,
+    >,
     pub _plane: crate::UnityEngine::Plane,
     pub _prevBurnMarkPos: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::UnityEngine::Vector3,
@@ -25,23 +27,24 @@ pub struct SaberBurnMarkSparkles {
 }
 #[cfg(feature = "SaberBurnMarkSparkles")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SaberBurnMarkSparkles => ""."SaberBurnMarkSparkles"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SaberBurnMarkSparkles => ""
+    ."SaberBurnMarkSparkles"
 );
 #[cfg(feature = "SaberBurnMarkSparkles")]
-impl std::ops::Deref for SaberBurnMarkSparkles {
+impl std::ops::Deref for crate::GlobalNamespace::SaberBurnMarkSparkles {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberBurnMarkSparkles")]
-impl std::ops::DerefMut for SaberBurnMarkSparkles {
+impl std::ops::DerefMut for crate::GlobalNamespace::SaberBurnMarkSparkles {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberBurnMarkSparkles")]
-impl SaberBurnMarkSparkles {
+impl crate::GlobalNamespace::SaberBurnMarkSparkles {
     pub fn GetBurnMarkPos(
         &mut self,
         bladeBottomPos: crate::UnityEngine::Vector3,
@@ -124,7 +127,8 @@ impl SaberBurnMarkSparkles {
     }
 }
 #[cfg(feature = "SaberBurnMarkSparkles")]
-impl quest_hook::libil2cpp::ObjectType for SaberBurnMarkSparkles {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SaberBurnMarkSparkles {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,38 +3,41 @@
 #[derive(Debug)]
 pub struct MockQuickPlaySetupModel {
     __cordl_parent: crate::System::Object,
-    pub _quickPlaySetupData: *mut QuickPlaySetupData,
+    pub _quickPlaySetupData: *mut crate::GlobalNamespace::QuickPlaySetupData,
 }
 #[cfg(feature = "MockQuickPlaySetupModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MockQuickPlaySetupModel => ""."MockQuickPlaySetupModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MockQuickPlaySetupModel => ""
+    ."MockQuickPlaySetupModel"
 );
 #[cfg(feature = "MockQuickPlaySetupModel")]
-impl std::ops::Deref for MockQuickPlaySetupModel {
+impl std::ops::Deref for crate::GlobalNamespace::MockQuickPlaySetupModel {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockQuickPlaySetupModel")]
-impl std::ops::DerefMut for MockQuickPlaySetupModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::MockQuickPlaySetupModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockQuickPlaySetupModel")]
-impl MockQuickPlaySetupModel {
+impl crate::GlobalNamespace::MockQuickPlaySetupModel {
     pub fn GetQuickPlaySetupAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut QuickPlaySetupData>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::QuickPlaySetupData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut QuickPlaySetupData,
+            *mut crate::GlobalNamespace::QuickPlaySetupData,
         > = __cordl_object.invoke("GetQuickPlaySetupAsync", (cancellationToken))?;
         Ok(__cordl_ret)
     }
@@ -57,7 +60,8 @@ impl MockQuickPlaySetupModel {
     }
 }
 #[cfg(feature = "MockQuickPlaySetupModel")]
-impl quest_hook::libil2cpp::ObjectType for MockQuickPlaySetupModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MockQuickPlaySetupModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

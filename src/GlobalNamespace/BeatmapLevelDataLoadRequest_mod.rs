@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct BeatmapLevelDataLoadRequest {
     __cordl_parent: crate::System::Object,
-    pub _task: *mut crate::System::Threading::Tasks::Task_1<*mut IBeatmapLevelData>,
+    pub _task: *mut crate::System::Threading::Tasks::Task_1<
+        *mut crate::GlobalNamespace::IBeatmapLevelData,
+    >,
     pub _assetBundlePath: *mut crate::System::String,
     pub _levelDataAssetName: *mut crate::System::String,
     pub _internalCancellationSource: *mut crate::System::Threading::CancellationTokenSource,
@@ -14,24 +16,24 @@ pub struct BeatmapLevelDataLoadRequest {
 }
 #[cfg(feature = "BeatmapLevelDataLoadRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapLevelDataLoadRequest => ""
-    ."BeatmapLevelDataLoadRequest"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapLevelDataLoadRequest =>
+    ""."BeatmapLevelDataLoadRequest"
 );
 #[cfg(feature = "BeatmapLevelDataLoadRequest")]
-impl std::ops::Deref for BeatmapLevelDataLoadRequest {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelDataLoadRequest {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLevelDataLoadRequest")]
-impl std::ops::DerefMut for BeatmapLevelDataLoadRequest {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelDataLoadRequest {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLevelDataLoadRequest")]
-impl BeatmapLevelDataLoadRequest {
+impl crate::GlobalNamespace::BeatmapLevelDataLoadRequest {
     #[cfg(feature = "BeatmapLevelDataLoadRequest+_LoadDataAsyncInternal_d__8")]
     pub type _LoadDataAsyncInternal_d__8 = crate::GlobalNamespace::BeatmapLevelDataLoadRequest__LoadDataAsyncInternal_d__8;
     pub fn Dispose(
@@ -48,13 +50,15 @@ impl BeatmapLevelDataLoadRequest {
         &mut self,
         externalCancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut IBeatmapLevelData>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::IBeatmapLevelData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut IBeatmapLevelData,
+            *mut crate::GlobalNamespace::IBeatmapLevelData,
         > = __cordl_object.invoke("LoadDataAsync", (externalCancellationToken))?;
         Ok(__cordl_ret)
     }
@@ -62,13 +66,15 @@ impl BeatmapLevelDataLoadRequest {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut IBeatmapLevelData>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::IBeatmapLevelData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut IBeatmapLevelData,
+            *mut crate::GlobalNamespace::IBeatmapLevelData,
         > = __cordl_object.invoke("LoadDataAsyncInternal", (cancellationToken))?;
         Ok(__cordl_ret)
     }
@@ -130,7 +136,8 @@ impl BeatmapLevelDataLoadRequest {
     }
 }
 #[cfg(feature = "BeatmapLevelDataLoadRequest")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapLevelDataLoadRequest {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapLevelDataLoadRequest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

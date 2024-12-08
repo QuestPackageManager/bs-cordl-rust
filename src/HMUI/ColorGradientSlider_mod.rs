@@ -14,7 +14,7 @@ pub struct ColorGradientSlider {
     pub colorDidChangeEvent: *mut crate::System::Action_3<
         *mut crate::HMUI::ColorGradientSlider,
         crate::UnityEngine::Color,
-        ColorChangeUIEventType,
+        crate::GlobalNamespace::ColorChangeUIEventType,
     >,
 }
 #[cfg(feature = "HMUI+ColorGradientSlider")]
@@ -135,7 +135,7 @@ impl crate::HMUI::ColorGradientSlider {
         value: *mut crate::System::Action_3<
             *mut crate::HMUI::ColorGradientSlider,
             crate::UnityEngine::Color,
-            ColorChangeUIEventType,
+            crate::GlobalNamespace::ColorChangeUIEventType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -150,7 +150,7 @@ impl crate::HMUI::ColorGradientSlider {
         value: *mut crate::System::Action_3<
             *mut crate::HMUI::ColorGradientSlider,
             crate::UnityEngine::Color,
-            ColorChangeUIEventType,
+            crate::GlobalNamespace::ColorChangeUIEventType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -4,28 +4,28 @@
 pub struct EulaDisplayViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _textPageScrollView: *mut crate::HMUI::TextPageScrollView,
-    pub _localizedTextAsset: *mut LocalizedTextAsset,
+    pub _localizedTextAsset: *mut crate::GlobalNamespace::LocalizedTextAsset,
 }
 #[cfg(feature = "EulaDisplayViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EulaDisplayViewController => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EulaDisplayViewController => ""
     ."EulaDisplayViewController"
 );
 #[cfg(feature = "EulaDisplayViewController")]
-impl std::ops::Deref for EulaDisplayViewController {
+impl std::ops::Deref for crate::GlobalNamespace::EulaDisplayViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EulaDisplayViewController")]
-impl std::ops::DerefMut for EulaDisplayViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::EulaDisplayViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EulaDisplayViewController")]
-impl EulaDisplayViewController {
+impl crate::GlobalNamespace::EulaDisplayViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -61,7 +61,8 @@ impl EulaDisplayViewController {
     }
 }
 #[cfg(feature = "EulaDisplayViewController")]
-impl quest_hook::libil2cpp::ObjectType for EulaDisplayViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EulaDisplayViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

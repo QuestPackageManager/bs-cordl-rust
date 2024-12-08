@@ -55,11 +55,6 @@ impl<
 > crate::System::Collections::Concurrent::ConcurrentDictionary_2<TKey, TValue> {
     pub const DefaultCapacity: i32 = 31i32;
     pub const MaxLockNumber: i32 = 1024i32;
-    #[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2+Tables")]
-    pub type Tables = crate::System::Collections::Concurrent::ConcurrentDictionary_2_Tables<
-        TKey,
-        TValue,
-    >;
     #[cfg(
         feature = "System+Collections+Concurrent+ConcurrentDictionary_2+DictionaryEnumerator"
     )]
@@ -67,15 +62,20 @@ impl<
         TKey,
         TValue,
     >;
+    #[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2+Node")]
+    pub type Node = crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<
+        TKey,
+        TValue,
+    >;
+    #[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2+Tables")]
+    pub type Tables = crate::System::Collections::Concurrent::ConcurrentDictionary_2_Tables<
+        TKey,
+        TValue,
+    >;
     #[cfg(
         feature = "System+Collections+Concurrent+ConcurrentDictionary_2+_GetEnumerator_d__35"
     )]
     pub type _GetEnumerator_d__35 = crate::System::Collections::Concurrent::ConcurrentDictionary_2__GetEnumerator_d__35<
-        TKey,
-        TValue,
-    >;
-    #[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2+Node")]
-    pub type Node = crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<
         TKey,
         TValue,
     >;

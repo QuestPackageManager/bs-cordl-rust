@@ -7,28 +7,29 @@ pub struct CuttableBySaber {
 }
 #[cfg(feature = "CuttableBySaber")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CuttableBySaber => ""."CuttableBySaber"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CuttableBySaber => ""
+    ."CuttableBySaber"
 );
 #[cfg(feature = "CuttableBySaber")]
-impl std::ops::Deref for CuttableBySaber {
+impl std::ops::Deref for crate::GlobalNamespace::CuttableBySaber {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CuttableBySaber")]
-impl std::ops::DerefMut for CuttableBySaber {
+impl std::ops::DerefMut for crate::GlobalNamespace::CuttableBySaber {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CuttableBySaber")]
-impl CuttableBySaber {
+impl crate::GlobalNamespace::CuttableBySaber {
     #[cfg(feature = "CuttableBySaber+WasCutBySaberDelegate")]
     pub type WasCutBySaberDelegate = crate::GlobalNamespace::CuttableBySaber_WasCutBySaberDelegate;
     pub fn CallWasCutBySaberEvent(
         &mut self,
-        saber: *mut Saber,
+        saber: *mut crate::GlobalNamespace::Saber,
         cutPoint: crate::UnityEngine::Vector3,
         orientation: crate::UnityEngine::Quaternion,
         cutDirVec: crate::UnityEngine::Vector3,
@@ -45,7 +46,7 @@ impl CuttableBySaber {
     }
     pub fn Cut(
         &mut self,
-        saber: *mut Saber,
+        saber: *mut crate::GlobalNamespace::Saber,
         cutPoint: crate::UnityEngine::Vector3,
         orientation: crate::UnityEngine::Quaternion,
         cutDirVec: crate::UnityEngine::Vector3,
@@ -123,7 +124,7 @@ impl CuttableBySaber {
     }
 }
 #[cfg(feature = "CuttableBySaber")]
-impl quest_hook::libil2cpp::ObjectType for CuttableBySaber {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CuttableBySaber {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -161,7 +162,7 @@ for crate::GlobalNamespace::CuttableBySaber_WasCutBySaberDelegate {
 impl crate::GlobalNamespace::CuttableBySaber_WasCutBySaberDelegate {
     pub fn BeginInvoke(
         &mut self,
-        saber: *mut Saber,
+        saber: *mut crate::GlobalNamespace::Saber,
         cutPoint: crate::UnityEngine::Vector3,
         orientation: crate::UnityEngine::Quaternion,
         cutDirVec: crate::UnityEngine::Vector3,
@@ -191,7 +192,7 @@ impl crate::GlobalNamespace::CuttableBySaber_WasCutBySaberDelegate {
     }
     pub fn Invoke(
         &mut self,
-        saber: *mut Saber,
+        saber: *mut crate::GlobalNamespace::Saber,
         cutPoint: crate::UnityEngine::Vector3,
         orientation: crate::UnityEngine::Quaternion,
         cutDirVec: crate::UnityEngine::Vector3,

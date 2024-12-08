@@ -391,12 +391,12 @@ impl crate::UnityEngine::InputSystem::PlayerInput {
     pub const DeviceRegainedMessage: &'static str = "OnDeviceRegained";
     #[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
     pub type ActionEvent = crate::UnityEngine::InputSystem::PlayerInput_ActionEvent;
-    #[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
-    pub type DeviceRegainedEvent = crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent;
     #[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
     pub type ControlsChangedEvent = crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent;
     #[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
     pub type DeviceLostEvent = crate::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent;
+    #[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
+    pub type DeviceRegainedEvent = crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent;
     pub fn ActivateInput(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

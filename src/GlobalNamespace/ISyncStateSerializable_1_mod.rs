@@ -7,30 +7,36 @@ pub struct ISyncStateSerializable_1<T: quest_hook::libil2cpp::Type> {
 }
 #[cfg(feature = "ISyncStateSerializable_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ISyncStateSerializable_1 < T > => ""
-    ."ISyncStateSerializable`1" < T >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ISyncStateSerializable_1 < T >
+    => ""."ISyncStateSerializable`1" < T >
 );
 #[cfg(feature = "ISyncStateSerializable_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for ISyncStateSerializable_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
+for crate::GlobalNamespace::ISyncStateSerializable_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ISyncStateSerializable_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for ISyncStateSerializable_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
+for crate::GlobalNamespace::ISyncStateSerializable_1<T> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ISyncStateSerializable_1")]
-impl<T: quest_hook::libil2cpp::Type> ISyncStateSerializable_1<T> {
+impl<
+    T: quest_hook::libil2cpp::Type,
+> crate::GlobalNamespace::ISyncStateSerializable_1<T> {
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
-    pub fn get_id(&mut self) -> quest_hook::libil2cpp::Result<SyncStateId>
+    pub fn get_id(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SyncStateId>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -38,7 +44,8 @@ impl<T: quest_hook::libil2cpp::Type> ISyncStateSerializable_1<T> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: SyncStateId = __cordl_object.invoke("get_id", ())?;
+        let __cordl_ret: crate::GlobalNamespace::SyncStateId = __cordl_object
+            .invoke("get_id", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_state(&mut self) -> quest_hook::libil2cpp::Result<T>
@@ -65,7 +72,7 @@ impl<T: quest_hook::libil2cpp::Type> ISyncStateSerializable_1<T> {
     }
     pub fn set_id(
         &mut self,
-        value: SyncStateId,
+        value: crate::GlobalNamespace::SyncStateId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -111,7 +118,7 @@ impl<T: quest_hook::libil2cpp::Type> ISyncStateSerializable_1<T> {
 }
 #[cfg(feature = "ISyncStateSerializable_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for ISyncStateSerializable_1<T> {
+for crate::GlobalNamespace::ISyncStateSerializable_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

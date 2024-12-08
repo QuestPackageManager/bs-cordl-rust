@@ -29,10 +29,10 @@ impl std::ops::DerefMut for crate::System::Net::CookieCollection {
 }
 #[cfg(feature = "System+Net+CookieCollection")]
 impl crate::System::Net::CookieCollection {
-    #[cfg(feature = "System+Net+CookieCollection+Stamp")]
-    pub type Stamp = crate::System::Net::CookieCollection_Stamp;
     #[cfg(feature = "System+Net+CookieCollection+CookieCollectionEnumerator")]
     pub type CookieCollectionEnumerator = crate::System::Net::CookieCollection_CookieCollectionEnumerator;
+    #[cfg(feature = "System+Net+CookieCollection+Stamp")]
+    pub type Stamp = crate::System::Net::CookieCollection_Stamp;
     pub fn Add_Cookie0(
         &mut self,
         cookie: *mut crate::System::Net::Cookie,

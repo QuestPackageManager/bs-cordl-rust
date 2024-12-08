@@ -66,20 +66,20 @@ for crate::UnityEngine::PlayerLoop::Initialization {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization")]
 impl crate::UnityEngine::PlayerLoop::Initialization {
-    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+XREarlyUpdate")]
-    pub type XREarlyUpdate = crate::UnityEngine::PlayerLoop::Initialization_XREarlyUpdate;
     #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+AsyncUploadTimeSlicedUpdate")]
     pub type AsyncUploadTimeSlicedUpdate = crate::UnityEngine::PlayerLoop::Initialization_AsyncUploadTimeSlicedUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+SynchronizeInputs")]
-    pub type SynchronizeInputs = crate::UnityEngine::PlayerLoop::Initialization_SynchronizeInputs;
-    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+ProfilerStartFrame")]
-    pub type ProfilerStartFrame = crate::UnityEngine::PlayerLoop::Initialization_ProfilerStartFrame;
     #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+DirectorSampleTime")]
     pub type DirectorSampleTime = crate::UnityEngine::PlayerLoop::Initialization_DirectorSampleTime;
+    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+ProfilerStartFrame")]
+    pub type ProfilerStartFrame = crate::UnityEngine::PlayerLoop::Initialization_ProfilerStartFrame;
+    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+SynchronizeInputs")]
+    pub type SynchronizeInputs = crate::UnityEngine::PlayerLoop::Initialization_SynchronizeInputs;
     #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+SynchronizeState")]
     pub type SynchronizeState = crate::UnityEngine::PlayerLoop::Initialization_SynchronizeState;
     #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+UpdateCameraMotionVectors")]
     pub type UpdateCameraMotionVectors = crate::UnityEngine::PlayerLoop::Initialization_UpdateCameraMotionVectors;
+    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+XREarlyUpdate")]
+    pub type XREarlyUpdate = crate::UnityEngine::PlayerLoop::Initialization_XREarlyUpdate;
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+ProfilerStartFrame")]
 #[repr(C)]

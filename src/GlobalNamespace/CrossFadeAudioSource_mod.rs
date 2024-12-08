@@ -6,35 +6,36 @@ pub struct CrossFadeAudioSource {
     pub _duration: f32,
     pub _audioSource1: *mut crate::UnityEngine::AudioSource,
     pub _audioSource2: *mut crate::UnityEngine::AudioSource,
-    pub _audioPitchGainEffect1: *mut AudioPitchGainEffect,
-    pub _audioPitchGainEffect2: *mut AudioPitchGainEffect,
+    pub _audioPitchGainEffect1: *mut crate::GlobalNamespace::AudioPitchGainEffect,
+    pub _audioPitchGainEffect2: *mut crate::GlobalNamespace::AudioPitchGainEffect,
     pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
     pub _activeAudioSource: *mut crate::UnityEngine::AudioSource,
     pub _inactiveAudioSource: *mut crate::UnityEngine::AudioSource,
     pub _volumeDownTween: *mut crate::Tweening::Tween_1<f32>,
     pub _volumeUpTween: *mut crate::Tweening::Tween_1<f32>,
-    pub _activePitchGainEffect: *mut AudioPitchGainEffect,
-    pub _inactivePitchGainEffect: *mut AudioPitchGainEffect,
+    pub _activePitchGainEffect: *mut crate::GlobalNamespace::AudioPitchGainEffect,
+    pub _inactivePitchGainEffect: *mut crate::GlobalNamespace::AudioPitchGainEffect,
 }
 #[cfg(feature = "CrossFadeAudioSource")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CrossFadeAudioSource => ""."CrossFadeAudioSource"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CrossFadeAudioSource => ""
+    ."CrossFadeAudioSource"
 );
 #[cfg(feature = "CrossFadeAudioSource")]
-impl std::ops::Deref for CrossFadeAudioSource {
+impl std::ops::Deref for crate::GlobalNamespace::CrossFadeAudioSource {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CrossFadeAudioSource")]
-impl std::ops::DerefMut for CrossFadeAudioSource {
+impl std::ops::DerefMut for crate::GlobalNamespace::CrossFadeAudioSource {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CrossFadeAudioSource")]
-impl CrossFadeAudioSource {
+impl crate::GlobalNamespace::CrossFadeAudioSource {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -231,7 +232,7 @@ impl CrossFadeAudioSource {
     }
 }
 #[cfg(feature = "CrossFadeAudioSource")]
-impl quest_hook::libil2cpp::ObjectType for CrossFadeAudioSource {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CrossFadeAudioSource {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

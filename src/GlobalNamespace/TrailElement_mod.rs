@@ -11,26 +11,27 @@ pub struct TrailElement {
 }
 #[cfg(feature = "TrailElement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TrailElement => ""."TrailElement"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TrailElement => ""
+    ."TrailElement"
 );
 #[cfg(feature = "TrailElement")]
-impl std::ops::Deref for TrailElement {
+impl std::ops::Deref for crate::GlobalNamespace::TrailElement {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TrailElement")]
-impl std::ops::DerefMut for TrailElement {
+impl std::ops::DerefMut for crate::GlobalNamespace::TrailElement {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TrailElement")]
-impl TrailElement {
+impl crate::GlobalNamespace::TrailElement {
     pub fn CopyFrom(
         &mut self,
-        other: *mut TrailElement,
+        other: *mut crate::GlobalNamespace::TrailElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -72,7 +73,7 @@ impl TrailElement {
     }
     pub fn UpdateLocalDistance(
         &mut self,
-        prev: *mut TrailElement,
+        prev: *mut crate::GlobalNamespace::TrailElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -93,7 +94,7 @@ impl TrailElement {
     }
 }
 #[cfg(feature = "TrailElement")]
-impl quest_hook::libil2cpp::ObjectType for TrailElement {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TrailElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

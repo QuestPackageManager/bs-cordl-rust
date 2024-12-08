@@ -6,36 +6,38 @@ pub struct IMockBeatmapDataProvider {
 }
 #[cfg(feature = "IMockBeatmapDataProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IMockBeatmapDataProvider => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IMockBeatmapDataProvider => ""
     ."IMockBeatmapDataProvider"
 );
 #[cfg(feature = "IMockBeatmapDataProvider")]
-impl std::ops::Deref for IMockBeatmapDataProvider {
+impl std::ops::Deref for crate::GlobalNamespace::IMockBeatmapDataProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IMockBeatmapDataProvider")]
-impl std::ops::DerefMut for IMockBeatmapDataProvider {
+impl std::ops::DerefMut for crate::GlobalNamespace::IMockBeatmapDataProvider {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IMockBeatmapDataProvider")]
-impl IMockBeatmapDataProvider {
+impl crate::GlobalNamespace::IMockBeatmapDataProvider {
     pub fn GetBeatmapData(
         &mut self,
-        beatmap: *mut BeatmapKeyNetSerializable,
+        beatmap: *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut MockBeatmapData>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::MockBeatmapData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut MockBeatmapData,
+            *mut crate::GlobalNamespace::MockBeatmapData,
         > = __cordl_object.invoke("GetBeatmapData", (beatmap, cancellationToken))?;
         Ok(__cordl_ret)
     }
@@ -46,7 +48,8 @@ impl IMockBeatmapDataProvider {
     }
 }
 #[cfg(feature = "IMockBeatmapDataProvider")]
-impl quest_hook::libil2cpp::ObjectType for IMockBeatmapDataProvider {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IMockBeatmapDataProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

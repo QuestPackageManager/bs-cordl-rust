@@ -42,18 +42,18 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
     pub const Separator: char = '/';
     pub const SeparatorReplacement: char = ' ';
     pub const Wildcard: &'static str = "*";
-    #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathComponentType")]
-    pub type PathComponentType = crate::UnityEngine::InputSystem::InputControlPath_PathComponentType;
-    #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathParser")]
-    pub type PathParser = crate::UnityEngine::InputSystem::InputControlPath_PathParser;
-    #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+_Parse_d__34")]
-    pub type _Parse_d__34 = crate::UnityEngine::InputSystem::InputControlPath__Parse_d__34;
     #[cfg(
         feature = "UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions"
     )]
     pub type HumanReadableStringOptions = crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions;
     #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent")]
     pub type ParsedPathComponent = crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent;
+    #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathComponentType")]
+    pub type PathComponentType = crate::UnityEngine::InputSystem::InputControlPath_PathComponentType;
+    #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathParser")]
+    pub type PathParser = crate::UnityEngine::InputSystem::InputControlPath_PathParser;
+    #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+_Parse_d__34")]
+    pub type _Parse_d__34 = crate::UnityEngine::InputSystem::InputControlPath__Parse_d__34;
     #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+__c")]
     pub type __c = crate::UnityEngine::InputSystem::InputControlPath___c;
 }

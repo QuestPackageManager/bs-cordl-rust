@@ -7,30 +7,30 @@ pub struct EndOfLifeNoticeViewController {
     pub _duration: f32,
     pub _endOfLifeNoticeTextMesh: *mut crate::TMPro::TextMeshProUGUI,
     pub _endOfLifeNoticeLocalizationKey: *mut crate::System::String,
-    pub _coroutineStarter: *mut ICoroutineStarter,
+    pub _coroutineStarter: *mut crate::GlobalNamespace::ICoroutineStarter,
     pub didFinishEvent: *mut crate::System::Action,
     pub _enableOkButtonCoroutine: *mut crate::UnityEngine::Coroutine,
 }
 #[cfg(feature = "EndOfLifeNoticeViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EndOfLifeNoticeViewController => ""
-    ."EndOfLifeNoticeViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EndOfLifeNoticeViewController
+    => ""."EndOfLifeNoticeViewController"
 );
 #[cfg(feature = "EndOfLifeNoticeViewController")]
-impl std::ops::Deref for EndOfLifeNoticeViewController {
+impl std::ops::Deref for crate::GlobalNamespace::EndOfLifeNoticeViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EndOfLifeNoticeViewController")]
-impl std::ops::DerefMut for EndOfLifeNoticeViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::EndOfLifeNoticeViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EndOfLifeNoticeViewController")]
-impl EndOfLifeNoticeViewController {
+impl crate::GlobalNamespace::EndOfLifeNoticeViewController {
     #[cfg(feature = "EndOfLifeNoticeViewController+_EnableOkButton_d__10")]
     pub type _EnableOkButton_d__10 = crate::GlobalNamespace::EndOfLifeNoticeViewController__EnableOkButton_d__10;
     pub fn DidActivate(
@@ -110,7 +110,8 @@ impl EndOfLifeNoticeViewController {
     }
 }
 #[cfg(feature = "EndOfLifeNoticeViewController")]
-impl quest_hook::libil2cpp::ObjectType for EndOfLifeNoticeViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EndOfLifeNoticeViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

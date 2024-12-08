@@ -2,29 +2,29 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassRenderDataSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub data: *mut crate::GlobalNamespace::BloomPrePassRenderDataSO_Data,
 }
 #[cfg(feature = "BloomPrePassRenderDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomPrePassRenderDataSO => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BloomPrePassRenderDataSO => ""
     ."BloomPrePassRenderDataSO"
 );
 #[cfg(feature = "BloomPrePassRenderDataSO")]
-impl std::ops::Deref for BloomPrePassRenderDataSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassRenderDataSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassRenderDataSO")]
-impl std::ops::DerefMut for BloomPrePassRenderDataSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassRenderDataSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassRenderDataSO")]
-impl BloomPrePassRenderDataSO {
+impl crate::GlobalNamespace::BloomPrePassRenderDataSO {
     #[cfg(feature = "BloomPrePassRenderDataSO+Data")]
     pub type Data = crate::GlobalNamespace::BloomPrePassRenderDataSO_Data;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -46,7 +46,8 @@ impl BloomPrePassRenderDataSO {
     }
 }
 #[cfg(feature = "BloomPrePassRenderDataSO")]
-impl quest_hook::libil2cpp::ObjectType for BloomPrePassRenderDataSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BloomPrePassRenderDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -64,7 +65,7 @@ pub struct BloomPrePassRenderDataSO_Data {
     pub viewMatrix: crate::UnityEngine::Matrix4x4,
     pub projectionMatrix: crate::UnityEngine::Matrix4x4,
     pub stereoCameraEyeOffset: f32,
-    pub toneMapping: ToneMapping,
+    pub toneMapping: crate::GlobalNamespace::ToneMapping,
 }
 #[cfg(feature = "BloomPrePassRenderDataSO+Data")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

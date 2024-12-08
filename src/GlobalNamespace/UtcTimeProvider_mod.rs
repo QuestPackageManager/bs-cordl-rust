@@ -6,23 +6,24 @@ pub struct UtcTimeProvider {
 }
 #[cfg(feature = "UtcTimeProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for UtcTimeProvider => ""."UtcTimeProvider"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::UtcTimeProvider => ""
+    ."UtcTimeProvider"
 );
 #[cfg(feature = "UtcTimeProvider")]
-impl std::ops::Deref for UtcTimeProvider {
+impl std::ops::Deref for crate::GlobalNamespace::UtcTimeProvider {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UtcTimeProvider")]
-impl std::ops::DerefMut for UtcTimeProvider {
+impl std::ops::DerefMut for crate::GlobalNamespace::UtcTimeProvider {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "UtcTimeProvider")]
-impl UtcTimeProvider {
+impl crate::GlobalNamespace::UtcTimeProvider {
     pub fn GetTicks(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -56,7 +57,7 @@ impl UtcTimeProvider {
     }
 }
 #[cfg(feature = "UtcTimeProvider")]
-impl quest_hook::libil2cpp::ObjectType for UtcTimeProvider {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UtcTimeProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

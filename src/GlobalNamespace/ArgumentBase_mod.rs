@@ -9,23 +9,24 @@ pub struct ArgumentBase {
 }
 #[cfg(feature = "ArgumentBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ArgumentBase => ""."ArgumentBase"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ArgumentBase => ""
+    ."ArgumentBase"
 );
 #[cfg(feature = "ArgumentBase")]
-impl std::ops::Deref for ArgumentBase {
+impl std::ops::Deref for crate::GlobalNamespace::ArgumentBase {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ArgumentBase")]
-impl std::ops::DerefMut for ArgumentBase {
+impl std::ops::DerefMut for crate::GlobalNamespace::ArgumentBase {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ArgumentBase")]
-impl ArgumentBase {
+impl crate::GlobalNamespace::ArgumentBase {
     pub fn New(
         name: *mut crate::System::String,
         description: *mut crate::System::String,
@@ -81,7 +82,7 @@ impl ArgumentBase {
     }
 }
 #[cfg(feature = "ArgumentBase")]
-impl quest_hook::libil2cpp::ObjectType for ArgumentBase {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ArgumentBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

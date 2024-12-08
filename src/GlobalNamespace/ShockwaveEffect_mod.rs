@@ -10,23 +10,24 @@ pub struct ShockwaveEffect {
 }
 #[cfg(feature = "ShockwaveEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ShockwaveEffect => ""."ShockwaveEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ShockwaveEffect => ""
+    ."ShockwaveEffect"
 );
 #[cfg(feature = "ShockwaveEffect")]
-impl std::ops::Deref for ShockwaveEffect {
+impl std::ops::Deref for crate::GlobalNamespace::ShockwaveEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ShockwaveEffect")]
-impl std::ops::DerefMut for ShockwaveEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::ShockwaveEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ShockwaveEffect")]
-impl ShockwaveEffect {
+impl crate::GlobalNamespace::ShockwaveEffect {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -67,7 +68,7 @@ impl ShockwaveEffect {
     }
 }
 #[cfg(feature = "ShockwaveEffect")]
-impl quest_hook::libil2cpp::ObjectType for ShockwaveEffect {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ShockwaveEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

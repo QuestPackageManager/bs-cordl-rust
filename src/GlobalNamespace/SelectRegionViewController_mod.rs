@@ -70,24 +70,24 @@ pub struct SelectRegionViewController {
 }
 #[cfg(feature = "SelectRegionViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SelectRegionViewController => ""
-    ."SelectRegionViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SelectRegionViewController =>
+    ""."SelectRegionViewController"
 );
 #[cfg(feature = "SelectRegionViewController")]
-impl std::ops::Deref for SelectRegionViewController {
+impl std::ops::Deref for crate::GlobalNamespace::SelectRegionViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SelectRegionViewController")]
-impl std::ops::DerefMut for SelectRegionViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::SelectRegionViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SelectRegionViewController")]
-impl SelectRegionViewController {
+impl crate::GlobalNamespace::SelectRegionViewController {
     #[cfg(feature = "SelectRegionViewController+Region")]
     pub type Region = crate::GlobalNamespace::SelectRegionViewController_Region;
     #[cfg(feature = "SelectRegionViewController+RegionToLocalizationKeyPair")]
@@ -187,7 +187,8 @@ impl SelectRegionViewController {
     }
 }
 #[cfg(feature = "SelectRegionViewController")]
-impl quest_hook::libil2cpp::ObjectType for SelectRegionViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SelectRegionViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

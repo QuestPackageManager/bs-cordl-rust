@@ -3,33 +3,33 @@
 #[derive(Debug)]
 pub struct TutorialNoteCutEffectSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _failFlyingTextSpawner: *mut FlyingTextSpawner,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
+    pub _failFlyingTextSpawner: *mut crate::GlobalNamespace::FlyingTextSpawner,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
 }
 #[cfg(feature = "TutorialNoteCutEffectSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TutorialNoteCutEffectSpawner => ""
-    ."TutorialNoteCutEffectSpawner"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TutorialNoteCutEffectSpawner =>
+    ""."TutorialNoteCutEffectSpawner"
 );
 #[cfg(feature = "TutorialNoteCutEffectSpawner")]
-impl std::ops::Deref for TutorialNoteCutEffectSpawner {
+impl std::ops::Deref for crate::GlobalNamespace::TutorialNoteCutEffectSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TutorialNoteCutEffectSpawner")]
-impl std::ops::DerefMut for TutorialNoteCutEffectSpawner {
+impl std::ops::DerefMut for crate::GlobalNamespace::TutorialNoteCutEffectSpawner {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TutorialNoteCutEffectSpawner")]
-impl TutorialNoteCutEffectSpawner {
+impl crate::GlobalNamespace::TutorialNoteCutEffectSpawner {
     pub fn HandleNoteWasCut(
         &mut self,
-        noteController: *mut NoteController,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -77,7 +77,8 @@ impl TutorialNoteCutEffectSpawner {
     }
 }
 #[cfg(feature = "TutorialNoteCutEffectSpawner")]
-impl quest_hook::libil2cpp::ObjectType for TutorialNoteCutEffectSpawner {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::TutorialNoteCutEffectSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,28 +2,29 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DistanceObjectiveValueFormatterSO {
-    __cordl_parent: ObjectiveValueFormatterSO,
+    __cordl_parent: crate::GlobalNamespace::ObjectiveValueFormatterSO,
 }
 #[cfg(feature = "DistanceObjectiveValueFormatterSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for DistanceObjectiveValueFormatterSO => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::DistanceObjectiveValueFormatterSO => ""
     ."DistanceObjectiveValueFormatterSO"
 );
 #[cfg(feature = "DistanceObjectiveValueFormatterSO")]
-impl std::ops::Deref for DistanceObjectiveValueFormatterSO {
-    type Target = ObjectiveValueFormatterSO;
+impl std::ops::Deref for crate::GlobalNamespace::DistanceObjectiveValueFormatterSO {
+    type Target = crate::GlobalNamespace::ObjectiveValueFormatterSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DistanceObjectiveValueFormatterSO")]
-impl std::ops::DerefMut for DistanceObjectiveValueFormatterSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::DistanceObjectiveValueFormatterSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "DistanceObjectiveValueFormatterSO")]
-impl DistanceObjectiveValueFormatterSO {
+impl crate::GlobalNamespace::DistanceObjectiveValueFormatterSO {
     pub fn FormatValue(
         &mut self,
         value: i32,
@@ -54,7 +55,8 @@ impl DistanceObjectiveValueFormatterSO {
     }
 }
 #[cfg(feature = "DistanceObjectiveValueFormatterSO")]
-impl quest_hook::libil2cpp::ObjectType for DistanceObjectiveValueFormatterSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::DistanceObjectiveValueFormatterSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

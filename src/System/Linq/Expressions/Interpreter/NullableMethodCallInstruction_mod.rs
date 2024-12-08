@@ -28,9 +28,13 @@ for crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction
 #[cfg(feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction {
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+HasValue"
+        feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+EqualsClass"
     )]
-    pub type HasValue = crate::GlobalNamespace::NullableMethodCallInstruction_HasValue;
+    pub type EqualsClass = crate::GlobalNamespace::NullableMethodCallInstruction_EqualsClass;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetHashCodeClass"
+    )]
+    pub type GetHashCodeClass = crate::GlobalNamespace::NullableMethodCallInstruction_GetHashCodeClass;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValue"
     )]
@@ -44,17 +48,13 @@ impl crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstructio
     )]
     pub type GetValueOrDefault1 = crate::GlobalNamespace::NullableMethodCallInstruction_GetValueOrDefault1;
     #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+HasValue"
+    )]
+    pub type HasValue = crate::GlobalNamespace::NullableMethodCallInstruction_HasValue;
+    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+ToStringClass"
     )]
     pub type ToStringClass = crate::GlobalNamespace::NullableMethodCallInstruction_ToStringClass;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetHashCodeClass"
-    )]
-    pub type GetHashCodeClass = crate::GlobalNamespace::NullableMethodCallInstruction_GetHashCodeClass;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+EqualsClass"
-    )]
-    pub type EqualsClass = crate::GlobalNamespace::NullableMethodCallInstruction_EqualsClass;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

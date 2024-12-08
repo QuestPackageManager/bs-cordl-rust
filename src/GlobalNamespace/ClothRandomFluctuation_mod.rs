@@ -16,23 +16,24 @@ pub struct ClothRandomFluctuation {
 }
 #[cfg(feature = "ClothRandomFluctuation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ClothRandomFluctuation => ""."ClothRandomFluctuation"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ClothRandomFluctuation => ""
+    ."ClothRandomFluctuation"
 );
 #[cfg(feature = "ClothRandomFluctuation")]
-impl std::ops::Deref for ClothRandomFluctuation {
+impl std::ops::Deref for crate::GlobalNamespace::ClothRandomFluctuation {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ClothRandomFluctuation")]
-impl std::ops::DerefMut for ClothRandomFluctuation {
+impl std::ops::DerefMut for crate::GlobalNamespace::ClothRandomFluctuation {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ClothRandomFluctuation")]
-impl ClothRandomFluctuation {
+impl crate::GlobalNamespace::ClothRandomFluctuation {
     #[cfg(feature = "ClothRandomFluctuation+SineLayer")]
     pub type SineLayer = crate::GlobalNamespace::ClothRandomFluctuation_SineLayer;
     pub fn FluctuateCloth(
@@ -86,7 +87,8 @@ impl ClothRandomFluctuation {
     }
 }
 #[cfg(feature = "ClothRandomFluctuation")]
-impl quest_hook::libil2cpp::ObjectType for ClothRandomFluctuation {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ClothRandomFluctuation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

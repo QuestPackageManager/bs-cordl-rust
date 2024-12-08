@@ -27,11 +27,11 @@ pub struct OVRPlayerController {
     pub EnableRotation: bool,
     pub RotationEitherThumbstick: bool,
     pub Controller: *mut crate::UnityEngine::CharacterController,
-    pub CameraRig: *mut OVRCameraRig,
+    pub CameraRig: *mut crate::GlobalNamespace::OVRCameraRig,
     pub MoveScale: f32,
     pub MoveThrottle: crate::UnityEngine::Vector3,
     pub FallSpeed: f32,
-    pub InitialPose: crate::System::Nullable_1<OVRPose>,
+    pub InitialPose: crate::System::Nullable_1<crate::GlobalNamespace::OVRPose>,
     pub _InitialYRotation_k__BackingField: f32,
     pub MoveScaleMultiplier: f32,
     pub RotationScaleMultiplier: f32,
@@ -46,23 +46,24 @@ pub struct OVRPlayerController {
 }
 #[cfg(feature = "OVRPlayerController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRPlayerController => ""."OVRPlayerController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRPlayerController => ""
+    ."OVRPlayerController"
 );
 #[cfg(feature = "OVRPlayerController")]
-impl std::ops::Deref for OVRPlayerController {
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlayerController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRPlayerController")]
-impl std::ops::DerefMut for OVRPlayerController {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlayerController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRPlayerController")]
-impl OVRPlayerController {
+impl crate::GlobalNamespace::OVRPlayerController {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -257,7 +258,7 @@ impl OVRPlayerController {
     }
     pub fn UpdateTransform(
         &mut self,
-        rig: *mut OVRCameraRig,
+        rig: *mut crate::GlobalNamespace::OVRCameraRig,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -362,7 +363,7 @@ impl OVRPlayerController {
     }
 }
 #[cfg(feature = "OVRPlayerController")]
-impl quest_hook::libil2cpp::ObjectType for OVRPlayerController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlayerController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

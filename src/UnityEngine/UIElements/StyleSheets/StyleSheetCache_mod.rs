@@ -155,12 +155,12 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
 impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
+    #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
+    pub type SheetHandleKey = crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey;
     #[cfg(
         feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
     )]
     pub type SheetHandleKeyComparer = crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer;
-    #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
-    pub type SheetHandleKey = crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey;
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
 impl quest_hook::libil2cpp::ObjectType

@@ -9,5 +9,6 @@ pub enum ArcVisibilityType {
 }
 #[cfg(feature = "ArcVisibilityType")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for ArcVisibilityType => ""."ArcVisibilityType"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ArcVisibilityType => ""
+    ."ArcVisibilityType"
 );

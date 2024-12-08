@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpawnRotationChevron_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<*mut SpawnRotationChevron>,
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::SpawnRotationChevron,
+    >,
 }
 #[cfg(feature = "SpawnRotationChevron+Pool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SpawnRotationChevron+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::SpawnRotationChevron_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<*mut SpawnRotationChevron>;
+    type Target = crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::SpawnRotationChevron,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,30 +60,33 @@ for crate::GlobalNamespace::SpawnRotationChevron_Pool {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpawnRotationChevron {
-    __cordl_parent: LightWithIdMonoBehaviour,
-    pub _lights: *mut quest_hook::libil2cpp::Il2CppArray<*mut TubeBloomPrePassLight>,
+    __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
+    pub _lights: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+    >,
     pub _color: crate::UnityEngine::Color,
     pub _lightAmount: f32,
 }
 #[cfg(feature = "SpawnRotationChevron")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SpawnRotationChevron => ""."SpawnRotationChevron"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SpawnRotationChevron => ""
+    ."SpawnRotationChevron"
 );
 #[cfg(feature = "SpawnRotationChevron")]
-impl std::ops::Deref for SpawnRotationChevron {
-    type Target = LightWithIdMonoBehaviour;
+impl std::ops::Deref for crate::GlobalNamespace::SpawnRotationChevron {
+    type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SpawnRotationChevron")]
-impl std::ops::DerefMut for SpawnRotationChevron {
+impl std::ops::DerefMut for crate::GlobalNamespace::SpawnRotationChevron {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SpawnRotationChevron")]
-impl SpawnRotationChevron {
+impl crate::GlobalNamespace::SpawnRotationChevron {
     #[cfg(feature = "SpawnRotationChevron+Pool")]
     pub type Pool = crate::GlobalNamespace::SpawnRotationChevron_Pool;
     pub fn ColorWasSet(
@@ -133,7 +140,7 @@ impl SpawnRotationChevron {
     }
 }
 #[cfg(feature = "SpawnRotationChevron")]
-impl quest_hook::libil2cpp::ObjectType for SpawnRotationChevron {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SpawnRotationChevron {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

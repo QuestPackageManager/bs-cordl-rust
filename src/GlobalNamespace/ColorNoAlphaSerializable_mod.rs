@@ -6,11 +6,12 @@ pub struct ColorNoAlphaSerializable {
 }
 #[cfg(feature = "ColorNoAlphaSerializable")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for ColorNoAlphaSerializable => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ColorNoAlphaSerializable => ""
     ."ColorNoAlphaSerializable"
 );
 #[cfg(feature = "ColorNoAlphaSerializable")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for ColorNoAlphaSerializable {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::ColorNoAlphaSerializable {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -20,7 +21,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for ColorNoAlphaSerializable {
     }
 }
 #[cfg(feature = "ColorNoAlphaSerializable")]
-impl ColorNoAlphaSerializable {
+impl crate::GlobalNamespace::ColorNoAlphaSerializable {
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
@@ -34,7 +35,7 @@ impl ColorNoAlphaSerializable {
     }
     pub fn Equals_ColorNoAlphaSerializable0(
         &mut self,
-        other: ColorNoAlphaSerializable,
+        other: crate::GlobalNamespace::ColorNoAlphaSerializable,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

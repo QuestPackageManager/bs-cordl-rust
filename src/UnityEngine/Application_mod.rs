@@ -24,12 +24,12 @@ impl std::ops::DerefMut for crate::UnityEngine::Application {
 }
 #[cfg(feature = "UnityEngine+Application")]
 impl crate::UnityEngine::Application {
+    #[cfg(feature = "UnityEngine+Application+LogCallback")]
+    pub type LogCallback = crate::UnityEngine::Application_LogCallback;
     #[cfg(feature = "UnityEngine+Application+LowMemoryCallback")]
     pub type LowMemoryCallback = crate::UnityEngine::Application_LowMemoryCallback;
     #[cfg(feature = "UnityEngine+Application+MemoryUsageChangedCallback")]
     pub type MemoryUsageChangedCallback = crate::UnityEngine::Application_MemoryUsageChangedCallback;
-    #[cfg(feature = "UnityEngine+Application+LogCallback")]
-    pub type LogCallback = crate::UnityEngine::Application_LogCallback;
 }
 #[cfg(feature = "UnityEngine+Application")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Application {

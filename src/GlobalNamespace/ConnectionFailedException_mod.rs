@@ -3,30 +3,30 @@
 #[derive(Debug)]
 pub struct ConnectionFailedException {
     __cordl_parent: crate::System::Exception,
-    pub reason: ConnectionFailedReason,
+    pub reason: crate::GlobalNamespace::ConnectionFailedReason,
 }
 #[cfg(feature = "ConnectionFailedException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ConnectionFailedException => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ConnectionFailedException => ""
     ."ConnectionFailedException"
 );
 #[cfg(feature = "ConnectionFailedException")]
-impl std::ops::Deref for ConnectionFailedException {
+impl std::ops::Deref for crate::GlobalNamespace::ConnectionFailedException {
     type Target = crate::System::Exception;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ConnectionFailedException")]
-impl std::ops::DerefMut for ConnectionFailedException {
+impl std::ops::DerefMut for crate::GlobalNamespace::ConnectionFailedException {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ConnectionFailedException")]
-impl ConnectionFailedException {
+impl crate::GlobalNamespace::ConnectionFailedException {
     pub fn New_ConnectionFailedReason0(
-        reason: ConnectionFailedReason,
+        reason: crate::GlobalNamespace::ConnectionFailedReason,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -35,7 +35,7 @@ impl ConnectionFailedException {
         Ok(__cordl_object)
     }
     pub fn New_String1(
-        reason: ConnectionFailedReason,
+        reason: crate::GlobalNamespace::ConnectionFailedReason,
         message: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -46,7 +46,7 @@ impl ConnectionFailedException {
     }
     pub fn _ctor_ConnectionFailedReason0(
         &mut self,
-        reason: ConnectionFailedReason,
+        reason: crate::GlobalNamespace::ConnectionFailedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -57,7 +57,7 @@ impl ConnectionFailedException {
     }
     pub fn _ctor_String1(
         &mut self,
-        reason: ConnectionFailedReason,
+        reason: crate::GlobalNamespace::ConnectionFailedReason,
         message: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -69,7 +69,8 @@ impl ConnectionFailedException {
     }
 }
 #[cfg(feature = "ConnectionFailedException")]
-impl quest_hook::libil2cpp::ObjectType for ConnectionFailedException {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ConnectionFailedException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

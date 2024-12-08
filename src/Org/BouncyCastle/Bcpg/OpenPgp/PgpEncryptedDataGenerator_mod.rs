@@ -208,12 +208,12 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator")]
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator {
+    #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator+EncMethod")]
+    pub type EncMethod = crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_EncMethod;
     #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator+PbeMethod")]
     pub type PbeMethod = crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_PbeMethod;
     #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator+PubMethod")]
     pub type PubMethod = crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_PubMethod;
-    #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedDataGenerator+EncMethod")]
-    pub type EncMethod = crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpEncryptedDataGenerator_EncMethod;
     pub fn AddCheckSum(
         &mut self,
         sessionInfo: *mut quest_hook::libil2cpp::Il2CppArray<u8>,

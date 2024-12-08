@@ -467,26 +467,26 @@ impl std::ops::DerefMut for crate::Unity::Properties::TypeUtility {
 }
 #[cfg(feature = "Unity+Properties+TypeUtility")]
 impl crate::Unity::Properties::TypeUtility {
-    #[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor")]
-    type ITypeConstructor = crate::Unity::Properties::TypeUtility_ITypeConstructor;
-    #[cfg(feature = "Unity+Properties+TypeUtility+NonConstructable")]
-    pub type NonConstructable = crate::Unity::Properties::TypeUtility_NonConstructable;
-    #[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructorVisitor")]
-    pub type TypeConstructorVisitor = crate::Unity::Properties::TypeUtility_TypeConstructorVisitor;
-    #[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor_1")]
-    type ITypeConstructor_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Properties::TypeUtility_ITypeConstructor_1<
-        T,
-    >;
     #[cfg(feature = "Unity+Properties+TypeUtility+Cache_1")]
     pub type Cache_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Properties::TypeUtility_Cache_1<
         T,
     >;
-    #[cfg(feature = "Unity+Properties+TypeUtility+__c")]
-    pub type __c = crate::Unity::Properties::TypeUtility___c;
+    #[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor")]
+    type ITypeConstructor = crate::Unity::Properties::TypeUtility_ITypeConstructor;
+    #[cfg(feature = "Unity+Properties+TypeUtility+ITypeConstructor_1")]
+    type ITypeConstructor_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Properties::TypeUtility_ITypeConstructor_1<
+        T,
+    >;
+    #[cfg(feature = "Unity+Properties+TypeUtility+NonConstructable")]
+    pub type NonConstructable = crate::Unity::Properties::TypeUtility_NonConstructable;
+    #[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructorVisitor")]
+    pub type TypeConstructorVisitor = crate::Unity::Properties::TypeUtility_TypeConstructorVisitor;
     #[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructor_1")]
     pub type TypeConstructor_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Properties::TypeUtility_TypeConstructor_1<
         T,
     >;
+    #[cfg(feature = "Unity+Properties+TypeUtility+__c")]
+    pub type __c = crate::Unity::Properties::TypeUtility___c;
 }
 #[cfg(feature = "Unity+Properties+TypeUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Properties::TypeUtility {

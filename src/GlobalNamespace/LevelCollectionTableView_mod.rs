@@ -5,24 +5,24 @@ pub struct LevelCollectionTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _tableView: *mut crate::HMUI::TableView,
     pub _alphabetScrollbar: *mut crate::HMUI::AlphabetScrollbar,
-    pub _levelCellPrefab: *mut LevelListTableCell,
+    pub _levelCellPrefab: *mut crate::GlobalNamespace::LevelListTableCell,
     pub _levelCellsReuseIdentifier: *mut crate::System::String,
-    pub _packCellPrefab: *mut LevelPackHeaderTableCell,
+    pub _packCellPrefab: *mut crate::GlobalNamespace::LevelPackHeaderTableCell,
     pub _packCellsReuseIdentifier: *mut crate::System::String,
     pub _cellHeight: f32,
-    pub _additionalContentModel: *mut IAdditionalContentModel,
-    pub _entitlementModel: *mut IEntitlementModel,
-    pub _beatmapLevelsPromoModel: *mut BeatmapLevelsPromoModel,
+    pub _additionalContentModel: *mut crate::GlobalNamespace::IAdditionalContentModel,
+    pub _entitlementModel: *mut crate::GlobalNamespace::IEntitlementModel,
+    pub _beatmapLevelsPromoModel: *mut crate::GlobalNamespace::BeatmapLevelsPromoModel,
     pub didSelectLevelEvent: *mut crate::System::Action_2<
-        *mut LevelCollectionTableView,
-        *mut BeatmapLevel,
+        *mut crate::GlobalNamespace::LevelCollectionTableView,
+        *mut crate::GlobalNamespace::BeatmapLevel,
     >,
     pub didSelectHeaderEvent: *mut crate::System::Action_1<
-        *mut LevelCollectionTableView,
+        *mut crate::GlobalNamespace::LevelCollectionTableView,
     >,
     pub _isInitialized: bool,
     pub _beatmapLevels: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut BeatmapLevel,
+        *mut crate::GlobalNamespace::BeatmapLevel,
     >,
     pub _headerSprite: *mut crate::UnityEngine::Sprite,
     pub _headerText: *mut crate::System::String,
@@ -31,28 +31,28 @@ pub struct LevelCollectionTableView {
         *mut crate::System::String,
     >,
     pub _selectedRow: i32,
-    pub _selectedBeatmapLevel: *mut BeatmapLevel,
+    pub _selectedBeatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
 }
 #[cfg(feature = "LevelCollectionTableView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LevelCollectionTableView => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LevelCollectionTableView => ""
     ."LevelCollectionTableView"
 );
 #[cfg(feature = "LevelCollectionTableView")]
-impl std::ops::Deref for LevelCollectionTableView {
+impl std::ops::Deref for crate::GlobalNamespace::LevelCollectionTableView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelCollectionTableView")]
-impl std::ops::DerefMut for LevelCollectionTableView {
+impl std::ops::DerefMut for crate::GlobalNamespace::LevelCollectionTableView {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelCollectionTableView")]
-impl LevelCollectionTableView {
+impl crate::GlobalNamespace::LevelCollectionTableView {
     pub fn CancelAsyncOperations(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -205,7 +205,7 @@ impl LevelCollectionTableView {
     }
     pub fn SelectLevel(
         &mut self,
-        beatmapLevel: *mut BeatmapLevel,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -227,7 +227,7 @@ impl LevelCollectionTableView {
     pub fn SetData(
         &mut self,
         beatmapLevels: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut BeatmapLevel,
+            *mut crate::GlobalNamespace::BeatmapLevel,
         >,
         favoriteLevelIds: *mut crate::System::Collections::Generic::HashSet_1<
             *mut crate::System::String,
@@ -262,7 +262,9 @@ impl LevelCollectionTableView {
     }
     pub fn add_didSelectHeaderEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut LevelCollectionTableView>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::LevelCollectionTableView,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -274,8 +276,8 @@ impl LevelCollectionTableView {
     pub fn add_didSelectLevelEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut LevelCollectionTableView,
-            *mut BeatmapLevel,
+            *mut crate::GlobalNamespace::LevelCollectionTableView,
+            *mut crate::GlobalNamespace::BeatmapLevel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -287,7 +289,9 @@ impl LevelCollectionTableView {
     }
     pub fn remove_didSelectHeaderEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut LevelCollectionTableView>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::LevelCollectionTableView,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -299,8 +303,8 @@ impl LevelCollectionTableView {
     pub fn remove_didSelectLevelEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut LevelCollectionTableView,
-            *mut BeatmapLevel,
+            *mut crate::GlobalNamespace::LevelCollectionTableView,
+            *mut crate::GlobalNamespace::BeatmapLevel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -312,7 +316,8 @@ impl LevelCollectionTableView {
     }
 }
 #[cfg(feature = "LevelCollectionTableView")]
-impl quest_hook::libil2cpp::ObjectType for LevelCollectionTableView {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LevelCollectionTableView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

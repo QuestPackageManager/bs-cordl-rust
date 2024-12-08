@@ -3,28 +3,28 @@
 #[derive(Debug)]
 pub struct DeactivateOnInputFocusCapture {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
 }
 #[cfg(feature = "DeactivateOnInputFocusCapture")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for DeactivateOnInputFocusCapture => ""
-    ."DeactivateOnInputFocusCapture"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::DeactivateOnInputFocusCapture
+    => ""."DeactivateOnInputFocusCapture"
 );
 #[cfg(feature = "DeactivateOnInputFocusCapture")]
-impl std::ops::Deref for DeactivateOnInputFocusCapture {
+impl std::ops::Deref for crate::GlobalNamespace::DeactivateOnInputFocusCapture {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DeactivateOnInputFocusCapture")]
-impl std::ops::DerefMut for DeactivateOnInputFocusCapture {
+impl std::ops::DerefMut for crate::GlobalNamespace::DeactivateOnInputFocusCapture {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "DeactivateOnInputFocusCapture")]
-impl DeactivateOnInputFocusCapture {
+impl crate::GlobalNamespace::DeactivateOnInputFocusCapture {
     pub fn ActivateGameObject(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -67,7 +67,7 @@ impl DeactivateOnInputFocusCapture {
     }
     pub fn Init(
         &mut self,
-        vrPlatformHelper: *mut IVRPlatformHelper,
+        vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -135,7 +135,8 @@ impl DeactivateOnInputFocusCapture {
     }
 }
 #[cfg(feature = "DeactivateOnInputFocusCapture")]
-impl quest_hook::libil2cpp::ObjectType for DeactivateOnInputFocusCapture {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::DeactivateOnInputFocusCapture {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

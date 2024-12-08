@@ -7,23 +7,24 @@ pub struct PoolableSerializable {
 }
 #[cfg(feature = "PoolableSerializable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PoolableSerializable => ""."PoolableSerializable"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PoolableSerializable => ""
+    ."PoolableSerializable"
 );
 #[cfg(feature = "PoolableSerializable")]
-impl std::ops::Deref for PoolableSerializable {
+impl std::ops::Deref for crate::GlobalNamespace::PoolableSerializable {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PoolableSerializable")]
-impl std::ops::DerefMut for PoolableSerializable {
+impl std::ops::DerefMut for crate::GlobalNamespace::PoolableSerializable {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PoolableSerializable")]
-impl PoolableSerializable {
+impl crate::GlobalNamespace::PoolableSerializable {
     pub const kPoolSize: i32 = 32i32;
     pub fn Deserialize(
         &mut self,
@@ -86,7 +87,7 @@ impl PoolableSerializable {
     }
 }
 #[cfg(feature = "PoolableSerializable")]
-impl quest_hook::libil2cpp::ObjectType for PoolableSerializable {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PoolableSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

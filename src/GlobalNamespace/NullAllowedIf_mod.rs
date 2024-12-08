@@ -2,30 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NullAllowedIf {
-    __cordl_parent: NullAllowed,
+    __cordl_parent: crate::GlobalNamespace::NullAllowed,
     pub propertyName: *mut crate::System::String,
     pub _valueToCompare: *mut crate::System::Object,
-    pub _comparisonOperation: ComparisonOperation,
+    pub _comparisonOperation: crate::GlobalNamespace::ComparisonOperation,
 }
 #[cfg(feature = "NullAllowedIf")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NullAllowedIf => ""."NullAllowedIf"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NullAllowedIf => ""
+    ."NullAllowedIf"
 );
 #[cfg(feature = "NullAllowedIf")]
-impl std::ops::Deref for NullAllowedIf {
-    type Target = NullAllowed;
+impl std::ops::Deref for crate::GlobalNamespace::NullAllowedIf {
+    type Target = crate::GlobalNamespace::NullAllowed;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NullAllowedIf")]
-impl std::ops::DerefMut for NullAllowedIf {
+impl std::ops::DerefMut for crate::GlobalNamespace::NullAllowedIf {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NullAllowedIf")]
-impl NullAllowedIf {
+impl crate::GlobalNamespace::NullAllowedIf {
     pub fn IsNullAllowedFor(
         &mut self,
         value: *mut crate::System::Object,
@@ -40,7 +41,7 @@ impl NullAllowedIf {
     }
     pub fn New_ComparisonOperation_Object_NullAllowed_Context1(
         propertyName: *mut crate::System::String,
-        comparisonOperation: ComparisonOperation,
+        comparisonOperation: crate::GlobalNamespace::ComparisonOperation,
         valueToCompare: *mut crate::System::Object,
         context: crate::GlobalNamespace::NullAllowed_Context,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -67,7 +68,7 @@ impl NullAllowedIf {
     pub fn _ctor_ComparisonOperation_Object_NullAllowed_Context1(
         &mut self,
         propertyName: *mut crate::System::String,
-        comparisonOperation: ComparisonOperation,
+        comparisonOperation: crate::GlobalNamespace::ComparisonOperation,
         valueToCompare: *mut crate::System::Object,
         context: crate::GlobalNamespace::NullAllowed_Context,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -96,7 +97,7 @@ impl NullAllowedIf {
     }
 }
 #[cfg(feature = "NullAllowedIf")]
-impl quest_hook::libil2cpp::ObjectType for NullAllowedIf {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NullAllowedIf {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

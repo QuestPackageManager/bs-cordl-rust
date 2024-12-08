@@ -7,8 +7,8 @@ pub struct MultiplayerEnvironmentResizeController {
     pub _resizeData: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeData,
     >,
-    pub _centerResizeController: *mut MultiplayerCenterResizeController,
-    pub _beatmapObjectSpawnCenter: *mut BeatmapObjectSpawnCenter,
+    pub _centerResizeController: *mut crate::GlobalNamespace::MultiplayerCenterResizeController,
+    pub _beatmapObjectSpawnCenter: *mut crate::GlobalNamespace::BeatmapObjectSpawnCenter,
     pub resizingDidFinishEvent: *mut crate::System::Action,
     pub _isResizingFinished: bool,
     pub _edgeDistanceFromCenterFound: bool,
@@ -16,28 +16,30 @@ pub struct MultiplayerEnvironmentResizeController {
 }
 #[cfg(feature = "MultiplayerEnvironmentResizeController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerEnvironmentResizeController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerEnvironmentResizeController => ""
     ."MultiplayerEnvironmentResizeController"
 );
 #[cfg(feature = "MultiplayerEnvironmentResizeController")]
-impl std::ops::Deref for MultiplayerEnvironmentResizeController {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerEnvironmentResizeController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerEnvironmentResizeController")]
-impl std::ops::DerefMut for MultiplayerEnvironmentResizeController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerEnvironmentResizeController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerEnvironmentResizeController")]
-impl MultiplayerEnvironmentResizeController {
-    #[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeType")]
-    pub type ResizeType = crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType;
+impl crate::GlobalNamespace::MultiplayerEnvironmentResizeController {
     #[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeData")]
     pub type ResizeData = crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeData;
+    #[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeType")]
+    pub type ResizeType = crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType;
     pub fn HandleEdgeDistanceFromCenterWasCalculated(
         &mut self,
         edgeDistanceFromCenter: f32,
@@ -151,7 +153,8 @@ impl MultiplayerEnvironmentResizeController {
     }
 }
 #[cfg(feature = "MultiplayerEnvironmentResizeController")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerEnvironmentResizeController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerEnvironmentResizeController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -166,7 +169,9 @@ pub struct MultiplayerEnvironmentResizeController_ResizeData {
     __cordl_parent: crate::System::Object,
     pub _resizeType: crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType,
     pub _offset: f32,
-    pub _lights: *mut quest_hook::libil2cpp::Il2CppArray<*mut TubeBloomPrePassLight>,
+    pub _lights: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+    >,
     pub _otherTransforms: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::Transform,
     >,
@@ -214,13 +219,15 @@ impl crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeData {
     pub fn get_lights(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut TubeBloomPrePassLight>,
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut TubeBloomPrePassLight,
+            *mut crate::GlobalNamespace::TubeBloomPrePassLight,
         > = __cordl_object.invoke("get_lights", ())?;
         Ok(__cordl_ret)
     }

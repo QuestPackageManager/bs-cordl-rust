@@ -7,23 +7,24 @@ pub struct AdditionalContentModel {
 }
 #[cfg(feature = "AdditionalContentModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AdditionalContentModel => ""."AdditionalContentModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AdditionalContentModel => ""
+    ."AdditionalContentModel"
 );
 #[cfg(feature = "AdditionalContentModel")]
-impl std::ops::Deref for AdditionalContentModel {
+impl std::ops::Deref for crate::GlobalNamespace::AdditionalContentModel {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AdditionalContentModel")]
-impl std::ops::DerefMut for AdditionalContentModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::AdditionalContentModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AdditionalContentModel")]
-impl AdditionalContentModel {
+impl crate::GlobalNamespace::AdditionalContentModel {
     #[cfg(feature = "AdditionalContentModel+UpdateEntitlementsResult")]
     pub type UpdateEntitlementsResult = crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult;
     pub fn Dispose(
@@ -41,13 +42,15 @@ impl AdditionalContentModel {
         levelId: *mut crate::System::String,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<BeatmapLevelDataVersion>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::BeatmapLevelDataVersion,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            BeatmapLevelDataVersion,
+            crate::GlobalNamespace::BeatmapLevelDataVersion,
         > = __cordl_object.invoke("GetLevelDataVersionInternalAsync", (levelId, token))?;
         Ok(__cordl_ret)
     }
@@ -56,13 +59,15 @@ impl AdditionalContentModel {
         levelId: *mut crate::System::String,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<EntitlementStatus>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::EntitlementStatus,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            EntitlementStatus,
+            crate::GlobalNamespace::EntitlementStatus,
         > = __cordl_object
             .invoke("GetLevelEntitlementStatusInternalAsync", (levelId, token))?;
         Ok(__cordl_ret)
@@ -72,13 +77,15 @@ impl AdditionalContentModel {
         levelPackId: *mut crate::System::String,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<EntitlementStatus>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::EntitlementStatus,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            EntitlementStatus,
+            crate::GlobalNamespace::EntitlementStatus,
         > = __cordl_object
             .invoke("GetPackEntitlementStatusInternalAsync", (levelPackId, token))?;
         Ok(__cordl_ret)
@@ -88,13 +95,15 @@ impl AdditionalContentModel {
         levelId: *mut crate::System::String,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<BeatmapLevelDataVersion>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::BeatmapLevelDataVersion,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            BeatmapLevelDataVersion,
+            crate::GlobalNamespace::BeatmapLevelDataVersion,
         > = __cordl_object
             .invoke(
                 "IAdditionalContentEntitlementModel.GetLevelDataVersionAsync",
@@ -107,13 +116,15 @@ impl AdditionalContentModel {
         levelId: *mut crate::System::String,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<EntitlementStatus>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::EntitlementStatus,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            EntitlementStatus,
+            crate::GlobalNamespace::EntitlementStatus,
         > = __cordl_object
             .invoke(
                 "IAdditionalContentEntitlementModel.GetLevelEntitlementStatusAsync",
@@ -126,13 +137,15 @@ impl AdditionalContentModel {
         levelPackId: *mut crate::System::String,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<EntitlementStatus>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::EntitlementStatus,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            EntitlementStatus,
+            crate::GlobalNamespace::EntitlementStatus,
         > = __cordl_object
             .invoke(
                 "IAdditionalContentEntitlementModel.GetPackEntitlementStatusAsync",
@@ -165,13 +178,15 @@ impl AdditionalContentModel {
         levelPackId: *mut crate::System::String,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<IsPackBetterBuyThanLevelResult>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            IsPackBetterBuyThanLevelResult,
+            crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
         > = __cordl_object
             .invoke("IsPackBetterBuyThanLevelAsync", (levelPackId, token))?;
         Ok(__cordl_ret)
@@ -199,13 +214,15 @@ impl AdditionalContentModel {
         levelPackId: *mut crate::System::String,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<OpenProductStoreResult>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::OpenProductStoreResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            OpenProductStoreResult,
+            crate::GlobalNamespace::OpenProductStoreResult,
         > = __cordl_object
             .invoke("OpenLevelPackProductStoreAsync", (levelPackId, token))?;
         Ok(__cordl_ret)
@@ -215,13 +232,15 @@ impl AdditionalContentModel {
         levelId: *mut crate::System::String,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<OpenProductStoreResult>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::OpenProductStoreResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            OpenProductStoreResult,
+            crate::GlobalNamespace::OpenProductStoreResult,
         > = __cordl_object.invoke("OpenLevelProductStoreAsync", (levelId, token))?;
         Ok(__cordl_ret)
     }
@@ -259,7 +278,8 @@ impl AdditionalContentModel {
     }
 }
 #[cfg(feature = "AdditionalContentModel")]
-impl quest_hook::libil2cpp::ObjectType for AdditionalContentModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::AdditionalContentModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

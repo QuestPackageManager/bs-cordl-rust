@@ -8,5 +8,6 @@ pub enum NoteLineLayer {
 }
 #[cfg(feature = "NoteLineLayer")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for NoteLineLayer => ""."NoteLineLayer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteLineLayer => ""
+    ."NoteLineLayer"
 );

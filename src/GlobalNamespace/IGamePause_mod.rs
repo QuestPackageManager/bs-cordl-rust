@@ -6,23 +6,23 @@ pub struct IGamePause {
 }
 #[cfg(feature = "IGamePause")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IGamePause => ""."IGamePause"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IGamePause => ""."IGamePause"
 );
 #[cfg(feature = "IGamePause")]
-impl std::ops::Deref for IGamePause {
+impl std::ops::Deref for crate::GlobalNamespace::IGamePause {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IGamePause")]
-impl std::ops::DerefMut for IGamePause {
+impl std::ops::DerefMut for crate::GlobalNamespace::IGamePause {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IGamePause")]
-impl IGamePause {
+impl crate::GlobalNamespace::IGamePause {
     pub fn Pause(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -133,7 +133,7 @@ impl IGamePause {
     }
 }
 #[cfg(feature = "IGamePause")]
-impl quest_hook::libil2cpp::ObjectType for IGamePause {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IGamePause {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

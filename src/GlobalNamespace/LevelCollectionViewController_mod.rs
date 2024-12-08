@@ -3,49 +3,49 @@
 #[derive(Debug)]
 pub struct LevelCollectionViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _levelCollectionTableView: *mut LevelCollectionTableView,
+    pub _levelCollectionTableView: *mut crate::GlobalNamespace::LevelCollectionTableView,
     pub _noDataInfoContainer: *mut crate::UnityEngine::RectTransform,
-    pub _playerDataModel: *mut PlayerDataModel,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
     pub _container: *mut crate::Zenject::DiContainer,
-    pub _additionalContentModel: *mut IAdditionalContentModel,
-    pub _songPreviewPlayer: *mut SongPreviewPlayer,
-    pub _perceivedLoudnessPerLevelModel: *mut PerceivedLoudnessPerLevelModel,
-    pub _audioClipAsyncLoader: *mut AudioClipAsyncLoader,
+    pub _additionalContentModel: *mut crate::GlobalNamespace::IAdditionalContentModel,
+    pub _songPreviewPlayer: *mut crate::GlobalNamespace::SongPreviewPlayer,
+    pub _perceivedLoudnessPerLevelModel: *mut crate::GlobalNamespace::PerceivedLoudnessPerLevelModel,
+    pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
     pub didSelectLevelEvent: *mut crate::System::Action_2<
-        *mut LevelCollectionViewController,
-        *mut BeatmapLevel,
+        *mut crate::GlobalNamespace::LevelCollectionViewController,
+        *mut crate::GlobalNamespace::BeatmapLevel,
     >,
     pub didSelectHeaderEvent: *mut crate::System::Action_1<
-        *mut LevelCollectionViewController,
+        *mut crate::GlobalNamespace::LevelCollectionViewController,
     >,
     pub _showHeader: bool,
     pub _noDataInfoGO: *mut crate::UnityEngine::GameObject,
-    pub _beatmapLevelToBeSelected: *mut BeatmapLevel,
+    pub _beatmapLevelToBeSelected: *mut crate::GlobalNamespace::BeatmapLevel,
     pub _crossfadeCancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
     pub _unloadLevelDebouncer: *mut crate::BGLib::UnityExtension::Debouncer_1<
-        *mut BeatmapLevel,
+        *mut crate::GlobalNamespace::BeatmapLevel,
     >,
 }
 #[cfg(feature = "LevelCollectionViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LevelCollectionViewController => ""
-    ."LevelCollectionViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LevelCollectionViewController
+    => ""."LevelCollectionViewController"
 );
 #[cfg(feature = "LevelCollectionViewController")]
-impl std::ops::Deref for LevelCollectionViewController {
+impl std::ops::Deref for crate::GlobalNamespace::LevelCollectionViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelCollectionViewController")]
-impl std::ops::DerefMut for LevelCollectionViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::LevelCollectionViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelCollectionViewController")]
-impl LevelCollectionViewController {
+impl crate::GlobalNamespace::LevelCollectionViewController {
     #[cfg(
         feature = "LevelCollectionViewController+_SongPlayerCrossfadeToLevelAsync_d__26"
     )]
@@ -94,8 +94,8 @@ impl LevelCollectionViewController {
     }
     pub fn HandleLevelCollectionTableViewDidSelectLevel(
         &mut self,
-        tableView: *mut LevelCollectionTableView,
-        level: *mut BeatmapLevel,
+        tableView: *mut crate::GlobalNamespace::LevelCollectionTableView,
+        level: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -106,7 +106,7 @@ impl LevelCollectionViewController {
     }
     pub fn HandleLevelCollectionTableViewDidSelectPack(
         &mut self,
-        tableView: *mut LevelCollectionTableView,
+        tableView: *mut crate::GlobalNamespace::LevelCollectionTableView,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -164,7 +164,7 @@ impl LevelCollectionViewController {
     }
     pub fn SelectLevel(
         &mut self,
-        beatmapLevel: *mut BeatmapLevel,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -175,7 +175,9 @@ impl LevelCollectionViewController {
     }
     pub fn SetData(
         &mut self,
-        beatmapLevels: *mut quest_hook::libil2cpp::Il2CppArray<*mut BeatmapLevel>,
+        beatmapLevels: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BeatmapLevel,
+        >,
         headerText: *mut crate::System::String,
         headerSprite: *mut crate::UnityEngine::Sprite,
         sortLevels: bool,
@@ -201,7 +203,7 @@ impl LevelCollectionViewController {
     }
     pub fn SongPlayerCrossfadeToLevel(
         &mut self,
-        level: *mut BeatmapLevel,
+        level: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -212,7 +214,7 @@ impl LevelCollectionViewController {
     }
     pub fn SongPlayerCrossfadeToLevelAsync(
         &mut self,
-        level: *mut BeatmapLevel,
+        level: *mut crate::GlobalNamespace::BeatmapLevel,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -224,7 +226,7 @@ impl LevelCollectionViewController {
     }
     pub fn UnloadPreviewAudioClip(
         &mut self,
-        level: *mut BeatmapLevel,
+        level: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -245,7 +247,9 @@ impl LevelCollectionViewController {
     }
     pub fn add_didSelectHeaderEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut LevelCollectionViewController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::LevelCollectionViewController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -257,8 +261,8 @@ impl LevelCollectionViewController {
     pub fn add_didSelectLevelEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut LevelCollectionViewController,
-            *mut BeatmapLevel,
+            *mut crate::GlobalNamespace::LevelCollectionViewController,
+            *mut crate::GlobalNamespace::BeatmapLevel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -270,7 +274,9 @@ impl LevelCollectionViewController {
     }
     pub fn remove_didSelectHeaderEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut LevelCollectionViewController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::LevelCollectionViewController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -282,8 +288,8 @@ impl LevelCollectionViewController {
     pub fn remove_didSelectLevelEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut LevelCollectionViewController,
-            *mut BeatmapLevel,
+            *mut crate::GlobalNamespace::LevelCollectionViewController,
+            *mut crate::GlobalNamespace::BeatmapLevel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -295,7 +301,8 @@ impl LevelCollectionViewController {
     }
 }
 #[cfg(feature = "LevelCollectionViewController")]
-impl quest_hook::libil2cpp::ObjectType for LevelCollectionViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LevelCollectionViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

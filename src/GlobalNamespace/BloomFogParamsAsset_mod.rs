@@ -3,27 +3,28 @@
 #[derive(Debug)]
 pub struct BloomFogParamsAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
-    pub _template: *mut BloomFogParamsBehaviour,
+    pub _template: *mut crate::GlobalNamespace::BloomFogParamsBehaviour,
 }
 #[cfg(feature = "BloomFogParamsAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomFogParamsAsset => ""."BloomFogParamsAsset"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BloomFogParamsAsset => ""
+    ."BloomFogParamsAsset"
 );
 #[cfg(feature = "BloomFogParamsAsset")]
-impl std::ops::Deref for BloomFogParamsAsset {
+impl std::ops::Deref for crate::GlobalNamespace::BloomFogParamsAsset {
     type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomFogParamsAsset")]
-impl std::ops::DerefMut for BloomFogParamsAsset {
+impl std::ops::DerefMut for crate::GlobalNamespace::BloomFogParamsAsset {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomFogParamsAsset")]
-impl BloomFogParamsAsset {
+impl crate::GlobalNamespace::BloomFogParamsAsset {
     pub fn CreatePlayable(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,
@@ -65,7 +66,7 @@ impl BloomFogParamsAsset {
     }
 }
 #[cfg(feature = "BloomFogParamsAsset")]
-impl quest_hook::libil2cpp::ObjectType for BloomFogParamsAsset {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BloomFogParamsAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

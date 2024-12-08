@@ -5,9 +5,9 @@ pub struct GameEnergyCounter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _batteryLives: i32,
     pub _initData: *mut crate::GlobalNamespace::GameEnergyCounter_InitData,
-    pub _saberClashChecker: *mut SaberClashChecker,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
-    pub _playerHeadAndObstacleInteraction: *mut PlayerHeadAndObstacleInteraction,
+    pub _saberClashChecker: *mut crate::GlobalNamespace::SaberClashChecker,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
+    pub _playerHeadAndObstacleInteraction: *mut crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
     pub didInitEvent: *mut crate::System::Action,
     pub gameEnergyDidReach0Event: *mut crate::System::Action,
     pub gameEnergyDidChangeEvent: *mut crate::System::Action_1<f32>,
@@ -22,23 +22,24 @@ pub struct GameEnergyCounter {
 }
 #[cfg(feature = "GameEnergyCounter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameEnergyCounter => ""."GameEnergyCounter"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameEnergyCounter => ""
+    ."GameEnergyCounter"
 );
 #[cfg(feature = "GameEnergyCounter")]
-impl std::ops::Deref for GameEnergyCounter {
+impl std::ops::Deref for crate::GlobalNamespace::GameEnergyCounter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameEnergyCounter")]
-impl std::ops::DerefMut for GameEnergyCounter {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameEnergyCounter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameEnergyCounter")]
-impl GameEnergyCounter {
+impl crate::GlobalNamespace::GameEnergyCounter {
     pub const kBadBurstSliderElementEnergyDrain: f32 = 0.025f32;
     pub const kBadNoteEnergyDrain: f32 = 0.1f32;
     pub const kGoodBurstSliderElementCharge: f32 = 0.002f32;
@@ -51,8 +52,8 @@ impl GameEnergyCounter {
     pub type InitData = crate::GlobalNamespace::GameEnergyCounter_InitData;
     pub fn HandleNoteWasCut(
         &mut self,
-        noteController: *mut NoteController,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -63,7 +64,7 @@ impl GameEnergyCounter {
     }
     pub fn HandleNoteWasMissed(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -314,7 +315,7 @@ impl GameEnergyCounter {
     }
 }
 #[cfg(feature = "GameEnergyCounter")]
-impl quest_hook::libil2cpp::ObjectType for GameEnergyCounter {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameEnergyCounter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

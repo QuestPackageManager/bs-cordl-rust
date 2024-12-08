@@ -452,32 +452,32 @@ impl crate::TMPro::TMP_InputField {
     pub const kEmailSpecialCharacters: &'static str = "!#$%&\\'*+-/=?^_`{|}~";
     pub const kHScrollSpeed: f32 = 0.05f32;
     pub const kVScrollSpeed: f32 = 0.1f32;
-    #[cfg(feature = "TMPro+TMP_InputField+OnChangeEvent")]
-    pub type OnChangeEvent = crate::TMPro::TMP_InputField_OnChangeEvent;
-    #[cfg(feature = "TMPro+TMP_InputField+SelectionEvent")]
-    pub type SelectionEvent = crate::TMPro::TMP_InputField_SelectionEvent;
-    #[cfg(feature = "TMPro+TMP_InputField+ContentType")]
-    pub type ContentType = crate::TMPro::TMP_InputField_ContentType;
-    #[cfg(feature = "TMPro+TMP_InputField+LineType")]
-    pub type LineType = crate::TMPro::TMP_InputField_LineType;
-    #[cfg(feature = "TMPro+TMP_InputField+TextSelectionEvent")]
-    pub type TextSelectionEvent = crate::TMPro::TMP_InputField_TextSelectionEvent;
-    #[cfg(feature = "TMPro+TMP_InputField+EditState")]
-    pub type EditState = crate::TMPro::TMP_InputField_EditState;
-    #[cfg(feature = "TMPro+TMP_InputField+_CaretBlink_d__276")]
-    pub type _CaretBlink_d__276 = crate::TMPro::TMP_InputField__CaretBlink_d__276;
-    #[cfg(feature = "TMPro+TMP_InputField+SubmitEvent")]
-    pub type SubmitEvent = crate::TMPro::TMP_InputField_SubmitEvent;
-    #[cfg(feature = "TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
-    pub type TouchScreenKeyboardEvent = crate::TMPro::TMP_InputField_TouchScreenKeyboardEvent;
     #[cfg(feature = "TMPro+TMP_InputField+CharacterValidation")]
     pub type CharacterValidation = crate::TMPro::TMP_InputField_CharacterValidation;
-    #[cfg(feature = "TMPro+TMP_InputField+_MouseDragOutsideRect_d__294")]
-    pub type _MouseDragOutsideRect_d__294 = crate::TMPro::TMP_InputField__MouseDragOutsideRect_d__294;
-    #[cfg(feature = "TMPro+TMP_InputField+OnValidateInput")]
-    pub type OnValidateInput = crate::TMPro::TMP_InputField_OnValidateInput;
+    #[cfg(feature = "TMPro+TMP_InputField+ContentType")]
+    pub type ContentType = crate::TMPro::TMP_InputField_ContentType;
+    #[cfg(feature = "TMPro+TMP_InputField+EditState")]
+    pub type EditState = crate::TMPro::TMP_InputField_EditState;
     #[cfg(feature = "TMPro+TMP_InputField+InputType")]
     pub type InputType = crate::TMPro::TMP_InputField_InputType;
+    #[cfg(feature = "TMPro+TMP_InputField+LineType")]
+    pub type LineType = crate::TMPro::TMP_InputField_LineType;
+    #[cfg(feature = "TMPro+TMP_InputField+OnChangeEvent")]
+    pub type OnChangeEvent = crate::TMPro::TMP_InputField_OnChangeEvent;
+    #[cfg(feature = "TMPro+TMP_InputField+OnValidateInput")]
+    pub type OnValidateInput = crate::TMPro::TMP_InputField_OnValidateInput;
+    #[cfg(feature = "TMPro+TMP_InputField+SelectionEvent")]
+    pub type SelectionEvent = crate::TMPro::TMP_InputField_SelectionEvent;
+    #[cfg(feature = "TMPro+TMP_InputField+SubmitEvent")]
+    pub type SubmitEvent = crate::TMPro::TMP_InputField_SubmitEvent;
+    #[cfg(feature = "TMPro+TMP_InputField+TextSelectionEvent")]
+    pub type TextSelectionEvent = crate::TMPro::TMP_InputField_TextSelectionEvent;
+    #[cfg(feature = "TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
+    pub type TouchScreenKeyboardEvent = crate::TMPro::TMP_InputField_TouchScreenKeyboardEvent;
+    #[cfg(feature = "TMPro+TMP_InputField+_CaretBlink_d__276")]
+    pub type _CaretBlink_d__276 = crate::TMPro::TMP_InputField__CaretBlink_d__276;
+    #[cfg(feature = "TMPro+TMP_InputField+_MouseDragOutsideRect_d__294")]
+    pub type _MouseDragOutsideRect_d__294 = crate::TMPro::TMP_InputField__MouseDragOutsideRect_d__294;
     pub fn ActivateInputField(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

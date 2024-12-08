@@ -3,13 +3,13 @@
 #[derive(Debug)]
 pub struct TutorialController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _tutorialSongController: *mut TutorialSongController,
-    pub _introTutorialController: *mut IntroTutorialController,
-    pub _audioFading: *mut AudioFading,
-    pub _tutorialSceneSetupData: *mut TutorialScenesTransitionSetupDataSO,
-    pub _tutorialIntroStartedSignal: *mut Signal,
-    pub _tutorialFinishedSignal: *mut Signal,
-    pub _pauseController: *mut PauseController,
+    pub _tutorialSongController: *mut crate::GlobalNamespace::TutorialSongController,
+    pub _introTutorialController: *mut crate::GlobalNamespace::IntroTutorialController,
+    pub _audioFading: *mut crate::GlobalNamespace::AudioFading,
+    pub _tutorialSceneSetupData: *mut crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
+    pub _tutorialIntroStartedSignal: *mut crate::GlobalNamespace::Signal,
+    pub _tutorialFinishedSignal: *mut crate::GlobalNamespace::Signal,
+    pub _pauseController: *mut crate::GlobalNamespace::PauseController,
     pub levelWillStartIntroEvent: *mut crate::System::Action,
     pub levelDidStartEvent: *mut crate::System::Action,
     pub _paused: bool,
@@ -17,23 +17,24 @@ pub struct TutorialController {
 }
 #[cfg(feature = "TutorialController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TutorialController => ""."TutorialController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TutorialController => ""
+    ."TutorialController"
 );
 #[cfg(feature = "TutorialController")]
-impl std::ops::Deref for TutorialController {
+impl std::ops::Deref for crate::GlobalNamespace::TutorialController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TutorialController")]
-impl std::ops::DerefMut for TutorialController {
+impl std::ops::DerefMut for crate::GlobalNamespace::TutorialController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TutorialController")]
-impl TutorialController {
+impl crate::GlobalNamespace::TutorialController {
     #[cfg(feature = "TutorialController+_OutroCoroutine_d__19")]
     pub type _OutroCoroutine_d__19 = crate::GlobalNamespace::TutorialController__OutroCoroutine_d__19;
     pub fn HandleIntroTutorialDidFinishEvent(
@@ -180,7 +181,7 @@ impl TutorialController {
     }
 }
 #[cfg(feature = "TutorialController")]
-impl quest_hook::libil2cpp::ObjectType for TutorialController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TutorialController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

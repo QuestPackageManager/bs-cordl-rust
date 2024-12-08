@@ -3,28 +3,28 @@
 #[derive(Debug)]
 pub struct MissionGameplayInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _sceneSetupData: *mut MissionGameplaySceneSetupData,
+    pub _sceneSetupData: *mut crate::GlobalNamespace::MissionGameplaySceneSetupData,
 }
 #[cfg(feature = "MissionGameplayInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionGameplayInstaller => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissionGameplayInstaller => ""
     ."MissionGameplayInstaller"
 );
 #[cfg(feature = "MissionGameplayInstaller")]
-impl std::ops::Deref for MissionGameplayInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::MissionGameplayInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionGameplayInstaller")]
-impl std::ops::DerefMut for MissionGameplayInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionGameplayInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionGameplayInstaller")]
-impl MissionGameplayInstaller {
+impl crate::GlobalNamespace::MissionGameplayInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -54,7 +54,8 @@ impl MissionGameplayInstaller {
     }
 }
 #[cfg(feature = "MissionGameplayInstaller")]
-impl quest_hook::libil2cpp::ObjectType for MissionGameplayInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MissionGameplayInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

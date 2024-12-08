@@ -6,23 +6,24 @@ pub struct AbstractPoolContainer {
 }
 #[cfg(feature = "AbstractPoolContainer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AbstractPoolContainer => ""."AbstractPoolContainer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AbstractPoolContainer => ""
+    ."AbstractPoolContainer"
 );
 #[cfg(feature = "AbstractPoolContainer")]
-impl std::ops::Deref for AbstractPoolContainer {
+impl std::ops::Deref for crate::GlobalNamespace::AbstractPoolContainer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AbstractPoolContainer")]
-impl std::ops::DerefMut for AbstractPoolContainer {
+impl std::ops::DerefMut for crate::GlobalNamespace::AbstractPoolContainer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AbstractPoolContainer")]
-impl AbstractPoolContainer {
+impl crate::GlobalNamespace::AbstractPoolContainer {
     pub fn DespawnAll(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -52,7 +53,8 @@ impl AbstractPoolContainer {
     }
 }
 #[cfg(feature = "AbstractPoolContainer")]
-impl quest_hook::libil2cpp::ObjectType for AbstractPoolContainer {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::AbstractPoolContainer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

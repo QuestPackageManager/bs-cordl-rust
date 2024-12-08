@@ -3,14 +3,14 @@
 #[derive(Debug)]
 pub struct ParticleSystemEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightColor0: *mut ColorSO,
-    pub _lightColor1: *mut ColorSO,
-    pub _highlightColor0: *mut ColorSO,
-    pub _highlightColor1: *mut ColorSO,
+    pub _lightColor0: *mut crate::GlobalNamespace::ColorSO,
+    pub _lightColor1: *mut crate::GlobalNamespace::ColorSO,
+    pub _highlightColor0: *mut crate::GlobalNamespace::ColorSO,
+    pub _highlightColor1: *mut crate::GlobalNamespace::ColorSO,
     pub _lightOnStart: bool,
-    pub _colorEvent: BasicBeatmapEventType,
+    pub _colorEvent: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _particleSystem: *mut crate::UnityEngine::ParticleSystem,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
     pub _lightIsOn: bool,
     pub _offColor: crate::UnityEngine::Color,
     pub _highlightValue: f32,
@@ -22,31 +22,31 @@ pub struct ParticleSystemEventEffect {
         crate::UnityEngine::ParticleSystem_Particle,
     >,
     pub _particleColor: crate::UnityEngine::Color,
-    pub _beatmapDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
 }
 #[cfg(feature = "ParticleSystemEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ParticleSystemEventEffect => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ParticleSystemEventEffect => ""
     ."ParticleSystemEventEffect"
 );
 #[cfg(feature = "ParticleSystemEventEffect")]
-impl std::ops::Deref for ParticleSystemEventEffect {
+impl std::ops::Deref for crate::GlobalNamespace::ParticleSystemEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ParticleSystemEventEffect")]
-impl std::ops::DerefMut for ParticleSystemEventEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::ParticleSystemEventEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ParticleSystemEventEffect")]
-impl ParticleSystemEventEffect {
+impl crate::GlobalNamespace::ParticleSystemEventEffect {
     pub fn HandleBeatmapEvent(
         &mut self,
-        basicBeatmapEventData: *mut BasicBeatmapEventData,
+        basicBeatmapEventData: *mut crate::GlobalNamespace::BasicBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -114,7 +114,8 @@ impl ParticleSystemEventEffect {
     }
 }
 #[cfg(feature = "ParticleSystemEventEffect")]
-impl quest_hook::libil2cpp::ObjectType for ParticleSystemEventEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ParticleSystemEventEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,12 +6,12 @@ pub struct TransformSpectrogram {
     pub _transforms: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::Transform,
     >,
-    pub _axis: LightAxis,
+    pub _axis: crate::GlobalNamespace::LightAxis,
     pub _minPosition: f32,
     pub _maxPosition: f32,
     pub _scaleSamples: bool,
     pub _scale: f32,
-    pub _spectrogramData: *mut BasicSpectrogramData,
+    pub _spectrogramData: *mut crate::GlobalNamespace::BasicSpectrogramData,
     pub _direction: crate::UnityEngine::Vector3,
     pub _defaultPositions: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::UnityEngine::Vector3,
@@ -19,23 +19,24 @@ pub struct TransformSpectrogram {
 }
 #[cfg(feature = "TransformSpectrogram")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TransformSpectrogram => ""."TransformSpectrogram"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TransformSpectrogram => ""
+    ."TransformSpectrogram"
 );
 #[cfg(feature = "TransformSpectrogram")]
-impl std::ops::Deref for TransformSpectrogram {
+impl std::ops::Deref for crate::GlobalNamespace::TransformSpectrogram {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TransformSpectrogram")]
-impl std::ops::DerefMut for TransformSpectrogram {
+impl std::ops::DerefMut for crate::GlobalNamespace::TransformSpectrogram {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TransformSpectrogram")]
-impl TransformSpectrogram {
+impl crate::GlobalNamespace::TransformSpectrogram {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -75,7 +76,7 @@ impl TransformSpectrogram {
     }
 }
 #[cfg(feature = "TransformSpectrogram")]
-impl quest_hook::libil2cpp::ObjectType for TransformSpectrogram {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TransformSpectrogram {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

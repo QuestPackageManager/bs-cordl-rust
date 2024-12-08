@@ -4,33 +4,36 @@
 pub struct BeatmapCharacteristicSelectionViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _beatmapCharacteristicSegmentedControl: *mut crate::HMUI::IconSegmentedControl,
-    pub _beatmapCharacteristicCollection: *mut BeatmapCharacteristicCollection,
+    pub _beatmapCharacteristicCollection: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
     pub didSelectBeatmapCharacteristicEvent: *mut crate::System::Action_2<
-        *mut BeatmapCharacteristicSelectionViewController,
-        *mut BeatmapCharacteristicSO,
+        *mut crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController,
+        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     >,
-    pub _selectedBeatmapCharacteristic: *mut BeatmapCharacteristicSO,
+    pub _selectedBeatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
 }
 #[cfg(feature = "BeatmapCharacteristicSelectionViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapCharacteristicSelectionViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BeatmapCharacteristicSelectionViewController => ""
     ."BeatmapCharacteristicSelectionViewController"
 );
 #[cfg(feature = "BeatmapCharacteristicSelectionViewController")]
-impl std::ops::Deref for BeatmapCharacteristicSelectionViewController {
+impl std::ops::Deref
+for crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapCharacteristicSelectionViewController")]
-impl std::ops::DerefMut for BeatmapCharacteristicSelectionViewController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapCharacteristicSelectionViewController")]
-impl BeatmapCharacteristicSelectionViewController {
+impl crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -104,8 +107,8 @@ impl BeatmapCharacteristicSelectionViewController {
     pub fn add_didSelectBeatmapCharacteristicEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut BeatmapCharacteristicSelectionViewController,
-            *mut BeatmapCharacteristicSO,
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController,
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -117,19 +120,21 @@ impl BeatmapCharacteristicSelectionViewController {
     }
     pub fn get_selectedBeatmapCharacteristic(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapCharacteristicSO> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapCharacteristicSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapCharacteristicSO = __cordl_object
             .invoke("get_selectedBeatmapCharacteristic", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_didSelectBeatmapCharacteristicEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut BeatmapCharacteristicSelectionViewController,
-            *mut BeatmapCharacteristicSO,
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController,
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -141,7 +146,8 @@ impl BeatmapCharacteristicSelectionViewController {
     }
 }
 #[cfg(feature = "BeatmapCharacteristicSelectionViewController")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapCharacteristicSelectionViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,32 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissMissionObjectiveChecker {
-    __cordl_parent: SimpleValueMissionObjectiveChecker,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
+    __cordl_parent: crate::GlobalNamespace::SimpleValueMissionObjectiveChecker,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
 }
 #[cfg(feature = "MissMissionObjectiveChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissMissionObjectiveChecker => ""
-    ."MissMissionObjectiveChecker"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissMissionObjectiveChecker =>
+    ""."MissMissionObjectiveChecker"
 );
 #[cfg(feature = "MissMissionObjectiveChecker")]
-impl std::ops::Deref for MissMissionObjectiveChecker {
-    type Target = SimpleValueMissionObjectiveChecker;
+impl std::ops::Deref for crate::GlobalNamespace::MissMissionObjectiveChecker {
+    type Target = crate::GlobalNamespace::SimpleValueMissionObjectiveChecker;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissMissionObjectiveChecker")]
-impl std::ops::DerefMut for MissMissionObjectiveChecker {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissMissionObjectiveChecker {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissMissionObjectiveChecker")]
-impl MissMissionObjectiveChecker {
+impl crate::GlobalNamespace::MissMissionObjectiveChecker {
     pub fn HandleNoteWasMissed(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -75,7 +75,8 @@ impl MissMissionObjectiveChecker {
     }
 }
 #[cfg(feature = "MissMissionObjectiveChecker")]
-impl quest_hook::libil2cpp::ObjectType for MissMissionObjectiveChecker {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MissMissionObjectiveChecker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

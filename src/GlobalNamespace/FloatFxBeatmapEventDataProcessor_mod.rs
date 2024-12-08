@@ -2,28 +2,33 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatFxBeatmapEventDataProcessor {
-    __cordl_parent: FxBeatmapEventDataProcessor_1<*mut FloatFxBeatmapEventData>,
+    __cordl_parent: crate::GlobalNamespace::FxBeatmapEventDataProcessor_1<
+        *mut crate::GlobalNamespace::FloatFxBeatmapEventData,
+    >,
 }
 #[cfg(feature = "FloatFxBeatmapEventDataProcessor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FloatFxBeatmapEventDataProcessor => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::FloatFxBeatmapEventDataProcessor => ""
     ."FloatFxBeatmapEventDataProcessor"
 );
 #[cfg(feature = "FloatFxBeatmapEventDataProcessor")]
-impl std::ops::Deref for FloatFxBeatmapEventDataProcessor {
-    type Target = FxBeatmapEventDataProcessor_1<*mut FloatFxBeatmapEventData>;
+impl std::ops::Deref for crate::GlobalNamespace::FloatFxBeatmapEventDataProcessor {
+    type Target = crate::GlobalNamespace::FxBeatmapEventDataProcessor_1<
+        *mut crate::GlobalNamespace::FloatFxBeatmapEventData,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatFxBeatmapEventDataProcessor")]
-impl std::ops::DerefMut for FloatFxBeatmapEventDataProcessor {
+impl std::ops::DerefMut for crate::GlobalNamespace::FloatFxBeatmapEventDataProcessor {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatFxBeatmapEventDataProcessor")]
-impl FloatFxBeatmapEventDataProcessor {
+impl crate::GlobalNamespace::FloatFxBeatmapEventDataProcessor {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -33,8 +38,8 @@ impl FloatFxBeatmapEventDataProcessor {
     }
     pub fn UpdateByOther(
         &mut self,
-        current: *mut FloatFxBeatmapEventData,
-        other: *mut FloatFxBeatmapEventData,
+        current: *mut crate::GlobalNamespace::FloatFxBeatmapEventData,
+        other: *mut crate::GlobalNamespace::FloatFxBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -55,7 +60,8 @@ impl FloatFxBeatmapEventDataProcessor {
     }
 }
 #[cfg(feature = "FloatFxBeatmapEventDataProcessor")]
-impl quest_hook::libil2cpp::ObjectType for FloatFxBeatmapEventDataProcessor {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FloatFxBeatmapEventDataProcessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

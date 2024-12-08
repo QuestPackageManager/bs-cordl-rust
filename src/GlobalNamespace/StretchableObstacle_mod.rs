@@ -10,31 +10,32 @@ pub struct StretchableObstacle {
     pub _fakeGlowOffset: crate::UnityEngine::Vector3,
     pub _obstacleCore: *mut crate::UnityEngine::Transform,
     pub _materialPropertyBlockControllers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut MaterialPropertyBlockController,
+        *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     >,
-    pub _obstacleFrame: *mut ParametricBoxFrameController,
-    pub _obstacleFakeGlow: *mut ParametricBoxFakeGlowController,
+    pub _obstacleFrame: *mut crate::GlobalNamespace::ParametricBoxFrameController,
+    pub _obstacleFakeGlow: *mut crate::GlobalNamespace::ParametricBoxFakeGlowController,
     pub _bounds: crate::UnityEngine::Bounds,
 }
 #[cfg(feature = "StretchableObstacle")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StretchableObstacle => ""."StretchableObstacle"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::StretchableObstacle => ""
+    ."StretchableObstacle"
 );
 #[cfg(feature = "StretchableObstacle")]
-impl std::ops::Deref for StretchableObstacle {
+impl std::ops::Deref for crate::GlobalNamespace::StretchableObstacle {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StretchableObstacle")]
-impl std::ops::DerefMut for StretchableObstacle {
+impl std::ops::DerefMut for crate::GlobalNamespace::StretchableObstacle {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StretchableObstacle")]
-impl StretchableObstacle {
+impl crate::GlobalNamespace::StretchableObstacle {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -88,7 +89,7 @@ impl StretchableObstacle {
     }
 }
 #[cfg(feature = "StretchableObstacle")]
-impl quest_hook::libil2cpp::ObjectType for StretchableObstacle {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::StretchableObstacle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

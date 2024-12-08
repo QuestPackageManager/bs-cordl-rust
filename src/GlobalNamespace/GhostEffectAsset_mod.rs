@@ -5,29 +5,30 @@ pub struct GhostEffectAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
     pub _ghostEffectType: crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType,
     pub arrayReference: crate::UnityEngine::ExposedReference_1<
-        *mut TimelineArrayReference,
+        *mut crate::GlobalNamespace::TimelineArrayReference,
     >,
-    pub _cordl_template: *mut GhostEffectBehaviour,
+    pub _cordl_template: *mut crate::GlobalNamespace::GhostEffectBehaviour,
 }
 #[cfg(feature = "GhostEffectAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GhostEffectAsset => ""."GhostEffectAsset"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GhostEffectAsset => ""
+    ."GhostEffectAsset"
 );
 #[cfg(feature = "GhostEffectAsset")]
-impl std::ops::Deref for GhostEffectAsset {
+impl std::ops::Deref for crate::GlobalNamespace::GhostEffectAsset {
     type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GhostEffectAsset")]
-impl std::ops::DerefMut for GhostEffectAsset {
+impl std::ops::DerefMut for crate::GlobalNamespace::GhostEffectAsset {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GhostEffectAsset")]
-impl GhostEffectAsset {
+impl crate::GlobalNamespace::GhostEffectAsset {
     pub fn CreatePlayable(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,
@@ -69,7 +70,7 @@ impl GhostEffectAsset {
     }
 }
 #[cfg(feature = "GhostEffectAsset")]
-impl quest_hook::libil2cpp::ObjectType for GhostEffectAsset {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GhostEffectAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

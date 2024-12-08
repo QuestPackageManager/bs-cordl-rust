@@ -3,29 +3,30 @@
 #[derive(Debug)]
 pub struct MissionNodeGizmos {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionNode: *mut MissionNode,
-    pub _gameplayModifiersModel: *mut GameplayModifiersModelSO,
-    pub _missionProgressModel: *mut CampaignProgressModel,
+    pub _missionNode: *mut crate::GlobalNamespace::MissionNode,
+    pub _gameplayModifiersModel: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
+    pub _missionProgressModel: *mut crate::GlobalNamespace::CampaignProgressModel,
 }
 #[cfg(feature = "MissionNodeGizmos")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionNodeGizmos => ""."MissionNodeGizmos"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissionNodeGizmos => ""
+    ."MissionNodeGizmos"
 );
 #[cfg(feature = "MissionNodeGizmos")]
-impl std::ops::Deref for MissionNodeGizmos {
+impl std::ops::Deref for crate::GlobalNamespace::MissionNodeGizmos {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionNodeGizmos")]
-impl std::ops::DerefMut for MissionNodeGizmos {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionNodeGizmos {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionNodeGizmos")]
-impl MissionNodeGizmos {
+impl crate::GlobalNamespace::MissionNodeGizmos {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -45,7 +46,7 @@ impl MissionNodeGizmos {
     }
 }
 #[cfg(feature = "MissionNodeGizmos")]
-impl quest_hook::libil2cpp::ObjectType for MissionNodeGizmos {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissionNodeGizmos {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

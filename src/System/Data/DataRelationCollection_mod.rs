@@ -29,10 +29,10 @@ impl std::ops::DerefMut for crate::System::Data::DataRelationCollection {
 }
 #[cfg(feature = "System+Data+DataRelationCollection")]
 impl crate::System::Data::DataRelationCollection {
-    #[cfg(feature = "System+Data+DataRelationCollection+DataTableRelationCollection")]
-    pub type DataTableRelationCollection = crate::GlobalNamespace::DataRelationCollection_DataTableRelationCollection;
     #[cfg(feature = "System+Data+DataRelationCollection+DataSetRelationCollection")]
     pub type DataSetRelationCollection = crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection;
+    #[cfg(feature = "System+Data+DataRelationCollection+DataTableRelationCollection")]
+    pub type DataTableRelationCollection = crate::GlobalNamespace::DataRelationCollection_DataTableRelationCollection;
     pub fn Add(
         &mut self,
         relation: *mut crate::System::Data::DataRelation,

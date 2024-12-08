@@ -33,12 +33,12 @@ for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
-    #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1+_Enumerate_d__28")]
-    pub type _Enumerate_d__28 = crate::System::Collections::Concurrent::ConcurrentQueue_1__Enumerate_d__28<
-        T,
-    >;
     #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1+Segment")]
     pub type Segment = crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<
+        T,
+    >;
+    #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1+_Enumerate_d__28")]
+    pub type _Enumerate_d__28 = crate::System::Collections::Concurrent::ConcurrentQueue_1__Enumerate_d__28<
         T,
     >;
     pub fn CopyTo(

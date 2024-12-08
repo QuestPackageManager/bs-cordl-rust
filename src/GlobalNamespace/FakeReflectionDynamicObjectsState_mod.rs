@@ -7,6 +7,7 @@ pub enum FakeReflectionDynamicObjectsState {
 }
 #[cfg(feature = "FakeReflectionDynamicObjectsState")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for FakeReflectionDynamicObjectsState => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::FakeReflectionDynamicObjectsState => ""
     ."FakeReflectionDynamicObjectsState"
 );

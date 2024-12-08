@@ -29,14 +29,6 @@ for crate::Zenject::FromBinderGeneric_1<TContract> {
 impl<
     TContract: quest_hook::libil2cpp::Type,
 > crate::Zenject::FromBinderGeneric_1<TContract> {
-    #[cfg(feature = "Zenject+FromBinderGeneric_1+__c__DisplayClass3_0")]
-    pub type __c__DisplayClass3_0 = crate::Zenject::FromBinderGeneric_1___c__DisplayClass3_0<
-        TContract,
-    >;
-    #[cfg(feature = "Zenject+FromBinderGeneric_1+__c__DisplayClass15_0")]
-    pub type __c__DisplayClass15_0 = crate::Zenject::FromBinderGeneric_1___c__DisplayClass15_0<
-        TContract,
-    >;
     #[cfg(feature = "Zenject+FromBinderGeneric_1+__c__1_1")]
     pub type __c__1_1<TFactory: quest_hook::libil2cpp::Type> = crate::Zenject::FromBinderGeneric_1___c__1_1<
         TContract,
@@ -44,6 +36,14 @@ impl<
     >;
     #[cfg(feature = "Zenject+FromBinderGeneric_1+__c__DisplayClass14_0")]
     pub type __c__DisplayClass14_0 = crate::Zenject::FromBinderGeneric_1___c__DisplayClass14_0<
+        TContract,
+    >;
+    #[cfg(feature = "Zenject+FromBinderGeneric_1+__c__DisplayClass15_0")]
+    pub type __c__DisplayClass15_0 = crate::Zenject::FromBinderGeneric_1___c__DisplayClass15_0<
+        TContract,
+    >;
+    #[cfg(feature = "Zenject+FromBinderGeneric_1+__c__DisplayClass3_0")]
+    pub type __c__DisplayClass3_0 = crate::Zenject::FromBinderGeneric_1___c__DisplayClass3_0<
         TContract,
     >;
     pub fn FromComponentsInChildren_Func_2__cordl_bool0(

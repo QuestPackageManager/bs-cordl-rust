@@ -39,7 +39,7 @@ impl crate::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
-    pub Space: OVRSpace,
+    pub Space: crate::GlobalNamespace::OVRSpace,
     pub Results: crate::Unity::Collections::NativeArray_1<i32>,
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshCountsJob")]
@@ -76,7 +76,7 @@ impl crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct OVRSceneVolumeMeshFilter_GetTriangleMeshJob {
-    pub Space: OVRSpace,
+    pub Space: crate::GlobalNamespace::OVRSpace,
     pub Vertices: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
     pub Triangles: crate::Unity::Collections::NativeArray_1<i32>,
 }
@@ -121,32 +121,32 @@ pub struct OVRSceneVolumeMeshFilter {
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRSceneVolumeMeshFilter => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRSceneVolumeMeshFilter => ""
     ."OVRSceneVolumeMeshFilter"
 );
 #[cfg(feature = "OVRSceneVolumeMeshFilter")]
-impl std::ops::Deref for OVRSceneVolumeMeshFilter {
+impl std::ops::Deref for crate::GlobalNamespace::OVRSceneVolumeMeshFilter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter")]
-impl std::ops::DerefMut for OVRSceneVolumeMeshFilter {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneVolumeMeshFilter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter")]
-impl OVRSceneVolumeMeshFilter {
+impl crate::GlobalNamespace::OVRSceneVolumeMeshFilter {
     #[cfg(feature = "OVRSceneVolumeMeshFilter+BakeMeshJob")]
     pub type BakeMeshJob = crate::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob;
-    #[cfg(feature = "OVRSceneVolumeMeshFilter+PopulateMeshDataJob")]
-    pub type PopulateMeshDataJob = crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob;
-    #[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshJob")]
-    pub type GetTriangleMeshJob = crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob;
     #[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshCountsJob")]
     pub type GetTriangleMeshCountsJob = crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob;
+    #[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshJob")]
+    pub type GetTriangleMeshJob = crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob;
+    #[cfg(feature = "OVRSceneVolumeMeshFilter+PopulateMeshDataJob")]
+    pub type PopulateMeshDataJob = crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob;
     #[cfg(feature = "OVRSceneVolumeMeshFilter+_CreateVolumeMesh_d__7")]
     pub type _CreateVolumeMesh_d__7 = crate::GlobalNamespace::OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7;
     pub fn CreateVolumeMesh(
@@ -206,7 +206,8 @@ impl OVRSceneVolumeMeshFilter {
     }
 }
 #[cfg(feature = "OVRSceneVolumeMeshFilter")]
-impl quest_hook::libil2cpp::ObjectType for OVRSceneVolumeMeshFilter {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRSceneVolumeMeshFilter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

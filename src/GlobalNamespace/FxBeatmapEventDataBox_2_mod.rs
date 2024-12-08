@@ -5,7 +5,7 @@ pub struct FxBeatmapEventDataBox_2<
     TIn: quest_hook::libil2cpp::Type,
     TOut: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: BeatmapEventDataBox,
+    __cordl_parent: crate::GlobalNamespace::BeatmapEventDataBox,
     pub _beatStep: f32,
     pub _fxBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<TIn>,
     __cordl_phantom_TIn: std::marker::PhantomData<TIn>,
@@ -13,13 +13,13 @@ pub struct FxBeatmapEventDataBox_2<
 }
 #[cfg(feature = "FxBeatmapEventDataBox_2")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FxBeatmapEventDataBox_2 < TIn, TOut > => ""
-    ."FxBeatmapEventDataBox`2" < TIn, TOut >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FxBeatmapEventDataBox_2 < TIn,
+    TOut > => ""."FxBeatmapEventDataBox`2" < TIn, TOut >
 );
 #[cfg(feature = "FxBeatmapEventDataBox_2")]
 impl<TIn: quest_hook::libil2cpp::Type, TOut: quest_hook::libil2cpp::Type> std::ops::Deref
-for FxBeatmapEventDataBox_2<TIn, TOut> {
-    type Target = BeatmapEventDataBox;
+for crate::GlobalNamespace::FxBeatmapEventDataBox_2<TIn, TOut> {
+    type Target = crate::GlobalNamespace::BeatmapEventDataBox;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,7 +28,7 @@ for FxBeatmapEventDataBox_2<TIn, TOut> {
 impl<
     TIn: quest_hook::libil2cpp::Type,
     TOut: quest_hook::libil2cpp::Type,
-> std::ops::DerefMut for FxBeatmapEventDataBox_2<TIn, TOut> {
+> std::ops::DerefMut for crate::GlobalNamespace::FxBeatmapEventDataBox_2<TIn, TOut> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -37,7 +37,7 @@ impl<
 impl<
     TIn: quest_hook::libil2cpp::Type,
     TOut: quest_hook::libil2cpp::Type,
-> FxBeatmapEventDataBox_2<TIn, TOut> {
+> crate::GlobalNamespace::FxBeatmapEventDataBox_2<TIn, TOut> {
     pub fn CreateVfxBeatmapEventData(
         &mut self,
         data: TIn,
@@ -63,13 +63,13 @@ impl<
         Ok(__cordl_ret)
     }
     pub fn New(
-        indexFilter: *mut IndexFilter,
+        indexFilter: *mut crate::GlobalNamespace::IndexFilter,
         beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         beatDistributionParam: f32,
         eventDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         eventDistributionParam: f32,
         eventDistributionShouldAffectFirstBaseEvent: bool,
-        eventDistributionEaseType: EaseType,
+        eventDistributionEaseType: crate::GlobalNamespace::EaseType,
         fxBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<TIn>,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -98,8 +98,10 @@ impl<
         durationOrderIndex: i32,
         distributionOrderIndex: i32,
         maxBeat: f32,
-        beatToTimeConverter: *mut IBeatToTimeConverter,
-        output: *mut crate::System::Collections::Generic::List_1<*mut BeatmapEventData>,
+        beatToTimeConverter: *mut crate::GlobalNamespace::IBeatToTimeConverter,
+        output: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::BeatmapEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TIn: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -128,13 +130,13 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        indexFilter: *mut IndexFilter,
+        indexFilter: *mut crate::GlobalNamespace::IndexFilter,
         beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         beatDistributionParam: f32,
         eventDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         eventDistributionParam: f32,
         eventDistributionShouldAffectFirstBaseEvent: bool,
-        eventDistributionEaseType: EaseType,
+        eventDistributionEaseType: crate::GlobalNamespace::EaseType,
         fxBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<TIn>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -167,7 +169,8 @@ impl<
 impl<
     TIn: quest_hook::libil2cpp::Type,
     TOut: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::ObjectType for FxBeatmapEventDataBox_2<TIn, TOut> {
+> quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FxBeatmapEventDataBox_2<TIn, TOut> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

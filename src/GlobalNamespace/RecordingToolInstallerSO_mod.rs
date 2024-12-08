@@ -6,24 +6,24 @@ pub struct RecordingToolInstallerSO {
 }
 #[cfg(feature = "RecordingToolInstallerSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RecordingToolInstallerSO => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RecordingToolInstallerSO => ""
     ."RecordingToolInstallerSO"
 );
 #[cfg(feature = "RecordingToolInstallerSO")]
-impl std::ops::Deref for RecordingToolInstallerSO {
+impl std::ops::Deref for crate::GlobalNamespace::RecordingToolInstallerSO {
     type Target = crate::Zenject::ScriptableObjectInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingToolInstallerSO")]
-impl std::ops::DerefMut for RecordingToolInstallerSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::RecordingToolInstallerSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingToolInstallerSO")]
-impl RecordingToolInstallerSO {
+impl crate::GlobalNamespace::RecordingToolInstallerSO {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -53,7 +53,8 @@ impl RecordingToolInstallerSO {
     }
 }
 #[cfg(feature = "RecordingToolInstallerSO")]
-impl quest_hook::libil2cpp::ObjectType for RecordingToolInstallerSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::RecordingToolInstallerSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

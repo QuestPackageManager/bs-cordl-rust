@@ -279,12 +279,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData_GameplayModif
 }
 #[cfg(feature = "PlayerSaveData+GameplayModifiers")]
 impl crate::GlobalNamespace::PlayerSaveData_GameplayModifiers {
-    #[cfg(feature = "PlayerSaveData+GameplayModifiers+SongSpeed")]
-    pub type SongSpeed = crate::GlobalNamespace::GameplayModifiers_SongSpeed;
     #[cfg(feature = "PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
     pub type EnabledObstacleType = crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType;
     #[cfg(feature = "PlayerSaveData+GameplayModifiers+EnergyType")]
     pub type EnergyType = crate::GlobalNamespace::GameplayModifiers_EnergyType;
+    #[cfg(feature = "PlayerSaveData+GameplayModifiers+SongSpeed")]
+    pub type SongSpeed = crate::GlobalNamespace::GameplayModifiers_SongSpeed;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -383,7 +383,7 @@ pub struct PlayerSaveData_LocalPlayer {
     pub didSelectRegionVersion: i32,
     pub selectedAvatarSystemTypeId: *mut crate::System::String,
     pub playerAgreements: *mut crate::GlobalNamespace::PlayerSaveData_PlayerAgreementsData,
-    pub lastSelectedBeatmapDifficulty: BeatmapDifficulty,
+    pub lastSelectedBeatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
     pub lastSelectedBeatmapCharacteristicName: *mut crate::System::String,
     pub gameplayModifiers: *mut crate::GlobalNamespace::PlayerSaveData_GameplayModifiers,
     pub playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings,
@@ -764,7 +764,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData {
 pub struct PlayerSaveData_PlayerLevelStatsData {
     __cordl_parent: crate::System::Object,
     pub levelId: *mut crate::System::String,
-    pub difficulty: BeatmapDifficulty,
+    pub difficulty: crate::GlobalNamespace::BeatmapDifficulty,
     pub beatmapCharacteristicName: *mut crate::System::String,
     pub highScore: i32,
     pub maxCombo: i32,
@@ -1021,7 +1021,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveData {
-    __cordl_parent: VersionSaveData,
+    __cordl_parent: crate::GlobalNamespace::VersionSaveData,
     pub localPlayers: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::PlayerSaveData_LocalPlayer,
     >,
@@ -1031,56 +1031,57 @@ pub struct PlayerSaveData {
 }
 #[cfg(feature = "PlayerSaveData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerSaveData => ""."PlayerSaveData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerSaveData => ""
+    ."PlayerSaveData"
 );
 #[cfg(feature = "PlayerSaveData")]
-impl std::ops::Deref for PlayerSaveData {
-    type Target = VersionSaveData;
+impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveData {
+    type Target = crate::GlobalNamespace::VersionSaveData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSaveData")]
-impl std::ops::DerefMut for PlayerSaveData {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSaveData")]
-impl PlayerSaveData {
+impl crate::GlobalNamespace::PlayerSaveData {
     pub const kCurrentVersion: &'static str = "2.0.27";
-    #[cfg(feature = "PlayerSaveData+LocalPlayer")]
-    pub type LocalPlayer = crate::GlobalNamespace::PlayerSaveData_LocalPlayer;
-    #[cfg(feature = "PlayerSaveData+PlayerMissionStatsData")]
-    pub type PlayerMissionStatsData = crate::GlobalNamespace::PlayerSaveData_PlayerMissionStatsData;
-    #[cfg(feature = "PlayerSaveData+PracticeSettings")]
-    pub type PracticeSettings = crate::GlobalNamespace::PlayerSaveData_PracticeSettings;
-    #[cfg(feature = "PlayerSaveData+GuestPlayer")]
-    pub type GuestPlayer = crate::GlobalNamespace::PlayerSaveData_GuestPlayer;
-    #[cfg(feature = "PlayerSaveData+UserAgeCategorySaveData")]
-    pub type UserAgeCategorySaveData = crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData;
     #[cfg(feature = "PlayerSaveData+ColorScheme")]
     pub type ColorScheme = crate::GlobalNamespace::PlayerSaveData_ColorScheme;
-    #[cfg(feature = "PlayerSaveData+OverrideEnvironmentSettings")]
-    pub type OverrideEnvironmentSettings = crate::GlobalNamespace::PlayerSaveData_OverrideEnvironmentSettings;
-    #[cfg(feature = "PlayerSaveData+PlayerSensitivityFlagSaveData")]
-    pub type PlayerSensitivityFlagSaveData = crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData;
-    #[cfg(feature = "PlayerSaveData+GameplayModifiers")]
-    pub type GameplayModifiers = crate::GlobalNamespace::PlayerSaveData_GameplayModifiers;
-    #[cfg(feature = "PlayerSaveData+PlayerOverallStatsData")]
-    pub type PlayerOverallStatsData = crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData;
-    #[cfg(feature = "PlayerSaveData+PlayerAllOverallStatsData")]
-    pub type PlayerAllOverallStatsData = crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData;
-    #[cfg(feature = "PlayerSaveData+PlayerAgreementsData")]
-    pub type PlayerAgreementsData = crate::GlobalNamespace::PlayerSaveData_PlayerAgreementsData;
-    #[cfg(feature = "PlayerSaveData+MultiplayerModeSettings")]
-    pub type MultiplayerModeSettings = crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings;
-    #[cfg(feature = "PlayerSaveData+PlayerSpecificSettings")]
-    pub type PlayerSpecificSettings = crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings;
-    #[cfg(feature = "PlayerSaveData+PlayerLevelStatsData")]
-    pub type PlayerLevelStatsData = crate::GlobalNamespace::PlayerSaveData_PlayerLevelStatsData;
     #[cfg(feature = "PlayerSaveData+ColorSchemesSettings")]
     pub type ColorSchemesSettings = crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings;
+    #[cfg(feature = "PlayerSaveData+GameplayModifiers")]
+    pub type GameplayModifiers = crate::GlobalNamespace::PlayerSaveData_GameplayModifiers;
+    #[cfg(feature = "PlayerSaveData+GuestPlayer")]
+    pub type GuestPlayer = crate::GlobalNamespace::PlayerSaveData_GuestPlayer;
+    #[cfg(feature = "PlayerSaveData+LocalPlayer")]
+    pub type LocalPlayer = crate::GlobalNamespace::PlayerSaveData_LocalPlayer;
+    #[cfg(feature = "PlayerSaveData+MultiplayerModeSettings")]
+    pub type MultiplayerModeSettings = crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings;
+    #[cfg(feature = "PlayerSaveData+OverrideEnvironmentSettings")]
+    pub type OverrideEnvironmentSettings = crate::GlobalNamespace::PlayerSaveData_OverrideEnvironmentSettings;
+    #[cfg(feature = "PlayerSaveData+PlayerAgreementsData")]
+    pub type PlayerAgreementsData = crate::GlobalNamespace::PlayerSaveData_PlayerAgreementsData;
+    #[cfg(feature = "PlayerSaveData+PlayerAllOverallStatsData")]
+    pub type PlayerAllOverallStatsData = crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData;
+    #[cfg(feature = "PlayerSaveData+PlayerLevelStatsData")]
+    pub type PlayerLevelStatsData = crate::GlobalNamespace::PlayerSaveData_PlayerLevelStatsData;
+    #[cfg(feature = "PlayerSaveData+PlayerMissionStatsData")]
+    pub type PlayerMissionStatsData = crate::GlobalNamespace::PlayerSaveData_PlayerMissionStatsData;
+    #[cfg(feature = "PlayerSaveData+PlayerOverallStatsData")]
+    pub type PlayerOverallStatsData = crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData;
+    #[cfg(feature = "PlayerSaveData+PlayerSensitivityFlagSaveData")]
+    pub type PlayerSensitivityFlagSaveData = crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData;
+    #[cfg(feature = "PlayerSaveData+PlayerSpecificSettings")]
+    pub type PlayerSpecificSettings = crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings;
+    #[cfg(feature = "PlayerSaveData+PracticeSettings")]
+    pub type PracticeSettings = crate::GlobalNamespace::PlayerSaveData_PracticeSettings;
+    #[cfg(feature = "PlayerSaveData+UserAgeCategorySaveData")]
+    pub type UserAgeCategorySaveData = crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -1100,7 +1101,7 @@ impl PlayerSaveData {
     }
 }
 #[cfg(feature = "PlayerSaveData")]
-impl quest_hook::libil2cpp::ObjectType for PlayerSaveData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerSaveData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1175,13 +1176,13 @@ impl crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings {
     #[cfg(feature = "PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData")]
     pub type ArcVisibilityTypeSaveData = crate::GlobalNamespace::PlayerSpecificSettings_ArcVisibilityTypeSaveData;
     #[cfg(
-        feature = "PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
-    )]
-    pub type NoteJumpDurationTypeSettingsSaveData = crate::GlobalNamespace::PlayerSpecificSettings_NoteJumpDurationTypeSettingsSaveData;
-    #[cfg(
         feature = "PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
     )]
     pub type EnvironmentEffectsFilterPresetSaveData = crate::GlobalNamespace::PlayerSpecificSettings_EnvironmentEffectsFilterPresetSaveData;
+    #[cfg(
+        feature = "PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
+    )]
+    pub type NoteJumpDurationTypeSettingsSaveData = crate::GlobalNamespace::PlayerSpecificSettings_NoteJumpDurationTypeSettingsSaveData;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

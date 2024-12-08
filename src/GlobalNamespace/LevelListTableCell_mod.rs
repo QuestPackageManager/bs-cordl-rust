@@ -26,27 +26,28 @@ pub struct LevelListTableCell {
 }
 #[cfg(feature = "LevelListTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LevelListTableCell => ""."LevelListTableCell"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LevelListTableCell => ""
+    ."LevelListTableCell"
 );
 #[cfg(feature = "LevelListTableCell")]
-impl std::ops::Deref for LevelListTableCell {
+impl std::ops::Deref for crate::GlobalNamespace::LevelListTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelListTableCell")]
-impl std::ops::DerefMut for LevelListTableCell {
+impl std::ops::DerefMut for crate::GlobalNamespace::LevelListTableCell {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelListTableCell")]
-impl LevelListTableCell {
-    #[cfg(feature = "LevelListTableCell+_SetDataFromLevelAsync_d__20")]
-    pub type _SetDataFromLevelAsync_d__20 = crate::GlobalNamespace::LevelListTableCell__SetDataFromLevelAsync_d__20;
+impl crate::GlobalNamespace::LevelListTableCell {
     #[cfg(feature = "LevelListTableCell+_RefreshAvailabilityAsync_d__25")]
     pub type _RefreshAvailabilityAsync_d__25 = crate::GlobalNamespace::LevelListTableCell__RefreshAvailabilityAsync_d__25;
+    #[cfg(feature = "LevelListTableCell+_SetDataFromLevelAsync_d__20")]
+    pub type _SetDataFromLevelAsync_d__20 = crate::GlobalNamespace::LevelListTableCell__SetDataFromLevelAsync_d__20;
     pub fn CancelAsyncOperations(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -77,7 +78,7 @@ impl LevelListTableCell {
     }
     pub fn RefreshAvailabilityAsync(
         &mut self,
-        entitlementModel: *mut IEntitlementModel,
+        entitlementModel: *mut crate::GlobalNamespace::IEntitlementModel,
         levelID: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -110,7 +111,7 @@ impl LevelListTableCell {
     }
     pub fn SetDataFromLevelAsync(
         &mut self,
-        level: *mut BeatmapLevel,
+        level: *mut crate::GlobalNamespace::BeatmapLevel,
         isFavorite: bool,
         isPromoted: bool,
         isUpdated: bool,
@@ -147,7 +148,7 @@ impl LevelListTableCell {
     }
 }
 #[cfg(feature = "LevelListTableCell")]
-impl quest_hook::libil2cpp::ObjectType for LevelListTableCell {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LevelListTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

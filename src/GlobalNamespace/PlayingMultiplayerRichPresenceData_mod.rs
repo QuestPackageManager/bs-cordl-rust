@@ -2,28 +2,29 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayingMultiplayerRichPresenceData {
-    __cordl_parent: InMultiplayerRichPresenceData,
+    __cordl_parent: crate::GlobalNamespace::InMultiplayerRichPresenceData,
 }
 #[cfg(feature = "PlayingMultiplayerRichPresenceData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayingMultiplayerRichPresenceData => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PlayingMultiplayerRichPresenceData => ""
     ."PlayingMultiplayerRichPresenceData"
 );
 #[cfg(feature = "PlayingMultiplayerRichPresenceData")]
-impl std::ops::Deref for PlayingMultiplayerRichPresenceData {
-    type Target = InMultiplayerRichPresenceData;
+impl std::ops::Deref for crate::GlobalNamespace::PlayingMultiplayerRichPresenceData {
+    type Target = crate::GlobalNamespace::InMultiplayerRichPresenceData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayingMultiplayerRichPresenceData")]
-impl std::ops::DerefMut for PlayingMultiplayerRichPresenceData {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayingMultiplayerRichPresenceData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayingMultiplayerRichPresenceData")]
-impl PlayingMultiplayerRichPresenceData {
+impl crate::GlobalNamespace::PlayingMultiplayerRichPresenceData {
     pub const kPlayingMultiplayerLobbyRichPresenceLocalizationKey: &'static str = "PLAYING_MULTIPLAYER_PRESENCE";
     pub fn New(atMaxPartySize: bool) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -45,7 +46,8 @@ impl PlayingMultiplayerRichPresenceData {
     }
 }
 #[cfg(feature = "PlayingMultiplayerRichPresenceData")]
-impl quest_hook::libil2cpp::ObjectType for PlayingMultiplayerRichPresenceData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayingMultiplayerRichPresenceData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

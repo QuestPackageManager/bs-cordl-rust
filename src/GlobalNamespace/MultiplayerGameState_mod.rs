@@ -8,5 +8,6 @@ pub enum MultiplayerGameState {
 }
 #[cfg(feature = "MultiplayerGameState")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for MultiplayerGameState => ""."MultiplayerGameState"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerGameState => ""
+    ."MultiplayerGameState"
 );

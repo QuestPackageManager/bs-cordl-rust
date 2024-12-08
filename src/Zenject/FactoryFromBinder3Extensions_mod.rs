@@ -24,19 +24,17 @@ impl std::ops::DerefMut for crate::Zenject::FactoryFromBinder3Extensions {
 }
 #[cfg(feature = "Zenject+FactoryFromBinder3Extensions")]
 impl crate::Zenject::FactoryFromBinder3Extensions {
-    #[cfg(feature = "Zenject+FactoryFromBinder3Extensions+__c__DisplayClass6_0_5")]
-    pub type __c__DisplayClass6_0_5<
+    #[cfg(feature = "Zenject+FactoryFromBinder3Extensions+__c__1_4")]
+    pub type __c__1_4<
         TParam1: quest_hook::libil2cpp::Type,
         TParam2: quest_hook::libil2cpp::Type,
         TParam3: quest_hook::libil2cpp::Type,
         TContract: quest_hook::libil2cpp::Type,
-        TMemoryPool: quest_hook::libil2cpp::Type,
-    > = crate::Zenject::FactoryFromBinder3Extensions___c__DisplayClass6_0_5<
+    > = crate::Zenject::FactoryFromBinder3Extensions___c__1_4<
         TParam1,
         TParam2,
         TParam3,
         TContract,
-        TMemoryPool,
     >;
     #[cfg(feature = "Zenject+FactoryFromBinder3Extensions+__c__3_4")]
     pub type __c__3_4<
@@ -45,18 +43,6 @@ impl crate::Zenject::FactoryFromBinder3Extensions {
         TParam3: quest_hook::libil2cpp::Type,
         TContract: quest_hook::libil2cpp::Type,
     > = crate::Zenject::FactoryFromBinder3Extensions___c__3_4<
-        TParam1,
-        TParam2,
-        TParam3,
-        TContract,
-    >;
-    #[cfg(feature = "Zenject+FactoryFromBinder3Extensions+__c__DisplayClass0_0_4")]
-    pub type __c__DisplayClass0_0_4<
-        TParam1: quest_hook::libil2cpp::Type,
-        TParam2: quest_hook::libil2cpp::Type,
-        TParam3: quest_hook::libil2cpp::Type,
-        TContract: quest_hook::libil2cpp::Type,
-    > = crate::Zenject::FactoryFromBinder3Extensions___c__DisplayClass0_0_4<
         TParam1,
         TParam2,
         TParam3,
@@ -76,17 +62,31 @@ impl crate::Zenject::FactoryFromBinder3Extensions {
         TContract,
         TMemoryPool,
     >;
-    #[cfg(feature = "Zenject+FactoryFromBinder3Extensions+__c__1_4")]
-    pub type __c__1_4<
+    #[cfg(feature = "Zenject+FactoryFromBinder3Extensions+__c__DisplayClass0_0_4")]
+    pub type __c__DisplayClass0_0_4<
         TParam1: quest_hook::libil2cpp::Type,
         TParam2: quest_hook::libil2cpp::Type,
         TParam3: quest_hook::libil2cpp::Type,
         TContract: quest_hook::libil2cpp::Type,
-    > = crate::Zenject::FactoryFromBinder3Extensions___c__1_4<
+    > = crate::Zenject::FactoryFromBinder3Extensions___c__DisplayClass0_0_4<
         TParam1,
         TParam2,
         TParam3,
         TContract,
+    >;
+    #[cfg(feature = "Zenject+FactoryFromBinder3Extensions+__c__DisplayClass6_0_5")]
+    pub type __c__DisplayClass6_0_5<
+        TParam1: quest_hook::libil2cpp::Type,
+        TParam2: quest_hook::libil2cpp::Type,
+        TParam3: quest_hook::libil2cpp::Type,
+        TContract: quest_hook::libil2cpp::Type,
+        TMemoryPool: quest_hook::libil2cpp::Type,
+    > = crate::Zenject::FactoryFromBinder3Extensions___c__DisplayClass6_0_5<
+        TParam1,
+        TParam2,
+        TParam3,
+        TContract,
+        TMemoryPool,
     >;
 }
 #[cfg(feature = "Zenject+FactoryFromBinder3Extensions")]

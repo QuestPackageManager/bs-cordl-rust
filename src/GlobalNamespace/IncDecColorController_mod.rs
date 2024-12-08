@@ -3,27 +3,28 @@
 #[derive(Debug)]
 pub struct IncDecColorController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _stepValuePicker: *mut ColorStepValuePicker,
+    pub _stepValuePicker: *mut crate::GlobalNamespace::ColorStepValuePicker,
 }
 #[cfg(feature = "IncDecColorController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IncDecColorController => ""."IncDecColorController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IncDecColorController => ""
+    ."IncDecColorController"
 );
 #[cfg(feature = "IncDecColorController")]
-impl std::ops::Deref for IncDecColorController {
+impl std::ops::Deref for crate::GlobalNamespace::IncDecColorController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IncDecColorController")]
-impl std::ops::DerefMut for IncDecColorController {
+impl std::ops::DerefMut for crate::GlobalNamespace::IncDecColorController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IncDecColorController")]
-impl IncDecColorController {
+impl crate::GlobalNamespace::IncDecColorController {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -116,7 +117,8 @@ impl IncDecColorController {
     }
 }
 #[cfg(feature = "IncDecColorController")]
-impl quest_hook::libil2cpp::ObjectType for IncDecColorController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IncDecColorController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,47 +2,48 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapEventData {
-    __cordl_parent: BeatmapDataItem,
-    pub _previousSameTypeEventData_k__BackingField: *mut BeatmapEventData,
-    pub _nextSameTypeEventData_k__BackingField: *mut BeatmapEventData,
+    __cordl_parent: crate::GlobalNamespace::BeatmapDataItem,
+    pub _previousSameTypeEventData_k__BackingField: *mut crate::GlobalNamespace::BeatmapEventData,
+    pub _nextSameTypeEventData_k__BackingField: *mut crate::GlobalNamespace::BeatmapEventData,
 }
 #[cfg(feature = "BeatmapEventData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapEventData => ""."BeatmapEventData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapEventData => ""
+    ."BeatmapEventData"
 );
 #[cfg(feature = "BeatmapEventData")]
-impl std::ops::Deref for BeatmapEventData {
-    type Target = BeatmapDataItem;
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapEventData {
+    type Target = crate::GlobalNamespace::BeatmapDataItem;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapEventData")]
-impl std::ops::DerefMut for BeatmapEventData {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapEventData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapEventData")]
-impl BeatmapEventData {
+impl crate::GlobalNamespace::BeatmapEventData {
     pub fn GetDefault_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapEventData> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapEventData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapEventData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapEventData = __cordl_object
             .invoke("GetDefault", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetDefault_BeatmapEventData1(
         &mut self,
-        nextData: *mut BeatmapEventData,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapEventData> {
+        nextData: *mut crate::GlobalNamespace::BeatmapEventData,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapEventData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapEventData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapEventData = __cordl_object
             .invoke("GetDefault", (nextData))?;
         Ok(__cordl_ret)
     }
@@ -59,7 +60,7 @@ impl BeatmapEventData {
     }
     pub fn __ConnectWithNextSameTypeEventData(
         &mut self,
-        newNextSameTypeEvent: *mut BeatmapEventData,
+        newNextSameTypeEvent: *mut crate::GlobalNamespace::BeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -70,7 +71,7 @@ impl BeatmapEventData {
     }
     pub fn __ConnectWithPreviousSameTypeEventData(
         &mut self,
-        newPreviousSameTypeEvent: *mut BeatmapEventData,
+        newPreviousSameTypeEvent: *mut crate::GlobalNamespace::BeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -107,27 +108,27 @@ impl BeatmapEventData {
     }
     pub fn get_nextSameTypeEventData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapEventData> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapEventData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapEventData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapEventData = __cordl_object
             .invoke("get_nextSameTypeEventData", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_previousSameTypeEventData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapEventData> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapEventData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapEventData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapEventData = __cordl_object
             .invoke("get_previousSameTypeEventData", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_nextSameTypeEventData(
         &mut self,
-        value: *mut BeatmapEventData,
+        value: *mut crate::GlobalNamespace::BeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -138,7 +139,7 @@ impl BeatmapEventData {
     }
     pub fn set_previousSameTypeEventData(
         &mut self,
-        value: *mut BeatmapEventData,
+        value: *mut crate::GlobalNamespace::BeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -149,7 +150,7 @@ impl BeatmapEventData {
     }
 }
 #[cfg(feature = "BeatmapEventData")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapEventData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

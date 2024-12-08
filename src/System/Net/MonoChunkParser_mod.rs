@@ -105,10 +105,10 @@ impl std::ops::DerefMut for crate::System::Net::MonoChunkParser {
 }
 #[cfg(feature = "System+Net+MonoChunkParser")]
 impl crate::System::Net::MonoChunkParser {
-    #[cfg(feature = "System+Net+MonoChunkParser+State")]
-    pub type State = crate::System::Net::MonoChunkParser_State;
     #[cfg(feature = "System+Net+MonoChunkParser+Chunk")]
     pub type Chunk = crate::System::Net::MonoChunkParser_Chunk;
+    #[cfg(feature = "System+Net+MonoChunkParser+State")]
+    pub type State = crate::System::Net::MonoChunkParser_State;
     pub fn GetChunkSize(
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,

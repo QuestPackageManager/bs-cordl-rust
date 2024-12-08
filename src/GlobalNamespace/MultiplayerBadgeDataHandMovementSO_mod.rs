@@ -2,31 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerBadgeDataHandMovementSO {
-    __cordl_parent: MultiplayerBadgeDataMinMaxFloatSO,
+    __cordl_parent: crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO,
 }
 #[cfg(feature = "MultiplayerBadgeDataHandMovementSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerBadgeDataHandMovementSO => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerBadgeDataHandMovementSO => ""
     ."MultiplayerBadgeDataHandMovementSO"
 );
 #[cfg(feature = "MultiplayerBadgeDataHandMovementSO")]
-impl std::ops::Deref for MultiplayerBadgeDataHandMovementSO {
-    type Target = MultiplayerBadgeDataMinMaxFloatSO;
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerBadgeDataHandMovementSO {
+    type Target = crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerBadgeDataHandMovementSO")]
-impl std::ops::DerefMut for MultiplayerBadgeDataHandMovementSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerBadgeDataHandMovementSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerBadgeDataHandMovementSO")]
-impl MultiplayerBadgeDataHandMovementSO {
+impl crate::GlobalNamespace::MultiplayerBadgeDataHandMovementSO {
     pub fn GetValue(
         &mut self,
-        result: *mut MultiplayerPlayerResultsData,
+        result: *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -53,7 +54,8 @@ impl MultiplayerBadgeDataHandMovementSO {
     }
 }
 #[cfg(feature = "MultiplayerBadgeDataHandMovementSO")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerBadgeDataHandMovementSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerBadgeDataHandMovementSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

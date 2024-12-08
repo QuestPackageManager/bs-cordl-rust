@@ -14,23 +14,23 @@ pub struct Rotate {
 }
 #[cfg(feature = "Rotate")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for Rotate => ""."Rotate"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::Rotate => ""."Rotate"
 );
 #[cfg(feature = "Rotate")]
-impl std::ops::Deref for Rotate {
+impl std::ops::Deref for crate::GlobalNamespace::Rotate {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Rotate")]
-impl std::ops::DerefMut for Rotate {
+impl std::ops::DerefMut for crate::GlobalNamespace::Rotate {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "Rotate")]
-impl Rotate {
+impl crate::GlobalNamespace::Rotate {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -100,7 +100,7 @@ impl Rotate {
     }
 }
 #[cfg(feature = "Rotate")]
-impl quest_hook::libil2cpp::ObjectType for Rotate {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Rotate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

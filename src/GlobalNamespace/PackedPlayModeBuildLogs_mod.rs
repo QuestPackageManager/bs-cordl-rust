@@ -9,23 +9,24 @@ pub struct PackedPlayModeBuildLogs {
 }
 #[cfg(feature = "PackedPlayModeBuildLogs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PackedPlayModeBuildLogs => ""."PackedPlayModeBuildLogs"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PackedPlayModeBuildLogs => ""
+    ."PackedPlayModeBuildLogs"
 );
 #[cfg(feature = "PackedPlayModeBuildLogs")]
-impl std::ops::Deref for PackedPlayModeBuildLogs {
+impl std::ops::Deref for crate::GlobalNamespace::PackedPlayModeBuildLogs {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PackedPlayModeBuildLogs")]
-impl std::ops::DerefMut for PackedPlayModeBuildLogs {
+impl std::ops::DerefMut for crate::GlobalNamespace::PackedPlayModeBuildLogs {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PackedPlayModeBuildLogs")]
-impl PackedPlayModeBuildLogs {
+impl crate::GlobalNamespace::PackedPlayModeBuildLogs {
     #[cfg(feature = "PackedPlayModeBuildLogs+RuntimeBuildLog")]
     pub type RuntimeBuildLog = crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -75,7 +76,8 @@ impl PackedPlayModeBuildLogs {
     }
 }
 #[cfg(feature = "PackedPlayModeBuildLogs")]
-impl quest_hook::libil2cpp::ObjectType for PackedPlayModeBuildLogs {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PackedPlayModeBuildLogs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

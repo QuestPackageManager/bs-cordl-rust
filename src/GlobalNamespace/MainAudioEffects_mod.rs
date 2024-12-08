@@ -9,23 +9,24 @@ pub struct MainAudioEffects {
 }
 #[cfg(feature = "MainAudioEffects")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MainAudioEffects => ""."MainAudioEffects"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MainAudioEffects => ""
+    ."MainAudioEffects"
 );
 #[cfg(feature = "MainAudioEffects")]
-impl std::ops::Deref for MainAudioEffects {
+impl std::ops::Deref for crate::GlobalNamespace::MainAudioEffects {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainAudioEffects")]
-impl std::ops::DerefMut for MainAudioEffects {
+impl std::ops::DerefMut for crate::GlobalNamespace::MainAudioEffects {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainAudioEffects")]
-impl MainAudioEffects {
+impl crate::GlobalNamespace::MainAudioEffects {
     pub const kDefaultCutoffFrequency: i32 = 22000i32;
     pub const kLowPassCutoffFrequency: i32 = 150i32;
     pub fn LateUpdate(
@@ -87,7 +88,7 @@ impl MainAudioEffects {
     }
 }
 #[cfg(feature = "MainAudioEffects")]
-impl quest_hook::libil2cpp::ObjectType for MainAudioEffects {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MainAudioEffects {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

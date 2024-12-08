@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MetaRemoteAssetsInstaller {
     __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
-    pub _appInitSetupData: *mut AppInitSetupData,
+    pub _appInitSetupData: *mut crate::GlobalNamespace::AppInitSetupData,
 }
 #[cfg(feature = "BGLib+MetaRemoteAssets+Installers+MetaRemoteAssetsInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

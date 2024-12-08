@@ -33,27 +33,28 @@ pub struct ISonyPSPremiumHelper {
 }
 #[cfg(feature = "ISonyPSPremiumHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ISonyPSPremiumHelper => ""."ISonyPSPremiumHelper"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ISonyPSPremiumHelper => ""
+    ."ISonyPSPremiumHelper"
 );
 #[cfg(feature = "ISonyPSPremiumHelper")]
-impl std::ops::Deref for ISonyPSPremiumHelper {
+impl std::ops::Deref for crate::GlobalNamespace::ISonyPSPremiumHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ISonyPSPremiumHelper")]
-impl std::ops::DerefMut for ISonyPSPremiumHelper {
+impl std::ops::DerefMut for crate::GlobalNamespace::ISonyPSPremiumHelper {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ISonyPSPremiumHelper")]
-impl ISonyPSPremiumHelper {
-    #[cfg(feature = "ISonyPSPremiumHelper+GetPremiumStatusResult")]
-    pub type GetPremiumStatusResult = crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult;
+impl crate::GlobalNamespace::ISonyPSPremiumHelper {
     #[cfg(feature = "ISonyPSPremiumHelper+DisplayJoinPremiumDialogResult")]
     pub type DisplayJoinPremiumDialogResult = crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult;
+    #[cfg(feature = "ISonyPSPremiumHelper+GetPremiumStatusResult")]
+    pub type GetPremiumStatusResult = crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult;
     pub fn DisplayJoinPremiumDialogAsync(
         &mut self,
         token: crate::System::Threading::CancellationToken,
@@ -104,7 +105,7 @@ impl ISonyPSPremiumHelper {
     }
 }
 #[cfg(feature = "ISonyPSPremiumHelper")]
-impl quest_hook::libil2cpp::ObjectType for ISonyPSPremiumHelper {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ISonyPSPremiumHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

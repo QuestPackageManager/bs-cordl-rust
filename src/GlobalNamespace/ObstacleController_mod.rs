@@ -2,22 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObstacleController {
-    __cordl_parent: ObstacleControllerBase,
-    pub _stretchableObstacle: *mut StretchableObstacle,
+    __cordl_parent: crate::GlobalNamespace::ObstacleControllerBase,
+    pub _stretchableObstacle: *mut crate::GlobalNamespace::StretchableObstacle,
     pub _endDistanceOffset: f32,
     pub _visualWrappers: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::GameObject,
     >,
-    pub _playerTransforms: *mut PlayerTransforms,
-    pub _audioTimeSyncController: *mut IAudioTimeSource,
-    pub _colorManager: *mut ColorManager,
-    pub finishedMovementEvent: *mut crate::System::Action_1<*mut ObstacleController>,
-    pub passedThreeQuartersOfMove2Event: *mut crate::System::Action_1<
-        *mut ObstacleController,
+    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
+    pub finishedMovementEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::ObstacleController,
     >,
-    pub passedAvoidedMarkEvent: *mut crate::System::Action_1<*mut ObstacleController>,
-    pub didDissolveEvent: *mut crate::System::Action_1<*mut ObstacleController>,
-    pub didUpdateProgress: *mut crate::System::Action_2<*mut ObstacleController, f32>,
+    pub passedThreeQuartersOfMove2Event: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::ObstacleController,
+    >,
+    pub passedAvoidedMarkEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::ObstacleController,
+    >,
+    pub didDissolveEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::ObstacleController,
+    >,
+    pub didUpdateProgress: *mut crate::System::Action_2<
+        *mut crate::GlobalNamespace::ObstacleController,
+        f32,
+    >,
     pub _width: f32,
     pub _height: f32,
     pub _length: f32,
@@ -34,30 +43,31 @@ pub struct ObstacleController {
     pub _finishMovementTime: f32,
     pub _bounds: crate::UnityEngine::Bounds,
     pub _dissolving: bool,
-    pub _obstacleData: *mut ObstacleData,
+    pub _obstacleData: *mut crate::GlobalNamespace::ObstacleData,
     pub _color: crate::UnityEngine::Color,
     pub _worldRotation: crate::UnityEngine::Quaternion,
     pub _inverseWorldRotation: crate::UnityEngine::Quaternion,
 }
 #[cfg(feature = "ObstacleController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ObstacleController => ""."ObstacleController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ObstacleController => ""
+    ."ObstacleController"
 );
 #[cfg(feature = "ObstacleController")]
-impl std::ops::Deref for ObstacleController {
-    type Target = ObstacleControllerBase;
+impl std::ops::Deref for crate::GlobalNamespace::ObstacleController {
+    type Target = crate::GlobalNamespace::ObstacleControllerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ObstacleController")]
-impl std::ops::DerefMut for ObstacleController {
+impl std::ops::DerefMut for crate::GlobalNamespace::ObstacleController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ObstacleController")]
-impl ObstacleController {
+impl crate::GlobalNamespace::ObstacleController {
     pub const kAvoidMarkTimeOffset: f32 = 0.15f32;
     #[cfg(feature = "ObstacleController+Pool")]
     pub type Pool = crate::GlobalNamespace::ObstacleController_Pool;
@@ -109,7 +119,7 @@ impl ObstacleController {
     }
     pub fn Init(
         &mut self,
-        obstacleData: *mut ObstacleData,
+        obstacleData: *mut crate::GlobalNamespace::ObstacleData,
         worldRotation: f32,
         startPos: crate::UnityEngine::Vector3,
         midPos: crate::UnityEngine::Vector3,
@@ -189,7 +199,9 @@ impl ObstacleController {
     }
     pub fn add_didDissolveEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -200,7 +212,10 @@ impl ObstacleController {
     }
     pub fn add_didUpdateProgress(
         &mut self,
-        value: *mut crate::System::Action_2<*mut ObstacleController, f32>,
+        value: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::ObstacleController,
+            f32,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -211,7 +226,9 @@ impl ObstacleController {
     }
     pub fn add_finishedMovementEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -222,7 +239,9 @@ impl ObstacleController {
     }
     pub fn add_passedAvoidedMarkEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -233,7 +252,9 @@ impl ObstacleController {
     }
     pub fn add_passedThreeQuartersOfMove2Event(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -299,11 +320,11 @@ impl ObstacleController {
     }
     pub fn get_obstacleData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut ObstacleData> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::ObstacleData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ObstacleData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::ObstacleData = __cordl_object
             .invoke("get_obstacleData", ())?;
         Ok(__cordl_ret)
     }
@@ -316,7 +337,9 @@ impl ObstacleController {
     }
     pub fn remove_didDissolveEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -327,7 +350,10 @@ impl ObstacleController {
     }
     pub fn remove_didUpdateProgress(
         &mut self,
-        value: *mut crate::System::Action_2<*mut ObstacleController, f32>,
+        value: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::ObstacleController,
+            f32,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -338,7 +364,9 @@ impl ObstacleController {
     }
     pub fn remove_finishedMovementEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -349,7 +377,9 @@ impl ObstacleController {
     }
     pub fn remove_passedAvoidedMarkEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -360,7 +390,9 @@ impl ObstacleController {
     }
     pub fn remove_passedThreeQuartersOfMove2Event(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -371,7 +403,7 @@ impl ObstacleController {
     }
 }
 #[cfg(feature = "ObstacleController")]
-impl quest_hook::libil2cpp::ObjectType for ObstacleController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ObstacleController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -383,7 +415,9 @@ impl quest_hook::libil2cpp::ObjectType for ObstacleController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObstacleController_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<*mut ObstacleController>,
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::ObstacleController,
+    >,
 }
 #[cfg(feature = "ObstacleController+Pool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -392,7 +426,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ObstacleController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::ObstacleController_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<*mut ObstacleController>;
+    type Target = crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::ObstacleController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

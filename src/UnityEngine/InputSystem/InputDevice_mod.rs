@@ -119,10 +119,10 @@ impl crate::UnityEngine::InputSystem::InputDevice {
     pub const kLocalParticipantId: i32 = 0i32;
     pub const kStateOffsetBits: i32 = 13i32;
     pub const kStateSizeBits: i32 = 9i32;
-    #[cfg(feature = "UnityEngine+InputSystem+InputDevice+DeviceFlags")]
-    pub type DeviceFlags = crate::UnityEngine::InputSystem::InputDevice_DeviceFlags;
     #[cfg(feature = "UnityEngine+InputSystem+InputDevice+ControlBitRangeNode")]
     pub type ControlBitRangeNode = crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode;
+    #[cfg(feature = "UnityEngine+InputSystem+InputDevice+DeviceFlags")]
+    pub type DeviceFlags = crate::UnityEngine::InputSystem::InputDevice_DeviceFlags;
     pub fn AddDeviceUsage(
         &mut self,
         usage: crate::UnityEngine::InputSystem::Utilities::InternedString,

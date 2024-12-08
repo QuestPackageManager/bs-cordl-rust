@@ -2,28 +2,28 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectiveValueFormatterSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
 }
 #[cfg(feature = "ObjectiveValueFormatterSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ObjectiveValueFormatterSO => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ObjectiveValueFormatterSO => ""
     ."ObjectiveValueFormatterSO"
 );
 #[cfg(feature = "ObjectiveValueFormatterSO")]
-impl std::ops::Deref for ObjectiveValueFormatterSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::ObjectiveValueFormatterSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ObjectiveValueFormatterSO")]
-impl std::ops::DerefMut for ObjectiveValueFormatterSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::ObjectiveValueFormatterSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ObjectiveValueFormatterSO")]
-impl ObjectiveValueFormatterSO {
+impl crate::GlobalNamespace::ObjectiveValueFormatterSO {
     pub fn FormatValue(
         &mut self,
         value: i32,
@@ -54,7 +54,8 @@ impl ObjectiveValueFormatterSO {
     }
 }
 #[cfg(feature = "ObjectiveValueFormatterSO")]
-impl quest_hook::libil2cpp::ObjectType for ObjectiveValueFormatterSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ObjectiveValueFormatterSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

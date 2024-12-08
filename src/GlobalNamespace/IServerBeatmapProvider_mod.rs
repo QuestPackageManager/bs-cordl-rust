@@ -6,40 +6,43 @@ pub struct IServerBeatmapProvider {
 }
 #[cfg(feature = "IServerBeatmapProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IServerBeatmapProvider => ""."IServerBeatmapProvider"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IServerBeatmapProvider => ""
+    ."IServerBeatmapProvider"
 );
 #[cfg(feature = "IServerBeatmapProvider")]
-impl std::ops::Deref for IServerBeatmapProvider {
+impl std::ops::Deref for crate::GlobalNamespace::IServerBeatmapProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IServerBeatmapProvider")]
-impl std::ops::DerefMut for IServerBeatmapProvider {
+impl std::ops::DerefMut for crate::GlobalNamespace::IServerBeatmapProvider {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IServerBeatmapProvider")]
-impl IServerBeatmapProvider {
+impl crate::GlobalNamespace::IServerBeatmapProvider {
     pub fn SelectBeatmapFromSuggestionsWithSelectionMaskAndOwnedSongPacks(
         &mut self,
         playerCount: i32,
         beatmapsSuggestedByPlayers: *mut crate::System::Collections::Generic::Dictionary_2<
             *mut crate::System::String,
-            *mut BeatmapKeyNetSerializable,
+            *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
         >,
-        selectionMask: BeatmapLevelSelectionMask,
+        selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
         playerOwnedSongPacks: *mut crate::System::Collections::Generic::Dictionary_2<
             *mut crate::System::String,
-            SongPackMask,
+            crate::GlobalNamespace::SongPackMask,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapKeyNetSerializable> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapKeyNetSerializable = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapKeyNetSerializable = __cordl_object
             .invoke(
                 "SelectBeatmapFromSuggestionsWithSelectionMaskAndOwnedSongPacks",
                 (
@@ -53,8 +56,8 @@ impl IServerBeatmapProvider {
     }
     pub fn VerifyBeatmapForSelectionMask(
         &mut self,
-        beatmapKeySerializable: *mut BeatmapKeyNetSerializable,
-        selectionMask: BeatmapLevelSelectionMask,
+        beatmapKeySerializable: *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+        selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -73,7 +76,8 @@ impl IServerBeatmapProvider {
     }
 }
 #[cfg(feature = "IServerBeatmapProvider")]
-impl quest_hook::libil2cpp::ObjectType for IServerBeatmapProvider {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IServerBeatmapProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

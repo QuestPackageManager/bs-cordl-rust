@@ -10,24 +10,24 @@ pub struct DropdownSettingsController {
 }
 #[cfg(feature = "DropdownSettingsController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for DropdownSettingsController => ""
-    ."DropdownSettingsController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::DropdownSettingsController =>
+    ""."DropdownSettingsController"
 );
 #[cfg(feature = "DropdownSettingsController")]
-impl std::ops::Deref for DropdownSettingsController {
+impl std::ops::Deref for crate::GlobalNamespace::DropdownSettingsController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DropdownSettingsController")]
-impl std::ops::DerefMut for DropdownSettingsController {
+impl std::ops::DerefMut for crate::GlobalNamespace::DropdownSettingsController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "DropdownSettingsController")]
-impl DropdownSettingsController {
+impl crate::GlobalNamespace::DropdownSettingsController {
     pub fn ApplyValue(
         &mut self,
         idx: i32,
@@ -156,7 +156,8 @@ impl DropdownSettingsController {
     }
 }
 #[cfg(feature = "DropdownSettingsController")]
-impl quest_hook::libil2cpp::ObjectType for DropdownSettingsController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::DropdownSettingsController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -22,24 +22,25 @@ pub struct Parametric3SliceSpriteController {
 }
 #[cfg(feature = "Parametric3SliceSpriteController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for Parametric3SliceSpriteController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::Parametric3SliceSpriteController => ""
     ."Parametric3SliceSpriteController"
 );
 #[cfg(feature = "Parametric3SliceSpriteController")]
-impl std::ops::Deref for Parametric3SliceSpriteController {
+impl std::ops::Deref for crate::GlobalNamespace::Parametric3SliceSpriteController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Parametric3SliceSpriteController")]
-impl std::ops::DerefMut for Parametric3SliceSpriteController {
+impl std::ops::DerefMut for crate::GlobalNamespace::Parametric3SliceSpriteController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "Parametric3SliceSpriteController")]
-impl Parametric3SliceSpriteController {
+impl crate::GlobalNamespace::Parametric3SliceSpriteController {
     pub const kMaxLength: f32 = 2500f32;
     pub const kMaxWidth: f32 = 10f32;
     pub fn Awake(
@@ -177,7 +178,8 @@ impl Parametric3SliceSpriteController {
     }
 }
 #[cfg(feature = "Parametric3SliceSpriteController")]
-impl quest_hook::libil2cpp::ObjectType for Parametric3SliceSpriteController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::Parametric3SliceSpriteController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

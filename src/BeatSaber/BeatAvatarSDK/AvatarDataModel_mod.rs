@@ -7,7 +7,7 @@ pub struct AvatarDataModel {
         *mut crate::BeatSaber::BeatAvatarSDK::AvatarData,
     >,
     pub _avatarPartsModel: *mut crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
-    pub _fileStorage: *mut IFileStorage,
+    pub _fileStorage: *mut crate::GlobalNamespace::IFileStorage,
     pub _avatarData: *mut crate::BeatSaber::BeatAvatarSDK::AvatarData,
     pub _avatarCreatedTask: *mut crate::System::Threading::Tasks::Task_1<bool>,
 }

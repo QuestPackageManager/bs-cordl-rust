@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MissionToggle {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
-    pub _missionToggleWasPressedSignal: *mut Signal,
+    pub _missionToggleWasPressedSignal: *mut crate::GlobalNamespace::Signal,
     pub _text: *mut crate::TMPro::TextMeshProUGUI,
     pub _lockedImage: *mut crate::UnityEngine::UI::Image,
     pub _clearedImage: *mut crate::UnityEngine::UI::Image,
@@ -14,7 +14,9 @@ pub struct MissionToggle {
     pub _normalColor: crate::UnityEngine::Color,
     pub _invertColor: crate::UnityEngine::Color,
     pub _highlightColor: crate::UnityEngine::Color,
-    pub selectionDidChangeEvent: *mut crate::System::Action_1<*mut MissionToggle>,
+    pub selectionDidChangeEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::MissionToggle,
+    >,
     pub _selected: bool,
     pub _highlighted: bool,
     pub _interactable: bool,
@@ -22,23 +24,24 @@ pub struct MissionToggle {
 }
 #[cfg(feature = "MissionToggle")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionToggle => ""."MissionToggle"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissionToggle => ""
+    ."MissionToggle"
 );
 #[cfg(feature = "MissionToggle")]
-impl std::ops::Deref for MissionToggle {
+impl std::ops::Deref for crate::GlobalNamespace::MissionToggle {
     type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionToggle")]
-impl std::ops::DerefMut for MissionToggle {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionToggle {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionToggle")]
-impl MissionToggle {
+impl crate::GlobalNamespace::MissionToggle {
     pub fn ChangeHighlight(
         &mut self,
         value: bool,
@@ -171,7 +174,7 @@ impl MissionToggle {
     }
     pub fn add_selectionDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MissionToggle>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::MissionToggle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -203,7 +206,7 @@ impl MissionToggle {
     }
     pub fn remove_selectionDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MissionToggle>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::MissionToggle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -247,7 +250,7 @@ impl MissionToggle {
     }
 }
 #[cfg(feature = "MissionToggle")]
-impl quest_hook::libil2cpp::ObjectType for MissionToggle {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissionToggle {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

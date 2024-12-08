@@ -39,20 +39,18 @@ for crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultContractResolver")]
 impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
+    #[cfg(
+        feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
+    )]
+    pub type EnumerableDictionaryWrapper_2<
+        TEnumeratorKey: quest_hook::libil2cpp::Type,
+        TEnumeratorValue: quest_hook::libil2cpp::Type,
+    > = crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDictionaryWrapper_2<
+        TEnumeratorKey,
+        TEnumeratorValue,
+    >;
     #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c")]
     pub type __c = crate::Newtonsoft::Json::Serialization::DefaultContractResolver___c;
-    #[cfg(
-        feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c__DisplayClass45_2"
-    )]
-    pub type __c__DisplayClass45_2 = crate::Newtonsoft::Json::Serialization::DefaultContractResolver___c__DisplayClass45_2;
-    #[cfg(
-        feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c__DisplayClass62_0"
-    )]
-    pub type __c__DisplayClass62_0 = crate::Newtonsoft::Json::Serialization::DefaultContractResolver___c__DisplayClass62_0;
-    #[cfg(
-        feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c__DisplayClass67_0"
-    )]
-    pub type __c__DisplayClass67_0 = crate::Newtonsoft::Json::Serialization::DefaultContractResolver___c__DisplayClass67_0;
     #[cfg(
         feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c__DisplayClass42_0"
     )]
@@ -66,19 +64,21 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
     )]
     pub type __c__DisplayClass45_1 = crate::Newtonsoft::Json::Serialization::DefaultContractResolver___c__DisplayClass45_1;
     #[cfg(
+        feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c__DisplayClass45_2"
+    )]
+    pub type __c__DisplayClass45_2 = crate::Newtonsoft::Json::Serialization::DefaultContractResolver___c__DisplayClass45_2;
+    #[cfg(
+        feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c__DisplayClass62_0"
+    )]
+    pub type __c__DisplayClass62_0 = crate::Newtonsoft::Json::Serialization::DefaultContractResolver___c__DisplayClass62_0;
+    #[cfg(
+        feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c__DisplayClass67_0"
+    )]
+    pub type __c__DisplayClass67_0 = crate::Newtonsoft::Json::Serialization::DefaultContractResolver___c__DisplayClass67_0;
+    #[cfg(
         feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c__DisplayClass80_0"
     )]
     pub type __c__DisplayClass80_0 = crate::Newtonsoft::Json::Serialization::DefaultContractResolver___c__DisplayClass80_0;
-    #[cfg(
-        feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
-    )]
-    pub type EnumerableDictionaryWrapper_2<
-        TEnumeratorKey: quest_hook::libil2cpp::Type,
-        TEnumeratorValue: quest_hook::libil2cpp::Type,
-    > = crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDictionaryWrapper_2<
-        TEnumeratorKey,
-        TEnumeratorValue,
-    >;
     #[cfg(
         feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c__DisplayClass81_0"
     )]

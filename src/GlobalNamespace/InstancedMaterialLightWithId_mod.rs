@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InstancedMaterialLightWithId {
-    __cordl_parent: LightWithIdMonoBehaviour,
-    pub _materialPropertyBlockColorSetter: *mut MaterialPropertyBlockColorSetter,
+    __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
+    pub _materialPropertyBlockColorSetter: *mut crate::GlobalNamespace::MaterialPropertyBlockColorSetter,
     pub _setColorOnly: bool,
     pub _intensity: f32,
     pub _minAlpha: f32,
@@ -15,24 +15,24 @@ pub struct InstancedMaterialLightWithId {
 }
 #[cfg(feature = "InstancedMaterialLightWithId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for InstancedMaterialLightWithId => ""
-    ."InstancedMaterialLightWithId"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::InstancedMaterialLightWithId =>
+    ""."InstancedMaterialLightWithId"
 );
 #[cfg(feature = "InstancedMaterialLightWithId")]
-impl std::ops::Deref for InstancedMaterialLightWithId {
-    type Target = LightWithIdMonoBehaviour;
+impl std::ops::Deref for crate::GlobalNamespace::InstancedMaterialLightWithId {
+    type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "InstancedMaterialLightWithId")]
-impl std::ops::DerefMut for InstancedMaterialLightWithId {
+impl std::ops::DerefMut for crate::GlobalNamespace::InstancedMaterialLightWithId {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "InstancedMaterialLightWithId")]
-impl InstancedMaterialLightWithId {
+impl crate::GlobalNamespace::InstancedMaterialLightWithId {
     pub fn AddNecessaryComponents(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -91,7 +91,8 @@ impl InstancedMaterialLightWithId {
     }
 }
 #[cfg(feature = "InstancedMaterialLightWithId")]
-impl quest_hook::libil2cpp::ObjectType for InstancedMaterialLightWithId {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::InstancedMaterialLightWithId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

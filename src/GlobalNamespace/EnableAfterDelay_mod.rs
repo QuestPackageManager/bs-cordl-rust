@@ -7,23 +7,24 @@ pub struct EnableAfterDelay {
 }
 #[cfg(feature = "EnableAfterDelay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnableAfterDelay => ""."EnableAfterDelay"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnableAfterDelay => ""
+    ."EnableAfterDelay"
 );
 #[cfg(feature = "EnableAfterDelay")]
-impl std::ops::Deref for EnableAfterDelay {
+impl std::ops::Deref for crate::GlobalNamespace::EnableAfterDelay {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnableAfterDelay")]
-impl std::ops::DerefMut for EnableAfterDelay {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnableAfterDelay {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnableAfterDelay")]
-impl EnableAfterDelay {
+impl crate::GlobalNamespace::EnableAfterDelay {
     #[cfg(feature = "EnableAfterDelay+_Start_d__1")]
     pub type _Start_d__1 = crate::GlobalNamespace::EnableAfterDelay__Start_d__1;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -55,7 +56,7 @@ impl EnableAfterDelay {
     }
 }
 #[cfg(feature = "EnableAfterDelay")]
-impl quest_hook::libil2cpp::ObjectType for EnableAfterDelay {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EnableAfterDelay {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

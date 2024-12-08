@@ -2,31 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS4PlatformAdditionalContentModel {
-    __cordl_parent: SonyPlatformAdditionalContentModel,
+    __cordl_parent: crate::GlobalNamespace::SonyPlatformAdditionalContentModel,
 }
 #[cfg(feature = "PS4PlatformAdditionalContentModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PS4PlatformAdditionalContentModel => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PS4PlatformAdditionalContentModel => ""
     ."PS4PlatformAdditionalContentModel"
 );
 #[cfg(feature = "PS4PlatformAdditionalContentModel")]
-impl std::ops::Deref for PS4PlatformAdditionalContentModel {
-    type Target = SonyPlatformAdditionalContentModel;
+impl std::ops::Deref for crate::GlobalNamespace::PS4PlatformAdditionalContentModel {
+    type Target = crate::GlobalNamespace::SonyPlatformAdditionalContentModel;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PS4PlatformAdditionalContentModel")]
-impl std::ops::DerefMut for PS4PlatformAdditionalContentModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::PS4PlatformAdditionalContentModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PS4PlatformAdditionalContentModel")]
-impl PS4PlatformAdditionalContentModel {
+impl crate::GlobalNamespace::PS4PlatformAdditionalContentModel {
     pub fn New(
-        sonyCommerceHelper: *mut ISonyCommerceHelper,
-        sonyLevelProductCollectionModel: *mut SonyLevelProductCollectionModel,
+        sonyCommerceHelper: *mut crate::GlobalNamespace::ISonyCommerceHelper,
+        sonyLevelProductCollectionModel: *mut crate::GlobalNamespace::SonyLevelProductCollectionModel,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -39,8 +40,8 @@ impl PS4PlatformAdditionalContentModel {
     }
     pub fn _ctor(
         &mut self,
-        sonyCommerceHelper: *mut ISonyCommerceHelper,
-        sonyLevelProductCollectionModel: *mut SonyLevelProductCollectionModel,
+        sonyCommerceHelper: *mut crate::GlobalNamespace::ISonyCommerceHelper,
+        sonyLevelProductCollectionModel: *mut crate::GlobalNamespace::SonyLevelProductCollectionModel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -51,7 +52,8 @@ impl PS4PlatformAdditionalContentModel {
     }
 }
 #[cfg(feature = "PS4PlatformAdditionalContentModel")]
-impl quest_hook::libil2cpp::ObjectType for PS4PlatformAdditionalContentModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PS4PlatformAdditionalContentModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

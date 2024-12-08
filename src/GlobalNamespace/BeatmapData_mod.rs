@@ -8,61 +8,69 @@ pub struct BeatmapData {
     pub _obstaclesCount_k__BackingField: i32,
     pub _bombsCount_k__BackingField: i32,
     pub beatmapEventDataWasInsertedEvent: *mut crate::System::Action_2<
-        *mut BeatmapEventData,
-        *mut crate::System::Collections::Generic::LinkedListNode_1<*mut BeatmapDataItem>,
+        *mut crate::GlobalNamespace::BeatmapEventData,
+        *mut crate::System::Collections::Generic::LinkedListNode_1<
+            *mut crate::GlobalNamespace::BeatmapDataItem,
+        >,
     >,
     pub beatmapEventDataWillBeRemovedEvent: *mut crate::System::Action_2<
-        *mut BeatmapEventData,
-        *mut crate::System::Collections::Generic::LinkedListNode_1<*mut BeatmapDataItem>,
+        *mut crate::GlobalNamespace::BeatmapEventData,
+        *mut crate::System::Collections::Generic::LinkedListNode_1<
+            *mut crate::GlobalNamespace::BeatmapDataItem,
+        >,
     >,
     pub beatmapEventDataWasRemovedEvent: *mut crate::System::Action_1<
-        *mut BeatmapEventData,
+        *mut crate::GlobalNamespace::BeatmapEventData,
     >,
-    pub _allBeatmapData: *mut ISortedList_1<*mut BeatmapDataItem>,
+    pub _allBeatmapData: *mut crate::GlobalNamespace::ISortedList_1<
+        *mut crate::GlobalNamespace::BeatmapDataItem,
+    >,
     pub _allBeatmapDataItemToNodeMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut BeatmapDataItem,
-        *mut crate::System::Collections::Generic::LinkedListNode_1<*mut BeatmapDataItem>,
+        *mut crate::GlobalNamespace::BeatmapDataItem,
+        *mut crate::System::Collections::Generic::LinkedListNode_1<
+            *mut crate::GlobalNamespace::BeatmapDataItem,
+        >,
     >,
-    pub _beatmapDataItemsPerTypeAndId: *mut BeatmapDataSortedListForTypeAndIds_1<
-        *mut BeatmapDataItem,
+    pub _beatmapDataItemsPerTypeAndId: *mut crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<
+        *mut crate::GlobalNamespace::BeatmapDataItem,
     >,
     pub _numberOfLines: i32,
     pub _specialBasicBeatmapEventKeywords: *mut crate::System::Collections::Generic::HashSet_1<
         *mut crate::System::String,
     >,
-    pub _beatmapObjectsInTimeRowProcessor: *mut BeatmapObjectsInTimeRowProcessor,
+    pub _beatmapObjectsInTimeRowProcessor: *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor,
     pub _prevAddedBeatmapObjectDataTime: f32,
     pub _isCreatingFilteredCopy: bool,
 }
 #[cfg(feature = "BeatmapData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapData => ""."BeatmapData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapData => ""."BeatmapData"
 );
 #[cfg(feature = "BeatmapData")]
-impl std::ops::Deref for BeatmapData {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapData")]
-impl std::ops::DerefMut for BeatmapData {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapData")]
-impl BeatmapData {
+impl crate::GlobalNamespace::BeatmapData {
     pub const kDefaultNumberOfLines: i32 = 4i32;
+    #[cfg(feature = "BeatmapData+BeatmapDataBinaryHeapItem")]
+    pub type BeatmapDataBinaryHeapItem = crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem;
     #[cfg(feature = "BeatmapData+__c__DisplayClass46_0_1")]
     pub type __c__DisplayClass46_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::BeatmapData___c__DisplayClass46_0_1<
         T,
     >;
-    #[cfg(feature = "BeatmapData+BeatmapDataBinaryHeapItem")]
-    pub type BeatmapDataBinaryHeapItem = crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem;
     pub fn AddBeatmapObjectData(
         &mut self,
-        beatmapObjectData: *mut BeatmapObjectData,
+        beatmapObjectData: *mut crate::GlobalNamespace::BeatmapObjectData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -73,7 +81,7 @@ impl BeatmapData {
     }
     pub fn AddBeatmapObjectDataInOrder(
         &mut self,
-        beatmapObjectData: *mut BeatmapObjectData,
+        beatmapObjectData: *mut crate::GlobalNamespace::BeatmapObjectData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -160,30 +168,33 @@ impl BeatmapData {
             .invoke("GetBeatmapDataItemsMergedCount", (subtypeGroupIdentifiers))?;
         Ok(__cordl_ret)
     }
-    pub fn GetCopy(&mut self) -> quest_hook::libil2cpp::Result<*mut BeatmapData> {
+    pub fn GetCopy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapData = __cordl_object.invoke("GetCopy", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapData = __cordl_object
+            .invoke("GetCopy", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetFilteredCopy(
         &mut self,
         processDataItem: *mut crate::System::Func_2<
-            *mut BeatmapDataItem,
-            *mut BeatmapDataItem,
+            *mut crate::GlobalNamespace::BeatmapDataItem,
+            *mut crate::GlobalNamespace::BeatmapDataItem,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapData> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapData = __cordl_object
             .invoke("GetFilteredCopy", (processDataItem))?;
         Ok(__cordl_ret)
     }
     pub fn InsertBeatmapEventData(
         &mut self,
-        beatmapEventData: *mut BeatmapEventData,
+        beatmapEventData: *mut crate::GlobalNamespace::BeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -194,7 +205,7 @@ impl BeatmapData {
     }
     pub fn InsertBeatmapEventDataInOrder(
         &mut self,
-        beatmapEventData: *mut BeatmapEventData,
+        beatmapEventData: *mut crate::GlobalNamespace::BeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -205,18 +216,20 @@ impl BeatmapData {
     }
     pub fn InsertToAllBeatmapData(
         &mut self,
-        beatmapDataItem: *mut BeatmapDataItem,
+        beatmapDataItem: *mut crate::GlobalNamespace::BeatmapDataItem,
         node: *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut BeatmapDataItem,
+            *mut crate::GlobalNamespace::BeatmapDataItem,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::LinkedListNode_1<*mut BeatmapDataItem>,
+        *mut crate::System::Collections::Generic::LinkedListNode_1<
+            *mut crate::GlobalNamespace::BeatmapDataItem,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut BeatmapDataItem,
+            *mut crate::GlobalNamespace::BeatmapDataItem,
         > = __cordl_object.invoke("InsertToAllBeatmapData", (beatmapDataItem, node))?;
         Ok(__cordl_ret)
     }
@@ -249,7 +262,7 @@ impl BeatmapData {
     }
     pub fn RemoveBeatmapEventData(
         &mut self,
-        beatmapEventData: *mut BeatmapEventData,
+        beatmapEventData: *mut crate::GlobalNamespace::BeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -272,9 +285,9 @@ impl BeatmapData {
     pub fn add_beatmapEventDataWasInsertedEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut BeatmapEventData,
+            *mut crate::GlobalNamespace::BeatmapEventData,
             *mut crate::System::Collections::Generic::LinkedListNode_1<
-                *mut BeatmapDataItem,
+                *mut crate::GlobalNamespace::BeatmapDataItem,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -287,7 +300,9 @@ impl BeatmapData {
     }
     pub fn add_beatmapEventDataWasRemovedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut BeatmapEventData>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::BeatmapEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -299,9 +314,9 @@ impl BeatmapData {
     pub fn add_beatmapEventDataWillBeRemovedEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut BeatmapEventData,
+            *mut crate::GlobalNamespace::BeatmapEventData,
             *mut crate::System::Collections::Generic::LinkedListNode_1<
-                *mut BeatmapDataItem,
+                *mut crate::GlobalNamespace::BeatmapDataItem,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -315,13 +330,15 @@ impl BeatmapData {
     pub fn get_allBeatmapDataItems(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::LinkedList_1<*mut BeatmapDataItem>,
+        *mut crate::System::Collections::Generic::LinkedList_1<
+            *mut crate::GlobalNamespace::BeatmapDataItem,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::LinkedList_1<
-            *mut BeatmapDataItem,
+            *mut crate::GlobalNamespace::BeatmapDataItem,
         > = __cordl_object.invoke("get_allBeatmapDataItems", ())?;
         Ok(__cordl_ret)
     }
@@ -391,9 +408,9 @@ impl BeatmapData {
     pub fn remove_beatmapEventDataWasInsertedEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut BeatmapEventData,
+            *mut crate::GlobalNamespace::BeatmapEventData,
             *mut crate::System::Collections::Generic::LinkedListNode_1<
-                *mut BeatmapDataItem,
+                *mut crate::GlobalNamespace::BeatmapDataItem,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -406,7 +423,9 @@ impl BeatmapData {
     }
     pub fn remove_beatmapEventDataWasRemovedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut BeatmapEventData>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::BeatmapEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -418,9 +437,9 @@ impl BeatmapData {
     pub fn remove_beatmapEventDataWillBeRemovedEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut BeatmapEventData,
+            *mut crate::GlobalNamespace::BeatmapEventData,
             *mut crate::System::Collections::Generic::LinkedListNode_1<
-                *mut BeatmapDataItem,
+                *mut crate::GlobalNamespace::BeatmapDataItem,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -477,7 +496,7 @@ impl BeatmapData {
     }
 }
 #[cfg(feature = "BeatmapData")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -491,7 +510,7 @@ impl quest_hook::libil2cpp::ObjectType for BeatmapData {
 pub struct BeatmapData_BeatmapDataBinaryHeapItem {
     __cordl_parent: crate::System::Object,
     pub node: *mut crate::System::Collections::Generic::LinkedListNode_1<
-        *mut BeatmapDataItem,
+        *mut crate::GlobalNamespace::BeatmapDataItem,
     >,
 }
 #[cfg(feature = "BeatmapData+BeatmapDataBinaryHeapItem")]
@@ -528,7 +547,7 @@ impl crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
     }
     pub fn New(
         node: *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut BeatmapDataItem,
+            *mut crate::GlobalNamespace::BeatmapDataItem,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -540,7 +559,7 @@ impl crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
     pub fn _ctor(
         &mut self,
         node: *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut BeatmapDataItem,
+            *mut crate::GlobalNamespace::BeatmapDataItem,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

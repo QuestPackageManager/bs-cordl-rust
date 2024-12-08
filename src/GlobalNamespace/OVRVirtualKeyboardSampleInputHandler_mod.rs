@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct OVRVirtualKeyboardSampleInputHandler {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub OVRVirtualKeyboard: *mut OVRVirtualKeyboard,
-    pub raycaster: *mut OVRRaycaster,
+    pub OVRVirtualKeyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
+    pub raycaster: *mut crate::GlobalNamespace::OVRRaycaster,
     pub inputModule: *mut crate::UnityEngine::EventSystems::OVRInputModule,
     pub leftLinePointer: *mut crate::UnityEngine::LineRenderer,
     pub rightLinePointer: *mut crate::UnityEngine::LineRenderer,
@@ -15,24 +15,26 @@ pub struct OVRVirtualKeyboardSampleInputHandler {
 }
 #[cfg(feature = "OVRVirtualKeyboardSampleInputHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRVirtualKeyboardSampleInputHandler => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRVirtualKeyboardSampleInputHandler => ""
     ."OVRVirtualKeyboardSampleInputHandler"
 );
 #[cfg(feature = "OVRVirtualKeyboardSampleInputHandler")]
-impl std::ops::Deref for OVRVirtualKeyboardSampleInputHandler {
+impl std::ops::Deref for crate::GlobalNamespace::OVRVirtualKeyboardSampleInputHandler {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRVirtualKeyboardSampleInputHandler")]
-impl std::ops::DerefMut for OVRVirtualKeyboardSampleInputHandler {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::OVRVirtualKeyboardSampleInputHandler {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRVirtualKeyboardSampleInputHandler")]
-impl OVRVirtualKeyboardSampleInputHandler {
+impl crate::GlobalNamespace::OVRVirtualKeyboardSampleInputHandler {
     pub const COLLISION_BOUNDS_ADDED_BLEED_PERCENT: f32 = 0.1f32;
     pub const LINEPOINTER_THINNING_THRESHOLD: f32 = 0.015f32;
     pub const RAY_MAX_DISTANCE: f32 = 100f32;
@@ -141,7 +143,8 @@ impl OVRVirtualKeyboardSampleInputHandler {
     }
 }
 #[cfg(feature = "OVRVirtualKeyboardSampleInputHandler")]
-impl quest_hook::libil2cpp::ObjectType for OVRVirtualKeyboardSampleInputHandler {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRVirtualKeyboardSampleInputHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

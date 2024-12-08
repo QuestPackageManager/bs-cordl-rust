@@ -61,40 +61,40 @@ for crate::GlobalNamespace::MissionLevelFailedController_InitData {
 #[derive(Debug)]
 pub struct MissionLevelFailedController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _prepareLevelCompletionResults: *mut PrepareLevelCompletionResults,
-    pub _levelFailedTextEffect: *mut LevelFailedTextEffect,
-    pub _missionLevelSceneSetupData: *mut MissionLevelScenesTransitionSetupDataSO,
-    pub _missionObjectiveCheckersManager: *mut MissionObjectiveCheckersManager,
+    pub _prepareLevelCompletionResults: *mut crate::GlobalNamespace::PrepareLevelCompletionResults,
+    pub _levelFailedTextEffect: *mut crate::GlobalNamespace::LevelFailedTextEffect,
+    pub _missionLevelSceneSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+    pub _missionObjectiveCheckersManager: *mut crate::GlobalNamespace::MissionObjectiveCheckersManager,
     pub _initData: *mut crate::GlobalNamespace::MissionLevelFailedController_InitData,
-    pub _beatmapObjectSpawnController: *mut BeatmapObjectSpawnController,
-    pub _gameSongController: *mut GameSongController,
-    pub _gameplayManager: *mut ILevelEndActions,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
+    pub _beatmapObjectSpawnController: *mut crate::GlobalNamespace::BeatmapObjectSpawnController,
+    pub _gameSongController: *mut crate::GlobalNamespace::GameSongController,
+    pub _gameplayManager: *mut crate::GlobalNamespace::ILevelEndActions,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
 }
 #[cfg(feature = "MissionLevelFailedController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionLevelFailedController => ""
-    ."MissionLevelFailedController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissionLevelFailedController =>
+    ""."MissionLevelFailedController"
 );
 #[cfg(feature = "MissionLevelFailedController")]
-impl std::ops::Deref for MissionLevelFailedController {
+impl std::ops::Deref for crate::GlobalNamespace::MissionLevelFailedController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionLevelFailedController")]
-impl std::ops::DerefMut for MissionLevelFailedController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionLevelFailedController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionLevelFailedController")]
-impl MissionLevelFailedController {
-    #[cfg(feature = "MissionLevelFailedController+_LevelFailedCoroutine_d__13")]
-    pub type _LevelFailedCoroutine_d__13 = crate::GlobalNamespace::MissionLevelFailedController__LevelFailedCoroutine_d__13;
+impl crate::GlobalNamespace::MissionLevelFailedController {
     #[cfg(feature = "MissionLevelFailedController+InitData")]
     pub type InitData = crate::GlobalNamespace::MissionLevelFailedController_InitData;
+    #[cfg(feature = "MissionLevelFailedController+_LevelFailedCoroutine_d__13")]
+    pub type _LevelFailedCoroutine_d__13 = crate::GlobalNamespace::MissionLevelFailedController__LevelFailedCoroutine_d__13;
     pub fn HandleLevelFailed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -154,7 +154,8 @@ impl MissionLevelFailedController {
     }
 }
 #[cfg(feature = "MissionLevelFailedController")]
-impl quest_hook::libil2cpp::ObjectType for MissionLevelFailedController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MissionLevelFailedController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

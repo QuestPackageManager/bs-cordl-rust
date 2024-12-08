@@ -29,10 +29,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::Toggle {
 }
 #[cfg(feature = "UnityEngine+UI+Toggle")]
 impl crate::UnityEngine::UI::Toggle {
-    #[cfg(feature = "UnityEngine+UI+Toggle+ToggleTransition")]
-    pub type ToggleTransition = crate::UnityEngine::UI::Toggle_ToggleTransition;
     #[cfg(feature = "UnityEngine+UI+Toggle+ToggleEvent")]
     pub type ToggleEvent = crate::UnityEngine::UI::Toggle_ToggleEvent;
+    #[cfg(feature = "UnityEngine+UI+Toggle+ToggleTransition")]
+    pub type ToggleTransition = crate::UnityEngine::UI::Toggle_ToggleTransition;
     pub fn GraphicUpdateComplete(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

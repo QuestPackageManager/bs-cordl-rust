@@ -3,30 +3,30 @@
 #[derive(Debug)]
 pub struct MultiplayerObjectInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _inEnvironmentTextsPrefab: *mut MultiplayerScoreRingItem,
-    pub _fireworkItemControllerPrefab: *mut FireworkItemController,
-    pub _multiplayerResultsPyramidViewAvatarPrefab: *mut MultiplayerResultsPyramidViewAvatar,
+    pub _inEnvironmentTextsPrefab: *mut crate::GlobalNamespace::MultiplayerScoreRingItem,
+    pub _fireworkItemControllerPrefab: *mut crate::GlobalNamespace::FireworkItemController,
+    pub _multiplayerResultsPyramidViewAvatarPrefab: *mut crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar,
 }
 #[cfg(feature = "MultiplayerObjectInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerObjectInstaller => ""
-    ."MultiplayerObjectInstaller"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerObjectInstaller =>
+    ""."MultiplayerObjectInstaller"
 );
 #[cfg(feature = "MultiplayerObjectInstaller")]
-impl std::ops::Deref for MultiplayerObjectInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerObjectInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerObjectInstaller")]
-impl std::ops::DerefMut for MultiplayerObjectInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerObjectInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerObjectInstaller")]
-impl MultiplayerObjectInstaller {
+impl crate::GlobalNamespace::MultiplayerObjectInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -56,7 +56,8 @@ impl MultiplayerObjectInstaller {
     }
 }
 #[cfg(feature = "MultiplayerObjectInstaller")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerObjectInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerObjectInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

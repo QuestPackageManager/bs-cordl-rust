@@ -3,29 +3,30 @@
 #[derive(Debug)]
 pub struct HealthWarningNoTransitionInstaller {
     __cordl_parent: crate::Zenject::NoTransitionInstaller,
-    pub _healthWarningSceneSetupData: *mut HealthWarningSceneSetupData,
-    pub _scenesTransitionSetupData: *mut HealthWarningScenesTransitionSetupDataSO,
+    pub _healthWarningSceneSetupData: *mut crate::GlobalNamespace::HealthWarningSceneSetupData,
+    pub _scenesTransitionSetupData: *mut crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO,
 }
 #[cfg(feature = "HealthWarningNoTransitionInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for HealthWarningNoTransitionInstaller => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::HealthWarningNoTransitionInstaller => ""
     ."HealthWarningNoTransitionInstaller"
 );
 #[cfg(feature = "HealthWarningNoTransitionInstaller")]
-impl std::ops::Deref for HealthWarningNoTransitionInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::HealthWarningNoTransitionInstaller {
     type Target = crate::Zenject::NoTransitionInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HealthWarningNoTransitionInstaller")]
-impl std::ops::DerefMut for HealthWarningNoTransitionInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::HealthWarningNoTransitionInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "HealthWarningNoTransitionInstaller")]
-impl HealthWarningNoTransitionInstaller {
+impl crate::GlobalNamespace::HealthWarningNoTransitionInstaller {
     pub fn InstallBindings(
         &mut self,
         container: *mut crate::Zenject::DiContainer,
@@ -56,7 +57,8 @@ impl HealthWarningNoTransitionInstaller {
     }
 }
 #[cfg(feature = "HealthWarningNoTransitionInstaller")]
-impl quest_hook::libil2cpp::ObjectType for HealthWarningNoTransitionInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::HealthWarningNoTransitionInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

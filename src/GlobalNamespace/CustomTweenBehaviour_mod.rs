@@ -9,7 +9,7 @@ pub struct CustomTweenBehaviour {
     pub startLocationCurrentPosition: bool,
     pub startLocalPos: crate::UnityEngine::Vector3,
     pub endLocalPos: crate::UnityEngine::Vector3,
-    pub easeType: EaseType,
+    pub easeType: crate::GlobalNamespace::EaseType,
     pub endXRelativeToSelfRotation: bool,
     pub elementDelay: f32,
     pub _lockX: bool,
@@ -28,23 +28,24 @@ pub struct CustomTweenBehaviour {
 }
 #[cfg(feature = "CustomTweenBehaviour")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CustomTweenBehaviour => ""."CustomTweenBehaviour"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CustomTweenBehaviour => ""
+    ."CustomTweenBehaviour"
 );
 #[cfg(feature = "CustomTweenBehaviour")]
-impl std::ops::Deref for CustomTweenBehaviour {
+impl std::ops::Deref for crate::GlobalNamespace::CustomTweenBehaviour {
     type Target = crate::UnityEngine::Playables::PlayableBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CustomTweenBehaviour")]
-impl std::ops::DerefMut for CustomTweenBehaviour {
+impl std::ops::DerefMut for crate::GlobalNamespace::CustomTweenBehaviour {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CustomTweenBehaviour")]
-impl CustomTweenBehaviour {
+impl crate::GlobalNamespace::CustomTweenBehaviour {
     #[cfg(feature = "CustomTweenBehaviour+__c")]
     pub type __c = crate::GlobalNamespace::CustomTweenBehaviour___c;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -113,7 +114,7 @@ impl CustomTweenBehaviour {
     }
 }
 #[cfg(feature = "CustomTweenBehaviour")]
-impl quest_hook::libil2cpp::ObjectType for CustomTweenBehaviour {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CustomTweenBehaviour {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

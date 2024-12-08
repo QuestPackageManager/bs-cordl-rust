@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PyramidBloomMainEffectSO {
-    __cordl_parent: MainEffectSO,
-    pub _bloomRenderer: *mut PyramidBloomRendererSO,
-    pub _bloomFog: *mut BloomFogSO,
+    __cordl_parent: crate::GlobalNamespace::MainEffectSO,
+    pub _bloomRenderer: *mut crate::GlobalNamespace::PyramidBloomRendererSO,
+    pub _bloomFog: *mut crate::GlobalNamespace::BloomFogSO,
     pub _fadeShader: *mut crate::UnityEngine::Shader,
     pub _mainEffectShader: *mut crate::UnityEngine::Shader,
     pub _bloomBlendFactor: f32,
@@ -25,24 +25,24 @@ pub struct PyramidBloomMainEffectSO {
 }
 #[cfg(feature = "PyramidBloomMainEffectSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PyramidBloomMainEffectSO => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PyramidBloomMainEffectSO => ""
     ."PyramidBloomMainEffectSO"
 );
 #[cfg(feature = "PyramidBloomMainEffectSO")]
-impl std::ops::Deref for PyramidBloomMainEffectSO {
-    type Target = MainEffectSO;
+impl std::ops::Deref for crate::GlobalNamespace::PyramidBloomMainEffectSO {
+    type Target = crate::GlobalNamespace::MainEffectSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PyramidBloomMainEffectSO")]
-impl std::ops::DerefMut for PyramidBloomMainEffectSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::PyramidBloomMainEffectSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PyramidBloomMainEffectSO")]
-impl PyramidBloomMainEffectSO {
+impl crate::GlobalNamespace::PyramidBloomMainEffectSO {
     pub fn LazyInitializeMaterials(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -122,7 +122,8 @@ impl PyramidBloomMainEffectSO {
     }
 }
 #[cfg(feature = "PyramidBloomMainEffectSO")]
-impl quest_hook::libil2cpp::ObjectType for PyramidBloomMainEffectSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PyramidBloomMainEffectSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -9,42 +9,43 @@ pub struct MockPlayerInstance {
     pub _timeProvider: *mut crate::BGNet::Core::ITimeProvider,
     pub _taskUtility: *mut crate::BGNet::Core::ITaskUtility,
     pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _multiplayerSessionManager: *mut MultiplayerSessionManager,
-    pub _connectedPlayerManager: *mut ConnectedPlayerManager,
-    pub _fsm: *mut MockPlayerFiniteStateMachine,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::MultiplayerSessionManager,
+    pub _connectedPlayerManager: *mut crate::GlobalNamespace::ConnectedPlayerManager,
+    pub _fsm: *mut crate::GlobalNamespace::MockPlayerFiniteStateMachine,
 }
 #[cfg(feature = "MockPlayerInstance")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MockPlayerInstance => ""."MockPlayerInstance"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MockPlayerInstance => ""
+    ."MockPlayerInstance"
 );
 #[cfg(feature = "MockPlayerInstance")]
-impl std::ops::Deref for MockPlayerInstance {
+impl std::ops::Deref for crate::GlobalNamespace::MockPlayerInstance {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockPlayerInstance")]
-impl std::ops::DerefMut for MockPlayerInstance {
+impl std::ops::DerefMut for crate::GlobalNamespace::MockPlayerInstance {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockPlayerInstance")]
-impl MockPlayerInstance {
+impl crate::GlobalNamespace::MockPlayerInstance {
     #[cfg(feature = "MockPlayerInstance+_DisposeAsync_d__22")]
     pub type _DisposeAsync_d__22 = crate::GlobalNamespace::MockPlayerInstance__DisposeAsync_d__22;
     #[cfg(feature = "MockPlayerInstance+_RunAsync_d__18")]
     pub type _RunAsync_d__18 = crate::GlobalNamespace::MockPlayerInstance__RunAsync_d__18;
+    #[cfg(feature = "MockPlayerInstance+_Stop_d__21")]
+    pub type _Stop_d__21 = crate::GlobalNamespace::MockPlayerInstance__Stop_d__21;
     #[cfg(feature = "MockPlayerInstance+__c__DisplayClass17_0_1")]
     pub type __c__DisplayClass17_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::MockPlayerInstance___c__DisplayClass17_0_1<
         T,
     >;
-    #[cfg(feature = "MockPlayerInstance+_Stop_d__21")]
-    pub type _Stop_d__21 = crate::GlobalNamespace::MockPlayerInstance__Stop_d__21;
     pub fn ConnectToServer<T>(
         &mut self,
-        connectionInitParams: *mut IConnectionInitParams_1<T>,
+        connectionInitParams: *mut crate::GlobalNamespace::IConnectionInitParams_1<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -102,8 +103,8 @@ impl MockPlayerInstance {
     pub fn New(
         timeProvider: *mut crate::BGNet::Core::ITimeProvider,
         taskUtility: *mut crate::BGNet::Core::ITaskUtility,
-        beatmapDataProvider: *mut IMockBeatmapDataProvider,
-        connectionManager: *mut IConnectionManager,
+        beatmapDataProvider: *mut crate::GlobalNamespace::IMockBeatmapDataProvider,
+        connectionManager: *mut crate::GlobalNamespace::IConnectionManager,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -116,7 +117,7 @@ impl MockPlayerInstance {
     }
     pub fn RunAsync(
         &mut self,
-        runner: *mut IStandaloneThreadRunner,
+        runner: *mut crate::GlobalNamespace::IStandaloneThreadRunner,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -158,7 +159,7 @@ impl MockPlayerInstance {
     }
     pub fn __ctor_b__15_0(
         &mut self,
-        r: ConnectionFailedReason,
+        r: crate::GlobalNamespace::ConnectionFailedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -169,7 +170,7 @@ impl MockPlayerInstance {
     }
     pub fn __ctor_b__15_1(
         &mut self,
-        r: DisconnectedReason,
+        r: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -182,8 +183,8 @@ impl MockPlayerInstance {
         &mut self,
         timeProvider: *mut crate::BGNet::Core::ITimeProvider,
         taskUtility: *mut crate::BGNet::Core::ITaskUtility,
-        beatmapDataProvider: *mut IMockBeatmapDataProvider,
-        connectionManager: *mut IConnectionManager,
+        beatmapDataProvider: *mut crate::GlobalNamespace::IMockBeatmapDataProvider,
+        connectionManager: *mut crate::GlobalNamespace::IConnectionManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -227,7 +228,7 @@ impl MockPlayerInstance {
     }
 }
 #[cfg(feature = "MockPlayerInstance")]
-impl quest_hook::libil2cpp::ObjectType for MockPlayerInstance {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockPlayerInstance {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

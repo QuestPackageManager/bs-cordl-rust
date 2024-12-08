@@ -25,13 +25,13 @@ impl std::ops::DerefMut for crate::BGLib::UnityExtension::UnityWebRequestExtensi
 #[cfg(feature = "BGLib+UnityExtension+UnityWebRequestExtensions")]
 impl crate::BGLib::UnityExtension::UnityWebRequestExtensions {
     #[cfg(
-        feature = "BGLib+UnityExtension+UnityWebRequestExtensions+__c__DisplayClass1_0"
-    )]
-    pub type __c__DisplayClass1_0 = crate::BGLib::UnityExtension::UnityWebRequestExtensions___c__DisplayClass1_0;
-    #[cfg(
         feature = "BGLib+UnityExtension+UnityWebRequestExtensions+_SendWebRequestAsync_d__0"
     )]
     pub type _SendWebRequestAsync_d__0 = crate::BGLib::UnityExtension::UnityWebRequestExtensions__SendWebRequestAsync_d__0;
+    #[cfg(
+        feature = "BGLib+UnityExtension+UnityWebRequestExtensions+__c__DisplayClass1_0"
+    )]
+    pub type __c__DisplayClass1_0 = crate::BGLib::UnityExtension::UnityWebRequestExtensions___c__DisplayClass1_0;
 }
 #[cfg(feature = "BGLib+UnityExtension+UnityWebRequestExtensions")]
 impl quest_hook::libil2cpp::ObjectType

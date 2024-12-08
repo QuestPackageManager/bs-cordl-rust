@@ -43,18 +43,18 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonReader {
 impl crate::Newtonsoft::Json::JsonReader {
     #[cfg(feature = "Newtonsoft+Json+JsonReader+State")]
     pub type State = crate::Newtonsoft::Json::JsonReader_State;
-    #[cfg(feature = "Newtonsoft+Json+JsonReader+_ReadAndMoveToContentAsync_d__12")]
-    pub type _ReadAndMoveToContentAsync_d__12 = crate::Newtonsoft::Json::JsonReader__ReadAndMoveToContentAsync_d__12;
     #[cfg(
         feature = "Newtonsoft+Json+JsonReader+_MoveToContentFromNonContentAsync_d__14"
     )]
     pub type _MoveToContentFromNonContentAsync_d__14 = crate::Newtonsoft::Json::JsonReader__MoveToContentFromNonContentAsync_d__14;
+    #[cfg(feature = "Newtonsoft+Json+JsonReader+_ReadAndMoveToContentAsync_d__12")]
+    pub type _ReadAndMoveToContentAsync_d__12 = crate::Newtonsoft::Json::JsonReader__ReadAndMoveToContentAsync_d__12;
     #[cfg(feature = "Newtonsoft+Json+JsonReader+_ReadArrayIntoByteArrayAsync_d__5")]
     pub type _ReadArrayIntoByteArrayAsync_d__5 = crate::Newtonsoft::Json::JsonReader__ReadArrayIntoByteArrayAsync_d__5;
-    #[cfg(feature = "Newtonsoft+Json+JsonReader+_SkipAsync_d__1")]
-    pub type _SkipAsync_d__1 = crate::Newtonsoft::Json::JsonReader__SkipAsync_d__1;
     #[cfg(feature = "Newtonsoft+Json+JsonReader+_ReaderReadAndAssertAsync_d__2")]
     pub type _ReaderReadAndAssertAsync_d__2 = crate::Newtonsoft::Json::JsonReader__ReaderReadAndAssertAsync_d__2;
+    #[cfg(feature = "Newtonsoft+Json+JsonReader+_SkipAsync_d__1")]
+    pub type _SkipAsync_d__1 = crate::Newtonsoft::Json::JsonReader__SkipAsync_d__1;
     pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -9,39 +9,42 @@ pub struct MultiplayerVerticalPlayerMovementManager {
     pub _accelerationMetersPerSecondSquared: f32,
     pub _decelerationMetersPerSecondSquared: f32,
     pub _minScoreDifference: f32,
-    pub _multiplayerPlayersManager: *mut MultiplayerPlayersManager,
-    pub _scoreProvider: *mut MultiplayerScoreProvider,
-    pub _layoutProvider: *mut MultiplayerLayoutProvider,
-    pub _multiplayerController: *mut MultiplayerController,
+    pub _multiplayerPlayersManager: *mut crate::GlobalNamespace::MultiplayerPlayersManager,
+    pub _scoreProvider: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
+    pub _layoutProvider: *mut crate::GlobalNamespace::MultiplayerLayoutProvider,
+    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
     pub _reusablePlayersList: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
     >,
     pub _currentSpeedsDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut MultiplayerConnectedPlayerFacade,
+        *mut crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
         f32,
     >,
     pub _lastFrameBaseScore: f32,
 }
 #[cfg(feature = "MultiplayerVerticalPlayerMovementManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerVerticalPlayerMovementManager => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerVerticalPlayerMovementManager => ""
     ."MultiplayerVerticalPlayerMovementManager"
 );
 #[cfg(feature = "MultiplayerVerticalPlayerMovementManager")]
-impl std::ops::Deref for MultiplayerVerticalPlayerMovementManager {
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerVerticalPlayerMovementManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerVerticalPlayerMovementManager")]
-impl std::ops::DerefMut for MultiplayerVerticalPlayerMovementManager {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerVerticalPlayerMovementManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerVerticalPlayerMovementManager")]
-impl MultiplayerVerticalPlayerMovementManager {
+impl crate::GlobalNamespace::MultiplayerVerticalPlayerMovementManager {
     pub fn HandleStateChanged(
         &mut self,
         state: crate::GlobalNamespace::MultiplayerController_State,
@@ -102,7 +105,8 @@ impl MultiplayerVerticalPlayerMovementManager {
     }
 }
 #[cfg(feature = "MultiplayerVerticalPlayerMovementManager")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerVerticalPlayerMovementManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerVerticalPlayerMovementManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -10,8 +10,8 @@ pub struct NoteCutSoundEffect {
     >,
     pub _badCutVolume: f32,
     pub _goodCutVolume: f32,
-    pub _saber: *mut Saber,
-    pub _noteController: *mut NoteController,
+    pub _saber: *mut crate::GlobalNamespace::Saber,
+    pub _noteController: *mut crate::GlobalNamespace::NoteController,
     pub _isPlaying: bool,
     pub _volumeMultiplier: f32,
     pub _noteWasCut: bool,
@@ -26,33 +26,36 @@ pub struct NoteCutSoundEffect {
     pub _beforeCutVolume: f32,
     pub _goodCut: bool,
     pub _pitch: f32,
-    pub _badCutRandomSoundPicker: *mut RandomObjectPicker_1<
+    pub _badCutRandomSoundPicker: *mut crate::GlobalNamespace::RandomObjectPicker_1<
         *mut crate::UnityEngine::AudioClip,
     >,
     pub _handleWrongSaberTypeAsGood: bool,
     pub _ignoreSaberSpeed: bool,
     pub _ignoreBadCuts: bool,
-    pub _didFinishEvent: *mut LazyCopyHashSet_1<*mut INoteCutSoundEffectDidFinishEvent>,
+    pub _didFinishEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
+        *mut crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent,
+    >,
 }
 #[cfg(feature = "NoteCutSoundEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteCutSoundEffect => ""."NoteCutSoundEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteCutSoundEffect => ""
+    ."NoteCutSoundEffect"
 );
 #[cfg(feature = "NoteCutSoundEffect")]
-impl std::ops::Deref for NoteCutSoundEffect {
+impl std::ops::Deref for crate::GlobalNamespace::NoteCutSoundEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteCutSoundEffect")]
-impl std::ops::DerefMut for NoteCutSoundEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteCutSoundEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteCutSoundEffect")]
-impl NoteCutSoundEffect {
+impl crate::GlobalNamespace::NoteCutSoundEffect {
     pub const kEndFadeLength: f32 = 0.01f32;
     pub const kEndOverlap: f32 = 100.01f32;
     #[cfg(feature = "NoteCutSoundEffect+Pool")]
@@ -87,13 +90,13 @@ impl NoteCutSoundEffect {
     pub fn Init(
         &mut self,
         audioClip: *mut crate::UnityEngine::AudioClip,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
         noteDSPTime: f64,
         aheadTime: f32,
         missedTimeOffset: f32,
         timeToPrevNote: f32,
         timeToNextNote: f32,
-        saber: *mut Saber,
+        saber: *mut crate::GlobalNamespace::Saber,
         handleWrongSaberTypeAsGood: bool,
         volumeMultiplier: f32,
         ignoreSaberSpeed: bool,
@@ -131,7 +134,7 @@ impl NoteCutSoundEffect {
     }
     pub fn NoteDidStartDissolving(
         &mut self,
-        noteController: *mut NoteControllerBase,
+        noteController: *mut crate::GlobalNamespace::NoteControllerBase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -142,8 +145,8 @@ impl NoteCutSoundEffect {
     }
     pub fn NoteWasCut(
         &mut self,
-        noteController: *mut NoteController,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -195,13 +198,15 @@ impl NoteCutSoundEffect {
     pub fn get_didFinishEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut ILazyCopyHashSet_1<*mut INoteCutSoundEffectDidFinishEvent>,
+        *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ILazyCopyHashSet_1<
-            *mut INoteCutSoundEffectDidFinishEvent,
+        let __cordl_ret: *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent,
         > = __cordl_object.invoke("get_didFinishEvent", ())?;
         Ok(__cordl_ret)
     }
@@ -232,7 +237,7 @@ impl NoteCutSoundEffect {
     }
 }
 #[cfg(feature = "NoteCutSoundEffect")]
-impl quest_hook::libil2cpp::ObjectType for NoteCutSoundEffect {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteCutSoundEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -244,7 +249,9 @@ impl quest_hook::libil2cpp::ObjectType for NoteCutSoundEffect {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteCutSoundEffect_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<*mut NoteCutSoundEffect>,
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::NoteCutSoundEffect,
+    >,
 }
 #[cfg(feature = "NoteCutSoundEffect+Pool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -253,7 +260,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NoteCutSoundEffect+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteCutSoundEffect_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<*mut NoteCutSoundEffect>;
+    type Target = crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::NoteCutSoundEffect,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

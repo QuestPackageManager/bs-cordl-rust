@@ -28,7 +28,7 @@ impl crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {}
 pub struct CurvedTextMeshPro {
     __cordl_parent: crate::TMPro::TextMeshProUGUI,
     pub _useScriptableObjectColors: bool,
-    pub _colorSo: *mut ColorSO,
+    pub _colorSo: *mut crate::GlobalNamespace::ColorSO,
     pub _curvedMeshInfos: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo,
     >,

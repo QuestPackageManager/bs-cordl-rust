@@ -89,10 +89,10 @@ impl std::ops::DerefMut for crate::System::Collections::Specialized::ListDiction
 }
 #[cfg(feature = "System+Collections+Specialized+ListDictionary")]
 impl crate::System::Collections::Specialized::ListDictionary {
-    #[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeEnumerator")]
-    pub type NodeEnumerator = crate::System::Collections::Specialized::ListDictionary_NodeEnumerator;
     #[cfg(feature = "System+Collections+Specialized+ListDictionary+DictionaryNode")]
     pub type DictionaryNode = crate::System::Collections::Specialized::ListDictionary_DictionaryNode;
+    #[cfg(feature = "System+Collections+Specialized+ListDictionary+NodeEnumerator")]
+    pub type NodeEnumerator = crate::System::Collections::Specialized::ListDictionary_NodeEnumerator;
     #[cfg(
         feature = "System+Collections+Specialized+ListDictionary+NodeKeyValueCollection"
     )]

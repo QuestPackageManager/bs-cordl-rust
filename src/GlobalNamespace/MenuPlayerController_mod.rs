@@ -3,29 +3,30 @@
 #[derive(Debug)]
 pub struct MenuPlayerController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _leftController: *mut VRController,
-    pub _rightController: *mut VRController,
+    pub _leftController: *mut crate::GlobalNamespace::VRController,
+    pub _rightController: *mut crate::GlobalNamespace::VRController,
     pub _headTransform: *mut crate::UnityEngine::Transform,
 }
 #[cfg(feature = "MenuPlayerController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MenuPlayerController => ""."MenuPlayerController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MenuPlayerController => ""
+    ."MenuPlayerController"
 );
 #[cfg(feature = "MenuPlayerController")]
-impl std::ops::Deref for MenuPlayerController {
+impl std::ops::Deref for crate::GlobalNamespace::MenuPlayerController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuPlayerController")]
-impl std::ops::DerefMut for MenuPlayerController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MenuPlayerController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuPlayerController")]
-impl MenuPlayerController {
+impl crate::GlobalNamespace::MenuPlayerController {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -65,27 +66,27 @@ impl MenuPlayerController {
     }
     pub fn get_leftController(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut VRController> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::VRController> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut VRController = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::VRController = __cordl_object
             .invoke("get_leftController", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_rightController(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut VRController> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::VRController> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut VRController = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::VRController = __cordl_object
             .invoke("get_rightController", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MenuPlayerController")]
-impl quest_hook::libil2cpp::ObjectType for MenuPlayerController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MenuPlayerController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

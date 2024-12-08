@@ -2,30 +2,30 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StartupErrorSceneSetupData {
-    __cordl_parent: SceneSetupData,
+    __cordl_parent: crate::GlobalNamespace::SceneSetupData,
     pub title: *mut crate::System::String,
     pub subtitle: *mut crate::System::String,
 }
 #[cfg(feature = "StartupErrorSceneSetupData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StartupErrorSceneSetupData => ""
-    ."StartupErrorSceneSetupData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::StartupErrorSceneSetupData =>
+    ""."StartupErrorSceneSetupData"
 );
 #[cfg(feature = "StartupErrorSceneSetupData")]
-impl std::ops::Deref for StartupErrorSceneSetupData {
-    type Target = SceneSetupData;
+impl std::ops::Deref for crate::GlobalNamespace::StartupErrorSceneSetupData {
+    type Target = crate::GlobalNamespace::SceneSetupData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StartupErrorSceneSetupData")]
-impl std::ops::DerefMut for StartupErrorSceneSetupData {
+impl std::ops::DerefMut for crate::GlobalNamespace::StartupErrorSceneSetupData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StartupErrorSceneSetupData")]
-impl StartupErrorSceneSetupData {
+impl crate::GlobalNamespace::StartupErrorSceneSetupData {
     pub fn New(
         title: *mut crate::System::String,
         subtitle: *mut crate::System::String,
@@ -50,7 +50,8 @@ impl StartupErrorSceneSetupData {
     }
 }
 #[cfg(feature = "StartupErrorSceneSetupData")]
-impl quest_hook::libil2cpp::ObjectType for StartupErrorSceneSetupData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StartupErrorSceneSetupData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

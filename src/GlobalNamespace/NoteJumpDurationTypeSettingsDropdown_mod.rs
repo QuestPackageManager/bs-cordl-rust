@@ -2,34 +2,40 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteJumpDurationTypeSettingsDropdown {
-    __cordl_parent: ValueDropdownController_1<NoteJumpDurationTypeSettings>,
+    __cordl_parent: crate::GlobalNamespace::ValueDropdownController_1<
+        crate::GlobalNamespace::NoteJumpDurationTypeSettings,
+    >,
 }
 #[cfg(feature = "NoteJumpDurationTypeSettingsDropdown")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteJumpDurationTypeSettingsDropdown => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::NoteJumpDurationTypeSettingsDropdown => ""
     ."NoteJumpDurationTypeSettingsDropdown"
 );
 #[cfg(feature = "NoteJumpDurationTypeSettingsDropdown")]
-impl std::ops::Deref for NoteJumpDurationTypeSettingsDropdown {
-    type Target = ValueDropdownController_1<NoteJumpDurationTypeSettings>;
+impl std::ops::Deref for crate::GlobalNamespace::NoteJumpDurationTypeSettingsDropdown {
+    type Target = crate::GlobalNamespace::ValueDropdownController_1<
+        crate::GlobalNamespace::NoteJumpDurationTypeSettings,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteJumpDurationTypeSettingsDropdown")]
-impl std::ops::DerefMut for NoteJumpDurationTypeSettingsDropdown {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::NoteJumpDurationTypeSettingsDropdown {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteJumpDurationTypeSettingsDropdown")]
-impl NoteJumpDurationTypeSettingsDropdown {
+impl crate::GlobalNamespace::NoteJumpDurationTypeSettingsDropdown {
     pub fn GetNamedValues(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::System::Tuple_2<
-                NoteJumpDurationTypeSettings,
+                crate::GlobalNamespace::NoteJumpDurationTypeSettings,
                 *mut crate::System::String,
             >,
         >,
@@ -39,7 +45,7 @@ impl NoteJumpDurationTypeSettingsDropdown {
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::System::Tuple_2<
-                NoteJumpDurationTypeSettings,
+                crate::GlobalNamespace::NoteJumpDurationTypeSettings,
                 *mut crate::System::String,
             >,
         > = __cordl_object.invoke("GetNamedValues", ())?;
@@ -64,7 +70,8 @@ impl NoteJumpDurationTypeSettingsDropdown {
     }
 }
 #[cfg(feature = "NoteJumpDurationTypeSettingsDropdown")]
-impl quest_hook::libil2cpp::ObjectType for NoteJumpDurationTypeSettingsDropdown {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NoteJumpDurationTypeSettingsDropdown {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

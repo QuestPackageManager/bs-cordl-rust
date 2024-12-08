@@ -3,41 +3,42 @@
 #[derive(Debug)]
 pub struct GraphAPIClient {
     __cordl_parent: crate::System::Object,
-    pub _networkConfig: *mut INetworkConfig,
+    pub _networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
     pub _client: *mut crate::System::Net::Http::HttpClient,
 }
 #[cfg(feature = "GraphAPIClient")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GraphAPIClient => ""."GraphAPIClient"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GraphAPIClient => ""
+    ."GraphAPIClient"
 );
 #[cfg(feature = "GraphAPIClient")]
-impl std::ops::Deref for GraphAPIClient {
+impl std::ops::Deref for crate::GlobalNamespace::GraphAPIClient {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GraphAPIClient")]
-impl std::ops::DerefMut for GraphAPIClient {
+impl std::ops::DerefMut for crate::GlobalNamespace::GraphAPIClient {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GraphAPIClient")]
-impl GraphAPIClient {
+impl crate::GlobalNamespace::GraphAPIClient {
+    #[cfg(feature = "GraphAPIClient+PostOptions")]
+    pub type PostOptions = crate::GlobalNamespace::GraphAPIClient_PostOptions;
     #[cfg(feature = "GraphAPIClient+_Post_d__4_2")]
     pub type _Post_d__4_2<
         TRequest: quest_hook::libil2cpp::Type,
         TResponse: quest_hook::libil2cpp::Type,
     > = crate::GlobalNamespace::GraphAPIClient__Post_d__4_2<TRequest, TResponse>;
-    #[cfg(feature = "GraphAPIClient+PostOptions")]
-    pub type PostOptions = crate::GlobalNamespace::GraphAPIClient_PostOptions;
     #[cfg(feature = "GraphAPIClient+_Post_d__5_1")]
     pub type _Post_d__5_1<TResponse: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::GraphAPIClient__Post_d__5_1<
         TResponse,
     >;
     pub fn New(
-        networkConfig: *mut INetworkConfig,
+        networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -118,7 +119,7 @@ impl GraphAPIClient {
     }
     pub fn _ctor(
         &mut self,
-        networkConfig: *mut INetworkConfig,
+        networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -129,7 +130,7 @@ impl GraphAPIClient {
     }
 }
 #[cfg(feature = "GraphAPIClient")]
-impl quest_hook::libil2cpp::ObjectType for GraphAPIClient {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GraphAPIClient {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

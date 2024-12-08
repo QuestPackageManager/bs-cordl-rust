@@ -56,12 +56,12 @@ impl std::ops::DerefMut for crate::Unity::XR::Oculus::OculusSettings {
 }
 #[cfg(feature = "Unity+XR+Oculus+OculusSettings")]
 impl crate::Unity::XR::Oculus::OculusSettings {
-    #[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeDesktop")]
-    pub type StereoRenderingModeDesktop = crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop;
     #[cfg(feature = "Unity+XR+Oculus+OculusSettings+FoveationMethod")]
     pub type FoveationMethod = crate::Unity::XR::Oculus::OculusSettings_FoveationMethod;
     #[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeAndroid")]
     pub type StereoRenderingModeAndroid = crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid;
+    #[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeDesktop")]
+    pub type StereoRenderingModeDesktop = crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

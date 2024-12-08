@@ -7,23 +7,24 @@ pub struct AppInitSetupData {
 }
 #[cfg(feature = "AppInitSetupData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AppInitSetupData => ""."AppInitSetupData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AppInitSetupData => ""
+    ."AppInitSetupData"
 );
 #[cfg(feature = "AppInitSetupData")]
-impl std::ops::Deref for AppInitSetupData {
+impl std::ops::Deref for crate::GlobalNamespace::AppInitSetupData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AppInitSetupData")]
-impl std::ops::DerefMut for AppInitSetupData {
+impl std::ops::DerefMut for crate::GlobalNamespace::AppInitSetupData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AppInitSetupData")]
-impl AppInitSetupData {
+impl crate::GlobalNamespace::AppInitSetupData {
     #[cfg(feature = "AppInitSetupData+RunMode")]
     pub type RunMode = crate::GlobalNamespace::AppInitSetupData_RunMode;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -45,7 +46,7 @@ impl AppInitSetupData {
     }
 }
 #[cfg(feature = "AppInitSetupData")]
-impl quest_hook::libil2cpp::ObjectType for AppInitSetupData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AppInitSetupData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

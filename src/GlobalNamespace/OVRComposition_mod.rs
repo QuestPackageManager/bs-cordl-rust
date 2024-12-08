@@ -4,29 +4,30 @@
 pub struct OVRComposition {
     __cordl_parent: crate::System::Object,
     pub cameraInTrackingSpace: bool,
-    pub cameraRig: *mut OVRCameraRig,
+    pub cameraRig: *mut crate::GlobalNamespace::OVRCameraRig,
     pub usingLastAttachedNodePose: bool,
-    pub lastAttachedNodePose: OVRPose,
+    pub lastAttachedNodePose: crate::GlobalNamespace::OVRPose,
 }
 #[cfg(feature = "OVRComposition")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRComposition => ""."OVRComposition"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRComposition => ""
+    ."OVRComposition"
 );
 #[cfg(feature = "OVRComposition")]
-impl std::ops::Deref for OVRComposition {
+impl std::ops::Deref for crate::GlobalNamespace::OVRComposition {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRComposition")]
-impl std::ops::DerefMut for OVRComposition {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRComposition {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRComposition")]
-impl OVRComposition {
+impl crate::GlobalNamespace::OVRComposition {
     pub fn Cleanup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -52,11 +53,11 @@ impl OVRComposition {
     pub fn ComputeCameraTrackingSpacePose(
         &mut self,
         extrinsics: crate::GlobalNamespace::OVRPlugin_CameraExtrinsics,
-    ) -> quest_hook::libil2cpp::Result<OVRPose> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPose> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: OVRPose = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::OVRPose = __cordl_object
             .invoke("ComputeCameraTrackingSpacePose", (extrinsics))?;
         Ok(__cordl_ret)
     }
@@ -64,18 +65,18 @@ impl OVRComposition {
         &mut self,
         extrinsics: crate::GlobalNamespace::OVRPlugin_CameraExtrinsics,
         mainCamera: *mut crate::UnityEngine::Camera,
-    ) -> quest_hook::libil2cpp::Result<OVRPose> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPose> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: OVRPose = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::OVRPose = __cordl_object
             .invoke("ComputeCameraWorldSpacePose", (extrinsics, mainCamera))?;
         Ok(__cordl_ret)
     }
     pub fn New(
         parentObject: *mut crate::UnityEngine::GameObject,
         mainCamera: *mut crate::UnityEngine::Camera,
-        configuration: *mut OVRMixedRealityCaptureConfiguration,
+        configuration: *mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -109,7 +110,7 @@ impl OVRComposition {
         &mut self,
         gameObject: *mut crate::UnityEngine::GameObject,
         mainCamera: *mut crate::UnityEngine::Camera,
-        configuration: *mut OVRMixedRealityCaptureConfiguration,
+        configuration: *mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
         trackingOrigin: crate::GlobalNamespace::OVRManager_TrackingOrigin,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -123,7 +124,7 @@ impl OVRComposition {
         &mut self,
         parentObject: *mut crate::UnityEngine::GameObject,
         mainCamera: *mut crate::UnityEngine::Camera,
-        configuration: *mut OVRMixedRealityCaptureConfiguration,
+        configuration: *mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -134,7 +135,7 @@ impl OVRComposition {
     }
 }
 #[cfg(feature = "OVRComposition")]
-impl quest_hook::libil2cpp::ObjectType for OVRComposition {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRComposition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

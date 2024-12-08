@@ -3,65 +3,67 @@
 #[derive(Debug)]
 pub struct MirroredBeatmapObjectManager {
     __cordl_parent: crate::System::Object,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
-    pub _mirroredBasicGameNotePoolContainer: *mut MemoryPoolContainer_1<
-        *mut MirroredGameNoteController,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
+    pub _mirroredBasicGameNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
+        *mut crate::GlobalNamespace::MirroredGameNoteController,
     >,
-    pub _mirroredBurstSliderHeadGameNotePoolContainer: *mut MemoryPoolContainer_1<
-        *mut MirroredGameNoteController,
+    pub _mirroredBurstSliderHeadGameNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
+        *mut crate::GlobalNamespace::MirroredGameNoteController,
     >,
-    pub _mirroredBurstSliderGameNotePoolContainer: *mut MemoryPoolContainer_1<
-        *mut MirroredGameNoteController,
+    pub _mirroredBurstSliderGameNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
+        *mut crate::GlobalNamespace::MirroredGameNoteController,
     >,
-    pub _mirroredBombNotePoolContainer: *mut MemoryPoolContainer_1<
-        *mut MirroredBombNoteController,
+    pub _mirroredBombNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
+        *mut crate::GlobalNamespace::MirroredBombNoteController,
     >,
-    pub _mirroredObstaclePoolContainer: *mut MemoryPoolContainer_1<
-        *mut MirroredObstacleController,
+    pub _mirroredObstaclePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
+        *mut crate::GlobalNamespace::MirroredObstacleController,
     >,
-    pub _mirroredSlidersPoolContainer: *mut MemoryPoolContainer_1<
-        *mut MirroredSliderController,
+    pub _mirroredSlidersPoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
+        *mut crate::GlobalNamespace::MirroredSliderController,
     >,
     pub _gameNoteControllersToMirroredGameNoteControllers: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut IGameNoteMirrorable,
+        *mut crate::GlobalNamespace::IGameNoteMirrorable,
         crate::System::ValueTuple_2<
-            *mut MirroredGameNoteController,
-            *mut MemoryPoolContainer_1<*mut MirroredGameNoteController>,
+            *mut crate::GlobalNamespace::MirroredGameNoteController,
+            *mut crate::GlobalNamespace::MemoryPoolContainer_1<
+                *mut crate::GlobalNamespace::MirroredGameNoteController,
+            >,
         >,
     >,
     pub _bombNoteControllersToMirroredBombNoteControllers: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut INoteMirrorable,
-        *mut MirroredBombNoteController,
+        *mut crate::GlobalNamespace::INoteMirrorable,
+        *mut crate::GlobalNamespace::MirroredBombNoteController,
     >,
     pub _obstacleControllersToMirroredObstacleControllers: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut ObstacleController,
-        *mut MirroredObstacleController,
+        *mut crate::GlobalNamespace::ObstacleController,
+        *mut crate::GlobalNamespace::MirroredObstacleController,
     >,
     pub _sliderControllersToMirroredSliderControllers: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut SliderController,
-        *mut MirroredSliderController,
+        *mut crate::GlobalNamespace::SliderController,
+        *mut crate::GlobalNamespace::MirroredSliderController,
     >,
 }
 #[cfg(feature = "MirroredBeatmapObjectManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MirroredBeatmapObjectManager => ""
-    ."MirroredBeatmapObjectManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MirroredBeatmapObjectManager =>
+    ""."MirroredBeatmapObjectManager"
 );
 #[cfg(feature = "MirroredBeatmapObjectManager")]
-impl std::ops::Deref for MirroredBeatmapObjectManager {
+impl std::ops::Deref for crate::GlobalNamespace::MirroredBeatmapObjectManager {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MirroredBeatmapObjectManager")]
-impl std::ops::DerefMut for MirroredBeatmapObjectManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::MirroredBeatmapObjectManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MirroredBeatmapObjectManager")]
-impl MirroredBeatmapObjectManager {
+impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
     pub fn Finalize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -85,7 +87,7 @@ impl MirroredBeatmapObjectManager {
     }
     pub fn HandleNoteWasDespawned(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -96,7 +98,7 @@ impl MirroredBeatmapObjectManager {
     }
     pub fn HandleNoteWasSpawned(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -107,7 +109,7 @@ impl MirroredBeatmapObjectManager {
     }
     pub fn HandleObstacleWasDespawned(
         &mut self,
-        obstacleController: *mut ObstacleController,
+        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -118,7 +120,7 @@ impl MirroredBeatmapObjectManager {
     }
     pub fn HandleObstacleWasSpawned(
         &mut self,
-        obstacleController: *mut ObstacleController,
+        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -129,7 +131,7 @@ impl MirroredBeatmapObjectManager {
     }
     pub fn HandleSliderWasDespawned(
         &mut self,
-        sliderController: *mut SliderController,
+        sliderController: *mut crate::GlobalNamespace::SliderController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -140,7 +142,7 @@ impl MirroredBeatmapObjectManager {
     }
     pub fn HandleSliderWasSpawned(
         &mut self,
-        sliderController: *mut SliderController,
+        sliderController: *mut crate::GlobalNamespace::SliderController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -151,7 +153,7 @@ impl MirroredBeatmapObjectManager {
     }
     pub fn Init(
         &mut self,
-        beatmapObjectManager: *mut BeatmapObjectManager,
+        beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
         mirroredBasicGameNotePool: *mut crate::GlobalNamespace::MirroredGameNoteController_Pool,
         burstSliderHeadGameNotePool: *mut crate::GlobalNamespace::MirroredGameNoteController_Pool,
         burstSliderGameNotePool: *mut crate::GlobalNamespace::MirroredGameNoteController_Pool,
@@ -196,7 +198,8 @@ impl MirroredBeatmapObjectManager {
     }
 }
 #[cfg(feature = "MirroredBeatmapObjectManager")]
-impl quest_hook::libil2cpp::ObjectType for MirroredBeatmapObjectManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MirroredBeatmapObjectManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,34 +2,40 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentEffectsFilterPresetDropdown {
-    __cordl_parent: ValueDropdownController_1<EnvironmentEffectsFilterPreset>,
+    __cordl_parent: crate::GlobalNamespace::ValueDropdownController_1<
+        crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+    >,
 }
 #[cfg(feature = "EnvironmentEffectsFilterPresetDropdown")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnvironmentEffectsFilterPresetDropdown => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::EnvironmentEffectsFilterPresetDropdown => ""
     ."EnvironmentEffectsFilterPresetDropdown"
 );
 #[cfg(feature = "EnvironmentEffectsFilterPresetDropdown")]
-impl std::ops::Deref for EnvironmentEffectsFilterPresetDropdown {
-    type Target = ValueDropdownController_1<EnvironmentEffectsFilterPreset>;
+impl std::ops::Deref for crate::GlobalNamespace::EnvironmentEffectsFilterPresetDropdown {
+    type Target = crate::GlobalNamespace::ValueDropdownController_1<
+        crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentEffectsFilterPresetDropdown")]
-impl std::ops::DerefMut for EnvironmentEffectsFilterPresetDropdown {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::EnvironmentEffectsFilterPresetDropdown {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentEffectsFilterPresetDropdown")]
-impl EnvironmentEffectsFilterPresetDropdown {
+impl crate::GlobalNamespace::EnvironmentEffectsFilterPresetDropdown {
     pub fn GetNamedValues(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::System::Tuple_2<
-                EnvironmentEffectsFilterPreset,
+                crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
                 *mut crate::System::String,
             >,
         >,
@@ -39,7 +45,7 @@ impl EnvironmentEffectsFilterPresetDropdown {
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::System::Tuple_2<
-                EnvironmentEffectsFilterPreset,
+                crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
                 *mut crate::System::String,
             >,
         > = __cordl_object.invoke("GetNamedValues", ())?;
@@ -64,7 +70,8 @@ impl EnvironmentEffectsFilterPresetDropdown {
     }
 }
 #[cfg(feature = "EnvironmentEffectsFilterPresetDropdown")]
-impl quest_hook::libil2cpp::ObjectType for EnvironmentEffectsFilterPresetDropdown {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EnvironmentEffectsFilterPresetDropdown {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

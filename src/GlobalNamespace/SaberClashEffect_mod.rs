@@ -6,32 +6,33 @@ pub struct SaberClashEffect {
     pub _sparkleParticleSystem: *mut crate::UnityEngine::ParticleSystem,
     pub _glowParticleSystem: *mut crate::UnityEngine::ParticleSystem,
     pub _rumblePreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    pub _saberClashChecker: *mut SaberClashChecker,
-    pub _hapticFeedbackController: *mut HapticFeedbackManager,
-    pub _colorManager: *mut ColorManager,
+    pub _saberClashChecker: *mut crate::GlobalNamespace::SaberClashChecker,
+    pub _hapticFeedbackController: *mut crate::GlobalNamespace::HapticFeedbackManager,
+    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
     pub _sparkleParticleSystemEmmisionModule: crate::UnityEngine::ParticleSystem_EmissionModule,
     pub _glowParticleSystemEmmisionModule: crate::UnityEngine::ParticleSystem_EmissionModule,
     pub _sabersAreClashing: bool,
 }
 #[cfg(feature = "SaberClashEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SaberClashEffect => ""."SaberClashEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SaberClashEffect => ""
+    ."SaberClashEffect"
 );
 #[cfg(feature = "SaberClashEffect")]
-impl std::ops::Deref for SaberClashEffect {
+impl std::ops::Deref for crate::GlobalNamespace::SaberClashEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberClashEffect")]
-impl std::ops::DerefMut for SaberClashEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::SaberClashEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberClashEffect")]
-impl SaberClashEffect {
+impl crate::GlobalNamespace::SaberClashEffect {
     pub fn LateUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -81,7 +82,7 @@ impl SaberClashEffect {
     }
 }
 #[cfg(feature = "SaberClashEffect")]
-impl quest_hook::libil2cpp::ObjectType for SaberClashEffect {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberClashEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,29 +2,29 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnergyMissionObjectiveChecker {
-    __cordl_parent: MissionObjectiveChecker,
-    pub _energyCounter: *mut GameEnergyCounter,
+    __cordl_parent: crate::GlobalNamespace::MissionObjectiveChecker,
+    pub _energyCounter: *mut crate::GlobalNamespace::GameEnergyCounter,
 }
 #[cfg(feature = "EnergyMissionObjectiveChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnergyMissionObjectiveChecker => ""
-    ."EnergyMissionObjectiveChecker"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnergyMissionObjectiveChecker
+    => ""."EnergyMissionObjectiveChecker"
 );
 #[cfg(feature = "EnergyMissionObjectiveChecker")]
-impl std::ops::Deref for EnergyMissionObjectiveChecker {
-    type Target = MissionObjectiveChecker;
+impl std::ops::Deref for crate::GlobalNamespace::EnergyMissionObjectiveChecker {
+    type Target = crate::GlobalNamespace::MissionObjectiveChecker;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnergyMissionObjectiveChecker")]
-impl std::ops::DerefMut for EnergyMissionObjectiveChecker {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnergyMissionObjectiveChecker {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnergyMissionObjectiveChecker")]
-impl EnergyMissionObjectiveChecker {
+impl crate::GlobalNamespace::EnergyMissionObjectiveChecker {
     pub fn CheckAndUpdateStatus(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -85,7 +85,8 @@ impl EnergyMissionObjectiveChecker {
     }
 }
 #[cfg(feature = "EnergyMissionObjectiveChecker")]
-impl quest_hook::libil2cpp::ObjectType for EnergyMissionObjectiveChecker {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EnergyMissionObjectiveChecker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

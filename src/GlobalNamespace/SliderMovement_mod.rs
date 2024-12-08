@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SliderMovement {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioTimeSyncController: *mut IAudioTimeSource,
-    pub _playerTransforms: *mut PlayerTransforms,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
     pub movementDidFinishEvent: *mut crate::System::Action,
     pub movementDidMoveEvent: *mut crate::System::Action_1<f32>,
     pub headDidMovePastCutMarkEvent: *mut crate::System::Action,
@@ -27,23 +27,24 @@ pub struct SliderMovement {
 }
 #[cfg(feature = "SliderMovement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SliderMovement => ""."SliderMovement"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SliderMovement => ""
+    ."SliderMovement"
 );
 #[cfg(feature = "SliderMovement")]
-impl std::ops::Deref for SliderMovement {
+impl std::ops::Deref for crate::GlobalNamespace::SliderMovement {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderMovement")]
-impl std::ops::DerefMut for SliderMovement {
+impl std::ops::DerefMut for crate::GlobalNamespace::SliderMovement {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderMovement")]
-impl SliderMovement {
+impl crate::GlobalNamespace::SliderMovement {
     pub fn Init(
         &mut self,
         headNoteTime: f32,
@@ -229,7 +230,7 @@ impl SliderMovement {
     }
 }
 #[cfg(feature = "SliderMovement")]
-impl quest_hook::libil2cpp::ObjectType for SliderMovement {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SliderMovement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

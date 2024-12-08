@@ -24,23 +24,24 @@ pub struct HowToPlayViewController {
 }
 #[cfg(feature = "HowToPlayViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for HowToPlayViewController => ""."HowToPlayViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::HowToPlayViewController => ""
+    ."HowToPlayViewController"
 );
 #[cfg(feature = "HowToPlayViewController")]
-impl std::ops::Deref for HowToPlayViewController {
+impl std::ops::Deref for crate::GlobalNamespace::HowToPlayViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HowToPlayViewController")]
-impl std::ops::DerefMut for HowToPlayViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::HowToPlayViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "HowToPlayViewController")]
-impl HowToPlayViewController {
+impl crate::GlobalNamespace::HowToPlayViewController {
     #[cfg(feature = "HowToPlayViewController+HowToPlayOptions")]
     pub type HowToPlayOptions = crate::GlobalNamespace::HowToPlayViewController_HowToPlayOptions;
     pub fn DidActivate(
@@ -135,7 +136,8 @@ impl HowToPlayViewController {
     }
 }
 #[cfg(feature = "HowToPlayViewController")]
-impl quest_hook::libil2cpp::ObjectType for HowToPlayViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::HowToPlayViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

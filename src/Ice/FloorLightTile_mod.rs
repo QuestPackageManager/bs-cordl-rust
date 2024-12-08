@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct FloorLightTile {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _colorSetter: *mut MaterialPropertyBlockColorSetter,
-    pub _tubeBloomPrePassLight: *mut TubeBloomPrePassLight,
+    pub _colorSetter: *mut crate::GlobalNamespace::MaterialPropertyBlockColorSetter,
+    pub _tubeBloomPrePassLight: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
     pub _songTimeTweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
     pub didFinish: *mut crate::System::Action_1<*mut crate::Ice::FloorLightTile>,
     pub _fadeInTween: *mut crate::Tweening::ColorTween,

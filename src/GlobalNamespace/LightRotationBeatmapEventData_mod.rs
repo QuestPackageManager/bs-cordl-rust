@@ -2,36 +2,36 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightRotationBeatmapEventData {
-    __cordl_parent: BeatmapEventData,
+    __cordl_parent: crate::GlobalNamespace::BeatmapEventData,
     pub groupId: i32,
     pub elementId: i32,
     pub usePreviousEventValue: bool,
-    pub easeType: EaseType,
-    pub axis: LightAxis,
+    pub easeType: crate::GlobalNamespace::EaseType,
+    pub axis: crate::GlobalNamespace::LightAxis,
     pub loopCount: i32,
-    pub rotationDirection: LightRotationDirection,
+    pub rotationDirection: crate::GlobalNamespace::LightRotationDirection,
     pub _rotation_k__BackingField: f32,
 }
 #[cfg(feature = "LightRotationBeatmapEventData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightRotationBeatmapEventData => ""
-    ."LightRotationBeatmapEventData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightRotationBeatmapEventData
+    => ""."LightRotationBeatmapEventData"
 );
 #[cfg(feature = "LightRotationBeatmapEventData")]
-impl std::ops::Deref for LightRotationBeatmapEventData {
-    type Target = BeatmapEventData;
+impl std::ops::Deref for crate::GlobalNamespace::LightRotationBeatmapEventData {
+    type Target = crate::GlobalNamespace::BeatmapEventData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightRotationBeatmapEventData")]
-impl std::ops::DerefMut for LightRotationBeatmapEventData {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightRotationBeatmapEventData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightRotationBeatmapEventData")]
-impl LightRotationBeatmapEventData {
+impl crate::GlobalNamespace::LightRotationBeatmapEventData {
     pub fn ChangeRotation(
         &mut self,
         rotation: f32,
@@ -43,20 +43,23 @@ impl LightRotationBeatmapEventData {
             .invoke("ChangeRotation", (rotation))?;
         Ok(__cordl_ret)
     }
-    pub fn GetCopy(&mut self) -> quest_hook::libil2cpp::Result<*mut BeatmapDataItem> {
+    pub fn GetCopy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapDataItem> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapDataItem = __cordl_object.invoke("GetCopy", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapDataItem = __cordl_object
+            .invoke("GetCopy", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetDefault(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapEventData> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapEventData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapEventData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapEventData = __cordl_object
             .invoke("GetDefault", ())?;
         Ok(__cordl_ret)
     }
@@ -65,11 +68,11 @@ impl LightRotationBeatmapEventData {
         groupId: i32,
         elementId: i32,
         usePreviousEventValue: bool,
-        easeType: EaseType,
-        axis: LightAxis,
+        easeType: crate::GlobalNamespace::EaseType,
+        axis: crate::GlobalNamespace::LightAxis,
         rotation: f32,
         loopCount: i32,
-        rotationDirection: LightRotationDirection,
+        rotationDirection: crate::GlobalNamespace::LightRotationDirection,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -96,11 +99,11 @@ impl LightRotationBeatmapEventData {
         groupId: i32,
         elementId: i32,
         usePreviousEventValue: bool,
-        easeType: EaseType,
-        axis: LightAxis,
+        easeType: crate::GlobalNamespace::EaseType,
+        axis: crate::GlobalNamespace::LightAxis,
         rotation: f32,
         loopCount: i32,
-        rotationDirection: LightRotationDirection,
+        rotationDirection: crate::GlobalNamespace::LightRotationDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -142,7 +145,8 @@ impl LightRotationBeatmapEventData {
     }
 }
 #[cfg(feature = "LightRotationBeatmapEventData")]
-impl quest_hook::libil2cpp::ObjectType for LightRotationBeatmapEventData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LightRotationBeatmapEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

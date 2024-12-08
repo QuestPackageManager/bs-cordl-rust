@@ -8,55 +8,55 @@ pub struct PlayerSettingsPanelController {
     pub _noTextsAndHudsToggle: *mut crate::UnityEngine::UI::Toggle,
     pub _advanceHudToggle: *mut crate::UnityEngine::UI::Toggle,
     pub _autoRestartToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _playerHeightSettingsController: *mut PlayerHeightSettingsController,
+    pub _playerHeightSettingsController: *mut crate::GlobalNamespace::PlayerHeightSettingsController,
     pub _playerHeightSettingsCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
     pub _automaticPlayerHeightToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _sfxVolumeSettingsController: *mut FormattedFloatListSettingsController,
-    pub _saberTrailIntensitySettingsController: *mut FormattedFloatListSettingsController,
-    pub _noteJumpDurationTypeSettingsDropdown: *mut NoteJumpDurationTypeSettingsDropdown,
-    pub _noteJumpFixedDurationSettingsController: *mut FormattedFloatListSettingsController,
+    pub _sfxVolumeSettingsController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
+    pub _saberTrailIntensitySettingsController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
+    pub _noteJumpDurationTypeSettingsDropdown: *mut crate::GlobalNamespace::NoteJumpDurationTypeSettingsDropdown,
+    pub _noteJumpFixedDurationSettingsController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
     pub _noteJumpFixedDurationSettingsCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
-    pub _noteJumpStartBeatOffsetDropdown: *mut NoteJumpStartBeatOffsetDropdown,
+    pub _noteJumpStartBeatOffsetDropdown: *mut crate::GlobalNamespace::NoteJumpStartBeatOffsetDropdown,
     pub _noteJumpStartBeatOffsetCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
-    pub _environmentEffectsFilterDefaultPresetDropdown: *mut EnvironmentEffectsFilterPresetDropdown,
-    pub _environmentEffectsFilterExpertPlusPresetDropdown: *mut EnvironmentEffectsFilterPresetDropdown,
+    pub _environmentEffectsFilterDefaultPresetDropdown: *mut crate::GlobalNamespace::EnvironmentEffectsFilterPresetDropdown,
+    pub _environmentEffectsFilterExpertPlusPresetDropdown: *mut crate::GlobalNamespace::EnvironmentEffectsFilterPresetDropdown,
     pub _hideNoteSpawnEffectToggle: *mut crate::UnityEngine::UI::Toggle,
     pub _adaptiveSfxToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _headsetHapticIntensityController: *mut FormattedFloatListSettingsController,
-    pub _arcsVisibilityTypeSettingsDropdown: *mut ArcVisibilityTypeSettingsDropdown,
+    pub _headsetHapticIntensityController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
+    pub _arcsVisibilityTypeSettingsDropdown: *mut crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown,
     pub _arcHapticFeedbackCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
     pub _arcsHapticFeedbackToggle: *mut crate::UnityEngine::UI::Toggle,
     pub _singleplayerOnlyCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
     pub _arcVisibilityWarning: *mut crate::UnityEngine::GameObject,
     pub didChangePlayerSettingsEvent: *mut crate::System::Action,
-    pub _currentArcType: ArcVisibilityType,
-    pub _playerData: *mut PlayerData,
-    pub _playerSpecificSettings: *mut PlayerSpecificSettings,
+    pub _currentArcType: crate::GlobalNamespace::ArcVisibilityType,
+    pub _playerData: *mut crate::GlobalNamespace::PlayerData,
+    pub _playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
     pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
     pub _dirty: bool,
     pub _refreshed: bool,
-    pub _eventBinder: *mut EventBinder,
+    pub _eventBinder: *mut crate::GlobalNamespace::EventBinder,
 }
 #[cfg(feature = "PlayerSettingsPanelController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerSettingsPanelController => ""
-    ."PlayerSettingsPanelController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerSettingsPanelController
+    => ""."PlayerSettingsPanelController"
 );
 #[cfg(feature = "PlayerSettingsPanelController")]
-impl std::ops::Deref for PlayerSettingsPanelController {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerSettingsPanelController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSettingsPanelController")]
-impl std::ops::DerefMut for PlayerSettingsPanelController {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSettingsPanelController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSettingsPanelController")]
-impl PlayerSettingsPanelController {
+impl crate::GlobalNamespace::PlayerSettingsPanelController {
     pub const kDisabledSectionAlpha: f32 = 0.2f32;
     #[cfg(feature = "PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
     pub type PlayerSettingsPanelLayout = crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLayout;
@@ -84,7 +84,7 @@ impl PlayerSettingsPanelController {
     pub fn HandleArcVisibilityDropdownDidSelectCellWithIdx(
         &mut self,
         idx: i32,
-        arcVisibilityType: ArcVisibilityType,
+        arcVisibilityType: crate::GlobalNamespace::ArcVisibilityType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -98,7 +98,7 @@ impl PlayerSettingsPanelController {
     }
     pub fn HandleHeadsetHapticIntensityControllerValueDidChange(
         &mut self,
-        settingsController: *mut FormattedFloatListSettingsController,
+        settingsController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -114,7 +114,7 @@ impl PlayerSettingsPanelController {
     pub fn HandleLightReductionAmountSelected(
         &mut self,
         obj: i32,
-        environmentEffectsFilterPreset: EnvironmentEffectsFilterPreset,
+        environmentEffectsFilterPreset: crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -140,7 +140,7 @@ impl PlayerSettingsPanelController {
     pub fn HandleNoteJumpDurationTypeSettingsDropdownDidSelectCellWithIdx(
         &mut self,
         idx: i32,
-        noteJumpDurationTypeSettings: NoteJumpDurationTypeSettings,
+        noteJumpDurationTypeSettings: crate::GlobalNamespace::NoteJumpDurationTypeSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -154,7 +154,7 @@ impl PlayerSettingsPanelController {
     }
     pub fn HandleNoteJumpFixedDurationSettingsControllerValueDidChange(
         &mut self,
-        formattedFloatListSettingsController: *mut FormattedFloatListSettingsController,
+        formattedFloatListSettingsController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -195,7 +195,7 @@ impl PlayerSettingsPanelController {
     }
     pub fn HandleSFXVolumeSettingsControllerValueDidChange(
         &mut self,
-        settingsController: *mut FormattedFloatListSettingsController,
+        settingsController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -210,7 +210,7 @@ impl PlayerSettingsPanelController {
     }
     pub fn HandleSaberTrailIntensitySettingsControllerValueDidChange(
         &mut self,
-        settingsController: *mut FormattedFloatListSettingsController,
+        settingsController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -272,7 +272,7 @@ impl PlayerSettingsPanelController {
     }
     pub fn RefreshArcsWarning(
         &mut self,
-        arcVisibilityType: ArcVisibilityType,
+        arcVisibilityType: crate::GlobalNamespace::ArcVisibilityType,
         forceRebuild: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -284,7 +284,7 @@ impl PlayerSettingsPanelController {
     }
     pub fn RefreshNoteJumpUI(
         &mut self,
-        noteJumpDurationTypeSettings: NoteJumpDurationTypeSettings,
+        noteJumpDurationTypeSettings: crate::GlobalNamespace::NoteJumpDurationTypeSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -295,7 +295,7 @@ impl PlayerSettingsPanelController {
     }
     pub fn SetData(
         &mut self,
-        playerData: *mut PlayerData,
+        playerData: *mut crate::GlobalNamespace::PlayerData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -467,11 +467,13 @@ impl PlayerSettingsPanelController {
     }
     pub fn get_playerSpecificSettings(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerSpecificSettings> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PlayerSpecificSettings,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PlayerSpecificSettings = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PlayerSpecificSettings = __cordl_object
             .invoke("get_playerSpecificSettings", ())?;
         Ok(__cordl_ret)
     }
@@ -488,7 +490,8 @@ impl PlayerSettingsPanelController {
     }
 }
 #[cfg(feature = "PlayerSettingsPanelController")]
-impl quest_hook::libil2cpp::ObjectType for PlayerSettingsPanelController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayerSettingsPanelController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

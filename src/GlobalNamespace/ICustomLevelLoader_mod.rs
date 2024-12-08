@@ -6,23 +6,24 @@ pub struct ICustomLevelLoader {
 }
 #[cfg(feature = "ICustomLevelLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ICustomLevelLoader => ""."ICustomLevelLoader"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ICustomLevelLoader => ""
+    ."ICustomLevelLoader"
 );
 #[cfg(feature = "ICustomLevelLoader")]
-impl std::ops::Deref for ICustomLevelLoader {
+impl std::ops::Deref for crate::GlobalNamespace::ICustomLevelLoader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ICustomLevelLoader")]
-impl std::ops::DerefMut for ICustomLevelLoader {
+impl std::ops::DerefMut for crate::GlobalNamespace::ICustomLevelLoader {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ICustomLevelLoader")]
-impl ICustomLevelLoader {
+impl crate::GlobalNamespace::ICustomLevelLoader {
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
@@ -30,7 +31,7 @@ impl ICustomLevelLoader {
     }
 }
 #[cfg(feature = "ICustomLevelLoader")]
-impl quest_hook::libil2cpp::ObjectType for ICustomLevelLoader {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ICustomLevelLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

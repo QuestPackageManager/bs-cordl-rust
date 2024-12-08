@@ -96,13 +96,13 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
     pub const MaxButtons: i32 = 220i32;
     pub const kAxisOffset: u32 = 1632046620u32;
     #[cfg(
-        feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
-    )]
-    pub type _axis_e__FixedBuffer = crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__axis_e__FixedBuffer;
-    #[cfg(
         feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
     )]
     pub type Variants = crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
+    )]
+    pub type _axis_e__FixedBuffer = crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__axis_e__FixedBuffer;
     #[cfg(
         feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
     )]

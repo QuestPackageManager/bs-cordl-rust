@@ -21,5 +21,6 @@ pub enum ConnectionFailedReason {
 }
 #[cfg(feature = "ConnectionFailedReason")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for ConnectionFailedReason => ""."ConnectionFailedReason"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ConnectionFailedReason => ""
+    ."ConnectionFailedReason"
 );

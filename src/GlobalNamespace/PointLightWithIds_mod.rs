@@ -2,28 +2,29 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointLightWithIds {
-    __cordl_parent: RuntimeLightWithIds,
-    pub _pointLight: *mut PointLight,
+    __cordl_parent: crate::GlobalNamespace::RuntimeLightWithIds,
+    pub _pointLight: *mut crate::GlobalNamespace::PointLight,
 }
 #[cfg(feature = "PointLightWithIds")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PointLightWithIds => ""."PointLightWithIds"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PointLightWithIds => ""
+    ."PointLightWithIds"
 );
 #[cfg(feature = "PointLightWithIds")]
-impl std::ops::Deref for PointLightWithIds {
-    type Target = RuntimeLightWithIds;
+impl std::ops::Deref for crate::GlobalNamespace::PointLightWithIds {
+    type Target = crate::GlobalNamespace::RuntimeLightWithIds;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PointLightWithIds")]
-impl std::ops::DerefMut for PointLightWithIds {
+impl std::ops::DerefMut for crate::GlobalNamespace::PointLightWithIds {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PointLightWithIds")]
-impl PointLightWithIds {
+impl crate::GlobalNamespace::PointLightWithIds {
     pub fn ColorWasSet(
         &mut self,
         color: crate::UnityEngine::Color,
@@ -54,7 +55,7 @@ impl PointLightWithIds {
     }
 }
 #[cfg(feature = "PointLightWithIds")]
-impl quest_hook::libil2cpp::ObjectType for PointLightWithIds {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PointLightWithIds {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

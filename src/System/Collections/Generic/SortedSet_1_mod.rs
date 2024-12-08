@@ -676,20 +676,20 @@ for crate::System::Collections::Generic::SortedSet_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Collections::Generic::SortedSet_1<T> {
-    #[cfg(feature = "System+Collections+Generic+SortedSet_1+Node")]
-    pub type Node = crate::System::Collections::Generic::SortedSet_1_Node<T>;
-    #[cfg(feature = "System+Collections+Generic+SortedSet_1+__c__DisplayClass53_0")]
-    pub type __c__DisplayClass53_0 = crate::System::Collections::Generic::SortedSet_1___c__DisplayClass53_0<
-        T,
-    >;
     #[cfg(feature = "System+Collections+Generic+SortedSet_1+ElementCount")]
     pub type ElementCount = crate::System::Collections::Generic::SortedSet_1_ElementCount<
         T,
     >;
     #[cfg(feature = "System+Collections+Generic+SortedSet_1+Enumerator")]
     pub type Enumerator = crate::System::Collections::Generic::SortedSet_1_Enumerator<T>;
+    #[cfg(feature = "System+Collections+Generic+SortedSet_1+Node")]
+    pub type Node = crate::System::Collections::Generic::SortedSet_1_Node<T>;
     #[cfg(feature = "System+Collections+Generic+SortedSet_1+__c__DisplayClass52_0")]
     pub type __c__DisplayClass52_0 = crate::System::Collections::Generic::SortedSet_1___c__DisplayClass52_0<
+        T,
+    >;
+    #[cfg(feature = "System+Collections+Generic+SortedSet_1+__c__DisplayClass53_0")]
+    pub type __c__DisplayClass53_0 = crate::System::Collections::Generic::SortedSet_1___c__DisplayClass53_0<
         T,
     >;
     pub fn Add(&mut self, item: T) -> quest_hook::libil2cpp::Result<bool>

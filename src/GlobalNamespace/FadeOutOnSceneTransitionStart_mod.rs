@@ -3,29 +3,29 @@
 #[derive(Debug)]
 pub struct FadeOutOnSceneTransitionStart {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _fadeInOut: *mut FadeInOutController,
-    pub _gameScenesManager: *mut GameScenesManager,
+    pub _fadeInOut: *mut crate::GlobalNamespace::FadeInOutController,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
 }
 #[cfg(feature = "FadeOutOnSceneTransitionStart")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FadeOutOnSceneTransitionStart => ""
-    ."FadeOutOnSceneTransitionStart"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FadeOutOnSceneTransitionStart
+    => ""."FadeOutOnSceneTransitionStart"
 );
 #[cfg(feature = "FadeOutOnSceneTransitionStart")]
-impl std::ops::Deref for FadeOutOnSceneTransitionStart {
+impl std::ops::Deref for crate::GlobalNamespace::FadeOutOnSceneTransitionStart {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FadeOutOnSceneTransitionStart")]
-impl std::ops::DerefMut for FadeOutOnSceneTransitionStart {
+impl std::ops::DerefMut for crate::GlobalNamespace::FadeOutOnSceneTransitionStart {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FadeOutOnSceneTransitionStart")]
-impl FadeOutOnSceneTransitionStart {
+impl crate::GlobalNamespace::FadeOutOnSceneTransitionStart {
     pub fn HandleGameScenesManagerTransitionDidStart(
         &mut self,
         duration: f32,
@@ -76,7 +76,8 @@ impl FadeOutOnSceneTransitionStart {
     }
 }
 #[cfg(feature = "FadeOutOnSceneTransitionStart")]
-impl quest_hook::libil2cpp::ObjectType for FadeOutOnSceneTransitionStart {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FadeOutOnSceneTransitionStart {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

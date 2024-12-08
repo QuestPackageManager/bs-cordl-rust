@@ -26,10 +26,10 @@ impl std::ops::DerefMut for crate::System::Net::MonoChunkStream {
 }
 #[cfg(feature = "System+Net+MonoChunkStream")]
 impl crate::System::Net::MonoChunkStream {
-    #[cfg(feature = "System+Net+MonoChunkStream+_ProcessReadAsync_d__7")]
-    pub type _ProcessReadAsync_d__7 = crate::System::Net::MonoChunkStream__ProcessReadAsync_d__7;
     #[cfg(feature = "System+Net+MonoChunkStream+_FinishReading_d__8")]
     pub type _FinishReading_d__8 = crate::System::Net::MonoChunkStream__FinishReading_d__8;
+    #[cfg(feature = "System+Net+MonoChunkStream+_ProcessReadAsync_d__7")]
+    pub type _ProcessReadAsync_d__7 = crate::System::Net::MonoChunkStream__ProcessReadAsync_d__7;
     pub fn FinishReading(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,

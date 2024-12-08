@@ -5,38 +5,38 @@ pub struct OverrideEnvironmentSettings {
     __cordl_parent: crate::System::Object,
     pub overrideEnvironments: bool,
     pub _data: *mut crate::System::Collections::Generic::Dictionary_2<
-        EnvironmentType,
-        *mut EnvironmentInfoSO,
+        crate::GlobalNamespace::EnvironmentType,
+        *mut crate::GlobalNamespace::EnvironmentInfoSO,
     >,
 }
 #[cfg(feature = "OverrideEnvironmentSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OverrideEnvironmentSettings => ""
-    ."OverrideEnvironmentSettings"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OverrideEnvironmentSettings =>
+    ""."OverrideEnvironmentSettings"
 );
 #[cfg(feature = "OverrideEnvironmentSettings")]
-impl std::ops::Deref for OverrideEnvironmentSettings {
+impl std::ops::Deref for crate::GlobalNamespace::OverrideEnvironmentSettings {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OverrideEnvironmentSettings")]
-impl std::ops::DerefMut for OverrideEnvironmentSettings {
+impl std::ops::DerefMut for crate::GlobalNamespace::OverrideEnvironmentSettings {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OverrideEnvironmentSettings")]
-impl OverrideEnvironmentSettings {
+impl crate::GlobalNamespace::OverrideEnvironmentSettings {
     pub fn GetOverrideEnvironmentInfoForType(
         &mut self,
-        environmentType: EnvironmentType,
-    ) -> quest_hook::libil2cpp::Result<*mut EnvironmentInfoSO> {
+        environmentType: crate::GlobalNamespace::EnvironmentType,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::EnvironmentInfoSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut EnvironmentInfoSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::EnvironmentInfoSO = __cordl_object
             .invoke("GetOverrideEnvironmentInfoForType", (environmentType))?;
         Ok(__cordl_ret)
     }
@@ -49,8 +49,8 @@ impl OverrideEnvironmentSettings {
     }
     pub fn SetEnvironmentInfoForType(
         &mut self,
-        environmentType: EnvironmentType,
-        environmentInfo: *mut EnvironmentInfoSO,
+        environmentType: crate::GlobalNamespace::EnvironmentType,
+        environmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -71,7 +71,8 @@ impl OverrideEnvironmentSettings {
     }
 }
 #[cfg(feature = "OverrideEnvironmentSettings")]
-impl quest_hook::libil2cpp::ObjectType for OverrideEnvironmentSettings {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OverrideEnvironmentSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

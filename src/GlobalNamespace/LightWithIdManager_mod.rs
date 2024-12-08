@@ -5,35 +5,38 @@ pub struct LightWithIdManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub didChangeSomeColorsThisFrameEvent: *mut crate::System::Action,
     pub _lights: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Collections::Generic::List_1<*mut ILightWithId>,
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::ILightWithId,
+        >,
     >,
     pub _colors: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::System::Nullable_1<crate::UnityEngine::Color>,
     >,
     pub _lightsToUnregister: *mut crate::System::Collections::Generic::List_1<
-        *mut ILightWithId,
+        *mut crate::GlobalNamespace::ILightWithId,
     >,
     pub _didChangeSomeColorsThisFrame: bool,
 }
 #[cfg(feature = "LightWithIdManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightWithIdManager => ""."LightWithIdManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightWithIdManager => ""
+    ."LightWithIdManager"
 );
 #[cfg(feature = "LightWithIdManager")]
-impl std::ops::Deref for LightWithIdManager {
+impl std::ops::Deref for crate::GlobalNamespace::LightWithIdManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightWithIdManager")]
-impl std::ops::DerefMut for LightWithIdManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightWithIdManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightWithIdManager")]
-impl LightWithIdManager {
+impl crate::GlobalNamespace::LightWithIdManager {
     pub const kMaxLightId: i32 = 500i32;
     pub fn GetColorForId(
         &mut self,
@@ -66,7 +69,7 @@ impl LightWithIdManager {
     }
     pub fn RegisterLight(
         &mut self,
-        lightWithId: *mut ILightWithId,
+        lightWithId: *mut crate::GlobalNamespace::ILightWithId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -89,7 +92,7 @@ impl LightWithIdManager {
     }
     pub fn UnregisterLight(
         &mut self,
-        lightWithId: *mut ILightWithId,
+        lightWithId: *mut crate::GlobalNamespace::ILightWithId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -132,7 +135,7 @@ impl LightWithIdManager {
     }
 }
 #[cfg(feature = "LightWithIdManager")]
-impl quest_hook::libil2cpp::ObjectType for LightWithIdManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightWithIdManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

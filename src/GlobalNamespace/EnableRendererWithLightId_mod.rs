@@ -2,31 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnableRendererWithLightId {
-    __cordl_parent: LightWithIdMonoBehaviour,
+    __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
     pub _renderer: *mut crate::UnityEngine::Renderer,
     pub _hideAlphaRangeMin: f32,
     pub _hideAlphaRangeMax: f32,
 }
 #[cfg(feature = "EnableRendererWithLightId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnableRendererWithLightId => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnableRendererWithLightId => ""
     ."EnableRendererWithLightId"
 );
 #[cfg(feature = "EnableRendererWithLightId")]
-impl std::ops::Deref for EnableRendererWithLightId {
-    type Target = LightWithIdMonoBehaviour;
+impl std::ops::Deref for crate::GlobalNamespace::EnableRendererWithLightId {
+    type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnableRendererWithLightId")]
-impl std::ops::DerefMut for EnableRendererWithLightId {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnableRendererWithLightId {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnableRendererWithLightId")]
-impl EnableRendererWithLightId {
+impl crate::GlobalNamespace::EnableRendererWithLightId {
     pub fn ColorWasSet(
         &mut self,
         color: crate::UnityEngine::Color,
@@ -57,7 +57,8 @@ impl EnableRendererWithLightId {
     }
 }
 #[cfg(feature = "EnableRendererWithLightId")]
-impl quest_hook::libil2cpp::ObjectType for EnableRendererWithLightId {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EnableRendererWithLightId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -4,68 +4,85 @@
 pub struct BeatmapObjectManager {
     __cordl_parent: crate::System::Object,
     pub noteWasAddedEvent: *mut crate::System::Action_3<
-        *mut NoteData,
+        *mut crate::GlobalNamespace::NoteData,
         crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
         f32,
     >,
-    pub noteWasSpawnedEvent: *mut crate::System::Action_1<*mut NoteController>,
-    pub noteWasDespawnedEvent: *mut crate::System::Action_1<*mut NoteController>,
-    pub noteWasMissedEvent: *mut crate::System::Action_1<*mut NoteController>,
+    pub noteWasSpawnedEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::NoteController,
+    >,
+    pub noteWasDespawnedEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::NoteController,
+    >,
+    pub noteWasMissedEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::NoteController,
+    >,
     pub noteWasCutEvent: *mut crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate,
-    pub noteDidStartJumpEvent: *mut crate::System::Action_1<*mut NoteController>,
+    pub noteDidStartJumpEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::NoteController,
+    >,
     pub noteDidStartDissolvingEvent: *mut crate::System::Action_1<
-        *mut NoteControllerBase,
+        *mut crate::GlobalNamespace::NoteControllerBase,
     >,
     pub obstacleWasAddedEvent: *mut crate::System::Action_3<
-        *mut ObstacleData,
+        *mut crate::GlobalNamespace::ObstacleData,
         crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
         f32,
     >,
-    pub obstacleWasSpawnedEvent: *mut crate::System::Action_1<*mut ObstacleController>,
-    pub obstacleWasDespawnedEvent: *mut crate::System::Action_1<*mut ObstacleController>,
+    pub obstacleWasSpawnedEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::ObstacleController,
+    >,
+    pub obstacleWasDespawnedEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::ObstacleController,
+    >,
     pub obstacleDidPassThreeQuartersOfMove2Event: *mut crate::System::Action_1<
-        *mut ObstacleController,
+        *mut crate::GlobalNamespace::ObstacleController,
     >,
     pub obstacleDidPassAvoidedMarkEvent: *mut crate::System::Action_1<
-        *mut ObstacleController,
+        *mut crate::GlobalNamespace::ObstacleController,
     >,
     pub sliderWasAddedEvent: *mut crate::System::Action_3<
-        *mut SliderData,
+        *mut crate::GlobalNamespace::SliderData,
         crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
         f32,
     >,
-    pub sliderWasSpawnedEvent: *mut crate::System::Action_1<*mut SliderController>,
-    pub sliderWasDespawnedEvent: *mut crate::System::Action_1<*mut SliderController>,
+    pub sliderWasSpawnedEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::SliderController,
+    >,
+    pub sliderWasDespawnedEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::SliderController,
+    >,
     pub didHideAllBeatmapObjectsEvent: *mut crate::System::Action_1<bool>,
     pub _allBeatmapObjects: *mut crate::System::Collections::Generic::List_1<
-        *mut IBeatmapObjectController,
+        *mut crate::GlobalNamespace::IBeatmapObjectController,
     >,
     pub _spawnHidden_k__BackingField: bool,
 }
 #[cfg(feature = "BeatmapObjectManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapObjectManager => ""."BeatmapObjectManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapObjectManager => ""
+    ."BeatmapObjectManager"
 );
 #[cfg(feature = "BeatmapObjectManager")]
-impl std::ops::Deref for BeatmapObjectManager {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapObjectManager {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapObjectManager")]
-impl std::ops::DerefMut for BeatmapObjectManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapObjectManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapObjectManager")]
-impl BeatmapObjectManager {
+impl crate::GlobalNamespace::BeatmapObjectManager {
     #[cfg(feature = "BeatmapObjectManager+NoteWasCutDelegate")]
     pub type NoteWasCutDelegate = crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate;
     pub fn AddSpawnedNoteController(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
         noteSpawnData: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
         rotation: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -81,7 +98,7 @@ impl BeatmapObjectManager {
     }
     pub fn AddSpawnedObstacleController(
         &mut self,
-        obstacleController: *mut ObstacleController,
+        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
         obstacleSpawnData: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
         rotation: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -97,7 +114,7 @@ impl BeatmapObjectManager {
     }
     pub fn AddSpawnedSliderController(
         &mut self,
-        sliderController: *mut SliderController,
+        sliderController: *mut crate::GlobalNamespace::SliderController,
         sliderSpawnData: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
         rotation: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -113,7 +130,7 @@ impl BeatmapObjectManager {
     }
     pub fn DespawnInternal_NoteController0(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -124,7 +141,7 @@ impl BeatmapObjectManager {
     }
     pub fn DespawnInternal_ObstacleController1(
         &mut self,
-        obstacleController: *mut ObstacleController,
+        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -135,7 +152,7 @@ impl BeatmapObjectManager {
     }
     pub fn DespawnInternal_SliderController2(
         &mut self,
-        sliderNoteController: *mut SliderController,
+        sliderNoteController: *mut crate::GlobalNamespace::SliderController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -146,7 +163,7 @@ impl BeatmapObjectManager {
     }
     pub fn Despawn_NoteController0(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -157,7 +174,7 @@ impl BeatmapObjectManager {
     }
     pub fn Despawn_ObstacleController1(
         &mut self,
-        obstacleController: *mut ObstacleController,
+        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -168,7 +185,7 @@ impl BeatmapObjectManager {
     }
     pub fn Despawn_SliderController2(
         &mut self,
-        sliderNoteController: *mut SliderController,
+        sliderNoteController: *mut crate::GlobalNamespace::SliderController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -189,7 +206,7 @@ impl BeatmapObjectManager {
     }
     pub fn HandleNoteControllerNoteDidDissolve(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -200,7 +217,7 @@ impl BeatmapObjectManager {
     }
     pub fn HandleNoteControllerNoteDidFinishJump(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -211,7 +228,7 @@ impl BeatmapObjectManager {
     }
     pub fn HandleNoteControllerNoteDidStartDissolving(
         &mut self,
-        noteController: *mut NoteControllerBase,
+        noteController: *mut crate::GlobalNamespace::NoteControllerBase,
         duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -226,7 +243,7 @@ impl BeatmapObjectManager {
     }
     pub fn HandleNoteControllerNoteDidStartJump(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -237,8 +254,8 @@ impl BeatmapObjectManager {
     }
     pub fn HandleNoteControllerNoteWasCut(
         &mut self,
-        noteController: *mut NoteController,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -249,7 +266,7 @@ impl BeatmapObjectManager {
     }
     pub fn HandleNoteControllerNoteWasMissed(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -260,7 +277,7 @@ impl BeatmapObjectManager {
     }
     pub fn HandleObstacleDidDissolve(
         &mut self,
-        obstacleController: *mut ObstacleController,
+        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -271,7 +288,7 @@ impl BeatmapObjectManager {
     }
     pub fn HandleObstacleFinishedMovement(
         &mut self,
-        obstacleController: *mut ObstacleController,
+        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -282,7 +299,7 @@ impl BeatmapObjectManager {
     }
     pub fn HandleObstaclePassedAvoidedMark(
         &mut self,
-        obstacleController: *mut ObstacleController,
+        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -293,7 +310,7 @@ impl BeatmapObjectManager {
     }
     pub fn HandleObstaclePassedThreeQuartersOfMove2(
         &mut self,
-        obstacleController: *mut ObstacleController,
+        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -304,7 +321,7 @@ impl BeatmapObjectManager {
     }
     pub fn HandleSliderDidDissolve(
         &mut self,
-        sliderController: *mut SliderController,
+        sliderController: *mut crate::GlobalNamespace::SliderController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -315,7 +332,7 @@ impl BeatmapObjectManager {
     }
     pub fn HandleSliderDidFinishJump(
         &mut self,
-        sliderController: *mut SliderController,
+        sliderController: *mut crate::GlobalNamespace::SliderController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -337,8 +354,8 @@ impl BeatmapObjectManager {
     }
     pub fn INoteControllerNoteWasCutEvent_HandleNoteControllerNoteWasCut(
         &mut self,
-        noteController: *mut NoteController,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -370,7 +387,7 @@ impl BeatmapObjectManager {
     }
     pub fn ProcessNoteData(
         &mut self,
-        noteData: *mut NoteData,
+        noteData: *mut crate::GlobalNamespace::NoteData,
         noteSpawnData: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
         >,
@@ -389,7 +406,7 @@ impl BeatmapObjectManager {
     }
     pub fn ProcessObstacleData(
         &mut self,
-        obstacleData: *mut ObstacleData,
+        obstacleData: *mut crate::GlobalNamespace::ObstacleData,
         obstacleSpawnData: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
         >,
@@ -404,7 +421,7 @@ impl BeatmapObjectManager {
     }
     pub fn ProcessSliderData(
         &mut self,
-        sliderData: *mut SliderData,
+        sliderData: *mut crate::GlobalNamespace::SliderData,
         sliderSpawnData: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
         >,
@@ -419,7 +436,7 @@ impl BeatmapObjectManager {
     }
     pub fn RemoveNoteControllerEventCallbacks(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -430,7 +447,7 @@ impl BeatmapObjectManager {
     }
     pub fn RemoveObstacleEventCallbacks(
         &mut self,
-        obstacleController: *mut ObstacleController,
+        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -441,7 +458,7 @@ impl BeatmapObjectManager {
     }
     pub fn RemoveSliderNoteControllerEventCallbacks(
         &mut self,
-        sliderNoteController: *mut SliderController,
+        sliderNoteController: *mut crate::GlobalNamespace::SliderController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -452,7 +469,7 @@ impl BeatmapObjectManager {
     }
     pub fn SetNoteControllerEventCallbacks(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -463,7 +480,7 @@ impl BeatmapObjectManager {
     }
     pub fn SetObstacleEventCallbacks(
         &mut self,
-        obstacleController: *mut ObstacleController,
+        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -474,7 +491,7 @@ impl BeatmapObjectManager {
     }
     pub fn SetSliderNoteControllerEventCallbacks(
         &mut self,
-        sliderNoteController: *mut SliderController,
+        sliderNoteController: *mut crate::GlobalNamespace::SliderController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -506,7 +523,9 @@ impl BeatmapObjectManager {
     }
     pub fn add_noteDidStartDissolvingEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteControllerBase>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::NoteControllerBase,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -517,7 +536,7 @@ impl BeatmapObjectManager {
     }
     pub fn add_noteDidStartJumpEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteController>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -529,7 +548,7 @@ impl BeatmapObjectManager {
     pub fn add_noteWasAddedEvent(
         &mut self,
         value: *mut crate::System::Action_3<
-            *mut NoteData,
+            *mut crate::GlobalNamespace::NoteData,
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
             f32,
         >,
@@ -554,7 +573,7 @@ impl BeatmapObjectManager {
     }
     pub fn add_noteWasDespawnedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteController>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -565,7 +584,7 @@ impl BeatmapObjectManager {
     }
     pub fn add_noteWasMissedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteController>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -576,7 +595,7 @@ impl BeatmapObjectManager {
     }
     pub fn add_noteWasSpawnedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteController>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -587,7 +606,9 @@ impl BeatmapObjectManager {
     }
     pub fn add_obstacleDidPassAvoidedMarkEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -598,7 +619,9 @@ impl BeatmapObjectManager {
     }
     pub fn add_obstacleDidPassThreeQuartersOfMove2Event(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -610,7 +633,7 @@ impl BeatmapObjectManager {
     pub fn add_obstacleWasAddedEvent(
         &mut self,
         value: *mut crate::System::Action_3<
-            *mut ObstacleData,
+            *mut crate::GlobalNamespace::ObstacleData,
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
             f32,
         >,
@@ -624,7 +647,9 @@ impl BeatmapObjectManager {
     }
     pub fn add_obstacleWasDespawnedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -635,7 +660,9 @@ impl BeatmapObjectManager {
     }
     pub fn add_obstacleWasSpawnedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -647,7 +674,7 @@ impl BeatmapObjectManager {
     pub fn add_sliderWasAddedEvent(
         &mut self,
         value: *mut crate::System::Action_3<
-            *mut SliderData,
+            *mut crate::GlobalNamespace::SliderData,
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
             f32,
         >,
@@ -661,7 +688,9 @@ impl BeatmapObjectManager {
     }
     pub fn add_sliderWasDespawnedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut SliderController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::SliderController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -672,7 +701,9 @@ impl BeatmapObjectManager {
     }
     pub fn add_sliderWasSpawnedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut SliderController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::SliderController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -684,13 +715,15 @@ impl BeatmapObjectManager {
     pub fn get_activeObstacleControllers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<*mut ObstacleController>,
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut ObstacleController,
+            *mut crate::GlobalNamespace::ObstacleController,
         > = __cordl_object.invoke("get_activeObstacleControllers", ())?;
         Ok(__cordl_ret)
     }
@@ -714,7 +747,9 @@ impl BeatmapObjectManager {
     }
     pub fn remove_noteDidStartDissolvingEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteControllerBase>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::NoteControllerBase,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -725,7 +760,7 @@ impl BeatmapObjectManager {
     }
     pub fn remove_noteDidStartJumpEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteController>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -737,7 +772,7 @@ impl BeatmapObjectManager {
     pub fn remove_noteWasAddedEvent(
         &mut self,
         value: *mut crate::System::Action_3<
-            *mut NoteData,
+            *mut crate::GlobalNamespace::NoteData,
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
             f32,
         >,
@@ -762,7 +797,7 @@ impl BeatmapObjectManager {
     }
     pub fn remove_noteWasDespawnedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteController>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -773,7 +808,7 @@ impl BeatmapObjectManager {
     }
     pub fn remove_noteWasMissedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteController>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -784,7 +819,7 @@ impl BeatmapObjectManager {
     }
     pub fn remove_noteWasSpawnedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteController>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -795,7 +830,9 @@ impl BeatmapObjectManager {
     }
     pub fn remove_obstacleDidPassAvoidedMarkEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -806,7 +843,9 @@ impl BeatmapObjectManager {
     }
     pub fn remove_obstacleDidPassThreeQuartersOfMove2Event(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -818,7 +857,7 @@ impl BeatmapObjectManager {
     pub fn remove_obstacleWasAddedEvent(
         &mut self,
         value: *mut crate::System::Action_3<
-            *mut ObstacleData,
+            *mut crate::GlobalNamespace::ObstacleData,
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
             f32,
         >,
@@ -832,7 +871,9 @@ impl BeatmapObjectManager {
     }
     pub fn remove_obstacleWasDespawnedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -843,7 +884,9 @@ impl BeatmapObjectManager {
     }
     pub fn remove_obstacleWasSpawnedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -855,7 +898,7 @@ impl BeatmapObjectManager {
     pub fn remove_sliderWasAddedEvent(
         &mut self,
         value: *mut crate::System::Action_3<
-            *mut SliderData,
+            *mut crate::GlobalNamespace::SliderData,
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
             f32,
         >,
@@ -869,7 +912,9 @@ impl BeatmapObjectManager {
     }
     pub fn remove_sliderWasDespawnedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut SliderController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::SliderController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -880,7 +925,9 @@ impl BeatmapObjectManager {
     }
     pub fn remove_sliderWasSpawnedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut SliderController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::SliderController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -902,7 +949,7 @@ impl BeatmapObjectManager {
     }
 }
 #[cfg(feature = "BeatmapObjectManager")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapObjectManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapObjectManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -941,8 +988,10 @@ for crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate {
 impl crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate {
     pub fn BeginInvoke(
         &mut self,
-        noteController: *mut NoteController,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::NoteCutInfo,
+        >,
         callback: *mut crate::System::AsyncCallback,
         object: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
@@ -955,7 +1004,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate {
     }
     pub fn EndInvoke(
         &mut self,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::NoteCutInfo,
+        >,
         result: *mut crate::System::IAsyncResult,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -967,8 +1018,8 @@ impl crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate {
     }
     pub fn Invoke(
         &mut self,
-        noteController: *mut NoteController,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

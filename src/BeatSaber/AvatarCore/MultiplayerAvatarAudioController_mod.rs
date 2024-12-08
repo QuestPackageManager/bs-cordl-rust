@@ -4,7 +4,7 @@
 pub struct MultiplayerAvatarAudioController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioSource: *mut crate::UnityEngine::AudioSource,
-    pub _connectedPlayer: *mut IConnectedPlayer,
+    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+MultiplayerAvatarAudioController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -59,7 +59,7 @@ impl crate::BeatSaber::AvatarCore::MultiplayerAvatarAudioController {
     }
     pub fn set_connectedPlayer(
         &mut self,
-        value: *mut IConnectedPlayer,
+        value: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

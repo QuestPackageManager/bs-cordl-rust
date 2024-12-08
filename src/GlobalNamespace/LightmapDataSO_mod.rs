@@ -2,29 +2,30 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightmapDataSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _lightmap1: *mut crate::UnityEngine::Texture2D,
     pub _lightmap2: *mut crate::UnityEngine::Texture2D,
 }
 #[cfg(feature = "LightmapDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightmapDataSO => ""."LightmapDataSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightmapDataSO => ""
+    ."LightmapDataSO"
 );
 #[cfg(feature = "LightmapDataSO")]
-impl std::ops::Deref for LightmapDataSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::LightmapDataSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightmapDataSO")]
-impl std::ops::DerefMut for LightmapDataSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightmapDataSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightmapDataSO")]
-impl LightmapDataSO {
+impl crate::GlobalNamespace::LightmapDataSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -86,7 +87,7 @@ impl LightmapDataSO {
     }
 }
 #[cfg(feature = "LightmapDataSO")]
-impl quest_hook::libil2cpp::ObjectType for LightmapDataSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightmapDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -155,10 +155,10 @@ impl crate::GlobalNamespace::OVRSceneManager_LogForwarder {
 #[derive(Debug)]
 pub struct OVRSceneManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub PlanePrefab: *mut OVRSceneAnchor,
-    pub VolumePrefab: *mut OVRSceneAnchor,
+    pub PlanePrefab: *mut crate::GlobalNamespace::OVRSceneAnchor,
+    pub VolumePrefab: *mut crate::GlobalNamespace::OVRSceneAnchor,
     pub PrefabOverrides: *mut crate::System::Collections::Generic::List_1<
-        *mut OVRScenePrefabOverride,
+        *mut crate::GlobalNamespace::OVRScenePrefabOverride,
     >,
     pub VerboseLogging: bool,
     pub MaxSceneAnchorUpdatesPerFrame: i32,
@@ -170,50 +170,53 @@ pub struct OVRSceneManager {
     pub NewSceneModelAvailable: *mut crate::System::Action,
     pub RoomLayout: *mut crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation,
     pub _sceneCaptureRequestId: u64,
-    pub _cameraRig: *mut OVRCameraRig,
+    pub _cameraRig: *mut crate::GlobalNamespace::OVRCameraRig,
     pub _sceneAnchorUpdateIndex: i32,
     pub _roomCounter: i32,
     pub _onAnchorsFetchCompleted: *mut crate::System::Action_2<
         bool,
-        *mut crate::System::Collections::Generic::List_1<OVRAnchor>,
+        *mut crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::OVRAnchor,
+        >,
     >,
     pub _hasLoadedScene: bool,
 }
 #[cfg(feature = "OVRSceneManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRSceneManager => ""."OVRSceneManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRSceneManager => ""
+    ."OVRSceneManager"
 );
 #[cfg(feature = "OVRSceneManager")]
-impl std::ops::Deref for OVRSceneManager {
+impl std::ops::Deref for crate::GlobalNamespace::OVRSceneManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSceneManager")]
-impl std::ops::DerefMut for OVRSceneManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSceneManager")]
-impl OVRSceneManager {
-    #[cfg(feature = "OVRSceneManager+__c__DisplayClass37_0")]
-    pub type __c__DisplayClass37_0 = crate::GlobalNamespace::OVRSceneManager___c__DisplayClass37_0;
-    #[cfg(feature = "OVRSceneManager+LogForwarder")]
-    pub type LogForwarder = crate::GlobalNamespace::OVRSceneManager_LogForwarder;
-    #[cfg(feature = "OVRSceneManager+__c__DisplayClass40_0")]
-    pub type __c__DisplayClass40_0 = crate::GlobalNamespace::OVRSceneManager___c__DisplayClass40_0;
+impl crate::GlobalNamespace::OVRSceneManager {
+    #[cfg(feature = "OVRSceneManager+Classification")]
+    pub type Classification = crate::GlobalNamespace::OVRSceneManager_Classification;
     #[cfg(feature = "OVRSceneManager+Development")]
     pub type Development = crate::GlobalNamespace::OVRSceneManager_Development;
+    #[cfg(feature = "OVRSceneManager+LogForwarder")]
+    pub type LogForwarder = crate::GlobalNamespace::OVRSceneManager_LogForwarder;
     #[cfg(feature = "OVRSceneManager+RoomLayoutInformation")]
     pub type RoomLayoutInformation = crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation;
     #[cfg(feature = "OVRSceneManager+_OnApplicationPause_d__28")]
     pub type _OnApplicationPause_d__28 = crate::GlobalNamespace::OVRSceneManager__OnApplicationPause_d__28;
     #[cfg(feature = "OVRSceneManager+_QueryForExistingAnchorsTransform_d__29")]
     pub type _QueryForExistingAnchorsTransform_d__29 = crate::GlobalNamespace::OVRSceneManager__QueryForExistingAnchorsTransform_d__29;
-    #[cfg(feature = "OVRSceneManager+Classification")]
-    pub type Classification = crate::GlobalNamespace::OVRSceneManager_Classification;
+    #[cfg(feature = "OVRSceneManager+__c__DisplayClass37_0")]
+    pub type __c__DisplayClass37_0 = crate::GlobalNamespace::OVRSceneManager___c__DisplayClass37_0;
+    #[cfg(feature = "OVRSceneManager+__c__DisplayClass40_0")]
+    pub type __c__DisplayClass40_0 = crate::GlobalNamespace::OVRSceneManager___c__DisplayClass40_0;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -239,11 +242,11 @@ impl OVRSceneManager {
         requestedAnchorClassifications: *mut crate::System::Collections::Generic::IEnumerable_1<
             *mut crate::System::String,
         >,
-    ) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: OVRTask_1<bool> = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = __cordl_object
             .invoke("DoesRoomSetupExist", (requestedAnchorClassifications))?;
         Ok(__cordl_ret)
     }
@@ -261,19 +264,21 @@ impl OVRSceneManager {
     }
     pub fn InstantiateSceneAnchor(
         &mut self,
-        anchor: OVRAnchor,
-        prefab: *mut OVRSceneAnchor,
-    ) -> quest_hook::libil2cpp::Result<*mut OVRSceneAnchor> {
+        anchor: crate::GlobalNamespace::OVRAnchor,
+        prefab: *mut crate::GlobalNamespace::OVRSceneAnchor,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::OVRSceneAnchor> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut OVRSceneAnchor = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::OVRSceneAnchor = __cordl_object
             .invoke("InstantiateSceneAnchor", (anchor, prefab))?;
         Ok(__cordl_ret)
     }
     pub fn InstantiateSceneRooms(
         &mut self,
-        roomLayoutAnchors: *mut crate::System::Collections::Generic::List_1<OVRAnchor>,
+        roomLayoutAnchors: *mut crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::OVRAnchor,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -311,7 +316,9 @@ impl OVRSceneManager {
     pub fn OnAnchorsFetchCompleted(
         &mut self,
         success: bool,
-        roomLayoutAnchors: *mut crate::System::Collections::Generic::List_1<OVRAnchor>,
+        roomLayoutAnchors: *mut crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::OVRAnchor,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -468,7 +475,7 @@ impl OVRSceneManager {
     }
 }
 #[cfg(feature = "OVRSceneManager")]
-impl quest_hook::libil2cpp::ObjectType for OVRSceneManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -481,9 +488,11 @@ impl quest_hook::libil2cpp::ObjectType for OVRSceneManager {
 #[derive(Debug)]
 pub struct OVRSceneManager_RoomLayoutInformation {
     __cordl_parent: crate::System::Object,
-    pub Floor: *mut OVRScenePlane,
-    pub Ceiling: *mut OVRScenePlane,
-    pub Walls: *mut crate::System::Collections::Generic::List_1<*mut OVRScenePlane>,
+    pub Floor: *mut crate::GlobalNamespace::OVRScenePlane,
+    pub Ceiling: *mut crate::GlobalNamespace::OVRScenePlane,
+    pub Walls: *mut crate::System::Collections::Generic::List_1<
+        *mut crate::GlobalNamespace::OVRScenePlane,
+    >,
 }
 #[cfg(feature = "OVRSceneManager+RoomLayoutInformation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

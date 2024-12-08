@@ -7,24 +7,24 @@ pub struct NoRichPresencePlatformHandler {
 }
 #[cfg(feature = "NoRichPresencePlatformHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoRichPresencePlatformHandler => ""
-    ."NoRichPresencePlatformHandler"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoRichPresencePlatformHandler
+    => ""."NoRichPresencePlatformHandler"
 );
 #[cfg(feature = "NoRichPresencePlatformHandler")]
-impl std::ops::Deref for NoRichPresencePlatformHandler {
+impl std::ops::Deref for crate::GlobalNamespace::NoRichPresencePlatformHandler {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoRichPresencePlatformHandler")]
-impl std::ops::DerefMut for NoRichPresencePlatformHandler {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoRichPresencePlatformHandler {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoRichPresencePlatformHandler")]
-impl NoRichPresencePlatformHandler {
+impl crate::GlobalNamespace::NoRichPresencePlatformHandler {
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -44,7 +44,7 @@ impl NoRichPresencePlatformHandler {
     }
     pub fn SetPresence(
         &mut self,
-        richPresenceData: *mut IRichPresenceData,
+        richPresenceData: *mut crate::GlobalNamespace::IRichPresenceData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -86,7 +86,8 @@ impl NoRichPresencePlatformHandler {
     }
 }
 #[cfg(feature = "NoRichPresencePlatformHandler")]
-impl quest_hook::libil2cpp::ObjectType for NoRichPresencePlatformHandler {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NoRichPresencePlatformHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

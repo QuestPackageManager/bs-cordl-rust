@@ -2,30 +2,30 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FadeInOnSceneTransitionFinished {
-    __cordl_parent: ZenjectSafeBehaviour,
-    pub _fadeInOut: *mut FadeInOutController,
-    pub _gameScenesManager: *mut GameScenesManager,
+    __cordl_parent: crate::GlobalNamespace::ZenjectSafeBehaviour,
+    pub _fadeInOut: *mut crate::GlobalNamespace::FadeInOutController,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
 }
 #[cfg(feature = "FadeInOnSceneTransitionFinished")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FadeInOnSceneTransitionFinished => ""
-    ."FadeInOnSceneTransitionFinished"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FadeInOnSceneTransitionFinished
+    => ""."FadeInOnSceneTransitionFinished"
 );
 #[cfg(feature = "FadeInOnSceneTransitionFinished")]
-impl std::ops::Deref for FadeInOnSceneTransitionFinished {
-    type Target = ZenjectSafeBehaviour;
+impl std::ops::Deref for crate::GlobalNamespace::FadeInOnSceneTransitionFinished {
+    type Target = crate::GlobalNamespace::ZenjectSafeBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FadeInOnSceneTransitionFinished")]
-impl std::ops::DerefMut for FadeInOnSceneTransitionFinished {
+impl std::ops::DerefMut for crate::GlobalNamespace::FadeInOnSceneTransitionFinished {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FadeInOnSceneTransitionFinished")]
-impl FadeInOnSceneTransitionFinished {
+impl crate::GlobalNamespace::FadeInOnSceneTransitionFinished {
     #[cfg(feature = "FadeInOnSceneTransitionFinished+_FadeCoroutine_d__4")]
     pub type _FadeCoroutine_d__4 = crate::GlobalNamespace::FadeInOnSceneTransitionFinished__FadeCoroutine_d__4;
     pub fn FadeCoroutine(
@@ -77,7 +77,8 @@ impl FadeInOnSceneTransitionFinished {
     }
 }
 #[cfg(feature = "FadeInOnSceneTransitionFinished")]
-impl quest_hook::libil2cpp::ObjectType for FadeInOnSceneTransitionFinished {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FadeInOnSceneTransitionFinished {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

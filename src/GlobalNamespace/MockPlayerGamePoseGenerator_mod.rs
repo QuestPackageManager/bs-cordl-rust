@@ -3,32 +3,32 @@
 #[derive(Debug)]
 pub struct MockPlayerGamePoseGenerator {
     __cordl_parent: crate::System::Object,
-    pub multiplayerSessionManager: *mut IMultiplayerSessionManager,
-    pub gameplayRpcManager: *mut IGameplayRpcManager,
+    pub multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
     pub leftHanded: bool,
-    pub mockNodePoseSyncStateSender: *mut MockNodePoseSyncStateSender,
-    pub mockScoreSyncStateSender: *mut MockScoreSyncStateSender,
+    pub mockNodePoseSyncStateSender: *mut crate::GlobalNamespace::MockNodePoseSyncStateSender,
+    pub mockScoreSyncStateSender: *mut crate::GlobalNamespace::MockScoreSyncStateSender,
 }
 #[cfg(feature = "MockPlayerGamePoseGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MockPlayerGamePoseGenerator => ""
-    ."MockPlayerGamePoseGenerator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MockPlayerGamePoseGenerator =>
+    ""."MockPlayerGamePoseGenerator"
 );
 #[cfg(feature = "MockPlayerGamePoseGenerator")]
-impl std::ops::Deref for MockPlayerGamePoseGenerator {
+impl std::ops::Deref for crate::GlobalNamespace::MockPlayerGamePoseGenerator {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockPlayerGamePoseGenerator")]
-impl std::ops::DerefMut for MockPlayerGamePoseGenerator {
+impl std::ops::DerefMut for crate::GlobalNamespace::MockPlayerGamePoseGenerator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockPlayerGamePoseGenerator")]
-impl MockPlayerGamePoseGenerator {
+impl crate::GlobalNamespace::MockPlayerGamePoseGenerator {
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -42,8 +42,8 @@ impl MockPlayerGamePoseGenerator {
     pub fn Init(
         &mut self,
         introStartTime: i64,
-        beatmapData: *mut MockBeatmapData,
-        gameplayModifiers: *mut GameplayModifiers,
+        beatmapData: *mut crate::GlobalNamespace::MockBeatmapData,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
         onSongFinished: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -57,8 +57,8 @@ impl MockPlayerGamePoseGenerator {
         Ok(__cordl_ret)
     }
     pub fn New(
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
-        gameplayRpcManager: *mut IGameplayRpcManager,
+        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+        gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
         leftHanded: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -102,8 +102,8 @@ impl MockPlayerGamePoseGenerator {
     }
     pub fn _ctor(
         &mut self,
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
-        gameplayRpcManager: *mut IGameplayRpcManager,
+        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+        gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
         leftHanded: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -118,7 +118,8 @@ impl MockPlayerGamePoseGenerator {
     }
 }
 #[cfg(feature = "MockPlayerGamePoseGenerator")]
-impl quest_hook::libil2cpp::ObjectType for MockPlayerGamePoseGenerator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MockPlayerGamePoseGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

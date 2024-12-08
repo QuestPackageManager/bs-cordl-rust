@@ -29,10 +29,6 @@ for crate::Zenject::FactorySubContainerBinder_1<TContract> {
 impl<
     TContract: quest_hook::libil2cpp::Type,
 > crate::Zenject::FactorySubContainerBinder_1<TContract> {
-    #[cfg(feature = "Zenject+FactorySubContainerBinder_1+__c__DisplayClass8_0")]
-    pub type __c__DisplayClass8_0 = crate::Zenject::FactorySubContainerBinder_1___c__DisplayClass8_0<
-        TContract,
-    >;
     #[cfg(feature = "Zenject+FactorySubContainerBinder_1+__c__DisplayClass1_0")]
     pub type __c__DisplayClass1_0 = crate::Zenject::FactorySubContainerBinder_1___c__DisplayClass1_0<
         TContract,
@@ -51,6 +47,10 @@ impl<
     >;
     #[cfg(feature = "Zenject+FactorySubContainerBinder_1+__c__DisplayClass6_0")]
     pub type __c__DisplayClass6_0 = crate::Zenject::FactorySubContainerBinder_1___c__DisplayClass6_0<
+        TContract,
+    >;
+    #[cfg(feature = "Zenject+FactorySubContainerBinder_1+__c__DisplayClass8_0")]
+    pub type __c__DisplayClass8_0 = crate::Zenject::FactorySubContainerBinder_1___c__DisplayClass8_0<
         TContract,
     >;
     pub fn ByMethod(

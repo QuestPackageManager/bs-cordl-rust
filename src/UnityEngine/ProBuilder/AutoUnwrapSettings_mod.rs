@@ -51,10 +51,10 @@ for crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings")]
 impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
-    #[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Fill")]
-    pub type Fill = crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Fill;
     #[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Anchor")]
     pub type Anchor = crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor;
+    #[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Fill")]
+    pub type Fill = crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Fill;
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -72,30 +72,12 @@ impl std::ops::DerefMut for crate::LiteNetLib::Utils::NetPacketProcessor {
 }
 #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor")]
 impl crate::LiteNetLib::Utils::NetPacketProcessor {
-    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass32_0_1")]
-    pub type __c__DisplayClass32_0_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetPacketProcessor___c__DisplayClass32_0_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass31_0_2")]
-    pub type __c__DisplayClass31_0_2<
-        T: quest_hook::libil2cpp::Type,
-        TUserData: quest_hook::libil2cpp::Type,
-    > = crate::LiteNetLib::Utils::NetPacketProcessor___c__DisplayClass31_0_2<
-        T,
-        TUserData,
-    >;
     #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+HashCache_1")]
     pub type HashCache_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetPacketProcessor_HashCache_1<
         T,
     >;
-    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass29_0_2")]
-    pub type __c__DisplayClass29_0_2<
-        T: quest_hook::libil2cpp::Type,
-        TUserData: quest_hook::libil2cpp::Type,
-    > = crate::LiteNetLib::Utils::NetPacketProcessor___c__DisplayClass29_0_2<
-        T,
-        TUserData,
-    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+SubscribeDelegate")]
+    pub type SubscribeDelegate = crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate;
     #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass25_0_1")]
     pub type __c__DisplayClass25_0_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetPacketProcessor___c__DisplayClass25_0_1<
         T,
@@ -108,8 +90,8 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
         T,
         TUserData,
     >;
-    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass30_0_1")]
-    pub type __c__DisplayClass30_0_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetPacketProcessor___c__DisplayClass30_0_1<
+    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass27_0_1")]
+    pub type __c__DisplayClass27_0_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetPacketProcessor___c__DisplayClass27_0_1<
         T,
     >;
     #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass28_0_2")]
@@ -120,12 +102,30 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
         T,
         TUserData,
     >;
-    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass27_0_1")]
-    pub type __c__DisplayClass27_0_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetPacketProcessor___c__DisplayClass27_0_1<
+    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass29_0_2")]
+    pub type __c__DisplayClass29_0_2<
+        T: quest_hook::libil2cpp::Type,
+        TUserData: quest_hook::libil2cpp::Type,
+    > = crate::LiteNetLib::Utils::NetPacketProcessor___c__DisplayClass29_0_2<
+        T,
+        TUserData,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass30_0_1")]
+    pub type __c__DisplayClass30_0_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetPacketProcessor___c__DisplayClass30_0_1<
         T,
     >;
-    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+SubscribeDelegate")]
-    pub type SubscribeDelegate = crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate;
+    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass31_0_2")]
+    pub type __c__DisplayClass31_0_2<
+        T: quest_hook::libil2cpp::Type,
+        TUserData: quest_hook::libil2cpp::Type,
+    > = crate::LiteNetLib::Utils::NetPacketProcessor___c__DisplayClass31_0_2<
+        T,
+        TUserData,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass32_0_1")]
+    pub type __c__DisplayClass32_0_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetPacketProcessor___c__DisplayClass32_0_1<
+        T,
+    >;
     pub fn GetCallbackFromData(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,

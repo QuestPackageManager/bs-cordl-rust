@@ -150,16 +150,16 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     pub const k_UVChannelCount: i32 = 4i32;
     pub const k_UnitializedVersionIndex: u16 = 0u16;
     pub const maxVertexCount: u32 = 4294901952u32;
+    #[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
+    pub type CacheValidState = crate::UnityEngine::ProBuilder::ProBuilderMesh_CacheValidState;
+    #[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
+    pub type NonVersionedEditScope = crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope;
     #[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+__c")]
     pub type __c = crate::UnityEngine::ProBuilder::ProBuilderMesh___c;
     #[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+__c__DisplayClass174_0")]
     pub type __c__DisplayClass174_0 = crate::UnityEngine::ProBuilder::ProBuilderMesh___c__DisplayClass174_0;
-    #[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
-    pub type CacheValidState = crate::UnityEngine::ProBuilder::ProBuilderMesh_CacheValidState;
     #[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+__c__DisplayClass176_0")]
     pub type __c__DisplayClass176_0 = crate::UnityEngine::ProBuilder::ProBuilderMesh___c__DisplayClass176_0;
-    #[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
-    pub type NonVersionedEditScope = crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope;
     pub fn AddSharedVertex(
         &mut self,
         vertex: *mut crate::UnityEngine::ProBuilder::SharedVertex,

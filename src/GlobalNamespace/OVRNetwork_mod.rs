@@ -58,32 +58,32 @@ pub struct OVRNetwork {
 }
 #[cfg(feature = "OVRNetwork")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRNetwork => ""."OVRNetwork"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRNetwork => ""."OVRNetwork"
 );
 #[cfg(feature = "OVRNetwork")]
-impl std::ops::Deref for OVRNetwork {
+impl std::ops::Deref for crate::GlobalNamespace::OVRNetwork {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRNetwork")]
-impl std::ops::DerefMut for OVRNetwork {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRNetwork {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRNetwork")]
-impl OVRNetwork {
+impl crate::GlobalNamespace::OVRNetwork {
     pub const FrameHeaderMagicIdentifier: u32 = 2208787440u32;
     pub const MaxBufferLength: i32 = 65536i32;
     pub const MaxPayloadLength: i32 = 65524i32;
-    #[cfg(feature = "OVRNetwork+OVRNetworkTcpServer")]
-    pub type OVRNetworkTcpServer = crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer;
-    #[cfg(feature = "OVRNetwork+OVRNetworkTcpClient")]
-    pub type OVRNetworkTcpClient = crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient;
     #[cfg(feature = "OVRNetwork+FrameHeader")]
     pub type FrameHeader = crate::GlobalNamespace::OVRNetwork_FrameHeader;
+    #[cfg(feature = "OVRNetwork+OVRNetworkTcpClient")]
+    pub type OVRNetworkTcpClient = crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient;
+    #[cfg(feature = "OVRNetwork+OVRNetworkTcpServer")]
+    pub type OVRNetworkTcpServer = crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -103,7 +103,7 @@ impl OVRNetwork {
     }
 }
 #[cfg(feature = "OVRNetwork")]
-impl quest_hook::libil2cpp::ObjectType for OVRNetwork {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRNetwork {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

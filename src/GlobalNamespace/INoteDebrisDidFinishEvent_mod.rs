@@ -6,27 +6,27 @@ pub struct INoteDebrisDidFinishEvent {
 }
 #[cfg(feature = "INoteDebrisDidFinishEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for INoteDebrisDidFinishEvent => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::INoteDebrisDidFinishEvent => ""
     ."INoteDebrisDidFinishEvent"
 );
 #[cfg(feature = "INoteDebrisDidFinishEvent")]
-impl std::ops::Deref for INoteDebrisDidFinishEvent {
+impl std::ops::Deref for crate::GlobalNamespace::INoteDebrisDidFinishEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "INoteDebrisDidFinishEvent")]
-impl std::ops::DerefMut for INoteDebrisDidFinishEvent {
+impl std::ops::DerefMut for crate::GlobalNamespace::INoteDebrisDidFinishEvent {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "INoteDebrisDidFinishEvent")]
-impl INoteDebrisDidFinishEvent {
+impl crate::GlobalNamespace::INoteDebrisDidFinishEvent {
     pub fn HandleNoteDebrisDidFinish(
         &mut self,
-        noteDebris: *mut NoteDebris,
+        noteDebris: *mut crate::GlobalNamespace::NoteDebris,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -42,7 +42,8 @@ impl INoteDebrisDidFinishEvent {
     }
 }
 #[cfg(feature = "INoteDebrisDidFinishEvent")]
-impl quest_hook::libil2cpp::ObjectType for INoteDebrisDidFinishEvent {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::INoteDebrisDidFinishEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

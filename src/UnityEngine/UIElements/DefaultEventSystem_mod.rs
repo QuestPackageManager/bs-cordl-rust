@@ -47,20 +47,20 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::DefaultEventSystem {
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem")]
 impl crate::UnityEngine::UIElements::DefaultEventSystem {
-    #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+__c")]
-    pub type __c = crate::UnityEngine::UIElements::DefaultEventSystem___c;
     #[cfg(
         feature = "UnityEngine+UIElements+DefaultEventSystem+FocusBasedEventSequenceContext"
     )]
     pub type FocusBasedEventSequenceContext = crate::UnityEngine::UIElements::DefaultEventSystem_FocusBasedEventSequenceContext;
     #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+IInput")]
     type IInput = crate::UnityEngine::UIElements::DefaultEventSystem_IInput;
-    #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+UpdateMode")]
-    pub type UpdateMode = crate::UnityEngine::UIElements::DefaultEventSystem_UpdateMode;
     #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+Input")]
     pub type Input = crate::UnityEngine::UIElements::DefaultEventSystem_Input;
     #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+NoInput")]
     pub type NoInput = crate::UnityEngine::UIElements::DefaultEventSystem_NoInput;
+    #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+UpdateMode")]
+    pub type UpdateMode = crate::UnityEngine::UIElements::DefaultEventSystem_UpdateMode;
+    #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+__c")]
+    pub type __c = crate::UnityEngine::UIElements::DefaultEventSystem___c;
     pub fn FocusBasedEventSequence(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

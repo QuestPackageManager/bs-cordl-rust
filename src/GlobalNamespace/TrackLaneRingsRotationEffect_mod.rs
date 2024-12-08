@@ -65,7 +65,7 @@ for crate::GlobalNamespace::TrackLaneRingsRotationEffect_RingRotationEffect {
 #[derive(Debug)]
 pub struct TrackLaneRingsRotationEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _trackLaneRingsManager: *mut TrackLaneRingsManager,
+    pub _trackLaneRingsManager: *mut crate::GlobalNamespace::TrackLaneRingsManager,
     pub _startupRotationAngle: f32,
     pub _startupRotationStep: f32,
     pub _startupRotationPropagationSpeed: i32,
@@ -82,24 +82,24 @@ pub struct TrackLaneRingsRotationEffect {
 }
 #[cfg(feature = "TrackLaneRingsRotationEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TrackLaneRingsRotationEffect => ""
-    ."TrackLaneRingsRotationEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TrackLaneRingsRotationEffect =>
+    ""."TrackLaneRingsRotationEffect"
 );
 #[cfg(feature = "TrackLaneRingsRotationEffect")]
-impl std::ops::Deref for TrackLaneRingsRotationEffect {
+impl std::ops::Deref for crate::GlobalNamespace::TrackLaneRingsRotationEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TrackLaneRingsRotationEffect")]
-impl std::ops::DerefMut for TrackLaneRingsRotationEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::TrackLaneRingsRotationEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TrackLaneRingsRotationEffect")]
-impl TrackLaneRingsRotationEffect {
+impl crate::GlobalNamespace::TrackLaneRingsRotationEffect {
     #[cfg(feature = "TrackLaneRingsRotationEffect+RingRotationEffect")]
     pub type RingRotationEffect = crate::GlobalNamespace::TrackLaneRingsRotationEffect_RingRotationEffect;
     pub fn AddRingRotationEffect(
@@ -208,7 +208,8 @@ impl TrackLaneRingsRotationEffect {
     }
 }
 #[cfg(feature = "TrackLaneRingsRotationEffect")]
-impl quest_hook::libil2cpp::ObjectType for TrackLaneRingsRotationEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::TrackLaneRingsRotationEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

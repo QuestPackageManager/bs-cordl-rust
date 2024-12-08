@@ -4,30 +4,31 @@
 pub struct ArrayPositionTween {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
     pub arrayReference: crate::UnityEngine::ExposedReference_1<
-        *mut TimelineArrayReference,
+        *mut crate::GlobalNamespace::TimelineArrayReference,
     >,
     pub elementDelay: f32,
-    pub _cordl_template: *mut CustomTweenBehaviour,
+    pub _cordl_template: *mut crate::GlobalNamespace::CustomTweenBehaviour,
 }
 #[cfg(feature = "ArrayPositionTween")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ArrayPositionTween => ""."ArrayPositionTween"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ArrayPositionTween => ""
+    ."ArrayPositionTween"
 );
 #[cfg(feature = "ArrayPositionTween")]
-impl std::ops::Deref for ArrayPositionTween {
+impl std::ops::Deref for crate::GlobalNamespace::ArrayPositionTween {
     type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ArrayPositionTween")]
-impl std::ops::DerefMut for ArrayPositionTween {
+impl std::ops::DerefMut for crate::GlobalNamespace::ArrayPositionTween {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ArrayPositionTween")]
-impl ArrayPositionTween {
+impl crate::GlobalNamespace::ArrayPositionTween {
     pub fn CreatePlayable(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,
@@ -69,7 +70,7 @@ impl ArrayPositionTween {
     }
 }
 #[cfg(feature = "ArrayPositionTween")]
-impl quest_hook::libil2cpp::ObjectType for ArrayPositionTween {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ArrayPositionTween {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

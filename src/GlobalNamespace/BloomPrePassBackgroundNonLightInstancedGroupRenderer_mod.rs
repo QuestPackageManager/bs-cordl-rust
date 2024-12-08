@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundNonLightInstancedGroupRenderer {
-    __cordl_parent: BloomPrePassNonLightPass,
+    __cordl_parent: crate::GlobalNamespace::BloomPrePassNonLightPass,
     pub _renderers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut BloomPrePassBackgroundNonLightRenderer,
+        *mut crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer,
     >,
     pub _supportedProperties: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_SupportedProperty,
@@ -28,31 +28,34 @@ pub struct BloomPrePassBackgroundNonLightInstancedGroupRenderer {
 }
 #[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomPrePassBackgroundNonLightInstancedGroupRenderer =>
-    ""."BloomPrePassBackgroundNonLightInstancedGroupRenderer"
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer => ""
+    ."BloomPrePassBackgroundNonLightInstancedGroupRenderer"
 );
 #[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer")]
-impl std::ops::Deref for BloomPrePassBackgroundNonLightInstancedGroupRenderer {
-    type Target = BloomPrePassNonLightPass;
+impl std::ops::Deref
+for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer {
+    type Target = crate::GlobalNamespace::BloomPrePassNonLightPass;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer")]
-impl std::ops::DerefMut for BloomPrePassBackgroundNonLightInstancedGroupRenderer {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer")]
-impl BloomPrePassBackgroundNonLightInstancedGroupRenderer {
+impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer {
     pub const kInternalMatricesCachingId: &'static str = "INTERNAL_MATRICES";
+    #[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer+PropertyType")]
+    pub type PropertyType = crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_PropertyType;
     #[cfg(
         feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer+SupportedProperty"
     )]
     pub type SupportedProperty = crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_SupportedProperty;
-    #[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer+PropertyType")]
-    pub type PropertyType = crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_PropertyType;
     pub fn AutoFillRenderers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -155,7 +158,7 @@ impl BloomPrePassBackgroundNonLightInstancedGroupRenderer {
 }
 #[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer")]
 impl quest_hook::libil2cpp::ObjectType
-for BloomPrePassBackgroundNonLightInstancedGroupRenderer {
+for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -15,29 +15,30 @@ pub struct AnnotatedBeatmapLevelCollectionCell {
     pub _highlightedColor1: crate::UnityEngine::Color,
     pub _defaultCoverSprite: *mut crate::UnityEngine::Sprite,
     pub _cellIndex_k__BackingField: i32,
-    pub _beatmapLevelPack: *mut BeatmapLevelPack,
+    pub _beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
     pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AnnotatedBeatmapLevelCollectionCell => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell => ""
     ."AnnotatedBeatmapLevelCollectionCell"
 );
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionCell")]
-impl std::ops::Deref for AnnotatedBeatmapLevelCollectionCell {
+impl std::ops::Deref for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell {
     type Target = crate::HMUI::SelectableCell;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionCell")]
-impl std::ops::DerefMut for AnnotatedBeatmapLevelCollectionCell {
+impl std::ops::DerefMut for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionCell")]
-impl AnnotatedBeatmapLevelCollectionCell {
+impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell {
     #[cfg(
         feature = "AnnotatedBeatmapLevelCollectionCell+_RefreshAvailabilityAsync_d__23"
     )]
@@ -95,7 +96,7 @@ impl AnnotatedBeatmapLevelCollectionCell {
     }
     pub fn RefreshAvailabilityAsync(
         &mut self,
-        entitlementModel: *mut IEntitlementModel,
+        entitlementModel: *mut crate::GlobalNamespace::IEntitlementModel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -127,7 +128,7 @@ impl AnnotatedBeatmapLevelCollectionCell {
     }
     pub fn SetData(
         &mut self,
-        beatmapLevelPack: *mut BeatmapLevelPack,
+        beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
         isPromoted: bool,
         isUpdated: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -179,7 +180,8 @@ impl AnnotatedBeatmapLevelCollectionCell {
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionCell")]
-impl quest_hook::libil2cpp::ObjectType for AnnotatedBeatmapLevelCollectionCell {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,41 +2,41 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalLeaderboardViewController {
-    __cordl_parent: LeaderboardViewController,
+    __cordl_parent: crate::GlobalNamespace::LeaderboardViewController,
     pub _maxNumberOfCells: i32,
-    pub _leaderboardTableView: *mut LocalLeaderboardTableView,
+    pub _leaderboardTableView: *mut crate::GlobalNamespace::LocalLeaderboardTableView,
     pub _clearLeaderboardsWrapper: *mut crate::UnityEngine::GameObject,
     pub _clearLeaderboardsButton: *mut crate::HMUI::NoTransitionsButton,
     pub _scopeSegmentedControl: *mut crate::HMUI::IconSegmentedControl,
     pub _allTimeLeaderboardIcon: *mut crate::UnityEngine::Sprite,
     pub _todayLeaderboardIcon: *mut crate::UnityEngine::Sprite,
     pub _clearLeaderboardIcon: *mut crate::UnityEngine::Sprite,
-    pub _playerDataModel: *mut PlayerDataModel,
-    pub _localLeaderboardsModel: *mut LocalLeaderboardsModel,
-    pub _beatmapKey: BeatmapKey,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _localLeaderboardsModel: *mut crate::GlobalNamespace::LocalLeaderboardsModel,
+    pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
     pub _refreshIsNeeded: bool,
     pub _enableClear: bool,
 }
 #[cfg(feature = "LocalLeaderboardViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LocalLeaderboardViewController => ""
-    ."LocalLeaderboardViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LocalLeaderboardViewController
+    => ""."LocalLeaderboardViewController"
 );
 #[cfg(feature = "LocalLeaderboardViewController")]
-impl std::ops::Deref for LocalLeaderboardViewController {
-    type Target = LeaderboardViewController;
+impl std::ops::Deref for crate::GlobalNamespace::LocalLeaderboardViewController {
+    type Target = crate::GlobalNamespace::LeaderboardViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LocalLeaderboardViewController")]
-impl std::ops::DerefMut for LocalLeaderboardViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::LocalLeaderboardViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LocalLeaderboardViewController")]
-impl LocalLeaderboardViewController {
+impl crate::GlobalNamespace::LocalLeaderboardViewController {
     #[cfg(feature = "LocalLeaderboardViewController+_ClearLeaderboardsAsync_d__24")]
     pub type _ClearLeaderboardsAsync_d__24 = crate::GlobalNamespace::LocalLeaderboardViewController__ClearLeaderboardsAsync_d__24;
     pub fn ClearLeaderboardsAsync(
@@ -168,7 +168,7 @@ impl LocalLeaderboardViewController {
     }
     pub fn SetData(
         &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -210,17 +210,20 @@ impl LocalLeaderboardViewController {
     }
     pub fn get_leaderboardsModel(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut LocalLeaderboardsModel> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::LocalLeaderboardsModel,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut LocalLeaderboardsModel = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::LocalLeaderboardsModel = __cordl_object
             .invoke("get_leaderboardsModel", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "LocalLeaderboardViewController")]
-impl quest_hook::libil2cpp::ObjectType for LocalLeaderboardViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LocalLeaderboardViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

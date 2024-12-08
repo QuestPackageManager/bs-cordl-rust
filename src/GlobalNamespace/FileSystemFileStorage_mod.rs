@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemFileStorage_DeleteFileCommand {
-    __cordl_parent: SyncBackgroundCommand,
+    __cordl_parent: crate::GlobalNamespace::SyncBackgroundCommand,
     pub _filePath: *mut crate::System::String,
 }
 #[cfg(feature = "FileSystemFileStorage+DeleteFileCommand")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "FileSystemFileStorage+DeleteFileCommand")]
 impl std::ops::Deref
 for crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
-    type Target = SyncBackgroundCommand;
+    type Target = crate::GlobalNamespace::SyncBackgroundCommand;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,7 +73,7 @@ for crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemFileStorage_FileExistsCommand {
-    __cordl_parent: SyncBackgroundCommand_1<bool>,
+    __cordl_parent: crate::GlobalNamespace::SyncBackgroundCommand_1<bool>,
     pub _filePath: *mut crate::System::String,
 }
 #[cfg(feature = "FileSystemFileStorage+FileExistsCommand")]
@@ -85,7 +85,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "FileSystemFileStorage+FileExistsCommand")]
 impl std::ops::Deref
 for crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand {
-    type Target = SyncBackgroundCommand_1<bool>;
+    type Target = crate::GlobalNamespace::SyncBackgroundCommand_1<bool>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -145,42 +145,43 @@ pub struct FileSystemFileStorage {
     pub _persistentDataPath: *mut crate::System::String,
     pub _commandQueueMap: *mut crate::System::Collections::Concurrent::ConcurrentDictionary_2<
         *mut crate::System::String,
-        *mut BackgroundCommandQueue,
+        *mut crate::GlobalNamespace::BackgroundCommandQueue,
     >,
 }
 #[cfg(feature = "FileSystemFileStorage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FileSystemFileStorage => ""."FileSystemFileStorage"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FileSystemFileStorage => ""
+    ."FileSystemFileStorage"
 );
 #[cfg(feature = "FileSystemFileStorage")]
-impl std::ops::Deref for FileSystemFileStorage {
+impl std::ops::Deref for crate::GlobalNamespace::FileSystemFileStorage {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FileSystemFileStorage")]
-impl std::ops::DerefMut for FileSystemFileStorage {
+impl std::ops::DerefMut for crate::GlobalNamespace::FileSystemFileStorage {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FileSystemFileStorage")]
-impl FileSystemFileStorage {
-    #[cfg(feature = "FileSystemFileStorage+SaveFileCommand")]
-    pub type SaveFileCommand = crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand;
-    #[cfg(feature = "FileSystemFileStorage+LoadFileCommand")]
-    pub type LoadFileCommand = crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand;
-    #[cfg(feature = "FileSystemFileStorage+__c")]
-    pub type __c = crate::GlobalNamespace::FileSystemFileStorage___c;
-    #[cfg(feature = "FileSystemFileStorage+FileExistsCommand")]
-    pub type FileExistsCommand = crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand;
+impl crate::GlobalNamespace::FileSystemFileStorage {
     #[cfg(feature = "FileSystemFileStorage+DeleteFileCommand")]
     pub type DeleteFileCommand = crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand;
+    #[cfg(feature = "FileSystemFileStorage+FileExistsCommand")]
+    pub type FileExistsCommand = crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand;
+    #[cfg(feature = "FileSystemFileStorage+LoadFileCommand")]
+    pub type LoadFileCommand = crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand;
+    #[cfg(feature = "FileSystemFileStorage+SaveFileCommand")]
+    pub type SaveFileCommand = crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand;
+    #[cfg(feature = "FileSystemFileStorage+__c")]
+    pub type __c = crate::GlobalNamespace::FileSystemFileStorage___c;
     pub fn DeleteFileAsync(
         &mut self,
         fileName: *mut crate::System::String,
-        storageLocation: StoragePreference,
+        storageLocation: crate::GlobalNamespace::StoragePreference,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -192,7 +193,7 @@ impl FileSystemFileStorage {
     pub fn FileExistsAsync(
         &mut self,
         fileName: *mut crate::System::String,
-        storageLocation: StoragePreference,
+        storageLocation: crate::GlobalNamespace::StoragePreference,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<bool>,
     > {
@@ -206,18 +207,20 @@ impl FileSystemFileStorage {
     pub fn GetCommandQueue(
         &mut self,
         fileName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut BackgroundCommandQueue> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BackgroundCommandQueue,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BackgroundCommandQueue = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BackgroundCommandQueue = __cordl_object
             .invoke("GetCommandQueue", (fileName))?;
         Ok(__cordl_ret)
     }
     pub fn GetFilePath(
         &mut self,
         fileName: *mut crate::System::String,
-        storageLocation: StoragePreference,
+        storageLocation: crate::GlobalNamespace::StoragePreference,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -229,7 +232,7 @@ impl FileSystemFileStorage {
     pub fn LoadFileAsync(
         &mut self,
         fileName: *mut crate::System::String,
-        storageLocation: StoragePreference,
+        storageLocation: crate::GlobalNamespace::StoragePreference,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::String>,
     > {
@@ -252,7 +255,7 @@ impl FileSystemFileStorage {
         &mut self,
         fileName: *mut crate::System::String,
         value: *mut crate::System::String,
-        storageLocation: StoragePreference,
+        storageLocation: crate::GlobalNamespace::StoragePreference,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -273,7 +276,8 @@ impl FileSystemFileStorage {
     }
 }
 #[cfg(feature = "FileSystemFileStorage")]
-impl quest_hook::libil2cpp::ObjectType for FileSystemFileStorage {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FileSystemFileStorage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -285,7 +289,9 @@ impl quest_hook::libil2cpp::ObjectType for FileSystemFileStorage {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemFileStorage_LoadFileCommand {
-    __cordl_parent: SyncBackgroundCommand_1<*mut crate::System::String>,
+    __cordl_parent: crate::GlobalNamespace::SyncBackgroundCommand_1<
+        *mut crate::System::String,
+    >,
     pub _filePath: *mut crate::System::String,
 }
 #[cfg(feature = "FileSystemFileStorage+LoadFileCommand")]
@@ -296,7 +302,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FileSystemFileStorage+LoadFileCommand")]
 impl std::ops::Deref for crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand {
-    type Target = SyncBackgroundCommand_1<*mut crate::System::String>;
+    type Target = crate::GlobalNamespace::SyncBackgroundCommand_1<
+        *mut crate::System::String,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -355,7 +363,7 @@ for crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemFileStorage_SaveFileCommand {
-    __cordl_parent: SyncBackgroundCommand,
+    __cordl_parent: crate::GlobalNamespace::SyncBackgroundCommand,
     pub _filePath: *mut crate::System::String,
     pub _value: *mut crate::System::String,
 }
@@ -367,7 +375,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FileSystemFileStorage+SaveFileCommand")]
 impl std::ops::Deref for crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand {
-    type Target = SyncBackgroundCommand;
+    type Target = crate::GlobalNamespace::SyncBackgroundCommand;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

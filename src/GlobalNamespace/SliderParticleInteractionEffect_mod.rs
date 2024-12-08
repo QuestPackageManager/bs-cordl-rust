@@ -2,35 +2,35 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderParticleInteractionEffect {
-    __cordl_parent: SliderInteractionEffect,
+    __cordl_parent: crate::GlobalNamespace::SliderInteractionEffect,
     pub _particleSystems: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::ParticleSystem,
     >,
-    pub _colorManager: *mut ColorManager,
-    pub _saberManager: *mut SaberManager,
+    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
+    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
     pub _startColor: crate::UnityEngine::Color,
-    pub _saber: *mut Saber,
+    pub _saber: *mut crate::GlobalNamespace::Saber,
 }
 #[cfg(feature = "SliderParticleInteractionEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SliderParticleInteractionEffect => ""
-    ."SliderParticleInteractionEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SliderParticleInteractionEffect
+    => ""."SliderParticleInteractionEffect"
 );
 #[cfg(feature = "SliderParticleInteractionEffect")]
-impl std::ops::Deref for SliderParticleInteractionEffect {
-    type Target = SliderInteractionEffect;
+impl std::ops::Deref for crate::GlobalNamespace::SliderParticleInteractionEffect {
+    type Target = crate::GlobalNamespace::SliderInteractionEffect;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderParticleInteractionEffect")]
-impl std::ops::DerefMut for SliderParticleInteractionEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::SliderParticleInteractionEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderParticleInteractionEffect")]
-impl SliderParticleInteractionEffect {
+impl crate::GlobalNamespace::SliderParticleInteractionEffect {
     pub fn EndEffect(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -102,7 +102,8 @@ impl SliderParticleInteractionEffect {
     }
 }
 #[cfg(feature = "SliderParticleInteractionEffect")]
-impl quest_hook::libil2cpp::ObjectType for SliderParticleInteractionEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SliderParticleInteractionEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

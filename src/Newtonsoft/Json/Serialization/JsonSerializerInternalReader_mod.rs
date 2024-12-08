@@ -108,20 +108,20 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader")]
 impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
+    #[cfg(
+        feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+CreatorPropertyContext"
+    )]
+    pub type CreatorPropertyContext = crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext;
+    #[cfg(
+        feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
+    )]
+    pub type PropertyPresence = crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence;
     #[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+__c")]
     pub type __c = crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader___c;
     #[cfg(
         feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+__c__DisplayClass38_0"
     )]
     pub type __c__DisplayClass38_0 = crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader___c__DisplayClass38_0;
-    #[cfg(
-        feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
-    )]
-    pub type PropertyPresence = crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence;
-    #[cfg(
-        feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+CreatorPropertyContext"
-    )]
-    pub type CreatorPropertyContext = crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext;
     pub fn AddReference(
         &mut self,
         reader: *mut crate::Newtonsoft::Json::JsonReader,

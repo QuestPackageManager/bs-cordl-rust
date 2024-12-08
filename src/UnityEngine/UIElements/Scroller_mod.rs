@@ -28,12 +28,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Scroller {
 }
 #[cfg(feature = "UnityEngine+UIElements+Scroller")]
 impl crate::UnityEngine::UIElements::Scroller {
+    #[cfg(feature = "UnityEngine+UIElements+Scroller+ScrollerSlider")]
+    pub type ScrollerSlider = crate::UnityEngine::UIElements::Scroller_ScrollerSlider;
     #[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlFactory")]
     pub type UxmlFactory = crate::UnityEngine::UIElements::Scroller_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::Scroller_UxmlTraits;
-    #[cfg(feature = "UnityEngine+UIElements+Scroller+ScrollerSlider")]
-    pub type ScrollerSlider = crate::UnityEngine::UIElements::Scroller_ScrollerSlider;
     pub fn Adjust(
         &mut self,
         factor: f32,

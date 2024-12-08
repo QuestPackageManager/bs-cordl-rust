@@ -9,29 +9,32 @@ pub struct ControllersTransformSettingsViewController {
     pub _rotXSlider: *mut crate::HMUI::RangeValuesTextSlider,
     pub _rotYSlider: *mut crate::HMUI::RangeValuesTextSlider,
     pub _rotZSlider: *mut crate::HMUI::RangeValuesTextSlider,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
     pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
 }
 #[cfg(feature = "ControllersTransformSettingsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ControllersTransformSettingsViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ControllersTransformSettingsViewController => ""
     ."ControllersTransformSettingsViewController"
 );
 #[cfg(feature = "ControllersTransformSettingsViewController")]
-impl std::ops::Deref for ControllersTransformSettingsViewController {
+impl std::ops::Deref
+for crate::GlobalNamespace::ControllersTransformSettingsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ControllersTransformSettingsViewController")]
-impl std::ops::DerefMut for ControllersTransformSettingsViewController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::ControllersTransformSettingsViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ControllersTransformSettingsViewController")]
-impl ControllersTransformSettingsViewController {
+impl crate::GlobalNamespace::ControllersTransformSettingsViewController {
     pub const kPositionMul: f32 = 100f32;
     pub const kPositionStep: f32 = 0.1f32;
     pub const kRotationStep: f32 = 1f32;
@@ -104,7 +107,8 @@ impl ControllersTransformSettingsViewController {
     }
 }
 #[cfg(feature = "ControllersTransformSettingsViewController")]
-impl quest_hook::libil2cpp::ObjectType for ControllersTransformSettingsViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ControllersTransformSettingsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -27,20 +27,20 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::OVR::OpenVR::IVRScree
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots")]
 impl crate::OVR::OpenVR::IVRScreenshots {
-    #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_UpdateScreenshotProgress")]
-    pub type _UpdateScreenshotProgress = crate::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress;
-    #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_SubmitScreenshot")]
-    pub type _SubmitScreenshot = crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot;
-    #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_HookScreenshot")]
-    pub type _HookScreenshot = crate::OVR::OpenVR::IVRScreenshots__HookScreenshot;
-    #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_GetScreenshotPropertyType")]
-    pub type _GetScreenshotPropertyType = crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType;
     #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_GetScreenshotPropertyFilename")]
     pub type _GetScreenshotPropertyFilename = crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename;
+    #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_GetScreenshotPropertyType")]
+    pub type _GetScreenshotPropertyType = crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType;
+    #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_HookScreenshot")]
+    pub type _HookScreenshot = crate::OVR::OpenVR::IVRScreenshots__HookScreenshot;
     #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_RequestScreenshot")]
     pub type _RequestScreenshot = crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot;
+    #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_SubmitScreenshot")]
+    pub type _SubmitScreenshot = crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot;
     #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_TakeStereoScreenshot")]
     pub type _TakeStereoScreenshot = crate::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot;
+    #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_UpdateScreenshotProgress")]
+    pub type _UpdateScreenshotProgress = crate::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress;
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_GetScreenshotPropertyFilename")]
 #[repr(C)]

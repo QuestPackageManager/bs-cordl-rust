@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SaberTrail {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _trailRendererPrefab: *mut SaberTrailRenderer,
+    pub _trailRendererPrefab: *mut crate::GlobalNamespace::SaberTrailRenderer,
     pub _trailDuration: f32,
     pub _samplingFrequency: i32,
     pub _granularity: i32,
@@ -11,10 +11,10 @@ pub struct SaberTrail {
     pub _colorOverwrite: bool,
     pub _forcedColor: crate::UnityEngine::Color,
     pub _color: crate::UnityEngine::Color,
-    pub _movementData: *mut IBladeMovementData,
+    pub _movementData: *mut crate::GlobalNamespace::IBladeMovementData,
     pub _lastTrailElementTime: f32,
-    pub _trailRenderer: *mut SaberTrailRenderer,
-    pub _trailElementCollection: *mut TrailElementCollection,
+    pub _trailRenderer: *mut crate::GlobalNamespace::SaberTrailRenderer,
+    pub _trailElementCollection: *mut crate::GlobalNamespace::TrailElementCollection,
     pub _sampleStep: f32,
     pub _framesPassed: i32,
     pub _lastZScale: f32,
@@ -23,23 +23,23 @@ pub struct SaberTrail {
 }
 #[cfg(feature = "SaberTrail")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SaberTrail => ""."SaberTrail"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SaberTrail => ""."SaberTrail"
 );
 #[cfg(feature = "SaberTrail")]
-impl std::ops::Deref for SaberTrail {
+impl std::ops::Deref for crate::GlobalNamespace::SaberTrail {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberTrail")]
-impl std::ops::DerefMut for SaberTrail {
+impl std::ops::DerefMut for crate::GlobalNamespace::SaberTrail {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberTrail")]
-impl SaberTrail {
+impl crate::GlobalNamespace::SaberTrail {
     pub const kIgnoredFramesCount: i32 = 4i32;
     pub const kScaleCheckFramesInterval: i32 = 10i32;
     pub const kSnapshotCapacityMargin: i32 = 3i32;
@@ -55,7 +55,7 @@ impl SaberTrail {
     }
     pub fn GetTrailWidth(
         &mut self,
-        lastAddedData: BladeMovementDataElement,
+        lastAddedData: crate::GlobalNamespace::BladeMovementDataElement,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -143,7 +143,7 @@ impl SaberTrail {
     pub fn Setup(
         &mut self,
         color: crate::UnityEngine::Color,
-        movementData: *mut IBladeMovementData,
+        movementData: *mut crate::GlobalNamespace::IBladeMovementData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -164,7 +164,7 @@ impl SaberTrail {
     }
 }
 #[cfg(feature = "SaberTrail")]
-impl quest_hook::libil2cpp::ObjectType for SaberTrail {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberTrail {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

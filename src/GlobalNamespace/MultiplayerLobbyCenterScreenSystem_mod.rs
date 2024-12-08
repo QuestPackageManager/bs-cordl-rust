@@ -6,24 +6,25 @@ pub struct MultiplayerLobbyCenterScreenSystem {
 }
 #[cfg(feature = "MultiplayerLobbyCenterScreenSystem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLobbyCenterScreenSystem => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLobbyCenterScreenSystem => ""
     ."MultiplayerLobbyCenterScreenSystem"
 );
 #[cfg(feature = "MultiplayerLobbyCenterScreenSystem")]
-impl std::ops::Deref for MultiplayerLobbyCenterScreenSystem {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLobbyCenterScreenSystem {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLobbyCenterScreenSystem")]
-impl std::ops::DerefMut for MultiplayerLobbyCenterScreenSystem {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLobbyCenterScreenSystem {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLobbyCenterScreenSystem")]
-impl MultiplayerLobbyCenterScreenSystem {
+impl crate::GlobalNamespace::MultiplayerLobbyCenterScreenSystem {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -43,7 +44,8 @@ impl MultiplayerLobbyCenterScreenSystem {
     }
 }
 #[cfg(feature = "MultiplayerLobbyCenterScreenSystem")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLobbyCenterScreenSystem {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLobbyCenterScreenSystem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

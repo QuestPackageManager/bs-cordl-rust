@@ -2,31 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerBadgeDataPrecisionSO {
-    __cordl_parent: MultiplayerBadgeDataMinMaxFloatSO,
+    __cordl_parent: crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO,
 }
 #[cfg(feature = "MultiplayerBadgeDataPrecisionSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerBadgeDataPrecisionSO => ""
-    ."MultiplayerBadgeDataPrecisionSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerBadgeDataPrecisionSO
+    => ""."MultiplayerBadgeDataPrecisionSO"
 );
 #[cfg(feature = "MultiplayerBadgeDataPrecisionSO")]
-impl std::ops::Deref for MultiplayerBadgeDataPrecisionSO {
-    type Target = MultiplayerBadgeDataMinMaxFloatSO;
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerBadgeDataPrecisionSO {
+    type Target = crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerBadgeDataPrecisionSO")]
-impl std::ops::DerefMut for MultiplayerBadgeDataPrecisionSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerBadgeDataPrecisionSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerBadgeDataPrecisionSO")]
-impl MultiplayerBadgeDataPrecisionSO {
+impl crate::GlobalNamespace::MultiplayerBadgeDataPrecisionSO {
     pub fn GetValue(
         &mut self,
-        result: *mut MultiplayerPlayerResultsData,
+        result: *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -53,7 +53,8 @@ impl MultiplayerBadgeDataPrecisionSO {
     }
 }
 #[cfg(feature = "MultiplayerBadgeDataPrecisionSO")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerBadgeDataPrecisionSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerBadgeDataPrecisionSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

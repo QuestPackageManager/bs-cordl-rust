@@ -2,51 +2,54 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLevelScenesTransitionSetupDataSO {
-    __cordl_parent: LevelScenesTransitionSetupDataSO,
-    pub _multiplayerLevelSceneInfo: *mut SceneInfo,
-    pub _gameCoreSceneInfo: *mut SceneInfo,
+    __cordl_parent: crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
+    pub _multiplayerLevelSceneInfo: *mut crate::GlobalNamespace::SceneInfo,
+    pub _gameCoreSceneInfo: *mut crate::GlobalNamespace::SceneInfo,
     pub _multiplayerEnvironmentInfo: *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-        *mut EnvironmentInfoSO,
+        *mut crate::GlobalNamespace::EnvironmentInfoSO,
     >,
     pub didFinishEvent: *mut crate::System::Action_2<
-        *mut MultiplayerLevelScenesTransitionSetupDataSO,
-        *mut MultiplayerResultsData,
+        *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+        *mut crate::GlobalNamespace::MultiplayerResultsData,
     >,
     pub didDisconnectEvent: *mut crate::System::Action_2<
-        *mut MultiplayerLevelScenesTransitionSetupDataSO,
-        DisconnectedReason,
+        *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+        crate::GlobalNamespace::DisconnectedReason,
     >,
     pub _gameMode_k__BackingField: *mut crate::System::String,
-    pub _beatmapKey_k__BackingField: BeatmapKey,
-    pub _beatmapLevel_k__BackingField: *mut BeatmapLevel,
+    pub _beatmapKey_k__BackingField: crate::GlobalNamespace::BeatmapKey,
+    pub _beatmapLevel_k__BackingField: *mut crate::GlobalNamespace::BeatmapLevel,
     pub _usingOverrideColorScheme_k__BackingField: bool,
-    pub _colorScheme_k__BackingField: *mut ColorScheme,
-    pub _beatmapLevelData_k__BackingField: *mut IBeatmapLevelData,
-    pub _loadedMultiplayerEnvironmentInfo: *mut EnvironmentInfoSO,
+    pub _colorScheme_k__BackingField: *mut crate::GlobalNamespace::ColorScheme,
+    pub _beatmapLevelData_k__BackingField: *mut crate::GlobalNamespace::IBeatmapLevelData,
+    pub _loadedMultiplayerEnvironmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
 }
 #[cfg(feature = "MultiplayerLevelScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLevelScenesTransitionSetupDataSO => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO => ""
     ."MultiplayerLevelScenesTransitionSetupDataSO"
 );
 #[cfg(feature = "MultiplayerLevelScenesTransitionSetupDataSO")]
-impl std::ops::Deref for MultiplayerLevelScenesTransitionSetupDataSO {
-    type Target = LevelScenesTransitionSetupDataSO;
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
+    type Target = crate::GlobalNamespace::LevelScenesTransitionSetupDataSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLevelScenesTransitionSetupDataSO")]
-impl std::ops::DerefMut for MultiplayerLevelScenesTransitionSetupDataSO {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLevelScenesTransitionSetupDataSO")]
-impl MultiplayerLevelScenesTransitionSetupDataSO {
+impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
     pub fn Finish(
         &mut self,
-        resultsData: *mut MultiplayerResultsData,
+        resultsData: *mut crate::GlobalNamespace::MultiplayerResultsData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -57,7 +60,7 @@ impl MultiplayerLevelScenesTransitionSetupDataSO {
     }
     pub fn FinishWithDisconnect(
         &mut self,
-        disconnectedReason: DisconnectedReason,
+        disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -68,27 +71,27 @@ impl MultiplayerLevelScenesTransitionSetupDataSO {
     }
     pub fn GetOrLoadMultiplayerEnvironmentInfo(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut EnvironmentInfoSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::EnvironmentInfoSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut EnvironmentInfoSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::EnvironmentInfoSO = __cordl_object
             .invoke("GetOrLoadMultiplayerEnvironmentInfo", ())?;
         Ok(__cordl_ret)
     }
     pub fn Init(
         &mut self,
         gameMode: *mut crate::System::String,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-        beatmapLevel: *mut BeatmapLevel,
-        beatmapLevelData: *mut IBeatmapLevelData,
-        overrideColorScheme: *mut ColorScheme,
-        gameplayModifiers: *mut GameplayModifiers,
-        playerSpecificSettings: *mut PlayerSpecificSettings,
-        practiceSettings: *mut PracticeSettings,
-        audioClipAsyncLoader: *mut AudioClipAsyncLoader,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+        beatmapLevelData: *mut crate::GlobalNamespace::IBeatmapLevelData,
+        overrideColorScheme: *mut crate::GlobalNamespace::ColorScheme,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+        playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+        practiceSettings: *mut crate::GlobalNamespace::PracticeSettings,
+        audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
         performancePreset: *mut crate::BeatSaber::PerformancePresets::PerformancePreset,
-        beatmapDataLoader: *mut BeatmapDataLoader,
+        beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
         useTestNoteCutSoundEffects: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -126,7 +129,7 @@ impl MultiplayerLevelScenesTransitionSetupDataSO {
     }
     pub fn InitColorInfo(
         &mut self,
-        overrideColorScheme: *mut ColorScheme,
+        overrideColorScheme: *mut crate::GlobalNamespace::ColorScheme,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -155,8 +158,8 @@ impl MultiplayerLevelScenesTransitionSetupDataSO {
     pub fn add_didDisconnectEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut MultiplayerLevelScenesTransitionSetupDataSO,
-            DisconnectedReason,
+            *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            crate::GlobalNamespace::DisconnectedReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -169,8 +172,8 @@ impl MultiplayerLevelScenesTransitionSetupDataSO {
     pub fn add_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut MultiplayerLevelScenesTransitionSetupDataSO,
-            *mut MultiplayerResultsData,
+            *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::MultiplayerResultsData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -180,40 +183,43 @@ impl MultiplayerLevelScenesTransitionSetupDataSO {
             .invoke("add_didFinishEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_beatmapKey(&mut self) -> quest_hook::libil2cpp::Result<BeatmapKey> {
+    pub fn get_beatmapKey(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapKey> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapKey = __cordl_object.invoke("get_beatmapKey", ())?;
+        let __cordl_ret: crate::GlobalNamespace::BeatmapKey = __cordl_object
+            .invoke("get_beatmapKey", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_beatmapLevel(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevel> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapLevel> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapLevel = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapLevel = __cordl_object
             .invoke("get_beatmapLevel", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_beatmapLevelData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IBeatmapLevelData> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IBeatmapLevelData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IBeatmapLevelData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IBeatmapLevelData = __cordl_object
             .invoke("get_beatmapLevelData", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_colorScheme(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut ColorScheme> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::ColorScheme> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ColorScheme = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::ColorScheme = __cordl_object
             .invoke("get_colorScheme", ())?;
         Ok(__cordl_ret)
     }
@@ -240,8 +246,8 @@ impl MultiplayerLevelScenesTransitionSetupDataSO {
     pub fn remove_didDisconnectEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut MultiplayerLevelScenesTransitionSetupDataSO,
-            DisconnectedReason,
+            *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            crate::GlobalNamespace::DisconnectedReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -254,8 +260,8 @@ impl MultiplayerLevelScenesTransitionSetupDataSO {
     pub fn remove_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut MultiplayerLevelScenesTransitionSetupDataSO,
-            *mut MultiplayerResultsData,
+            *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::MultiplayerResultsData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -267,7 +273,7 @@ impl MultiplayerLevelScenesTransitionSetupDataSO {
     }
     pub fn set_beatmapKey(
         &mut self,
-        value: BeatmapKey,
+        value: crate::GlobalNamespace::BeatmapKey,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -278,7 +284,7 @@ impl MultiplayerLevelScenesTransitionSetupDataSO {
     }
     pub fn set_beatmapLevel(
         &mut self,
-        value: *mut BeatmapLevel,
+        value: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -289,7 +295,7 @@ impl MultiplayerLevelScenesTransitionSetupDataSO {
     }
     pub fn set_beatmapLevelData(
         &mut self,
-        value: *mut IBeatmapLevelData,
+        value: *mut crate::GlobalNamespace::IBeatmapLevelData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -300,7 +306,7 @@ impl MultiplayerLevelScenesTransitionSetupDataSO {
     }
     pub fn set_colorScheme(
         &mut self,
-        value: *mut ColorScheme,
+        value: *mut crate::GlobalNamespace::ColorScheme,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -333,7 +339,8 @@ impl MultiplayerLevelScenesTransitionSetupDataSO {
     }
 }
 #[cfg(feature = "MultiplayerLevelScenesTransitionSetupDataSO")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLevelScenesTransitionSetupDataSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

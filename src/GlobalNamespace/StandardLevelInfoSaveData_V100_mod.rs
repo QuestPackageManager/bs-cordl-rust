@@ -155,24 +155,24 @@ pub struct StandardLevelInfoSaveData_V100 {
 }
 #[cfg(feature = "StandardLevelInfoSaveData_V100")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StandardLevelInfoSaveData_V100 => ""
-    ."StandardLevelInfoSaveData_V100"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::StandardLevelInfoSaveData_V100
+    => ""."StandardLevelInfoSaveData_V100"
 );
 #[cfg(feature = "StandardLevelInfoSaveData_V100")]
-impl std::ops::Deref for StandardLevelInfoSaveData_V100 {
+impl std::ops::Deref for crate::GlobalNamespace::StandardLevelInfoSaveData_V100 {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelInfoSaveData_V100")]
-impl std::ops::DerefMut for StandardLevelInfoSaveData_V100 {
+impl std::ops::DerefMut for crate::GlobalNamespace::StandardLevelInfoSaveData_V100 {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelInfoSaveData_V100")]
-impl StandardLevelInfoSaveData_V100 {
+impl crate::GlobalNamespace::StandardLevelInfoSaveData_V100 {
     pub const kCurrentVersion: &'static str = "1.0.0";
     #[cfg(feature = "StandardLevelInfoSaveData_V100+DifficultyBeatmap")]
     pub type DifficultyBeatmap = crate::GlobalNamespace::StandardLevelInfoSaveData_V100_DifficultyBeatmap;
@@ -332,7 +332,8 @@ impl StandardLevelInfoSaveData_V100 {
     }
 }
 #[cfg(feature = "StandardLevelInfoSaveData_V100")]
-impl quest_hook::libil2cpp::ObjectType for StandardLevelInfoSaveData_V100 {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StandardLevelInfoSaveData_V100 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -12,24 +12,24 @@ pub struct SelectableStateController {
 }
 #[cfg(feature = "SelectableStateController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SelectableStateController => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SelectableStateController => ""
     ."SelectableStateController"
 );
 #[cfg(feature = "SelectableStateController")]
-impl std::ops::Deref for SelectableStateController {
+impl std::ops::Deref for crate::GlobalNamespace::SelectableStateController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SelectableStateController")]
-impl std::ops::DerefMut for SelectableStateController {
+impl std::ops::DerefMut for crate::GlobalNamespace::SelectableStateController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SelectableStateController")]
-impl SelectableStateController {
+impl crate::GlobalNamespace::SelectableStateController {
     #[cfg(feature = "SelectableStateController+ViewState")]
     pub type ViewState = crate::GlobalNamespace::SelectableStateController_ViewState;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -136,7 +136,8 @@ impl SelectableStateController {
     }
 }
 #[cfg(feature = "SelectableStateController")]
-impl quest_hook::libil2cpp::ObjectType for SelectableStateController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SelectableStateController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

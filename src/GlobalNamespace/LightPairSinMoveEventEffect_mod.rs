@@ -3,49 +3,49 @@
 #[derive(Debug)]
 pub struct LightPairSinMoveEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _eventL: BasicBeatmapEventType,
-    pub _eventR: BasicBeatmapEventType,
-    pub _switchOverrideRandomValuesEvent: BasicBeatmapEventType,
+    pub _eventL: crate::GlobalNamespace::BasicBeatmapEventType,
+    pub _eventR: crate::GlobalNamespace::BasicBeatmapEventType,
+    pub _switchOverrideRandomValuesEvent: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _overrideRandomValues: bool,
     pub _startValueOffset: f32,
     pub _startPositionOffset: crate::UnityEngine::Vector3,
     pub _endPositionOffset: crate::UnityEngine::Vector3,
     pub _transformL: *mut crate::UnityEngine::Transform,
     pub _transformR: *mut crate::UnityEngine::Transform,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
-    pub _audioTimeSource: *mut IAudioTimeSource,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
     pub _movementDataL: *mut crate::GlobalNamespace::LightPairSinMoveEventEffect_MovementData,
     pub _movementDataR: *mut crate::GlobalNamespace::LightPairSinMoveEventEffect_MovementData,
     pub _randomGenerationFrameNum: i32,
     pub _randomStartOffset: f32,
-    pub _beatmapDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
 }
 #[cfg(feature = "LightPairSinMoveEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightPairSinMoveEventEffect => ""
-    ."LightPairSinMoveEventEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightPairSinMoveEventEffect =>
+    ""."LightPairSinMoveEventEffect"
 );
 #[cfg(feature = "LightPairSinMoveEventEffect")]
-impl std::ops::Deref for LightPairSinMoveEventEffect {
+impl std::ops::Deref for crate::GlobalNamespace::LightPairSinMoveEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightPairSinMoveEventEffect")]
-impl std::ops::DerefMut for LightPairSinMoveEventEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightPairSinMoveEventEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightPairSinMoveEventEffect")]
-impl LightPairSinMoveEventEffect {
+impl crate::GlobalNamespace::LightPairSinMoveEventEffect {
     pub const kSpeedMultiplier: f32 = 1f32;
     #[cfg(feature = "LightPairSinMoveEventEffect+MovementData")]
     pub type MovementData = crate::GlobalNamespace::LightPairSinMoveEventEffect_MovementData;
     pub fn HandleBeatmapEvent(
         &mut self,
-        basicBeatmapEventData: *mut BasicBeatmapEventData,
+        basicBeatmapEventData: *mut crate::GlobalNamespace::BasicBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -119,7 +119,8 @@ impl LightPairSinMoveEventEffect {
     }
 }
 #[cfg(feature = "LightPairSinMoveEventEffect")]
-impl quest_hook::libil2cpp::ObjectType for LightPairSinMoveEventEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LightPairSinMoveEventEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

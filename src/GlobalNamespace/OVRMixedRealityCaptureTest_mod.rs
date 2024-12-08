@@ -24,24 +24,24 @@ pub struct OVRMixedRealityCaptureTest {
 }
 #[cfg(feature = "OVRMixedRealityCaptureTest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRMixedRealityCaptureTest => ""
-    ."OVRMixedRealityCaptureTest"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRMixedRealityCaptureTest =>
+    ""."OVRMixedRealityCaptureTest"
 );
 #[cfg(feature = "OVRMixedRealityCaptureTest")]
-impl std::ops::Deref for OVRMixedRealityCaptureTest {
+impl std::ops::Deref for crate::GlobalNamespace::OVRMixedRealityCaptureTest {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRMixedRealityCaptureTest")]
-impl std::ops::DerefMut for OVRMixedRealityCaptureTest {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRMixedRealityCaptureTest {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRMixedRealityCaptureTest")]
-impl OVRMixedRealityCaptureTest {
+impl crate::GlobalNamespace::OVRMixedRealityCaptureTest {
     #[cfg(feature = "OVRMixedRealityCaptureTest+CameraMode")]
     pub type CameraMode = crate::GlobalNamespace::OVRMixedRealityCaptureTest_CameraMode;
     pub fn Initialize(
@@ -103,7 +103,8 @@ impl OVRMixedRealityCaptureTest {
     }
 }
 #[cfg(feature = "OVRMixedRealityCaptureTest")]
-impl quest_hook::libil2cpp::ObjectType for OVRMixedRealityCaptureTest {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRMixedRealityCaptureTest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

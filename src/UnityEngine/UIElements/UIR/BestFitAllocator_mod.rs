@@ -29,10 +29,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::BestFitAllocato
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator")]
 impl crate::UnityEngine::UIElements::UIR::BestFitAllocator {
-    #[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
-    pub type BlockPool = crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool;
     #[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
     pub type Block = crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block;
+    #[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
+    pub type BlockPool = crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool;
     pub fn Allocate(
         &mut self,
         _cordl_size: u32,

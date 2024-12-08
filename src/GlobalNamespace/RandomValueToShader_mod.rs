@@ -2,28 +2,29 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RandomValueToShader {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _lastFrameNum: i32,
 }
 #[cfg(feature = "RandomValueToShader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RandomValueToShader => ""."RandomValueToShader"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RandomValueToShader => ""
+    ."RandomValueToShader"
 );
 #[cfg(feature = "RandomValueToShader")]
-impl std::ops::Deref for RandomValueToShader {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::RandomValueToShader {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RandomValueToShader")]
-impl std::ops::DerefMut for RandomValueToShader {
+impl std::ops::DerefMut for crate::GlobalNamespace::RandomValueToShader {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RandomValueToShader")]
-impl RandomValueToShader {
+impl crate::GlobalNamespace::RandomValueToShader {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -53,7 +54,7 @@ impl RandomValueToShader {
     }
 }
 #[cfg(feature = "RandomValueToShader")]
-impl quest_hook::libil2cpp::ObjectType for RandomValueToShader {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RandomValueToShader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

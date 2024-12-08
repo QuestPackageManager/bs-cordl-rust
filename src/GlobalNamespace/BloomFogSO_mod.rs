@@ -2,34 +2,34 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomFogSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _bloomFogEnabled: bool,
     pub _legacyAutoExposureEnabled: bool,
     pub _transition: f32,
     pub _autoExposureLimit: f32,
     pub _noteSpawnIntensity: f32,
-    pub _defaultFogParams: *mut BloomFogEnvironmentParams,
-    pub _transitionFogParams: *mut BloomFogEnvironmentParams,
+    pub _defaultFogParams: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
+    pub _transitionFogParams: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
 }
 #[cfg(feature = "BloomFogSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomFogSO => ""."BloomFogSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BloomFogSO => ""."BloomFogSO"
 );
 #[cfg(feature = "BloomFogSO")]
-impl std::ops::Deref for BloomFogSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::BloomFogSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomFogSO")]
-impl std::ops::DerefMut for BloomFogSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::BloomFogSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomFogSO")]
-impl BloomFogSO {
+impl crate::GlobalNamespace::BloomFogSO {
     pub const kBloomFogEnabledKeyword: &'static str = "ENABLE_BLOOM_FOG";
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -76,7 +76,7 @@ impl BloomFogSO {
     }
     pub fn Setup(
         &mut self,
-        defaultFogParams: *mut BloomFogEnvironmentParams,
+        defaultFogParams: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -121,11 +121,13 @@ impl BloomFogSO {
     }
     pub fn get_defaultForParams(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BloomFogEnvironmentParams> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BloomFogEnvironmentParams = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BloomFogEnvironmentParams = __cordl_object
             .invoke("get_defaultForParams", ())?;
         Ok(__cordl_ret)
     }
@@ -155,11 +157,13 @@ impl BloomFogSO {
     }
     pub fn get_transitionFogParams(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BloomFogEnvironmentParams> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BloomFogEnvironmentParams = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BloomFogEnvironmentParams = __cordl_object
             .invoke("get_transitionFogParams", ())?;
         Ok(__cordl_ret)
     }
@@ -176,7 +180,7 @@ impl BloomFogSO {
     }
     pub fn set_defaultForParams(
         &mut self,
-        value: *mut BloomFogEnvironmentParams,
+        value: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -209,7 +213,7 @@ impl BloomFogSO {
     }
     pub fn set_transitionFogParams(
         &mut self,
-        value: *mut BloomFogEnvironmentParams,
+        value: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -220,7 +224,7 @@ impl BloomFogSO {
     }
 }
 #[cfg(feature = "BloomFogSO")]
-impl quest_hook::libil2cpp::ObjectType for BloomFogSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BloomFogSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

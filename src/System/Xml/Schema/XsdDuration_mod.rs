@@ -58,10 +58,10 @@ for crate::System::Xml::Schema::XsdDuration {
 }
 #[cfg(feature = "System+Xml+Schema+XsdDuration")]
 impl crate::System::Xml::Schema::XsdDuration {
-    #[cfg(feature = "System+Xml+Schema+XsdDuration+Parts")]
-    pub type Parts = crate::System::Xml::Schema::XsdDuration_Parts;
     #[cfg(feature = "System+Xml+Schema+XsdDuration+DurationType")]
     pub type DurationType = crate::System::Xml::Schema::XsdDuration_DurationType;
+    #[cfg(feature = "System+Xml+Schema+XsdDuration+Parts")]
+    pub type Parts = crate::System::Xml::Schema::XsdDuration_Parts;
     pub fn ToString_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {

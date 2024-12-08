@@ -2,31 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CreditsScenesTransitionSetupDataSO {
-    __cordl_parent: NoSetupDataSingleFixedSceneScenesTransitionSetupDataSO,
+    __cordl_parent: crate::GlobalNamespace::NoSetupDataSingleFixedSceneScenesTransitionSetupDataSO,
     pub didFinishEvent: *mut crate::System::Action_1<
-        *mut CreditsScenesTransitionSetupDataSO,
+        *mut crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
     >,
 }
 #[cfg(feature = "CreditsScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CreditsScenesTransitionSetupDataSO => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::CreditsScenesTransitionSetupDataSO => ""
     ."CreditsScenesTransitionSetupDataSO"
 );
 #[cfg(feature = "CreditsScenesTransitionSetupDataSO")]
-impl std::ops::Deref for CreditsScenesTransitionSetupDataSO {
-    type Target = NoSetupDataSingleFixedSceneScenesTransitionSetupDataSO;
+impl std::ops::Deref for crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO {
+    type Target = crate::GlobalNamespace::NoSetupDataSingleFixedSceneScenesTransitionSetupDataSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CreditsScenesTransitionSetupDataSO")]
-impl std::ops::DerefMut for CreditsScenesTransitionSetupDataSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CreditsScenesTransitionSetupDataSO")]
-impl CreditsScenesTransitionSetupDataSO {
+impl crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO {
     pub fn Finish(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -56,7 +57,9 @@ impl CreditsScenesTransitionSetupDataSO {
     }
     pub fn add_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut CreditsScenesTransitionSetupDataSO>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -67,7 +70,9 @@ impl CreditsScenesTransitionSetupDataSO {
     }
     pub fn remove_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut CreditsScenesTransitionSetupDataSO>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -78,7 +83,8 @@ impl CreditsScenesTransitionSetupDataSO {
     }
 }
 #[cfg(feature = "CreditsScenesTransitionSetupDataSO")]
-impl quest_hook::libil2cpp::ObjectType for CreditsScenesTransitionSetupDataSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

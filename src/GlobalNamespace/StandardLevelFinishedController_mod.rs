@@ -3,30 +3,30 @@
 #[derive(Debug)]
 pub struct StandardLevelFinishedController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _standardLevelSceneSetupData: *mut StandardLevelScenesTransitionSetupDataSO,
-    pub _prepareLevelCompletionResults: *mut PrepareLevelCompletionResults,
-    pub _gameplayManager: *mut ILevelEndActions,
+    pub _standardLevelSceneSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+    pub _prepareLevelCompletionResults: *mut crate::GlobalNamespace::PrepareLevelCompletionResults,
+    pub _gameplayManager: *mut crate::GlobalNamespace::ILevelEndActions,
 }
 #[cfg(feature = "StandardLevelFinishedController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StandardLevelFinishedController => ""
-    ."StandardLevelFinishedController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::StandardLevelFinishedController
+    => ""."StandardLevelFinishedController"
 );
 #[cfg(feature = "StandardLevelFinishedController")]
-impl std::ops::Deref for StandardLevelFinishedController {
+impl std::ops::Deref for crate::GlobalNamespace::StandardLevelFinishedController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelFinishedController")]
-impl std::ops::DerefMut for StandardLevelFinishedController {
+impl std::ops::DerefMut for crate::GlobalNamespace::StandardLevelFinishedController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelFinishedController")]
-impl StandardLevelFinishedController {
+impl crate::GlobalNamespace::StandardLevelFinishedController {
     pub fn HandleLevelFinished(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -86,7 +86,8 @@ impl StandardLevelFinishedController {
     }
 }
 #[cfg(feature = "StandardLevelFinishedController")]
-impl quest_hook::libil2cpp::ObjectType for StandardLevelFinishedController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StandardLevelFinishedController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -31,13 +31,13 @@ impl std::ops::DerefMut for crate::BGLib::SaveDataCore::SaveDataFlushingService 
 #[cfg(feature = "BGLib+SaveDataCore+SaveDataFlushingService")]
 impl crate::BGLib::SaveDataCore::SaveDataFlushingService {
     #[cfg(
-        feature = "BGLib+SaveDataCore+SaveDataFlushingService+_ResetChangesAsync_d__4"
-    )]
-    pub type _ResetChangesAsync_d__4 = crate::BGLib::SaveDataCore::SaveDataFlushingService__ResetChangesAsync_d__4;
-    #[cfg(
         feature = "BGLib+SaveDataCore+SaveDataFlushingService+_FlushSaveFilesAsync_d__3"
     )]
     pub type _FlushSaveFilesAsync_d__3 = crate::BGLib::SaveDataCore::SaveDataFlushingService__FlushSaveFilesAsync_d__3;
+    #[cfg(
+        feature = "BGLib+SaveDataCore+SaveDataFlushingService+_ResetChangesAsync_d__4"
+    )]
+    pub type _ResetChangesAsync_d__4 = crate::BGLib::SaveDataCore::SaveDataFlushingService__ResetChangesAsync_d__4;
     pub fn FlushSaveFilesAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

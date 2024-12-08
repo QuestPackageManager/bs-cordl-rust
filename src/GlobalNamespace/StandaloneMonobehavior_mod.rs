@@ -13,27 +13,28 @@ pub struct StandaloneMonobehavior {
 }
 #[cfg(feature = "StandaloneMonobehavior")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StandaloneMonobehavior => ""."StandaloneMonobehavior"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::StandaloneMonobehavior => ""
+    ."StandaloneMonobehavior"
 );
 #[cfg(feature = "StandaloneMonobehavior")]
-impl std::ops::Deref for StandaloneMonobehavior {
+impl std::ops::Deref for crate::GlobalNamespace::StandaloneMonobehavior {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandaloneMonobehavior")]
-impl std::ops::DerefMut for StandaloneMonobehavior {
+impl std::ops::DerefMut for crate::GlobalNamespace::StandaloneMonobehavior {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandaloneMonobehavior")]
-impl StandaloneMonobehavior {
-    #[cfg(feature = "StandaloneMonobehavior+_Dispatch_d__20")]
-    pub type _Dispatch_d__20 = crate::GlobalNamespace::StandaloneMonobehavior__Dispatch_d__20;
+impl crate::GlobalNamespace::StandaloneMonobehavior {
     #[cfg(feature = "StandaloneMonobehavior+_DispatchAsync_d__21")]
     pub type _DispatchAsync_d__21 = crate::GlobalNamespace::StandaloneMonobehavior__DispatchAsync_d__21;
+    #[cfg(feature = "StandaloneMonobehavior+_Dispatch_d__20")]
+    pub type _Dispatch_d__20 = crate::GlobalNamespace::StandaloneMonobehavior__Dispatch_d__20;
     #[cfg(feature = "StandaloneMonobehavior+_RunAsyncCoroutine_d__25")]
     pub type _RunAsyncCoroutine_d__25 = crate::GlobalNamespace::StandaloneMonobehavior__RunAsyncCoroutine_d__25;
     pub fn Awake(
@@ -105,7 +106,7 @@ impl StandaloneMonobehavior {
     }
     pub fn RunAsync(
         &mut self,
-        runner: *mut IStandaloneThreadRunner,
+        runner: *mut crate::GlobalNamespace::IStandaloneThreadRunner,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -204,7 +205,8 @@ impl StandaloneMonobehavior {
     }
 }
 #[cfg(feature = "StandaloneMonobehavior")]
-impl quest_hook::libil2cpp::ObjectType for StandaloneMonobehavior {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StandaloneMonobehavior {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

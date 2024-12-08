@@ -202,16 +202,16 @@ impl crate::System::Uri {
     pub const c_Max16BitUtf8SequenceLength: i32 = 12i32;
     pub const c_MaxUriBufferSize: i32 = 65520i32;
     pub const c_MaxUriSchemeName: i32 = 1024i32;
-    #[cfg(feature = "System+Uri+UriInfo")]
-    pub type UriInfo = crate::System::Uri_UriInfo;
-    #[cfg(feature = "System+Uri+Offset")]
-    pub type Offset = crate::System::Uri_Offset;
-    #[cfg(feature = "System+Uri+MoreInfo")]
-    pub type MoreInfo = crate::System::Uri_MoreInfo;
     #[cfg(feature = "System+Uri+Check")]
     pub type Check = crate::System::Uri_Check;
     #[cfg(feature = "System+Uri+Flags")]
     pub type Flags = crate::System::Uri_Flags;
+    #[cfg(feature = "System+Uri+MoreInfo")]
+    pub type MoreInfo = crate::System::Uri_MoreInfo;
+    #[cfg(feature = "System+Uri+Offset")]
+    pub type Offset = crate::System::Uri_Offset;
+    #[cfg(feature = "System+Uri+UriInfo")]
+    pub type UriInfo = crate::System::Uri_UriInfo;
     pub fn AllowIdnStatic(
         &mut self,
         syntax: *mut crate::System::UriParser,

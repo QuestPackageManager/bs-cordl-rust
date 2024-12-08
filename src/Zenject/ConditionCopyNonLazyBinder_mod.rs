@@ -24,6 +24,10 @@ impl std::ops::DerefMut for crate::Zenject::ConditionCopyNonLazyBinder {
 }
 #[cfg(feature = "Zenject+ConditionCopyNonLazyBinder")]
 impl crate::Zenject::ConditionCopyNonLazyBinder {
+    #[cfg(feature = "Zenject+ConditionCopyNonLazyBinder+__c__4_1")]
+    pub type __c__4_1<T: quest_hook::libil2cpp::Type> = crate::Zenject::ConditionCopyNonLazyBinder___c__4_1<
+        T,
+    >;
     #[cfg(feature = "Zenject+ConditionCopyNonLazyBinder+__c__5_1")]
     pub type __c__5_1<T: quest_hook::libil2cpp::Type> = crate::Zenject::ConditionCopyNonLazyBinder___c__5_1<
         T,
@@ -34,10 +38,6 @@ impl crate::Zenject::ConditionCopyNonLazyBinder {
     pub type __c__DisplayClass3_0 = crate::Zenject::ConditionCopyNonLazyBinder___c__DisplayClass3_0;
     #[cfg(feature = "Zenject+ConditionCopyNonLazyBinder+__c__DisplayClass3_1")]
     pub type __c__DisplayClass3_1 = crate::Zenject::ConditionCopyNonLazyBinder___c__DisplayClass3_1;
-    #[cfg(feature = "Zenject+ConditionCopyNonLazyBinder+__c__4_1")]
-    pub type __c__4_1<T: quest_hook::libil2cpp::Type> = crate::Zenject::ConditionCopyNonLazyBinder___c__4_1<
-        T,
-    >;
     pub fn New(
         bindInfo: *mut crate::Zenject::BindInfo,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {

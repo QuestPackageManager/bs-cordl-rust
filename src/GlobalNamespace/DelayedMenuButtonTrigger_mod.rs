@@ -7,28 +7,28 @@ pub struct DelayedMenuButtonTrigger {
     pub _pressDuration: f32,
     pub _timer: f32,
     pub _waitingForButtonRelease: bool,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
 }
 #[cfg(feature = "DelayedMenuButtonTrigger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for DelayedMenuButtonTrigger => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::DelayedMenuButtonTrigger => ""
     ."DelayedMenuButtonTrigger"
 );
 #[cfg(feature = "DelayedMenuButtonTrigger")]
-impl std::ops::Deref for DelayedMenuButtonTrigger {
+impl std::ops::Deref for crate::GlobalNamespace::DelayedMenuButtonTrigger {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DelayedMenuButtonTrigger")]
-impl std::ops::DerefMut for DelayedMenuButtonTrigger {
+impl std::ops::DerefMut for crate::GlobalNamespace::DelayedMenuButtonTrigger {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "DelayedMenuButtonTrigger")]
-impl DelayedMenuButtonTrigger {
+impl crate::GlobalNamespace::DelayedMenuButtonTrigger {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -80,7 +80,8 @@ impl DelayedMenuButtonTrigger {
     }
 }
 #[cfg(feature = "DelayedMenuButtonTrigger")]
-impl quest_hook::libil2cpp::ObjectType for DelayedMenuButtonTrigger {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::DelayedMenuButtonTrigger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

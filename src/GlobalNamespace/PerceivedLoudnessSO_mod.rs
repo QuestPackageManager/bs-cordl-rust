@@ -111,23 +111,24 @@ pub struct PerceivedLoudnessSO {
 }
 #[cfg(feature = "PerceivedLoudnessSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PerceivedLoudnessSO => ""."PerceivedLoudnessSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PerceivedLoudnessSO => ""
+    ."PerceivedLoudnessSO"
 );
 #[cfg(feature = "PerceivedLoudnessSO")]
-impl std::ops::Deref for PerceivedLoudnessSO {
+impl std::ops::Deref for crate::GlobalNamespace::PerceivedLoudnessSO {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PerceivedLoudnessSO")]
-impl std::ops::DerefMut for PerceivedLoudnessSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::PerceivedLoudnessSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PerceivedLoudnessSO")]
-impl PerceivedLoudnessSO {
+impl crate::GlobalNamespace::PerceivedLoudnessSO {
     #[cfg(feature = "PerceivedLoudnessSO+PerceivedLevelLoudnessPair")]
     pub type PerceivedLevelLoudnessPair = crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair;
     #[cfg(feature = "PerceivedLoudnessSO+__c__DisplayClass6_0")]
@@ -207,7 +208,7 @@ impl PerceivedLoudnessSO {
     }
 }
 #[cfg(feature = "PerceivedLoudnessSO")]
-impl quest_hook::libil2cpp::ObjectType for PerceivedLoudnessSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PerceivedLoudnessSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

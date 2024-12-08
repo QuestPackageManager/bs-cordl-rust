@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct RecordingToolSettingsFlowCoordinator_InitData {
     __cordl_parent: crate::System::Object,
-    pub nextScenesTransitionSetupData: *mut ScenesTransitionSetupDataSO,
+    pub nextScenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
 }
 #[cfg(feature = "RecordingToolSettingsFlowCoordinator+InitData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData {
 #[cfg(feature = "RecordingToolSettingsFlowCoordinator+InitData")]
 impl crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData {
     pub fn New(
-        nextScenesTransitionSetupData: *mut ScenesTransitionSetupDataSO,
+        nextScenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -39,7 +39,7 @@ impl crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData {
     }
     pub fn _ctor(
         &mut self,
-        nextScenesTransitionSetupData: *mut ScenesTransitionSetupDataSO,
+        nextScenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -64,32 +64,34 @@ for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData {
 #[derive(Debug)]
 pub struct RecordingToolSettingsFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub _recordingToolConfigViewController: *mut RecordingToolConfigViewController,
-    pub _recordingToolSettingsViewController: *mut RecordingToolSettingsViewController,
-    pub _recordingToolLoggingViewController: *mut RecordingToolLoggingViewController,
-    pub _gameScenesManager: *mut GameScenesManager,
+    pub _recordingToolConfigViewController: *mut crate::GlobalNamespace::RecordingToolConfigViewController,
+    pub _recordingToolSettingsViewController: *mut crate::GlobalNamespace::RecordingToolSettingsViewController,
+    pub _recordingToolLoggingViewController: *mut crate::GlobalNamespace::RecordingToolLoggingViewController,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
     pub _initData: *mut crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData,
 }
 #[cfg(feature = "RecordingToolSettingsFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RecordingToolSettingsFlowCoordinator => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::RecordingToolSettingsFlowCoordinator => ""
     ."RecordingToolSettingsFlowCoordinator"
 );
 #[cfg(feature = "RecordingToolSettingsFlowCoordinator")]
-impl std::ops::Deref for RecordingToolSettingsFlowCoordinator {
+impl std::ops::Deref for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingToolSettingsFlowCoordinator")]
-impl std::ops::DerefMut for RecordingToolSettingsFlowCoordinator {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingToolSettingsFlowCoordinator")]
-impl RecordingToolSettingsFlowCoordinator {
+impl crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator {
     #[cfg(feature = "RecordingToolSettingsFlowCoordinator+InitData")]
     pub type InitData = crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData;
     pub fn DidActivate(
@@ -169,7 +171,8 @@ impl RecordingToolSettingsFlowCoordinator {
     }
 }
 #[cfg(feature = "RecordingToolSettingsFlowCoordinator")]
-impl quest_hook::libil2cpp::ObjectType for RecordingToolSettingsFlowCoordinator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

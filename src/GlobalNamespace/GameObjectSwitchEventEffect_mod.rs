@@ -9,32 +9,32 @@ pub struct GameObjectSwitchEventEffect {
     pub _activateOnBoostObjects: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::GameObject,
     >,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
-    pub _beatmapDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
 }
 #[cfg(feature = "GameObjectSwitchEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameObjectSwitchEventEffect => ""
-    ."GameObjectSwitchEventEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameObjectSwitchEventEffect =>
+    ""."GameObjectSwitchEventEffect"
 );
 #[cfg(feature = "GameObjectSwitchEventEffect")]
-impl std::ops::Deref for GameObjectSwitchEventEffect {
+impl std::ops::Deref for crate::GlobalNamespace::GameObjectSwitchEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameObjectSwitchEventEffect")]
-impl std::ops::DerefMut for GameObjectSwitchEventEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameObjectSwitchEventEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameObjectSwitchEventEffect")]
-impl GameObjectSwitchEventEffect {
+impl crate::GlobalNamespace::GameObjectSwitchEventEffect {
     pub fn HandleBeatmapEvent(
         &mut self,
-        basicBeatmapEventData: *mut ColorBoostBeatmapEventData,
+        basicBeatmapEventData: *mut crate::GlobalNamespace::ColorBoostBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -93,7 +93,8 @@ impl GameObjectSwitchEventEffect {
     }
 }
 #[cfg(feature = "GameObjectSwitchEventEffect")]
-impl quest_hook::libil2cpp::ObjectType for GameObjectSwitchEventEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GameObjectSwitchEventEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

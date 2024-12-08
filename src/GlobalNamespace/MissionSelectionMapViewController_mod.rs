@@ -4,44 +4,45 @@
 pub struct MissionSelectionMapViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _mapScrollView: *mut crate::HMUI::ScrollView,
-    pub _missionNodeSelectionManager: *mut MissionNodeSelectionManager,
-    pub _missionMapAnimationController: *mut MissionMapAnimationController,
-    pub _songPreviewPlayer: *mut SongPreviewPlayer,
-    pub _perceivedLoudnessPerLevelModel: *mut PerceivedLoudnessPerLevelModel,
-    pub _audioClipAsyncLoader: *mut AudioClipAsyncLoader,
-    pub _beatmapLevelsModel: *mut BeatmapLevelsModel,
+    pub _missionNodeSelectionManager: *mut crate::GlobalNamespace::MissionNodeSelectionManager,
+    pub _missionMapAnimationController: *mut crate::GlobalNamespace::MissionMapAnimationController,
+    pub _songPreviewPlayer: *mut crate::GlobalNamespace::SongPreviewPlayer,
+    pub _perceivedLoudnessPerLevelModel: *mut crate::GlobalNamespace::PerceivedLoudnessPerLevelModel,
+    pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
+    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
     pub didSelectMissionLevelEvent: *mut crate::System::Action_2<
-        *mut MissionSelectionMapViewController,
-        *mut MissionNode,
+        *mut crate::GlobalNamespace::MissionSelectionMapViewController,
+        *mut crate::GlobalNamespace::MissionNode,
     >,
-    pub _selectedMissionNode: *mut MissionNode,
+    pub _selectedMissionNode: *mut crate::GlobalNamespace::MissionNode,
 }
 #[cfg(feature = "MissionSelectionMapViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionSelectionMapViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MissionSelectionMapViewController => ""
     ."MissionSelectionMapViewController"
 );
 #[cfg(feature = "MissionSelectionMapViewController")]
-impl std::ops::Deref for MissionSelectionMapViewController {
+impl std::ops::Deref for crate::GlobalNamespace::MissionSelectionMapViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionSelectionMapViewController")]
-impl std::ops::DerefMut for MissionSelectionMapViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionSelectionMapViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionSelectionMapViewController")]
-impl MissionSelectionMapViewController {
-    #[cfg(feature = "MissionSelectionMapViewController+__c__DisplayClass16_0")]
-    pub type __c__DisplayClass16_0 = crate::GlobalNamespace::MissionSelectionMapViewController___c__DisplayClass16_0;
+impl crate::GlobalNamespace::MissionSelectionMapViewController {
     #[cfg(
         feature = "MissionSelectionMapViewController+_SongPlayerCrossfadeToLevelAsync_d__16"
     )]
     pub type _SongPlayerCrossfadeToLevelAsync_d__16 = crate::GlobalNamespace::MissionSelectionMapViewController__SongPlayerCrossfadeToLevelAsync_d__16;
+    #[cfg(feature = "MissionSelectionMapViewController+__c__DisplayClass16_0")]
+    pub type __c__DisplayClass16_0 = crate::GlobalNamespace::MissionSelectionMapViewController___c__DisplayClass16_0;
     pub fn DeselectSelectedNode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -82,7 +83,7 @@ impl MissionSelectionMapViewController {
     }
     pub fn HandleMissionNodeSelectionManagerDidSelectMissionNode(
         &mut self,
-        missionNodeVisualController: *mut MissionNodeVisualController,
+        missionNodeVisualController: *mut crate::GlobalNamespace::MissionNodeVisualController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -114,7 +115,7 @@ impl MissionSelectionMapViewController {
     }
     pub fn SongPlayerCrossfadeToLevelAsync(
         &mut self,
-        level: *mut BeatmapLevel,
+        level: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -136,8 +137,8 @@ impl MissionSelectionMapViewController {
     pub fn add_didSelectMissionLevelEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut MissionSelectionMapViewController,
-            *mut MissionNode,
+            *mut crate::GlobalNamespace::MissionSelectionMapViewController,
+            *mut crate::GlobalNamespace::MissionNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -160,8 +161,8 @@ impl MissionSelectionMapViewController {
     pub fn remove_didSelectMissionLevelEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut MissionSelectionMapViewController,
-            *mut MissionNode,
+            *mut crate::GlobalNamespace::MissionSelectionMapViewController,
+            *mut crate::GlobalNamespace::MissionNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -173,7 +174,8 @@ impl MissionSelectionMapViewController {
     }
 }
 #[cfg(feature = "MissionSelectionMapViewController")]
-impl quest_hook::libil2cpp::ObjectType for MissionSelectionMapViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MissionSelectionMapViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

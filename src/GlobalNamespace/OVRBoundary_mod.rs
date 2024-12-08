@@ -61,27 +61,27 @@ pub struct OVRBoundary {
 }
 #[cfg(feature = "OVRBoundary")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRBoundary => ""."OVRBoundary"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRBoundary => ""."OVRBoundary"
 );
 #[cfg(feature = "OVRBoundary")]
-impl std::ops::Deref for OVRBoundary {
+impl std::ops::Deref for crate::GlobalNamespace::OVRBoundary {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRBoundary")]
-impl std::ops::DerefMut for OVRBoundary {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRBoundary {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRBoundary")]
-impl OVRBoundary {
-    #[cfg(feature = "OVRBoundary+BoundaryType")]
-    pub type BoundaryType = crate::GlobalNamespace::OVRBoundary_BoundaryType;
+impl crate::GlobalNamespace::OVRBoundary {
     #[cfg(feature = "OVRBoundary+BoundaryTestResult")]
     pub type BoundaryTestResult = crate::GlobalNamespace::OVRBoundary_BoundaryTestResult;
+    #[cfg(feature = "OVRBoundary+BoundaryType")]
+    pub type BoundaryType = crate::GlobalNamespace::OVRBoundary_BoundaryType;
     #[cfg(feature = "OVRBoundary+Node")]
     pub type Node = crate::GlobalNamespace::OVRBoundary_Node;
     pub fn GetConfigured(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -181,7 +181,7 @@ impl OVRBoundary {
     }
 }
 #[cfg(feature = "OVRBoundary")]
-impl quest_hook::libil2cpp::ObjectType for OVRBoundary {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRBoundary {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

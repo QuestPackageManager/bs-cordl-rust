@@ -10,23 +10,24 @@ pub struct OVRRuntimeSettings {
 }
 #[cfg(feature = "OVRRuntimeSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRRuntimeSettings => ""."OVRRuntimeSettings"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRRuntimeSettings => ""
+    ."OVRRuntimeSettings"
 );
 #[cfg(feature = "OVRRuntimeSettings")]
-impl std::ops::Deref for OVRRuntimeSettings {
+impl std::ops::Deref for crate::GlobalNamespace::OVRRuntimeSettings {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRRuntimeSettings")]
-impl std::ops::DerefMut for OVRRuntimeSettings {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRRuntimeSettings {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRRuntimeSettings")]
-impl OVRRuntimeSettings {
+impl crate::GlobalNamespace::OVRRuntimeSettings {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -70,7 +71,7 @@ impl OVRRuntimeSettings {
     }
 }
 #[cfg(feature = "OVRRuntimeSettings")]
-impl quest_hook::libil2cpp::ObjectType for OVRRuntimeSettings {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRRuntimeSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

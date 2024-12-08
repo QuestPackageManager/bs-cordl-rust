@@ -62,38 +62,41 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData
 #[derive(Debug)]
 pub struct MultiplayerLocalActivePlayerGameplayManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _gameSongController: *mut GameSongController,
-    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
-    pub _multiplayerLevelEndActions: *mut IMultiplayerLevelEndActionsListener,
-    pub _prepareLevelCompletionResults: *mut PrepareLevelCompletionResults,
-    pub _gameEnergyCounter: *mut GameEnergyCounter,
-    pub _inGameMenuController: *mut MultiplayerLocalActivePlayerInGameMenuController,
-    pub _platformHelper: *mut IVRPlatformHelper,
-    pub _disconnectHelper: *mut MultiplayerLocalPlayerDisconnectHelper,
+    pub _gameSongController: *mut crate::GlobalNamespace::GameSongController,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _multiplayerLevelEndActions: *mut crate::GlobalNamespace::IMultiplayerLevelEndActionsListener,
+    pub _prepareLevelCompletionResults: *mut crate::GlobalNamespace::PrepareLevelCompletionResults,
+    pub _gameEnergyCounter: *mut crate::GlobalNamespace::GameEnergyCounter,
+    pub _inGameMenuController: *mut crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController,
+    pub _platformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
+    pub _disconnectHelper: *mut crate::GlobalNamespace::MultiplayerLocalPlayerDisconnectHelper,
     pub _initData: *mut crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData,
-    pub _saberManager: *mut SaberManager,
+    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
     pub _levelFinishedOrFailed: bool,
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLocalActivePlayerGameplayManager => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager => ""
     ."MultiplayerLocalActivePlayerGameplayManager"
 );
 #[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager")]
-impl std::ops::Deref for MultiplayerLocalActivePlayerGameplayManager {
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager")]
-impl std::ops::DerefMut for MultiplayerLocalActivePlayerGameplayManager {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager")]
-impl MultiplayerLocalActivePlayerGameplayManager {
+impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
     #[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager+InitData")]
     pub type InitData = crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData;
     pub fn HandleGameEnergyDidReach0(
@@ -246,7 +249,8 @@ impl MultiplayerLocalActivePlayerGameplayManager {
     }
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLocalActivePlayerGameplayManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

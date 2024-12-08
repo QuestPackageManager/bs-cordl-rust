@@ -4,7 +4,7 @@
 pub struct FlickeringNeonSign {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _flickeringSprite: *mut crate::UnityEngine::SpriteRenderer,
-    pub _light: *mut TubeBloomPrePassLight,
+    pub _light: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
     pub _particleSystems: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::ParticleSystem,
     >,
@@ -19,29 +19,30 @@ pub struct FlickeringNeonSign {
     pub _sparksAudioClips: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::AudioClip,
     >,
-    pub _sparksAudioClipPicker: *mut RandomObjectPicker_1<
+    pub _sparksAudioClipPicker: *mut crate::GlobalNamespace::RandomObjectPicker_1<
         *mut crate::UnityEngine::AudioClip,
     >,
 }
 #[cfg(feature = "FlickeringNeonSign")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FlickeringNeonSign => ""."FlickeringNeonSign"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FlickeringNeonSign => ""
+    ."FlickeringNeonSign"
 );
 #[cfg(feature = "FlickeringNeonSign")]
-impl std::ops::Deref for FlickeringNeonSign {
+impl std::ops::Deref for crate::GlobalNamespace::FlickeringNeonSign {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FlickeringNeonSign")]
-impl std::ops::DerefMut for FlickeringNeonSign {
+impl std::ops::DerefMut for crate::GlobalNamespace::FlickeringNeonSign {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FlickeringNeonSign")]
-impl FlickeringNeonSign {
+impl crate::GlobalNamespace::FlickeringNeonSign {
     #[cfg(feature = "FlickeringNeonSign+_FlickeringCoroutine_d__16")]
     pub type _FlickeringCoroutine_d__16 = crate::GlobalNamespace::FlickeringNeonSign__FlickeringCoroutine_d__16;
     pub fn Awake(
@@ -114,7 +115,7 @@ impl FlickeringNeonSign {
     }
 }
 #[cfg(feature = "FlickeringNeonSign")]
-impl quest_hook::libil2cpp::ObjectType for FlickeringNeonSign {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlickeringNeonSign {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

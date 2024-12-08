@@ -2,32 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuestSettingsApplicatorSO {
-    __cordl_parent: SettingsApplicatorSO,
+    __cordl_parent: crate::GlobalNamespace::SettingsApplicatorSO,
 }
 #[cfg(feature = "QuestSettingsApplicatorSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for QuestSettingsApplicatorSO => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::QuestSettingsApplicatorSO => ""
     ."QuestSettingsApplicatorSO"
 );
 #[cfg(feature = "QuestSettingsApplicatorSO")]
-impl std::ops::Deref for QuestSettingsApplicatorSO {
-    type Target = SettingsApplicatorSO;
+impl std::ops::Deref for crate::GlobalNamespace::QuestSettingsApplicatorSO {
+    type Target = crate::GlobalNamespace::SettingsApplicatorSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "QuestSettingsApplicatorSO")]
-impl std::ops::DerefMut for QuestSettingsApplicatorSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::QuestSettingsApplicatorSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "QuestSettingsApplicatorSO")]
-impl QuestSettingsApplicatorSO {
+impl crate::GlobalNamespace::QuestSettingsApplicatorSO {
     pub fn ApplyPerformancePreset(
         &mut self,
         preset: *mut crate::BeatSaber::PerformancePresets::PerformancePreset,
-        sceneType: SceneType,
+        sceneType: crate::GlobalNamespace::SceneType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -55,7 +55,8 @@ impl QuestSettingsApplicatorSO {
     }
 }
 #[cfg(feature = "QuestSettingsApplicatorSO")]
-impl quest_hook::libil2cpp::ObjectType for QuestSettingsApplicatorSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::QuestSettingsApplicatorSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

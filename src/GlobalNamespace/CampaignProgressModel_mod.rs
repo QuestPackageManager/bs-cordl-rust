@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CampaignProgressModel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _playerDataModel: *mut PlayerDataModel,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
     pub _missionIds: *mut crate::System::Collections::Generic::HashSet_1<
         *mut crate::System::String,
     >,
@@ -13,23 +13,24 @@ pub struct CampaignProgressModel {
 }
 #[cfg(feature = "CampaignProgressModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CampaignProgressModel => ""."CampaignProgressModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CampaignProgressModel => ""
+    ."CampaignProgressModel"
 );
 #[cfg(feature = "CampaignProgressModel")]
-impl std::ops::Deref for CampaignProgressModel {
+impl std::ops::Deref for crate::GlobalNamespace::CampaignProgressModel {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CampaignProgressModel")]
-impl std::ops::DerefMut for CampaignProgressModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::CampaignProgressModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CampaignProgressModel")]
-impl CampaignProgressModel {
+impl crate::GlobalNamespace::CampaignProgressModel {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -163,7 +164,8 @@ impl CampaignProgressModel {
     }
 }
 #[cfg(feature = "CampaignProgressModel")]
-impl quest_hook::libil2cpp::ObjectType for CampaignProgressModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::CampaignProgressModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

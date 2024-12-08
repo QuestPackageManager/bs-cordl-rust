@@ -96,13 +96,13 @@ for crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorArrayLightWithIds {
-    __cordl_parent: LightWithIds,
+    __cordl_parent: crate::GlobalNamespace::LightWithIds,
     pub _colorArrayLightWithIds: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId,
     >,
-    pub _materialController: *mut MaterialController,
+    pub _materialController: *mut crate::GlobalNamespace::MaterialController,
     pub _materialPropertyBlockControllers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut MaterialPropertyBlockController,
+        *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     >,
     pub _colorsArrayPropertyName: *mut crate::System::String,
     pub _colorsArrayOffsetPropertyName: *mut crate::System::String,
@@ -114,23 +114,24 @@ pub struct ColorArrayLightWithIds {
 }
 #[cfg(feature = "ColorArrayLightWithIds")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ColorArrayLightWithIds => ""."ColorArrayLightWithIds"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ColorArrayLightWithIds => ""
+    ."ColorArrayLightWithIds"
 );
 #[cfg(feature = "ColorArrayLightWithIds")]
-impl std::ops::Deref for ColorArrayLightWithIds {
-    type Target = LightWithIds;
+impl std::ops::Deref for crate::GlobalNamespace::ColorArrayLightWithIds {
+    type Target = crate::GlobalNamespace::LightWithIds;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorArrayLightWithIds")]
-impl std::ops::DerefMut for ColorArrayLightWithIds {
+impl std::ops::DerefMut for crate::GlobalNamespace::ColorArrayLightWithIds {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorArrayLightWithIds")]
-impl ColorArrayLightWithIds {
+impl crate::GlobalNamespace::ColorArrayLightWithIds {
     #[cfg(feature = "ColorArrayLightWithIds+ColorArrayLightWithId")]
     pub type ColorArrayLightWithId = crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId;
     pub fn GetLightWithIds(
@@ -249,7 +250,8 @@ impl ColorArrayLightWithIds {
     }
 }
 #[cfg(feature = "ColorArrayLightWithIds")]
-impl quest_hook::libil2cpp::ObjectType for ColorArrayLightWithIds {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ColorArrayLightWithIds {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

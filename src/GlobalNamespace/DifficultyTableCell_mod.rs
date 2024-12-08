@@ -6,27 +6,28 @@ pub struct DifficultyTableCell {
     pub _difficultyText: *mut crate::TMPro::TextMeshProUGUI,
     pub _bgImage: *mut crate::UnityEngine::UI::Image,
     pub _highlightImage: *mut crate::UnityEngine::UI::Image,
-    pub _fillIndicator: *mut FillIndicator,
+    pub _fillIndicator: *mut crate::GlobalNamespace::FillIndicator,
 }
 #[cfg(feature = "DifficultyTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for DifficultyTableCell => ""."DifficultyTableCell"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::DifficultyTableCell => ""
+    ."DifficultyTableCell"
 );
 #[cfg(feature = "DifficultyTableCell")]
-impl std::ops::Deref for DifficultyTableCell {
+impl std::ops::Deref for crate::GlobalNamespace::DifficultyTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DifficultyTableCell")]
-impl std::ops::DerefMut for DifficultyTableCell {
+impl std::ops::DerefMut for crate::GlobalNamespace::DifficultyTableCell {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "DifficultyTableCell")]
-impl DifficultyTableCell {
+impl crate::GlobalNamespace::DifficultyTableCell {
     pub fn HighlightDidChange(
         &mut self,
         transitionType: crate::HMUI::SelectableCell_TransitionType,
@@ -100,7 +101,7 @@ impl DifficultyTableCell {
     }
 }
 #[cfg(feature = "DifficultyTableCell")]
-impl quest_hook::libil2cpp::ObjectType for DifficultyTableCell {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DifficultyTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

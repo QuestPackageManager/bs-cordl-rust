@@ -7,23 +7,24 @@ pub struct CopyPosition {
 }
 #[cfg(feature = "CopyPosition")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CopyPosition => ""."CopyPosition"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CopyPosition => ""
+    ."CopyPosition"
 );
 #[cfg(feature = "CopyPosition")]
-impl std::ops::Deref for CopyPosition {
+impl std::ops::Deref for crate::GlobalNamespace::CopyPosition {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CopyPosition")]
-impl std::ops::DerefMut for CopyPosition {
+impl std::ops::DerefMut for crate::GlobalNamespace::CopyPosition {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CopyPosition")]
-impl CopyPosition {
+impl crate::GlobalNamespace::CopyPosition {
     #[cfg(feature = "CopyPosition+CopyPositionUpdater")]
     pub type CopyPositionUpdater = crate::GlobalNamespace::CopyPosition_CopyPositionUpdater;
     pub fn Awake(
@@ -65,7 +66,7 @@ impl CopyPosition {
     }
 }
 #[cfg(feature = "CopyPosition")]
-impl quest_hook::libil2cpp::ObjectType for CopyPosition {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CopyPosition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -79,7 +80,7 @@ impl quest_hook::libil2cpp::ObjectType for CopyPosition {
 pub struct CopyPosition_CopyPositionUpdater {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _copyPositions: *mut crate::System::Collections::Generic::List_1<
-        *mut CopyPosition,
+        *mut crate::GlobalNamespace::CopyPosition,
     >,
 }
 #[cfg(feature = "CopyPosition+CopyPositionUpdater")]

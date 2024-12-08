@@ -2,29 +2,30 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FullComboMissionObjectiveChecker {
-    __cordl_parent: MissionObjectiveChecker,
-    pub _comboController: *mut ComboController,
+    __cordl_parent: crate::GlobalNamespace::MissionObjectiveChecker,
+    pub _comboController: *mut crate::GlobalNamespace::ComboController,
 }
 #[cfg(feature = "FullComboMissionObjectiveChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FullComboMissionObjectiveChecker => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::FullComboMissionObjectiveChecker => ""
     ."FullComboMissionObjectiveChecker"
 );
 #[cfg(feature = "FullComboMissionObjectiveChecker")]
-impl std::ops::Deref for FullComboMissionObjectiveChecker {
-    type Target = MissionObjectiveChecker;
+impl std::ops::Deref for crate::GlobalNamespace::FullComboMissionObjectiveChecker {
+    type Target = crate::GlobalNamespace::MissionObjectiveChecker;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FullComboMissionObjectiveChecker")]
-impl std::ops::DerefMut for FullComboMissionObjectiveChecker {
+impl std::ops::DerefMut for crate::GlobalNamespace::FullComboMissionObjectiveChecker {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FullComboMissionObjectiveChecker")]
-impl FullComboMissionObjectiveChecker {
+impl crate::GlobalNamespace::FullComboMissionObjectiveChecker {
     pub fn HandleComboBreakingEventHappened(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -74,7 +75,8 @@ impl FullComboMissionObjectiveChecker {
     }
 }
 #[cfg(feature = "FullComboMissionObjectiveChecker")]
-impl quest_hook::libil2cpp::ObjectType for FullComboMissionObjectiveChecker {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FullComboMissionObjectiveChecker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -160,14 +160,14 @@ impl std::ops::DerefMut for crate::Unity::Properties::Internal::ColorPropertyBag
 }
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag")]
 impl crate::Unity::Properties::Internal::ColorPropertyBag {
-    #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+GProperty")]
-    pub type GProperty = crate::Unity::Properties::Internal::ColorPropertyBag_GProperty;
     #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+AProperty")]
     pub type AProperty = crate::Unity::Properties::Internal::ColorPropertyBag_AProperty;
-    #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+RProperty")]
-    pub type RProperty = crate::Unity::Properties::Internal::ColorPropertyBag_RProperty;
     #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+BProperty")]
     pub type BProperty = crate::Unity::Properties::Internal::ColorPropertyBag_BProperty;
+    #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+GProperty")]
+    pub type GProperty = crate::Unity::Properties::Internal::ColorPropertyBag_GProperty;
+    #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+RProperty")]
+    pub type RProperty = crate::Unity::Properties::Internal::ColorPropertyBag_RProperty;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

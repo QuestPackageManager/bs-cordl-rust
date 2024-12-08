@@ -59,14 +59,14 @@ for crate::GlobalNamespace::PauseController_InitData {
 #[derive(Debug)]
 pub struct PauseController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _pauseMenuManager: *mut PauseMenuManager,
-    pub _gamePause: *mut IGamePause,
-    pub _menuButtonTrigger: *mut IMenuButtonTrigger,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
-    pub _levelRestartController: *mut ILevelRestartController,
-    pub _returnToMenuController: *mut IReturnToMenuController,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
-    pub _levelStartController: *mut ILevelStartController,
+    pub _pauseMenuManager: *mut crate::GlobalNamespace::PauseMenuManager,
+    pub _gamePause: *mut crate::GlobalNamespace::IGamePause,
+    pub _menuButtonTrigger: *mut crate::GlobalNamespace::IMenuButtonTrigger,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
+    pub _levelRestartController: *mut crate::GlobalNamespace::ILevelRestartController,
+    pub _returnToMenuController: *mut crate::GlobalNamespace::IReturnToMenuController,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
+    pub _levelStartController: *mut crate::GlobalNamespace::ILevelStartController,
     pub _initData: *mut crate::GlobalNamespace::PauseController_InitData,
     pub didPauseEvent: *mut crate::System::Action,
     pub didResumeEvent: *mut crate::System::Action,
@@ -77,23 +77,24 @@ pub struct PauseController {
 }
 #[cfg(feature = "PauseController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PauseController => ""."PauseController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PauseController => ""
+    ."PauseController"
 );
 #[cfg(feature = "PauseController")]
-impl std::ops::Deref for PauseController {
+impl std::ops::Deref for crate::GlobalNamespace::PauseController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PauseController")]
-impl std::ops::DerefMut for PauseController {
+impl std::ops::DerefMut for crate::GlobalNamespace::PauseController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PauseController")]
-impl PauseController {
+impl crate::GlobalNamespace::PauseController {
     #[cfg(feature = "PauseController+InitData")]
     pub type InitData = crate::GlobalNamespace::PauseController_InitData;
     #[cfg(feature = "PauseController+__c__DisplayClass25_0")]
@@ -377,7 +378,7 @@ impl PauseController {
     }
 }
 #[cfg(feature = "PauseController")]
-impl quest_hook::libil2cpp::ObjectType for PauseController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PauseController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

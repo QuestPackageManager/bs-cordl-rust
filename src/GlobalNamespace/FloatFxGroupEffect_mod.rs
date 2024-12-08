@@ -4,30 +4,31 @@
 pub struct FloatFxGroupEffect {
     __cordl_parent: crate::System::Object,
     pub _tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
     pub _floatTween: *mut crate::Tweening::FloatTween,
-    pub _floatFxBeatmapEventCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _floatFxBeatmapEventCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     pub _initData: *mut crate::GlobalNamespace::FloatFxGroupEffect_InitData,
 }
 #[cfg(feature = "FloatFxGroupEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FloatFxGroupEffect => ""."FloatFxGroupEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FloatFxGroupEffect => ""
+    ."FloatFxGroupEffect"
 );
 #[cfg(feature = "FloatFxGroupEffect")]
-impl std::ops::Deref for FloatFxGroupEffect {
+impl std::ops::Deref for crate::GlobalNamespace::FloatFxGroupEffect {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatFxGroupEffect")]
-impl std::ops::DerefMut for FloatFxGroupEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::FloatFxGroupEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatFxGroupEffect")]
-impl FloatFxGroupEffect {
+impl crate::GlobalNamespace::FloatFxGroupEffect {
     #[cfg(feature = "FloatFxGroupEffect+InitData")]
     pub type InitData = crate::GlobalNamespace::FloatFxGroupEffect_InitData;
     pub fn Cleanup(
@@ -42,7 +43,7 @@ impl FloatFxGroupEffect {
     }
     pub fn HandleFloatFxBeatmapEventCallback(
         &mut self,
-        currentEvent: *mut FloatFxBeatmapEventData,
+        currentEvent: *mut crate::GlobalNamespace::FloatFxBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -54,7 +55,7 @@ impl FloatFxGroupEffect {
     pub fn New(
         initData: *mut crate::GlobalNamespace::FloatFxGroupEffect_InitData,
         tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
-        beatmapCallbacksController: *mut BeatmapCallbacksController,
+        beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -80,7 +81,7 @@ impl FloatFxGroupEffect {
         &mut self,
         initData: *mut crate::GlobalNamespace::FloatFxGroupEffect_InitData,
         tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
-        beatmapCallbacksController: *mut BeatmapCallbacksController,
+        beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -91,7 +92,7 @@ impl FloatFxGroupEffect {
     }
 }
 #[cfg(feature = "FloatFxGroupEffect")]
-impl quest_hook::libil2cpp::ObjectType for FloatFxGroupEffect {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FloatFxGroupEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -106,7 +107,7 @@ pub struct FloatFxGroupEffect_InitData {
     __cordl_parent: crate::System::Object,
     pub groupId: i32,
     pub elementId: i32,
-    pub target: *mut FloatFxGroupEffectTarget,
+    pub target: *mut crate::GlobalNamespace::FloatFxGroupEffectTarget,
 }
 #[cfg(feature = "FloatFxGroupEffect+InitData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -131,7 +132,7 @@ impl crate::GlobalNamespace::FloatFxGroupEffect_InitData {
     pub fn New(
         groupId: i32,
         elementId: i32,
-        target: *mut FloatFxGroupEffectTarget,
+        target: *mut crate::GlobalNamespace::FloatFxGroupEffectTarget,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -143,7 +144,7 @@ impl crate::GlobalNamespace::FloatFxGroupEffect_InitData {
         &mut self,
         groupId: i32,
         elementId: i32,
-        target: *mut FloatFxGroupEffectTarget,
+        target: *mut crate::GlobalNamespace::FloatFxGroupEffectTarget,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

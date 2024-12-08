@@ -2,30 +2,37 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PositionRectTransformViewStateTransition {
-    __cordl_parent: BaseStateTransition_1<*mut crate::UnityEngine::RectTransform>,
-    pub _transition: *mut Vector3TransitionSO,
+    __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
+        *mut crate::UnityEngine::RectTransform,
+    >,
+    pub _transition: *mut crate::GlobalNamespace::Vector3TransitionSO,
     pub _vectorTween: *mut crate::Tweening::Vector3Tween,
 }
 #[cfg(feature = "PositionRectTransformViewStateTransition")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PositionRectTransformViewStateTransition => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PositionRectTransformViewStateTransition => ""
     ."PositionRectTransformViewStateTransition"
 );
 #[cfg(feature = "PositionRectTransformViewStateTransition")]
-impl std::ops::Deref for PositionRectTransformViewStateTransition {
-    type Target = BaseStateTransition_1<*mut crate::UnityEngine::RectTransform>;
+impl std::ops::Deref
+for crate::GlobalNamespace::PositionRectTransformViewStateTransition {
+    type Target = crate::GlobalNamespace::BaseStateTransition_1<
+        *mut crate::UnityEngine::RectTransform,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PositionRectTransformViewStateTransition")]
-impl std::ops::DerefMut for PositionRectTransformViewStateTransition {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::PositionRectTransformViewStateTransition {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PositionRectTransformViewStateTransition")]
-impl PositionRectTransformViewStateTransition {
+impl crate::GlobalNamespace::PositionRectTransformViewStateTransition {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -197,17 +204,18 @@ impl PositionRectTransformViewStateTransition {
     }
     pub fn get_transition(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BaseTransitionSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BaseTransitionSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BaseTransitionSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BaseTransitionSO = __cordl_object
             .invoke("get_transition", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PositionRectTransformViewStateTransition")]
-impl quest_hook::libil2cpp::ObjectType for PositionRectTransformViewStateTransition {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PositionRectTransformViewStateTransition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

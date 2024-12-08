@@ -3,33 +3,36 @@
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerEffectsSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _noteDebrisSpawner: *mut NoteDebrisSpawner,
-    pub _bombExplosionEffect: *mut BombExplosionEffect,
-    pub _beatmapObjectEventManager: *mut IConnectedPlayerBeatmapObjectEventManager,
+    pub _noteDebrisSpawner: *mut crate::GlobalNamespace::NoteDebrisSpawner,
+    pub _bombExplosionEffect: *mut crate::GlobalNamespace::BombExplosionEffect,
+    pub _beatmapObjectEventManager: *mut crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerEffectsSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerConnectedPlayerEffectsSpawner => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerConnectedPlayerEffectsSpawner => ""
     ."MultiplayerConnectedPlayerEffectsSpawner"
 );
 #[cfg(feature = "MultiplayerConnectedPlayerEffectsSpawner")]
-impl std::ops::Deref for MultiplayerConnectedPlayerEffectsSpawner {
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerConnectedPlayerEffectsSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerEffectsSpawner")]
-impl std::ops::DerefMut for MultiplayerConnectedPlayerEffectsSpawner {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerConnectedPlayerEffectsSpawner {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerEffectsSpawner")]
-impl MultiplayerConnectedPlayerEffectsSpawner {
+impl crate::GlobalNamespace::MultiplayerConnectedPlayerEffectsSpawner {
     pub fn HandleBeatmapObjectEventManagerConnectedPlayerBeatmapObjectWasCut(
         &mut self,
-        noteCutInfo: *mut NoteCutInfoNetSerializable,
+        noteCutInfo: *mut crate::GlobalNamespace::NoteCutInfoNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -80,7 +83,8 @@ impl MultiplayerConnectedPlayerEffectsSpawner {
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerEffectsSpawner")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerConnectedPlayerEffectsSpawner {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerConnectedPlayerEffectsSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

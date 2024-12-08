@@ -2,31 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TubeBloomPrePassLightWithId {
-    __cordl_parent: LightWithIdMonoBehaviour,
-    pub _tubeBloomPrePassLight: *mut TubeBloomPrePassLight,
+    __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
+    pub _tubeBloomPrePassLight: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
     pub _setOnlyOnce: bool,
     pub _setColorOnly: bool,
 }
 #[cfg(feature = "TubeBloomPrePassLightWithId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TubeBloomPrePassLightWithId => ""
-    ."TubeBloomPrePassLightWithId"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TubeBloomPrePassLightWithId =>
+    ""."TubeBloomPrePassLightWithId"
 );
 #[cfg(feature = "TubeBloomPrePassLightWithId")]
-impl std::ops::Deref for TubeBloomPrePassLightWithId {
-    type Target = LightWithIdMonoBehaviour;
+impl std::ops::Deref for crate::GlobalNamespace::TubeBloomPrePassLightWithId {
+    type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TubeBloomPrePassLightWithId")]
-impl std::ops::DerefMut for TubeBloomPrePassLightWithId {
+impl std::ops::DerefMut for crate::GlobalNamespace::TubeBloomPrePassLightWithId {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TubeBloomPrePassLightWithId")]
-impl TubeBloomPrePassLightWithId {
+impl crate::GlobalNamespace::TubeBloomPrePassLightWithId {
     pub fn ColorWasSet(
         &mut self,
         color: crate::UnityEngine::Color,
@@ -67,7 +67,8 @@ impl TubeBloomPrePassLightWithId {
     }
 }
 #[cfg(feature = "TubeBloomPrePassLightWithId")]
-impl quest_hook::libil2cpp::ObjectType for TubeBloomPrePassLightWithId {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::TubeBloomPrePassLightWithId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -552,26 +552,26 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder {
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder")]
 impl crate::System::Xml::Schema::XdrBuilder {
-    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrInitFunction")]
-    pub type XdrInitFunction = crate::System::Xml::Schema::XdrBuilder_XdrInitFunction;
-    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrBeginChildFunction")]
-    pub type XdrBeginChildFunction = crate::System::Xml::Schema::XdrBuilder_XdrBeginChildFunction;
-    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrEndChildFunction")]
-    pub type XdrEndChildFunction = crate::System::Xml::Schema::XdrBuilder_XdrEndChildFunction;
-    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrBuildFunction")]
-    pub type XdrBuildFunction = crate::System::Xml::Schema::XdrBuilder_XdrBuildFunction;
-    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrAttributeEntry")]
-    pub type XdrAttributeEntry = crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry;
-    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrEntry")]
-    pub type XdrEntry = crate::System::Xml::Schema::XdrBuilder_XdrEntry;
-    #[cfg(feature = "System+Xml+Schema+XdrBuilder+DeclBaseInfo")]
-    pub type DeclBaseInfo = crate::System::Xml::Schema::XdrBuilder_DeclBaseInfo;
-    #[cfg(feature = "System+Xml+Schema+XdrBuilder+GroupContent")]
-    pub type GroupContent = crate::System::Xml::Schema::XdrBuilder_GroupContent;
-    #[cfg(feature = "System+Xml+Schema+XdrBuilder+ElementContent")]
-    pub type ElementContent = crate::System::Xml::Schema::XdrBuilder_ElementContent;
     #[cfg(feature = "System+Xml+Schema+XdrBuilder+AttributeContent")]
     pub type AttributeContent = crate::System::Xml::Schema::XdrBuilder_AttributeContent;
+    #[cfg(feature = "System+Xml+Schema+XdrBuilder+DeclBaseInfo")]
+    pub type DeclBaseInfo = crate::System::Xml::Schema::XdrBuilder_DeclBaseInfo;
+    #[cfg(feature = "System+Xml+Schema+XdrBuilder+ElementContent")]
+    pub type ElementContent = crate::System::Xml::Schema::XdrBuilder_ElementContent;
+    #[cfg(feature = "System+Xml+Schema+XdrBuilder+GroupContent")]
+    pub type GroupContent = crate::System::Xml::Schema::XdrBuilder_GroupContent;
+    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrAttributeEntry")]
+    pub type XdrAttributeEntry = crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry;
+    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrBeginChildFunction")]
+    pub type XdrBeginChildFunction = crate::System::Xml::Schema::XdrBuilder_XdrBeginChildFunction;
+    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrBuildFunction")]
+    pub type XdrBuildFunction = crate::System::Xml::Schema::XdrBuilder_XdrBuildFunction;
+    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrEndChildFunction")]
+    pub type XdrEndChildFunction = crate::System::Xml::Schema::XdrBuilder_XdrEndChildFunction;
+    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrEntry")]
+    pub type XdrEntry = crate::System::Xml::Schema::XdrBuilder_XdrEntry;
+    #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrInitFunction")]
+    pub type XdrInitFunction = crate::System::Xml::Schema::XdrBuilder_XdrInitFunction;
     pub fn AddOrder(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

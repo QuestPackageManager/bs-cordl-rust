@@ -115,10 +115,10 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::UI::TrackedDeviceRa
 }
 #[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster")]
 impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
-    #[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c;
     #[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData")]
     pub type RaycastHitData = crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData;
+    #[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+__c")]
+    pub type __c = crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster___c;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

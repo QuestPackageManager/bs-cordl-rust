@@ -42,23 +42,23 @@ pub struct OVREyeGaze {
 }
 #[cfg(feature = "OVREyeGaze")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVREyeGaze => ""."OVREyeGaze"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVREyeGaze => ""."OVREyeGaze"
 );
 #[cfg(feature = "OVREyeGaze")]
-impl std::ops::Deref for OVREyeGaze {
+impl std::ops::Deref for crate::GlobalNamespace::OVREyeGaze {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVREyeGaze")]
-impl std::ops::DerefMut for OVREyeGaze {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVREyeGaze {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVREyeGaze")]
-impl OVREyeGaze {
+impl crate::GlobalNamespace::OVREyeGaze {
     #[cfg(feature = "OVREyeGaze+EyeId")]
     pub type EyeId = crate::GlobalNamespace::OVREyeGaze_EyeId;
     #[cfg(feature = "OVREyeGaze+EyeTrackingMode")]
@@ -206,7 +206,7 @@ impl OVREyeGaze {
     }
 }
 #[cfg(feature = "OVREyeGaze")]
-impl quest_hook::libil2cpp::ObjectType for OVREyeGaze {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVREyeGaze {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

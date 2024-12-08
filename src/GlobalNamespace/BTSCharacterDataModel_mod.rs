@@ -90,23 +90,24 @@ pub struct BTSCharacterDataModel {
 }
 #[cfg(feature = "BTSCharacterDataModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BTSCharacterDataModel => ""."BTSCharacterDataModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BTSCharacterDataModel => ""
+    ."BTSCharacterDataModel"
 );
 #[cfg(feature = "BTSCharacterDataModel")]
-impl std::ops::Deref for BTSCharacterDataModel {
+impl std::ops::Deref for crate::GlobalNamespace::BTSCharacterDataModel {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BTSCharacterDataModel")]
-impl std::ops::DerefMut for BTSCharacterDataModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::BTSCharacterDataModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BTSCharacterDataModel")]
-impl BTSCharacterDataModel {
+impl crate::GlobalNamespace::BTSCharacterDataModel {
     #[cfg(feature = "BTSCharacterDataModel+AnimationClipWithId")]
     pub type AnimationClipWithId = crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId;
     #[cfg(feature = "BTSCharacterDataModel+PrefabWithId")]
@@ -160,7 +161,8 @@ impl BTSCharacterDataModel {
     }
 }
 #[cfg(feature = "BTSCharacterDataModel")]
-impl quest_hook::libil2cpp::ObjectType for BTSCharacterDataModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BTSCharacterDataModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

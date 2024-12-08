@@ -12,24 +12,24 @@ pub struct OnWillRenderObjectTrigger {
 }
 #[cfg(feature = "OnWillRenderObjectTrigger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OnWillRenderObjectTrigger => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OnWillRenderObjectTrigger => ""
     ."OnWillRenderObjectTrigger"
 );
 #[cfg(feature = "OnWillRenderObjectTrigger")]
-impl std::ops::Deref for OnWillRenderObjectTrigger {
+impl std::ops::Deref for crate::GlobalNamespace::OnWillRenderObjectTrigger {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OnWillRenderObjectTrigger")]
-impl std::ops::DerefMut for OnWillRenderObjectTrigger {
+impl std::ops::DerefMut for crate::GlobalNamespace::OnWillRenderObjectTrigger {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OnWillRenderObjectTrigger")]
-impl OnWillRenderObjectTrigger {
+impl crate::GlobalNamespace::OnWillRenderObjectTrigger {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -69,7 +69,8 @@ impl OnWillRenderObjectTrigger {
     }
 }
 #[cfg(feature = "OnWillRenderObjectTrigger")]
-impl quest_hook::libil2cpp::ObjectType for OnWillRenderObjectTrigger {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OnWillRenderObjectTrigger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -185,29 +185,30 @@ pub struct OVRFaceExpressions {
 }
 #[cfg(feature = "OVRFaceExpressions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRFaceExpressions => ""."OVRFaceExpressions"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRFaceExpressions => ""
+    ."OVRFaceExpressions"
 );
 #[cfg(feature = "OVRFaceExpressions")]
-impl std::ops::Deref for OVRFaceExpressions {
+impl std::ops::Deref for crate::GlobalNamespace::OVRFaceExpressions {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRFaceExpressions")]
-impl std::ops::DerefMut for OVRFaceExpressions {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRFaceExpressions {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRFaceExpressions")]
-impl OVRFaceExpressions {
-    #[cfg(feature = "OVRFaceExpressions+FaceRegionConfidence")]
-    pub type FaceRegionConfidence = crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence;
-    #[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
-    pub type FaceExpressionsEnumerator = crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator;
+impl crate::GlobalNamespace::OVRFaceExpressions {
     #[cfg(feature = "OVRFaceExpressions+FaceExpression")]
     pub type FaceExpression = crate::GlobalNamespace::OVRFaceExpressions_FaceExpression;
+    #[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
+    pub type FaceExpressionsEnumerator = crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator;
+    #[cfg(feature = "OVRFaceExpressions+FaceRegionConfidence")]
+    pub type FaceRegionConfidence = crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence;
     #[cfg(feature = "OVRFaceExpressions+WeightProvider")]
     type WeightProvider = crate::GlobalNamespace::OVRFaceExpressions_WeightProvider;
     pub fn Awake(
@@ -463,7 +464,7 @@ impl OVRFaceExpressions {
     }
 }
 #[cfg(feature = "OVRFaceExpressions")]
-impl quest_hook::libil2cpp::ObjectType for OVRFaceExpressions {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRFaceExpressions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

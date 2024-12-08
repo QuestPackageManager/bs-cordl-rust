@@ -256,55 +256,56 @@ pub struct OVRObjectPool {
 }
 #[cfg(feature = "OVRObjectPool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRObjectPool => ""."OVRObjectPool"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRObjectPool => ""
+    ."OVRObjectPool"
 );
 #[cfg(feature = "OVRObjectPool")]
-impl std::ops::Deref for OVRObjectPool {
+impl std::ops::Deref for crate::GlobalNamespace::OVRObjectPool {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRObjectPool")]
-impl std::ops::DerefMut for OVRObjectPool {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRObjectPool {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRObjectPool")]
-impl OVRObjectPool {
+impl crate::GlobalNamespace::OVRObjectPool {
+    #[cfg(feature = "OVRObjectPool+DictionaryScope_2")]
+    pub type DictionaryScope_2<
+        TKey: quest_hook::libil2cpp::Type,
+        TValue: quest_hook::libil2cpp::Type,
+    > = crate::GlobalNamespace::OVRObjectPool_DictionaryScope_2<TKey, TValue>;
     #[cfg(feature = "OVRObjectPool+HashSetScope_1")]
     pub type HashSetScope_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<
-        T,
-    >;
-    #[cfg(feature = "OVRObjectPool+Storage_1")]
-    pub type Storage_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRObjectPool_Storage_1<
-        T,
-    >;
-    #[cfg(feature = "OVRObjectPool+StackScope_1")]
-    pub type StackScope_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRObjectPool_StackScope_1<
         T,
     >;
     #[cfg(feature = "OVRObjectPool+ItemScope_1")]
     pub type ItemScope_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRObjectPool_ItemScope_1<
         T,
     >;
-    #[cfg(feature = "OVRObjectPool+QueueScope_1")]
-    pub type QueueScope_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRObjectPool_QueueScope_1<
-        T,
-    >;
-    #[cfg(feature = "OVRObjectPool+DictionaryScope_2")]
-    pub type DictionaryScope_2<
-        TKey: quest_hook::libil2cpp::Type,
-        TValue: quest_hook::libil2cpp::Type,
-    > = crate::GlobalNamespace::OVRObjectPool_DictionaryScope_2<TKey, TValue>;
     #[cfg(feature = "OVRObjectPool+ListScope_1")]
     pub type ListScope_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRObjectPool_ListScope_1<
         T,
     >;
+    #[cfg(feature = "OVRObjectPool+QueueScope_1")]
+    pub type QueueScope_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRObjectPool_QueueScope_1<
+        T,
+    >;
+    #[cfg(feature = "OVRObjectPool+StackScope_1")]
+    pub type StackScope_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRObjectPool_StackScope_1<
+        T,
+    >;
+    #[cfg(feature = "OVRObjectPool+Storage_1")]
+    pub type Storage_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRObjectPool_Storage_1<
+        T,
+    >;
 }
 #[cfg(feature = "OVRObjectPool")]
-impl quest_hook::libil2cpp::ObjectType for OVRObjectPool {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRObjectPool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

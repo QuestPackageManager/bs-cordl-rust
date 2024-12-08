@@ -2,28 +2,29 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS5ActivityDataSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _activityId: *mut crate::System::String,
 }
 #[cfg(feature = "PS5ActivityDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PS5ActivityDataSO => ""."PS5ActivityDataSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PS5ActivityDataSO => ""
+    ."PS5ActivityDataSO"
 );
 #[cfg(feature = "PS5ActivityDataSO")]
-impl std::ops::Deref for PS5ActivityDataSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::PS5ActivityDataSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PS5ActivityDataSO")]
-impl std::ops::DerefMut for PS5ActivityDataSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::PS5ActivityDataSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PS5ActivityDataSO")]
-impl PS5ActivityDataSO {
+impl crate::GlobalNamespace::PS5ActivityDataSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -53,7 +54,7 @@ impl PS5ActivityDataSO {
     }
 }
 #[cfg(feature = "PS5ActivityDataSO")]
-impl quest_hook::libil2cpp::ObjectType for PS5ActivityDataSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PS5ActivityDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusPlatformAdditionalContentModel {
-    __cordl_parent: AdditionalContentModel,
-    pub _oculusLevelProductCollectionModel: *mut OculusLevelProductCollectionModel,
+    __cordl_parent: crate::GlobalNamespace::AdditionalContentModel,
+    pub _oculusLevelProductCollectionModel: *mut crate::GlobalNamespace::OculusLevelProductCollectionModel,
     pub _entitlementsSKU: *mut crate::System::Collections::Generic::HashSet_1<
         *mut crate::System::String,
     >,
@@ -12,52 +12,54 @@ pub struct OculusPlatformAdditionalContentModel {
 }
 #[cfg(feature = "OculusPlatformAdditionalContentModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OculusPlatformAdditionalContentModel => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OculusPlatformAdditionalContentModel => ""
     ."OculusPlatformAdditionalContentModel"
 );
 #[cfg(feature = "OculusPlatformAdditionalContentModel")]
-impl std::ops::Deref for OculusPlatformAdditionalContentModel {
-    type Target = AdditionalContentModel;
+impl std::ops::Deref for crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
+    type Target = crate::GlobalNamespace::AdditionalContentModel;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusPlatformAdditionalContentModel")]
-impl std::ops::DerefMut for OculusPlatformAdditionalContentModel {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusPlatformAdditionalContentModel")]
-impl OculusPlatformAdditionalContentModel {
-    #[cfg(feature = "OculusPlatformAdditionalContentModel+_IsDataValidAsync_d__10")]
-    pub type _IsDataValidAsync_d__10 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel__IsDataValidAsync_d__10;
-    #[cfg(feature = "OculusPlatformAdditionalContentModel+__c__DisplayClass13_0")]
-    pub type __c__DisplayClass13_0 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel___c__DisplayClass13_0;
+impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     #[cfg(
         feature = "OculusPlatformAdditionalContentModel+_GetLevelDataVersionInternalAsync_d__9"
     )]
     pub type _GetLevelDataVersionInternalAsync_d__9 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel__GetLevelDataVersionInternalAsync_d__9;
     #[cfg(
-        feature = "OculusPlatformAdditionalContentModel+_OpenLevelProductStoreAsync_d__11"
+        feature = "OculusPlatformAdditionalContentModel+_GetLevelEntitlementStatusInternalAsync_d__7"
     )]
-    pub type _OpenLevelProductStoreAsync_d__11 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel__OpenLevelProductStoreAsync_d__11;
+    pub type _GetLevelEntitlementStatusInternalAsync_d__7 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel__GetLevelEntitlementStatusInternalAsync_d__7;
     #[cfg(
         feature = "OculusPlatformAdditionalContentModel+_GetPackEntitlementStatusInternalAsync_d__8"
     )]
     pub type _GetPackEntitlementStatusInternalAsync_d__8 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel__GetPackEntitlementStatusInternalAsync_d__8;
     #[cfg(
-        feature = "OculusPlatformAdditionalContentModel+_GetLevelEntitlementStatusInternalAsync_d__7"
+        feature = "OculusPlatformAdditionalContentModel+_GetRedirectedLevelPackProductData_d__5"
     )]
-    pub type _GetLevelEntitlementStatusInternalAsync_d__7 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel__GetLevelEntitlementStatusInternalAsync_d__7;
+    pub type _GetRedirectedLevelPackProductData_d__5 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel__GetRedirectedLevelPackProductData_d__5;
+    #[cfg(feature = "OculusPlatformAdditionalContentModel+_IsDataValidAsync_d__10")]
+    pub type _IsDataValidAsync_d__10 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel__IsDataValidAsync_d__10;
     #[cfg(
         feature = "OculusPlatformAdditionalContentModel+_OpenLevelPackProductStoreAsync_d__12"
     )]
     pub type _OpenLevelPackProductStoreAsync_d__12 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel__OpenLevelPackProductStoreAsync_d__12;
     #[cfg(
-        feature = "OculusPlatformAdditionalContentModel+_GetRedirectedLevelPackProductData_d__5"
+        feature = "OculusPlatformAdditionalContentModel+_OpenLevelProductStoreAsync_d__11"
     )]
-    pub type _GetRedirectedLevelPackProductData_d__5 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel__GetRedirectedLevelPackProductData_d__5;
+    pub type _OpenLevelProductStoreAsync_d__11 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel__OpenLevelProductStoreAsync_d__11;
+    #[cfg(feature = "OculusPlatformAdditionalContentModel+__c__DisplayClass13_0")]
+    pub type __c__DisplayClass13_0 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel___c__DisplayClass13_0;
     #[cfg(feature = "OculusPlatformAdditionalContentModel+__c__DisplayClass15_0")]
     pub type __c__DisplayClass15_0 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel___c__DisplayClass15_0;
     pub fn CheckForNewEntitlementsAsync(
@@ -79,11 +81,11 @@ impl OculusPlatformAdditionalContentModel {
     pub fn GetLevelDataVersion(
         &mut self,
         levelId: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<BeatmapLevelDataVersion> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapLevelDataVersion> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapLevelDataVersion = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::BeatmapLevelDataVersion = __cordl_object
             .invoke("GetLevelDataVersion", (levelId))?;
         Ok(__cordl_ret)
     }
@@ -92,13 +94,15 @@ impl OculusPlatformAdditionalContentModel {
         levelId: *mut crate::System::String,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<BeatmapLevelDataVersion>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::BeatmapLevelDataVersion,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            BeatmapLevelDataVersion,
+            crate::GlobalNamespace::BeatmapLevelDataVersion,
         > = __cordl_object.invoke("GetLevelDataVersionInternalAsync", (levelId, token))?;
         Ok(__cordl_ret)
     }
@@ -107,13 +111,15 @@ impl OculusPlatformAdditionalContentModel {
         levelId: *mut crate::System::String,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<EntitlementStatus>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::EntitlementStatus,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            EntitlementStatus,
+            crate::GlobalNamespace::EntitlementStatus,
         > = __cordl_object
             .invoke(
                 "GetLevelEntitlementStatusInternalAsync",
@@ -139,13 +145,15 @@ impl OculusPlatformAdditionalContentModel {
         packId: *mut crate::System::String,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<EntitlementStatus>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::EntitlementStatus,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            EntitlementStatus,
+            crate::GlobalNamespace::EntitlementStatus,
         > = __cordl_object
             .invoke(
                 "GetPackEntitlementStatusInternalAsync",
@@ -218,13 +226,15 @@ impl OculusPlatformAdditionalContentModel {
         levelPackId: *mut crate::System::String,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<IsPackBetterBuyThanLevelResult>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            IsPackBetterBuyThanLevelResult,
+            crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
         > = __cordl_object
             .invoke("IsPackBetterBuyThanLevelAsync", (levelPackId, token))?;
         Ok(__cordl_ret)
@@ -241,13 +251,15 @@ impl OculusPlatformAdditionalContentModel {
         levelPackId: *mut crate::System::String,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<OpenProductStoreResult>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::OpenProductStoreResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            OpenProductStoreResult,
+            crate::GlobalNamespace::OpenProductStoreResult,
         > = __cordl_object
             .invoke("OpenLevelPackProductStoreAsync", (levelPackId, cancellationToken))?;
         Ok(__cordl_ret)
@@ -257,13 +269,15 @@ impl OculusPlatformAdditionalContentModel {
         levelId: *mut crate::System::String,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<OpenProductStoreResult>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::OpenProductStoreResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            OpenProductStoreResult,
+            crate::GlobalNamespace::OpenProductStoreResult,
         > = __cordl_object
             .invoke("OpenLevelProductStoreAsync", (levelId, cancellationToken))?;
         Ok(__cordl_ret)
@@ -291,7 +305,8 @@ impl OculusPlatformAdditionalContentModel {
     }
 }
 #[cfg(feature = "OculusPlatformAdditionalContentModel")]
-impl quest_hook::libil2cpp::ObjectType for OculusPlatformAdditionalContentModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

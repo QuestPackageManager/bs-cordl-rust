@@ -3,45 +3,45 @@
 #[derive(Debug)]
 pub struct MainSystemInit {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _songPackMasksModel: *mut SongPackMasksModelSO,
-    pub _playerDataFileManager: *mut PlayerDataFileManagerSO,
-    pub _standardLevelScenesTransitionSetupData: *mut StandardLevelScenesTransitionSetupDataSO,
-    pub _missionLevelScenesTransitionSetupData: *mut MissionLevelScenesTransitionSetupDataSO,
-    pub _multiplayerLevelScenesTransitionSetupData: *mut MultiplayerLevelScenesTransitionSetupDataSO,
-    pub _timeHelperPrefab: *mut TimeHelper,
-    pub _playerDataModelPrefab: *mut PlayerDataModel,
-    pub _campaignProgressModelPrefab: *mut CampaignProgressModel,
-    pub _customLevelLoaderPrefab: *mut CustomLevelLoader,
-    pub _externalCamerasManagerPrefab: *mut ExternalCamerasManager,
-    pub _multiplayerSessionManagerPrefab: *mut MultiplayerSessionManager,
-    pub _voipManagerPrefab: *mut VoipManager,
-    pub _gameLiftNetworkPlayerModelPrefab: *mut GameLiftNetworkPlayerModel,
-    pub _networkPlayerEntitlementCheckerPrefab: *mut NetworkPlayerEntitlementChecker,
+    pub _songPackMasksModel: *mut crate::GlobalNamespace::SongPackMasksModelSO,
+    pub _playerDataFileManager: *mut crate::GlobalNamespace::PlayerDataFileManagerSO,
+    pub _standardLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+    pub _missionLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+    pub _multiplayerLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+    pub _timeHelperPrefab: *mut crate::GlobalNamespace::TimeHelper,
+    pub _playerDataModelPrefab: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _campaignProgressModelPrefab: *mut crate::GlobalNamespace::CampaignProgressModel,
+    pub _customLevelLoaderPrefab: *mut crate::GlobalNamespace::CustomLevelLoader,
+    pub _externalCamerasManagerPrefab: *mut crate::GlobalNamespace::ExternalCamerasManager,
+    pub _multiplayerSessionManagerPrefab: *mut crate::GlobalNamespace::MultiplayerSessionManager,
+    pub _voipManagerPrefab: *mut crate::GlobalNamespace::VoipManager,
+    pub _gameLiftNetworkPlayerModelPrefab: *mut crate::GlobalNamespace::GameLiftNetworkPlayerModel,
+    pub _networkPlayerEntitlementCheckerPrefab: *mut crate::GlobalNamespace::NetworkPlayerEntitlementChecker,
     pub _tweeningManagerPrefab: *mut crate::Tweening::TimeTweeningManager,
-    pub _lightsUpdateSystemPrefab: *mut BloomPrePassLightsUpdateSystem,
-    pub _environmentAudioEffectsPlayerPrefab: *mut EnvironmentAudioEffectsPlayer,
-    pub _nodePoseSyncStateManagerPrefab: *mut NodePoseSyncStateManager,
-    pub _psVRHelperPrefab: *mut PSVRHelper,
-    pub _psVR2HelperPrefab: *mut PSVR2Helper,
-    pub _oculusVRHelperPrefab: *mut OculusVRHelper,
-    pub _unityXRHelperPrefab: *mut UnityXRHelper,
-    pub _devicelessVRHelperPrefab: *mut DevicelessVRHelper,
-    pub _richPresenceManagerPrefab: *mut RichPresenceManager,
-    pub _dlcPromoPanelData: *mut DlcPromoPanelDataSO,
-    pub _beatmapLevelsPromoData: *mut BeatmapLevelsPromoDataSO,
-    pub _networkConfig: *mut NetworkConfigSO,
-    pub _steamNetworkPlayerModelPrefab: *mut SteamNetworkPlayerModel,
-    pub _oculusNetworkPlayerModelPrefab: *mut OculusNetworkPlayerModel,
-    pub _sonyNetworkPlayerModelPrefab: *mut SonyNetworkPlayerModel,
-    pub _leaderboardScoreUploader: *mut LeaderboardScoreUploader,
-    pub _platformLeaderboardsModel: *mut PlatformLeaderboardsModel,
-    pub _ps4AchievementIdsModel: *mut SonyAchievementIdsModelSO,
-    pub _ps5AchievmentIdsModel: *mut SonyAchievementIdsModelSO,
-    pub _achievementIdsModel: *mut AchievementIdsModelSO,
-    pub _achievementsModel: *mut AchievementsModelSO,
-    pub _ps5ActivityIdsModel: *mut PS5ActivityIdsModelSO,
-    pub _coroutineStarter: *mut CoroutineStarter,
-    pub _menuTransitionHelperPrefab: *mut MenuTransitionsHelper,
+    pub _lightsUpdateSystemPrefab: *mut crate::GlobalNamespace::BloomPrePassLightsUpdateSystem,
+    pub _environmentAudioEffectsPlayerPrefab: *mut crate::GlobalNamespace::EnvironmentAudioEffectsPlayer,
+    pub _nodePoseSyncStateManagerPrefab: *mut crate::GlobalNamespace::NodePoseSyncStateManager,
+    pub _psVRHelperPrefab: *mut crate::GlobalNamespace::PSVRHelper,
+    pub _psVR2HelperPrefab: *mut crate::GlobalNamespace::PSVR2Helper,
+    pub _oculusVRHelperPrefab: *mut crate::GlobalNamespace::OculusVRHelper,
+    pub _unityXRHelperPrefab: *mut crate::GlobalNamespace::UnityXRHelper,
+    pub _devicelessVRHelperPrefab: *mut crate::GlobalNamespace::DevicelessVRHelper,
+    pub _richPresenceManagerPrefab: *mut crate::GlobalNamespace::RichPresenceManager,
+    pub _dlcPromoPanelData: *mut crate::GlobalNamespace::DlcPromoPanelDataSO,
+    pub _beatmapLevelsPromoData: *mut crate::GlobalNamespace::BeatmapLevelsPromoDataSO,
+    pub _networkConfig: *mut crate::GlobalNamespace::NetworkConfigSO,
+    pub _steamNetworkPlayerModelPrefab: *mut crate::GlobalNamespace::SteamNetworkPlayerModel,
+    pub _oculusNetworkPlayerModelPrefab: *mut crate::GlobalNamespace::OculusNetworkPlayerModel,
+    pub _sonyNetworkPlayerModelPrefab: *mut crate::GlobalNamespace::SonyNetworkPlayerModel,
+    pub _leaderboardScoreUploader: *mut crate::GlobalNamespace::LeaderboardScoreUploader,
+    pub _platformLeaderboardsModel: *mut crate::GlobalNamespace::PlatformLeaderboardsModel,
+    pub _ps4AchievementIdsModel: *mut crate::GlobalNamespace::SonyAchievementIdsModelSO,
+    pub _ps5AchievmentIdsModel: *mut crate::GlobalNamespace::SonyAchievementIdsModelSO,
+    pub _achievementIdsModel: *mut crate::GlobalNamespace::AchievementIdsModelSO,
+    pub _achievementsModel: *mut crate::GlobalNamespace::AchievementsModelSO,
+    pub _ps5ActivityIdsModel: *mut crate::GlobalNamespace::PS5ActivityIdsModelSO,
+    pub _coroutineStarter: *mut crate::GlobalNamespace::CoroutineStarter,
+    pub _menuTransitionHelperPrefab: *mut crate::GlobalNamespace::MenuTransitionsHelper,
     pub _defaultMaxCachedBeatmapLevels: i32,
     pub _ps4MaxCachedBeatmapLevels: i32,
     pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
@@ -49,28 +49,29 @@ pub struct MainSystemInit {
 }
 #[cfg(feature = "MainSystemInit")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MainSystemInit => ""."MainSystemInit"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MainSystemInit => ""
+    ."MainSystemInit"
 );
 #[cfg(feature = "MainSystemInit")]
-impl std::ops::Deref for MainSystemInit {
+impl std::ops::Deref for crate::GlobalNamespace::MainSystemInit {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainSystemInit")]
-impl std::ops::DerefMut for MainSystemInit {
+impl std::ops::DerefMut for crate::GlobalNamespace::MainSystemInit {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainSystemInit")]
-impl MainSystemInit {
+impl crate::GlobalNamespace::MainSystemInit {
     #[cfg(feature = "MainSystemInit+__c")]
     pub type __c = crate::GlobalNamespace::MainSystemInit___c;
     pub fn Init(
         &mut self,
-        settingsApplicator: *mut SettingsApplicatorSO,
+        settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -170,7 +171,7 @@ impl MainSystemInit {
     }
 }
 #[cfg(feature = "MainSystemInit")]
-impl quest_hook::libil2cpp::ObjectType for MainSystemInit {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MainSystemInit {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

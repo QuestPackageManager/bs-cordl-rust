@@ -351,8 +351,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput_OVRControllerBase {
 }
 #[cfg(feature = "OVRInput+OVRControllerBase")]
 impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
-    #[cfg(feature = "OVRInput+OVRControllerBase+VirtualTouchMap")]
-    pub type VirtualTouchMap = crate::GlobalNamespace::OVRControllerBase_VirtualTouchMap;
     #[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis1DMap")]
     pub type VirtualAxis1DMap = crate::GlobalNamespace::OVRControllerBase_VirtualAxis1DMap;
     #[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis2DMap")]
@@ -361,6 +359,8 @@ impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
     pub type VirtualButtonMap = crate::GlobalNamespace::OVRControllerBase_VirtualButtonMap;
     #[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
     pub type VirtualNearTouchMap = crate::GlobalNamespace::OVRControllerBase_VirtualNearTouchMap;
+    #[cfg(feature = "OVRInput+OVRControllerBase+VirtualTouchMap")]
+    pub type VirtualTouchMap = crate::GlobalNamespace::OVRControllerBase_VirtualTouchMap;
     pub fn ConfigureAxis1DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1569,92 +1569,92 @@ pub struct OVRInput {
 }
 #[cfg(feature = "OVRInput")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRInput => ""."OVRInput"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRInput => ""."OVRInput"
 );
 #[cfg(feature = "OVRInput")]
-impl std::ops::Deref for OVRInput {
+impl std::ops::Deref for crate::GlobalNamespace::OVRInput {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRInput")]
-impl std::ops::DerefMut for OVRInput {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRInput")]
-impl OVRInput {
-    #[cfg(feature = "OVRInput+Touch")]
-    pub type Touch = crate::GlobalNamespace::OVRInput_Touch;
-    #[cfg(feature = "OVRInput+HapticsAmplitudeEnvelopeVibration")]
-    pub type HapticsAmplitudeEnvelopeVibration = crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration;
-    #[cfg(feature = "OVRInput+RawButton")]
-    pub type RawButton = crate::GlobalNamespace::OVRInput_RawButton;
-    #[cfg(feature = "OVRInput+OVRControllerHands")]
-    pub type OVRControllerHands = crate::GlobalNamespace::OVRInput_OVRControllerHands;
-    #[cfg(feature = "OVRInput+Hand")]
-    pub type Hand = crate::GlobalNamespace::OVRInput_Hand;
-    #[cfg(feature = "OVRInput+OVRControllerGamepadPC")]
-    pub type OVRControllerGamepadPC = crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC;
-    #[cfg(feature = "OVRInput+RawAxis1D")]
-    pub type RawAxis1D = crate::GlobalNamespace::OVRInput_RawAxis1D;
-    #[cfg(feature = "OVRInput+OpenVRController")]
-    pub type OpenVRController = crate::GlobalNamespace::OVRInput_OpenVRController;
-    #[cfg(feature = "OVRInput+HapticInfo")]
-    pub type HapticInfo = crate::GlobalNamespace::OVRInput_HapticInfo;
-    #[cfg(feature = "OVRInput+OVRControllerTouch")]
-    pub type OVRControllerTouch = crate::GlobalNamespace::OVRInput_OVRControllerTouch;
-    #[cfg(feature = "OVRInput+OVRControllerLTouch")]
-    pub type OVRControllerLTouch = crate::GlobalNamespace::OVRInput_OVRControllerLTouch;
-    #[cfg(feature = "OVRInput+OVRControllerBase")]
-    pub type OVRControllerBase = crate::GlobalNamespace::OVRInput_OVRControllerBase;
-    #[cfg(feature = "OVRInput+OVRControllerRTouch")]
-    pub type OVRControllerRTouch = crate::GlobalNamespace::OVRInput_OVRControllerRTouch;
-    #[cfg(feature = "OVRInput+OVRControllerLHand")]
-    pub type OVRControllerLHand = crate::GlobalNamespace::OVRInput_OVRControllerLHand;
-    #[cfg(feature = "OVRInput+OpenVRButton")]
-    pub type OpenVRButton = crate::GlobalNamespace::OVRInput_OpenVRButton;
-    #[cfg(feature = "OVRInput+OVRControllerRHand")]
-    pub type OVRControllerRHand = crate::GlobalNamespace::OVRInput_OVRControllerRHand;
-    #[cfg(feature = "OVRInput+OVRControllerRemote")]
-    pub type OVRControllerRemote = crate::GlobalNamespace::OVRInput_OVRControllerRemote;
-    #[cfg(feature = "OVRInput+OVRControllerGamepadAndroid")]
-    pub type OVRControllerGamepadAndroid = crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid;
-    #[cfg(feature = "OVRInput+NearTouch")]
-    pub type NearTouch = crate::GlobalNamespace::OVRInput_NearTouch;
-    #[cfg(feature = "OVRInput+InteractionProfile")]
-    pub type InteractionProfile = crate::GlobalNamespace::OVRInput_InteractionProfile;
+impl crate::GlobalNamespace::OVRInput {
+    #[cfg(feature = "OVRInput+Axis1D")]
+    pub type Axis1D = crate::GlobalNamespace::OVRInput_Axis1D;
     #[cfg(feature = "OVRInput+Axis2D")]
     pub type Axis2D = crate::GlobalNamespace::OVRInput_Axis2D;
     #[cfg(feature = "OVRInput+Button")]
     pub type Button = crate::GlobalNamespace::OVRInput_Button;
     #[cfg(feature = "OVRInput+Controller")]
     pub type Controller = crate::GlobalNamespace::OVRInput_Controller;
-    #[cfg(feature = "OVRInput+Handedness")]
-    pub type Handedness = crate::GlobalNamespace::OVRInput_Handedness;
-    #[cfg(feature = "OVRInput+HapticsLocation")]
-    pub type HapticsLocation = crate::GlobalNamespace::OVRInput_HapticsLocation;
     #[cfg(feature = "OVRInput+ControllerInHandState")]
     pub type ControllerInHandState = crate::GlobalNamespace::OVRInput_ControllerInHandState;
-    #[cfg(feature = "OVRInput+OpenVRControllerDetails")]
-    pub type OpenVRControllerDetails = crate::GlobalNamespace::OVRInput_OpenVRControllerDetails;
-    #[cfg(feature = "OVRInput+Axis1D")]
-    pub type Axis1D = crate::GlobalNamespace::OVRInput_Axis1D;
-    #[cfg(feature = "OVRInput+RawTouch")]
-    pub type RawTouch = crate::GlobalNamespace::OVRInput_RawTouch;
-    #[cfg(feature = "OVRInput+RawNearTouch")]
-    pub type RawNearTouch = crate::GlobalNamespace::OVRInput_RawNearTouch;
-    #[cfg(feature = "OVRInput+RawAxis2D")]
-    pub type RawAxis2D = crate::GlobalNamespace::OVRInput_RawAxis2D;
+    #[cfg(feature = "OVRInput+Hand")]
+    pub type Hand = crate::GlobalNamespace::OVRInput_Hand;
+    #[cfg(feature = "OVRInput+Handedness")]
+    pub type Handedness = crate::GlobalNamespace::OVRInput_Handedness;
+    #[cfg(feature = "OVRInput+HapticInfo")]
+    pub type HapticInfo = crate::GlobalNamespace::OVRInput_HapticInfo;
+    #[cfg(feature = "OVRInput+HapticsAmplitudeEnvelopeVibration")]
+    pub type HapticsAmplitudeEnvelopeVibration = crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration;
+    #[cfg(feature = "OVRInput+HapticsLocation")]
+    pub type HapticsLocation = crate::GlobalNamespace::OVRInput_HapticsLocation;
     #[cfg(feature = "OVRInput+HapticsPcmVibration")]
     pub type HapticsPcmVibration = crate::GlobalNamespace::OVRInput_HapticsPcmVibration;
     #[cfg(feature = "OVRInput+InputDeviceShowState")]
     pub type InputDeviceShowState = crate::GlobalNamespace::OVRInput_InputDeviceShowState;
+    #[cfg(feature = "OVRInput+InteractionProfile")]
+    pub type InteractionProfile = crate::GlobalNamespace::OVRInput_InteractionProfile;
+    #[cfg(feature = "OVRInput+NearTouch")]
+    pub type NearTouch = crate::GlobalNamespace::OVRInput_NearTouch;
+    #[cfg(feature = "OVRInput+OVRControllerBase")]
+    pub type OVRControllerBase = crate::GlobalNamespace::OVRInput_OVRControllerBase;
+    #[cfg(feature = "OVRInput+OVRControllerGamepadAndroid")]
+    pub type OVRControllerGamepadAndroid = crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid;
+    #[cfg(feature = "OVRInput+OVRControllerGamepadPC")]
+    pub type OVRControllerGamepadPC = crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC;
+    #[cfg(feature = "OVRInput+OVRControllerHands")]
+    pub type OVRControllerHands = crate::GlobalNamespace::OVRInput_OVRControllerHands;
+    #[cfg(feature = "OVRInput+OVRControllerLHand")]
+    pub type OVRControllerLHand = crate::GlobalNamespace::OVRInput_OVRControllerLHand;
+    #[cfg(feature = "OVRInput+OVRControllerLTouch")]
+    pub type OVRControllerLTouch = crate::GlobalNamespace::OVRInput_OVRControllerLTouch;
+    #[cfg(feature = "OVRInput+OVRControllerRHand")]
+    pub type OVRControllerRHand = crate::GlobalNamespace::OVRInput_OVRControllerRHand;
+    #[cfg(feature = "OVRInput+OVRControllerRTouch")]
+    pub type OVRControllerRTouch = crate::GlobalNamespace::OVRInput_OVRControllerRTouch;
+    #[cfg(feature = "OVRInput+OVRControllerRemote")]
+    pub type OVRControllerRemote = crate::GlobalNamespace::OVRInput_OVRControllerRemote;
+    #[cfg(feature = "OVRInput+OVRControllerTouch")]
+    pub type OVRControllerTouch = crate::GlobalNamespace::OVRInput_OVRControllerTouch;
+    #[cfg(feature = "OVRInput+OpenVRButton")]
+    pub type OpenVRButton = crate::GlobalNamespace::OVRInput_OpenVRButton;
+    #[cfg(feature = "OVRInput+OpenVRController")]
+    pub type OpenVRController = crate::GlobalNamespace::OVRInput_OpenVRController;
+    #[cfg(feature = "OVRInput+OpenVRControllerDetails")]
+    pub type OpenVRControllerDetails = crate::GlobalNamespace::OVRInput_OpenVRControllerDetails;
+    #[cfg(feature = "OVRInput+RawAxis1D")]
+    pub type RawAxis1D = crate::GlobalNamespace::OVRInput_RawAxis1D;
+    #[cfg(feature = "OVRInput+RawAxis2D")]
+    pub type RawAxis2D = crate::GlobalNamespace::OVRInput_RawAxis2D;
+    #[cfg(feature = "OVRInput+RawButton")]
+    pub type RawButton = crate::GlobalNamespace::OVRInput_RawButton;
+    #[cfg(feature = "OVRInput+RawNearTouch")]
+    pub type RawNearTouch = crate::GlobalNamespace::OVRInput_RawNearTouch;
+    #[cfg(feature = "OVRInput+RawTouch")]
+    pub type RawTouch = crate::GlobalNamespace::OVRInput_RawTouch;
+    #[cfg(feature = "OVRInput+Touch")]
+    pub type Touch = crate::GlobalNamespace::OVRInput_Touch;
 }
 #[cfg(feature = "OVRInput")]
-impl quest_hook::libil2cpp::ObjectType for OVRInput {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRInput {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

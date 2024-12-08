@@ -12,23 +12,24 @@ pub struct EnvironmentKeywords {
 }
 #[cfg(feature = "EnvironmentKeywords")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnvironmentKeywords => ""."EnvironmentKeywords"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnvironmentKeywords => ""
+    ."EnvironmentKeywords"
 );
 #[cfg(feature = "EnvironmentKeywords")]
-impl std::ops::Deref for EnvironmentKeywords {
+impl std::ops::Deref for crate::GlobalNamespace::EnvironmentKeywords {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentKeywords")]
-impl std::ops::DerefMut for EnvironmentKeywords {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentKeywords {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentKeywords")]
-impl EnvironmentKeywords {
+impl crate::GlobalNamespace::EnvironmentKeywords {
     pub fn HasKeyword(
         &mut self,
         keyword: *mut crate::System::String,
@@ -80,7 +81,7 @@ impl EnvironmentKeywords {
     }
 }
 #[cfg(feature = "EnvironmentKeywords")]
-impl quest_hook::libil2cpp::ObjectType for EnvironmentKeywords {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EnvironmentKeywords {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

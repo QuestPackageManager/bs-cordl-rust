@@ -46,13 +46,13 @@ impl<
 > crate::IntervalTree::IntervalTree_2<TKey, TValue> {
     #[cfg(feature = "IntervalTree+IntervalTree_2+__c")]
     pub type __c = crate::IntervalTree::IntervalTree_2___c<TKey, TValue>;
-    #[cfg(feature = "IntervalTree+IntervalTree_2+__c__DisplayClass20_0")]
-    pub type __c__DisplayClass20_0 = crate::IntervalTree::IntervalTree_2___c__DisplayClass20_0<
+    #[cfg(feature = "IntervalTree+IntervalTree_2+__c__DisplayClass19_0")]
+    pub type __c__DisplayClass19_0 = crate::IntervalTree::IntervalTree_2___c__DisplayClass19_0<
         TKey,
         TValue,
     >;
-    #[cfg(feature = "IntervalTree+IntervalTree_2+__c__DisplayClass19_0")]
-    pub type __c__DisplayClass19_0 = crate::IntervalTree::IntervalTree_2___c__DisplayClass19_0<
+    #[cfg(feature = "IntervalTree+IntervalTree_2+__c__DisplayClass20_0")]
+    pub type __c__DisplayClass20_0 = crate::IntervalTree::IntervalTree_2___c__DisplayClass20_0<
         TKey,
         TValue,
     >;

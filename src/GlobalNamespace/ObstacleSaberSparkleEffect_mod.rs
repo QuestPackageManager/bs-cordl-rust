@@ -10,24 +10,24 @@ pub struct ObstacleSaberSparkleEffect {
 }
 #[cfg(feature = "ObstacleSaberSparkleEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ObstacleSaberSparkleEffect => ""
-    ."ObstacleSaberSparkleEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ObstacleSaberSparkleEffect =>
+    ""."ObstacleSaberSparkleEffect"
 );
 #[cfg(feature = "ObstacleSaberSparkleEffect")]
-impl std::ops::Deref for ObstacleSaberSparkleEffect {
+impl std::ops::Deref for crate::GlobalNamespace::ObstacleSaberSparkleEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ObstacleSaberSparkleEffect")]
-impl std::ops::DerefMut for ObstacleSaberSparkleEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::ObstacleSaberSparkleEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ObstacleSaberSparkleEffect")]
-impl ObstacleSaberSparkleEffect {
+impl crate::GlobalNamespace::ObstacleSaberSparkleEffect {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -107,7 +107,8 @@ impl ObstacleSaberSparkleEffect {
     }
 }
 #[cfg(feature = "ObstacleSaberSparkleEffect")]
-impl quest_hook::libil2cpp::ObjectType for ObstacleSaberSparkleEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ObstacleSaberSparkleEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

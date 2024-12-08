@@ -6,23 +6,24 @@ pub struct NoteDebrisPhysics {
 }
 #[cfg(feature = "NoteDebrisPhysics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteDebrisPhysics => ""."NoteDebrisPhysics"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteDebrisPhysics => ""
+    ."NoteDebrisPhysics"
 );
 #[cfg(feature = "NoteDebrisPhysics")]
-impl std::ops::Deref for NoteDebrisPhysics {
+impl std::ops::Deref for crate::GlobalNamespace::NoteDebrisPhysics {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteDebrisPhysics")]
-impl std::ops::DerefMut for NoteDebrisPhysics {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteDebrisPhysics {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteDebrisPhysics")]
-impl NoteDebrisPhysics {
+impl crate::GlobalNamespace::NoteDebrisPhysics {
     pub fn AddVelocity(
         &mut self,
         force: crate::UnityEngine::Vector3,
@@ -75,7 +76,7 @@ impl NoteDebrisPhysics {
     }
 }
 #[cfg(feature = "NoteDebrisPhysics")]
-impl quest_hook::libil2cpp::ObjectType for NoteDebrisPhysics {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteDebrisPhysics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -183,14 +183,14 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::HID::HIDParser {
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser")]
 impl crate::UnityEngine::InputSystem::HID::HIDParser {
+    #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
+    pub type HIDItemStateGlobal = crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal;
+    #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
+    pub type HIDItemStateLocal = crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal;
     #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemTypeAndTag")]
     pub type HIDItemTypeAndTag = crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemTypeAndTag;
     #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
     pub type HIDReportData = crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData;
-    #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
-    pub type HIDItemStateLocal = crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal;
-    #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
-    pub type HIDItemStateGlobal = crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal;
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser")]
 impl quest_hook::libil2cpp::ObjectType

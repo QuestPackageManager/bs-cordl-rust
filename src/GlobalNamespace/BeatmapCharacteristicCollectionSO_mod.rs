@@ -2,31 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapCharacteristicCollectionSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _beatmapCharacteristics: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut BeatmapCharacteristicSO,
+        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     >,
 }
 #[cfg(feature = "BeatmapCharacteristicCollectionSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapCharacteristicCollectionSO => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BeatmapCharacteristicCollectionSO => ""
     ."BeatmapCharacteristicCollectionSO"
 );
 #[cfg(feature = "BeatmapCharacteristicCollectionSO")]
-impl std::ops::Deref for BeatmapCharacteristicCollectionSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapCharacteristicCollectionSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapCharacteristicCollectionSO")]
-impl std::ops::DerefMut for BeatmapCharacteristicCollectionSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapCharacteristicCollectionSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapCharacteristicCollectionSO")]
-impl BeatmapCharacteristicCollectionSO {
+impl crate::GlobalNamespace::BeatmapCharacteristicCollectionSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -48,20 +49,21 @@ impl BeatmapCharacteristicCollectionSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyCollection_1<
-            *mut BeatmapCharacteristicSO,
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyCollection_1<
-            *mut BeatmapCharacteristicSO,
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         > = __cordl_object.invoke("get_allBeatmapCharacteristics", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapCharacteristicCollectionSO")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapCharacteristicCollectionSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapCharacteristicCollectionSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

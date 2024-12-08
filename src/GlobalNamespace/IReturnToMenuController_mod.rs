@@ -6,23 +6,24 @@ pub struct IReturnToMenuController {
 }
 #[cfg(feature = "IReturnToMenuController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IReturnToMenuController => ""."IReturnToMenuController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IReturnToMenuController => ""
+    ."IReturnToMenuController"
 );
 #[cfg(feature = "IReturnToMenuController")]
-impl std::ops::Deref for IReturnToMenuController {
+impl std::ops::Deref for crate::GlobalNamespace::IReturnToMenuController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IReturnToMenuController")]
-impl std::ops::DerefMut for IReturnToMenuController {
+impl std::ops::DerefMut for crate::GlobalNamespace::IReturnToMenuController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IReturnToMenuController")]
-impl IReturnToMenuController {
+impl crate::GlobalNamespace::IReturnToMenuController {
     pub fn ReturnToMenu(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -40,7 +41,8 @@ impl IReturnToMenuController {
     }
 }
 #[cfg(feature = "IReturnToMenuController")]
-impl quest_hook::libil2cpp::ObjectType for IReturnToMenuController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IReturnToMenuController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

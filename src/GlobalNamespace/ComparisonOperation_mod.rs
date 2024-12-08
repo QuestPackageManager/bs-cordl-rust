@@ -7,5 +7,6 @@ pub enum ComparisonOperation {
 }
 #[cfg(feature = "ComparisonOperation")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for ComparisonOperation => ""."ComparisonOperation"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ComparisonOperation => ""
+    ."ComparisonOperation"
 );

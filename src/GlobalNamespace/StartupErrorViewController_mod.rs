@@ -8,24 +8,24 @@ pub struct StartupErrorViewController {
 }
 #[cfg(feature = "StartupErrorViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StartupErrorViewController => ""
-    ."StartupErrorViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::StartupErrorViewController =>
+    ""."StartupErrorViewController"
 );
 #[cfg(feature = "StartupErrorViewController")]
-impl std::ops::Deref for StartupErrorViewController {
+impl std::ops::Deref for crate::GlobalNamespace::StartupErrorViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StartupErrorViewController")]
-impl std::ops::DerefMut for StartupErrorViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::StartupErrorViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StartupErrorViewController")]
-impl StartupErrorViewController {
+impl crate::GlobalNamespace::StartupErrorViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -82,7 +82,8 @@ impl StartupErrorViewController {
     }
 }
 #[cfg(feature = "StartupErrorViewController")]
-impl quest_hook::libil2cpp::ObjectType for StartupErrorViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StartupErrorViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

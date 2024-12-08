@@ -39,10 +39,10 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::XR::TrackedPoseDriv
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver")]
 impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
-    #[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingType")]
-    pub type TrackingType = crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType;
     #[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingStates")]
     pub type TrackingStates = crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates;
+    #[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingType")]
+    pub type TrackingType = crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType;
     #[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+UpdateType")]
     pub type UpdateType = crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType;
     pub fn Awake(

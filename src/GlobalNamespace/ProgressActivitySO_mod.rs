@@ -2,30 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProgressActivitySO {
-    __cordl_parent: PS5ActivityDataSO,
+    __cordl_parent: crate::GlobalNamespace::PS5ActivityDataSO,
     pub subtasks: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut ProgressActivitySubtaskSO,
+        *mut crate::GlobalNamespace::ProgressActivitySubtaskSO,
     >,
 }
 #[cfg(feature = "ProgressActivitySO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ProgressActivitySO => ""."ProgressActivitySO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ProgressActivitySO => ""
+    ."ProgressActivitySO"
 );
 #[cfg(feature = "ProgressActivitySO")]
-impl std::ops::Deref for ProgressActivitySO {
-    type Target = PS5ActivityDataSO;
+impl std::ops::Deref for crate::GlobalNamespace::ProgressActivitySO {
+    type Target = crate::GlobalNamespace::PS5ActivityDataSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ProgressActivitySO")]
-impl std::ops::DerefMut for ProgressActivitySO {
+impl std::ops::DerefMut for crate::GlobalNamespace::ProgressActivitySO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ProgressActivitySO")]
-impl ProgressActivitySO {
+impl crate::GlobalNamespace::ProgressActivitySO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -45,7 +46,7 @@ impl ProgressActivitySO {
     }
 }
 #[cfg(feature = "ProgressActivitySO")]
-impl quest_hook::libil2cpp::ObjectType for ProgressActivitySO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ProgressActivitySO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -76,18 +76,18 @@ impl std::ops::DerefMut for crate::Tayx::Graphy::GraphyManager {
 }
 #[cfg(feature = "Tayx+Graphy+GraphyManager")]
 impl crate::Tayx::Graphy::GraphyManager {
-    #[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleType")]
-    pub type ModuleType = crate::Tayx::Graphy::GraphyManager_ModuleType;
-    #[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePosition")]
-    pub type ModulePosition = crate::Tayx::Graphy::GraphyManager_ModulePosition;
-    #[cfg(feature = "Tayx+Graphy+GraphyManager+Mode")]
-    pub type Mode = crate::Tayx::Graphy::GraphyManager_Mode;
-    #[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleState")]
-    pub type ModuleState = crate::Tayx::Graphy::GraphyManager_ModuleState;
     #[cfg(feature = "Tayx+Graphy+GraphyManager+LookForAudioListener")]
     pub type LookForAudioListener = crate::Tayx::Graphy::GraphyManager_LookForAudioListener;
+    #[cfg(feature = "Tayx+Graphy+GraphyManager+Mode")]
+    pub type Mode = crate::Tayx::Graphy::GraphyManager_Mode;
+    #[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePosition")]
+    pub type ModulePosition = crate::Tayx::Graphy::GraphyManager_ModulePosition;
     #[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePreset")]
     pub type ModulePreset = crate::Tayx::Graphy::GraphyManager_ModulePreset;
+    #[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleState")]
+    pub type ModuleState = crate::Tayx::Graphy::GraphyManager_ModuleState;
+    #[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleType")]
+    pub type ModuleType = crate::Tayx::Graphy::GraphyManager_ModuleType;
     pub fn CheckFor1KeyPress(
         &mut self,
         key: crate::UnityEngine::InputSystem::Key,

@@ -8,23 +8,24 @@ pub struct BasePlatformInit {
 }
 #[cfg(feature = "BasePlatformInit")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BasePlatformInit => ""."BasePlatformInit"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BasePlatformInit => ""
+    ."BasePlatformInit"
 );
 #[cfg(feature = "BasePlatformInit")]
-impl std::ops::Deref for BasePlatformInit {
+impl std::ops::Deref for crate::GlobalNamespace::BasePlatformInit {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BasePlatformInit")]
-impl std::ops::DerefMut for BasePlatformInit {
+impl std::ops::DerefMut for crate::GlobalNamespace::BasePlatformInit {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BasePlatformInit")]
-impl BasePlatformInit {
+impl crate::GlobalNamespace::BasePlatformInit {
     #[cfg(feature = "BasePlatformInit+_InitializeAsync_d__7")]
     pub type _InitializeAsync_d__7 = crate::GlobalNamespace::BasePlatformInit__InitializeAsync_d__7;
     #[cfg(feature = "BasePlatformInit+_Initialize_d__5")]
@@ -100,7 +101,7 @@ impl BasePlatformInit {
     }
 }
 #[cfg(feature = "BasePlatformInit")]
-impl quest_hook::libil2cpp::ObjectType for BasePlatformInit {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BasePlatformInit {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

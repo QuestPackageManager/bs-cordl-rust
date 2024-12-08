@@ -213,14 +213,6 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
     )]
     pub type ColumnData = crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData;
     #[cfg(
-        feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+__c__DisplayClass65_0"
-    )]
-    pub type __c__DisplayClass65_0 = crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader___c__DisplayClass65_0;
-    #[cfg(
-        feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+__c__DisplayClass71_0"
-    )]
-    pub type __c__DisplayClass71_0 = crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader___c__DisplayClass71_0;
-    #[cfg(
         feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
     )]
     pub type SortedColumnState = crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_SortedColumnState;
@@ -228,6 +220,14 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
         feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState"
     )]
     pub type ViewState = crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewState;
+    #[cfg(
+        feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+__c__DisplayClass65_0"
+    )]
+    pub type __c__DisplayClass65_0 = crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader___c__DisplayClass65_0;
+    #[cfg(
+        feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+__c__DisplayClass71_0"
+    )]
+    pub type __c__DisplayClass71_0 = crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader___c__DisplayClass71_0;
     pub fn ApplyColumnSorting(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

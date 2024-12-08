@@ -39,23 +39,23 @@ pub struct VertexPath {
 }
 #[cfg(feature = "VertexPath")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for VertexPath => ""."VertexPath"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::VertexPath => ""."VertexPath"
 );
 #[cfg(feature = "VertexPath")]
-impl std::ops::Deref for VertexPath {
+impl std::ops::Deref for crate::GlobalNamespace::VertexPath {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "VertexPath")]
-impl std::ops::DerefMut for VertexPath {
+impl std::ops::DerefMut for crate::GlobalNamespace::VertexPath {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "VertexPath")]
-impl VertexPath {
+impl crate::GlobalNamespace::VertexPath {
     #[cfg(feature = "VertexPath+Vertex")]
     pub type Vertex = crate::GlobalNamespace::VertexPath_Vertex;
     pub fn AddVertex(
@@ -126,7 +126,7 @@ impl VertexPath {
     }
     pub fn SplitBezierPathIntoFixNumberOfSegments(
         &mut self,
-        bezierPath: *mut BezierPath,
+        bezierPath: *mut crate::GlobalNamespace::BezierPath,
         numberOfVertexSegments: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -151,7 +151,7 @@ impl VertexPath {
     }
     pub fn UpdateByBezierPath(
         &mut self,
-        bezierPath: *mut BezierPath,
+        bezierPath: *mut crate::GlobalNamespace::BezierPath,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -180,7 +180,7 @@ impl VertexPath {
     }
 }
 #[cfg(feature = "VertexPath")]
-impl quest_hook::libil2cpp::ObjectType for VertexPath {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::VertexPath {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

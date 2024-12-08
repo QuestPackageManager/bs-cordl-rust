@@ -262,24 +262,24 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
     pub type BindingJson = crate::UnityEngine::InputSystem::InputActionMap_BindingJson;
     #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideJson")]
     pub type BindingOverrideJson = crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson;
-    #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadActionJson")]
-    pub type ReadActionJson = crate::UnityEngine::InputSystem::InputActionMap_ReadActionJson;
-    #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+Flags")]
-    pub type Flags = crate::UnityEngine::InputSystem::InputActionMap_Flags;
     #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideListJson")]
     pub type BindingOverrideListJson = crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideListJson;
-    #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadMapJson")]
-    pub type ReadMapJson = crate::UnityEngine::InputSystem::InputActionMap_ReadMapJson;
-    #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteMapJson")]
-    pub type WriteMapJson = crate::UnityEngine::InputSystem::InputActionMap_WriteMapJson;
     #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+DeviceArray")]
     pub type DeviceArray = crate::UnityEngine::InputSystem::InputActionMap_DeviceArray;
-    #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteActionJson")]
-    pub type WriteActionJson = crate::UnityEngine::InputSystem::InputActionMap_WriteActionJson;
+    #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+Flags")]
+    pub type Flags = crate::UnityEngine::InputSystem::InputActionMap_Flags;
+    #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadActionJson")]
+    pub type ReadActionJson = crate::UnityEngine::InputSystem::InputActionMap_ReadActionJson;
     #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadFileJson")]
     pub type ReadFileJson = crate::UnityEngine::InputSystem::InputActionMap_ReadFileJson;
+    #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadMapJson")]
+    pub type ReadMapJson = crate::UnityEngine::InputSystem::InputActionMap_ReadMapJson;
+    #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteActionJson")]
+    pub type WriteActionJson = crate::UnityEngine::InputSystem::InputActionMap_WriteActionJson;
     #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteFileJson")]
     pub type WriteFileJson = crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson;
+    #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteMapJson")]
+    pub type WriteMapJson = crate::UnityEngine::InputSystem::InputActionMap_WriteMapJson;
     pub fn ClearActionLookupTable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

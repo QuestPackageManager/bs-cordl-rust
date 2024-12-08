@@ -3,28 +3,29 @@
 #[derive(Debug)]
 pub struct SliderShaderWarmup {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _sliderMeshController: *mut SliderMeshController,
-    pub _materialPropertyBlockController: *mut MaterialPropertyBlockController,
+    pub _sliderMeshController: *mut crate::GlobalNamespace::SliderMeshController,
+    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
 }
 #[cfg(feature = "SliderShaderWarmup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SliderShaderWarmup => ""."SliderShaderWarmup"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SliderShaderWarmup => ""
+    ."SliderShaderWarmup"
 );
 #[cfg(feature = "SliderShaderWarmup")]
-impl std::ops::Deref for SliderShaderWarmup {
+impl std::ops::Deref for crate::GlobalNamespace::SliderShaderWarmup {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderShaderWarmup")]
-impl std::ops::DerefMut for SliderShaderWarmup {
+impl std::ops::DerefMut for crate::GlobalNamespace::SliderShaderWarmup {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderShaderWarmup")]
-impl SliderShaderWarmup {
+impl crate::GlobalNamespace::SliderShaderWarmup {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -54,7 +55,7 @@ impl SliderShaderWarmup {
     }
 }
 #[cfg(feature = "SliderShaderWarmup")]
-impl quest_hook::libil2cpp::ObjectType for SliderShaderWarmup {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SliderShaderWarmup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

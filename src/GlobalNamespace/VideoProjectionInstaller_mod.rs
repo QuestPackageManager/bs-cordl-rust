@@ -3,28 +3,28 @@
 #[derive(Debug)]
 pub struct VideoProjectionInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _sceneSetupData: *mut EnvironmentSceneSetupData,
+    pub _sceneSetupData: *mut crate::GlobalNamespace::EnvironmentSceneSetupData,
 }
 #[cfg(feature = "VideoProjectionInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for VideoProjectionInstaller => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::VideoProjectionInstaller => ""
     ."VideoProjectionInstaller"
 );
 #[cfg(feature = "VideoProjectionInstaller")]
-impl std::ops::Deref for VideoProjectionInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::VideoProjectionInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "VideoProjectionInstaller")]
-impl std::ops::DerefMut for VideoProjectionInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::VideoProjectionInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "VideoProjectionInstaller")]
-impl VideoProjectionInstaller {
+impl crate::GlobalNamespace::VideoProjectionInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -54,7 +54,8 @@ impl VideoProjectionInstaller {
     }
 }
 #[cfg(feature = "VideoProjectionInstaller")]
-impl quest_hook::libil2cpp::ObjectType for VideoProjectionInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::VideoProjectionInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

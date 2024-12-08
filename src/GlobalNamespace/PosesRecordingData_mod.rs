@@ -107,27 +107,28 @@ pub struct PosesRecordingData {
 }
 #[cfg(feature = "PosesRecordingData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PosesRecordingData => ""."PosesRecordingData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PosesRecordingData => ""
+    ."PosesRecordingData"
 );
 #[cfg(feature = "PosesRecordingData")]
-impl std::ops::Deref for PosesRecordingData {
+impl std::ops::Deref for crate::GlobalNamespace::PosesRecordingData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PosesRecordingData")]
-impl std::ops::DerefMut for PosesRecordingData {
+impl std::ops::DerefMut for crate::GlobalNamespace::PosesRecordingData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PosesRecordingData")]
-impl PosesRecordingData {
-    #[cfg(feature = "PosesRecordingData+TransformsKeyframe")]
-    pub type TransformsKeyframe = crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe;
+impl crate::GlobalNamespace::PosesRecordingData {
     #[cfg(feature = "PosesRecordingData+ExternalCameraCalibration")]
     pub type ExternalCameraCalibration = crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration;
+    #[cfg(feature = "PosesRecordingData+TransformsKeyframe")]
+    pub type TransformsKeyframe = crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe;
     pub fn AddKeyframe(
         &mut self,
         keyframe: *mut crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
@@ -211,7 +212,7 @@ impl PosesRecordingData {
     }
 }
 #[cfg(feature = "PosesRecordingData")]
-impl quest_hook::libil2cpp::ObjectType for PosesRecordingData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PosesRecordingData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

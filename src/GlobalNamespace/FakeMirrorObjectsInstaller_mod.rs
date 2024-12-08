@@ -3,35 +3,35 @@
 #[derive(Debug)]
 pub struct FakeMirrorObjectsInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _mirroredGameNoteControllerPrefab: *mut MirroredGameNoteController,
-    pub _mirroredBurstSliderHeadGameNoteControllerPrefab: *mut MirroredGameNoteController,
-    pub _mirroredBurstSliderGameNoteControllerPrefab: *mut MirroredGameNoteController,
-    pub _mirroredBombNoteControllerPrefab: *mut MirroredBombNoteController,
-    pub _mirroredObstacleControllerPrefab: *mut MirroredObstacleController,
-    pub _mirroredSliderControllerPrefab: *mut MirroredSliderController,
-    pub _mirrorRendererGraphicsSettingsPresets: *mut MirrorRendererGraphicsSettingsPresets,
+    pub _mirroredGameNoteControllerPrefab: *mut crate::GlobalNamespace::MirroredGameNoteController,
+    pub _mirroredBurstSliderHeadGameNoteControllerPrefab: *mut crate::GlobalNamespace::MirroredGameNoteController,
+    pub _mirroredBurstSliderGameNoteControllerPrefab: *mut crate::GlobalNamespace::MirroredGameNoteController,
+    pub _mirroredBombNoteControllerPrefab: *mut crate::GlobalNamespace::MirroredBombNoteController,
+    pub _mirroredObstacleControllerPrefab: *mut crate::GlobalNamespace::MirroredObstacleController,
+    pub _mirroredSliderControllerPrefab: *mut crate::GlobalNamespace::MirroredSliderController,
+    pub _mirrorRendererGraphicsSettingsPresets: *mut crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets,
     pub _graphicSettings: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
 }
 #[cfg(feature = "FakeMirrorObjectsInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FakeMirrorObjectsInstaller => ""
-    ."FakeMirrorObjectsInstaller"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FakeMirrorObjectsInstaller =>
+    ""."FakeMirrorObjectsInstaller"
 );
 #[cfg(feature = "FakeMirrorObjectsInstaller")]
-impl std::ops::Deref for FakeMirrorObjectsInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::FakeMirrorObjectsInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FakeMirrorObjectsInstaller")]
-impl std::ops::DerefMut for FakeMirrorObjectsInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::FakeMirrorObjectsInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FakeMirrorObjectsInstaller")]
-impl FakeMirrorObjectsInstaller {
+impl crate::GlobalNamespace::FakeMirrorObjectsInstaller {
     #[cfg(feature = "FakeMirrorObjectsInstaller+__c")]
     pub type __c = crate::GlobalNamespace::FakeMirrorObjectsInstaller___c;
     pub fn InstallBindings(
@@ -63,17 +63,20 @@ impl FakeMirrorObjectsInstaller {
     }
     pub fn get_mirroredGameNoteControllerPrefab(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut MirroredGameNoteController> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::MirroredGameNoteController,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MirroredGameNoteController = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MirroredGameNoteController = __cordl_object
             .invoke("get_mirroredGameNoteControllerPrefab", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "FakeMirrorObjectsInstaller")]
-impl quest_hook::libil2cpp::ObjectType for FakeMirrorObjectsInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FakeMirrorObjectsInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,35 +6,38 @@ pub struct BeatmapDifficultyDropdown {
     pub _simpleTextDropdown: *mut crate::HMUI::SimpleTextDropdown,
     pub didSelectCellWithIdxEvent: *mut crate::System::Action_1<i32>,
     pub _beatmapDifficultyData: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::System::Tuple_2<BeatmapDifficultyMask, *mut crate::System::String>,
+        *mut crate::System::Tuple_2<
+            crate::GlobalNamespace::BeatmapDifficultyMask,
+            *mut crate::System::String,
+        >,
     >,
     pub _includeAllDifficulties_k__BackingField: bool,
 }
 #[cfg(feature = "BeatmapDifficultyDropdown")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapDifficultyDropdown => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapDifficultyDropdown => ""
     ."BeatmapDifficultyDropdown"
 );
 #[cfg(feature = "BeatmapDifficultyDropdown")]
-impl std::ops::Deref for BeatmapDifficultyDropdown {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapDifficultyDropdown {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDifficultyDropdown")]
-impl std::ops::DerefMut for BeatmapDifficultyDropdown {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDifficultyDropdown {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDifficultyDropdown")]
-impl BeatmapDifficultyDropdown {
+impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
     #[cfg(feature = "BeatmapDifficultyDropdown+__c")]
     pub type __c = crate::GlobalNamespace::BeatmapDifficultyDropdown___c;
     pub fn GetIdxForBeatmapDifficultyMask(
         &mut self,
-        beatmapDifficultyMask: BeatmapDifficultyMask,
+        beatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -45,11 +48,11 @@ impl BeatmapDifficultyDropdown {
     }
     pub fn GetSelectedBeatmapDifficultyMask(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BeatmapDifficultyMask> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapDifficultyMask> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapDifficultyMask = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::BeatmapDifficultyMask = __cordl_object
             .invoke("GetSelectedBeatmapDifficultyMask", ())?;
         Ok(__cordl_ret)
     }
@@ -87,7 +90,7 @@ impl BeatmapDifficultyDropdown {
     }
     pub fn SelectCellWithBeatmapDifficultyMask(
         &mut self,
-        beatmapDifficultyMask: BeatmapDifficultyMask,
+        beatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -132,7 +135,7 @@ impl BeatmapDifficultyDropdown {
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::System::Tuple_2<
-                BeatmapDifficultyMask,
+                crate::GlobalNamespace::BeatmapDifficultyMask,
                 *mut crate::System::String,
             >,
         >,
@@ -142,7 +145,7 @@ impl BeatmapDifficultyDropdown {
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::System::Tuple_2<
-                BeatmapDifficultyMask,
+                crate::GlobalNamespace::BeatmapDifficultyMask,
                 *mut crate::System::String,
             >,
         > = __cordl_object.invoke("get_beatmapDifficultyData", ())?;
@@ -179,7 +182,8 @@ impl BeatmapDifficultyDropdown {
     }
 }
 #[cfg(feature = "BeatmapDifficultyDropdown")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapDifficultyDropdown {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapDifficultyDropdown {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

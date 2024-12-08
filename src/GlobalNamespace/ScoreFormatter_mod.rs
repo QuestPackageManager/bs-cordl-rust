@@ -6,23 +6,24 @@ pub struct ScoreFormatter {
 }
 #[cfg(feature = "ScoreFormatter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ScoreFormatter => ""."ScoreFormatter"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ScoreFormatter => ""
+    ."ScoreFormatter"
 );
 #[cfg(feature = "ScoreFormatter")]
-impl std::ops::Deref for ScoreFormatter {
+impl std::ops::Deref for crate::GlobalNamespace::ScoreFormatter {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScoreFormatter")]
-impl std::ops::DerefMut for ScoreFormatter {
+impl std::ops::DerefMut for crate::GlobalNamespace::ScoreFormatter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScoreFormatter")]
-impl ScoreFormatter {
+impl crate::GlobalNamespace::ScoreFormatter {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,7 +43,7 @@ impl ScoreFormatter {
     }
 }
 #[cfg(feature = "ScoreFormatter")]
-impl quest_hook::libil2cpp::ObjectType for ScoreFormatter {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoreFormatter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VertexDisplacementFloatFxGroupEffectTarget {
-    __cordl_parent: FloatFxGroupEffectTarget,
+    __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _displacementRanges: crate::UnityEngine::Vector3,
     pub _xAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
     pub _yAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
     pub _zAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
-    pub _displacementController: *mut MaterialPropertyBlockController,
+    pub _displacementController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     pub _renderer: *mut crate::UnityEngine::Renderer,
     pub _useTestValue: bool,
     pub _testFloatValue: f32,
@@ -15,24 +15,27 @@ pub struct VertexDisplacementFloatFxGroupEffectTarget {
 }
 #[cfg(feature = "VertexDisplacementFloatFxGroupEffectTarget")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for VertexDisplacementFloatFxGroupEffectTarget => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget => ""
     ."VertexDisplacementFloatFxGroupEffectTarget"
 );
 #[cfg(feature = "VertexDisplacementFloatFxGroupEffectTarget")]
-impl std::ops::Deref for VertexDisplacementFloatFxGroupEffectTarget {
-    type Target = FloatFxGroupEffectTarget;
+impl std::ops::Deref
+for crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
+    type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "VertexDisplacementFloatFxGroupEffectTarget")]
-impl std::ops::DerefMut for VertexDisplacementFloatFxGroupEffectTarget {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "VertexDisplacementFloatFxGroupEffectTarget")]
-impl VertexDisplacementFloatFxGroupEffectTarget {
+impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
     pub fn CalculateDisplacementVector(
         &mut self,
         value: f32,
@@ -120,7 +123,8 @@ impl VertexDisplacementFloatFxGroupEffectTarget {
     }
 }
 #[cfg(feature = "VertexDisplacementFloatFxGroupEffectTarget")]
-impl quest_hook::libil2cpp::ObjectType for VertexDisplacementFloatFxGroupEffectTarget {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

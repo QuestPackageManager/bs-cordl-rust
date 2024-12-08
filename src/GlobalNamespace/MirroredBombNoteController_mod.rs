@@ -2,28 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirroredBombNoteController {
-    __cordl_parent: MirroredNoteController_1<*mut INoteMirrorable>,
+    __cordl_parent: crate::GlobalNamespace::MirroredNoteController_1<
+        *mut crate::GlobalNamespace::INoteMirrorable,
+    >,
 }
 #[cfg(feature = "MirroredBombNoteController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MirroredBombNoteController => ""
-    ."MirroredBombNoteController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MirroredBombNoteController =>
+    ""."MirroredBombNoteController"
 );
 #[cfg(feature = "MirroredBombNoteController")]
-impl std::ops::Deref for MirroredBombNoteController {
-    type Target = MirroredNoteController_1<*mut INoteMirrorable>;
+impl std::ops::Deref for crate::GlobalNamespace::MirroredBombNoteController {
+    type Target = crate::GlobalNamespace::MirroredNoteController_1<
+        *mut crate::GlobalNamespace::INoteMirrorable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MirroredBombNoteController")]
-impl std::ops::DerefMut for MirroredBombNoteController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MirroredBombNoteController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MirroredBombNoteController")]
-impl MirroredBombNoteController {
+impl crate::GlobalNamespace::MirroredBombNoteController {
     #[cfg(feature = "MirroredBombNoteController+Pool")]
     pub type Pool = crate::GlobalNamespace::MirroredBombNoteController_Pool;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -45,7 +49,8 @@ impl MirroredBombNoteController {
     }
 }
 #[cfg(feature = "MirroredBombNoteController")]
-impl quest_hook::libil2cpp::ObjectType for MirroredBombNoteController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MirroredBombNoteController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -57,7 +62,9 @@ impl quest_hook::libil2cpp::ObjectType for MirroredBombNoteController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirroredBombNoteController_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<*mut MirroredBombNoteController>,
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::MirroredBombNoteController,
+    >,
 }
 #[cfg(feature = "MirroredBombNoteController+Pool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -66,7 +73,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MirroredBombNoteController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::MirroredBombNoteController_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<*mut MirroredBombNoteController>;
+    type Target = crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::MirroredBombNoteController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

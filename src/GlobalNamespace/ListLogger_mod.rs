@@ -9,27 +9,27 @@ pub struct ListLogger {
 }
 #[cfg(feature = "ListLogger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ListLogger => ""."ListLogger"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ListLogger => ""."ListLogger"
 );
 #[cfg(feature = "ListLogger")]
-impl std::ops::Deref for ListLogger {
+impl std::ops::Deref for crate::GlobalNamespace::ListLogger {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ListLogger")]
-impl std::ops::DerefMut for ListLogger {
+impl std::ops::DerefMut for crate::GlobalNamespace::ListLogger {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ListLogger")]
-impl ListLogger {
-    #[cfg(feature = "ListLogger+LogType")]
-    pub type LogType = crate::GlobalNamespace::ListLogger_LogType;
+impl crate::GlobalNamespace::ListLogger {
     #[cfg(feature = "ListLogger+LogMessage")]
     pub type LogMessage = crate::GlobalNamespace::ListLogger_LogMessage;
+    #[cfg(feature = "ListLogger+LogType")]
+    pub type LogType = crate::GlobalNamespace::ListLogger_LogType;
     pub fn LogError_Object1(
         &mut self,
         message: *mut crate::System::String,
@@ -156,7 +156,7 @@ impl ListLogger {
     }
 }
 #[cfg(feature = "ListLogger")]
-impl quest_hook::libil2cpp::ObjectType for ListLogger {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ListLogger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

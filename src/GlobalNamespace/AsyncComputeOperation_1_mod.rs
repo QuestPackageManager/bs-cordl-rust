@@ -2,30 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncComputeOperation_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: AsyncComputeOperation,
+    __cordl_parent: crate::GlobalNamespace::AsyncComputeOperation,
     pub _tcs: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "AsyncComputeOperation_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AsyncComputeOperation_1 < T > => ""
-    ."AsyncComputeOperation`1" < T >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AsyncComputeOperation_1 < T >
+    => ""."AsyncComputeOperation`1" < T >
 );
 #[cfg(feature = "AsyncComputeOperation_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for AsyncComputeOperation_1<T> {
-    type Target = AsyncComputeOperation;
+impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
+for crate::GlobalNamespace::AsyncComputeOperation_1<T> {
+    type Target = crate::GlobalNamespace::AsyncComputeOperation;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AsyncComputeOperation_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for AsyncComputeOperation_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
+for crate::GlobalNamespace::AsyncComputeOperation_1<T> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AsyncComputeOperation_1")]
-impl<T: quest_hook::libil2cpp::Type> AsyncComputeOperation_1<T> {
+impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::AsyncComputeOperation_1<T> {
     pub fn Cancel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -160,7 +162,7 @@ impl<T: quest_hook::libil2cpp::Type> AsyncComputeOperation_1<T> {
 }
 #[cfg(feature = "AsyncComputeOperation_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for AsyncComputeOperation_1<T> {
+for crate::GlobalNamespace::AsyncComputeOperation_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

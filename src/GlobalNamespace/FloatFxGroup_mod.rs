@@ -2,31 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatFxGroup {
-    __cordl_parent: LightGroupSubsystem,
+    __cordl_parent: crate::GlobalNamespace::LightGroupSubsystem,
     pub _isTriggerOnly: bool,
     pub _targets: *mut crate::System::Collections::Generic::List_1<
-        *mut FloatFxGroupEffectTarget,
+        *mut crate::GlobalNamespace::FloatFxGroupEffectTarget,
     >,
 }
 #[cfg(feature = "FloatFxGroup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FloatFxGroup => ""."FloatFxGroup"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FloatFxGroup => ""
+    ."FloatFxGroup"
 );
 #[cfg(feature = "FloatFxGroup")]
-impl std::ops::Deref for FloatFxGroup {
-    type Target = LightGroupSubsystem;
+impl std::ops::Deref for crate::GlobalNamespace::FloatFxGroup {
+    type Target = crate::GlobalNamespace::LightGroupSubsystem;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatFxGroup")]
-impl std::ops::DerefMut for FloatFxGroup {
+impl std::ops::DerefMut for crate::GlobalNamespace::FloatFxGroup {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatFxGroup")]
-impl FloatFxGroup {
+impl crate::GlobalNamespace::FloatFxGroup {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -55,20 +56,20 @@ impl FloatFxGroup {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut FloatFxGroupEffectTarget,
+            *mut crate::GlobalNamespace::FloatFxGroupEffectTarget,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut FloatFxGroupEffectTarget,
+            *mut crate::GlobalNamespace::FloatFxGroupEffectTarget,
         > = __cordl_object.invoke("get_targets", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "FloatFxGroup")]
-impl quest_hook::libil2cpp::ObjectType for FloatFxGroup {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FloatFxGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

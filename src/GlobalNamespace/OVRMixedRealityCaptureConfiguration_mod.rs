@@ -6,24 +6,25 @@ pub struct OVRMixedRealityCaptureConfiguration {
 }
 #[cfg(feature = "OVRMixedRealityCaptureConfiguration")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRMixedRealityCaptureConfiguration => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRMixedRealityCaptureConfiguration => ""
     ."OVRMixedRealityCaptureConfiguration"
 );
 #[cfg(feature = "OVRMixedRealityCaptureConfiguration")]
-impl std::ops::Deref for OVRMixedRealityCaptureConfiguration {
+impl std::ops::Deref for crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRMixedRealityCaptureConfiguration")]
-impl std::ops::DerefMut for OVRMixedRealityCaptureConfiguration {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRMixedRealityCaptureConfiguration")]
-impl OVRMixedRealityCaptureConfiguration {
+impl crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration {
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
@@ -603,7 +604,8 @@ impl OVRMixedRealityCaptureConfiguration {
     }
 }
 #[cfg(feature = "OVRMixedRealityCaptureConfiguration")]
-impl quest_hook::libil2cpp::ObjectType for OVRMixedRealityCaptureConfiguration {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

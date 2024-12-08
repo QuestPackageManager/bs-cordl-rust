@@ -11,23 +11,24 @@ pub struct BufferedAudioStream {
 }
 #[cfg(feature = "BufferedAudioStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BufferedAudioStream => ""."BufferedAudioStream"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BufferedAudioStream => ""
+    ."BufferedAudioStream"
 );
 #[cfg(feature = "BufferedAudioStream")]
-impl std::ops::Deref for BufferedAudioStream {
+impl std::ops::Deref for crate::GlobalNamespace::BufferedAudioStream {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BufferedAudioStream")]
-impl std::ops::DerefMut for BufferedAudioStream {
+impl std::ops::DerefMut for crate::GlobalNamespace::BufferedAudioStream {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BufferedAudioStream")]
-impl BufferedAudioStream {
+impl crate::GlobalNamespace::BufferedAudioStream {
     pub const VerboseLogging: bool = false;
     pub const bufferLengthSeconds: f32 = 0.25f32;
     pub const bufferSize: i32 = 12000i32;
@@ -86,7 +87,7 @@ impl BufferedAudioStream {
     }
 }
 #[cfg(feature = "BufferedAudioStream")]
-impl quest_hook::libil2cpp::ObjectType for BufferedAudioStream {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BufferedAudioStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

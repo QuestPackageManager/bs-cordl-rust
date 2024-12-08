@@ -7,5 +7,6 @@ pub enum ColorChangeUIEventType {
 }
 #[cfg(feature = "ColorChangeUIEventType")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for ColorChangeUIEventType => ""."ColorChangeUIEventType"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ColorChangeUIEventType => ""
+    ."ColorChangeUIEventType"
 );

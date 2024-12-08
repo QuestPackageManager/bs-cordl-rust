@@ -3,28 +3,29 @@
 #[derive(Debug)]
 pub struct PosesSerializer {
     __cordl_parent: crate::System::Object,
-    pub _logger: *mut IBeatSaberLogger,
-    pub _recordingConverter: *mut RecordingConverter,
+    pub _logger: *mut crate::GlobalNamespace::IBeatSaberLogger,
+    pub _recordingConverter: *mut crate::GlobalNamespace::RecordingConverter,
 }
 #[cfg(feature = "PosesSerializer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PosesSerializer => ""."PosesSerializer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PosesSerializer => ""
+    ."PosesSerializer"
 );
 #[cfg(feature = "PosesSerializer")]
-impl std::ops::Deref for PosesSerializer {
+impl std::ops::Deref for crate::GlobalNamespace::PosesSerializer {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PosesSerializer")]
-impl std::ops::DerefMut for PosesSerializer {
+impl std::ops::DerefMut for crate::GlobalNamespace::PosesSerializer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PosesSerializer")]
-impl PosesSerializer {
+impl crate::GlobalNamespace::PosesSerializer {
     pub const kDataFileName: &'static str = "Data.rcd";
     pub const kInfoFileName: &'static str = "Info.json";
     pub fn LoadDataFile(
@@ -46,38 +47,40 @@ impl PosesSerializer {
     pub fn LoadInfoFile(
         &mut self,
         filePath: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut PosesRecordingInfoSaveData> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PosesRecordingInfoSaveData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PosesRecordingInfoSaveData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PosesRecordingInfoSaveData = __cordl_object
             .invoke("LoadInfoFile", (filePath))?;
         Ok(__cordl_ret)
     }
     pub fn LoadRecording(
         &mut self,
         path: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut PosesRecordingData> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::PosesRecordingData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PosesRecordingData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PosesRecordingData = __cordl_object
             .invoke("LoadRecording", (path))?;
         Ok(__cordl_ret)
     }
     pub fn LoadRecordingFromDirectory(
         &mut self,
         path: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut PosesRecordingData> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::PosesRecordingData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PosesRecordingData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PosesRecordingData = __cordl_object
             .invoke("LoadRecordingFromDirectory", (path))?;
         Ok(__cordl_ret)
     }
     pub fn New(
-        logger: *mut IBeatSaberLogger,
+        logger: *mut crate::GlobalNamespace::IBeatSaberLogger,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -108,7 +111,7 @@ impl PosesSerializer {
     pub fn SaveRecording(
         &mut self,
         path: *mut crate::System::String,
-        data: *mut PosesRecordingData,
+        data: *mut crate::GlobalNamespace::PosesRecordingData,
         saveToOldFormat: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -121,7 +124,7 @@ impl PosesSerializer {
     pub fn SaveRecordingIntoDirectory(
         &mut self,
         path: *mut crate::System::String,
-        data: *mut PosesRecordingData,
+        data: *mut crate::GlobalNamespace::PosesRecordingData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -133,7 +136,7 @@ impl PosesSerializer {
     pub fn SaveToOldFormat(
         &mut self,
         path: *mut crate::System::String,
-        data: *mut PosesRecordingData,
+        data: *mut crate::GlobalNamespace::PosesRecordingData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -144,7 +147,7 @@ impl PosesSerializer {
     }
     pub fn _ctor(
         &mut self,
-        logger: *mut IBeatSaberLogger,
+        logger: *mut crate::GlobalNamespace::IBeatSaberLogger,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -155,7 +158,7 @@ impl PosesSerializer {
     }
 }
 #[cfg(feature = "PosesSerializer")]
-impl quest_hook::libil2cpp::ObjectType for PosesSerializer {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PosesSerializer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

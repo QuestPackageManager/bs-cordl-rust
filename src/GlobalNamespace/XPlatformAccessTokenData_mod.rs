@@ -3,15 +3,16 @@
 #[derive(Debug, Clone)]
 pub struct XPlatformAccessTokenData {
     pub token: *mut crate::System::String,
-    pub platformEnvironment: PlatformEnvironment,
+    pub platformEnvironment: crate::GlobalNamespace::PlatformEnvironment,
 }
 #[cfg(feature = "XPlatformAccessTokenData")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for XPlatformAccessTokenData => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::XPlatformAccessTokenData => ""
     ."XPlatformAccessTokenData"
 );
 #[cfg(feature = "XPlatformAccessTokenData")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for XPlatformAccessTokenData {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::XPlatformAccessTokenData {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -21,7 +22,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for XPlatformAccessTokenData {
     }
 }
 #[cfg(feature = "XPlatformAccessTokenData")]
-impl XPlatformAccessTokenData {
+impl crate::GlobalNamespace::XPlatformAccessTokenData {
     pub const kMinimalTokenLength: i32 = 64i32;
     pub fn IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -34,7 +35,7 @@ impl XPlatformAccessTokenData {
     pub fn _ctor(
         &mut self,
         token: *mut crate::System::String,
-        platformEnvironment: PlatformEnvironment,
+        platformEnvironment: crate::GlobalNamespace::PlatformEnvironment,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

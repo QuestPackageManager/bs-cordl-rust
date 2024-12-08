@@ -32,15 +32,15 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue,
     >;
     #[cfg(
-        feature = "UnityEngine+InputSystem+Utilities+ArrayHelpers+__c__DisplayClass34_1_1"
-    )]
-    pub type __c__DisplayClass34_1_1<TValue: quest_hook::libil2cpp::Type> = crate::UnityEngine::InputSystem::Utilities::ArrayHelpers___c__DisplayClass34_1_1<
-        TValue,
-    >;
-    #[cfg(
         feature = "UnityEngine+InputSystem+Utilities+ArrayHelpers+__c__DisplayClass34_0_1"
     )]
     pub type __c__DisplayClass34_0_1<TValue: quest_hook::libil2cpp::Type> = crate::UnityEngine::InputSystem::Utilities::ArrayHelpers___c__DisplayClass34_0_1<
+        TValue,
+    >;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+Utilities+ArrayHelpers+__c__DisplayClass34_1_1"
+    )]
+    pub type __c__DisplayClass34_1_1<TValue: quest_hook::libil2cpp::Type> = crate::UnityEngine::InputSystem::Utilities::ArrayHelpers___c__DisplayClass34_1_1<
         TValue,
     >;
 }

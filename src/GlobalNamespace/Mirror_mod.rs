@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Mirror {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _mirrorRenderer: *mut MirrorRendererSO,
+    pub _mirrorRenderer: *mut crate::GlobalNamespace::MirrorRendererSO,
     pub _renderer: *mut crate::UnityEngine::MeshRenderer,
     pub _mirrorMaterial: *mut crate::UnityEngine::Material,
     pub _noMirrorMaterial: *mut crate::UnityEngine::Material,
@@ -12,23 +12,23 @@ pub struct Mirror {
 }
 #[cfg(feature = "Mirror")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for Mirror => ""."Mirror"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::Mirror => ""."Mirror"
 );
 #[cfg(feature = "Mirror")]
-impl std::ops::Deref for Mirror {
+impl std::ops::Deref for crate::GlobalNamespace::Mirror {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mirror")]
-impl std::ops::DerefMut for Mirror {
+impl std::ops::DerefMut for crate::GlobalNamespace::Mirror {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mirror")]
-impl Mirror {
+impl crate::GlobalNamespace::Mirror {
     pub fn ChangeMirrorEnabledState(
         &mut self,
         newIsEnabled: bool,
@@ -139,7 +139,7 @@ impl Mirror {
     }
 }
 #[cfg(feature = "Mirror")]
-impl quest_hook::libil2cpp::ObjectType for Mirror {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Mirror {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

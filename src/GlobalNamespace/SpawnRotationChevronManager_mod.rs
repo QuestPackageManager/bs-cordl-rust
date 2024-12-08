@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SpawnRotationChevronManager_DirectionData {
     __cordl_parent: crate::System::Object,
-    pub chevron: *mut SpawnRotationChevron,
+    pub chevron: *mut crate::GlobalNamespace::SpawnRotationChevron,
     pub fullyLid: bool,
     pub fadeOutStartTime: f32,
     pub fadeInEndTime: f32,
@@ -71,11 +71,11 @@ pub struct SpawnRotationChevronManager {
     pub _fadeInLightAmountCurve: *mut crate::UnityEngine::AnimationCurve,
     pub _fadeOutLightAmountCurve: *mut crate::UnityEngine::AnimationCurve,
     pub _chevronPool: *mut crate::GlobalNamespace::SpawnRotationChevron_Pool,
-    pub _audioTimeSyncController: *mut IAudioTimeSource,
-    pub _beatmapObjectSpawnController: *mut BeatmapObjectSpawnController,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
-    pub _spawnRotationDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
-    pub _beatmapObjectDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _beatmapObjectSpawnController: *mut crate::GlobalNamespace::BeatmapObjectSpawnController,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _spawnRotationDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _beatmapObjectDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     pub _directionToDataDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
         i32,
         *mut crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData,
@@ -88,24 +88,24 @@ pub struct SpawnRotationChevronManager {
 }
 #[cfg(feature = "SpawnRotationChevronManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SpawnRotationChevronManager => ""
-    ."SpawnRotationChevronManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SpawnRotationChevronManager =>
+    ""."SpawnRotationChevronManager"
 );
 #[cfg(feature = "SpawnRotationChevronManager")]
-impl std::ops::Deref for SpawnRotationChevronManager {
+impl std::ops::Deref for crate::GlobalNamespace::SpawnRotationChevronManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SpawnRotationChevronManager")]
-impl std::ops::DerefMut for SpawnRotationChevronManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::SpawnRotationChevronManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SpawnRotationChevronManager")]
-impl SpawnRotationChevronManager {
+impl crate::GlobalNamespace::SpawnRotationChevronManager {
     #[cfg(feature = "SpawnRotationChevronManager+DirectionData")]
     pub type DirectionData = crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData;
     pub fn ComputeAheadTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -117,7 +117,7 @@ impl SpawnRotationChevronManager {
     }
     pub fn HandleBeatmapObjectCallback(
         &mut self,
-        beatmapObjectData: *mut BeatmapObjectData,
+        beatmapObjectData: *mut crate::GlobalNamespace::BeatmapObjectData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -138,7 +138,7 @@ impl SpawnRotationChevronManager {
     }
     pub fn HandleSpawnRotationBeatmapEvent(
         &mut self,
-        beatmapEventData: *mut SpawnRotationBeatmapEventData,
+        beatmapEventData: *mut crate::GlobalNamespace::SpawnRotationBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -196,7 +196,8 @@ impl SpawnRotationChevronManager {
     }
 }
 #[cfg(feature = "SpawnRotationChevronManager")]
-impl quest_hook::libil2cpp::ObjectType for SpawnRotationChevronManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SpawnRotationChevronManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

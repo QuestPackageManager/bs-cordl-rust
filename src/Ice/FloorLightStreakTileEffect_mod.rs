@@ -112,11 +112,11 @@ for crate::Ice::FloorLightStreakTileEffect_Element {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloorLightStreakTileEffect {
-    __cordl_parent: AbstractPoolContainer,
+    __cordl_parent: crate::GlobalNamespace::AbstractPoolContainer,
     pub _stayOnTileDuration: f32,
     pub _floorLightTilesGrid: *mut crate::Ice::FloorLightTilesGrid,
-    pub _audioTimeSource: *mut IAudioTimeSource,
-    pub _elementsPool: *mut SimpleMemoryPool_1<
+    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _elementsPool: *mut crate::GlobalNamespace::SimpleMemoryPool_1<
         *mut crate::Ice::FloorLightStreakTileEffect_Element,
     >,
 }
@@ -127,7 +127,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Ice+FloorLightStreakTileEffect")]
 impl std::ops::Deref for crate::Ice::FloorLightStreakTileEffect {
-    type Target = AbstractPoolContainer;
+    type Target = crate::GlobalNamespace::AbstractPoolContainer;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

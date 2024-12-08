@@ -4,30 +4,31 @@
 pub struct FlyingGameHUDRotation {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _smooth: f32,
-    pub _beatLineManager: *mut BeatLineManager,
-    pub _environmentSpawnRotation: *mut EnvironmentSpawnRotation,
+    pub _beatLineManager: *mut crate::GlobalNamespace::BeatLineManager,
+    pub _environmentSpawnRotation: *mut crate::GlobalNamespace::EnvironmentSpawnRotation,
     pub _prevYAngle: f32,
     pub _yAngle: f32,
 }
 #[cfg(feature = "FlyingGameHUDRotation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FlyingGameHUDRotation => ""."FlyingGameHUDRotation"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FlyingGameHUDRotation => ""
+    ."FlyingGameHUDRotation"
 );
 #[cfg(feature = "FlyingGameHUDRotation")]
-impl std::ops::Deref for FlyingGameHUDRotation {
+impl std::ops::Deref for crate::GlobalNamespace::FlyingGameHUDRotation {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FlyingGameHUDRotation")]
-impl std::ops::DerefMut for FlyingGameHUDRotation {
+impl std::ops::DerefMut for crate::GlobalNamespace::FlyingGameHUDRotation {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FlyingGameHUDRotation")]
-impl FlyingGameHUDRotation {
+impl crate::GlobalNamespace::FlyingGameHUDRotation {
     pub fn FixedUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -77,7 +78,8 @@ impl FlyingGameHUDRotation {
     }
 }
 #[cfg(feature = "FlyingGameHUDRotation")]
-impl quest_hook::libil2cpp::ObjectType for FlyingGameHUDRotation {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FlyingGameHUDRotation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

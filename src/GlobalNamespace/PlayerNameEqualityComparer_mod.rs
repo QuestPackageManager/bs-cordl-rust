@@ -6,24 +6,24 @@ pub struct PlayerNameEqualityComparer {
 }
 #[cfg(feature = "PlayerNameEqualityComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerNameEqualityComparer => ""
-    ."PlayerNameEqualityComparer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerNameEqualityComparer =>
+    ""."PlayerNameEqualityComparer"
 );
 #[cfg(feature = "PlayerNameEqualityComparer")]
-impl std::ops::Deref for PlayerNameEqualityComparer {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerNameEqualityComparer {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerNameEqualityComparer")]
-impl std::ops::DerefMut for PlayerNameEqualityComparer {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerNameEqualityComparer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerNameEqualityComparer")]
-impl PlayerNameEqualityComparer {
+impl crate::GlobalNamespace::PlayerNameEqualityComparer {
     pub fn Equals(
         &mut self,
         x: *mut crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
@@ -64,7 +64,8 @@ impl PlayerNameEqualityComparer {
     }
 }
 #[cfg(feature = "PlayerNameEqualityComparer")]
-impl quest_hook::libil2cpp::ObjectType for PlayerNameEqualityComparer {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayerNameEqualityComparer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

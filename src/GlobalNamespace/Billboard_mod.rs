@@ -9,23 +9,23 @@ pub struct Billboard {
 }
 #[cfg(feature = "Billboard")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for Billboard => ""."Billboard"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::Billboard => ""."Billboard"
 );
 #[cfg(feature = "Billboard")]
-impl std::ops::Deref for Billboard {
+impl std::ops::Deref for crate::GlobalNamespace::Billboard {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Billboard")]
-impl std::ops::DerefMut for Billboard {
+impl std::ops::DerefMut for crate::GlobalNamespace::Billboard {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "Billboard")]
-impl Billboard {
+impl crate::GlobalNamespace::Billboard {
     #[cfg(feature = "Billboard+RotationMode")]
     pub type RotationMode = crate::GlobalNamespace::Billboard_RotationMode;
     pub fn Awake(
@@ -67,7 +67,7 @@ impl Billboard {
     }
 }
 #[cfg(feature = "Billboard")]
-impl quest_hook::libil2cpp::ObjectType for Billboard {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Billboard {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

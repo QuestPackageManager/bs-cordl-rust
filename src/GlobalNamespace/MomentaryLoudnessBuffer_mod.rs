@@ -9,23 +9,24 @@ pub struct MomentaryLoudnessBuffer {
 }
 #[cfg(feature = "MomentaryLoudnessBuffer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MomentaryLoudnessBuffer => ""."MomentaryLoudnessBuffer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MomentaryLoudnessBuffer => ""
+    ."MomentaryLoudnessBuffer"
 );
 #[cfg(feature = "MomentaryLoudnessBuffer")]
-impl std::ops::Deref for MomentaryLoudnessBuffer {
+impl std::ops::Deref for crate::GlobalNamespace::MomentaryLoudnessBuffer {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MomentaryLoudnessBuffer")]
-impl std::ops::DerefMut for MomentaryLoudnessBuffer {
+impl std::ops::DerefMut for crate::GlobalNamespace::MomentaryLoudnessBuffer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MomentaryLoudnessBuffer")]
-impl MomentaryLoudnessBuffer {
+impl crate::GlobalNamespace::MomentaryLoudnessBuffer {
     pub fn AddSample(
         &mut self,
         data: f32,
@@ -101,7 +102,8 @@ impl MomentaryLoudnessBuffer {
     }
 }
 #[cfg(feature = "MomentaryLoudnessBuffer")]
-impl quest_hook::libil2cpp::ObjectType for MomentaryLoudnessBuffer {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MomentaryLoudnessBuffer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

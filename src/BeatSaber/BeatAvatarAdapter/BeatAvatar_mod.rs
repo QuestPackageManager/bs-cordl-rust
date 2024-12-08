@@ -69,7 +69,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatar {
     }
     pub fn UpdateAvatarFromVisualData(
         &mut self,
-        visualData: MultiplayerAvatarsData,
+        visualData: crate::GlobalNamespace::MultiplayerAvatarsData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

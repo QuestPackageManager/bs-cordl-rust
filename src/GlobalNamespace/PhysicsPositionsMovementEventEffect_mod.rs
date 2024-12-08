@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PhysicsPositionsMovementEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _event: BasicBeatmapEventType,
+    pub _event: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _movementVector: crate::UnityEngine::Vector3,
     pub _stepSize: f32,
     pub _elasticity: f32,
@@ -11,8 +11,8 @@ pub struct PhysicsPositionsMovementEventEffect {
     pub _minMaxSpeed: f32,
     pub _maxMaxSpeed: f32,
     pub _maxAcceleration: f32,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
-    pub _songTimeFixedUpdateController: *mut SongTimeFixedUpdateController,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _songTimeFixedUpdateController: *mut crate::GlobalNamespace::SongTimeFixedUpdateController,
     pub _transform: *mut crate::UnityEngine::Transform,
     pub _startPos: crate::UnityEngine::Vector3,
     pub _velocity: crate::UnityEngine::Vector3,
@@ -21,31 +21,32 @@ pub struct PhysicsPositionsMovementEventEffect {
     pub _targetPosition: crate::UnityEngine::Vector3,
     pub _maxSpeed: f32,
     pub _sqrMaxSpeed: f32,
-    pub _beatmapDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
 }
 #[cfg(feature = "PhysicsPositionsMovementEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PhysicsPositionsMovementEventEffect => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PhysicsPositionsMovementEventEffect => ""
     ."PhysicsPositionsMovementEventEffect"
 );
 #[cfg(feature = "PhysicsPositionsMovementEventEffect")]
-impl std::ops::Deref for PhysicsPositionsMovementEventEffect {
+impl std::ops::Deref for crate::GlobalNamespace::PhysicsPositionsMovementEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PhysicsPositionsMovementEventEffect")]
-impl std::ops::DerefMut for PhysicsPositionsMovementEventEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::PhysicsPositionsMovementEventEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PhysicsPositionsMovementEventEffect")]
-impl PhysicsPositionsMovementEventEffect {
+impl crate::GlobalNamespace::PhysicsPositionsMovementEventEffect {
     pub fn HandleBeatmapEvent(
         &mut self,
-        basicBeatmapEventData: *mut BasicBeatmapEventData,
+        basicBeatmapEventData: *mut crate::GlobalNamespace::BasicBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -114,7 +115,8 @@ impl PhysicsPositionsMovementEventEffect {
     }
 }
 #[cfg(feature = "PhysicsPositionsMovementEventEffect")]
-impl quest_hook::libil2cpp::ObjectType for PhysicsPositionsMovementEventEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PhysicsPositionsMovementEventEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

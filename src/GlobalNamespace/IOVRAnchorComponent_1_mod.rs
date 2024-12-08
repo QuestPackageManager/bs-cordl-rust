@@ -7,25 +7,30 @@ pub struct IOVRAnchorComponent_1<T: quest_hook::libil2cpp::Type> {
 }
 #[cfg(feature = "IOVRAnchorComponent_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IOVRAnchorComponent_1 < T > => ""
-    ."IOVRAnchorComponent`1" < T >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IOVRAnchorComponent_1 < T > =>
+    ""."IOVRAnchorComponent`1" < T >
 );
 #[cfg(feature = "IOVRAnchorComponent_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for IOVRAnchorComponent_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
+for crate::GlobalNamespace::IOVRAnchorComponent_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IOVRAnchorComponent_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for IOVRAnchorComponent_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
+for crate::GlobalNamespace::IOVRAnchorComponent_1<T> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IOVRAnchorComponent_1")]
-impl<T: quest_hook::libil2cpp::Type> IOVRAnchorComponent_1<T> {
-    pub fn FromAnchor(&mut self, anchor: OVRAnchor) -> quest_hook::libil2cpp::Result<T>
+impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::IOVRAnchorComponent_1<T> {
+    pub fn FromAnchor(
+        &mut self,
+        anchor: crate::GlobalNamespace::OVRAnchor,
+    ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -40,7 +45,7 @@ impl<T: quest_hook::libil2cpp::Type> IOVRAnchorComponent_1<T> {
         &mut self,
         enable: bool,
         timeout: f64,
-    ) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>>
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -48,7 +53,7 @@ impl<T: quest_hook::libil2cpp::Type> IOVRAnchorComponent_1<T> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: OVRTask_1<bool> = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = __cordl_object
             .invoke("SetEnabledAsync", (enable, timeout))?;
         Ok(__cordl_ret)
     }
@@ -109,7 +114,7 @@ impl<T: quest_hook::libil2cpp::Type> IOVRAnchorComponent_1<T> {
 }
 #[cfg(feature = "IOVRAnchorComponent_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for IOVRAnchorComponent_1<T> {
+for crate::GlobalNamespace::IOVRAnchorComponent_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

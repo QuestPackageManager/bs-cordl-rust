@@ -3,17 +3,19 @@
 #[derive(Debug)]
 pub struct HelpFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub _helpMenuViewController: *mut HelpMenuViewController,
-    pub _helpNavigationController: *mut HelpNavigationController,
-    pub _howToPlayViewController: *mut HowToPlayViewController,
-    pub _healthWarningDisplayViewController: *mut HealthWarningDisplayViewController,
-    pub _privacyPolicyDisplayViewController: *mut PrivacyPolicyDisplayViewController,
-    pub _eulaDisplayViewController: *mut EulaDisplayViewController,
-    pub _licensesDisplayViewController: *mut LicensesDisplayViewController,
-    pub _playerStatisticsViewController: *mut PlayerStatisticsViewController,
-    pub _playerDataModel: *mut PlayerDataModel,
-    pub _menuTransitionsHelper: *mut MenuTransitionsHelper,
-    pub didFinishEvent: *mut crate::System::Action_1<*mut HelpFlowCoordinator>,
+    pub _helpMenuViewController: *mut crate::GlobalNamespace::HelpMenuViewController,
+    pub _helpNavigationController: *mut crate::GlobalNamespace::HelpNavigationController,
+    pub _howToPlayViewController: *mut crate::GlobalNamespace::HowToPlayViewController,
+    pub _healthWarningDisplayViewController: *mut crate::GlobalNamespace::HealthWarningDisplayViewController,
+    pub _privacyPolicyDisplayViewController: *mut crate::GlobalNamespace::PrivacyPolicyDisplayViewController,
+    pub _eulaDisplayViewController: *mut crate::GlobalNamespace::EulaDisplayViewController,
+    pub _licensesDisplayViewController: *mut crate::GlobalNamespace::LicensesDisplayViewController,
+    pub _playerStatisticsViewController: *mut crate::GlobalNamespace::PlayerStatisticsViewController,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _menuTransitionsHelper: *mut crate::GlobalNamespace::MenuTransitionsHelper,
+    pub didFinishEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::HelpFlowCoordinator,
+    >,
     pub _viewControllers: *mut crate::System::Collections::Generic::List_1<
         crate::System::ValueTuple_2<
             *mut crate::HMUI::ViewController,
@@ -23,23 +25,24 @@ pub struct HelpFlowCoordinator {
 }
 #[cfg(feature = "HelpFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for HelpFlowCoordinator => ""."HelpFlowCoordinator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::HelpFlowCoordinator => ""
+    ."HelpFlowCoordinator"
 );
 #[cfg(feature = "HelpFlowCoordinator")]
-impl std::ops::Deref for HelpFlowCoordinator {
+impl std::ops::Deref for crate::GlobalNamespace::HelpFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HelpFlowCoordinator")]
-impl std::ops::DerefMut for HelpFlowCoordinator {
+impl std::ops::DerefMut for crate::GlobalNamespace::HelpFlowCoordinator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "HelpFlowCoordinator")]
-impl HelpFlowCoordinator {
+impl crate::GlobalNamespace::HelpFlowCoordinator {
     pub const kEulaMenu: &'static str = "EULA_MENU";
     pub const kHealthWarningMenu: &'static str = "HEALTH_AND_SAFETY_MENU";
     pub const kHowToPlayMenu: &'static str = "LABEL_HOW_TO_PLAY";
@@ -136,7 +139,9 @@ impl HelpFlowCoordinator {
     }
     pub fn add_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut HelpFlowCoordinator>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::HelpFlowCoordinator,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -147,7 +152,9 @@ impl HelpFlowCoordinator {
     }
     pub fn remove_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut HelpFlowCoordinator>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::HelpFlowCoordinator,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -158,7 +165,7 @@ impl HelpFlowCoordinator {
     }
 }
 #[cfg(feature = "HelpFlowCoordinator")]
-impl quest_hook::libil2cpp::ObjectType for HelpFlowCoordinator {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::HelpFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

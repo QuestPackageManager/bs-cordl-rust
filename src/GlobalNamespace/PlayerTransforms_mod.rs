@@ -22,23 +22,24 @@ pub struct PlayerTransforms {
 }
 #[cfg(feature = "PlayerTransforms")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerTransforms => ""."PlayerTransforms"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerTransforms => ""
+    ."PlayerTransforms"
 );
 #[cfg(feature = "PlayerTransforms")]
-impl std::ops::Deref for PlayerTransforms {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerTransforms {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerTransforms")]
-impl std::ops::DerefMut for PlayerTransforms {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerTransforms {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerTransforms")]
-impl PlayerTransforms {
+impl crate::GlobalNamespace::PlayerTransforms {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -231,7 +232,7 @@ impl PlayerTransforms {
     }
 }
 #[cfg(feature = "PlayerTransforms")]
-impl quest_hook::libil2cpp::ObjectType for PlayerTransforms {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerTransforms {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

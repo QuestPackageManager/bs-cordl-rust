@@ -6,23 +6,24 @@ pub struct CustomControlTrack {
 }
 #[cfg(feature = "CustomControlTrack")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CustomControlTrack => ""."CustomControlTrack"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CustomControlTrack => ""
+    ."CustomControlTrack"
 );
 #[cfg(feature = "CustomControlTrack")]
-impl std::ops::Deref for CustomControlTrack {
+impl std::ops::Deref for crate::GlobalNamespace::CustomControlTrack {
     type Target = crate::UnityEngine::Timeline::ControlTrack;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CustomControlTrack")]
-impl std::ops::DerefMut for CustomControlTrack {
+impl std::ops::DerefMut for crate::GlobalNamespace::CustomControlTrack {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CustomControlTrack")]
-impl CustomControlTrack {
+impl crate::GlobalNamespace::CustomControlTrack {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,7 +43,7 @@ impl CustomControlTrack {
     }
 }
 #[cfg(feature = "CustomControlTrack")]
-impl quest_hook::libil2cpp::ObjectType for CustomControlTrack {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CustomControlTrack {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

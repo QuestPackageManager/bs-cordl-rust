@@ -66,14 +66,14 @@ impl std::ops::DerefMut for crate::Zenject::PoolableManager {
 }
 #[cfg(feature = "Zenject+PoolableManager")]
 impl crate::Zenject::PoolableManager {
-    #[cfg(feature = "Zenject+PoolableManager+__c__DisplayClass2_0")]
-    pub type __c__DisplayClass2_0 = crate::Zenject::PoolableManager___c__DisplayClass2_0;
-    #[cfg(feature = "Zenject+PoolableManager+__c__DisplayClass3_0")]
-    pub type __c__DisplayClass3_0 = crate::Zenject::PoolableManager___c__DisplayClass3_0;
     #[cfg(feature = "Zenject+PoolableManager+PoolableInfo")]
     pub type PoolableInfo = crate::Zenject::PoolableManager_PoolableInfo;
     #[cfg(feature = "Zenject+PoolableManager+__c")]
     pub type __c = crate::Zenject::PoolableManager___c;
+    #[cfg(feature = "Zenject+PoolableManager+__c__DisplayClass2_0")]
+    pub type __c__DisplayClass2_0 = crate::Zenject::PoolableManager___c__DisplayClass2_0;
+    #[cfg(feature = "Zenject+PoolableManager+__c__DisplayClass3_0")]
+    pub type __c__DisplayClass3_0 = crate::Zenject::PoolableManager___c__DisplayClass3_0;
     pub fn CreatePoolableInfo(
         &mut self,
         poolable: *mut crate::Zenject::IPoolable,

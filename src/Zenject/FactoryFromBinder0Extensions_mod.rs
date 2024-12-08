@@ -28,14 +28,6 @@ impl crate::Zenject::FactoryFromBinder0Extensions {
     pub type __c__1_1<TContract: quest_hook::libil2cpp::Type> = crate::Zenject::FactoryFromBinder0Extensions___c__1_1<
         TContract,
     >;
-    #[cfg(feature = "Zenject+FactoryFromBinder0Extensions+__c__DisplayClass0_0_2")]
-    pub type __c__DisplayClass0_0_2<
-        TContract: quest_hook::libil2cpp::Type,
-        TMemoryPool: quest_hook::libil2cpp::Type,
-    > = crate::Zenject::FactoryFromBinder0Extensions___c__DisplayClass0_0_2<
-        TContract,
-        TMemoryPool,
-    >;
     #[cfg(feature = "Zenject+FactoryFromBinder0Extensions+__c__3_1")]
     pub type __c__3_1<TContract: quest_hook::libil2cpp::Type> = crate::Zenject::FactoryFromBinder0Extensions___c__3_1<
         TContract,
@@ -45,6 +37,14 @@ impl crate::Zenject::FactoryFromBinder0Extensions {
         TContract: quest_hook::libil2cpp::Type,
         TMemoryPool: quest_hook::libil2cpp::Type,
     > = crate::Zenject::FactoryFromBinder0Extensions___c__5_2<TContract, TMemoryPool>;
+    #[cfg(feature = "Zenject+FactoryFromBinder0Extensions+__c__DisplayClass0_0_2")]
+    pub type __c__DisplayClass0_0_2<
+        TContract: quest_hook::libil2cpp::Type,
+        TMemoryPool: quest_hook::libil2cpp::Type,
+    > = crate::Zenject::FactoryFromBinder0Extensions___c__DisplayClass0_0_2<
+        TContract,
+        TMemoryPool,
+    >;
     #[cfg(feature = "Zenject+FactoryFromBinder0Extensions+__c__DisplayClass6_0_1")]
     pub type __c__DisplayClass6_0_1<TContract: quest_hook::libil2cpp::Type> = crate::Zenject::FactoryFromBinder0Extensions___c__DisplayClass6_0_1<
         TContract,

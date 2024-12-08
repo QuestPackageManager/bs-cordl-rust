@@ -12,23 +12,24 @@ pub struct UIKeyboardManager {
 }
 #[cfg(feature = "UIKeyboardManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for UIKeyboardManager => ""."UIKeyboardManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::UIKeyboardManager => ""
+    ."UIKeyboardManager"
 );
 #[cfg(feature = "UIKeyboardManager")]
-impl std::ops::Deref for UIKeyboardManager {
+impl std::ops::Deref for crate::GlobalNamespace::UIKeyboardManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UIKeyboardManager")]
-impl std::ops::DerefMut for UIKeyboardManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::UIKeyboardManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "UIKeyboardManager")]
-impl UIKeyboardManager {
+impl crate::GlobalNamespace::UIKeyboardManager {
     pub const kKeyboardTopOffset: f32 = 5f32;
     pub fn CloseKeyboard(
         &mut self,
@@ -162,7 +163,7 @@ impl UIKeyboardManager {
     }
 }
 #[cfg(feature = "UIKeyboardManager")]
-impl quest_hook::libil2cpp::ObjectType for UIKeyboardManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UIKeyboardManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

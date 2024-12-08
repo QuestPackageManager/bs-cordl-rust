@@ -3,28 +3,31 @@
 #[derive(Debug)]
 pub struct BezierSplineEvaluator {
     __cordl_parent: crate::System::Object,
-    pub _segments: *mut crate::System::Collections::Generic::List_1<BezierCurve>,
+    pub _segments: *mut crate::System::Collections::Generic::List_1<
+        crate::GlobalNamespace::BezierCurve,
+    >,
     pub _currentSegmentIndex: i32,
 }
 #[cfg(feature = "BezierSplineEvaluator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BezierSplineEvaluator => ""."BezierSplineEvaluator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BezierSplineEvaluator => ""
+    ."BezierSplineEvaluator"
 );
 #[cfg(feature = "BezierSplineEvaluator")]
-impl std::ops::Deref for BezierSplineEvaluator {
+impl std::ops::Deref for crate::GlobalNamespace::BezierSplineEvaluator {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BezierSplineEvaluator")]
-impl std::ops::DerefMut for BezierSplineEvaluator {
+impl std::ops::DerefMut for crate::GlobalNamespace::BezierSplineEvaluator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BezierSplineEvaluator")]
-impl BezierSplineEvaluator {
+impl crate::GlobalNamespace::BezierSplineEvaluator {
     pub const kSlightAboveOne: f32 = 1.0005f32;
     pub const kSlightBelowZero: f32 = -0.0005f32;
     #[cfg(feature = "BezierSplineEvaluator+CubicSolveResult")]
@@ -98,7 +101,9 @@ impl BezierSplineEvaluator {
             .invoke("GetTimeValuesForSegment", (segmentIndex, t0Value, t1Value))?;
         Ok(__cordl_ret)
     }
-    pub fn New(spline: *mut BezierSpline) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(
+        spline: *mut crate::GlobalNamespace::BezierSpline,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -129,7 +134,7 @@ impl BezierSplineEvaluator {
     }
     pub fn _ctor(
         &mut self,
-        spline: *mut BezierSpline,
+        spline: *mut crate::GlobalNamespace::BezierSpline,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -140,7 +145,8 @@ impl BezierSplineEvaluator {
     }
 }
 #[cfg(feature = "BezierSplineEvaluator")]
-impl quest_hook::libil2cpp::ObjectType for BezierSplineEvaluator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BezierSplineEvaluator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

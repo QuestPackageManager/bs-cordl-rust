@@ -6,24 +6,24 @@ pub struct IConnectionRequestHandler {
 }
 #[cfg(feature = "IConnectionRequestHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IConnectionRequestHandler => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IConnectionRequestHandler => ""
     ."IConnectionRequestHandler"
 );
 #[cfg(feature = "IConnectionRequestHandler")]
-impl std::ops::Deref for IConnectionRequestHandler {
+impl std::ops::Deref for crate::GlobalNamespace::IConnectionRequestHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IConnectionRequestHandler")]
-impl std::ops::DerefMut for IConnectionRequestHandler {
+impl std::ops::DerefMut for crate::GlobalNamespace::IConnectionRequestHandler {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IConnectionRequestHandler")]
-impl IConnectionRequestHandler {
+impl crate::GlobalNamespace::IConnectionRequestHandler {
     pub fn GetConnectionMessage(
         &mut self,
         writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
@@ -65,7 +65,8 @@ impl IConnectionRequestHandler {
     }
 }
 #[cfg(feature = "IConnectionRequestHandler")]
-impl quest_hook::libil2cpp::ObjectType for IConnectionRequestHandler {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IConnectionRequestHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

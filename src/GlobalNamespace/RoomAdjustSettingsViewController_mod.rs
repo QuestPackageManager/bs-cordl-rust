@@ -3,34 +3,35 @@
 #[derive(Debug)]
 pub struct RoomAdjustSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _xStepValuePicker: *mut StepValuePicker,
-    pub _yStepValuePicker: *mut StepValuePicker,
-    pub _zStepValuePicker: *mut StepValuePicker,
-    pub _rotStepValuePicker: *mut StepValuePicker,
+    pub _xStepValuePicker: *mut crate::GlobalNamespace::StepValuePicker,
+    pub _yStepValuePicker: *mut crate::GlobalNamespace::StepValuePicker,
+    pub _zStepValuePicker: *mut crate::GlobalNamespace::StepValuePicker,
+    pub _rotStepValuePicker: *mut crate::GlobalNamespace::StepValuePicker,
     pub _resetButton: *mut crate::UnityEngine::UI::Button,
     pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
-    pub _settingsApplicator: *mut SettingsApplicatorSO,
+    pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
 }
 #[cfg(feature = "RoomAdjustSettingsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RoomAdjustSettingsViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::RoomAdjustSettingsViewController => ""
     ."RoomAdjustSettingsViewController"
 );
 #[cfg(feature = "RoomAdjustSettingsViewController")]
-impl std::ops::Deref for RoomAdjustSettingsViewController {
+impl std::ops::Deref for crate::GlobalNamespace::RoomAdjustSettingsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RoomAdjustSettingsViewController")]
-impl std::ops::DerefMut for RoomAdjustSettingsViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::RoomAdjustSettingsViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RoomAdjustSettingsViewController")]
-impl RoomAdjustSettingsViewController {
+impl crate::GlobalNamespace::RoomAdjustSettingsViewController {
     pub const kHorizontalMoveStep: f32 = 0.1f32;
     pub const kRotationStep: f32 = 5f32;
     pub const kVerticalMoveStep: f32 = 0.05f32;
@@ -70,7 +71,7 @@ impl RoomAdjustSettingsViewController {
     }
     pub fn RefreshRoomOffsetValuePicker(
         &mut self,
-        stepValuePicker: *mut StepValuePicker,
+        stepValuePicker: *mut crate::GlobalNamespace::StepValuePicker,
         roomOffsetValue: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -213,7 +214,8 @@ impl RoomAdjustSettingsViewController {
     }
 }
 #[cfg(feature = "RoomAdjustSettingsViewController")]
-impl quest_hook::libil2cpp::ObjectType for RoomAdjustSettingsViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::RoomAdjustSettingsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

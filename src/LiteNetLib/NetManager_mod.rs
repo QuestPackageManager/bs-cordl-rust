@@ -153,10 +153,10 @@ impl std::ops::DerefMut for crate::LiteNetLib::NetManager {
 }
 #[cfg(feature = "LiteNetLib+NetManager")]
 impl crate::LiteNetLib::NetManager {
-    #[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
-    pub type NetPeerEnumerator = crate::LiteNetLib::NetManager_NetPeerEnumerator;
     #[cfg(feature = "LiteNetLib+NetManager+IPEndPointComparer")]
     pub type IPEndPointComparer = crate::LiteNetLib::NetManager_IPEndPointComparer;
+    #[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
+    pub type NetPeerEnumerator = crate::LiteNetLib::NetManager_NetPeerEnumerator;
     pub fn AddPeer(
         &mut self,
         peer: *mut crate::LiteNetLib::NetPeer,

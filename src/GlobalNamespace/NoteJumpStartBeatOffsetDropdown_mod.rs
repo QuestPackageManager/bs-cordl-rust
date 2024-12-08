@@ -2,28 +2,28 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteJumpStartBeatOffsetDropdown {
-    __cordl_parent: ValueDropdownController_1<f32>,
+    __cordl_parent: crate::GlobalNamespace::ValueDropdownController_1<f32>,
 }
 #[cfg(feature = "NoteJumpStartBeatOffsetDropdown")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteJumpStartBeatOffsetDropdown => ""
-    ."NoteJumpStartBeatOffsetDropdown"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteJumpStartBeatOffsetDropdown
+    => ""."NoteJumpStartBeatOffsetDropdown"
 );
 #[cfg(feature = "NoteJumpStartBeatOffsetDropdown")]
-impl std::ops::Deref for NoteJumpStartBeatOffsetDropdown {
-    type Target = ValueDropdownController_1<f32>;
+impl std::ops::Deref for crate::GlobalNamespace::NoteJumpStartBeatOffsetDropdown {
+    type Target = crate::GlobalNamespace::ValueDropdownController_1<f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteJumpStartBeatOffsetDropdown")]
-impl std::ops::DerefMut for NoteJumpStartBeatOffsetDropdown {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteJumpStartBeatOffsetDropdown {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteJumpStartBeatOffsetDropdown")]
-impl NoteJumpStartBeatOffsetDropdown {
+impl crate::GlobalNamespace::NoteJumpStartBeatOffsetDropdown {
     pub fn GetNamedValues(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -58,7 +58,8 @@ impl NoteJumpStartBeatOffsetDropdown {
     }
 }
 #[cfg(feature = "NoteJumpStartBeatOffsetDropdown")]
-impl quest_hook::libil2cpp::ObjectType for NoteJumpStartBeatOffsetDropdown {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NoteJumpStartBeatOffsetDropdown {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

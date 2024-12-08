@@ -29,6 +29,13 @@ for crate::Zenject::FactoryFromBinder_1<TContract> {
 impl<
     TContract: quest_hook::libil2cpp::Type,
 > crate::Zenject::FactoryFromBinder_1<TContract> {
+    #[cfg(feature = "Zenject+FactoryFromBinder_1+__c")]
+    pub type __c = crate::Zenject::FactoryFromBinder_1___c<TContract>;
+    #[cfg(feature = "Zenject+FactoryFromBinder_1+__c__5_1")]
+    pub type __c__5_1<TSubFactory: quest_hook::libil2cpp::Type> = crate::Zenject::FactoryFromBinder_1___c__5_1<
+        TContract,
+        TSubFactory,
+    >;
     #[cfg(feature = "Zenject+FactoryFromBinder_1+__c__DisplayClass3_0_1")]
     pub type __c__DisplayClass3_0_1<TObj: quest_hook::libil2cpp::Type> = crate::Zenject::FactoryFromBinder_1___c__DisplayClass3_0_1<
         TContract,
@@ -38,16 +45,9 @@ impl<
     pub type __c__DisplayClass4_0 = crate::Zenject::FactoryFromBinder_1___c__DisplayClass4_0<
         TContract,
     >;
-    #[cfg(feature = "Zenject+FactoryFromBinder_1+__c")]
-    pub type __c = crate::Zenject::FactoryFromBinder_1___c<TContract>;
     #[cfg(feature = "Zenject+FactoryFromBinder_1+__c__DisplayClass8_0")]
     pub type __c__DisplayClass8_0 = crate::Zenject::FactoryFromBinder_1___c__DisplayClass8_0<
         TContract,
-    >;
-    #[cfg(feature = "Zenject+FactoryFromBinder_1+__c__5_1")]
-    pub type __c__5_1<TSubFactory: quest_hook::libil2cpp::Type> = crate::Zenject::FactoryFromBinder_1___c__5_1<
-        TContract,
-        TSubFactory,
     >;
     pub fn FromComponentInHierarchy(
         &mut self,

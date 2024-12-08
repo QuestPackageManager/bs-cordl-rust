@@ -3,32 +3,35 @@
 #[derive(Debug)]
 pub struct BaseMultiplayerStartGameCountdownViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _beatmapSelectionView: *mut BeatmapSelectionView,
-    pub _modifiersSelectionView: *mut ModifiersSelectionView,
+    pub _beatmapSelectionView: *mut crate::GlobalNamespace::BeatmapSelectionView,
+    pub _modifiersSelectionView: *mut crate::GlobalNamespace::ModifiersSelectionView,
     pub _spectateToggle: *mut crate::UnityEngine::UI::Toggle,
     pub playerActiveStateChangedEvent: *mut crate::System::Action_1<bool>,
     pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
 }
 #[cfg(feature = "BaseMultiplayerStartGameCountdownViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BaseMultiplayerStartGameCountdownViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BaseMultiplayerStartGameCountdownViewController => ""
     ."BaseMultiplayerStartGameCountdownViewController"
 );
 #[cfg(feature = "BaseMultiplayerStartGameCountdownViewController")]
-impl std::ops::Deref for BaseMultiplayerStartGameCountdownViewController {
+impl std::ops::Deref
+for crate::GlobalNamespace::BaseMultiplayerStartGameCountdownViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BaseMultiplayerStartGameCountdownViewController")]
-impl std::ops::DerefMut for BaseMultiplayerStartGameCountdownViewController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::BaseMultiplayerStartGameCountdownViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BaseMultiplayerStartGameCountdownViewController")]
-impl BaseMultiplayerStartGameCountdownViewController {
+impl crate::GlobalNamespace::BaseMultiplayerStartGameCountdownViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -76,7 +79,7 @@ impl BaseMultiplayerStartGameCountdownViewController {
     }
     pub fn SetLevelGameplaySetupData(
         &mut self,
-        levelGameplaySetupData: *mut ILevelGameplaySetupData,
+        levelGameplaySetupData: *mut crate::GlobalNamespace::ILevelGameplaySetupData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -87,7 +90,7 @@ impl BaseMultiplayerStartGameCountdownViewController {
     }
     pub fn SetLobbyPlayerData(
         &mut self,
-        lobbyPlayerData: *mut ILobbyPlayerData,
+        lobbyPlayerData: *mut crate::GlobalNamespace::ILobbyPlayerData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -142,7 +145,7 @@ impl BaseMultiplayerStartGameCountdownViewController {
 }
 #[cfg(feature = "BaseMultiplayerStartGameCountdownViewController")]
 impl quest_hook::libil2cpp::ObjectType
-for BaseMultiplayerStartGameCountdownViewController {
+for crate::GlobalNamespace::BaseMultiplayerStartGameCountdownViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

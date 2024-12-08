@@ -5,34 +5,34 @@ pub struct MultiplayerLobbyController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _innerCircleRadius: f32,
     pub _minOuterCircleRadius: f32,
-    pub _multiplayerLobbyAvatarManager: *mut MultiplayerLobbyAvatarManager,
-    pub _multiplayerLobbyCenterStageManager: *mut MultiplayerLobbyCenterStageManager,
-    pub _multiplayerLobbyAvatarPlaceManager: *mut MultiplayerLobbyAvatarPlaceManager,
-    pub _menuEnvironmentManager: *mut MenuEnvironmentManager,
-    pub _playerDataModel: *mut PlayerDataModel,
+    pub _multiplayerLobbyAvatarManager: *mut crate::GlobalNamespace::MultiplayerLobbyAvatarManager,
+    pub _multiplayerLobbyCenterStageManager: *mut crate::GlobalNamespace::MultiplayerLobbyCenterStageManager,
+    pub _multiplayerLobbyAvatarPlaceManager: *mut crate::GlobalNamespace::MultiplayerLobbyAvatarPlaceManager,
+    pub _menuEnvironmentManager: *mut crate::GlobalNamespace::MenuEnvironmentManager,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
     pub _optionalAvatarDataSender: *mut crate::BeatSaber::AvatarCore::OptionalAvatarDataSender,
     pub _lobbyActivated_k__BackingField: bool,
 }
 #[cfg(feature = "MultiplayerLobbyController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLobbyController => ""
-    ."MultiplayerLobbyController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerLobbyController =>
+    ""."MultiplayerLobbyController"
 );
 #[cfg(feature = "MultiplayerLobbyController")]
-impl std::ops::Deref for MultiplayerLobbyController {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLobbyController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLobbyController")]
-impl std::ops::DerefMut for MultiplayerLobbyController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLobbyController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLobbyController")]
-impl MultiplayerLobbyController {
+impl crate::GlobalNamespace::MultiplayerLobbyController {
     pub fn ActivateMultiplayerLobby(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -90,7 +90,8 @@ impl MultiplayerLobbyController {
     }
 }
 #[cfg(feature = "MultiplayerLobbyController")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLobbyController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLobbyController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

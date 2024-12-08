@@ -28,22 +28,22 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JToken {
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JToken")]
 impl crate::Newtonsoft::Json::Linq::JToken {
-    #[cfg(feature = "Newtonsoft+Json+Linq+JToken+_BeforeSelf_d__50")]
-    pub type _BeforeSelf_d__50 = crate::Newtonsoft::Json::Linq::JToken__BeforeSelf_d__50;
     #[cfg(feature = "Newtonsoft+Json+Linq+JToken+LineInfoAnnotation")]
     pub type LineInfoAnnotation = crate::Newtonsoft::Json::Linq::JToken_LineInfoAnnotation;
     #[cfg(feature = "Newtonsoft+Json+Linq+JToken+_AfterSelf_d__49")]
     pub type _AfterSelf_d__49 = crate::Newtonsoft::Json::Linq::JToken__AfterSelf_d__49;
-    #[cfg(feature = "Newtonsoft+Json+Linq+JToken+_GetAncestors_d__48")]
-    pub type _GetAncestors_d__48 = crate::Newtonsoft::Json::Linq::JToken__GetAncestors_d__48;
-    #[cfg(feature = "Newtonsoft+Json+Linq+JToken+_ReadFromAsync_d__3")]
-    pub type _ReadFromAsync_d__3 = crate::Newtonsoft::Json::Linq::JToken__ReadFromAsync_d__3;
     #[cfg(feature = "Newtonsoft+Json+Linq+JToken+_Annotations_d__185_1")]
     pub type _Annotations_d__185_1<T: quest_hook::libil2cpp::Type> = crate::Newtonsoft::Json::Linq::JToken__Annotations_d__185_1<
         T,
     >;
     #[cfg(feature = "Newtonsoft+Json+Linq+JToken+_Annotations_d__186")]
     pub type _Annotations_d__186 = crate::Newtonsoft::Json::Linq::JToken__Annotations_d__186;
+    #[cfg(feature = "Newtonsoft+Json+Linq+JToken+_BeforeSelf_d__50")]
+    pub type _BeforeSelf_d__50 = crate::Newtonsoft::Json::Linq::JToken__BeforeSelf_d__50;
+    #[cfg(feature = "Newtonsoft+Json+Linq+JToken+_GetAncestors_d__48")]
+    pub type _GetAncestors_d__48 = crate::Newtonsoft::Json::Linq::JToken__GetAncestors_d__48;
+    #[cfg(feature = "Newtonsoft+Json+Linq+JToken+_ReadFromAsync_d__3")]
+    pub type _ReadFromAsync_d__3 = crate::Newtonsoft::Json::Linq::JToken__ReadFromAsync_d__3;
     pub fn AddAfterSelf(
         &mut self,
         content: *mut crate::System::Object,

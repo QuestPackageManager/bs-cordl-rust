@@ -6,23 +6,24 @@ pub struct MissionNodesHelper {
 }
 #[cfg(feature = "MissionNodesHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionNodesHelper => ""."MissionNodesHelper"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissionNodesHelper => ""
+    ."MissionNodesHelper"
 );
 #[cfg(feature = "MissionNodesHelper")]
-impl std::ops::Deref for MissionNodesHelper {
+impl std::ops::Deref for crate::GlobalNamespace::MissionNodesHelper {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionNodesHelper")]
-impl std::ops::DerefMut for MissionNodesHelper {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionNodesHelper {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionNodesHelper")]
-impl MissionNodesHelper {
+impl crate::GlobalNamespace::MissionNodesHelper {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,7 +43,7 @@ impl MissionNodesHelper {
     }
 }
 #[cfg(feature = "MissionNodesHelper")]
-impl quest_hook::libil2cpp::ObjectType for MissionNodesHelper {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissionNodesHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,24 +6,24 @@ pub struct ILobbyGameStateController {
 }
 #[cfg(feature = "ILobbyGameStateController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ILobbyGameStateController => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ILobbyGameStateController => ""
     ."ILobbyGameStateController"
 );
 #[cfg(feature = "ILobbyGameStateController")]
-impl std::ops::Deref for ILobbyGameStateController {
+impl std::ops::Deref for crate::GlobalNamespace::ILobbyGameStateController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ILobbyGameStateController")]
-impl std::ops::DerefMut for ILobbyGameStateController {
+impl std::ops::DerefMut for crate::GlobalNamespace::ILobbyGameStateController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ILobbyGameStateController")]
-impl ILobbyGameStateController {
+impl crate::GlobalNamespace::ILobbyGameStateController {
     pub fn ClearDisconnectedState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -128,7 +128,9 @@ impl ILobbyGameStateController {
     }
     pub fn add_gameStartedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ILevelGameplaySetupData>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ILevelGameplaySetupData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -139,7 +141,7 @@ impl ILobbyGameStateController {
     }
     pub fn add_levelDidGetDisconnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<DisconnectedReason>,
+        value: *mut crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -151,8 +153,8 @@ impl ILobbyGameStateController {
     pub fn add_levelFinishedEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut MultiplayerLevelScenesTransitionSetupDataSO,
-            *mut MultiplayerResultsData,
+            *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::MultiplayerResultsData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -175,7 +177,9 @@ impl ILobbyGameStateController {
     }
     pub fn add_lobbyStateChangedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<MultiplayerLobbyState>,
+        value: *mut crate::System::Action_1<
+            crate::GlobalNamespace::MultiplayerLobbyState,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -187,7 +191,7 @@ impl ILobbyGameStateController {
     pub fn add_playerMissingEntitlementsChangedEvent(
         &mut self,
         value: *mut crate::System::Action_1<
-            *mut PlayersMissingEntitlementsNetSerializable,
+            *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -199,7 +203,9 @@ impl ILobbyGameStateController {
     }
     pub fn add_selectedLevelGameplaySetupDataChangedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ILevelGameplaySetupData>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ILevelGameplaySetupData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -221,7 +227,9 @@ impl ILobbyGameStateController {
     }
     pub fn add_startButtonEnabledEvent(
         &mut self,
-        value: *mut crate::System::Action_1<CannotStartGameReason>,
+        value: *mut crate::System::Action_1<
+            crate::GlobalNamespace::CannotStartGameReason,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -248,11 +256,11 @@ impl ILobbyGameStateController {
     }
     pub fn get_cannotStartGameReason(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<CannotStartGameReason> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::CannotStartGameReason> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: CannotStartGameReason = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::CannotStartGameReason = __cordl_object
             .invoke("get_cannotStartGameReason", ())?;
         Ok(__cordl_ret)
     }
@@ -272,11 +280,11 @@ impl ILobbyGameStateController {
     }
     pub fn get_disconnectedReason(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<DisconnectedReason> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::DisconnectedReason> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: DisconnectedReason = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::DisconnectedReason = __cordl_object
             .invoke("get_disconnectedReason", ())?;
         Ok(__cordl_ret)
     }
@@ -306,11 +314,13 @@ impl ILobbyGameStateController {
     }
     pub fn get_selectedLevelGameplaySetupData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut ILevelGameplaySetupData> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::ILevelGameplaySetupData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ILevelGameplaySetupData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::ILevelGameplaySetupData = __cordl_object
             .invoke("get_selectedLevelGameplaySetupData", ())?;
         Ok(__cordl_ret)
     }
@@ -321,11 +331,14 @@ impl ILobbyGameStateController {
         let __cordl_ret: i64 = __cordl_object.invoke("get_startTime", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_state(&mut self) -> quest_hook::libil2cpp::Result<MultiplayerLobbyState> {
+    pub fn get_state(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::MultiplayerLobbyState> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: MultiplayerLobbyState = __cordl_object.invoke("get_state", ())?;
+        let __cordl_ret: crate::GlobalNamespace::MultiplayerLobbyState = __cordl_object
+            .invoke("get_state", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_beforeSceneSwitchCallbackEvent(
@@ -374,7 +387,9 @@ impl ILobbyGameStateController {
     }
     pub fn remove_gameStartedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ILevelGameplaySetupData>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ILevelGameplaySetupData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -385,7 +400,7 @@ impl ILobbyGameStateController {
     }
     pub fn remove_levelDidGetDisconnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<DisconnectedReason>,
+        value: *mut crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -397,8 +412,8 @@ impl ILobbyGameStateController {
     pub fn remove_levelFinishedEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut MultiplayerLevelScenesTransitionSetupDataSO,
-            *mut MultiplayerResultsData,
+            *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::MultiplayerResultsData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -421,7 +436,9 @@ impl ILobbyGameStateController {
     }
     pub fn remove_lobbyStateChangedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<MultiplayerLobbyState>,
+        value: *mut crate::System::Action_1<
+            crate::GlobalNamespace::MultiplayerLobbyState,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -433,7 +450,7 @@ impl ILobbyGameStateController {
     pub fn remove_playerMissingEntitlementsChangedEvent(
         &mut self,
         value: *mut crate::System::Action_1<
-            *mut PlayersMissingEntitlementsNetSerializable,
+            *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -445,7 +462,9 @@ impl ILobbyGameStateController {
     }
     pub fn remove_selectedLevelGameplaySetupDataChangedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ILevelGameplaySetupData>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ILevelGameplaySetupData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -467,7 +486,9 @@ impl ILobbyGameStateController {
     }
     pub fn remove_startButtonEnabledEvent(
         &mut self,
-        value: *mut crate::System::Action_1<CannotStartGameReason>,
+        value: *mut crate::System::Action_1<
+            crate::GlobalNamespace::CannotStartGameReason,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -489,7 +510,7 @@ impl ILobbyGameStateController {
     }
     pub fn set_state(
         &mut self,
-        value: MultiplayerLobbyState,
+        value: crate::GlobalNamespace::MultiplayerLobbyState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -500,7 +521,8 @@ impl ILobbyGameStateController {
     }
 }
 #[cfg(feature = "ILobbyGameStateController")]
-impl quest_hook::libil2cpp::ObjectType for ILobbyGameStateController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ILobbyGameStateController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

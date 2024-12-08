@@ -115,18 +115,18 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::JSONNode {
 }
 #[cfg(feature = "HoudiniEngineUnity+JSONNode")]
 impl crate::HoudiniEngineUnity::JSONNode {
-    #[cfg(feature = "HoudiniEngineUnity+JSONNode+KeyEnumerator")]
-    pub type KeyEnumerator = crate::HoudiniEngineUnity::JSONNode_KeyEnumerator;
-    #[cfg(feature = "HoudiniEngineUnity+JSONNode+_get_Children_d__40")]
-    pub type _get_Children_d__40 = crate::HoudiniEngineUnity::JSONNode__get_Children_d__40;
-    #[cfg(feature = "HoudiniEngineUnity+JSONNode+_get_DeepChildren_d__42")]
-    pub type _get_DeepChildren_d__42 = crate::HoudiniEngineUnity::JSONNode__get_DeepChildren_d__42;
     #[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
     pub type Enumerator = crate::HoudiniEngineUnity::JSONNode_Enumerator;
+    #[cfg(feature = "HoudiniEngineUnity+JSONNode+KeyEnumerator")]
+    pub type KeyEnumerator = crate::HoudiniEngineUnity::JSONNode_KeyEnumerator;
     #[cfg(feature = "HoudiniEngineUnity+JSONNode+LinqEnumerator")]
     pub type LinqEnumerator = crate::HoudiniEngineUnity::JSONNode_LinqEnumerator;
     #[cfg(feature = "HoudiniEngineUnity+JSONNode+ValueEnumerator")]
     pub type ValueEnumerator = crate::HoudiniEngineUnity::JSONNode_ValueEnumerator;
+    #[cfg(feature = "HoudiniEngineUnity+JSONNode+_get_Children_d__40")]
+    pub type _get_Children_d__40 = crate::HoudiniEngineUnity::JSONNode__get_Children_d__40;
+    #[cfg(feature = "HoudiniEngineUnity+JSONNode+_get_DeepChildren_d__42")]
+    pub type _get_DeepChildren_d__42 = crate::HoudiniEngineUnity::JSONNode__get_DeepChildren_d__42;
     pub fn Add_JSONNode1(
         &mut self,
         aItem: *mut crate::HoudiniEngineUnity::JSONNode,

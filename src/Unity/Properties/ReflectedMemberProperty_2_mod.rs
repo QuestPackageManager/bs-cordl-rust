@@ -294,13 +294,13 @@ impl<
         TContainer,
         TValue,
     >;
-    #[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetClassValueAction")]
-    pub type SetClassValueAction = crate::Unity::Properties::ReflectedMemberProperty_2_SetClassValueAction<
+    #[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetStructValueAction")]
+    pub type GetStructValueAction = crate::Unity::Properties::ReflectedMemberProperty_2_GetStructValueAction<
         TContainer,
         TValue,
     >;
-    #[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetStructValueAction")]
-    pub type GetStructValueAction = crate::Unity::Properties::ReflectedMemberProperty_2_GetStructValueAction<
+    #[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetClassValueAction")]
+    pub type SetClassValueAction = crate::Unity::Properties::ReflectedMemberProperty_2_SetClassValueAction<
         TContainer,
         TValue,
     >;

@@ -10,27 +10,27 @@ pub struct BasicMockPlayerScoreCalculator {
 }
 #[cfg(feature = "BasicMockPlayerScoreCalculator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BasicMockPlayerScoreCalculator => ""
-    ."BasicMockPlayerScoreCalculator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BasicMockPlayerScoreCalculator
+    => ""."BasicMockPlayerScoreCalculator"
 );
 #[cfg(feature = "BasicMockPlayerScoreCalculator")]
-impl std::ops::Deref for BasicMockPlayerScoreCalculator {
+impl std::ops::Deref for crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BasicMockPlayerScoreCalculator")]
-impl std::ops::DerefMut for BasicMockPlayerScoreCalculator {
+impl std::ops::DerefMut for crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BasicMockPlayerScoreCalculator")]
-impl BasicMockPlayerScoreCalculator {
+impl crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
     pub fn GetScoreForNote(
         &mut self,
-        noteData: *mut MockNoteData,
+        noteData: *mut crate::GlobalNamespace::MockNoteData,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -64,7 +64,8 @@ impl BasicMockPlayerScoreCalculator {
     }
 }
 #[cfg(feature = "BasicMockPlayerScoreCalculator")]
-impl quest_hook::libil2cpp::ObjectType for BasicMockPlayerScoreCalculator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BasicMockPlayerScoreCalculator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

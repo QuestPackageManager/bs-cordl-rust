@@ -2,42 +2,45 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLevelSelectionFlowCoordinator {
-    __cordl_parent: LevelSelectionFlowCoordinator,
+    __cordl_parent: crate::GlobalNamespace::LevelSelectionFlowCoordinator,
     pub _notAllowedCharacteristics: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut BeatmapCharacteristicSO,
+        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     >,
-    pub _lobbyGameStateController: *mut ILobbyGameStateController,
+    pub _lobbyGameStateController: *mut crate::GlobalNamespace::ILobbyGameStateController,
     pub didSelectLevelEvent: *mut crate::System::Action_1<
         *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
     >,
     pub didFinishedEvent: *mut crate::System::Action,
     pub _actionButtonText: *mut crate::System::String,
     pub _titleText: *mut crate::System::String,
-    pub _songPackMask: SongPackMask,
-    pub _allowedBeatmapDifficultyMask: BeatmapDifficultyMask,
+    pub _songPackMask: crate::GlobalNamespace::SongPackMask,
+    pub _allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
     pub _state: *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
     pub _isBeingFinished: bool,
 }
 #[cfg(feature = "MultiplayerLevelSelectionFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLevelSelectionFlowCoordinator => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator => ""
     ."MultiplayerLevelSelectionFlowCoordinator"
 );
 #[cfg(feature = "MultiplayerLevelSelectionFlowCoordinator")]
-impl std::ops::Deref for MultiplayerLevelSelectionFlowCoordinator {
-    type Target = LevelSelectionFlowCoordinator;
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
+    type Target = crate::GlobalNamespace::LevelSelectionFlowCoordinator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLevelSelectionFlowCoordinator")]
-impl std::ops::DerefMut for MultiplayerLevelSelectionFlowCoordinator {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLevelSelectionFlowCoordinator")]
-impl MultiplayerLevelSelectionFlowCoordinator {
+impl crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
     pub fn ActionButtonWasPressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -71,7 +74,7 @@ impl MultiplayerLevelSelectionFlowCoordinator {
     }
     pub fn HandleLobbyGameStateControllerGameStarted(
         &mut self,
-        levelGameplaySetupData: *mut ILevelGameplaySetupData,
+        levelGameplaySetupData: *mut crate::GlobalNamespace::ILevelGameplaySetupData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -119,8 +122,8 @@ impl MultiplayerLevelSelectionFlowCoordinator {
     pub fn Setup(
         &mut self,
         state: *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
-        songPackMask: SongPackMask,
-        allowedBeatmapDifficultyMask: BeatmapDifficultyMask,
+        songPackMask: crate::GlobalNamespace::SongPackMask,
+        allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
         actionText: *mut crate::System::String,
         titleText: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -206,11 +209,11 @@ impl MultiplayerLevelSelectionFlowCoordinator {
     }
     pub fn get_allowedBeatmapDifficultyMask(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BeatmapDifficultyMask> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapDifficultyMask> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapDifficultyMask = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::BeatmapDifficultyMask = __cordl_object
             .invoke("get_allowedBeatmapDifficultyMask", ())?;
         Ok(__cordl_ret)
     }
@@ -248,13 +251,15 @@ impl MultiplayerLevelSelectionFlowCoordinator {
     pub fn get_notAllowedCharacteristics(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut BeatmapCharacteristicSO>,
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut BeatmapCharacteristicSO,
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         > = __cordl_object.invoke("get_notAllowedCharacteristics", ())?;
         Ok(__cordl_ret)
     }
@@ -268,11 +273,14 @@ impl MultiplayerLevelSelectionFlowCoordinator {
             .invoke("get_showBackButtonForMainViewController", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_songPackMask(&mut self) -> quest_hook::libil2cpp::Result<SongPackMask> {
+    pub fn get_songPackMask(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: SongPackMask = __cordl_object.invoke("get_songPackMask", ())?;
+        let __cordl_ret: crate::GlobalNamespace::SongPackMask = __cordl_object
+            .invoke("get_songPackMask", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_didFinishedEvent(
@@ -301,7 +309,8 @@ impl MultiplayerLevelSelectionFlowCoordinator {
     }
 }
 #[cfg(feature = "MultiplayerLevelSelectionFlowCoordinator")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLevelSelectionFlowCoordinator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

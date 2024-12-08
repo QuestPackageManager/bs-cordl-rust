@@ -21,28 +21,29 @@ pub struct GraphicSettingsConditionalActivator {
     pub _activatorType: crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType,
     pub _activateOnFalse: bool,
     pub _graphicsSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
-    pub _sceneSetupData: *mut GameplayCoreSceneSetupData,
+    pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
 }
 #[cfg(feature = "GraphicSettingsConditionalActivator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GraphicSettingsConditionalActivator => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::GraphicSettingsConditionalActivator => ""
     ."GraphicSettingsConditionalActivator"
 );
 #[cfg(feature = "GraphicSettingsConditionalActivator")]
-impl std::ops::Deref for GraphicSettingsConditionalActivator {
+impl std::ops::Deref for crate::GlobalNamespace::GraphicSettingsConditionalActivator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GraphicSettingsConditionalActivator")]
-impl std::ops::DerefMut for GraphicSettingsConditionalActivator {
+impl std::ops::DerefMut for crate::GlobalNamespace::GraphicSettingsConditionalActivator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GraphicSettingsConditionalActivator")]
-impl GraphicSettingsConditionalActivator {
+impl crate::GlobalNamespace::GraphicSettingsConditionalActivator {
     #[cfg(feature = "GraphicSettingsConditionalActivator+ActivatorType")]
     pub type ActivatorType = crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType;
     pub fn GetGraphicsActivatorType(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -81,7 +82,8 @@ impl GraphicSettingsConditionalActivator {
     }
 }
 #[cfg(feature = "GraphicSettingsConditionalActivator")]
-impl quest_hook::libil2cpp::ObjectType for GraphicSettingsConditionalActivator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GraphicSettingsConditionalActivator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,43 +3,44 @@
 #[derive(Debug)]
 pub struct RichPresenceManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _standardLevelScenesTransitionSetupData: *mut StandardLevelScenesTransitionSetupDataSO,
-    pub _tutorialScenesTransitionSetupData: *mut ScenesTransitionSetupDataSO,
-    pub _missionLevelScenesTransitionSetupData: *mut MissionLevelScenesTransitionSetupDataSO,
-    pub _multiplayerLevelScenesTransitionSetupData: *mut MultiplayerLevelScenesTransitionSetupDataSO,
-    pub _menuScenesTransitionSetupData: *mut MenuScenesTransitionSetupDataSO,
-    pub _richPresencePlatformHandler: *mut IRichPresencePlatformHandler,
-    pub _gameScenesManager: *mut GameScenesManager,
-    pub _lobbyGameStateModel: *mut LobbyGameStateModel,
-    pub _unifiedNetworkPlayerModel: *mut IUnifiedNetworkPlayerModel,
-    pub _lobbyPlayerPermissionsModel: *mut LobbyPlayerPermissionsModel,
+    pub _standardLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+    pub _tutorialScenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    pub _missionLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+    pub _multiplayerLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+    pub _menuScenesTransitionSetupData: *mut crate::GlobalNamespace::MenuScenesTransitionSetupDataSO,
+    pub _richPresencePlatformHandler: *mut crate::GlobalNamespace::IRichPresencePlatformHandler,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
+    pub _lobbyGameStateModel: *mut crate::GlobalNamespace::LobbyGameStateModel,
+    pub _unifiedNetworkPlayerModel: *mut crate::GlobalNamespace::IUnifiedNetworkPlayerModel,
+    pub _lobbyPlayerPermissionsModel: *mut crate::GlobalNamespace::LobbyPlayerPermissionsModel,
     pub _menuWasLoaded: bool,
     pub _isInMultiplayerLobby: bool,
-    pub _browsingMenusRichPresenceData: *mut BrowsingMenusRichPresenceData,
-    pub _inMultiplayerRichPresenceData: *mut InMultiplayerRichPresenceData,
-    pub _playingCampaignRichPresenceData: *mut PlayingCampaignRichPresenceData,
-    pub _playingTutorialPresenceData: *mut PlayingTutorialPresenceData,
-    pub _currentPresenceData: *mut IRichPresenceData,
+    pub _browsingMenusRichPresenceData: *mut crate::GlobalNamespace::BrowsingMenusRichPresenceData,
+    pub _inMultiplayerRichPresenceData: *mut crate::GlobalNamespace::InMultiplayerRichPresenceData,
+    pub _playingCampaignRichPresenceData: *mut crate::GlobalNamespace::PlayingCampaignRichPresenceData,
+    pub _playingTutorialPresenceData: *mut crate::GlobalNamespace::PlayingTutorialPresenceData,
+    pub _currentPresenceData: *mut crate::GlobalNamespace::IRichPresenceData,
 }
 #[cfg(feature = "RichPresenceManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RichPresenceManager => ""."RichPresenceManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RichPresenceManager => ""
+    ."RichPresenceManager"
 );
 #[cfg(feature = "RichPresenceManager")]
-impl std::ops::Deref for RichPresenceManager {
+impl std::ops::Deref for crate::GlobalNamespace::RichPresenceManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RichPresenceManager")]
-impl std::ops::DerefMut for RichPresenceManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::RichPresenceManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RichPresenceManager")]
-impl RichPresenceManager {
+impl crate::GlobalNamespace::RichPresenceManager {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -62,7 +63,7 @@ impl RichPresenceManager {
     }
     pub fn HandleGameScenesManagerTransitionDidFinish(
         &mut self,
-        scenesTransitionSetupData: *mut ScenesTransitionSetupDataSO,
+        scenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
         diContainer: *mut crate::Zenject::DiContainer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -77,7 +78,7 @@ impl RichPresenceManager {
     }
     pub fn HandleLobbyGameStateModelDidChange(
         &mut self,
-        newGameState: MultiplayerGameState,
+        newGameState: crate::GlobalNamespace::MultiplayerGameState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -136,7 +137,7 @@ impl RichPresenceManager {
     }
     pub fn SetPresence(
         &mut self,
-        presenceData: *mut IRichPresenceData,
+        presenceData: *mut crate::GlobalNamespace::IRichPresenceData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -157,7 +158,7 @@ impl RichPresenceManager {
     }
 }
 #[cfg(feature = "RichPresenceManager")]
-impl quest_hook::libil2cpp::ObjectType for RichPresenceManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RichPresenceManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

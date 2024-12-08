@@ -32,30 +32,30 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::OVR::OpenVR::IVRSetti
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings")]
 impl crate::OVR::OpenVR::IVRSettings {
+    #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetBool")]
+    pub type _GetBool = crate::OVR::OpenVR::IVRSettings__GetBool;
     #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetFloat")]
     pub type _GetFloat = crate::OVR::OpenVR::IVRSettings__GetFloat;
+    #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetInt32")]
+    pub type _GetInt32 = crate::OVR::OpenVR::IVRSettings__GetInt32;
+    #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetSettingsErrorNameFromEnum")]
+    pub type _GetSettingsErrorNameFromEnum = crate::OVR::OpenVR::IVRSettings__GetSettingsErrorNameFromEnum;
+    #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetString")]
+    pub type _GetString = crate::OVR::OpenVR::IVRSettings__GetString;
     #[cfg(feature = "OVR+OpenVR+IVRSettings+_RemoveKeyInSection")]
     pub type _RemoveKeyInSection = crate::OVR::OpenVR::IVRSettings__RemoveKeyInSection;
     #[cfg(feature = "OVR+OpenVR+IVRSettings+_RemoveSection")]
     pub type _RemoveSection = crate::OVR::OpenVR::IVRSettings__RemoveSection;
-    #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetInt32")]
-    pub type _SetInt32 = crate::OVR::OpenVR::IVRSettings__SetInt32;
-    #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetString")]
-    pub type _GetString = crate::OVR::OpenVR::IVRSettings__GetString;
     #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetBool")]
     pub type _SetBool = crate::OVR::OpenVR::IVRSettings__SetBool;
-    #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetBool")]
-    pub type _GetBool = crate::OVR::OpenVR::IVRSettings__GetBool;
-    #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetString")]
-    pub type _SetString = crate::OVR::OpenVR::IVRSettings__SetString;
-    #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetSettingsErrorNameFromEnum")]
-    pub type _GetSettingsErrorNameFromEnum = crate::OVR::OpenVR::IVRSettings__GetSettingsErrorNameFromEnum;
-    #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetInt32")]
-    pub type _GetInt32 = crate::OVR::OpenVR::IVRSettings__GetInt32;
-    #[cfg(feature = "OVR+OpenVR+IVRSettings+_Sync")]
-    pub type _Sync = crate::OVR::OpenVR::IVRSettings__Sync;
     #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetFloat")]
     pub type _SetFloat = crate::OVR::OpenVR::IVRSettings__SetFloat;
+    #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetInt32")]
+    pub type _SetInt32 = crate::OVR::OpenVR::IVRSettings__SetInt32;
+    #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetString")]
+    pub type _SetString = crate::OVR::OpenVR::IVRSettings__SetString;
+    #[cfg(feature = "OVR+OpenVR+IVRSettings+_Sync")]
+    pub type _Sync = crate::OVR::OpenVR::IVRSettings__Sync;
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetBool")]
 #[repr(C)]

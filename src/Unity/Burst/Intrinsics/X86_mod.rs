@@ -599,10 +599,10 @@ impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2")]
 impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray")]
-    pub type StrBoolArray = crate::Unity::Burst::Intrinsics::Sse4_2_StrBoolArray;
     #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+SIDD")]
     pub type SIDD = crate::Unity::Burst::Intrinsics::Sse4_2_SIDD;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray")]
+    pub type StrBoolArray = crate::Unity::Burst::Intrinsics::Sse4_2_StrBoolArray;
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
@@ -752,38 +752,38 @@ impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86 {
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86")]
 impl crate::Unity::Burst::Intrinsics::X86 {
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse2")]
-    pub type Sse2 = crate::Unity::Burst::Intrinsics::X86_Sse2;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingScope")]
-    pub type RoundingScope = crate::Unity::Burst::Intrinsics::X86_RoundingScope;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx")]
+    pub type Avx = crate::Unity::Burst::Intrinsics::X86_Avx;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx2")]
+    pub type Avx2 = crate::Unity::Burst::Intrinsics::X86_Avx2;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Bmi1")]
+    pub type Bmi1 = crate::Unity::Burst::Intrinsics::X86_Bmi1;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Bmi2")]
+    pub type Bmi2 = crate::Unity::Burst::Intrinsics::X86_Bmi2;
     #[cfg(feature = "Unity+Burst+Intrinsics+X86+F16C")]
     pub type F16C = crate::Unity::Burst::Intrinsics::X86_F16C;
     #[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma")]
     pub type Fma = crate::Unity::Burst::Intrinsics::X86_Fma;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Ssse3")]
-    pub type Ssse3 = crate::Unity::Burst::Intrinsics::X86_Ssse3;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx2")]
-    pub type Avx2 = crate::Unity::Burst::Intrinsics::X86_Avx2;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingMode")]
-    pub type RoundingMode = crate::Unity::Burst::Intrinsics::X86_RoundingMode;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Bmi2")]
-    pub type Bmi2 = crate::Unity::Burst::Intrinsics::X86_Bmi2;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2")]
-    pub type Sse4_2 = crate::Unity::Burst::Intrinsics::X86_Sse4_2;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Popcnt")]
-    pub type Popcnt = crate::Unity::Burst::Intrinsics::X86_Popcnt;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse3")]
-    pub type Sse3 = crate::Unity::Burst::Intrinsics::X86_Sse3;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx")]
-    pub type Avx = crate::Unity::Burst::Intrinsics::X86_Avx;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Bmi1")]
-    pub type Bmi1 = crate::Unity::Burst::Intrinsics::X86_Bmi1;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse")]
-    pub type Sse = crate::Unity::Burst::Intrinsics::X86_Sse;
     #[cfg(feature = "Unity+Burst+Intrinsics+X86+MXCSRBits")]
     pub type MXCSRBits = crate::Unity::Burst::Intrinsics::X86_MXCSRBits;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Popcnt")]
+    pub type Popcnt = crate::Unity::Burst::Intrinsics::X86_Popcnt;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingMode")]
+    pub type RoundingMode = crate::Unity::Burst::Intrinsics::X86_RoundingMode;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingScope")]
+    pub type RoundingScope = crate::Unity::Burst::Intrinsics::X86_RoundingScope;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse")]
+    pub type Sse = crate::Unity::Burst::Intrinsics::X86_Sse;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse2")]
+    pub type Sse2 = crate::Unity::Burst::Intrinsics::X86_Sse2;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse3")]
+    pub type Sse3 = crate::Unity::Burst::Intrinsics::X86_Sse3;
     #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_1")]
     pub type Sse4_1 = crate::Unity::Burst::Intrinsics::X86_Sse4_1;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2")]
+    pub type Sse4_2 = crate::Unity::Burst::Intrinsics::X86_Sse4_2;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Ssse3")]
+    pub type Ssse3 = crate::Unity::Burst::Intrinsics::X86_Ssse3;
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86 {

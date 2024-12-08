@@ -47,7 +47,7 @@ pub struct ScrollView {
     pub _scrollingLastFrame: bool,
     pub _isHoveredByPointer: bool,
     pub _shouldAnimate: bool,
-    pub _platformHelper: *mut IVRPlatformHelper,
+    pub _platformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
     pub scrollPositionChangedEvent: *mut crate::System::Action_1<f32>,
     pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
     pub _destinationPos: f32,
@@ -76,22 +76,22 @@ impl std::ops::DerefMut for crate::HMUI::ScrollView {
 #[cfg(feature = "HMUI+ScrollView")]
 impl crate::HMUI::ScrollView {
     pub const kThumbstickThreshold: f32 = 0.01f32;
-    #[cfg(feature = "HMUI+ScrollView+__c__DisplayClass61_0")]
-    pub type __c__DisplayClass61_0 = crate::HMUI::ScrollView___c__DisplayClass61_0;
-    #[cfg(feature = "HMUI+ScrollView+ScrollViewDirection")]
-    pub type ScrollViewDirection = crate::HMUI::ScrollView_ScrollViewDirection;
-    #[cfg(feature = "HMUI+ScrollView+__c__DisplayClass56_0")]
-    pub type __c__DisplayClass56_0 = crate::HMUI::ScrollView___c__DisplayClass56_0;
     #[cfg(feature = "HMUI+ScrollView+ScrollDirection")]
     pub type ScrollDirection = crate::HMUI::ScrollView_ScrollDirection;
     #[cfg(feature = "HMUI+ScrollView+ScrollType")]
     pub type ScrollType = crate::HMUI::ScrollView_ScrollType;
-    #[cfg(feature = "HMUI+ScrollView+__c__DisplayClass55_0")]
-    pub type __c__DisplayClass55_0 = crate::HMUI::ScrollView___c__DisplayClass55_0;
-    #[cfg(feature = "HMUI+ScrollView+__c__DisplayClass61_1")]
-    pub type __c__DisplayClass61_1 = crate::HMUI::ScrollView___c__DisplayClass61_1;
+    #[cfg(feature = "HMUI+ScrollView+ScrollViewDirection")]
+    pub type ScrollViewDirection = crate::HMUI::ScrollView_ScrollViewDirection;
     #[cfg(feature = "HMUI+ScrollView+__c")]
     pub type __c = crate::HMUI::ScrollView___c;
+    #[cfg(feature = "HMUI+ScrollView+__c__DisplayClass55_0")]
+    pub type __c__DisplayClass55_0 = crate::HMUI::ScrollView___c__DisplayClass55_0;
+    #[cfg(feature = "HMUI+ScrollView+__c__DisplayClass56_0")]
+    pub type __c__DisplayClass56_0 = crate::HMUI::ScrollView___c__DisplayClass56_0;
+    #[cfg(feature = "HMUI+ScrollView+__c__DisplayClass61_0")]
+    pub type __c__DisplayClass61_0 = crate::HMUI::ScrollView___c__DisplayClass61_0;
+    #[cfg(feature = "HMUI+ScrollView+__c__DisplayClass61_1")]
+    pub type __c__DisplayClass61_1 = crate::HMUI::ScrollView___c__DisplayClass61_1;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

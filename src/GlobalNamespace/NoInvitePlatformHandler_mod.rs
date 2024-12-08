@@ -6,23 +6,24 @@ pub struct NoInvitePlatformHandler {
 }
 #[cfg(feature = "NoInvitePlatformHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoInvitePlatformHandler => ""."NoInvitePlatformHandler"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoInvitePlatformHandler => ""
+    ."NoInvitePlatformHandler"
 );
 #[cfg(feature = "NoInvitePlatformHandler")]
-impl std::ops::Deref for NoInvitePlatformHandler {
+impl std::ops::Deref for crate::GlobalNamespace::NoInvitePlatformHandler {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoInvitePlatformHandler")]
-impl std::ops::DerefMut for NoInvitePlatformHandler {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoInvitePlatformHandler {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoInvitePlatformHandler")]
-impl NoInvitePlatformHandler {
+impl crate::GlobalNamespace::NoInvitePlatformHandler {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -59,7 +60,8 @@ impl NoInvitePlatformHandler {
     }
 }
 #[cfg(feature = "NoInvitePlatformHandler")]
-impl quest_hook::libil2cpp::ObjectType for NoInvitePlatformHandler {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NoInvitePlatformHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,36 +2,39 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandaloneGraphicSettingsViewController {
-    __cordl_parent: GraphicSettingsViewController,
-    pub _antiAliasingLevel: *mut NamedIntListSettingsController,
-    pub _vrRenderingScale: *mut FormattedFloatListSettingsController,
+    __cordl_parent: crate::GlobalNamespace::GraphicSettingsViewController,
+    pub _antiAliasingLevel: *mut crate::GlobalNamespace::NamedIntListSettingsController,
+    pub _vrRenderingScale: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
     pub _fullscreen: *mut crate::UnityEngine::UI::Toggle,
-    pub _shockwaveMaxParticles: *mut NamedIntListSettingsController,
+    pub _shockwaveMaxParticles: *mut crate::GlobalNamespace::NamedIntListSettingsController,
     pub _smoke: *mut crate::UnityEngine::UI::Toggle,
     pub _screenDisplacementEffects: *mut crate::UnityEngine::UI::Toggle,
-    pub _mainEffect: *mut PresetsSettingsController,
-    pub _mirror: *mut PresetsSettingsController,
+    pub _mainEffect: *mut crate::GlobalNamespace::PresetsSettingsController,
+    pub _mirror: *mut crate::GlobalNamespace::PresetsSettingsController,
 }
 #[cfg(feature = "StandaloneGraphicSettingsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StandaloneGraphicSettingsViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::StandaloneGraphicSettingsViewController => ""
     ."StandaloneGraphicSettingsViewController"
 );
 #[cfg(feature = "StandaloneGraphicSettingsViewController")]
-impl std::ops::Deref for StandaloneGraphicSettingsViewController {
-    type Target = GraphicSettingsViewController;
+impl std::ops::Deref
+for crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
+    type Target = crate::GlobalNamespace::GraphicSettingsViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandaloneGraphicSettingsViewController")]
-impl std::ops::DerefMut for StandaloneGraphicSettingsViewController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandaloneGraphicSettingsViewController")]
-impl StandaloneGraphicSettingsViewController {
+impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -139,7 +142,7 @@ impl StandaloneGraphicSettingsViewController {
     }
     pub fn HandleVrRenderingScaleChanged(
         &mut self,
-        _: *mut FormattedFloatListSettingsController,
+        _: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
         newValue: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -179,7 +182,8 @@ impl StandaloneGraphicSettingsViewController {
     }
 }
 #[cfg(feature = "StandaloneGraphicSettingsViewController")]
-impl quest_hook::libil2cpp::ObjectType for StandaloneGraphicSettingsViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

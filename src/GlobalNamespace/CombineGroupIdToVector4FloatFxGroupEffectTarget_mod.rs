@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CombineGroupIdToVector4FloatFxGroupEffectTarget {
-    __cordl_parent: FloatFxGroupEffectTarget,
+    __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _propertyName: *mut crate::System::String,
-    pub _materialPropertyBlockController: *mut MaterialPropertyBlockController,
+    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     pub _defaultValue: crate::UnityEngine::Vector4,
     pub _lightGroupsToIndices: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget_LightGroupSOToIndex,
     >,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
     pub _didReceiveEventThisFrame: bool,
     pub _groupIdToIndex: *mut crate::System::Collections::Generic::Dictionary_2<
         i32,
@@ -20,24 +20,27 @@ pub struct CombineGroupIdToVector4FloatFxGroupEffectTarget {
 }
 #[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CombineGroupIdToVector4FloatFxGroupEffectTarget => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget => ""
     ."CombineGroupIdToVector4FloatFxGroupEffectTarget"
 );
 #[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget")]
-impl std::ops::Deref for CombineGroupIdToVector4FloatFxGroupEffectTarget {
-    type Target = FloatFxGroupEffectTarget;
+impl std::ops::Deref
+for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
+    type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget")]
-impl std::ops::DerefMut for CombineGroupIdToVector4FloatFxGroupEffectTarget {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget")]
-impl CombineGroupIdToVector4FloatFxGroupEffectTarget {
+impl crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
     #[cfg(
         feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex"
     )]
@@ -133,7 +136,7 @@ impl CombineGroupIdToVector4FloatFxGroupEffectTarget {
 }
 #[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget")]
 impl quest_hook::libil2cpp::ObjectType
-for CombineGroupIdToVector4FloatFxGroupEffectTarget {
+for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -145,7 +148,7 @@ for CombineGroupIdToVector4FloatFxGroupEffectTarget {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct CombineGroupIdToVector4FloatFxGroupEffectTarget_LightGroupSOToIndex {
-    pub lightGroup: *mut LightGroupSO,
+    pub lightGroup: *mut crate::GlobalNamespace::LightGroupSO,
     pub index: i32,
 }
 #[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex")]

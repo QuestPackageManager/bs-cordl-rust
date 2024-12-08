@@ -28,10 +28,10 @@ impl std::ops::DerefMut for crate::Mono::Math::BigInteger {
 impl crate::Mono::Math::BigInteger {
     #[cfg(feature = "Mono+Math+BigInteger+Kernel")]
     pub type Kernel = crate::Mono::Math::BigInteger_Kernel;
-    #[cfg(feature = "Mono+Math+BigInteger+Sign")]
-    pub type Sign = crate::Mono::Math::BigInteger_Sign;
     #[cfg(feature = "Mono+Math+BigInteger+ModulusRing")]
     pub type ModulusRing = crate::Mono::Math::BigInteger_ModulusRing;
+    #[cfg(feature = "Mono+Math+BigInteger+Sign")]
+    pub type Sign = crate::Mono::Math::BigInteger_Sign;
     pub fn BitCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

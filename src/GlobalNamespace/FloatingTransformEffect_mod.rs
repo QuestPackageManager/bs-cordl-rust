@@ -28,23 +28,24 @@ pub struct FloatingTransformEffect {
 }
 #[cfg(feature = "FloatingTransformEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FloatingTransformEffect => ""."FloatingTransformEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FloatingTransformEffect => ""
+    ."FloatingTransformEffect"
 );
 #[cfg(feature = "FloatingTransformEffect")]
-impl std::ops::Deref for FloatingTransformEffect {
+impl std::ops::Deref for crate::GlobalNamespace::FloatingTransformEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatingTransformEffect")]
-impl std::ops::DerefMut for FloatingTransformEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::FloatingTransformEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatingTransformEffect")]
-impl FloatingTransformEffect {
+impl crate::GlobalNamespace::FloatingTransformEffect {
     pub fn GetPoint(
         &mut self,
         _cordl_time: f32,
@@ -105,7 +106,8 @@ impl FloatingTransformEffect {
     }
 }
 #[cfg(feature = "FloatingTransformEffect")]
-impl quest_hook::libil2cpp::ObjectType for FloatingTransformEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FloatingTransformEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

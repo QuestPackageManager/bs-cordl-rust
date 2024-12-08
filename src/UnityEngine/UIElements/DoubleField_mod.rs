@@ -26,10 +26,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::DoubleField {
 impl crate::UnityEngine::UIElements::DoubleField {
     #[cfg(feature = "UnityEngine+UIElements+DoubleField+DoubleInput")]
     pub type DoubleInput = crate::UnityEngine::UIElements::DoubleField_DoubleInput;
-    #[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlTraits")]
-    pub type UxmlTraits = crate::UnityEngine::UIElements::DoubleField_UxmlTraits;
     #[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlFactory")]
     pub type UxmlFactory = crate::UnityEngine::UIElements::DoubleField_UxmlFactory;
+    #[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlTraits")]
+    pub type UxmlTraits = crate::UnityEngine::UIElements::DoubleField_UxmlTraits;
     pub fn ApplyInputDeviceDelta(
         &mut self,
         delta: crate::UnityEngine::Vector3,

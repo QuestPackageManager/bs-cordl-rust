@@ -231,22 +231,22 @@ impl std::ops::DerefMut for crate::System::IO::Stream {
 #[cfg(feature = "System+IO+Stream")]
 impl crate::System::IO::Stream {
     pub const DefaultCopyBufferSize: i32 = 81920i32;
+    #[cfg(feature = "System+IO+Stream+NullStream")]
+    pub type NullStream = crate::GlobalNamespace::Stream_NullStream;
     #[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
     pub type ReadWriteParameters = crate::System::IO::Stream_ReadWriteParameters;
     #[cfg(feature = "System+IO+Stream+ReadWriteTask")]
     pub type ReadWriteTask = crate::System::IO::Stream_ReadWriteTask;
     #[cfg(feature = "System+IO+Stream+SynchronousAsyncResult")]
     pub type SynchronousAsyncResult = crate::System::IO::Stream_SynchronousAsyncResult;
-    #[cfg(feature = "System+IO+Stream+_FinishWriteAsync_d__57")]
-    pub type _FinishWriteAsync_d__57 = crate::System::IO::Stream__FinishWriteAsync_d__57;
-    #[cfg(feature = "System+IO+Stream+__c")]
-    pub type __c = crate::System::IO::Stream___c;
-    #[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
-    pub type __ReadAsync_g__FinishReadAsync_44_0_d = crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d;
     #[cfg(feature = "System+IO+Stream+_CopyToAsyncInternal_d__28")]
     pub type _CopyToAsyncInternal_d__28 = crate::System::IO::Stream__CopyToAsyncInternal_d__28;
-    #[cfg(feature = "System+IO+Stream+NullStream")]
-    pub type NullStream = crate::GlobalNamespace::Stream_NullStream;
+    #[cfg(feature = "System+IO+Stream+_FinishWriteAsync_d__57")]
+    pub type _FinishWriteAsync_d__57 = crate::System::IO::Stream__FinishWriteAsync_d__57;
+    #[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
+    pub type __ReadAsync_g__FinishReadAsync_44_0_d = crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d;
+    #[cfg(feature = "System+IO+Stream+__c")]
+    pub type __c = crate::System::IO::Stream___c;
     pub fn BeginEndReadAsync(
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,

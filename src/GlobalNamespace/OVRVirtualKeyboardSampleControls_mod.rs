@@ -12,8 +12,8 @@ pub struct OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
     pub _leftControllerRootTransform: *mut crate::UnityEngine::Transform,
     pub _controllerRayInteraction: bool,
     pub _controllerDirectInteraction: bool,
-    pub _handLeft: *mut OVRHand,
-    pub _handRight: *mut OVRHand,
+    pub _handLeft: *mut crate::GlobalNamespace::OVRHand,
+    pub _handRight: *mut crate::GlobalNamespace::OVRHand,
     pub _handRayInteraction: bool,
     pub _handDirectInteraction: bool,
     pub _controllerRaycaster: *mut crate::UnityEngine::EventSystems::OVRPhysicsRaycaster,
@@ -40,7 +40,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardB
 impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
     pub fn RestoreTo(
         &mut self,
-        keyboard: *mut OVRVirtualKeyboard,
+        keyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -51,7 +51,7 @@ impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboard
     }
     pub fn _ctor(
         &mut self,
-        keyboard: *mut OVRVirtualKeyboard,
+        keyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -72,8 +72,8 @@ pub struct OVRVirtualKeyboardSampleControls {
     pub MoveNearButton: *mut crate::UnityEngine::UI::Button,
     pub MoveFarButton: *mut crate::UnityEngine::UI::Button,
     pub DestroyKeyboardButton: *mut crate::UnityEngine::UI::Button,
-    pub keyboard: *mut OVRVirtualKeyboard,
-    pub inputHandler: *mut OVRVirtualKeyboardSampleInputHandler,
+    pub keyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
+    pub inputHandler: *mut crate::GlobalNamespace::OVRVirtualKeyboardSampleInputHandler,
     pub isMovingKeyboard_: bool,
     pub isMovingKeyboardFinished_: bool,
     pub keyboardMoveDistance_: f32,
@@ -82,24 +82,25 @@ pub struct OVRVirtualKeyboardSampleControls {
 }
 #[cfg(feature = "OVRVirtualKeyboardSampleControls")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRVirtualKeyboardSampleControls => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRVirtualKeyboardSampleControls => ""
     ."OVRVirtualKeyboardSampleControls"
 );
 #[cfg(feature = "OVRVirtualKeyboardSampleControls")]
-impl std::ops::Deref for OVRVirtualKeyboardSampleControls {
+impl std::ops::Deref for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRVirtualKeyboardSampleControls")]
-impl std::ops::DerefMut for OVRVirtualKeyboardSampleControls {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRVirtualKeyboardSampleControls")]
-impl OVRVirtualKeyboardSampleControls {
+impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
     pub const THUMBSTICK_DEADZONE: f32 = 0.2f32;
     #[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
     pub type OVRVirtualKeyboardBackup = crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup;
@@ -232,7 +233,8 @@ impl OVRVirtualKeyboardSampleControls {
     }
 }
 #[cfg(feature = "OVRVirtualKeyboardSampleControls")]
-impl quest_hook::libil2cpp::ObjectType for OVRVirtualKeyboardSampleControls {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

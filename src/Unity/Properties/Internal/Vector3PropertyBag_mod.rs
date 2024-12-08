@@ -28,12 +28,12 @@ impl std::ops::DerefMut for crate::Unity::Properties::Internal::Vector3PropertyB
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector3PropertyBag")]
 impl crate::Unity::Properties::Internal::Vector3PropertyBag {
+    #[cfg(feature = "Unity+Properties+Internal+Vector3PropertyBag+XProperty")]
+    pub type XProperty = crate::Unity::Properties::Internal::Vector3PropertyBag_XProperty;
     #[cfg(feature = "Unity+Properties+Internal+Vector3PropertyBag+YProperty")]
     pub type YProperty = crate::Unity::Properties::Internal::Vector3PropertyBag_YProperty;
     #[cfg(feature = "Unity+Properties+Internal+Vector3PropertyBag+ZProperty")]
     pub type ZProperty = crate::Unity::Properties::Internal::Vector3PropertyBag_ZProperty;
-    #[cfg(feature = "Unity+Properties+Internal+Vector3PropertyBag+XProperty")]
-    pub type XProperty = crate::Unity::Properties::Internal::Vector3PropertyBag_XProperty;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -7,6 +7,7 @@ pub enum MultiplayerSongEntitlementsStatus {
 }
 #[cfg(feature = "MultiplayerSongEntitlementsStatus")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for MultiplayerSongEntitlementsStatus => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerSongEntitlementsStatus => ""
     ."MultiplayerSongEntitlementsStatus"
 );

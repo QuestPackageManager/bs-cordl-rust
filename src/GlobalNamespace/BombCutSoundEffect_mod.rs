@@ -4,34 +4,37 @@
 pub struct BombCutSoundEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioSource: *mut crate::UnityEngine::AudioSource,
-    pub didFinishEvent: *mut crate::System::Action_1<*mut BombCutSoundEffect>,
-    pub _saber: *mut Saber,
+    pub didFinishEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::BombCutSoundEffect,
+    >,
+    pub _saber: *mut crate::GlobalNamespace::Saber,
 }
 #[cfg(feature = "BombCutSoundEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BombCutSoundEffect => ""."BombCutSoundEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BombCutSoundEffect => ""
+    ."BombCutSoundEffect"
 );
 #[cfg(feature = "BombCutSoundEffect")]
-impl std::ops::Deref for BombCutSoundEffect {
+impl std::ops::Deref for crate::GlobalNamespace::BombCutSoundEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BombCutSoundEffect")]
-impl std::ops::DerefMut for BombCutSoundEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::BombCutSoundEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BombCutSoundEffect")]
-impl BombCutSoundEffect {
+impl crate::GlobalNamespace::BombCutSoundEffect {
     #[cfg(feature = "BombCutSoundEffect+Pool")]
     pub type Pool = crate::GlobalNamespace::BombCutSoundEffect_Pool;
     pub fn Init(
         &mut self,
         audioClip: *mut crate::UnityEngine::AudioClip,
-        saber: *mut Saber,
+        saber: *mut crate::GlobalNamespace::Saber,
         volume: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -80,7 +83,9 @@ impl BombCutSoundEffect {
     }
     pub fn add_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut BombCutSoundEffect>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::BombCutSoundEffect,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -91,7 +96,9 @@ impl BombCutSoundEffect {
     }
     pub fn remove_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut BombCutSoundEffect>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::BombCutSoundEffect,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -102,7 +109,7 @@ impl BombCutSoundEffect {
     }
 }
 #[cfg(feature = "BombCutSoundEffect")]
-impl quest_hook::libil2cpp::ObjectType for BombCutSoundEffect {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BombCutSoundEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -114,7 +121,9 @@ impl quest_hook::libil2cpp::ObjectType for BombCutSoundEffect {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BombCutSoundEffect_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<*mut BombCutSoundEffect>,
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::BombCutSoundEffect,
+    >,
 }
 #[cfg(feature = "BombCutSoundEffect+Pool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -123,7 +132,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BombCutSoundEffect+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::BombCutSoundEffect_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<*mut BombCutSoundEffect>;
+    type Target = crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::BombCutSoundEffect,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

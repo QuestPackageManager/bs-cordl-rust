@@ -5,35 +5,35 @@ pub struct PageControl {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _content: *mut crate::UnityEngine::RectTransform,
     pub _spacing: f32,
-    pub _elementPrefab: *mut PageControlElement,
+    pub _elementPrefab: *mut crate::GlobalNamespace::PageControlElement,
     pub _activeElements: *mut crate::System::Collections::Generic::List_1<
-        *mut PageControlElement,
+        *mut crate::GlobalNamespace::PageControlElement,
     >,
     pub _inactiveElements: *mut crate::System::Collections::Generic::Queue_1<
-        *mut PageControlElement,
+        *mut crate::GlobalNamespace::PageControlElement,
     >,
     pub _selectedPage: i32,
     pub _pagesCount: i32,
 }
 #[cfg(feature = "PageControl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PageControl => ""."PageControl"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PageControl => ""."PageControl"
 );
 #[cfg(feature = "PageControl")]
-impl std::ops::Deref for PageControl {
+impl std::ops::Deref for crate::GlobalNamespace::PageControl {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PageControl")]
-impl std::ops::DerefMut for PageControl {
+impl std::ops::DerefMut for crate::GlobalNamespace::PageControl {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PageControl")]
-impl PageControl {
+impl crate::GlobalNamespace::PageControl {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -86,7 +86,7 @@ impl PageControl {
     }
 }
 #[cfg(feature = "PageControl")]
-impl quest_hook::libil2cpp::ObjectType for PageControl {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PageControl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

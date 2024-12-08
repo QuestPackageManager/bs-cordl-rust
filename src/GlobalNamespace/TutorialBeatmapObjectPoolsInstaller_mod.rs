@@ -3,31 +3,32 @@
 #[derive(Debug)]
 pub struct TutorialBeatmapObjectPoolsInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _basicNotePrefab: *mut TutorialNoteController,
-    pub _bombNotePrefab: *mut BombNoteController,
-    pub _obstaclePrefab: *mut ObstacleController,
-    pub _noteLineConnectionControllerPrefab: *mut NoteLineConnectionController,
+    pub _basicNotePrefab: *mut crate::GlobalNamespace::TutorialNoteController,
+    pub _bombNotePrefab: *mut crate::GlobalNamespace::BombNoteController,
+    pub _obstaclePrefab: *mut crate::GlobalNamespace::ObstacleController,
+    pub _noteLineConnectionControllerPrefab: *mut crate::GlobalNamespace::NoteLineConnectionController,
 }
 #[cfg(feature = "TutorialBeatmapObjectPoolsInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TutorialBeatmapObjectPoolsInstaller => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::TutorialBeatmapObjectPoolsInstaller => ""
     ."TutorialBeatmapObjectPoolsInstaller"
 );
 #[cfg(feature = "TutorialBeatmapObjectPoolsInstaller")]
-impl std::ops::Deref for TutorialBeatmapObjectPoolsInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::TutorialBeatmapObjectPoolsInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TutorialBeatmapObjectPoolsInstaller")]
-impl std::ops::DerefMut for TutorialBeatmapObjectPoolsInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::TutorialBeatmapObjectPoolsInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TutorialBeatmapObjectPoolsInstaller")]
-impl TutorialBeatmapObjectPoolsInstaller {
+impl crate::GlobalNamespace::TutorialBeatmapObjectPoolsInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -57,7 +58,8 @@ impl TutorialBeatmapObjectPoolsInstaller {
     }
 }
 #[cfg(feature = "TutorialBeatmapObjectPoolsInstaller")]
-impl quest_hook::libil2cpp::ObjectType for TutorialBeatmapObjectPoolsInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::TutorialBeatmapObjectPoolsInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

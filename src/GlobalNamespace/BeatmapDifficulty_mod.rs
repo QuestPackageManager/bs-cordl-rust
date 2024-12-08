@@ -10,5 +10,6 @@ pub enum BeatmapDifficulty {
 }
 #[cfg(feature = "BeatmapDifficulty")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for BeatmapDifficulty => ""."BeatmapDifficulty"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapDifficulty => ""
+    ."BeatmapDifficulty"
 );

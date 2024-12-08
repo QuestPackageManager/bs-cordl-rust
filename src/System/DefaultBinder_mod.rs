@@ -87,10 +87,10 @@ impl std::ops::DerefMut for crate::System::DefaultBinder {
 }
 #[cfg(feature = "System+DefaultBinder")]
 impl crate::System::DefaultBinder {
-    #[cfg(feature = "System+DefaultBinder+Primitives")]
-    pub type Primitives = crate::System::DefaultBinder_Primitives;
     #[cfg(feature = "System+DefaultBinder+BinderState")]
     pub type BinderState = crate::System::DefaultBinder_BinderState;
+    #[cfg(feature = "System+DefaultBinder+Primitives")]
+    pub type Primitives = crate::System::DefaultBinder_Primitives;
     #[cfg(feature = "System+DefaultBinder+__c")]
     pub type __c = crate::System::DefaultBinder___c;
     pub fn BindToField(

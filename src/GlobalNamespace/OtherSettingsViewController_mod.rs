@@ -5,31 +5,31 @@ pub struct OtherSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _hideExplicitWarning: *mut crate::UnityEngine::GameObject,
     pub _hideExplicitToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _pausePressDuration: *mut NamedIntListSettingsController,
-    pub _playerDataModel: *mut PlayerDataModel,
+    pub _pausePressDuration: *mut crate::GlobalNamespace::NamedIntListSettingsController,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
     pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
     pub _explicitToggleAvailable: bool,
 }
 #[cfg(feature = "OtherSettingsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OtherSettingsViewController => ""
-    ."OtherSettingsViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OtherSettingsViewController =>
+    ""."OtherSettingsViewController"
 );
 #[cfg(feature = "OtherSettingsViewController")]
-impl std::ops::Deref for OtherSettingsViewController {
+impl std::ops::Deref for crate::GlobalNamespace::OtherSettingsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OtherSettingsViewController")]
-impl std::ops::DerefMut for OtherSettingsViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::OtherSettingsViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OtherSettingsViewController")]
-impl OtherSettingsViewController {
+impl crate::GlobalNamespace::OtherSettingsViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -109,7 +109,8 @@ impl OtherSettingsViewController {
     }
 }
 #[cfg(feature = "OtherSettingsViewController")]
-impl quest_hook::libil2cpp::ObjectType for OtherSettingsViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OtherSettingsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

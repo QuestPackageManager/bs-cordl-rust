@@ -6,24 +6,24 @@ pub struct IMultiplayerSpectatingSpot {
 }
 #[cfg(feature = "IMultiplayerSpectatingSpot")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IMultiplayerSpectatingSpot => ""
-    ."IMultiplayerSpectatingSpot"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IMultiplayerSpectatingSpot =>
+    ""."IMultiplayerSpectatingSpot"
 );
 #[cfg(feature = "IMultiplayerSpectatingSpot")]
-impl std::ops::Deref for IMultiplayerSpectatingSpot {
+impl std::ops::Deref for crate::GlobalNamespace::IMultiplayerSpectatingSpot {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IMultiplayerSpectatingSpot")]
-impl std::ops::DerefMut for IMultiplayerSpectatingSpot {
+impl std::ops::DerefMut for crate::GlobalNamespace::IMultiplayerSpectatingSpot {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IMultiplayerSpectatingSpot")]
-impl IMultiplayerSpectatingSpot {
+impl crate::GlobalNamespace::IMultiplayerSpectatingSpot {
     pub fn SetIsObserved(
         &mut self,
         isObserved: bool,
@@ -37,7 +37,9 @@ impl IMultiplayerSpectatingSpot {
     }
     pub fn add_hasBeenRemovedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IMultiplayerSpectatingSpot>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -60,11 +62,13 @@ impl IMultiplayerSpectatingSpot {
     }
     pub fn get_observable(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IMultiplayerObservable> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::IMultiplayerObservable,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IMultiplayerObservable = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IMultiplayerObservable = __cordl_object
             .invoke("get_observable", ())?;
         Ok(__cordl_ret)
     }
@@ -90,7 +94,9 @@ impl IMultiplayerSpectatingSpot {
     }
     pub fn remove_hasBeenRemovedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IMultiplayerSpectatingSpot>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -101,7 +107,8 @@ impl IMultiplayerSpectatingSpot {
     }
 }
 #[cfg(feature = "IMultiplayerSpectatingSpot")]
-impl quest_hook::libil2cpp::ObjectType for IMultiplayerSpectatingSpot {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IMultiplayerSpectatingSpot {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

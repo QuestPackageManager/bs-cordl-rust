@@ -23,22 +23,22 @@ impl std::ops::DerefMut for crate::System::Array {
 }
 #[cfg(feature = "System+Array")]
 impl crate::System::Array {
-    #[cfg(feature = "System+Array+SorterObjectArray")]
-    pub type SorterObjectArray = crate::System::Array_SorterObjectArray;
-    #[cfg(feature = "System+Array+SorterGenericArray")]
-    pub type SorterGenericArray = crate::System::Array_SorterGenericArray;
     #[cfg(feature = "System+Array+ArrayEnumerator")]
     pub type ArrayEnumerator = crate::System::Array_ArrayEnumerator;
-    #[cfg(feature = "System+Array+RawData")]
-    pub type RawData = crate::System::Array_RawData;
-    #[cfg(feature = "System+Array+InternalEnumerator_1")]
-    pub type InternalEnumerator_1<T: quest_hook::libil2cpp::Type> = crate::System::Array_InternalEnumerator_1<
-        T,
-    >;
     #[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
     pub type EmptyInternalEnumerator_1<T: quest_hook::libil2cpp::Type> = crate::System::Array_EmptyInternalEnumerator_1<
         T,
     >;
+    #[cfg(feature = "System+Array+InternalEnumerator_1")]
+    pub type InternalEnumerator_1<T: quest_hook::libil2cpp::Type> = crate::System::Array_InternalEnumerator_1<
+        T,
+    >;
+    #[cfg(feature = "System+Array+RawData")]
+    pub type RawData = crate::System::Array_RawData;
+    #[cfg(feature = "System+Array+SorterGenericArray")]
+    pub type SorterGenericArray = crate::System::Array_SorterGenericArray;
+    #[cfg(feature = "System+Array+SorterObjectArray")]
+    pub type SorterObjectArray = crate::System::Array_SorterObjectArray;
     pub fn Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {

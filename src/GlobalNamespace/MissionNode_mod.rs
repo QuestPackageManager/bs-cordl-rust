@@ -3,32 +3,34 @@
 #[derive(Debug)]
 pub struct MissionNode {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionDataSO: *mut MissionDataSO,
+    pub _missionDataSO: *mut crate::GlobalNamespace::MissionDataSO,
     pub _letterPartName: *mut crate::System::String,
     pub _numberPartName: i32,
     pub _rectTransform: *mut crate::UnityEngine::RectTransform,
-    pub _missionNodeVisualController: *mut MissionNodeVisualController,
-    pub _childNodes: *mut quest_hook::libil2cpp::Il2CppArray<*mut MissionNode>,
+    pub _missionNodeVisualController: *mut crate::GlobalNamespace::MissionNodeVisualController,
+    pub _childNodes: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::MissionNode,
+    >,
 }
 #[cfg(feature = "MissionNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionNode => ""."MissionNode"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissionNode => ""."MissionNode"
 );
 #[cfg(feature = "MissionNode")]
-impl std::ops::Deref for MissionNode {
+impl std::ops::Deref for crate::GlobalNamespace::MissionNode {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionNode")]
-impl std::ops::DerefMut for MissionNode {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionNode {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionNode")]
-impl MissionNode {
+impl crate::GlobalNamespace::MissionNode {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -49,13 +51,14 @@ impl MissionNode {
     pub fn get_childNodes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut MissionNode>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::MissionNode>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<*mut MissionNode> = __cordl_object
-            .invoke("get_childNodes", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MissionNode,
+        > = __cordl_object.invoke("get_childNodes", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_formattedMissionNodeName(
@@ -80,11 +83,11 @@ impl MissionNode {
     }
     pub fn get_missionData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut MissionDataSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::MissionDataSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MissionDataSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MissionDataSO = __cordl_object
             .invoke("get_missionData", ())?;
         Ok(__cordl_ret)
     }
@@ -100,11 +103,13 @@ impl MissionNode {
     }
     pub fn get_missionNodeVisualController(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut MissionNodeVisualController> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::MissionNodeVisualController,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MissionNodeVisualController = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MissionNodeVisualController = __cordl_object
             .invoke("get_missionNodeVisualController", ())?;
         Ok(__cordl_ret)
     }
@@ -134,7 +139,7 @@ impl MissionNode {
     }
 }
 #[cfg(feature = "MissionNode")]
-impl quest_hook::libil2cpp::ObjectType for MissionNode {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissionNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

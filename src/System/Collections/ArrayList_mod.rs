@@ -28,14 +28,14 @@ impl std::ops::DerefMut for crate::System::Collections::ArrayList {
 }
 #[cfg(feature = "System+Collections+ArrayList")]
 impl crate::System::Collections::ArrayList {
-    #[cfg(feature = "System+Collections+ArrayList+ReadOnlyArrayList")]
-    pub type ReadOnlyArrayList = crate::GlobalNamespace::ArrayList_ReadOnlyArrayList;
+    #[cfg(feature = "System+Collections+ArrayList+ArrayListDebugView")]
+    pub type ArrayListDebugView = crate::System::Collections::ArrayList_ArrayListDebugView;
     #[cfg(feature = "System+Collections+ArrayList+ArrayListEnumeratorSimple")]
     pub type ArrayListEnumeratorSimple = crate::System::Collections::ArrayList_ArrayListEnumeratorSimple;
     #[cfg(feature = "System+Collections+ArrayList+IListWrapper")]
     pub type IListWrapper = crate::GlobalNamespace::ArrayList_IListWrapper;
-    #[cfg(feature = "System+Collections+ArrayList+ArrayListDebugView")]
-    pub type ArrayListDebugView = crate::System::Collections::ArrayList_ArrayListDebugView;
+    #[cfg(feature = "System+Collections+ArrayList+ReadOnlyArrayList")]
+    pub type ReadOnlyArrayList = crate::GlobalNamespace::ArrayList_ReadOnlyArrayList;
     pub fn Add(
         &mut self,
         value: *mut crate::System::Object,

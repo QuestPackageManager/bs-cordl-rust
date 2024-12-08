@@ -27,16 +27,12 @@ for crate::System::Linq::Expressions::Interpreter::MulOvfInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+MulOvfInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::MulOvfInstruction {
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+MulOvfInstruction+MulOvfInt32")]
-    pub type MulOvfInt32 = crate::GlobalNamespace::MulOvfInstruction_MulOvfInt32;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+MulOvfInstruction+MulOvfUInt64"
-    )]
-    pub type MulOvfUInt64 = crate::GlobalNamespace::MulOvfInstruction_MulOvfUInt64;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+MulOvfInstruction+MulOvfInt64")]
-    pub type MulOvfInt64 = crate::GlobalNamespace::MulOvfInstruction_MulOvfInt64;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+MulOvfInstruction+MulOvfInt16")]
     pub type MulOvfInt16 = crate::GlobalNamespace::MulOvfInstruction_MulOvfInt16;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+MulOvfInstruction+MulOvfInt32")]
+    pub type MulOvfInt32 = crate::GlobalNamespace::MulOvfInstruction_MulOvfInt32;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+MulOvfInstruction+MulOvfInt64")]
+    pub type MulOvfInt64 = crate::GlobalNamespace::MulOvfInstruction_MulOvfInt64;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+MulOvfInstruction+MulOvfUInt16"
     )]
@@ -45,6 +41,10 @@ impl crate::System::Linq::Expressions::Interpreter::MulOvfInstruction {
         feature = "System+Linq+Expressions+Interpreter+MulOvfInstruction+MulOvfUInt32"
     )]
     pub type MulOvfUInt32 = crate::GlobalNamespace::MulOvfInstruction_MulOvfUInt32;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+MulOvfInstruction+MulOvfUInt64"
+    )]
+    pub type MulOvfUInt64 = crate::GlobalNamespace::MulOvfInstruction_MulOvfUInt64;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

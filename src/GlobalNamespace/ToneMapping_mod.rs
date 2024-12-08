@@ -7,5 +7,5 @@ pub enum ToneMapping {
 }
 #[cfg(feature = "ToneMapping")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for ToneMapping => ""."ToneMapping"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ToneMapping => ""."ToneMapping"
 );

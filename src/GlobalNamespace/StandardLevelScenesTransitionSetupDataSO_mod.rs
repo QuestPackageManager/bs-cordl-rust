@@ -2,46 +2,49 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardLevelScenesTransitionSetupDataSO {
-    __cordl_parent: LevelScenesTransitionSetupDataSO,
-    pub _standardGameplaySceneInfo: *mut SceneInfo,
-    pub _gameCoreSceneInfo: *mut SceneInfo,
+    __cordl_parent: crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
+    pub _standardGameplaySceneInfo: *mut crate::GlobalNamespace::SceneInfo,
+    pub _gameCoreSceneInfo: *mut crate::GlobalNamespace::SceneInfo,
     pub didFinishEvent: *mut crate::System::Action_2<
-        *mut StandardLevelScenesTransitionSetupDataSO,
-        *mut LevelCompletionResults,
+        *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+        *mut crate::GlobalNamespace::LevelCompletionResults,
     >,
     pub _gameMode_k__BackingField: *mut crate::System::String,
-    pub _beatmapKey_k__BackingField: BeatmapKey,
-    pub _beatmapLevel_k__BackingField: *mut BeatmapLevel,
-    pub _practiceSettings_k__BackingField: *mut PracticeSettings,
+    pub _beatmapKey_k__BackingField: crate::GlobalNamespace::BeatmapKey,
+    pub _beatmapLevel_k__BackingField: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub _practiceSettings_k__BackingField: *mut crate::GlobalNamespace::PracticeSettings,
     pub _usingOverrideColorScheme_k__BackingField: bool,
-    pub _colorScheme_k__BackingField: *mut ColorScheme,
+    pub _colorScheme_k__BackingField: *mut crate::GlobalNamespace::ColorScheme,
     pub _usingOverrideEnvironment_k__BackingField: bool,
-    pub _environmentInfo_k__BackingField: *mut EnvironmentInfoSO,
-    pub _gameplayModifiers_k__BackingField: *mut GameplayModifiers,
+    pub _environmentInfo_k__BackingField: *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub _gameplayModifiers_k__BackingField: *mut crate::GlobalNamespace::GameplayModifiers,
 }
 #[cfg(feature = "StandardLevelScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StandardLevelScenesTransitionSetupDataSO => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO => ""
     ."StandardLevelScenesTransitionSetupDataSO"
 );
 #[cfg(feature = "StandardLevelScenesTransitionSetupDataSO")]
-impl std::ops::Deref for StandardLevelScenesTransitionSetupDataSO {
-    type Target = LevelScenesTransitionSetupDataSO;
+impl std::ops::Deref
+for crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
+    type Target = crate::GlobalNamespace::LevelScenesTransitionSetupDataSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelScenesTransitionSetupDataSO")]
-impl std::ops::DerefMut for StandardLevelScenesTransitionSetupDataSO {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelScenesTransitionSetupDataSO")]
-impl StandardLevelScenesTransitionSetupDataSO {
+impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
     pub fn Finish(
         &mut self,
-        levelCompletionResults: *mut LevelCompletionResults,
+        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -52,7 +55,7 @@ impl StandardLevelScenesTransitionSetupDataSO {
     }
     pub fn InitAndSetupScenes(
         &mut self,
-        playerSpecificSettings: *mut PlayerSpecificSettings,
+        playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
         backButtonText: *mut crate::System::String,
         startPaused: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -68,8 +71,8 @@ impl StandardLevelScenesTransitionSetupDataSO {
     }
     pub fn InitColorInfo(
         &mut self,
-        overrideColorScheme: *mut ColorScheme,
-        beatmapOverrideColorScheme: *mut ColorScheme,
+        overrideColorScheme: *mut crate::GlobalNamespace::ColorScheme,
+        beatmapOverrideColorScheme: *mut crate::GlobalNamespace::ColorScheme,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -80,8 +83,8 @@ impl StandardLevelScenesTransitionSetupDataSO {
     }
     pub fn InitEnvironmentInfo(
         &mut self,
-        overrideEnvironmentSettings: *mut OverrideEnvironmentSettings,
-        environmentsListModel: *mut EnvironmentsListModel,
+        overrideEnvironmentSettings: *mut crate::GlobalNamespace::OverrideEnvironmentSettings,
+        environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -96,21 +99,21 @@ impl StandardLevelScenesTransitionSetupDataSO {
     pub fn Init_ByRefMut_BeatmapLevel_OverrideEnvironmentSettings_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_AudioClipAsyncLoader_BeatmapDataLoader_String_BeatmapLevelsModel_BeatmapLevelsEntitlementModel1(
         &mut self,
         gameMode: *mut crate::System::String,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-        beatmapLevel: *mut BeatmapLevel,
-        overrideEnvironmentSettings: *mut OverrideEnvironmentSettings,
-        overrideColorScheme: *mut ColorScheme,
-        beatmapOverrideColorScheme: *mut ColorScheme,
-        gameplayModifiers: *mut GameplayModifiers,
-        playerSpecificSettings: *mut PlayerSpecificSettings,
-        practiceSettings: *mut PracticeSettings,
-        environmentsListModel: *mut EnvironmentsListModel,
-        audioClipAsyncLoader: *mut AudioClipAsyncLoader,
-        beatmapDataLoader: *mut BeatmapDataLoader,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+        overrideEnvironmentSettings: *mut crate::GlobalNamespace::OverrideEnvironmentSettings,
+        overrideColorScheme: *mut crate::GlobalNamespace::ColorScheme,
+        beatmapOverrideColorScheme: *mut crate::GlobalNamespace::ColorScheme,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+        playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+        practiceSettings: *mut crate::GlobalNamespace::PracticeSettings,
+        environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
+        audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
+        beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
         performancePreset: *mut crate::BeatSaber::PerformancePresets::PerformancePreset,
         backButtonText: *mut crate::System::String,
-        beatmapLevelsModel: *mut BeatmapLevelsModel,
-        beatmapLevelsEntitlementModel: *mut BeatmapLevelsEntitlementModel,
+        beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
+        beatmapLevelsEntitlementModel: *mut crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
         useTestNoteCutSoundEffects: bool,
         startPaused: bool,
         recordingToolData: crate::System::Nullable_1<
@@ -150,20 +153,20 @@ impl StandardLevelScenesTransitionSetupDataSO {
     pub fn Init_IBeatmapLevelData_ByRefMut_BeatmapLevel_OverrideEnvironmentSettings_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_AudioClipAsyncLoader_BeatmapDataLoader_BeatmapLevelsEntitlementModel_String0(
         &mut self,
         gameMode: *mut crate::System::String,
-        beatmapLevelData: *mut IBeatmapLevelData,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-        beatmapLevel: *mut BeatmapLevel,
-        overrideEnvironmentSettings: *mut OverrideEnvironmentSettings,
-        overrideColorScheme: *mut ColorScheme,
-        beatmapOverrideColorScheme: *mut ColorScheme,
-        gameplayModifiers: *mut GameplayModifiers,
-        playerSpecificSettings: *mut PlayerSpecificSettings,
-        practiceSettings: *mut PracticeSettings,
-        environmentsListModel: *mut EnvironmentsListModel,
-        audioClipAsyncLoader: *mut AudioClipAsyncLoader,
+        beatmapLevelData: *mut crate::GlobalNamespace::IBeatmapLevelData,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+        overrideEnvironmentSettings: *mut crate::GlobalNamespace::OverrideEnvironmentSettings,
+        overrideColorScheme: *mut crate::GlobalNamespace::ColorScheme,
+        beatmapOverrideColorScheme: *mut crate::GlobalNamespace::ColorScheme,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+        playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+        practiceSettings: *mut crate::GlobalNamespace::PracticeSettings,
+        environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
+        audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
         performancePreset: *mut crate::BeatSaber::PerformancePresets::PerformancePreset,
-        beatmapDataLoader: *mut BeatmapDataLoader,
-        beatmapLevelsEntitlementModel: *mut BeatmapLevelsEntitlementModel,
+        beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
+        beatmapLevelsEntitlementModel: *mut crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
         backButtonText: *mut crate::System::String,
         useTestNoteCutSoundEffects: bool,
         startPaused: bool,
@@ -221,8 +224,8 @@ impl StandardLevelScenesTransitionSetupDataSO {
     pub fn add_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut StandardLevelScenesTransitionSetupDataSO,
-            *mut LevelCompletionResults,
+            *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::LevelCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -232,40 +235,43 @@ impl StandardLevelScenesTransitionSetupDataSO {
             .invoke("add_didFinishEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_beatmapKey(&mut self) -> quest_hook::libil2cpp::Result<BeatmapKey> {
+    pub fn get_beatmapKey(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapKey> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapKey = __cordl_object.invoke("get_beatmapKey", ())?;
+        let __cordl_ret: crate::GlobalNamespace::BeatmapKey = __cordl_object
+            .invoke("get_beatmapKey", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_beatmapLevel(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevel> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapLevel> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapLevel = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapLevel = __cordl_object
             .invoke("get_beatmapLevel", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_colorScheme(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut ColorScheme> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::ColorScheme> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ColorScheme = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::ColorScheme = __cordl_object
             .invoke("get_colorScheme", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_environmentInfo(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut EnvironmentInfoSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::EnvironmentInfoSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut EnvironmentInfoSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::EnvironmentInfoSO = __cordl_object
             .invoke("get_environmentInfo", ())?;
         Ok(__cordl_ret)
     }
@@ -281,21 +287,21 @@ impl StandardLevelScenesTransitionSetupDataSO {
     }
     pub fn get_gameplayModifiers(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut GameplayModifiers> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::GameplayModifiers> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut GameplayModifiers = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::GameplayModifiers = __cordl_object
             .invoke("get_gameplayModifiers", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_practiceSettings(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PracticeSettings> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::PracticeSettings> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PracticeSettings = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PracticeSettings = __cordl_object
             .invoke("get_practiceSettings", ())?;
         Ok(__cordl_ret)
     }
@@ -322,8 +328,8 @@ impl StandardLevelScenesTransitionSetupDataSO {
     pub fn remove_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut StandardLevelScenesTransitionSetupDataSO,
-            *mut LevelCompletionResults,
+            *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::LevelCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -335,7 +341,7 @@ impl StandardLevelScenesTransitionSetupDataSO {
     }
     pub fn set_beatmapKey(
         &mut self,
-        value: BeatmapKey,
+        value: crate::GlobalNamespace::BeatmapKey,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -346,7 +352,7 @@ impl StandardLevelScenesTransitionSetupDataSO {
     }
     pub fn set_beatmapLevel(
         &mut self,
-        value: *mut BeatmapLevel,
+        value: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -357,7 +363,7 @@ impl StandardLevelScenesTransitionSetupDataSO {
     }
     pub fn set_colorScheme(
         &mut self,
-        value: *mut ColorScheme,
+        value: *mut crate::GlobalNamespace::ColorScheme,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -368,7 +374,7 @@ impl StandardLevelScenesTransitionSetupDataSO {
     }
     pub fn set_environmentInfo(
         &mut self,
-        value: *mut EnvironmentInfoSO,
+        value: *mut crate::GlobalNamespace::EnvironmentInfoSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -390,7 +396,7 @@ impl StandardLevelScenesTransitionSetupDataSO {
     }
     pub fn set_gameplayModifiers(
         &mut self,
-        value: *mut GameplayModifiers,
+        value: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -401,7 +407,7 @@ impl StandardLevelScenesTransitionSetupDataSO {
     }
     pub fn set_practiceSettings(
         &mut self,
-        value: *mut PracticeSettings,
+        value: *mut crate::GlobalNamespace::PracticeSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -434,7 +440,8 @@ impl StandardLevelScenesTransitionSetupDataSO {
     }
 }
 #[cfg(feature = "StandardLevelScenesTransitionSetupDataSO")]
-impl quest_hook::libil2cpp::ObjectType for StandardLevelScenesTransitionSetupDataSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

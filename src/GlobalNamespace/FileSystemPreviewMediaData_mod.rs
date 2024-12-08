@@ -3,31 +3,31 @@
 #[derive(Debug)]
 pub struct FileSystemPreviewMediaData {
     __cordl_parent: crate::System::Object,
-    pub _spriteAsyncLoader: *mut SpriteAsyncLoader,
-    pub _audioClipAsyncLoader: *mut AudioClipAsyncLoader,
+    pub _spriteAsyncLoader: *mut crate::GlobalNamespace::SpriteAsyncLoader,
+    pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
     pub _coverSpritePath: *mut crate::System::String,
     pub _previewAudioClipPath: *mut crate::System::String,
 }
 #[cfg(feature = "FileSystemPreviewMediaData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FileSystemPreviewMediaData => ""
-    ."FileSystemPreviewMediaData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FileSystemPreviewMediaData =>
+    ""."FileSystemPreviewMediaData"
 );
 #[cfg(feature = "FileSystemPreviewMediaData")]
-impl std::ops::Deref for FileSystemPreviewMediaData {
+impl std::ops::Deref for crate::GlobalNamespace::FileSystemPreviewMediaData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FileSystemPreviewMediaData")]
-impl std::ops::DerefMut for FileSystemPreviewMediaData {
+impl std::ops::DerefMut for crate::GlobalNamespace::FileSystemPreviewMediaData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FileSystemPreviewMediaData")]
-impl FileSystemPreviewMediaData {
+impl crate::GlobalNamespace::FileSystemPreviewMediaData {
     pub fn GetCoverSpriteAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
@@ -57,8 +57,8 @@ impl FileSystemPreviewMediaData {
         Ok(__cordl_ret)
     }
     pub fn New(
-        spriteAsyncLoader: *mut SpriteAsyncLoader,
-        audioClipAsyncLoader: *mut AudioClipAsyncLoader,
+        spriteAsyncLoader: *mut crate::GlobalNamespace::SpriteAsyncLoader,
+        audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
         rootPath: *mut crate::System::String,
         coverSpritePath: *mut crate::System::String,
         previewAudioClipPath: *mut crate::System::String,
@@ -90,8 +90,8 @@ impl FileSystemPreviewMediaData {
     }
     pub fn _ctor(
         &mut self,
-        spriteAsyncLoader: *mut SpriteAsyncLoader,
-        audioClipAsyncLoader: *mut AudioClipAsyncLoader,
+        spriteAsyncLoader: *mut crate::GlobalNamespace::SpriteAsyncLoader,
+        audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
         rootPath: *mut crate::System::String,
         coverSpritePath: *mut crate::System::String,
         previewAudioClipPath: *mut crate::System::String,
@@ -114,7 +114,8 @@ impl FileSystemPreviewMediaData {
     }
 }
 #[cfg(feature = "FileSystemPreviewMediaData")]
-impl quest_hook::libil2cpp::ObjectType for FileSystemPreviewMediaData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FileSystemPreviewMediaData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

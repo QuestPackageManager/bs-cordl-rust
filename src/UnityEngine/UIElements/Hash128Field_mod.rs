@@ -29,12 +29,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Hash128Field {
 }
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field")]
 impl crate::UnityEngine::UIElements::Hash128Field {
-    #[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlTraits")]
-    pub type UxmlTraits = crate::UnityEngine::UIElements::Hash128Field_UxmlTraits;
     #[cfg(feature = "UnityEngine+UIElements+Hash128Field+Hash128Input")]
     pub type Hash128Input = crate::UnityEngine::UIElements::Hash128Field_Hash128Input;
     #[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlFactory")]
     pub type UxmlFactory = crate::UnityEngine::UIElements::Hash128Field_UxmlFactory;
+    #[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlTraits")]
+    pub type UxmlTraits = crate::UnityEngine::UIElements::Hash128Field_UxmlTraits;
     pub fn ExecuteDefaultAction(
         &mut self,
         evt: *mut crate::UnityEngine::UIElements::EventBase,

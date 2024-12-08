@@ -6,10 +6,10 @@ pub struct OVRSharable {
 }
 #[cfg(feature = "OVRSharable")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for OVRSharable => ""."OVRSharable"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRSharable => ""."OVRSharable"
 );
 #[cfg(feature = "OVRSharable")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for OVRSharable {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRSharable {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -19,10 +19,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for OVRSharable {
     }
 }
 #[cfg(feature = "OVRSharable")]
-impl OVRSharable {
+impl crate::GlobalNamespace::OVRSharable {
     pub fn Equals_OVRSharable0(
         &mut self,
-        other: OVRSharable,
+        other: crate::GlobalNamespace::OVRSharable,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -52,9 +52,9 @@ impl OVRSharable {
     }
     pub fn IOVRAnchorComponent_OVRSharable__FromAnchor(
         &mut self,
-        anchor: OVRAnchor,
-    ) -> quest_hook::libil2cpp::Result<OVRSharable> {
-        let __cordl_ret: OVRSharable = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        anchor: crate::GlobalNamespace::OVRAnchor,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRSharable> {
+        let __cordl_ret: crate::GlobalNamespace::OVRSharable = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "IOVRAnchorComponent<OVRSharable>.FromAnchor",
             (anchor),
@@ -87,8 +87,8 @@ impl OVRSharable {
         &mut self,
         enabled: bool,
         timeout: f64,
-    ) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
-        let __cordl_ret: OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
+        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SetEnabledAsync",
             (enabled, timeout),
@@ -107,7 +107,7 @@ impl OVRSharable {
     }
     pub fn _ctor(
         &mut self,
-        anchor: OVRAnchor,
+        anchor: crate::GlobalNamespace::OVRAnchor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

@@ -37,13 +37,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::CastInstruction_CastInstruct
 )]
 impl crate::GlobalNamespace::CastInstruction_CastInstructionNoT {
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Value"
-    )]
-    pub type Value = crate::GlobalNamespace::CastInstructionNoT_Value;
-    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Ref"
     )]
     pub type Ref = crate::GlobalNamespace::CastInstructionNoT_Ref;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Value"
+    )]
+    pub type Value = crate::GlobalNamespace::CastInstructionNoT_Value;
     pub fn ConvertNull(
         &mut self,
         frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,

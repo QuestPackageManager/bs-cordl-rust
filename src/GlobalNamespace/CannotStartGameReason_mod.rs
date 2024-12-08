@@ -10,5 +10,6 @@ pub enum CannotStartGameReason {
 }
 #[cfg(feature = "CannotStartGameReason")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for CannotStartGameReason => ""."CannotStartGameReason"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CannotStartGameReason => ""
+    ."CannotStartGameReason"
 );

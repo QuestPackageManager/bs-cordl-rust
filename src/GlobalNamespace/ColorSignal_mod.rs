@@ -2,27 +2,27 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorSignal {
-    __cordl_parent: GenericSignal_1<crate::UnityEngine::Color>,
+    __cordl_parent: crate::GlobalNamespace::GenericSignal_1<crate::UnityEngine::Color>,
 }
 #[cfg(feature = "ColorSignal")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ColorSignal => ""."ColorSignal"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ColorSignal => ""."ColorSignal"
 );
 #[cfg(feature = "ColorSignal")]
-impl std::ops::Deref for ColorSignal {
-    type Target = GenericSignal_1<crate::UnityEngine::Color>;
+impl std::ops::Deref for crate::GlobalNamespace::ColorSignal {
+    type Target = crate::GlobalNamespace::GenericSignal_1<crate::UnityEngine::Color>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorSignal")]
-impl std::ops::DerefMut for ColorSignal {
+impl std::ops::DerefMut for crate::GlobalNamespace::ColorSignal {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorSignal")]
-impl ColorSignal {
+impl crate::GlobalNamespace::ColorSignal {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,7 +42,7 @@ impl ColorSignal {
     }
 }
 #[cfg(feature = "ColorSignal")]
-impl quest_hook::libil2cpp::ObjectType for ColorSignal {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorSignal {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

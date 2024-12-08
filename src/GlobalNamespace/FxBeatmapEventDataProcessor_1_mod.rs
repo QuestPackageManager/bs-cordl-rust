@@ -2,31 +2,33 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FxBeatmapEventDataProcessor_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: BeatmapEventDataProcessor_1<T>,
+    __cordl_parent: crate::GlobalNamespace::BeatmapEventDataProcessor_1<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "FxBeatmapEventDataProcessor_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FxBeatmapEventDataProcessor_1 < T > => ""
-    ."FxBeatmapEventDataProcessor`1" < T >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FxBeatmapEventDataProcessor_1 <
+    T > => ""."FxBeatmapEventDataProcessor`1" < T >
 );
 #[cfg(feature = "FxBeatmapEventDataProcessor_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
-for FxBeatmapEventDataProcessor_1<T> {
-    type Target = BeatmapEventDataProcessor_1<T>;
+for crate::GlobalNamespace::FxBeatmapEventDataProcessor_1<T> {
+    type Target = crate::GlobalNamespace::BeatmapEventDataProcessor_1<T>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FxBeatmapEventDataProcessor_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for FxBeatmapEventDataProcessor_1<T> {
+for crate::GlobalNamespace::FxBeatmapEventDataProcessor_1<T> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FxBeatmapEventDataProcessor_1")]
-impl<T: quest_hook::libil2cpp::Type> FxBeatmapEventDataProcessor_1<T> {
+impl<
+    T: quest_hook::libil2cpp::Type,
+> crate::GlobalNamespace::FxBeatmapEventDataProcessor_1<T> {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -37,7 +39,7 @@ impl<T: quest_hook::libil2cpp::Type> FxBeatmapEventDataProcessor_1<T> {
     pub fn ProcessBeforeDeleteEventDataInternal(
         &mut self,
         nodeToDelete: *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut BeatmapDataItem,
+            *mut crate::GlobalNamespace::BeatmapDataItem,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -54,7 +56,7 @@ impl<T: quest_hook::libil2cpp::Type> FxBeatmapEventDataProcessor_1<T> {
     pub fn ProcessInsertedEventDataInternal(
         &mut self,
         insertedNode: *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut BeatmapDataItem,
+            *mut crate::GlobalNamespace::BeatmapDataItem,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -99,7 +101,7 @@ impl<T: quest_hook::libil2cpp::Type> FxBeatmapEventDataProcessor_1<T> {
 }
 #[cfg(feature = "FxBeatmapEventDataProcessor_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for FxBeatmapEventDataProcessor_1<T> {
+for crate::GlobalNamespace::FxBeatmapEventDataProcessor_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

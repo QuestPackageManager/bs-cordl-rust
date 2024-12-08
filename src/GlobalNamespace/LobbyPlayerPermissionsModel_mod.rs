@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct LobbyPlayerPermissionsModel {
     __cordl_parent: crate::System::Object,
-    pub _menuRpcManager: *mut IMenuRpcManager,
-    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
+    pub _menuRpcManager: *mut crate::GlobalNamespace::IMenuRpcManager,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
     pub _isPartyOwner_k__BackingField: bool,
     pub _hasRecommendBeatmapPermission_k__BackingField: bool,
     pub _hasRecommendModifiersPermission_k__BackingField: bool,
@@ -14,24 +14,24 @@ pub struct LobbyPlayerPermissionsModel {
 }
 #[cfg(feature = "LobbyPlayerPermissionsModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LobbyPlayerPermissionsModel => ""
-    ."LobbyPlayerPermissionsModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LobbyPlayerPermissionsModel =>
+    ""."LobbyPlayerPermissionsModel"
 );
 #[cfg(feature = "LobbyPlayerPermissionsModel")]
-impl std::ops::Deref for LobbyPlayerPermissionsModel {
+impl std::ops::Deref for crate::GlobalNamespace::LobbyPlayerPermissionsModel {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LobbyPlayerPermissionsModel")]
-impl std::ops::DerefMut for LobbyPlayerPermissionsModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::LobbyPlayerPermissionsModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LobbyPlayerPermissionsModel")]
-impl LobbyPlayerPermissionsModel {
+impl crate::GlobalNamespace::LobbyPlayerPermissionsModel {
     pub fn Activate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -55,7 +55,7 @@ impl LobbyPlayerPermissionsModel {
     pub fn HandleMenuRpcManagerSetPlayersPermissionConfiguration(
         &mut self,
         userId: *mut crate::System::String,
-        playersLobbyPermissionConfiguration: *mut PlayersLobbyPermissionConfigurationNetSerializable,
+        playersLobbyPermissionConfiguration: *mut crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -228,7 +228,8 @@ impl LobbyPlayerPermissionsModel {
     }
 }
 #[cfg(feature = "LobbyPlayerPermissionsModel")]
-impl quest_hook::libil2cpp::ObjectType for LobbyPlayerPermissionsModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LobbyPlayerPermissionsModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

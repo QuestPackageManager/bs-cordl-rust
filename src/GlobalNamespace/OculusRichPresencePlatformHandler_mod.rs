@@ -6,24 +6,25 @@ pub struct OculusRichPresencePlatformHandler {
 }
 #[cfg(feature = "OculusRichPresencePlatformHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OculusRichPresencePlatformHandler => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OculusRichPresencePlatformHandler => ""
     ."OculusRichPresencePlatformHandler"
 );
 #[cfg(feature = "OculusRichPresencePlatformHandler")]
-impl std::ops::Deref for OculusRichPresencePlatformHandler {
+impl std::ops::Deref for crate::GlobalNamespace::OculusRichPresencePlatformHandler {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusRichPresencePlatformHandler")]
-impl std::ops::DerefMut for OculusRichPresencePlatformHandler {
+impl std::ops::DerefMut for crate::GlobalNamespace::OculusRichPresencePlatformHandler {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusRichPresencePlatformHandler")]
-impl OculusRichPresencePlatformHandler {
+impl crate::GlobalNamespace::OculusRichPresencePlatformHandler {
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -43,7 +44,7 @@ impl OculusRichPresencePlatformHandler {
     }
     pub fn SetPresence(
         &mut self,
-        richPresenceData: *mut IRichPresenceData,
+        richPresenceData: *mut crate::GlobalNamespace::IRichPresenceData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -64,7 +65,8 @@ impl OculusRichPresencePlatformHandler {
     }
 }
 #[cfg(feature = "OculusRichPresencePlatformHandler")]
-impl quest_hook::libil2cpp::ObjectType for OculusRichPresencePlatformHandler {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OculusRichPresencePlatformHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

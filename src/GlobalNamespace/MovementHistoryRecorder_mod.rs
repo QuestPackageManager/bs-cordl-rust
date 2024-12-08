@@ -3,30 +3,31 @@
 #[derive(Debug)]
 pub struct MovementHistoryRecorder {
     __cordl_parent: crate::System::Object,
-    pub _averagingValueRecorer: *mut AveragingValueRecorder,
+    pub _averagingValueRecorer: *mut crate::GlobalNamespace::AveragingValueRecorder,
     pub _increaseSpeed: f32,
     pub _decreaseSpeed: f32,
     pub _accum: f32,
 }
 #[cfg(feature = "MovementHistoryRecorder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MovementHistoryRecorder => ""."MovementHistoryRecorder"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MovementHistoryRecorder => ""
+    ."MovementHistoryRecorder"
 );
 #[cfg(feature = "MovementHistoryRecorder")]
-impl std::ops::Deref for MovementHistoryRecorder {
+impl std::ops::Deref for crate::GlobalNamespace::MovementHistoryRecorder {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MovementHistoryRecorder")]
-impl std::ops::DerefMut for MovementHistoryRecorder {
+impl std::ops::DerefMut for crate::GlobalNamespace::MovementHistoryRecorder {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MovementHistoryRecorder")]
-impl MovementHistoryRecorder {
+impl crate::GlobalNamespace::MovementHistoryRecorder {
     pub fn AddMovement(
         &mut self,
         distance: f32,
@@ -93,17 +94,20 @@ impl MovementHistoryRecorder {
     }
     pub fn get_averagingValueRecorer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut AveragingValueRecorder> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::AveragingValueRecorder,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut AveragingValueRecorder = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::AveragingValueRecorder = __cordl_object
             .invoke("get_averagingValueRecorer", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MovementHistoryRecorder")]
-impl quest_hook::libil2cpp::ObjectType for MovementHistoryRecorder {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MovementHistoryRecorder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

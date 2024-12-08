@@ -5,29 +5,30 @@ pub struct BTSCharacter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _characterName: *mut crate::System::String,
     pub _animator: *mut crate::UnityEngine::Animator,
-    pub _btsCharacterMaterialSwitcher: *mut BTSCharacterMaterialSwitcher,
-    pub _materialPropertyBlockController: *mut MaterialPropertyBlockController,
+    pub _btsCharacterMaterialSwitcher: *mut crate::GlobalNamespace::BTSCharacterMaterialSwitcher,
+    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     pub _headTransform: *mut crate::UnityEngine::Transform,
 }
 #[cfg(feature = "BTSCharacter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BTSCharacter => ""."BTSCharacter"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BTSCharacter => ""
+    ."BTSCharacter"
 );
 #[cfg(feature = "BTSCharacter")]
-impl std::ops::Deref for BTSCharacter {
+impl std::ops::Deref for crate::GlobalNamespace::BTSCharacter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BTSCharacter")]
-impl std::ops::DerefMut for BTSCharacter {
+impl std::ops::DerefMut for crate::GlobalNamespace::BTSCharacter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BTSCharacter")]
-impl BTSCharacter {
+impl crate::GlobalNamespace::BTSCharacter {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -92,17 +93,19 @@ impl BTSCharacter {
     }
     pub fn get_materialPropertyBlockController(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut MaterialPropertyBlockController> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MaterialPropertyBlockController = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MaterialPropertyBlockController = __cordl_object
             .invoke("get_materialPropertyBlockController", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BTSCharacter")]
-impl quest_hook::libil2cpp::ObjectType for BTSCharacter {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BTSCharacter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

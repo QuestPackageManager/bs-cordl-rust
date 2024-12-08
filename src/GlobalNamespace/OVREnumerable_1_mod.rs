@@ -163,11 +163,12 @@ pub struct OVREnumerable_1<T: quest_hook::libil2cpp::Type> {
 }
 #[cfg(feature = "OVREnumerable_1")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for OVREnumerable_1 < T > => ""."OVREnumerable`1<T>" < T >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVREnumerable_1 < T > => ""
+    ."OVREnumerable`1<T>" < T >
 );
 #[cfg(feature = "OVREnumerable_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
-for OVREnumerable_1<T> {
+for crate::GlobalNamespace::OVREnumerable_1<T> {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -177,7 +178,7 @@ for OVREnumerable_1<T> {
     }
 }
 #[cfg(feature = "OVREnumerable_1")]
-impl<T: quest_hook::libil2cpp::Type> OVREnumerable_1<T> {
+impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVREnumerable_1<T> {
     #[cfg(feature = "OVREnumerable_1+Enumerator")]
     pub type Enumerator = crate::GlobalNamespace::OVREnumerable_1_Enumerator<T>;
     pub fn GetEnumerator(

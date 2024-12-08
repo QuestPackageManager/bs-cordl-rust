@@ -8,8 +8,8 @@ pub struct SaberActivityCounter {
     pub _increaseSpeed: f32,
     pub _decreaseSpeed: f32,
     pub _movementSensitivityThreshold: f32,
-    pub _saberManager: *mut SaberManager,
-    pub _gamePause: *mut IGamePause,
+    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
+    pub _gamePause: *mut crate::GlobalNamespace::IGamePause,
     pub totalDistanceDidChangeEvent: *mut crate::System::Action_1<f32>,
     pub _prevLeftSaberTipPos: crate::UnityEngine::Vector3,
     pub _prevRightSaberTipPos: crate::UnityEngine::Vector3,
@@ -20,28 +20,29 @@ pub struct SaberActivityCounter {
     pub _rightSaberMovementDistance: f32,
     pub _leftHandMovementDistance: f32,
     pub _rightHandMovementDistance: f32,
-    pub _saberMovementHistoryRecorder: *mut MovementHistoryRecorder,
-    pub _handMovementHistoryRecorder: *mut MovementHistoryRecorder,
+    pub _saberMovementHistoryRecorder: *mut crate::GlobalNamespace::MovementHistoryRecorder,
+    pub _handMovementHistoryRecorder: *mut crate::GlobalNamespace::MovementHistoryRecorder,
 }
 #[cfg(feature = "SaberActivityCounter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SaberActivityCounter => ""."SaberActivityCounter"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SaberActivityCounter => ""
+    ."SaberActivityCounter"
 );
 #[cfg(feature = "SaberActivityCounter")]
-impl std::ops::Deref for SaberActivityCounter {
+impl std::ops::Deref for crate::GlobalNamespace::SaberActivityCounter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberActivityCounter")]
-impl std::ops::DerefMut for SaberActivityCounter {
+impl std::ops::DerefMut for crate::GlobalNamespace::SaberActivityCounter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberActivityCounter")]
-impl SaberActivityCounter {
+impl crate::GlobalNamespace::SaberActivityCounter {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -64,8 +65,8 @@ impl SaberActivityCounter {
     }
     pub fn HandleSaberPositionsWereUpdated(
         &mut self,
-        leftSaber: *mut Saber,
-        rightSaber: *mut Saber,
+        leftSaber: *mut crate::GlobalNamespace::Saber,
+        rightSaber: *mut crate::GlobalNamespace::Saber,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -124,11 +125,13 @@ impl SaberActivityCounter {
     }
     pub fn get_handMovementAveragingValueRecorder(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut AveragingValueRecorder> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::AveragingValueRecorder,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut AveragingValueRecorder = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::AveragingValueRecorder = __cordl_object
             .invoke("get_handMovementAveragingValueRecorder", ())?;
         Ok(__cordl_ret)
     }
@@ -174,11 +177,13 @@ impl SaberActivityCounter {
     }
     pub fn get_saberMovementAveragingValueRecorder(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut AveragingValueRecorder> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::AveragingValueRecorder,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut AveragingValueRecorder = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::AveragingValueRecorder = __cordl_object
             .invoke("get_saberMovementAveragingValueRecorder", ())?;
         Ok(__cordl_ret)
     }
@@ -195,7 +200,7 @@ impl SaberActivityCounter {
     }
 }
 #[cfg(feature = "SaberActivityCounter")]
-impl quest_hook::libil2cpp::ObjectType for SaberActivityCounter {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberActivityCounter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

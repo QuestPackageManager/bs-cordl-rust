@@ -303,28 +303,28 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualTreeAsset {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset")]
 impl crate::UnityEngine::UIElements::VisualTreeAsset {
-    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
-    pub type SlotUsageEntry = crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry;
-    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
-    pub type UsingEntryComparer = crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer;
-    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
-    pub type UsingEntry = crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry;
-    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+_get_stylesheets_d__23")]
-    pub type _get_stylesheets_d__23 = crate::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__23;
     #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
     pub type AssetEntry = crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry;
-    #[cfg(
-        feature = "UnityEngine+UIElements+VisualTreeAsset+_get_templateDependencies_d__19"
-    )]
-    pub type _get_templateDependencies_d__19 = crate::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__19;
-    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+__c__DisplayClass65_0")]
-    pub type __c__DisplayClass65_0 = crate::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass65_0;
     #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
     pub type SlotDefinition = crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition;
+    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
+    pub type SlotUsageEntry = crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry;
+    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
+    pub type UsingEntry = crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry;
+    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
+    pub type UsingEntryComparer = crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer;
     #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
     pub type UxmlObjectEntry = crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry;
     #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+__c__DisplayClass61_0")]
     pub type __c__DisplayClass61_0 = crate::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass61_0;
+    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+__c__DisplayClass65_0")]
+    pub type __c__DisplayClass65_0 = crate::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass65_0;
+    #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+_get_stylesheets_d__23")]
+    pub type _get_stylesheets_d__23 = crate::UnityEngine::UIElements::VisualTreeAsset__get_stylesheets_d__23;
+    #[cfg(
+        feature = "UnityEngine+UIElements+VisualTreeAsset+_get_templateDependencies_d__19"
+    )]
+    pub type _get_templateDependencies_d__19 = crate::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__19;
     pub fn AssetEntryExists(
         &mut self,
         path: *mut crate::System::String,

@@ -4,28 +4,29 @@
 pub struct ConditionalMove {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _offset: crate::UnityEngine::Vector3,
-    pub _value: *mut BoolSO,
+    pub _value: *mut crate::GlobalNamespace::BoolSO,
     pub _activateOnFalse: bool,
 }
 #[cfg(feature = "ConditionalMove")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ConditionalMove => ""."ConditionalMove"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ConditionalMove => ""
+    ."ConditionalMove"
 );
 #[cfg(feature = "ConditionalMove")]
-impl std::ops::Deref for ConditionalMove {
+impl std::ops::Deref for crate::GlobalNamespace::ConditionalMove {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ConditionalMove")]
-impl std::ops::DerefMut for ConditionalMove {
+impl std::ops::DerefMut for crate::GlobalNamespace::ConditionalMove {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ConditionalMove")]
-impl ConditionalMove {
+impl crate::GlobalNamespace::ConditionalMove {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -55,7 +56,7 @@ impl ConditionalMove {
     }
 }
 #[cfg(feature = "ConditionalMove")]
-impl quest_hook::libil2cpp::ObjectType for ConditionalMove {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ConditionalMove {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

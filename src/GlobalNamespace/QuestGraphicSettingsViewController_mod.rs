@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuestGraphicSettingsViewController {
-    __cordl_parent: GraphicSettingsViewController,
-    pub _mirror: *mut PresetsSettingsController,
+    __cordl_parent: crate::GlobalNamespace::GraphicSettingsViewController,
+    pub _mirror: *mut crate::GlobalNamespace::PresetsSettingsController,
     pub _120HzMode: *mut crate::UnityEngine::UI::Toggle,
     pub _stinsonOnlyEntries: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::GameObject,
@@ -11,24 +11,25 @@ pub struct QuestGraphicSettingsViewController {
 }
 #[cfg(feature = "QuestGraphicSettingsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for QuestGraphicSettingsViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::QuestGraphicSettingsViewController => ""
     ."QuestGraphicSettingsViewController"
 );
 #[cfg(feature = "QuestGraphicSettingsViewController")]
-impl std::ops::Deref for QuestGraphicSettingsViewController {
-    type Target = GraphicSettingsViewController;
+impl std::ops::Deref for crate::GlobalNamespace::QuestGraphicSettingsViewController {
+    type Target = crate::GlobalNamespace::GraphicSettingsViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "QuestGraphicSettingsViewController")]
-impl std::ops::DerefMut for QuestGraphicSettingsViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::QuestGraphicSettingsViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "QuestGraphicSettingsViewController")]
-impl QuestGraphicSettingsViewController {
+impl crate::GlobalNamespace::QuestGraphicSettingsViewController {
     pub const kBalancedPresetKey: &'static str = "Balanced";
     pub const kFrameratePresetKey: &'static str = "Framerate";
     pub const kNoMirrorSuffix: &'static str = "_NoMirror";
@@ -136,7 +137,8 @@ impl QuestGraphicSettingsViewController {
     }
 }
 #[cfg(feature = "QuestGraphicSettingsViewController")]
-impl quest_hook::libil2cpp::ObjectType for QuestGraphicSettingsViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::QuestGraphicSettingsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

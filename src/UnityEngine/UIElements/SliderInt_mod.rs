@@ -24,10 +24,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::SliderInt {
 }
 #[cfg(feature = "UnityEngine+UIElements+SliderInt")]
 impl crate::UnityEngine::UIElements::SliderInt {
-    #[cfg(feature = "UnityEngine+UIElements+SliderInt+UxmlTraits")]
-    pub type UxmlTraits = crate::UnityEngine::UIElements::SliderInt_UxmlTraits;
     #[cfg(feature = "UnityEngine+UIElements+SliderInt+UxmlFactory")]
     pub type UxmlFactory = crate::UnityEngine::UIElements::SliderInt_UxmlFactory;
+    #[cfg(feature = "UnityEngine+UIElements+SliderInt+UxmlTraits")]
+    pub type UxmlTraits = crate::UnityEngine::UIElements::SliderInt_UxmlTraits;
     pub fn ApplyInputDeviceDelta(
         &mut self,
         delta: crate::UnityEngine::Vector3,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightGroupCircularLayouter {
-    __cordl_parent: LightGroupSubsystem,
+    __cordl_parent: crate::GlobalNamespace::LightGroupSubsystem,
     pub _radius: f32,
     pub _angle: f32,
     pub _startingAngle: f32,
@@ -12,24 +12,24 @@ pub struct LightGroupCircularLayouter {
 }
 #[cfg(feature = "LightGroupCircularLayouter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightGroupCircularLayouter => ""
-    ."LightGroupCircularLayouter"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightGroupCircularLayouter =>
+    ""."LightGroupCircularLayouter"
 );
 #[cfg(feature = "LightGroupCircularLayouter")]
-impl std::ops::Deref for LightGroupCircularLayouter {
-    type Target = LightGroupSubsystem;
+impl std::ops::Deref for crate::GlobalNamespace::LightGroupCircularLayouter {
+    type Target = crate::GlobalNamespace::LightGroupSubsystem;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightGroupCircularLayouter")]
-impl std::ops::DerefMut for LightGroupCircularLayouter {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightGroupCircularLayouter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightGroupCircularLayouter")]
-impl LightGroupCircularLayouter {
+impl crate::GlobalNamespace::LightGroupCircularLayouter {
     #[cfg(feature = "LightGroupCircularLayouter+RotationDirection")]
     pub type RotationDirection = crate::GlobalNamespace::LightGroupCircularLayouter_RotationDirection;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -51,7 +51,8 @@ impl LightGroupCircularLayouter {
     }
 }
 #[cfg(feature = "LightGroupCircularLayouter")]
-impl quest_hook::libil2cpp::ObjectType for LightGroupCircularLayouter {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LightGroupCircularLayouter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -73,12 +73,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IMGUIContainer {
 }
 #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer")]
 impl crate::UnityEngine::UIElements::IMGUIContainer {
+    #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
+    pub type GUIGlobals = crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals;
     #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlFactory")]
     pub type UxmlFactory = crate::UnityEngine::UIElements::IMGUIContainer_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::IMGUIContainer_UxmlTraits;
-    #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
-    pub type GUIGlobals = crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals;
     pub fn Dispose_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

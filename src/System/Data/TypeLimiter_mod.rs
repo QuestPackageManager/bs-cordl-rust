@@ -113,10 +113,10 @@ impl std::ops::DerefMut for crate::System::Data::TypeLimiter {
 }
 #[cfg(feature = "System+Data+TypeLimiter")]
 impl crate::System::Data::TypeLimiter {
-    #[cfg(feature = "System+Data+TypeLimiter+__c")]
-    pub type __c = crate::System::Data::TypeLimiter___c;
     #[cfg(feature = "System+Data+TypeLimiter+Scope")]
     pub type Scope = crate::System::Data::TypeLimiter_Scope;
+    #[cfg(feature = "System+Data+TypeLimiter+__c")]
+    pub type __c = crate::System::Data::TypeLimiter___c;
     pub fn New(
         scope: *mut crate::System::Data::TypeLimiter_Scope,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {

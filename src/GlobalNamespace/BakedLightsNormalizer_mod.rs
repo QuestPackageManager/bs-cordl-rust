@@ -6,7 +6,7 @@ pub struct BakedLightsNormalizer {
     pub _maxTotalIntensity: f32,
     pub _lightmapLightDict: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::GlobalNamespace::LightConstants_BakeId,
-        *mut LightmapLightWithIds,
+        *mut crate::GlobalNamespace::LightmapLightWithIds,
     >,
     pub _lightmapDictInitialized: bool,
     pub _grayscaleTotal: f32,
@@ -16,23 +16,24 @@ pub struct BakedLightsNormalizer {
 }
 #[cfg(feature = "BakedLightsNormalizer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BakedLightsNormalizer => ""."BakedLightsNormalizer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BakedLightsNormalizer => ""
+    ."BakedLightsNormalizer"
 );
 #[cfg(feature = "BakedLightsNormalizer")]
-impl std::ops::Deref for BakedLightsNormalizer {
+impl std::ops::Deref for crate::GlobalNamespace::BakedLightsNormalizer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BakedLightsNormalizer")]
-impl std::ops::DerefMut for BakedLightsNormalizer {
+impl std::ops::DerefMut for crate::GlobalNamespace::BakedLightsNormalizer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BakedLightsNormalizer")]
-impl BakedLightsNormalizer {
+impl crate::GlobalNamespace::BakedLightsNormalizer {
     pub const kMaxFramesWithoutUpdate: i32 = 5i32;
     pub fn GetLightmapLights(
         &mut self,
@@ -93,7 +94,7 @@ impl BakedLightsNormalizer {
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::Dictionary_2<
             crate::GlobalNamespace::LightConstants_BakeId,
-            *mut LightmapLightWithIds,
+            *mut crate::GlobalNamespace::LightmapLightWithIds,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -101,7 +102,7 @@ impl BakedLightsNormalizer {
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
             crate::GlobalNamespace::LightConstants_BakeId,
-            *mut LightmapLightWithIds,
+            *mut crate::GlobalNamespace::LightmapLightWithIds,
         > = __cordl_object.invoke("get_lightmapLightDict", ())?;
         Ok(__cordl_ret)
     }
@@ -114,7 +115,8 @@ impl BakedLightsNormalizer {
     }
 }
 #[cfg(feature = "BakedLightsNormalizer")]
-impl quest_hook::libil2cpp::ObjectType for BakedLightsNormalizer {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BakedLightsNormalizer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

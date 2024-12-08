@@ -6,8 +6,8 @@ pub struct Saber {
     pub _saberBladeTopTransform: *mut crate::UnityEngine::Transform,
     pub _saberBladeBottomTransform: *mut crate::UnityEngine::Transform,
     pub _handleTransform: *mut crate::UnityEngine::Transform,
-    pub _saberType: *mut SaberTypeObject,
-    pub _movementData: *mut SaberMovementData,
+    pub _saberType: *mut crate::GlobalNamespace::SaberTypeObject,
+    pub _movementData: *mut crate::GlobalNamespace::SaberMovementData,
     pub _saberBladeTopPos: crate::UnityEngine::Vector3,
     pub _saberBladeBottomPos: crate::UnityEngine::Vector3,
     pub _handlePos: crate::UnityEngine::Vector3,
@@ -15,23 +15,23 @@ pub struct Saber {
 }
 #[cfg(feature = "Saber")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for Saber => ""."Saber"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::Saber => ""."Saber"
 );
 #[cfg(feature = "Saber")]
-impl std::ops::Deref for Saber {
+impl std::ops::Deref for crate::GlobalNamespace::Saber {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Saber")]
-impl std::ops::DerefMut for Saber {
+impl std::ops::DerefMut for crate::GlobalNamespace::Saber {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "Saber")]
-impl Saber {
+impl crate::GlobalNamespace::Saber {
     pub fn ManualUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -100,11 +100,11 @@ impl Saber {
     }
     pub fn get_movementData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut SaberMovementData> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::SaberMovementData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut SaberMovementData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::SaberMovementData = __cordl_object
             .invoke("get_movementData", ())?;
         Ok(__cordl_ret)
     }
@@ -128,16 +128,19 @@ impl Saber {
             .invoke("get_saberBladeTopPos", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_saberType(&mut self) -> quest_hook::libil2cpp::Result<SaberType> {
+    pub fn get_saberType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SaberType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: SaberType = __cordl_object.invoke("get_saberType", ())?;
+        let __cordl_ret: crate::GlobalNamespace::SaberType = __cordl_object
+            .invoke("get_saberType", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Saber")]
-impl quest_hook::libil2cpp::ObjectType for Saber {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Saber {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

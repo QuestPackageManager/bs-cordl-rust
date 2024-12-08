@@ -2,30 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerDataFileManagerSO {
-    __cordl_parent: PersistentScriptableObject,
-    pub _defaultLastSelectedBeatmapCharacteristic: *mut BeatmapCharacteristicSO,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    pub _defaultLastSelectedBeatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     pub _buildInSongPackSerializedName: *mut crate::System::String,
     pub _allSongPackSerializedName: *mut crate::System::String,
 }
 #[cfg(feature = "PlayerDataFileManagerSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerDataFileManagerSO => ""."PlayerDataFileManagerSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerDataFileManagerSO => ""
+    ."PlayerDataFileManagerSO"
 );
 #[cfg(feature = "PlayerDataFileManagerSO")]
-impl std::ops::Deref for PlayerDataFileManagerSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::PlayerDataFileManagerSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerDataFileManagerSO")]
-impl std::ops::DerefMut for PlayerDataFileManagerSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerDataFileManagerSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerDataFileManagerSO")]
-impl PlayerDataFileManagerSO {
+impl crate::GlobalNamespace::PlayerDataFileManagerSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -65,17 +66,20 @@ impl PlayerDataFileManagerSO {
     }
     pub fn get_defaultLastSelectedBeatmapCharacteristic(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapCharacteristicSO> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapCharacteristicSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapCharacteristicSO = __cordl_object
             .invoke("get_defaultLastSelectedBeatmapCharacteristic", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PlayerDataFileManagerSO")]
-impl quest_hook::libil2cpp::ObjectType for PlayerDataFileManagerSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayerDataFileManagerSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

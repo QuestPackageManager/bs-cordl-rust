@@ -2,34 +2,34 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelCollectionSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _beatmapLevels: *mut crate::System::Collections::Generic::List_1<
-        *mut BeatmapLevelSO,
+        *mut crate::GlobalNamespace::BeatmapLevelSO,
     >,
 }
 #[cfg(feature = "BeatmapLevelCollectionSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapLevelCollectionSO => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapLevelCollectionSO => ""
     ."BeatmapLevelCollectionSO"
 );
 #[cfg(feature = "BeatmapLevelCollectionSO")]
-impl std::ops::Deref for BeatmapLevelCollectionSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelCollectionSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLevelCollectionSO")]
-impl std::ops::DerefMut for BeatmapLevelCollectionSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelCollectionSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLevelCollectionSO")]
-impl BeatmapLevelCollectionSO {
+impl crate::GlobalNamespace::BeatmapLevelCollectionSO {
     pub fn AddBeatmapLevel(
         &mut self,
-        beatmapLevel: *mut BeatmapLevelSO,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevelSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -58,19 +58,22 @@ impl BeatmapLevelCollectionSO {
     pub fn get_beatmapLevels(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyList_1<*mut BeatmapLevelSO>,
+        *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::BeatmapLevelSO,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut BeatmapLevelSO,
+            *mut crate::GlobalNamespace::BeatmapLevelSO,
         > = __cordl_object.invoke("get_beatmapLevels", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapLevelCollectionSO")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapLevelCollectionSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapLevelCollectionSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

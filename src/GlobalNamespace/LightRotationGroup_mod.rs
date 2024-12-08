@@ -2,35 +2,36 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightRotationGroup {
-    __cordl_parent: LightTransformGroup_3<
-        *mut LightGroupRotationXTransform,
-        *mut LightGroupRotationYTransform,
-        *mut LightGroupRotationZTransform,
+    __cordl_parent: crate::GlobalNamespace::LightTransformGroup_3<
+        *mut crate::GlobalNamespace::LightGroupRotationXTransform,
+        *mut crate::GlobalNamespace::LightGroupRotationYTransform,
+        *mut crate::GlobalNamespace::LightGroupRotationZTransform,
     >,
 }
 #[cfg(feature = "LightRotationGroup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightRotationGroup => ""."LightRotationGroup"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightRotationGroup => ""
+    ."LightRotationGroup"
 );
 #[cfg(feature = "LightRotationGroup")]
-impl std::ops::Deref for LightRotationGroup {
-    type Target = LightTransformGroup_3<
-        *mut LightGroupRotationXTransform,
-        *mut LightGroupRotationYTransform,
-        *mut LightGroupRotationZTransform,
+impl std::ops::Deref for crate::GlobalNamespace::LightRotationGroup {
+    type Target = crate::GlobalNamespace::LightTransformGroup_3<
+        *mut crate::GlobalNamespace::LightGroupRotationXTransform,
+        *mut crate::GlobalNamespace::LightGroupRotationYTransform,
+        *mut crate::GlobalNamespace::LightGroupRotationZTransform,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightRotationGroup")]
-impl std::ops::DerefMut for LightRotationGroup {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightRotationGroup {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightRotationGroup")]
-impl LightRotationGroup {
+impl crate::GlobalNamespace::LightRotationGroup {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -50,7 +51,7 @@ impl LightRotationGroup {
     }
 }
 #[cfg(feature = "LightRotationGroup")]
-impl quest_hook::libil2cpp::ObjectType for LightRotationGroup {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightRotationGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

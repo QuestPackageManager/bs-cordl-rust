@@ -48,10 +48,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::NavigationMoveEvent 
 }
 #[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent")]
 impl crate::UnityEngine::UIElements::NavigationMoveEvent {
-    #[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::NavigationMoveEvent___c;
     #[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent+Direction")]
     pub type Direction = crate::UnityEngine::UIElements::NavigationMoveEvent_Direction;
+    #[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent+__c")]
+    pub type __c = crate::UnityEngine::UIElements::NavigationMoveEvent___c;
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

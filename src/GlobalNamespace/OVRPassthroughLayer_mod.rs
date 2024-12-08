@@ -248,7 +248,7 @@ pub struct OVRPassthroughLayer_ColorLutHandler {
     __cordl_parent: crate::System::Object,
     pub _currentFlipLutY: bool,
     pub _currentColorLutSourceTexture: *mut crate::UnityEngine::Texture2D,
-    pub _Lut_k__BackingField: *mut OVRPassthroughColorLut,
+    pub _Lut_k__BackingField: *mut crate::GlobalNamespace::OVRPassthroughColorLut,
     pub _Weight_k__BackingField: f32,
     pub _IsValid_k__BackingField: bool,
 }
@@ -299,14 +299,16 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
     pub fn GetColorLutForTexture(
         &mut self,
         newTexture: *mut crate::UnityEngine::Texture2D,
-        lut: *mut OVRPassthroughColorLut,
+        lut: *mut crate::GlobalNamespace::OVRPassthroughColorLut,
         lastTexture: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Texture2D>,
         flipY: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut OVRPassthroughColorLut> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::OVRPassthroughColorLut,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut OVRPassthroughColorLut = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::OVRPassthroughColorLut = __cordl_object
             .invoke("GetColorLutForTexture", (newTexture, lut, lastTexture, flipY))?;
         Ok(__cordl_ret)
     }
@@ -319,7 +321,7 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
     }
     pub fn Update_OVRPassthroughColorLut_f32_1(
         &mut self,
-        lut: *mut OVRPassthroughColorLut,
+        lut: *mut crate::GlobalNamespace::OVRPassthroughColorLut,
         weight: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -359,11 +361,13 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
     }
     pub fn get_Lut(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut OVRPassthroughColorLut> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::OVRPassthroughColorLut,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut OVRPassthroughColorLut = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::OVRPassthroughColorLut = __cordl_object
             .invoke("get_Lut", ())?;
         Ok(__cordl_ret)
     }
@@ -387,7 +391,7 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
     }
     pub fn set_Lut(
         &mut self,
-        value: *mut OVRPassthroughColorLut,
+        value: *mut crate::GlobalNamespace::OVRPassthroughColorLut,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -552,7 +556,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler {
 pub struct OVRPassthroughLayer_InterpolatedColorLutHandler {
     __cordl_parent: crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler,
     pub _currentColorLutTargetTexture: *mut crate::UnityEngine::Texture2D,
-    pub _LutTarget_k__BackingField: *mut OVRPassthroughColorLut,
+    pub _LutTarget_k__BackingField: *mut crate::GlobalNamespace::OVRPassthroughColorLut,
 }
 #[cfg(feature = "OVRPassthroughLayer+InterpolatedColorLutHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -609,8 +613,8 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_InterpolatedColorLutHandler {
     }
     pub fn Update_OVRPassthroughColorLut_OVRPassthroughColorLut_f32_1(
         &mut self,
-        lutSource: *mut OVRPassthroughColorLut,
-        lutTarget: *mut OVRPassthroughColorLut,
+        lutSource: *mut crate::GlobalNamespace::OVRPassthroughColorLut,
+        lutTarget: *mut crate::GlobalNamespace::OVRPassthroughColorLut,
         weight: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -643,17 +647,19 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_InterpolatedColorLutHandler {
     }
     pub fn get_LutTarget(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut OVRPassthroughColorLut> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::OVRPassthroughColorLut,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut OVRPassthroughColorLut = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::OVRPassthroughColorLut = __cordl_object
             .invoke("get_LutTarget", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_LutTarget(
         &mut self,
-        value: *mut OVRPassthroughColorLut,
+        value: *mut crate::GlobalNamespace::OVRPassthroughColorLut,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1005,10 +1011,10 @@ pub struct OVRPassthroughLayer {
     pub _lutWeight: f32,
     pub _flipLutY: bool,
     pub _settings: crate::GlobalNamespace::OVRPassthroughLayer_Settings,
-    pub cameraRig: *mut OVRCameraRig,
+    pub cameraRig: *mut crate::GlobalNamespace::OVRCameraRig,
     pub cameraRigInitialized: bool,
     pub auxGameObject: *mut crate::UnityEngine::GameObject,
-    pub passthroughOverlay: *mut OVROverlay,
+    pub passthroughOverlay: *mut crate::GlobalNamespace::OVROverlay,
     pub surfaceGameObjects: *mut crate::System::Collections::Generic::Dictionary_2<
         *mut crate::UnityEngine::GameObject,
         crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance,
@@ -1028,57 +1034,58 @@ pub struct OVRPassthroughLayer {
 }
 #[cfg(feature = "OVRPassthroughLayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRPassthroughLayer => ""."OVRPassthroughLayer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRPassthroughLayer => ""
+    ."OVRPassthroughLayer"
 );
 #[cfg(feature = "OVRPassthroughLayer")]
-impl std::ops::Deref for OVRPassthroughLayer {
+impl std::ops::Deref for crate::GlobalNamespace::OVRPassthroughLayer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRPassthroughLayer")]
-impl std::ops::DerefMut for OVRPassthroughLayer {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPassthroughLayer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRPassthroughLayer")]
-impl OVRPassthroughLayer {
-    #[cfg(feature = "OVRPassthroughLayer+ColorMapEditorType")]
-    pub type ColorMapEditorType = crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType;
-    #[cfg(feature = "OVRPassthroughLayer+__c__DisplayClass10_0")]
-    pub type __c__DisplayClass10_0 = crate::GlobalNamespace::OVRPassthroughLayer___c__DisplayClass10_0;
-    #[cfg(feature = "OVRPassthroughLayer+__c__DisplayClass9_0")]
-    pub type __c__DisplayClass9_0 = crate::GlobalNamespace::OVRPassthroughLayer___c__DisplayClass9_0;
-    #[cfg(feature = "OVRPassthroughLayer+ProjectionSurfaceType")]
-    pub type ProjectionSurfaceType = crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType;
-    #[cfg(feature = "OVRPassthroughLayer+MonoToMonoStyleHandler")]
-    pub type MonoToMonoStyleHandler = crate::GlobalNamespace::OVRPassthroughLayer_MonoToMonoStyleHandler;
-    #[cfg(feature = "OVRPassthroughLayer+MonoToRgbaStyleHandler")]
-    pub type MonoToRgbaStyleHandler = crate::GlobalNamespace::OVRPassthroughLayer_MonoToRgbaStyleHandler;
-    #[cfg(feature = "OVRPassthroughLayer+Settings")]
-    pub type Settings = crate::GlobalNamespace::OVRPassthroughLayer_Settings;
-    #[cfg(feature = "OVRPassthroughLayer+NoneStyleHandler")]
-    pub type NoneStyleHandler = crate::GlobalNamespace::OVRPassthroughLayer_NoneStyleHandler;
-    #[cfg(feature = "OVRPassthroughLayer+ColorLutHandler")]
-    pub type ColorLutHandler = crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler;
+impl crate::GlobalNamespace::OVRPassthroughLayer {
     #[cfg(feature = "OVRPassthroughLayer+BCSStyleHandler")]
     pub type BCSStyleHandler = crate::GlobalNamespace::OVRPassthroughLayer_BCSStyleHandler;
-    #[cfg(feature = "OVRPassthroughLayer+PassthroughMeshInstance")]
-    pub type PassthroughMeshInstance = crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance;
-    #[cfg(feature = "OVRPassthroughLayer+SerializedSurfaceGeometry")]
-    pub type SerializedSurfaceGeometry = crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry;
     #[cfg(feature = "OVRPassthroughLayer+BaseGeneratedStyleHandler")]
     pub type BaseGeneratedStyleHandler = crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler;
+    #[cfg(feature = "OVRPassthroughLayer+ColorLutHandler")]
+    pub type ColorLutHandler = crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler;
+    #[cfg(feature = "OVRPassthroughLayer+ColorMapEditorType")]
+    pub type ColorMapEditorType = crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType;
     #[cfg(feature = "OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
     pub type DeferredPassthroughMeshAddition = crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition;
-    #[cfg(feature = "OVRPassthroughLayer+StylesHandler")]
-    pub type StylesHandler = crate::GlobalNamespace::OVRPassthroughLayer_StylesHandler;
     #[cfg(feature = "OVRPassthroughLayer+IStyleHandler")]
     type IStyleHandler = crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler;
     #[cfg(feature = "OVRPassthroughLayer+InterpolatedColorLutHandler")]
     pub type InterpolatedColorLutHandler = crate::GlobalNamespace::OVRPassthroughLayer_InterpolatedColorLutHandler;
+    #[cfg(feature = "OVRPassthroughLayer+MonoToMonoStyleHandler")]
+    pub type MonoToMonoStyleHandler = crate::GlobalNamespace::OVRPassthroughLayer_MonoToMonoStyleHandler;
+    #[cfg(feature = "OVRPassthroughLayer+MonoToRgbaStyleHandler")]
+    pub type MonoToRgbaStyleHandler = crate::GlobalNamespace::OVRPassthroughLayer_MonoToRgbaStyleHandler;
+    #[cfg(feature = "OVRPassthroughLayer+NoneStyleHandler")]
+    pub type NoneStyleHandler = crate::GlobalNamespace::OVRPassthroughLayer_NoneStyleHandler;
+    #[cfg(feature = "OVRPassthroughLayer+PassthroughMeshInstance")]
+    pub type PassthroughMeshInstance = crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance;
+    #[cfg(feature = "OVRPassthroughLayer+ProjectionSurfaceType")]
+    pub type ProjectionSurfaceType = crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType;
+    #[cfg(feature = "OVRPassthroughLayer+SerializedSurfaceGeometry")]
+    pub type SerializedSurfaceGeometry = crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry;
+    #[cfg(feature = "OVRPassthroughLayer+Settings")]
+    pub type Settings = crate::GlobalNamespace::OVRPassthroughLayer_Settings;
+    #[cfg(feature = "OVRPassthroughLayer+StylesHandler")]
+    pub type StylesHandler = crate::GlobalNamespace::OVRPassthroughLayer_StylesHandler;
+    #[cfg(feature = "OVRPassthroughLayer+__c__DisplayClass10_0")]
+    pub type __c__DisplayClass10_0 = crate::GlobalNamespace::OVRPassthroughLayer___c__DisplayClass10_0;
+    #[cfg(feature = "OVRPassthroughLayer+__c__DisplayClass9_0")]
+    pub type __c__DisplayClass9_0 = crate::GlobalNamespace::OVRPassthroughLayer___c__DisplayClass9_0;
     pub fn AddDeferredSurfaceGeometries(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1265,8 +1272,8 @@ impl OVRPassthroughLayer {
     }
     pub fn SetColorLut_OVRPassthroughColorLut_f32_1(
         &mut self,
-        lutSource: *mut OVRPassthroughColorLut,
-        lutTarget: *mut OVRPassthroughColorLut,
+        lutSource: *mut crate::GlobalNamespace::OVRPassthroughColorLut,
+        lutTarget: *mut crate::GlobalNamespace::OVRPassthroughColorLut,
         weight: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1278,7 +1285,7 @@ impl OVRPassthroughLayer {
     }
     pub fn SetColorLut_f32_0(
         &mut self,
-        lut: *mut OVRPassthroughColorLut,
+        lut: *mut crate::GlobalNamespace::OVRPassthroughColorLut,
         weight: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1493,7 +1500,7 @@ impl OVRPassthroughLayer {
     }
 }
 #[cfg(feature = "OVRPassthroughLayer")]
-impl quest_hook::libil2cpp::ObjectType for OVRPassthroughLayer {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPassthroughLayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1688,7 +1695,7 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_StylesHandler {
     }
     pub fn SetColorLutHandler(
         &mut self,
-        lut: *mut OVRPassthroughColorLut,
+        lut: *mut crate::GlobalNamespace::OVRPassthroughColorLut,
         weight: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1700,8 +1707,8 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_StylesHandler {
     }
     pub fn SetInterpolatedColorLutHandler(
         &mut self,
-        lutSource: *mut OVRPassthroughColorLut,
-        lutTarget: *mut OVRPassthroughColorLut,
+        lutSource: *mut crate::GlobalNamespace::OVRPassthroughColorLut,
+        lutTarget: *mut crate::GlobalNamespace::OVRPassthroughColorLut,
         weight: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

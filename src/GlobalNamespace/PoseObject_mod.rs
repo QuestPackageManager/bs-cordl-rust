@@ -4,30 +4,30 @@
 pub struct PoseObject {
     __cordl_parent: crate::System::Object,
     pub _transform: *mut crate::UnityEngine::Transform,
-    pub _poseObjectId: *mut PoseObjectIdSO,
+    pub _poseObjectId: *mut crate::GlobalNamespace::PoseObjectIdSO,
 }
 #[cfg(feature = "PoseObject")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PoseObject => ""."PoseObject"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PoseObject => ""."PoseObject"
 );
 #[cfg(feature = "PoseObject")]
-impl std::ops::Deref for PoseObject {
+impl std::ops::Deref for crate::GlobalNamespace::PoseObject {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PoseObject")]
-impl std::ops::DerefMut for PoseObject {
+impl std::ops::DerefMut for crate::GlobalNamespace::PoseObject {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PoseObject")]
-impl PoseObject {
+impl crate::GlobalNamespace::PoseObject {
     pub fn New(
         transform: *mut crate::UnityEngine::Transform,
-        poseObjectId: *mut PoseObjectIdSO,
+        poseObjectId: *mut crate::GlobalNamespace::PoseObjectIdSO,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -38,7 +38,7 @@ impl PoseObject {
     pub fn _ctor(
         &mut self,
         transform: *mut crate::UnityEngine::Transform,
-        poseObjectId: *mut PoseObjectIdSO,
+        poseObjectId: *mut crate::GlobalNamespace::PoseObjectIdSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -69,7 +69,7 @@ impl PoseObject {
     }
 }
 #[cfg(feature = "PoseObject")]
-impl quest_hook::libil2cpp::ObjectType for PoseObject {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PoseObject {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

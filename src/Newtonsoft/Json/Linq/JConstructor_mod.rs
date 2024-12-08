@@ -28,10 +28,10 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JConstructor {
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JConstructor")]
 impl crate::Newtonsoft::Json::Linq::JConstructor {
-    #[cfg(feature = "Newtonsoft+Json+Linq+JConstructor+_WriteToAsync_d__0")]
-    pub type _WriteToAsync_d__0 = crate::Newtonsoft::Json::Linq::JConstructor__WriteToAsync_d__0;
     #[cfg(feature = "Newtonsoft+Json+Linq+JConstructor+_LoadAsync_d__2")]
     pub type _LoadAsync_d__2 = crate::Newtonsoft::Json::Linq::JConstructor__LoadAsync_d__2;
+    #[cfg(feature = "Newtonsoft+Json+Linq+JConstructor+_WriteToAsync_d__0")]
+    pub type _WriteToAsync_d__0 = crate::Newtonsoft::Json::Linq::JConstructor__WriteToAsync_d__0;
     pub fn CloneToken(
         &mut self,
         settings: *mut crate::Newtonsoft::Json::Linq::JsonCloneSettings,

@@ -12,23 +12,24 @@ pub struct SimpleTemporalFiltering {
 }
 #[cfg(feature = "SimpleTemporalFiltering")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SimpleTemporalFiltering => ""."SimpleTemporalFiltering"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SimpleTemporalFiltering => ""
+    ."SimpleTemporalFiltering"
 );
 #[cfg(feature = "SimpleTemporalFiltering")]
-impl std::ops::Deref for SimpleTemporalFiltering {
+impl std::ops::Deref for crate::GlobalNamespace::SimpleTemporalFiltering {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SimpleTemporalFiltering")]
-impl std::ops::DerefMut for SimpleTemporalFiltering {
+impl std::ops::DerefMut for crate::GlobalNamespace::SimpleTemporalFiltering {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SimpleTemporalFiltering")]
-impl SimpleTemporalFiltering {
+impl crate::GlobalNamespace::SimpleTemporalFiltering {
     pub fn CreateRenderTexturesIfNeeded(
         &mut self,
         width: i32,
@@ -71,7 +72,8 @@ impl SimpleTemporalFiltering {
     }
 }
 #[cfg(feature = "SimpleTemporalFiltering")]
-impl quest_hook::libil2cpp::ObjectType for SimpleTemporalFiltering {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SimpleTemporalFiltering {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

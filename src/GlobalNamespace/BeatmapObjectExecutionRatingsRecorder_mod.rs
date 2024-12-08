@@ -3,40 +3,42 @@
 #[derive(Debug)]
 pub struct BeatmapObjectExecutionRatingsRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _scoreController: *mut IScoreController,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
-    pub _playerHeadAndObstacleInteraction: *mut PlayerHeadAndObstacleInteraction,
-    pub _audioTimeSyncController: *mut AudioTimeSyncController,
+    pub _scoreController: *mut crate::GlobalNamespace::IScoreController,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
+    pub _playerHeadAndObstacleInteraction: *mut crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
     pub _beatmapObjectExecutionRatings: *mut crate::System::Collections::Generic::List_1<
-        *mut BeatmapObjectExecutionRating,
+        *mut crate::GlobalNamespace::BeatmapObjectExecutionRating,
     >,
     pub _hitObstacles: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut ObstacleController,
+        *mut crate::GlobalNamespace::ObstacleController,
     >,
 }
 #[cfg(feature = "BeatmapObjectExecutionRatingsRecorder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapObjectExecutionRatingsRecorder => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder => ""
     ."BeatmapObjectExecutionRatingsRecorder"
 );
 #[cfg(feature = "BeatmapObjectExecutionRatingsRecorder")]
-impl std::ops::Deref for BeatmapObjectExecutionRatingsRecorder {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapObjectExecutionRatingsRecorder")]
-impl std::ops::DerefMut for BeatmapObjectExecutionRatingsRecorder {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapObjectExecutionRatingsRecorder")]
-impl BeatmapObjectExecutionRatingsRecorder {
+impl crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder {
     pub fn HandleObstacleDidPassAvoidedMark(
         &mut self,
-        obstacleController: *mut ObstacleController,
+        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -47,7 +49,7 @@ impl BeatmapObjectExecutionRatingsRecorder {
     }
     pub fn HandlePlayerHeadDidEnterObstacle(
         &mut self,
-        obstacleController: *mut ObstacleController,
+        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -58,7 +60,7 @@ impl BeatmapObjectExecutionRatingsRecorder {
     }
     pub fn HandleScoringForNoteDidFinish(
         &mut self,
-        scoringElement: *mut ScoringElement,
+        scoringElement: *mut crate::GlobalNamespace::ScoringElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -108,20 +110,21 @@ impl BeatmapObjectExecutionRatingsRecorder {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::List_1<
-            *mut BeatmapObjectExecutionRating,
+            *mut crate::GlobalNamespace::BeatmapObjectExecutionRating,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut BeatmapObjectExecutionRating,
+            *mut crate::GlobalNamespace::BeatmapObjectExecutionRating,
         > = __cordl_object.invoke("get_beatmapObjectExecutionRatings", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapObjectExecutionRatingsRecorder")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapObjectExecutionRatingsRecorder {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

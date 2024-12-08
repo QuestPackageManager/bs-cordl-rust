@@ -4,61 +4,62 @@
 pub struct MultiplayerController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _loadingEnvironment: *mut crate::UnityEngine::GameObject,
-    pub _multiplayerLevelSceneSetupData: *mut MultiplayerLevelScenesTransitionSetupDataSO,
-    pub _gameScenesManager: *mut GameScenesManager,
-    pub _playersManager: *mut MultiplayerPlayersManager,
-    pub _sceneStartSyncController: *mut SceneStartSyncController,
-    pub _songStartSyncController: *mut SongStartSyncController,
-    pub _multiplayerLevelFinishedController: *mut MultiplayerLevelFinishedController,
-    pub _fadeInOutController: *mut FadeInOutController,
-    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
-    pub _introAnimationController: *mut MultiplayerIntroAnimationController,
-    pub _outroAnimationController: *mut MultiplayerOutroAnimationController,
-    pub _menuRpcManager: *mut IMenuRpcManager,
-    pub _gameplayRpcManager: *mut IGameplayRpcManager,
-    pub _sceneSetupData: *mut GameplayCoreSceneSetupData,
+    pub _multiplayerLevelSceneSetupData: *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
+    pub _playersManager: *mut crate::GlobalNamespace::MultiplayerPlayersManager,
+    pub _sceneStartSyncController: *mut crate::GlobalNamespace::SceneStartSyncController,
+    pub _songStartSyncController: *mut crate::GlobalNamespace::SongStartSyncController,
+    pub _multiplayerLevelFinishedController: *mut crate::GlobalNamespace::MultiplayerLevelFinishedController,
+    pub _fadeInOutController: *mut crate::GlobalNamespace::FadeInOutController,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _introAnimationController: *mut crate::GlobalNamespace::MultiplayerIntroAnimationController,
+    pub _outroAnimationController: *mut crate::GlobalNamespace::MultiplayerOutroAnimationController,
+    pub _menuRpcManager: *mut crate::GlobalNamespace::IMenuRpcManager,
+    pub _gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
+    pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
     pub _diContainer: *mut crate::Zenject::DiContainer,
-    pub _badgesProvider: *mut MultiplayerBadgesProvider,
+    pub _badgesProvider: *mut crate::GlobalNamespace::MultiplayerBadgesProvider,
     pub stateChangedEvent: *mut crate::System::Action_1<
         crate::GlobalNamespace::MultiplayerController_State,
     >,
     pub _startTime: f32,
-    pub _localPlayerSyncStartState: MultiplayerPlayerStartState,
+    pub _localPlayerSyncStartState: crate::GlobalNamespace::MultiplayerPlayerStartState,
     pub _state: crate::GlobalNamespace::MultiplayerController_State,
     pub _sessionGameId: *mut crate::System::String,
-    pub _resultsData: *mut MultiplayerResultsData,
-    pub _playersSpecificSettingsAtGameStartModel: *mut PlayersSpecificSettingsAtGameStartModel,
+    pub _resultsData: *mut crate::GlobalNamespace::MultiplayerResultsData,
+    pub _playersSpecificSettingsAtGameStartModel: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
     pub _timeoutGetGameStateCoroutine: *mut crate::UnityEngine::Coroutine,
 }
 #[cfg(feature = "MultiplayerController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerController => ""."MultiplayerController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerController => ""
+    ."MultiplayerController"
 );
 #[cfg(feature = "MultiplayerController")]
-impl std::ops::Deref for MultiplayerController {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerController")]
-impl std::ops::DerefMut for MultiplayerController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerController")]
-impl MultiplayerController {
+impl crate::GlobalNamespace::MultiplayerController {
     pub const kDisconnectWaitForInitTimeSeconds: f32 = 0.5f32;
     pub const kGetMultiplayerGameStateTimeoutSeconds: f32 = 20f32;
     pub const kMinAnimationDurationPercentage: f32 = 0.75f32;
     pub const kSongTimeToSongStartSyncTimeOffsetMs: i64 = -600i64;
-    #[cfg(feature = "MultiplayerController+__c")]
-    pub type __c = crate::GlobalNamespace::MultiplayerController___c;
     #[cfg(feature = "MultiplayerController+State")]
     pub type State = crate::GlobalNamespace::MultiplayerController_State;
     #[cfg(feature = "MultiplayerController+_PerformSongStartSync_d__39")]
     pub type _PerformSongStartSync_d__39 = crate::GlobalNamespace::MultiplayerController__PerformSongStartSync_d__39;
+    #[cfg(feature = "MultiplayerController+__c")]
+    pub type __c = crate::GlobalNamespace::MultiplayerController___c;
     #[cfg(feature = "MultiplayerController+__c__DisplayClass45_0")]
     pub type __c__DisplayClass45_0 = crate::GlobalNamespace::MultiplayerController___c__DisplayClass45_0;
     pub fn ChangeState(
@@ -84,10 +85,10 @@ impl MultiplayerController {
     }
     pub fn EndGameplay(
         &mut self,
-        localPlayerResults: *mut MultiplayerLevelCompletionResults,
+        localPlayerResults: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         otherPlayerResults: *mut crate::System::Collections::Generic::Dictionary_2<
             *mut crate::System::String,
-            *mut MultiplayerLevelCompletionResults,
+            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -121,10 +122,10 @@ impl MultiplayerController {
     }
     pub fn HandleAllResultsCollected(
         &mut self,
-        localPlayerResults: *mut MultiplayerLevelCompletionResults,
+        localPlayerResults: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         otherPlayerResults: *mut crate::System::Collections::Generic::Dictionary_2<
             *mut crate::System::String,
-            *mut MultiplayerLevelCompletionResults,
+            *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -149,7 +150,7 @@ impl MultiplayerController {
     }
     pub fn HandleDisconnected(
         &mut self,
-        disconnectedReason: DisconnectedReason,
+        disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -240,7 +241,7 @@ impl MultiplayerController {
     pub fn HandleSetMultiplayerGameState(
         &mut self,
         userId: *mut crate::System::String,
-        gameState: MultiplayerGameState,
+        gameState: crate::GlobalNamespace::MultiplayerGameState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -306,7 +307,7 @@ impl MultiplayerController {
     }
     pub fn PerformSongStartSync(
         &mut self,
-        localPlayerSyncState: MultiplayerPlayerStartState,
+        localPlayerSyncState: crate::GlobalNamespace::MultiplayerPlayerStartState,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -396,7 +397,8 @@ impl MultiplayerController {
     }
 }
 #[cfg(feature = "MultiplayerController")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

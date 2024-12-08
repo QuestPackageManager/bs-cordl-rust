@@ -2,27 +2,27 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatSO {
-    __cordl_parent: ObservableVariableSO_1<f32>,
+    __cordl_parent: crate::GlobalNamespace::ObservableVariableSO_1<f32>,
 }
 #[cfg(feature = "FloatSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FloatSO => ""."FloatSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FloatSO => ""."FloatSO"
 );
 #[cfg(feature = "FloatSO")]
-impl std::ops::Deref for FloatSO {
-    type Target = ObservableVariableSO_1<f32>;
+impl std::ops::Deref for crate::GlobalNamespace::FloatSO {
+    type Target = crate::GlobalNamespace::ObservableVariableSO_1<f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatSO")]
-impl std::ops::DerefMut for FloatSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::FloatSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatSO")]
-impl FloatSO {
+impl crate::GlobalNamespace::FloatSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,7 +42,7 @@ impl FloatSO {
     }
 }
 #[cfg(feature = "FloatSO")]
-impl quest_hook::libil2cpp::ObjectType for FloatSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FloatSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

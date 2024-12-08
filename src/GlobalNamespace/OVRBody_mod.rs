@@ -16,23 +16,23 @@ pub struct OVRBody {
 }
 #[cfg(feature = "OVRBody")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRBody => ""."OVRBody"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRBody => ""."OVRBody"
 );
 #[cfg(feature = "OVRBody")]
-impl std::ops::Deref for OVRBody {
+impl std::ops::Deref for crate::GlobalNamespace::OVRBody {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRBody")]
-impl std::ops::DerefMut for OVRBody {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRBody {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRBody")]
-impl OVRBody {
+impl crate::GlobalNamespace::OVRBody {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -193,7 +193,7 @@ impl OVRBody {
     }
 }
 #[cfg(feature = "OVRBody")]
-impl quest_hook::libil2cpp::ObjectType for OVRBody {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRBody {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

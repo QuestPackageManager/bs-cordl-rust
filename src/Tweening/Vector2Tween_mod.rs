@@ -47,7 +47,7 @@ impl crate::Tweening::Vector2Tween {
         toValue: crate::UnityEngine::Vector2,
         onUpdate: *mut crate::System::Action_1<crate::UnityEngine::Vector2>,
         duration: f32,
-        easeType: EaseType,
+        easeType: crate::GlobalNamespace::EaseType,
         delay: f32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -75,7 +75,7 @@ impl crate::Tweening::Vector2Tween {
         toValue: crate::UnityEngine::Vector2,
         onUpdate: *mut crate::System::Action_1<crate::UnityEngine::Vector2>,
         duration: f32,
-        easeType: EaseType,
+        easeType: crate::GlobalNamespace::EaseType,
         delay: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

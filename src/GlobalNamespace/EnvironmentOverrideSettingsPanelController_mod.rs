@@ -5,10 +5,10 @@ pub struct EnvironmentOverrideSettingsPanelController_Elements {
     __cordl_parent: crate::System::Object,
     pub label: *mut crate::TMPro::TextMeshProUGUI,
     pub simpleTextDropdown: *mut crate::HMUI::SimpleTextDropdown,
-    pub environmentType: EnvironmentType,
+    pub environmentType: crate::GlobalNamespace::EnvironmentType,
     pub localizationKey: *mut crate::System::String,
     pub _environmentInfos_k__BackingField: *mut crate::System::Collections::Generic::List_1<
-        *mut EnvironmentInfoSO,
+        *mut crate::GlobalNamespace::EnvironmentInfoSO,
     >,
 }
 #[cfg(feature = "EnvironmentOverrideSettingsPanelController+Elements")]
@@ -54,19 +54,23 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements
     pub fn get_environmentInfos(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<*mut EnvironmentInfoSO>,
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut EnvironmentInfoSO,
+            *mut crate::GlobalNamespace::EnvironmentInfoSO,
         > = __cordl_object.invoke("get_environmentInfos", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_environmentInfos(
         &mut self,
-        value: *mut crate::System::Collections::Generic::List_1<*mut EnvironmentInfoSO>,
+        value: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::EnvironmentInfoSO,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -98,35 +102,38 @@ pub struct EnvironmentOverrideSettingsPanelController {
     >,
     pub _presentPanelAnimation: *mut crate::HMUI::PanelAnimationSO,
     pub _dismissPanelAnimation: *mut crate::HMUI::PanelAnimationSO,
-    pub _environmentListModel: *mut EnvironmentsListModel,
-    pub _analyticsModel: *mut IAnalyticsModel,
-    pub _overrideEnvironmentSettings: *mut OverrideEnvironmentSettings,
+    pub _environmentListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
+    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
+    pub _overrideEnvironmentSettings: *mut crate::GlobalNamespace::OverrideEnvironmentSettings,
     pub _initialized: bool,
 }
 #[cfg(feature = "EnvironmentOverrideSettingsPanelController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnvironmentOverrideSettingsPanelController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::EnvironmentOverrideSettingsPanelController => ""
     ."EnvironmentOverrideSettingsPanelController"
 );
 #[cfg(feature = "EnvironmentOverrideSettingsPanelController")]
-impl std::ops::Deref for EnvironmentOverrideSettingsPanelController {
+impl std::ops::Deref
+for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentOverrideSettingsPanelController")]
-impl std::ops::DerefMut for EnvironmentOverrideSettingsPanelController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentOverrideSettingsPanelController")]
-impl EnvironmentOverrideSettingsPanelController {
-    #[cfg(feature = "EnvironmentOverrideSettingsPanelController+__c")]
-    pub type __c = crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController___c;
+impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
     #[cfg(feature = "EnvironmentOverrideSettingsPanelController+Elements")]
     pub type Elements = crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements;
+    #[cfg(feature = "EnvironmentOverrideSettingsPanelController+__c")]
+    pub type __c = crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController___c;
     pub fn HandleDropDownDidSelectCellWithIdx(
         &mut self,
         dropDownWithTableView: *mut crate::HMUI::DropdownWithTableView,
@@ -179,7 +186,7 @@ impl EnvironmentOverrideSettingsPanelController {
     }
     pub fn SetData(
         &mut self,
-        overrideEnvironmentSettings: *mut OverrideEnvironmentSettings,
+        overrideEnvironmentSettings: *mut crate::GlobalNamespace::OverrideEnvironmentSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -210,17 +217,20 @@ impl EnvironmentOverrideSettingsPanelController {
     }
     pub fn get_overrideEnvironmentSettings(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut OverrideEnvironmentSettings> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::OverrideEnvironmentSettings,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut OverrideEnvironmentSettings = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::OverrideEnvironmentSettings = __cordl_object
             .invoke("get_overrideEnvironmentSettings", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "EnvironmentOverrideSettingsPanelController")]
-impl quest_hook::libil2cpp::ObjectType for EnvironmentOverrideSettingsPanelController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

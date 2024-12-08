@@ -2,30 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DirectionalLightWithIds {
-    __cordl_parent: RuntimeLightWithIds,
-    pub _directionalLight: *mut DirectionalLight,
+    __cordl_parent: crate::GlobalNamespace::RuntimeLightWithIds,
+    pub _directionalLight: *mut crate::GlobalNamespace::DirectionalLight,
     pub _setIntensityOnly: bool,
     pub _defaultColor: crate::UnityEngine::Color,
 }
 #[cfg(feature = "DirectionalLightWithIds")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for DirectionalLightWithIds => ""."DirectionalLightWithIds"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::DirectionalLightWithIds => ""
+    ."DirectionalLightWithIds"
 );
 #[cfg(feature = "DirectionalLightWithIds")]
-impl std::ops::Deref for DirectionalLightWithIds {
-    type Target = RuntimeLightWithIds;
+impl std::ops::Deref for crate::GlobalNamespace::DirectionalLightWithIds {
+    type Target = crate::GlobalNamespace::RuntimeLightWithIds;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DirectionalLightWithIds")]
-impl std::ops::DerefMut for DirectionalLightWithIds {
+impl std::ops::DerefMut for crate::GlobalNamespace::DirectionalLightWithIds {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "DirectionalLightWithIds")]
-impl DirectionalLightWithIds {
+impl crate::GlobalNamespace::DirectionalLightWithIds {
     pub fn ColorWasSet(
         &mut self,
         color: crate::UnityEngine::Color,
@@ -56,7 +57,8 @@ impl DirectionalLightWithIds {
     }
 }
 #[cfg(feature = "DirectionalLightWithIds")]
-impl quest_hook::libil2cpp::ObjectType for DirectionalLightWithIds {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::DirectionalLightWithIds {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

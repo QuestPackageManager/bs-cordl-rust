@@ -4,7 +4,7 @@
 pub struct SaveDataHandler_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Object,
     pub _state_k__BackingField: crate::BGLib::SaveDataCore::LoaderState,
-    pub _fileStorage: *mut IFileStorage,
+    pub _fileStorage: *mut crate::GlobalNamespace::IFileStorage,
     pub _loadFileTask: *mut crate::System::Threading::Tasks::Task_1<
         crate::BGLib::SaveDataCore::SaveDataResult,
     >,
@@ -34,20 +34,20 @@ for crate::BGLib::SaveDataCore::SaveDataHandler_1<T> {
 }
 #[cfg(feature = "BGLib+SaveDataCore+SaveDataHandler_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::BGLib::SaveDataCore::SaveDataHandler_1<T> {
-    #[cfg(feature = "BGLib+SaveDataCore+SaveDataHandler_1+_ResetChangesAsync_d__25")]
-    pub type _ResetChangesAsync_d__25 = crate::BGLib::SaveDataCore::SaveDataHandler_1__ResetChangesAsync_d__25<
+    #[cfg(feature = "BGLib+SaveDataCore+SaveDataHandler_1+_InternalLoadAsync_d__26")]
+    pub type _InternalLoadAsync_d__26 = crate::BGLib::SaveDataCore::SaveDataHandler_1__InternalLoadAsync_d__26<
         T,
     >;
     #[cfg(feature = "BGLib+SaveDataCore+SaveDataHandler_1+_LoadAsync_d__22")]
     pub type _LoadAsync_d__22 = crate::BGLib::SaveDataCore::SaveDataHandler_1__LoadAsync_d__22<
         T,
     >;
-    #[cfg(feature = "BGLib+SaveDataCore+SaveDataHandler_1+_SaveAsync_d__24")]
-    pub type _SaveAsync_d__24 = crate::BGLib::SaveDataCore::SaveDataHandler_1__SaveAsync_d__24<
+    #[cfg(feature = "BGLib+SaveDataCore+SaveDataHandler_1+_ResetChangesAsync_d__25")]
+    pub type _ResetChangesAsync_d__25 = crate::BGLib::SaveDataCore::SaveDataHandler_1__ResetChangesAsync_d__25<
         T,
     >;
-    #[cfg(feature = "BGLib+SaveDataCore+SaveDataHandler_1+_InternalLoadAsync_d__26")]
-    pub type _InternalLoadAsync_d__26 = crate::BGLib::SaveDataCore::SaveDataHandler_1__InternalLoadAsync_d__26<
+    #[cfg(feature = "BGLib+SaveDataCore+SaveDataHandler_1+_SaveAsync_d__24")]
+    pub type _SaveAsync_d__24 = crate::BGLib::SaveDataCore::SaveDataHandler_1__SaveAsync_d__24<
         T,
     >;
     pub fn BGLib_SaveDataCore_ISaveDataHandler_get_instance(
@@ -147,7 +147,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BGLib::SaveDataCore::SaveDataHandler
         Ok(__cordl_ret)
     }
     pub fn New_IFileStorage0(
-        fileStorage: *mut IFileStorage,
+        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -156,7 +156,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BGLib::SaveDataCore::SaveDataHandler
         Ok(__cordl_object)
     }
     pub fn New_T1(
-        fileStorage: *mut IFileStorage,
+        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
         instance: T,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -250,7 +250,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BGLib::SaveDataCore::SaveDataHandler
     }
     pub fn _ctor_IFileStorage0(
         &mut self,
-        fileStorage: *mut IFileStorage,
+        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -265,7 +265,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BGLib::SaveDataCore::SaveDataHandler
     }
     pub fn _ctor_T1(
         &mut self,
-        fileStorage: *mut IFileStorage,
+        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
         instance: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -320,7 +320,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BGLib::SaveDataCore::SaveDataHandler
     }
     pub fn get_preferredStorageLocation(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<StoragePreference>
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::StoragePreference>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -328,7 +328,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BGLib::SaveDataCore::SaveDataHandler
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: StoragePreference = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::StoragePreference = __cordl_object
             .invoke("get_preferredStorageLocation", ())?;
         Ok(__cordl_ret)
     }

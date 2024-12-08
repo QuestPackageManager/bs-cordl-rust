@@ -5,29 +5,29 @@ pub struct GameServerLobbyFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
     pub _screenMode: *mut crate::HMUI::ScreenModeSO,
     pub _ambienceAudioClip: *mut crate::UnityEngine::AudioClip,
-    pub _serverPlayerListViewController: *mut ServerPlayerListViewController,
-    pub _selectModifiersViewController: *mut SelectModifiersViewController,
-    pub _multiplayerLevelSelectionFlowCoordinator: *mut MultiplayerLevelSelectionFlowCoordinator,
-    pub _multiplayerResultsViewController: *mut MultiplayerResultsViewController,
-    pub _simpleDialogPromptViewController: *mut SimpleDialogPromptViewController,
-    pub _connectionErrorDialogViewController: *mut ConnectionErrorDialogViewController,
-    pub _multiplayerSettingsPanelController: *mut MultiplayerSettingsPanelController,
-    pub _gameplaySetupViewController: *mut GameplaySetupViewController,
-    pub _multiplayerLobbyController: *mut MultiplayerLobbyController,
-    pub _fadeInOutController: *mut FadeInOutController,
-    pub _centerStageScreenController: *mut CenterStageScreenController,
-    pub _lobbyStateDataModel: *mut ILobbyStateDataModel,
-    pub _lobbyGameStateModel: *mut LobbyGameStateModel,
-    pub _lobbyPlayersDataModel: *mut ILobbyPlayersDataModel,
-    pub _lobbyGameStateController: *mut ILobbyGameStateController,
-    pub _lobbyPlayerPermissionsModel: *mut LobbyPlayerPermissionsModel,
-    pub _lobbySetupViewController: *mut LobbySetupViewController,
-    pub _unifiedNetworkPlayerModel: *mut IUnifiedNetworkPlayerModel,
+    pub _serverPlayerListViewController: *mut crate::GlobalNamespace::ServerPlayerListViewController,
+    pub _selectModifiersViewController: *mut crate::GlobalNamespace::SelectModifiersViewController,
+    pub _multiplayerLevelSelectionFlowCoordinator: *mut crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator,
+    pub _multiplayerResultsViewController: *mut crate::GlobalNamespace::MultiplayerResultsViewController,
+    pub _simpleDialogPromptViewController: *mut crate::GlobalNamespace::SimpleDialogPromptViewController,
+    pub _connectionErrorDialogViewController: *mut crate::GlobalNamespace::ConnectionErrorDialogViewController,
+    pub _multiplayerSettingsPanelController: *mut crate::GlobalNamespace::MultiplayerSettingsPanelController,
+    pub _gameplaySetupViewController: *mut crate::GlobalNamespace::GameplaySetupViewController,
+    pub _multiplayerLobbyController: *mut crate::GlobalNamespace::MultiplayerLobbyController,
+    pub _fadeInOutController: *mut crate::GlobalNamespace::FadeInOutController,
+    pub _centerStageScreenController: *mut crate::GlobalNamespace::CenterStageScreenController,
+    pub _lobbyStateDataModel: *mut crate::GlobalNamespace::ILobbyStateDataModel,
+    pub _lobbyGameStateModel: *mut crate::GlobalNamespace::LobbyGameStateModel,
+    pub _lobbyPlayersDataModel: *mut crate::GlobalNamespace::ILobbyPlayersDataModel,
+    pub _lobbyGameStateController: *mut crate::GlobalNamespace::ILobbyGameStateController,
+    pub _lobbyPlayerPermissionsModel: *mut crate::GlobalNamespace::LobbyPlayerPermissionsModel,
+    pub _lobbySetupViewController: *mut crate::GlobalNamespace::LobbySetupViewController,
+    pub _unifiedNetworkPlayerModel: *mut crate::GlobalNamespace::IUnifiedNetworkPlayerModel,
     pub _screenModeController: *mut crate::HMUI::ScreenModeController,
-    pub _playerDataModel: *mut PlayerDataModel,
-    pub _platformLeaderboardsModel: *mut PlatformLeaderboardsModel,
-    pub _songPreviewPlayer: *mut SongPreviewPlayer,
-    pub _analyticsModel: *mut IAnalyticsModel,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _platformLeaderboardsModel: *mut crate::GlobalNamespace::PlatformLeaderboardsModel,
+    pub _songPreviewPlayer: *mut crate::GlobalNamespace::SongPreviewPlayer,
+    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
     pub _lastSimpleLevelSelectionFlowCoordinatorState: *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
     pub _isAlreadyFinishing: bool,
     pub _missingEntitlementsStringBuilder: *mut crate::System::Text::StringBuilder,
@@ -44,32 +44,32 @@ pub struct GameServerLobbyFlowCoordinator {
 }
 #[cfg(feature = "GameServerLobbyFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameServerLobbyFlowCoordinator => ""
-    ."GameServerLobbyFlowCoordinator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameServerLobbyFlowCoordinator
+    => ""."GameServerLobbyFlowCoordinator"
 );
 #[cfg(feature = "GameServerLobbyFlowCoordinator")]
-impl std::ops::Deref for GameServerLobbyFlowCoordinator {
+impl std::ops::Deref for crate::GlobalNamespace::GameServerLobbyFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameServerLobbyFlowCoordinator")]
-impl std::ops::DerefMut for GameServerLobbyFlowCoordinator {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameServerLobbyFlowCoordinator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameServerLobbyFlowCoordinator")]
-impl GameServerLobbyFlowCoordinator {
+impl crate::GlobalNamespace::GameServerLobbyFlowCoordinator {
     pub const kMaxPredictedStartTimeDifferenceMs: i64 = 1500i64;
     pub const kPlayersMissingEntitlementKey: &'static str = "LABEL_PLAYERS_MISSING_ENTITLEMENT";
     #[cfg(feature = "GameServerLobbyFlowCoordinator+LobbyType")]
     pub type LobbyType = crate::GlobalNamespace::GameServerLobbyFlowCoordinator_LobbyType;
-    #[cfg(feature = "GameServerLobbyFlowCoordinator+__c__DisplayClass86_0")]
-    pub type __c__DisplayClass86_0 = crate::GlobalNamespace::GameServerLobbyFlowCoordinator___c__DisplayClass86_0;
     #[cfg(feature = "GameServerLobbyFlowCoordinator+__c__DisplayClass71_0")]
     pub type __c__DisplayClass71_0 = crate::GlobalNamespace::GameServerLobbyFlowCoordinator___c__DisplayClass71_0;
+    #[cfg(feature = "GameServerLobbyFlowCoordinator+__c__DisplayClass86_0")]
+    pub type __c__DisplayClass86_0 = crate::GlobalNamespace::GameServerLobbyFlowCoordinator___c__DisplayClass86_0;
     pub fn BackButtonWasPressed(
         &mut self,
         topViewController: *mut crate::HMUI::ViewController,
@@ -205,7 +205,7 @@ impl GameServerLobbyFlowCoordinator {
     }
     pub fn HandleLobbyGameStateControllerGameStarted(
         &mut self,
-        levelGameplaySetupData: *mut ILevelGameplaySetupData,
+        levelGameplaySetupData: *mut crate::GlobalNamespace::ILevelGameplaySetupData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -219,7 +219,7 @@ impl GameServerLobbyFlowCoordinator {
     }
     pub fn HandleLobbyGameStateControllerGameStartedPresentView(
         &mut self,
-        levelGameplaySetupData: *mut ILevelGameplaySetupData,
+        levelGameplaySetupData: *mut crate::GlobalNamespace::ILevelGameplaySetupData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -233,7 +233,7 @@ impl GameServerLobbyFlowCoordinator {
     }
     pub fn HandleLobbyGameStateControllerGameStateChanged(
         &mut self,
-        state: MultiplayerLobbyState,
+        state: crate::GlobalNamespace::MultiplayerLobbyState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -244,7 +244,7 @@ impl GameServerLobbyFlowCoordinator {
     }
     pub fn HandleLobbyGameStateControllerLevelDidGetDisconnected(
         &mut self,
-        disconnectedReason: DisconnectedReason,
+        disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -258,8 +258,8 @@ impl GameServerLobbyFlowCoordinator {
     }
     pub fn HandleLobbyGameStateControllerLevelFinished(
         &mut self,
-        multiplayerLevelScenesTransitionSetupData: *mut MultiplayerLevelScenesTransitionSetupDataSO,
-        multiplayerResultsData: *mut MultiplayerResultsData,
+        multiplayerLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+        multiplayerResultsData: *mut crate::GlobalNamespace::MultiplayerResultsData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -303,7 +303,7 @@ impl GameServerLobbyFlowCoordinator {
     }
     pub fn HandleLobbyGameStateStartButtonEnabled(
         &mut self,
-        cannotStartGameReason: CannotStartGameReason,
+        cannotStartGameReason: crate::GlobalNamespace::CannotStartGameReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -395,7 +395,7 @@ impl GameServerLobbyFlowCoordinator {
     }
     pub fn HandleMenuRpcManagerSetPlayersMissingEntitlementsToLevel(
         &mut self,
-        playersMissingEntitlements: *mut PlayersMissingEntitlementsNetSerializable,
+        playersMissingEntitlements: *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -436,7 +436,7 @@ impl GameServerLobbyFlowCoordinator {
     }
     pub fn HandleMultiplayerResultsViewControllerBackToLobbyPressed(
         &mut self,
-        viewController: *mut MultiplayerResultsViewController,
+        viewController: *mut crate::GlobalNamespace::MultiplayerResultsViewController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -450,7 +450,7 @@ impl GameServerLobbyFlowCoordinator {
     }
     pub fn HandleMultiplayerResultsViewControllerBackToMenuPressed(
         &mut self,
-        viewController: *mut MultiplayerResultsViewController,
+        viewController: *mut crate::GlobalNamespace::MultiplayerResultsViewController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -499,7 +499,7 @@ impl GameServerLobbyFlowCoordinator {
     }
     pub fn HandleServerPlayerListViewControllerSelectSuggestedBeatmap(
         &mut self,
-        beatmapKey: BeatmapKey,
+        beatmapKey: crate::GlobalNamespace::BeatmapKey,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -513,7 +513,7 @@ impl GameServerLobbyFlowCoordinator {
     }
     pub fn HandleServerPlayerListViewControllerSelectSuggestedGameplayModifiers(
         &mut self,
-        modifiers: *mut GameplayModifiers,
+        modifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -608,7 +608,7 @@ impl GameServerLobbyFlowCoordinator {
     }
     pub fn ShowDisconnectDialogAndFinish(
         &mut self,
-        disconnectedReason: DisconnectedReason,
+        disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -875,7 +875,8 @@ impl GameServerLobbyFlowCoordinator {
     }
 }
 #[cfg(feature = "GameServerLobbyFlowCoordinator")]
-impl quest_hook::libil2cpp::ObjectType for GameServerLobbyFlowCoordinator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GameServerLobbyFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

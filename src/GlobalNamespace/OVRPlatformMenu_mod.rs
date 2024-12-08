@@ -9,27 +9,28 @@ pub struct OVRPlatformMenu {
 }
 #[cfg(feature = "OVRPlatformMenu")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRPlatformMenu => ""."OVRPlatformMenu"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRPlatformMenu => ""
+    ."OVRPlatformMenu"
 );
 #[cfg(feature = "OVRPlatformMenu")]
-impl std::ops::Deref for OVRPlatformMenu {
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlatformMenu {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRPlatformMenu")]
-impl std::ops::DerefMut for OVRPlatformMenu {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlatformMenu {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRPlatformMenu")]
-impl OVRPlatformMenu {
-    #[cfg(feature = "OVRPlatformMenu+eHandler")]
-    pub type eHandler = crate::GlobalNamespace::OVRPlatformMenu_eHandler;
+impl crate::GlobalNamespace::OVRPlatformMenu {
     #[cfg(feature = "OVRPlatformMenu+eBackButtonAction")]
     pub type eBackButtonAction = crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction;
+    #[cfg(feature = "OVRPlatformMenu+eHandler")]
+    pub type eHandler = crate::GlobalNamespace::OVRPlatformMenu_eHandler;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -91,7 +92,7 @@ impl OVRPlatformMenu {
     }
 }
 #[cfg(feature = "OVRPlatformMenu")]
-impl quest_hook::libil2cpp::ObjectType for OVRPlatformMenu {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlatformMenu {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

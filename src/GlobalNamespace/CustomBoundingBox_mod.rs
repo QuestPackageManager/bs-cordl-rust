@@ -9,23 +9,24 @@ pub struct CustomBoundingBox {
 }
 #[cfg(feature = "CustomBoundingBox")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CustomBoundingBox => ""."CustomBoundingBox"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CustomBoundingBox => ""
+    ."CustomBoundingBox"
 );
 #[cfg(feature = "CustomBoundingBox")]
-impl std::ops::Deref for CustomBoundingBox {
+impl std::ops::Deref for crate::GlobalNamespace::CustomBoundingBox {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CustomBoundingBox")]
-impl std::ops::DerefMut for CustomBoundingBox {
+impl std::ops::DerefMut for crate::GlobalNamespace::CustomBoundingBox {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CustomBoundingBox")]
-impl CustomBoundingBox {
+impl crate::GlobalNamespace::CustomBoundingBox {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -55,7 +56,7 @@ impl CustomBoundingBox {
     }
 }
 #[cfg(feature = "CustomBoundingBox")]
-impl quest_hook::libil2cpp::ObjectType for CustomBoundingBox {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CustomBoundingBox {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

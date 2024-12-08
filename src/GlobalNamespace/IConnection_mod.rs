@@ -6,23 +6,23 @@ pub struct IConnection {
 }
 #[cfg(feature = "IConnection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IConnection => ""."IConnection"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IConnection => ""."IConnection"
 );
 #[cfg(feature = "IConnection")]
-impl std::ops::Deref for IConnection {
+impl std::ops::Deref for crate::GlobalNamespace::IConnection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IConnection")]
-impl std::ops::DerefMut for IConnection {
+impl std::ops::DerefMut for crate::GlobalNamespace::IConnection {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IConnection")]
-impl IConnection {
+impl crate::GlobalNamespace::IConnection {
     pub fn Disconnect(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -79,7 +79,7 @@ impl IConnection {
     }
 }
 #[cfg(feature = "IConnection")]
-impl quest_hook::libil2cpp::ObjectType for IConnection {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IConnection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -30,10 +30,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::BoundsIntField {
 }
 #[cfg(feature = "UnityEngine+UIElements+BoundsIntField")]
 impl crate::UnityEngine::UIElements::BoundsIntField {
-    #[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlTraits")]
-    pub type UxmlTraits = crate::UnityEngine::UIElements::BoundsIntField_UxmlTraits;
     #[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlFactory")]
     pub type UxmlFactory = crate::UnityEngine::UIElements::BoundsIntField_UxmlFactory;
+    #[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlTraits")]
+    pub type UxmlTraits = crate::UnityEngine::UIElements::BoundsIntField_UxmlTraits;
     pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

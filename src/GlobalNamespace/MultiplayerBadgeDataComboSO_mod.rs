@@ -2,31 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerBadgeDataComboSO {
-    __cordl_parent: MultiplayerBadgeDataMinMaxIntSO,
+    __cordl_parent: crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO,
 }
 #[cfg(feature = "MultiplayerBadgeDataComboSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerBadgeDataComboSO => ""
-    ."MultiplayerBadgeDataComboSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerBadgeDataComboSO =>
+    ""."MultiplayerBadgeDataComboSO"
 );
 #[cfg(feature = "MultiplayerBadgeDataComboSO")]
-impl std::ops::Deref for MultiplayerBadgeDataComboSO {
-    type Target = MultiplayerBadgeDataMinMaxIntSO;
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerBadgeDataComboSO {
+    type Target = crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerBadgeDataComboSO")]
-impl std::ops::DerefMut for MultiplayerBadgeDataComboSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerBadgeDataComboSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerBadgeDataComboSO")]
-impl MultiplayerBadgeDataComboSO {
+impl crate::GlobalNamespace::MultiplayerBadgeDataComboSO {
     pub fn GetValue(
         &mut self,
-        result: *mut MultiplayerPlayerResultsData,
+        result: *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -53,7 +53,8 @@ impl MultiplayerBadgeDataComboSO {
     }
 }
 #[cfg(feature = "MultiplayerBadgeDataComboSO")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerBadgeDataComboSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerBadgeDataComboSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

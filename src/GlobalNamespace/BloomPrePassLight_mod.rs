@@ -3,30 +3,31 @@
 #[derive(Debug)]
 pub struct BloomPrePassLight {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightType: *mut BloomPrePassLightTypeSO,
-    pub _registeredWithLightType: *mut BloomPrePassLightTypeSO,
+    pub _lightType: *mut crate::GlobalNamespace::BloomPrePassLightTypeSO,
+    pub _registeredWithLightType: *mut crate::GlobalNamespace::BloomPrePassLightTypeSO,
     pub _isRegistered: bool,
     pub _isBeingDestroyed: bool,
 }
 #[cfg(feature = "BloomPrePassLight")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomPrePassLight => ""."BloomPrePassLight"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BloomPrePassLight => ""
+    ."BloomPrePassLight"
 );
 #[cfg(feature = "BloomPrePassLight")]
-impl std::ops::Deref for BloomPrePassLight {
+impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassLight {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassLight")]
-impl std::ops::DerefMut for BloomPrePassLight {
+impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassLight {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassLight")]
-impl BloomPrePassLight {
+impl crate::GlobalNamespace::BloomPrePassLight {
     pub const kColorOffset: i32 = 24i32;
     pub const kColorSize: i32 = 16i32;
     pub const kFloatSize: i32 = 4i32;
@@ -37,12 +38,12 @@ impl BloomPrePassLight {
     pub const kVertexSize: i32 = 12i32;
     pub const kViewPosOffset: i32 = 12i32;
     pub const kViewPosSize: i32 = 12i32;
-    #[cfg(feature = "BloomPrePassLight+VertexData")]
-    pub type VertexData = crate::GlobalNamespace::BloomPrePassLight_VertexData;
     #[cfg(feature = "BloomPrePassLight+LightsDataItem")]
     pub type LightsDataItem = crate::GlobalNamespace::BloomPrePassLight_LightsDataItem;
     #[cfg(feature = "BloomPrePassLight+QuadData")]
     pub type QuadData = crate::GlobalNamespace::BloomPrePassLight_QuadData;
+    #[cfg(feature = "BloomPrePassLight+VertexData")]
+    pub type VertexData = crate::GlobalNamespace::BloomPrePassLight_VertexData;
     pub fn DidRegisterLight(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -152,7 +153,7 @@ impl BloomPrePassLight {
     }
 }
 #[cfg(feature = "BloomPrePassLight")]
-impl quest_hook::libil2cpp::ObjectType for BloomPrePassLight {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BloomPrePassLight {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -165,9 +166,9 @@ impl quest_hook::libil2cpp::ObjectType for BloomPrePassLight {
 #[derive(Debug)]
 pub struct BloomPrePassLight_LightsDataItem {
     __cordl_parent: crate::System::Object,
-    pub lightType: *mut BloomPrePassLightTypeSO,
+    pub lightType: *mut crate::GlobalNamespace::BloomPrePassLightTypeSO,
     pub lights: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut BloomPrePassLight,
+        *mut crate::GlobalNamespace::BloomPrePassLight,
     >,
 }
 #[cfg(feature = "BloomPrePassLight+LightsDataItem")]
@@ -192,9 +193,9 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassLight_LightsData
 #[cfg(feature = "BloomPrePassLight+LightsDataItem")]
 impl crate::GlobalNamespace::BloomPrePassLight_LightsDataItem {
     pub fn New(
-        lightType: *mut BloomPrePassLightTypeSO,
+        lightType: *mut crate::GlobalNamespace::BloomPrePassLightTypeSO,
         lights: *mut crate::System::Collections::Generic::HashSet_1<
-            *mut BloomPrePassLight,
+            *mut crate::GlobalNamespace::BloomPrePassLight,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -205,9 +206,9 @@ impl crate::GlobalNamespace::BloomPrePassLight_LightsDataItem {
     }
     pub fn _ctor(
         &mut self,
-        lightType: *mut BloomPrePassLightTypeSO,
+        lightType: *mut crate::GlobalNamespace::BloomPrePassLightTypeSO,
         lights: *mut crate::System::Collections::Generic::HashSet_1<
-            *mut BloomPrePassLight,
+            *mut crate::GlobalNamespace::BloomPrePassLight,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -3,36 +3,38 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalPlayerDisconnectHelper {
     __cordl_parent: crate::System::Object,
-    pub _gameplayRpcManager: *mut IGameplayRpcManager,
-    pub _multiplayerLevelEndActions: *mut IMultiplayerLevelEndActionsListener,
-    pub _lobbyPlayerPermissionsModel: *mut LobbyPlayerPermissionsModel,
+    pub _gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
+    pub _multiplayerLevelEndActions: *mut crate::GlobalNamespace::IMultiplayerLevelEndActionsListener,
+    pub _lobbyPlayerPermissionsModel: *mut crate::GlobalNamespace::LobbyPlayerPermissionsModel,
 }
 #[cfg(feature = "MultiplayerLocalPlayerDisconnectHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLocalPlayerDisconnectHelper => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLocalPlayerDisconnectHelper => ""
     ."MultiplayerLocalPlayerDisconnectHelper"
 );
 #[cfg(feature = "MultiplayerLocalPlayerDisconnectHelper")]
-impl std::ops::Deref for MultiplayerLocalPlayerDisconnectHelper {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLocalPlayerDisconnectHelper {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalPlayerDisconnectHelper")]
-impl std::ops::DerefMut for MultiplayerLocalPlayerDisconnectHelper {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerLocalPlayerDisconnectHelper {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalPlayerDisconnectHelper")]
-impl MultiplayerLocalPlayerDisconnectHelper {
+impl crate::GlobalNamespace::MultiplayerLocalPlayerDisconnectHelper {
     pub const kDisconnectLabel: &'static str = "BUTTON_DISCONNECT";
     pub const kEndGameLabel: &'static str = "BUTTON_END_GAME";
     pub fn Disconnect(
         &mut self,
         playerLevelEndState: crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState,
-        levelCompletionResults: *mut LevelCompletionResults,
+        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -70,7 +72,8 @@ impl MultiplayerLocalPlayerDisconnectHelper {
     }
 }
 #[cfg(feature = "MultiplayerLocalPlayerDisconnectHelper")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLocalPlayerDisconnectHelper {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLocalPlayerDisconnectHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,23 +6,23 @@ pub struct NetLogger {
 }
 #[cfg(feature = "NetLogger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NetLogger => ""."NetLogger"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NetLogger => ""."NetLogger"
 );
 #[cfg(feature = "NetLogger")]
-impl std::ops::Deref for NetLogger {
+impl std::ops::Deref for crate::GlobalNamespace::NetLogger {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NetLogger")]
-impl std::ops::DerefMut for NetLogger {
+impl std::ops::DerefMut for crate::GlobalNamespace::NetLogger {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NetLogger")]
-impl NetLogger {
+impl crate::GlobalNamespace::NetLogger {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -55,7 +55,7 @@ impl NetLogger {
     }
 }
 #[cfg(feature = "NetLogger")]
-impl quest_hook::libil2cpp::ObjectType for NetLogger {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NetLogger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

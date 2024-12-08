@@ -6,23 +6,24 @@ pub struct IHapticFeedbackPlayer {
 }
 #[cfg(feature = "IHapticFeedbackPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IHapticFeedbackPlayer => ""."IHapticFeedbackPlayer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IHapticFeedbackPlayer => ""
+    ."IHapticFeedbackPlayer"
 );
 #[cfg(feature = "IHapticFeedbackPlayer")]
-impl std::ops::Deref for IHapticFeedbackPlayer {
+impl std::ops::Deref for crate::GlobalNamespace::IHapticFeedbackPlayer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IHapticFeedbackPlayer")]
-impl std::ops::DerefMut for IHapticFeedbackPlayer {
+impl std::ops::DerefMut for crate::GlobalNamespace::IHapticFeedbackPlayer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IHapticFeedbackPlayer")]
-impl IHapticFeedbackPlayer {
+impl crate::GlobalNamespace::IHapticFeedbackPlayer {
     pub fn CanPlayHapticPreset(
         &mut self,
         hapticPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
@@ -54,7 +55,8 @@ impl IHapticFeedbackPlayer {
     }
 }
 #[cfg(feature = "IHapticFeedbackPlayer")]
-impl quest_hook::libil2cpp::ObjectType for IHapticFeedbackPlayer {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IHapticFeedbackPlayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

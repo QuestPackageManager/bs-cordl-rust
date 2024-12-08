@@ -3,28 +3,28 @@
 #[derive(Debug)]
 pub struct MainMenuMissionInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _missionNodesManager: *mut MissionNodesManager,
+    pub _missionNodesManager: *mut crate::GlobalNamespace::MissionNodesManager,
 }
 #[cfg(feature = "MainMenuMissionInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MainMenuMissionInstaller => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MainMenuMissionInstaller => ""
     ."MainMenuMissionInstaller"
 );
 #[cfg(feature = "MainMenuMissionInstaller")]
-impl std::ops::Deref for MainMenuMissionInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::MainMenuMissionInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainMenuMissionInstaller")]
-impl std::ops::DerefMut for MainMenuMissionInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::MainMenuMissionInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainMenuMissionInstaller")]
-impl MainMenuMissionInstaller {
+impl crate::GlobalNamespace::MainMenuMissionInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -54,7 +54,8 @@ impl MainMenuMissionInstaller {
     }
 }
 #[cfg(feature = "MainMenuMissionInstaller")]
-impl quest_hook::libil2cpp::ObjectType for MainMenuMissionInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MainMenuMissionInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

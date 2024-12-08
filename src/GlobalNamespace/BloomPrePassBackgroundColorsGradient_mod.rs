@@ -2,31 +2,33 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundColorsGradient {
-    __cordl_parent: BloomPrePassBackgroundTextureGradient,
+    __cordl_parent: crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient,
     pub _elements: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element,
     >,
 }
 #[cfg(feature = "BloomPrePassBackgroundColorsGradient")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomPrePassBackgroundColorsGradient => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BloomPrePassBackgroundColorsGradient => ""
     ."BloomPrePassBackgroundColorsGradient"
 );
 #[cfg(feature = "BloomPrePassBackgroundColorsGradient")]
-impl std::ops::Deref for BloomPrePassBackgroundColorsGradient {
-    type Target = BloomPrePassBackgroundTextureGradient;
+impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient {
+    type Target = crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundColorsGradient")]
-impl std::ops::DerefMut for BloomPrePassBackgroundColorsGradient {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundColorsGradient")]
-impl BloomPrePassBackgroundColorsGradient {
+impl crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient {
     #[cfg(feature = "BloomPrePassBackgroundColorsGradient+Element")]
     pub type Element = crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient_Element;
     pub fn EvaluateColor(
@@ -86,7 +88,8 @@ impl BloomPrePassBackgroundColorsGradient {
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundColorsGradient")]
-impl quest_hook::libil2cpp::ObjectType for BloomPrePassBackgroundColorsGradient {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradient {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

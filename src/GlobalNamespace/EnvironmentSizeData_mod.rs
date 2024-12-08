@@ -21,27 +21,28 @@ pub struct EnvironmentSizeData {
 }
 #[cfg(feature = "EnvironmentSizeData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnvironmentSizeData => ""."EnvironmentSizeData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnvironmentSizeData => ""
+    ."EnvironmentSizeData"
 );
 #[cfg(feature = "EnvironmentSizeData")]
-impl std::ops::Deref for EnvironmentSizeData {
+impl std::ops::Deref for crate::GlobalNamespace::EnvironmentSizeData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentSizeData")]
-impl std::ops::DerefMut for EnvironmentSizeData {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentSizeData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentSizeData")]
-impl EnvironmentSizeData {
-    #[cfg(feature = "EnvironmentSizeData+FloorType")]
-    pub type FloorType = crate::GlobalNamespace::EnvironmentSizeData_FloorType;
+impl crate::GlobalNamespace::EnvironmentSizeData {
     #[cfg(feature = "EnvironmentSizeData+CeilingType")]
     pub type CeilingType = crate::GlobalNamespace::EnvironmentSizeData_CeilingType;
+    #[cfg(feature = "EnvironmentSizeData+FloorType")]
+    pub type FloorType = crate::GlobalNamespace::EnvironmentSizeData_FloorType;
     #[cfg(feature = "EnvironmentSizeData+TrackLaneType")]
     pub type TrackLaneType = crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -99,7 +100,7 @@ impl EnvironmentSizeData {
     }
 }
 #[cfg(feature = "EnvironmentSizeData")]
-impl quest_hook::libil2cpp::ObjectType for EnvironmentSizeData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EnvironmentSizeData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

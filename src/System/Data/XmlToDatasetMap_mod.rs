@@ -265,10 +265,10 @@ impl std::ops::DerefMut for crate::System::Data::XmlToDatasetMap {
 impl crate::System::Data::XmlToDatasetMap {
     #[cfg(feature = "System+Data+XmlToDatasetMap+TableSchemaInfo")]
     pub type TableSchemaInfo = crate::System::Data::XmlToDatasetMap_TableSchemaInfo;
-    #[cfg(feature = "System+Data+XmlToDatasetMap+XmlNodeIdentety")]
-    pub type XmlNodeIdentety = crate::System::Data::XmlToDatasetMap_XmlNodeIdentety;
     #[cfg(feature = "System+Data+XmlToDatasetMap+XmlNodeIdHashtable")]
     pub type XmlNodeIdHashtable = crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable;
+    #[cfg(feature = "System+Data+XmlToDatasetMap+XmlNodeIdentety")]
+    pub type XmlNodeIdentety = crate::System::Data::XmlToDatasetMap_XmlNodeIdentety;
     pub fn AddColumnSchema_DataColumn_XmlNameTable0(
         &mut self,
         col: *mut crate::System::Data::DataColumn,

@@ -6,46 +6,47 @@ pub struct SearchFilterParamsViewController {
     pub _filterByOwnedToggle: *mut crate::UnityEngine::UI::Toggle,
     pub _filterByNotOwnedToggle: *mut crate::UnityEngine::UI::Toggle,
     pub _filterByCharacteristicToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _beatmapCharacteristicsDropdown: *mut BeatmapCharacteristicsDropdown,
+    pub _beatmapCharacteristicsDropdown: *mut crate::GlobalNamespace::BeatmapCharacteristicsDropdown,
     pub _filterByDifficultyToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _beatmapDifficultyDropdown: *mut BeatmapDifficultyDropdown,
+    pub _beatmapDifficultyDropdown: *mut crate::GlobalNamespace::BeatmapDifficultyDropdown,
     pub _filterBySongPacksToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _songPacksDropdown: *mut SongPacksDropdown,
+    pub _songPacksDropdown: *mut crate::GlobalNamespace::SongPacksDropdown,
     pub _filterByNotPlayedYetToggle: *mut crate::UnityEngine::UI::Toggle,
     pub _filterByMinBpmToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _minBpmController: *mut FormattedFloatListSettingsController,
+    pub _minBpmController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
     pub _filterByMaxBpmToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _maxBpmController: *mut FormattedFloatListSettingsController,
-    pub _filterBySensitivity: *mut PlayerSensitivityDropdown,
+    pub _maxBpmController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
+    pub _filterBySensitivity: *mut crate::GlobalNamespace::PlayerSensitivityDropdown,
     pub _forcedSensitivityOptionNotice: *mut crate::UnityEngine::GameObject,
     pub _okButton: *mut crate::UnityEngine::UI::Button,
-    pub _playerDataModel: *mut PlayerDataModel,
-    pub _currentSearchFilter: LevelFilter,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _currentSearchFilter: crate::GlobalNamespace::LevelFilter,
     pub didFinishEvent: *mut crate::System::Action_2<
-        *mut SearchFilterParamsViewController,
-        LevelFilter,
+        *mut crate::GlobalNamespace::SearchFilterParamsViewController,
+        crate::GlobalNamespace::LevelFilter,
     >,
 }
 #[cfg(feature = "SearchFilterParamsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SearchFilterParamsViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SearchFilterParamsViewController => ""
     ."SearchFilterParamsViewController"
 );
 #[cfg(feature = "SearchFilterParamsViewController")]
-impl std::ops::Deref for SearchFilterParamsViewController {
+impl std::ops::Deref for crate::GlobalNamespace::SearchFilterParamsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SearchFilterParamsViewController")]
-impl std::ops::DerefMut for SearchFilterParamsViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::SearchFilterParamsViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SearchFilterParamsViewController")]
-impl SearchFilterParamsViewController {
+impl crate::GlobalNamespace::SearchFilterParamsViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -98,7 +99,7 @@ impl SearchFilterParamsViewController {
     }
     pub fn MaxBpmControllerValueDidChange(
         &mut self,
-        maxBpmController: *mut FormattedFloatListSettingsController,
+        maxBpmController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -110,7 +111,7 @@ impl SearchFilterParamsViewController {
     }
     pub fn MinBpmControllerValueDidChange(
         &mut self,
-        minBpmController: *mut FormattedFloatListSettingsController,
+        minBpmController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -139,7 +140,7 @@ impl SearchFilterParamsViewController {
     }
     pub fn Refresh(
         &mut self,
-        filter: quest_hook::libil2cpp::ByRefMut<LevelFilter>,
+        filter: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::LevelFilter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -150,7 +151,7 @@ impl SearchFilterParamsViewController {
     }
     pub fn Setup(
         &mut self,
-        filter: quest_hook::libil2cpp::ByRefMut<LevelFilter>,
+        filter: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::LevelFilter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -172,8 +173,8 @@ impl SearchFilterParamsViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut SearchFilterParamsViewController,
-            LevelFilter,
+            *mut crate::GlobalNamespace::SearchFilterParamsViewController,
+            crate::GlobalNamespace::LevelFilter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -186,8 +187,8 @@ impl SearchFilterParamsViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut SearchFilterParamsViewController,
-            LevelFilter,
+            *mut crate::GlobalNamespace::SearchFilterParamsViewController,
+            crate::GlobalNamespace::LevelFilter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -199,7 +200,8 @@ impl SearchFilterParamsViewController {
     }
 }
 #[cfg(feature = "SearchFilterParamsViewController")]
-impl quest_hook::libil2cpp::ObjectType for SearchFilterParamsViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SearchFilterParamsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,30 +2,30 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapEditorSceneSetupData {
-    __cordl_parent: SceneSetupData,
+    __cordl_parent: crate::GlobalNamespace::SceneSetupData,
     pub _levelDirPath: *mut crate::System::String,
     pub _levelAssetPath: *mut crate::System::String,
 }
 #[cfg(feature = "BeatmapEditorSceneSetupData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapEditorSceneSetupData => ""
-    ."BeatmapEditorSceneSetupData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapEditorSceneSetupData =>
+    ""."BeatmapEditorSceneSetupData"
 );
 #[cfg(feature = "BeatmapEditorSceneSetupData")]
-impl std::ops::Deref for BeatmapEditorSceneSetupData {
-    type Target = SceneSetupData;
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapEditorSceneSetupData {
+    type Target = crate::GlobalNamespace::SceneSetupData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapEditorSceneSetupData")]
-impl std::ops::DerefMut for BeatmapEditorSceneSetupData {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapEditorSceneSetupData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapEditorSceneSetupData")]
-impl BeatmapEditorSceneSetupData {
+impl crate::GlobalNamespace::BeatmapEditorSceneSetupData {
     pub fn New(
         levelDirPath: *mut crate::System::String,
         levelAssetPath: *mut crate::System::String,
@@ -70,7 +70,8 @@ impl BeatmapEditorSceneSetupData {
     }
 }
 #[cfg(feature = "BeatmapEditorSceneSetupData")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapEditorSceneSetupData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapEditorSceneSetupData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

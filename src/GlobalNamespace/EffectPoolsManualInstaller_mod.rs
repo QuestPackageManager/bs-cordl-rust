@@ -3,34 +3,34 @@
 #[derive(Debug)]
 pub struct EffectPoolsManualInstaller {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _flyingTextEffectPrefab: *mut FlyingTextEffect,
-    pub _flyingScoreEffectPrefab: *mut FlyingScoreEffect,
-    pub _beatEffectPrefab: *mut BeatEffect,
-    pub _shortBeatEffectPrefab: *mut BeatEffect,
-    pub _noteCutSoundEffectPrefab: *mut NoteCutSoundEffect,
-    pub _bombCutSoundEffectPrefab: *mut BombCutSoundEffect,
-    pub _flyingSpriteEffectPrefab: *mut FlyingSpriteEffect,
+    pub _flyingTextEffectPrefab: *mut crate::GlobalNamespace::FlyingTextEffect,
+    pub _flyingScoreEffectPrefab: *mut crate::GlobalNamespace::FlyingScoreEffect,
+    pub _beatEffectPrefab: *mut crate::GlobalNamespace::BeatEffect,
+    pub _shortBeatEffectPrefab: *mut crate::GlobalNamespace::BeatEffect,
+    pub _noteCutSoundEffectPrefab: *mut crate::GlobalNamespace::NoteCutSoundEffect,
+    pub _bombCutSoundEffectPrefab: *mut crate::GlobalNamespace::BombCutSoundEffect,
+    pub _flyingSpriteEffectPrefab: *mut crate::GlobalNamespace::FlyingSpriteEffect,
 }
 #[cfg(feature = "EffectPoolsManualInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EffectPoolsManualInstaller => ""
-    ."EffectPoolsManualInstaller"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EffectPoolsManualInstaller =>
+    ""."EffectPoolsManualInstaller"
 );
 #[cfg(feature = "EffectPoolsManualInstaller")]
-impl std::ops::Deref for EffectPoolsManualInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::EffectPoolsManualInstaller {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EffectPoolsManualInstaller")]
-impl std::ops::DerefMut for EffectPoolsManualInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::EffectPoolsManualInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EffectPoolsManualInstaller")]
-impl EffectPoolsManualInstaller {
+impl crate::GlobalNamespace::EffectPoolsManualInstaller {
     pub fn ManualInstallBindings(
         &mut self,
         container: *mut crate::Zenject::DiContainer,
@@ -62,7 +62,8 @@ impl EffectPoolsManualInstaller {
     }
 }
 #[cfg(feature = "EffectPoolsManualInstaller")]
-impl quest_hook::libil2cpp::ObjectType for EffectPoolsManualInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EffectPoolsManualInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

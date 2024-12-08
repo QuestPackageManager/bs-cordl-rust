@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct VRTextEntryController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _uiKeyboard: *mut UIKeyboard,
+    pub _uiKeyboard: *mut crate::GlobalNamespace::UIKeyboard,
     pub _text: *mut crate::TMPro::TextMeshProUGUI,
     pub _cursorText: *mut crate::TMPro::TextMeshProUGUI,
     pub _maxLength: i32,
@@ -15,23 +15,24 @@ pub struct VRTextEntryController {
 }
 #[cfg(feature = "VRTextEntryController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for VRTextEntryController => ""."VRTextEntryController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::VRTextEntryController => ""
+    ."VRTextEntryController"
 );
 #[cfg(feature = "VRTextEntryController")]
-impl std::ops::Deref for VRTextEntryController {
+impl std::ops::Deref for crate::GlobalNamespace::VRTextEntryController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "VRTextEntryController")]
-impl std::ops::DerefMut for VRTextEntryController {
+impl std::ops::DerefMut for crate::GlobalNamespace::VRTextEntryController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "VRTextEntryController")]
-impl VRTextEntryController {
+impl crate::GlobalNamespace::VRTextEntryController {
     #[cfg(feature = "VRTextEntryController+_BlinkCursor_d__23")]
     pub type _BlinkCursor_d__23 = crate::GlobalNamespace::VRTextEntryController__BlinkCursor_d__23;
     pub fn Awake(
@@ -232,7 +233,8 @@ impl VRTextEntryController {
     }
 }
 #[cfg(feature = "VRTextEntryController")]
-impl quest_hook::libil2cpp::ObjectType for VRTextEntryController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::VRTextEntryController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

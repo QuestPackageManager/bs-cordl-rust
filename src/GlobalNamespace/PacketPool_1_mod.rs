@@ -8,23 +8,26 @@ pub struct PacketPool_1<T: quest_hook::libil2cpp::Type> {
 }
 #[cfg(feature = "PacketPool_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PacketPool_1 < T > => ""."PacketPool`1" < T >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PacketPool_1 < T > => ""
+    ."PacketPool`1" < T >
 );
 #[cfg(feature = "PacketPool_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for PacketPool_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
+for crate::GlobalNamespace::PacketPool_1<T> {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PacketPool_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for PacketPool_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
+for crate::GlobalNamespace::PacketPool_1<T> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PacketPool_1")]
-impl<T: quest_hook::libil2cpp::Type> PacketPool_1<T> {
+impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::PacketPool_1<T> {
     pub const kMaxPoolSize: i32 = 16i32;
     pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -52,7 +55,7 @@ impl<T: quest_hook::libil2cpp::Type> PacketPool_1<T> {
     }
     pub fn IPacketPool_Release(
         &mut self,
-        o: *mut IPoolablePacket,
+        o: *mut crate::GlobalNamespace::IPoolablePacket,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -113,7 +116,7 @@ impl<T: quest_hook::libil2cpp::Type> PacketPool_1<T> {
 }
 #[cfg(feature = "PacketPool_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for PacketPool_1<T> {
+for crate::GlobalNamespace::PacketPool_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

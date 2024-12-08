@@ -116,14 +116,14 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::Scrollbar {
 }
 #[cfg(feature = "UnityEngine+UI+Scrollbar")]
 impl crate::UnityEngine::UI::Scrollbar {
-    #[cfg(feature = "UnityEngine+UI+Scrollbar+Direction")]
-    pub type Direction = crate::UnityEngine::UI::Scrollbar_Direction;
-    #[cfg(feature = "UnityEngine+UI+Scrollbar+_ClickRepeat_d__58")]
-    pub type _ClickRepeat_d__58 = crate::UnityEngine::UI::Scrollbar__ClickRepeat_d__58;
-    #[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]
-    pub type ScrollEvent = crate::UnityEngine::UI::Scrollbar_ScrollEvent;
     #[cfg(feature = "UnityEngine+UI+Scrollbar+Axis")]
     pub type Axis = crate::UnityEngine::UI::Scrollbar_Axis;
+    #[cfg(feature = "UnityEngine+UI+Scrollbar+Direction")]
+    pub type Direction = crate::UnityEngine::UI::Scrollbar_Direction;
+    #[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]
+    pub type ScrollEvent = crate::UnityEngine::UI::Scrollbar_ScrollEvent;
+    #[cfg(feature = "UnityEngine+UI+Scrollbar+_ClickRepeat_d__58")]
+    pub type _ClickRepeat_d__58 = crate::UnityEngine::UI::Scrollbar__ClickRepeat_d__58;
     pub fn ClickRepeat_PointerEventData0(
         &mut self,
         eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,

@@ -3,40 +3,44 @@
 #[derive(Debug)]
 pub struct GameServersListTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _tableView: *mut TableViewWithDetailCell,
-    pub _gameServerListCellPrefab: *mut GameServerListTableCell,
-    pub _gameServerDetailCellPrefab: *mut GameServerListDetailTableCell,
+    pub _tableView: *mut crate::GlobalNamespace::TableViewWithDetailCell,
+    pub _gameServerListCellPrefab: *mut crate::GlobalNamespace::GameServerListTableCell,
+    pub _gameServerDetailCellPrefab: *mut crate::GlobalNamespace::GameServerListDetailTableCell,
     pub _container: *mut crate::Zenject::DiContainer,
-    pub joinButtonPressedEvent: *mut crate::System::Action_1<*mut INetworkPlayer>,
+    pub joinButtonPressedEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::INetworkPlayer,
+    >,
     pub _isInitialized: bool,
-    pub _gamesList: *mut quest_hook::libil2cpp::Il2CppArray<*mut INetworkPlayer>,
-    pub _selectedServer: *mut INetworkPlayer,
+    pub _gamesList: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::INetworkPlayer,
+    >,
+    pub _selectedServer: *mut crate::GlobalNamespace::INetworkPlayer,
 }
 #[cfg(feature = "GameServersListTableView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameServersListTableView => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameServersListTableView => ""
     ."GameServersListTableView"
 );
 #[cfg(feature = "GameServersListTableView")]
-impl std::ops::Deref for GameServersListTableView {
+impl std::ops::Deref for crate::GlobalNamespace::GameServersListTableView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameServersListTableView")]
-impl std::ops::DerefMut for GameServersListTableView {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameServersListTableView {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameServersListTableView")]
-impl GameServersListTableView {
+impl crate::GlobalNamespace::GameServersListTableView {
     pub const kCellReuseIdentifier: &'static str = "Cell";
     pub const kDetailCellReuseIdentifier: &'static str = "DetailCell";
     pub fn CellForContent(
         &mut self,
-        tableView: *mut TableViewWithDetailCell,
+        tableView: *mut crate::GlobalNamespace::TableViewWithDetailCell,
         idx: i32,
         detailOpened: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
@@ -49,7 +53,7 @@ impl GameServersListTableView {
     }
     pub fn CellForDetail(
         &mut self,
-        tableView: *mut TableViewWithDetailCell,
+        tableView: *mut crate::GlobalNamespace::TableViewWithDetailCell,
         contentIdx: i32,
     ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -81,7 +85,7 @@ impl GameServersListTableView {
     }
     pub fn HandleTableViewDidDeselectCellWithIdx(
         &mut self,
-        arg1: *mut TableViewWithDetailCell,
+        arg1: *mut crate::GlobalNamespace::TableViewWithDetailCell,
         arg2: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -140,7 +144,7 @@ impl GameServersListTableView {
     pub fn SetData(
         &mut self,
         servers: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut INetworkPlayer,
+            *mut crate::GlobalNamespace::INetworkPlayer,
         >,
         clearSelection: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -163,7 +167,7 @@ impl GameServersListTableView {
     }
     pub fn add_joinButtonPressedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut INetworkPlayer>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -174,7 +178,7 @@ impl GameServersListTableView {
     }
     pub fn remove_joinButtonPressedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut INetworkPlayer>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -185,7 +189,8 @@ impl GameServersListTableView {
     }
 }
 #[cfg(feature = "GameServersListTableView")]
-impl quest_hook::libil2cpp::ObjectType for GameServersListTableView {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GameServersListTableView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -247,16 +247,16 @@ impl std::ops::DerefMut for crate::System::Collections::SortedList {
 }
 #[cfg(feature = "System+Collections+SortedList")]
 impl crate::System::Collections::SortedList {
+    #[cfg(feature = "System+Collections+SortedList+KeyList")]
+    pub type KeyList = crate::System::Collections::SortedList_KeyList;
+    #[cfg(feature = "System+Collections+SortedList+SortedListDebugView")]
+    pub type SortedListDebugView = crate::System::Collections::SortedList_SortedListDebugView;
+    #[cfg(feature = "System+Collections+SortedList+SortedListEnumerator")]
+    pub type SortedListEnumerator = crate::System::Collections::SortedList_SortedListEnumerator;
     #[cfg(feature = "System+Collections+SortedList+SyncSortedList")]
     pub type SyncSortedList = crate::GlobalNamespace::SortedList_SyncSortedList;
     #[cfg(feature = "System+Collections+SortedList+ValueList")]
     pub type ValueList = crate::System::Collections::SortedList_ValueList;
-    #[cfg(feature = "System+Collections+SortedList+SortedListDebugView")]
-    pub type SortedListDebugView = crate::System::Collections::SortedList_SortedListDebugView;
-    #[cfg(feature = "System+Collections+SortedList+KeyList")]
-    pub type KeyList = crate::System::Collections::SortedList_KeyList;
-    #[cfg(feature = "System+Collections+SortedList+SortedListEnumerator")]
-    pub type SortedListEnumerator = crate::System::Collections::SortedList_SortedListEnumerator;
     pub fn Add(
         &mut self,
         key: *mut crate::System::Object,

@@ -6,23 +6,24 @@ pub struct ILevelStartController {
 }
 #[cfg(feature = "ILevelStartController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ILevelStartController => ""."ILevelStartController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ILevelStartController => ""
+    ."ILevelStartController"
 );
 #[cfg(feature = "ILevelStartController")]
-impl std::ops::Deref for ILevelStartController {
+impl std::ops::Deref for crate::GlobalNamespace::ILevelStartController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ILevelStartController")]
-impl std::ops::DerefMut for ILevelStartController {
+impl std::ops::DerefMut for crate::GlobalNamespace::ILevelStartController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ILevelStartController")]
-impl ILevelStartController {
+impl crate::GlobalNamespace::ILevelStartController {
     pub fn add_levelDidStartEvent(
         &mut self,
         value: *mut crate::System::Action,
@@ -74,7 +75,8 @@ impl ILevelStartController {
     }
 }
 #[cfg(feature = "ILevelStartController")]
-impl quest_hook::libil2cpp::ObjectType for ILevelStartController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ILevelStartController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

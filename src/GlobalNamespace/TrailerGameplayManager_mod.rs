@@ -4,29 +4,30 @@
 pub struct TrailerGameplayManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _disableMainCamera: bool,
-    pub _gameScenesManager: *mut GameScenesManager,
-    pub _gameSongController: *mut GameSongController,
-    pub _mainCamera: *mut MainCamera,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
+    pub _gameSongController: *mut crate::GlobalNamespace::GameSongController,
+    pub _mainCamera: *mut crate::GlobalNamespace::MainCamera,
 }
 #[cfg(feature = "TrailerGameplayManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TrailerGameplayManager => ""."TrailerGameplayManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TrailerGameplayManager => ""
+    ."TrailerGameplayManager"
 );
 #[cfg(feature = "TrailerGameplayManager")]
-impl std::ops::Deref for TrailerGameplayManager {
+impl std::ops::Deref for crate::GlobalNamespace::TrailerGameplayManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TrailerGameplayManager")]
-impl std::ops::DerefMut for TrailerGameplayManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::TrailerGameplayManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TrailerGameplayManager")]
-impl TrailerGameplayManager {
+impl crate::GlobalNamespace::TrailerGameplayManager {
     #[cfg(feature = "TrailerGameplayManager+_Start_d__4")]
     pub type _Start_d__4 = crate::GlobalNamespace::TrailerGameplayManager__Start_d__4;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -58,7 +59,8 @@ impl TrailerGameplayManager {
     }
 }
 #[cfg(feature = "TrailerGameplayManager")]
-impl quest_hook::libil2cpp::ObjectType for TrailerGameplayManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::TrailerGameplayManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

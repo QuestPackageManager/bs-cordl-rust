@@ -6,26 +6,27 @@ pub struct IConnectionManager {
 }
 #[cfg(feature = "IConnectionManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IConnectionManager => ""."IConnectionManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IConnectionManager => ""
+    ."IConnectionManager"
 );
 #[cfg(feature = "IConnectionManager")]
-impl std::ops::Deref for IConnectionManager {
+impl std::ops::Deref for crate::GlobalNamespace::IConnectionManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IConnectionManager")]
-impl std::ops::DerefMut for IConnectionManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::IConnectionManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IConnectionManager")]
-impl IConnectionManager {
+impl crate::GlobalNamespace::IConnectionManager {
     pub fn Disconnect(
         &mut self,
-        disconnectedReason: DisconnectedReason,
+        disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -47,17 +48,17 @@ impl IConnectionManager {
     pub fn GetConnection(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut IConnection> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IConnection> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IConnection = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IConnection = __cordl_object
             .invoke("GetConnection", (index))?;
         Ok(__cordl_ret)
     }
     pub fn Init<T>(
         &mut self,
-        initParams: *mut IConnectionInitParams_1<T>,
+        initParams: *mut crate::GlobalNamespace::IConnectionInitParams_1<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -73,7 +74,7 @@ impl IConnectionManager {
         &mut self,
         writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
         deliveryMethod: crate::BGNet::Core::DeliveryMethod,
-        excludingConnection: *mut IConnection,
+        excludingConnection: *mut crate::GlobalNamespace::IConnection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -107,7 +108,7 @@ impl IConnectionManager {
     }
     pub fn add_onConnectionConnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IConnection>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::IConnection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -118,7 +119,10 @@ impl IConnectionManager {
     }
     pub fn add_onConnectionDisconnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut IConnection, DisconnectedReason>,
+        value: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::IConnection,
+            crate::GlobalNamespace::DisconnectedReason,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -129,7 +133,9 @@ impl IConnectionManager {
     }
     pub fn add_onConnectionFailedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<ConnectionFailedReason>,
+        value: *mut crate::System::Action_1<
+            crate::GlobalNamespace::ConnectionFailedReason,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -140,7 +146,7 @@ impl IConnectionManager {
     }
     pub fn add_onDisconnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<DisconnectedReason>,
+        value: *mut crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -163,7 +169,7 @@ impl IConnectionManager {
     pub fn add_onReceivedDataEvent(
         &mut self,
         value: *mut crate::System::Action_3<
-            *mut IConnection,
+            *mut crate::GlobalNamespace::IConnection,
             *mut crate::LiteNetLib::Utils::NetDataReader,
             crate::BGNet::Core::DeliveryMethod,
         >,
@@ -255,7 +261,7 @@ impl IConnectionManager {
     }
     pub fn remove_onConnectionConnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IConnection>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::IConnection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -266,7 +272,10 @@ impl IConnectionManager {
     }
     pub fn remove_onConnectionDisconnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut IConnection, DisconnectedReason>,
+        value: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::IConnection,
+            crate::GlobalNamespace::DisconnectedReason,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -277,7 +286,9 @@ impl IConnectionManager {
     }
     pub fn remove_onConnectionFailedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<ConnectionFailedReason>,
+        value: *mut crate::System::Action_1<
+            crate::GlobalNamespace::ConnectionFailedReason,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -288,7 +299,7 @@ impl IConnectionManager {
     }
     pub fn remove_onDisconnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<DisconnectedReason>,
+        value: *mut crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -311,7 +322,7 @@ impl IConnectionManager {
     pub fn remove_onReceivedDataEvent(
         &mut self,
         value: *mut crate::System::Action_3<
-            *mut IConnection,
+            *mut crate::GlobalNamespace::IConnection,
             *mut crate::LiteNetLib::Utils::NetDataReader,
             crate::BGNet::Core::DeliveryMethod,
         >,
@@ -325,7 +336,7 @@ impl IConnectionManager {
     }
 }
 #[cfg(feature = "IConnectionManager")]
-impl quest_hook::libil2cpp::ObjectType for IConnectionManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IConnectionManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

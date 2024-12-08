@@ -6,10 +6,12 @@ pub struct OVRSemanticLabels {
 }
 #[cfg(feature = "OVRSemanticLabels")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for OVRSemanticLabels => ""."OVRSemanticLabels"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRSemanticLabels => ""
+    ."OVRSemanticLabels"
 );
 #[cfg(feature = "OVRSemanticLabels")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for OVRSemanticLabels {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRSemanticLabels {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -19,10 +21,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for OVRSemanticLabels {
     }
 }
 #[cfg(feature = "OVRSemanticLabels")]
-impl OVRSemanticLabels {
+impl crate::GlobalNamespace::OVRSemanticLabels {
     pub fn Equals_OVRSemanticLabels0(
         &mut self,
-        other: OVRSemanticLabels,
+        other: crate::GlobalNamespace::OVRSemanticLabels,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -52,9 +54,9 @@ impl OVRSemanticLabels {
     }
     pub fn IOVRAnchorComponent_OVRSemanticLabels__FromAnchor(
         &mut self,
-        anchor: OVRAnchor,
-    ) -> quest_hook::libil2cpp::Result<OVRSemanticLabels> {
-        let __cordl_ret: OVRSemanticLabels = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        anchor: crate::GlobalNamespace::OVRAnchor,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRSemanticLabels> {
+        let __cordl_ret: crate::GlobalNamespace::OVRSemanticLabels = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "IOVRAnchorComponent<OVRSemanticLabels>.FromAnchor",
             (anchor),
@@ -65,8 +67,8 @@ impl OVRSemanticLabels {
         &mut self,
         enabled: bool,
         timeout: f64,
-    ) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
-        let __cordl_ret: OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
+        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "IOVRAnchorComponent<OVRSemanticLabels>.SetEnabledAsync",
             (enabled, timeout),
@@ -107,7 +109,7 @@ impl OVRSemanticLabels {
     }
     pub fn _ctor(
         &mut self,
-        anchor: OVRAnchor,
+        anchor: crate::GlobalNamespace::OVRAnchor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

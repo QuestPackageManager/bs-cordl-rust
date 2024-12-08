@@ -11,23 +11,24 @@ pub struct ColorStepValuePicker {
 }
 #[cfg(feature = "ColorStepValuePicker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ColorStepValuePicker => ""."ColorStepValuePicker"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ColorStepValuePicker => ""
+    ."ColorStepValuePicker"
 );
 #[cfg(feature = "ColorStepValuePicker")]
-impl std::ops::Deref for ColorStepValuePicker {
+impl std::ops::Deref for crate::GlobalNamespace::ColorStepValuePicker {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorStepValuePicker")]
-impl std::ops::DerefMut for ColorStepValuePicker {
+impl std::ops::DerefMut for crate::GlobalNamespace::ColorStepValuePicker {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorStepValuePicker")]
-impl ColorStepValuePicker {
+impl crate::GlobalNamespace::ColorStepValuePicker {
     pub fn DecButtonPressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -174,7 +175,7 @@ impl ColorStepValuePicker {
     }
 }
 #[cfg(feature = "ColorStepValuePicker")]
-impl quest_hook::libil2cpp::ObjectType for ColorStepValuePicker {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorStepValuePicker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

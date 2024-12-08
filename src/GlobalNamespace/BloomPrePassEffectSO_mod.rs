@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassEffectSO {
-    __cordl_parent: TextureEffectSO,
+    __cordl_parent: crate::GlobalNamespace::TextureEffectSO,
     pub _textureWidth: i32,
     pub _textureHeight: i32,
     pub _fov: crate::UnityEngine::Vector2,
@@ -10,23 +10,24 @@ pub struct BloomPrePassEffectSO {
 }
 #[cfg(feature = "BloomPrePassEffectSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomPrePassEffectSO => ""."BloomPrePassEffectSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BloomPrePassEffectSO => ""
+    ."BloomPrePassEffectSO"
 );
 #[cfg(feature = "BloomPrePassEffectSO")]
-impl std::ops::Deref for BloomPrePassEffectSO {
-    type Target = TextureEffectSO;
+impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassEffectSO {
+    type Target = crate::GlobalNamespace::TextureEffectSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassEffectSO")]
-impl std::ops::DerefMut for BloomPrePassEffectSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassEffectSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassEffectSO")]
-impl BloomPrePassEffectSO {
+impl crate::GlobalNamespace::BloomPrePassEffectSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -63,11 +64,11 @@ impl BloomPrePassEffectSO {
     }
     pub fn get_textureEffect(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut TextureEffectSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::TextureEffectSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut TextureEffectSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::TextureEffectSO = __cordl_object
             .invoke("get_textureEffect", ())?;
         Ok(__cordl_ret)
     }
@@ -85,16 +86,19 @@ impl BloomPrePassEffectSO {
         let __cordl_ret: i32 = __cordl_object.invoke("get_textureWidth", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_toneMapping(&mut self) -> quest_hook::libil2cpp::Result<ToneMapping> {
+    pub fn get_toneMapping(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ToneMapping> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: ToneMapping = __cordl_object.invoke("get_toneMapping", ())?;
+        let __cordl_ret: crate::GlobalNamespace::ToneMapping = __cordl_object
+            .invoke("get_toneMapping", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BloomPrePassEffectSO")]
-impl quest_hook::libil2cpp::ObjectType for BloomPrePassEffectSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BloomPrePassEffectSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

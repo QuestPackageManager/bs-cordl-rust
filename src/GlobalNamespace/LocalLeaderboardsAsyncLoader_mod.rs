@@ -6,24 +6,24 @@ pub struct LocalLeaderboardsAsyncLoader {
 }
 #[cfg(feature = "LocalLeaderboardsAsyncLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LocalLeaderboardsAsyncLoader => ""
-    ."LocalLeaderboardsAsyncLoader"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LocalLeaderboardsAsyncLoader =>
+    ""."LocalLeaderboardsAsyncLoader"
 );
 #[cfg(feature = "LocalLeaderboardsAsyncLoader")]
-impl std::ops::Deref for LocalLeaderboardsAsyncLoader {
+impl std::ops::Deref for crate::GlobalNamespace::LocalLeaderboardsAsyncLoader {
     type Target = crate::BGLib::AppFlow::Initialization::AsyncInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LocalLeaderboardsAsyncLoader")]
-impl std::ops::DerefMut for LocalLeaderboardsAsyncLoader {
+impl std::ops::DerefMut for crate::GlobalNamespace::LocalLeaderboardsAsyncLoader {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LocalLeaderboardsAsyncLoader")]
-impl LocalLeaderboardsAsyncLoader {
+impl crate::GlobalNamespace::LocalLeaderboardsAsyncLoader {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -77,7 +77,8 @@ impl LocalLeaderboardsAsyncLoader {
     }
 }
 #[cfg(feature = "LocalLeaderboardsAsyncLoader")]
-impl quest_hook::libil2cpp::ObjectType for LocalLeaderboardsAsyncLoader {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LocalLeaderboardsAsyncLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -4,7 +4,7 @@
 pub struct OVRVirtualKeyboard_BaseInputSource {
     __cordl_parent: crate::System::Object,
     pub _operatingWithoutOVRCameraRig: bool,
-    pub _rig: *mut OVRCameraRig,
+    pub _rig: *mut crate::GlobalNamespace::OVRCameraRig,
 }
 #[cfg(feature = "OVRVirtualKeyboard+BaseInputSource")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource {
     }
     pub fn OnUpdatedAnchors(
         &mut self,
-        obj: *mut OVRCameraRig,
+        obj: *mut crate::GlobalNamespace::OVRCameraRig,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -105,7 +105,7 @@ pub struct OVRVirtualKeyboard_ControllerInputSource {
     pub _directTransform: *mut crate::UnityEngine::Transform,
     pub _inputSource: crate::GlobalNamespace::OVRVirtualKeyboard_InputSource,
     pub _controllerType: crate::GlobalNamespace::OVRInput_Controller,
-    pub _keyboard: *mut OVRVirtualKeyboard,
+    pub _keyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
     pub _lastFrameCount: i32,
     pub _triggerButton: crate::GlobalNamespace::OVRInput_RawButton,
 }
@@ -133,7 +133,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_ControllerInputSource {
 #[cfg(feature = "OVRVirtualKeyboard+ControllerInputSource")]
 impl crate::GlobalNamespace::OVRVirtualKeyboard_ControllerInputSource {
     pub fn New(
-        keyboard: *mut OVRVirtualKeyboard,
+        keyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
         inputSource: crate::GlobalNamespace::OVRVirtualKeyboard_InputSource,
         controllerType: crate::GlobalNamespace::OVRInput_Controller,
         rootTransform: *mut crate::UnityEngine::Transform,
@@ -160,7 +160,7 @@ impl crate::GlobalNamespace::OVRVirtualKeyboard_ControllerInputSource {
     }
     pub fn _ctor(
         &mut self,
-        keyboard: *mut OVRVirtualKeyboard,
+        keyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
         inputSource: crate::GlobalNamespace::OVRVirtualKeyboard_InputSource,
         controllerType: crate::GlobalNamespace::OVRInput_Controller,
         rootTransform: *mut crate::UnityEngine::Transform,
@@ -199,10 +199,10 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_ControllerInputSource {
 #[derive(Debug)]
 pub struct OVRVirtualKeyboard_HandInputSource {
     __cordl_parent: crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource,
-    pub _hand: *mut OVRHand,
+    pub _hand: *mut crate::GlobalNamespace::OVRHand,
     pub _inputSource: crate::GlobalNamespace::OVRVirtualKeyboard_InputSource,
-    pub _keyboard: *mut OVRVirtualKeyboard,
-    pub _skeleton: *mut OVRSkeleton,
+    pub _keyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
+    pub _skeleton: *mut crate::GlobalNamespace::OVRSkeleton,
     pub _lastFrameCount: i32,
 }
 #[cfg(feature = "OVRVirtualKeyboard+HandInputSource")]
@@ -229,9 +229,9 @@ impl crate::GlobalNamespace::OVRVirtualKeyboard_HandInputSource {
     #[cfg(feature = "OVRVirtualKeyboard+HandInputSource+__c")]
     pub type __c = crate::GlobalNamespace::HandInputSource___c;
     pub fn New(
-        keyboard: *mut OVRVirtualKeyboard,
+        keyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
         inputSource: crate::GlobalNamespace::OVRVirtualKeyboard_InputSource,
-        hand: *mut OVRHand,
+        hand: *mut crate::GlobalNamespace::OVRHand,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -251,9 +251,9 @@ impl crate::GlobalNamespace::OVRVirtualKeyboard_HandInputSource {
     }
     pub fn _ctor(
         &mut self,
-        keyboard: *mut OVRVirtualKeyboard,
+        keyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
         inputSource: crate::GlobalNamespace::OVRVirtualKeyboard_InputSource,
-        hand: *mut OVRHand,
+        hand: *mut crate::GlobalNamespace::OVRHand,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -346,8 +346,8 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug, Clone)]
 pub struct InteractorRootTransformOverride_InteractorRootOverrideData {
     pub root: *mut crate::UnityEngine::Transform,
-    pub originalPose: OVRPose,
-    pub targetPose: OVRPose,
+    pub originalPose: crate::GlobalNamespace::OVRPose,
+    pub targetPose: crate::GlobalNamespace::OVRPose,
 }
 #[cfg(
     feature = "OVRVirtualKeyboard+InteractorRootTransformOverride+InteractorRootOverrideData"
@@ -410,13 +410,13 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_InteractorRootTransformOverride {
 #[cfg(feature = "OVRVirtualKeyboard+InteractorRootTransformOverride")]
 impl crate::GlobalNamespace::OVRVirtualKeyboard_InteractorRootTransformOverride {
     #[cfg(
-        feature = "OVRVirtualKeyboard+InteractorRootTransformOverride+_RevertInteractorOverrides_d__6"
-    )]
-    pub type _RevertInteractorOverrides_d__6 = crate::GlobalNamespace::InteractorRootTransformOverride__RevertInteractorOverrides_d__6;
-    #[cfg(
         feature = "OVRVirtualKeyboard+InteractorRootTransformOverride+InteractorRootOverrideData"
     )]
     pub type InteractorRootOverrideData = crate::GlobalNamespace::InteractorRootTransformOverride_InteractorRootOverrideData;
+    #[cfg(
+        feature = "OVRVirtualKeyboard+InteractorRootTransformOverride+_RevertInteractorOverrides_d__6"
+    )]
+    pub type _RevertInteractorOverrides_d__6 = crate::GlobalNamespace::InteractorRootTransformOverride__RevertInteractorOverrides_d__6;
     pub fn Enqueue(
         &mut self,
         interactorRootTransform: *mut crate::UnityEngine::Transform,
@@ -522,8 +522,8 @@ pub struct OVRVirtualKeyboard {
     pub controllerDirectInteraction: bool,
     pub controllerRayInteraction: bool,
     pub controllerRaycaster: *mut crate::UnityEngine::EventSystems::OVRPhysicsRaycaster,
-    pub handLeft: *mut OVRHand,
-    pub handRight: *mut OVRHand,
+    pub handLeft: *mut crate::GlobalNamespace::OVRHand,
+    pub handRight: *mut crate::GlobalNamespace::OVRHand,
     pub handDirectInteraction: bool,
     pub handRayInteraction: bool,
     pub handRaycaster: *mut crate::UnityEngine::EventSystems::OVRPhysicsRaycaster,
@@ -538,7 +538,7 @@ pub struct OVRVirtualKeyboard {
             *mut crate::UnityEngine::Material,
         >,
     >,
-    pub virtualKeyboardScene_: OVRGLTFScene,
+    pub virtualKeyboardScene_: crate::GlobalNamespace::OVRGLTFScene,
     pub virtualKeyboardModelKey_: u64,
     pub modelInitialized_: bool,
     pub modelAvailable_: bool,
@@ -552,39 +552,40 @@ pub struct OVRVirtualKeyboard {
 }
 #[cfg(feature = "OVRVirtualKeyboard")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRVirtualKeyboard => ""."OVRVirtualKeyboard"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRVirtualKeyboard => ""
+    ."OVRVirtualKeyboard"
 );
 #[cfg(feature = "OVRVirtualKeyboard")]
-impl std::ops::Deref for OVRVirtualKeyboard {
+impl std::ops::Deref for crate::GlobalNamespace::OVRVirtualKeyboard {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRVirtualKeyboard")]
-impl std::ops::DerefMut for OVRVirtualKeyboard {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRVirtualKeyboard {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRVirtualKeyboard")]
-impl OVRVirtualKeyboard {
+impl crate::GlobalNamespace::OVRVirtualKeyboard {
+    #[cfg(feature = "OVRVirtualKeyboard+BaseInputSource")]
+    pub type BaseInputSource = crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource;
+    #[cfg(feature = "OVRVirtualKeyboard+ControllerInputSource")]
+    pub type ControllerInputSource = crate::GlobalNamespace::OVRVirtualKeyboard_ControllerInputSource;
+    #[cfg(feature = "OVRVirtualKeyboard+HandInputSource")]
+    pub type HandInputSource = crate::GlobalNamespace::OVRVirtualKeyboard_HandInputSource;
     #[cfg(feature = "OVRVirtualKeyboard+IInputSource")]
     type IInputSource = crate::GlobalNamespace::OVRVirtualKeyboard_IInputSource;
     #[cfg(feature = "OVRVirtualKeyboard+InputSource")]
     pub type InputSource = crate::GlobalNamespace::OVRVirtualKeyboard_InputSource;
-    #[cfg(feature = "OVRVirtualKeyboard+ControllerInputSource")]
-    pub type ControllerInputSource = crate::GlobalNamespace::OVRVirtualKeyboard_ControllerInputSource;
+    #[cfg(feature = "OVRVirtualKeyboard+InteractorRootTransformOverride")]
+    pub type InteractorRootTransformOverride = crate::GlobalNamespace::OVRVirtualKeyboard_InteractorRootTransformOverride;
     #[cfg(feature = "OVRVirtualKeyboard+KeyboardPosition")]
     pub type KeyboardPosition = crate::GlobalNamespace::OVRVirtualKeyboard_KeyboardPosition;
     #[cfg(feature = "OVRVirtualKeyboard+__c")]
     pub type __c = crate::GlobalNamespace::OVRVirtualKeyboard___c;
-    #[cfg(feature = "OVRVirtualKeyboard+InteractorRootTransformOverride")]
-    pub type InteractorRootTransformOverride = crate::GlobalNamespace::OVRVirtualKeyboard_InteractorRootTransformOverride;
-    #[cfg(feature = "OVRVirtualKeyboard+BaseInputSource")]
-    pub type BaseInputSource = crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource;
-    #[cfg(feature = "OVRVirtualKeyboard+HandInputSource")]
-    pub type HandInputSource = crate::GlobalNamespace::OVRVirtualKeyboard_HandInputSource;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -820,7 +821,7 @@ impl OVRVirtualKeyboard {
     pub fn SendVirtualKeyboardInput(
         &mut self,
         inputSource: crate::GlobalNamespace::OVRPlugin_VirtualKeyboardInputSource,
-        pose: OVRPose,
+        pose: crate::GlobalNamespace::OVRPose,
         isPressed: bool,
         interactorRootTransform: *mut crate::UnityEngine::Transform,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1109,7 +1110,7 @@ impl OVRVirtualKeyboard {
     }
 }
 #[cfg(feature = "OVRVirtualKeyboard")]
-impl quest_hook::libil2cpp::ObjectType for OVRVirtualKeyboard {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRVirtualKeyboard {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

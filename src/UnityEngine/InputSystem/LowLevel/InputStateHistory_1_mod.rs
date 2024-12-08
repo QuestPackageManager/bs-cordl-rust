@@ -146,12 +146,12 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<TValue> {
 impl<
     TValue: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<TValue> {
-    #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Record")]
-    pub type Record = crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<
-        TValue,
-    >;
     #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Enumerator")]
     pub type Enumerator = crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Enumerator<
+        TValue,
+    >;
+    #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Record")]
+    pub type Record = crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<
         TValue,
     >;
     pub fn AddRecord(

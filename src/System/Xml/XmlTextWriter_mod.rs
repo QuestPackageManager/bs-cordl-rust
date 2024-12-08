@@ -214,18 +214,18 @@ impl std::ops::DerefMut for crate::System::Xml::XmlTextWriter {
 }
 #[cfg(feature = "System+Xml+XmlTextWriter")]
 impl crate::System::Xml::XmlTextWriter {
+    #[cfg(feature = "System+Xml+XmlTextWriter+Namespace")]
+    pub type Namespace = crate::System::Xml::XmlTextWriter_Namespace;
+    #[cfg(feature = "System+Xml+XmlTextWriter+NamespaceState")]
+    pub type NamespaceState = crate::System::Xml::XmlTextWriter_NamespaceState;
+    #[cfg(feature = "System+Xml+XmlTextWriter+SpecialAttr")]
+    pub type SpecialAttr = crate::System::Xml::XmlTextWriter_SpecialAttr;
     #[cfg(feature = "System+Xml+XmlTextWriter+State")]
     pub type State = crate::System::Xml::XmlTextWriter_State;
     #[cfg(feature = "System+Xml+XmlTextWriter+TagInfo")]
     pub type TagInfo = crate::System::Xml::XmlTextWriter_TagInfo;
     #[cfg(feature = "System+Xml+XmlTextWriter+Token")]
     pub type Token = crate::System::Xml::XmlTextWriter_Token;
-    #[cfg(feature = "System+Xml+XmlTextWriter+NamespaceState")]
-    pub type NamespaceState = crate::System::Xml::XmlTextWriter_NamespaceState;
-    #[cfg(feature = "System+Xml+XmlTextWriter+Namespace")]
-    pub type Namespace = crate::System::Xml::XmlTextWriter_Namespace;
-    #[cfg(feature = "System+Xml+XmlTextWriter+SpecialAttr")]
-    pub type SpecialAttr = crate::System::Xml::XmlTextWriter_SpecialAttr;
     pub fn AddNamespace(
         &mut self,
         prefix: *mut crate::System::String,

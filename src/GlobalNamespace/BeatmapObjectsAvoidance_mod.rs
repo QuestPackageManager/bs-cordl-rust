@@ -7,41 +7,42 @@ pub struct BeatmapObjectsAvoidance {
     pub _yOffset: f32,
     pub _gravity: crate::UnityEngine::Vector2,
     pub _towardsPlayerWrapperTransform: *mut crate::UnityEngine::Transform,
-    pub _audioTimeSource: *mut IAudioTimeSource,
-    pub _beatmapData: *mut IReadonlyBeatmapData,
-    pub _beatmapObjectSpawnController: *mut IBeatmapObjectSpawnController,
-    pub _playerTransforms: *mut PlayerTransforms,
-    pub _avoidanceYOffsetEvaluatorProvider: *mut BeatmapObjectAvoidanceYOffsetEvaluator,
-    pub _pathEvaluator: *mut BeatmapObjectAvoidancePathEvaluator,
-    pub _tiltEvaluator: *mut BeatmapObjectAvoidanceTiltEvaluator,
-    pub _pathBezierSplineEvaluator: *mut BezierSplineEvaluator,
-    pub _accelerationBezierSplineEvaluator: *mut BezierSplineEvaluator,
+    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _beatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
+    pub _beatmapObjectSpawnController: *mut crate::GlobalNamespace::IBeatmapObjectSpawnController,
+    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
+    pub _avoidanceYOffsetEvaluatorProvider: *mut crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator,
+    pub _pathEvaluator: *mut crate::GlobalNamespace::BeatmapObjectAvoidancePathEvaluator,
+    pub _tiltEvaluator: *mut crate::GlobalNamespace::BeatmapObjectAvoidanceTiltEvaluator,
+    pub _pathBezierSplineEvaluator: *mut crate::GlobalNamespace::BezierSplineEvaluator,
+    pub _accelerationBezierSplineEvaluator: *mut crate::GlobalNamespace::BezierSplineEvaluator,
     pub _transform: *mut crate::UnityEngine::Transform,
 }
 #[cfg(feature = "BeatmapObjectsAvoidance")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapObjectsAvoidance => ""."BeatmapObjectsAvoidance"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapObjectsAvoidance => ""
+    ."BeatmapObjectsAvoidance"
 );
 #[cfg(feature = "BeatmapObjectsAvoidance")]
-impl std::ops::Deref for BeatmapObjectsAvoidance {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapObjectsAvoidance {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapObjectsAvoidance")]
-impl std::ops::DerefMut for BeatmapObjectsAvoidance {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapObjectsAvoidance {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapObjectsAvoidance")]
-impl BeatmapObjectsAvoidance {
+impl crate::GlobalNamespace::BeatmapObjectsAvoidance {
     pub fn AdjustPositionWithOffsetDirection(
         &mut self,
         position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
         lineIndex: i32,
-        offsetDirection: OffsetDirection,
+        offsetDirection: crate::GlobalNamespace::OffsetDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -139,7 +140,8 @@ impl BeatmapObjectsAvoidance {
     }
 }
 #[cfg(feature = "BeatmapObjectsAvoidance")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapObjectsAvoidance {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapObjectsAvoidance {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,31 +2,36 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstSliderNoteDisappearingArrowController {
-    __cordl_parent: DisappearingArrowControllerBase_1<
-        *mut BurstSliderGameNoteController,
+    __cordl_parent: crate::GlobalNamespace::DisappearingArrowControllerBase_1<
+        *mut crate::GlobalNamespace::BurstSliderGameNoteController,
     >,
-    pub _burstSliderNoteController: *mut BurstSliderGameNoteController,
+    pub _burstSliderNoteController: *mut crate::GlobalNamespace::BurstSliderGameNoteController,
 }
 #[cfg(feature = "BurstSliderNoteDisappearingArrowController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BurstSliderNoteDisappearingArrowController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BurstSliderNoteDisappearingArrowController => ""
     ."BurstSliderNoteDisappearingArrowController"
 );
 #[cfg(feature = "BurstSliderNoteDisappearingArrowController")]
-impl std::ops::Deref for BurstSliderNoteDisappearingArrowController {
-    type Target = DisappearingArrowControllerBase_1<*mut BurstSliderGameNoteController>;
+impl std::ops::Deref
+for crate::GlobalNamespace::BurstSliderNoteDisappearingArrowController {
+    type Target = crate::GlobalNamespace::DisappearingArrowControllerBase_1<
+        *mut crate::GlobalNamespace::BurstSliderGameNoteController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BurstSliderNoteDisappearingArrowController")]
-impl std::ops::DerefMut for BurstSliderNoteDisappearingArrowController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::BurstSliderNoteDisappearingArrowController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BurstSliderNoteDisappearingArrowController")]
-impl BurstSliderNoteDisappearingArrowController {
+impl crate::GlobalNamespace::BurstSliderNoteDisappearingArrowController {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -46,17 +51,20 @@ impl BurstSliderNoteDisappearingArrowController {
     }
     pub fn get_gameNoteController(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BurstSliderGameNoteController> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BurstSliderGameNoteController,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BurstSliderGameNoteController = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BurstSliderGameNoteController = __cordl_object
             .invoke("get_gameNoteController", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BurstSliderNoteDisappearingArrowController")]
-impl quest_hook::libil2cpp::ObjectType for BurstSliderNoteDisappearingArrowController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BurstSliderNoteDisappearingArrowController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

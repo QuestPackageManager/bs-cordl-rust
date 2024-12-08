@@ -2,30 +2,33 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SmoothCameraSmoothnessSettingsController {
-    __cordl_parent: ListSettingsController,
+    __cordl_parent: crate::GlobalNamespace::ListSettingsController,
     pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
     pub _smoothnesses: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
 }
 #[cfg(feature = "SmoothCameraSmoothnessSettingsController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SmoothCameraSmoothnessSettingsController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SmoothCameraSmoothnessSettingsController => ""
     ."SmoothCameraSmoothnessSettingsController"
 );
 #[cfg(feature = "SmoothCameraSmoothnessSettingsController")]
-impl std::ops::Deref for SmoothCameraSmoothnessSettingsController {
-    type Target = ListSettingsController;
+impl std::ops::Deref
+for crate::GlobalNamespace::SmoothCameraSmoothnessSettingsController {
+    type Target = crate::GlobalNamespace::ListSettingsController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SmoothCameraSmoothnessSettingsController")]
-impl std::ops::DerefMut for SmoothCameraSmoothnessSettingsController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::SmoothCameraSmoothnessSettingsController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SmoothCameraSmoothnessSettingsController")]
-impl SmoothCameraSmoothnessSettingsController {
+impl crate::GlobalNamespace::SmoothCameraSmoothnessSettingsController {
     pub fn ApplyValue(
         &mut self,
         idx: i32,
@@ -79,7 +82,8 @@ impl SmoothCameraSmoothnessSettingsController {
     }
 }
 #[cfg(feature = "SmoothCameraSmoothnessSettingsController")]
-impl quest_hook::libil2cpp::ObjectType for SmoothCameraSmoothnessSettingsController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SmoothCameraSmoothnessSettingsController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -8,23 +8,24 @@ pub struct FillIndicator {
 }
 #[cfg(feature = "FillIndicator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FillIndicator => ""."FillIndicator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FillIndicator => ""
+    ."FillIndicator"
 );
 #[cfg(feature = "FillIndicator")]
-impl std::ops::Deref for FillIndicator {
+impl std::ops::Deref for crate::GlobalNamespace::FillIndicator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FillIndicator")]
-impl std::ops::DerefMut for FillIndicator {
+impl std::ops::DerefMut for crate::GlobalNamespace::FillIndicator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FillIndicator")]
-impl FillIndicator {
+impl crate::GlobalNamespace::FillIndicator {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -62,7 +63,7 @@ impl FillIndicator {
     }
 }
 #[cfg(feature = "FillIndicator")]
-impl quest_hook::libil2cpp::ObjectType for FillIndicator {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FillIndicator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

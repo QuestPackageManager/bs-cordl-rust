@@ -272,20 +272,20 @@ impl std::ops::DerefMut for crate::HMUI::ViewController {
 impl crate::HMUI::ViewController {
     pub const kTransitionDuration: f32 = 0.4f32;
     pub const kTransitionMoveOffset: f32 = 2f32;
-    #[cfg(feature = "HMUI+ViewController+_ReplaceViewControllerCoroutine_d__60")]
-    pub type _ReplaceViewControllerCoroutine_d__60 = crate::HMUI::ViewController__ReplaceViewControllerCoroutine_d__60;
-    #[cfg(feature = "HMUI+ViewController+AnimationType")]
-    pub type AnimationType = crate::HMUI::ViewController_AnimationType;
-    #[cfg(feature = "HMUI+ViewController+_DismissViewControllerCoroutine_d__62")]
-    pub type _DismissViewControllerCoroutine_d__62 = crate::HMUI::ViewController__DismissViewControllerCoroutine_d__62;
     #[cfg(feature = "HMUI+ViewController+AnimationDirection")]
     pub type AnimationDirection = crate::HMUI::ViewController_AnimationDirection;
-    #[cfg(feature = "HMUI+ViewController+DidDeactivateDelegate")]
-    pub type DidDeactivateDelegate = crate::HMUI::ViewController_DidDeactivateDelegate;
+    #[cfg(feature = "HMUI+ViewController+AnimationType")]
+    pub type AnimationType = crate::HMUI::ViewController_AnimationType;
     #[cfg(feature = "HMUI+ViewController+DidActivateDelegate")]
     pub type DidActivateDelegate = crate::HMUI::ViewController_DidActivateDelegate;
+    #[cfg(feature = "HMUI+ViewController+DidDeactivateDelegate")]
+    pub type DidDeactivateDelegate = crate::HMUI::ViewController_DidDeactivateDelegate;
+    #[cfg(feature = "HMUI+ViewController+_DismissViewControllerCoroutine_d__62")]
+    pub type _DismissViewControllerCoroutine_d__62 = crate::HMUI::ViewController__DismissViewControllerCoroutine_d__62;
     #[cfg(feature = "HMUI+ViewController+_PresentViewControllerCoroutine_d__58")]
     pub type _PresentViewControllerCoroutine_d__58 = crate::HMUI::ViewController__PresentViewControllerCoroutine_d__58;
+    #[cfg(feature = "HMUI+ViewController+_ReplaceViewControllerCoroutine_d__60")]
+    pub type _ReplaceViewControllerCoroutine_d__60 = crate::HMUI::ViewController__ReplaceViewControllerCoroutine_d__60;
     pub fn DeactivateGameObject(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

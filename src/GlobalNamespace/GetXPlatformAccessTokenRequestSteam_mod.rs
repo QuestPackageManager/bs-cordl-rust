@@ -8,24 +8,25 @@ pub struct GetXPlatformAccessTokenRequestSteam {
 }
 #[cfg(feature = "GetXPlatformAccessTokenRequestSteam")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GetXPlatformAccessTokenRequestSteam => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::GetXPlatformAccessTokenRequestSteam => ""
     ."GetXPlatformAccessTokenRequestSteam"
 );
 #[cfg(feature = "GetXPlatformAccessTokenRequestSteam")]
-impl std::ops::Deref for GetXPlatformAccessTokenRequestSteam {
+impl std::ops::Deref for crate::GlobalNamespace::GetXPlatformAccessTokenRequestSteam {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GetXPlatformAccessTokenRequestSteam")]
-impl std::ops::DerefMut for GetXPlatformAccessTokenRequestSteam {
+impl std::ops::DerefMut for crate::GlobalNamespace::GetXPlatformAccessTokenRequestSteam {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GetXPlatformAccessTokenRequestSteam")]
-impl GetXPlatformAccessTokenRequestSteam {
+impl crate::GlobalNamespace::GetXPlatformAccessTokenRequestSteam {
     pub fn New(
         platformToken: *mut crate::System::String,
         platformUserId: i64,
@@ -50,7 +51,8 @@ impl GetXPlatformAccessTokenRequestSteam {
     }
 }
 #[cfg(feature = "GetXPlatformAccessTokenRequestSteam")]
-impl quest_hook::libil2cpp::ObjectType for GetXPlatformAccessTokenRequestSteam {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GetXPlatformAccessTokenRequestSteam {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

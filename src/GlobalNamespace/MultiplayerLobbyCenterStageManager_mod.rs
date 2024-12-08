@@ -4,31 +4,32 @@
 pub struct MultiplayerLobbyCenterStageManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _centerObjectTransform: *mut crate::UnityEngine::Transform,
-    pub _centerStageScreenController: *mut CenterStageScreenController,
-    pub _lobbyStateDataModel: *mut ILobbyStateDataModel,
+    pub _centerStageScreenController: *mut crate::GlobalNamespace::CenterStageScreenController,
+    pub _lobbyStateDataModel: *mut crate::GlobalNamespace::ILobbyStateDataModel,
     pub _innerCircleRadius: f32,
     pub _minOuterCircleRadius: f32,
 }
 #[cfg(feature = "MultiplayerLobbyCenterStageManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLobbyCenterStageManager => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLobbyCenterStageManager => ""
     ."MultiplayerLobbyCenterStageManager"
 );
 #[cfg(feature = "MultiplayerLobbyCenterStageManager")]
-impl std::ops::Deref for MultiplayerLobbyCenterStageManager {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLobbyCenterStageManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLobbyCenterStageManager")]
-impl std::ops::DerefMut for MultiplayerLobbyCenterStageManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLobbyCenterStageManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLobbyCenterStageManager")]
-impl MultiplayerLobbyCenterStageManager {
+impl crate::GlobalNamespace::MultiplayerLobbyCenterStageManager {
     pub fn ActivateCenterStageManager(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -90,7 +91,8 @@ impl MultiplayerLobbyCenterStageManager {
     }
 }
 #[cfg(feature = "MultiplayerLobbyCenterStageManager")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLobbyCenterStageManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLobbyCenterStageManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

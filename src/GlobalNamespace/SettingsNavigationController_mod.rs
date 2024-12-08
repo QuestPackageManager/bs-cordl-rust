@@ -26,24 +26,24 @@ pub struct SettingsNavigationController {
 }
 #[cfg(feature = "SettingsNavigationController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SettingsNavigationController => ""
-    ."SettingsNavigationController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SettingsNavigationController =>
+    ""."SettingsNavigationController"
 );
 #[cfg(feature = "SettingsNavigationController")]
-impl std::ops::Deref for SettingsNavigationController {
+impl std::ops::Deref for crate::GlobalNamespace::SettingsNavigationController {
     type Target = crate::HMUI::NavigationController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SettingsNavigationController")]
-impl std::ops::DerefMut for SettingsNavigationController {
+impl std::ops::DerefMut for crate::GlobalNamespace::SettingsNavigationController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SettingsNavigationController")]
-impl SettingsNavigationController {
+impl crate::GlobalNamespace::SettingsNavigationController {
     #[cfg(feature = "SettingsNavigationController+FinishAction")]
     pub type FinishAction = crate::GlobalNamespace::SettingsNavigationController_FinishAction;
     pub fn DidActivate(
@@ -148,7 +148,8 @@ impl SettingsNavigationController {
     }
 }
 #[cfg(feature = "SettingsNavigationController")]
-impl quest_hook::libil2cpp::ObjectType for SettingsNavigationController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SettingsNavigationController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -8,23 +8,23 @@ pub struct MainCamera {
 }
 #[cfg(feature = "MainCamera")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MainCamera => ""."MainCamera"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MainCamera => ""."MainCamera"
 );
 #[cfg(feature = "MainCamera")]
-impl std::ops::Deref for MainCamera {
+impl std::ops::Deref for crate::GlobalNamespace::MainCamera {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainCamera")]
-impl std::ops::DerefMut for MainCamera {
+impl std::ops::DerefMut for crate::GlobalNamespace::MainCamera {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainCamera")]
-impl MainCamera {
+impl crate::GlobalNamespace::MainCamera {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -95,7 +95,7 @@ impl MainCamera {
     }
 }
 #[cfg(feature = "MainCamera")]
-impl quest_hook::libil2cpp::ObjectType for MainCamera {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MainCamera {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

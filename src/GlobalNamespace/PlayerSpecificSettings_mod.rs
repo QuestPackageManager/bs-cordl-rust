@@ -13,39 +13,40 @@ pub struct PlayerSpecificSettings {
     pub _advancedHud: bool,
     pub _autoRestart: bool,
     pub _saberTrailIntensity: f32,
-    pub _noteJumpDurationTypeSettings: NoteJumpDurationTypeSettings,
+    pub _noteJumpDurationTypeSettings: crate::GlobalNamespace::NoteJumpDurationTypeSettings,
     pub _noteJumpFixedDuration: f32,
     pub _noteJumpStartBeatOffset: f32,
     pub _hideNoteSpawnEffect: bool,
     pub _adaptiveSfx: bool,
     pub _arcsHapticFeedback: bool,
-    pub _arcsVisible: ArcVisibilityType,
-    pub _environmentEffectsFilterDefaultPreset: EnvironmentEffectsFilterPreset,
-    pub _environmentEffectsFilterExpertPlusPreset: EnvironmentEffectsFilterPreset,
+    pub _arcsVisible: crate::GlobalNamespace::ArcVisibilityType,
+    pub _environmentEffectsFilterDefaultPreset: crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+    pub _environmentEffectsFilterExpertPlusPreset: crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
     pub _headsetHapticIntensity: f32,
 }
 #[cfg(feature = "PlayerSpecificSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerSpecificSettings => ""."PlayerSpecificSettings"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerSpecificSettings => ""
+    ."PlayerSpecificSettings"
 );
 #[cfg(feature = "PlayerSpecificSettings")]
-impl std::ops::Deref for PlayerSpecificSettings {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerSpecificSettings {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSpecificSettings")]
-impl std::ops::DerefMut for PlayerSpecificSettings {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSpecificSettings {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSpecificSettings")]
-impl PlayerSpecificSettings {
+impl crate::GlobalNamespace::PlayerSpecificSettings {
     pub fn AreValuesEqual(
         &mut self,
-        other: *mut PlayerSpecificSettings,
+        other: *mut crate::GlobalNamespace::PlayerSpecificSettings,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -66,26 +67,30 @@ impl PlayerSpecificSettings {
         autoRestart: crate::System::Nullable_1<bool>,
         saberTrailIntensity: crate::System::Nullable_1<f32>,
         noteJumpDurationTypeSettings: crate::System::Nullable_1<
-            NoteJumpDurationTypeSettings,
+            crate::GlobalNamespace::NoteJumpDurationTypeSettings,
         >,
         noteJumpFixedDuration: crate::System::Nullable_1<f32>,
         noteJumpStartBeatOffset: crate::System::Nullable_1<f32>,
         hideNoteSpawnEffect: crate::System::Nullable_1<bool>,
         adaptiveSfx: crate::System::Nullable_1<bool>,
         arcsHapticFeedback: crate::System::Nullable_1<bool>,
-        arcsVisible: crate::System::Nullable_1<ArcVisibilityType>,
+        arcsVisible: crate::System::Nullable_1<
+            crate::GlobalNamespace::ArcVisibilityType,
+        >,
         environmentEffectsFilterDefaultPreset: crate::System::Nullable_1<
-            EnvironmentEffectsFilterPreset,
+            crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
         >,
         environmentEffectsFilterExpertPlusPreset: crate::System::Nullable_1<
-            EnvironmentEffectsFilterPreset,
+            crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
         >,
         headsetHapticIntensity: crate::System::Nullable_1<f32>,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerSpecificSettings> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PlayerSpecificSettings,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PlayerSpecificSettings = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PlayerSpecificSettings = __cordl_object
             .invoke(
                 "CopyWith",
                 (
@@ -115,12 +120,14 @@ impl PlayerSpecificSettings {
     }
     pub fn GetEnvironmentEffectsFilterPreset(
         &mut self,
-        difficulty: BeatmapDifficulty,
-    ) -> quest_hook::libil2cpp::Result<EnvironmentEffectsFilterPreset> {
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: EnvironmentEffectsFilterPreset = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentEffectsFilterPreset = __cordl_object
             .invoke("GetEnvironmentEffectsFilterPreset", (difficulty))?;
         Ok(__cordl_ret)
     }
@@ -142,15 +149,15 @@ impl PlayerSpecificSettings {
         advancedHud: bool,
         autoRestart: bool,
         saberTrailIntensity: f32,
-        noteJumpDurationTypeSettings: NoteJumpDurationTypeSettings,
+        noteJumpDurationTypeSettings: crate::GlobalNamespace::NoteJumpDurationTypeSettings,
         noteJumpFixedDuration: f32,
         noteJumpStartBeatOffset: f32,
         hideNoteSpawnEffect: bool,
         adaptiveSfx: bool,
         arcsHapticFeedback: bool,
-        arcsVisible: ArcVisibilityType,
-        environmentEffectsFilterDefaultPreset: EnvironmentEffectsFilterPreset,
-        environmentEffectsFilterExpertPlusPreset: EnvironmentEffectsFilterPreset,
+        arcsVisible: crate::GlobalNamespace::ArcVisibilityType,
+        environmentEffectsFilterDefaultPreset: crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+        environmentEffectsFilterExpertPlusPreset: crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
         headsetHapticIntensity: f32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -205,15 +212,15 @@ impl PlayerSpecificSettings {
         advancedHud: bool,
         autoRestart: bool,
         saberTrailIntensity: f32,
-        noteJumpDurationTypeSettings: NoteJumpDurationTypeSettings,
+        noteJumpDurationTypeSettings: crate::GlobalNamespace::NoteJumpDurationTypeSettings,
         noteJumpFixedDuration: f32,
         noteJumpStartBeatOffset: f32,
         hideNoteSpawnEffect: bool,
         adaptiveSfx: bool,
         arcsHapticFeedback: bool,
-        arcsVisible: ArcVisibilityType,
-        environmentEffectsFilterDefaultPreset: EnvironmentEffectsFilterPreset,
-        environmentEffectsFilterExpertPlusPreset: EnvironmentEffectsFilterPreset,
+        arcsVisible: crate::GlobalNamespace::ArcVisibilityType,
+        environmentEffectsFilterDefaultPreset: crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+        environmentEffectsFilterExpertPlusPreset: crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
         headsetHapticIntensity: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -263,11 +270,11 @@ impl PlayerSpecificSettings {
     }
     pub fn get_arcVisibility(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<ArcVisibilityType> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ArcVisibilityType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: ArcVisibilityType = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::ArcVisibilityType = __cordl_object
             .invoke("get_arcVisibility", ())?;
         Ok(__cordl_ret)
     }
@@ -294,21 +301,25 @@ impl PlayerSpecificSettings {
     }
     pub fn get_environmentEffectsFilterDefaultPreset(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<EnvironmentEffectsFilterPreset> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: EnvironmentEffectsFilterPreset = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentEffectsFilterPreset = __cordl_object
             .invoke("get_environmentEffectsFilterDefaultPreset", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_environmentEffectsFilterExpertPlusPreset(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<EnvironmentEffectsFilterPreset> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: EnvironmentEffectsFilterPreset = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentEffectsFilterPreset = __cordl_object
             .invoke("get_environmentEffectsFilterExpertPlusPreset", ())?;
         Ok(__cordl_ret)
     }
@@ -349,11 +360,13 @@ impl PlayerSpecificSettings {
     }
     pub fn get_noteJumpDurationTypeSettings(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<NoteJumpDurationTypeSettings> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::NoteJumpDurationTypeSettings,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: NoteJumpDurationTypeSettings = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::NoteJumpDurationTypeSettings = __cordl_object
             .invoke("get_noteJumpDurationTypeSettings", ())?;
         Ok(__cordl_ret)
     }
@@ -401,7 +414,8 @@ impl PlayerSpecificSettings {
     }
 }
 #[cfg(feature = "PlayerSpecificSettings")]
-impl quest_hook::libil2cpp::ObjectType for PlayerSpecificSettings {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayerSpecificSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

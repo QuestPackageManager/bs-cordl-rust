@@ -2,28 +2,28 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoreObjectiveValueFormatterSO {
-    __cordl_parent: ObjectiveValueFormatterSO,
+    __cordl_parent: crate::GlobalNamespace::ObjectiveValueFormatterSO,
 }
 #[cfg(feature = "ScoreObjectiveValueFormatterSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ScoreObjectiveValueFormatterSO => ""
-    ."ScoreObjectiveValueFormatterSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ScoreObjectiveValueFormatterSO
+    => ""."ScoreObjectiveValueFormatterSO"
 );
 #[cfg(feature = "ScoreObjectiveValueFormatterSO")]
-impl std::ops::Deref for ScoreObjectiveValueFormatterSO {
-    type Target = ObjectiveValueFormatterSO;
+impl std::ops::Deref for crate::GlobalNamespace::ScoreObjectiveValueFormatterSO {
+    type Target = crate::GlobalNamespace::ObjectiveValueFormatterSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScoreObjectiveValueFormatterSO")]
-impl std::ops::DerefMut for ScoreObjectiveValueFormatterSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::ScoreObjectiveValueFormatterSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScoreObjectiveValueFormatterSO")]
-impl ScoreObjectiveValueFormatterSO {
+impl crate::GlobalNamespace::ScoreObjectiveValueFormatterSO {
     pub fn FormatValue(
         &mut self,
         value: i32,
@@ -54,7 +54,8 @@ impl ScoreObjectiveValueFormatterSO {
     }
 }
 #[cfg(feature = "ScoreObjectiveValueFormatterSO")]
-impl quest_hook::libil2cpp::ObjectType for ScoreObjectiveValueFormatterSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ScoreObjectiveValueFormatterSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

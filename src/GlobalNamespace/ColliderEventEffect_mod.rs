@@ -2,30 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColliderEventEffect {
-    __cordl_parent: FloatFxGroupEffectTarget,
+    __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _effectCollider: *mut crate::UnityEngine::Collider,
     pub _value: f32,
-    pub _environmentCollisionRepository: *mut EnvironmentCollisionRepository,
+    pub _environmentCollisionRepository: *mut crate::GlobalNamespace::EnvironmentCollisionRepository,
 }
 #[cfg(feature = "ColliderEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ColliderEventEffect => ""."ColliderEventEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ColliderEventEffect => ""
+    ."ColliderEventEffect"
 );
 #[cfg(feature = "ColliderEventEffect")]
-impl std::ops::Deref for ColliderEventEffect {
-    type Target = FloatFxGroupEffectTarget;
+impl std::ops::Deref for crate::GlobalNamespace::ColliderEventEffect {
+    type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColliderEventEffect")]
-impl std::ops::DerefMut for ColliderEventEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::ColliderEventEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColliderEventEffect")]
-impl ColliderEventEffect {
+impl crate::GlobalNamespace::ColliderEventEffect {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -98,7 +99,7 @@ impl ColliderEventEffect {
     }
 }
 #[cfg(feature = "ColliderEventEffect")]
-impl quest_hook::libil2cpp::ObjectType for ColliderEventEffect {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColliderEventEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

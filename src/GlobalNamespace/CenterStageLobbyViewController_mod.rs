@@ -3,29 +3,29 @@
 #[derive(Debug)]
 pub struct CenterStageLobbyViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _beatmapSelectionView: *mut BeatmapSelectionView,
-    pub _modifiersSelectionView: *mut ModifiersSelectionView,
+    pub _beatmapSelectionView: *mut crate::GlobalNamespace::BeatmapSelectionView,
+    pub _modifiersSelectionView: *mut crate::GlobalNamespace::ModifiersSelectionView,
 }
 #[cfg(feature = "CenterStageLobbyViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CenterStageLobbyViewController => ""
-    ."CenterStageLobbyViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CenterStageLobbyViewController
+    => ""."CenterStageLobbyViewController"
 );
 #[cfg(feature = "CenterStageLobbyViewController")]
-impl std::ops::Deref for CenterStageLobbyViewController {
+impl std::ops::Deref for crate::GlobalNamespace::CenterStageLobbyViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CenterStageLobbyViewController")]
-impl std::ops::DerefMut for CenterStageLobbyViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::CenterStageLobbyViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CenterStageLobbyViewController")]
-impl CenterStageLobbyViewController {
+impl crate::GlobalNamespace::CenterStageLobbyViewController {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -35,7 +35,7 @@ impl CenterStageLobbyViewController {
     }
     pub fn SetLevelGameplaySetupData(
         &mut self,
-        levelGameplaySetupData: *mut ILevelGameplaySetupData,
+        levelGameplaySetupData: *mut crate::GlobalNamespace::ILevelGameplaySetupData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -56,7 +56,8 @@ impl CenterStageLobbyViewController {
     }
 }
 #[cfg(feature = "CenterStageLobbyViewController")]
-impl quest_hook::libil2cpp::ObjectType for CenterStageLobbyViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::CenterStageLobbyViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

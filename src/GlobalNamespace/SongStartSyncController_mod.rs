@@ -3,36 +3,37 @@
 #[derive(Debug)]
 pub struct SongStartSyncController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
-    pub _gameplayRpcManager: *mut IGameplayRpcManager,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
     pub _waitStartTime: f32,
     pub _songStarted: bool,
     pub _startTime: f32,
     pub _sessionGameId: *mut crate::System::String,
-    pub _songStartHandler: *mut SongStartHandler,
+    pub _songStartHandler: *mut crate::GlobalNamespace::SongStartHandler,
     pub syncStartFailedEvent: *mut crate::System::Action,
     pub syncStartSuccessEvent: *mut crate::System::Action_1<i64>,
     pub syncResumeEvent: *mut crate::System::Action_1<i64>,
 }
 #[cfg(feature = "SongStartSyncController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SongStartSyncController => ""."SongStartSyncController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongStartSyncController => ""
+    ."SongStartSyncController"
 );
 #[cfg(feature = "SongStartSyncController")]
-impl std::ops::Deref for SongStartSyncController {
+impl std::ops::Deref for crate::GlobalNamespace::SongStartSyncController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongStartSyncController")]
-impl std::ops::DerefMut for SongStartSyncController {
+impl std::ops::DerefMut for crate::GlobalNamespace::SongStartSyncController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongStartSyncController")]
-impl SongStartSyncController {
+impl crate::GlobalNamespace::SongStartSyncController {
     pub const kAudioLoadTimeout: f32 = 15f32;
     pub fn HandleSetSongStartSyncTime(
         &mut self,
@@ -85,7 +86,7 @@ impl SongStartSyncController {
     }
     pub fn StartSong(
         &mut self,
-        playersSpecificSettingsAtGameStartModel: *mut PlayersSpecificSettingsAtGameStartModel,
+        playersSpecificSettingsAtGameStartModel: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
         sessionGameId: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -200,7 +201,8 @@ impl SongStartSyncController {
     }
 }
 #[cfg(feature = "SongStartSyncController")]
-impl quest_hook::libil2cpp::ObjectType for SongStartSyncController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SongStartSyncController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

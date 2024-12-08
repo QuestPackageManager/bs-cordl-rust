@@ -6,23 +6,24 @@ pub struct IAudioTimeSource {
 }
 #[cfg(feature = "IAudioTimeSource")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IAudioTimeSource => ""."IAudioTimeSource"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IAudioTimeSource => ""
+    ."IAudioTimeSource"
 );
 #[cfg(feature = "IAudioTimeSource")]
-impl std::ops::Deref for IAudioTimeSource {
+impl std::ops::Deref for crate::GlobalNamespace::IAudioTimeSource {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IAudioTimeSource")]
-impl std::ops::DerefMut for IAudioTimeSource {
+impl std::ops::DerefMut for crate::GlobalNamespace::IAudioTimeSource {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IAudioTimeSource")]
-impl IAudioTimeSource {
+impl crate::GlobalNamespace::IAudioTimeSource {
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
@@ -72,7 +73,7 @@ impl IAudioTimeSource {
     }
 }
 #[cfg(feature = "IAudioTimeSource")]
-impl quest_hook::libil2cpp::ObjectType for IAudioTimeSource {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IAudioTimeSource {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

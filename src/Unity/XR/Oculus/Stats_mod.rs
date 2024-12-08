@@ -130,12 +130,12 @@ impl std::ops::DerefMut for crate::Unity::XR::Oculus::Stats {
 }
 #[cfg(feature = "Unity+XR+Oculus+Stats")]
 impl crate::Unity::XR::Oculus::Stats {
-    #[cfg(feature = "Unity+XR+Oculus+Stats+PerfMetrics")]
-    pub type PerfMetrics = crate::Unity::XR::Oculus::Stats_PerfMetrics;
     #[cfg(feature = "Unity+XR+Oculus+Stats+AdaptivePerformance")]
     pub type AdaptivePerformance = crate::Unity::XR::Oculus::Stats_AdaptivePerformance;
     #[cfg(feature = "Unity+XR+Oculus+Stats+AppMetrics")]
     pub type AppMetrics = crate::Unity::XR::Oculus::Stats_AppMetrics;
+    #[cfg(feature = "Unity+XR+Oculus+Stats+PerfMetrics")]
+    pub type PerfMetrics = crate::Unity::XR::Oculus::Stats_PerfMetrics;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRCustomSkeleton {
-    __cordl_parent: OVRSkeleton,
+    __cordl_parent: crate::GlobalNamespace::OVRSkeleton,
     pub _customBones_V2: *mut crate::System::Collections::Generic::List_1<
         *mut crate::UnityEngine::Transform,
     >,
@@ -10,23 +10,24 @@ pub struct OVRCustomSkeleton {
 }
 #[cfg(feature = "OVRCustomSkeleton")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRCustomSkeleton => ""."OVRCustomSkeleton"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRCustomSkeleton => ""
+    ."OVRCustomSkeleton"
 );
 #[cfg(feature = "OVRCustomSkeleton")]
-impl std::ops::Deref for OVRCustomSkeleton {
-    type Target = OVRSkeleton;
+impl std::ops::Deref for crate::GlobalNamespace::OVRCustomSkeleton {
+    type Target = crate::GlobalNamespace::OVRSkeleton;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRCustomSkeleton")]
-impl std::ops::DerefMut for OVRCustomSkeleton {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRCustomSkeleton {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRCustomSkeleton")]
-impl OVRCustomSkeleton {
+impl crate::GlobalNamespace::OVRCustomSkeleton {
     #[cfg(feature = "OVRCustomSkeleton+RetargetingType")]
     pub type RetargetingType = crate::GlobalNamespace::OVRCustomSkeleton_RetargetingType;
     pub fn AllocateBones(
@@ -118,7 +119,7 @@ impl OVRCustomSkeleton {
     }
 }
 #[cfg(feature = "OVRCustomSkeleton")]
-impl quest_hook::libil2cpp::ObjectType for OVRCustomSkeleton {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRCustomSkeleton {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

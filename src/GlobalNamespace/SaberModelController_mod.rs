@@ -78,42 +78,43 @@ for crate::GlobalNamespace::SaberModelController_InitData {
 #[derive(Debug)]
 pub struct SaberModelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _saberTrail: *mut SaberTrail,
+    pub _saberTrail: *mut crate::GlobalNamespace::SaberTrail,
     pub _setSaberGlowColors: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut SetSaberGlowColor,
+        *mut crate::GlobalNamespace::SetSaberGlowColor,
     >,
     pub _setSaberFakeGlowColors: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut SetSaberFakeGlowColor,
+        *mut crate::GlobalNamespace::SetSaberFakeGlowColor,
     >,
-    pub _saberLight: *mut TubeBloomPrePassLight,
+    pub _saberLight: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
     pub _initData: *mut crate::GlobalNamespace::SaberModelController_InitData,
-    pub _colorManager: *mut ColorManager,
+    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
 }
 #[cfg(feature = "SaberModelController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SaberModelController => ""."SaberModelController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SaberModelController => ""
+    ."SaberModelController"
 );
 #[cfg(feature = "SaberModelController")]
-impl std::ops::Deref for SaberModelController {
+impl std::ops::Deref for crate::GlobalNamespace::SaberModelController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberModelController")]
-impl std::ops::DerefMut for SaberModelController {
+impl std::ops::DerefMut for crate::GlobalNamespace::SaberModelController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberModelController")]
-impl SaberModelController {
+impl crate::GlobalNamespace::SaberModelController {
     #[cfg(feature = "SaberModelController+InitData")]
     pub type InitData = crate::GlobalNamespace::SaberModelController_InitData;
     pub fn Init(
         &mut self,
         parent: *mut crate::UnityEngine::Transform,
-        saber: *mut Saber,
+        saber: *mut crate::GlobalNamespace::Saber,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -141,7 +142,7 @@ impl SaberModelController {
     }
 }
 #[cfg(feature = "SaberModelController")]
-impl quest_hook::libil2cpp::ObjectType for SaberModelController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberModelController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

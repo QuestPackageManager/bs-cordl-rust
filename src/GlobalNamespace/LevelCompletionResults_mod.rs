@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LevelCompletionResults {
     __cordl_parent: crate::System::Object,
-    pub gameplayModifiers: *mut GameplayModifiers,
+    pub gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     pub modifiedScore: i32,
     pub multipliedScore: i32,
     pub rank: crate::GlobalNamespace::RankModel_Rank,
@@ -31,23 +31,24 @@ pub struct LevelCompletionResults {
 }
 #[cfg(feature = "LevelCompletionResults")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LevelCompletionResults => ""."LevelCompletionResults"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LevelCompletionResults => ""
+    ."LevelCompletionResults"
 );
 #[cfg(feature = "LevelCompletionResults")]
-impl std::ops::Deref for LevelCompletionResults {
+impl std::ops::Deref for crate::GlobalNamespace::LevelCompletionResults {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelCompletionResults")]
-impl std::ops::DerefMut for LevelCompletionResults {
+impl std::ops::DerefMut for crate::GlobalNamespace::LevelCompletionResults {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelCompletionResults")]
-impl LevelCompletionResults {
+impl crate::GlobalNamespace::LevelCompletionResults {
     #[cfg(feature = "LevelCompletionResults+LevelEndAction")]
     pub type LevelEndAction = crate::GlobalNamespace::LevelCompletionResults_LevelEndAction;
     #[cfg(feature = "LevelCompletionResults+LevelEndStateType")]
@@ -65,11 +66,13 @@ impl LevelCompletionResults {
     pub fn LiteNetLib_Utils_INetImmutableSerializable_LevelCompletionResults__CreateFromSerializedData(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-    ) -> quest_hook::libil2cpp::Result<*mut LevelCompletionResults> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::LevelCompletionResults,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut LevelCompletionResults = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::LevelCompletionResults = __cordl_object
             .invoke(
                 "LiteNetLib.Utils.INetImmutableSerializable<LevelCompletionResults>.CreateFromSerializedData",
                 (reader),
@@ -84,7 +87,7 @@ impl LevelCompletionResults {
         Ok(__cordl_object)
     }
     pub fn New_GameplayModifiers_i32_i32_RankModel_Rank__cordl_bool_f32_f32_f32_f32_LevelCompletionResults_LevelEndStateType_LevelCompletionResults_LevelEndAction_f32_i32_i32_i32_i32_i32_i32_i32_i32_f32_f32_i32_f32__cordl_bool1(
-        gameplayModifiers: *mut GameplayModifiers,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
         modifiedScore: i32,
         multipliedScore: i32,
         rank: crate::GlobalNamespace::RankModel_Rank,
@@ -168,7 +171,7 @@ impl LevelCompletionResults {
     }
     pub fn _ctor_GameplayModifiers_i32_i32_RankModel_Rank__cordl_bool_f32_f32_f32_f32_LevelCompletionResults_LevelEndStateType_LevelCompletionResults_LevelEndAction_f32_i32_i32_i32_i32_i32_i32_i32_i32_f32_f32_i32_f32__cordl_bool1(
         &mut self,
-        gameplayModifiers: *mut GameplayModifiers,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
         modifiedScore: i32,
         multipliedScore: i32,
         rank: crate::GlobalNamespace::RankModel_Rank,
@@ -232,7 +235,8 @@ impl LevelCompletionResults {
     }
 }
 #[cfg(feature = "LevelCompletionResults")]
-impl quest_hook::libil2cpp::ObjectType for LevelCompletionResults {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LevelCompletionResults {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

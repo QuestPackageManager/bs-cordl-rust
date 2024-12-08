@@ -7,24 +7,25 @@ pub struct MultiplayerPsPlusFeatureNotifier {
 }
 #[cfg(feature = "MultiplayerPsPlusFeatureNotifier")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerPsPlusFeatureNotifier => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerPsPlusFeatureNotifier => ""
     ."MultiplayerPsPlusFeatureNotifier"
 );
 #[cfg(feature = "MultiplayerPsPlusFeatureNotifier")]
-impl std::ops::Deref for MultiplayerPsPlusFeatureNotifier {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerPsPlusFeatureNotifier {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerPsPlusFeatureNotifier")]
-impl std::ops::DerefMut for MultiplayerPsPlusFeatureNotifier {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerPsPlusFeatureNotifier {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerPsPlusFeatureNotifier")]
-impl MultiplayerPsPlusFeatureNotifier {
+impl crate::GlobalNamespace::MultiplayerPsPlusFeatureNotifier {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -44,7 +45,8 @@ impl MultiplayerPsPlusFeatureNotifier {
     }
 }
 #[cfg(feature = "MultiplayerPsPlusFeatureNotifier")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerPsPlusFeatureNotifier {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerPsPlusFeatureNotifier {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

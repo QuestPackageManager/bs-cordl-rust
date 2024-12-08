@@ -2,27 +2,27 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
 }
 #[cfg(feature = "ColorSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ColorSO => ""."ColorSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ColorSO => ""."ColorSO"
 );
 #[cfg(feature = "ColorSO")]
-impl std::ops::Deref for ColorSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::ColorSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorSO")]
-impl std::ops::DerefMut for ColorSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::ColorSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorSO")]
-impl ColorSO {
+impl crate::GlobalNamespace::ColorSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -52,7 +52,7 @@ impl ColorSO {
     }
 }
 #[cfg(feature = "ColorSO")]
-impl quest_hook::libil2cpp::ObjectType for ColorSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

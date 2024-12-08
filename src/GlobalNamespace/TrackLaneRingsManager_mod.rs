@@ -3,32 +3,35 @@
 #[derive(Debug)]
 pub struct TrackLaneRingsManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _trackLaneRingPrefab: *mut TrackLaneRing,
+    pub _trackLaneRingPrefab: *mut crate::GlobalNamespace::TrackLaneRing,
     pub _ringCount: i32,
     pub _ringPositionStep: f32,
     pub _spawnAsChildren: bool,
     pub _container: *mut crate::Zenject::DiContainer,
-    pub _rings: *mut quest_hook::libil2cpp::Il2CppArray<*mut TrackLaneRing>,
+    pub _rings: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::TrackLaneRing,
+    >,
 }
 #[cfg(feature = "TrackLaneRingsManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TrackLaneRingsManager => ""."TrackLaneRingsManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TrackLaneRingsManager => ""
+    ."TrackLaneRingsManager"
 );
 #[cfg(feature = "TrackLaneRingsManager")]
-impl std::ops::Deref for TrackLaneRingsManager {
+impl std::ops::Deref for crate::GlobalNamespace::TrackLaneRingsManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TrackLaneRingsManager")]
-impl std::ops::DerefMut for TrackLaneRingsManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::TrackLaneRingsManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TrackLaneRingsManager")]
-impl TrackLaneRingsManager {
+impl crate::GlobalNamespace::TrackLaneRingsManager {
     pub fn FixedUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -89,13 +92,16 @@ impl TrackLaneRingsManager {
     pub fn get_Rings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut TrackLaneRing>,
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::TrackLaneRing,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<*mut TrackLaneRing> = __cordl_object
-            .invoke("get_Rings", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::TrackLaneRing,
+        > = __cordl_object.invoke("get_Rings", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ringPositionStep(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -107,7 +113,8 @@ impl TrackLaneRingsManager {
     }
 }
 #[cfg(feature = "TrackLaneRingsManager")]
-impl quest_hook::libil2cpp::ObjectType for TrackLaneRingsManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::TrackLaneRingsManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -66,12 +66,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::Slider {
 }
 #[cfg(feature = "UnityEngine+UI+Slider")]
 impl crate::UnityEngine::UI::Slider {
-    #[cfg(feature = "UnityEngine+UI+Slider+SliderEvent")]
-    pub type SliderEvent = crate::UnityEngine::UI::Slider_SliderEvent;
-    #[cfg(feature = "UnityEngine+UI+Slider+Direction")]
-    pub type Direction = crate::UnityEngine::UI::Slider_Direction;
     #[cfg(feature = "UnityEngine+UI+Slider+Axis")]
     pub type Axis = crate::UnityEngine::UI::Slider_Axis;
+    #[cfg(feature = "UnityEngine+UI+Slider+Direction")]
+    pub type Direction = crate::UnityEngine::UI::Slider_Direction;
+    #[cfg(feature = "UnityEngine+UI+Slider+SliderEvent")]
+    pub type SliderEvent = crate::UnityEngine::UI::Slider_SliderEvent;
     pub fn ClampValue(&mut self, input: f32) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

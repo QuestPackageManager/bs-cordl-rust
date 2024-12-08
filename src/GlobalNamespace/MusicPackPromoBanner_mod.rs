@@ -14,23 +14,24 @@ pub struct MusicPackPromoBanner {
 }
 #[cfg(feature = "MusicPackPromoBanner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MusicPackPromoBanner => ""."MusicPackPromoBanner"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MusicPackPromoBanner => ""
+    ."MusicPackPromoBanner"
 );
 #[cfg(feature = "MusicPackPromoBanner")]
-impl std::ops::Deref for MusicPackPromoBanner {
+impl std::ops::Deref for crate::GlobalNamespace::MusicPackPromoBanner {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MusicPackPromoBanner")]
-impl std::ops::DerefMut for MusicPackPromoBanner {
+impl std::ops::DerefMut for crate::GlobalNamespace::MusicPackPromoBanner {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MusicPackPromoBanner")]
-impl MusicPackPromoBanner {
+impl crate::GlobalNamespace::MusicPackPromoBanner {
     pub const kGetNow: &'static str = "PROMO_GET_NOW_LABEL";
     pub const kPlayNow: &'static str = "PROMO_BANNER_PLAY_NOW_LABEL";
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -107,7 +108,7 @@ impl MusicPackPromoBanner {
     }
 }
 #[cfg(feature = "MusicPackPromoBanner")]
-impl quest_hook::libil2cpp::ObjectType for MusicPackPromoBanner {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MusicPackPromoBanner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

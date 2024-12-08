@@ -24,106 +24,8 @@ impl std::ops::DerefMut for crate::System::Linq::Enumerable {
 }
 #[cfg(feature = "System+Linq+Enumerable")]
 impl crate::System::Linq::Enumerable {
-    #[cfg(feature = "System+Linq+Enumerable+_DistinctIterator_d__68_1")]
-    pub type _DistinctIterator_d__68_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__DistinctIterator_d__68_1<
-        TSource,
-    >;
-    #[cfg(feature = "System+Linq+Enumerable+_ReverseIterator_d__79_1")]
-    pub type _ReverseIterator_d__79_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__ReverseIterator_d__79_1<
-        TSource,
-    >;
-    #[cfg(feature = "System+Linq+Enumerable+_OfTypeIterator_d__97_1")]
-    pub type _OfTypeIterator_d__97_1<TResult: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__OfTypeIterator_d__97_1<
-        TResult,
-    >;
-    #[cfg(feature = "System+Linq+Enumerable+_RangeIterator_d__115")]
-    pub type _RangeIterator_d__115 = crate::System::Linq::Enumerable__RangeIterator_d__115;
-    #[cfg(feature = "System+Linq+Enumerable+__c__DisplayClass7_0_3")]
-    pub type __c__DisplayClass7_0_3<
-        TSource: quest_hook::libil2cpp::Type,
-        TMiddle: quest_hook::libil2cpp::Type,
-        TResult: quest_hook::libil2cpp::Type,
-    > = crate::System::Linq::Enumerable___c__DisplayClass7_0_3<
-        TSource,
-        TMiddle,
-        TResult,
-    >;
-    #[cfg(feature = "System+Linq+Enumerable+_SkipIterator_d__31_1")]
-    pub type _SkipIterator_d__31_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__SkipIterator_d__31_1<
-        TSource,
-    >;
-    #[cfg(feature = "System+Linq+Enumerable+WhereListIterator_1")]
-    pub type WhereListIterator_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable_WhereListIterator_1<
-        TSource,
-    >;
-    #[cfg(feature = "System+Linq+Enumerable+_ZipIterator_d__65_3")]
-    pub type _ZipIterator_d__65_3<
-        TFirst: quest_hook::libil2cpp::Type,
-        TSecond: quest_hook::libil2cpp::Type,
-        TResult: quest_hook::libil2cpp::Type,
-    > = crate::System::Linq::Enumerable__ZipIterator_d__65_3<TFirst, TSecond, TResult>;
-    #[cfg(feature = "System+Linq+Enumerable+_IntersectIterator_d__74_1")]
-    pub type _IntersectIterator_d__74_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__IntersectIterator_d__74_1<
-        TSource,
-    >;
-    #[cfg(feature = "System+Linq+Enumerable+__c__DisplayClass6_0_1")]
-    pub type __c__DisplayClass6_0_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable___c__DisplayClass6_0_1<
-        TSource,
-    >;
-    #[cfg(feature = "System+Linq+Enumerable+_TakeIterator_d__25_1")]
-    pub type _TakeIterator_d__25_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__TakeIterator_d__25_1<
-        TSource,
-    >;
-    #[cfg(feature = "System+Linq+Enumerable+WhereSelectEnumerableIterator_2")]
-    pub type WhereSelectEnumerableIterator_2<
-        TSource: quest_hook::libil2cpp::Type,
-        TResult: quest_hook::libil2cpp::Type,
-    > = crate::System::Linq::Enumerable_WhereSelectEnumerableIterator_2<
-        TSource,
-        TResult,
-    >;
-    #[cfg(feature = "System+Linq+Enumerable+_SelectIterator_d__5_2")]
-    pub type _SelectIterator_d__5_2<
-        TSource: quest_hook::libil2cpp::Type,
-        TResult: quest_hook::libil2cpp::Type,
-    > = crate::System::Linq::Enumerable__SelectIterator_d__5_2<TSource, TResult>;
     #[cfg(feature = "System+Linq+Enumerable+Iterator_1")]
     pub type Iterator_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable_Iterator_1<
-        TSource,
-    >;
-    #[cfg(feature = "System+Linq+Enumerable+WhereSelectListIterator_2")]
-    pub type WhereSelectListIterator_2<
-        TSource: quest_hook::libil2cpp::Type,
-        TResult: quest_hook::libil2cpp::Type,
-    > = crate::System::Linq::Enumerable_WhereSelectListIterator_2<TSource, TResult>;
-    #[cfg(feature = "System+Linq+Enumerable+_SelectManyIterator_d__17_2")]
-    pub type _SelectManyIterator_d__17_2<
-        TSource: quest_hook::libil2cpp::Type,
-        TResult: quest_hook::libil2cpp::Type,
-    > = crate::System::Linq::Enumerable__SelectManyIterator_d__17_2<TSource, TResult>;
-    #[cfg(feature = "System+Linq+Enumerable+_UnionIterator_d__71_1")]
-    pub type _UnionIterator_d__71_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__UnionIterator_d__71_1<
-        TSource,
-    >;
-    #[cfg(feature = "System+Linq+Enumerable+_ExceptIterator_d__77_1")]
-    pub type _ExceptIterator_d__77_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__ExceptIterator_d__77_1<
-        TSource,
-    >;
-    #[cfg(feature = "System+Linq+Enumerable+_CastIterator_d__99_1")]
-    pub type _CastIterator_d__99_1<TResult: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__CastIterator_d__99_1<
-        TResult,
-    >;
-    #[cfg(feature = "System+Linq+Enumerable+_ConcatIterator_d__59_1")]
-    pub type _ConcatIterator_d__59_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__ConcatIterator_d__59_1<
-        TSource,
-    >;
-    #[cfg(feature = "System+Linq+Enumerable+WhereSelectArrayIterator_2")]
-    pub type WhereSelectArrayIterator_2<
-        TSource: quest_hook::libil2cpp::Type,
-        TResult: quest_hook::libil2cpp::Type,
-    > = crate::System::Linq::Enumerable_WhereSelectArrayIterator_2<TSource, TResult>;
-    #[cfg(feature = "System+Linq+Enumerable+_DefaultIfEmptyIterator_d__95_1")]
-    pub type _DefaultIfEmptyIterator_d__95_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__DefaultIfEmptyIterator_d__95_1<
         TSource,
     >;
     #[cfg(feature = "System+Linq+Enumerable+WhereArrayIterator_1")]
@@ -133,6 +35,104 @@ impl crate::System::Linq::Enumerable {
     #[cfg(feature = "System+Linq+Enumerable+WhereEnumerableIterator_1")]
     pub type WhereEnumerableIterator_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable_WhereEnumerableIterator_1<
         TSource,
+    >;
+    #[cfg(feature = "System+Linq+Enumerable+WhereListIterator_1")]
+    pub type WhereListIterator_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable_WhereListIterator_1<
+        TSource,
+    >;
+    #[cfg(feature = "System+Linq+Enumerable+WhereSelectArrayIterator_2")]
+    pub type WhereSelectArrayIterator_2<
+        TSource: quest_hook::libil2cpp::Type,
+        TResult: quest_hook::libil2cpp::Type,
+    > = crate::System::Linq::Enumerable_WhereSelectArrayIterator_2<TSource, TResult>;
+    #[cfg(feature = "System+Linq+Enumerable+WhereSelectEnumerableIterator_2")]
+    pub type WhereSelectEnumerableIterator_2<
+        TSource: quest_hook::libil2cpp::Type,
+        TResult: quest_hook::libil2cpp::Type,
+    > = crate::System::Linq::Enumerable_WhereSelectEnumerableIterator_2<
+        TSource,
+        TResult,
+    >;
+    #[cfg(feature = "System+Linq+Enumerable+WhereSelectListIterator_2")]
+    pub type WhereSelectListIterator_2<
+        TSource: quest_hook::libil2cpp::Type,
+        TResult: quest_hook::libil2cpp::Type,
+    > = crate::System::Linq::Enumerable_WhereSelectListIterator_2<TSource, TResult>;
+    #[cfg(feature = "System+Linq+Enumerable+_CastIterator_d__99_1")]
+    pub type _CastIterator_d__99_1<TResult: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__CastIterator_d__99_1<
+        TResult,
+    >;
+    #[cfg(feature = "System+Linq+Enumerable+_ConcatIterator_d__59_1")]
+    pub type _ConcatIterator_d__59_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__ConcatIterator_d__59_1<
+        TSource,
+    >;
+    #[cfg(feature = "System+Linq+Enumerable+_DefaultIfEmptyIterator_d__95_1")]
+    pub type _DefaultIfEmptyIterator_d__95_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__DefaultIfEmptyIterator_d__95_1<
+        TSource,
+    >;
+    #[cfg(feature = "System+Linq+Enumerable+_DistinctIterator_d__68_1")]
+    pub type _DistinctIterator_d__68_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__DistinctIterator_d__68_1<
+        TSource,
+    >;
+    #[cfg(feature = "System+Linq+Enumerable+_ExceptIterator_d__77_1")]
+    pub type _ExceptIterator_d__77_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__ExceptIterator_d__77_1<
+        TSource,
+    >;
+    #[cfg(feature = "System+Linq+Enumerable+_IntersectIterator_d__74_1")]
+    pub type _IntersectIterator_d__74_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__IntersectIterator_d__74_1<
+        TSource,
+    >;
+    #[cfg(feature = "System+Linq+Enumerable+_OfTypeIterator_d__97_1")]
+    pub type _OfTypeIterator_d__97_1<TResult: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__OfTypeIterator_d__97_1<
+        TResult,
+    >;
+    #[cfg(feature = "System+Linq+Enumerable+_RangeIterator_d__115")]
+    pub type _RangeIterator_d__115 = crate::System::Linq::Enumerable__RangeIterator_d__115;
+    #[cfg(feature = "System+Linq+Enumerable+_ReverseIterator_d__79_1")]
+    pub type _ReverseIterator_d__79_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__ReverseIterator_d__79_1<
+        TSource,
+    >;
+    #[cfg(feature = "System+Linq+Enumerable+_SelectIterator_d__5_2")]
+    pub type _SelectIterator_d__5_2<
+        TSource: quest_hook::libil2cpp::Type,
+        TResult: quest_hook::libil2cpp::Type,
+    > = crate::System::Linq::Enumerable__SelectIterator_d__5_2<TSource, TResult>;
+    #[cfg(feature = "System+Linq+Enumerable+_SelectManyIterator_d__17_2")]
+    pub type _SelectManyIterator_d__17_2<
+        TSource: quest_hook::libil2cpp::Type,
+        TResult: quest_hook::libil2cpp::Type,
+    > = crate::System::Linq::Enumerable__SelectManyIterator_d__17_2<TSource, TResult>;
+    #[cfg(feature = "System+Linq+Enumerable+_SkipIterator_d__31_1")]
+    pub type _SkipIterator_d__31_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__SkipIterator_d__31_1<
+        TSource,
+    >;
+    #[cfg(feature = "System+Linq+Enumerable+_TakeIterator_d__25_1")]
+    pub type _TakeIterator_d__25_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__TakeIterator_d__25_1<
+        TSource,
+    >;
+    #[cfg(feature = "System+Linq+Enumerable+_UnionIterator_d__71_1")]
+    pub type _UnionIterator_d__71_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable__UnionIterator_d__71_1<
+        TSource,
+    >;
+    #[cfg(feature = "System+Linq+Enumerable+_ZipIterator_d__65_3")]
+    pub type _ZipIterator_d__65_3<
+        TFirst: quest_hook::libil2cpp::Type,
+        TSecond: quest_hook::libil2cpp::Type,
+        TResult: quest_hook::libil2cpp::Type,
+    > = crate::System::Linq::Enumerable__ZipIterator_d__65_3<TFirst, TSecond, TResult>;
+    #[cfg(feature = "System+Linq+Enumerable+__c__DisplayClass6_0_1")]
+    pub type __c__DisplayClass6_0_1<TSource: quest_hook::libil2cpp::Type> = crate::System::Linq::Enumerable___c__DisplayClass6_0_1<
+        TSource,
+    >;
+    #[cfg(feature = "System+Linq+Enumerable+__c__DisplayClass7_0_3")]
+    pub type __c__DisplayClass7_0_3<
+        TSource: quest_hook::libil2cpp::Type,
+        TMiddle: quest_hook::libil2cpp::Type,
+        TResult: quest_hook::libil2cpp::Type,
+    > = crate::System::Linq::Enumerable___c__DisplayClass7_0_3<
+        TSource,
+        TMiddle,
+        TResult,
     >;
 }
 #[cfg(feature = "System+Linq+Enumerable")]

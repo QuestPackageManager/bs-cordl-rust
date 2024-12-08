@@ -3,29 +3,30 @@
 #[derive(Debug)]
 pub struct GameCoreSceneSetup {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _screenCaptureAfterDelayPrefab: *mut ScreenCaptureAfterDelay,
-    pub _bloomFog: *mut BloomFogSO,
+    pub _screenCaptureAfterDelayPrefab: *mut crate::GlobalNamespace::ScreenCaptureAfterDelay,
+    pub _bloomFog: *mut crate::GlobalNamespace::BloomFogSO,
     pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
 }
 #[cfg(feature = "GameCoreSceneSetup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameCoreSceneSetup => ""."GameCoreSceneSetup"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameCoreSceneSetup => ""
+    ."GameCoreSceneSetup"
 );
 #[cfg(feature = "GameCoreSceneSetup")]
-impl std::ops::Deref for GameCoreSceneSetup {
+impl std::ops::Deref for crate::GlobalNamespace::GameCoreSceneSetup {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameCoreSceneSetup")]
-impl std::ops::DerefMut for GameCoreSceneSetup {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameCoreSceneSetup {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameCoreSceneSetup")]
-impl GameCoreSceneSetup {
+impl crate::GlobalNamespace::GameCoreSceneSetup {
     pub const kPauseButtonPressDurationMultiplier: f32 = 0.75f32;
     pub fn InstallBindings(
         &mut self,
@@ -66,7 +67,7 @@ impl GameCoreSceneSetup {
     }
 }
 #[cfg(feature = "GameCoreSceneSetup")]
-impl quest_hook::libil2cpp::ObjectType for GameCoreSceneSetup {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameCoreSceneSetup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

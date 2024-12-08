@@ -3,34 +3,34 @@
 #[derive(Debug)]
 pub struct BTSCharacterSpawnController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _characterSpawnAnimationController: *mut BTSCharacterSpawnAnimationController,
-    pub _btsCharacterSpawnEventEffect: *mut BTSCharacterSpawnEventEffect,
-    pub _gamePause: *mut IGamePause,
-    pub _levelEndActions: *mut ILevelEndActions,
+    pub _characterSpawnAnimationController: *mut crate::GlobalNamespace::BTSCharacterSpawnAnimationController,
+    pub _btsCharacterSpawnEventEffect: *mut crate::GlobalNamespace::BTSCharacterSpawnEventEffect,
+    pub _gamePause: *mut crate::GlobalNamespace::IGamePause,
+    pub _levelEndActions: *mut crate::GlobalNamespace::ILevelEndActions,
     pub _characterSpawned: bool,
     pub _playableDirectorTimeBeforePause: f64,
     pub _animatorNormalizedTimeBeforePause: f32,
 }
 #[cfg(feature = "BTSCharacterSpawnController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BTSCharacterSpawnController => ""
-    ."BTSCharacterSpawnController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BTSCharacterSpawnController =>
+    ""."BTSCharacterSpawnController"
 );
 #[cfg(feature = "BTSCharacterSpawnController")]
-impl std::ops::Deref for BTSCharacterSpawnController {
+impl std::ops::Deref for crate::GlobalNamespace::BTSCharacterSpawnController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BTSCharacterSpawnController")]
-impl std::ops::DerefMut for BTSCharacterSpawnController {
+impl std::ops::DerefMut for crate::GlobalNamespace::BTSCharacterSpawnController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BTSCharacterSpawnController")]
-impl BTSCharacterSpawnController {
+impl crate::GlobalNamespace::BTSCharacterSpawnController {
     pub fn HandleAnimationFinished(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -83,7 +83,7 @@ impl BTSCharacterSpawnController {
     }
     pub fn HandleStartCharacterAnimation(
         &mut self,
-        btsCharacter: *mut BTSCharacter,
+        btsCharacter: *mut crate::GlobalNamespace::BTSCharacter,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -145,7 +145,8 @@ impl BTSCharacterSpawnController {
     }
 }
 #[cfg(feature = "BTSCharacterSpawnController")]
-impl quest_hook::libil2cpp::ObjectType for BTSCharacterSpawnController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BTSCharacterSpawnController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

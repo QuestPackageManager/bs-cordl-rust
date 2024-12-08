@@ -4,29 +4,31 @@
 pub struct DeactivateAnimatorOnInputFocusCapture {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _animator: *mut crate::UnityEngine::Animator,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
     pub _wasEnabled: bool,
 }
 #[cfg(feature = "DeactivateAnimatorOnInputFocusCapture")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for DeactivateAnimatorOnInputFocusCapture => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::DeactivateAnimatorOnInputFocusCapture => ""
     ."DeactivateAnimatorOnInputFocusCapture"
 );
 #[cfg(feature = "DeactivateAnimatorOnInputFocusCapture")]
-impl std::ops::Deref for DeactivateAnimatorOnInputFocusCapture {
+impl std::ops::Deref for crate::GlobalNamespace::DeactivateAnimatorOnInputFocusCapture {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DeactivateAnimatorOnInputFocusCapture")]
-impl std::ops::DerefMut for DeactivateAnimatorOnInputFocusCapture {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::DeactivateAnimatorOnInputFocusCapture {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "DeactivateAnimatorOnInputFocusCapture")]
-impl DeactivateAnimatorOnInputFocusCapture {
+impl crate::GlobalNamespace::DeactivateAnimatorOnInputFocusCapture {
     pub fn HandleInputFocusCaptured(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -86,7 +88,8 @@ impl DeactivateAnimatorOnInputFocusCapture {
     }
 }
 #[cfg(feature = "DeactivateAnimatorOnInputFocusCapture")]
-impl quest_hook::libil2cpp::ObjectType for DeactivateAnimatorOnInputFocusCapture {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::DeactivateAnimatorOnInputFocusCapture {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

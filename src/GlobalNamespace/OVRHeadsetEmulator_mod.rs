@@ -10,7 +10,7 @@ pub struct OVRHeadsetEmulator {
         crate::UnityEngine::KeyCode,
     >,
     pub pitchKeys: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::KeyCode>,
-    pub manager: *mut OVRManager,
+    pub manager: *mut crate::GlobalNamespace::OVRManager,
     pub lastFrameEmulationActivated: bool,
     pub recordedHeadPoseRelativeOffsetTranslation: crate::UnityEngine::Vector3,
     pub recordedHeadPoseRelativeOffsetRotation: crate::UnityEngine::Vector3,
@@ -20,23 +20,24 @@ pub struct OVRHeadsetEmulator {
 }
 #[cfg(feature = "OVRHeadsetEmulator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRHeadsetEmulator => ""."OVRHeadsetEmulator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRHeadsetEmulator => ""
+    ."OVRHeadsetEmulator"
 );
 #[cfg(feature = "OVRHeadsetEmulator")]
-impl std::ops::Deref for OVRHeadsetEmulator {
+impl std::ops::Deref for crate::GlobalNamespace::OVRHeadsetEmulator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRHeadsetEmulator")]
-impl std::ops::DerefMut for OVRHeadsetEmulator {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRHeadsetEmulator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRHeadsetEmulator")]
-impl OVRHeadsetEmulator {
+impl crate::GlobalNamespace::OVRHeadsetEmulator {
     pub const MAX_ROLL: f32 = 85f32;
     pub const MOUSE_SCALE_HEIGHT: f32 = 1f32;
     pub const MOUSE_SCALE_X: f32 = -2f32;
@@ -97,7 +98,7 @@ impl OVRHeadsetEmulator {
     }
 }
 #[cfg(feature = "OVRHeadsetEmulator")]
-impl quest_hook::libil2cpp::ObjectType for OVRHeadsetEmulator {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHeadsetEmulator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

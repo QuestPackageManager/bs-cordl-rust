@@ -24,10 +24,10 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::LowLevel::InputUpda
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate")]
 impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
-    #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
-    pub type UpdateStepCount = crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount;
     #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
     pub type SerializedState = crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState;
+    #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
+    pub type UpdateStepCount = crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount;
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate")]
 impl quest_hook::libil2cpp::ObjectType

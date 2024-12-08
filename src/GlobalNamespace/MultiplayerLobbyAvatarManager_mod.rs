@@ -3,38 +3,38 @@
 #[derive(Debug)]
 pub struct MultiplayerLobbyAvatarManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lobbyStateDataModel: *mut ILobbyStateDataModel,
+    pub _lobbyStateDataModel: *mut crate::GlobalNamespace::ILobbyStateDataModel,
     pub _avatarControllerFactory: *mut crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory,
     pub _innerCircleRadius: f32,
     pub _minOuterCircleRadius: f32,
     pub _playerIdToAvatarMap: *mut crate::System::Collections::Generic::Dictionary_2<
         *mut crate::System::String,
-        *mut MultiplayerLobbyAvatarController,
+        *mut crate::GlobalNamespace::MultiplayerLobbyAvatarController,
     >,
     pub _inProgressDespawnAnimations: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut MultiplayerLobbyAvatarController,
+        *mut crate::GlobalNamespace::MultiplayerLobbyAvatarController,
     >,
 }
 #[cfg(feature = "MultiplayerLobbyAvatarManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLobbyAvatarManager => ""
-    ."MultiplayerLobbyAvatarManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerLobbyAvatarManager
+    => ""."MultiplayerLobbyAvatarManager"
 );
 #[cfg(feature = "MultiplayerLobbyAvatarManager")]
-impl std::ops::Deref for MultiplayerLobbyAvatarManager {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLobbyAvatarManager")]
-impl std::ops::DerefMut for MultiplayerLobbyAvatarManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLobbyAvatarManager")]
-impl MultiplayerLobbyAvatarManager {
+impl crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
     #[cfg(feature = "MultiplayerLobbyAvatarManager+_RemovePlayerAndDestroy_d__13")]
     pub type _RemovePlayerAndDestroy_d__13 = crate::GlobalNamespace::MultiplayerLobbyAvatarManager__RemovePlayerAndDestroy_d__13;
     pub fn ActivateMultiplayerLobbyAvatarManager(
@@ -49,7 +49,7 @@ impl MultiplayerLobbyAvatarManager {
     }
     pub fn AddPlayer(
         &mut self,
-        connectedPlayer: *mut IConnectedPlayer,
+        connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -70,7 +70,7 @@ impl MultiplayerLobbyAvatarManager {
     }
     pub fn HandleLobbyStateDataModelPlayerConnected(
         &mut self,
-        connectedPlayer: *mut IConnectedPlayer,
+        connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -81,7 +81,7 @@ impl MultiplayerLobbyAvatarManager {
     }
     pub fn HandleLobbyStateDataModelPlayerDisconnected(
         &mut self,
-        connectedPlayer: *mut IConnectedPlayer,
+        connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -111,7 +111,7 @@ impl MultiplayerLobbyAvatarManager {
     }
     pub fn RemovePlayer(
         &mut self,
-        connectedPlayer: *mut IConnectedPlayer,
+        connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -123,7 +123,7 @@ impl MultiplayerLobbyAvatarManager {
     pub fn RemovePlayerAndDestroy(
         &mut self,
         userId: *mut crate::System::String,
-        multiplayerAvatar: *mut MultiplayerLobbyAvatarController,
+        multiplayerAvatar: *mut crate::GlobalNamespace::MultiplayerLobbyAvatarController,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -144,7 +144,8 @@ impl MultiplayerLobbyAvatarManager {
     }
 }
 #[cfg(feature = "MultiplayerLobbyAvatarManager")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLobbyAvatarManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

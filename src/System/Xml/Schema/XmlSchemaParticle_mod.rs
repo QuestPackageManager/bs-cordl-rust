@@ -40,10 +40,10 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaParticle {
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaParticle")]
 impl crate::System::Xml::Schema::XmlSchemaParticle {
-    #[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+Occurs")]
-    pub type Occurs = crate::System::Xml::Schema::XmlSchemaParticle_Occurs;
     #[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+EmptyParticle")]
     pub type EmptyParticle = crate::GlobalNamespace::XmlSchemaParticle_EmptyParticle;
+    #[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+Occurs")]
+    pub type Occurs = crate::System::Xml::Schema::XmlSchemaParticle_Occurs;
     pub fn GetQualifiedName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlQualifiedName> {

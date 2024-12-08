@@ -2,28 +2,35 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoTransitionToggleSelectableStateController {
-    __cordl_parent: SelectableStateController_1<*mut crate::HMUI::NoTransitionsToggle>,
+    __cordl_parent: crate::GlobalNamespace::SelectableStateController_1<
+        *mut crate::HMUI::NoTransitionsToggle,
+    >,
 }
 #[cfg(feature = "NoTransitionToggleSelectableStateController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoTransitionToggleSelectableStateController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::NoTransitionToggleSelectableStateController => ""
     ."NoTransitionToggleSelectableStateController"
 );
 #[cfg(feature = "NoTransitionToggleSelectableStateController")]
-impl std::ops::Deref for NoTransitionToggleSelectableStateController {
-    type Target = SelectableStateController_1<*mut crate::HMUI::NoTransitionsToggle>;
+impl std::ops::Deref
+for crate::GlobalNamespace::NoTransitionToggleSelectableStateController {
+    type Target = crate::GlobalNamespace::SelectableStateController_1<
+        *mut crate::HMUI::NoTransitionsToggle,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoTransitionToggleSelectableStateController")]
-impl std::ops::DerefMut for NoTransitionToggleSelectableStateController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::NoTransitionToggleSelectableStateController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoTransitionToggleSelectableStateController")]
-impl NoTransitionToggleSelectableStateController {
+impl crate::GlobalNamespace::NoTransitionToggleSelectableStateController {
     pub fn HandleNoTransitionToggleSelectionStateDidChange(
         &mut self,
         state: crate::HMUI::UISelectionState,
@@ -86,7 +93,8 @@ impl NoTransitionToggleSelectableStateController {
     }
 }
 #[cfg(feature = "NoTransitionToggleSelectableStateController")]
-impl quest_hook::libil2cpp::ObjectType for NoTransitionToggleSelectableStateController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NoTransitionToggleSelectableStateController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

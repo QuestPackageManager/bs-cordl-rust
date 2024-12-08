@@ -2,41 +2,42 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentInfoSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _environmentName: *mut crate::System::String,
-    pub _colorScheme: *mut ColorSchemeSO,
-    pub _sceneInfo: *mut SceneInfo,
+    pub _colorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
+    pub _sceneInfo: *mut crate::GlobalNamespace::SceneInfo,
     pub _serializedName: *mut crate::System::String,
     pub _tags: crate::GlobalNamespace::EnvironmentInfoSO_Tags,
-    pub _environmentType: EnvironmentType,
-    pub _environmentSizeData: *mut EnvironmentSizeData,
-    pub _environmentIntensityReductionOptions: *mut EnvironmentIntensityReductionOptions,
+    pub _environmentType: crate::GlobalNamespace::EnvironmentType,
+    pub _environmentSizeData: *mut crate::GlobalNamespace::EnvironmentSizeData,
+    pub _environmentIntensityReductionOptions: *mut crate::GlobalNamespace::EnvironmentIntensityReductionOptions,
     pub _environmentKeywords: *mut crate::System::Collections::Generic::List_1<
         *mut crate::System::String,
     >,
-    pub _lightGroups: *mut EnvironmentLightGroups,
+    pub _lightGroups: *mut crate::GlobalNamespace::EnvironmentLightGroups,
     pub _defaultLightshowAsset: *mut crate::UnityEngine::TextAsset,
     pub _order: i32,
 }
 #[cfg(feature = "EnvironmentInfoSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnvironmentInfoSO => ""."EnvironmentInfoSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnvironmentInfoSO => ""
+    ."EnvironmentInfoSO"
 );
 #[cfg(feature = "EnvironmentInfoSO")]
-impl std::ops::Deref for EnvironmentInfoSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::EnvironmentInfoSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentInfoSO")]
-impl std::ops::DerefMut for EnvironmentInfoSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentInfoSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentInfoSO")]
-impl EnvironmentInfoSO {
+impl crate::GlobalNamespace::EnvironmentInfoSO {
     pub const kLightGroupSubDir: &'static str = "LightGroups";
     #[cfg(feature = "EnvironmentInfoSO+Tags")]
     pub type Tags = crate::GlobalNamespace::EnvironmentInfoSO_Tags;
@@ -59,11 +60,11 @@ impl EnvironmentInfoSO {
     }
     pub fn get_colorScheme(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut ColorSchemeSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::ColorSchemeSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ColorSchemeSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::ColorSchemeSO = __cordl_object
             .invoke("get_colorScheme", ())?;
         Ok(__cordl_ret)
     }
@@ -79,11 +80,13 @@ impl EnvironmentInfoSO {
     }
     pub fn get_environmentIntensityReductionOptions(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut EnvironmentIntensityReductionOptions> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::EnvironmentIntensityReductionOptions,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut EnvironmentIntensityReductionOptions = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::EnvironmentIntensityReductionOptions = __cordl_object
             .invoke("get_environmentIntensityReductionOptions", ())?;
         Ok(__cordl_ret)
     }
@@ -104,11 +107,13 @@ impl EnvironmentInfoSO {
     }
     pub fn get_environmentLightGroups(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IEnvironmentLightGroups> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::IEnvironmentLightGroups,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IEnvironmentLightGroups = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IEnvironmentLightGroups = __cordl_object
             .invoke("get_environmentLightGroups", ())?;
         Ok(__cordl_ret)
     }
@@ -124,21 +129,23 @@ impl EnvironmentInfoSO {
     }
     pub fn get_environmentSizeData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut EnvironmentSizeData> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::EnvironmentSizeData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut EnvironmentSizeData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::EnvironmentSizeData = __cordl_object
             .invoke("get_environmentSizeData", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_environmentType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<EnvironmentType> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EnvironmentType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: EnvironmentType = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentType = __cordl_object
             .invoke("get_environmentType", ())?;
         Ok(__cordl_ret)
     }
@@ -163,11 +170,14 @@ impl EnvironmentInfoSO {
         let __cordl_ret: i32 = __cordl_object.invoke("get_order", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_sceneInfo(&mut self) -> quest_hook::libil2cpp::Result<*mut SceneInfo> {
+    pub fn get_sceneInfo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::SceneInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut SceneInfo = __cordl_object.invoke("get_sceneInfo", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::SceneInfo = __cordl_object
+            .invoke("get_sceneInfo", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_serializedName(
@@ -182,7 +192,7 @@ impl EnvironmentInfoSO {
     }
 }
 #[cfg(feature = "EnvironmentInfoSO")]
-impl quest_hook::libil2cpp::ObjectType for EnvironmentInfoSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EnvironmentInfoSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

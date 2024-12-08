@@ -9,23 +9,24 @@ pub struct DisableIfNotPlatform {
 }
 #[cfg(feature = "DisableIfNotPlatform")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for DisableIfNotPlatform => ""."DisableIfNotPlatform"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::DisableIfNotPlatform => ""
+    ."DisableIfNotPlatform"
 );
 #[cfg(feature = "DisableIfNotPlatform")]
-impl std::ops::Deref for DisableIfNotPlatform {
+impl std::ops::Deref for crate::GlobalNamespace::DisableIfNotPlatform {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DisableIfNotPlatform")]
-impl std::ops::DerefMut for DisableIfNotPlatform {
+impl std::ops::DerefMut for crate::GlobalNamespace::DisableIfNotPlatform {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "DisableIfNotPlatform")]
-impl DisableIfNotPlatform {
+impl crate::GlobalNamespace::DisableIfNotPlatform {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -55,7 +56,7 @@ impl DisableIfNotPlatform {
     }
 }
 #[cfg(feature = "DisableIfNotPlatform")]
-impl quest_hook::libil2cpp::ObjectType for DisableIfNotPlatform {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DisableIfNotPlatform {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,23 +6,24 @@ pub struct LightColorGroupParent {
 }
 #[cfg(feature = "LightColorGroupParent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightColorGroupParent => ""."LightColorGroupParent"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightColorGroupParent => ""
+    ."LightColorGroupParent"
 );
 #[cfg(feature = "LightColorGroupParent")]
-impl std::ops::Deref for LightColorGroupParent {
+impl std::ops::Deref for crate::GlobalNamespace::LightColorGroupParent {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightColorGroupParent")]
-impl std::ops::DerefMut for LightColorGroupParent {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightColorGroupParent {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightColorGroupParent")]
-impl LightColorGroupParent {
+impl crate::GlobalNamespace::LightColorGroupParent {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,7 +43,8 @@ impl LightColorGroupParent {
     }
 }
 #[cfg(feature = "LightColorGroupParent")]
-impl quest_hook::libil2cpp::ObjectType for LightColorGroupParent {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LightColorGroupParent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

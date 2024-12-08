@@ -13,24 +13,24 @@ pub struct BeatmapObjectSpawnCenter {
 }
 #[cfg(feature = "BeatmapObjectSpawnCenter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapObjectSpawnCenter => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapObjectSpawnCenter => ""
     ."BeatmapObjectSpawnCenter"
 );
 #[cfg(feature = "BeatmapObjectSpawnCenter")]
-impl std::ops::Deref for BeatmapObjectSpawnCenter {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapObjectSpawnCenter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapObjectSpawnCenter")]
-impl std::ops::DerefMut for BeatmapObjectSpawnCenter {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapObjectSpawnCenter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapObjectSpawnCenter")]
-impl BeatmapObjectSpawnCenter {
+impl crate::GlobalNamespace::BeatmapObjectSpawnCenter {
     #[cfg(feature = "BeatmapObjectSpawnCenter+PlayerCountToDistance")]
     pub type PlayerCountToDistance = crate::GlobalNamespace::BeatmapObjectSpawnCenter_PlayerCountToDistance;
     pub fn CalculateSpawnCenterPosition(
@@ -113,7 +113,8 @@ impl BeatmapObjectSpawnCenter {
     }
 }
 #[cfg(feature = "BeatmapObjectSpawnCenter")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapObjectSpawnCenter {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapObjectSpawnCenter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

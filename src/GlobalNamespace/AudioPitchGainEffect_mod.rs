@@ -13,23 +13,24 @@ pub struct AudioPitchGainEffect {
 }
 #[cfg(feature = "AudioPitchGainEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AudioPitchGainEffect => ""."AudioPitchGainEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AudioPitchGainEffect => ""
+    ."AudioPitchGainEffect"
 );
 #[cfg(feature = "AudioPitchGainEffect")]
-impl std::ops::Deref for AudioPitchGainEffect {
+impl std::ops::Deref for crate::GlobalNamespace::AudioPitchGainEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AudioPitchGainEffect")]
-impl std::ops::DerefMut for AudioPitchGainEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::AudioPitchGainEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AudioPitchGainEffect")]
-impl AudioPitchGainEffect {
+impl crate::GlobalNamespace::AudioPitchGainEffect {
     #[cfg(feature = "AudioPitchGainEffect+_StartEffectCoroutine_d__8")]
     pub type _StartEffectCoroutine_d__8 = crate::GlobalNamespace::AudioPitchGainEffect__StartEffectCoroutine_d__8;
     pub fn InterruptEffect(
@@ -106,7 +107,7 @@ impl AudioPitchGainEffect {
     }
 }
 #[cfg(feature = "AudioPitchGainEffect")]
-impl quest_hook::libil2cpp::ObjectType for AudioPitchGainEffect {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AudioPitchGainEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

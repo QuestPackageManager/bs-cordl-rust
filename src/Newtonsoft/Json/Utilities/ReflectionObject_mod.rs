@@ -31,12 +31,12 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::ReflectionObject
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionObject")]
 impl crate::Newtonsoft::Json::Utilities::ReflectionObject {
+    #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionObject+__c__DisplayClass11_0")]
+    pub type __c__DisplayClass11_0 = crate::Newtonsoft::Json::Utilities::ReflectionObject___c__DisplayClass11_0;
     #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionObject+__c__DisplayClass11_1")]
     pub type __c__DisplayClass11_1 = crate::Newtonsoft::Json::Utilities::ReflectionObject___c__DisplayClass11_1;
     #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionObject+__c__DisplayClass11_2")]
     pub type __c__DisplayClass11_2 = crate::Newtonsoft::Json::Utilities::ReflectionObject___c__DisplayClass11_2;
-    #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionObject+__c__DisplayClass11_0")]
-    pub type __c__DisplayClass11_0 = crate::Newtonsoft::Json::Utilities::ReflectionObject___c__DisplayClass11_0;
     pub fn GetType(
         &mut self,
         member: *mut crate::System::String,

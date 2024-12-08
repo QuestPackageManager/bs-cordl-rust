@@ -47,32 +47,33 @@ pub struct GameplayModifiers {
 }
 #[cfg(feature = "GameplayModifiers")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameplayModifiers => ""."GameplayModifiers"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameplayModifiers => ""
+    ."GameplayModifiers"
 );
 #[cfg(feature = "GameplayModifiers")]
-impl std::ops::Deref for GameplayModifiers {
+impl std::ops::Deref for crate::GlobalNamespace::GameplayModifiers {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayModifiers")]
-impl std::ops::DerefMut for GameplayModifiers {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameplayModifiers {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayModifiers")]
-impl GameplayModifiers {
-    #[cfg(feature = "GameplayModifiers+SongSpeed")]
-    pub type SongSpeed = crate::GlobalNamespace::GameplayModifiers_SongSpeed;
+impl crate::GlobalNamespace::GameplayModifiers {
     #[cfg(feature = "GameplayModifiers+EnabledObstacleType")]
     pub type EnabledObstacleType = crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType;
     #[cfg(feature = "GameplayModifiers+EnergyType")]
     pub type EnergyType = crate::GlobalNamespace::GameplayModifiers_EnergyType;
+    #[cfg(feature = "GameplayModifiers+SongSpeed")]
+    pub type SongSpeed = crate::GlobalNamespace::GameplayModifiers_SongSpeed;
     pub fn AreValuesEqual(
         &mut self,
-        other: *mut GameplayModifiers,
+        other: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -103,11 +104,11 @@ impl GameplayModifiers {
         proMode: crate::System::Nullable_1<bool>,
         zenMode: crate::System::Nullable_1<bool>,
         smallCubes: crate::System::Nullable_1<bool>,
-    ) -> quest_hook::libil2cpp::Result<*mut GameplayModifiers> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::GameplayModifiers> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut GameplayModifiers = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::GameplayModifiers = __cordl_object
             .invoke(
                 "CopyWith",
                 (
@@ -140,11 +141,11 @@ impl GameplayModifiers {
     pub fn LiteNetLib_Utils_INetImmutableSerializable_GameplayModifiers__CreateFromSerializedData(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-    ) -> quest_hook::libil2cpp::Result<*mut GameplayModifiers> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::GameplayModifiers> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut GameplayModifiers = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::GameplayModifiers = __cordl_object
             .invoke(
                 "LiteNetLib.Utils.INetImmutableSerializable<GameplayModifiers>.CreateFromSerializedData",
                 (reader),
@@ -408,7 +409,7 @@ impl GameplayModifiers {
     }
 }
 #[cfg(feature = "GameplayModifiers")]
-impl quest_hook::libil2cpp::ObjectType for GameplayModifiers {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameplayModifiers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

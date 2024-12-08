@@ -11,23 +11,24 @@ pub struct PlayerAgreements {
 }
 #[cfg(feature = "PlayerAgreements")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerAgreements => ""."PlayerAgreements"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerAgreements => ""
+    ."PlayerAgreements"
 );
 #[cfg(feature = "PlayerAgreements")]
-impl std::ops::Deref for PlayerAgreements {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerAgreements {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerAgreements")]
-impl std::ops::DerefMut for PlayerAgreements {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerAgreements {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerAgreements")]
-impl PlayerAgreements {
+impl crate::GlobalNamespace::PlayerAgreements {
     pub const kCurrentEndOfLifeNoticeVersion: i32 = 1i32;
     pub const kCurrentEulaVersion: i32 = 5i32;
     pub const kCurrentHealthAndSafetyVersion: i32 = 1i32;
@@ -235,7 +236,7 @@ impl PlayerAgreements {
     }
 }
 #[cfg(feature = "PlayerAgreements")]
-impl quest_hook::libil2cpp::ObjectType for PlayerAgreements {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerAgreements {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

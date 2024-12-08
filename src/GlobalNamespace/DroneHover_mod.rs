@@ -20,23 +20,23 @@ pub struct DroneHover {
 }
 #[cfg(feature = "DroneHover")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for DroneHover => ""."DroneHover"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::DroneHover => ""."DroneHover"
 );
 #[cfg(feature = "DroneHover")]
-impl std::ops::Deref for DroneHover {
+impl std::ops::Deref for crate::GlobalNamespace::DroneHover {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DroneHover")]
-impl std::ops::DerefMut for DroneHover {
+impl std::ops::DerefMut for crate::GlobalNamespace::DroneHover {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "DroneHover")]
-impl DroneHover {
+impl crate::GlobalNamespace::DroneHover {
     #[cfg(feature = "DroneHover+SineLayer")]
     pub type SineLayer = crate::GlobalNamespace::DroneHover_SineLayer;
     pub fn GetNoise(
@@ -110,7 +110,7 @@ impl DroneHover {
     }
 }
 #[cfg(feature = "DroneHover")]
-impl quest_hook::libil2cpp::ObjectType for DroneHover {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DroneHover {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,14 +2,16 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct SongPackMask {
-    pub _bloomFilter: BitMask256,
+    pub _bloomFilter: crate::GlobalNamespace::BitMask256,
 }
 #[cfg(feature = "SongPackMask")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for SongPackMask => ""."SongPackMask"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongPackMask => ""
+    ."SongPackMask"
 );
 #[cfg(feature = "SongPackMask")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for SongPackMask {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::SongPackMask {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -19,14 +21,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for SongPackMask {
     }
 }
 #[cfg(feature = "SongPackMask")]
-impl SongPackMask {
+impl crate::GlobalNamespace::SongPackMask {
     pub const kHashBits: i32 = 15i32;
     pub const kHashCount: i32 = 2i32;
     pub const kToStringPrefix: &'static str = "[SongPackMask ";
     pub const kToStringSuffix: &'static str = "]";
     pub fn Contains(
         &mut self,
-        other: SongPackMask,
+        other: crate::GlobalNamespace::SongPackMask,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -38,8 +40,8 @@ impl SongPackMask {
     pub fn CreateFromSerializedData(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-    ) -> quest_hook::libil2cpp::Result<SongPackMask> {
-        let __cordl_ret: SongPackMask = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
+        let __cordl_ret: crate::GlobalNamespace::SongPackMask = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "CreateFromSerializedData",
             (reader),
@@ -48,7 +50,7 @@ impl SongPackMask {
     }
     pub fn DifferenceFrom(
         &mut self,
-        other: SongPackMask,
+        other: crate::GlobalNamespace::SongPackMask,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -70,7 +72,7 @@ impl SongPackMask {
     }
     pub fn Equals_SongPackMask0(
         &mut self,
-        other: SongPackMask,
+        other: crate::GlobalNamespace::SongPackMask,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -130,7 +132,7 @@ impl SongPackMask {
     }
     pub fn _ctor_BitMask256_1(
         &mut self,
-        bloomFilter: BitMask256,
+        bloomFilter: crate::GlobalNamespace::BitMask256,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

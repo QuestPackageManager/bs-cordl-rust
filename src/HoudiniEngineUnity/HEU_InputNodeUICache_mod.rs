@@ -87,10 +87,10 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_InputNodeUICache {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache")]
 impl crate::HoudiniEngineUnity::HEU_InputNodeUICache {
-    #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputObjectUICache")]
-    pub type HEU_InputObjectUICache = crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache;
     #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputAssetUICache")]
     pub type HEU_InputAssetUICache = crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_InputNodeUICache+HEU_InputObjectUICache")]
+    pub type HEU_InputObjectUICache = crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -28,17 +28,25 @@ for crate::System::Linq::Expressions::Interpreter::IncrementInstruction {
 #[cfg(feature = "System+Linq+Expressions+Interpreter+IncrementInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::IncrementInstruction {
     #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementDouble"
+    )]
+    pub type IncrementDouble = crate::GlobalNamespace::IncrementInstruction_IncrementDouble;
+    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementInt16"
     )]
     pub type IncrementInt16 = crate::GlobalNamespace::IncrementInstruction_IncrementInt16;
     #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementInt32"
+    )]
+    pub type IncrementInt32 = crate::GlobalNamespace::IncrementInstruction_IncrementInt32;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementInt64"
+    )]
+    pub type IncrementInt64 = crate::GlobalNamespace::IncrementInstruction_IncrementInt64;
+    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementSingle"
     )]
     pub type IncrementSingle = crate::GlobalNamespace::IncrementInstruction_IncrementSingle;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementDouble"
-    )]
-    pub type IncrementDouble = crate::GlobalNamespace::IncrementInstruction_IncrementDouble;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementUInt16"
     )]
@@ -51,14 +59,6 @@ impl crate::System::Linq::Expressions::Interpreter::IncrementInstruction {
         feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementUInt64"
     )]
     pub type IncrementUInt64 = crate::GlobalNamespace::IncrementInstruction_IncrementUInt64;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementInt32"
-    )]
-    pub type IncrementInt32 = crate::GlobalNamespace::IncrementInstruction_IncrementInt32;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementInt64"
-    )]
-    pub type IncrementInt64 = crate::GlobalNamespace::IncrementInstruction_IncrementInt64;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

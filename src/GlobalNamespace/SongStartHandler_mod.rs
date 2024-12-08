@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct SongStartHandler {
     __cordl_parent: crate::System::Object,
-    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
-    pub _gameplayRpcManager: *mut IGameplayRpcManager,
-    pub _playersAtGameStartModel: *mut PlayersSpecificSettingsAtGameStartModel,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
+    pub _playersAtGameStartModel: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
     pub _readyPlayers: *mut crate::System::Collections::Generic::HashSet_1<
         *mut crate::System::String,
     >,
@@ -15,23 +15,24 @@ pub struct SongStartHandler {
 }
 #[cfg(feature = "SongStartHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SongStartHandler => ""."SongStartHandler"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongStartHandler => ""
+    ."SongStartHandler"
 );
 #[cfg(feature = "SongStartHandler")]
-impl std::ops::Deref for SongStartHandler {
+impl std::ops::Deref for crate::GlobalNamespace::SongStartHandler {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongStartHandler")]
-impl std::ops::DerefMut for SongStartHandler {
+impl std::ops::DerefMut for crate::GlobalNamespace::SongStartHandler {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongStartHandler")]
-impl SongStartHandler {
+impl crate::GlobalNamespace::SongStartHandler {
     pub const kFixedStartDelayMs: i64 = 250i64;
     pub fn Dispose(
         &mut self,
@@ -110,9 +111,9 @@ impl SongStartHandler {
         Ok(__cordl_ret)
     }
     pub fn New(
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
-        gameplayRpcManager: *mut IGameplayRpcManager,
-        playersAtGameStartModel: *mut PlayersSpecificSettingsAtGameStartModel,
+        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+        gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
+        playersAtGameStartModel: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -135,9 +136,9 @@ impl SongStartHandler {
     }
     pub fn _ctor(
         &mut self,
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
-        gameplayRpcManager: *mut IGameplayRpcManager,
-        playersAtGameStartModel: *mut PlayersSpecificSettingsAtGameStartModel,
+        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+        gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
+        playersAtGameStartModel: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -180,7 +181,7 @@ impl SongStartHandler {
     }
 }
 #[cfg(feature = "SongStartHandler")]
-impl quest_hook::libil2cpp::ObjectType for SongStartHandler {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongStartHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

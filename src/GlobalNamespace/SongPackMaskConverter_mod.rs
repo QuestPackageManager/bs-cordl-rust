@@ -6,23 +6,24 @@ pub struct SongPackMaskConverter {
 }
 #[cfg(feature = "SongPackMaskConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SongPackMaskConverter => ""."SongPackMaskConverter"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongPackMaskConverter => ""
+    ."SongPackMaskConverter"
 );
 #[cfg(feature = "SongPackMaskConverter")]
-impl std::ops::Deref for SongPackMaskConverter {
+impl std::ops::Deref for crate::GlobalNamespace::SongPackMaskConverter {
     type Target = crate::Newtonsoft::Json::JsonConverter;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongPackMaskConverter")]
-impl std::ops::DerefMut for SongPackMaskConverter {
+impl std::ops::DerefMut for crate::GlobalNamespace::SongPackMaskConverter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongPackMaskConverter")]
-impl SongPackMaskConverter {
+impl crate::GlobalNamespace::SongPackMaskConverter {
     pub fn CanConvert(
         &mut self,
         objectType: *mut crate::System::Type,
@@ -79,7 +80,8 @@ impl SongPackMaskConverter {
     }
 }
 #[cfg(feature = "SongPackMaskConverter")]
-impl quest_hook::libil2cpp::ObjectType for SongPackMaskConverter {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SongPackMaskConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

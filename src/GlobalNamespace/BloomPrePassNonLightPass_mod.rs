@@ -8,24 +8,24 @@ pub struct BloomPrePassNonLightPass {
 }
 #[cfg(feature = "BloomPrePassNonLightPass")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomPrePassNonLightPass => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BloomPrePassNonLightPass => ""
     ."BloomPrePassNonLightPass"
 );
 #[cfg(feature = "BloomPrePassNonLightPass")]
-impl std::ops::Deref for BloomPrePassNonLightPass {
+impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassNonLightPass {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassNonLightPass")]
-impl std::ops::DerefMut for BloomPrePassNonLightPass {
+impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassNonLightPass {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassNonLightPass")]
-impl BloomPrePassNonLightPass {
+impl crate::GlobalNamespace::BloomPrePassNonLightPass {
     #[cfg(feature = "BloomPrePassNonLightPass+ExecutionTimeType")]
     pub type ExecutionTimeType = crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -122,7 +122,8 @@ impl BloomPrePassNonLightPass {
     }
 }
 #[cfg(feature = "BloomPrePassNonLightPass")]
-impl quest_hook::libil2cpp::ObjectType for BloomPrePassNonLightPass {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BloomPrePassNonLightPass {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

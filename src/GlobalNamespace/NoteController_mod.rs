@@ -2,53 +2,58 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteController {
-    __cordl_parent: NoteControllerBase,
-    pub _noteMovement: *mut NoteMovement,
+    __cordl_parent: crate::GlobalNamespace::NoteControllerBase,
+    pub _noteMovement: *mut crate::GlobalNamespace::NoteMovement,
     pub _noteTransform: *mut crate::UnityEngine::Transform,
     pub _hidden_k__BackingField: bool,
-    pub _didInitEvent: *mut LazyCopyHashSet_1<*mut INoteControllerDidInitEvent>,
-    pub _noteDidStartJumpEvent: *mut LazyCopyHashSet_1<
-        *mut INoteControllerNoteDidStartJumpEvent,
+    pub _didInitEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
+        *mut crate::GlobalNamespace::INoteControllerDidInitEvent,
     >,
-    pub _noteDidFinishJumpEvent: *mut LazyCopyHashSet_1<
-        *mut INoteControllerNoteDidFinishJumpEvent,
+    pub _noteDidStartJumpEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
+        *mut crate::GlobalNamespace::INoteControllerNoteDidStartJumpEvent,
     >,
-    pub _noteDidPassJumpThreeQuartersEvent: *mut LazyCopyHashSet_1<
-        *mut INoteControllerNoteDidPassJumpThreeQuartersEvent,
+    pub _noteDidFinishJumpEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
+        *mut crate::GlobalNamespace::INoteControllerNoteDidFinishJumpEvent,
     >,
-    pub _noteWasCutEvent: *mut LazyCopyHashSet_1<*mut INoteControllerNoteWasCutEvent>,
-    pub _noteWasMissedEvent: *mut LazyCopyHashSet_1<
-        *mut INoteControllerNoteWasMissedEvent,
+    pub _noteDidPassJumpThreeQuartersEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
+        *mut crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
     >,
-    pub _noteDidStartDissolvingEvent: *mut LazyCopyHashSet_1<
-        *mut INoteControllerNoteDidStartDissolvingEvent,
+    pub _noteWasCutEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
+        *mut crate::GlobalNamespace::INoteControllerNoteWasCutEvent,
     >,
-    pub _noteDidDissolveEvent: *mut LazyCopyHashSet_1<
-        *mut INoteControllerNoteDidDissolveEvent,
+    pub _noteWasMissedEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
+        *mut crate::GlobalNamespace::INoteControllerNoteWasMissedEvent,
     >,
-    pub _noteData: *mut NoteData,
+    pub _noteDidStartDissolvingEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
+        *mut crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+    >,
+    pub _noteDidDissolveEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
+        *mut crate::GlobalNamespace::INoteControllerNoteDidDissolveEvent,
+    >,
+    pub _noteData: *mut crate::GlobalNamespace::NoteData,
     pub _dissolving: bool,
     pub _uniformScale: f32,
 }
 #[cfg(feature = "NoteController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteController => ""."NoteController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteController => ""
+    ."NoteController"
 );
 #[cfg(feature = "NoteController")]
-impl std::ops::Deref for NoteController {
-    type Target = NoteControllerBase;
+impl std::ops::Deref for crate::GlobalNamespace::NoteController {
+    type Target = crate::GlobalNamespace::NoteControllerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteController")]
-impl std::ops::DerefMut for NoteController {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteController")]
-impl NoteController {
+impl crate::GlobalNamespace::NoteController {
     #[cfg(feature = "NoteController+_DissolveCoroutine_d__75")]
     pub type _DissolveCoroutine_d__75 = crate::GlobalNamespace::NoteController__DissolveCoroutine_d__75;
     pub fn Awake(
@@ -95,7 +100,7 @@ impl NoteController {
     }
     pub fn HandleNoteDidPassJumpThreeQuarters(
         &mut self,
-        noteMovement: *mut NoteMovement,
+        noteMovement: *mut crate::GlobalNamespace::NoteMovement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -148,7 +153,7 @@ impl NoteController {
     }
     pub fn Init(
         &mut self,
-        noteData: *mut NoteData,
+        noteData: *mut crate::GlobalNamespace::NoteData,
         worldRotation: f32,
         moveStartPos: crate::UnityEngine::Vector3,
         moveEndPos: crate::UnityEngine::Vector3,
@@ -213,7 +218,7 @@ impl NoteController {
     }
     pub fn NoteDidPassJumpThreeQuarters(
         &mut self,
-        noteMovement: *mut NoteMovement,
+        noteMovement: *mut crate::GlobalNamespace::NoteMovement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -275,7 +280,7 @@ impl NoteController {
     }
     pub fn SendNoteWasCutEvent(
         &mut self,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -327,13 +332,16 @@ impl NoteController {
     pub fn get_didInitEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut ILazyCopyHashSet_1<*mut INoteControllerDidInitEvent>,
+        *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerDidInitEvent,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ILazyCopyHashSet_1<*mut INoteControllerDidInitEvent> = __cordl_object
-            .invoke("get_didInitEvent", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerDidInitEvent,
+        > = __cordl_object.invoke("get_didInitEvent", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_dissolving(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -411,75 +419,88 @@ impl NoteController {
             .invoke("get_moveVec", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_noteData(&mut self) -> quest_hook::libil2cpp::Result<*mut NoteData> {
+    pub fn get_noteData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::NoteData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut NoteData = __cordl_object.invoke("get_noteData", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::NoteData = __cordl_object
+            .invoke("get_noteData", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_noteDidDissolveEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut ILazyCopyHashSet_1<*mut INoteControllerNoteDidDissolveEvent>,
+        *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteDidDissolveEvent,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ILazyCopyHashSet_1<
-            *mut INoteControllerNoteDidDissolveEvent,
+        let __cordl_ret: *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteDidDissolveEvent,
         > = __cordl_object.invoke("get_noteDidDissolveEvent", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_noteDidFinishJumpEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut ILazyCopyHashSet_1<*mut INoteControllerNoteDidFinishJumpEvent>,
+        *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteDidFinishJumpEvent,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ILazyCopyHashSet_1<
-            *mut INoteControllerNoteDidFinishJumpEvent,
+        let __cordl_ret: *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteDidFinishJumpEvent,
         > = __cordl_object.invoke("get_noteDidFinishJumpEvent", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_noteDidPassJumpThreeQuartersEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut ILazyCopyHashSet_1<*mut INoteControllerNoteDidPassJumpThreeQuartersEvent>,
+        *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ILazyCopyHashSet_1<
-            *mut INoteControllerNoteDidPassJumpThreeQuartersEvent,
+        let __cordl_ret: *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
         > = __cordl_object.invoke("get_noteDidPassJumpThreeQuartersEvent", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_noteDidStartDissolvingEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut ILazyCopyHashSet_1<*mut INoteControllerNoteDidStartDissolvingEvent>,
+        *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ILazyCopyHashSet_1<
-            *mut INoteControllerNoteDidStartDissolvingEvent,
+        let __cordl_ret: *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
         > = __cordl_object.invoke("get_noteDidStartDissolvingEvent", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_noteDidStartJumpEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut ILazyCopyHashSet_1<*mut INoteControllerNoteDidStartJumpEvent>,
+        *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteDidStartJumpEvent,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ILazyCopyHashSet_1<
-            *mut INoteControllerNoteDidStartJumpEvent,
+        let __cordl_ret: *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteDidStartJumpEvent,
         > = __cordl_object.invoke("get_noteDidStartJumpEvent", ())?;
         Ok(__cordl_ret)
     }
@@ -496,25 +517,30 @@ impl NoteController {
     pub fn get_noteWasCutEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut ILazyCopyHashSet_1<*mut INoteControllerNoteWasCutEvent>,
+        *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteWasCutEvent,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ILazyCopyHashSet_1<*mut INoteControllerNoteWasCutEvent> = __cordl_object
-            .invoke("get_noteWasCutEvent", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteWasCutEvent,
+        > = __cordl_object.invoke("get_noteWasCutEvent", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_noteWasMissedEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut ILazyCopyHashSet_1<*mut INoteControllerNoteWasMissedEvent>,
+        *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteWasMissedEvent,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ILazyCopyHashSet_1<
-            *mut INoteControllerNoteWasMissedEvent,
+        let __cordl_ret: *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::INoteControllerNoteWasMissedEvent,
         > = __cordl_object.invoke("get_noteWasMissedEvent", ())?;
         Ok(__cordl_ret)
     }
@@ -548,7 +574,7 @@ impl NoteController {
     }
 }
 #[cfg(feature = "NoteController")]
-impl quest_hook::libil2cpp::ObjectType for NoteController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

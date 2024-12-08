@@ -2,44 +2,52 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameLiftNetworkPlayerModel {
-    __cordl_parent: NetworkPlayerModel_1<*mut GameLiftConnectionManager>,
+    __cordl_parent: crate::GlobalNamespace::NetworkPlayerModel_1<
+        *mut crate::GlobalNamespace::GameLiftConnectionManager,
+    >,
     pub _gameLiftPlayerSessionProvider: *mut crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider,
     pub _cachedConnectToServerParams: *mut crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams,
     pub _cachedStartClientParams: *mut crate::GlobalNamespace::GameLiftConnectionManager_StartClientParams,
 }
 #[cfg(feature = "GameLiftNetworkPlayerModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameLiftNetworkPlayerModel => ""
-    ."GameLiftNetworkPlayerModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameLiftNetworkPlayerModel =>
+    ""."GameLiftNetworkPlayerModel"
 );
 #[cfg(feature = "GameLiftNetworkPlayerModel")]
-impl std::ops::Deref for GameLiftNetworkPlayerModel {
-    type Target = NetworkPlayerModel_1<*mut GameLiftConnectionManager>;
+impl std::ops::Deref for crate::GlobalNamespace::GameLiftNetworkPlayerModel {
+    type Target = crate::GlobalNamespace::NetworkPlayerModel_1<
+        *mut crate::GlobalNamespace::GameLiftConnectionManager,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameLiftNetworkPlayerModel")]
-impl std::ops::DerefMut for GameLiftNetworkPlayerModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameLiftNetworkPlayerModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameLiftNetworkPlayerModel")]
-impl GameLiftNetworkPlayerModel {
+impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
     pub fn GetConnectToServerParams(
         &mut self,
-        selectionMask: BeatmapLevelSelectionMask,
-        configuration: GameplayServerConfiguration,
+        selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+        configuration: crate::GlobalNamespace::GameplayServerConfiguration,
         secret: *mut crate::System::String,
         code: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<
-        *mut IConnectionInitParams_1<*mut GameLiftConnectionManager>,
+        *mut crate::GlobalNamespace::IConnectionInitParams_1<
+            *mut crate::GlobalNamespace::GameLiftConnectionManager,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IConnectionInitParams_1<*mut GameLiftConnectionManager> = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IConnectionInitParams_1<
+            *mut crate::GlobalNamespace::GameLiftConnectionManager,
+        > = __cordl_object
             .invoke(
                 "GetConnectToServerParams",
                 (selectionMask, configuration, secret, code),
@@ -48,15 +56,19 @@ impl GameLiftNetworkPlayerModel {
     }
     pub fn GetStartClientParams(
         &mut self,
-        selectionMask: BeatmapLevelSelectionMask,
-        configuration: GameplayServerConfiguration,
+        selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+        configuration: crate::GlobalNamespace::GameplayServerConfiguration,
     ) -> quest_hook::libil2cpp::Result<
-        *mut IConnectionInitParams_1<*mut GameLiftConnectionManager>,
+        *mut crate::GlobalNamespace::IConnectionInitParams_1<
+            *mut crate::GlobalNamespace::GameLiftConnectionManager,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IConnectionInitParams_1<*mut GameLiftConnectionManager> = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IConnectionInitParams_1<
+            *mut crate::GlobalNamespace::GameLiftConnectionManager,
+        > = __cordl_object
             .invoke("GetStartClientParams", (selectionMask, configuration))?;
         Ok(__cordl_ret)
     }
@@ -69,12 +81,16 @@ impl GameLiftNetworkPlayerModel {
     }
     pub fn RefreshPublicServers(
         &mut self,
-        localSelectionMask: BeatmapLevelSelectionMask,
-        localConfiguration: GameplayServerConfiguration,
+        localSelectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+        localConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
         onSuccess: *mut crate::System::Action_1<
-            *mut crate::System::Collections::Generic::IReadOnlyList_1<PublicServerInfo>,
+            *mut crate::System::Collections::Generic::IReadOnlyList_1<
+                crate::GlobalNamespace::PublicServerInfo,
+            >,
         >,
-        onFailure: *mut crate::System::Action_1<ConnectionFailedReason>,
+        onFailure: *mut crate::System::Action_1<
+            crate::GlobalNamespace::ConnectionFailedReason,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -118,11 +134,13 @@ impl GameLiftNetworkPlayerModel {
     }
     pub fn get_configuration(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<GameplayServerConfiguration> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::GameplayServerConfiguration,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: GameplayServerConfiguration = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::GameplayServerConfiguration = __cordl_object
             .invoke("get_configuration", ())?;
         Ok(__cordl_ret)
     }
@@ -148,17 +166,20 @@ impl GameLiftNetworkPlayerModel {
     }
     pub fn get_selectionMask(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BeatmapLevelSelectionMask> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::BeatmapLevelSelectionMask,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapLevelSelectionMask = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::BeatmapLevelSelectionMask = __cordl_object
             .invoke("get_selectionMask", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "GameLiftNetworkPlayerModel")]
-impl quest_hook::libil2cpp::ObjectType for GameLiftNetworkPlayerModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GameLiftNetworkPlayerModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -17,34 +17,36 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 pub struct MultiplayerConditionalActiveByLayout {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _condition: crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition,
-    pub _layout: MultiplayerPlayerLayout,
-    pub _layoutProvider: *mut MultiplayerLayoutProvider,
+    pub _layout: crate::GlobalNamespace::MultiplayerPlayerLayout,
+    pub _layoutProvider: *mut crate::GlobalNamespace::MultiplayerLayoutProvider,
 }
 #[cfg(feature = "MultiplayerConditionalActiveByLayout")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerConditionalActiveByLayout => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerConditionalActiveByLayout => ""
     ."MultiplayerConditionalActiveByLayout"
 );
 #[cfg(feature = "MultiplayerConditionalActiveByLayout")]
-impl std::ops::Deref for MultiplayerConditionalActiveByLayout {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConditionalActiveByLayout")]
-impl std::ops::DerefMut for MultiplayerConditionalActiveByLayout {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConditionalActiveByLayout")]
-impl MultiplayerConditionalActiveByLayout {
+impl crate::GlobalNamespace::MultiplayerConditionalActiveByLayout {
     #[cfg(feature = "MultiplayerConditionalActiveByLayout+Condition")]
     pub type Condition = crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition;
     pub fn HandlePlayersLayoutWasCalculated(
         &mut self,
-        layout: MultiplayerPlayerLayout,
+        layout: crate::GlobalNamespace::MultiplayerPlayerLayout,
         playersCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -83,7 +85,8 @@ impl MultiplayerConditionalActiveByLayout {
     }
 }
 #[cfg(feature = "MultiplayerConditionalActiveByLayout")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerConditionalActiveByLayout {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

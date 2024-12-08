@@ -9,24 +9,24 @@ pub struct ParticleSystemEventController {
 }
 #[cfg(feature = "ParticleSystemEventController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ParticleSystemEventController => ""
-    ."ParticleSystemEventController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ParticleSystemEventController
+    => ""."ParticleSystemEventController"
 );
 #[cfg(feature = "ParticleSystemEventController")]
-impl std::ops::Deref for ParticleSystemEventController {
+impl std::ops::Deref for crate::GlobalNamespace::ParticleSystemEventController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ParticleSystemEventController")]
-impl std::ops::DerefMut for ParticleSystemEventController {
+impl std::ops::DerefMut for crate::GlobalNamespace::ParticleSystemEventController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ParticleSystemEventController")]
-impl ParticleSystemEventController {
+impl crate::GlobalNamespace::ParticleSystemEventController {
     pub const kMaxSimDelta: f32 = 0.033333335f32;
     #[cfg(feature = "ParticleSystemEventController+Pool")]
     pub type Pool = crate::GlobalNamespace::ParticleSystemEventController_Pool;
@@ -138,7 +138,8 @@ impl ParticleSystemEventController {
     }
 }
 #[cfg(feature = "ParticleSystemEventController")]
-impl quest_hook::libil2cpp::ObjectType for ParticleSystemEventController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ParticleSystemEventController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -150,7 +151,9 @@ impl quest_hook::libil2cpp::ObjectType for ParticleSystemEventController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParticleSystemEventController_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<*mut ParticleSystemEventController>,
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::ParticleSystemEventController,
+    >,
 }
 #[cfg(feature = "ParticleSystemEventController+Pool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -160,7 +163,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ParticleSystemEventController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::ParticleSystemEventController_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<*mut ParticleSystemEventController>;
+    type Target = crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::ParticleSystemEventController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

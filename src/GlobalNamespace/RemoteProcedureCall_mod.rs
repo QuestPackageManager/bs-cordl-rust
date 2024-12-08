@@ -7,23 +7,24 @@ pub struct RemoteProcedureCall {
 }
 #[cfg(feature = "RemoteProcedureCall")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RemoteProcedureCall => ""."RemoteProcedureCall"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RemoteProcedureCall => ""
+    ."RemoteProcedureCall"
 );
 #[cfg(feature = "RemoteProcedureCall")]
-impl std::ops::Deref for RemoteProcedureCall {
+impl std::ops::Deref for crate::GlobalNamespace::RemoteProcedureCall {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RemoteProcedureCall")]
-impl std::ops::DerefMut for RemoteProcedureCall {
+impl std::ops::DerefMut for crate::GlobalNamespace::RemoteProcedureCall {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RemoteProcedureCall")]
-impl RemoteProcedureCall {
+impl crate::GlobalNamespace::RemoteProcedureCall {
     #[cfg(feature = "RemoteProcedureCall+TypeWrapper_1")]
     pub type TypeWrapper_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::RemoteProcedureCall_TypeWrapper_1<
         T,
@@ -43,11 +44,13 @@ impl RemoteProcedureCall {
     pub fn Init(
         &mut self,
         syncTime: i64,
-    ) -> quest_hook::libil2cpp::Result<*mut IRemoteProcedureCall> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::IRemoteProcedureCall,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IRemoteProcedureCall = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IRemoteProcedureCall = __cordl_object
             .invoke("Init", (syncTime))?;
         Ok(__cordl_ret)
     }
@@ -132,7 +135,7 @@ impl RemoteProcedureCall {
     }
 }
 #[cfg(feature = "RemoteProcedureCall")]
-impl quest_hook::libil2cpp::ObjectType for RemoteProcedureCall {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RemoteProcedureCall {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -4,10 +4,10 @@
 pub struct DisappearingArrowControllerBase_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _transparentObjectMaterialPropertyBlocks: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut MaterialPropertyBlockController,
+        *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     >,
     pub _cubeMeshRenderer: *mut crate::UnityEngine::MeshRenderer,
-    pub _arrowCutoutEffect: *mut CutoutEffect,
+    pub _arrowCutoutEffect: *mut crate::GlobalNamespace::CutoutEffect,
     pub _disappearingNormalStart: f32,
     pub _disappearingNormalEnd: f32,
     pub _disappearingGhostStart: f32,
@@ -21,12 +21,13 @@ pub struct DisappearingArrowControllerBase_1<T: quest_hook::libil2cpp::Type> {
 }
 #[cfg(feature = "DisappearingArrowControllerBase_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for DisappearingArrowControllerBase_1 < T > => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::DisappearingArrowControllerBase_1 < T > => ""
     ."DisappearingArrowControllerBase`1" < T >
 );
 #[cfg(feature = "DisappearingArrowControllerBase_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
-for DisappearingArrowControllerBase_1<T> {
+for crate::GlobalNamespace::DisappearingArrowControllerBase_1<T> {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -34,13 +35,15 @@ for DisappearingArrowControllerBase_1<T> {
 }
 #[cfg(feature = "DisappearingArrowControllerBase_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for DisappearingArrowControllerBase_1<T> {
+for crate::GlobalNamespace::DisappearingArrowControllerBase_1<T> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "DisappearingArrowControllerBase_1")]
-impl<T: quest_hook::libil2cpp::Type> DisappearingArrowControllerBase_1<T> {
+impl<
+    T: quest_hook::libil2cpp::Type,
+> crate::GlobalNamespace::DisappearingArrowControllerBase_1<T> {
     pub fn Awake(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -158,7 +161,7 @@ impl<T: quest_hook::libil2cpp::Type> DisappearingArrowControllerBase_1<T> {
 }
 #[cfg(feature = "DisappearingArrowControllerBase_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for DisappearingArrowControllerBase_1<T> {
+for crate::GlobalNamespace::DisappearingArrowControllerBase_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

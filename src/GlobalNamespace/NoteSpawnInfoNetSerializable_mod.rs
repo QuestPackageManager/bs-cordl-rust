@@ -2,22 +2,22 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteSpawnInfoNetSerializable {
-    __cordl_parent: PoolableSerializable,
+    __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
     pub _cordl_time: f32,
     pub lineIndex: i32,
-    pub noteLineLayer: NoteLineLayer,
-    pub beforeJumpNoteLineLayer: NoteLineLayer,
+    pub noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
+    pub beforeJumpNoteLineLayer: crate::GlobalNamespace::NoteLineLayer,
     pub gameplayType: crate::GlobalNamespace::NoteData_GameplayType,
     pub scoringType: crate::GlobalNamespace::NoteData_ScoringType,
-    pub colorType: ColorType,
-    pub cutDirection: NoteCutDirection,
+    pub colorType: crate::GlobalNamespace::ColorType,
+    pub cutDirection: crate::GlobalNamespace::NoteCutDirection,
     pub timeToNextColorNote: f32,
     pub timeToPrevColorNote: f32,
     pub flipLineIndex: i32,
     pub flipYSide: f32,
-    pub moveStartPos: Vector3Serializable,
-    pub moveEndPos: Vector3Serializable,
-    pub jumpEndPos: Vector3Serializable,
+    pub moveStartPos: crate::GlobalNamespace::Vector3Serializable,
+    pub moveEndPos: crate::GlobalNamespace::Vector3Serializable,
+    pub jumpEndPos: crate::GlobalNamespace::Vector3Serializable,
     pub jumpGravity: f32,
     pub moveDuration: f32,
     pub jumpDuration: f32,
@@ -27,24 +27,24 @@ pub struct NoteSpawnInfoNetSerializable {
 }
 #[cfg(feature = "NoteSpawnInfoNetSerializable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteSpawnInfoNetSerializable => ""
-    ."NoteSpawnInfoNetSerializable"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteSpawnInfoNetSerializable =>
+    ""."NoteSpawnInfoNetSerializable"
 );
 #[cfg(feature = "NoteSpawnInfoNetSerializable")]
-impl std::ops::Deref for NoteSpawnInfoNetSerializable {
-    type Target = PoolableSerializable;
+impl std::ops::Deref for crate::GlobalNamespace::NoteSpawnInfoNetSerializable {
+    type Target = crate::GlobalNamespace::PoolableSerializable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteSpawnInfoNetSerializable")]
-impl std::ops::DerefMut for NoteSpawnInfoNetSerializable {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteSpawnInfoNetSerializable {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteSpawnInfoNetSerializable")]
-impl NoteSpawnInfoNetSerializable {
+impl crate::GlobalNamespace::NoteSpawnInfoNetSerializable {
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
@@ -60,12 +60,12 @@ impl NoteSpawnInfoNetSerializable {
         &mut self,
         _cordl_time: f32,
         lineIndex: i32,
-        noteLineLayer: NoteLineLayer,
-        beforeJumpNoteLineLayer: NoteLineLayer,
+        noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
+        beforeJumpNoteLineLayer: crate::GlobalNamespace::NoteLineLayer,
         gameplayType: crate::GlobalNamespace::NoteData_GameplayType,
         scoringType: crate::GlobalNamespace::NoteData_ScoringType,
-        colorType: ColorType,
-        cutDirection: NoteCutDirection,
+        colorType: crate::GlobalNamespace::ColorType,
+        cutDirection: crate::GlobalNamespace::NoteCutDirection,
         timeToNextColorNote: f32,
         timeToPrevColorNote: f32,
         flipLineIndex: i32,
@@ -79,11 +79,13 @@ impl NoteSpawnInfoNetSerializable {
         rotation: f32,
         cutDirectionAngleOffset: f32,
         cutSfxVolumeMultiplier: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut NoteSpawnInfoNetSerializable> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut NoteSpawnInfoNetSerializable = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::NoteSpawnInfoNetSerializable = __cordl_object
             .invoke(
                 "Init",
                 (
@@ -142,7 +144,8 @@ impl NoteSpawnInfoNetSerializable {
     }
 }
 #[cfg(feature = "NoteSpawnInfoNetSerializable")]
-impl quest_hook::libil2cpp::ObjectType for NoteSpawnInfoNetSerializable {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NoteSpawnInfoNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

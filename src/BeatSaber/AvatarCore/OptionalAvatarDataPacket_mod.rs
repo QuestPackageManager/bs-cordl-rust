@@ -4,7 +4,7 @@
 pub struct OptionalAvatarDataPacket {
     __cordl_parent: crate::System::Object,
     pub dataType: u32,
-    pub data: *mut ByteArrayNetSerializable,
+    pub data: *mut crate::GlobalNamespace::ByteArrayNetSerializable,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarDataPacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

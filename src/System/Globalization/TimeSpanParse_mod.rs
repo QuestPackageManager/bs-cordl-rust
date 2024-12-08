@@ -155,22 +155,22 @@ impl std::ops::DerefMut for crate::System::Globalization::TimeSpanParse {
 }
 #[cfg(feature = "System+Globalization+TimeSpanParse")]
 impl crate::System::Globalization::TimeSpanParse {
-    #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
-    pub type TimeSpanTokenizer = crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer;
-    #[cfg(feature = "System+Globalization+TimeSpanParse+TTT")]
-    pub type TTT = crate::System::Globalization::TimeSpanParse_TTT;
-    #[cfg(feature = "System+Globalization+TimeSpanParse+StringParser")]
-    pub type StringParser = crate::System::Globalization::TimeSpanParse_StringParser;
-    #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanToken")]
-    pub type TimeSpanToken = crate::System::Globalization::TimeSpanParse_TimeSpanToken;
     #[cfg(feature = "System+Globalization+TimeSpanParse+ParseFailureKind")]
     pub type ParseFailureKind = crate::System::Globalization::TimeSpanParse_ParseFailureKind;
+    #[cfg(feature = "System+Globalization+TimeSpanParse+StringParser")]
+    pub type StringParser = crate::System::Globalization::TimeSpanParse_StringParser;
+    #[cfg(feature = "System+Globalization+TimeSpanParse+TTT")]
+    pub type TTT = crate::System::Globalization::TimeSpanParse_TTT;
     #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
     pub type TimeSpanRawInfo = crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo;
     #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanResult")]
     pub type TimeSpanResult = crate::System::Globalization::TimeSpanParse_TimeSpanResult;
     #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
     pub type TimeSpanStandardStyles = crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles;
+    #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanToken")]
+    pub type TimeSpanToken = crate::System::Globalization::TimeSpanParse_TimeSpanToken;
+    #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
+    pub type TimeSpanTokenizer = crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer;
 }
 #[cfg(feature = "System+Globalization+TimeSpanParse")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TimeSpanParse {

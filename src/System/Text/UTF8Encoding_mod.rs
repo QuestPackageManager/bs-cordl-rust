@@ -178,10 +178,10 @@ impl std::ops::DerefMut for crate::System::Text::UTF8Encoding {
 impl crate::System::Text::UTF8Encoding {
     #[cfg(feature = "System+Text+UTF8Encoding+UTF8Decoder")]
     pub type UTF8Decoder = crate::System::Text::UTF8Encoding_UTF8Decoder;
-    #[cfg(feature = "System+Text+UTF8Encoding+UTF8EncodingSealed")]
-    pub type UTF8EncodingSealed = crate::GlobalNamespace::UTF8Encoding_UTF8EncodingSealed;
     #[cfg(feature = "System+Text+UTF8Encoding+UTF8Encoder")]
     pub type UTF8Encoder = crate::System::Text::UTF8Encoding_UTF8Encoder;
+    #[cfg(feature = "System+Text+UTF8Encoding+UTF8EncodingSealed")]
+    pub type UTF8EncodingSealed = crate::GlobalNamespace::UTF8Encoding_UTF8EncodingSealed;
     pub fn Equals(
         &mut self,
         value: *mut crate::System::Object,

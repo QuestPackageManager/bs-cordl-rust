@@ -12,10 +12,12 @@ pub struct BeatmapLevelChecksums {
 }
 #[cfg(feature = "BeatmapLevelChecksums")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for BeatmapLevelChecksums => ""."BeatmapLevelChecksums"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapLevelChecksums => ""
+    ."BeatmapLevelChecksums"
 );
 #[cfg(feature = "BeatmapLevelChecksums")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for BeatmapLevelChecksums {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::BeatmapLevelChecksums {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -25,15 +27,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for BeatmapLevelChecksums {
     }
 }
 #[cfg(feature = "BeatmapLevelChecksums")]
-impl BeatmapLevelChecksums {
+impl crate::GlobalNamespace::BeatmapLevelChecksums {
+    #[cfg(feature = "BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
+    pub type DifficultyBeatmapChecksums = crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums;
+    #[cfg(feature = "BeatmapLevelChecksums+__c")]
+    pub type __c = crate::GlobalNamespace::BeatmapLevelChecksums___c;
     #[cfg(feature = "BeatmapLevelChecksums+__c__DisplayClass7_0")]
     pub type __c__DisplayClass7_0 = crate::GlobalNamespace::BeatmapLevelChecksums___c__DisplayClass7_0;
     #[cfg(feature = "BeatmapLevelChecksums+__c__DisplayClass8_0")]
     pub type __c__DisplayClass8_0 = crate::GlobalNamespace::BeatmapLevelChecksums___c__DisplayClass8_0;
-    #[cfg(feature = "BeatmapLevelChecksums+__c")]
-    pub type __c = crate::GlobalNamespace::BeatmapLevelChecksums___c;
-    #[cfg(feature = "BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
-    pub type DifficultyBeatmapChecksums = crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums;
     pub fn GetOrAddDifficultyBeatmapChecksums(
         &mut self,
         beatmapDifficulty: *mut crate::System::String,
@@ -69,7 +71,7 @@ impl BeatmapLevelChecksums {
     }
     pub fn _ctor(
         &mut self,
-        other: BeatmapLevelChecksums,
+        other: crate::GlobalNamespace::BeatmapLevelChecksums,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

@@ -25,6 +25,8 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::MeshOperations::UVEd
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+UVEditing")]
 impl crate::UnityEngine::ProBuilder::MeshOperations::UVEditing {
+    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+UVEditing+__c")]
+    pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::UVEditing___c;
     #[cfg(
         feature = "UnityEngine+ProBuilder+MeshOperations+UVEditing+__c__DisplayClass0_0"
     )]
@@ -33,8 +35,6 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::UVEditing {
         feature = "UnityEngine+ProBuilder+MeshOperations+UVEditing+__c__DisplayClass4_0"
     )]
     pub type __c__DisplayClass4_0 = crate::UnityEngine::ProBuilder::MeshOperations::UVEditing___c__DisplayClass4_0;
-    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+UVEditing+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::UVEditing___c;
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+UVEditing")]
 impl quest_hook::libil2cpp::ObjectType

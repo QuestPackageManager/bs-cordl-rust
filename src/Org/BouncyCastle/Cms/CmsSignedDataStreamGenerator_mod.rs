@@ -164,17 +164,17 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGe
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator")]
 impl crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator {
     #[cfg(
-        feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+SignerInfoGeneratorImpl"
+        feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+CmsSignedDataOutputStream"
     )]
-    pub type SignerInfoGeneratorImpl = crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_SignerInfoGeneratorImpl;
+    pub type CmsSignedDataOutputStream = crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_CmsSignedDataOutputStream;
     #[cfg(
         feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+DigestAndSignerInfoGeneratorHolder"
     )]
     pub type DigestAndSignerInfoGeneratorHolder = crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_DigestAndSignerInfoGeneratorHolder;
     #[cfg(
-        feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+CmsSignedDataOutputStream"
+        feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+SignerInfoGeneratorImpl"
     )]
-    pub type CmsSignedDataOutputStream = crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_CmsSignedDataOutputStream;
+    pub type SignerInfoGeneratorImpl = crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_SignerInfoGeneratorImpl;
     pub fn AddDigests_IEnumerable1(
         &mut self,
         digestOids: *mut crate::System::Collections::IEnumerable,

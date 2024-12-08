@@ -101,10 +101,10 @@ impl std::ops::DerefMut for crate::HMUI::InputFieldView {
 #[cfg(feature = "HMUI+InputFieldView")]
 impl crate::HMUI::InputFieldView {
     pub const kBlinkingRate: f32 = 0.4f32;
-    #[cfg(feature = "HMUI+InputFieldView+SelectionState")]
-    pub type SelectionState = crate::HMUI::InputFieldView_SelectionState;
     #[cfg(feature = "HMUI+InputFieldView+InputFieldChanged")]
     pub type InputFieldChanged = crate::HMUI::InputFieldView_InputFieldChanged;
+    #[cfg(feature = "HMUI+InputFieldView+SelectionState")]
+    pub type SelectionState = crate::HMUI::InputFieldView_SelectionState;
     #[cfg(feature = "HMUI+InputFieldView+_BlinkingCaretCoroutine_d__43")]
     pub type _BlinkingCaretCoroutine_d__43 = crate::HMUI::InputFieldView__BlinkingCaretCoroutine_d__43;
     pub fn ActivateKeyboard(

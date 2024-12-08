@@ -3,29 +3,31 @@
 #[derive(Debug)]
 pub struct ParticleSystemEmitEventEffectInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _particleSystemEventControllerPrefab: *mut ParticleSystemEventController,
+    pub _particleSystemEventControllerPrefab: *mut crate::GlobalNamespace::ParticleSystemEventController,
     pub _particleSystemEventControllerInitialSize: i32,
 }
 #[cfg(feature = "ParticleSystemEmitEventEffectInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ParticleSystemEmitEventEffectInstaller => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ParticleSystemEmitEventEffectInstaller => ""
     ."ParticleSystemEmitEventEffectInstaller"
 );
 #[cfg(feature = "ParticleSystemEmitEventEffectInstaller")]
-impl std::ops::Deref for ParticleSystemEmitEventEffectInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::ParticleSystemEmitEventEffectInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ParticleSystemEmitEventEffectInstaller")]
-impl std::ops::DerefMut for ParticleSystemEmitEventEffectInstaller {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::ParticleSystemEmitEventEffectInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ParticleSystemEmitEventEffectInstaller")]
-impl ParticleSystemEmitEventEffectInstaller {
+impl crate::GlobalNamespace::ParticleSystemEmitEventEffectInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -55,7 +57,8 @@ impl ParticleSystemEmitEventEffectInstaller {
     }
 }
 #[cfg(feature = "ParticleSystemEmitEventEffectInstaller")]
-impl quest_hook::libil2cpp::ObjectType for ParticleSystemEmitEventEffectInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ParticleSystemEmitEventEffectInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

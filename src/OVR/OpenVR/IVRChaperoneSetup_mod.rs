@@ -41,24 +41,48 @@ for crate::OVR::OpenVR::IVRChaperoneSetup {
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup")]
 impl crate::OVR::OpenVR::IVRChaperoneSetup {
-    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPlayAreaSize")]
-    pub type _SetWorkingPlayAreaSize = crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPlayAreaSize;
-    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsTagsInfo")]
-    pub type _SetWorkingCollisionBoundsTagsInfo = crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsTagsInfo;
-    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ImportFromBufferToWorking")]
-    pub type _ImportFromBufferToWorking = crate::OVR::OpenVR::IVRChaperoneSetup__ImportFromBufferToWorking;
-    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaSize")]
-    pub type _GetWorkingPlayAreaSize = crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaSize;
-    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_RevertWorkingCopy")]
-    pub type _RevertWorkingCopy = crate::OVR::OpenVR::IVRChaperoneSetup__RevertWorkingCopy;
-    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaRect")]
-    pub type _GetWorkingPlayAreaRect = crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaRect;
+    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_CommitWorkingCopy")]
+    pub type _CommitWorkingCopy = crate::OVR::OpenVR::IVRChaperoneSetup__CommitWorkingCopy;
+    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ExportLiveToBuffer")]
+    pub type _ExportLiveToBuffer = crate::OVR::OpenVR::IVRChaperoneSetup__ExportLiveToBuffer;
+    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsInfo")]
+    pub type _GetLiveCollisionBoundsInfo = crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsInfo;
+    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsTagsInfo")]
+    pub type _GetLiveCollisionBoundsTagsInfo = crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsTagsInfo;
+    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLivePhysicalBoundsInfo")]
+    pub type _GetLivePhysicalBoundsInfo = crate::OVR::OpenVR::IVRChaperoneSetup__GetLivePhysicalBoundsInfo;
+    #[cfg(
+        feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveSeatedZeroPoseToRawTrackingPose"
+    )]
+    pub type _GetLiveSeatedZeroPoseToRawTrackingPose = crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveSeatedZeroPoseToRawTrackingPose;
     #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingCollisionBoundsInfo")]
     pub type _GetWorkingCollisionBoundsInfo = crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingCollisionBoundsInfo;
+    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaRect")]
+    pub type _GetWorkingPlayAreaRect = crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaRect;
+    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaSize")]
+    pub type _GetWorkingPlayAreaSize = crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaSize;
     #[cfg(
         feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingSeatedZeroPoseToRawTrackingPose"
     )]
     pub type _GetWorkingSeatedZeroPoseToRawTrackingPose = crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingSeatedZeroPoseToRawTrackingPose;
+    #[cfg(
+        feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingStandingZeroPoseToRawTrackingPose"
+    )]
+    pub type _GetWorkingStandingZeroPoseToRawTrackingPose = crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingStandingZeroPoseToRawTrackingPose;
+    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ImportFromBufferToWorking")]
+    pub type _ImportFromBufferToWorking = crate::OVR::OpenVR::IVRChaperoneSetup__ImportFromBufferToWorking;
+    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ReloadFromDisk")]
+    pub type _ReloadFromDisk = crate::OVR::OpenVR::IVRChaperoneSetup__ReloadFromDisk;
+    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_RevertWorkingCopy")]
+    pub type _RevertWorkingCopy = crate::OVR::OpenVR::IVRChaperoneSetup__RevertWorkingCopy;
+    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsInfo")]
+    pub type _SetWorkingCollisionBoundsInfo = crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsInfo;
+    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsTagsInfo")]
+    pub type _SetWorkingCollisionBoundsTagsInfo = crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsTagsInfo;
+    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPhysicalBoundsInfo")]
+    pub type _SetWorkingPhysicalBoundsInfo = crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPhysicalBoundsInfo;
+    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPlayAreaSize")]
+    pub type _SetWorkingPlayAreaSize = crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPlayAreaSize;
     #[cfg(
         feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingSeatedZeroPoseToRawTrackingPose"
     )]
@@ -67,30 +91,6 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup {
         feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingStandingZeroPoseToRawTrackingPose"
     )]
     pub type _SetWorkingStandingZeroPoseToRawTrackingPose = crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingStandingZeroPoseToRawTrackingPose;
-    #[cfg(
-        feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingStandingZeroPoseToRawTrackingPose"
-    )]
-    pub type _GetWorkingStandingZeroPoseToRawTrackingPose = crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingStandingZeroPoseToRawTrackingPose;
-    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ReloadFromDisk")]
-    pub type _ReloadFromDisk = crate::OVR::OpenVR::IVRChaperoneSetup__ReloadFromDisk;
-    #[cfg(
-        feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveSeatedZeroPoseToRawTrackingPose"
-    )]
-    pub type _GetLiveSeatedZeroPoseToRawTrackingPose = crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveSeatedZeroPoseToRawTrackingPose;
-    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsInfo")]
-    pub type _SetWorkingCollisionBoundsInfo = crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsInfo;
-    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsTagsInfo")]
-    pub type _GetLiveCollisionBoundsTagsInfo = crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsTagsInfo;
-    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLivePhysicalBoundsInfo")]
-    pub type _GetLivePhysicalBoundsInfo = crate::OVR::OpenVR::IVRChaperoneSetup__GetLivePhysicalBoundsInfo;
-    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ExportLiveToBuffer")]
-    pub type _ExportLiveToBuffer = crate::OVR::OpenVR::IVRChaperoneSetup__ExportLiveToBuffer;
-    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_CommitWorkingCopy")]
-    pub type _CommitWorkingCopy = crate::OVR::OpenVR::IVRChaperoneSetup__CommitWorkingCopy;
-    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsInfo")]
-    pub type _GetLiveCollisionBoundsInfo = crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsInfo;
-    #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPhysicalBoundsInfo")]
-    pub type _SetWorkingPhysicalBoundsInfo = crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPhysicalBoundsInfo;
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_CommitWorkingCopy")]
 #[repr(C)]

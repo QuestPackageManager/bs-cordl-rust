@@ -2,27 +2,28 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SteamNetworkPlayerModel {
-    __cordl_parent: PlatformNetworkPlayerModel,
+    __cordl_parent: crate::GlobalNamespace::PlatformNetworkPlayerModel,
 }
 #[cfg(feature = "SteamNetworkPlayerModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SteamNetworkPlayerModel => ""."SteamNetworkPlayerModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SteamNetworkPlayerModel => ""
+    ."SteamNetworkPlayerModel"
 );
 #[cfg(feature = "SteamNetworkPlayerModel")]
-impl std::ops::Deref for SteamNetworkPlayerModel {
-    type Target = PlatformNetworkPlayerModel;
+impl std::ops::Deref for crate::GlobalNamespace::SteamNetworkPlayerModel {
+    type Target = crate::GlobalNamespace::PlatformNetworkPlayerModel;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SteamNetworkPlayerModel")]
-impl std::ops::DerefMut for SteamNetworkPlayerModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::SteamNetworkPlayerModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SteamNetworkPlayerModel")]
-impl SteamNetworkPlayerModel {
+impl crate::GlobalNamespace::SteamNetworkPlayerModel {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,7 +43,8 @@ impl SteamNetworkPlayerModel {
     }
 }
 #[cfg(feature = "SteamNetworkPlayerModel")]
-impl quest_hook::libil2cpp::ObjectType for SteamNetworkPlayerModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SteamNetworkPlayerModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

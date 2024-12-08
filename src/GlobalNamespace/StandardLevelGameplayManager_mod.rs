@@ -77,10 +77,10 @@ for crate::GlobalNamespace::StandardLevelGameplayManager_InitData {
 #[derive(Debug)]
 pub struct StandardLevelGameplayManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _gameScenesManager: *mut GameScenesManager,
-    pub _gameSongController: *mut GameSongController,
-    pub _gameEnergyCounter: *mut GameEnergyCounter,
-    pub _pauseController: *mut PauseController,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
+    pub _gameSongController: *mut crate::GlobalNamespace::GameSongController,
+    pub _gameEnergyCounter: *mut crate::GlobalNamespace::GameEnergyCounter,
+    pub _pauseController: *mut crate::GlobalNamespace::PauseController,
     pub _initData: *mut crate::GlobalNamespace::StandardLevelGameplayManager_InitData,
     pub levelWillStartIntroEvent: *mut crate::System::Action,
     pub levelDidStartEvent: *mut crate::System::Action,
@@ -91,24 +91,24 @@ pub struct StandardLevelGameplayManager {
 }
 #[cfg(feature = "StandardLevelGameplayManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StandardLevelGameplayManager => ""
-    ."StandardLevelGameplayManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::StandardLevelGameplayManager =>
+    ""."StandardLevelGameplayManager"
 );
 #[cfg(feature = "StandardLevelGameplayManager")]
-impl std::ops::Deref for StandardLevelGameplayManager {
+impl std::ops::Deref for crate::GlobalNamespace::StandardLevelGameplayManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelGameplayManager")]
-impl std::ops::DerefMut for StandardLevelGameplayManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::StandardLevelGameplayManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelGameplayManager")]
-impl StandardLevelGameplayManager {
+impl crate::GlobalNamespace::StandardLevelGameplayManager {
     #[cfg(feature = "StandardLevelGameplayManager+GameState")]
     pub type GameState = crate::GlobalNamespace::StandardLevelGameplayManager_GameState;
     #[cfg(feature = "StandardLevelGameplayManager+InitData")]
@@ -313,7 +313,8 @@ impl StandardLevelGameplayManager {
     }
 }
 #[cfg(feature = "StandardLevelGameplayManager")]
-impl quest_hook::libil2cpp::ObjectType for StandardLevelGameplayManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StandardLevelGameplayManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -214,18 +214,18 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::UIRenderDevice 
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice")]
 impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
-    #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
-    pub type DrawStatistics = crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics;
-    #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
-    pub type AllocToUpdate = crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate;
     #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
     pub type AllocToFree = crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree;
-    #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UIR::UIRenderDevice___c;
+    #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
+    pub type AllocToUpdate = crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate;
     #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DeviceToFree")]
     pub type DeviceToFree = crate::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree;
+    #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
+    pub type DrawStatistics = crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics;
     #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+EvaluationState")]
     pub type EvaluationState = crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState;
+    #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+__c")]
+    pub type __c = crate::UnityEngine::UIElements::UIR::UIRenderDevice___c;
     pub fn ActiveUpdatesForMeshHandle(
         &mut self,
         mesh: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,

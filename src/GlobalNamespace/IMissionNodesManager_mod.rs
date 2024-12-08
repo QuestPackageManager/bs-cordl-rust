@@ -6,23 +6,24 @@ pub struct IMissionNodesManager {
 }
 #[cfg(feature = "IMissionNodesManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IMissionNodesManager => ""."IMissionNodesManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IMissionNodesManager => ""
+    ."IMissionNodesManager"
 );
 #[cfg(feature = "IMissionNodesManager")]
-impl std::ops::Deref for IMissionNodesManager {
+impl std::ops::Deref for crate::GlobalNamespace::IMissionNodesManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IMissionNodesManager")]
-impl std::ops::DerefMut for IMissionNodesManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::IMissionNodesManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IMissionNodesManager")]
-impl IMissionNodesManager {
+impl crate::GlobalNamespace::IMissionNodesManager {
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
@@ -32,30 +33,30 @@ impl IMissionNodesManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyCollection_1<
-            *mut IMissionNode,
+            *mut crate::GlobalNamespace::IMissionNode,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyCollection_1<
-            *mut IMissionNode,
+            *mut crate::GlobalNamespace::IMissionNode,
         > = __cordl_object.invoke("get_allMissionNodes", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_finalMissionNode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IMissionNode> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IMissionNode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IMissionNode = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IMissionNode = __cordl_object
             .invoke("get_finalMissionNode", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "IMissionNodesManager")]
-impl quest_hook::libil2cpp::ObjectType for IMissionNodesManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IMissionNodesManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -78,6 +78,31 @@ for crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct ChangeUsageMsg_Data {
+    pub deviceId: i32,
+    pub usages: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::ChangeUsageMsg_Data =>
+    "UnityEngine.InputSystem"."InputRemoting/ChangeUsageMsg/Data"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::ChangeUsageMsg_Data {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
+impl crate::UnityEngine::InputSystem::ChangeUsageMsg_Data {}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -132,31 +157,6 @@ for crate::UnityEngine::InputSystem::NewLayoutMsg_Data {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
 impl crate::UnityEngine::InputSystem::NewLayoutMsg_Data {}
-#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct ChangeUsageMsg_Data {
-    pub deviceId: i32,
-    pub usages: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::ChangeUsageMsg_Data =>
-    "UnityEngine.InputSystem"."InputRemoting/ChangeUsageMsg/Data"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::ChangeUsageMsg_Data {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
-impl crate::UnityEngine::InputSystem::ChangeUsageMsg_Data {}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
 #[repr(C)]
 #[derive(Debug)]
@@ -241,36 +241,36 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
 impl crate::UnityEngine::InputSystem::InputRemoting {
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg")]
+    pub type ChangeUsageMsg = crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ConnectMsg")]
+    pub type ConnectMsg = crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
+    pub type DisconnectMsg = crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg;
     #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Flags")]
     pub type Flags = crate::UnityEngine::InputSystem::InputRemoting_Flags;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Message")]
+    pub type Message = crate::UnityEngine::InputSystem::InputRemoting_Message;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+MessageType")]
+    pub type MessageType = crate::UnityEngine::InputSystem::InputRemoting_MessageType;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
+    pub type NewDeviceMsg = crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewEventsMsg")]
+    pub type NewEventsMsg = crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg")]
+    pub type NewLayoutMsg = crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
+    pub type RemoteInputDevice = crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteSender")]
+    pub type RemoteSender = crate::UnityEngine::InputSystem::InputRemoting_RemoteSender;
     #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoveDeviceMsg")]
     pub type RemoveDeviceMsg = crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg;
     #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StartSendingMsg")]
     pub type StartSendingMsg = crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg;
     #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StopSendingMsg")]
     pub type StopSendingMsg = crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ConnectMsg")]
-    pub type ConnectMsg = crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
-    pub type RemoteInputDevice = crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg")]
-    pub type ChangeUsageMsg = crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg")]
-    pub type NewLayoutMsg = crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteSender")]
-    pub type RemoteSender = crate::UnityEngine::InputSystem::InputRemoting_RemoteSender;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewEventsMsg")]
-    pub type NewEventsMsg = crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Message")]
-    pub type Message = crate::UnityEngine::InputSystem::InputRemoting_Message;
     #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Subscriber")]
     pub type Subscriber = crate::UnityEngine::InputSystem::InputRemoting_Subscriber;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
-    pub type NewDeviceMsg = crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+MessageType")]
-    pub type MessageType = crate::UnityEngine::InputSystem::InputRemoting_MessageType;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
-    pub type DisconnectMsg = crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg;
     pub fn FindLocalDeviceId(
         &mut self,
         remoteDeviceId: i32,
@@ -629,10 +629,10 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting_NewDe
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
 impl crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg {
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::NewDeviceMsg___c;
     #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
     pub type Data = crate::UnityEngine::InputSystem::NewDeviceMsg_Data;
+    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+__c")]
+    pub type __c = crate::UnityEngine::InputSystem::NewDeviceMsg___c;
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
 impl quest_hook::libil2cpp::ObjectType

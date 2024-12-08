@@ -31,12 +31,12 @@ impl std::ops::DerefMut for crate::Zenject::PrefabBindingFinalizer {
 }
 #[cfg(feature = "Zenject+PrefabBindingFinalizer")]
 impl crate::Zenject::PrefabBindingFinalizer {
-    #[cfg(feature = "Zenject+PrefabBindingFinalizer+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::Zenject::PrefabBindingFinalizer___c__DisplayClass6_0;
     #[cfg(feature = "Zenject+PrefabBindingFinalizer+__c__DisplayClass5_0")]
     pub type __c__DisplayClass5_0 = crate::Zenject::PrefabBindingFinalizer___c__DisplayClass5_0;
     #[cfg(feature = "Zenject+PrefabBindingFinalizer+__c__DisplayClass5_1")]
     pub type __c__DisplayClass5_1 = crate::Zenject::PrefabBindingFinalizer___c__DisplayClass5_1;
+    #[cfg(feature = "Zenject+PrefabBindingFinalizer+__c__DisplayClass6_0")]
+    pub type __c__DisplayClass6_0 = crate::Zenject::PrefabBindingFinalizer___c__DisplayClass6_0;
     #[cfg(feature = "Zenject+PrefabBindingFinalizer+__c__DisplayClass6_1")]
     pub type __c__DisplayClass6_1 = crate::Zenject::PrefabBindingFinalizer___c__DisplayClass6_1;
     pub fn FinalizeBindingConcrete(

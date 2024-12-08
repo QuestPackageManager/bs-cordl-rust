@@ -9,29 +9,30 @@ pub struct OVRGLTFAccessor {
     pub bufferId: i32,
     pub bufferLength: i32,
     pub additionalOffset: i32,
-    pub dataType: OVRGLTFType,
-    pub componentType: OVRGLTFComponentType,
+    pub dataType: crate::GlobalNamespace::OVRGLTFType,
+    pub componentType: crate::GlobalNamespace::OVRGLTFComponentType,
     pub dataCount: i32,
 }
 #[cfg(feature = "OVRGLTFAccessor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRGLTFAccessor => ""."OVRGLTFAccessor"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRGLTFAccessor => ""
+    ."OVRGLTFAccessor"
 );
 #[cfg(feature = "OVRGLTFAccessor")]
-impl std::ops::Deref for OVRGLTFAccessor {
+impl std::ops::Deref for crate::GlobalNamespace::OVRGLTFAccessor {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRGLTFAccessor")]
-impl std::ops::DerefMut for OVRGLTFAccessor {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRGLTFAccessor {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRGLTFAccessor")]
-impl OVRGLTFAccessor {
+impl crate::GlobalNamespace::OVRGLTFAccessor {
     pub fn GetDataCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -41,7 +42,7 @@ impl OVRGLTFAccessor {
     }
     pub fn GetMaxValueForType(
         &mut self,
-        _cordl_type: OVRGLTFComponentType,
+        _cordl_type: crate::GlobalNamespace::OVRGLTFComponentType,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -52,7 +53,7 @@ impl OVRGLTFAccessor {
     }
     pub fn GetStrideForType(
         &mut self,
-        _cordl_type: OVRGLTFComponentType,
+        _cordl_type: crate::GlobalNamespace::OVRGLTFComponentType,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -73,7 +74,7 @@ impl OVRGLTFAccessor {
     }
     pub fn ReadAsBoneWeights(
         &mut self,
-        chunk: OVRBinaryChunk,
+        chunk: crate::GlobalNamespace::OVRBinaryChunk,
         data: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
         >,
@@ -88,7 +89,7 @@ impl OVRGLTFAccessor {
     }
     pub fn ReadAsColor(
         &mut self,
-        chunk: OVRBinaryChunk,
+        chunk: crate::GlobalNamespace::OVRBinaryChunk,
         data: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
         >,
@@ -103,7 +104,7 @@ impl OVRGLTFAccessor {
     }
     pub fn ReadAsFloat(
         &mut self,
-        chunk: OVRBinaryChunk,
+        chunk: crate::GlobalNamespace::OVRBinaryChunk,
         data: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppArray<f32>,
         >,
@@ -118,7 +119,7 @@ impl OVRGLTFAccessor {
     }
     pub fn ReadAsInt(
         &mut self,
-        chunk: OVRBinaryChunk,
+        chunk: crate::GlobalNamespace::OVRBinaryChunk,
         data: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppArray<i32>,
         >,
@@ -133,7 +134,7 @@ impl OVRGLTFAccessor {
     }
     pub fn ReadAsMatrix4x4(
         &mut self,
-        chunk: OVRBinaryChunk,
+        chunk: crate::GlobalNamespace::OVRBinaryChunk,
         data: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
         >,
@@ -149,7 +150,7 @@ impl OVRGLTFAccessor {
     }
     pub fn ReadAsTexture(
         &mut self,
-        chunk: OVRBinaryChunk,
+        chunk: crate::GlobalNamespace::OVRBinaryChunk,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -160,7 +161,7 @@ impl OVRGLTFAccessor {
     }
     pub fn ReadAsVector2(
         &mut self,
-        chunk: OVRBinaryChunk,
+        chunk: crate::GlobalNamespace::OVRBinaryChunk,
         data: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
@@ -175,7 +176,7 @@ impl OVRGLTFAccessor {
     }
     pub fn ReadAsVector3(
         &mut self,
-        chunk: OVRBinaryChunk,
+        chunk: crate::GlobalNamespace::OVRBinaryChunk,
         data: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
@@ -191,7 +192,7 @@ impl OVRGLTFAccessor {
     }
     pub fn ReadAsVector4(
         &mut self,
-        chunk: OVRBinaryChunk,
+        chunk: crate::GlobalNamespace::OVRBinaryChunk,
         data: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
         >,
@@ -221,7 +222,7 @@ impl OVRGLTFAccessor {
         &mut self,
         data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         index: i32,
-        _cordl_type: OVRGLTFComponentType,
+        _cordl_type: crate::GlobalNamespace::OVRGLTFComponentType,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -245,7 +246,7 @@ impl OVRGLTFAccessor {
     }
 }
 #[cfg(feature = "OVRGLTFAccessor")]
-impl quest_hook::libil2cpp::ObjectType for OVRGLTFAccessor {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRGLTFAccessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

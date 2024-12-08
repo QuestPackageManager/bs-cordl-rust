@@ -2,30 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoxCuttableBySaber {
-    __cordl_parent: CuttableBySaber,
+    __cordl_parent: crate::GlobalNamespace::CuttableBySaber,
     pub _collider: *mut crate::UnityEngine::BoxCollider,
     pub _canBeCut: bool,
     pub _radius: f32,
 }
 #[cfg(feature = "BoxCuttableBySaber")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BoxCuttableBySaber => ""."BoxCuttableBySaber"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BoxCuttableBySaber => ""
+    ."BoxCuttableBySaber"
 );
 #[cfg(feature = "BoxCuttableBySaber")]
-impl std::ops::Deref for BoxCuttableBySaber {
-    type Target = CuttableBySaber;
+impl std::ops::Deref for crate::GlobalNamespace::BoxCuttableBySaber {
+    type Target = crate::GlobalNamespace::CuttableBySaber;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BoxCuttableBySaber")]
-impl std::ops::DerefMut for BoxCuttableBySaber {
+impl std::ops::DerefMut for crate::GlobalNamespace::BoxCuttableBySaber {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BoxCuttableBySaber")]
-impl BoxCuttableBySaber {
+impl crate::GlobalNamespace::BoxCuttableBySaber {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -38,7 +39,7 @@ impl BoxCuttableBySaber {
     }
     pub fn Cut(
         &mut self,
-        saber: *mut Saber,
+        saber: *mut crate::GlobalNamespace::Saber,
         cutPoint: crate::UnityEngine::Vector3,
         orientation: crate::UnityEngine::Quaternion,
         cutDirVec: crate::UnityEngine::Vector3,
@@ -158,7 +159,7 @@ impl BoxCuttableBySaber {
     }
 }
 #[cfg(feature = "BoxCuttableBySaber")]
-impl quest_hook::libil2cpp::ObjectType for BoxCuttableBySaber {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BoxCuttableBySaber {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

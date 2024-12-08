@@ -2,38 +2,38 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommandBufferBlurryScreenGrab {
-    __cordl_parent: CommandBufferGOCore,
-    pub _kawaseBlurRenderer: *mut KawaseBlurRendererSO,
+    __cordl_parent: crate::GlobalNamespace::CommandBufferGOCore,
+    pub _kawaseBlurRenderer: *mut crate::GlobalNamespace::KawaseBlurRendererSO,
     pub _kernelSize: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
     pub _cameraEvent: crate::UnityEngine::Rendering::CameraEvent,
     pub _downsample: i32,
 }
 #[cfg(feature = "CommandBufferBlurryScreenGrab")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CommandBufferBlurryScreenGrab => ""
-    ."CommandBufferBlurryScreenGrab"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CommandBufferBlurryScreenGrab
+    => ""."CommandBufferBlurryScreenGrab"
 );
 #[cfg(feature = "CommandBufferBlurryScreenGrab")]
-impl std::ops::Deref for CommandBufferBlurryScreenGrab {
-    type Target = CommandBufferGOCore;
+impl std::ops::Deref for crate::GlobalNamespace::CommandBufferBlurryScreenGrab {
+    type Target = crate::GlobalNamespace::CommandBufferGOCore;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CommandBufferBlurryScreenGrab")]
-impl std::ops::DerefMut for CommandBufferBlurryScreenGrab {
+impl std::ops::DerefMut for crate::GlobalNamespace::CommandBufferBlurryScreenGrab {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CommandBufferBlurryScreenGrab")]
-impl CommandBufferBlurryScreenGrab {
+impl crate::GlobalNamespace::CommandBufferBlurryScreenGrab {
     pub fn CamerasDict(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::Dictionary_2<
             *mut crate::UnityEngine::Camera,
-            *mut CommandBufferOwners,
+            *mut crate::GlobalNamespace::CommandBufferOwners,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -41,7 +41,7 @@ impl CommandBufferBlurryScreenGrab {
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
             *mut crate::UnityEngine::Camera,
-            *mut CommandBufferOwners,
+            *mut crate::GlobalNamespace::CommandBufferOwners,
         > = __cordl_object.invoke("CamerasDict", ())?;
         Ok(__cordl_ret)
     }
@@ -87,7 +87,8 @@ impl CommandBufferBlurryScreenGrab {
     }
 }
 #[cfg(feature = "CommandBufferBlurryScreenGrab")]
-impl quest_hook::libil2cpp::ObjectType for CommandBufferBlurryScreenGrab {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::CommandBufferBlurryScreenGrab {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

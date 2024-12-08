@@ -2,42 +2,44 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerBadgeDataFullComboSO {
-    __cordl_parent: MultiplayerBadgeDataSO,
+    __cordl_parent: crate::GlobalNamespace::MultiplayerBadgeDataSO,
     pub _weight: f32,
 }
 #[cfg(feature = "MultiplayerBadgeDataFullComboSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerBadgeDataFullComboSO => ""
-    ."MultiplayerBadgeDataFullComboSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerBadgeDataFullComboSO
+    => ""."MultiplayerBadgeDataFullComboSO"
 );
 #[cfg(feature = "MultiplayerBadgeDataFullComboSO")]
-impl std::ops::Deref for MultiplayerBadgeDataFullComboSO {
-    type Target = MultiplayerBadgeDataSO;
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerBadgeDataFullComboSO {
+    type Target = crate::GlobalNamespace::MultiplayerBadgeDataSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerBadgeDataFullComboSO")]
-impl std::ops::DerefMut for MultiplayerBadgeDataFullComboSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerBadgeDataFullComboSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerBadgeDataFullComboSO")]
-impl MultiplayerBadgeDataFullComboSO {
+impl crate::GlobalNamespace::MultiplayerBadgeDataFullComboSO {
     pub fn CalculateBadgeData(
         &mut self,
         resultsData: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut MultiplayerPlayerResultsData,
+            *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
         >,
-        playerDataModel: *mut PlayerDataModel,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         randomMultiplier: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut MultiplayerBadgeAwardData> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::MultiplayerBadgeAwardData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MultiplayerBadgeAwardData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MultiplayerBadgeAwardData = __cordl_object
             .invoke(
                 "CalculateBadgeData",
                 (resultsData, playerDataModel, beatmapKey, randomMultiplier),
@@ -63,7 +65,8 @@ impl MultiplayerBadgeDataFullComboSO {
     }
 }
 #[cfg(feature = "MultiplayerBadgeDataFullComboSO")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerBadgeDataFullComboSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerBadgeDataFullComboSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -95,17 +95,17 @@ impl crate::UnityEngine::InputSystem::LowLevel::QueryPairedUserAccountCommand {
     pub const kMaxNameLength: i32 = 256i32;
     pub const kSize: i32 = 1040i32;
     #[cfg(
-        feature = "UnityEngine+InputSystem+LowLevel+QueryPairedUserAccountCommand+_nameBuffer_e__FixedBuffer"
+        feature = "UnityEngine+InputSystem+LowLevel+QueryPairedUserAccountCommand+Result"
     )]
-    pub type _nameBuffer_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::QueryPairedUserAccountCommand__nameBuffer_e__FixedBuffer;
+    pub type Result = crate::UnityEngine::InputSystem::LowLevel::QueryPairedUserAccountCommand_Result;
     #[cfg(
         feature = "UnityEngine+InputSystem+LowLevel+QueryPairedUserAccountCommand+_idBuffer_e__FixedBuffer"
     )]
     pub type _idBuffer_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::QueryPairedUserAccountCommand__idBuffer_e__FixedBuffer;
     #[cfg(
-        feature = "UnityEngine+InputSystem+LowLevel+QueryPairedUserAccountCommand+Result"
+        feature = "UnityEngine+InputSystem+LowLevel+QueryPairedUserAccountCommand+_nameBuffer_e__FixedBuffer"
     )]
-    pub type Result = crate::UnityEngine::InputSystem::LowLevel::QueryPairedUserAccountCommand_Result;
+    pub type _nameBuffer_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::QueryPairedUserAccountCommand__nameBuffer_e__FixedBuffer;
     pub fn get_id(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {

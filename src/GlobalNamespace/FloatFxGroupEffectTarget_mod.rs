@@ -6,24 +6,24 @@ pub struct FloatFxGroupEffectTarget {
 }
 #[cfg(feature = "FloatFxGroupEffectTarget")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FloatFxGroupEffectTarget => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FloatFxGroupEffectTarget => ""
     ."FloatFxGroupEffectTarget"
 );
 #[cfg(feature = "FloatFxGroupEffectTarget")]
-impl std::ops::Deref for FloatFxGroupEffectTarget {
+impl std::ops::Deref for crate::GlobalNamespace::FloatFxGroupEffectTarget {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatFxGroupEffectTarget")]
-impl std::ops::DerefMut for FloatFxGroupEffectTarget {
+impl std::ops::DerefMut for crate::GlobalNamespace::FloatFxGroupEffectTarget {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatFxGroupEffectTarget")]
-impl FloatFxGroupEffectTarget {
+impl crate::GlobalNamespace::FloatFxGroupEffectTarget {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -69,7 +69,8 @@ impl FloatFxGroupEffectTarget {
     }
 }
 #[cfg(feature = "FloatFxGroupEffectTarget")]
-impl quest_hook::libil2cpp::ObjectType for FloatFxGroupEffectTarget {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FloatFxGroupEffectTarget {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

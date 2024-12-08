@@ -10,23 +10,24 @@ pub struct MaterialController {
 }
 #[cfg(feature = "MaterialController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MaterialController => ""."MaterialController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MaterialController => ""
+    ."MaterialController"
 );
 #[cfg(feature = "MaterialController")]
-impl std::ops::Deref for MaterialController {
+impl std::ops::Deref for crate::GlobalNamespace::MaterialController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MaterialController")]
-impl std::ops::DerefMut for MaterialController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MaterialController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MaterialController")]
-impl MaterialController {
+impl crate::GlobalNamespace::MaterialController {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -66,7 +67,7 @@ impl MaterialController {
     }
 }
 #[cfg(feature = "MaterialController")]
-impl quest_hook::libil2cpp::ObjectType for MaterialController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MaterialController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

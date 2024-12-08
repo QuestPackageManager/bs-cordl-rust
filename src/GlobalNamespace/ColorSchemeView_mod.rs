@@ -13,23 +13,24 @@ pub struct ColorSchemeView {
 }
 #[cfg(feature = "ColorSchemeView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ColorSchemeView => ""."ColorSchemeView"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ColorSchemeView => ""
+    ."ColorSchemeView"
 );
 #[cfg(feature = "ColorSchemeView")]
-impl std::ops::Deref for ColorSchemeView {
+impl std::ops::Deref for crate::GlobalNamespace::ColorSchemeView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorSchemeView")]
-impl std::ops::DerefMut for ColorSchemeView {
+impl std::ops::DerefMut for crate::GlobalNamespace::ColorSchemeView {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorSchemeView")]
-impl ColorSchemeView {
+impl crate::GlobalNamespace::ColorSchemeView {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -77,7 +78,7 @@ impl ColorSchemeView {
     }
 }
 #[cfg(feature = "ColorSchemeView")]
-impl quest_hook::libil2cpp::ObjectType for ColorSchemeView {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorSchemeView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

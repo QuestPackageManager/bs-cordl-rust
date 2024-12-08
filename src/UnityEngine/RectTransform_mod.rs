@@ -121,12 +121,12 @@ impl std::ops::DerefMut for crate::UnityEngine::RectTransform {
 }
 #[cfg(feature = "UnityEngine+RectTransform")]
 impl crate::UnityEngine::RectTransform {
+    #[cfg(feature = "UnityEngine+RectTransform+Axis")]
+    pub type Axis = crate::UnityEngine::RectTransform_Axis;
     #[cfg(feature = "UnityEngine+RectTransform+Edge")]
     pub type Edge = crate::UnityEngine::RectTransform_Edge;
     #[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
     pub type ReapplyDrivenProperties = crate::UnityEngine::RectTransform_ReapplyDrivenProperties;
-    #[cfg(feature = "UnityEngine+RectTransform+Axis")]
-    pub type Axis = crate::UnityEngine::RectTransform_Axis;
     pub fn ForceUpdateRectTransforms(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

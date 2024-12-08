@@ -23,10 +23,10 @@ impl std::ops::DerefMut for crate::BGNet::Logging::Debug {
 }
 #[cfg(feature = "BGNet+Logging+Debug")]
 impl crate::BGNet::Logging::Debug {
-    #[cfg(feature = "BGNet+Logging+Debug+LoggerLinkedList")]
-    pub type LoggerLinkedList = crate::BGNet::Logging::Debug_LoggerLinkedList;
     #[cfg(feature = "BGNet+Logging+Debug+ILogger")]
     type ILogger = crate::BGNet::Logging::Debug_ILogger;
+    #[cfg(feature = "BGNet+Logging+Debug+LoggerLinkedList")]
+    pub type LoggerLinkedList = crate::BGNet::Logging::Debug_LoggerLinkedList;
 }
 #[cfg(feature = "BGNet+Logging+Debug")]
 impl quest_hook::libil2cpp::ObjectType for crate::BGNet::Logging::Debug {

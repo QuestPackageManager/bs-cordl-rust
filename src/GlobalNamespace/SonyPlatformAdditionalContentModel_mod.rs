@@ -2,68 +2,69 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyPlatformAdditionalContentModel {
-    __cordl_parent: AdditionalContentModel,
+    __cordl_parent: crate::GlobalNamespace::AdditionalContentModel,
     pub _entitlementsLabels: *mut crate::System::Collections::Generic::HashSet_1<
         *mut crate::System::String,
     >,
     pub _semaphoreSlim: *mut crate::System::Threading::SemaphoreSlim,
     pub _isDataValid: bool,
-    pub _sonyCommerceHelper: *mut ISonyCommerceHelper,
-    pub _sonyLevelProductCollectionModel: *mut SonyLevelProductCollectionModel,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
+    pub _sonyCommerceHelper: *mut crate::GlobalNamespace::ISonyCommerceHelper,
+    pub _sonyLevelProductCollectionModel: *mut crate::GlobalNamespace::SonyLevelProductCollectionModel,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
 }
 #[cfg(feature = "SonyPlatformAdditionalContentModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SonyPlatformAdditionalContentModel => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SonyPlatformAdditionalContentModel => ""
     ."SonyPlatformAdditionalContentModel"
 );
 #[cfg(feature = "SonyPlatformAdditionalContentModel")]
-impl std::ops::Deref for SonyPlatformAdditionalContentModel {
-    type Target = AdditionalContentModel;
+impl std::ops::Deref for crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
+    type Target = crate::GlobalNamespace::AdditionalContentModel;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyPlatformAdditionalContentModel")]
-impl std::ops::DerefMut for SonyPlatformAdditionalContentModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyPlatformAdditionalContentModel")]
-impl SonyPlatformAdditionalContentModel {
-    #[cfg(feature = "SonyPlatformAdditionalContentModel+_UpdateEntitlementsAsync_d__21")]
-    pub type _UpdateEntitlementsAsync_d__21 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__UpdateEntitlementsAsync_d__21;
-    #[cfg(
-        feature = "SonyPlatformAdditionalContentModel+_OpenLevelPackProductStoreAsync_d__14"
-    )]
-    pub type _OpenLevelPackProductStoreAsync_d__14 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__OpenLevelPackProductStoreAsync_d__14;
-    #[cfg(
-        feature = "SonyPlatformAdditionalContentModel+_GetPackEntitlementStatusInternalAsync_d__11"
-    )]
-    pub type _GetPackEntitlementStatusInternalAsync_d__11 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__GetPackEntitlementStatusInternalAsync_d__11;
-    #[cfg(
-        feature = "SonyPlatformAdditionalContentModel+_IsPackBetterBuyThanLevelAsync_d__15"
-    )]
-    pub type _IsPackBetterBuyThanLevelAsync_d__15 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__IsPackBetterBuyThanLevelAsync_d__15;
+impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
     #[cfg(feature = "SonyPlatformAdditionalContentModel+_EnsureDataValidity_d__20")]
     pub type _EnsureDataValidity_d__20 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__EnsureDataValidity_d__20;
-    #[cfg(
-        feature = "SonyPlatformAdditionalContentModel+_GetLevelEntitlementStatusInternalAsync_d__10"
-    )]
-    pub type _GetLevelEntitlementStatusInternalAsync_d__10 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__GetLevelEntitlementStatusInternalAsync_d__10;
-    #[cfg(
-        feature = "SonyPlatformAdditionalContentModel+_GetRedirectedLevelPackProductData_d__16"
-    )]
-    pub type _GetRedirectedLevelPackProductData_d__16 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__GetRedirectedLevelPackProductData_d__16;
     #[cfg(
         feature = "SonyPlatformAdditionalContentModel+_GetLevelDataVersionInternalAsync_d__12"
     )]
     pub type _GetLevelDataVersionInternalAsync_d__12 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__GetLevelDataVersionInternalAsync_d__12;
     #[cfg(
+        feature = "SonyPlatformAdditionalContentModel+_GetLevelEntitlementStatusInternalAsync_d__10"
+    )]
+    pub type _GetLevelEntitlementStatusInternalAsync_d__10 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__GetLevelEntitlementStatusInternalAsync_d__10;
+    #[cfg(
+        feature = "SonyPlatformAdditionalContentModel+_GetPackEntitlementStatusInternalAsync_d__11"
+    )]
+    pub type _GetPackEntitlementStatusInternalAsync_d__11 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__GetPackEntitlementStatusInternalAsync_d__11;
+    #[cfg(
+        feature = "SonyPlatformAdditionalContentModel+_GetRedirectedLevelPackProductData_d__16"
+    )]
+    pub type _GetRedirectedLevelPackProductData_d__16 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__GetRedirectedLevelPackProductData_d__16;
+    #[cfg(
+        feature = "SonyPlatformAdditionalContentModel+_IsPackBetterBuyThanLevelAsync_d__15"
+    )]
+    pub type _IsPackBetterBuyThanLevelAsync_d__15 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__IsPackBetterBuyThanLevelAsync_d__15;
+    #[cfg(
+        feature = "SonyPlatformAdditionalContentModel+_OpenLevelPackProductStoreAsync_d__14"
+    )]
+    pub type _OpenLevelPackProductStoreAsync_d__14 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__OpenLevelPackProductStoreAsync_d__14;
+    #[cfg(
         feature = "SonyPlatformAdditionalContentModel+_OpenLevelProductStoreAsync_d__13"
     )]
     pub type _OpenLevelProductStoreAsync_d__13 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__OpenLevelProductStoreAsync_d__13;
+    #[cfg(feature = "SonyPlatformAdditionalContentModel+_UpdateEntitlementsAsync_d__21")]
+    pub type _UpdateEntitlementsAsync_d__21 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__UpdateEntitlementsAsync_d__21;
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -90,11 +91,11 @@ impl SonyPlatformAdditionalContentModel {
     pub fn GetLevelDataVersion(
         &mut self,
         levelId: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<BeatmapLevelDataVersion> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapLevelDataVersion> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapLevelDataVersion = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::BeatmapLevelDataVersion = __cordl_object
             .invoke("GetLevelDataVersion", (levelId))?;
         Ok(__cordl_ret)
     }
@@ -103,13 +104,15 @@ impl SonyPlatformAdditionalContentModel {
         levelId: *mut crate::System::String,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<BeatmapLevelDataVersion>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::BeatmapLevelDataVersion,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            BeatmapLevelDataVersion,
+            crate::GlobalNamespace::BeatmapLevelDataVersion,
         > = __cordl_object.invoke("GetLevelDataVersionInternalAsync", (levelId, token))?;
         Ok(__cordl_ret)
     }
@@ -118,13 +121,15 @@ impl SonyPlatformAdditionalContentModel {
         levelId: *mut crate::System::String,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<EntitlementStatus>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::EntitlementStatus,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            EntitlementStatus,
+            crate::GlobalNamespace::EntitlementStatus,
         > = __cordl_object
             .invoke(
                 "GetLevelEntitlementStatusInternalAsync",
@@ -137,13 +142,15 @@ impl SonyPlatformAdditionalContentModel {
         levelPackId: *mut crate::System::String,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<EntitlementStatus>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::EntitlementStatus,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            EntitlementStatus,
+            crate::GlobalNamespace::EntitlementStatus,
         > = __cordl_object
             .invoke(
                 "GetPackEntitlementStatusInternalAsync",
@@ -190,7 +197,7 @@ impl SonyPlatformAdditionalContentModel {
     }
     pub fn Init(
         &mut self,
-        vrPlatformHelper: *mut IVRPlatformHelper,
+        vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -214,20 +221,22 @@ impl SonyPlatformAdditionalContentModel {
         levelPackId: *mut crate::System::String,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<IsPackBetterBuyThanLevelResult>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            IsPackBetterBuyThanLevelResult,
+            crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
         > = __cordl_object
             .invoke("IsPackBetterBuyThanLevelAsync", (levelPackId, cancellationToken))?;
         Ok(__cordl_ret)
     }
     pub fn New(
-        sonyCommerceHelper: *mut ISonyCommerceHelper,
-        sonyLevelProductCollectionModel: *mut SonyLevelProductCollectionModel,
+        sonyCommerceHelper: *mut crate::GlobalNamespace::ISonyCommerceHelper,
+        sonyLevelProductCollectionModel: *mut crate::GlobalNamespace::SonyLevelProductCollectionModel,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -243,13 +252,15 @@ impl SonyPlatformAdditionalContentModel {
         levelPackId: *mut crate::System::String,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<OpenProductStoreResult>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::OpenProductStoreResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            OpenProductStoreResult,
+            crate::GlobalNamespace::OpenProductStoreResult,
         > = __cordl_object
             .invoke("OpenLevelPackProductStoreAsync", (levelPackId, cancellationToken))?;
         Ok(__cordl_ret)
@@ -259,13 +270,15 @@ impl SonyPlatformAdditionalContentModel {
         levelId: *mut crate::System::String,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<OpenProductStoreResult>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::OpenProductStoreResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            OpenProductStoreResult,
+            crate::GlobalNamespace::OpenProductStoreResult,
         > = __cordl_object
             .invoke("OpenLevelProductStoreAsync", (levelId, cancellationToken))?;
         Ok(__cordl_ret)
@@ -299,8 +312,8 @@ impl SonyPlatformAdditionalContentModel {
     }
     pub fn _ctor(
         &mut self,
-        sonyCommerceHelper: *mut ISonyCommerceHelper,
-        sonyLevelProductCollectionModel: *mut SonyLevelProductCollectionModel,
+        sonyCommerceHelper: *mut crate::GlobalNamespace::ISonyCommerceHelper,
+        sonyLevelProductCollectionModel: *mut crate::GlobalNamespace::SonyLevelProductCollectionModel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -311,7 +324,8 @@ impl SonyPlatformAdditionalContentModel {
     }
 }
 #[cfg(feature = "SonyPlatformAdditionalContentModel")]
-impl quest_hook::libil2cpp::ObjectType for SonyPlatformAdditionalContentModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

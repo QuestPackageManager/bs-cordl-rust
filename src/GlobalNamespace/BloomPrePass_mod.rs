@@ -3,31 +3,32 @@
 #[derive(Debug)]
 pub struct BloomPrePass {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _bloomPrepassRenderer: *mut BloomPrePassRendererSO,
-    pub _bloomPrePassEffectContainer: *mut BloomPrePassEffectContainerSO,
-    pub _bloomPrePassRenderData: *mut BloomPrePassRenderDataSO,
+    pub _bloomPrepassRenderer: *mut crate::GlobalNamespace::BloomPrePassRendererSO,
+    pub _bloomPrePassEffectContainer: *mut crate::GlobalNamespace::BloomPrePassEffectContainerSO,
+    pub _bloomPrePassRenderData: *mut crate::GlobalNamespace::BloomPrePassRenderDataSO,
     pub _mode: crate::GlobalNamespace::BloomPrePass_Mode,
     pub _renderData: *mut crate::GlobalNamespace::BloomPrePassRenderDataSO_Data,
 }
 #[cfg(feature = "BloomPrePass")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomPrePass => ""."BloomPrePass"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BloomPrePass => ""
+    ."BloomPrePass"
 );
 #[cfg(feature = "BloomPrePass")]
-impl std::ops::Deref for BloomPrePass {
+impl std::ops::Deref for crate::GlobalNamespace::BloomPrePass {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePass")]
-impl std::ops::DerefMut for BloomPrePass {
+impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePass {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePass")]
-impl BloomPrePass {
+impl crate::GlobalNamespace::BloomPrePass {
     #[cfg(feature = "BloomPrePass+Mode")]
     pub type Mode = crate::GlobalNamespace::BloomPrePass_Mode;
     pub fn Awake(
@@ -110,7 +111,7 @@ impl BloomPrePass {
     }
 }
 #[cfg(feature = "BloomPrePass")]
-impl quest_hook::libil2cpp::ObjectType for BloomPrePass {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BloomPrePass {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

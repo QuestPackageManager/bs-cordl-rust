@@ -69,10 +69,10 @@ impl std::ops::DerefMut for crate::UnityEngine::SpatialTracking::TrackedPoseDriv
 impl crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
     #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+DeviceType")]
     pub type DeviceType = crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType;
-    #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackingType")]
-    pub type TrackingType = crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType;
     #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackedPose")]
     pub type TrackedPose = crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose;
+    #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackingType")]
+    pub type TrackingType = crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType;
     #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+UpdateType")]
     pub type UpdateType = crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType;
     pub fn Awake(

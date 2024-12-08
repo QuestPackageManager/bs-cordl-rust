@@ -8,6 +8,6 @@ pub enum EnvironmentEffectsFilterPreset {
 }
 #[cfg(feature = "EnvironmentEffectsFilterPreset")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for EnvironmentEffectsFilterPreset => ""
-    ."EnvironmentEffectsFilterPreset"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnvironmentEffectsFilterPreset
+    => ""."EnvironmentEffectsFilterPreset"
 );

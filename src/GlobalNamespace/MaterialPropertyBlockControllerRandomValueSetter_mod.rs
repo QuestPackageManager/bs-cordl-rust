@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MaterialPropertyBlockControllerRandomValueSetter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _materialPropertyBlockController: *mut MaterialPropertyBlockController,
+    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     pub _propertyName: *mut crate::System::String,
     pub _min: f32,
     pub _max: f32,
@@ -14,24 +14,27 @@ pub struct MaterialPropertyBlockControllerRandomValueSetter {
 }
 #[cfg(feature = "MaterialPropertyBlockControllerRandomValueSetter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MaterialPropertyBlockControllerRandomValueSetter => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MaterialPropertyBlockControllerRandomValueSetter => ""
     ."MaterialPropertyBlockControllerRandomValueSetter"
 );
 #[cfg(feature = "MaterialPropertyBlockControllerRandomValueSetter")]
-impl std::ops::Deref for MaterialPropertyBlockControllerRandomValueSetter {
+impl std::ops::Deref
+for crate::GlobalNamespace::MaterialPropertyBlockControllerRandomValueSetter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MaterialPropertyBlockControllerRandomValueSetter")]
-impl std::ops::DerefMut for MaterialPropertyBlockControllerRandomValueSetter {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MaterialPropertyBlockControllerRandomValueSetter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MaterialPropertyBlockControllerRandomValueSetter")]
-impl MaterialPropertyBlockControllerRandomValueSetter {
+impl crate::GlobalNamespace::MaterialPropertyBlockControllerRandomValueSetter {
     pub fn ApplyParams(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -92,7 +95,7 @@ impl MaterialPropertyBlockControllerRandomValueSetter {
 }
 #[cfg(feature = "MaterialPropertyBlockControllerRandomValueSetter")]
 impl quest_hook::libil2cpp::ObjectType
-for MaterialPropertyBlockControllerRandomValueSetter {
+for crate::GlobalNamespace::MaterialPropertyBlockControllerRandomValueSetter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,28 +6,29 @@ pub struct CoroutineHelpers {
 }
 #[cfg(feature = "CoroutineHelpers")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CoroutineHelpers => ""."CoroutineHelpers"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CoroutineHelpers => ""
+    ."CoroutineHelpers"
 );
 #[cfg(feature = "CoroutineHelpers")]
-impl std::ops::Deref for CoroutineHelpers {
+impl std::ops::Deref for crate::GlobalNamespace::CoroutineHelpers {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CoroutineHelpers")]
-impl std::ops::DerefMut for CoroutineHelpers {
+impl std::ops::DerefMut for crate::GlobalNamespace::CoroutineHelpers {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CoroutineHelpers")]
-impl CoroutineHelpers {
+impl crate::GlobalNamespace::CoroutineHelpers {
     #[cfg(feature = "CoroutineHelpers+_ExecuteAfterDelayCoroutine_d__0")]
     pub type _ExecuteAfterDelayCoroutine_d__0 = crate::GlobalNamespace::CoroutineHelpers__ExecuteAfterDelayCoroutine_d__0;
 }
 #[cfg(feature = "CoroutineHelpers")]
-impl quest_hook::libil2cpp::ObjectType for CoroutineHelpers {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CoroutineHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

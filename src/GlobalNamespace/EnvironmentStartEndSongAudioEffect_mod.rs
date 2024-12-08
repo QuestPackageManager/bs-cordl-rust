@@ -17,34 +17,35 @@ pub struct EnvironmentStartEndSongAudioEffect {
     pub _songFailedAudioClips: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::AudioClip,
     >,
-    pub _levelEndActions: *mut ILevelEndActions,
-    pub _audioTimeSource: *mut IAudioTimeSource,
-    pub _gamePause: *mut IGamePause,
-    pub _audioEffectsPlayer: *mut EnvironmentAudioEffectsPlayer,
-    pub _environmentContext: EnvironmentContext,
+    pub _levelEndActions: *mut crate::GlobalNamespace::ILevelEndActions,
+    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _gamePause: *mut crate::GlobalNamespace::IGamePause,
+    pub _audioEffectsPlayer: *mut crate::GlobalNamespace::EnvironmentAudioEffectsPlayer,
+    pub _environmentContext: crate::GlobalNamespace::EnvironmentContext,
     pub _songFinishedPlayed: bool,
     pub _isWaitingToPlayStartAudio: bool,
 }
 #[cfg(feature = "EnvironmentStartEndSongAudioEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnvironmentStartEndSongAudioEffect => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::EnvironmentStartEndSongAudioEffect => ""
     ."EnvironmentStartEndSongAudioEffect"
 );
 #[cfg(feature = "EnvironmentStartEndSongAudioEffect")]
-impl std::ops::Deref for EnvironmentStartEndSongAudioEffect {
+impl std::ops::Deref for crate::GlobalNamespace::EnvironmentStartEndSongAudioEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentStartEndSongAudioEffect")]
-impl std::ops::DerefMut for EnvironmentStartEndSongAudioEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentStartEndSongAudioEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentStartEndSongAudioEffect")]
-impl EnvironmentStartEndSongAudioEffect {
+impl crate::GlobalNamespace::EnvironmentStartEndSongAudioEffect {
     pub const kSmallSongTime: f32 = 0.5f32;
     pub fn HandleGamePauseDidPause(
         &mut self,
@@ -135,7 +136,8 @@ impl EnvironmentStartEndSongAudioEffect {
     }
 }
 #[cfg(feature = "EnvironmentStartEndSongAudioEffect")]
-impl quest_hook::libil2cpp::ObjectType for EnvironmentStartEndSongAudioEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EnvironmentStartEndSongAudioEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

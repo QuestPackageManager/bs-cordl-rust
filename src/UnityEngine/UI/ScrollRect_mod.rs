@@ -74,12 +74,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::ScrollRect {
 }
 #[cfg(feature = "UnityEngine+UI+ScrollRect")]
 impl crate::UnityEngine::UI::ScrollRect {
-    #[cfg(feature = "UnityEngine+UI+ScrollRect+ScrollbarVisibility")]
-    pub type ScrollbarVisibility = crate::UnityEngine::UI::ScrollRect_ScrollbarVisibility;
-    #[cfg(feature = "UnityEngine+UI+ScrollRect+ScrollRectEvent")]
-    pub type ScrollRectEvent = crate::UnityEngine::UI::ScrollRect_ScrollRectEvent;
     #[cfg(feature = "UnityEngine+UI+ScrollRect+MovementType")]
     pub type MovementType = crate::UnityEngine::UI::ScrollRect_MovementType;
+    #[cfg(feature = "UnityEngine+UI+ScrollRect+ScrollRectEvent")]
+    pub type ScrollRectEvent = crate::UnityEngine::UI::ScrollRect_ScrollRectEvent;
+    #[cfg(feature = "UnityEngine+UI+ScrollRect+ScrollbarVisibility")]
+    pub type ScrollbarVisibility = crate::UnityEngine::UI::ScrollRect_ScrollbarVisibility;
     pub fn CalculateLayoutInputHorizontal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

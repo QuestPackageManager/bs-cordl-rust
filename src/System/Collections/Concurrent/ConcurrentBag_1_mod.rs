@@ -36,12 +36,12 @@ for crate::System::Collections::Concurrent::ConcurrentBag_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Collections::Concurrent::ConcurrentBag_1<T> {
-    #[cfg(feature = "System+Collections+Concurrent+ConcurrentBag_1+WorkStealingQueue")]
-    pub type WorkStealingQueue = crate::System::Collections::Concurrent::ConcurrentBag_1_WorkStealingQueue<
-        T,
-    >;
     #[cfg(feature = "System+Collections+Concurrent+ConcurrentBag_1+Enumerator")]
     pub type Enumerator = crate::System::Collections::Concurrent::ConcurrentBag_1_Enumerator<
+        T,
+    >;
+    #[cfg(feature = "System+Collections+Concurrent+ConcurrentBag_1+WorkStealingQueue")]
+    pub type WorkStealingQueue = crate::System::Collections::Concurrent::ConcurrentBag_1_WorkStealingQueue<
         T,
     >;
     pub fn Add(

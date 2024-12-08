@@ -6,23 +6,24 @@ pub struct OVRLayerAttribute {
 }
 #[cfg(feature = "OVRLayerAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRLayerAttribute => ""."OVRLayerAttribute"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRLayerAttribute => ""
+    ."OVRLayerAttribute"
 );
 #[cfg(feature = "OVRLayerAttribute")]
-impl std::ops::Deref for OVRLayerAttribute {
+impl std::ops::Deref for crate::GlobalNamespace::OVRLayerAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRLayerAttribute")]
-impl std::ops::DerefMut for OVRLayerAttribute {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRLayerAttribute {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRLayerAttribute")]
-impl OVRLayerAttribute {
+impl crate::GlobalNamespace::OVRLayerAttribute {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,7 +43,7 @@ impl OVRLayerAttribute {
     }
 }
 #[cfg(feature = "OVRLayerAttribute")]
-impl quest_hook::libil2cpp::ObjectType for OVRLayerAttribute {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRLayerAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

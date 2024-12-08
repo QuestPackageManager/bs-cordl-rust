@@ -2,15 +2,17 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct PoseSerializable {
-    pub position: Vector3Serializable,
-    pub rotation: QuaternionSerializable,
+    pub position: crate::GlobalNamespace::Vector3Serializable,
+    pub rotation: crate::GlobalNamespace::QuaternionSerializable,
 }
 #[cfg(feature = "PoseSerializable")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for PoseSerializable => ""."PoseSerializable"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PoseSerializable => ""
+    ."PoseSerializable"
 );
 #[cfg(feature = "PoseSerializable")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for PoseSerializable {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::PoseSerializable {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -20,7 +22,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for PoseSerializable {
     }
 }
 #[cfg(feature = "PoseSerializable")]
-impl PoseSerializable {
+impl crate::GlobalNamespace::PoseSerializable {
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
@@ -45,7 +47,7 @@ impl PoseSerializable {
     }
     pub fn Equals_PoseSerializable0(
         &mut self,
-        other: PoseSerializable,
+        other: crate::GlobalNamespace::PoseSerializable,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -93,8 +95,8 @@ impl PoseSerializable {
     }
     pub fn _ctor(
         &mut self,
-        position: Vector3Serializable,
-        rotation: QuaternionSerializable,
+        position: crate::GlobalNamespace::Vector3Serializable,
+        rotation: crate::GlobalNamespace::QuaternionSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

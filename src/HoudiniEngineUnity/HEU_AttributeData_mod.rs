@@ -64,10 +64,10 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_AttributeData {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData")]
 impl crate::HoudiniEngineUnity::HEU_AttributeData {
-    #[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
-    pub type AttributeType = crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType;
     #[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
     pub type AttributeState = crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
+    pub type AttributeType = crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType;
     pub fn CopyValuesTo(
         &mut self,
         destAttrData: *mut crate::HoudiniEngineUnity::HEU_AttributeData,

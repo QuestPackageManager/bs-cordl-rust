@@ -310,16 +310,16 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag {
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag")]
 impl crate::Unity::Properties::Internal::SystemVersionPropertyBag {
-    #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty")]
-    pub type MinorProperty = crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty;
     #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty")]
     pub type BuildProperty = crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty;
+    #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty")]
+    pub type MajorProperty = crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty;
+    #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty")]
+    pub type MinorProperty = crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty;
     #[cfg(
         feature = "Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty"
     )]
     pub type RevisionProperty = crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionProperty;
-    #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty")]
-    pub type MajorProperty = crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

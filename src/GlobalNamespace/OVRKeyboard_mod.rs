@@ -6,30 +6,30 @@ pub struct OVRKeyboard {
 }
 #[cfg(feature = "OVRKeyboard")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRKeyboard => ""."OVRKeyboard"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRKeyboard => ""."OVRKeyboard"
 );
 #[cfg(feature = "OVRKeyboard")]
-impl std::ops::Deref for OVRKeyboard {
+impl std::ops::Deref for crate::GlobalNamespace::OVRKeyboard {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRKeyboard")]
-impl std::ops::DerefMut for OVRKeyboard {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRKeyboard {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRKeyboard")]
-impl OVRKeyboard {
-    #[cfg(feature = "OVRKeyboard+TrackedKeyboardState")]
-    pub type TrackedKeyboardState = crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState;
+impl crate::GlobalNamespace::OVRKeyboard {
     #[cfg(feature = "OVRKeyboard+TrackedKeyboardInfo")]
     pub type TrackedKeyboardInfo = crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo;
+    #[cfg(feature = "OVRKeyboard+TrackedKeyboardState")]
+    pub type TrackedKeyboardState = crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState;
 }
 #[cfg(feature = "OVRKeyboard")]
-impl quest_hook::libil2cpp::ObjectType for OVRKeyboard {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRKeyboard {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

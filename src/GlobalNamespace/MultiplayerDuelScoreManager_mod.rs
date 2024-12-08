@@ -3,34 +3,34 @@
 #[derive(Debug)]
 pub struct MultiplayerDuelScoreManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _scoreItem: *mut MultiplayerScoreItem,
+    pub _scoreItem: *mut crate::GlobalNamespace::MultiplayerScoreItem,
     pub _delayBetweenScoreUpdates: f32,
-    pub _multiplayerController: *mut MultiplayerController,
-    pub _scoreProvider: *mut MultiplayerScoreProvider,
-    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
-    pub _opponentPlayer: *mut IConnectedPlayer,
+    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
+    pub _scoreProvider: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _opponentPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
     pub _timeSinceLastScoreUpdate: f32,
 }
 #[cfg(feature = "MultiplayerDuelScoreManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerDuelScoreManager => ""
-    ."MultiplayerDuelScoreManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerDuelScoreManager =>
+    ""."MultiplayerDuelScoreManager"
 );
 #[cfg(feature = "MultiplayerDuelScoreManager")]
-impl std::ops::Deref for MultiplayerDuelScoreManager {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerDuelScoreManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerDuelScoreManager")]
-impl std::ops::DerefMut for MultiplayerDuelScoreManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerDuelScoreManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerDuelScoreManager")]
-impl MultiplayerDuelScoreManager {
+impl crate::GlobalNamespace::MultiplayerDuelScoreManager {
     pub fn EnsureOpponentAssigned(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -40,11 +40,11 @@ impl MultiplayerDuelScoreManager {
     }
     pub fn GetOpponentPlayer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IConnectedPlayer> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IConnectedPlayer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IConnectedPlayer = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IConnectedPlayer = __cordl_object
             .invoke("GetOpponentPlayer", ())?;
         Ok(__cordl_ret)
     }
@@ -118,7 +118,8 @@ impl MultiplayerDuelScoreManager {
     }
 }
 #[cfg(feature = "MultiplayerDuelScoreManager")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerDuelScoreManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerDuelScoreManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

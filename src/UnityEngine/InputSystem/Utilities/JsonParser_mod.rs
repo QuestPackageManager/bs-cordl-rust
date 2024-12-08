@@ -26,12 +26,12 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser")]
 impl crate::UnityEngine::InputSystem::Utilities::JsonParser {
-    #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValueType")]
-    pub type JsonValueType = crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValueType;
     #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
     pub type JsonString = crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString;
     #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
     pub type JsonValue = crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue;
+    #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValueType")]
+    pub type JsonValueType = crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValueType;
     pub fn CurrentPropertyHasValueEqualTo(
         &mut self,
         expectedValue: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,

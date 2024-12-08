@@ -4,12 +4,12 @@
 pub struct BeatLineManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _linesYPosition: f32,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
     pub _beatLinePool: *mut crate::GlobalNamespace::BeatLine_Pool,
-    pub _audioTimeSyncController: *mut AudioTimeSyncController,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
     pub _activeBeatLines: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::UnityEngine::Vector4,
-        *mut BeatLine,
+        *mut crate::GlobalNamespace::BeatLine,
     >,
     pub _removeBeatLineKeyList: *mut crate::System::Collections::Generic::List_1<
         crate::UnityEngine::Vector4,
@@ -20,26 +20,27 @@ pub struct BeatLineManager {
 }
 #[cfg(feature = "BeatLineManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatLineManager => ""."BeatLineManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatLineManager => ""
+    ."BeatLineManager"
 );
 #[cfg(feature = "BeatLineManager")]
-impl std::ops::Deref for BeatLineManager {
+impl std::ops::Deref for crate::GlobalNamespace::BeatLineManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatLineManager")]
-impl std::ops::DerefMut for BeatLineManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatLineManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatLineManager")]
-impl BeatLineManager {
+impl crate::GlobalNamespace::BeatLineManager {
     pub fn HandleNoteWasSpawned(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -118,7 +119,7 @@ impl BeatLineManager {
     }
 }
 #[cfg(feature = "BeatLineManager")]
-impl quest_hook::libil2cpp::ObjectType for BeatLineManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatLineManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

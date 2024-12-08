@@ -34,18 +34,18 @@ impl std::ops::DerefMut for crate::System::IO::BufferedStream {
 impl crate::System::IO::BufferedStream {
     #[cfg(feature = "System+IO+BufferedStream+_CopyToAsyncCore_d__71")]
     pub type _CopyToAsyncCore_d__71 = crate::System::IO::BufferedStream__CopyToAsyncCore_d__71;
-    #[cfg(feature = "System+IO+BufferedStream+__c")]
-    pub type __c = crate::System::IO::BufferedStream___c;
+    #[cfg(feature = "System+IO+BufferedStream+_DisposeAsync_d__34")]
+    pub type _DisposeAsync_d__34 = crate::System::IO::BufferedStream__DisposeAsync_d__34;
     #[cfg(feature = "System+IO+BufferedStream+_FlushAsyncInternal_d__38")]
     pub type _FlushAsyncInternal_d__38 = crate::System::IO::BufferedStream__FlushAsyncInternal_d__38;
     #[cfg(feature = "System+IO+BufferedStream+_FlushWriteAsync_d__42")]
     pub type _FlushWriteAsync_d__42 = crate::System::IO::BufferedStream__FlushWriteAsync_d__42;
-    #[cfg(feature = "System+IO+BufferedStream+_DisposeAsync_d__34")]
-    pub type _DisposeAsync_d__34 = crate::System::IO::BufferedStream__DisposeAsync_d__34;
     #[cfg(feature = "System+IO+BufferedStream+_ReadFromUnderlyingStreamAsync_d__51")]
     pub type _ReadFromUnderlyingStreamAsync_d__51 = crate::System::IO::BufferedStream__ReadFromUnderlyingStreamAsync_d__51;
     #[cfg(feature = "System+IO+BufferedStream+_WriteToUnderlyingStreamAsync_d__63")]
     pub type _WriteToUnderlyingStreamAsync_d__63 = crate::System::IO::BufferedStream__WriteToUnderlyingStreamAsync_d__63;
+    #[cfg(feature = "System+IO+BufferedStream+__c")]
+    pub type __c = crate::System::IO::BufferedStream___c;
     pub fn BeginRead(
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,

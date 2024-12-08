@@ -6,23 +6,24 @@ pub struct MockBeatmapProvider {
 }
 #[cfg(feature = "MockBeatmapProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MockBeatmapProvider => ""."MockBeatmapProvider"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MockBeatmapProvider => ""
+    ."MockBeatmapProvider"
 );
 #[cfg(feature = "MockBeatmapProvider")]
-impl std::ops::Deref for MockBeatmapProvider {
+impl std::ops::Deref for crate::GlobalNamespace::MockBeatmapProvider {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockBeatmapProvider")]
-impl std::ops::DerefMut for MockBeatmapProvider {
+impl std::ops::DerefMut for crate::GlobalNamespace::MockBeatmapProvider {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockBeatmapProvider")]
-impl MockBeatmapProvider {
+impl crate::GlobalNamespace::MockBeatmapProvider {
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -45,18 +46,20 @@ impl MockBeatmapProvider {
         playerCount: i32,
         suggestedBeatmaps: *mut crate::System::Collections::Generic::Dictionary_2<
             *mut crate::System::String,
-            *mut BeatmapKeyNetSerializable,
+            *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
         >,
-        selectionMask: BeatmapLevelSelectionMask,
+        selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
         ownedSongPacks: *mut crate::System::Collections::Generic::Dictionary_2<
             *mut crate::System::String,
-            SongPackMask,
+            crate::GlobalNamespace::SongPackMask,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapKeyNetSerializable> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapKeyNetSerializable = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapKeyNetSerializable = __cordl_object
             .invoke(
                 "SelectBeatmapFromSuggestionsWithSelectionMaskAndOwnedSongPacks",
                 (playerCount, suggestedBeatmaps, selectionMask, ownedSongPacks),
@@ -65,8 +68,8 @@ impl MockBeatmapProvider {
     }
     pub fn VerifyBeatmapForSelectionMask(
         &mut self,
-        beatmapKeySerializable: *mut BeatmapKeyNetSerializable,
-        selectionMask: BeatmapLevelSelectionMask,
+        beatmapKeySerializable: *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+        selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -90,7 +93,7 @@ impl MockBeatmapProvider {
     }
 }
 #[cfg(feature = "MockBeatmapProvider")]
-impl quest_hook::libil2cpp::ObjectType for MockBeatmapProvider {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockBeatmapProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

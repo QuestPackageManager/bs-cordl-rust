@@ -3,29 +3,30 @@
 #[derive(Debug)]
 pub struct StartupErrorNoTransitionInstaller {
     __cordl_parent: crate::Zenject::NoTransitionInstaller,
-    pub _startupErrorSceneSetupData: *mut StartupErrorSceneSetupData,
-    pub _scenesTransitionSetupData: *mut StartupErrorScenesTransitionSetupDataSO,
+    pub _startupErrorSceneSetupData: *mut crate::GlobalNamespace::StartupErrorSceneSetupData,
+    pub _scenesTransitionSetupData: *mut crate::GlobalNamespace::StartupErrorScenesTransitionSetupDataSO,
 }
 #[cfg(feature = "StartupErrorNoTransitionInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StartupErrorNoTransitionInstaller => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::StartupErrorNoTransitionInstaller => ""
     ."StartupErrorNoTransitionInstaller"
 );
 #[cfg(feature = "StartupErrorNoTransitionInstaller")]
-impl std::ops::Deref for StartupErrorNoTransitionInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::StartupErrorNoTransitionInstaller {
     type Target = crate::Zenject::NoTransitionInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StartupErrorNoTransitionInstaller")]
-impl std::ops::DerefMut for StartupErrorNoTransitionInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::StartupErrorNoTransitionInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StartupErrorNoTransitionInstaller")]
-impl StartupErrorNoTransitionInstaller {
+impl crate::GlobalNamespace::StartupErrorNoTransitionInstaller {
     pub fn InstallBindings(
         &mut self,
         container: *mut crate::Zenject::DiContainer,
@@ -56,7 +57,8 @@ impl StartupErrorNoTransitionInstaller {
     }
 }
 #[cfg(feature = "StartupErrorNoTransitionInstaller")]
-impl quest_hook::libil2cpp::ObjectType for StartupErrorNoTransitionInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StartupErrorNoTransitionInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

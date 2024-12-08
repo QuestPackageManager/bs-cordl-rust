@@ -6,31 +6,32 @@ pub struct MediaAsyncLoader {
 }
 #[cfg(feature = "MediaAsyncLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MediaAsyncLoader => ""."MediaAsyncLoader"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MediaAsyncLoader => ""
+    ."MediaAsyncLoader"
 );
 #[cfg(feature = "MediaAsyncLoader")]
-impl std::ops::Deref for MediaAsyncLoader {
+impl std::ops::Deref for crate::GlobalNamespace::MediaAsyncLoader {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MediaAsyncLoader")]
-impl std::ops::DerefMut for MediaAsyncLoader {
+impl std::ops::DerefMut for crate::GlobalNamespace::MediaAsyncLoader {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MediaAsyncLoader")]
-impl MediaAsyncLoader {
-    #[cfg(feature = "MediaAsyncLoader+_LoadSpriteAsync_d__4")]
-    pub type _LoadSpriteAsync_d__4 = crate::GlobalNamespace::MediaAsyncLoader__LoadSpriteAsync_d__4;
-    #[cfg(feature = "MediaAsyncLoader+_LoadWebpage_d__0")]
-    pub type _LoadWebpage_d__0 = crate::GlobalNamespace::MediaAsyncLoader__LoadWebpage_d__0;
+impl crate::GlobalNamespace::MediaAsyncLoader {
     #[cfg(feature = "MediaAsyncLoader+_LoadAudioClipAsync_d__2")]
     pub type _LoadAudioClipAsync_d__2 = crate::GlobalNamespace::MediaAsyncLoader__LoadAudioClipAsync_d__2;
+    #[cfg(feature = "MediaAsyncLoader+_LoadSpriteAsync_d__4")]
+    pub type _LoadSpriteAsync_d__4 = crate::GlobalNamespace::MediaAsyncLoader__LoadSpriteAsync_d__4;
     #[cfg(feature = "MediaAsyncLoader+_LoadTextureAsync_d__3")]
     pub type _LoadTextureAsync_d__3 = crate::GlobalNamespace::MediaAsyncLoader__LoadTextureAsync_d__3;
+    #[cfg(feature = "MediaAsyncLoader+_LoadWebpage_d__0")]
+    pub type _LoadWebpage_d__0 = crate::GlobalNamespace::MediaAsyncLoader__LoadWebpage_d__0;
     pub fn LoadAudioClipFromFilePathAsync(
         &mut self,
         filePath: *mut crate::System::String,
@@ -64,7 +65,7 @@ impl MediaAsyncLoader {
     }
 }
 #[cfg(feature = "MediaAsyncLoader")]
-impl quest_hook::libil2cpp::ObjectType for MediaAsyncLoader {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MediaAsyncLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

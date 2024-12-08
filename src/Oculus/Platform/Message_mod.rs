@@ -217,10 +217,10 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Message {
 }
 #[cfg(feature = "Oculus+Platform+Message")]
 impl crate::Oculus::Platform::Message {
-    #[cfg(feature = "Oculus+Platform+Message+ExtraMessageTypesHandler")]
-    pub type ExtraMessageTypesHandler = crate::Oculus::Platform::Message_ExtraMessageTypesHandler;
     #[cfg(feature = "Oculus+Platform+Message+Callback")]
     pub type Callback = crate::Oculus::Platform::Message_Callback;
+    #[cfg(feature = "Oculus+Platform+Message+ExtraMessageTypesHandler")]
+    pub type ExtraMessageTypesHandler = crate::Oculus::Platform::Message_ExtraMessageTypesHandler;
     #[cfg(feature = "Oculus+Platform+Message+MessageType")]
     pub type MessageType = crate::Oculus::Platform::Message_MessageType;
     pub fn Finalize(

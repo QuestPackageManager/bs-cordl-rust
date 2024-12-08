@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioManagerSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _audioMixer: *mut crate::UnityEngine::Audio::AudioMixer,
     pub _spatializerPluginLatency: f32,
     pub _spatializerSfxVolumeOffset: f32,
@@ -13,23 +13,24 @@ pub struct AudioManagerSO {
 }
 #[cfg(feature = "AudioManagerSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AudioManagerSO => ""."AudioManagerSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AudioManagerSO => ""
+    ."AudioManagerSO"
 );
 #[cfg(feature = "AudioManagerSO")]
-impl std::ops::Deref for AudioManagerSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::AudioManagerSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AudioManagerSO")]
-impl std::ops::DerefMut for AudioManagerSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::AudioManagerSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AudioManagerSO")]
-impl AudioManagerSO {
+impl crate::GlobalNamespace::AudioManagerSO {
     pub const kDefaultMusicVolume: f32 = -4f32;
     pub const kMainVolume: &'static str = "MainVolume";
     pub const kMusicPitch: &'static str = "MusicPitch";
@@ -154,7 +155,7 @@ impl AudioManagerSO {
     }
 }
 #[cfg(feature = "AudioManagerSO")]
-impl quest_hook::libil2cpp::ObjectType for AudioManagerSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AudioManagerSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -12,23 +12,24 @@ pub struct BasicSpectrogramData {
 }
 #[cfg(feature = "BasicSpectrogramData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BasicSpectrogramData => ""."BasicSpectrogramData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BasicSpectrogramData => ""
+    ."BasicSpectrogramData"
 );
 #[cfg(feature = "BasicSpectrogramData")]
-impl std::ops::Deref for BasicSpectrogramData {
+impl std::ops::Deref for crate::GlobalNamespace::BasicSpectrogramData {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BasicSpectrogramData")]
-impl std::ops::DerefMut for BasicSpectrogramData {
+impl std::ops::DerefMut for crate::GlobalNamespace::BasicSpectrogramData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BasicSpectrogramData")]
-impl BasicSpectrogramData {
+impl crate::GlobalNamespace::BasicSpectrogramData {
     pub const kNumberOfSamples: i32 = 64i32;
     pub fn Awake(
         &mut self,
@@ -103,7 +104,7 @@ impl BasicSpectrogramData {
     }
 }
 #[cfg(feature = "BasicSpectrogramData")]
-impl quest_hook::libil2cpp::ObjectType for BasicSpectrogramData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BasicSpectrogramData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

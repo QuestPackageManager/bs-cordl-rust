@@ -107,14 +107,14 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::XInput::XInputContr
 }
 #[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController")]
 impl crate::UnityEngine::InputSystem::XInput::XInputController {
-    #[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceFlags")]
-    pub type DeviceFlags = crate::UnityEngine::InputSystem::XInput::XInputController_DeviceFlags;
-    #[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceType")]
-    pub type DeviceType = crate::UnityEngine::InputSystem::XInput::XInputController_DeviceType;
-    #[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceSubType")]
-    pub type DeviceSubType = crate::UnityEngine::InputSystem::XInput::XInputController_DeviceSubType;
     #[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+Capabilities")]
     pub type Capabilities = crate::UnityEngine::InputSystem::XInput::XInputController_Capabilities;
+    #[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceFlags")]
+    pub type DeviceFlags = crate::UnityEngine::InputSystem::XInput::XInputController_DeviceFlags;
+    #[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceSubType")]
+    pub type DeviceSubType = crate::UnityEngine::InputSystem::XInput::XInputController_DeviceSubType;
+    #[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceType")]
+    pub type DeviceType = crate::UnityEngine::InputSystem::XInput::XInputController_DeviceType;
     pub fn FinishSetup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

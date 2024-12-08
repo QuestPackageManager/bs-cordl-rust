@@ -24,12 +24,12 @@ impl std::ops::DerefMut for crate::UnityEngine::ReflectionProbe {
 }
 #[cfg(feature = "UnityEngine+ReflectionProbe")]
 impl crate::UnityEngine::ReflectionProbe {
-    #[cfg(feature = "UnityEngine+ReflectionProbe+__c__DisplayClass98_0")]
-    pub type __c__DisplayClass98_0 = crate::UnityEngine::ReflectionProbe___c__DisplayClass98_0;
     #[cfg(feature = "UnityEngine+ReflectionProbe+ReflectionProbeEvent")]
     pub type ReflectionProbeEvent = crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent;
     #[cfg(feature = "UnityEngine+ReflectionProbe+__c__DisplayClass95_0")]
     pub type __c__DisplayClass95_0 = crate::UnityEngine::ReflectionProbe___c__DisplayClass95_0;
+    #[cfg(feature = "UnityEngine+ReflectionProbe+__c__DisplayClass98_0")]
+    pub type __c__DisplayClass98_0 = crate::UnityEngine::ReflectionProbe___c__DisplayClass98_0;
     pub fn IsFinishedRendering(
         &mut self,
         renderId: i32,

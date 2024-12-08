@@ -3,28 +3,29 @@
 #[derive(Debug)]
 pub struct MissionNodeUpdatePositionInEditMode {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionNodeConnection: *mut MissionNodeConnection,
+    pub _missionNodeConnection: *mut crate::GlobalNamespace::MissionNodeConnection,
 }
 #[cfg(feature = "MissionNodeUpdatePositionInEditMode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionNodeUpdatePositionInEditMode => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MissionNodeUpdatePositionInEditMode => ""
     ."MissionNodeUpdatePositionInEditMode"
 );
 #[cfg(feature = "MissionNodeUpdatePositionInEditMode")]
-impl std::ops::Deref for MissionNodeUpdatePositionInEditMode {
+impl std::ops::Deref for crate::GlobalNamespace::MissionNodeUpdatePositionInEditMode {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionNodeUpdatePositionInEditMode")]
-impl std::ops::DerefMut for MissionNodeUpdatePositionInEditMode {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionNodeUpdatePositionInEditMode {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionNodeUpdatePositionInEditMode")]
-impl MissionNodeUpdatePositionInEditMode {
+impl crate::GlobalNamespace::MissionNodeUpdatePositionInEditMode {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -44,7 +45,8 @@ impl MissionNodeUpdatePositionInEditMode {
     }
 }
 #[cfg(feature = "MissionNodeUpdatePositionInEditMode")]
-impl quest_hook::libil2cpp::ObjectType for MissionNodeUpdatePositionInEditMode {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MissionNodeUpdatePositionInEditMode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

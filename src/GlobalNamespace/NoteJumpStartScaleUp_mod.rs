@@ -5,28 +5,29 @@ pub struct NoteJumpStartScaleUp {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _fullScaleJumpPart: f32,
     pub _targetTransform: *mut crate::UnityEngine::Transform,
-    pub _noteController: *mut NoteController,
-    pub _noteJump: *mut NoteJump,
+    pub _noteController: *mut crate::GlobalNamespace::NoteController,
+    pub _noteJump: *mut crate::GlobalNamespace::NoteJump,
 }
 #[cfg(feature = "NoteJumpStartScaleUp")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteJumpStartScaleUp => ""."NoteJumpStartScaleUp"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteJumpStartScaleUp => ""
+    ."NoteJumpStartScaleUp"
 );
 #[cfg(feature = "NoteJumpStartScaleUp")]
-impl std::ops::Deref for NoteJumpStartScaleUp {
+impl std::ops::Deref for crate::GlobalNamespace::NoteJumpStartScaleUp {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteJumpStartScaleUp")]
-impl std::ops::DerefMut for NoteJumpStartScaleUp {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteJumpStartScaleUp {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteJumpStartScaleUp")]
-impl NoteJumpStartScaleUp {
+impl crate::GlobalNamespace::NoteJumpStartScaleUp {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -39,7 +40,7 @@ impl NoteJumpStartScaleUp {
     }
     pub fn HandleNoteControllerDidInit(
         &mut self,
-        noteController: *mut NoteControllerBase,
+        noteController: *mut crate::GlobalNamespace::NoteControllerBase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -99,7 +100,7 @@ impl NoteJumpStartScaleUp {
     }
 }
 #[cfg(feature = "NoteJumpStartScaleUp")]
-impl quest_hook::libil2cpp::ObjectType for NoteJumpStartScaleUp {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteJumpStartScaleUp {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

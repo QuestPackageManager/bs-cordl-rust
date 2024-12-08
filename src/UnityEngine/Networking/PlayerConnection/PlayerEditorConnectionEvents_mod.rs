@@ -271,25 +271,25 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
 #[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents")]
 impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents {
     #[cfg(
-        feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+__c__DisplayClass7_0"
-    )]
-    pub type __c__DisplayClass7_0 = crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents___c__DisplayClass7_0;
-    #[cfg(
         feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+ConnectionChangeEvent"
     )]
     pub type ConnectionChangeEvent = crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_ConnectionChangeEvent;
-    #[cfg(
-        feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageTypeSubscribers"
-    )]
-    pub type MessageTypeSubscribers = crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageTypeSubscribers;
     #[cfg(
         feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageEvent"
     )]
     pub type MessageEvent = crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageEvent;
     #[cfg(
+        feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageTypeSubscribers"
+    )]
+    pub type MessageTypeSubscribers = crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageTypeSubscribers;
+    #[cfg(
         feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+__c__DisplayClass6_0"
     )]
     pub type __c__DisplayClass6_0 = crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents___c__DisplayClass6_0;
+    #[cfg(
+        feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+__c__DisplayClass7_0"
+    )]
+    pub type __c__DisplayClass7_0 = crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents___c__DisplayClass7_0;
     #[cfg(
         feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+__c__DisplayClass8_0"
     )]

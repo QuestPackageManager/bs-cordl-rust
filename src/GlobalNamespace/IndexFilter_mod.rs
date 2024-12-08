@@ -15,31 +15,31 @@ pub struct IndexFilter {
 }
 #[cfg(feature = "IndexFilter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IndexFilter => ""."IndexFilter"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IndexFilter => ""."IndexFilter"
 );
 #[cfg(feature = "IndexFilter")]
-impl std::ops::Deref for IndexFilter {
+impl std::ops::Deref for crate::GlobalNamespace::IndexFilter {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IndexFilter")]
-impl std::ops::DerefMut for IndexFilter {
+impl std::ops::DerefMut for crate::GlobalNamespace::IndexFilter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IndexFilter")]
-impl IndexFilter {
+impl crate::GlobalNamespace::IndexFilter {
+    #[cfg(feature = "IndexFilter+IndexFilterLimitAlsoAffectType")]
+    pub type IndexFilterLimitAlsoAffectType = crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType;
     #[cfg(feature = "IndexFilter+IndexFilterRandomType")]
     pub type IndexFilterRandomType = crate::GlobalNamespace::IndexFilter_IndexFilterRandomType;
     #[cfg(feature = "IndexFilter+_GetEnumerator_d__23")]
     pub type _GetEnumerator_d__23 = crate::GlobalNamespace::IndexFilter__GetEnumerator_d__23;
     #[cfg(feature = "IndexFilter+_GetValues_d__24")]
     pub type _GetValues_d__24 = crate::GlobalNamespace::IndexFilter__GetValues_d__24;
-    #[cfg(feature = "IndexFilter+IndexFilterLimitAlsoAffectType")]
-    pub type IndexFilterLimitAlsoAffectType = crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType;
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -239,7 +239,7 @@ impl IndexFilter {
     }
 }
 #[cfg(feature = "IndexFilter")]
-impl quest_hook::libil2cpp::ObjectType for IndexFilter {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IndexFilter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -13,15 +13,17 @@ pub struct MultiplayerSyncState_3<
 }
 #[cfg(feature = "MultiplayerSyncState_3")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerSyncState_3 < TStateTable, TType, TState > =>
-    ""."MultiplayerSyncState`3" < TStateTable, TType, TState >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerSyncState_3 <
+    TStateTable, TType, TState > => ""."MultiplayerSyncState`3" < TStateTable, TType,
+    TState >
 );
 #[cfg(feature = "MultiplayerSyncState_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
-> std::ops::Deref for MultiplayerSyncState_3<TStateTable, TType, TState> {
+> std::ops::Deref
+for crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState> {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -32,7 +34,8 @@ impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
-> std::ops::DerefMut for MultiplayerSyncState_3<TStateTable, TType, TState> {
+> std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -42,7 +45,7 @@ impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
-> MultiplayerSyncState_3<TStateTable, TType, TState> {
+> crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState> {
     pub fn ClearBufferedStates(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -138,7 +141,9 @@ impl<
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_player(&mut self) -> quest_hook::libil2cpp::Result<*mut IConnectedPlayer>
+    pub fn get_player(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IConnectedPlayer>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -150,13 +155,15 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IConnectedPlayer = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IConnectedPlayer = __cordl_object
             .invoke("get_player", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_stateBuffer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut StateBuffer_3<TStateTable, TType, TState>>
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState>,
+    >
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -168,8 +175,11 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut StateBuffer_3<TStateTable, TType, TState> = __cordl_object
-            .invoke("get_stateBuffer", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::StateBuffer_3<
+            TStateTable,
+            TType,
+            TState,
+        > = __cordl_object.invoke("get_stateBuffer", ())?;
         Ok(__cordl_ret)
     }
 }
@@ -179,7 +189,7 @@ impl<
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
 > quest_hook::libil2cpp::ObjectType
-for MultiplayerSyncState_3<TStateTable, TType, TState> {
+for crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

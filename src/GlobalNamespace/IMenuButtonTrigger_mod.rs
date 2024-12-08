@@ -6,23 +6,24 @@ pub struct IMenuButtonTrigger {
 }
 #[cfg(feature = "IMenuButtonTrigger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IMenuButtonTrigger => ""."IMenuButtonTrigger"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IMenuButtonTrigger => ""
+    ."IMenuButtonTrigger"
 );
 #[cfg(feature = "IMenuButtonTrigger")]
-impl std::ops::Deref for IMenuButtonTrigger {
+impl std::ops::Deref for crate::GlobalNamespace::IMenuButtonTrigger {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IMenuButtonTrigger")]
-impl std::ops::DerefMut for IMenuButtonTrigger {
+impl std::ops::DerefMut for crate::GlobalNamespace::IMenuButtonTrigger {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IMenuButtonTrigger")]
-impl IMenuButtonTrigger {
+impl crate::GlobalNamespace::IMenuButtonTrigger {
     pub fn add_menuButtonTriggeredEvent(
         &mut self,
         value: *mut crate::System::Action,
@@ -52,7 +53,7 @@ impl IMenuButtonTrigger {
     }
 }
 #[cfg(feature = "IMenuButtonTrigger")]
-impl quest_hook::libil2cpp::ObjectType for IMenuButtonTrigger {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IMenuButtonTrigger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

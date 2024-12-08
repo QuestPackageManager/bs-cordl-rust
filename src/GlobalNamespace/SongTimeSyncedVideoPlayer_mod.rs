@@ -2,35 +2,35 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongTimeSyncedVideoPlayer {
-    __cordl_parent: LightWithIdMonoBehaviour,
+    __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
     pub _videoPlayer: *mut crate::UnityEngine::Video::VideoPlayer,
-    pub _materialPropertyBlockController: *mut MaterialPropertyBlockController,
-    pub _audioTimeSource: *mut IAudioTimeSource,
-    pub _gamePause: *mut IGamePause,
-    pub _environmentContext: EnvironmentContext,
+    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _gamePause: *mut crate::GlobalNamespace::IGamePause,
+    pub _environmentContext: crate::GlobalNamespace::EnvironmentContext,
     pub _color: crate::UnityEngine::Color,
     pub _waitForDependenciesAndPlayCoroutine: *mut crate::UnityEngine::Coroutine,
 }
 #[cfg(feature = "SongTimeSyncedVideoPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SongTimeSyncedVideoPlayer => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongTimeSyncedVideoPlayer => ""
     ."SongTimeSyncedVideoPlayer"
 );
 #[cfg(feature = "SongTimeSyncedVideoPlayer")]
-impl std::ops::Deref for SongTimeSyncedVideoPlayer {
-    type Target = LightWithIdMonoBehaviour;
+impl std::ops::Deref for crate::GlobalNamespace::SongTimeSyncedVideoPlayer {
+    type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongTimeSyncedVideoPlayer")]
-impl std::ops::DerefMut for SongTimeSyncedVideoPlayer {
+impl std::ops::DerefMut for crate::GlobalNamespace::SongTimeSyncedVideoPlayer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongTimeSyncedVideoPlayer")]
-impl SongTimeSyncedVideoPlayer {
+impl crate::GlobalNamespace::SongTimeSyncedVideoPlayer {
     #[cfg(feature = "SongTimeSyncedVideoPlayer+_WaitForDependenciesAndPlay_d__20")]
     pub type _WaitForDependenciesAndPlay_d__20 = crate::GlobalNamespace::SongTimeSyncedVideoPlayer__WaitForDependenciesAndPlay_d__20;
     pub fn ColorWasSet(
@@ -175,7 +175,8 @@ impl SongTimeSyncedVideoPlayer {
     }
 }
 #[cfg(feature = "SongTimeSyncedVideoPlayer")]
-impl quest_hook::libil2cpp::ObjectType for SongTimeSyncedVideoPlayer {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SongTimeSyncedVideoPlayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

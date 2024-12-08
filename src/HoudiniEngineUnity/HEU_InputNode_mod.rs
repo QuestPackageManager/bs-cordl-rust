@@ -51,14 +51,14 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_InputNode {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNode")]
 impl crate::HoudiniEngineUnity::HEU_InputNode {
-    #[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InternalObjectType")]
-    pub type InternalObjectType = crate::HoudiniEngineUnity::HEU_InputNode_InternalObjectType;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputNodeType")]
-    pub type InputNodeType = crate::HoudiniEngineUnity::HEU_InputNode_InputNodeType;
     #[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputActions")]
     pub type InputActions = crate::HoudiniEngineUnity::HEU_InputNode_InputActions;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputNodeType")]
+    pub type InputNodeType = crate::HoudiniEngineUnity::HEU_InputNode_InputNodeType;
     #[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputObjectType")]
     pub type InputObjectType = crate::HoudiniEngineUnity::HEU_InputNode_InputObjectType;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InternalObjectType")]
+    pub type InternalObjectType = crate::HoudiniEngineUnity::HEU_InputNode_InternalObjectType;
     pub fn AddInputEntryAtEnd(
         &mut self,
         newEntryGameObject: *mut crate::UnityEngine::GameObject,

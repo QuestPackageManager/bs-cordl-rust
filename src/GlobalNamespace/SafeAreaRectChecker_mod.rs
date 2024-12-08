@@ -67,28 +67,29 @@ pub struct SafeAreaRectChecker {
     pub _activeObjectWhenNotInsideSafeArea: *mut crate::UnityEngine::GameObject,
     pub _rectTransformToCheck: *mut crate::UnityEngine::RectTransform,
     pub _corners: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-    pub _mainCamera: *mut MainCamera,
+    pub _mainCamera: *mut crate::GlobalNamespace::MainCamera,
     pub _initData: *mut crate::GlobalNamespace::SafeAreaRectChecker_InitData,
 }
 #[cfg(feature = "SafeAreaRectChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SafeAreaRectChecker => ""."SafeAreaRectChecker"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SafeAreaRectChecker => ""
+    ."SafeAreaRectChecker"
 );
 #[cfg(feature = "SafeAreaRectChecker")]
-impl std::ops::Deref for SafeAreaRectChecker {
+impl std::ops::Deref for crate::GlobalNamespace::SafeAreaRectChecker {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SafeAreaRectChecker")]
-impl std::ops::DerefMut for SafeAreaRectChecker {
+impl std::ops::DerefMut for crate::GlobalNamespace::SafeAreaRectChecker {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SafeAreaRectChecker")]
-impl SafeAreaRectChecker {
+impl crate::GlobalNamespace::SafeAreaRectChecker {
     #[cfg(feature = "SafeAreaRectChecker+InitData")]
     pub type InitData = crate::GlobalNamespace::SafeAreaRectChecker_InitData;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -130,7 +131,7 @@ impl SafeAreaRectChecker {
     }
 }
 #[cfg(feature = "SafeAreaRectChecker")]
-impl quest_hook::libil2cpp::ObjectType for SafeAreaRectChecker {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SafeAreaRectChecker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

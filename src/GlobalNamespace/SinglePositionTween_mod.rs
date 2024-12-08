@@ -6,27 +6,28 @@ pub struct SinglePositionTween {
     pub transformReference: crate::UnityEngine::ExposedReference_1<
         *mut crate::UnityEngine::Transform,
     >,
-    pub _cordl_template: *mut CustomTweenBehaviour,
+    pub _cordl_template: *mut crate::GlobalNamespace::CustomTweenBehaviour,
 }
 #[cfg(feature = "SinglePositionTween")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SinglePositionTween => ""."SinglePositionTween"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SinglePositionTween => ""
+    ."SinglePositionTween"
 );
 #[cfg(feature = "SinglePositionTween")]
-impl std::ops::Deref for SinglePositionTween {
+impl std::ops::Deref for crate::GlobalNamespace::SinglePositionTween {
     type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SinglePositionTween")]
-impl std::ops::DerefMut for SinglePositionTween {
+impl std::ops::DerefMut for crate::GlobalNamespace::SinglePositionTween {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SinglePositionTween")]
-impl SinglePositionTween {
+impl crate::GlobalNamespace::SinglePositionTween {
     pub fn CreatePlayable(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,
@@ -68,7 +69,7 @@ impl SinglePositionTween {
     }
 }
 #[cfg(feature = "SinglePositionTween")]
-impl quest_hook::libil2cpp::ObjectType for SinglePositionTween {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SinglePositionTween {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

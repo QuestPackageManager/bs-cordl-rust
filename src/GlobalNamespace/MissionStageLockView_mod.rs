@@ -11,23 +11,24 @@ pub struct MissionStageLockView {
 }
 #[cfg(feature = "MissionStageLockView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionStageLockView => ""."MissionStageLockView"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissionStageLockView => ""
+    ."MissionStageLockView"
 );
 #[cfg(feature = "MissionStageLockView")]
-impl std::ops::Deref for MissionStageLockView {
+impl std::ops::Deref for crate::GlobalNamespace::MissionStageLockView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionStageLockView")]
-impl std::ops::DerefMut for MissionStageLockView {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionStageLockView {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionStageLockView")]
-impl MissionStageLockView {
+impl crate::GlobalNamespace::MissionStageLockView {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -81,7 +82,7 @@ impl MissionStageLockView {
     }
 }
 #[cfg(feature = "MissionStageLockView")]
-impl quest_hook::libil2cpp::ObjectType for MissionStageLockView {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissionStageLockView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

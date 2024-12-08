@@ -3,31 +3,33 @@
 #[derive(Debug)]
 pub struct MainMenuDestinationRequestController {
     __cordl_parent: crate::System::Object,
-    pub _destinationRequestManager: *mut IDestinationRequestManager,
-    pub _menuScenesTransitionSetupData: *mut MenuScenesTransitionSetupDataSO,
-    pub _gameScenesManager: *mut GameScenesManager,
+    pub _destinationRequestManager: *mut crate::GlobalNamespace::IDestinationRequestManager,
+    pub _menuScenesTransitionSetupData: *mut crate::GlobalNamespace::MenuScenesTransitionSetupDataSO,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
     pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
 }
 #[cfg(feature = "MainMenuDestinationRequestController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MainMenuDestinationRequestController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MainMenuDestinationRequestController => ""
     ."MainMenuDestinationRequestController"
 );
 #[cfg(feature = "MainMenuDestinationRequestController")]
-impl std::ops::Deref for MainMenuDestinationRequestController {
+impl std::ops::Deref for crate::GlobalNamespace::MainMenuDestinationRequestController {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainMenuDestinationRequestController")]
-impl std::ops::DerefMut for MainMenuDestinationRequestController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MainMenuDestinationRequestController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainMenuDestinationRequestController")]
-impl MainMenuDestinationRequestController {
+impl crate::GlobalNamespace::MainMenuDestinationRequestController {
     #[cfg(
         feature = "MainMenuDestinationRequestController+_ProcessDestinationRequest_d__9"
     )]
@@ -44,7 +46,7 @@ impl MainMenuDestinationRequestController {
     }
     pub fn HandleDestinationRequestManagerDidSendMenuDestinationRequest(
         &mut self,
-        menuDestination: *mut MenuDestination,
+        menuDestination: *mut crate::GlobalNamespace::MenuDestination,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -58,7 +60,7 @@ impl MainMenuDestinationRequestController {
     }
     pub fn HandleGameScenesManagerInstallEarlyBindings(
         &mut self,
-        scenesTransitionSetupData: *mut ScenesTransitionSetupDataSO,
+        scenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
         container: *mut crate::Zenject::DiContainer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -90,7 +92,7 @@ impl MainMenuDestinationRequestController {
     }
     pub fn ProcessDestinationRequest(
         &mut self,
-        menuDestination: *mut MenuDestination,
+        menuDestination: *mut crate::GlobalNamespace::MenuDestination,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -111,7 +113,8 @@ impl MainMenuDestinationRequestController {
     }
 }
 #[cfg(feature = "MainMenuDestinationRequestController")]
-impl quest_hook::libil2cpp::ObjectType for MainMenuDestinationRequestController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MainMenuDestinationRequestController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

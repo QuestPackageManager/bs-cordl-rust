@@ -50,23 +50,24 @@ pub struct BpmTimeProcessor {
 }
 #[cfg(feature = "BpmTimeProcessor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BpmTimeProcessor => ""."BpmTimeProcessor"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BpmTimeProcessor => ""
+    ."BpmTimeProcessor"
 );
 #[cfg(feature = "BpmTimeProcessor")]
-impl std::ops::Deref for BpmTimeProcessor {
+impl std::ops::Deref for crate::GlobalNamespace::BpmTimeProcessor {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BpmTimeProcessor")]
-impl std::ops::DerefMut for BpmTimeProcessor {
+impl std::ops::DerefMut for crate::GlobalNamespace::BpmTimeProcessor {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BpmTimeProcessor")]
-impl BpmTimeProcessor {
+impl crate::GlobalNamespace::BpmTimeProcessor {
     #[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
     pub type BpmChangeData = crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData;
     #[cfg(feature = "BpmTimeProcessor+__c")]
@@ -165,7 +166,7 @@ impl BpmTimeProcessor {
     }
 }
 #[cfg(feature = "BpmTimeProcessor")]
-impl quest_hook::libil2cpp::ObjectType for BpmTimeProcessor {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BpmTimeProcessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

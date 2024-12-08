@@ -18,7 +18,9 @@ pub struct OVRCameraRig {
     pub _leftControllerAnchor_k__BackingField: *mut crate::UnityEngine::Transform,
     pub _rightControllerAnchor_k__BackingField: *mut crate::UnityEngine::Transform,
     pub _trackerAnchor_k__BackingField: *mut crate::UnityEngine::Transform,
-    pub UpdatedAnchors: *mut crate::System::Action_1<*mut OVRCameraRig>,
+    pub UpdatedAnchors: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::OVRCameraRig,
+    >,
     pub TrackingSpaceChanged: *mut crate::System::Action_1<
         *mut crate::UnityEngine::Transform,
     >,
@@ -48,23 +50,24 @@ pub struct OVRCameraRig {
 }
 #[cfg(feature = "OVRCameraRig")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRCameraRig => ""."OVRCameraRig"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRCameraRig => ""
+    ."OVRCameraRig"
 );
 #[cfg(feature = "OVRCameraRig")]
-impl std::ops::Deref for OVRCameraRig {
+impl std::ops::Deref for crate::GlobalNamespace::OVRCameraRig {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRCameraRig")]
-impl std::ops::DerefMut for OVRCameraRig {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRCameraRig {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRCameraRig")]
-impl OVRCameraRig {
+impl crate::GlobalNamespace::OVRCameraRig {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -244,7 +247,7 @@ impl OVRCameraRig {
     }
     pub fn add_UpdatedAnchors(
         &mut self,
-        value: *mut crate::System::Action_1<*mut OVRCameraRig>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::OVRCameraRig>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -436,7 +439,7 @@ impl OVRCameraRig {
     }
     pub fn remove_UpdatedAnchors(
         &mut self,
-        value: *mut crate::System::Action_1<*mut OVRCameraRig>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::OVRCameraRig>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -612,7 +615,7 @@ impl OVRCameraRig {
     }
 }
 #[cfg(feature = "OVRCameraRig")]
-impl quest_hook::libil2cpp::ObjectType for OVRCameraRig {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRCameraRig {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

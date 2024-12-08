@@ -3,32 +3,33 @@
 #[derive(Debug)]
 pub struct StandardLevelAnalytics {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _standardLevelScenesTransitionSetupData: *mut StandardLevelScenesTransitionSetupDataSO,
-    pub _analyticsModel: *mut IAnalyticsModel,
+    pub _standardLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
 }
 #[cfg(feature = "StandardLevelAnalytics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StandardLevelAnalytics => ""."StandardLevelAnalytics"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::StandardLevelAnalytics => ""
+    ."StandardLevelAnalytics"
 );
 #[cfg(feature = "StandardLevelAnalytics")]
-impl std::ops::Deref for StandardLevelAnalytics {
+impl std::ops::Deref for crate::GlobalNamespace::StandardLevelAnalytics {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelAnalytics")]
-impl std::ops::DerefMut for StandardLevelAnalytics {
+impl std::ops::DerefMut for crate::GlobalNamespace::StandardLevelAnalytics {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelAnalytics")]
-impl StandardLevelAnalytics {
+impl crate::GlobalNamespace::StandardLevelAnalytics {
     pub fn HandleStandardLevelDidFinishEvent(
         &mut self,
-        standardLevelScenesTransitionSetupData: *mut StandardLevelScenesTransitionSetupDataSO,
-        levelCompletionResults: *mut LevelCompletionResults,
+        standardLevelScenesTransitionSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -79,7 +80,8 @@ impl StandardLevelAnalytics {
     }
 }
 #[cfg(feature = "StandardLevelAnalytics")]
-impl quest_hook::libil2cpp::ObjectType for StandardLevelAnalytics {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StandardLevelAnalytics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

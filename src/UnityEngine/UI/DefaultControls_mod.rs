@@ -27,10 +27,10 @@ impl crate::UnityEngine::UI::DefaultControls {
     pub const kThickHeight: f32 = 30f32;
     pub const kThinHeight: f32 = 20f32;
     pub const kWidth: f32 = 160f32;
-    #[cfg(feature = "UnityEngine+UI+DefaultControls+IFactoryControls")]
-    type IFactoryControls = crate::UnityEngine::UI::DefaultControls_IFactoryControls;
     #[cfg(feature = "UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
     pub type DefaultRuntimeFactory = crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory;
+    #[cfg(feature = "UnityEngine+UI+DefaultControls+IFactoryControls")]
+    type IFactoryControls = crate::UnityEngine::UI::DefaultControls_IFactoryControls;
     #[cfg(feature = "UnityEngine+UI+DefaultControls+Resources")]
     pub type Resources = crate::UnityEngine::UI::DefaultControls_Resources;
 }

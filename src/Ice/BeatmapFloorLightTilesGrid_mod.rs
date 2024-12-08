@@ -7,7 +7,7 @@ pub struct BeatmapFloorLightTilesGrid {
     pub _tileWidth: f32,
     pub _tileHeight: f32,
     pub _floorLightTilesGrid: *mut crate::Ice::FloorLightTilesGrid,
-    pub _beatmapObjectSpawnController: *mut IBeatmapObjectSpawnController,
+    pub _beatmapObjectSpawnController: *mut crate::GlobalNamespace::IBeatmapObjectSpawnController,
 }
 #[cfg(feature = "Ice+BeatmapFloorLightTilesGrid")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

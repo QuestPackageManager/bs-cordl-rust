@@ -6,23 +6,24 @@ pub struct QuantizedMathf {
 }
 #[cfg(feature = "QuantizedMathf")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for QuantizedMathf => ""."QuantizedMathf"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::QuantizedMathf => ""
+    ."QuantizedMathf"
 );
 #[cfg(feature = "QuantizedMathf")]
-impl std::ops::Deref for QuantizedMathf {
+impl std::ops::Deref for crate::GlobalNamespace::QuantizedMathf {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "QuantizedMathf")]
-impl std::ops::DerefMut for QuantizedMathf {
+impl std::ops::DerefMut for crate::GlobalNamespace::QuantizedMathf {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "QuantizedMathf")]
-impl QuantizedMathf {
+impl crate::GlobalNamespace::QuantizedMathf {
     pub const kQuaternionSerializableEpsilon: f32 = 0.00006103888f32;
     pub const kQuaternionSerializableScaleFactor: i32 = 16383i32;
     pub const kVectorSerializableEpsilon: f32 = 0.001f32;
@@ -30,7 +31,7 @@ impl QuantizedMathf {
     pub const kVectorSerializableScaleInt: i32 = 1000i32;
 }
 #[cfg(feature = "QuantizedMathf")]
-impl quest_hook::libil2cpp::ObjectType for QuantizedMathf {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::QuantizedMathf {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

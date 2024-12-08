@@ -3,28 +3,28 @@
 #[derive(Debug)]
 pub struct BeatToTimeConverterProvider {
     __cordl_parent: crate::System::Object,
-    pub _bpmTimeProcessor: *mut IBeatToTimeConverter,
+    pub _bpmTimeProcessor: *mut crate::GlobalNamespace::IBeatToTimeConverter,
 }
 #[cfg(feature = "BeatToTimeConverterProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatToTimeConverterProvider => ""
-    ."BeatToTimeConverterProvider"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatToTimeConverterProvider =>
+    ""."BeatToTimeConverterProvider"
 );
 #[cfg(feature = "BeatToTimeConverterProvider")]
-impl std::ops::Deref for BeatToTimeConverterProvider {
+impl std::ops::Deref for crate::GlobalNamespace::BeatToTimeConverterProvider {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatToTimeConverterProvider")]
-impl std::ops::DerefMut for BeatToTimeConverterProvider {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatToTimeConverterProvider {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatToTimeConverterProvider")]
-impl BeatToTimeConverterProvider {
+impl crate::GlobalNamespace::BeatToTimeConverterProvider {
     pub fn BeatToTime(&mut self, beat: f32) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -33,7 +33,7 @@ impl BeatToTimeConverterProvider {
         Ok(__cordl_ret)
     }
     pub fn New(
-        bpmTimeProcessor: *mut IBeatToTimeConverter,
+        bpmTimeProcessor: *mut crate::GlobalNamespace::IBeatToTimeConverter,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -43,7 +43,7 @@ impl BeatToTimeConverterProvider {
     }
     pub fn _ctor(
         &mut self,
-        bpmTimeProcessor: *mut IBeatToTimeConverter,
+        bpmTimeProcessor: *mut crate::GlobalNamespace::IBeatToTimeConverter,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -54,7 +54,8 @@ impl BeatToTimeConverterProvider {
     }
 }
 #[cfg(feature = "BeatToTimeConverterProvider")]
-impl quest_hook::libil2cpp::ObjectType for BeatToTimeConverterProvider {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatToTimeConverterProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

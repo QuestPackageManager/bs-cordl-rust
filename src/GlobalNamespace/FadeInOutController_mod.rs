@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct FadeInOutController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _easeValue: *mut FloatSO,
+    pub _easeValue: *mut crate::GlobalNamespace::FloatSO,
     pub _fadeInCurve: *mut crate::UnityEngine::AnimationCurve,
     pub _fadeOutCurve: *mut crate::UnityEngine::AnimationCurve,
     pub _fadeInStartDelay: f32,
@@ -12,23 +12,24 @@ pub struct FadeInOutController {
 }
 #[cfg(feature = "FadeInOutController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FadeInOutController => ""."FadeInOutController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FadeInOutController => ""
+    ."FadeInOutController"
 );
 #[cfg(feature = "FadeInOutController")]
-impl std::ops::Deref for FadeInOutController {
+impl std::ops::Deref for crate::GlobalNamespace::FadeInOutController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FadeInOutController")]
-impl std::ops::DerefMut for FadeInOutController {
+impl std::ops::DerefMut for crate::GlobalNamespace::FadeInOutController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FadeInOutController")]
-impl FadeInOutController {
+impl crate::GlobalNamespace::FadeInOutController {
     #[cfg(feature = "FadeInOutController+_Fade_d__15")]
     pub type _Fade_d__15 = crate::GlobalNamespace::FadeInOutController__Fade_d__15;
     pub fn Fade(
@@ -167,7 +168,7 @@ impl FadeInOutController {
     }
 }
 #[cfg(feature = "FadeInOutController")]
-impl quest_hook::libil2cpp::ObjectType for FadeInOutController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FadeInOutController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

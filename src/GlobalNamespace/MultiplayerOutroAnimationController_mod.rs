@@ -31,37 +31,38 @@ pub struct MultiplayerOutroAnimationController {
     pub _badgeMidTransform: *mut crate::UnityEngine::Transform,
     pub _songPreviewTrackName: *mut crate::System::String,
     pub _resultsMocksActivationTrack: *mut crate::System::String,
-    pub _multiplayerScoreRingManager: *mut MultiplayerScoreRingManager,
-    pub _multiplayerResultsPyramidView: *mut MultiplayerResultsPyramidView,
-    pub _multiplayerPlayersManager: *mut MultiplayerPlayersManager,
-    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
-    pub _sceneSetupData: *mut GameplayCoreSceneSetupData,
-    pub _layoutProvider: *mut MultiplayerLayoutProvider,
+    pub _multiplayerScoreRingManager: *mut crate::GlobalNamespace::MultiplayerScoreRingManager,
+    pub _multiplayerResultsPyramidView: *mut crate::GlobalNamespace::MultiplayerResultsPyramidView,
+    pub _multiplayerPlayersManager: *mut crate::GlobalNamespace::MultiplayerPlayersManager,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    pub _layoutProvider: *mut crate::GlobalNamespace::MultiplayerLayoutProvider,
     pub _onCompleted: *mut crate::System::Action,
 }
 #[cfg(feature = "MultiplayerOutroAnimationController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerOutroAnimationController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerOutroAnimationController => ""
     ."MultiplayerOutroAnimationController"
 );
 #[cfg(feature = "MultiplayerOutroAnimationController")]
-impl std::ops::Deref for MultiplayerOutroAnimationController {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerOutroAnimationController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerOutroAnimationController")]
-impl std::ops::DerefMut for MultiplayerOutroAnimationController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerOutroAnimationController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerOutroAnimationController")]
-impl MultiplayerOutroAnimationController {
+impl crate::GlobalNamespace::MultiplayerOutroAnimationController {
     pub fn AnimateOutro(
         &mut self,
-        multiplayerResultsData: *mut MultiplayerResultsData,
+        multiplayerResultsData: *mut crate::GlobalNamespace::MultiplayerResultsData,
         onCompleted: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -166,7 +167,8 @@ impl MultiplayerOutroAnimationController {
     }
 }
 #[cfg(feature = "MultiplayerOutroAnimationController")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerOutroAnimationController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerOutroAnimationController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,36 +3,37 @@
 #[derive(Debug)]
 pub struct PlatformInstaller {
     __cordl_parent: crate::Zenject::Installer_3<
-        *mut AppInitSetupData,
-        *mut MockPlatformAdditionalContentModelInitialDataSO,
-        *mut PlatformInstaller,
+        *mut crate::GlobalNamespace::AppInitSetupData,
+        *mut crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
+        *mut crate::GlobalNamespace::PlatformInstaller,
     >,
     pub _isTest: bool,
-    pub _mockPlatformAdditionalContentModelInitialData: *mut MockPlatformAdditionalContentModelInitialDataSO,
+    pub _mockPlatformAdditionalContentModelInitialData: *mut crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
 }
 #[cfg(feature = "PlatformInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlatformInstaller => ""."PlatformInstaller"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlatformInstaller => ""
+    ."PlatformInstaller"
 );
 #[cfg(feature = "PlatformInstaller")]
-impl std::ops::Deref for PlatformInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::PlatformInstaller {
     type Target = crate::Zenject::Installer_3<
-        *mut AppInitSetupData,
-        *mut MockPlatformAdditionalContentModelInitialDataSO,
-        *mut PlatformInstaller,
+        *mut crate::GlobalNamespace::AppInitSetupData,
+        *mut crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
+        *mut crate::GlobalNamespace::PlatformInstaller,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformInstaller")]
-impl std::ops::DerefMut for PlatformInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlatformInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformInstaller")]
-impl PlatformInstaller {
+impl crate::GlobalNamespace::PlatformInstaller {
     pub fn BindAchievementsHandler(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -104,8 +105,8 @@ impl PlatformInstaller {
         Ok(__cordl_ret)
     }
     pub fn New(
-        appInitSetupData: *mut AppInitSetupData,
-        mockPlatformAdditionalContentModelInitialData: *mut MockPlatformAdditionalContentModelInitialDataSO,
+        appInitSetupData: *mut crate::GlobalNamespace::AppInitSetupData,
+        mockPlatformAdditionalContentModelInitialData: *mut crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -118,8 +119,8 @@ impl PlatformInstaller {
     }
     pub fn _ctor(
         &mut self,
-        appInitSetupData: *mut AppInitSetupData,
-        mockPlatformAdditionalContentModelInitialData: *mut MockPlatformAdditionalContentModelInitialDataSO,
+        appInitSetupData: *mut crate::GlobalNamespace::AppInitSetupData,
+        mockPlatformAdditionalContentModelInitialData: *mut crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -133,7 +134,7 @@ impl PlatformInstaller {
     }
 }
 #[cfg(feature = "PlatformInstaller")]
-impl quest_hook::libil2cpp::ObjectType for PlatformInstaller {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlatformInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

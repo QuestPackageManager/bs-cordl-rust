@@ -169,7 +169,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
         playerName: *mut crate::System::String,
         playerId: *mut crate::System::String,
         gameplayModifiers: *mut crate::System::Collections::Generic::List_1<
-            *mut GameplayModifierParamsSO,
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -188,7 +188,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
         playerName: *mut crate::System::String,
         playerId: *mut crate::System::String,
         gameplayModifiers: *mut crate::System::Collections::Generic::List_1<
-            *mut GameplayModifierParamsSO,
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -214,67 +214,67 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
 #[derive(Debug)]
 pub struct PlatformLeaderboardsModel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _gameplayModifiersModel: *mut GameplayModifiersModelSO,
-    pub _leaderboardScoreUploader: *mut LeaderboardScoreUploader,
-    pub _platformUserModel: *mut IPlatformUserModel,
-    pub _platformLeaderboardsHandler: *mut PlatformLeaderboardsHandler,
-    pub _beatmapLevelsModel: *mut BeatmapLevelsModel,
+    pub _gameplayModifiersModel: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
+    pub _leaderboardScoreUploader: *mut crate::GlobalNamespace::LeaderboardScoreUploader,
+    pub _platformUserModel: *mut crate::GlobalNamespace::IPlatformUserModel,
+    pub _platformLeaderboardsHandler: *mut crate::GlobalNamespace::PlatformLeaderboardsHandler,
+    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
     pub allScoresDidUploadEvent: *mut crate::System::Action,
-    pub _currentGetScoreRequest: *mut HMAsyncRequest,
+    pub _currentGetScoreRequest: *mut crate::GlobalNamespace::HMAsyncRequest,
     pub _state: crate::GlobalNamespace::PlatformLeaderboardsModel_State,
     pub _playerId: *mut crate::System::String,
 }
 #[cfg(feature = "PlatformLeaderboardsModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlatformLeaderboardsModel => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlatformLeaderboardsModel => ""
     ."PlatformLeaderboardsModel"
 );
 #[cfg(feature = "PlatformLeaderboardsModel")]
-impl std::ops::Deref for PlatformLeaderboardsModel {
+impl std::ops::Deref for crate::GlobalNamespace::PlatformLeaderboardsModel {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformLeaderboardsModel")]
-impl std::ops::DerefMut for PlatformLeaderboardsModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlatformLeaderboardsModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformLeaderboardsModel")]
-impl PlatformLeaderboardsModel {
-    #[cfg(feature = "PlatformLeaderboardsModel+_Initialize_d__23")]
-    pub type _Initialize_d__23 = crate::GlobalNamespace::PlatformLeaderboardsModel__Initialize_d__23;
-    #[cfg(feature = "PlatformLeaderboardsModel+__c")]
-    pub type __c = crate::GlobalNamespace::PlatformLeaderboardsModel___c;
-    #[cfg(feature = "PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
-    pub type UploadScoreCompletionHandler = crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler;
+impl crate::GlobalNamespace::PlatformLeaderboardsModel {
     #[cfg(feature = "PlatformLeaderboardsModel+GetScoresCompletionHandler")]
     pub type GetScoresCompletionHandler = crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler;
-    #[cfg(feature = "PlatformLeaderboardsModel+__c__DisplayClass27_0")]
-    pub type __c__DisplayClass27_0 = crate::GlobalNamespace::PlatformLeaderboardsModel___c__DisplayClass27_0;
+    #[cfg(feature = "PlatformLeaderboardsModel+GetScoresResult")]
+    pub type GetScoresResult = crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult;
     #[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
     pub type LeaderboardScore = crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore;
     #[cfg(feature = "PlatformLeaderboardsModel+ScoresScope")]
     pub type ScoresScope = crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope;
     #[cfg(feature = "PlatformLeaderboardsModel+State")]
     pub type State = crate::GlobalNamespace::PlatformLeaderboardsModel_State;
-    #[cfg(feature = "PlatformLeaderboardsModel+GetScoresResult")]
-    pub type GetScoresResult = crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult;
+    #[cfg(feature = "PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
+    pub type UploadScoreCompletionHandler = crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler;
     #[cfg(feature = "PlatformLeaderboardsModel+UploadScoreResult")]
     pub type UploadScoreResult = crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult;
+    #[cfg(feature = "PlatformLeaderboardsModel+_Initialize_d__23")]
+    pub type _Initialize_d__23 = crate::GlobalNamespace::PlatformLeaderboardsModel__Initialize_d__23;
+    #[cfg(feature = "PlatformLeaderboardsModel+__c")]
+    pub type __c = crate::GlobalNamespace::PlatformLeaderboardsModel___c;
+    #[cfg(feature = "PlatformLeaderboardsModel+__c__DisplayClass27_0")]
+    pub type __c__DisplayClass27_0 = crate::GlobalNamespace::PlatformLeaderboardsModel___c__DisplayClass27_0;
     pub fn GetFriendsScores(
         &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         count: i32,
         fromRank: i32,
         completionHandler: *mut crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut HMAsyncRequest> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::HMAsyncRequest> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut HMAsyncRequest = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::HMAsyncRequest = __cordl_object
             .invoke(
                 "GetFriendsScores",
                 (beatmapKey, count, fromRank, completionHandler),
@@ -283,29 +283,29 @@ impl PlatformLeaderboardsModel {
     }
     pub fn GetScoresAroundPlayer(
         &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         count: i32,
         completionHandler: *mut crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut HMAsyncRequest> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::HMAsyncRequest> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut HMAsyncRequest = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::HMAsyncRequest = __cordl_object
             .invoke("GetScoresAroundPlayer", (beatmapKey, count, completionHandler))?;
         Ok(__cordl_ret)
     }
     pub fn GetScores_BeatmapKey_PlatformLeaderboardsModel_ScoresScope_PlatformLeaderboardsModel_GetScoresCompletionHandler0(
         &mut self,
-        beatmapKey: BeatmapKey,
+        beatmapKey: crate::GlobalNamespace::BeatmapKey,
         count: i32,
         fromRank: i32,
         scope: crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope,
         completionHandler: *mut crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut HMAsyncRequest> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::HMAsyncRequest> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut HMAsyncRequest = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::HMAsyncRequest = __cordl_object
             .invoke(
                 "GetScores",
                 (beatmapKey, count, fromRank, scope, completionHandler),
@@ -314,15 +314,15 @@ impl PlatformLeaderboardsModel {
     }
     pub fn GetScores_ByRefMut_PlatformLeaderboardsModel_GetScoresCompletionHandler1(
         &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         count: i32,
         fromRank: i32,
         completionHandler: *mut crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut HMAsyncRequest> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::HMAsyncRequest> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut HMAsyncRequest = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::HMAsyncRequest = __cordl_object
             .invoke("GetScores", (beatmapKey, count, fromRank, completionHandler))?;
         Ok(__cordl_ret)
     }
@@ -338,7 +338,7 @@ impl PlatformLeaderboardsModel {
     }
     pub fn HandlePlatformUserInfoDidChange(
         &mut self,
-        newInfo: *mut UserInfo,
+        newInfo: *mut crate::GlobalNamespace::UserInfo,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -359,7 +359,7 @@ impl PlatformLeaderboardsModel {
     }
     pub fn InitializeForUserInfo(
         &mut self,
-        newInfo: *mut UserInfo,
+        newInfo: *mut crate::GlobalNamespace::UserInfo,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -387,7 +387,7 @@ impl PlatformLeaderboardsModel {
     }
     pub fn UploadScore_ByRefMut_i32_i32_i32__cordl_bool_i32_i32_i32_i32_f32_GameplayModifiers1(
         &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         multipliedScore: i32,
         modifiedScore: i32,
         maxPossibleMultipliedScore: i32,
@@ -397,7 +397,7 @@ impl PlatformLeaderboardsModel {
         missedCount: i32,
         maxCombo: i32,
         energy: f32,
-        gameplayModifiers: *mut GameplayModifiers,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -425,11 +425,11 @@ impl PlatformLeaderboardsModel {
         &mut self,
         scoreData: *mut crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
         completionHandler: *mut crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut HMAsyncRequest> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::HMAsyncRequest> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut HMAsyncRequest = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::HMAsyncRequest = __cordl_object
             .invoke("UploadScore", (scoreData, completionHandler))?;
         Ok(__cordl_ret)
     }
@@ -484,7 +484,8 @@ impl PlatformLeaderboardsModel {
     }
 }
 #[cfg(feature = "PlatformLeaderboardsModel")]
-impl quest_hook::libil2cpp::ObjectType for PlatformLeaderboardsModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlatformLeaderboardsModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

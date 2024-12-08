@@ -62,14 +62,14 @@ for crate::UnityEngine::InputSystem::InputBinding {
 impl crate::UnityEngine::InputSystem::InputBinding {
     pub const Separator: char = ';';
     pub const kSeparatorString: &'static str = ";";
-    #[cfg(feature = "UnityEngine+InputSystem+InputBinding+Flags")]
-    pub type Flags = crate::UnityEngine::InputSystem::InputBinding_Flags;
-    #[cfg(feature = "UnityEngine+InputSystem+InputBinding+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::InputBinding___c;
     #[cfg(feature = "UnityEngine+InputSystem+InputBinding+DisplayStringOptions")]
     pub type DisplayStringOptions = crate::UnityEngine::InputSystem::InputBinding_DisplayStringOptions;
+    #[cfg(feature = "UnityEngine+InputSystem+InputBinding+Flags")]
+    pub type Flags = crate::UnityEngine::InputSystem::InputBinding_Flags;
     #[cfg(feature = "UnityEngine+InputSystem+InputBinding+MatchOptions")]
     pub type MatchOptions = crate::UnityEngine::InputSystem::InputBinding_MatchOptions;
+    #[cfg(feature = "UnityEngine+InputSystem+InputBinding+__c")]
+    pub type __c = crate::UnityEngine::InputSystem::InputBinding___c;
     pub fn Equals_InputBinding0(
         &mut self,
         other: crate::UnityEngine::InputSystem::InputBinding,

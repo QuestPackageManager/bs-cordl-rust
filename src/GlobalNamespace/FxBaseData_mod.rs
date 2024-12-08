@@ -8,23 +8,23 @@ pub struct FxBaseData {
 }
 #[cfg(feature = "FxBaseData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FxBaseData => ""."FxBaseData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FxBaseData => ""."FxBaseData"
 );
 #[cfg(feature = "FxBaseData")]
-impl std::ops::Deref for FxBaseData {
+impl std::ops::Deref for crate::GlobalNamespace::FxBaseData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FxBaseData")]
-impl std::ops::DerefMut for FxBaseData {
+impl std::ops::DerefMut for crate::GlobalNamespace::FxBaseData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FxBaseData")]
-impl FxBaseData {
+impl crate::GlobalNamespace::FxBaseData {
     pub fn New(
         beat: f32,
         usePreviousEventValue: bool,
@@ -49,7 +49,7 @@ impl FxBaseData {
     }
 }
 #[cfg(feature = "FxBaseData")]
-impl quest_hook::libil2cpp::ObjectType for FxBaseData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FxBaseData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

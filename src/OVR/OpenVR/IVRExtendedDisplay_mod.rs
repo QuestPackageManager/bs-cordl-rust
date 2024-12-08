@@ -26,10 +26,10 @@ for crate::OVR::OpenVR::IVRExtendedDisplay {
 impl crate::OVR::OpenVR::IVRExtendedDisplay {
     #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
     pub type _GetDXGIOutputInfo = crate::OVR::OpenVR::IVRExtendedDisplay__GetDXGIOutputInfo;
-    #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
-    pub type _GetWindowBounds = crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBounds;
     #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
     pub type _GetEyeOutputViewport = crate::OVR::OpenVR::IVRExtendedDisplay__GetEyeOutputViewport;
+    #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
+    pub type _GetWindowBounds = crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBounds;
 }
 #[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
 #[repr(C)]

@@ -3,34 +3,35 @@
 #[derive(Debug)]
 pub struct BeatmapEventDataBox {
     __cordl_parent: crate::System::Object,
-    pub _indexFilter_k__BackingField: *mut IndexFilter,
+    pub _indexFilter_k__BackingField: *mut crate::GlobalNamespace::IndexFilter,
     pub _beatDistributionParam: f32,
     pub _beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
     pub _eventDistributionCount: i32,
     pub _eventDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
     pub _eventDistributionParam: f32,
     pub _eventDistributionShouldAffectFirstBaseEvent: bool,
-    pub _eventDistributionEaseType: EaseType,
+    pub _eventDistributionEaseType: crate::GlobalNamespace::EaseType,
 }
 #[cfg(feature = "BeatmapEventDataBox")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapEventDataBox => ""."BeatmapEventDataBox"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapEventDataBox => ""
+    ."BeatmapEventDataBox"
 );
 #[cfg(feature = "BeatmapEventDataBox")]
-impl std::ops::Deref for BeatmapEventDataBox {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapEventDataBox {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapEventDataBox")]
-impl std::ops::DerefMut for BeatmapEventDataBox {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapEventDataBox {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapEventDataBox")]
-impl BeatmapEventDataBox {
+impl crate::GlobalNamespace::BeatmapEventDataBox {
     #[cfg(feature = "BeatmapEventDataBox+DistributionParamType")]
     pub type DistributionParamType = crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType;
     pub fn GetBeatStep(
@@ -57,13 +58,13 @@ impl BeatmapEventDataBox {
         Ok(__cordl_ret)
     }
     pub fn New(
-        indexFilter: *mut IndexFilter,
+        indexFilter: *mut crate::GlobalNamespace::IndexFilter,
         beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         beatDistributionParam: f32,
         eventDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         eventDistributionParam: f32,
         eventDistributionShouldAffectFirstBaseEvent: bool,
-        eventDistributionEaseType: EaseType,
+        eventDistributionEaseType: crate::GlobalNamespace::EaseType,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -90,8 +91,10 @@ impl BeatmapEventDataBox {
         durationOrderIndex: i32,
         distributionOrderIndex: i32,
         maxBeat: f32,
-        beatToTimeConverter: *mut IBeatToTimeConverter,
-        output: *mut crate::System::Collections::Generic::List_1<*mut BeatmapEventData>,
+        beatToTimeConverter: *mut crate::GlobalNamespace::IBeatToTimeConverter,
+        output: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::BeatmapEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -114,13 +117,13 @@ impl BeatmapEventDataBox {
     }
     pub fn _ctor(
         &mut self,
-        indexFilter: *mut IndexFilter,
+        indexFilter: *mut crate::GlobalNamespace::IndexFilter,
         beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         beatDistributionParam: f32,
         eventDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         eventDistributionParam: f32,
         eventDistributionShouldAffectFirstBaseEvent: bool,
-        eventDistributionEaseType: EaseType,
+        eventDistributionEaseType: crate::GlobalNamespace::EaseType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -149,11 +152,11 @@ impl BeatmapEventDataBox {
     }
     pub fn get_indexFilter(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IndexFilter> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IndexFilter> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IndexFilter = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IndexFilter = __cordl_object
             .invoke("get_indexFilter", ())?;
         Ok(__cordl_ret)
     }
@@ -166,7 +169,7 @@ impl BeatmapEventDataBox {
     }
 }
 #[cfg(feature = "BeatmapEventDataBox")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapEventDataBox {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapEventDataBox {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

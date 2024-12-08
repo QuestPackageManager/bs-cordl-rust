@@ -13,16 +13,20 @@ pub struct ILevelPackProductDataContainer_2<
 }
 #[cfg(feature = "ILevelPackProductDataContainer_2")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ILevelPackProductDataContainer_2 <
-    TLevelPackProductData, TLevelProductData > => ""."ILevelPackProductDataContainer`2" <
-    TLevelPackProductData, TLevelProductData >
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ILevelPackProductDataContainer_2 < TLevelPackProductData,
+    TLevelProductData > => ""."ILevelPackProductDataContainer`2" < TLevelPackProductData,
+    TLevelProductData >
 );
 #[cfg(feature = "ILevelPackProductDataContainer_2")]
 impl<
     TLevelPackProductData: quest_hook::libil2cpp::Type,
     TLevelProductData: quest_hook::libil2cpp::Type,
 > std::ops::Deref
-for ILevelPackProductDataContainer_2<TLevelPackProductData, TLevelProductData> {
+for crate::GlobalNamespace::ILevelPackProductDataContainer_2<
+    TLevelPackProductData,
+    TLevelProductData,
+> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -33,7 +37,10 @@ impl<
     TLevelPackProductData: quest_hook::libil2cpp::Type,
     TLevelProductData: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut
-for ILevelPackProductDataContainer_2<TLevelPackProductData, TLevelProductData> {
+for crate::GlobalNamespace::ILevelPackProductDataContainer_2<
+    TLevelPackProductData,
+    TLevelProductData,
+> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -42,7 +49,10 @@ for ILevelPackProductDataContainer_2<TLevelPackProductData, TLevelProductData> {
 impl<
     TLevelPackProductData: quest_hook::libil2cpp::Type,
     TLevelProductData: quest_hook::libil2cpp::Type,
-> ILevelPackProductDataContainer_2<TLevelPackProductData, TLevelProductData> {
+> crate::GlobalNamespace::ILevelPackProductDataContainer_2<
+    TLevelPackProductData,
+    TLevelProductData,
+> {
     pub fn SetLevelPackProductData(
         &mut self,
         newProductPack: TLevelPackProductData,
@@ -87,7 +97,10 @@ impl<
     TLevelPackProductData: quest_hook::libil2cpp::Type,
     TLevelProductData: quest_hook::libil2cpp::Type,
 > quest_hook::libil2cpp::ObjectType
-for ILevelPackProductDataContainer_2<TLevelPackProductData, TLevelProductData> {
+for crate::GlobalNamespace::ILevelPackProductDataContainer_2<
+    TLevelPackProductData,
+    TLevelProductData,
+> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

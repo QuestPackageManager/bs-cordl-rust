@@ -2,35 +2,38 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerGameplayAnimator {
-    __cordl_parent: MultiplayerGameplayAnimator,
-    pub _bigAvatarAnimator: *mut MultiplayerBigAvatarAnimator,
-    pub _avatarScaleAnimator: *mut ScaleAnimator,
+    __cordl_parent: crate::GlobalNamespace::MultiplayerGameplayAnimator,
+    pub _bigAvatarAnimator: *mut crate::GlobalNamespace::MultiplayerBigAvatarAnimator,
+    pub _avatarScaleAnimator: *mut crate::GlobalNamespace::ScaleAnimator,
     pub _defaultLightsWidth: f32,
     pub _observedLightsWidth: f32,
-    pub _failController: *mut MultiplayerConnectedPlayerLevelFailController,
-    pub _multiplayerLayoutProvider: *mut MultiplayerLayoutProvider,
-    pub _playerSpectatingSpot: *mut MultiplayerConnectedPlayerSpectatingSpot,
+    pub _failController: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerLevelFailController,
+    pub _multiplayerLayoutProvider: *mut crate::GlobalNamespace::MultiplayerLayoutProvider,
+    pub _playerSpectatingSpot: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerSpectatingSpot,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerGameplayAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerConnectedPlayerGameplayAnimator => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerConnectedPlayerGameplayAnimator => ""
     ."MultiplayerConnectedPlayerGameplayAnimator"
 );
 #[cfg(feature = "MultiplayerConnectedPlayerGameplayAnimator")]
-impl std::ops::Deref for MultiplayerConnectedPlayerGameplayAnimator {
-    type Target = MultiplayerGameplayAnimator;
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerConnectedPlayerGameplayAnimator {
+    type Target = crate::GlobalNamespace::MultiplayerGameplayAnimator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerGameplayAnimator")]
-impl std::ops::DerefMut for MultiplayerConnectedPlayerGameplayAnimator {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerConnectedPlayerGameplayAnimator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerGameplayAnimator")]
-impl MultiplayerConnectedPlayerGameplayAnimator {
+impl crate::GlobalNamespace::MultiplayerConnectedPlayerGameplayAnimator {
     pub fn AnimateNewLeaderSelected(
         &mut self,
         isLeading: bool,
@@ -123,7 +126,8 @@ impl MultiplayerConnectedPlayerGameplayAnimator {
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerGameplayAnimator")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerConnectedPlayerGameplayAnimator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerConnectedPlayerGameplayAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

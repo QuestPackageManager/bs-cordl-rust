@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct EnvironmentsAsyncInstaller {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
-        *mut EnvironmentInfoSO,
+        *mut crate::GlobalNamespace::EnvironmentInfoSO,
     >,
     pub _environmentInfos: *mut crate::System::Collections::Generic::List_1<
-        *mut EnvironmentInfoSO,
+        *mut crate::GlobalNamespace::EnvironmentInfoSO,
     >,
 }
 #[cfg(feature = "Environments+Definitions+EnvironmentsAsyncInstaller")]
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Environments+Definitions+EnvironmentsAsyncInstaller")]
 impl std::ops::Deref for crate::Environments::Definitions::EnvironmentsAsyncInstaller {
     type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
-        *mut EnvironmentInfoSO,
+        *mut crate::GlobalNamespace::EnvironmentInfoSO,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -48,7 +48,7 @@ impl crate::Environments::Definitions::EnvironmentsAsyncInstaller {
     pub fn LoadResourcesBeforeInstall(
         &mut self,
         environmentInfos: *mut crate::System::Collections::Generic::IList_1<
-            *mut EnvironmentInfoSO,
+            *mut crate::GlobalNamespace::EnvironmentInfoSO,
         >,
         registry: *mut crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

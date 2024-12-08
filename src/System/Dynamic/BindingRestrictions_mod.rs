@@ -49,18 +49,18 @@ impl std::ops::DerefMut for crate::System::Dynamic::BindingRestrictions {
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions")]
 impl crate::System::Dynamic::BindingRestrictions {
-    #[cfg(feature = "System+Dynamic+BindingRestrictions+TypeRestriction")]
-    pub type TypeRestriction = crate::GlobalNamespace::BindingRestrictions_TypeRestriction;
-    #[cfg(feature = "System+Dynamic+BindingRestrictions+MergedRestriction")]
-    pub type MergedRestriction = crate::GlobalNamespace::BindingRestrictions_MergedRestriction;
-    #[cfg(feature = "System+Dynamic+BindingRestrictions+InstanceRestriction")]
-    pub type InstanceRestriction = crate::GlobalNamespace::BindingRestrictions_InstanceRestriction;
     #[cfg(feature = "System+Dynamic+BindingRestrictions+BindingRestrictionsProxy")]
     pub type BindingRestrictionsProxy = crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy;
-    #[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder")]
-    pub type TestBuilder = crate::System::Dynamic::BindingRestrictions_TestBuilder;
     #[cfg(feature = "System+Dynamic+BindingRestrictions+CustomRestriction")]
     pub type CustomRestriction = crate::GlobalNamespace::BindingRestrictions_CustomRestriction;
+    #[cfg(feature = "System+Dynamic+BindingRestrictions+InstanceRestriction")]
+    pub type InstanceRestriction = crate::GlobalNamespace::BindingRestrictions_InstanceRestriction;
+    #[cfg(feature = "System+Dynamic+BindingRestrictions+MergedRestriction")]
+    pub type MergedRestriction = crate::GlobalNamespace::BindingRestrictions_MergedRestriction;
+    #[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder")]
+    pub type TestBuilder = crate::System::Dynamic::BindingRestrictions_TestBuilder;
+    #[cfg(feature = "System+Dynamic+BindingRestrictions+TypeRestriction")]
+    pub type TypeRestriction = crate::GlobalNamespace::BindingRestrictions_TypeRestriction;
     pub fn GetExpression(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

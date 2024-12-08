@@ -159,20 +159,20 @@ impl std::ops::DerefMut for crate::System::Dynamic::ExpandoObject {
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject")]
 impl crate::System::Dynamic::ExpandoObject {
-    #[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
-    pub type KeyCollection = crate::System::Dynamic::ExpandoObject_KeyCollection;
-    #[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
-    pub type ValueCollection = crate::System::Dynamic::ExpandoObject_ValueCollection;
-    #[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollectionDebugView")]
-    pub type KeyCollectionDebugView = crate::System::Dynamic::ExpandoObject_KeyCollectionDebugView;
-    #[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollectionDebugView")]
-    pub type ValueCollectionDebugView = crate::System::Dynamic::ExpandoObject_ValueCollectionDebugView;
     #[cfg(feature = "System+Dynamic+ExpandoObject+ExpandoData")]
     pub type ExpandoData = crate::System::Dynamic::ExpandoObject_ExpandoData;
-    #[cfg(feature = "System+Dynamic+ExpandoObject+_GetExpandoEnumerator_d__51")]
-    pub type _GetExpandoEnumerator_d__51 = crate::System::Dynamic::ExpandoObject__GetExpandoEnumerator_d__51;
+    #[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
+    pub type KeyCollection = crate::System::Dynamic::ExpandoObject_KeyCollection;
+    #[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollectionDebugView")]
+    pub type KeyCollectionDebugView = crate::System::Dynamic::ExpandoObject_KeyCollectionDebugView;
     #[cfg(feature = "System+Dynamic+ExpandoObject+MetaExpando")]
     pub type MetaExpando = crate::System::Dynamic::ExpandoObject_MetaExpando;
+    #[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
+    pub type ValueCollection = crate::System::Dynamic::ExpandoObject_ValueCollection;
+    #[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollectionDebugView")]
+    pub type ValueCollectionDebugView = crate::System::Dynamic::ExpandoObject_ValueCollectionDebugView;
+    #[cfg(feature = "System+Dynamic+ExpandoObject+_GetExpandoEnumerator_d__51")]
+    pub type _GetExpandoEnumerator_d__51 = crate::System::Dynamic::ExpandoObject__GetExpandoEnumerator_d__51;
     pub fn ExpandoContainsKey(
         &mut self,
         key: *mut crate::System::String,
@@ -865,12 +865,12 @@ impl std::ops::DerefMut for crate::System::Dynamic::ExpandoObject_MetaExpando {
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+MetaExpando")]
 impl crate::System::Dynamic::ExpandoObject_MetaExpando {
-    #[cfg(feature = "System+Dynamic+ExpandoObject+MetaExpando+__c__DisplayClass3_0")]
-    pub type __c__DisplayClass3_0 = crate::System::Dynamic::MetaExpando___c__DisplayClass3_0;
     #[cfg(
         feature = "System+Dynamic+ExpandoObject+MetaExpando+_GetDynamicMemberNames_d__6"
     )]
     pub type _GetDynamicMemberNames_d__6 = crate::System::Dynamic::MetaExpando__GetDynamicMemberNames_d__6;
+    #[cfg(feature = "System+Dynamic+ExpandoObject+MetaExpando+__c__DisplayClass3_0")]
+    pub type __c__DisplayClass3_0 = crate::System::Dynamic::MetaExpando___c__DisplayClass3_0;
     pub fn AddDynamicTestAndDefer(
         &mut self,
         binder: *mut crate::System::Dynamic::DynamicMetaObjectBinder,

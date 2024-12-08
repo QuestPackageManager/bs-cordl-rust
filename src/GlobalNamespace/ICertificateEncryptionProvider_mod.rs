@@ -6,24 +6,24 @@ pub struct ICertificateEncryptionProvider {
 }
 #[cfg(feature = "ICertificateEncryptionProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ICertificateEncryptionProvider => ""
-    ."ICertificateEncryptionProvider"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ICertificateEncryptionProvider
+    => ""."ICertificateEncryptionProvider"
 );
 #[cfg(feature = "ICertificateEncryptionProvider")]
-impl std::ops::Deref for ICertificateEncryptionProvider {
+impl std::ops::Deref for crate::GlobalNamespace::ICertificateEncryptionProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ICertificateEncryptionProvider")]
-impl std::ops::DerefMut for ICertificateEncryptionProvider {
+impl std::ops::DerefMut for crate::GlobalNamespace::ICertificateEncryptionProvider {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ICertificateEncryptionProvider")]
-impl ICertificateEncryptionProvider {
+impl crate::GlobalNamespace::ICertificateEncryptionProvider {
     pub fn SignData(
         &mut self,
         data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -44,7 +44,8 @@ impl ICertificateEncryptionProvider {
     }
 }
 #[cfg(feature = "ICertificateEncryptionProvider")]
-impl quest_hook::libil2cpp::ObjectType for ICertificateEncryptionProvider {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ICertificateEncryptionProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

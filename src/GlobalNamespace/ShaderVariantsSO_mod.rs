@@ -96,30 +96,31 @@ for crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShaderVariantsSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _shaderVariants: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant,
     >,
 }
 #[cfg(feature = "ShaderVariantsSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ShaderVariantsSO => ""."ShaderVariantsSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ShaderVariantsSO => ""
+    ."ShaderVariantsSO"
 );
 #[cfg(feature = "ShaderVariantsSO")]
-impl std::ops::Deref for ShaderVariantsSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::ShaderVariantsSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ShaderVariantsSO")]
-impl std::ops::DerefMut for ShaderVariantsSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::ShaderVariantsSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ShaderVariantsSO")]
-impl ShaderVariantsSO {
+impl crate::GlobalNamespace::ShaderVariantsSO {
     #[cfg(feature = "ShaderVariantsSO+ShaderVariant")]
     pub type ShaderVariant = crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant;
     pub fn Init(
@@ -169,7 +170,7 @@ impl ShaderVariantsSO {
     }
 }
 #[cfg(feature = "ShaderVariantsSO")]
-impl quest_hook::libil2cpp::ObjectType for ShaderVariantsSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ShaderVariantsSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

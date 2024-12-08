@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NamedIntListController {
-    __cordl_parent: ListSettingsController,
+    __cordl_parent: crate::GlobalNamespace::ListSettingsController,
     pub _textValuePairs: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::NamedIntListController_TextValuePair,
     >,
@@ -11,23 +11,24 @@ pub struct NamedIntListController {
 }
 #[cfg(feature = "NamedIntListController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NamedIntListController => ""."NamedIntListController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NamedIntListController => ""
+    ."NamedIntListController"
 );
 #[cfg(feature = "NamedIntListController")]
-impl std::ops::Deref for NamedIntListController {
-    type Target = ListSettingsController;
+impl std::ops::Deref for crate::GlobalNamespace::NamedIntListController {
+    type Target = crate::GlobalNamespace::ListSettingsController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NamedIntListController")]
-impl std::ops::DerefMut for NamedIntListController {
+impl std::ops::DerefMut for crate::GlobalNamespace::NamedIntListController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NamedIntListController")]
-impl NamedIntListController {
+impl crate::GlobalNamespace::NamedIntListController {
     #[cfg(feature = "NamedIntListController+TextValuePair")]
     pub type TextValuePair = crate::GlobalNamespace::NamedIntListController_TextValuePair;
     pub fn ApplyValue(
@@ -129,7 +130,8 @@ impl NamedIntListController {
     }
 }
 #[cfg(feature = "NamedIntListController")]
-impl quest_hook::libil2cpp::ObjectType for NamedIntListController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NamedIntListController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

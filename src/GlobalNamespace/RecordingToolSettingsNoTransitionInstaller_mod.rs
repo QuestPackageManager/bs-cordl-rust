@@ -3,29 +3,32 @@
 #[derive(Debug)]
 pub struct RecordingToolSettingsNoTransitionInstaller {
     __cordl_parent: crate::Zenject::NoTransitionInstaller,
-    pub _recordingToolSceneSetupData: *mut RecordingToolSceneSetupData,
-    pub _scenesTransitionSetupData: *mut RecordingToolScenesTransitionSetupDataSO,
+    pub _recordingToolSceneSetupData: *mut crate::GlobalNamespace::RecordingToolSceneSetupData,
+    pub _scenesTransitionSetupData: *mut crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO,
 }
 #[cfg(feature = "RecordingToolSettingsNoTransitionInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RecordingToolSettingsNoTransitionInstaller => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::RecordingToolSettingsNoTransitionInstaller => ""
     ."RecordingToolSettingsNoTransitionInstaller"
 );
 #[cfg(feature = "RecordingToolSettingsNoTransitionInstaller")]
-impl std::ops::Deref for RecordingToolSettingsNoTransitionInstaller {
+impl std::ops::Deref
+for crate::GlobalNamespace::RecordingToolSettingsNoTransitionInstaller {
     type Target = crate::Zenject::NoTransitionInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingToolSettingsNoTransitionInstaller")]
-impl std::ops::DerefMut for RecordingToolSettingsNoTransitionInstaller {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::RecordingToolSettingsNoTransitionInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingToolSettingsNoTransitionInstaller")]
-impl RecordingToolSettingsNoTransitionInstaller {
+impl crate::GlobalNamespace::RecordingToolSettingsNoTransitionInstaller {
     pub fn InstallBindings(
         &mut self,
         container: *mut crate::Zenject::DiContainer,
@@ -56,7 +59,8 @@ impl RecordingToolSettingsNoTransitionInstaller {
     }
 }
 #[cfg(feature = "RecordingToolSettingsNoTransitionInstaller")]
-impl quest_hook::libil2cpp::ObjectType for RecordingToolSettingsNoTransitionInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::RecordingToolSettingsNoTransitionInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

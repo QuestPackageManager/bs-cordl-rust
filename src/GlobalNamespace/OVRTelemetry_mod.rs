@@ -199,34 +199,35 @@ pub struct OVRTelemetry {
 }
 #[cfg(feature = "OVRTelemetry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRTelemetry => ""."OVRTelemetry"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRTelemetry => ""
+    ."OVRTelemetry"
 );
 #[cfg(feature = "OVRTelemetry")]
-impl std::ops::Deref for OVRTelemetry {
+impl std::ops::Deref for crate::GlobalNamespace::OVRTelemetry {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTelemetry")]
-impl std::ops::DerefMut for OVRTelemetry {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRTelemetry {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTelemetry")]
-impl OVRTelemetry {
-    #[cfg(feature = "OVRTelemetry+QPLTelemetryClient")]
-    pub type QPLTelemetryClient = crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient;
+impl crate::GlobalNamespace::OVRTelemetry {
     #[cfg(feature = "OVRTelemetry+MarkerPoint")]
     pub type MarkerPoint = crate::GlobalNamespace::OVRTelemetry_MarkerPoint;
-    #[cfg(feature = "OVRTelemetry+TelemetryClient")]
-    pub type TelemetryClient = crate::GlobalNamespace::OVRTelemetry_TelemetryClient;
     #[cfg(feature = "OVRTelemetry+NullTelemetryClient")]
     pub type NullTelemetryClient = crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient;
+    #[cfg(feature = "OVRTelemetry+QPLTelemetryClient")]
+    pub type QPLTelemetryClient = crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient;
+    #[cfg(feature = "OVRTelemetry+TelemetryClient")]
+    pub type TelemetryClient = crate::GlobalNamespace::OVRTelemetry_TelemetryClient;
 }
 #[cfg(feature = "OVRTelemetry")]
-impl quest_hook::libil2cpp::ObjectType for OVRTelemetry {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

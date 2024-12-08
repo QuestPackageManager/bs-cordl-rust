@@ -42,32 +42,32 @@ impl crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
 #[derive(Debug)]
 pub struct MultiplierValuesRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _scoreController: *mut IScoreController,
-    pub _audioTimeSyncController: *mut AudioTimeSyncController,
+    pub _scoreController: *mut crate::GlobalNamespace::IScoreController,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
     pub _multiplierValues: *mut crate::System::Collections::Generic::List_1<
         crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue,
     >,
 }
 #[cfg(feature = "MultiplierValuesRecorder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplierValuesRecorder => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplierValuesRecorder => ""
     ."MultiplierValuesRecorder"
 );
 #[cfg(feature = "MultiplierValuesRecorder")]
-impl std::ops::Deref for MultiplierValuesRecorder {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplierValuesRecorder {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplierValuesRecorder")]
-impl std::ops::DerefMut for MultiplierValuesRecorder {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplierValuesRecorder {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplierValuesRecorder")]
-impl MultiplierValuesRecorder {
+impl crate::GlobalNamespace::MultiplierValuesRecorder {
     #[cfg(feature = "MultiplierValuesRecorder+MultiplierValue")]
     pub type MultiplierValue = crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue;
     pub fn HandleScoreControllerMultiplierDidChange(
@@ -139,7 +139,8 @@ impl MultiplierValuesRecorder {
     }
 }
 #[cfg(feature = "MultiplierValuesRecorder")]
-impl quest_hook::libil2cpp::ObjectType for MultiplierValuesRecorder {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplierValuesRecorder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

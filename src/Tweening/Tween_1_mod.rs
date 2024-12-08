@@ -59,7 +59,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Tweening::Tween_1<T> {
         toValue: T,
         onUpdate: *mut crate::System::Action_1<T>,
         duration: f32,
-        easeType: EaseType,
+        easeType: crate::GlobalNamespace::EaseType,
         delay: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -85,7 +85,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Tweening::Tween_1<T> {
         toValue: T,
         onUpdate: *mut crate::System::Action_1<T>,
         duration: f32,
-        easeType: EaseType,
+        easeType: crate::GlobalNamespace::EaseType,
         delay: f32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -147,7 +147,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Tweening::Tween_1<T> {
         toValue: T,
         onUpdate: *mut crate::System::Action_1<T>,
         duration: f32,
-        easeType: EaseType,
+        easeType: crate::GlobalNamespace::EaseType,
         delay: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

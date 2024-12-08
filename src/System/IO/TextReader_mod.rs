@@ -24,12 +24,12 @@ impl std::ops::DerefMut for crate::System::IO::TextReader {
 }
 #[cfg(feature = "System+IO+TextReader")]
 impl crate::System::IO::TextReader {
+    #[cfg(feature = "System+IO+TextReader+NullTextReader")]
+    pub type NullTextReader = crate::GlobalNamespace::TextReader_NullTextReader;
     #[cfg(feature = "System+IO+TextReader+SyncTextReader")]
     pub type SyncTextReader = crate::GlobalNamespace::TextReader_SyncTextReader;
     #[cfg(feature = "System+IO+TextReader+__c")]
     pub type __c = crate::System::IO::TextReader___c;
-    #[cfg(feature = "System+IO+TextReader+NullTextReader")]
-    pub type NullTextReader = crate::GlobalNamespace::TextReader_NullTextReader;
     pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -34,23 +34,24 @@ pub struct OVRDebugInfo {
 }
 #[cfg(feature = "OVRDebugInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRDebugInfo => ""."OVRDebugInfo"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRDebugInfo => ""
+    ."OVRDebugInfo"
 );
 #[cfg(feature = "OVRDebugInfo")]
-impl std::ops::Deref for OVRDebugInfo {
+impl std::ops::Deref for crate::GlobalNamespace::OVRDebugInfo {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRDebugInfo")]
-impl std::ops::DerefMut for OVRDebugInfo {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRDebugInfo {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRDebugInfo")]
-impl OVRDebugInfo {
+impl crate::GlobalNamespace::OVRDebugInfo {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -247,7 +248,7 @@ impl OVRDebugInfo {
     }
 }
 #[cfg(feature = "OVRDebugInfo")]
-impl quest_hook::libil2cpp::ObjectType for OVRDebugInfo {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRDebugInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

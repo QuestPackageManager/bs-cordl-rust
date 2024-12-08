@@ -5,30 +5,31 @@ pub struct ImmediateRankUIPanel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _rankText: *mut crate::TMPro::TextMeshProUGUI,
     pub _relativeScoreText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _relativeScoreAndImmediateRankCounter: *mut RelativeScoreAndImmediateRankCounter,
+    pub _relativeScoreAndImmediateRankCounter: *mut crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter,
     pub _stringBuilder: *mut crate::System::Text::StringBuilder,
     pub _prevRelativeScore: f32,
     pub _prevImmediateRank: crate::GlobalNamespace::RankModel_Rank,
 }
 #[cfg(feature = "ImmediateRankUIPanel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ImmediateRankUIPanel => ""."ImmediateRankUIPanel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ImmediateRankUIPanel => ""
+    ."ImmediateRankUIPanel"
 );
 #[cfg(feature = "ImmediateRankUIPanel")]
-impl std::ops::Deref for ImmediateRankUIPanel {
+impl std::ops::Deref for crate::GlobalNamespace::ImmediateRankUIPanel {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ImmediateRankUIPanel")]
-impl std::ops::DerefMut for ImmediateRankUIPanel {
+impl std::ops::DerefMut for crate::GlobalNamespace::ImmediateRankUIPanel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ImmediateRankUIPanel")]
-impl ImmediateRankUIPanel {
+impl crate::GlobalNamespace::ImmediateRankUIPanel {
     pub fn HandleRelativeScoreAndImmediateRankCounterRelativeScoreOrImmediateRankDidChange(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -81,7 +82,7 @@ impl ImmediateRankUIPanel {
     }
 }
 #[cfg(feature = "ImmediateRankUIPanel")]
-impl quest_hook::libil2cpp::ObjectType for ImmediateRankUIPanel {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ImmediateRankUIPanel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

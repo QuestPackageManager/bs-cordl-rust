@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct UIKeyboard {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _keyButtonPrefab: *mut TextMeshProButton,
+    pub _keyButtonPrefab: *mut crate::GlobalNamespace::TextMeshProButton,
     pub textKeyWasPressedEvent: *mut crate::System::Action_1<char>,
     pub deleteButtonWasPressedEvent: *mut crate::System::Action,
     pub okButtonWasPressedEvent: *mut crate::System::Action,
@@ -15,23 +15,23 @@ pub struct UIKeyboard {
 }
 #[cfg(feature = "UIKeyboard")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for UIKeyboard => ""."UIKeyboard"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::UIKeyboard => ""."UIKeyboard"
 );
 #[cfg(feature = "UIKeyboard")]
-impl std::ops::Deref for UIKeyboard {
+impl std::ops::Deref for crate::GlobalNamespace::UIKeyboard {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UIKeyboard")]
-impl std::ops::DerefMut for UIKeyboard {
+impl std::ops::DerefMut for crate::GlobalNamespace::UIKeyboard {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "UIKeyboard")]
-impl UIKeyboard {
+impl crate::GlobalNamespace::UIKeyboard {
     #[cfg(feature = "UIKeyboard+__c__DisplayClass21_0")]
     pub type __c__DisplayClass21_0 = crate::GlobalNamespace::UIKeyboard___c__DisplayClass21_0;
     pub fn Awake(
@@ -213,7 +213,7 @@ impl UIKeyboard {
     }
 }
 #[cfg(feature = "UIKeyboard")]
-impl quest_hook::libil2cpp::ObjectType for UIKeyboard {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UIKeyboard {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

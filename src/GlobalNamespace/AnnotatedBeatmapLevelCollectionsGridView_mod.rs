@@ -3,50 +3,53 @@
 #[derive(Debug)]
 pub struct AnnotatedBeatmapLevelCollectionsGridView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _gridView: *mut GridView,
-    pub _pageControl: *mut PageControl,
-    pub _animator: *mut AnnotatedBeatmapLevelCollectionsGridViewAnimator,
-    pub _cellPrefab: *mut AnnotatedBeatmapLevelCollectionCell,
+    pub _gridView: *mut crate::GlobalNamespace::GridView,
+    pub _pageControl: *mut crate::GlobalNamespace::PageControl,
+    pub _animator: *mut crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator,
+    pub _cellPrefab: *mut crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell,
     pub _cellWidth: f32,
     pub _cellHeight: f32,
     pub _contentWarningLabel: *mut crate::UnityEngine::GameObject,
-    pub _additionalContentModel: *mut IAdditionalContentModel,
-    pub _entitlementModel: *mut IEntitlementModel,
-    pub _beatmapLevelsPromoModel: *mut BeatmapLevelsPromoModel,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
-    pub _playerDataModel: *mut PlayerDataModel,
+    pub _additionalContentModel: *mut crate::GlobalNamespace::IAdditionalContentModel,
+    pub _entitlementModel: *mut crate::GlobalNamespace::IEntitlementModel,
+    pub _beatmapLevelsPromoModel: *mut crate::GlobalNamespace::BeatmapLevelsPromoModel,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
     pub didOpenAnnotatedBeatmapLevelCollectionEvent: *mut crate::System::Action,
     pub didCloseAnnotatedBeatmapLevelCollectionEvent: *mut crate::System::Action,
     pub didSelectAnnotatedBeatmapLevelCollectionEvent: *mut crate::System::Action_1<
-        *mut BeatmapLevelPack,
+        *mut crate::GlobalNamespace::BeatmapLevelPack,
     >,
     pub _isInitialized: bool,
     pub _isHovering: bool,
     pub _annotatedBeatmapLevelCollections: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut BeatmapLevelPack,
+        *mut crate::GlobalNamespace::BeatmapLevelPack,
     >,
     pub _selectedCellIndex: i32,
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AnnotatedBeatmapLevelCollectionsGridView => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView => ""
     ."AnnotatedBeatmapLevelCollectionsGridView"
 );
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridView")]
-impl std::ops::Deref for AnnotatedBeatmapLevelCollectionsGridView {
+impl std::ops::Deref
+for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridView")]
-impl std::ops::DerefMut for AnnotatedBeatmapLevelCollectionsGridView {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridView")]
-impl AnnotatedBeatmapLevelCollectionsGridView {
+impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
     pub fn CancelAsyncOperations(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -59,7 +62,7 @@ impl AnnotatedBeatmapLevelCollectionsGridView {
     }
     pub fn CellForIdx(
         &mut self,
-        gridView: *mut GridView,
+        gridView: *mut crate::GlobalNamespace::GridView,
         idx: i32,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::MonoBehaviour> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -220,7 +223,7 @@ impl AnnotatedBeatmapLevelCollectionsGridView {
     pub fn SetData(
         &mut self,
         annotatedBeatmapLevelCollections: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut BeatmapLevelPack,
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -281,7 +284,9 @@ impl AnnotatedBeatmapLevelCollectionsGridView {
     }
     pub fn add_didSelectAnnotatedBeatmapLevelCollectionEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut BeatmapLevelPack>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -314,7 +319,9 @@ impl AnnotatedBeatmapLevelCollectionsGridView {
     }
     pub fn remove_didSelectAnnotatedBeatmapLevelCollectionEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut BeatmapLevelPack>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -325,7 +332,8 @@ impl AnnotatedBeatmapLevelCollectionsGridView {
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridView")]
-impl quest_hook::libil2cpp::ObjectType for AnnotatedBeatmapLevelCollectionsGridView {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

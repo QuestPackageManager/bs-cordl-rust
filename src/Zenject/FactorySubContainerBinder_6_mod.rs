@@ -83,15 +83,6 @@ impl<
     TParam5,
     TContract,
 > {
-    #[cfg(feature = "Zenject+FactorySubContainerBinder_6+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::Zenject::FactorySubContainerBinder_6___c__DisplayClass4_0<
-        TParam1,
-        TParam2,
-        TParam3,
-        TParam4,
-        TParam5,
-        TContract,
-    >;
     #[cfg(feature = "Zenject+FactorySubContainerBinder_6+__c__DisplayClass1_0")]
     pub type __c__DisplayClass1_0 = crate::Zenject::FactorySubContainerBinder_6___c__DisplayClass1_0<
         TParam1,
@@ -112,6 +103,15 @@ impl<
     >;
     #[cfg(feature = "Zenject+FactorySubContainerBinder_6+__c__DisplayClass3_0")]
     pub type __c__DisplayClass3_0 = crate::Zenject::FactorySubContainerBinder_6___c__DisplayClass3_0<
+        TParam1,
+        TParam2,
+        TParam3,
+        TParam4,
+        TParam5,
+        TContract,
+    >;
+    #[cfg(feature = "Zenject+FactorySubContainerBinder_6+__c__DisplayClass4_0")]
+    pub type __c__DisplayClass4_0 = crate::Zenject::FactorySubContainerBinder_6___c__DisplayClass4_0<
         TParam1,
         TParam2,
         TParam3,

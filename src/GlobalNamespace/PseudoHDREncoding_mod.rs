@@ -6,27 +6,28 @@ pub struct PseudoHDREncoding {
 }
 #[cfg(feature = "PseudoHDREncoding")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PseudoHDREncoding => ""."PseudoHDREncoding"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PseudoHDREncoding => ""
+    ."PseudoHDREncoding"
 );
 #[cfg(feature = "PseudoHDREncoding")]
-impl std::ops::Deref for PseudoHDREncoding {
+impl std::ops::Deref for crate::GlobalNamespace::PseudoHDREncoding {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PseudoHDREncoding")]
-impl std::ops::DerefMut for PseudoHDREncoding {
+impl std::ops::DerefMut for crate::GlobalNamespace::PseudoHDREncoding {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PseudoHDREncoding")]
-impl PseudoHDREncoding {
+impl crate::GlobalNamespace::PseudoHDREncoding {
     pub const kPseudoHDREncodingShaderName: &'static str = "Hidden/PseudoHDREncoding";
 }
 #[cfg(feature = "PseudoHDREncoding")]
-impl quest_hook::libil2cpp::ObjectType for PseudoHDREncoding {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PseudoHDREncoding {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -140,10 +140,10 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Controls::DpadContr
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl")]
 impl crate::UnityEngine::InputSystem::Controls::DpadControl {
-    #[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl+DpadAxisControl")]
-    pub type DpadAxisControl = crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl;
     #[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl+ButtonBits")]
     pub type ButtonBits = crate::UnityEngine::InputSystem::Controls::DpadControl_ButtonBits;
+    #[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl+DpadAxisControl")]
+    pub type DpadAxisControl = crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl;
     pub fn FinishSetup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

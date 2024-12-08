@@ -172,12 +172,12 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::Interpreter::Light
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda")]
 impl crate::System::Linq::Expressions::Interpreter::LightLambda {
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
+    pub type DebugViewPrinter = crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+LightLambda+__c__DisplayClass74_0"
     )]
     pub type __c__DisplayClass74_0 = crate::System::Linq::Expressions::Interpreter::LightLambda___c__DisplayClass74_0;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
-    pub type DebugViewPrinter = crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter;
     pub fn CreateCustomDelegate(
         &mut self,
         delegateType: *mut crate::System::Type,

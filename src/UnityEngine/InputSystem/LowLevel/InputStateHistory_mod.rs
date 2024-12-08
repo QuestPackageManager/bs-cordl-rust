@@ -209,10 +209,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
     pub const kDefaultHistorySize: i32 = 128i32;
     #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
     pub type Enumerator = crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator;
-    #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader")]
-    pub type RecordHeader = crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader;
     #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
     pub type Record = crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record;
+    #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader")]
+    pub type RecordHeader = crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader;
     pub fn AddRecord(
         &mut self,
         record: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
@@ -1032,13 +1032,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
     pub const kSizeWithControlIndex: i32 = 16i32;
     pub const kSizeWithoutControlIndex: i32 = 12i32;
     #[cfg(
-        feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
-    )]
-    pub type _m_StateWithoutControlIndex_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::RecordHeader__m_StateWithoutControlIndex_e__FixedBuffer;
-    #[cfg(
         feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
     )]
     pub type _m_StateWithControlIndex_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::RecordHeader__m_StateWithControlIndex_e__FixedBuffer;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
+    )]
+    pub type _m_StateWithoutControlIndex_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::RecordHeader__m_StateWithoutControlIndex_e__FixedBuffer;
     pub fn get_statePtrWithControlIndex(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {

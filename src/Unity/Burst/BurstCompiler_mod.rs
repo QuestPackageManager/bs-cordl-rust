@@ -24,16 +24,16 @@ impl std::ops::DerefMut for crate::Unity::Burst::BurstCompiler {
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler")]
 impl crate::Unity::Burst::BurstCompiler {
-    #[cfg(feature = "Unity+Burst+BurstCompiler+__c")]
-    pub type __c = crate::Unity::Burst::BurstCompiler___c;
-    #[cfg(feature = "Unity+Burst+BurstCompiler+FakeDelegate")]
-    pub type FakeDelegate = crate::Unity::Burst::BurstCompiler_FakeDelegate;
-    #[cfg(feature = "Unity+Burst+BurstCompiler+CommandBuilder")]
-    pub type CommandBuilder = crate::Unity::Burst::BurstCompiler_CommandBuilder;
-    #[cfg(feature = "Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]
-    pub type StaticTypeReinitAttribute = crate::Unity::Burst::BurstCompiler_StaticTypeReinitAttribute;
     #[cfg(feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper")]
     pub type BurstCompilerHelper = crate::Unity::Burst::BurstCompiler_BurstCompilerHelper;
+    #[cfg(feature = "Unity+Burst+BurstCompiler+CommandBuilder")]
+    pub type CommandBuilder = crate::Unity::Burst::BurstCompiler_CommandBuilder;
+    #[cfg(feature = "Unity+Burst+BurstCompiler+FakeDelegate")]
+    pub type FakeDelegate = crate::Unity::Burst::BurstCompiler_FakeDelegate;
+    #[cfg(feature = "Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]
+    pub type StaticTypeReinitAttribute = crate::Unity::Burst::BurstCompiler_StaticTypeReinitAttribute;
+    #[cfg(feature = "Unity+Burst+BurstCompiler+__c")]
+    pub type __c = crate::Unity::Burst::BurstCompiler___c;
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstCompiler {

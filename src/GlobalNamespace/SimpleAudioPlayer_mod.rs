@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleAudioPlayer {
-    __cordl_parent: AudioPlayerBase,
+    __cordl_parent: crate::GlobalNamespace::AudioPlayerBase,
     pub _audioClip: *mut crate::UnityEngine::AudioClip,
     pub _audioSource: *mut crate::UnityEngine::AudioSource,
     pub _targetVolume: f32,
@@ -12,23 +12,24 @@ pub struct SimpleAudioPlayer {
 }
 #[cfg(feature = "SimpleAudioPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SimpleAudioPlayer => ""."SimpleAudioPlayer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SimpleAudioPlayer => ""
+    ."SimpleAudioPlayer"
 );
 #[cfg(feature = "SimpleAudioPlayer")]
-impl std::ops::Deref for SimpleAudioPlayer {
-    type Target = AudioPlayerBase;
+impl std::ops::Deref for crate::GlobalNamespace::SimpleAudioPlayer {
+    type Target = crate::GlobalNamespace::AudioPlayerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SimpleAudioPlayer")]
-impl std::ops::DerefMut for SimpleAudioPlayer {
+impl std::ops::DerefMut for crate::GlobalNamespace::SimpleAudioPlayer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SimpleAudioPlayer")]
-impl SimpleAudioPlayer {
+impl crate::GlobalNamespace::SimpleAudioPlayer {
     pub fn FadeIn(
         &mut self,
         duration: f32,
@@ -120,7 +121,7 @@ impl SimpleAudioPlayer {
     }
 }
 #[cfg(feature = "SimpleAudioPlayer")]
-impl quest_hook::libil2cpp::ObjectType for SimpleAudioPlayer {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SimpleAudioPlayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

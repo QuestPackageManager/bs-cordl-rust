@@ -33,20 +33,20 @@ for crate::Zenject::FactorySubContainerBinderBase_1<TContract> {
 impl<
     TContract: quest_hook::libil2cpp::Type,
 > crate::Zenject::FactorySubContainerBinderBase_1<TContract> {
-    #[cfg(feature = "Zenject+FactorySubContainerBinderBase_1+__c__DisplayClass29_0")]
-    pub type __c__DisplayClass29_0 = crate::Zenject::FactorySubContainerBinderBase_1___c__DisplayClass29_0<
-        TContract,
-    >;
-    #[cfg(feature = "Zenject+FactorySubContainerBinderBase_1+__c__DisplayClass27_0")]
-    pub type __c__DisplayClass27_0 = crate::Zenject::FactorySubContainerBinderBase_1___c__DisplayClass27_0<
-        TContract,
-    >;
     #[cfg(feature = "Zenject+FactorySubContainerBinderBase_1+__c__DisplayClass23_0")]
     pub type __c__DisplayClass23_0 = crate::Zenject::FactorySubContainerBinderBase_1___c__DisplayClass23_0<
         TContract,
     >;
     #[cfg(feature = "Zenject+FactorySubContainerBinderBase_1+__c__DisplayClass25_0")]
     pub type __c__DisplayClass25_0 = crate::Zenject::FactorySubContainerBinderBase_1___c__DisplayClass25_0<
+        TContract,
+    >;
+    #[cfg(feature = "Zenject+FactorySubContainerBinderBase_1+__c__DisplayClass27_0")]
+    pub type __c__DisplayClass27_0 = crate::Zenject::FactorySubContainerBinderBase_1___c__DisplayClass27_0<
+        TContract,
+    >;
+    #[cfg(feature = "Zenject+FactorySubContainerBinderBase_1+__c__DisplayClass29_0")]
+    pub type __c__DisplayClass29_0 = crate::Zenject::FactorySubContainerBinderBase_1___c__DisplayClass29_0<
         TContract,
     >;
     pub fn ByInstaller_0<TInstaller>(

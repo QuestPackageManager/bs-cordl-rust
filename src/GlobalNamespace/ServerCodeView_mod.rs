@@ -11,23 +11,24 @@ pub struct ServerCodeView {
 }
 #[cfg(feature = "ServerCodeView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ServerCodeView => ""."ServerCodeView"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ServerCodeView => ""
+    ."ServerCodeView"
 );
 #[cfg(feature = "ServerCodeView")]
-impl std::ops::Deref for ServerCodeView {
+impl std::ops::Deref for crate::GlobalNamespace::ServerCodeView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ServerCodeView")]
-impl std::ops::DerefMut for ServerCodeView {
+impl std::ops::DerefMut for crate::GlobalNamespace::ServerCodeView {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ServerCodeView")]
-impl ServerCodeView {
+impl crate::GlobalNamespace::ServerCodeView {
     pub fn HandleShowServerCodeButtonPressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -99,7 +100,7 @@ impl ServerCodeView {
     }
 }
 #[cfg(feature = "ServerCodeView")]
-impl quest_hook::libil2cpp::ObjectType for ServerCodeView {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ServerCodeView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

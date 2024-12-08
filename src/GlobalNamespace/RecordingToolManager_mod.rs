@@ -3,56 +3,57 @@
 #[derive(Debug)]
 pub struct RecordingToolManager {
     __cordl_parent: crate::System::Object,
-    pub _gameplayLevelSceneTransitionEvents: *mut GameplayLevelSceneTransitionEvents,
-    pub _gameScenesManager: *mut GameScenesManager,
+    pub _gameplayLevelSceneTransitionEvents: *mut crate::GlobalNamespace::GameplayLevelSceneTransitionEvents,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
     pub _recordingToolEnabled: bool,
     pub _performanceRecordingEnabled: bool,
     pub _configJsonData: *mut crate::System::String,
-    pub _recordingToolSettings: *mut RecordingToolSettings,
-    pub _configurationProcessor: *mut RecordingToolConfigurationProcessor,
+    pub _recordingToolSettings: *mut crate::GlobalNamespace::RecordingToolSettings,
+    pub _configurationProcessor: *mut crate::GlobalNamespace::RecordingToolConfigurationProcessor,
     pub _container: *mut crate::Zenject::DiContainer,
-    pub _logger: *mut IBeatSaberLogger,
-    pub _posesSerializer: *mut IPosesSerializer,
+    pub _logger: *mut crate::GlobalNamespace::IBeatSaberLogger,
+    pub _posesSerializer: *mut crate::GlobalNamespace::IPosesSerializer,
     pub _currentRecordingIndex: i32,
 }
 #[cfg(feature = "RecordingToolManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RecordingToolManager => ""."RecordingToolManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RecordingToolManager => ""
+    ."RecordingToolManager"
 );
 #[cfg(feature = "RecordingToolManager")]
-impl std::ops::Deref for RecordingToolManager {
+impl std::ops::Deref for crate::GlobalNamespace::RecordingToolManager {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingToolManager")]
-impl std::ops::DerefMut for RecordingToolManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::RecordingToolManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingToolManager")]
-impl RecordingToolManager {
+impl crate::GlobalNamespace::RecordingToolManager {
     pub const kRecordingToolId: &'static str = "RecordingTool";
+    #[cfg(feature = "RecordingToolManager+SetupData")]
+    pub type SetupData = crate::GlobalNamespace::RecordingToolManager_SetupData;
     #[cfg(
         feature = "RecordingToolManager+_HandleGameplayLevelSceneTransitionEventsAnyGameplayLevelDidFinish_d__28"
     )]
     pub type _HandleGameplayLevelSceneTransitionEventsAnyGameplayLevelDidFinish_d__28 = crate::GlobalNamespace::RecordingToolManager__HandleGameplayLevelSceneTransitionEventsAnyGameplayLevelDidFinish_d__28;
-    #[cfg(feature = "RecordingToolManager+SetupData")]
-    pub type SetupData = crate::GlobalNamespace::RecordingToolManager_SetupData;
     #[cfg(feature = "RecordingToolManager+__c")]
     pub type __c = crate::GlobalNamespace::RecordingToolManager___c;
     pub fn BindNextRecording(
         &mut self,
         container: *mut crate::Zenject::DiContainer,
-        recordingSettings: *mut RecordingSettings,
+        recordingSettings: *mut crate::GlobalNamespace::RecordingSettings,
         quitAppAfterRun: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut MenuDestination> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::MenuDestination> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MenuDestination = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MenuDestination = __cordl_object
             .invoke(
                 "BindNextRecording",
                 (container, recordingSettings, quitAppAfterRun),
@@ -93,8 +94,8 @@ impl RecordingToolManager {
         Ok(__cordl_ret)
     }
     pub fn New(
-        processor: *mut RecordingToolConfigurationProcessor,
-        beatmapCharacteristicCollection: *mut BeatmapCharacteristicCollection,
+        processor: *mut crate::GlobalNamespace::RecordingToolConfigurationProcessor,
+        beatmapCharacteristicCollection: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
         diContainer: *mut crate::Zenject::DiContainer,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -118,8 +119,8 @@ impl RecordingToolManager {
     }
     pub fn _ctor(
         &mut self,
-        processor: *mut RecordingToolConfigurationProcessor,
-        beatmapCharacteristicCollection: *mut BeatmapCharacteristicCollection,
+        processor: *mut crate::GlobalNamespace::RecordingToolConfigurationProcessor,
+        beatmapCharacteristicCollection: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
         diContainer: *mut crate::Zenject::DiContainer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -151,11 +152,11 @@ impl RecordingToolManager {
     }
     pub fn get_posesSerializer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IPosesSerializer> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IPosesSerializer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IPosesSerializer = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IPosesSerializer = __cordl_object
             .invoke("get_posesSerializer", ())?;
         Ok(__cordl_ret)
     }
@@ -168,11 +169,13 @@ impl RecordingToolManager {
     }
     pub fn get_recordingToolSettings(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut RecordingToolSettings> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::RecordingToolSettings,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut RecordingToolSettings = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::RecordingToolSettings = __cordl_object
             .invoke("get_recordingToolSettings", ())?;
         Ok(__cordl_ret)
     }
@@ -185,7 +188,7 @@ impl RecordingToolManager {
     }
 }
 #[cfg(feature = "RecordingToolManager")]
-impl quest_hook::libil2cpp::ObjectType for RecordingToolManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RecordingToolManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

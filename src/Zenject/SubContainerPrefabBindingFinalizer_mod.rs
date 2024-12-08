@@ -30,14 +30,14 @@ impl std::ops::DerefMut for crate::Zenject::SubContainerPrefabBindingFinalizer {
 }
 #[cfg(feature = "Zenject+SubContainerPrefabBindingFinalizer")]
 impl crate::Zenject::SubContainerPrefabBindingFinalizer {
+    #[cfg(feature = "Zenject+SubContainerPrefabBindingFinalizer+__c__DisplayClass5_0")]
+    pub type __c__DisplayClass5_0 = crate::Zenject::SubContainerPrefabBindingFinalizer___c__DisplayClass5_0;
+    #[cfg(feature = "Zenject+SubContainerPrefabBindingFinalizer+__c__DisplayClass5_1")]
+    pub type __c__DisplayClass5_1 = crate::Zenject::SubContainerPrefabBindingFinalizer___c__DisplayClass5_1;
     #[cfg(feature = "Zenject+SubContainerPrefabBindingFinalizer+__c__DisplayClass6_0")]
     pub type __c__DisplayClass6_0 = crate::Zenject::SubContainerPrefabBindingFinalizer___c__DisplayClass6_0;
     #[cfg(feature = "Zenject+SubContainerPrefabBindingFinalizer+__c__DisplayClass6_1")]
     pub type __c__DisplayClass6_1 = crate::Zenject::SubContainerPrefabBindingFinalizer___c__DisplayClass6_1;
-    #[cfg(feature = "Zenject+SubContainerPrefabBindingFinalizer+__c__DisplayClass5_1")]
-    pub type __c__DisplayClass5_1 = crate::Zenject::SubContainerPrefabBindingFinalizer___c__DisplayClass5_1;
-    #[cfg(feature = "Zenject+SubContainerPrefabBindingFinalizer+__c__DisplayClass5_0")]
-    pub type __c__DisplayClass5_0 = crate::Zenject::SubContainerPrefabBindingFinalizer___c__DisplayClass5_0;
     pub fn FinalizeBindingConcrete(
         &mut self,
         container: *mut crate::Zenject::DiContainer,

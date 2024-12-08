@@ -6,23 +6,23 @@ pub struct OVRProfile {
 }
 #[cfg(feature = "OVRProfile")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRProfile => ""."OVRProfile"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRProfile => ""."OVRProfile"
 );
 #[cfg(feature = "OVRProfile")]
-impl std::ops::Deref for OVRProfile {
+impl std::ops::Deref for crate::GlobalNamespace::OVRProfile {
     type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRProfile")]
-impl std::ops::DerefMut for OVRProfile {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRProfile {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRProfile")]
-impl OVRProfile {
+impl crate::GlobalNamespace::OVRProfile {
     #[cfg(feature = "OVRProfile+State")]
     pub type State = crate::GlobalNamespace::OVRProfile_State;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -112,7 +112,7 @@ impl OVRProfile {
     }
 }
 #[cfg(feature = "OVRProfile")]
-impl quest_hook::libil2cpp::ObjectType for OVRProfile {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRProfile {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

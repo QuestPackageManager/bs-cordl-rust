@@ -6,33 +6,33 @@ pub struct StandardLevelDetailView {
     pub _actionButton: *mut crate::UnityEngine::UI::Button,
     pub _actionButtonText: *mut crate::TMPro::TextMeshProUGUI,
     pub _practiceButton: *mut crate::UnityEngine::UI::Button,
-    pub _levelBar: *mut LevelBar,
-    pub _levelParamsPanel: *mut LevelParamsPanel,
+    pub _levelBar: *mut crate::GlobalNamespace::LevelBar,
+    pub _levelParamsPanel: *mut crate::GlobalNamespace::LevelParamsPanel,
     pub _levelParamsPanelCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
-    pub _beatmapDifficultySegmentedControlController: *mut BeatmapDifficultySegmentedControlController,
-    pub _beatmapCharacteristicSegmentedControlController: *mut BeatmapCharacteristicSegmentedControlController,
+    pub _beatmapDifficultySegmentedControlController: *mut crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
+    pub _beatmapCharacteristicSegmentedControlController: *mut crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
     pub _favoriteToggle: *mut crate::UnityEngine::UI::Toggle,
     pub _buttonsWrapper: *mut crate::UnityEngine::GameObject,
-    pub _loadingControl: *mut LoadingControl,
+    pub _loadingControl: *mut crate::GlobalNamespace::LoadingControl,
     pub _beatmapLevelVersionsWrapper: *mut crate::UnityEngine::GameObject,
     pub _beatmapLevelVersionText: *mut crate::TMPro::TextMeshProUGUI,
     pub _beatmapLevelDataVersionText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _beatmapLevelsModel: *mut BeatmapLevelsModel,
-    pub _beatmapDataLoader: *mut BeatmapDataLoader,
-    pub _audioClipAsyncLoader: *mut AudioClipAsyncLoader,
+    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
+    pub _beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
+    pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
     pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
     pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
-    pub _beatmapLevelsEntitlementModel: *mut BeatmapLevelsEntitlementModel,
+    pub _beatmapLevelsEntitlementModel: *mut crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
     pub didChangeDifficultyBeatmapEvent: *mut crate::System::Action_1<
-        *mut StandardLevelDetailView,
+        *mut crate::GlobalNamespace::StandardLevelDetailView,
     >,
     pub didFavoriteToggleChangeEvent: *mut crate::System::Action_1<
         *mut crate::UnityEngine::UI::Toggle,
     >,
-    pub _beatmapKey_k__BackingField: BeatmapKey,
-    pub _beatmapLevel: *mut BeatmapLevel,
-    pub _allowedBeatmapDifficultyMask: BeatmapDifficultyMask,
-    pub _playerData: *mut PlayerData,
+    pub _beatmapKey_k__BackingField: crate::GlobalNamespace::BeatmapKey,
+    pub _beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub _allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
+    pub _playerData: *mut crate::GlobalNamespace::PlayerData,
     pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
     pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
     pub _levelParamsPanelCanvasGroupTween: *mut crate::Tweening::Tween,
@@ -40,33 +40,34 @@ pub struct StandardLevelDetailView {
 }
 #[cfg(feature = "StandardLevelDetailView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StandardLevelDetailView => ""."StandardLevelDetailView"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::StandardLevelDetailView => ""
+    ."StandardLevelDetailView"
 );
 #[cfg(feature = "StandardLevelDetailView")]
-impl std::ops::Deref for StandardLevelDetailView {
+impl std::ops::Deref for crate::GlobalNamespace::StandardLevelDetailView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelDetailView")]
-impl std::ops::DerefMut for StandardLevelDetailView {
+impl std::ops::DerefMut for crate::GlobalNamespace::StandardLevelDetailView {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelDetailView")]
-impl StandardLevelDetailView {
-    #[cfg(feature = "StandardLevelDetailView+__c__DisplayClass45_0")]
-    pub type __c__DisplayClass45_0 = crate::GlobalNamespace::StandardLevelDetailView___c__DisplayClass45_0;
+impl crate::GlobalNamespace::StandardLevelDetailView {
     #[cfg(feature = "StandardLevelDetailView+_CalculateAndSetContent_d__61")]
     pub type _CalculateAndSetContent_d__61 = crate::GlobalNamespace::StandardLevelDetailView__CalculateAndSetContent_d__61;
-    #[cfg(feature = "StandardLevelDetailView+__c")]
-    pub type __c = crate::GlobalNamespace::StandardLevelDetailView___c;
     #[cfg(feature = "StandardLevelDetailView+_CheckIfBeatmapLevelDataExists_d__57")]
     pub type _CheckIfBeatmapLevelDataExists_d__57 = crate::GlobalNamespace::StandardLevelDetailView__CheckIfBeatmapLevelDataExists_d__57;
     #[cfg(feature = "StandardLevelDetailView+_SetBeatmapLevelVersions_d__62")]
     pub type _SetBeatmapLevelVersions_d__62 = crate::GlobalNamespace::StandardLevelDetailView__SetBeatmapLevelVersions_d__62;
+    #[cfg(feature = "StandardLevelDetailView+__c")]
+    pub type __c = crate::GlobalNamespace::StandardLevelDetailView___c;
+    #[cfg(feature = "StandardLevelDetailView+__c__DisplayClass45_0")]
+    pub type __c__DisplayClass45_0 = crate::GlobalNamespace::StandardLevelDetailView___c__DisplayClass45_0;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -117,17 +118,20 @@ impl StandardLevelDetailView {
             .invoke("ClearContent", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CreateBeatmapKey(&mut self) -> quest_hook::libil2cpp::Result<BeatmapKey> {
+    pub fn CreateBeatmapKey(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapKey> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapKey = __cordl_object.invoke("CreateBeatmapKey", ())?;
+        let __cordl_ret: crate::GlobalNamespace::BeatmapKey = __cordl_object
+            .invoke("CreateBeatmapKey", ())?;
         Ok(__cordl_ret)
     }
     pub fn HandleBeatmapCharacteristicSegmentedControlControllerDidSelectBeatmapCharacteristic(
         &mut self,
-        controller: *mut BeatmapCharacteristicSegmentedControlController,
-        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
+        controller: *mut crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
+        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -141,8 +145,8 @@ impl StandardLevelDetailView {
     }
     pub fn HandleBeatmapDifficultySegmentedControlControllerDidSelectDifficulty(
         &mut self,
-        controller: *mut BeatmapDifficultySegmentedControlController,
-        difficulty: BeatmapDifficulty,
+        controller: *mut crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -257,14 +261,14 @@ impl StandardLevelDetailView {
     }
     pub fn SetContent_BeatmapLevel_BeatmapDifficultyMask_HashSet_1_BeatmapDifficulty_BeatmapCharacteristicSO_PlayerData0(
         &mut self,
-        level: *mut BeatmapLevel,
-        allowedBeatmapDifficultyMask: BeatmapDifficultyMask,
+        level: *mut crate::GlobalNamespace::BeatmapLevel,
+        allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
         notAllowedCharacteristics: *mut crate::System::Collections::Generic::HashSet_1<
-            *mut BeatmapCharacteristicSO,
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         >,
-        defaultDifficulty: BeatmapDifficulty,
-        defaultBeatmapCharacteristic: *mut BeatmapCharacteristicSO,
-        playerData: *mut PlayerData,
+        defaultDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
+        defaultBeatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        playerData: *mut crate::GlobalNamespace::PlayerData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -339,7 +343,9 @@ impl StandardLevelDetailView {
     }
     pub fn add_didChangeDifficultyBeatmapEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut StandardLevelDetailView>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::StandardLevelDetailView,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -369,11 +375,14 @@ impl StandardLevelDetailView {
             .invoke("get_actionButton", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_beatmapKey(&mut self) -> quest_hook::libil2cpp::Result<BeatmapKey> {
+    pub fn get_beatmapKey(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapKey> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapKey = __cordl_object.invoke("get_beatmapKey", ())?;
+        let __cordl_ret: crate::GlobalNamespace::BeatmapKey = __cordl_object
+            .invoke("get_beatmapKey", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_practiceButton(
@@ -388,7 +397,9 @@ impl StandardLevelDetailView {
     }
     pub fn remove_didChangeDifficultyBeatmapEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut StandardLevelDetailView>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::StandardLevelDetailView,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -421,7 +432,7 @@ impl StandardLevelDetailView {
     }
     pub fn set_beatmapKey(
         &mut self,
-        value: BeatmapKey,
+        value: crate::GlobalNamespace::BeatmapKey,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -443,7 +454,8 @@ impl StandardLevelDetailView {
     }
 }
 #[cfg(feature = "StandardLevelDetailView")]
-impl quest_hook::libil2cpp::ObjectType for StandardLevelDetailView {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StandardLevelDetailView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

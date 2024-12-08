@@ -6,24 +6,24 @@ pub struct IConstructorStringGenerator {
 }
 #[cfg(feature = "IConstructorStringGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IConstructorStringGenerator => ""
-    ."IConstructorStringGenerator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IConstructorStringGenerator =>
+    ""."IConstructorStringGenerator"
 );
 #[cfg(feature = "IConstructorStringGenerator")]
-impl std::ops::Deref for IConstructorStringGenerator {
+impl std::ops::Deref for crate::GlobalNamespace::IConstructorStringGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IConstructorStringGenerator")]
-impl std::ops::DerefMut for IConstructorStringGenerator {
+impl std::ops::DerefMut for crate::GlobalNamespace::IConstructorStringGenerator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IConstructorStringGenerator")]
-impl IConstructorStringGenerator {
+impl crate::GlobalNamespace::IConstructorStringGenerator {
     pub fn ToConstructorString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -41,7 +41,8 @@ impl IConstructorStringGenerator {
     }
 }
 #[cfg(feature = "IConstructorStringGenerator")]
-impl quest_hook::libil2cpp::ObjectType for IConstructorStringGenerator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IConstructorStringGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

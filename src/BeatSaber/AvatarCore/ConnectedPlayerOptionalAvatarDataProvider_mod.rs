@@ -6,8 +6,8 @@ pub struct ConnectedPlayerOptionalAvatarDataProvider {
     pub dataDidChangeEvent: *mut crate::System::Action_1<
         crate::BeatSaber::AvatarCore::OptionalAvatarData,
     >,
-    pub _connectedPlayer: *mut IConnectedPlayer,
-    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
+    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
     pub _optionalAvatarDataSyncHandler: *mut crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerOptionalAvatarDataProvider")]
@@ -45,7 +45,7 @@ impl crate::BeatSaber::AvatarCore::ConnectedPlayerOptionalAvatarDataProvider {
     }
     pub fn HandleOptionalAvatarDataSyncHandlerDidChangeOptionalAvatarDataSync(
         &mut self,
-        connectedPlayer: *mut IConnectedPlayer,
+        connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
         optionalAvatarData: crate::BeatSaber::AvatarCore::OptionalAvatarData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -59,8 +59,8 @@ impl crate::BeatSaber::AvatarCore::ConnectedPlayerOptionalAvatarDataProvider {
         Ok(__cordl_ret)
     }
     pub fn New(
-        connectedPlayer: *mut IConnectedPlayer,
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
+        connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
         optionalAvatarDataSyncHandler: *mut crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -89,8 +89,8 @@ impl crate::BeatSaber::AvatarCore::ConnectedPlayerOptionalAvatarDataProvider {
     }
     pub fn _ctor(
         &mut self,
-        connectedPlayer: *mut IConnectedPlayer,
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
+        connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
         optionalAvatarDataSyncHandler: *mut crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -6,10 +6,10 @@ pub struct SelectAvatarSystemViewController {
     pub _tableView: *mut crate::HMUI::TableView,
     pub _continueButton: *mut crate::UnityEngine::UI::Button,
     pub _hoverHint: *mut crate::HMUI::HoverHint,
-    pub _cellPrefab: *mut SelectAvatarSystemCell,
+    pub _cellPrefab: *mut crate::GlobalNamespace::SelectAvatarSystemCell,
     pub _container: *mut crate::Zenject::DiContainer,
     pub _avatarSystemCollection: *mut crate::BeatSaber::AvatarCore::AvatarSystemCollection,
-    pub _playerDataModel: *mut PlayerDataModel,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
     pub didSetAvatarSystemPreferredEvent: *mut crate::System::Action_1<
         *mut crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
     >,
@@ -27,24 +27,25 @@ pub struct SelectAvatarSystemViewController {
 }
 #[cfg(feature = "SelectAvatarSystemViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SelectAvatarSystemViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SelectAvatarSystemViewController => ""
     ."SelectAvatarSystemViewController"
 );
 #[cfg(feature = "SelectAvatarSystemViewController")]
-impl std::ops::Deref for SelectAvatarSystemViewController {
+impl std::ops::Deref for crate::GlobalNamespace::SelectAvatarSystemViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SelectAvatarSystemViewController")]
-impl std::ops::DerefMut for SelectAvatarSystemViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::SelectAvatarSystemViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SelectAvatarSystemViewController")]
-impl SelectAvatarSystemViewController {
+impl crate::GlobalNamespace::SelectAvatarSystemViewController {
     pub const kCellIdentifier: &'static str = "cellPrefab";
     #[cfg(
         feature = "SelectAvatarSystemViewController+_ReloadContinueButtonInteractability_d__31"
@@ -341,7 +342,8 @@ impl SelectAvatarSystemViewController {
     }
 }
 #[cfg(feature = "SelectAvatarSystemViewController")]
-impl quest_hook::libil2cpp::ObjectType for SelectAvatarSystemViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SelectAvatarSystemViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

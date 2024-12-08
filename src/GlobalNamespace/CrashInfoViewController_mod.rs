@@ -3,28 +3,29 @@
 #[derive(Debug)]
 pub struct CrashInfoViewController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _crashManager: *mut CrashManagerSO,
+    pub _crashManager: *mut crate::GlobalNamespace::CrashManagerSO,
     pub _text: *mut crate::TMPro::TextMeshProUGUI,
 }
 #[cfg(feature = "CrashInfoViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CrashInfoViewController => ""."CrashInfoViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CrashInfoViewController => ""
+    ."CrashInfoViewController"
 );
 #[cfg(feature = "CrashInfoViewController")]
-impl std::ops::Deref for CrashInfoViewController {
+impl std::ops::Deref for crate::GlobalNamespace::CrashInfoViewController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CrashInfoViewController")]
-impl std::ops::DerefMut for CrashInfoViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::CrashInfoViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CrashInfoViewController")]
-impl CrashInfoViewController {
+impl crate::GlobalNamespace::CrashInfoViewController {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -54,7 +55,8 @@ impl CrashInfoViewController {
     }
 }
 #[cfg(feature = "CrashInfoViewController")]
-impl quest_hook::libil2cpp::ObjectType for CrashInfoViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::CrashInfoViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

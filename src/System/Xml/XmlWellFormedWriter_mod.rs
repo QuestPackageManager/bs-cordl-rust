@@ -86,12 +86,12 @@ impl std::ops::DerefMut for crate::System::Xml::XmlWellFormedWriter_AttributeVal
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache")]
 impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
+    #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache+BufferChunk")]
+    pub type BufferChunk = crate::System::Xml::AttributeValueCache_BufferChunk;
     #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache+Item")]
     pub type Item = crate::System::Xml::AttributeValueCache_Item;
     #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache+ItemType")]
     pub type ItemType = crate::System::Xml::AttributeValueCache_ItemType;
-    #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache+BufferChunk")]
-    pub type BufferChunk = crate::System::Xml::AttributeValueCache_BufferChunk;
     pub fn AddItem(
         &mut self,
         _cordl_type: crate::System::Xml::AttributeValueCache_ItemType,
@@ -820,24 +820,24 @@ impl std::ops::DerefMut for crate::System::Xml::XmlWellFormedWriter {
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter")]
 impl crate::System::Xml::XmlWellFormedWriter {
-    #[cfg(feature = "System+Xml+XmlWellFormedWriter+State")]
-    pub type State = crate::System::Xml::XmlWellFormedWriter_State;
     #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttrName")]
     pub type AttrName = crate::System::Xml::XmlWellFormedWriter_AttrName;
-    #[cfg(feature = "System+Xml+XmlWellFormedWriter+NamespaceResolverProxy")]
-    pub type NamespaceResolverProxy = crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy;
-    #[cfg(feature = "System+Xml+XmlWellFormedWriter+Token")]
-    pub type Token = crate::System::Xml::XmlWellFormedWriter_Token;
+    #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache")]
+    pub type AttributeValueCache = crate::System::Xml::XmlWellFormedWriter_AttributeValueCache;
     #[cfg(feature = "System+Xml+XmlWellFormedWriter+ElementScope")]
     pub type ElementScope = crate::System::Xml::XmlWellFormedWriter_ElementScope;
-    #[cfg(feature = "System+Xml+XmlWellFormedWriter+SpecialAttribute")]
-    pub type SpecialAttribute = crate::System::Xml::XmlWellFormedWriter_SpecialAttribute;
     #[cfg(feature = "System+Xml+XmlWellFormedWriter+Namespace")]
     pub type Namespace = crate::System::Xml::XmlWellFormedWriter_Namespace;
     #[cfg(feature = "System+Xml+XmlWellFormedWriter+NamespaceKind")]
     pub type NamespaceKind = crate::System::Xml::XmlWellFormedWriter_NamespaceKind;
-    #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache")]
-    pub type AttributeValueCache = crate::System::Xml::XmlWellFormedWriter_AttributeValueCache;
+    #[cfg(feature = "System+Xml+XmlWellFormedWriter+NamespaceResolverProxy")]
+    pub type NamespaceResolverProxy = crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy;
+    #[cfg(feature = "System+Xml+XmlWellFormedWriter+SpecialAttribute")]
+    pub type SpecialAttribute = crate::System::Xml::XmlWellFormedWriter_SpecialAttribute;
+    #[cfg(feature = "System+Xml+XmlWellFormedWriter+State")]
+    pub type State = crate::System::Xml::XmlWellFormedWriter_State;
+    #[cfg(feature = "System+Xml+XmlWellFormedWriter+Token")]
+    pub type Token = crate::System::Xml::XmlWellFormedWriter_Token;
     pub fn AddAttribute(
         &mut self,
         prefix: *mut crate::System::String,

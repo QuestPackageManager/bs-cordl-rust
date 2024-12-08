@@ -26,10 +26,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UnsignedIntegerField
 impl crate::UnityEngine::UIElements::UnsignedIntegerField {
     #[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField+UnsignedIntegerInput")]
     pub type UnsignedIntegerInput = crate::UnityEngine::UIElements::UnsignedIntegerField_UnsignedIntegerInput;
-    #[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField+UxmlTraits")]
-    pub type UxmlTraits = crate::UnityEngine::UIElements::UnsignedIntegerField_UxmlTraits;
     #[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField+UxmlFactory")]
     pub type UxmlFactory = crate::UnityEngine::UIElements::UnsignedIntegerField_UxmlFactory;
+    #[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField+UxmlTraits")]
+    pub type UxmlTraits = crate::UnityEngine::UIElements::UnsignedIntegerField_UxmlTraits;
     pub fn ApplyInputDeviceDelta(
         &mut self,
         delta: crate::UnityEngine::Vector3,

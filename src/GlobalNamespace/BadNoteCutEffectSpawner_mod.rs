@@ -3,34 +3,35 @@
 #[derive(Debug)]
 pub struct BadNoteCutEffectSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _failFlyingSpriteSpawner: *mut FlyingSpriteSpawner,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
-    pub _audioTimeSyncController: *mut AudioTimeSyncController,
+    pub _failFlyingSpriteSpawner: *mut crate::GlobalNamespace::FlyingSpriteSpawner,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
     pub _initData: *mut crate::GlobalNamespace::CoreGameHUDController_InitData,
 }
 #[cfg(feature = "BadNoteCutEffectSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BadNoteCutEffectSpawner => ""."BadNoteCutEffectSpawner"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BadNoteCutEffectSpawner => ""
+    ."BadNoteCutEffectSpawner"
 );
 #[cfg(feature = "BadNoteCutEffectSpawner")]
-impl std::ops::Deref for BadNoteCutEffectSpawner {
+impl std::ops::Deref for crate::GlobalNamespace::BadNoteCutEffectSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BadNoteCutEffectSpawner")]
-impl std::ops::DerefMut for BadNoteCutEffectSpawner {
+impl std::ops::DerefMut for crate::GlobalNamespace::BadNoteCutEffectSpawner {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BadNoteCutEffectSpawner")]
-impl BadNoteCutEffectSpawner {
+impl crate::GlobalNamespace::BadNoteCutEffectSpawner {
     pub fn HandleNoteWasCut(
         &mut self,
-        noteController: *mut NoteController,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -78,7 +79,8 @@ impl BadNoteCutEffectSpawner {
     }
 }
 #[cfg(feature = "BadNoteCutEffectSpawner")]
-impl quest_hook::libil2cpp::ObjectType for BadNoteCutEffectSpawner {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BadNoteCutEffectSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

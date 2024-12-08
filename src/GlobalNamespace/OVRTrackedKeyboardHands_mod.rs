@@ -39,19 +39,19 @@ pub struct OVRTrackedKeyboardHands {
     pub handPresenceInitialized_: bool,
     pub leftHandRoot_: *mut crate::UnityEngine::Transform,
     pub rightHandRoot_: *mut crate::UnityEngine::Transform,
-    pub KeyboardTracker: *mut OVRTrackedKeyboard,
-    pub cameraRig_: *mut OVRCameraRig,
-    pub leftHand_: *mut OVRHand,
-    pub leftHandSkeleton_: *mut OVRSkeleton,
-    pub leftHandSkeletonRenderer_: *mut OVRSkeletonRenderer,
+    pub KeyboardTracker: *mut crate::GlobalNamespace::OVRTrackedKeyboard,
+    pub cameraRig_: *mut crate::GlobalNamespace::OVRCameraRig,
+    pub leftHand_: *mut crate::GlobalNamespace::OVRHand,
+    pub leftHandSkeleton_: *mut crate::GlobalNamespace::OVRSkeleton,
+    pub leftHandSkeletonRenderer_: *mut crate::GlobalNamespace::OVRSkeletonRenderer,
     pub leftHandSkeletonRendererGO_: *mut crate::UnityEngine::GameObject,
     pub leftHandSkinnedMeshRenderer_: *mut crate::UnityEngine::SkinnedMeshRenderer,
-    pub leftHandMeshRenderer_: *mut OVRMeshRenderer,
-    pub rightHand_: *mut OVRHand,
-    pub rightHandSkeleton_: *mut OVRSkeleton,
-    pub rightHandSkeletonRenderer_: *mut OVRSkeletonRenderer,
+    pub leftHandMeshRenderer_: *mut crate::GlobalNamespace::OVRMeshRenderer,
+    pub rightHand_: *mut crate::GlobalNamespace::OVRHand,
+    pub rightHandSkeleton_: *mut crate::GlobalNamespace::OVRSkeleton,
+    pub rightHandSkeletonRenderer_: *mut crate::GlobalNamespace::OVRSkeletonRenderer,
     pub rightHandSkeletonRendererGO_: *mut crate::UnityEngine::GameObject,
-    pub rightHandMeshRenderer_: *mut OVRMeshRenderer,
+    pub rightHandMeshRenderer_: *mut crate::GlobalNamespace::OVRMeshRenderer,
     pub rightHandSkinnedMeshRenderer_: *mut crate::UnityEngine::SkinnedMeshRenderer,
     pub _RightHandOverKeyboard_k__BackingField: bool,
     pub _LeftHandOverKeyboard_k__BackingField: bool,
@@ -68,23 +68,24 @@ pub struct OVRTrackedKeyboardHands {
 }
 #[cfg(feature = "OVRTrackedKeyboardHands")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRTrackedKeyboardHands => ""."OVRTrackedKeyboardHands"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRTrackedKeyboardHands => ""
+    ."OVRTrackedKeyboardHands"
 );
 #[cfg(feature = "OVRTrackedKeyboardHands")]
-impl std::ops::Deref for OVRTrackedKeyboardHands {
+impl std::ops::Deref for crate::GlobalNamespace::OVRTrackedKeyboardHands {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTrackedKeyboardHands")]
-impl std::ops::DerefMut for OVRTrackedKeyboardHands {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRTrackedKeyboardHands {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTrackedKeyboardHands")]
-impl OVRTrackedKeyboardHands {
+impl crate::GlobalNamespace::OVRTrackedKeyboardHands {
     pub const FORWARD_OFFSET: f32 = -0.02f32;
     pub const XSCALE: f32 = 0.73f32;
     pub const YSCALE: f32 = 0.8f32;
@@ -129,7 +130,7 @@ impl OVRTrackedKeyboardHands {
     }
     pub fn GetHandDistanceToKeyboard(
         &mut self,
-        handSkeleton: *mut OVRSkeleton,
+        handSkeleton: *mut crate::GlobalNamespace::OVRSkeleton,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -295,7 +296,8 @@ impl OVRTrackedKeyboardHands {
     }
 }
 #[cfg(feature = "OVRTrackedKeyboardHands")]
-impl quest_hook::libil2cpp::ObjectType for OVRTrackedKeyboardHands {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRTrackedKeyboardHands {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

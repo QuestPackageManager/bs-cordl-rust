@@ -3,53 +3,54 @@
 #[derive(Debug)]
 pub struct LightSwitchEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightColor0: *mut ColorSO,
-    pub _lightColor1: *mut ColorSO,
-    pub _highlightColor0: *mut ColorSO,
-    pub _highlightColor1: *mut ColorSO,
-    pub _lightColor0Boost: *mut ColorSO,
-    pub _lightColor1Boost: *mut ColorSO,
-    pub _highlightColor0Boost: *mut ColorSO,
-    pub _highlightColor1Boost: *mut ColorSO,
+    pub _lightColor0: *mut crate::GlobalNamespace::ColorSO,
+    pub _lightColor1: *mut crate::GlobalNamespace::ColorSO,
+    pub _highlightColor0: *mut crate::GlobalNamespace::ColorSO,
+    pub _highlightColor1: *mut crate::GlobalNamespace::ColorSO,
+    pub _lightColor0Boost: *mut crate::GlobalNamespace::ColorSO,
+    pub _lightColor1Boost: *mut crate::GlobalNamespace::ColorSO,
+    pub _highlightColor0Boost: *mut crate::GlobalNamespace::ColorSO,
+    pub _highlightColor1Boost: *mut crate::GlobalNamespace::ColorSO,
     pub _offColorIntensity: f32,
     pub _lightOnStart: bool,
     pub _lightsID: i32,
-    pub _event: BasicBeatmapEventType,
-    pub _lightManager: *mut LightWithIdManager,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
+    pub _event: crate::GlobalNamespace::BasicBeatmapEventType,
+    pub _lightManager: *mut crate::GlobalNamespace::LightWithIdManager,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
     pub _tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
-    pub _colorManager: *mut ColorManager,
+    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
     pub _colorTween: *mut crate::Tweening::ColorTween,
     pub _alternativeFromColor: crate::UnityEngine::Color,
     pub _alternativeToColor: crate::UnityEngine::Color,
     pub _usingBoostColors: bool,
-    pub _colorChangeBeatmapDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
-    pub _colorBoostBeatmapDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _colorChangeBeatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _colorBoostBeatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
 }
 #[cfg(feature = "LightSwitchEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightSwitchEventEffect => ""."LightSwitchEventEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightSwitchEventEffect => ""
+    ."LightSwitchEventEffect"
 );
 #[cfg(feature = "LightSwitchEventEffect")]
-impl std::ops::Deref for LightSwitchEventEffect {
+impl std::ops::Deref for crate::GlobalNamespace::LightSwitchEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightSwitchEventEffect")]
-impl std::ops::DerefMut for LightSwitchEventEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightSwitchEventEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightSwitchEventEffect")]
-impl LightSwitchEventEffect {
+impl crate::GlobalNamespace::LightSwitchEventEffect {
     pub const kFlashAndFadeDuration: f32 = 1.5f32;
     pub const kHighlightDuration: f32 = 0.6f32;
     pub fn CheckNextEventForFade(
         &mut self,
-        basicBeatmapEventData: *mut BasicBeatmapEventData,
+        basicBeatmapEventData: *mut crate::GlobalNamespace::BasicBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -84,7 +85,7 @@ impl LightSwitchEventEffect {
     }
     pub fn HandleColorBoostBeatmapEvent(
         &mut self,
-        eventData: *mut ColorBoostBeatmapEventData,
+        eventData: *mut crate::GlobalNamespace::ColorBoostBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -95,7 +96,7 @@ impl LightSwitchEventEffect {
     }
     pub fn HandleColorChangeBeatmapEvent(
         &mut self,
-        basicBeatmapEventData: *mut BasicBeatmapEventData,
+        basicBeatmapEventData: *mut crate::GlobalNamespace::BasicBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -171,11 +172,11 @@ impl LightSwitchEventEffect {
     }
     pub fn get_eventType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BasicBeatmapEventType> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BasicBeatmapEventType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BasicBeatmapEventType = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::BasicBeatmapEventType = __cordl_object
             .invoke("get_eventType", ())?;
         Ok(__cordl_ret)
     }
@@ -188,7 +189,8 @@ impl LightSwitchEventEffect {
     }
 }
 #[cfg(feature = "LightSwitchEventEffect")]
-impl quest_hook::libil2cpp::ObjectType for LightSwitchEventEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LightSwitchEventEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

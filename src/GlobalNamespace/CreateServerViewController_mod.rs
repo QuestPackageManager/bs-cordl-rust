@@ -5,37 +5,40 @@ pub struct CreateServerViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _createServerButton: *mut crate::UnityEngine::UI::Button,
     pub _cancelCreateServerButton: *mut crate::UnityEngine::UI::Button,
-    pub _createServerFormController: *mut CreateServerFormController,
-    pub didFinishEvent: *mut crate::System::Action_2<bool, CreateServerFormData>,
-    pub _multiplayerModeSettings: *mut MultiplayerModeSettings,
+    pub _createServerFormController: *mut crate::GlobalNamespace::CreateServerFormController,
+    pub didFinishEvent: *mut crate::System::Action_2<
+        bool,
+        crate::GlobalNamespace::CreateServerFormData,
+    >,
+    pub _multiplayerModeSettings: *mut crate::GlobalNamespace::MultiplayerModeSettings,
 }
 #[cfg(feature = "CreateServerViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CreateServerViewController => ""
-    ."CreateServerViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CreateServerViewController =>
+    ""."CreateServerViewController"
 );
 #[cfg(feature = "CreateServerViewController")]
-impl std::ops::Deref for CreateServerViewController {
+impl std::ops::Deref for crate::GlobalNamespace::CreateServerViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CreateServerViewController")]
-impl std::ops::DerefMut for CreateServerViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::CreateServerViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CreateServerViewController")]
-impl CreateServerViewController {
+impl crate::GlobalNamespace::CreateServerViewController {
     pub fn ApplyAndGetData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<CreateServerFormData> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::CreateServerFormData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: CreateServerFormData = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::CreateServerFormData = __cordl_object
             .invoke("ApplyAndGetData", ())?;
         Ok(__cordl_ret)
     }
@@ -64,7 +67,7 @@ impl CreateServerViewController {
     }
     pub fn Setup(
         &mut self,
-        multiplayerModeSettings: *mut MultiplayerModeSettings,
+        multiplayerModeSettings: *mut crate::GlobalNamespace::MultiplayerModeSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -105,7 +108,10 @@ impl CreateServerViewController {
     }
     pub fn add_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_2<bool, CreateServerFormData>,
+        value: *mut crate::System::Action_2<
+            bool,
+            crate::GlobalNamespace::CreateServerFormData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -116,17 +122,22 @@ impl CreateServerViewController {
     }
     pub fn get_multiplayerModeSettings(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut MultiplayerModeSettings> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::MultiplayerModeSettings,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MultiplayerModeSettings = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MultiplayerModeSettings = __cordl_object
             .invoke("get_multiplayerModeSettings", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_2<bool, CreateServerFormData>,
+        value: *mut crate::System::Action_2<
+            bool,
+            crate::GlobalNamespace::CreateServerFormData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -137,7 +148,8 @@ impl CreateServerViewController {
     }
 }
 #[cfg(feature = "CreateServerViewController")]
-impl quest_hook::libil2cpp::ObjectType for CreateServerViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::CreateServerViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,42 +2,42 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntVfxBeatmapEventDataBox {
-    __cordl_parent: BeatmapEventDataBox,
+    __cordl_parent: crate::GlobalNamespace::BeatmapEventDataBox,
     pub _vfxBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut IntFxBaseData,
+        *mut crate::GlobalNamespace::IntFxBaseData,
     >,
     pub _beatStep: f32,
 }
 #[cfg(feature = "IntVfxBeatmapEventDataBox")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IntVfxBeatmapEventDataBox => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IntVfxBeatmapEventDataBox => ""
     ."IntVfxBeatmapEventDataBox"
 );
 #[cfg(feature = "IntVfxBeatmapEventDataBox")]
-impl std::ops::Deref for IntVfxBeatmapEventDataBox {
-    type Target = BeatmapEventDataBox;
+impl std::ops::Deref for crate::GlobalNamespace::IntVfxBeatmapEventDataBox {
+    type Target = crate::GlobalNamespace::BeatmapEventDataBox;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IntVfxBeatmapEventDataBox")]
-impl std::ops::DerefMut for IntVfxBeatmapEventDataBox {
+impl std::ops::DerefMut for crate::GlobalNamespace::IntVfxBeatmapEventDataBox {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IntVfxBeatmapEventDataBox")]
-impl IntVfxBeatmapEventDataBox {
+impl crate::GlobalNamespace::IntVfxBeatmapEventDataBox {
     pub fn New(
-        indexFilter: *mut IndexFilter,
+        indexFilter: *mut crate::GlobalNamespace::IndexFilter,
         beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         beatDistributionParam: f32,
         eventDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         eventDistributionParam: f32,
         eventDistributionShouldAffectFirstBaseEvent: bool,
-        eventDistributionEaseType: EaseType,
+        eventDistributionEaseType: crate::GlobalNamespace::EaseType,
         vfxBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut IntFxBaseData,
+            *mut crate::GlobalNamespace::IntFxBaseData,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -66,8 +66,10 @@ impl IntVfxBeatmapEventDataBox {
         durationOrderIndex: i32,
         distributionOrderIndex: i32,
         maxBeat: f32,
-        beatToTimeConverter: *mut IBeatToTimeConverter,
-        output: *mut crate::System::Collections::Generic::List_1<*mut BeatmapEventData>,
+        beatToTimeConverter: *mut crate::GlobalNamespace::IBeatToTimeConverter,
+        output: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::BeatmapEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -90,15 +92,15 @@ impl IntVfxBeatmapEventDataBox {
     }
     pub fn _ctor(
         &mut self,
-        indexFilter: *mut IndexFilter,
+        indexFilter: *mut crate::GlobalNamespace::IndexFilter,
         beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         beatDistributionParam: f32,
         eventDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         eventDistributionParam: f32,
         eventDistributionShouldAffectFirstBaseEvent: bool,
-        eventDistributionEaseType: EaseType,
+        eventDistributionEaseType: crate::GlobalNamespace::EaseType,
         vfxBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut IntFxBaseData,
+            *mut crate::GlobalNamespace::IntFxBaseData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -136,7 +138,8 @@ impl IntVfxBeatmapEventDataBox {
     }
 }
 #[cfg(feature = "IntVfxBeatmapEventDataBox")]
-impl quest_hook::libil2cpp::ObjectType for IntVfxBeatmapEventDataBox {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IntVfxBeatmapEventDataBox {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -400,16 +400,16 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaObjectTable {
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable")]
 impl crate::System::Xml::Schema::XmlSchemaObjectTable {
+    #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
+    pub type EnumeratorType = crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType;
     #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+ValuesCollection")]
     pub type ValuesCollection = crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection;
+    #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator")]
+    pub type XSODictionaryEnumerator = crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator;
     #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSOEnumerator")]
     pub type XSOEnumerator = crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator;
     #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry")]
     pub type XmlSchemaObjectEntry = crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry;
-    #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator")]
-    pub type XSODictionaryEnumerator = crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator;
-    #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
-    pub type EnumeratorType = crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType;
     pub fn Add(
         &mut self,
         name: *mut crate::System::Xml::XmlQualifiedName,

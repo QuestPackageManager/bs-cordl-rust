@@ -9,24 +9,24 @@ pub struct MomentaryLoudnessHistory {
 }
 #[cfg(feature = "MomentaryLoudnessHistory")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MomentaryLoudnessHistory => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MomentaryLoudnessHistory => ""
     ."MomentaryLoudnessHistory"
 );
 #[cfg(feature = "MomentaryLoudnessHistory")]
-impl std::ops::Deref for MomentaryLoudnessHistory {
+impl std::ops::Deref for crate::GlobalNamespace::MomentaryLoudnessHistory {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MomentaryLoudnessHistory")]
-impl std::ops::DerefMut for MomentaryLoudnessHistory {
+impl std::ops::DerefMut for crate::GlobalNamespace::MomentaryLoudnessHistory {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MomentaryLoudnessHistory")]
-impl MomentaryLoudnessHistory {
+impl crate::GlobalNamespace::MomentaryLoudnessHistory {
     pub fn Add(
         &mut self,
         momentaryLoudness: f32,
@@ -65,7 +65,8 @@ impl MomentaryLoudnessHistory {
     }
 }
 #[cfg(feature = "MomentaryLoudnessHistory")]
-impl quest_hook::libil2cpp::ObjectType for MomentaryLoudnessHistory {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MomentaryLoudnessHistory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

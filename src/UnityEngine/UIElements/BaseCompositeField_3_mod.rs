@@ -58,14 +58,14 @@ impl<
     TField: quest_hook::libil2cpp::Type,
     TFieldValue: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::BaseCompositeField_3<TValueType, TField, TFieldValue> {
-    #[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3+__c__DisplayClass24_0")]
-    pub type __c__DisplayClass24_0 = crate::UnityEngine::UIElements::BaseCompositeField_3___c__DisplayClass24_0<
+    #[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription")]
+    pub type FieldDescription = crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
         TValueType,
         TField,
         TFieldValue,
     >;
-    #[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription")]
-    pub type FieldDescription = crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
+    #[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3+__c__DisplayClass24_0")]
+    pub type __c__DisplayClass24_0 = crate::UnityEngine::UIElements::BaseCompositeField_3___c__DisplayClass24_0<
         TValueType,
         TField,
         TFieldValue,

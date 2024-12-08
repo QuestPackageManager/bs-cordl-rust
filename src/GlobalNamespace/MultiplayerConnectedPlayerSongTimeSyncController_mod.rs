@@ -77,7 +77,7 @@ pub struct MultiplayerConnectedPlayerSongTimeSyncController {
     pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
     pub _graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
     pub _initData: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController_InitData,
-    pub _connectedPlayer: *mut IConnectedPlayer,
+    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
     pub _songTime_k__BackingField: f32,
     pub _lastFrameDeltaSongTime_k__BackingField: f32,
     pub _timeScale: f32,
@@ -87,24 +87,27 @@ pub struct MultiplayerConnectedPlayerSongTimeSyncController {
 }
 #[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerConnectedPlayerSongTimeSyncController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController => ""
     ."MultiplayerConnectedPlayerSongTimeSyncController"
 );
 #[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController")]
-impl std::ops::Deref for MultiplayerConnectedPlayerSongTimeSyncController {
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController")]
-impl std::ops::DerefMut for MultiplayerConnectedPlayerSongTimeSyncController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController")]
-impl MultiplayerConnectedPlayerSongTimeSyncController {
+impl crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
     #[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController+InitData")]
     pub type InitData = crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController_InitData;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -244,7 +247,7 @@ impl MultiplayerConnectedPlayerSongTimeSyncController {
 }
 #[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController")]
 impl quest_hook::libil2cpp::ObjectType
-for MultiplayerConnectedPlayerSongTimeSyncController {
+for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoPostProcessMainEffectSO {
-    __cordl_parent: MainEffectSO,
+    __cordl_parent: crate::GlobalNamespace::MainEffectSO,
     pub _fadeShader: *mut crate::UnityEngine::Shader,
     pub _baseColorBoost: f32,
     pub _baseColorBoostThreshold: f32,
@@ -10,24 +10,24 @@ pub struct NoPostProcessMainEffectSO {
 }
 #[cfg(feature = "NoPostProcessMainEffectSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoPostProcessMainEffectSO => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoPostProcessMainEffectSO => ""
     ."NoPostProcessMainEffectSO"
 );
 #[cfg(feature = "NoPostProcessMainEffectSO")]
-impl std::ops::Deref for NoPostProcessMainEffectSO {
-    type Target = MainEffectSO;
+impl std::ops::Deref for crate::GlobalNamespace::NoPostProcessMainEffectSO {
+    type Target = crate::GlobalNamespace::MainEffectSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoPostProcessMainEffectSO")]
-impl std::ops::DerefMut for NoPostProcessMainEffectSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoPostProcessMainEffectSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoPostProcessMainEffectSO")]
-impl NoPostProcessMainEffectSO {
+impl crate::GlobalNamespace::NoPostProcessMainEffectSO {
     pub fn DrawFadeQuad(
         &mut self,
         alpha: f32,
@@ -106,7 +106,8 @@ impl NoPostProcessMainEffectSO {
     }
 }
 #[cfg(feature = "NoPostProcessMainEffectSO")]
-impl quest_hook::libil2cpp::ObjectType for NoPostProcessMainEffectSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NoPostProcessMainEffectSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

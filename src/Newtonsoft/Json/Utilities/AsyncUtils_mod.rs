@@ -24,12 +24,12 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::AsyncUtils {
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+AsyncUtils")]
 impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
+    #[cfg(feature = "Newtonsoft+Json+Utilities+AsyncUtils+__c")]
+    pub type __c = crate::Newtonsoft::Json::Utilities::AsyncUtils___c;
     #[cfg(feature = "Newtonsoft+Json+Utilities+AsyncUtils+__c__6_1")]
     pub type __c__6_1<T: quest_hook::libil2cpp::Type> = crate::Newtonsoft::Json::Utilities::AsyncUtils___c__6_1<
         T,
     >;
-    #[cfg(feature = "Newtonsoft+Json+Utilities+AsyncUtils+__c")]
-    pub type __c = crate::Newtonsoft::Json::Utilities::AsyncUtils___c;
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+AsyncUtils")]
 impl quest_hook::libil2cpp::ObjectType

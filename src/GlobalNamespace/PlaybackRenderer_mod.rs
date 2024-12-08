@@ -17,23 +17,24 @@ pub struct PlaybackRenderer {
 }
 #[cfg(feature = "PlaybackRenderer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlaybackRenderer => ""."PlaybackRenderer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlaybackRenderer => ""
+    ."PlaybackRenderer"
 );
 #[cfg(feature = "PlaybackRenderer")]
-impl std::ops::Deref for PlaybackRenderer {
+impl std::ops::Deref for crate::GlobalNamespace::PlaybackRenderer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlaybackRenderer")]
-impl std::ops::DerefMut for PlaybackRenderer {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlaybackRenderer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlaybackRenderer")]
-impl PlaybackRenderer {
+impl crate::GlobalNamespace::PlaybackRenderer {
     #[cfg(feature = "PlaybackRenderer+PlaybackScreenshot")]
     pub type PlaybackScreenshot = crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot;
     pub fn CreateClipQuad(
@@ -203,7 +204,7 @@ impl PlaybackRenderer {
     }
 }
 #[cfg(feature = "PlaybackRenderer")]
-impl quest_hook::libil2cpp::ObjectType for PlaybackRenderer {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlaybackRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

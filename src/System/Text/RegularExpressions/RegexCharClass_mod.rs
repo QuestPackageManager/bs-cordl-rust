@@ -74,12 +74,12 @@ impl std::ops::DerefMut for crate::System::Text::RegularExpressions::RegexCharCl
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass")]
 impl crate::System::Text::RegularExpressions::RegexCharClass {
-    #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer")]
-    pub type SingleRangeComparer = crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer;
     #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping")]
     pub type LowerCaseMapping = crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping;
     #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRange")]
     pub type SingleRange = crate::System::Text::RegularExpressions::RegexCharClass_SingleRange;
+    #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer")]
+    pub type SingleRangeComparer = crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer;
     pub fn AddCategory(
         &mut self,
         category: *mut crate::System::String,

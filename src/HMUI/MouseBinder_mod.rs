@@ -47,10 +47,10 @@ impl std::ops::DerefMut for crate::HMUI::MouseBinder {
 }
 #[cfg(feature = "HMUI+MouseBinder")]
 impl crate::HMUI::MouseBinder {
-    #[cfg(feature = "HMUI+MouseBinder+MouseEventType")]
-    pub type MouseEventType = crate::HMUI::MouseBinder_MouseEventType;
     #[cfg(feature = "HMUI+MouseBinder+ButtonType")]
     pub type ButtonType = crate::HMUI::MouseBinder_ButtonType;
+    #[cfg(feature = "HMUI+MouseBinder+MouseEventType")]
+    pub type MouseEventType = crate::HMUI::MouseBinder_MouseEventType;
     pub fn AddButtonBinding(
         &mut self,
         buttonType: crate::HMUI::MouseBinder_ButtonType,

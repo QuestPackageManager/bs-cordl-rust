@@ -9,10 +9,10 @@ pub struct BitMask256 {
 }
 #[cfg(feature = "BitMask256")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for BitMask256 => ""."BitMask256"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BitMask256 => ""."BitMask256"
 );
 #[cfg(feature = "BitMask256")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for BitMask256 {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::BitMask256 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -22,12 +22,12 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for BitMask256 {
     }
 }
 #[cfg(feature = "BitMask256")]
-impl BitMask256 {
+impl crate::GlobalNamespace::BitMask256 {
     pub fn CreateFromSerializedData(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-    ) -> quest_hook::libil2cpp::Result<BitMask256> {
-        let __cordl_ret: BitMask256 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BitMask256> {
+        let __cordl_ret: crate::GlobalNamespace::BitMask256 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "CreateFromSerializedData",
             (reader),
@@ -36,7 +36,7 @@ impl BitMask256 {
     }
     pub fn Equals_BitMask256_0(
         &mut self,
-        other: BitMask256,
+        other: crate::GlobalNamespace::BitMask256,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -91,8 +91,8 @@ impl BitMask256 {
         &mut self,
         offset: i32,
         bits: u64,
-    ) -> quest_hook::libil2cpp::Result<BitMask256> {
-        let __cordl_ret: BitMask256 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BitMask256> {
+        let __cordl_ret: crate::GlobalNamespace::BitMask256 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SetBits",
             (offset, bits),

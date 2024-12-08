@@ -3,29 +3,30 @@
 #[derive(Debug)]
 pub struct StandardLevelReturnToMenuController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _standardLevelSceneSetupData: *mut StandardLevelScenesTransitionSetupDataSO,
-    pub _prepareLevelCompletionResults: *mut PrepareLevelCompletionResults,
+    pub _standardLevelSceneSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+    pub _prepareLevelCompletionResults: *mut crate::GlobalNamespace::PrepareLevelCompletionResults,
 }
 #[cfg(feature = "StandardLevelReturnToMenuController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StandardLevelReturnToMenuController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::StandardLevelReturnToMenuController => ""
     ."StandardLevelReturnToMenuController"
 );
 #[cfg(feature = "StandardLevelReturnToMenuController")]
-impl std::ops::Deref for StandardLevelReturnToMenuController {
+impl std::ops::Deref for crate::GlobalNamespace::StandardLevelReturnToMenuController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelReturnToMenuController")]
-impl std::ops::DerefMut for StandardLevelReturnToMenuController {
+impl std::ops::DerefMut for crate::GlobalNamespace::StandardLevelReturnToMenuController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelReturnToMenuController")]
-impl StandardLevelReturnToMenuController {
+impl crate::GlobalNamespace::StandardLevelReturnToMenuController {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -55,7 +56,8 @@ impl StandardLevelReturnToMenuController {
     }
 }
 #[cfg(feature = "StandardLevelReturnToMenuController")]
-impl quest_hook::libil2cpp::ObjectType for StandardLevelReturnToMenuController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StandardLevelReturnToMenuController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

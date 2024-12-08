@@ -337,13 +337,13 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
     )]
     pub type CtrDrbgProvider = crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProvider;
     #[cfg(
-        feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
-    )]
-    pub type HashDrbgProvider = crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgProvider;
-    #[cfg(
         feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
     )]
     pub type HMacDrbgProvider = crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgProvider;
+    #[cfg(
+        feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
+    )]
+    pub type HashDrbgProvider = crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgProvider;
     pub fn BuildCtr(
         &mut self,
         cipher: *mut crate::Org::BouncyCastle::Crypto::IBlockCipher,

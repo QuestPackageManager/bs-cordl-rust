@@ -27,82 +27,82 @@ for crate::System::Linq::Expressions::Interpreter::EqualInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::EqualInstruction {
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualInt64")]
-    pub type EqualInt64 = crate::GlobalNamespace::EqualInstruction_EqualInt64;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualUInt64")]
-    pub type EqualUInt64 = crate::GlobalNamespace::EqualInstruction_EqualUInt64;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualBoolean")]
+    pub type EqualBoolean = crate::GlobalNamespace::EqualInstruction_EqualBoolean;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualBooleanLiftedToNull"
+    )]
+    pub type EqualBooleanLiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualBooleanLiftedToNull;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualByte")]
+    pub type EqualByte = crate::GlobalNamespace::EqualInstruction_EqualByte;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualByteLiftedToNull"
+    )]
+    pub type EqualByteLiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualByteLiftedToNull;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualChar")]
     pub type EqualChar = crate::GlobalNamespace::EqualInstruction_EqualChar;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualUInt16")]
-    pub type EqualUInt16 = crate::GlobalNamespace::EqualInstruction_EqualUInt16;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualSByte")]
-    pub type EqualSByte = crate::GlobalNamespace::EqualInstruction_EqualSByte;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualUInt32")]
-    pub type EqualUInt32 = crate::GlobalNamespace::EqualInstruction_EqualUInt32;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualDouble")]
-    pub type EqualDouble = crate::GlobalNamespace::EqualInstruction_EqualDouble;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualSingle")]
-    pub type EqualSingle = crate::GlobalNamespace::EqualInstruction_EqualSingle;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualInt16LiftedToNull"
-    )]
-    pub type EqualInt16LiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualInt16LiftedToNull;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualCharLiftedToNull"
     )]
     pub type EqualCharLiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualCharLiftedToNull;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualDouble")]
+    pub type EqualDouble = crate::GlobalNamespace::EqualInstruction_EqualDouble;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualReference"
+        feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualDoubleLiftedToNull"
     )]
-    pub type EqualReference = crate::GlobalNamespace::EqualInstruction_EqualReference;
+    pub type EqualDoubleLiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualDoubleLiftedToNull;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualInt16")]
+    pub type EqualInt16 = crate::GlobalNamespace::EqualInstruction_EqualInt16;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualInt16LiftedToNull"
+    )]
+    pub type EqualInt16LiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualInt16LiftedToNull;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualInt32")]
+    pub type EqualInt32 = crate::GlobalNamespace::EqualInstruction_EqualInt32;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualInt32LiftedToNull"
+    )]
+    pub type EqualInt32LiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualInt32LiftedToNull;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualInt64")]
+    pub type EqualInt64 = crate::GlobalNamespace::EqualInstruction_EqualInt64;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualInt64LiftedToNull"
     )]
     pub type EqualInt64LiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualInt64LiftedToNull;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualUInt32LiftedToNull"
+        feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualReference"
     )]
-    pub type EqualUInt32LiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualUInt32LiftedToNull;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualInt32LiftedToNull"
-    )]
-    pub type EqualInt32LiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualInt32LiftedToNull;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualBooleanLiftedToNull"
-    )]
-    pub type EqualBooleanLiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualBooleanLiftedToNull;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualUInt64LiftedToNull"
-    )]
-    pub type EqualUInt64LiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualUInt64LiftedToNull;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualSingleLiftedToNull"
-    )]
-    pub type EqualSingleLiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualSingleLiftedToNull;
+    pub type EqualReference = crate::GlobalNamespace::EqualInstruction_EqualReference;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualSByte")]
+    pub type EqualSByte = crate::GlobalNamespace::EqualInstruction_EqualSByte;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualSByteLiftedToNull"
     )]
     pub type EqualSByteLiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualSByteLiftedToNull;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualSingle")]
+    pub type EqualSingle = crate::GlobalNamespace::EqualInstruction_EqualSingle;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualSingleLiftedToNull"
+    )]
+    pub type EqualSingleLiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualSingleLiftedToNull;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualUInt16")]
+    pub type EqualUInt16 = crate::GlobalNamespace::EqualInstruction_EqualUInt16;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualUInt16LiftedToNull"
     )]
     pub type EqualUInt16LiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualUInt16LiftedToNull;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualUInt32")]
+    pub type EqualUInt32 = crate::GlobalNamespace::EqualInstruction_EqualUInt32;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualDoubleLiftedToNull"
+        feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualUInt32LiftedToNull"
     )]
-    pub type EqualDoubleLiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualDoubleLiftedToNull;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualBoolean")]
-    pub type EqualBoolean = crate::GlobalNamespace::EqualInstruction_EqualBoolean;
+    pub type EqualUInt32LiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualUInt32LiftedToNull;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualUInt64")]
+    pub type EqualUInt64 = crate::GlobalNamespace::EqualInstruction_EqualUInt64;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualByteLiftedToNull"
+        feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualUInt64LiftedToNull"
     )]
-    pub type EqualByteLiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualByteLiftedToNull;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualInt32")]
-    pub type EqualInt32 = crate::GlobalNamespace::EqualInstruction_EqualInt32;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualByte")]
-    pub type EqualByte = crate::GlobalNamespace::EqualInstruction_EqualByte;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualInt16")]
-    pub type EqualInt16 = crate::GlobalNamespace::EqualInstruction_EqualInt16;
+    pub type EqualUInt64LiftedToNull = crate::GlobalNamespace::EqualInstruction_EqualUInt64LiftedToNull;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

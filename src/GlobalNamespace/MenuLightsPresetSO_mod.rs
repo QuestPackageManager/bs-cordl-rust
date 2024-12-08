@@ -4,7 +4,7 @@
 pub struct MenuLightsPresetSO_LightIdColorPair {
     __cordl_parent: crate::System::Object,
     pub lightId: i32,
-    pub baseColor: *mut ColorSO,
+    pub baseColor: *mut crate::GlobalNamespace::ColorSO,
     pub intensity: f32,
 }
 #[cfg(feature = "MenuLightsPresetSO+LightIdColorPair")]
@@ -70,8 +70,8 @@ for crate::GlobalNamespace::MenuLightsPresetSO_LightIdColorPair {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuLightsPresetSO {
-    __cordl_parent: PersistentScriptableObject,
-    pub _playersPlaceNeonsColor: *mut ColorSO,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    pub _playersPlaceNeonsColor: *mut crate::GlobalNamespace::ColorSO,
     pub _playersPlaceNeonsIntensity: f32,
     pub _lightIdColorPairs: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::MenuLightsPresetSO_LightIdColorPair,
@@ -79,23 +79,24 @@ pub struct MenuLightsPresetSO {
 }
 #[cfg(feature = "MenuLightsPresetSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MenuLightsPresetSO => ""."MenuLightsPresetSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MenuLightsPresetSO => ""
+    ."MenuLightsPresetSO"
 );
 #[cfg(feature = "MenuLightsPresetSO")]
-impl std::ops::Deref for MenuLightsPresetSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::MenuLightsPresetSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuLightsPresetSO")]
-impl std::ops::DerefMut for MenuLightsPresetSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::MenuLightsPresetSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuLightsPresetSO")]
-impl MenuLightsPresetSO {
+impl crate::GlobalNamespace::MenuLightsPresetSO {
     #[cfg(feature = "MenuLightsPresetSO+LightIdColorPair")]
     pub type LightIdColorPair = crate::GlobalNamespace::MenuLightsPresetSO_LightIdColorPair;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -132,11 +133,11 @@ impl MenuLightsPresetSO {
     }
     pub fn get_playersPlaceNeonsColor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut ColorSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::ColorSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ColorSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::ColorSO = __cordl_object
             .invoke("get_playersPlaceNeonsColor", ())?;
         Ok(__cordl_ret)
     }
@@ -152,7 +153,7 @@ impl MenuLightsPresetSO {
     }
 }
 #[cfg(feature = "MenuLightsPresetSO")]
-impl quest_hook::libil2cpp::ObjectType for MenuLightsPresetSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MenuLightsPresetSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

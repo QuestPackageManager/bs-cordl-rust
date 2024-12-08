@@ -8,5 +8,6 @@ pub enum VRPlatformSDK {
 }
 #[cfg(feature = "VRPlatformSDK")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for VRPlatformSDK => ""."VRPlatformSDK"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::VRPlatformSDK => ""
+    ."VRPlatformSDK"
 );

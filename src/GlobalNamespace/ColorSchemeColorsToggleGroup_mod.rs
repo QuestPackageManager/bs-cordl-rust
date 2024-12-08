@@ -3,40 +3,40 @@
 #[derive(Debug)]
 pub struct ColorSchemeColorsToggleGroup {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _saberAColorToggleController: *mut ColorSchemeColorToggleController,
-    pub _saberBColorToggleController: *mut ColorSchemeColorToggleController,
-    pub _environmentColor0ToggleController: *mut ColorSchemeColorToggleController,
-    pub _environmentColor1ToggleController: *mut ColorSchemeColorToggleController,
-    pub _obstaclesColorToggleController: *mut ColorSchemeColorToggleController,
-    pub _environmentColor0BoostToggleController: *mut ColorSchemeColorToggleController,
-    pub _environmentColor1BoostToggleController: *mut ColorSchemeColorToggleController,
+    pub _saberAColorToggleController: *mut crate::GlobalNamespace::ColorSchemeColorToggleController,
+    pub _saberBColorToggleController: *mut crate::GlobalNamespace::ColorSchemeColorToggleController,
+    pub _environmentColor0ToggleController: *mut crate::GlobalNamespace::ColorSchemeColorToggleController,
+    pub _environmentColor1ToggleController: *mut crate::GlobalNamespace::ColorSchemeColorToggleController,
+    pub _obstaclesColorToggleController: *mut crate::GlobalNamespace::ColorSchemeColorToggleController,
+    pub _environmentColor0BoostToggleController: *mut crate::GlobalNamespace::ColorSchemeColorToggleController,
+    pub _environmentColor1BoostToggleController: *mut crate::GlobalNamespace::ColorSchemeColorToggleController,
     pub selectedColorDidChangeEvent: *mut crate::System::Action_1<
         crate::UnityEngine::Color,
     >,
     pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
-    pub _selectedColorToggleController: *mut ColorSchemeColorToggleController,
-    pub _colorScheme: *mut ColorScheme,
+    pub _selectedColorToggleController: *mut crate::GlobalNamespace::ColorSchemeColorToggleController,
+    pub _colorScheme: *mut crate::GlobalNamespace::ColorScheme,
 }
 #[cfg(feature = "ColorSchemeColorsToggleGroup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ColorSchemeColorsToggleGroup => ""
-    ."ColorSchemeColorsToggleGroup"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ColorSchemeColorsToggleGroup =>
+    ""."ColorSchemeColorsToggleGroup"
 );
 #[cfg(feature = "ColorSchemeColorsToggleGroup")]
-impl std::ops::Deref for ColorSchemeColorsToggleGroup {
+impl std::ops::Deref for crate::GlobalNamespace::ColorSchemeColorsToggleGroup {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorSchemeColorsToggleGroup")]
-impl std::ops::DerefMut for ColorSchemeColorsToggleGroup {
+impl std::ops::DerefMut for crate::GlobalNamespace::ColorSchemeColorsToggleGroup {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorSchemeColorsToggleGroup")]
-impl ColorSchemeColorsToggleGroup {
+impl crate::GlobalNamespace::ColorSchemeColorsToggleGroup {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -49,17 +49,17 @@ impl ColorSchemeColorsToggleGroup {
     }
     pub fn CreateColorSchemeFromEditedColors(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut ColorScheme> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::ColorScheme> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ColorScheme = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::ColorScheme = __cordl_object
             .invoke("CreateColorSchemeFromEditedColors", ())?;
         Ok(__cordl_ret)
     }
     pub fn HandleToggleWasSelected(
         &mut self,
-        toggleController: *mut ColorSchemeColorToggleController,
+        toggleController: *mut crate::GlobalNamespace::ColorSchemeColorToggleController,
         isOn: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -88,7 +88,7 @@ impl ColorSchemeColorsToggleGroup {
     }
     pub fn SetColorScheme(
         &mut self,
-        colorScheme: *mut ColorScheme,
+        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -229,7 +229,8 @@ impl ColorSchemeColorsToggleGroup {
     }
 }
 #[cfg(feature = "ColorSchemeColorsToggleGroup")]
-impl quest_hook::libil2cpp::ObjectType for ColorSchemeColorsToggleGroup {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ColorSchemeColorsToggleGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

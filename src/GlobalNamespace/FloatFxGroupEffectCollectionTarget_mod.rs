@@ -2,31 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatFxGroupEffectCollectionTarget {
-    __cordl_parent: FloatFxGroupEffectTarget,
+    __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _floatFxGroupEffectTargets: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut FloatFxGroupEffectTarget,
+        *mut crate::GlobalNamespace::FloatFxGroupEffectTarget,
     >,
 }
 #[cfg(feature = "FloatFxGroupEffectCollectionTarget")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FloatFxGroupEffectCollectionTarget => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::FloatFxGroupEffectCollectionTarget => ""
     ."FloatFxGroupEffectCollectionTarget"
 );
 #[cfg(feature = "FloatFxGroupEffectCollectionTarget")]
-impl std::ops::Deref for FloatFxGroupEffectCollectionTarget {
-    type Target = FloatFxGroupEffectTarget;
+impl std::ops::Deref for crate::GlobalNamespace::FloatFxGroupEffectCollectionTarget {
+    type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatFxGroupEffectCollectionTarget")]
-impl std::ops::DerefMut for FloatFxGroupEffectCollectionTarget {
+impl std::ops::DerefMut for crate::GlobalNamespace::FloatFxGroupEffectCollectionTarget {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatFxGroupEffectCollectionTarget")]
-impl FloatFxGroupEffectCollectionTarget {
+impl crate::GlobalNamespace::FloatFxGroupEffectCollectionTarget {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -72,7 +73,8 @@ impl FloatFxGroupEffectCollectionTarget {
     }
 }
 #[cfg(feature = "FloatFxGroupEffectCollectionTarget")]
-impl quest_hook::libil2cpp::ObjectType for FloatFxGroupEffectCollectionTarget {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FloatFxGroupEffectCollectionTarget {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

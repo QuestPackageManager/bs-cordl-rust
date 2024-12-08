@@ -18,7 +18,7 @@ pub struct PrivacyPolicyViewController {
     pub _okButton: *mut crate::UnityEngine::UI::Button,
     pub _iAcceptButton: *mut crate::UnityEngine::UI::Button,
     pub _textPageScrollView: *mut crate::HMUI::TextPageScrollView,
-    pub _privacyPolicyLocalizedTextAsset: *mut LocalizedTextAsset,
+    pub _privacyPolicyLocalizedTextAsset: *mut crate::GlobalNamespace::LocalizedTextAsset,
     pub _updateNoticeLocalizationKey: *mut crate::System::String,
     pub didFinishEvent: *mut crate::System::Action_1<
         crate::GlobalNamespace::PrivacyPolicyViewController_ButtonType,
@@ -28,24 +28,24 @@ pub struct PrivacyPolicyViewController {
 }
 #[cfg(feature = "PrivacyPolicyViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PrivacyPolicyViewController => ""
-    ."PrivacyPolicyViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PrivacyPolicyViewController =>
+    ""."PrivacyPolicyViewController"
 );
 #[cfg(feature = "PrivacyPolicyViewController")]
-impl std::ops::Deref for PrivacyPolicyViewController {
+impl std::ops::Deref for crate::GlobalNamespace::PrivacyPolicyViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PrivacyPolicyViewController")]
-impl std::ops::DerefMut for PrivacyPolicyViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::PrivacyPolicyViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PrivacyPolicyViewController")]
-impl PrivacyPolicyViewController {
+impl crate::GlobalNamespace::PrivacyPolicyViewController {
     #[cfg(feature = "PrivacyPolicyViewController+ButtonType")]
     pub type ButtonType = crate::GlobalNamespace::PrivacyPolicyViewController_ButtonType;
     pub fn DidActivate(
@@ -141,7 +141,8 @@ impl PrivacyPolicyViewController {
     }
 }
 #[cfg(feature = "PrivacyPolicyViewController")]
-impl quest_hook::libil2cpp::ObjectType for PrivacyPolicyViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PrivacyPolicyViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

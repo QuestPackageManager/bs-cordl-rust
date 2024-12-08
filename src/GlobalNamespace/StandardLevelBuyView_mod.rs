@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct StandardLevelBuyView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _levelBar: *mut LevelBar,
+    pub _levelBar: *mut crate::GlobalNamespace::LevelBar,
     pub _buyButton: *mut crate::UnityEngine::UI::Button,
     pub _favoriteToggle: *mut crate::UnityEngine::UI::Toggle,
     pub _steamMessageGameObject: *mut crate::UnityEngine::GameObject,
@@ -11,28 +11,29 @@ pub struct StandardLevelBuyView {
         *mut crate::UnityEngine::UI::Toggle,
     >,
     pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
-    pub _beatmapLevel: *mut BeatmapLevel,
-    pub _playerData: *mut PlayerData,
+    pub _beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub _playerData: *mut crate::GlobalNamespace::PlayerData,
 }
 #[cfg(feature = "StandardLevelBuyView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StandardLevelBuyView => ""."StandardLevelBuyView"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::StandardLevelBuyView => ""
+    ."StandardLevelBuyView"
 );
 #[cfg(feature = "StandardLevelBuyView")]
-impl std::ops::Deref for StandardLevelBuyView {
+impl std::ops::Deref for crate::GlobalNamespace::StandardLevelBuyView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelBuyView")]
-impl std::ops::DerefMut for StandardLevelBuyView {
+impl std::ops::DerefMut for crate::GlobalNamespace::StandardLevelBuyView {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelBuyView")]
-impl StandardLevelBuyView {
+impl crate::GlobalNamespace::StandardLevelBuyView {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -72,8 +73,8 @@ impl StandardLevelBuyView {
     }
     pub fn SetContent(
         &mut self,
-        beatmapLevel: *mut BeatmapLevel,
-        playerData: *mut PlayerData,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+        playerData: *mut crate::GlobalNamespace::PlayerData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -137,7 +138,7 @@ impl StandardLevelBuyView {
     }
 }
 #[cfg(feature = "StandardLevelBuyView")]
-impl quest_hook::libil2cpp::ObjectType for StandardLevelBuyView {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::StandardLevelBuyView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

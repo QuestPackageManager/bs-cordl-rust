@@ -29,10 +29,10 @@ impl std::ops::DerefMut for crate::System::Collections::Stack {
 #[cfg(feature = "System+Collections+Stack")]
 impl crate::System::Collections::Stack {
     pub const _defaultCapacity: i32 = 10i32;
-    #[cfg(feature = "System+Collections+Stack+StackEnumerator")]
-    pub type StackEnumerator = crate::System::Collections::Stack_StackEnumerator;
     #[cfg(feature = "System+Collections+Stack+StackDebugView")]
     pub type StackDebugView = crate::System::Collections::Stack_StackDebugView;
+    #[cfg(feature = "System+Collections+Stack+StackEnumerator")]
+    pub type StackEnumerator = crate::System::Collections::Stack_StackEnumerator;
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

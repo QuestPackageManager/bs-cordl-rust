@@ -13,28 +13,29 @@ pub struct MenuNeonLightsGenerator {
     pub _lengthMultiplier: f32,
     pub _widthCurve: *mut crate::UnityEngine::AnimationCurve,
     pub _widthMultiplier: f32,
-    pub _neonLightPrefab: *mut TubeBloomPrePassLight,
+    pub _neonLightPrefab: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
     pub _afterSpawnRotation: crate::UnityEngine::Vector3,
 }
 #[cfg(feature = "MenuNeonLightsGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MenuNeonLightsGenerator => ""."MenuNeonLightsGenerator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MenuNeonLightsGenerator => ""
+    ."MenuNeonLightsGenerator"
 );
 #[cfg(feature = "MenuNeonLightsGenerator")]
-impl std::ops::Deref for MenuNeonLightsGenerator {
+impl std::ops::Deref for crate::GlobalNamespace::MenuNeonLightsGenerator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuNeonLightsGenerator")]
-impl std::ops::DerefMut for MenuNeonLightsGenerator {
+impl std::ops::DerefMut for crate::GlobalNamespace::MenuNeonLightsGenerator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuNeonLightsGenerator")]
-impl MenuNeonLightsGenerator {
+impl crate::GlobalNamespace::MenuNeonLightsGenerator {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -54,7 +55,8 @@ impl MenuNeonLightsGenerator {
     }
 }
 #[cfg(feature = "MenuNeonLightsGenerator")]
-impl quest_hook::libil2cpp::ObjectType for MenuNeonLightsGenerator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MenuNeonLightsGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

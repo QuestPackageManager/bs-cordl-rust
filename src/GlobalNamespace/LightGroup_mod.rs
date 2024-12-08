@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LightGroup {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightGroupSO: *mut LightGroupSO,
+    pub _lightGroupSO: *mut crate::GlobalNamespace::LightGroupSO,
     pub respawnEvent: *mut crate::System::Action_1<*mut crate::UnityEngine::GameObject>,
     pub didRefreshContentEvent: *mut crate::System::Action_1<
         *mut crate::UnityEngine::GameObject,
@@ -11,23 +11,23 @@ pub struct LightGroup {
 }
 #[cfg(feature = "LightGroup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightGroup => ""."LightGroup"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightGroup => ""."LightGroup"
 );
 #[cfg(feature = "LightGroup")]
-impl std::ops::Deref for LightGroup {
+impl std::ops::Deref for crate::GlobalNamespace::LightGroup {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightGroup")]
-impl std::ops::DerefMut for LightGroup {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightGroup {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightGroup")]
-impl LightGroup {
+impl crate::GlobalNamespace::LightGroup {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -86,11 +86,11 @@ impl LightGroup {
     }
     pub fn get_lightGroupSO(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut LightGroupSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::LightGroupSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut LightGroupSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::LightGroupSO = __cordl_object
             .invoke("get_lightGroupSO", ())?;
         Ok(__cordl_ret)
     }
@@ -139,7 +139,7 @@ impl LightGroup {
     }
 }
 #[cfg(feature = "LightGroup")]
-impl quest_hook::libil2cpp::ObjectType for LightGroup {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

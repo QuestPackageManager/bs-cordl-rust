@@ -3,30 +3,32 @@
 #[derive(Debug)]
 pub struct StandardScoreSyncStateNetSerializable {
     __cordl_parent: crate::System::Object,
-    pub _state: StandardScoreSyncState,
-    pub _id_k__BackingField: SyncStateId,
+    pub _state: crate::GlobalNamespace::StandardScoreSyncState,
+    pub _id_k__BackingField: crate::GlobalNamespace::SyncStateId,
     pub _time_k__BackingField: i64,
 }
 #[cfg(feature = "StandardScoreSyncStateNetSerializable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StandardScoreSyncStateNetSerializable => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::StandardScoreSyncStateNetSerializable => ""
     ."StandardScoreSyncStateNetSerializable"
 );
 #[cfg(feature = "StandardScoreSyncStateNetSerializable")]
-impl std::ops::Deref for StandardScoreSyncStateNetSerializable {
+impl std::ops::Deref for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardScoreSyncStateNetSerializable")]
-impl std::ops::DerefMut for StandardScoreSyncStateNetSerializable {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardScoreSyncStateNetSerializable")]
-impl StandardScoreSyncStateNetSerializable {
+impl crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
@@ -76,20 +78,23 @@ impl StandardScoreSyncStateNetSerializable {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_id(&mut self) -> quest_hook::libil2cpp::Result<SyncStateId> {
+    pub fn get_id(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SyncStateId> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: SyncStateId = __cordl_object.invoke("get_id", ())?;
+        let __cordl_ret: crate::GlobalNamespace::SyncStateId = __cordl_object
+            .invoke("get_id", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_state(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<StandardScoreSyncState> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::StandardScoreSyncState> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: StandardScoreSyncState = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::StandardScoreSyncState = __cordl_object
             .invoke("get_state", ())?;
         Ok(__cordl_ret)
     }
@@ -102,7 +107,7 @@ impl StandardScoreSyncStateNetSerializable {
     }
     pub fn set_id(
         &mut self,
-        value: SyncStateId,
+        value: crate::GlobalNamespace::SyncStateId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -113,7 +118,7 @@ impl StandardScoreSyncStateNetSerializable {
     }
     pub fn set_state(
         &mut self,
-        value: StandardScoreSyncState,
+        value: crate::GlobalNamespace::StandardScoreSyncState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -135,7 +140,8 @@ impl StandardScoreSyncStateNetSerializable {
     }
 }
 #[cfg(feature = "StandardScoreSyncStateNetSerializable")]
-impl quest_hook::libil2cpp::ObjectType for StandardScoreSyncStateNetSerializable {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

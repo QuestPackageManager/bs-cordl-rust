@@ -192,6 +192,8 @@ impl std::ops::DerefMut for crate::System::Reflection::RuntimePropertyInfo {
 }
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo")]
 impl crate::System::Reflection::RuntimePropertyInfo {
+    #[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
+    pub type GetterAdapter = crate::System::Reflection::RuntimePropertyInfo_GetterAdapter;
     #[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
     pub type Getter_2<T: quest_hook::libil2cpp::Type, R: quest_hook::libil2cpp::Type> = crate::System::Reflection::RuntimePropertyInfo_Getter_2<
         T,
@@ -201,8 +203,6 @@ impl crate::System::Reflection::RuntimePropertyInfo {
     pub type StaticGetter_1<R: quest_hook::libil2cpp::Type> = crate::System::Reflection::RuntimePropertyInfo_StaticGetter_1<
         R,
     >;
-    #[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
-    pub type GetterAdapter = crate::System::Reflection::RuntimePropertyInfo_GetterAdapter;
     pub fn CachePropertyInfo(
         &mut self,
         flags: crate::System::Reflection::PInfo,

@@ -24,28 +24,28 @@ pub struct RankModel {
 }
 #[cfg(feature = "RankModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RankModel => ""."RankModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RankModel => ""."RankModel"
 );
 #[cfg(feature = "RankModel")]
-impl std::ops::Deref for RankModel {
+impl std::ops::Deref for crate::GlobalNamespace::RankModel {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RankModel")]
-impl std::ops::DerefMut for RankModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::RankModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RankModel")]
-impl RankModel {
+impl crate::GlobalNamespace::RankModel {
     #[cfg(feature = "RankModel+Rank")]
     pub type Rank = crate::GlobalNamespace::RankModel_Rank;
 }
 #[cfg(feature = "RankModel")]
-impl quest_hook::libil2cpp::ObjectType for RankModel {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RankModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

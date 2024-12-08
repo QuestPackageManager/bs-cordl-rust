@@ -457,17 +457,6 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::BindingState_Flags =>
     "UnityEngine.InputSystem"."InputActionState/BindingState/Flags"
 );
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum InteractionState_Flags {
-    TimerRunning = 1i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::InteractionState_Flags
-    => "UnityEngine.InputSystem"."InputActionState/InteractionState/Flags"
-);
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState+Flags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -484,6 +473,17 @@ pub enum TriggerState_Flags {
 quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::TriggerState_Flags =>
     "UnityEngine.InputSystem"."InputActionState/TriggerState/Flags"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum InteractionState_Flags {
+    TimerRunning = 1i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::InteractionState_Flags
+    => "UnityEngine.InputSystem"."InputActionState/InteractionState/Flags"
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
 #[repr(C)]
@@ -569,20 +569,20 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputActionState {
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
 impl crate::UnityEngine::InputSystem::InputActionState {
     pub const kInvalidIndex: i32 = -1i32;
-    #[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
-    pub type BindingState = crate::UnityEngine::InputSystem::InputActionState_BindingState;
     #[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
     pub type ActionMapIndices = crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices;
+    #[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
+    pub type BindingState = crate::UnityEngine::InputSystem::InputActionState_BindingState;
+    #[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
+    pub type GlobalState = crate::UnityEngine::InputSystem::InputActionState_GlobalState;
+    #[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState")]
+    pub type InteractionState = crate::UnityEngine::InputSystem::InputActionState_InteractionState;
     #[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState")]
     pub type TriggerState = crate::UnityEngine::InputSystem::InputActionState_TriggerState;
     #[cfg(feature = "UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
     pub type UnmanagedMemory = crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory;
-    #[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
-    pub type GlobalState = crate::UnityEngine::InputSystem::InputActionState_GlobalState;
     #[cfg(feature = "UnityEngine+InputSystem+InputActionState+__c")]
     pub type __c = crate::UnityEngine::InputSystem::InputActionState___c;
-    #[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState")]
-    pub type InteractionState = crate::UnityEngine::InputSystem::InputActionState_InteractionState;
     pub fn AddToGlobalList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

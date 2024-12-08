@@ -6,24 +6,27 @@ pub struct AlphabetScrollbarInfoBeatmapLevelHelper {
 }
 #[cfg(feature = "AlphabetScrollbarInfoBeatmapLevelHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AlphabetScrollbarInfoBeatmapLevelHelper => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper => ""
     ."AlphabetScrollbarInfoBeatmapLevelHelper"
 );
 #[cfg(feature = "AlphabetScrollbarInfoBeatmapLevelHelper")]
-impl std::ops::Deref for AlphabetScrollbarInfoBeatmapLevelHelper {
+impl std::ops::Deref
+for crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AlphabetScrollbarInfoBeatmapLevelHelper")]
-impl std::ops::DerefMut for AlphabetScrollbarInfoBeatmapLevelHelper {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AlphabetScrollbarInfoBeatmapLevelHelper")]
-impl AlphabetScrollbarInfoBeatmapLevelHelper {
+impl crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
     pub const kFirstAlphabet: &'static str = "A";
     pub const kMaxCharactersCount: i32 = 28i32;
     pub const kNonAlphabetChar: char = '#';
@@ -31,7 +34,8 @@ impl AlphabetScrollbarInfoBeatmapLevelHelper {
     pub type __c = crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper___c;
 }
 #[cfg(feature = "AlphabetScrollbarInfoBeatmapLevelHelper")]
-impl quest_hook::libil2cpp::ObjectType for AlphabetScrollbarInfoBeatmapLevelHelper {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

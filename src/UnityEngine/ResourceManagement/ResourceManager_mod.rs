@@ -490,11 +490,11 @@ pub struct ResourceManager {
         *mut crate::UnityEngine::Networking::UnityWebRequest,
     >,
     pub CallbackHooksEnabled: bool,
-    pub m_ResourceProviders: *mut ListWithEvents_1<
+    pub m_ResourceProviders: *mut crate::GlobalNamespace::ListWithEvents_1<
         *mut crate::UnityEngine::ResourceManagement::ResourceProviders::IResourceProvider,
     >,
     pub m_allocator: *mut crate::UnityEngine::ResourceManagement::Util::IAllocationStrategy,
-    pub m_UpdateReceivers: *mut ListWithEvents_1<
+    pub m_UpdateReceivers: *mut crate::GlobalNamespace::ListWithEvents_1<
         *mut crate::UnityEngine::ResourceManagement::IUpdateReceiver,
     >,
     pub m_UpdateReceiversToRemove: *mut crate::System::Collections::Generic::List_1<
@@ -513,7 +513,7 @@ pub struct ResourceManager {
     pub m_TrackedInstanceOperations: *mut crate::System::Collections::Generic::HashSet_1<
         *mut crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation,
     >,
-    pub m_UpdateCallbacks: *mut DelegateList_1<f32>,
+    pub m_UpdateCallbacks: *mut crate::GlobalNamespace::DelegateList_1<f32>,
     pub m_DeferredCompleteCallbacks: *mut crate::System::Collections::Generic::List_1<
         *mut crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
     >,
@@ -570,13 +570,23 @@ impl std::ops::DerefMut for crate::UnityEngine::ResourceManagement::ResourceMana
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager")]
 impl crate::UnityEngine::ResourceManagement::ResourceManager {
     #[cfg(
-        feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext"
+        feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1"
     )]
-    pub type DiagnosticEventContext = crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext;
+    pub type CompletedOperation_1<TObject: quest_hook::libil2cpp::Type> = crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<
+        TObject,
+    >;
     #[cfg(
         feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
     )]
     pub type DeferredCallbackRegisterRequest = crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest;
+    #[cfg(
+        feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext"
+    )]
+    pub type DiagnosticEventContext = crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext;
+    #[cfg(
+        feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType"
+    )]
+    pub type DiagnosticEventType = crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType;
     #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
     pub type InstanceOperation = crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation;
     #[cfg(
@@ -585,16 +595,6 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
     pub type __c__DisplayClass95_0_1<TObject: quest_hook::libil2cpp::Type> = crate::UnityEngine::ResourceManagement::ResourceManager___c__DisplayClass95_0_1<
         TObject,
     >;
-    #[cfg(
-        feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1"
-    )]
-    pub type CompletedOperation_1<TObject: quest_hook::libil2cpp::Type> = crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<
-        TObject,
-    >;
-    #[cfg(
-        feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType"
-    )]
-    pub type DiagnosticEventType = crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType;
     pub fn Acquire(
         &mut self,
         handle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,

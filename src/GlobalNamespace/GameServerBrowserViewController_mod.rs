@@ -4,32 +4,32 @@
 pub struct GameServerBrowserViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _filterServersButton: *mut crate::UnityEngine::UI::Button,
-    pub _filterText: *mut GameServersFilterText,
+    pub _filterText: *mut crate::GlobalNamespace::GameServersFilterText,
     pub _createServerButton: *mut crate::UnityEngine::UI::Button,
-    pub _gameServersListTableView: *mut GameServersListTableView,
-    pub _mainLoadingControl: *mut LoadingControl,
-    pub _smallLoadingControl: *mut LoadingControl,
+    pub _gameServersListTableView: *mut crate::GlobalNamespace::GameServersListTableView,
+    pub _mainLoadingControl: *mut crate::GlobalNamespace::LoadingControl,
+    pub _smallLoadingControl: *mut crate::GlobalNamespace::LoadingControl,
 }
 #[cfg(feature = "GameServerBrowserViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameServerBrowserViewController => ""
-    ."GameServerBrowserViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameServerBrowserViewController
+    => ""."GameServerBrowserViewController"
 );
 #[cfg(feature = "GameServerBrowserViewController")]
-impl std::ops::Deref for GameServerBrowserViewController {
+impl std::ops::Deref for crate::GlobalNamespace::GameServerBrowserViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameServerBrowserViewController")]
-impl std::ops::DerefMut for GameServerBrowserViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameServerBrowserViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameServerBrowserViewController")]
-impl GameServerBrowserViewController {
+impl crate::GlobalNamespace::GameServerBrowserViewController {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -49,7 +49,8 @@ impl GameServerBrowserViewController {
     }
 }
 #[cfg(feature = "GameServerBrowserViewController")]
-impl quest_hook::libil2cpp::ObjectType for GameServerBrowserViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GameServerBrowserViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -4,15 +4,17 @@
 pub struct OVRMeshData {
     pub mesh: *mut crate::UnityEngine::Mesh,
     pub material: *mut crate::UnityEngine::Material,
-    pub baseAttributes: OVRMeshAttributes,
-    pub morphTargets: *mut quest_hook::libil2cpp::Il2CppArray<OVRMeshAttributes>,
+    pub baseAttributes: crate::GlobalNamespace::OVRMeshAttributes,
+    pub morphTargets: *mut quest_hook::libil2cpp::Il2CppArray<
+        crate::GlobalNamespace::OVRMeshAttributes,
+    >,
 }
 #[cfg(feature = "OVRMeshData")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for OVRMeshData => ""."OVRMeshData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRMeshData => ""."OVRMeshData"
 );
 #[cfg(feature = "OVRMeshData")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for OVRMeshData {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRMeshData {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -22,4 +24,4 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for OVRMeshData {
     }
 }
 #[cfg(feature = "OVRMeshData")]
-impl OVRMeshData {}
+impl crate::GlobalNamespace::OVRMeshData {}

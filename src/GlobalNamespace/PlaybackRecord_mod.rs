@@ -5,30 +5,31 @@ pub struct PlaybackRecord {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub headNoise: crate::BeatSaber::RecPlay::PoseNoise,
     pub _playback: *mut crate::BeatSaber::RecPlay::PlayerPoseSampler,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
-    pub _playerTransforms: *mut PlayerTransforms,
-    pub _playerControllers: *mut PlayerVRControllersManager,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
+    pub _playerControllers: *mut crate::GlobalNamespace::PlayerVRControllersManager,
     pub _hmdCamera: *mut crate::UnityEngine::Camera,
 }
 #[cfg(feature = "PlaybackRecord")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlaybackRecord => ""."PlaybackRecord"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlaybackRecord => ""
+    ."PlaybackRecord"
 );
 #[cfg(feature = "PlaybackRecord")]
-impl std::ops::Deref for PlaybackRecord {
+impl std::ops::Deref for crate::GlobalNamespace::PlaybackRecord {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlaybackRecord")]
-impl std::ops::DerefMut for PlaybackRecord {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlaybackRecord {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlaybackRecord")]
-impl PlaybackRecord {
+impl crate::GlobalNamespace::PlaybackRecord {
     pub fn Disable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -52,8 +53,8 @@ impl PlaybackRecord {
     pub fn Initialize(
         &mut self,
         mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
-        vrPlatformHelper: *mut IVRPlatformHelper,
-        recording: *mut LevelRecording,
+        vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
+        recording: *mut crate::GlobalNamespace::LevelRecording,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -121,7 +122,7 @@ impl PlaybackRecord {
     }
 }
 #[cfg(feature = "PlaybackRecord")]
-impl quest_hook::libil2cpp::ObjectType for PlaybackRecord {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlaybackRecord {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

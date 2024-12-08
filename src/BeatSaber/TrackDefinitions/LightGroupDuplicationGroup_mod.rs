@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightGroupDuplicationGroup {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _duplicationGroupName: *mut crate::System::String,
-    pub _lightGroups: *mut quest_hook::libil2cpp::Il2CppArray<*mut LightGroupSO>,
+    pub _lightGroups: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::LightGroupSO,
+    >,
 }
 #[cfg(feature = "BeatSaber+TrackDefinitions+LightGroupDuplicationGroup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+TrackDefinitions+LightGroupDuplicationGroup")]
 impl std::ops::Deref for crate::BeatSaber::TrackDefinitions::LightGroupDuplicationGroup {
-    type Target = PersistentScriptableObject;
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,13 +60,16 @@ impl crate::BeatSaber::TrackDefinitions::LightGroupDuplicationGroup {
     pub fn get_lightGroups(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut LightGroupSO>,
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::LightGroupSO,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<*mut LightGroupSO> = __cordl_object
-            .invoke("get_lightGroups", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::LightGroupSO,
+        > = __cordl_object.invoke("get_lightGroups", ())?;
         Ok(__cordl_ret)
     }
 }

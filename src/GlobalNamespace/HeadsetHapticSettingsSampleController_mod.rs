@@ -3,37 +3,39 @@
 #[derive(Debug)]
 pub struct HeadsetHapticSettingsSampleController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _formattedFloatListSettingsController: *mut FormattedFloatListSettingsController,
+    pub _formattedFloatListSettingsController: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
     pub _hapticSamplePlayDelay: f32,
     pub _hapticSampleDuration: f32,
     pub _headHapticPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    pub _hapticFeedbackManager: *mut HapticFeedbackManager,
+    pub _hapticFeedbackManager: *mut crate::GlobalNamespace::HapticFeedbackManager,
     pub _nextHapticSamplePlayTime: f32,
     pub _nextHapticSamplePlayTimeEnd: f32,
 }
 #[cfg(feature = "HeadsetHapticSettingsSampleController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for HeadsetHapticSettingsSampleController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::HeadsetHapticSettingsSampleController => ""
     ."HeadsetHapticSettingsSampleController"
 );
 #[cfg(feature = "HeadsetHapticSettingsSampleController")]
-impl std::ops::Deref for HeadsetHapticSettingsSampleController {
+impl std::ops::Deref for crate::GlobalNamespace::HeadsetHapticSettingsSampleController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HeadsetHapticSettingsSampleController")]
-impl std::ops::DerefMut for HeadsetHapticSettingsSampleController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::HeadsetHapticSettingsSampleController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "HeadsetHapticSettingsSampleController")]
-impl HeadsetHapticSettingsSampleController {
+impl crate::GlobalNamespace::HeadsetHapticSettingsSampleController {
     pub fn HandleHapticSettingValueDidChange(
         &mut self,
-        controller: *mut FormattedFloatListSettingsController,
+        controller: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
         newValue: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -92,7 +94,8 @@ impl HeadsetHapticSettingsSampleController {
     }
 }
 #[cfg(feature = "HeadsetHapticSettingsSampleController")]
-impl quest_hook::libil2cpp::ObjectType for HeadsetHapticSettingsSampleController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::HeadsetHapticSettingsSampleController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

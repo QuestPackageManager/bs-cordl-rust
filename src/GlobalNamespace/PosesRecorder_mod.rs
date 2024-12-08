@@ -3,36 +3,39 @@
 #[derive(Debug)]
 pub struct PosesRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioTimeSyncController: *mut AudioTimeSyncController,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
     pub _transforms: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::Transform,
     >,
-    pub _data: *mut PosesRecordingData,
+    pub _data: *mut crate::GlobalNamespace::PosesRecordingData,
 }
 #[cfg(feature = "PosesRecorder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PosesRecorder => ""."PosesRecorder"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PosesRecorder => ""
+    ."PosesRecorder"
 );
 #[cfg(feature = "PosesRecorder")]
-impl std::ops::Deref for PosesRecorder {
+impl std::ops::Deref for crate::GlobalNamespace::PosesRecorder {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PosesRecorder")]
-impl std::ops::DerefMut for PosesRecorder {
+impl std::ops::DerefMut for crate::GlobalNamespace::PosesRecorder {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PosesRecorder")]
-impl PosesRecorder {
+impl crate::GlobalNamespace::PosesRecorder {
     #[cfg(feature = "PosesRecorder+__c")]
     pub type __c = crate::GlobalNamespace::PosesRecorder___c;
     pub fn Init(
         &mut self,
-        poseObjects: *mut quest_hook::libil2cpp::Il2CppArray<*mut PoseObject>,
+        poseObjects: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::PoseObject,
+        >,
         externalCameraCalibration: *mut crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -102,17 +105,17 @@ impl PosesRecorder {
     }
     pub fn get_data(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PosesRecordingData> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::PosesRecordingData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PosesRecordingData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PosesRecordingData = __cordl_object
             .invoke("get_data", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PosesRecorder")]
-impl quest_hook::libil2cpp::ObjectType for PosesRecorder {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PosesRecorder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

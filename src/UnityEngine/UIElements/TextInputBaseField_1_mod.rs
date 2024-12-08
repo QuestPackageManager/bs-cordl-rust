@@ -580,12 +580,12 @@ for crate::UnityEngine::UIElements::TextInputBaseField_1<TValueType> {
 impl<
     TValueType: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::TextInputBaseField_1<TValueType> {
-    #[cfg(feature = "UnityEngine+UIElements+TextInputBaseField_1+UxmlTraits")]
-    pub type UxmlTraits = crate::UnityEngine::UIElements::TextInputBaseField_1_UxmlTraits<
-        TValueType,
-    >;
     #[cfg(feature = "UnityEngine+UIElements+TextInputBaseField_1+TextInputBase")]
     pub type TextInputBase = crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
+        TValueType,
+    >;
+    #[cfg(feature = "UnityEngine+UIElements+TextInputBaseField_1+UxmlTraits")]
+    pub type UxmlTraits = crate::UnityEngine::UIElements::TextInputBaseField_1_UxmlTraits<
         TValueType,
     >;
     pub fn ExecuteDefaultActionAtTarget(

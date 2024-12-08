@@ -3,23 +3,23 @@
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerBeatmapObjectEventManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _connectedPlayer: *mut IConnectedPlayer,
-    pub _gameplayRpcManager: *mut IGameplayRpcManager,
-    pub _songTimeController: *mut MultiplayerConnectedPlayerSongTimeSyncController,
+    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
+    pub _songTimeController: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController,
     pub connectedPlayerNoteWasSpawnedEvent: *mut crate::System::Action_1<
-        *mut NoteSpawnInfoNetSerializable,
+        *mut crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
     >,
     pub connectedPlayerObstacleWasSpawnedEvent: *mut crate::System::Action_1<
-        *mut ObstacleSpawnInfoNetSerializable,
+        *mut crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
     >,
     pub connectedPlayerSliderWasSpawnedEvent: *mut crate::System::Action_1<
-        *mut SliderSpawnInfoNetSerializable,
+        *mut crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
     >,
     pub connectedPlayerNoteWasCutEvent: *mut crate::System::Action_1<
-        *mut NoteCutInfoNetSerializable,
+        *mut crate::GlobalNamespace::NoteCutInfoNetSerializable,
     >,
     pub connectedPlayerNoteWasMissedEvent: *mut crate::System::Action_1<
-        *mut NoteMissInfoNetSerializable,
+        *mut crate::GlobalNamespace::NoteMissInfoNetSerializable,
     >,
     pub _beatmapObjectEventQueue: *mut crate::System::Collections::Generic::Queue_1<
         crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_TimestampedBeatmapObjectEventData,
@@ -28,24 +28,27 @@ pub struct MultiplayerConnectedPlayerBeatmapObjectEventManager {
 }
 #[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerConnectedPlayerBeatmapObjectEventManager =>
-    ""."MultiplayerConnectedPlayerBeatmapObjectEventManager"
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager => ""
+    ."MultiplayerConnectedPlayerBeatmapObjectEventManager"
 );
 #[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager")]
-impl std::ops::Deref for MultiplayerConnectedPlayerBeatmapObjectEventManager {
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager")]
-impl std::ops::DerefMut for MultiplayerConnectedPlayerBeatmapObjectEventManager {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager")]
-impl MultiplayerConnectedPlayerBeatmapObjectEventManager {
+impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager {
     #[cfg(
         feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
     )]
@@ -73,7 +76,7 @@ impl MultiplayerConnectedPlayerBeatmapObjectEventManager {
     }
     pub fn InvokeCallback(
         &mut self,
-        noteEventData: *mut IPoolableSerializable,
+        noteEventData: *mut crate::GlobalNamespace::IPoolableSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -151,7 +154,9 @@ impl MultiplayerConnectedPlayerBeatmapObjectEventManager {
     }
     pub fn add_connectedPlayerNoteWasCutEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteCutInfoNetSerializable>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::NoteCutInfoNetSerializable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -162,7 +167,9 @@ impl MultiplayerConnectedPlayerBeatmapObjectEventManager {
     }
     pub fn add_connectedPlayerNoteWasMissedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteMissInfoNetSerializable>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::NoteMissInfoNetSerializable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -173,7 +180,9 @@ impl MultiplayerConnectedPlayerBeatmapObjectEventManager {
     }
     pub fn add_connectedPlayerNoteWasSpawnedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteSpawnInfoNetSerializable>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -184,7 +193,9 @@ impl MultiplayerConnectedPlayerBeatmapObjectEventManager {
     }
     pub fn add_connectedPlayerObstacleWasSpawnedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleSpawnInfoNetSerializable>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -195,7 +206,9 @@ impl MultiplayerConnectedPlayerBeatmapObjectEventManager {
     }
     pub fn add_connectedPlayerSliderWasSpawnedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut SliderSpawnInfoNetSerializable>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -206,7 +219,9 @@ impl MultiplayerConnectedPlayerBeatmapObjectEventManager {
     }
     pub fn remove_connectedPlayerNoteWasCutEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteCutInfoNetSerializable>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::NoteCutInfoNetSerializable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -217,7 +232,9 @@ impl MultiplayerConnectedPlayerBeatmapObjectEventManager {
     }
     pub fn remove_connectedPlayerNoteWasMissedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteMissInfoNetSerializable>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::NoteMissInfoNetSerializable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -228,7 +245,9 @@ impl MultiplayerConnectedPlayerBeatmapObjectEventManager {
     }
     pub fn remove_connectedPlayerNoteWasSpawnedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut NoteSpawnInfoNetSerializable>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -239,7 +258,9 @@ impl MultiplayerConnectedPlayerBeatmapObjectEventManager {
     }
     pub fn remove_connectedPlayerObstacleWasSpawnedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ObstacleSpawnInfoNetSerializable>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -250,7 +271,9 @@ impl MultiplayerConnectedPlayerBeatmapObjectEventManager {
     }
     pub fn remove_connectedPlayerSliderWasSpawnedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut SliderSpawnInfoNetSerializable>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -262,7 +285,7 @@ impl MultiplayerConnectedPlayerBeatmapObjectEventManager {
 }
 #[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager")]
 impl quest_hook::libil2cpp::ObjectType
-for MultiplayerConnectedPlayerBeatmapObjectEventManager {
+for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -277,7 +300,7 @@ for MultiplayerConnectedPlayerBeatmapObjectEventManager {
 #[derive(Debug, Clone)]
 pub struct MultiplayerConnectedPlayerBeatmapObjectEventManager_TimestampedBeatmapObjectEventData {
     pub _cordl_time: f32,
-    pub beatmapObjectEventData: *mut IPoolableSerializable,
+    pub beatmapObjectEventData: *mut crate::GlobalNamespace::IPoolableSerializable,
 }
 #[cfg(
     feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
@@ -308,7 +331,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager
     pub fn _ctor(
         &mut self,
         _cordl_time: f32,
-        beatmapObjectEventData: *mut IPoolableSerializable,
+        beatmapObjectEventData: *mut crate::GlobalNamespace::IPoolableSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

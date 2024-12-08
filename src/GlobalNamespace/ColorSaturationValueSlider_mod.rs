@@ -10,31 +10,31 @@ pub struct ColorSaturationValueSlider {
     pub _darkColor: crate::UnityEngine::Color,
     pub _lightColor: crate::UnityEngine::Color,
     pub colorSaturationOrValueDidChangeEvent: *mut crate::System::Action_3<
-        *mut ColorSaturationValueSlider,
+        *mut crate::GlobalNamespace::ColorSaturationValueSlider,
         crate::UnityEngine::Vector2,
-        ColorChangeUIEventType,
+        crate::GlobalNamespace::ColorChangeUIEventType,
     >,
 }
 #[cfg(feature = "ColorSaturationValueSlider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ColorSaturationValueSlider => ""
-    ."ColorSaturationValueSlider"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ColorSaturationValueSlider =>
+    ""."ColorSaturationValueSlider"
 );
 #[cfg(feature = "ColorSaturationValueSlider")]
-impl std::ops::Deref for ColorSaturationValueSlider {
+impl std::ops::Deref for crate::GlobalNamespace::ColorSaturationValueSlider {
     type Target = crate::HMUI::Slider2D;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorSaturationValueSlider")]
-impl std::ops::DerefMut for ColorSaturationValueSlider {
+impl std::ops::DerefMut for crate::GlobalNamespace::ColorSaturationValueSlider {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorSaturationValueSlider")]
-impl ColorSaturationValueSlider {
+impl crate::GlobalNamespace::ColorSaturationValueSlider {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -119,9 +119,9 @@ impl ColorSaturationValueSlider {
     pub fn add_colorSaturationOrValueDidChangeEvent(
         &mut self,
         value: *mut crate::System::Action_3<
-            *mut ColorSaturationValueSlider,
+            *mut crate::GlobalNamespace::ColorSaturationValueSlider,
             crate::UnityEngine::Vector2,
-            ColorChangeUIEventType,
+            crate::GlobalNamespace::ColorChangeUIEventType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -134,9 +134,9 @@ impl ColorSaturationValueSlider {
     pub fn remove_colorSaturationOrValueDidChangeEvent(
         &mut self,
         value: *mut crate::System::Action_3<
-            *mut ColorSaturationValueSlider,
+            *mut crate::GlobalNamespace::ColorSaturationValueSlider,
             crate::UnityEngine::Vector2,
-            ColorChangeUIEventType,
+            crate::GlobalNamespace::ColorChangeUIEventType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -148,7 +148,8 @@ impl ColorSaturationValueSlider {
     }
 }
 #[cfg(feature = "ColorSaturationValueSlider")]
-impl quest_hook::libil2cpp::ObjectType for ColorSaturationValueSlider {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ColorSaturationValueSlider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

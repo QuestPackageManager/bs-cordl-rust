@@ -183,16 +183,16 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
         feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount"
     )]
     pub type CompareDevicesByUserAccount = crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccount;
-    #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserData")]
-    pub type UserData = crate::UnityEngine::InputSystem::Users::InputUser_UserData;
     #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+ControlSchemeChangeSyntax")]
     pub type ControlSchemeChangeSyntax = crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax;
-    #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserFlags")]
-    pub type UserFlags = crate::UnityEngine::InputSystem::Users::InputUser_UserFlags;
     #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+GlobalState")]
     pub type GlobalState = crate::UnityEngine::InputSystem::Users::InputUser_GlobalState;
     #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+OngoingAccountSelection")]
     pub type OngoingAccountSelection = crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection;
+    #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserData")]
+    pub type UserData = crate::UnityEngine::InputSystem::Users::InputUser_UserData;
+    #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserFlags")]
+    pub type UserFlags = crate::UnityEngine::InputSystem::Users::InputUser_UserFlags;
     #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+__c")]
     pub type __c = crate::UnityEngine::InputSystem::Users::InputUser___c;
     pub fn ActivateControlSchemeInternal(

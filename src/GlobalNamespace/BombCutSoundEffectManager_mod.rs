@@ -7,36 +7,36 @@ pub struct BombCutSoundEffectManager {
     pub _bombExplosionAudioClips: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::AudioClip,
     >,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
-    pub saberManager: *mut SaberManager,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
+    pub saberManager: *mut crate::GlobalNamespace::SaberManager,
     pub _bombCutSoundEffectPool: *mut crate::GlobalNamespace::BombCutSoundEffect_Pool,
-    pub _randomSoundPicker: *mut RandomObjectPicker_1<
+    pub _randomSoundPicker: *mut crate::GlobalNamespace::RandomObjectPicker_1<
         *mut crate::UnityEngine::AudioClip,
     >,
 }
 #[cfg(feature = "BombCutSoundEffectManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BombCutSoundEffectManager => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BombCutSoundEffectManager => ""
     ."BombCutSoundEffectManager"
 );
 #[cfg(feature = "BombCutSoundEffectManager")]
-impl std::ops::Deref for BombCutSoundEffectManager {
+impl std::ops::Deref for crate::GlobalNamespace::BombCutSoundEffectManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BombCutSoundEffectManager")]
-impl std::ops::DerefMut for BombCutSoundEffectManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::BombCutSoundEffectManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BombCutSoundEffectManager")]
-impl BombCutSoundEffectManager {
+impl crate::GlobalNamespace::BombCutSoundEffectManager {
     pub fn HandleBombCutSoundEffectDidFinish(
         &mut self,
-        bombCutSoundEffect: *mut BombCutSoundEffect,
+        bombCutSoundEffect: *mut crate::GlobalNamespace::BombCutSoundEffect,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -47,8 +47,8 @@ impl BombCutSoundEffectManager {
     }
     pub fn HandleNoteWasCut(
         &mut self,
-        noteController: *mut NoteController,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -96,7 +96,8 @@ impl BombCutSoundEffectManager {
     }
 }
 #[cfg(feature = "BombCutSoundEffectManager")]
-impl quest_hook::libil2cpp::ObjectType for BombCutSoundEffectManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BombCutSoundEffectManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

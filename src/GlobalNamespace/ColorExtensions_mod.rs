@@ -6,25 +6,26 @@ pub struct ColorExtensions {
 }
 #[cfg(feature = "ColorExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ColorExtensions => ""."ColorExtensions"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ColorExtensions => ""
+    ."ColorExtensions"
 );
 #[cfg(feature = "ColorExtensions")]
-impl std::ops::Deref for ColorExtensions {
+impl std::ops::Deref for crate::GlobalNamespace::ColorExtensions {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorExtensions")]
-impl std::ops::DerefMut for ColorExtensions {
+impl std::ops::DerefMut for crate::GlobalNamespace::ColorExtensions {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorExtensions")]
-impl ColorExtensions {}
+impl crate::GlobalNamespace::ColorExtensions {}
 #[cfg(feature = "ColorExtensions")]
-impl quest_hook::libil2cpp::ObjectType for ColorExtensions {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

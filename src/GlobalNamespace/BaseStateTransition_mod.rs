@@ -3,27 +3,28 @@
 #[derive(Debug)]
 pub struct BaseStateTransition {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _selectableStateController: *mut SelectableStateController,
+    pub _selectableStateController: *mut crate::GlobalNamespace::SelectableStateController,
 }
 #[cfg(feature = "BaseStateTransition")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BaseStateTransition => ""."BaseStateTransition"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BaseStateTransition => ""
+    ."BaseStateTransition"
 );
 #[cfg(feature = "BaseStateTransition")]
-impl std::ops::Deref for BaseStateTransition {
+impl std::ops::Deref for crate::GlobalNamespace::BaseStateTransition {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BaseStateTransition")]
-impl std::ops::DerefMut for BaseStateTransition {
+impl std::ops::DerefMut for crate::GlobalNamespace::BaseStateTransition {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BaseStateTransition")]
-impl BaseStateTransition {
+impl crate::GlobalNamespace::BaseStateTransition {
     pub fn HandleSelectableStateControllerStateDidChange(
         &mut self,
         state: crate::GlobalNamespace::SelectableStateController_ViewState,
@@ -216,11 +217,11 @@ impl BaseStateTransition {
     }
     pub fn get_transition(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BaseTransitionSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BaseTransitionSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BaseTransitionSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BaseTransitionSO = __cordl_object
             .invoke("get_transition", ())?;
         Ok(__cordl_ret)
     }
@@ -236,7 +237,7 @@ impl BaseStateTransition {
     }
 }
 #[cfg(feature = "BaseStateTransition")]
-impl quest_hook::libil2cpp::ObjectType for BaseStateTransition {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BaseStateTransition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

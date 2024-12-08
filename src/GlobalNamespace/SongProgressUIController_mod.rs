@@ -12,8 +12,8 @@ pub struct SongProgressUIController {
     pub _durationRectTransform: *mut crate::UnityEngine::RectTransform,
     pub _durationTextOffsetShort: f32,
     pub _durationTextOffsetLong: f32,
-    pub _audioTimeSource: *mut IAudioTimeSource,
-    pub _songController: *mut SongController,
+    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _songController: *mut crate::GlobalNamespace::SongController,
     pub _prevMinutes: i32,
     pub _prevSeconds: i32,
     pub _stringBuilder: *mut crate::System::Text::StringBuilder,
@@ -24,24 +24,24 @@ pub struct SongProgressUIController {
 }
 #[cfg(feature = "SongProgressUIController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SongProgressUIController => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongProgressUIController => ""
     ."SongProgressUIController"
 );
 #[cfg(feature = "SongProgressUIController")]
-impl std::ops::Deref for SongProgressUIController {
+impl std::ops::Deref for crate::GlobalNamespace::SongProgressUIController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongProgressUIController")]
-impl std::ops::DerefMut for SongProgressUIController {
+impl std::ops::DerefMut for crate::GlobalNamespace::SongProgressUIController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongProgressUIController")]
-impl SongProgressUIController {
+impl crate::GlobalNamespace::SongProgressUIController {
     pub fn HandleSongDidFinish(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -113,7 +113,8 @@ impl SongProgressUIController {
     }
 }
 #[cfg(feature = "SongProgressUIController")]
-impl quest_hook::libil2cpp::ObjectType for SongProgressUIController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SongProgressUIController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

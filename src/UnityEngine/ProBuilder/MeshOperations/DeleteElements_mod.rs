@@ -26,6 +26,8 @@ for crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+DeleteElements")]
 impl crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements {
+    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+DeleteElements+__c")]
+    pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements___c;
     #[cfg(
         feature = "UnityEngine+ProBuilder+MeshOperations+DeleteElements+__c__DisplayClass0_0"
     )]
@@ -34,8 +36,6 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements {
         feature = "UnityEngine+ProBuilder+MeshOperations+DeleteElements+__c__DisplayClass2_0"
     )]
     pub type __c__DisplayClass2_0 = crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements___c__DisplayClass2_0;
-    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+DeleteElements+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements___c;
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+DeleteElements")]
 impl quest_hook::libil2cpp::ObjectType

@@ -8,5 +8,6 @@ pub enum NoteVisualModifierType {
 }
 #[cfg(feature = "NoteVisualModifierType")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for NoteVisualModifierType => ""."NoteVisualModifierType"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteVisualModifierType => ""
+    ."NoteVisualModifierType"
 );

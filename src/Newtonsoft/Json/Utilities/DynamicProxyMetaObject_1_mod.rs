@@ -31,10 +31,8 @@ for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1<T> {
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass10_0"
-    )]
-    pub type __c__DisplayClass10_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass10_0<
+    #[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+Fallback")]
+    pub type Fallback = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<
         T,
     >;
     #[cfg(
@@ -43,64 +41,12 @@ impl<
     pub type GetBinderAdapter = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_GetBinderAdapter<
         T,
     >;
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass12_0"
-    )]
-    pub type __c__DisplayClass12_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass12_0<
-        T,
-    >;
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass4_0"
-    )]
-    pub type __c__DisplayClass4_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass4_0<
-        T,
-    >;
-    #[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+Fallback")]
-    pub type Fallback = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<
-        T,
-    >;
     #[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c")]
     pub type __c = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c<T>;
     #[cfg(
-        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass6_0"
+        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass10_0"
     )]
-    pub type __c__DisplayClass6_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass6_0<
-        T,
-    >;
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass9_0"
-    )]
-    pub type __c__DisplayClass9_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass9_0<
-        T,
-    >;
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass3_0"
-    )]
-    pub type __c__DisplayClass3_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass3_0<
-        T,
-    >;
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass8_0"
-    )]
-    pub type __c__DisplayClass8_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass8_0<
-        T,
-    >;
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass5_0"
-    )]
-    pub type __c__DisplayClass5_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass5_0<
-        T,
-    >;
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass14_0"
-    )]
-    pub type __c__DisplayClass14_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass14_0<
-        T,
-    >;
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass7_0"
-    )]
-    pub type __c__DisplayClass7_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass7_0<
+    pub type __c__DisplayClass10_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass10_0<
         T,
     >;
     #[cfg(
@@ -110,9 +56,63 @@ impl<
         T,
     >;
     #[cfg(
+        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass12_0"
+    )]
+    pub type __c__DisplayClass12_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass12_0<
+        T,
+    >;
+    #[cfg(
         feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass13_0"
     )]
     pub type __c__DisplayClass13_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass13_0<
+        T,
+    >;
+    #[cfg(
+        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass14_0"
+    )]
+    pub type __c__DisplayClass14_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass14_0<
+        T,
+    >;
+    #[cfg(
+        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass3_0"
+    )]
+    pub type __c__DisplayClass3_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass3_0<
+        T,
+    >;
+    #[cfg(
+        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass4_0"
+    )]
+    pub type __c__DisplayClass4_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass4_0<
+        T,
+    >;
+    #[cfg(
+        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass5_0"
+    )]
+    pub type __c__DisplayClass5_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass5_0<
+        T,
+    >;
+    #[cfg(
+        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass6_0"
+    )]
+    pub type __c__DisplayClass6_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass6_0<
+        T,
+    >;
+    #[cfg(
+        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass7_0"
+    )]
+    pub type __c__DisplayClass7_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass7_0<
+        T,
+    >;
+    #[cfg(
+        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass8_0"
+    )]
+    pub type __c__DisplayClass8_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass8_0<
+        T,
+    >;
+    #[cfg(
+        feature = "Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+__c__DisplayClass9_0"
+    )]
+    pub type __c__DisplayClass9_0 = crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1___c__DisplayClass9_0<
         T,
     >;
     pub fn BindBinaryOperation(

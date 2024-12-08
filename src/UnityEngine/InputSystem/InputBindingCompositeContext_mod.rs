@@ -80,17 +80,17 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext {
 #[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext")]
 impl crate::UnityEngine::InputSystem::InputBindingCompositeContext {
     #[cfg(
-        feature = "UnityEngine+InputSystem+InputBindingCompositeContext+_get_controls_d__2"
-    )]
-    pub type _get_controls_d__2 = crate::UnityEngine::InputSystem::InputBindingCompositeContext__get_controls_d__2;
-    #[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding")]
-    pub type PartBinding = crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding;
-    #[cfg(
         feature = "UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
     )]
     pub type DefaultComparer_1<TValue: quest_hook::libil2cpp::Type> = crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultComparer_1<
         TValue,
     >;
+    #[cfg(feature = "UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding")]
+    pub type PartBinding = crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputBindingCompositeContext+_get_controls_d__2"
+    )]
+    pub type _get_controls_d__2 = crate::UnityEngine::InputSystem::InputBindingCompositeContext__get_controls_d__2;
     pub fn EvaluateMagnitude(
         &mut self,
         partNumber: i32,

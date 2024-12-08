@@ -133,13 +133,13 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderB
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
 impl crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
     #[cfg(
-        feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+__c__DisplayClass10_0"
-    )]
-    pub type __c__DisplayClass10_0 = crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase___c__DisplayClass10_0;
-    #[cfg(
         feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
     )]
     pub type BaseInitAsyncOp = crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase_BaseInitAsyncOp;
+    #[cfg(
+        feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+__c__DisplayClass10_0"
+    )]
+    pub type __c__DisplayClass10_0 = crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase___c__DisplayClass10_0;
     pub fn CanProvide(
         &mut self,
         t: *mut crate::System::Type,

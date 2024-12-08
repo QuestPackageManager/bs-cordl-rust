@@ -2,28 +2,29 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BombExecutionRating {
-    __cordl_parent: BeatmapObjectExecutionRating,
+    __cordl_parent: crate::GlobalNamespace::BeatmapObjectExecutionRating,
     pub _rating_k__BackingField: crate::GlobalNamespace::BombExecutionRating_Rating,
 }
 #[cfg(feature = "BombExecutionRating")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BombExecutionRating => ""."BombExecutionRating"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BombExecutionRating => ""
+    ."BombExecutionRating"
 );
 #[cfg(feature = "BombExecutionRating")]
-impl std::ops::Deref for BombExecutionRating {
-    type Target = BeatmapObjectExecutionRating;
+impl std::ops::Deref for crate::GlobalNamespace::BombExecutionRating {
+    type Target = crate::GlobalNamespace::BeatmapObjectExecutionRating;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BombExecutionRating")]
-impl std::ops::DerefMut for BombExecutionRating {
+impl std::ops::DerefMut for crate::GlobalNamespace::BombExecutionRating {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BombExecutionRating")]
-impl BombExecutionRating {
+impl crate::GlobalNamespace::BombExecutionRating {
     #[cfg(feature = "BombExecutionRating+Rating")]
     pub type Rating = crate::GlobalNamespace::BombExecutionRating_Rating;
     pub fn New(
@@ -62,7 +63,7 @@ impl BombExecutionRating {
     }
 }
 #[cfg(feature = "BombExecutionRating")]
-impl quest_hook::libil2cpp::ObjectType for BombExecutionRating {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BombExecutionRating {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

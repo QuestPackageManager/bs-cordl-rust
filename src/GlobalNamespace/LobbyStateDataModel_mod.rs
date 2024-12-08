@@ -3,38 +3,43 @@
 #[derive(Debug)]
 pub struct LobbyStateDataModel {
     __cordl_parent: crate::System::Object,
-    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
-    pub _unifiedNetworkPlayerModel: *mut IUnifiedNetworkPlayerModel,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _unifiedNetworkPlayerModel: *mut crate::GlobalNamespace::IUnifiedNetworkPlayerModel,
     pub _connectedPlayers: *mut crate::System::Collections::Generic::List_1<
-        *mut IConnectedPlayer,
+        *mut crate::GlobalNamespace::IConnectedPlayer,
     >,
     pub _connectedPlayersById: *mut crate::System::Collections::Generic::Dictionary_2<
         *mut crate::System::String,
-        *mut IConnectedPlayer,
+        *mut crate::GlobalNamespace::IConnectedPlayer,
     >,
-    pub _configuration: GameplayServerConfiguration,
-    pub playerConnectedEvent: *mut crate::System::Action_1<*mut IConnectedPlayer>,
-    pub playerDisconnectedEvent: *mut crate::System::Action_1<*mut IConnectedPlayer>,
+    pub _configuration: crate::GlobalNamespace::GameplayServerConfiguration,
+    pub playerConnectedEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::IConnectedPlayer,
+    >,
+    pub playerDisconnectedEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::IConnectedPlayer,
+    >,
 }
 #[cfg(feature = "LobbyStateDataModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LobbyStateDataModel => ""."LobbyStateDataModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LobbyStateDataModel => ""
+    ."LobbyStateDataModel"
 );
 #[cfg(feature = "LobbyStateDataModel")]
-impl std::ops::Deref for LobbyStateDataModel {
+impl std::ops::Deref for crate::GlobalNamespace::LobbyStateDataModel {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LobbyStateDataModel")]
-impl std::ops::DerefMut for LobbyStateDataModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::LobbyStateDataModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LobbyStateDataModel")]
-impl LobbyStateDataModel {
+impl crate::GlobalNamespace::LobbyStateDataModel {
     pub fn Activate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -68,17 +73,17 @@ impl LobbyStateDataModel {
     pub fn GetPlayerById(
         &mut self,
         userId: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut IConnectedPlayer> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IConnectedPlayer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IConnectedPlayer = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IConnectedPlayer = __cordl_object
             .invoke("GetPlayerById", (userId))?;
         Ok(__cordl_ret)
     }
     pub fn HandleMultiplayerSessionManagerPlayerConnected(
         &mut self,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -89,7 +94,7 @@ impl LobbyStateDataModel {
     }
     pub fn HandleMultiplayerSessionManagerPlayerDisconnected(
         &mut self,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -117,7 +122,9 @@ impl LobbyStateDataModel {
     }
     pub fn add_playerConnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -128,7 +135,9 @@ impl LobbyStateDataModel {
     }
     pub fn add_playerDisconnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -139,24 +148,28 @@ impl LobbyStateDataModel {
     }
     pub fn get_configuration(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<GameplayServerConfiguration> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::GameplayServerConfiguration,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: GameplayServerConfiguration = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::GameplayServerConfiguration = __cordl_object
             .invoke("get_configuration", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_connectedPlayers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<*mut IConnectedPlayer>,
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut IConnectedPlayer,
+            *mut crate::GlobalNamespace::IConnectedPlayer,
         > = __cordl_object.invoke("get_connectedPlayers", ())?;
         Ok(__cordl_ret)
     }
@@ -169,30 +182,34 @@ impl LobbyStateDataModel {
     }
     pub fn get_localPlayer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IConnectedPlayer> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IConnectedPlayer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IConnectedPlayer = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IConnectedPlayer = __cordl_object
             .invoke("get_localPlayer", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_rawConnectedPlayers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyList_1<*mut IConnectedPlayer>,
+        *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut IConnectedPlayer,
+            *mut crate::GlobalNamespace::IConnectedPlayer,
         > = __cordl_object.invoke("get_rawConnectedPlayers", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_playerConnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -203,7 +220,9 @@ impl LobbyStateDataModel {
     }
     pub fn remove_playerDisconnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IConnectedPlayer>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -214,7 +233,7 @@ impl LobbyStateDataModel {
     }
 }
 #[cfg(feature = "LobbyStateDataModel")]
-impl quest_hook::libil2cpp::ObjectType for LobbyStateDataModel {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LobbyStateDataModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

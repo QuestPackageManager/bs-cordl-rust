@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundNonLightRenderer {
-    __cordl_parent: BloomPrePassBackgroundNonLightRendererCore,
+    __cordl_parent: crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore,
     pub _renderer: *mut crate::UnityEngine::Renderer,
     pub _meshFilter: *mut crate::UnityEngine::MeshFilter,
     pub _isPartOfInstancedRendering: bool,
@@ -10,24 +10,26 @@ pub struct BloomPrePassBackgroundNonLightRenderer {
 }
 #[cfg(feature = "BloomPrePassBackgroundNonLightRenderer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomPrePassBackgroundNonLightRenderer => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer => ""
     ."BloomPrePassBackgroundNonLightRenderer"
 );
 #[cfg(feature = "BloomPrePassBackgroundNonLightRenderer")]
-impl std::ops::Deref for BloomPrePassBackgroundNonLightRenderer {
-    type Target = BloomPrePassBackgroundNonLightRendererCore;
+impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
+    type Target = crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundNonLightRenderer")]
-impl std::ops::DerefMut for BloomPrePassBackgroundNonLightRenderer {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundNonLightRenderer")]
-impl BloomPrePassBackgroundNonLightRenderer {
+impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -128,7 +130,8 @@ impl BloomPrePassBackgroundNonLightRenderer {
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundNonLightRenderer")]
-impl quest_hook::libil2cpp::ObjectType for BloomPrePassBackgroundNonLightRenderer {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

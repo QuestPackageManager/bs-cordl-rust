@@ -53,20 +53,20 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::Image {
 }
 #[cfg(feature = "UnityEngine+UI+Image")]
 impl crate::UnityEngine::UI::Image {
-    #[cfg(feature = "UnityEngine+UI+Image+Origin180")]
-    pub type Origin180 = crate::UnityEngine::UI::Image_Origin180;
-    #[cfg(feature = "UnityEngine+UI+Image+Origin90")]
-    pub type Origin90 = crate::UnityEngine::UI::Image_Origin90;
-    #[cfg(feature = "UnityEngine+UI+Image+Origin360")]
-    pub type Origin360 = crate::UnityEngine::UI::Image_Origin360;
     #[cfg(feature = "UnityEngine+UI+Image+FillMethod")]
     pub type FillMethod = crate::UnityEngine::UI::Image_FillMethod;
-    #[cfg(feature = "UnityEngine+UI+Image+Type")]
-    pub type Type = crate::UnityEngine::UI::Image_Type;
+    #[cfg(feature = "UnityEngine+UI+Image+Origin180")]
+    pub type Origin180 = crate::UnityEngine::UI::Image_Origin180;
+    #[cfg(feature = "UnityEngine+UI+Image+Origin360")]
+    pub type Origin360 = crate::UnityEngine::UI::Image_Origin360;
+    #[cfg(feature = "UnityEngine+UI+Image+Origin90")]
+    pub type Origin90 = crate::UnityEngine::UI::Image_Origin90;
     #[cfg(feature = "UnityEngine+UI+Image+OriginHorizontal")]
     pub type OriginHorizontal = crate::UnityEngine::UI::Image_OriginHorizontal;
     #[cfg(feature = "UnityEngine+UI+Image+OriginVertical")]
     pub type OriginVertical = crate::UnityEngine::UI::Image_OriginVertical;
+    #[cfg(feature = "UnityEngine+UI+Image+Type")]
+    pub type Type = crate::UnityEngine::UI::Image_Type;
     pub fn CalculateLayoutInputHorizontal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -30,39 +30,42 @@ impl crate::GlobalNamespace::TrailElementCollection_InterpolationState {}
 pub struct TrailElementCollection {
     __cordl_parent: crate::System::Object,
     pub _capacity: i32,
-    pub _snapshots: *mut quest_hook::libil2cpp::Il2CppArray<*mut TrailElement>,
+    pub _snapshots: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::TrailElement,
+    >,
     pub _headIndex: i32,
     pub _totalDistance: f32,
 }
 #[cfg(feature = "TrailElementCollection")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TrailElementCollection => ""."TrailElementCollection"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TrailElementCollection => ""
+    ."TrailElementCollection"
 );
 #[cfg(feature = "TrailElementCollection")]
-impl std::ops::Deref for TrailElementCollection {
+impl std::ops::Deref for crate::GlobalNamespace::TrailElementCollection {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TrailElementCollection")]
-impl std::ops::DerefMut for TrailElementCollection {
+impl std::ops::DerefMut for crate::GlobalNamespace::TrailElementCollection {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TrailElementCollection")]
-impl TrailElementCollection {
+impl crate::GlobalNamespace::TrailElementCollection {
     #[cfg(feature = "TrailElementCollection+InterpolationState")]
     pub type InterpolationState = crate::GlobalNamespace::TrailElementCollection_InterpolationState;
     pub fn GetElement(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut TrailElement> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::TrailElement> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut TrailElement = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::TrailElement = __cordl_object
             .invoke("GetElement", (index))?;
         Ok(__cordl_ret)
     }
@@ -180,7 +183,8 @@ impl TrailElementCollection {
     }
 }
 #[cfg(feature = "TrailElementCollection")]
-impl quest_hook::libil2cpp::ObjectType for TrailElementCollection {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::TrailElementCollection {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

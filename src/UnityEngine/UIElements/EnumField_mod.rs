@@ -34,12 +34,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::EnumField {
 }
 #[cfg(feature = "UnityEngine+UIElements+EnumField")]
 impl crate::UnityEngine::UIElements::EnumField {
+    #[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlFactory")]
+    pub type UxmlFactory = crate::UnityEngine::UIElements::EnumField_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::EnumField_UxmlTraits;
     #[cfg(feature = "UnityEngine+UIElements+EnumField+__c")]
     pub type __c = crate::UnityEngine::UIElements::EnumField___c;
-    #[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlFactory")]
-    pub type UxmlFactory = crate::UnityEngine::UIElements::EnumField_UxmlFactory;
     pub fn ChangeValueFromMenu(
         &mut self,
         menuItem: *mut crate::System::Object,

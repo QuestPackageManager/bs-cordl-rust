@@ -32,23 +32,24 @@ pub struct AudioTimeSyncController {
 }
 #[cfg(feature = "AudioTimeSyncController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AudioTimeSyncController => ""."AudioTimeSyncController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AudioTimeSyncController => ""
+    ."AudioTimeSyncController"
 );
 #[cfg(feature = "AudioTimeSyncController")]
-impl std::ops::Deref for AudioTimeSyncController {
+impl std::ops::Deref for crate::GlobalNamespace::AudioTimeSyncController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AudioTimeSyncController")]
-impl std::ops::DerefMut for AudioTimeSyncController {
+impl std::ops::DerefMut for crate::GlobalNamespace::AudioTimeSyncController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AudioTimeSyncController")]
-impl AudioTimeSyncController {
+impl crate::GlobalNamespace::AudioTimeSyncController {
     #[cfg(feature = "AudioTimeSyncController+InitData")]
     pub type InitData = crate::GlobalNamespace::AudioTimeSyncController_InitData;
     #[cfg(feature = "AudioTimeSyncController+State")]
@@ -320,7 +321,8 @@ impl AudioTimeSyncController {
     }
 }
 #[cfg(feature = "AudioTimeSyncController")]
-impl quest_hook::libil2cpp::ObjectType for AudioTimeSyncController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::AudioTimeSyncController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

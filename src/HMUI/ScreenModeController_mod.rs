@@ -6,7 +6,7 @@ pub struct ScreenModeController {
     pub _curvedCanvases: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::HMUI::CurvedCanvasSettings,
     >,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
     pub _defaultModeData: *mut crate::HMUI::ScreenModeData,
     pub _transform: *mut crate::UnityEngine::Transform,
 }

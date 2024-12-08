@@ -4,7 +4,7 @@
 pub struct MissionObjectiveCheckersManager_InitData {
     __cordl_parent: crate::System::Object,
     pub missionObjectives: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut MissionObjective,
+        *mut crate::GlobalNamespace::MissionObjective,
     >,
 }
 #[cfg(feature = "MissionObjectiveCheckersManager+InitData")]
@@ -31,7 +31,9 @@ for crate::GlobalNamespace::MissionObjectiveCheckersManager_InitData {
 #[cfg(feature = "MissionObjectiveCheckersManager+InitData")]
 impl crate::GlobalNamespace::MissionObjectiveCheckersManager_InitData {
     pub fn New(
-        missionObjectives: *mut quest_hook::libil2cpp::Il2CppArray<*mut MissionObjective>,
+        missionObjectives: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MissionObjective,
+        >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -41,7 +43,9 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager_InitData {
     }
     pub fn _ctor(
         &mut self,
-        missionObjectives: *mut quest_hook::libil2cpp::Il2CppArray<*mut MissionObjective>,
+        missionObjectives: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MissionObjective,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -67,60 +71,64 @@ for crate::GlobalNamespace::MissionObjectiveCheckersManager_InitData {
 pub struct MissionObjectiveCheckersManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _missionObjectiveCheckers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut MissionObjectiveChecker,
+        *mut crate::GlobalNamespace::MissionObjectiveChecker,
     >,
     pub _initData: *mut crate::GlobalNamespace::MissionObjectiveCheckersManager_InitData,
-    pub _gameplayManager: *mut ILevelEndActions,
+    pub _gameplayManager: *mut crate::GlobalNamespace::ILevelEndActions,
     pub objectiveDidFailEvent: *mut crate::System::Action,
     pub objectiveWasClearedEvent: *mut crate::System::Action,
     pub objectivesListDidChangeEvent: *mut crate::System::Action,
     pub _activeMissionObjectiveCheckers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut MissionObjectiveChecker,
+        *mut crate::GlobalNamespace::MissionObjectiveChecker,
     >,
 }
 #[cfg(feature = "MissionObjectiveCheckersManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionObjectiveCheckersManager => ""
-    ."MissionObjectiveCheckersManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissionObjectiveCheckersManager
+    => ""."MissionObjectiveCheckersManager"
 );
 #[cfg(feature = "MissionObjectiveCheckersManager")]
-impl std::ops::Deref for MissionObjectiveCheckersManager {
+impl std::ops::Deref for crate::GlobalNamespace::MissionObjectiveCheckersManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionObjectiveCheckersManager")]
-impl std::ops::DerefMut for MissionObjectiveCheckersManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionObjectiveCheckersManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionObjectiveCheckersManager")]
-impl MissionObjectiveCheckersManager {
+impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
     #[cfg(feature = "MissionObjectiveCheckersManager+InitData")]
     pub type InitData = crate::GlobalNamespace::MissionObjectiveCheckersManager_InitData;
     pub fn GetMissionObjectiveChecker(
         &mut self,
-        missionObjectiveType: *mut MissionObjectiveTypeSO,
-    ) -> quest_hook::libil2cpp::Result<*mut MissionObjectiveChecker> {
+        missionObjectiveType: *mut crate::GlobalNamespace::MissionObjectiveTypeSO,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::MissionObjectiveChecker,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MissionObjectiveChecker = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MissionObjectiveChecker = __cordl_object
             .invoke("GetMissionObjectiveChecker", (missionObjectiveType))?;
         Ok(__cordl_ret)
     }
     pub fn GetResults(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut MissionObjectiveResult>,
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MissionObjectiveResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut MissionObjectiveResult,
+            *mut crate::GlobalNamespace::MissionObjectiveResult,
         > = __cordl_object.invoke("GetResults", ())?;
         Ok(__cordl_ret)
     }
@@ -146,7 +154,7 @@ impl MissionObjectiveCheckersManager {
     }
     pub fn HandleMissionObjectiveCheckerStatusDidChange(
         &mut self,
-        missionObjectiveChecker: *mut MissionObjectiveChecker,
+        missionObjectiveChecker: *mut crate::GlobalNamespace::MissionObjectiveChecker,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -241,13 +249,15 @@ impl MissionObjectiveCheckersManager {
     pub fn get_activeMissionObjectiveCheckers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut MissionObjectiveChecker>,
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::MissionObjectiveChecker,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut MissionObjectiveChecker,
+            *mut crate::GlobalNamespace::MissionObjectiveChecker,
         > = __cordl_object.invoke("get_activeMissionObjectiveCheckers", ())?;
         Ok(__cordl_ret)
     }
@@ -286,7 +296,8 @@ impl MissionObjectiveCheckersManager {
     }
 }
 #[cfg(feature = "MissionObjectiveCheckersManager")]
-impl quest_hook::libil2cpp::ObjectType for MissionObjectiveCheckersManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MissionObjectiveCheckersManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

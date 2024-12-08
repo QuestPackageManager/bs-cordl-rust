@@ -51,7 +51,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct PyramidBloomRendererSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _shader: *mut crate::UnityEngine::Shader,
     pub _material: *mut crate::UnityEngine::Material,
     pub _pyramid: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -63,28 +63,29 @@ pub struct PyramidBloomRendererSO {
 }
 #[cfg(feature = "PyramidBloomRendererSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PyramidBloomRendererSO => ""."PyramidBloomRendererSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PyramidBloomRendererSO => ""
+    ."PyramidBloomRendererSO"
 );
 #[cfg(feature = "PyramidBloomRendererSO")]
-impl std::ops::Deref for PyramidBloomRendererSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::PyramidBloomRendererSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PyramidBloomRendererSO")]
-impl std::ops::DerefMut for PyramidBloomRendererSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::PyramidBloomRendererSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PyramidBloomRendererSO")]
-impl PyramidBloomRendererSO {
+impl crate::GlobalNamespace::PyramidBloomRendererSO {
     pub const kMaxPyramidSize: i32 = 16i32;
-    #[cfg(feature = "PyramidBloomRendererSO+Pass")]
-    pub type Pass = crate::GlobalNamespace::PyramidBloomRendererSO_Pass;
     #[cfg(feature = "PyramidBloomRendererSO+Level")]
     pub type Level = crate::GlobalNamespace::PyramidBloomRendererSO_Level;
+    #[cfg(feature = "PyramidBloomRendererSO+Pass")]
+    pub type Pass = crate::GlobalNamespace::PyramidBloomRendererSO_Pass;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -202,7 +203,8 @@ impl PyramidBloomRendererSO {
     }
 }
 #[cfg(feature = "PyramidBloomRendererSO")]
-impl quest_hook::libil2cpp::ObjectType for PyramidBloomRendererSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PyramidBloomRendererSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

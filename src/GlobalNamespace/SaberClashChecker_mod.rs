@@ -5,29 +5,30 @@ pub struct SaberClashChecker {
     __cordl_parent: crate::System::Object,
     pub _sabersAreClashing: bool,
     pub _clashingPoint: crate::UnityEngine::Vector3,
-    pub _leftSaber: *mut Saber,
-    pub _rightSaber: *mut Saber,
+    pub _leftSaber: *mut crate::GlobalNamespace::Saber,
+    pub _rightSaber: *mut crate::GlobalNamespace::Saber,
     pub _prevGetFrameNum: i32,
 }
 #[cfg(feature = "SaberClashChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SaberClashChecker => ""."SaberClashChecker"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SaberClashChecker => ""
+    ."SaberClashChecker"
 );
 #[cfg(feature = "SaberClashChecker")]
-impl std::ops::Deref for SaberClashChecker {
+impl std::ops::Deref for crate::GlobalNamespace::SaberClashChecker {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberClashChecker")]
-impl std::ops::DerefMut for SaberClashChecker {
+impl std::ops::DerefMut for crate::GlobalNamespace::SaberClashChecker {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberClashChecker")]
-impl SaberClashChecker {
+impl crate::GlobalNamespace::SaberClashChecker {
     pub const kIgnoredTime: f32 = 0.1f32;
     pub const kMinDistanceToClash: f32 = 0.08f32;
     pub fn AreSabersClashing(
@@ -43,7 +44,7 @@ impl SaberClashChecker {
     }
     pub fn Init(
         &mut self,
-        saberManager: *mut SaberManager,
+        saberManager: *mut crate::GlobalNamespace::SaberManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -86,7 +87,7 @@ impl SaberClashChecker {
     }
 }
 #[cfg(feature = "SaberClashChecker")]
-impl quest_hook::libil2cpp::ObjectType for SaberClashChecker {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberClashChecker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

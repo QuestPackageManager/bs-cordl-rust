@@ -6,37 +6,38 @@ pub struct MultiplayerResultsViewController {
     pub _levelClearedGO: *mut crate::UnityEngine::GameObject,
     pub _levelFailedGO: *mut crate::UnityEngine::GameObject,
     pub _levelResultsGO: *mut crate::UnityEngine::GameObject,
-    pub _levelBar: *mut LevelBar,
-    pub _resultsTableView: *mut ResultsTableView,
+    pub _levelBar: *mut crate::GlobalNamespace::LevelBar,
+    pub _resultsTableView: *mut crate::GlobalNamespace::ResultsTableView,
     pub _backToLobbyButton: *mut crate::UnityEngine::UI::Button,
     pub _backToMenuButton: *mut crate::UnityEngine::UI::Button,
     pub backToLobbyPressedEvent: *mut crate::System::Action_1<
-        *mut MultiplayerResultsViewController,
+        *mut crate::GlobalNamespace::MultiplayerResultsViewController,
     >,
     pub backToMenuPressedEvent: *mut crate::System::Action_1<
-        *mut MultiplayerResultsViewController,
+        *mut crate::GlobalNamespace::MultiplayerResultsViewController,
     >,
 }
 #[cfg(feature = "MultiplayerResultsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerResultsViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerResultsViewController => ""
     ."MultiplayerResultsViewController"
 );
 #[cfg(feature = "MultiplayerResultsViewController")]
-impl std::ops::Deref for MultiplayerResultsViewController {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerResultsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerResultsViewController")]
-impl std::ops::DerefMut for MultiplayerResultsViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerResultsViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerResultsViewController")]
-impl MultiplayerResultsViewController {
+impl crate::GlobalNamespace::MultiplayerResultsViewController {
     pub fn BackToLobbyPressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -75,8 +76,8 @@ impl MultiplayerResultsViewController {
     }
     pub fn Init(
         &mut self,
-        multiplayerResultsData: *mut MultiplayerResultsData,
-        beatmapKey: BeatmapKey,
+        multiplayerResultsData: *mut crate::GlobalNamespace::MultiplayerResultsData,
+        beatmapKey: crate::GlobalNamespace::BeatmapKey,
         showBackToLobbyButton: bool,
         showBackToMenuButton: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -114,7 +115,9 @@ impl MultiplayerResultsViewController {
     }
     pub fn add_backToLobbyPressedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MultiplayerResultsViewController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::MultiplayerResultsViewController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -125,7 +128,9 @@ impl MultiplayerResultsViewController {
     }
     pub fn add_backToMenuPressedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MultiplayerResultsViewController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::MultiplayerResultsViewController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -136,7 +141,9 @@ impl MultiplayerResultsViewController {
     }
     pub fn remove_backToLobbyPressedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MultiplayerResultsViewController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::MultiplayerResultsViewController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -147,7 +154,9 @@ impl MultiplayerResultsViewController {
     }
     pub fn remove_backToMenuPressedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MultiplayerResultsViewController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::MultiplayerResultsViewController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -158,7 +167,8 @@ impl MultiplayerResultsViewController {
     }
 }
 #[cfg(feature = "MultiplayerResultsViewController")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerResultsViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerResultsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

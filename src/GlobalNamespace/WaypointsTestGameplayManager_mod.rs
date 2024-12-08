@@ -9,10 +9,10 @@ pub struct WaypointsTestGameplayManager {
     pub _innerSphereOffset: crate::UnityEngine::Vector3,
     pub _innerSphereRadius: f32,
     pub _layersToColliderWith: crate::UnityEngine::LayerMask,
-    pub _characterSpawnController: *mut BTSCharacterSpawnController,
-    pub _audioTimeSource: *mut IAudioTimeSource,
-    pub _standardSceneSetupData: *mut StandardGameplaySceneSetupData,
-    pub _levelSceneSetupData: *mut GameplayCoreSceneSetupData,
+    pub _characterSpawnController: *mut crate::GlobalNamespace::BTSCharacterSpawnController,
+    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _standardSceneSetupData: *mut crate::GlobalNamespace::StandardGameplaySceneSetupData,
+    pub _levelSceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
     pub _target: *mut crate::UnityEngine::Transform,
     pub _firstPosSaved: bool,
     pub _speedSaved: bool,
@@ -25,24 +25,24 @@ pub struct WaypointsTestGameplayManager {
 }
 #[cfg(feature = "WaypointsTestGameplayManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for WaypointsTestGameplayManager => ""
-    ."WaypointsTestGameplayManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::WaypointsTestGameplayManager =>
+    ""."WaypointsTestGameplayManager"
 );
 #[cfg(feature = "WaypointsTestGameplayManager")]
-impl std::ops::Deref for WaypointsTestGameplayManager {
+impl std::ops::Deref for crate::GlobalNamespace::WaypointsTestGameplayManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "WaypointsTestGameplayManager")]
-impl std::ops::DerefMut for WaypointsTestGameplayManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::WaypointsTestGameplayManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "WaypointsTestGameplayManager")]
-impl WaypointsTestGameplayManager {
+impl crate::GlobalNamespace::WaypointsTestGameplayManager {
     pub fn GetBar(
         &mut self,
         songTime: f32,
@@ -113,7 +113,8 @@ impl WaypointsTestGameplayManager {
     }
 }
 #[cfg(feature = "WaypointsTestGameplayManager")]
-impl quest_hook::libil2cpp::ObjectType for WaypointsTestGameplayManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::WaypointsTestGameplayManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

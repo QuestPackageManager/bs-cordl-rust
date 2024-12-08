@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct AvatarSystemSelectionFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub _selectAvatarSystemViewController: *mut SelectAvatarSystemViewController,
+    pub _selectAvatarSystemViewController: *mut crate::GlobalNamespace::SelectAvatarSystemViewController,
     pub _avatarSystemCollection: *mut crate::BeatSaber::AvatarCore::AvatarSystemCollection,
-    pub _playerDataModel: *mut PlayerDataModel,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
     pub _container: *mut crate::Zenject::DiContainer,
     pub didFinishEvent: *mut crate::System::Action_2<
-        *mut AvatarSystemSelectionFlowCoordinator,
+        *mut crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
         crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
     >,
     pub _avatarFlowCoordinators: *mut crate::System::Collections::Generic::Dictionary_2<
@@ -19,24 +19,26 @@ pub struct AvatarSystemSelectionFlowCoordinator {
 }
 #[cfg(feature = "AvatarSystemSelectionFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AvatarSystemSelectionFlowCoordinator => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::AvatarSystemSelectionFlowCoordinator => ""
     ."AvatarSystemSelectionFlowCoordinator"
 );
 #[cfg(feature = "AvatarSystemSelectionFlowCoordinator")]
-impl std::ops::Deref for AvatarSystemSelectionFlowCoordinator {
+impl std::ops::Deref for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AvatarSystemSelectionFlowCoordinator")]
-impl std::ops::DerefMut for AvatarSystemSelectionFlowCoordinator {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AvatarSystemSelectionFlowCoordinator")]
-impl AvatarSystemSelectionFlowCoordinator {
+impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
     #[cfg(feature = "AvatarSystemSelectionFlowCoordinator+FinishAction")]
     pub type FinishAction = crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction;
     #[cfg(feature = "AvatarSystemSelectionFlowCoordinator+_Initialize_d__10")]
@@ -230,7 +232,7 @@ impl AvatarSystemSelectionFlowCoordinator {
     pub fn add_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut AvatarSystemSelectionFlowCoordinator,
+            *mut crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
             crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -244,7 +246,7 @@ impl AvatarSystemSelectionFlowCoordinator {
     pub fn remove_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut AvatarSystemSelectionFlowCoordinator,
+            *mut crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
             crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -257,7 +259,8 @@ impl AvatarSystemSelectionFlowCoordinator {
     }
 }
 #[cfg(feature = "AvatarSystemSelectionFlowCoordinator")]
-impl quest_hook::libil2cpp::ObjectType for AvatarSystemSelectionFlowCoordinator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

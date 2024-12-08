@@ -378,16 +378,16 @@ for crate::UnityEngine::UIElements::UQueryState_1<T> {
 }
 #[cfg(feature = "UnityEngine+UIElements+UQueryState_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryState_1<T> {
+    #[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
+    pub type ActionQueryMatcher = crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<
+        T,
+    >;
     #[cfg(feature = "UnityEngine+UIElements+UQueryState_1+Enumerator")]
     pub type Enumerator = crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T>;
     #[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ListQueryMatcher_1")]
     pub type ListQueryMatcher_1<TElement: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::UQueryState_1_ListQueryMatcher_1<
         T,
         TElement,
-    >;
-    #[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
-    pub type ActionQueryMatcher = crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<
-        T,
     >;
     pub fn Equals_Object1(
         &mut self,

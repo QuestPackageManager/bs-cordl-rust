@@ -2,31 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RectangleFakeGlowLightWithId {
-    __cordl_parent: LightWithIdMonoBehaviour,
+    __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
     pub _minAlpha: f32,
     pub _alphaMul: f32,
-    pub _rectangleFakeGlow: *mut RectangleFakeGlow,
+    pub _rectangleFakeGlow: *mut crate::GlobalNamespace::RectangleFakeGlow,
 }
 #[cfg(feature = "RectangleFakeGlowLightWithId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RectangleFakeGlowLightWithId => ""
-    ."RectangleFakeGlowLightWithId"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RectangleFakeGlowLightWithId =>
+    ""."RectangleFakeGlowLightWithId"
 );
 #[cfg(feature = "RectangleFakeGlowLightWithId")]
-impl std::ops::Deref for RectangleFakeGlowLightWithId {
-    type Target = LightWithIdMonoBehaviour;
+impl std::ops::Deref for crate::GlobalNamespace::RectangleFakeGlowLightWithId {
+    type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RectangleFakeGlowLightWithId")]
-impl std::ops::DerefMut for RectangleFakeGlowLightWithId {
+impl std::ops::DerefMut for crate::GlobalNamespace::RectangleFakeGlowLightWithId {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RectangleFakeGlowLightWithId")]
-impl RectangleFakeGlowLightWithId {
+impl crate::GlobalNamespace::RectangleFakeGlowLightWithId {
     pub fn ColorWasSet(
         &mut self,
         color: crate::UnityEngine::Color,
@@ -67,7 +67,8 @@ impl RectangleFakeGlowLightWithId {
     }
 }
 #[cfg(feature = "RectangleFakeGlowLightWithId")]
-impl quest_hook::libil2cpp::ObjectType for RectangleFakeGlowLightWithId {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::RectangleFakeGlowLightWithId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

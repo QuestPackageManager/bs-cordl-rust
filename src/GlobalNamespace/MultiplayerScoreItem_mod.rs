@@ -11,29 +11,30 @@ pub struct MultiplayerScoreItem {
 }
 #[cfg(feature = "MultiplayerScoreItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerScoreItem => ""."MultiplayerScoreItem"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerScoreItem => ""
+    ."MultiplayerScoreItem"
 );
 #[cfg(feature = "MultiplayerScoreItem")]
-impl std::ops::Deref for MultiplayerScoreItem {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerScoreItem {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerScoreItem")]
-impl std::ops::DerefMut for MultiplayerScoreItem {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerScoreItem {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerScoreItem")]
-impl MultiplayerScoreItem {
+impl crate::GlobalNamespace::MultiplayerScoreItem {
     pub fn AnimateColors(
         &mut self,
         nameColor: crate::UnityEngine::Color,
         scoreColor: crate::UnityEngine::Color,
         duration: f32,
-        easeType: EaseType,
+        easeType: crate::GlobalNamespace::EaseType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -137,7 +138,7 @@ impl MultiplayerScoreItem {
     }
 }
 #[cfg(feature = "MultiplayerScoreItem")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerScoreItem {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MultiplayerScoreItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

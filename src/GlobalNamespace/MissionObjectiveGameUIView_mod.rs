@@ -16,31 +16,31 @@ pub struct MissionObjectiveGameUIView {
     pub _nameText: *mut crate::TMPro::TextMeshProUGUI,
     pub _valueText: *mut crate::TMPro::TextMeshProUGUI,
     pub _conditionText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _missionObjectiveChecker: *mut MissionObjectiveChecker,
+    pub _missionObjectiveChecker: *mut crate::GlobalNamespace::MissionObjectiveChecker,
 }
 #[cfg(feature = "MissionObjectiveGameUIView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionObjectiveGameUIView => ""
-    ."MissionObjectiveGameUIView"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissionObjectiveGameUIView =>
+    ""."MissionObjectiveGameUIView"
 );
 #[cfg(feature = "MissionObjectiveGameUIView")]
-impl std::ops::Deref for MissionObjectiveGameUIView {
+impl std::ops::Deref for crate::GlobalNamespace::MissionObjectiveGameUIView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionObjectiveGameUIView")]
-impl std::ops::DerefMut for MissionObjectiveGameUIView {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionObjectiveGameUIView {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionObjectiveGameUIView")]
-impl MissionObjectiveGameUIView {
+impl crate::GlobalNamespace::MissionObjectiveGameUIView {
     pub fn HandleMissionObjectiveCheckedValueDidChange(
         &mut self,
-        missionObjectiveChecker: *mut MissionObjectiveChecker,
+        missionObjectiveChecker: *mut crate::GlobalNamespace::MissionObjectiveChecker,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -54,7 +54,7 @@ impl MissionObjectiveGameUIView {
     }
     pub fn HandleMissionObjectiveStatusDidChange(
         &mut self,
-        missionObjectiveChecker: *mut MissionObjectiveChecker,
+        missionObjectiveChecker: *mut crate::GlobalNamespace::MissionObjectiveChecker,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -92,7 +92,7 @@ impl MissionObjectiveGameUIView {
     }
     pub fn SetMissionObjectiveChecker(
         &mut self,
-        missionObjectiveChecker: *mut MissionObjectiveChecker,
+        missionObjectiveChecker: *mut crate::GlobalNamespace::MissionObjectiveChecker,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -113,7 +113,8 @@ impl MissionObjectiveGameUIView {
     }
 }
 #[cfg(feature = "MissionObjectiveGameUIView")]
-impl quest_hook::libil2cpp::ObjectType for MissionObjectiveGameUIView {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MissionObjectiveGameUIView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

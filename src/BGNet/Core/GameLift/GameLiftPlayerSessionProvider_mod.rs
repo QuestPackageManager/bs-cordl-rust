@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct GameLiftPlayerSessionProvider {
     __cordl_parent: crate::System::Object,
-    pub _networkConfig: *mut INetworkConfig,
-    pub _graphAPIClient: *mut GraphAPIClient,
-    pub _xPlatformAuthFeatureFlag: *mut XPlatformAuthFeatureFlag,
+    pub _networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
+    pub _graphAPIClient: *mut crate::GlobalNamespace::GraphAPIClient,
+    pub _xPlatformAuthFeatureFlag: *mut crate::GlobalNamespace::XPlatformAuthFeatureFlag,
     pub _pingAverages: *mut crate::System::Collections::Generic::Dictionary_2<
         *mut crate::System::String,
-        *mut RollingAverage,
+        *mut crate::GlobalNamespace::RollingAverage,
     >,
     pub _pingCount: i32,
     pub _lastPingTime: i64,
@@ -47,12 +47,12 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider+_PingAllAwsGameLiftRegions_d__15"
     )]
     pub type _PingAllAwsGameLiftRegions_d__15 = crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider__PingAllAwsGameLiftRegions_d__15;
-    #[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider+__c")]
-    pub type __c = crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider___c;
     #[cfg(
         feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider+_PingRegionAsync_d__17"
     )]
     pub type _PingRegionAsync_d__17 = crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider__PingRegionAsync_d__17;
+    #[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider+__c")]
+    pub type __c = crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider___c;
     pub fn GetAverageLatencies(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -72,10 +72,10 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
     }
     pub fn GetGameLiftPlayerSessionInfo(
         &mut self,
-        authenticationTokenProvider: *mut IAuthenticationTokenProvider,
+        authenticationTokenProvider: *mut crate::GlobalNamespace::IAuthenticationTokenProvider,
         userId: *mut crate::System::String,
-        beatmapLevelSelectionMask: BeatmapLevelSelectionMask,
-        gameplayServerConfiguration: GameplayServerConfiguration,
+        beatmapLevelSelectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+        gameplayServerConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
         secret: *mut crate::System::String,
         code: *mut crate::System::String,
         cancellationToken: crate::System::Threading::CancellationToken,
@@ -106,17 +106,19 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
     }
     pub fn GetXPlatformAccessToken(
         &mut self,
-        authenticationTokenProvider: *mut IAuthenticationTokenProvider,
+        authenticationTokenProvider: *mut crate::GlobalNamespace::IAuthenticationTokenProvider,
         cancellationToken: crate::System::Threading::CancellationToken,
         skipCache: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<XPlatformAccessTokenData>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::XPlatformAccessTokenData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            XPlatformAccessTokenData,
+            crate::GlobalNamespace::XPlatformAccessTokenData,
         > = __cordl_object
             .invoke(
                 "GetXPlatformAccessToken",
@@ -125,8 +127,8 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         Ok(__cordl_ret)
     }
     pub fn New(
-        networkConfig: *mut INetworkConfig,
-        xPlatformAuthFeatureFlag: *mut XPlatformAuthFeatureFlag,
+        networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
+        xPlatformAuthFeatureFlag: *mut crate::GlobalNamespace::XPlatformAuthFeatureFlag,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -188,8 +190,8 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
     }
     pub fn _ctor(
         &mut self,
-        networkConfig: *mut INetworkConfig,
-        xPlatformAuthFeatureFlag: *mut XPlatformAuthFeatureFlag,
+        networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
+        xPlatformAuthFeatureFlag: *mut crate::GlobalNamespace::XPlatformAuthFeatureFlag,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

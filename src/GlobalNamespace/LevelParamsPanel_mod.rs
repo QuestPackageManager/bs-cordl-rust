@@ -10,23 +10,24 @@ pub struct LevelParamsPanel {
 }
 #[cfg(feature = "LevelParamsPanel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LevelParamsPanel => ""."LevelParamsPanel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LevelParamsPanel => ""
+    ."LevelParamsPanel"
 );
 #[cfg(feature = "LevelParamsPanel")]
-impl std::ops::Deref for LevelParamsPanel {
+impl std::ops::Deref for crate::GlobalNamespace::LevelParamsPanel {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelParamsPanel")]
-impl std::ops::DerefMut for LevelParamsPanel {
+impl std::ops::DerefMut for crate::GlobalNamespace::LevelParamsPanel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelParamsPanel")]
-impl LevelParamsPanel {
+impl crate::GlobalNamespace::LevelParamsPanel {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -90,7 +91,7 @@ impl LevelParamsPanel {
     }
 }
 #[cfg(feature = "LevelParamsPanel")]
-impl quest_hook::libil2cpp::ObjectType for LevelParamsPanel {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LevelParamsPanel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

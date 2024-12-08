@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassRendererSO {
-    __cordl_parent: PersistentScriptableObject,
-    pub _bloomFog: *mut BloomFogSO,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    pub _bloomFog: *mut crate::GlobalNamespace::BloomFogSO,
     pub _preallocationData: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData,
     >,
     pub _lightsRenderingData: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut BloomPrePassLightTypeSO,
+        *mut crate::GlobalNamespace::BloomPrePassLightTypeSO,
         *mut crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData,
     >,
     pub _commandBuffer: *mut crate::UnityEngine::Rendering::CommandBuffer,
@@ -18,27 +18,28 @@ pub struct BloomPrePassRendererSO {
 }
 #[cfg(feature = "BloomPrePassRendererSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomPrePassRendererSO => ""."BloomPrePassRendererSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BloomPrePassRendererSO => ""
+    ."BloomPrePassRendererSO"
 );
 #[cfg(feature = "BloomPrePassRendererSO")]
-impl std::ops::Deref for BloomPrePassRendererSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassRendererSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassRendererSO")]
-impl std::ops::DerefMut for BloomPrePassRendererSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassRendererSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassRendererSO")]
-impl BloomPrePassRendererSO {
-    #[cfg(feature = "BloomPrePassRendererSO+PreallocationData")]
-    pub type PreallocationData = crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData;
+impl crate::GlobalNamespace::BloomPrePassRendererSO {
     #[cfg(feature = "BloomPrePassRendererSO+LightsRenderingData")]
     pub type LightsRenderingData = crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData;
+    #[cfg(feature = "BloomPrePassRendererSO+PreallocationData")]
+    pub type PreallocationData = crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData;
     pub fn Cleanup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -52,7 +53,7 @@ impl BloomPrePassRendererSO {
     pub fn CreateBloomPrePassRenderTextureIfNeeded(
         &mut self,
         renderTexture: *mut crate::UnityEngine::RenderTexture,
-        bloomPrePassParams: *mut IBloomPrePassParams,
+        bloomPrePassParams: *mut crate::GlobalNamespace::IBloomPrePassParams,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::RenderTexture> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -153,7 +154,7 @@ impl BloomPrePassRendererSO {
     }
     pub fn PrepareLightsMeshRendering(
         &mut self,
-        lightType: *mut BloomPrePassLightTypeSO,
+        lightType: *mut crate::GlobalNamespace::BloomPrePassLightTypeSO,
         data: *mut crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData,
         numberOfLights: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -183,12 +184,12 @@ impl BloomPrePassRendererSO {
         projectionMatrix: crate::UnityEngine::Matrix4x4,
         viewMatrix: crate::UnityEngine::Matrix4x4,
         stereoCameraEyeOffset: f32,
-        bloomPrePassParams: *mut IBloomPrePassParams,
+        bloomPrePassParams: *mut crate::GlobalNamespace::IBloomPrePassParams,
         dest: *mut crate::UnityEngine::RenderTexture,
         textureToScreenRatio: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Vector2,
         >,
-        toneMapping: quest_hook::libil2cpp::ByRefMut<ToneMapping>,
+        toneMapping: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::ToneMapping>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -242,7 +243,8 @@ impl BloomPrePassRendererSO {
     }
 }
 #[cfg(feature = "BloomPrePassRendererSO")]
-impl quest_hook::libil2cpp::ObjectType for BloomPrePassRendererSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BloomPrePassRendererSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -317,7 +319,7 @@ for crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData {
 #[derive(Debug)]
 pub struct BloomPrePassRendererSO_PreallocationData {
     __cordl_parent: crate::System::Object,
-    pub lightType: *mut BloomPrePassLightTypeSO,
+    pub lightType: *mut crate::GlobalNamespace::BloomPrePassLightTypeSO,
     pub preallocateCount: i32,
 }
 #[cfg(feature = "BloomPrePassRendererSO+PreallocationData")]

@@ -109,10 +109,10 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::Primes {
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Primes")]
 impl crate::Org::BouncyCastle::Math::Primes {
-    #[cfg(feature = "Org+BouncyCastle+Math+Primes+STOutput")]
-    pub type STOutput = crate::Org::BouncyCastle::Math::Primes_STOutput;
     #[cfg(feature = "Org+BouncyCastle+Math+Primes+MROutput")]
     pub type MROutput = crate::Org::BouncyCastle::Math::Primes_MROutput;
+    #[cfg(feature = "Org+BouncyCastle+Math+Primes+STOutput")]
+    pub type STOutput = crate::Org::BouncyCastle::Math::Primes_STOutput;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -6,25 +6,26 @@ pub struct StringExtensions {
 }
 #[cfg(feature = "StringExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StringExtensions => ""."StringExtensions"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::StringExtensions => ""
+    ."StringExtensions"
 );
 #[cfg(feature = "StringExtensions")]
-impl std::ops::Deref for StringExtensions {
+impl std::ops::Deref for crate::GlobalNamespace::StringExtensions {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StringExtensions")]
-impl std::ops::DerefMut for StringExtensions {
+impl std::ops::DerefMut for crate::GlobalNamespace::StringExtensions {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StringExtensions")]
-impl StringExtensions {}
+impl crate::GlobalNamespace::StringExtensions {}
 #[cfg(feature = "StringExtensions")]
-impl quest_hook::libil2cpp::ObjectType for StringExtensions {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::StringExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

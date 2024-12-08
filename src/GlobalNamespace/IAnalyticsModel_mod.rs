@@ -6,23 +6,24 @@ pub struct IAnalyticsModel {
 }
 #[cfg(feature = "IAnalyticsModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IAnalyticsModel => ""."IAnalyticsModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IAnalyticsModel => ""
+    ."IAnalyticsModel"
 );
 #[cfg(feature = "IAnalyticsModel")]
-impl std::ops::Deref for IAnalyticsModel {
+impl std::ops::Deref for crate::GlobalNamespace::IAnalyticsModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IAnalyticsModel")]
-impl std::ops::DerefMut for IAnalyticsModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::IAnalyticsModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IAnalyticsModel")]
-impl IAnalyticsModel {
+impl crate::GlobalNamespace::IAnalyticsModel {
     pub fn LogClick(
         &mut self,
         clickType: *mut crate::System::String,
@@ -125,7 +126,7 @@ impl IAnalyticsModel {
     }
 }
 #[cfg(feature = "IAnalyticsModel")]
-impl quest_hook::libil2cpp::ObjectType for IAnalyticsModel {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IAnalyticsModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

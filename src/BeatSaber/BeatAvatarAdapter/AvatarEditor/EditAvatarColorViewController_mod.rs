@@ -5,8 +5,8 @@
 #[derive(Debug)]
 pub struct EditAvatarColorViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _hsvPanelController: *mut HSVPanelController,
-    pub _previousColorPanelController: *mut PreviousColorPanelController,
+    pub _hsvPanelController: *mut crate::GlobalNamespace::HSVPanelController,
+    pub _previousColorPanelController: *mut crate::GlobalNamespace::PreviousColorPanelController,
     pub _cancelButton: *mut crate::UnityEngine::UI::Button,
     pub _applyButton: *mut crate::UnityEngine::UI::Button,
     pub didChangeColorEvent: *mut crate::System::Action_1<crate::UnityEngine::Color>,
@@ -81,7 +81,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
     pub fn HandleHSVPanelControllerColorDidChange(
         &mut self,
         color: crate::UnityEngine::Color,
-        colorChangeUIEventType: ColorChangeUIEventType,
+        colorChangeUIEventType: crate::GlobalNamespace::ColorChangeUIEventType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

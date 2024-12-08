@@ -7,5 +7,6 @@ pub enum BeatmapLevelDataVersion {
 }
 #[cfg(feature = "BeatmapLevelDataVersion")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for BeatmapLevelDataVersion => ""."BeatmapLevelDataVersion"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapLevelDataVersion => ""
+    ."BeatmapLevelDataVersion"
 );

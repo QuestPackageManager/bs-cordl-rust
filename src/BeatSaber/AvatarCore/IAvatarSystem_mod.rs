@@ -61,13 +61,15 @@ impl crate::BeatSaber::AvatarCore::IAvatarSystem {
     pub fn GetMultiplayerAvatarsData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<MultiplayerAvatarData>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::MultiplayerAvatarData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            MultiplayerAvatarData,
+            crate::GlobalNamespace::MultiplayerAvatarData,
         > = __cordl_object.invoke("GetMultiplayerAvatarsData", ())?;
         Ok(__cordl_ret)
     }
@@ -128,13 +130,15 @@ impl crate::BeatSaber::AvatarCore::IAvatarSystem {
     pub fn __GetRandomizedMultiplayerAvatarsData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<MultiplayerAvatarData>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::MultiplayerAvatarData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            MultiplayerAvatarData,
+            crate::GlobalNamespace::MultiplayerAvatarData,
         > = __cordl_object.invoke("__GetRandomizedMultiplayerAvatarsData", ())?;
         Ok(__cordl_ret)
     }

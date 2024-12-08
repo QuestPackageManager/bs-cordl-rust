@@ -2,43 +2,46 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorBoostBeatmapEventData {
-    __cordl_parent: BeatmapEventData,
+    __cordl_parent: crate::GlobalNamespace::BeatmapEventData,
     pub boostColorsAreOn: bool,
 }
 #[cfg(feature = "ColorBoostBeatmapEventData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ColorBoostBeatmapEventData => ""
-    ."ColorBoostBeatmapEventData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ColorBoostBeatmapEventData =>
+    ""."ColorBoostBeatmapEventData"
 );
 #[cfg(feature = "ColorBoostBeatmapEventData")]
-impl std::ops::Deref for ColorBoostBeatmapEventData {
-    type Target = BeatmapEventData;
+impl std::ops::Deref for crate::GlobalNamespace::ColorBoostBeatmapEventData {
+    type Target = crate::GlobalNamespace::BeatmapEventData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorBoostBeatmapEventData")]
-impl std::ops::DerefMut for ColorBoostBeatmapEventData {
+impl std::ops::DerefMut for crate::GlobalNamespace::ColorBoostBeatmapEventData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorBoostBeatmapEventData")]
-impl ColorBoostBeatmapEventData {
-    pub fn GetCopy(&mut self) -> quest_hook::libil2cpp::Result<*mut BeatmapDataItem> {
+impl crate::GlobalNamespace::ColorBoostBeatmapEventData {
+    pub fn GetCopy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapDataItem> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapDataItem = __cordl_object.invoke("GetCopy", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapDataItem = __cordl_object
+            .invoke("GetCopy", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetDefault(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapEventData> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapEventData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapEventData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapEventData = __cordl_object
             .invoke("GetDefault", ())?;
         Ok(__cordl_ret)
     }
@@ -66,7 +69,8 @@ impl ColorBoostBeatmapEventData {
     }
 }
 #[cfg(feature = "ColorBoostBeatmapEventData")]
-impl quest_hook::libil2cpp::ObjectType for ColorBoostBeatmapEventData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ColorBoostBeatmapEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

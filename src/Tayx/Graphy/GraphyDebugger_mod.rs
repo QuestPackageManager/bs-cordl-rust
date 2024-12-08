@@ -207,26 +207,26 @@ impl std::ops::DerefMut for crate::Tayx::Graphy::GraphyDebugger {
 }
 #[cfg(feature = "Tayx+Graphy+GraphyDebugger")]
 impl crate::Tayx::Graphy::GraphyDebugger {
-    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugCondition")]
-    pub type DebugCondition = crate::Tayx::Graphy::GraphyDebugger_DebugCondition;
-    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+__c__DisplayClass19_0")]
-    pub type __c__DisplayClass19_0 = crate::Tayx::Graphy::GraphyDebugger___c__DisplayClass19_0;
-    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+__c")]
-    pub type __c = crate::Tayx::Graphy::GraphyDebugger___c;
     #[cfg(feature = "Tayx+Graphy+GraphyDebugger+ConditionEvaluation")]
     pub type ConditionEvaluation = crate::Tayx::Graphy::GraphyDebugger_ConditionEvaluation;
-    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugVariable")]
-    pub type DebugVariable = crate::Tayx::Graphy::GraphyDebugger_DebugVariable;
-    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+__c__DisplayClass21_0")]
-    pub type __c__DisplayClass21_0 = crate::Tayx::Graphy::GraphyDebugger___c__DisplayClass21_0;
     #[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugComparer")]
     pub type DebugComparer = crate::Tayx::Graphy::GraphyDebugger_DebugComparer;
-    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+MessageType")]
-    pub type MessageType = crate::Tayx::Graphy::GraphyDebugger_MessageType;
+    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugCondition")]
+    pub type DebugCondition = crate::Tayx::Graphy::GraphyDebugger_DebugCondition;
     #[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugPacket")]
     pub type DebugPacket = crate::Tayx::Graphy::GraphyDebugger_DebugPacket;
+    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugVariable")]
+    pub type DebugVariable = crate::Tayx::Graphy::GraphyDebugger_DebugVariable;
+    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+MessageType")]
+    pub type MessageType = crate::Tayx::Graphy::GraphyDebugger_MessageType;
+    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+__c")]
+    pub type __c = crate::Tayx::Graphy::GraphyDebugger___c;
     #[cfg(feature = "Tayx+Graphy+GraphyDebugger+__c__DisplayClass18_0")]
     pub type __c__DisplayClass18_0 = crate::Tayx::Graphy::GraphyDebugger___c__DisplayClass18_0;
+    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+__c__DisplayClass19_0")]
+    pub type __c__DisplayClass19_0 = crate::Tayx::Graphy::GraphyDebugger___c__DisplayClass19_0;
+    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+__c__DisplayClass21_0")]
+    pub type __c__DisplayClass21_0 = crate::Tayx::Graphy::GraphyDebugger___c__DisplayClass21_0;
     pub fn AddCallbackToAllDebugPacketWithId(
         &mut self,
         callback: *mut crate::System::Action,

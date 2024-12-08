@@ -6,27 +6,27 @@ pub struct INoteControllerDidInitEvent {
 }
 #[cfg(feature = "INoteControllerDidInitEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for INoteControllerDidInitEvent => ""
-    ."INoteControllerDidInitEvent"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::INoteControllerDidInitEvent =>
+    ""."INoteControllerDidInitEvent"
 );
 #[cfg(feature = "INoteControllerDidInitEvent")]
-impl std::ops::Deref for INoteControllerDidInitEvent {
+impl std::ops::Deref for crate::GlobalNamespace::INoteControllerDidInitEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "INoteControllerDidInitEvent")]
-impl std::ops::DerefMut for INoteControllerDidInitEvent {
+impl std::ops::DerefMut for crate::GlobalNamespace::INoteControllerDidInitEvent {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "INoteControllerDidInitEvent")]
-impl INoteControllerDidInitEvent {
+impl crate::GlobalNamespace::INoteControllerDidInitEvent {
     pub fn HandleNoteControllerDidInit(
         &mut self,
-        noteController: *mut NoteControllerBase,
+        noteController: *mut crate::GlobalNamespace::NoteControllerBase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -42,7 +42,8 @@ impl INoteControllerDidInitEvent {
     }
 }
 #[cfg(feature = "INoteControllerDidInitEvent")]
-impl quest_hook::libil2cpp::ObjectType for INoteControllerDidInitEvent {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::INoteControllerDidInitEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarPartsModelSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _headTops: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
     >,
@@ -32,7 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPartsModelSO")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
-    type Target = PersistentScriptableObject;
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

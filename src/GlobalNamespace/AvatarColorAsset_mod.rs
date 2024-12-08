@@ -3,27 +3,28 @@
 #[derive(Debug)]
 pub struct AvatarColorAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
-    pub _template: *mut AvatarColorBehaviour,
+    pub _template: *mut crate::GlobalNamespace::AvatarColorBehaviour,
 }
 #[cfg(feature = "AvatarColorAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AvatarColorAsset => ""."AvatarColorAsset"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AvatarColorAsset => ""
+    ."AvatarColorAsset"
 );
 #[cfg(feature = "AvatarColorAsset")]
-impl std::ops::Deref for AvatarColorAsset {
+impl std::ops::Deref for crate::GlobalNamespace::AvatarColorAsset {
     type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AvatarColorAsset")]
-impl std::ops::DerefMut for AvatarColorAsset {
+impl std::ops::DerefMut for crate::GlobalNamespace::AvatarColorAsset {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AvatarColorAsset")]
-impl AvatarColorAsset {
+impl crate::GlobalNamespace::AvatarColorAsset {
     pub fn CreatePlayable(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,
@@ -65,7 +66,7 @@ impl AvatarColorAsset {
     }
 }
 #[cfg(feature = "AvatarColorAsset")]
-impl quest_hook::libil2cpp::ObjectType for AvatarColorAsset {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AvatarColorAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

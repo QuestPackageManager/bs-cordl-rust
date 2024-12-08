@@ -21,10 +21,10 @@ pub struct EulaViewController {
     pub _disableButtonsProgress: *mut crate::UnityEngine::UI::Image,
     pub _disabledButtonDelay: f32,
     pub _textPageScrollView: *mut crate::HMUI::TextPageScrollView,
-    pub _eulaLocalizedTextAsset: *mut LocalizedTextAsset,
+    pub _eulaLocalizedTextAsset: *mut crate::GlobalNamespace::LocalizedTextAsset,
     pub _updateNoticeLocalizationKey: *mut crate::System::String,
     pub _initData: *mut crate::GlobalNamespace::EulaViewController_InitData,
-    pub _coroutineStarter: *mut ICoroutineStarter,
+    pub _coroutineStarter: *mut crate::GlobalNamespace::ICoroutineStarter,
     pub didFinishEvent: *mut crate::System::Action_1<
         crate::GlobalNamespace::EulaViewController_ButtonType,
     >,
@@ -34,29 +34,30 @@ pub struct EulaViewController {
 }
 #[cfg(feature = "EulaViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EulaViewController => ""."EulaViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EulaViewController => ""
+    ."EulaViewController"
 );
 #[cfg(feature = "EulaViewController")]
-impl std::ops::Deref for EulaViewController {
+impl std::ops::Deref for crate::GlobalNamespace::EulaViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EulaViewController")]
-impl std::ops::DerefMut for EulaViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::EulaViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EulaViewController")]
-impl EulaViewController {
-    #[cfg(feature = "EulaViewController+_EnableButtonsCoroutine_d__21")]
-    pub type _EnableButtonsCoroutine_d__21 = crate::GlobalNamespace::EulaViewController__EnableButtonsCoroutine_d__21;
+impl crate::GlobalNamespace::EulaViewController {
     #[cfg(feature = "EulaViewController+ButtonType")]
     pub type ButtonType = crate::GlobalNamespace::EulaViewController_ButtonType;
     #[cfg(feature = "EulaViewController+InitData")]
     pub type InitData = crate::GlobalNamespace::EulaViewController_InitData;
+    #[cfg(feature = "EulaViewController+_EnableButtonsCoroutine_d__21")]
+    pub type _EnableButtonsCoroutine_d__21 = crate::GlobalNamespace::EulaViewController__EnableButtonsCoroutine_d__21;
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -183,7 +184,7 @@ impl EulaViewController {
     }
 }
 #[cfg(feature = "EulaViewController")]
-impl quest_hook::libil2cpp::ObjectType for EulaViewController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EulaViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

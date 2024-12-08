@@ -13,7 +13,7 @@ pub struct Tween {
     pub _delay: f32,
     pub _isStarted: bool,
     pub _isKilled: bool,
-    pub _easeType: EaseType,
+    pub _easeType: crate::GlobalNamespace::EaseType,
     pub _updateAt: crate::Tweening::FrameParity,
 }
 #[cfg(feature = "Tweening+Tween")]
@@ -132,11 +132,14 @@ impl crate::Tweening::Tween {
         let __cordl_ret: f32 = __cordl_object.invoke("get_duration", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_easeType(&mut self) -> quest_hook::libil2cpp::Result<EaseType> {
+    pub fn get_easeType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EaseType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: EaseType = __cordl_object.invoke("get_easeType", ())?;
+        let __cordl_ret: crate::GlobalNamespace::EaseType = __cordl_object
+            .invoke("get_easeType", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_isActive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -222,7 +225,7 @@ impl crate::Tweening::Tween {
     }
     pub fn set_easeType(
         &mut self,
-        value: EaseType,
+        value: crate::GlobalNamespace::EaseType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

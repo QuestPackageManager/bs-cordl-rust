@@ -2,31 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockBeatmapObjectManager {
-    __cordl_parent: BeatmapObjectManager,
+    __cordl_parent: crate::GlobalNamespace::BeatmapObjectManager,
 }
 #[cfg(feature = "MockBeatmapObjectManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MockBeatmapObjectManager => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MockBeatmapObjectManager => ""
     ."MockBeatmapObjectManager"
 );
 #[cfg(feature = "MockBeatmapObjectManager")]
-impl std::ops::Deref for MockBeatmapObjectManager {
-    type Target = BeatmapObjectManager;
+impl std::ops::Deref for crate::GlobalNamespace::MockBeatmapObjectManager {
+    type Target = crate::GlobalNamespace::BeatmapObjectManager;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockBeatmapObjectManager")]
-impl std::ops::DerefMut for MockBeatmapObjectManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::MockBeatmapObjectManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockBeatmapObjectManager")]
-impl MockBeatmapObjectManager {
+impl crate::GlobalNamespace::MockBeatmapObjectManager {
     pub fn DespawnInternal_NoteController0(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -37,7 +37,7 @@ impl MockBeatmapObjectManager {
     }
     pub fn DespawnInternal_ObstacleController1(
         &mut self,
-        obstacleController: *mut ObstacleController,
+        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -48,7 +48,7 @@ impl MockBeatmapObjectManager {
     }
     pub fn DespawnInternal_SliderController2(
         &mut self,
-        sliderNoteController: *mut SliderController,
+        sliderNoteController: *mut crate::GlobalNamespace::SliderController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -66,7 +66,7 @@ impl MockBeatmapObjectManager {
     }
     pub fn ProcessNoteData(
         &mut self,
-        noteData: *mut NoteData,
+        noteData: *mut crate::GlobalNamespace::NoteData,
         noteSpawnData: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
         >,
@@ -85,7 +85,7 @@ impl MockBeatmapObjectManager {
     }
     pub fn ProcessObstacleData(
         &mut self,
-        obstacleData: *mut ObstacleData,
+        obstacleData: *mut crate::GlobalNamespace::ObstacleData,
         obstacleSpawnData: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
         >,
@@ -100,7 +100,7 @@ impl MockBeatmapObjectManager {
     }
     pub fn ProcessSliderData(
         &mut self,
-        sliderData: *mut SliderData,
+        sliderData: *mut crate::GlobalNamespace::SliderData,
         sliderSpawnData: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
         >,
@@ -126,19 +126,22 @@ impl MockBeatmapObjectManager {
     pub fn get_activeObstacleControllers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<*mut ObstacleController>,
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut ObstacleController,
+            *mut crate::GlobalNamespace::ObstacleController,
         > = __cordl_object.invoke("get_activeObstacleControllers", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MockBeatmapObjectManager")]
-impl quest_hook::libil2cpp::ObjectType for MockBeatmapObjectManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MockBeatmapObjectManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

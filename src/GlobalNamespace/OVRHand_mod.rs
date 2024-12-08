@@ -49,23 +49,23 @@ pub struct OVRHand {
 }
 #[cfg(feature = "OVRHand")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRHand => ""."OVRHand"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRHand => ""."OVRHand"
 );
 #[cfg(feature = "OVRHand")]
-impl std::ops::Deref for OVRHand {
+impl std::ops::Deref for crate::GlobalNamespace::OVRHand {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRHand")]
-impl std::ops::DerefMut for OVRHand {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRHand {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRHand")]
-impl OVRHand {
+impl crate::GlobalNamespace::OVRHand {
     #[cfg(feature = "OVRHand+Hand")]
     pub type Hand = crate::GlobalNamespace::OVRHand_Hand;
     #[cfg(feature = "OVRHand+HandFinger")]
@@ -424,7 +424,7 @@ impl OVRHand {
     }
 }
 #[cfg(feature = "OVRHand")]
-impl quest_hook::libil2cpp::ObjectType for OVRHand {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHand {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

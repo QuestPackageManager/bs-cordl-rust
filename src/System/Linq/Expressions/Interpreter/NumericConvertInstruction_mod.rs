@@ -31,17 +31,17 @@ for crate::System::Linq::Expressions::Interpreter::NumericConvertInstruction {
 #[cfg(feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::NumericConvertInstruction {
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Unchecked"
+        feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Checked"
     )]
-    pub type Unchecked = crate::GlobalNamespace::NumericConvertInstruction_Unchecked;
+    pub type Checked = crate::GlobalNamespace::NumericConvertInstruction_Checked;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+ToUnderlying"
     )]
     pub type ToUnderlying = crate::GlobalNamespace::NumericConvertInstruction_ToUnderlying;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Checked"
+        feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Unchecked"
     )]
-    pub type Checked = crate::GlobalNamespace::NumericConvertInstruction_Checked;
+    pub type Unchecked = crate::GlobalNamespace::NumericConvertInstruction_Unchecked;
     pub fn Convert(
         &mut self,
         obj: *mut crate::System::Object,

@@ -540,15 +540,15 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > crate::System::Collections::ObjectModel::ReadOnlyDictionary_2<TKey, TValue> {
-    #[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+KeyCollection")]
-    pub type KeyCollection = crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_KeyCollection<
-        TKey,
-        TValue,
-    >;
     #[cfg(
         feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
     )]
     pub type DictionaryEnumerator = crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_DictionaryEnumerator<
+        TKey,
+        TValue,
+    >;
+    #[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+KeyCollection")]
+    pub type KeyCollection = crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_KeyCollection<
         TKey,
         TValue,
     >;

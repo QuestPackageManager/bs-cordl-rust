@@ -4,28 +4,29 @@
 pub struct DefaultSceneStart {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _flowCoordinator: *mut crate::HMUI::FlowCoordinator,
-    pub _gameScenesManager: *mut GameScenesManager,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
     pub _hierarchyManager: *mut crate::HMUI::HierarchyManager,
 }
 #[cfg(feature = "DefaultSceneStart")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for DefaultSceneStart => ""."DefaultSceneStart"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::DefaultSceneStart => ""
+    ."DefaultSceneStart"
 );
 #[cfg(feature = "DefaultSceneStart")]
-impl std::ops::Deref for DefaultSceneStart {
+impl std::ops::Deref for crate::GlobalNamespace::DefaultSceneStart {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DefaultSceneStart")]
-impl std::ops::DerefMut for DefaultSceneStart {
+impl std::ops::DerefMut for crate::GlobalNamespace::DefaultSceneStart {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "DefaultSceneStart")]
-impl DefaultSceneStart {
+impl crate::GlobalNamespace::DefaultSceneStart {
     #[cfg(feature = "DefaultSceneStart+_Start_d__3")]
     pub type _Start_d__3 = crate::GlobalNamespace::DefaultSceneStart__Start_d__3;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -57,7 +58,7 @@ impl DefaultSceneStart {
     }
 }
 #[cfg(feature = "DefaultSceneStart")]
-impl quest_hook::libil2cpp::ObjectType for DefaultSceneStart {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DefaultSceneStart {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

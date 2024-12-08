@@ -4,29 +4,29 @@
 pub struct MockBeatmapDataAssetFileModel {
     __cordl_parent: crate::System::Object,
     pub levelDataAssetDownloadUpdateEvent: *mut crate::System::Action_1<
-        LevelDataAssetDownloadUpdate,
+        crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
     >,
 }
 #[cfg(feature = "MockBeatmapDataAssetFileModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MockBeatmapDataAssetFileModel => ""
-    ."MockBeatmapDataAssetFileModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MockBeatmapDataAssetFileModel
+    => ""."MockBeatmapDataAssetFileModel"
 );
 #[cfg(feature = "MockBeatmapDataAssetFileModel")]
-impl std::ops::Deref for MockBeatmapDataAssetFileModel {
+impl std::ops::Deref for crate::GlobalNamespace::MockBeatmapDataAssetFileModel {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockBeatmapDataAssetFileModel")]
-impl std::ops::DerefMut for MockBeatmapDataAssetFileModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::MockBeatmapDataAssetFileModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockBeatmapDataAssetFileModel")]
-impl MockBeatmapDataAssetFileModel {
+impl crate::GlobalNamespace::MockBeatmapDataAssetFileModel {
     pub const kAssetsDir: &'static str = "BeatmapDataAssets";
     #[cfg(
         feature = "MockBeatmapDataAssetFileModel+_GetAssetBundleFileForBeatmapLevelAsync_d__4"
@@ -34,17 +34,19 @@ impl MockBeatmapDataAssetFileModel {
     pub type _GetAssetBundleFileForBeatmapLevelAsync_d__4 = crate::GlobalNamespace::MockBeatmapDataAssetFileModel__GetAssetBundleFileForBeatmapLevelAsync_d__4;
     pub fn GetAssetBundleFileForBeatmapLevelAsync(
         &mut self,
-        beatmapLevel: *mut BeatmapLevel,
-        beatmapLevelDataVersion: BeatmapLevelDataVersion,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+        beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<GetAssetBundleFileResult>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::GetAssetBundleFileResult,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            GetAssetBundleFileResult,
+            crate::GlobalNamespace::GetAssetBundleFileResult,
         > = __cordl_object
             .invoke(
                 "GetAssetBundleFileForBeatmapLevelAsync",
@@ -61,8 +63,8 @@ impl MockBeatmapDataAssetFileModel {
     }
     pub fn TryDeleteAssetBundleFileForBeatmapLevelAsync(
         &mut self,
-        beatmapLevel: *mut BeatmapLevel,
-        beatmapLevelDataVersion: BeatmapLevelDataVersion,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+        beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<bool>,
@@ -89,7 +91,9 @@ impl MockBeatmapDataAssetFileModel {
     }
     pub fn add_levelDataAssetDownloadUpdateEvent(
         &mut self,
-        value: *mut crate::System::Action_1<LevelDataAssetDownloadUpdate>,
+        value: *mut crate::System::Action_1<
+            crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -100,7 +104,9 @@ impl MockBeatmapDataAssetFileModel {
     }
     pub fn remove_levelDataAssetDownloadUpdateEvent(
         &mut self,
-        value: *mut crate::System::Action_1<LevelDataAssetDownloadUpdate>,
+        value: *mut crate::System::Action_1<
+            crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -111,7 +117,8 @@ impl MockBeatmapDataAssetFileModel {
     }
 }
 #[cfg(feature = "MockBeatmapDataAssetFileModel")]
-impl quest_hook::libil2cpp::ObjectType for MockBeatmapDataAssetFileModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MockBeatmapDataAssetFileModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

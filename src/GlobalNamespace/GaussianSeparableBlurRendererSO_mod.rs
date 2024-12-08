@@ -2,28 +2,28 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GaussianSeparableBlurRendererSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
 }
 #[cfg(feature = "GaussianSeparableBlurRendererSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GaussianSeparableBlurRendererSO => ""
-    ."GaussianSeparableBlurRendererSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GaussianSeparableBlurRendererSO
+    => ""."GaussianSeparableBlurRendererSO"
 );
 #[cfg(feature = "GaussianSeparableBlurRendererSO")]
-impl std::ops::Deref for GaussianSeparableBlurRendererSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::GaussianSeparableBlurRendererSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GaussianSeparableBlurRendererSO")]
-impl std::ops::DerefMut for GaussianSeparableBlurRendererSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::GaussianSeparableBlurRendererSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GaussianSeparableBlurRendererSO")]
-impl GaussianSeparableBlurRendererSO {
+impl crate::GlobalNamespace::GaussianSeparableBlurRendererSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -43,7 +43,8 @@ impl GaussianSeparableBlurRendererSO {
     }
 }
 #[cfg(feature = "GaussianSeparableBlurRendererSO")]
-impl quest_hook::libil2cpp::ObjectType for GaussianSeparableBlurRendererSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GaussianSeparableBlurRendererSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

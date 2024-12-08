@@ -234,24 +234,24 @@ impl std::ops::DerefMut for crate::System::Net::HttpWebRequest {
 }
 #[cfg(feature = "System+Net+HttpWebRequest")]
 impl crate::System::Net::HttpWebRequest {
-    #[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
-    pub type __GetRewriteHandler_b__271_0_d = crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d;
-    #[cfg(feature = "System+Net+HttpWebRequest+_MyGetResponseAsync_d__243")]
-    pub type _MyGetResponseAsync_d__243 = crate::System::Net::HttpWebRequest__MyGetResponseAsync_d__243;
-    #[cfg(feature = "System+Net+HttpWebRequest+__c__241_1")]
-    pub type __c__241_1<T: quest_hook::libil2cpp::Type> = crate::System::Net::HttpWebRequest___c__241_1<
-        T,
-    >;
+    #[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
+    pub type AuthorizationState = crate::System::Net::HttpWebRequest_AuthorizationState;
     #[cfg(feature = "System+Net+HttpWebRequest+NtlmAuthState")]
     pub type NtlmAuthState = crate::System::Net::HttpWebRequest_NtlmAuthState;
+    #[cfg(feature = "System+Net+HttpWebRequest+_GetResponseFromData_d__244")]
+    pub type _GetResponseFromData_d__244 = crate::System::Net::HttpWebRequest__GetResponseFromData_d__244;
+    #[cfg(feature = "System+Net+HttpWebRequest+_MyGetResponseAsync_d__243")]
+    pub type _MyGetResponseAsync_d__243 = crate::System::Net::HttpWebRequest__MyGetResponseAsync_d__243;
     #[cfg(feature = "System+Net+HttpWebRequest+_RunWithTimeoutWorker_d__241_1")]
     pub type _RunWithTimeoutWorker_d__241_1<T: quest_hook::libil2cpp::Type> = crate::System::Net::HttpWebRequest__RunWithTimeoutWorker_d__241_1<
         T,
     >;
-    #[cfg(feature = "System+Net+HttpWebRequest+_GetResponseFromData_d__244")]
-    pub type _GetResponseFromData_d__244 = crate::System::Net::HttpWebRequest__GetResponseFromData_d__244;
-    #[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
-    pub type AuthorizationState = crate::System::Net::HttpWebRequest_AuthorizationState;
+    #[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
+    pub type __GetRewriteHandler_b__271_0_d = crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d;
+    #[cfg(feature = "System+Net+HttpWebRequest+__c__241_1")]
+    pub type __c__241_1<T: quest_hook::libil2cpp::Type> = crate::System::Net::HttpWebRequest___c__241_1<
+        T,
+    >;
     pub fn Abort(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

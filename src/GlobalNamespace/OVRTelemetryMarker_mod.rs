@@ -9,10 +9,12 @@ pub struct OVRTelemetryMarker {
 }
 #[cfg(feature = "OVRTelemetryMarker")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for OVRTelemetryMarker => ""."OVRTelemetryMarker"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRTelemetryMarker => ""
+    ."OVRTelemetryMarker"
 );
 #[cfg(feature = "OVRTelemetryMarker")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for OVRTelemetryMarker {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRTelemetryMarker {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -22,15 +24,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for OVRTelemetryMarker {
     }
 }
 #[cfg(feature = "OVRTelemetryMarker")]
-impl OVRTelemetryMarker {
+impl crate::GlobalNamespace::OVRTelemetryMarker {
     #[cfg(feature = "OVRTelemetryMarker+OVRTelemetryMarkerState")]
     pub type OVRTelemetryMarkerState = crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState;
     pub fn AddAnnotation(
         &mut self,
         annotationKey: *mut crate::System::String,
         annotationValue: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<OVRTelemetryMarker> {
-        let __cordl_ret: OVRTelemetryMarker = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTelemetryMarker> {
+        let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "AddAnnotation",
             (annotationKey, annotationValue),
@@ -40,8 +42,8 @@ impl OVRTelemetryMarker {
     pub fn AddPoint(
         &mut self,
         point: crate::GlobalNamespace::OVRTelemetry_MarkerPoint,
-    ) -> quest_hook::libil2cpp::Result<OVRTelemetryMarker> {
-        let __cordl_ret: OVRTelemetryMarker = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTelemetryMarker> {
+        let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "AddPoint",
             (point),
@@ -58,8 +60,10 @@ impl OVRTelemetryMarker {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Send(&mut self) -> quest_hook::libil2cpp::Result<OVRTelemetryMarker> {
-        let __cordl_ret: OVRTelemetryMarker = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn Send(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTelemetryMarker> {
+        let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Send",
             (),
@@ -69,8 +73,8 @@ impl OVRTelemetryMarker {
     pub fn SendIf(
         &mut self,
         condition: bool,
-    ) -> quest_hook::libil2cpp::Result<OVRTelemetryMarker> {
-        let __cordl_ret: OVRTelemetryMarker = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTelemetryMarker> {
+        let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SendIf",
             (condition),
@@ -80,8 +84,8 @@ impl OVRTelemetryMarker {
     pub fn SetResult(
         &mut self,
         result: crate::GlobalNamespace::Qpl_ResultType,
-    ) -> quest_hook::libil2cpp::Result<OVRTelemetryMarker> {
-        let __cordl_ret: OVRTelemetryMarker = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTelemetryMarker> {
+        let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SetResult",
             (result),

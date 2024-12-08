@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData {
-    __cordl_parent: SceneSetupData,
+    __cordl_parent: crate::GlobalNamespace::SceneSetupData,
     pub _appInitOverrideStartType_k__BackingField: crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
 }
 #[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitSceneSetupData")]
@@ -29,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitSceneSetupData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData {
-    type Target = SceneSetupData;
+    type Target = crate::GlobalNamespace::SceneSetupData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -101,32 +101,33 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetup
 #[repr(C)]
 #[derive(Debug)]
 pub struct AppInitScenesTransitionSetupDataSO {
-    __cordl_parent: SingleFixedSceneScenesTransitionSetupDataSO,
+    __cordl_parent: crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO,
 }
 #[cfg(feature = "AppInitScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AppInitScenesTransitionSetupDataSO => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::AppInitScenesTransitionSetupDataSO => ""
     ."AppInitScenesTransitionSetupDataSO"
 );
 #[cfg(feature = "AppInitScenesTransitionSetupDataSO")]
-impl std::ops::Deref for AppInitScenesTransitionSetupDataSO {
-    type Target = SingleFixedSceneScenesTransitionSetupDataSO;
+impl std::ops::Deref for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
+    type Target = crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AppInitScenesTransitionSetupDataSO")]
-impl std::ops::DerefMut for AppInitScenesTransitionSetupDataSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AppInitScenesTransitionSetupDataSO")]
-impl AppInitScenesTransitionSetupDataSO {
-    #[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitSceneSetupData")]
-    pub type AppInitSceneSetupData = crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData;
+impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
     #[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType")]
     pub type AppInitOverrideStartType = crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType;
+    #[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitSceneSetupData")]
+    pub type AppInitSceneSetupData = crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData;
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -177,7 +178,8 @@ impl AppInitScenesTransitionSetupDataSO {
     }
 }
 #[cfg(feature = "AppInitScenesTransitionSetupDataSO")]
-impl quest_hook::libil2cpp::ObjectType for AppInitScenesTransitionSetupDataSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

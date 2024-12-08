@@ -2,31 +2,34 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordingToolScenesTransitionSetupDataSO {
-    __cordl_parent: SingleFixedSceneScenesTransitionSetupDataSO,
+    __cordl_parent: crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO,
 }
 #[cfg(feature = "RecordingToolScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RecordingToolScenesTransitionSetupDataSO => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO => ""
     ."RecordingToolScenesTransitionSetupDataSO"
 );
 #[cfg(feature = "RecordingToolScenesTransitionSetupDataSO")]
-impl std::ops::Deref for RecordingToolScenesTransitionSetupDataSO {
-    type Target = SingleFixedSceneScenesTransitionSetupDataSO;
+impl std::ops::Deref
+for crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO {
+    type Target = crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingToolScenesTransitionSetupDataSO")]
-impl std::ops::DerefMut for RecordingToolScenesTransitionSetupDataSO {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingToolScenesTransitionSetupDataSO")]
-impl RecordingToolScenesTransitionSetupDataSO {
+impl crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO {
     pub fn Init(
         &mut self,
-        recordingToolSceneSetupData: *mut RecordingToolSceneSetupData,
+        recordingToolSceneSetupData: *mut crate::GlobalNamespace::RecordingToolSceneSetupData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -54,7 +57,8 @@ impl RecordingToolScenesTransitionSetupDataSO {
     }
 }
 #[cfg(feature = "RecordingToolScenesTransitionSetupDataSO")]
-impl quest_hook::libil2cpp::ObjectType for RecordingToolScenesTransitionSetupDataSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

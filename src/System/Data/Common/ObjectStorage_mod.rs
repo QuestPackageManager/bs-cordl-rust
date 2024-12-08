@@ -41,10 +41,10 @@ impl std::ops::DerefMut for crate::System::Data::Common::ObjectStorage {
 }
 #[cfg(feature = "System+Data+Common+ObjectStorage")]
 impl crate::System::Data::Common::ObjectStorage {
-    #[cfg(feature = "System+Data+Common+ObjectStorage+TempAssemblyComparer")]
-    pub type TempAssemblyComparer = crate::System::Data::Common::ObjectStorage_TempAssemblyComparer;
     #[cfg(feature = "System+Data+Common+ObjectStorage+Families")]
     pub type Families = crate::System::Data::Common::ObjectStorage_Families;
+    #[cfg(feature = "System+Data+Common+ObjectStorage+TempAssemblyComparer")]
+    pub type TempAssemblyComparer = crate::System::Data::Common::ObjectStorage_TempAssemblyComparer;
     pub fn Aggregate(
         &mut self,
         records: *mut quest_hook::libil2cpp::Il2CppArray<i32>,

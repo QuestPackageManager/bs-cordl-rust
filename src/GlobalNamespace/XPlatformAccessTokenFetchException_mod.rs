@@ -6,24 +6,25 @@ pub struct XPlatformAccessTokenFetchException {
 }
 #[cfg(feature = "XPlatformAccessTokenFetchException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for XPlatformAccessTokenFetchException => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::XPlatformAccessTokenFetchException => ""
     ."XPlatformAccessTokenFetchException"
 );
 #[cfg(feature = "XPlatformAccessTokenFetchException")]
-impl std::ops::Deref for XPlatformAccessTokenFetchException {
+impl std::ops::Deref for crate::GlobalNamespace::XPlatformAccessTokenFetchException {
     type Target = crate::System::Exception;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "XPlatformAccessTokenFetchException")]
-impl std::ops::DerefMut for XPlatformAccessTokenFetchException {
+impl std::ops::DerefMut for crate::GlobalNamespace::XPlatformAccessTokenFetchException {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "XPlatformAccessTokenFetchException")]
-impl XPlatformAccessTokenFetchException {
+impl crate::GlobalNamespace::XPlatformAccessTokenFetchException {
     pub fn New(
         message: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -46,7 +47,8 @@ impl XPlatformAccessTokenFetchException {
     }
 }
 #[cfg(feature = "XPlatformAccessTokenFetchException")]
-impl quest_hook::libil2cpp::ObjectType for XPlatformAccessTokenFetchException {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::XPlatformAccessTokenFetchException {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

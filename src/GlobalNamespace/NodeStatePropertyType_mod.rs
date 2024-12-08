@@ -11,5 +11,6 @@ pub enum NodeStatePropertyType {
 }
 #[cfg(feature = "NodeStatePropertyType")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for NodeStatePropertyType => ""."NodeStatePropertyType"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NodeStatePropertyType => ""
+    ."NodeStatePropertyType"
 );

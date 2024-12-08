@@ -153,10 +153,10 @@ impl std::ops::DerefMut for crate::System::Xml::XmlValidatingReaderImpl {
 }
 #[cfg(feature = "System+Xml+XmlValidatingReaderImpl")]
 impl crate::System::Xml::XmlValidatingReaderImpl {
-    #[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ValidationEventHandling")]
-    pub type ValidationEventHandling = crate::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling;
     #[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ParsingFunction")]
     pub type ParsingFunction = crate::System::Xml::XmlValidatingReaderImpl_ParsingFunction;
+    #[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ValidationEventHandling")]
+    pub type ValidationEventHandling = crate::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling;
     pub fn AddDefaultAttribute(
         &mut self,
         attdef: *mut crate::System::Xml::Schema::SchemaAttDef,

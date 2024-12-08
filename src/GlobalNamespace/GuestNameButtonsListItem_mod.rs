@@ -9,24 +9,24 @@ pub struct GuestNameButtonsListItem {
 }
 #[cfg(feature = "GuestNameButtonsListItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GuestNameButtonsListItem => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GuestNameButtonsListItem => ""
     ."GuestNameButtonsListItem"
 );
 #[cfg(feature = "GuestNameButtonsListItem")]
-impl std::ops::Deref for GuestNameButtonsListItem {
+impl std::ops::Deref for crate::GlobalNamespace::GuestNameButtonsListItem {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GuestNameButtonsListItem")]
-impl std::ops::DerefMut for GuestNameButtonsListItem {
+impl std::ops::DerefMut for crate::GlobalNamespace::GuestNameButtonsListItem {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GuestNameButtonsListItem")]
-impl GuestNameButtonsListItem {
+impl crate::GlobalNamespace::GuestNameButtonsListItem {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -88,7 +88,8 @@ impl GuestNameButtonsListItem {
     }
 }
 #[cfg(feature = "GuestNameButtonsListItem")]
-impl quest_hook::libil2cpp::ObjectType for GuestNameButtonsListItem {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GuestNameButtonsListItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,28 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResultObjectiveListItemsList {
-    __cordl_parent: crate::HMUI::UIItemsList_1<*mut ResultObjectiveListItem>,
+    __cordl_parent: crate::HMUI::UIItemsList_1<
+        *mut crate::GlobalNamespace::ResultObjectiveListItem,
+    >,
 }
 #[cfg(feature = "ResultObjectiveListItemsList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ResultObjectiveListItemsList => ""
-    ."ResultObjectiveListItemsList"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ResultObjectiveListItemsList =>
+    ""."ResultObjectiveListItemsList"
 );
 #[cfg(feature = "ResultObjectiveListItemsList")]
-impl std::ops::Deref for ResultObjectiveListItemsList {
-    type Target = crate::HMUI::UIItemsList_1<*mut ResultObjectiveListItem>;
+impl std::ops::Deref for crate::GlobalNamespace::ResultObjectiveListItemsList {
+    type Target = crate::HMUI::UIItemsList_1<
+        *mut crate::GlobalNamespace::ResultObjectiveListItem,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ResultObjectiveListItemsList")]
-impl std::ops::DerefMut for ResultObjectiveListItemsList {
+impl std::ops::DerefMut for crate::GlobalNamespace::ResultObjectiveListItemsList {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ResultObjectiveListItemsList")]
-impl ResultObjectiveListItemsList {
+impl crate::GlobalNamespace::ResultObjectiveListItemsList {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -43,7 +47,8 @@ impl ResultObjectiveListItemsList {
     }
 }
 #[cfg(feature = "ResultObjectiveListItemsList")]
-impl quest_hook::libil2cpp::ObjectType for ResultObjectiveListItemsList {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ResultObjectiveListItemsList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

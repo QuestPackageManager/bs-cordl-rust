@@ -7,24 +7,24 @@ pub struct ReflectionProbeBakingEffect {
 }
 #[cfg(feature = "ReflectionProbeBakingEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ReflectionProbeBakingEffect => ""
-    ."ReflectionProbeBakingEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ReflectionProbeBakingEffect =>
+    ""."ReflectionProbeBakingEffect"
 );
 #[cfg(feature = "ReflectionProbeBakingEffect")]
-impl std::ops::Deref for ReflectionProbeBakingEffect {
+impl std::ops::Deref for crate::GlobalNamespace::ReflectionProbeBakingEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ReflectionProbeBakingEffect")]
-impl std::ops::DerefMut for ReflectionProbeBakingEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::ReflectionProbeBakingEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ReflectionProbeBakingEffect")]
-impl ReflectionProbeBakingEffect {
+impl crate::GlobalNamespace::ReflectionProbeBakingEffect {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -56,7 +56,8 @@ impl ReflectionProbeBakingEffect {
     }
 }
 #[cfg(feature = "ReflectionProbeBakingEffect")]
-impl quest_hook::libil2cpp::ObjectType for ReflectionProbeBakingEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ReflectionProbeBakingEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,37 +3,40 @@
 #[derive(Debug)]
 pub struct TrackLaneRingsPositionStepEffectSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _trackLaneRingsManager: *mut TrackLaneRingsManager,
-    pub _beatmapEventType: BasicBeatmapEventType,
+    pub _trackLaneRingsManager: *mut crate::GlobalNamespace::TrackLaneRingsManager,
+    pub _beatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _minPositionStep: f32,
     pub _maxPositionStep: f32,
     pub _moveSpeed: f32,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
-    pub _beatmapDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
 }
 #[cfg(feature = "TrackLaneRingsPositionStepEffectSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TrackLaneRingsPositionStepEffectSpawner => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::TrackLaneRingsPositionStepEffectSpawner => ""
     ."TrackLaneRingsPositionStepEffectSpawner"
 );
 #[cfg(feature = "TrackLaneRingsPositionStepEffectSpawner")]
-impl std::ops::Deref for TrackLaneRingsPositionStepEffectSpawner {
+impl std::ops::Deref
+for crate::GlobalNamespace::TrackLaneRingsPositionStepEffectSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TrackLaneRingsPositionStepEffectSpawner")]
-impl std::ops::DerefMut for TrackLaneRingsPositionStepEffectSpawner {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::TrackLaneRingsPositionStepEffectSpawner {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TrackLaneRingsPositionStepEffectSpawner")]
-impl TrackLaneRingsPositionStepEffectSpawner {
+impl crate::GlobalNamespace::TrackLaneRingsPositionStepEffectSpawner {
     pub fn HandleBeatmapEvent(
         &mut self,
-        basicBeatmapEventData: *mut BasicBeatmapEventData,
+        basicBeatmapEventData: *mut crate::GlobalNamespace::BasicBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -81,7 +84,8 @@ impl TrackLaneRingsPositionStepEffectSpawner {
     }
 }
 #[cfg(feature = "TrackLaneRingsPositionStepEffectSpawner")]
-impl quest_hook::libil2cpp::ObjectType for TrackLaneRingsPositionStepEffectSpawner {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::TrackLaneRingsPositionStepEffectSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

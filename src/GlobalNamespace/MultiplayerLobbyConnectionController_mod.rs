@@ -33,39 +33,41 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct MultiplayerLobbyConnectionController {
     __cordl_parent: crate::System::Object,
-    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
-    pub _unifiedNetworkPlayerModel: *mut IUnifiedNetworkPlayerModel,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _unifiedNetworkPlayerModel: *mut crate::GlobalNamespace::IUnifiedNetworkPlayerModel,
     pub connectionSuccessEvent: *mut crate::System::Action,
     pub connectionFailedEvent: *mut crate::System::Action_2<
         crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
-        ConnectionFailedReason,
+        crate::GlobalNamespace::ConnectionFailedReason,
     >,
     pub _connectionState_k__BackingField: crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionState,
     pub _connectionType_k__BackingField: crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
-    pub _connectionFailedReason_k__BackingField: ConnectionFailedReason,
+    pub _connectionFailedReason_k__BackingField: crate::GlobalNamespace::ConnectionFailedReason,
     pub _partyConfig: *mut crate::GlobalNamespace::UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig,
     pub _retryAttemptsLeft: i32,
 }
 #[cfg(feature = "MultiplayerLobbyConnectionController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLobbyConnectionController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLobbyConnectionController => ""
     ."MultiplayerLobbyConnectionController"
 );
 #[cfg(feature = "MultiplayerLobbyConnectionController")]
-impl std::ops::Deref for MultiplayerLobbyConnectionController {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLobbyConnectionController {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLobbyConnectionController")]
-impl std::ops::DerefMut for MultiplayerLobbyConnectionController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerLobbyConnectionController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLobbyConnectionController")]
-impl MultiplayerLobbyConnectionController {
+impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
     #[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionState")]
     pub type LobbyConnectionState = crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionState;
     #[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionType")]
@@ -82,8 +84,8 @@ impl MultiplayerLobbyConnectionController {
     }
     pub fn ConnectToMatchmaking(
         &mut self,
-        beatmapDifficultyMask: BeatmapDifficultyMask,
-        songPackMask: SongPackMask,
+        beatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
+        songPackMask: crate::GlobalNamespace::SongPackMask,
         allowSongSelection: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -109,7 +111,7 @@ impl MultiplayerLobbyConnectionController {
     }
     pub fn ConnectToServer(
         &mut self,
-        server: *mut INetworkPlayer,
+        server: *mut crate::GlobalNamespace::INetworkPlayer,
         password: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -121,7 +123,7 @@ impl MultiplayerLobbyConnectionController {
     }
     pub fn CreateOrConnectToDestinationParty(
         &mut self,
-        lobbyDestination: *mut SelectMultiplayerLobbyDestination,
+        lobbyDestination: *mut crate::GlobalNamespace::SelectMultiplayerLobbyDestination,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -132,7 +134,7 @@ impl MultiplayerLobbyConnectionController {
     }
     pub fn CreateParty(
         &mut self,
-        data: CreateServerFormData,
+        data: crate::GlobalNamespace::CreateServerFormData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -153,7 +155,7 @@ impl MultiplayerLobbyConnectionController {
     }
     pub fn HandleMultiplayerSessionManagerConnectionFailed(
         &mut self,
-        reason: ConnectionFailedReason,
+        reason: crate::GlobalNamespace::ConnectionFailedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -164,7 +166,7 @@ impl MultiplayerLobbyConnectionController {
     }
     pub fn HandleMultiplayerSessionManagerConnectionFailedWithRetry(
         &mut self,
-        reason: ConnectionFailedReason,
+        reason: crate::GlobalNamespace::ConnectionFailedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -207,7 +209,7 @@ impl MultiplayerLobbyConnectionController {
         &mut self,
         value: *mut crate::System::Action_2<
             crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
-            ConnectionFailedReason,
+            crate::GlobalNamespace::ConnectionFailedReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -230,11 +232,11 @@ impl MultiplayerLobbyConnectionController {
     }
     pub fn get_connectionFailedReason(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<ConnectionFailedReason> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ConnectionFailedReason> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: ConnectionFailedReason = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::ConnectionFailedReason = __cordl_object
             .invoke("get_connectionFailedReason", ())?;
         Ok(__cordl_ret)
     }
@@ -266,7 +268,7 @@ impl MultiplayerLobbyConnectionController {
         &mut self,
         value: *mut crate::System::Action_2<
             crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
-            ConnectionFailedReason,
+            crate::GlobalNamespace::ConnectionFailedReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -289,7 +291,7 @@ impl MultiplayerLobbyConnectionController {
     }
     pub fn set_connectionFailedReason(
         &mut self,
-        value: ConnectionFailedReason,
+        value: crate::GlobalNamespace::ConnectionFailedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -322,7 +324,8 @@ impl MultiplayerLobbyConnectionController {
     }
 }
 #[cfg(feature = "MultiplayerLobbyConnectionController")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLobbyConnectionController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLobbyConnectionController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

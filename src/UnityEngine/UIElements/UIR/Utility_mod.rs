@@ -167,12 +167,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::Utility {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
 impl crate::UnityEngine::UIElements::UIR::Utility {
+    #[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBufferType")]
+    pub type GPUBufferType = crate::UnityEngine::UIElements::UIR::Utility_GPUBufferType;
     #[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBuffer_1")]
     pub type GPUBuffer_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<
         T,
     >;
-    #[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBufferType")]
-    pub type GPUBufferType = crate::UnityEngine::UIElements::UIR::Utility_GPUBufferType;
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UIR::Utility {

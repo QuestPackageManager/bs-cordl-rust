@@ -2,39 +2,40 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GradientTransitionSO {
-    __cordl_parent: BaseTransitionSO,
-    pub _normalColor1: *mut ColorSO,
-    pub _normalColor2: *mut ColorSO,
-    pub _highlightColor1: *mut ColorSO,
-    pub _highlightColor2: *mut ColorSO,
-    pub _pressedColor1: *mut ColorSO,
-    pub _pressedColor2: *mut ColorSO,
-    pub _disabledColor1: *mut ColorSO,
-    pub _disabledColor2: *mut ColorSO,
-    pub _selectedColor1: *mut ColorSO,
-    pub _selectedColor2: *mut ColorSO,
-    pub _selectedAndHighlightedColor1: *mut ColorSO,
-    pub _selectedAndHighlightedColor2: *mut ColorSO,
+    __cordl_parent: crate::GlobalNamespace::BaseTransitionSO,
+    pub _normalColor1: *mut crate::GlobalNamespace::ColorSO,
+    pub _normalColor2: *mut crate::GlobalNamespace::ColorSO,
+    pub _highlightColor1: *mut crate::GlobalNamespace::ColorSO,
+    pub _highlightColor2: *mut crate::GlobalNamespace::ColorSO,
+    pub _pressedColor1: *mut crate::GlobalNamespace::ColorSO,
+    pub _pressedColor2: *mut crate::GlobalNamespace::ColorSO,
+    pub _disabledColor1: *mut crate::GlobalNamespace::ColorSO,
+    pub _disabledColor2: *mut crate::GlobalNamespace::ColorSO,
+    pub _selectedColor1: *mut crate::GlobalNamespace::ColorSO,
+    pub _selectedColor2: *mut crate::GlobalNamespace::ColorSO,
+    pub _selectedAndHighlightedColor1: *mut crate::GlobalNamespace::ColorSO,
+    pub _selectedAndHighlightedColor2: *mut crate::GlobalNamespace::ColorSO,
 }
 #[cfg(feature = "GradientTransitionSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GradientTransitionSO => ""."GradientTransitionSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GradientTransitionSO => ""
+    ."GradientTransitionSO"
 );
 #[cfg(feature = "GradientTransitionSO")]
-impl std::ops::Deref for GradientTransitionSO {
-    type Target = BaseTransitionSO;
+impl std::ops::Deref for crate::GlobalNamespace::GradientTransitionSO {
+    type Target = crate::GlobalNamespace::BaseTransitionSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GradientTransitionSO")]
-impl std::ops::DerefMut for GradientTransitionSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::GradientTransitionSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GradientTransitionSO")]
-impl GradientTransitionSO {
+impl crate::GlobalNamespace::GradientTransitionSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -174,7 +175,7 @@ impl GradientTransitionSO {
     }
 }
 #[cfg(feature = "GradientTransitionSO")]
-impl quest_hook::libil2cpp::ObjectType for GradientTransitionSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GradientTransitionSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

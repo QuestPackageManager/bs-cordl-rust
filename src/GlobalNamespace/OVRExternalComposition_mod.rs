@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRExternalComposition {
-    __cordl_parent: OVRComposition,
+    __cordl_parent: crate::GlobalNamespace::OVRComposition,
     pub previousMainCameraObject: *mut crate::UnityEngine::GameObject,
     pub foregroundCameraGameObject: *mut crate::UnityEngine::GameObject,
     pub foregroundCamera: *mut crate::UnityEngine::Camera,
@@ -13,7 +13,7 @@ pub struct OVRExternalComposition {
     pub isFrameSkipped: bool,
     pub renderCombinedFrame: bool,
     pub audioListener: *mut crate::UnityEngine::AudioListener,
-    pub audioFilter: *mut OVRMRAudioFilter,
+    pub audioFilter: *mut crate::GlobalNamespace::OVRMRAudioFilter,
     pub mrcRenderTextureArray: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::RenderTexture,
     >,
@@ -30,23 +30,24 @@ pub struct OVRExternalComposition {
 }
 #[cfg(feature = "OVRExternalComposition")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRExternalComposition => ""."OVRExternalComposition"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRExternalComposition => ""
+    ."OVRExternalComposition"
 );
 #[cfg(feature = "OVRExternalComposition")]
-impl std::ops::Deref for OVRExternalComposition {
-    type Target = OVRComposition;
+impl std::ops::Deref for crate::GlobalNamespace::OVRExternalComposition {
+    type Target = crate::GlobalNamespace::OVRComposition;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRExternalComposition")]
-impl std::ops::DerefMut for OVRExternalComposition {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRExternalComposition {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRExternalComposition")]
-impl OVRExternalComposition {
+impl crate::GlobalNamespace::OVRExternalComposition {
     pub fn CacheAudioData(
         &mut self,
         data: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
@@ -132,7 +133,7 @@ impl OVRExternalComposition {
     pub fn New(
         parentObject: *mut crate::UnityEngine::GameObject,
         mainCamera: *mut crate::UnityEngine::Camera,
-        configuration: *mut OVRMixedRealityCaptureConfiguration,
+        configuration: *mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -155,7 +156,7 @@ impl OVRExternalComposition {
         &mut self,
         parentObject: *mut crate::UnityEngine::GameObject,
         mainCamera: *mut crate::UnityEngine::Camera,
-        configuration: *mut OVRMixedRealityCaptureConfiguration,
+        configuration: *mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -179,7 +180,7 @@ impl OVRExternalComposition {
         &mut self,
         gameObject: *mut crate::UnityEngine::GameObject,
         mainCamera: *mut crate::UnityEngine::Camera,
-        configuration: *mut OVRMixedRealityCaptureConfiguration,
+        configuration: *mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
         trackingOrigin: crate::GlobalNamespace::OVRManager_TrackingOrigin,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -193,7 +194,7 @@ impl OVRExternalComposition {
         &mut self,
         parentObject: *mut crate::UnityEngine::GameObject,
         mainCamera: *mut crate::UnityEngine::Camera,
-        configuration: *mut OVRMixedRealityCaptureConfiguration,
+        configuration: *mut crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -204,7 +205,8 @@ impl OVRExternalComposition {
     }
 }
 #[cfg(feature = "OVRExternalComposition")]
-impl quest_hook::libil2cpp::ObjectType for OVRExternalComposition {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRExternalComposition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

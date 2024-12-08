@@ -6,23 +6,24 @@ pub struct ILightWithId {
 }
 #[cfg(feature = "ILightWithId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ILightWithId => ""."ILightWithId"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ILightWithId => ""
+    ."ILightWithId"
 );
 #[cfg(feature = "ILightWithId")]
-impl std::ops::Deref for ILightWithId {
+impl std::ops::Deref for crate::GlobalNamespace::ILightWithId {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ILightWithId")]
-impl std::ops::DerefMut for ILightWithId {
+impl std::ops::DerefMut for crate::GlobalNamespace::ILightWithId {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ILightWithId")]
-impl ILightWithId {
+impl crate::GlobalNamespace::ILightWithId {
     pub fn ColorWasSet(
         &mut self,
         color: crate::UnityEngine::Color,
@@ -75,7 +76,7 @@ impl ILightWithId {
     }
 }
 #[cfg(feature = "ILightWithId")]
-impl quest_hook::libil2cpp::ObjectType for ILightWithId {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ILightWithId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

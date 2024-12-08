@@ -9,23 +9,24 @@ pub struct DlcPromoPanelDataSO {
 }
 #[cfg(feature = "DlcPromoPanelDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for DlcPromoPanelDataSO => ""."DlcPromoPanelDataSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::DlcPromoPanelDataSO => ""
+    ."DlcPromoPanelDataSO"
 );
 #[cfg(feature = "DlcPromoPanelDataSO")]
-impl std::ops::Deref for DlcPromoPanelDataSO {
+impl std::ops::Deref for crate::GlobalNamespace::DlcPromoPanelDataSO {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DlcPromoPanelDataSO")]
-impl std::ops::DerefMut for DlcPromoPanelDataSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::DlcPromoPanelDataSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "DlcPromoPanelDataSO")]
-impl DlcPromoPanelDataSO {
+impl crate::GlobalNamespace::DlcPromoPanelDataSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -83,7 +84,7 @@ impl DlcPromoPanelDataSO {
     }
 }
 #[cfg(feature = "DlcPromoPanelDataSO")]
-impl quest_hook::libil2cpp::ObjectType for DlcPromoPanelDataSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DlcPromoPanelDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

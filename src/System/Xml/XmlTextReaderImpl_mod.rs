@@ -1511,36 +1511,36 @@ impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl {
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl")]
 impl crate::System::Xml::XmlTextReaderImpl {
-    #[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingMode")]
-    pub type ParsingMode = crate::System::Xml::XmlTextReaderImpl_ParsingMode;
-    #[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityType")]
-    pub type EntityType = crate::System::Xml::XmlTextReaderImpl_EntityType;
-    #[cfg(feature = "System+Xml+XmlTextReaderImpl+IncrementalReadState")]
-    pub type IncrementalReadState = crate::System::Xml::XmlTextReaderImpl_IncrementalReadState;
-    #[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityExpandType")]
-    pub type EntityExpandType = crate::System::Xml::XmlTextReaderImpl_EntityExpandType;
-    #[cfg(feature = "System+Xml+XmlTextReaderImpl+InitInputType")]
-    pub type InitInputType = crate::System::Xml::XmlTextReaderImpl_InitInputType;
-    #[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
-    pub type ParsingState = crate::System::Xml::XmlTextReaderImpl_ParsingState;
-    #[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
-    pub type NodeData = crate::System::Xml::XmlTextReaderImpl_NodeData;
-    #[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
-    pub type NoNamespaceManager = crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager;
     #[cfg(
         feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
     )]
     pub type DtdDefaultAttributeInfoToNodeDataComparer = crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer;
-    #[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
-    pub type OnDefaultAttributeUseDelegate = crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate;
-    #[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
-    pub type XmlContext = crate::System::Xml::XmlTextReaderImpl_XmlContext;
-    #[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingFunction")]
-    pub type ParsingFunction = crate::System::Xml::XmlTextReaderImpl_ParsingFunction;
-    #[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
-    pub type LaterInitParam = crate::System::Xml::XmlTextReaderImpl_LaterInitParam;
     #[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
     pub type DtdParserProxy = crate::System::Xml::XmlTextReaderImpl_DtdParserProxy;
+    #[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityExpandType")]
+    pub type EntityExpandType = crate::System::Xml::XmlTextReaderImpl_EntityExpandType;
+    #[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityType")]
+    pub type EntityType = crate::System::Xml::XmlTextReaderImpl_EntityType;
+    #[cfg(feature = "System+Xml+XmlTextReaderImpl+IncrementalReadState")]
+    pub type IncrementalReadState = crate::System::Xml::XmlTextReaderImpl_IncrementalReadState;
+    #[cfg(feature = "System+Xml+XmlTextReaderImpl+InitInputType")]
+    pub type InitInputType = crate::System::Xml::XmlTextReaderImpl_InitInputType;
+    #[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
+    pub type LaterInitParam = crate::System::Xml::XmlTextReaderImpl_LaterInitParam;
+    #[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
+    pub type NoNamespaceManager = crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager;
+    #[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
+    pub type NodeData = crate::System::Xml::XmlTextReaderImpl_NodeData;
+    #[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
+    pub type OnDefaultAttributeUseDelegate = crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate;
+    #[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingFunction")]
+    pub type ParsingFunction = crate::System::Xml::XmlTextReaderImpl_ParsingFunction;
+    #[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingMode")]
+    pub type ParsingMode = crate::System::Xml::XmlTextReaderImpl_ParsingMode;
+    #[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
+    pub type ParsingState = crate::System::Xml::XmlTextReaderImpl_ParsingState;
+    #[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
+    pub type XmlContext = crate::System::Xml::XmlTextReaderImpl_XmlContext;
     pub fn AddAttributeChunkToList(
         &mut self,
         attr: *mut crate::System::Xml::XmlTextReaderImpl_NodeData,

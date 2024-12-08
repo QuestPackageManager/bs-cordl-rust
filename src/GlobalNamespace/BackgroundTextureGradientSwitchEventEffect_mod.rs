@@ -3,34 +3,37 @@
 #[derive(Debug)]
 pub struct BackgroundTextureGradientSwitchEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _defaultTextureGradient: *mut BloomPrePassBackgroundTextureGradient,
-    pub _boostTextureGradient: *mut BloomPrePassBackgroundTextureGradient,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
-    pub _beatmapDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _defaultTextureGradient: *mut crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient,
+    pub _boostTextureGradient: *mut crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
 }
 #[cfg(feature = "BackgroundTextureGradientSwitchEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BackgroundTextureGradientSwitchEventEffect => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BackgroundTextureGradientSwitchEventEffect => ""
     ."BackgroundTextureGradientSwitchEventEffect"
 );
 #[cfg(feature = "BackgroundTextureGradientSwitchEventEffect")]
-impl std::ops::Deref for BackgroundTextureGradientSwitchEventEffect {
+impl std::ops::Deref
+for crate::GlobalNamespace::BackgroundTextureGradientSwitchEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BackgroundTextureGradientSwitchEventEffect")]
-impl std::ops::DerefMut for BackgroundTextureGradientSwitchEventEffect {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::BackgroundTextureGradientSwitchEventEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BackgroundTextureGradientSwitchEventEffect")]
-impl BackgroundTextureGradientSwitchEventEffect {
+impl crate::GlobalNamespace::BackgroundTextureGradientSwitchEventEffect {
     pub fn HandleBeatmapEvent(
         &mut self,
-        eventData: *mut ColorBoostBeatmapEventData,
+        eventData: *mut crate::GlobalNamespace::ColorBoostBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -78,7 +81,8 @@ impl BackgroundTextureGradientSwitchEventEffect {
     }
 }
 #[cfg(feature = "BackgroundTextureGradientSwitchEventEffect")]
-impl quest_hook::libil2cpp::ObjectType for BackgroundTextureGradientSwitchEventEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BackgroundTextureGradientSwitchEventEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

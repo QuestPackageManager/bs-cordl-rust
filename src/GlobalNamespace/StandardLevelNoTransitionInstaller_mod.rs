@@ -3,29 +3,30 @@
 #[derive(Debug)]
 pub struct StandardLevelNoTransitionInstaller {
     __cordl_parent: crate::Zenject::NoTransitionInstaller,
-    pub _scenesTransitionSetupData: *mut StandardLevelScenesTransitionSetupDataSO,
-    pub _standardLevelNoTransitionInstallerData: *mut StandardLevelNoTransitionInstallerData,
+    pub _scenesTransitionSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+    pub _standardLevelNoTransitionInstallerData: *mut crate::GlobalNamespace::StandardLevelNoTransitionInstallerData,
 }
 #[cfg(feature = "StandardLevelNoTransitionInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StandardLevelNoTransitionInstaller => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::StandardLevelNoTransitionInstaller => ""
     ."StandardLevelNoTransitionInstaller"
 );
 #[cfg(feature = "StandardLevelNoTransitionInstaller")]
-impl std::ops::Deref for StandardLevelNoTransitionInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::StandardLevelNoTransitionInstaller {
     type Target = crate::Zenject::NoTransitionInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelNoTransitionInstaller")]
-impl std::ops::DerefMut for StandardLevelNoTransitionInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::StandardLevelNoTransitionInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardLevelNoTransitionInstaller")]
-impl StandardLevelNoTransitionInstaller {
+impl crate::GlobalNamespace::StandardLevelNoTransitionInstaller {
     pub fn InstallBindings(
         &mut self,
         container: *mut crate::Zenject::DiContainer,
@@ -56,17 +57,20 @@ impl StandardLevelNoTransitionInstaller {
     }
     pub fn get_standardLevelNoTransitionInstallerData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut StandardLevelNoTransitionInstallerData> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::StandardLevelNoTransitionInstallerData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut StandardLevelNoTransitionInstallerData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::StandardLevelNoTransitionInstallerData = __cordl_object
             .invoke("get_standardLevelNoTransitionInstallerData", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "StandardLevelNoTransitionInstaller")]
-impl quest_hook::libil2cpp::ObjectType for StandardLevelNoTransitionInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StandardLevelNoTransitionInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

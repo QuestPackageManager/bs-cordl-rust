@@ -41,23 +41,24 @@ pub struct ScreenshotRecorder {
 }
 #[cfg(feature = "ScreenshotRecorder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ScreenshotRecorder => ""."ScreenshotRecorder"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ScreenshotRecorder => ""
+    ."ScreenshotRecorder"
 );
 #[cfg(feature = "ScreenshotRecorder")]
-impl std::ops::Deref for ScreenshotRecorder {
+impl std::ops::Deref for crate::GlobalNamespace::ScreenshotRecorder {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScreenshotRecorder")]
-impl std::ops::DerefMut for ScreenshotRecorder {
+impl std::ops::DerefMut for crate::GlobalNamespace::ScreenshotRecorder {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScreenshotRecorder")]
-impl ScreenshotRecorder {
+impl crate::GlobalNamespace::ScreenshotRecorder {
     #[cfg(feature = "ScreenshotRecorder+RecordingType")]
     pub type RecordingType = crate::GlobalNamespace::ScreenshotRecorder_RecordingType;
     pub fn ConvertRenderTexture(
@@ -173,7 +174,7 @@ impl ScreenshotRecorder {
     }
 }
 #[cfg(feature = "ScreenshotRecorder")]
-impl quest_hook::libil2cpp::ObjectType for ScreenshotRecorder {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScreenshotRecorder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

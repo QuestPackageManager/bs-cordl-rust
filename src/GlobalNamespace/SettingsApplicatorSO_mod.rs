@@ -2,37 +2,38 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SettingsApplicatorSO {
-    __cordl_parent: PersistentScriptableObject,
-    pub _mirrorRendererGraphicsSettingsPresets: *mut MirrorRendererGraphicsSettingsPresets,
-    pub _mainEffectGraphicsSettingsPresets: *mut MainEffectGraphicsSettingsPresetsSO,
-    pub _bloomPrePassGraphicsSettingsPresets: *mut BloomPrePassGraphicsSettingsPresetsSO,
-    pub _mirrorRenderer: *mut MirrorRendererSO,
-    pub _mainEffectContainer: *mut MainEffectContainerSO,
-    pub _bloomPrePassEffectContainer: *mut BloomPrePassEffectContainerSO,
-    pub _hapticFeedbackManager: *mut HapticFeedbackManager,
-    pub _audioManager: *mut AudioManagerSO,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    pub _mirrorRendererGraphicsSettingsPresets: *mut crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets,
+    pub _mainEffectGraphicsSettingsPresets: *mut crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO,
+    pub _bloomPrePassGraphicsSettingsPresets: *mut crate::GlobalNamespace::BloomPrePassGraphicsSettingsPresetsSO,
+    pub _mirrorRenderer: *mut crate::GlobalNamespace::MirrorRendererSO,
+    pub _mainEffectContainer: *mut crate::GlobalNamespace::MainEffectContainerSO,
+    pub _bloomPrePassEffectContainer: *mut crate::GlobalNamespace::BloomPrePassEffectContainerSO,
+    pub _hapticFeedbackManager: *mut crate::GlobalNamespace::HapticFeedbackManager,
+    pub _audioManager: *mut crate::GlobalNamespace::AudioManagerSO,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
     pub roomTransformOffsetDidUpdateEvent: *mut crate::System::Action,
 }
 #[cfg(feature = "SettingsApplicatorSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SettingsApplicatorSO => ""."SettingsApplicatorSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SettingsApplicatorSO => ""
+    ."SettingsApplicatorSO"
 );
 #[cfg(feature = "SettingsApplicatorSO")]
-impl std::ops::Deref for SettingsApplicatorSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::SettingsApplicatorSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SettingsApplicatorSO")]
-impl std::ops::DerefMut for SettingsApplicatorSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::SettingsApplicatorSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SettingsApplicatorSO")]
-impl SettingsApplicatorSO {
+impl crate::GlobalNamespace::SettingsApplicatorSO {
     pub fn ApplyMainSettings(
         &mut self,
         settings: *mut crate::BeatSaber::GameSettings::MainSettings,
@@ -47,7 +48,7 @@ impl SettingsApplicatorSO {
     pub fn ApplyPerformancePreset(
         &mut self,
         preset: *mut crate::BeatSaber::PerformancePresets::PerformancePreset,
-        sceneType: SceneType,
+        sceneType: crate::GlobalNamespace::SceneType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -119,7 +120,7 @@ impl SettingsApplicatorSO {
     }
 }
 #[cfg(feature = "SettingsApplicatorSO")]
-impl quest_hook::libil2cpp::ObjectType for SettingsApplicatorSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SettingsApplicatorSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

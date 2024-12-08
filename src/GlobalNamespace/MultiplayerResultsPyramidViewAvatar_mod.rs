@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct MultiplayerResultsPyramidViewAvatar_Factory {
     __cordl_parent: crate::Zenject::PlaceholderFactory_2<
-        *mut IConnectedPlayer,
-        *mut MultiplayerResultsPyramidViewAvatar,
+        *mut crate::GlobalNamespace::IConnectedPlayer,
+        *mut crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar,
     >,
 }
 #[cfg(feature = "MultiplayerResultsPyramidViewAvatar+Factory")]
@@ -17,8 +17,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar_Factory {
     type Target = crate::Zenject::PlaceholderFactory_2<
-        *mut IConnectedPlayer,
-        *mut MultiplayerResultsPyramidViewAvatar,
+        *mut crate::GlobalNamespace::IConnectedPlayer,
+        *mut crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -84,7 +84,7 @@ pub struct MultiplayerResultsPyramidViewAvatar {
     >,
     pub _badgeSubtitleText: *mut crate::TMPro::TextMeshProUGUI,
     pub _badgeSubtitleCanvas: *mut crate::UnityEngine::CanvasGroup,
-    pub _ghostDuplicationEffect: *mut GhostDuplicationEffect,
+    pub _ghostDuplicationEffect: *mut crate::GlobalNamespace::GhostDuplicationEffect,
     pub _ghostAppear: crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams,
     pub _ghostReceive: crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams,
     pub _trophyImage: *mut crate::HMUI::ImageView,
@@ -93,8 +93,8 @@ pub struct MultiplayerResultsPyramidViewAvatar {
     pub _thirdPlaceTrophy: *mut crate::UnityEngine::Sprite,
     pub _firstPlaceColor: crate::UnityEngine::Color,
     pub _personalBestVisual: *mut crate::UnityEngine::GameObject,
-    pub _playerDataModel: *mut PlayerDataModel,
-    pub _beatmapKey: BeatmapKey,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
     pub _riseTween: *mut crate::Tweening::Vector3Tween,
     pub _avatarRiseTween: *mut crate::Tweening::Vector3Tween,
     pub _badgePositionTween: *mut crate::Tweening::Vector3Tween,
@@ -104,28 +104,29 @@ pub struct MultiplayerResultsPyramidViewAvatar {
     pub _localGlowTween: *mut crate::Tweening::ColorTween,
     pub _titleMakingSpaceForBadgeTween: *mut crate::Tweening::Vector3Tween,
     pub _originalBadgeLocalPos: crate::UnityEngine::Vector3,
-    pub _connectedPlayer: *mut IConnectedPlayer,
+    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
 }
 #[cfg(feature = "MultiplayerResultsPyramidViewAvatar")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerResultsPyramidViewAvatar => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerResultsPyramidViewAvatar => ""
     ."MultiplayerResultsPyramidViewAvatar"
 );
 #[cfg(feature = "MultiplayerResultsPyramidViewAvatar")]
-impl std::ops::Deref for MultiplayerResultsPyramidViewAvatar {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerResultsPyramidViewAvatar")]
-impl std::ops::DerefMut for MultiplayerResultsPyramidViewAvatar {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerResultsPyramidViewAvatar")]
-impl MultiplayerResultsPyramidViewAvatar {
+impl crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar {
     #[cfg(feature = "MultiplayerResultsPyramidViewAvatar+Factory")]
     pub type Factory = crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar_Factory;
     pub fn Awake(
@@ -147,7 +148,7 @@ impl MultiplayerResultsPyramidViewAvatar {
     }
     pub fn Setup(
         &mut self,
-        resultData: *mut MultiplayerPlayerResultsData,
+        resultData: *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
         position: i32,
         playerCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -194,7 +195,8 @@ impl MultiplayerResultsPyramidViewAvatar {
     }
 }
 #[cfg(feature = "MultiplayerResultsPyramidViewAvatar")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerResultsPyramidViewAvatar {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,29 +2,34 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirroredDisappearingArrowController {
-    __cordl_parent: DisappearingArrowControllerBase_1<*mut MirroredGameNoteController>,
-    pub _mirroredGameNoteController: *mut MirroredGameNoteController,
+    __cordl_parent: crate::GlobalNamespace::DisappearingArrowControllerBase_1<
+        *mut crate::GlobalNamespace::MirroredGameNoteController,
+    >,
+    pub _mirroredGameNoteController: *mut crate::GlobalNamespace::MirroredGameNoteController,
 }
 #[cfg(feature = "MirroredDisappearingArrowController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MirroredDisappearingArrowController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MirroredDisappearingArrowController => ""
     ."MirroredDisappearingArrowController"
 );
 #[cfg(feature = "MirroredDisappearingArrowController")]
-impl std::ops::Deref for MirroredDisappearingArrowController {
-    type Target = DisappearingArrowControllerBase_1<*mut MirroredGameNoteController>;
+impl std::ops::Deref for crate::GlobalNamespace::MirroredDisappearingArrowController {
+    type Target = crate::GlobalNamespace::DisappearingArrowControllerBase_1<
+        *mut crate::GlobalNamespace::MirroredGameNoteController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MirroredDisappearingArrowController")]
-impl std::ops::DerefMut for MirroredDisappearingArrowController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MirroredDisappearingArrowController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MirroredDisappearingArrowController")]
-impl MirroredDisappearingArrowController {
+impl crate::GlobalNamespace::MirroredDisappearingArrowController {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -44,17 +49,20 @@ impl MirroredDisappearingArrowController {
     }
     pub fn get_gameNoteController(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut MirroredGameNoteController> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::MirroredGameNoteController,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MirroredGameNoteController = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MirroredGameNoteController = __cordl_object
             .invoke("get_gameNoteController", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MirroredDisappearingArrowController")]
-impl quest_hook::libil2cpp::ObjectType for MirroredDisappearingArrowController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MirroredDisappearingArrowController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

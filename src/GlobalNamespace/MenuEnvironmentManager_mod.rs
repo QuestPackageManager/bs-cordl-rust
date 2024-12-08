@@ -10,23 +10,24 @@ pub struct MenuEnvironmentManager {
 }
 #[cfg(feature = "MenuEnvironmentManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MenuEnvironmentManager => ""."MenuEnvironmentManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MenuEnvironmentManager => ""
+    ."MenuEnvironmentManager"
 );
 #[cfg(feature = "MenuEnvironmentManager")]
-impl std::ops::Deref for MenuEnvironmentManager {
+impl std::ops::Deref for crate::GlobalNamespace::MenuEnvironmentManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuEnvironmentManager")]
-impl std::ops::DerefMut for MenuEnvironmentManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::MenuEnvironmentManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuEnvironmentManager")]
-impl MenuEnvironmentManager {
+impl crate::GlobalNamespace::MenuEnvironmentManager {
     #[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentObjects")]
     pub type MenuEnvironmentObjects = crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects;
     #[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentType")]
@@ -71,7 +72,8 @@ impl MenuEnvironmentManager {
     }
 }
 #[cfg(feature = "MenuEnvironmentManager")]
-impl quest_hook::libil2cpp::ObjectType for MenuEnvironmentManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MenuEnvironmentManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

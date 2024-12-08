@@ -27,12 +27,16 @@ for crate::System::Linq::Expressions::Interpreter::SubOvfInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::SubOvfInstruction {
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfInt32")]
-    pub type SubOvfInt32 = crate::GlobalNamespace::SubOvfInstruction_SubOvfInt32;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfInt16")]
     pub type SubOvfInt16 = crate::GlobalNamespace::SubOvfInstruction_SubOvfInt16;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfInt32")]
+    pub type SubOvfInt32 = crate::GlobalNamespace::SubOvfInstruction_SubOvfInt32;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfInt64")]
     pub type SubOvfInt64 = crate::GlobalNamespace::SubOvfInstruction_SubOvfInt64;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfUInt16"
+    )]
+    pub type SubOvfUInt16 = crate::GlobalNamespace::SubOvfInstruction_SubOvfUInt16;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfUInt32"
     )]
@@ -41,10 +45,6 @@ impl crate::System::Linq::Expressions::Interpreter::SubOvfInstruction {
         feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfUInt64"
     )]
     pub type SubOvfUInt64 = crate::GlobalNamespace::SubOvfInstruction_SubOvfUInt64;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction+SubOvfUInt16"
-    )]
-    pub type SubOvfUInt16 = crate::GlobalNamespace::SubOvfInstruction_SubOvfUInt16;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

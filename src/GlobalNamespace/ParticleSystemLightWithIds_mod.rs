@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParticleSystemLightWithIds {
-    __cordl_parent: RuntimeLightWithIds,
+    __cordl_parent: crate::GlobalNamespace::RuntimeLightWithIds,
     pub _particleSystem: *mut crate::UnityEngine::ParticleSystem,
     pub _setOnlyOnce: bool,
     pub _setColorOnly: bool,
@@ -14,24 +14,24 @@ pub struct ParticleSystemLightWithIds {
 }
 #[cfg(feature = "ParticleSystemLightWithIds")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ParticleSystemLightWithIds => ""
-    ."ParticleSystemLightWithIds"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ParticleSystemLightWithIds =>
+    ""."ParticleSystemLightWithIds"
 );
 #[cfg(feature = "ParticleSystemLightWithIds")]
-impl std::ops::Deref for ParticleSystemLightWithIds {
-    type Target = RuntimeLightWithIds;
+impl std::ops::Deref for crate::GlobalNamespace::ParticleSystemLightWithIds {
+    type Target = crate::GlobalNamespace::RuntimeLightWithIds;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ParticleSystemLightWithIds")]
-impl std::ops::DerefMut for ParticleSystemLightWithIds {
+impl std::ops::DerefMut for crate::GlobalNamespace::ParticleSystemLightWithIds {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ParticleSystemLightWithIds")]
-impl ParticleSystemLightWithIds {
+impl crate::GlobalNamespace::ParticleSystemLightWithIds {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -72,7 +72,8 @@ impl ParticleSystemLightWithIds {
     }
 }
 #[cfg(feature = "ParticleSystemLightWithIds")]
-impl quest_hook::libil2cpp::ObjectType for ParticleSystemLightWithIds {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ParticleSystemLightWithIds {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,34 +3,35 @@
 #[derive(Debug)]
 pub struct MissionObjectivesGameUIController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionObjectiveGameUIViewPrefab: *mut MissionObjectiveGameUIView,
+    pub _missionObjectiveGameUIViewPrefab: *mut crate::GlobalNamespace::MissionObjectiveGameUIView,
     pub _separator: f32,
     pub _elementWidth: f32,
-    pub _missionObjectiveCheckersManager: *mut MissionObjectiveCheckersManager,
+    pub _missionObjectiveCheckersManager: *mut crate::GlobalNamespace::MissionObjectiveCheckersManager,
     pub _missionObjectiveGameUIViews: *mut crate::System::Collections::Generic::List_1<
-        *mut MissionObjectiveGameUIView,
+        *mut crate::GlobalNamespace::MissionObjectiveGameUIView,
     >,
 }
 #[cfg(feature = "MissionObjectivesGameUIController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionObjectivesGameUIController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MissionObjectivesGameUIController => ""
     ."MissionObjectivesGameUIController"
 );
 #[cfg(feature = "MissionObjectivesGameUIController")]
-impl std::ops::Deref for MissionObjectivesGameUIController {
+impl std::ops::Deref for crate::GlobalNamespace::MissionObjectivesGameUIController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionObjectivesGameUIController")]
-impl std::ops::DerefMut for MissionObjectivesGameUIController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionObjectivesGameUIController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionObjectivesGameUIController")]
-impl MissionObjectivesGameUIController {
+impl crate::GlobalNamespace::MissionObjectivesGameUIController {
     pub fn CreateUIElements(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -90,7 +91,8 @@ impl MissionObjectivesGameUIController {
     }
 }
 #[cfg(feature = "MissionObjectivesGameUIController")]
-impl quest_hook::libil2cpp::ObjectType for MissionObjectivesGameUIController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MissionObjectivesGameUIController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

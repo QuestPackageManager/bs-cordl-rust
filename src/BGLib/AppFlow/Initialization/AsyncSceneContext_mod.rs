@@ -33,22 +33,22 @@ impl std::ops::DerefMut for crate::BGLib::AppFlow::Initialization::AsyncSceneCon
 }
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext")]
 impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
-    #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+__c")]
-    pub type __c = crate::BGLib::AppFlow::Initialization::AsyncSceneContext___c;
-    #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+_RunAsync_d__6")]
-    pub type _RunAsync_d__6 = crate::BGLib::AppFlow::Initialization::AsyncSceneContext__RunAsync_d__6;
-    #[cfg(
-        feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+__c__DisplayClass9_0"
-    )]
-    pub type __c__DisplayClass9_0 = crate::BGLib::AppFlow::Initialization::AsyncSceneContext___c__DisplayClass9_0;
     #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+State")]
     pub type State = crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State;
     #[cfg(
         feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+_LoadInstallersAsync_d__9"
     )]
     pub type _LoadInstallersAsync_d__9 = crate::BGLib::AppFlow::Initialization::AsyncSceneContext__LoadInstallersAsync_d__9;
+    #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+_RunAsync_d__6")]
+    pub type _RunAsync_d__6 = crate::BGLib::AppFlow::Initialization::AsyncSceneContext__RunAsync_d__6;
     #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+_Run_d__5")]
     pub type _Run_d__5 = crate::BGLib::AppFlow::Initialization::AsyncSceneContext__Run_d__5;
+    #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+__c")]
+    pub type __c = crate::BGLib::AppFlow::Initialization::AsyncSceneContext___c;
+    #[cfg(
+        feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+__c__DisplayClass9_0"
+    )]
+    pub type __c__DisplayClass9_0 = crate::BGLib::AppFlow::Initialization::AsyncSceneContext___c__DisplayClass9_0;
     pub fn CreateContainerForLoading(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::DiContainer> {

@@ -4,10 +4,10 @@
 pub struct RecordingSettings {
     __cordl_parent: crate::System::Object,
     pub gameMode: *mut crate::System::String,
-    pub pack: *mut BeatmapLevelPack,
-    pub level: *mut BeatmapLevel,
-    pub difficulty: BeatmapDifficulty,
-    pub characteristic: *mut BeatmapCharacteristicSO,
+    pub pack: *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub level: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub difficulty: crate::GlobalNamespace::BeatmapDifficulty,
+    pub characteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     pub runLevel: bool,
     pub recordPerformance: bool,
     pub recordingMode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
@@ -25,35 +25,38 @@ pub struct RecordingSettings {
     pub startSongTime: f32,
     pub songSpeedMultiplier: f32,
     pub overrideEnvironments: bool,
-    pub environmentType: crate::System::Nullable_1<EnvironmentType>,
-    pub environmentInfo: *mut EnvironmentInfoSO,
+    pub environmentType: crate::System::Nullable_1<
+        crate::GlobalNamespace::EnvironmentType,
+    >,
+    pub environmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
     pub saveToOldFormat: bool,
 }
 #[cfg(feature = "RecordingSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RecordingSettings => ""."RecordingSettings"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RecordingSettings => ""
+    ."RecordingSettings"
 );
 #[cfg(feature = "RecordingSettings")]
-impl std::ops::Deref for RecordingSettings {
+impl std::ops::Deref for crate::GlobalNamespace::RecordingSettings {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingSettings")]
-impl std::ops::DerefMut for RecordingSettings {
+impl std::ops::DerefMut for crate::GlobalNamespace::RecordingSettings {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingSettings")]
-impl RecordingSettings {
+impl crate::GlobalNamespace::RecordingSettings {
     pub fn New(
         gameMode: *mut crate::System::String,
-        pack: *mut BeatmapLevelPack,
-        level: *mut BeatmapLevel,
-        difficulty: BeatmapDifficulty,
-        characteristic: *mut BeatmapCharacteristicSO,
+        pack: *mut crate::GlobalNamespace::BeatmapLevelPack,
+        level: *mut crate::GlobalNamespace::BeatmapLevel,
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
+        characteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         runLevel: bool,
         recordPerformance: bool,
         recordingMode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
@@ -71,8 +74,10 @@ impl RecordingSettings {
         startSongTime: f32,
         songSpeedMultiplier: f32,
         overrideEnvironments: bool,
-        environmentType: crate::System::Nullable_1<EnvironmentType>,
-        environmentInfo: *mut EnvironmentInfoSO,
+        environmentType: crate::System::Nullable_1<
+            crate::GlobalNamespace::EnvironmentType,
+        >,
+        environmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
         saveToOldFormat: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -121,10 +126,10 @@ impl RecordingSettings {
     pub fn _ctor(
         &mut self,
         gameMode: *mut crate::System::String,
-        pack: *mut BeatmapLevelPack,
-        level: *mut BeatmapLevel,
-        difficulty: BeatmapDifficulty,
-        characteristic: *mut BeatmapCharacteristicSO,
+        pack: *mut crate::GlobalNamespace::BeatmapLevelPack,
+        level: *mut crate::GlobalNamespace::BeatmapLevel,
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
+        characteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         runLevel: bool,
         recordPerformance: bool,
         recordingMode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
@@ -142,8 +147,10 @@ impl RecordingSettings {
         startSongTime: f32,
         songSpeedMultiplier: f32,
         overrideEnvironments: bool,
-        environmentType: crate::System::Nullable_1<EnvironmentType>,
-        environmentInfo: *mut EnvironmentInfoSO,
+        environmentType: crate::System::Nullable_1<
+            crate::GlobalNamespace::EnvironmentType,
+        >,
+        environmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
         saveToOldFormat: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -182,7 +189,7 @@ impl RecordingSettings {
     }
 }
 #[cfg(feature = "RecordingSettings")]
-impl quest_hook::libil2cpp::ObjectType for RecordingSettings {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RecordingSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

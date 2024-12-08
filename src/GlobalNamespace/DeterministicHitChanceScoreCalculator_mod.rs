@@ -8,28 +8,30 @@ pub struct DeterministicHitChanceScoreCalculator {
 }
 #[cfg(feature = "DeterministicHitChanceScoreCalculator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for DeterministicHitChanceScoreCalculator => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::DeterministicHitChanceScoreCalculator => ""
     ."DeterministicHitChanceScoreCalculator"
 );
 #[cfg(feature = "DeterministicHitChanceScoreCalculator")]
-impl std::ops::Deref for DeterministicHitChanceScoreCalculator {
+impl std::ops::Deref for crate::GlobalNamespace::DeterministicHitChanceScoreCalculator {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DeterministicHitChanceScoreCalculator")]
-impl std::ops::DerefMut for DeterministicHitChanceScoreCalculator {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::DeterministicHitChanceScoreCalculator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "DeterministicHitChanceScoreCalculator")]
-impl DeterministicHitChanceScoreCalculator {
+impl crate::GlobalNamespace::DeterministicHitChanceScoreCalculator {
     pub const kScorePerHit: i32 = 105i32;
     pub fn GetScoreForNote(
         &mut self,
-        noteData: *mut MockNoteData,
+        noteData: *mut crate::GlobalNamespace::MockNoteData,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -57,7 +59,8 @@ impl DeterministicHitChanceScoreCalculator {
     }
 }
 #[cfg(feature = "DeterministicHitChanceScoreCalculator")]
-impl quest_hook::libil2cpp::ObjectType for DeterministicHitChanceScoreCalculator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::DeterministicHitChanceScoreCalculator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,24 +6,24 @@ pub struct IBeatmapObjectController {
 }
 #[cfg(feature = "IBeatmapObjectController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IBeatmapObjectController => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IBeatmapObjectController => ""
     ."IBeatmapObjectController"
 );
 #[cfg(feature = "IBeatmapObjectController")]
-impl std::ops::Deref for IBeatmapObjectController {
+impl std::ops::Deref for crate::GlobalNamespace::IBeatmapObjectController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IBeatmapObjectController")]
-impl std::ops::DerefMut for IBeatmapObjectController {
+impl std::ops::DerefMut for crate::GlobalNamespace::IBeatmapObjectController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IBeatmapObjectController")]
-impl IBeatmapObjectController {
+impl crate::GlobalNamespace::IBeatmapObjectController {
     pub fn Dissolve(
         &mut self,
         duration: f32,
@@ -64,7 +64,8 @@ impl IBeatmapObjectController {
     }
 }
 #[cfg(feature = "IBeatmapObjectController")]
-impl quest_hook::libil2cpp::ObjectType for IBeatmapObjectController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IBeatmapObjectController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

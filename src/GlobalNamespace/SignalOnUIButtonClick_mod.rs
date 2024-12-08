@@ -3,28 +3,29 @@
 #[derive(Debug)]
 pub struct SignalOnUIButtonClick {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _buttonClickedSignal: *mut Signal,
+    pub _buttonClickedSignal: *mut crate::GlobalNamespace::Signal,
     pub _button: *mut crate::UnityEngine::UI::Button,
 }
 #[cfg(feature = "SignalOnUIButtonClick")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SignalOnUIButtonClick => ""."SignalOnUIButtonClick"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SignalOnUIButtonClick => ""
+    ."SignalOnUIButtonClick"
 );
 #[cfg(feature = "SignalOnUIButtonClick")]
-impl std::ops::Deref for SignalOnUIButtonClick {
+impl std::ops::Deref for crate::GlobalNamespace::SignalOnUIButtonClick {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SignalOnUIButtonClick")]
-impl std::ops::DerefMut for SignalOnUIButtonClick {
+impl std::ops::DerefMut for crate::GlobalNamespace::SignalOnUIButtonClick {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SignalOnUIButtonClick")]
-impl SignalOnUIButtonClick {
+impl crate::GlobalNamespace::SignalOnUIButtonClick {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -74,7 +75,8 @@ impl SignalOnUIButtonClick {
     }
 }
 #[cfg(feature = "SignalOnUIButtonClick")]
-impl quest_hook::libil2cpp::ObjectType for SignalOnUIButtonClick {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SignalOnUIButtonClick {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

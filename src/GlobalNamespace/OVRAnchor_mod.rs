@@ -7,10 +7,10 @@ pub struct OVRAnchor {
 }
 #[cfg(feature = "OVRAnchor")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for OVRAnchor => ""."OVRAnchor"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRAnchor => ""."OVRAnchor"
 );
 #[cfg(feature = "OVRAnchor")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for OVRAnchor {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRAnchor {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -20,7 +20,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for OVRAnchor {
     }
 }
 #[cfg(feature = "OVRAnchor")]
-impl OVRAnchor {
+impl crate::GlobalNamespace::OVRAnchor {
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -33,7 +33,7 @@ impl OVRAnchor {
     }
     pub fn Equals_OVRAnchor0(
         &mut self,
-        other: OVRAnchor,
+        other: crate::GlobalNamespace::OVRAnchor,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

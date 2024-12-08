@@ -26,24 +26,24 @@ for crate::System::Linq::Expressions::Interpreter::NotInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::NotInstruction {
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotByte")]
-    pub type NotByte = crate::GlobalNamespace::NotInstruction_NotByte;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotUInt16")]
-    pub type NotUInt16 = crate::GlobalNamespace::NotInstruction_NotUInt16;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotInt16")]
-    pub type NotInt16 = crate::GlobalNamespace::NotInstruction_NotInt16;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotUInt64")]
-    pub type NotUInt64 = crate::GlobalNamespace::NotInstruction_NotUInt64;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotSByte")]
-    pub type NotSByte = crate::GlobalNamespace::NotInstruction_NotSByte;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotInt32")]
-    pub type NotInt32 = crate::GlobalNamespace::NotInstruction_NotInt32;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotUInt32")]
-    pub type NotUInt32 = crate::GlobalNamespace::NotInstruction_NotUInt32;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotBoolean")]
     pub type NotBoolean = crate::GlobalNamespace::NotInstruction_NotBoolean;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotByte")]
+    pub type NotByte = crate::GlobalNamespace::NotInstruction_NotByte;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotInt16")]
+    pub type NotInt16 = crate::GlobalNamespace::NotInstruction_NotInt16;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotInt32")]
+    pub type NotInt32 = crate::GlobalNamespace::NotInstruction_NotInt32;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotInt64")]
     pub type NotInt64 = crate::GlobalNamespace::NotInstruction_NotInt64;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotSByte")]
+    pub type NotSByte = crate::GlobalNamespace::NotInstruction_NotSByte;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotUInt16")]
+    pub type NotUInt16 = crate::GlobalNamespace::NotInstruction_NotUInt16;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotUInt32")]
+    pub type NotUInt32 = crate::GlobalNamespace::NotInstruction_NotUInt32;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotUInt64")]
+    pub type NotUInt64 = crate::GlobalNamespace::NotInstruction_NotUInt64;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

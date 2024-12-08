@@ -3,28 +3,31 @@
 #[derive(Debug)]
 pub struct MultiplayerResultsPyramidViewAvatarInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _connectedPlayer: *mut IConnectedPlayer,
+    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
 }
 #[cfg(feature = "MultiplayerResultsPyramidViewAvatarInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerResultsPyramidViewAvatarInstaller => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerResultsPyramidViewAvatarInstaller => ""
     ."MultiplayerResultsPyramidViewAvatarInstaller"
 );
 #[cfg(feature = "MultiplayerResultsPyramidViewAvatarInstaller")]
-impl std::ops::Deref for MultiplayerResultsPyramidViewAvatarInstaller {
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatarInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerResultsPyramidViewAvatarInstaller")]
-impl std::ops::DerefMut for MultiplayerResultsPyramidViewAvatarInstaller {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatarInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerResultsPyramidViewAvatarInstaller")]
-impl MultiplayerResultsPyramidViewAvatarInstaller {
+impl crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatarInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -54,7 +57,8 @@ impl MultiplayerResultsPyramidViewAvatarInstaller {
     }
 }
 #[cfg(feature = "MultiplayerResultsPyramidViewAvatarInstaller")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerResultsPyramidViewAvatarInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatarInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

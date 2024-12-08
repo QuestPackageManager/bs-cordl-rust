@@ -65,10 +65,10 @@ for crate::Internal::Cryptography::Pal::CertificateData {
 }
 #[cfg(feature = "Internal+Cryptography+Pal+CertificateData")]
 impl crate::Internal::Cryptography::Pal::CertificateData {
-    #[cfg(feature = "Internal+Cryptography+Pal+CertificateData+_ReadReverseRdns_d__21")]
-    pub type _ReadReverseRdns_d__21 = crate::Internal::Cryptography::Pal::CertificateData__ReadReverseRdns_d__21;
     #[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
     pub type AlgorithmIdentifier = crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier;
+    #[cfg(feature = "Internal+Cryptography+Pal+CertificateData+_ReadReverseRdns_d__21")]
+    pub type _ReadReverseRdns_d__21 = crate::Internal::Cryptography::Pal::CertificateData__ReadReverseRdns_d__21;
     pub fn GetNameInfo(
         &mut self,
         nameType: crate::System::Security::Cryptography::X509Certificates::X509NameType,

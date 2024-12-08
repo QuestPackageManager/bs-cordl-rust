@@ -25,14 +25,14 @@ for crate::OVR::OpenVR::IVRSpatialAnchors {
 }
 #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors")]
 impl crate::OVR::OpenVR::IVRSpatialAnchors {
-    #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_GetSpatialAnchorPose")]
-    pub type _GetSpatialAnchorPose = crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorPose;
-    #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_CreateSpatialAnchorFromPose")]
-    pub type _CreateSpatialAnchorFromPose = crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromPose;
     #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_CreateSpatialAnchorFromDescriptor")]
     pub type _CreateSpatialAnchorFromDescriptor = crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromDescriptor;
+    #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_CreateSpatialAnchorFromPose")]
+    pub type _CreateSpatialAnchorFromPose = crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromPose;
     #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_GetSpatialAnchorDescriptor")]
     pub type _GetSpatialAnchorDescriptor = crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorDescriptor;
+    #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_GetSpatialAnchorPose")]
+    pub type _GetSpatialAnchorPose = crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorPose;
 }
 #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_CreateSpatialAnchorFromDescriptor")]
 #[repr(C)]

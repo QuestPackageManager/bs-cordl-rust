@@ -6,8 +6,8 @@ pub struct ConnectedPlayerAvatarPoseDataProvider {
     pub poseDidChangeEvent: *mut crate::System::Action_1<
         crate::BeatSaber::AvatarCore::AvatarPoseData,
     >,
-    pub _connectedPlayer: *mut IConnectedPlayer,
-    pub _nodePoseSyncStateManager: *mut INodePoseSyncStateManager,
+    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _nodePoseSyncStateManager: *mut crate::GlobalNamespace::INodePoseSyncStateManager,
     pub _avatarPoseRestriction: *mut crate::BeatSaber::AvatarCore::IAvatarPoseRestriction,
     pub _currentPose: crate::BeatSaber::AvatarCore::AvatarPoseData,
 }
@@ -35,8 +35,8 @@ for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarPoseDataProvider {
 #[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerAvatarPoseDataProvider")]
 impl crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarPoseDataProvider {
     pub fn New(
-        connectedPlayer: *mut IConnectedPlayer,
-        nodePoseSyncStateManager: *mut INodePoseSyncStateManager,
+        connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+        nodePoseSyncStateManager: *mut crate::GlobalNamespace::INodePoseSyncStateManager,
         avatarPoseRestriction: *mut crate::BeatSaber::AvatarCore::IAvatarPoseRestriction,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -60,8 +60,8 @@ impl crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarPoseDataProvider {
     }
     pub fn _ctor(
         &mut self,
-        connectedPlayer: *mut IConnectedPlayer,
-        nodePoseSyncStateManager: *mut INodePoseSyncStateManager,
+        connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+        nodePoseSyncStateManager: *mut crate::GlobalNamespace::INodePoseSyncStateManager,
         avatarPoseRestriction: *mut crate::BeatSaber::AvatarCore::IAvatarPoseRestriction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

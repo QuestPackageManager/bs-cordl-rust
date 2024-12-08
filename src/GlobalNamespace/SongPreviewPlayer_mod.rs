@@ -247,7 +247,7 @@ for crate::GlobalNamespace::SongPreviewPlayer_InitData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongPreviewPlayer {
-    __cordl_parent: AudioPlayerBase,
+    __cordl_parent: crate::GlobalNamespace::AudioPlayerBase,
     pub _channelsCount: i32,
     pub _audioSourcePrefab: *mut crate::UnityEngine::AudioSource,
     pub _defaultAudioClip: *mut crate::UnityEngine::AudioClip,
@@ -258,7 +258,7 @@ pub struct SongPreviewPlayer {
     pub _defaultAudioSourceParams: *mut crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams,
     pub _othersAudioSourceParams: *mut crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams,
     pub _initData: *mut crate::GlobalNamespace::SongPreviewPlayer_InitData,
-    pub _audioManager: *mut AudioManagerSO,
+    pub _audioManager: *mut crate::GlobalNamespace::AudioManagerSO,
     pub _audioSourceControllers: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController,
     >,
@@ -276,31 +276,32 @@ pub struct SongPreviewPlayer {
 }
 #[cfg(feature = "SongPreviewPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SongPreviewPlayer => ""."SongPreviewPlayer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongPreviewPlayer => ""
+    ."SongPreviewPlayer"
 );
 #[cfg(feature = "SongPreviewPlayer")]
-impl std::ops::Deref for SongPreviewPlayer {
-    type Target = AudioPlayerBase;
+impl std::ops::Deref for crate::GlobalNamespace::SongPreviewPlayer {
+    type Target = crate::GlobalNamespace::AudioPlayerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongPreviewPlayer")]
-impl std::ops::DerefMut for SongPreviewPlayer {
+impl std::ops::DerefMut for crate::GlobalNamespace::SongPreviewPlayer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongPreviewPlayer")]
-impl SongPreviewPlayer {
+impl crate::GlobalNamespace::SongPreviewPlayer {
     #[cfg(feature = "SongPreviewPlayer+AudioSourceParams")]
     pub type AudioSourceParams = crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams;
+    #[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
+    pub type AudioSourceVolumeController = crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController;
     #[cfg(feature = "SongPreviewPlayer+InitData")]
     pub type InitData = crate::GlobalNamespace::SongPreviewPlayer_InitData;
     #[cfg(feature = "SongPreviewPlayer+_CrossFadeAfterDelayCoroutine_d__28")]
     pub type _CrossFadeAfterDelayCoroutine_d__28 = crate::GlobalNamespace::SongPreviewPlayer__CrossFadeAfterDelayCoroutine_d__28;
-    #[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
-    pub type AudioSourceVolumeController = crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -498,7 +499,7 @@ impl SongPreviewPlayer {
     }
 }
 #[cfg(feature = "SongPreviewPlayer")]
-impl quest_hook::libil2cpp::ObjectType for SongPreviewPlayer {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongPreviewPlayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

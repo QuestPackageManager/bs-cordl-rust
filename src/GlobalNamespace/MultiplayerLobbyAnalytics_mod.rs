@@ -3,29 +3,29 @@
 #[derive(Debug)]
 pub struct MultiplayerLobbyAnalytics {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _gameServerLobbyFlowCoordinator: *mut GameServerLobbyFlowCoordinator,
-    pub _analyticsModel: *mut IAnalyticsModel,
+    pub _gameServerLobbyFlowCoordinator: *mut crate::GlobalNamespace::GameServerLobbyFlowCoordinator,
+    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
 }
 #[cfg(feature = "MultiplayerLobbyAnalytics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLobbyAnalytics => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerLobbyAnalytics => ""
     ."MultiplayerLobbyAnalytics"
 );
 #[cfg(feature = "MultiplayerLobbyAnalytics")]
-impl std::ops::Deref for MultiplayerLobbyAnalytics {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLobbyAnalytics {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLobbyAnalytics")]
-impl std::ops::DerefMut for MultiplayerLobbyAnalytics {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLobbyAnalytics {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLobbyAnalytics")]
-impl MultiplayerLobbyAnalytics {
+impl crate::GlobalNamespace::MultiplayerLobbyAnalytics {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -130,7 +130,8 @@ impl MultiplayerLobbyAnalytics {
     }
 }
 #[cfg(feature = "MultiplayerLobbyAnalytics")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLobbyAnalytics {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLobbyAnalytics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

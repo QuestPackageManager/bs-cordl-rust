@@ -3,28 +3,29 @@
 #[derive(Debug)]
 pub struct BaseNoteVisuals {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _noteController: *mut NoteControllerBase,
-    pub _cutoutAnimateEffect: *mut CutoutAnimateEffect,
+    pub _noteController: *mut crate::GlobalNamespace::NoteControllerBase,
+    pub _cutoutAnimateEffect: *mut crate::GlobalNamespace::CutoutAnimateEffect,
 }
 #[cfg(feature = "BaseNoteVisuals")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BaseNoteVisuals => ""."BaseNoteVisuals"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BaseNoteVisuals => ""
+    ."BaseNoteVisuals"
 );
 #[cfg(feature = "BaseNoteVisuals")]
-impl std::ops::Deref for BaseNoteVisuals {
+impl std::ops::Deref for crate::GlobalNamespace::BaseNoteVisuals {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BaseNoteVisuals")]
-impl std::ops::DerefMut for BaseNoteVisuals {
+impl std::ops::DerefMut for crate::GlobalNamespace::BaseNoteVisuals {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BaseNoteVisuals")]
-impl BaseNoteVisuals {
+impl crate::GlobalNamespace::BaseNoteVisuals {
     pub fn AnimateCutout(
         &mut self,
         cutoutStart: f32,
@@ -50,7 +51,7 @@ impl BaseNoteVisuals {
     }
     pub fn HandleNoteControllerDidInit(
         &mut self,
-        noteController: *mut NoteControllerBase,
+        noteController: *mut crate::GlobalNamespace::NoteControllerBase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -61,7 +62,7 @@ impl BaseNoteVisuals {
     }
     pub fn HandleNoteControllerNoteDidStartDissolving(
         &mut self,
-        noteController: *mut NoteControllerBase,
+        noteController: *mut crate::GlobalNamespace::NoteControllerBase,
         duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -103,7 +104,7 @@ impl BaseNoteVisuals {
     }
 }
 #[cfg(feature = "BaseNoteVisuals")]
-impl quest_hook::libil2cpp::ObjectType for BaseNoteVisuals {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BaseNoteVisuals {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

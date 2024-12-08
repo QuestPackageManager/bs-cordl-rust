@@ -6,27 +6,28 @@ pub struct ICutScoreBufferDidFinishReceiver {
 }
 #[cfg(feature = "ICutScoreBufferDidFinishReceiver")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ICutScoreBufferDidFinishReceiver => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ICutScoreBufferDidFinishReceiver => ""
     ."ICutScoreBufferDidFinishReceiver"
 );
 #[cfg(feature = "ICutScoreBufferDidFinishReceiver")]
-impl std::ops::Deref for ICutScoreBufferDidFinishReceiver {
+impl std::ops::Deref for crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ICutScoreBufferDidFinishReceiver")]
-impl std::ops::DerefMut for ICutScoreBufferDidFinishReceiver {
+impl std::ops::DerefMut for crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ICutScoreBufferDidFinishReceiver")]
-impl ICutScoreBufferDidFinishReceiver {
+impl crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver {
     pub fn HandleCutScoreBufferDidFinish(
         &mut self,
-        cutScoreBuffer: *mut CutScoreBuffer,
+        cutScoreBuffer: *mut crate::GlobalNamespace::CutScoreBuffer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -42,7 +43,8 @@ impl ICutScoreBufferDidFinishReceiver {
     }
 }
 #[cfg(feature = "ICutScoreBufferDidFinishReceiver")]
-impl quest_hook::libil2cpp::ObjectType for ICutScoreBufferDidFinishReceiver {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

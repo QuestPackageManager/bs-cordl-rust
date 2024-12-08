@@ -179,26 +179,26 @@ for crate::UnityEngine::PlayerLoop::PreUpdate {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate")]
 impl crate::UnityEngine::PlayerLoop::PreUpdate {
-    #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+NewInputUpdate")]
-    pub type NewInputUpdate = crate::UnityEngine::PlayerLoop::PreUpdate_NewInputUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+UpdateVideo")]
-    pub type UpdateVideo = crate::UnityEngine::PlayerLoop::PreUpdate_UpdateVideo;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+AIUpdate")]
+    pub type AIUpdate = crate::UnityEngine::PlayerLoop::PreUpdate_AIUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+CheckTexFieldInput")]
+    pub type CheckTexFieldInput = crate::UnityEngine::PlayerLoop::PreUpdate_CheckTexFieldInput;
     #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+IMGUISendQueuedEvents")]
     pub type IMGUISendQueuedEvents = crate::UnityEngine::PlayerLoop::PreUpdate_IMGUISendQueuedEvents;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+NewInputUpdate")]
+    pub type NewInputUpdate = crate::UnityEngine::PlayerLoop::PreUpdate_NewInputUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+Physics2DUpdate")]
+    pub type Physics2DUpdate = crate::UnityEngine::PlayerLoop::PreUpdate_Physics2DUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsClothUpdate")]
+    pub type PhysicsClothUpdate = crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsClothUpdate;
     #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsUpdate")]
     pub type PhysicsUpdate = crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsUpdate;
     #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+SendMouseEvents")]
     pub type SendMouseEvents = crate::UnityEngine::PlayerLoop::PreUpdate_SendMouseEvents;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+CheckTexFieldInput")]
-    pub type CheckTexFieldInput = crate::UnityEngine::PlayerLoop::PreUpdate_CheckTexFieldInput;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+AIUpdate")]
-    pub type AIUpdate = crate::UnityEngine::PlayerLoop::PreUpdate_AIUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+Physics2DUpdate")]
-    pub type Physics2DUpdate = crate::UnityEngine::PlayerLoop::PreUpdate_Physics2DUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+UpdateVideo")]
+    pub type UpdateVideo = crate::UnityEngine::PlayerLoop::PreUpdate_UpdateVideo;
     #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+WindUpdate")]
     pub type WindUpdate = crate::UnityEngine::PlayerLoop::PreUpdate_WindUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+PhysicsClothUpdate")]
-    pub type PhysicsClothUpdate = crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsClothUpdate;
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PreUpdate+SendMouseEvents")]
 #[repr(C)]

@@ -4,30 +4,31 @@
 pub struct BlurredCoverImageView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _coverImage: *mut crate::HMUI::ImageView,
-    pub _kawaseBlurRenderer: *mut KawaseBlurRendererSO,
+    pub _kawaseBlurRenderer: *mut crate::GlobalNamespace::KawaseBlurRendererSO,
     pub _settingTextureForLevelId: *mut crate::System::String,
     pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
     pub _blurredCoverTexture: *mut crate::UnityEngine::Texture2D,
 }
 #[cfg(feature = "BlurredCoverImageView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BlurredCoverImageView => ""."BlurredCoverImageView"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BlurredCoverImageView => ""
+    ."BlurredCoverImageView"
 );
 #[cfg(feature = "BlurredCoverImageView")]
-impl std::ops::Deref for BlurredCoverImageView {
+impl std::ops::Deref for crate::GlobalNamespace::BlurredCoverImageView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BlurredCoverImageView")]
-impl std::ops::DerefMut for BlurredCoverImageView {
+impl std::ops::DerefMut for crate::GlobalNamespace::BlurredCoverImageView {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BlurredCoverImageView")]
-impl BlurredCoverImageView {
+impl crate::GlobalNamespace::BlurredCoverImageView {
     #[cfg(feature = "BlurredCoverImageView+_SetTextureAsync_d__6")]
     pub type _SetTextureAsync_d__6 = crate::GlobalNamespace::BlurredCoverImageView__SetTextureAsync_d__6;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -49,7 +50,7 @@ impl BlurredCoverImageView {
     }
     pub fn SetTextureAsync(
         &mut self,
-        level: *mut BeatmapLevel,
+        level: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -70,7 +71,8 @@ impl BlurredCoverImageView {
     }
 }
 #[cfg(feature = "BlurredCoverImageView")]
-impl quest_hook::libil2cpp::ObjectType for BlurredCoverImageView {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BlurredCoverImageView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

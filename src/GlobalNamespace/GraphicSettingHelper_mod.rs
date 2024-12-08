@@ -6,25 +6,26 @@ pub struct GraphicSettingHelper {
 }
 #[cfg(feature = "GraphicSettingHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GraphicSettingHelper => ""."GraphicSettingHelper"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GraphicSettingHelper => ""
+    ."GraphicSettingHelper"
 );
 #[cfg(feature = "GraphicSettingHelper")]
-impl std::ops::Deref for GraphicSettingHelper {
+impl std::ops::Deref for crate::GlobalNamespace::GraphicSettingHelper {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GraphicSettingHelper")]
-impl std::ops::DerefMut for GraphicSettingHelper {
+impl std::ops::DerefMut for crate::GlobalNamespace::GraphicSettingHelper {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GraphicSettingHelper")]
-impl GraphicSettingHelper {}
+impl crate::GlobalNamespace::GraphicSettingHelper {}
 #[cfg(feature = "GraphicSettingHelper")]
-impl quest_hook::libil2cpp::ObjectType for GraphicSettingHelper {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GraphicSettingHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

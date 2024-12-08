@@ -5,8 +5,8 @@ pub struct BeatmapBasicData {
     __cordl_parent: crate::System::Object,
     pub noteJumpMovementSpeed: f32,
     pub noteJumpStartBeatOffset: f32,
-    pub environmentName: EnvironmentName,
-    pub beatmapColorScheme: *mut ColorScheme,
+    pub environmentName: crate::GlobalNamespace::EnvironmentName,
+    pub beatmapColorScheme: *mut crate::GlobalNamespace::ColorScheme,
     pub notesCount: i32,
     pub obstaclesCount: i32,
     pub bombsCount: i32,
@@ -15,28 +15,29 @@ pub struct BeatmapBasicData {
 }
 #[cfg(feature = "BeatmapBasicData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapBasicData => ""."BeatmapBasicData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapBasicData => ""
+    ."BeatmapBasicData"
 );
 #[cfg(feature = "BeatmapBasicData")]
-impl std::ops::Deref for BeatmapBasicData {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapBasicData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapBasicData")]
-impl std::ops::DerefMut for BeatmapBasicData {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapBasicData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapBasicData")]
-impl BeatmapBasicData {
+impl crate::GlobalNamespace::BeatmapBasicData {
     pub fn New(
         noteJumpMovementSpeed: f32,
         noteJumpStartBeatOffset: f32,
-        environmentName: EnvironmentName,
-        beatmapColorScheme: *mut ColorScheme,
+        environmentName: crate::GlobalNamespace::EnvironmentName,
+        beatmapColorScheme: *mut crate::GlobalNamespace::ColorScheme,
         notesCount: i32,
         obstaclesCount: i32,
         bombsCount: i32,
@@ -66,8 +67,8 @@ impl BeatmapBasicData {
         &mut self,
         noteJumpMovementSpeed: f32,
         noteJumpStartBeatOffset: f32,
-        environmentName: EnvironmentName,
-        beatmapColorScheme: *mut ColorScheme,
+        environmentName: crate::GlobalNamespace::EnvironmentName,
+        beatmapColorScheme: *mut crate::GlobalNamespace::ColorScheme,
         notesCount: i32,
         obstaclesCount: i32,
         bombsCount: i32,
@@ -96,7 +97,7 @@ impl BeatmapBasicData {
     }
 }
 #[cfg(feature = "BeatmapBasicData")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapBasicData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapBasicData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

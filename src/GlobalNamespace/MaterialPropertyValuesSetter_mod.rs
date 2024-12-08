@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MaterialPropertyValuesSetter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _materialPropertyBlockController: *mut MaterialPropertyBlockController,
+    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     pub _floats: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValuePair,
     >,
@@ -19,32 +19,32 @@ pub struct MaterialPropertyValuesSetter {
 }
 #[cfg(feature = "MaterialPropertyValuesSetter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MaterialPropertyValuesSetter => ""
-    ."MaterialPropertyValuesSetter"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MaterialPropertyValuesSetter =>
+    ""."MaterialPropertyValuesSetter"
 );
 #[cfg(feature = "MaterialPropertyValuesSetter")]
-impl std::ops::Deref for MaterialPropertyValuesSetter {
+impl std::ops::Deref for crate::GlobalNamespace::MaterialPropertyValuesSetter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MaterialPropertyValuesSetter")]
-impl std::ops::DerefMut for MaterialPropertyValuesSetter {
+impl std::ops::DerefMut for crate::GlobalNamespace::MaterialPropertyValuesSetter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MaterialPropertyValuesSetter")]
-impl MaterialPropertyValuesSetter {
+impl crate::GlobalNamespace::MaterialPropertyValuesSetter {
     #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameColorValuePair")]
     pub type PropertyNameColorValuePair = crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameColorValuePair;
-    #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameVectorValuePair")]
-    pub type PropertyNameVectorValuePair = crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValuePair;
     #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameFloatValuePair")]
     pub type PropertyNameFloatValuePair = crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValuePair;
     #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameIntValuePair")]
     pub type PropertyNameIntValuePair = crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameIntValuePair;
+    #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameVectorValuePair")]
+    pub type PropertyNameVectorValuePair = crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValuePair;
     #[cfg(feature = "MaterialPropertyValuesSetter+PropertyValuePairBase")]
     pub type PropertyValuePairBase = crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase;
     pub fn ApplyParams(
@@ -106,7 +106,8 @@ impl MaterialPropertyValuesSetter {
     }
 }
 #[cfg(feature = "MaterialPropertyValuesSetter")]
-impl quest_hook::libil2cpp::ObjectType for MaterialPropertyValuesSetter {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MaterialPropertyValuesSetter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

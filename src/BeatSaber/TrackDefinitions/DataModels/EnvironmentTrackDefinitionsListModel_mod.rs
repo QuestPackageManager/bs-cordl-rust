@@ -6,7 +6,7 @@
 pub struct EnvironmentTrackDefinitionsListModel {
     __cordl_parent: crate::System::Object,
     pub _environmentTracksTypeMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut EnvironmentInfoSO,
+        *mut crate::GlobalNamespace::EnvironmentInfoSO,
         *mut crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel,
     >,
 }
@@ -71,7 +71,7 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitions
     }
     pub fn get_Item(
         &mut self,
-        _cordl_type: *mut EnvironmentInfoSO,
+        _cordl_type: *mut crate::GlobalNamespace::EnvironmentInfoSO,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel,
     > {

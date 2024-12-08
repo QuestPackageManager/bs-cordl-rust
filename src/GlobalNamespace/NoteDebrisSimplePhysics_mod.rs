@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteDebrisSimplePhysics {
-    __cordl_parent: NoteDebrisPhysics,
+    __cordl_parent: crate::GlobalNamespace::NoteDebrisPhysics,
     pub _currentForce: crate::UnityEngine::Vector3,
     pub _currentTorque: crate::UnityEngine::Vector3,
     pub _transform: *mut crate::UnityEngine::Transform,
@@ -11,23 +11,24 @@ pub struct NoteDebrisSimplePhysics {
 }
 #[cfg(feature = "NoteDebrisSimplePhysics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteDebrisSimplePhysics => ""."NoteDebrisSimplePhysics"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteDebrisSimplePhysics => ""
+    ."NoteDebrisSimplePhysics"
 );
 #[cfg(feature = "NoteDebrisSimplePhysics")]
-impl std::ops::Deref for NoteDebrisSimplePhysics {
-    type Target = NoteDebrisPhysics;
+impl std::ops::Deref for crate::GlobalNamespace::NoteDebrisSimplePhysics {
+    type Target = crate::GlobalNamespace::NoteDebrisPhysics;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteDebrisSimplePhysics")]
-impl std::ops::DerefMut for NoteDebrisSimplePhysics {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteDebrisSimplePhysics {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteDebrisSimplePhysics")]
-impl NoteDebrisSimplePhysics {
+impl crate::GlobalNamespace::NoteDebrisSimplePhysics {
     pub fn AddVelocity(
         &mut self,
         force: crate::UnityEngine::Vector3,
@@ -100,7 +101,8 @@ impl NoteDebrisSimplePhysics {
     }
 }
 #[cfg(feature = "NoteDebrisSimplePhysics")]
-impl quest_hook::libil2cpp::ObjectType for NoteDebrisSimplePhysics {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NoteDebrisSimplePhysics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,23 +6,24 @@ pub struct TransformLayouter {
 }
 #[cfg(feature = "TransformLayouter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TransformLayouter => ""."TransformLayouter"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TransformLayouter => ""
+    ."TransformLayouter"
 );
 #[cfg(feature = "TransformLayouter")]
-impl std::ops::Deref for TransformLayouter {
+impl std::ops::Deref for crate::GlobalNamespace::TransformLayouter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TransformLayouter")]
-impl std::ops::DerefMut for TransformLayouter {
+impl std::ops::DerefMut for crate::GlobalNamespace::TransformLayouter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TransformLayouter")]
-impl TransformLayouter {
+impl crate::GlobalNamespace::TransformLayouter {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,7 +43,7 @@ impl TransformLayouter {
     }
 }
 #[cfg(feature = "TransformLayouter")]
-impl quest_hook::libil2cpp::ObjectType for TransformLayouter {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TransformLayouter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

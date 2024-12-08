@@ -2,32 +2,35 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SingleFixedSceneScenesTransitionSetupDataSO {
-    __cordl_parent: ScenesTransitionSetupDataSO,
-    pub _sceneInfo: *mut SceneInfo,
+    __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    pub _sceneInfo: *mut crate::GlobalNamespace::SceneInfo,
 }
 #[cfg(feature = "SingleFixedSceneScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SingleFixedSceneScenesTransitionSetupDataSO => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO => ""
     ."SingleFixedSceneScenesTransitionSetupDataSO"
 );
 #[cfg(feature = "SingleFixedSceneScenesTransitionSetupDataSO")]
-impl std::ops::Deref for SingleFixedSceneScenesTransitionSetupDataSO {
-    type Target = ScenesTransitionSetupDataSO;
+impl std::ops::Deref
+for crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO {
+    type Target = crate::GlobalNamespace::ScenesTransitionSetupDataSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SingleFixedSceneScenesTransitionSetupDataSO")]
-impl std::ops::DerefMut for SingleFixedSceneScenesTransitionSetupDataSO {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SingleFixedSceneScenesTransitionSetupDataSO")]
-impl SingleFixedSceneScenesTransitionSetupDataSO {
+impl crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO {
     pub fn Init(
         &mut self,
-        sceneSetupData: *mut SceneSetupData,
+        sceneSetupData: *mut crate::GlobalNamespace::SceneSetupData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -53,16 +56,20 @@ impl SingleFixedSceneScenesTransitionSetupDataSO {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_sceneInfo(&mut self) -> quest_hook::libil2cpp::Result<*mut SceneInfo> {
+    pub fn get_sceneInfo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::SceneInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut SceneInfo = __cordl_object.invoke("get_sceneInfo", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::SceneInfo = __cordl_object
+            .invoke("get_sceneInfo", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "SingleFixedSceneScenesTransitionSetupDataSO")]
-impl quest_hook::libil2cpp::ObjectType for SingleFixedSceneScenesTransitionSetupDataSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

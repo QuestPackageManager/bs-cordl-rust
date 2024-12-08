@@ -6,7 +6,7 @@
 pub struct EnvironmentTracksDefinitionSO_BasicEventTrackInfo {
     __cordl_parent: crate::System::Object,
     pub _trackName: *mut crate::System::String,
-    pub _beatmapEventType: BasicBeatmapEventType,
+    pub _beatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _trackToolbarType: crate::BeatSaber::TrackDefinitions::DataModels::TrackToolbarType,
     pub _trackDefinition: *mut crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO,
     pub _basicEventTrackPage: crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackPage,
@@ -61,11 +61,11 @@ impl crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEven
     }
     pub fn get_basicBeatmapEventType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BasicBeatmapEventType> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BasicBeatmapEventType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BasicBeatmapEventType = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::BasicBeatmapEventType = __cordl_object
             .invoke("get_basicBeatmapEventType", ())?;
         Ok(__cordl_ret)
     }
@@ -150,8 +150,8 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentTracksDefinitionSO {
-    __cordl_parent: PersistentScriptableObject,
-    pub _environmentInfo: *mut EnvironmentInfoSO,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    pub _environmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
     pub _basicEventTrackInfos: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo,
     >,
@@ -168,7 +168,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
 impl std::ops::Deref
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
-    type Target = PersistentScriptableObject;
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -183,25 +183,25 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
 #[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
 impl crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
     #[cfg(
-        feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupPageInfo"
+        feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackInfo"
     )]
-    pub type EventBoxGroupPageInfo = crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo;
+    pub type BasicEventTrackInfo = crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo;
     #[cfg(
         feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
     )]
     pub type BasicEventTrackPage = crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackPage;
     #[cfg(
-        feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
+        feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupPageInfo"
     )]
-    pub type OverrideDefaultLightAxis = crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDefaultLightAxis;
-    #[cfg(
-        feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackInfo"
-    )]
-    pub type BasicEventTrackInfo = crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo;
+    pub type EventBoxGroupPageInfo = crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo;
     #[cfg(
         feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupTrackInfo"
     )]
     pub type EventBoxGroupTrackInfo = crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo;
+    #[cfg(
+        feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
+    )]
+    pub type OverrideDefaultLightAxis = crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDefaultLightAxis;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -236,11 +236,11 @@ impl crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
     }
     pub fn get_environmentInfo(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut EnvironmentInfoSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::EnvironmentInfoSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut EnvironmentInfoSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::EnvironmentInfoSO = __cordl_object
             .invoke("get_environmentInfo", ())?;
         Ok(__cordl_ret)
     }
@@ -376,7 +376,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGr
 pub struct EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo {
     __cordl_parent: crate::System::Object,
     pub _groupName: *mut crate::System::String,
-    pub _lightGroup: *mut LightGroupSO,
+    pub _lightGroup: *mut crate::GlobalNamespace::LightGroupSO,
     pub _showColorTrack: bool,
     pub _showRotationXTrack: bool,
     pub _showRotationYTrack: bool,
@@ -389,7 +389,9 @@ pub struct EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo {
     pub _showFloatFxTrack: bool,
     pub _enableDuplicate: bool,
     pub _duplicationGroup: *mut crate::BeatSaber::TrackDefinitions::LightGroupDuplicationGroup,
-    pub _targetLightGroups: *mut quest_hook::libil2cpp::Il2CppArray<*mut LightGroupSO>,
+    pub _targetLightGroups: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::LightGroupSO,
+    >,
 }
 #[cfg(
     feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupTrackInfo"
@@ -459,11 +461,11 @@ impl crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxG
     }
     pub fn get_lightGroup(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut LightGroupSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::LightGroupSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut LightGroupSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::LightGroupSO = __cordl_object
             .invoke("get_lightGroup", ())?;
         Ok(__cordl_ret)
     }
@@ -564,13 +566,16 @@ impl crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxG
     pub fn get_targetLightGroups(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut LightGroupSO>,
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::LightGroupSO,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<*mut LightGroupSO> = __cordl_object
-            .invoke("get_targetLightGroups", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::LightGroupSO,
+        > = __cordl_object.invoke("get_targetLightGroups", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_groupName(
@@ -586,7 +591,7 @@ impl crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxG
     }
     pub fn set_lightGroup(
         &mut self,
-        value: *mut LightGroupSO,
+        value: *mut crate::GlobalNamespace::LightGroupSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

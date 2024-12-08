@@ -3,37 +3,38 @@
 #[derive(Debug)]
 pub struct MissionLevelDetailViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _gameplayModifiersModel: *mut GameplayModifiersModelSO,
+    pub _gameplayModifiersModel: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
     pub _playButton: *mut crate::UnityEngine::UI::Button,
-    pub _levelBar: *mut LevelBar,
-    pub _objectiveListItems: *mut ObjectiveListItemsList,
-    pub _gameplayModifierInfoListItemsList: *mut GameplayModifierInfoListItemsList,
+    pub _levelBar: *mut crate::GlobalNamespace::LevelBar,
+    pub _objectiveListItems: *mut crate::GlobalNamespace::ObjectiveListItemsList,
+    pub _gameplayModifierInfoListItemsList: *mut crate::GlobalNamespace::GameplayModifierInfoListItemsList,
     pub _modifiersPanelGO: *mut crate::UnityEngine::GameObject,
     pub didPressPlayButtonEvent: *mut crate::System::Action_1<
-        *mut MissionLevelDetailViewController,
+        *mut crate::GlobalNamespace::MissionLevelDetailViewController,
     >,
-    pub _missionNode: *mut MissionNode,
+    pub _missionNode: *mut crate::GlobalNamespace::MissionNode,
 }
 #[cfg(feature = "MissionLevelDetailViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionLevelDetailViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MissionLevelDetailViewController => ""
     ."MissionLevelDetailViewController"
 );
 #[cfg(feature = "MissionLevelDetailViewController")]
-impl std::ops::Deref for MissionLevelDetailViewController {
+impl std::ops::Deref for crate::GlobalNamespace::MissionLevelDetailViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionLevelDetailViewController")]
-impl std::ops::DerefMut for MissionLevelDetailViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionLevelDetailViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionLevelDetailViewController")]
-impl MissionLevelDetailViewController {
+impl crate::GlobalNamespace::MissionLevelDetailViewController {
     #[cfg(feature = "MissionLevelDetailViewController+__c__DisplayClass14_0")]
     pub type __c__DisplayClass14_0 = crate::GlobalNamespace::MissionLevelDetailViewController___c__DisplayClass14_0;
     pub fn DidActivate(
@@ -81,7 +82,7 @@ impl MissionLevelDetailViewController {
     }
     pub fn Setup(
         &mut self,
-        missionNode: *mut MissionNode,
+        missionNode: *mut crate::GlobalNamespace::MissionNode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -102,7 +103,9 @@ impl MissionLevelDetailViewController {
     }
     pub fn add_didPressPlayButtonEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MissionLevelDetailViewController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::MissionLevelDetailViewController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -113,17 +116,19 @@ impl MissionLevelDetailViewController {
     }
     pub fn get_missionNode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut MissionNode> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::MissionNode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MissionNode = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MissionNode = __cordl_object
             .invoke("get_missionNode", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_didPressPlayButtonEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MissionLevelDetailViewController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::MissionLevelDetailViewController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -134,7 +139,8 @@ impl MissionLevelDetailViewController {
     }
 }
 #[cfg(feature = "MissionLevelDetailViewController")]
-impl quest_hook::libil2cpp::ObjectType for MissionLevelDetailViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MissionLevelDetailViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

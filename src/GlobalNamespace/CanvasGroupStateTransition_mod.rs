@@ -2,30 +2,34 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CanvasGroupStateTransition {
-    __cordl_parent: BaseStateTransition_1<*mut crate::UnityEngine::CanvasGroup>,
-    pub _transition: *mut CanvasGroupTransitionSO,
+    __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
+        *mut crate::UnityEngine::CanvasGroup,
+    >,
+    pub _transition: *mut crate::GlobalNamespace::CanvasGroupTransitionSO,
     pub _floatTween: *mut crate::Tweening::FloatTween,
 }
 #[cfg(feature = "CanvasGroupStateTransition")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CanvasGroupStateTransition => ""
-    ."CanvasGroupStateTransition"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CanvasGroupStateTransition =>
+    ""."CanvasGroupStateTransition"
 );
 #[cfg(feature = "CanvasGroupStateTransition")]
-impl std::ops::Deref for CanvasGroupStateTransition {
-    type Target = BaseStateTransition_1<*mut crate::UnityEngine::CanvasGroup>;
+impl std::ops::Deref for crate::GlobalNamespace::CanvasGroupStateTransition {
+    type Target = crate::GlobalNamespace::BaseStateTransition_1<
+        *mut crate::UnityEngine::CanvasGroup,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CanvasGroupStateTransition")]
-impl std::ops::DerefMut for CanvasGroupStateTransition {
+impl std::ops::DerefMut for crate::GlobalNamespace::CanvasGroupStateTransition {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CanvasGroupStateTransition")]
-impl CanvasGroupStateTransition {
+impl crate::GlobalNamespace::CanvasGroupStateTransition {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -197,17 +201,18 @@ impl CanvasGroupStateTransition {
     }
     pub fn get_transition(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BaseTransitionSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BaseTransitionSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BaseTransitionSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BaseTransitionSO = __cordl_object
             .invoke("get_transition", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "CanvasGroupStateTransition")]
-impl quest_hook::libil2cpp::ObjectType for CanvasGroupStateTransition {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::CanvasGroupStateTransition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

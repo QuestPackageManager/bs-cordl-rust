@@ -10,33 +10,37 @@ pub struct PlayerLevelStatsData {
     pub _validScore: bool,
     pub _playCount: i32,
     pub _levelID: *mut crate::System::String,
-    pub _difficulty: BeatmapDifficulty,
-    pub _beatmapCharacteristic: *mut BeatmapCharacteristicSO,
+    pub _difficulty: crate::GlobalNamespace::BeatmapDifficulty,
+    pub _beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
 }
 #[cfg(feature = "PlayerLevelStatsData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerLevelStatsData => ""."PlayerLevelStatsData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerLevelStatsData => ""
+    ."PlayerLevelStatsData"
 );
 #[cfg(feature = "PlayerLevelStatsData")]
-impl std::ops::Deref for PlayerLevelStatsData {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerLevelStatsData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerLevelStatsData")]
-impl std::ops::DerefMut for PlayerLevelStatsData {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerLevelStatsData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerLevelStatsData")]
-impl PlayerLevelStatsData {
-    pub fn GetBeatmapKey(&mut self) -> quest_hook::libil2cpp::Result<BeatmapKey> {
+impl crate::GlobalNamespace::PlayerLevelStatsData {
+    pub fn GetBeatmapKey(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapKey> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapKey = __cordl_object.invoke("GetBeatmapKey", ())?;
+        let __cordl_ret: crate::GlobalNamespace::BeatmapKey = __cordl_object
+            .invoke("GetBeatmapKey", ())?;
         Ok(__cordl_ret)
     }
     pub fn IncreaseNumberOfGameplays(
@@ -50,7 +54,7 @@ impl PlayerLevelStatsData {
         Ok(__cordl_ret)
     }
     pub fn New_ByRefMut0(
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -60,8 +64,8 @@ impl PlayerLevelStatsData {
     }
     pub fn New_String_BeatmapDifficulty_BeatmapCharacteristicSO1(
         levelID: *mut crate::System::String,
-        difficulty: BeatmapDifficulty,
-        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
+        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -71,8 +75,8 @@ impl PlayerLevelStatsData {
     }
     pub fn New_String_BeatmapDifficulty_BeatmapCharacteristicSO_i32_i32__cordl_bool_RankModel_Rank__cordl_bool_i32_2(
         levelID: *mut crate::System::String,
-        difficulty: BeatmapDifficulty,
-        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
+        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         highScore: i32,
         maxCombo: i32,
         fullCombo: bool,
@@ -115,7 +119,7 @@ impl PlayerLevelStatsData {
     }
     pub fn _ctor_ByRefMut0(
         &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -127,8 +131,8 @@ impl PlayerLevelStatsData {
     pub fn _ctor_String_BeatmapDifficulty_BeatmapCharacteristicSO1(
         &mut self,
         levelID: *mut crate::System::String,
-        difficulty: BeatmapDifficulty,
-        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
+        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -140,8 +144,8 @@ impl PlayerLevelStatsData {
     pub fn _ctor_String_BeatmapDifficulty_BeatmapCharacteristicSO_i32_i32__cordl_bool_RankModel_Rank__cordl_bool_i32_2(
         &mut self,
         levelID: *mut crate::System::String,
-        difficulty: BeatmapDifficulty,
-        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
+        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         highScore: i32,
         maxCombo: i32,
         fullCombo: bool,
@@ -171,21 +175,23 @@ impl PlayerLevelStatsData {
     }
     pub fn get_beatmapCharacteristic(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapCharacteristicSO> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapCharacteristicSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapCharacteristicSO = __cordl_object
             .invoke("get_beatmapCharacteristic", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_difficulty(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BeatmapDifficulty> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapDifficulty> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapDifficulty = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::BeatmapDifficulty = __cordl_object
             .invoke("get_difficulty", ())?;
         Ok(__cordl_ret)
     }
@@ -246,7 +252,7 @@ impl PlayerLevelStatsData {
     }
 }
 #[cfg(feature = "PlayerLevelStatsData")]
-impl quest_hook::libil2cpp::ObjectType for PlayerLevelStatsData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerLevelStatsData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

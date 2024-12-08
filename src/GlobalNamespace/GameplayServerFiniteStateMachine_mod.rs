@@ -4,36 +4,37 @@
 pub struct GameplayServerFiniteStateMachine {
     __cordl_parent: crate::System::Object,
     pub _taskUtility_k__BackingField: *mut crate::BGNet::Core::ITaskUtility,
-    pub _multiplayerSessionManager_k__BackingField: *mut IMultiplayerSessionManager,
+    pub _multiplayerSessionManager_k__BackingField: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
     pub _ownerUserId_k__BackingField: *mut crate::System::String,
-    pub _selectionMask_k__BackingField: BeatmapLevelSelectionMask,
-    pub _configuration_k__BackingField: GameplayServerConfiguration,
-    pub _beatmapProvider_k__BackingField: *mut IServerBeatmapProvider,
-    pub _menuRpcManager_k__BackingField: *mut MenuRpcManager,
-    pub _gameplayRpcManager_k__BackingField: *mut GameplayRpcManager,
-    pub state: *mut GameState,
+    pub _selectionMask_k__BackingField: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+    pub _configuration_k__BackingField: crate::GlobalNamespace::GameplayServerConfiguration,
+    pub _beatmapProvider_k__BackingField: *mut crate::GlobalNamespace::IServerBeatmapProvider,
+    pub _menuRpcManager_k__BackingField: *mut crate::GlobalNamespace::MenuRpcManager,
+    pub _gameplayRpcManager_k__BackingField: *mut crate::GlobalNamespace::GameplayRpcManager,
+    pub state: *mut crate::GlobalNamespace::GameState,
     pub enteringState: bool,
 }
 #[cfg(feature = "GameplayServerFiniteStateMachine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameplayServerFiniteStateMachine => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::GameplayServerFiniteStateMachine => ""
     ."GameplayServerFiniteStateMachine"
 );
 #[cfg(feature = "GameplayServerFiniteStateMachine")]
-impl std::ops::Deref for GameplayServerFiniteStateMachine {
+impl std::ops::Deref for crate::GlobalNamespace::GameplayServerFiniteStateMachine {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayServerFiniteStateMachine")]
-impl std::ops::DerefMut for GameplayServerFiniteStateMachine {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameplayServerFiniteStateMachine {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayServerFiniteStateMachine")]
-impl GameplayServerFiniteStateMachine {
+impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
     #[cfg(feature = "GameplayServerFiniteStateMachine+InitParams")]
     pub type InitParams = crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams;
     pub fn New(
@@ -58,51 +59,57 @@ impl GameplayServerFiniteStateMachine {
     }
     pub fn get_beatmapProvider(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IServerBeatmapProvider> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::IServerBeatmapProvider,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IServerBeatmapProvider = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IServerBeatmapProvider = __cordl_object
             .invoke("get_beatmapProvider", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_configuration(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<GameplayServerConfiguration> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::GameplayServerConfiguration,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: GameplayServerConfiguration = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::GameplayServerConfiguration = __cordl_object
             .invoke("get_configuration", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_gameplayRpcManager(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut GameplayRpcManager> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::GameplayRpcManager> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut GameplayRpcManager = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::GameplayRpcManager = __cordl_object
             .invoke("get_gameplayRpcManager", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_menuRpcManager(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut MenuRpcManager> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::MenuRpcManager> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MenuRpcManager = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MenuRpcManager = __cordl_object
             .invoke("get_menuRpcManager", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_multiplayerSessionManager(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IMultiplayerSessionManager> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IMultiplayerSessionManager = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IMultiplayerSessionManager = __cordl_object
             .invoke("get_multiplayerSessionManager", ())?;
         Ok(__cordl_ret)
     }
@@ -118,11 +125,13 @@ impl GameplayServerFiniteStateMachine {
     }
     pub fn get_selectionMask(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BeatmapLevelSelectionMask> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::BeatmapLevelSelectionMask,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapLevelSelectionMask = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::BeatmapLevelSelectionMask = __cordl_object
             .invoke("get_selectionMask", ())?;
         Ok(__cordl_ret)
     }
@@ -138,7 +147,7 @@ impl GameplayServerFiniteStateMachine {
     }
     pub fn set_beatmapProvider(
         &mut self,
-        value: *mut IServerBeatmapProvider,
+        value: *mut crate::GlobalNamespace::IServerBeatmapProvider,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -149,7 +158,7 @@ impl GameplayServerFiniteStateMachine {
     }
     pub fn set_configuration(
         &mut self,
-        value: GameplayServerConfiguration,
+        value: crate::GlobalNamespace::GameplayServerConfiguration,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -160,7 +169,7 @@ impl GameplayServerFiniteStateMachine {
     }
     pub fn set_gameplayRpcManager(
         &mut self,
-        value: *mut GameplayRpcManager,
+        value: *mut crate::GlobalNamespace::GameplayRpcManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -171,7 +180,7 @@ impl GameplayServerFiniteStateMachine {
     }
     pub fn set_menuRpcManager(
         &mut self,
-        value: *mut MenuRpcManager,
+        value: *mut crate::GlobalNamespace::MenuRpcManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -182,7 +191,7 @@ impl GameplayServerFiniteStateMachine {
     }
     pub fn set_multiplayerSessionManager(
         &mut self,
-        value: *mut IMultiplayerSessionManager,
+        value: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -204,7 +213,7 @@ impl GameplayServerFiniteStateMachine {
     }
     pub fn set_selectionMask(
         &mut self,
-        value: BeatmapLevelSelectionMask,
+        value: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -226,7 +235,8 @@ impl GameplayServerFiniteStateMachine {
     }
 }
 #[cfg(feature = "GameplayServerFiniteStateMachine")]
-impl quest_hook::libil2cpp::ObjectType for GameplayServerFiniteStateMachine {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GameplayServerFiniteStateMachine {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -239,11 +249,11 @@ impl quest_hook::libil2cpp::ObjectType for GameplayServerFiniteStateMachine {
 #[derive(Debug, Clone)]
 pub struct GameplayServerFiniteStateMachine_InitParams {
     pub taskUtility: *mut crate::BGNet::Core::ITaskUtility,
-    pub multiplayerSessionManager: *mut IMultiplayerSessionManager,
+    pub multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
     pub creatorId: *mut crate::System::String,
-    pub selectionMask: BeatmapLevelSelectionMask,
-    pub configuration: GameplayServerConfiguration,
-    pub beatmapProvider: *mut IServerBeatmapProvider,
+    pub selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+    pub configuration: crate::GlobalNamespace::GameplayServerConfiguration,
+    pub beatmapProvider: *mut crate::GlobalNamespace::IServerBeatmapProvider,
 }
 #[cfg(feature = "GameplayServerFiniteStateMachine+InitParams")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -267,11 +277,11 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
     pub fn _ctor(
         &mut self,
         taskUtility: *mut crate::BGNet::Core::ITaskUtility,
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
+        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
         creatorId: *mut crate::System::String,
-        selectionMask: BeatmapLevelSelectionMask,
-        configuration: GameplayServerConfiguration,
-        beatmapProvider: *mut IServerBeatmapProvider,
+        selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+        configuration: crate::GlobalNamespace::GameplayServerConfiguration,
+        beatmapProvider: *mut crate::GlobalNamespace::IServerBeatmapProvider,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

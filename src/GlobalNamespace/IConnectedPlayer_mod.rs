@@ -6,23 +6,24 @@ pub struct IConnectedPlayer {
 }
 #[cfg(feature = "IConnectedPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IConnectedPlayer => ""."IConnectedPlayer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IConnectedPlayer => ""
+    ."IConnectedPlayer"
 );
 #[cfg(feature = "IConnectedPlayer")]
-impl std::ops::Deref for IConnectedPlayer {
+impl std::ops::Deref for crate::GlobalNamespace::IConnectedPlayer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IConnectedPlayer")]
-impl std::ops::DerefMut for IConnectedPlayer {
+impl std::ops::DerefMut for crate::GlobalNamespace::IConnectedPlayer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IConnectedPlayer")]
-impl IConnectedPlayer {
+impl crate::GlobalNamespace::IConnectedPlayer {
     pub fn HasState(
         &mut self,
         state: *mut crate::System::String,
@@ -47,11 +48,11 @@ impl IConnectedPlayer {
     }
     pub fn get_disconnectedReason(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<DisconnectedReason> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::DisconnectedReason> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: DisconnectedReason = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::DisconnectedReason = __cordl_object
             .invoke("get_disconnectedReason", ())?;
         Ok(__cordl_ret)
     }
@@ -92,11 +93,11 @@ impl IConnectedPlayer {
     }
     pub fn get_multiplayerAvatarsData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<MultiplayerAvatarsData> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::MultiplayerAvatarsData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: MultiplayerAvatarsData = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::MultiplayerAvatarsData = __cordl_object
             .invoke("get_multiplayerAvatarsData", ())?;
         Ok(__cordl_ret)
     }
@@ -136,7 +137,7 @@ impl IConnectedPlayer {
     }
 }
 #[cfg(feature = "IConnectedPlayer")]
-impl quest_hook::libil2cpp::ObjectType for IConnectedPlayer {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IConnectedPlayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -17,23 +17,24 @@ pub struct CubemapCapture {
 }
 #[cfg(feature = "CubemapCapture")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CubemapCapture => ""."CubemapCapture"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CubemapCapture => ""
+    ."CubemapCapture"
 );
 #[cfg(feature = "CubemapCapture")]
-impl std::ops::Deref for CubemapCapture {
+impl std::ops::Deref for crate::GlobalNamespace::CubemapCapture {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CubemapCapture")]
-impl std::ops::DerefMut for CubemapCapture {
+impl std::ops::DerefMut for crate::GlobalNamespace::CubemapCapture {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CubemapCapture")]
-impl CubemapCapture {
+impl crate::GlobalNamespace::CubemapCapture {
     #[cfg(feature = "CubemapCapture+ImageType")]
     pub type ImageType = crate::GlobalNamespace::CubemapCapture_ImageType;
     pub fn GenerateAndSaveCubemapTexture(
@@ -109,7 +110,7 @@ impl CubemapCapture {
     }
 }
 #[cfg(feature = "CubemapCapture")]
-impl quest_hook::libil2cpp::ObjectType for CubemapCapture {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CubemapCapture {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

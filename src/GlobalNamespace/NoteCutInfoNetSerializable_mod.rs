@@ -2,43 +2,43 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteCutInfoNetSerializable {
-    __cordl_parent: PoolableSerializable,
+    __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
     pub saberSpeed: f32,
     pub cutWasOk: bool,
-    pub saberDir: Vector3Serializable,
-    pub cutPoint: Vector3Serializable,
-    pub cutNormal: Vector3Serializable,
-    pub notePosition: Vector3Serializable,
-    pub noteScale: Vector3Serializable,
-    pub noteRotation: QuaternionSerializable,
+    pub saberDir: crate::GlobalNamespace::Vector3Serializable,
+    pub cutPoint: crate::GlobalNamespace::Vector3Serializable,
+    pub cutNormal: crate::GlobalNamespace::Vector3Serializable,
+    pub notePosition: crate::GlobalNamespace::Vector3Serializable,
+    pub noteScale: crate::GlobalNamespace::Vector3Serializable,
+    pub noteRotation: crate::GlobalNamespace::QuaternionSerializable,
     pub gameplayType: crate::GlobalNamespace::NoteData_GameplayType,
-    pub colorType: ColorType,
+    pub colorType: crate::GlobalNamespace::ColorType,
     pub noteTime: f32,
     pub noteLineIndex: i32,
-    pub lineLayer: NoteLineLayer,
+    pub lineLayer: crate::GlobalNamespace::NoteLineLayer,
     pub timeToNextColorNote: f32,
-    pub moveVec: Vector3Serializable,
+    pub moveVec: crate::GlobalNamespace::Vector3Serializable,
 }
 #[cfg(feature = "NoteCutInfoNetSerializable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteCutInfoNetSerializable => ""
-    ."NoteCutInfoNetSerializable"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteCutInfoNetSerializable =>
+    ""."NoteCutInfoNetSerializable"
 );
 #[cfg(feature = "NoteCutInfoNetSerializable")]
-impl std::ops::Deref for NoteCutInfoNetSerializable {
-    type Target = PoolableSerializable;
+impl std::ops::Deref for crate::GlobalNamespace::NoteCutInfoNetSerializable {
+    type Target = crate::GlobalNamespace::PoolableSerializable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteCutInfoNetSerializable")]
-impl std::ops::DerefMut for NoteCutInfoNetSerializable {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteCutInfoNetSerializable {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteCutInfoNetSerializable")]
-impl NoteCutInfoNetSerializable {
+impl crate::GlobalNamespace::NoteCutInfoNetSerializable {
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
@@ -52,17 +52,21 @@ impl NoteCutInfoNetSerializable {
     }
     pub fn Init_ByRefMut_NoteData_Quaternion_Vector3_0(
         &mut self,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
-        noteData: *mut NoteData,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::NoteCutInfo,
+        >,
+        noteData: *mut crate::GlobalNamespace::NoteData,
         notePosition: crate::UnityEngine::Vector3,
         noteRotation: crate::UnityEngine::Quaternion,
         noteScale: crate::UnityEngine::Vector3,
         moveVec: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<*mut NoteCutInfoNetSerializable> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::NoteCutInfoNetSerializable,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut NoteCutInfoNetSerializable = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::NoteCutInfoNetSerializable = __cordl_object
             .invoke(
                 "Init",
                 (noteCutInfo, noteData, notePosition, noteRotation, noteScale, moveVec),
@@ -77,8 +81,8 @@ impl NoteCutInfoNetSerializable {
         cutPoint: crate::UnityEngine::Vector3,
         cutNormal: crate::UnityEngine::Vector3,
         gameplayType: crate::GlobalNamespace::NoteData_GameplayType,
-        colorType: ColorType,
-        lineLayer: NoteLineLayer,
+        colorType: crate::GlobalNamespace::ColorType,
+        lineLayer: crate::GlobalNamespace::NoteLineLayer,
         noteLineIndex: i32,
         noteTime: f32,
         timeToNextColorNote: f32,
@@ -86,11 +90,13 @@ impl NoteCutInfoNetSerializable {
         noteRotation: crate::UnityEngine::Quaternion,
         noteScale: crate::UnityEngine::Vector3,
         moveVec: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<*mut NoteCutInfoNetSerializable> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::NoteCutInfoNetSerializable,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut NoteCutInfoNetSerializable = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::NoteCutInfoNetSerializable = __cordl_object
             .invoke(
                 "Init",
                 (
@@ -143,7 +149,8 @@ impl NoteCutInfoNetSerializable {
     }
 }
 #[cfg(feature = "NoteCutInfoNetSerializable")]
-impl quest_hook::libil2cpp::ObjectType for NoteCutInfoNetSerializable {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NoteCutInfoNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

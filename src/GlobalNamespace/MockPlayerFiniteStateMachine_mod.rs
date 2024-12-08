@@ -6,24 +6,24 @@ pub struct MockPlayerFiniteStateMachine {
 }
 #[cfg(feature = "MockPlayerFiniteStateMachine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MockPlayerFiniteStateMachine => ""
-    ."MockPlayerFiniteStateMachine"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MockPlayerFiniteStateMachine =>
+    ""."MockPlayerFiniteStateMachine"
 );
 #[cfg(feature = "MockPlayerFiniteStateMachine")]
-impl std::ops::Deref for MockPlayerFiniteStateMachine {
+impl std::ops::Deref for crate::GlobalNamespace::MockPlayerFiniteStateMachine {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockPlayerFiniteStateMachine")]
-impl std::ops::DerefMut for MockPlayerFiniteStateMachine {
+impl std::ops::DerefMut for crate::GlobalNamespace::MockPlayerFiniteStateMachine {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockPlayerFiniteStateMachine")]
-impl MockPlayerFiniteStateMachine {
+impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -35,12 +35,12 @@ impl MockPlayerFiniteStateMachine {
         Ok(__cordl_ret)
     }
     pub fn New(
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
-        gameplayRpcManager: *mut IGameplayRpcManager,
-        menuRpcManager: *mut IMenuRpcManager,
-        beatmapDataProvider: *mut IMockBeatmapDataProvider,
-        lobbyPoseGenerator: *mut MockPlayerLobbyPoseGenerator,
-        gamePoseGenerator: *mut MockPlayerGamePoseGenerator,
+        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+        gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
+        menuRpcManager: *mut crate::GlobalNamespace::IMenuRpcManager,
+        beatmapDataProvider: *mut crate::GlobalNamespace::IMockBeatmapDataProvider,
+        lobbyPoseGenerator: *mut crate::GlobalNamespace::MockPlayerLobbyPoseGenerator,
+        gamePoseGenerator: *mut crate::GlobalNamespace::MockPlayerGamePoseGenerator,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -60,7 +60,7 @@ impl MockPlayerFiniteStateMachine {
     }
     pub fn RecommendBeatmap(
         &mut self,
-        beatmapDifficulty: BeatmapDifficulty,
+        beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
         beatmapLevelId: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -93,12 +93,12 @@ impl MockPlayerFiniteStateMachine {
     }
     pub fn _ctor(
         &mut self,
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
-        gameplayRpcManager: *mut IGameplayRpcManager,
-        menuRpcManager: *mut IMenuRpcManager,
-        beatmapDataProvider: *mut IMockBeatmapDataProvider,
-        lobbyPoseGenerator: *mut MockPlayerLobbyPoseGenerator,
-        gamePoseGenerator: *mut MockPlayerGamePoseGenerator,
+        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+        gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
+        menuRpcManager: *mut crate::GlobalNamespace::IMenuRpcManager,
+        beatmapDataProvider: *mut crate::GlobalNamespace::IMockBeatmapDataProvider,
+        lobbyPoseGenerator: *mut crate::GlobalNamespace::MockPlayerLobbyPoseGenerator,
+        gamePoseGenerator: *mut crate::GlobalNamespace::MockPlayerGamePoseGenerator,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -119,11 +119,13 @@ impl MockPlayerFiniteStateMachine {
     }
     pub fn get_gamePoseGenerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut MockPlayerGamePoseGenerator> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::MockPlayerGamePoseGenerator,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MockPlayerGamePoseGenerator = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MockPlayerGamePoseGenerator = __cordl_object
             .invoke("get_gamePoseGenerator", ())?;
         Ok(__cordl_ret)
     }
@@ -228,7 +230,8 @@ impl MockPlayerFiniteStateMachine {
     }
 }
 #[cfg(feature = "MockPlayerFiniteStateMachine")]
-impl quest_hook::libil2cpp::ObjectType for MockPlayerFiniteStateMachine {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MockPlayerFiniteStateMachine {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

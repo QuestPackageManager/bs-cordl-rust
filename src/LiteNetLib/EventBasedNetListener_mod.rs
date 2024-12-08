@@ -32,22 +32,22 @@ impl std::ops::DerefMut for crate::LiteNetLib::EventBasedNetListener {
 }
 #[cfg(feature = "LiteNetLib+EventBasedNetListener")]
 impl crate::LiteNetLib::EventBasedNetListener {
-    #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnDeliveryEvent")]
-    pub type OnDeliveryEvent = crate::LiteNetLib::EventBasedNetListener_OnDeliveryEvent;
-    #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnPeerDisconnected")]
-    pub type OnPeerDisconnected = crate::LiteNetLib::EventBasedNetListener_OnPeerDisconnected;
-    #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkReceive")]
-    pub type OnNetworkReceive = crate::LiteNetLib::EventBasedNetListener_OnNetworkReceive;
-    #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnPeerConnected")]
-    pub type OnPeerConnected = crate::LiteNetLib::EventBasedNetListener_OnPeerConnected;
     #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnConnectionRequest")]
     pub type OnConnectionRequest = crate::LiteNetLib::EventBasedNetListener_OnConnectionRequest;
-    #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkReceiveUnconnected")]
-    pub type OnNetworkReceiveUnconnected = crate::LiteNetLib::EventBasedNetListener_OnNetworkReceiveUnconnected;
-    #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkLatencyUpdate")]
-    pub type OnNetworkLatencyUpdate = crate::LiteNetLib::EventBasedNetListener_OnNetworkLatencyUpdate;
+    #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnDeliveryEvent")]
+    pub type OnDeliveryEvent = crate::LiteNetLib::EventBasedNetListener_OnDeliveryEvent;
     #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkError")]
     pub type OnNetworkError = crate::LiteNetLib::EventBasedNetListener_OnNetworkError;
+    #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkLatencyUpdate")]
+    pub type OnNetworkLatencyUpdate = crate::LiteNetLib::EventBasedNetListener_OnNetworkLatencyUpdate;
+    #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkReceive")]
+    pub type OnNetworkReceive = crate::LiteNetLib::EventBasedNetListener_OnNetworkReceive;
+    #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnNetworkReceiveUnconnected")]
+    pub type OnNetworkReceiveUnconnected = crate::LiteNetLib::EventBasedNetListener_OnNetworkReceiveUnconnected;
+    #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnPeerConnected")]
+    pub type OnPeerConnected = crate::LiteNetLib::EventBasedNetListener_OnPeerConnected;
+    #[cfg(feature = "LiteNetLib+EventBasedNetListener+OnPeerDisconnected")]
+    pub type OnPeerDisconnected = crate::LiteNetLib::EventBasedNetListener_OnPeerDisconnected;
     pub fn ClearConnectionRequestEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

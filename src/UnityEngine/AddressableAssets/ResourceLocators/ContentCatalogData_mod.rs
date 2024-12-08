@@ -323,13 +323,13 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
     pub const kVersion: i32 = 1i32;
     pub const k_EntryDataItemPerEntry: i32 = 7i32;
     #[cfg(
-        feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+CompactLocation"
-    )]
-    pub type CompactLocation = crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_CompactLocation;
-    #[cfg(
         feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
     )]
     pub type Bucket = crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_Bucket;
+    #[cfg(
+        feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+CompactLocation"
+    )]
+    pub type CompactLocation = crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_CompactLocation;
     #[cfg(
         feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+__c"
     )]

@@ -13,23 +13,24 @@ pub struct DisconnectPromptView {
 }
 #[cfg(feature = "DisconnectPromptView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for DisconnectPromptView => ""."DisconnectPromptView"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::DisconnectPromptView => ""
+    ."DisconnectPromptView"
 );
 #[cfg(feature = "DisconnectPromptView")]
-impl std::ops::Deref for DisconnectPromptView {
+impl std::ops::Deref for crate::GlobalNamespace::DisconnectPromptView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DisconnectPromptView")]
-impl std::ops::DerefMut for DisconnectPromptView {
+impl std::ops::DerefMut for crate::GlobalNamespace::DisconnectPromptView {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "DisconnectPromptView")]
-impl DisconnectPromptView {
+impl crate::GlobalNamespace::DisconnectPromptView {
     #[cfg(feature = "DisconnectPromptView+__c__DisplayClass12_0")]
     pub type __c__DisplayClass12_0 = crate::GlobalNamespace::DisconnectPromptView___c__DisplayClass12_0;
     pub fn Hide(
@@ -134,7 +135,7 @@ impl DisconnectPromptView {
     }
 }
 #[cfg(feature = "DisconnectPromptView")]
-impl quest_hook::libil2cpp::ObjectType for DisconnectPromptView {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DisconnectPromptView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

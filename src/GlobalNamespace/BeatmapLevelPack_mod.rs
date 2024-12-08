@@ -8,36 +8,41 @@ pub struct BeatmapLevelPack {
     pub shortPackName: *mut crate::System::String,
     pub coverImage: *mut crate::UnityEngine::Sprite,
     pub smallCoverImage: *mut crate::UnityEngine::Sprite,
-    pub beatmapLevels: *mut quest_hook::libil2cpp::Il2CppArray<*mut BeatmapLevel>,
-    pub contentRating: PlayerSensitivityFlag,
+    pub beatmapLevels: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::BeatmapLevel,
+    >,
+    pub contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
 }
 #[cfg(feature = "BeatmapLevelPack")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapLevelPack => ""."BeatmapLevelPack"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapLevelPack => ""
+    ."BeatmapLevelPack"
 );
 #[cfg(feature = "BeatmapLevelPack")]
-impl std::ops::Deref for BeatmapLevelPack {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelPack {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLevelPack")]
-impl std::ops::DerefMut for BeatmapLevelPack {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelPack {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLevelPack")]
-impl BeatmapLevelPack {
+impl crate::GlobalNamespace::BeatmapLevelPack {
     pub fn New(
         packID: *mut crate::System::String,
         packName: *mut crate::System::String,
         shortPackName: *mut crate::System::String,
         coverImage: *mut crate::UnityEngine::Sprite,
         smallCoverImage: *mut crate::UnityEngine::Sprite,
-        beatmapLevels: *mut quest_hook::libil2cpp::Il2CppArray<*mut BeatmapLevel>,
-        contentRating: PlayerSensitivityFlag,
+        beatmapLevels: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BeatmapLevel,
+        >,
+        contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -63,8 +68,10 @@ impl BeatmapLevelPack {
         shortPackName: *mut crate::System::String,
         coverImage: *mut crate::UnityEngine::Sprite,
         smallCoverImage: *mut crate::UnityEngine::Sprite,
-        beatmapLevels: *mut quest_hook::libil2cpp::Il2CppArray<*mut BeatmapLevel>,
-        contentRating: PlayerSensitivityFlag,
+        beatmapLevels: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BeatmapLevel,
+        >,
+        contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -86,7 +93,7 @@ impl BeatmapLevelPack {
     }
 }
 #[cfg(feature = "BeatmapLevelPack")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapLevelPack {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLevelPack {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

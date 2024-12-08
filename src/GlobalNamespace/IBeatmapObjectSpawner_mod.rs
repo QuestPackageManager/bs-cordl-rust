@@ -6,26 +6,27 @@ pub struct IBeatmapObjectSpawner {
 }
 #[cfg(feature = "IBeatmapObjectSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IBeatmapObjectSpawner => ""."IBeatmapObjectSpawner"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IBeatmapObjectSpawner => ""
+    ."IBeatmapObjectSpawner"
 );
 #[cfg(feature = "IBeatmapObjectSpawner")]
-impl std::ops::Deref for IBeatmapObjectSpawner {
+impl std::ops::Deref for crate::GlobalNamespace::IBeatmapObjectSpawner {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IBeatmapObjectSpawner")]
-impl std::ops::DerefMut for IBeatmapObjectSpawner {
+impl std::ops::DerefMut for crate::GlobalNamespace::IBeatmapObjectSpawner {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IBeatmapObjectSpawner")]
-impl IBeatmapObjectSpawner {
+impl crate::GlobalNamespace::IBeatmapObjectSpawner {
     pub fn ProcessNoteData(
         &mut self,
-        noteData: *mut NoteData,
+        noteData: *mut crate::GlobalNamespace::NoteData,
         noteSpawnData: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
         >,
@@ -44,7 +45,7 @@ impl IBeatmapObjectSpawner {
     }
     pub fn ProcessObstacleData(
         &mut self,
-        obstacleData: *mut ObstacleData,
+        obstacleData: *mut crate::GlobalNamespace::ObstacleData,
         obstacleSpawnData: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
         >,
@@ -59,7 +60,7 @@ impl IBeatmapObjectSpawner {
     }
     pub fn ProcessSliderData(
         &mut self,
-        sliderData: *mut SliderData,
+        sliderData: *mut crate::GlobalNamespace::SliderData,
         sliderSpawnData: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
         >,
@@ -79,7 +80,8 @@ impl IBeatmapObjectSpawner {
     }
 }
 #[cfg(feature = "IBeatmapObjectSpawner")]
-impl quest_hook::libil2cpp::ObjectType for IBeatmapObjectSpawner {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IBeatmapObjectSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

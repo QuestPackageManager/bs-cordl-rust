@@ -29,25 +29,37 @@ for crate::System::Linq::Expressions::Interpreter::LessThanInstruction {
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LessThanInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::LessThanInstruction {
     #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanByte"
+    )]
+    pub type LessThanByte = crate::GlobalNamespace::LessThanInstruction_LessThanByte;
+    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanChar"
     )]
     pub type LessThanChar = crate::GlobalNamespace::LessThanInstruction_LessThanChar;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanSingle"
+        feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanDouble"
     )]
-    pub type LessThanSingle = crate::GlobalNamespace::LessThanInstruction_LessThanSingle;
+    pub type LessThanDouble = crate::GlobalNamespace::LessThanInstruction_LessThanDouble;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanInt16"
     )]
     pub type LessThanInt16 = crate::GlobalNamespace::LessThanInstruction_LessThanInt16;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanByte"
+        feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanInt32"
     )]
-    pub type LessThanByte = crate::GlobalNamespace::LessThanInstruction_LessThanByte;
+    pub type LessThanInt32 = crate::GlobalNamespace::LessThanInstruction_LessThanInt32;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanInt64"
+    )]
+    pub type LessThanInt64 = crate::GlobalNamespace::LessThanInstruction_LessThanInt64;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanSByte"
     )]
     pub type LessThanSByte = crate::GlobalNamespace::LessThanInstruction_LessThanSByte;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanSingle"
+    )]
+    pub type LessThanSingle = crate::GlobalNamespace::LessThanInstruction_LessThanSingle;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanUInt16"
     )]
@@ -57,21 +69,9 @@ impl crate::System::Linq::Expressions::Interpreter::LessThanInstruction {
     )]
     pub type LessThanUInt32 = crate::GlobalNamespace::LessThanInstruction_LessThanUInt32;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanInt64"
-    )]
-    pub type LessThanInt64 = crate::GlobalNamespace::LessThanInstruction_LessThanInt64;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanDouble"
-    )]
-    pub type LessThanDouble = crate::GlobalNamespace::LessThanInstruction_LessThanDouble;
-    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanUInt64"
     )]
     pub type LessThanUInt64 = crate::GlobalNamespace::LessThanInstruction_LessThanUInt64;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanInt32"
-    )]
-    pub type LessThanInt32 = crate::GlobalNamespace::LessThanInstruction_LessThanInt32;
     pub fn New(
         nullValue: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {

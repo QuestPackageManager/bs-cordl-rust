@@ -2,17 +2,18 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObstaclesQualitySO {
-    __cordl_parent: ObservableVariableSO_1<
+    __cordl_parent: crate::GlobalNamespace::ObservableVariableSO_1<
         crate::BeatSaber::PerformancePresets::ObstaclesQuality,
     >,
 }
 #[cfg(feature = "ObstaclesQualitySO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ObstaclesQualitySO => ""."ObstaclesQualitySO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ObstaclesQualitySO => ""
+    ."ObstaclesQualitySO"
 );
 #[cfg(feature = "ObstaclesQualitySO")]
-impl std::ops::Deref for ObstaclesQualitySO {
-    type Target = ObservableVariableSO_1<
+impl std::ops::Deref for crate::GlobalNamespace::ObstaclesQualitySO {
+    type Target = crate::GlobalNamespace::ObservableVariableSO_1<
         crate::BeatSaber::PerformancePresets::ObstaclesQuality,
     >;
     fn deref(&self) -> &Self::Target {
@@ -20,13 +21,13 @@ impl std::ops::Deref for ObstaclesQualitySO {
     }
 }
 #[cfg(feature = "ObstaclesQualitySO")]
-impl std::ops::DerefMut for ObstaclesQualitySO {
+impl std::ops::DerefMut for crate::GlobalNamespace::ObstaclesQualitySO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ObstaclesQualitySO")]
-impl ObstaclesQualitySO {
+impl crate::GlobalNamespace::ObstaclesQualitySO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -46,7 +47,7 @@ impl ObstaclesQualitySO {
     }
 }
 #[cfg(feature = "ObstaclesQualitySO")]
-impl quest_hook::libil2cpp::ObjectType for ObstaclesQualitySO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ObstaclesQualitySO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

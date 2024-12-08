@@ -9,6 +9,6 @@ pub enum GameplayServerControlSettings {
 }
 #[cfg(feature = "GameplayServerControlSettings")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for GameplayServerControlSettings => ""
-    ."GameplayServerControlSettings"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameplayServerControlSettings
+    => ""."GameplayServerControlSettings"
 );

@@ -8,10 +8,12 @@ pub struct QuaternionSerializable {
 }
 #[cfg(feature = "QuaternionSerializable")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for QuaternionSerializable => ""."QuaternionSerializable"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::QuaternionSerializable => ""
+    ."QuaternionSerializable"
 );
 #[cfg(feature = "QuaternionSerializable")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for QuaternionSerializable {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::QuaternionSerializable {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -21,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for QuaternionSerializable {
     }
 }
 #[cfg(feature = "QuaternionSerializable")]
-impl QuaternionSerializable {
+impl crate::GlobalNamespace::QuaternionSerializable {
     pub const kInvScale: f32 = 0.00008632201f32;
     pub const kOneOverSqrtTwo: f32 = 0.70710677f32;
     pub const kScale: f32 = 11584.53f32;
     pub const kSqrtTwo: f32 = 1.4142135f32;
     pub fn Approximately(
         &mut self,
-        other: QuaternionSerializable,
+        other: crate::GlobalNamespace::QuaternionSerializable,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -61,7 +63,7 @@ impl QuaternionSerializable {
     }
     pub fn Equals_QuaternionSerializable0(
         &mut self,
-        other: QuaternionSerializable,
+        other: crate::GlobalNamespace::QuaternionSerializable,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

@@ -12,19 +12,19 @@ pub struct PlayerData {
     pub _agreedToMultiplayerDisclaimer_k__BackingField: bool,
     pub _didSelectRegionVersion_k__BackingField: i32,
     pub _selectedAvatarSystemTypeId_k__BackingField: *mut crate::System::String,
-    pub _playerAgreements_k__BackingField: *mut PlayerAgreements,
-    pub _lastSelectedBeatmapDifficulty_k__BackingField: BeatmapDifficulty,
-    pub _lastSelectedBeatmapCharacteristic_k__BackingField: *mut BeatmapCharacteristicSO,
-    pub _gameplayModifiers_k__BackingField: *mut GameplayModifiers,
-    pub _playerSpecificSettings_k__BackingField: *mut PlayerSpecificSettings,
-    pub _practiceSettings_k__BackingField: *mut PracticeSettings,
-    pub _playerAllOverallStatsData_k__BackingField: *mut PlayerAllOverallStatsData,
+    pub _playerAgreements_k__BackingField: *mut crate::GlobalNamespace::PlayerAgreements,
+    pub _lastSelectedBeatmapDifficulty_k__BackingField: crate::GlobalNamespace::BeatmapDifficulty,
+    pub _lastSelectedBeatmapCharacteristic_k__BackingField: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _gameplayModifiers_k__BackingField: *mut crate::GlobalNamespace::GameplayModifiers,
+    pub _playerSpecificSettings_k__BackingField: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+    pub _practiceSettings_k__BackingField: *mut crate::GlobalNamespace::PracticeSettings,
+    pub _playerAllOverallStatsData_k__BackingField: *mut crate::GlobalNamespace::PlayerAllOverallStatsData,
     pub _levelsStatsData_k__BackingField: *mut crate::System::Collections::Generic::Dictionary_2<
-        BeatmapKey,
-        *mut PlayerLevelStatsData,
+        crate::GlobalNamespace::BeatmapKey,
+        *mut crate::GlobalNamespace::PlayerLevelStatsData,
     >,
     pub _missionsStatsData_k__BackingField: *mut crate::System::Collections::Generic::List_1<
-        *mut PlayerMissionStatsData,
+        *mut crate::GlobalNamespace::PlayerMissionStatsData,
     >,
     pub _showedMissionHelpIds_k__BackingField: *mut crate::System::Collections::Generic::List_1<
         *mut crate::System::String,
@@ -32,14 +32,14 @@ pub struct PlayerData {
     pub _guestPlayerNames_k__BackingField: *mut crate::System::Collections::Generic::List_1<
         *mut crate::System::String,
     >,
-    pub _colorSchemesSettings_k__BackingField: *mut ColorSchemesSettings,
-    pub _overrideEnvironmentSettings_k__BackingField: *mut OverrideEnvironmentSettings,
+    pub _colorSchemesSettings_k__BackingField: *mut crate::GlobalNamespace::ColorSchemesSettings,
+    pub _overrideEnvironmentSettings_k__BackingField: *mut crate::GlobalNamespace::OverrideEnvironmentSettings,
     pub _favoritesLevelIds_k__BackingField: *mut crate::System::Collections::Generic::HashSet_1<
         *mut crate::System::String,
     >,
-    pub _multiplayerModeSettings_k__BackingField: *mut MultiplayerModeSettings,
-    pub _userAgeCategory_k__BackingField: UserAgeCategory,
-    pub _desiredSensitivityFlag_k__BackingField: PlayerSensitivityFlag,
+    pub _multiplayerModeSettings_k__BackingField: *mut crate::GlobalNamespace::MultiplayerModeSettings,
+    pub _userAgeCategory_k__BackingField: crate::GlobalNamespace::UserAgeCategory,
+    pub _desiredSensitivityFlag_k__BackingField: crate::GlobalNamespace::PlayerSensitivityFlag,
     pub _currentDlcPromoDisplayCount_k__BackingField: i32,
     pub _currentDlcPromoId_k__BackingField: *mut crate::System::String,
     pub favoriteLevelsSetDidChangeEvent: *mut crate::System::Action,
@@ -47,23 +47,23 @@ pub struct PlayerData {
 }
 #[cfg(feature = "PlayerData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerData => ""."PlayerData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerData => ""."PlayerData"
 );
 #[cfg(feature = "PlayerData")]
-impl std::ops::Deref for PlayerData {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerData")]
-impl std::ops::DerefMut for PlayerData {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerData")]
-impl PlayerData {
+impl crate::GlobalNamespace::PlayerData {
     pub const kCurrentRegionVersion: i32 = 1i32;
     pub const kMaxGuestPlayers: i32 = 10i32;
     pub fn AddGuestPlayerName(
@@ -79,7 +79,7 @@ impl PlayerData {
     }
     pub fn AddLevelToFavorites(
         &mut self,
-        level: *mut BeatmapLevel,
+        level: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -107,25 +107,29 @@ impl PlayerData {
     }
     pub fn GetOrCreatePlayerLevelStatsData_ByRefMut0(
         &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerLevelStatsData> {
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PlayerLevelStatsData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PlayerLevelStatsData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PlayerLevelStatsData = __cordl_object
             .invoke("GetOrCreatePlayerLevelStatsData", (beatmapKey))?;
         Ok(__cordl_ret)
     }
     pub fn GetOrCreatePlayerLevelStatsData_String_BeatmapDifficulty_BeatmapCharacteristicSO1(
         &mut self,
         levelId: *mut crate::System::String,
-        difficulty: BeatmapDifficulty,
-        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerLevelStatsData> {
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
+        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PlayerLevelStatsData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PlayerLevelStatsData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PlayerLevelStatsData = __cordl_object
             .invoke(
                 "GetOrCreatePlayerLevelStatsData",
                 (levelId, difficulty, beatmapCharacteristic),
@@ -135,11 +139,13 @@ impl PlayerData {
     pub fn GetOrCreatePlayerMissionStatsData(
         &mut self,
         missionId: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerMissionStatsData> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PlayerMissionStatsData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PlayerMissionStatsData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PlayerMissionStatsData = __cordl_object
             .invoke("GetOrCreatePlayerMissionStatsData", (missionId))?;
         Ok(__cordl_ret)
     }
@@ -155,7 +161,7 @@ impl PlayerData {
     }
     pub fn IncreaseNumberOfGameplays(
         &mut self,
-        playerLevelStats: *mut PlayerLevelStatsData,
+        playerLevelStats: *mut crate::GlobalNamespace::PlayerLevelStatsData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -166,7 +172,7 @@ impl PlayerData {
     }
     pub fn IsLevelUserFavorite(
         &mut self,
-        level: *mut BeatmapLevel,
+        level: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -257,7 +263,7 @@ impl PlayerData {
     }
     pub fn MissionHelpWasShowed(
         &mut self,
-        missionHelp: *mut MissionHelpSO,
+        missionHelp: *mut crate::GlobalNamespace::MissionHelpSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -269,9 +275,9 @@ impl PlayerData {
     pub fn New_BeatmapCharacteristicSO_ColorSchemesSettings_OverrideEnvironmentSettings0(
         playerId: *mut crate::System::String,
         playerName: *mut crate::System::String,
-        lastSelectedBeatmapCharacteristic: *mut BeatmapCharacteristicSO,
-        colorSchemesSettings: *mut ColorSchemesSettings,
-        overrideEnvironmentSettings: *mut OverrideEnvironmentSettings,
+        lastSelectedBeatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        colorSchemesSettings: *mut crate::GlobalNamespace::ColorSchemesSettings,
+        overrideEnvironmentSettings: *mut crate::GlobalNamespace::OverrideEnvironmentSettings,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -298,18 +304,18 @@ impl PlayerData {
         agreedToMultiplayerDisclaimer: bool,
         didSelectRegionVersion: i32,
         selectedAvatarSystemTypeId: *mut crate::System::String,
-        playerAgreements: *mut PlayerAgreements,
-        lastSelectedBeatmapDifficulty: BeatmapDifficulty,
-        lastSelectedBeatmapCharacteristic: *mut BeatmapCharacteristicSO,
-        gameplayModifiers: *mut GameplayModifiers,
-        playerSpecificSettings: *mut PlayerSpecificSettings,
-        practiceSettings: *mut PracticeSettings,
-        playerAllOverallStatsData: *mut PlayerAllOverallStatsData,
+        playerAgreements: *mut crate::GlobalNamespace::PlayerAgreements,
+        lastSelectedBeatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
+        lastSelectedBeatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+        playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+        practiceSettings: *mut crate::GlobalNamespace::PracticeSettings,
+        playerAllOverallStatsData: *mut crate::GlobalNamespace::PlayerAllOverallStatsData,
         levelsStatsData: *mut crate::System::Collections::Generic::List_1<
-            *mut PlayerLevelStatsData,
+            *mut crate::GlobalNamespace::PlayerLevelStatsData,
         >,
         missionsStatsData: *mut crate::System::Collections::Generic::List_1<
-            *mut PlayerMissionStatsData,
+            *mut crate::GlobalNamespace::PlayerMissionStatsData,
         >,
         showedMissionHelpIds: *mut crate::System::Collections::Generic::List_1<
             *mut crate::System::String,
@@ -317,16 +323,16 @@ impl PlayerData {
         guestPlayerNames: *mut crate::System::Collections::Generic::List_1<
             *mut crate::System::String,
         >,
-        colorSchemesSettings: *mut ColorSchemesSettings,
-        overrideEnvironmentSettings: *mut OverrideEnvironmentSettings,
+        colorSchemesSettings: *mut crate::GlobalNamespace::ColorSchemesSettings,
+        overrideEnvironmentSettings: *mut crate::GlobalNamespace::OverrideEnvironmentSettings,
         favoritesLevelIds: *mut crate::System::Collections::Generic::List_1<
             *mut crate::System::String,
         >,
-        multiplayerModeSettings: *mut MultiplayerModeSettings,
+        multiplayerModeSettings: *mut crate::GlobalNamespace::MultiplayerModeSettings,
         currentDlcPromoDisplayCount: i32,
         currentDlcPromoId: *mut crate::System::String,
-        userAgeCategory: UserAgeCategory,
-        desiredSensitivityFlag: PlayerSensitivityFlag,
+        userAgeCategory: crate::GlobalNamespace::UserAgeCategory,
+        desiredSensitivityFlag: crate::GlobalNamespace::PlayerSensitivityFlag,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -368,7 +374,7 @@ impl PlayerData {
     }
     pub fn RemoveLevelFromFavorites(
         &mut self,
-        level: *mut BeatmapLevel,
+        level: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -400,7 +406,7 @@ impl PlayerData {
     }
     pub fn SetGameplayModifiers(
         &mut self,
-        newGameplayModifiers: *mut GameplayModifiers,
+        newGameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -411,7 +417,7 @@ impl PlayerData {
     }
     pub fn SetLastSelectedBeatmapCharacteristic(
         &mut self,
-        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
+        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -422,7 +428,7 @@ impl PlayerData {
     }
     pub fn SetLastSelectedBeatmapDifficulty(
         &mut self,
-        beatmapDifficulty: BeatmapDifficulty,
+        beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -433,7 +439,7 @@ impl PlayerData {
     }
     pub fn SetMultiplayerModeSettings(
         &mut self,
-        multiplayerModeSettings: *mut MultiplayerModeSettings,
+        multiplayerModeSettings: *mut crate::GlobalNamespace::MultiplayerModeSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -455,7 +461,7 @@ impl PlayerData {
     }
     pub fn SetPlayerSpecificSettings(
         &mut self,
-        newPlayerSpecificSettings: *mut PlayerSpecificSettings,
+        newPlayerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -476,18 +482,20 @@ impl PlayerData {
     }
     pub fn TryGetPlayerLevelStatsData(
         &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerLevelStatsData> {
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PlayerLevelStatsData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PlayerLevelStatsData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PlayerLevelStatsData = __cordl_object
             .invoke("TryGetPlayerLevelStatsData", (beatmapKey))?;
         Ok(__cordl_ret)
     }
     pub fn WasMissionHelpShowed(
         &mut self,
-        missionHelp: *mut MissionHelpSO,
+        missionHelp: *mut crate::GlobalNamespace::MissionHelpSO,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -500,9 +508,9 @@ impl PlayerData {
         &mut self,
         playerId: *mut crate::System::String,
         playerName: *mut crate::System::String,
-        lastSelectedBeatmapCharacteristic: *mut BeatmapCharacteristicSO,
-        colorSchemesSettings: *mut ColorSchemesSettings,
-        overrideEnvironmentSettings: *mut OverrideEnvironmentSettings,
+        lastSelectedBeatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        colorSchemesSettings: *mut crate::GlobalNamespace::ColorSchemesSettings,
+        overrideEnvironmentSettings: *mut crate::GlobalNamespace::OverrideEnvironmentSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -531,18 +539,18 @@ impl PlayerData {
         agreedToMultiplayerDisclaimer: bool,
         didSelectRegionVersion: i32,
         selectedAvatarSystemTypeId: *mut crate::System::String,
-        playerAgreements: *mut PlayerAgreements,
-        lastSelectedBeatmapDifficulty: BeatmapDifficulty,
-        lastSelectedBeatmapCharacteristic: *mut BeatmapCharacteristicSO,
-        gameplayModifiers: *mut GameplayModifiers,
-        playerSpecificSettings: *mut PlayerSpecificSettings,
-        practiceSettings: *mut PracticeSettings,
-        playerAllOverallStatsData: *mut PlayerAllOverallStatsData,
+        playerAgreements: *mut crate::GlobalNamespace::PlayerAgreements,
+        lastSelectedBeatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
+        lastSelectedBeatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+        playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+        practiceSettings: *mut crate::GlobalNamespace::PracticeSettings,
+        playerAllOverallStatsData: *mut crate::GlobalNamespace::PlayerAllOverallStatsData,
         levelsStatsData: *mut crate::System::Collections::Generic::List_1<
-            *mut PlayerLevelStatsData,
+            *mut crate::GlobalNamespace::PlayerLevelStatsData,
         >,
         missionsStatsData: *mut crate::System::Collections::Generic::List_1<
-            *mut PlayerMissionStatsData,
+            *mut crate::GlobalNamespace::PlayerMissionStatsData,
         >,
         showedMissionHelpIds: *mut crate::System::Collections::Generic::List_1<
             *mut crate::System::String,
@@ -550,16 +558,16 @@ impl PlayerData {
         guestPlayerNames: *mut crate::System::Collections::Generic::List_1<
             *mut crate::System::String,
         >,
-        colorSchemesSettings: *mut ColorSchemesSettings,
-        overrideEnvironmentSettings: *mut OverrideEnvironmentSettings,
+        colorSchemesSettings: *mut crate::GlobalNamespace::ColorSchemesSettings,
+        overrideEnvironmentSettings: *mut crate::GlobalNamespace::OverrideEnvironmentSettings,
         favoritesLevelIds: *mut crate::System::Collections::Generic::List_1<
             *mut crate::System::String,
         >,
-        multiplayerModeSettings: *mut MultiplayerModeSettings,
+        multiplayerModeSettings: *mut crate::GlobalNamespace::MultiplayerModeSettings,
         currentDlcPromoDisplayCount: i32,
         currentDlcPromoId: *mut crate::System::String,
-        userAgeCategory: UserAgeCategory,
-        desiredSensitivityFlag: PlayerSensitivityFlag,
+        userAgeCategory: crate::GlobalNamespace::UserAgeCategory,
+        desiredSensitivityFlag: crate::GlobalNamespace::PlayerSensitivityFlag,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -641,11 +649,13 @@ impl PlayerData {
     }
     pub fn get_colorSchemesSettings(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut ColorSchemesSettings> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::ColorSchemesSettings,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ColorSchemesSettings = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::ColorSchemesSettings = __cordl_object
             .invoke("get_colorSchemesSettings", ())?;
         Ok(__cordl_ret)
     }
@@ -671,11 +681,11 @@ impl PlayerData {
     }
     pub fn get_desiredSensitivityFlag(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<PlayerSensitivityFlag> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PlayerSensitivityFlag> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: PlayerSensitivityFlag = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::PlayerSensitivityFlag = __cordl_object
             .invoke("get_desiredSensitivityFlag", ())?;
         Ok(__cordl_ret)
     }
@@ -708,11 +718,11 @@ impl PlayerData {
     }
     pub fn get_gameplayModifiers(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut GameplayModifiers> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::GameplayModifiers> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut GameplayModifiers = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::GameplayModifiers = __cordl_object
             .invoke("get_gameplayModifiers", ())?;
         Ok(__cordl_ret)
     }
@@ -731,21 +741,23 @@ impl PlayerData {
     }
     pub fn get_lastSelectedBeatmapCharacteristic(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapCharacteristicSO> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapCharacteristicSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapCharacteristicSO = __cordl_object
             .invoke("get_lastSelectedBeatmapCharacteristic", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_lastSelectedBeatmapDifficulty(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BeatmapDifficulty> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapDifficulty> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapDifficulty = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::BeatmapDifficulty = __cordl_object
             .invoke("get_lastSelectedBeatmapDifficulty", ())?;
         Ok(__cordl_ret)
     }
@@ -753,69 +765,77 @@ impl PlayerData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::Dictionary_2<
-            BeatmapKey,
-            *mut PlayerLevelStatsData,
+            crate::GlobalNamespace::BeatmapKey,
+            *mut crate::GlobalNamespace::PlayerLevelStatsData,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            BeatmapKey,
-            *mut PlayerLevelStatsData,
+            crate::GlobalNamespace::BeatmapKey,
+            *mut crate::GlobalNamespace::PlayerLevelStatsData,
         > = __cordl_object.invoke("get_levelsStatsData", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_missionsStatsData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<*mut PlayerMissionStatsData>,
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::PlayerMissionStatsData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut PlayerMissionStatsData,
+            *mut crate::GlobalNamespace::PlayerMissionStatsData,
         > = __cordl_object.invoke("get_missionsStatsData", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_multiplayerModeSettings(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut MultiplayerModeSettings> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::MultiplayerModeSettings,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MultiplayerModeSettings = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MultiplayerModeSettings = __cordl_object
             .invoke("get_multiplayerModeSettings", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_overrideEnvironmentSettings(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut OverrideEnvironmentSettings> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::OverrideEnvironmentSettings,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut OverrideEnvironmentSettings = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::OverrideEnvironmentSettings = __cordl_object
             .invoke("get_overrideEnvironmentSettings", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_playerAgreements(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerAgreements> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::PlayerAgreements> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PlayerAgreements = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PlayerAgreements = __cordl_object
             .invoke("get_playerAgreements", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_playerAllOverallStatsData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerAllOverallStatsData> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PlayerAllOverallStatsData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PlayerAllOverallStatsData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PlayerAllOverallStatsData = __cordl_object
             .invoke("get_playerAllOverallStatsData", ())?;
         Ok(__cordl_ret)
     }
@@ -841,21 +861,23 @@ impl PlayerData {
     }
     pub fn get_playerSpecificSettings(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayerSpecificSettings> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PlayerSpecificSettings,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PlayerSpecificSettings = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PlayerSpecificSettings = __cordl_object
             .invoke("get_playerSpecificSettings", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_practiceSettings(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PracticeSettings> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::PracticeSettings> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PracticeSettings = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PracticeSettings = __cordl_object
             .invoke("get_practiceSettings", ())?;
         Ok(__cordl_ret)
     }
@@ -901,11 +923,11 @@ impl PlayerData {
     }
     pub fn get_userAgeCategory(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<UserAgeCategory> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::UserAgeCategory> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: UserAgeCategory = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::UserAgeCategory = __cordl_object
             .invoke("get_userAgeCategory", ())?;
         Ok(__cordl_ret)
     }
@@ -955,7 +977,7 @@ impl PlayerData {
     }
     pub fn set_colorSchemesSettings(
         &mut self,
-        value: *mut ColorSchemesSettings,
+        value: *mut crate::GlobalNamespace::ColorSchemesSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -988,7 +1010,7 @@ impl PlayerData {
     }
     pub fn set_desiredSensitivityFlag(
         &mut self,
-        value: PlayerSensitivityFlag,
+        value: crate::GlobalNamespace::PlayerSensitivityFlag,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1034,7 +1056,7 @@ impl PlayerData {
     }
     pub fn set_gameplayModifiers(
         &mut self,
-        value: *mut GameplayModifiers,
+        value: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1058,7 +1080,7 @@ impl PlayerData {
     }
     pub fn set_lastSelectedBeatmapCharacteristic(
         &mut self,
-        value: *mut BeatmapCharacteristicSO,
+        value: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1069,7 +1091,7 @@ impl PlayerData {
     }
     pub fn set_lastSelectedBeatmapDifficulty(
         &mut self,
-        value: BeatmapDifficulty,
+        value: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1081,8 +1103,8 @@ impl PlayerData {
     pub fn set_levelsStatsData(
         &mut self,
         value: *mut crate::System::Collections::Generic::Dictionary_2<
-            BeatmapKey,
-            *mut PlayerLevelStatsData,
+            crate::GlobalNamespace::BeatmapKey,
+            *mut crate::GlobalNamespace::PlayerLevelStatsData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1095,7 +1117,7 @@ impl PlayerData {
     pub fn set_missionsStatsData(
         &mut self,
         value: *mut crate::System::Collections::Generic::List_1<
-            *mut PlayerMissionStatsData,
+            *mut crate::GlobalNamespace::PlayerMissionStatsData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1107,7 +1129,7 @@ impl PlayerData {
     }
     pub fn set_multiplayerModeSettings(
         &mut self,
-        value: *mut MultiplayerModeSettings,
+        value: *mut crate::GlobalNamespace::MultiplayerModeSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1118,7 +1140,7 @@ impl PlayerData {
     }
     pub fn set_overrideEnvironmentSettings(
         &mut self,
-        value: *mut OverrideEnvironmentSettings,
+        value: *mut crate::GlobalNamespace::OverrideEnvironmentSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1129,7 +1151,7 @@ impl PlayerData {
     }
     pub fn set_playerAgreements(
         &mut self,
-        value: *mut PlayerAgreements,
+        value: *mut crate::GlobalNamespace::PlayerAgreements,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1140,7 +1162,7 @@ impl PlayerData {
     }
     pub fn set_playerAllOverallStatsData(
         &mut self,
-        value: *mut PlayerAllOverallStatsData,
+        value: *mut crate::GlobalNamespace::PlayerAllOverallStatsData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1173,7 +1195,7 @@ impl PlayerData {
     }
     pub fn set_playerSpecificSettings(
         &mut self,
-        value: *mut PlayerSpecificSettings,
+        value: *mut crate::GlobalNamespace::PlayerSpecificSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1184,7 +1206,7 @@ impl PlayerData {
     }
     pub fn set_practiceSettings(
         &mut self,
-        value: *mut PracticeSettings,
+        value: *mut crate::GlobalNamespace::PracticeSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1241,7 +1263,7 @@ impl PlayerData {
     }
     pub fn set_userAgeCategory(
         &mut self,
-        value: UserAgeCategory,
+        value: crate::GlobalNamespace::UserAgeCategory,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1252,7 +1274,7 @@ impl PlayerData {
     }
 }
 #[cfg(feature = "PlayerData")]
-impl quest_hook::libil2cpp::ObjectType for PlayerData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

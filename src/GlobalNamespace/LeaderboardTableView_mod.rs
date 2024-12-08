@@ -4,7 +4,7 @@
 pub struct LeaderboardTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _tableView: *mut crate::HMUI::TableView,
-    pub _cellPrefab: *mut LeaderboardTableCell,
+    pub _cellPrefab: *mut crate::GlobalNamespace::LeaderboardTableCell,
     pub _rowHeight: f32,
     pub _scores: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::LeaderboardTableView_ScoreData,
@@ -13,23 +13,24 @@ pub struct LeaderboardTableView {
 }
 #[cfg(feature = "LeaderboardTableView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LeaderboardTableView => ""."LeaderboardTableView"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LeaderboardTableView => ""
+    ."LeaderboardTableView"
 );
 #[cfg(feature = "LeaderboardTableView")]
-impl std::ops::Deref for LeaderboardTableView {
+impl std::ops::Deref for crate::GlobalNamespace::LeaderboardTableView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LeaderboardTableView")]
-impl std::ops::DerefMut for LeaderboardTableView {
+impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardTableView {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LeaderboardTableView")]
-impl LeaderboardTableView {
+impl crate::GlobalNamespace::LeaderboardTableView {
     pub const kCellIdentifier: &'static str = "Cell";
     #[cfg(feature = "LeaderboardTableView+ScoreData")]
     pub type ScoreData = crate::GlobalNamespace::LeaderboardTableView_ScoreData;
@@ -92,7 +93,7 @@ impl LeaderboardTableView {
     }
 }
 #[cfg(feature = "LeaderboardTableView")]
-impl quest_hook::libil2cpp::ObjectType for LeaderboardTableView {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LeaderboardTableView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

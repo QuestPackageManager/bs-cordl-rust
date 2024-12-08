@@ -2,29 +2,30 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListColorController {
-    __cordl_parent: IncDecColorController,
+    __cordl_parent: crate::GlobalNamespace::IncDecColorController,
     pub _idx: i32,
     pub _numberOfElements: i32,
 }
 #[cfg(feature = "ListColorController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ListColorController => ""."ListColorController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ListColorController => ""
+    ."ListColorController"
 );
 #[cfg(feature = "ListColorController")]
-impl std::ops::Deref for ListColorController {
-    type Target = IncDecColorController;
+impl std::ops::Deref for crate::GlobalNamespace::ListColorController {
+    type Target = crate::GlobalNamespace::IncDecColorController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ListColorController")]
-impl std::ops::DerefMut for ListColorController {
+impl std::ops::DerefMut for crate::GlobalNamespace::ListColorController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ListColorController")]
-impl ListColorController {
+impl crate::GlobalNamespace::ListColorController {
     pub fn ApplyValue(
         &mut self,
         idx: i32,
@@ -129,7 +130,7 @@ impl ListColorController {
     }
 }
 #[cfg(feature = "ListColorController")]
-impl quest_hook::libil2cpp::ObjectType for ListColorController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ListColorController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

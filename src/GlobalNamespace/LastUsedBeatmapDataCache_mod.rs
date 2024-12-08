@@ -2,19 +2,20 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct LastUsedBeatmapDataCache {
-    pub cachedReadonlyBeatmapData: *mut IReadonlyBeatmapData,
-    pub _beatmapKey: BeatmapKey,
-    pub _environmentInfo: *mut IEnvironmentInfo,
-    pub _gameplayModifiers: *mut GameplayModifiers,
-    pub _playerSpecificSettings: *mut PlayerSpecificSettings,
+    pub cachedReadonlyBeatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
+    pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
+    pub _environmentInfo: *mut crate::GlobalNamespace::IEnvironmentInfo,
+    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+    pub _playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
 }
 #[cfg(feature = "LastUsedBeatmapDataCache")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for LastUsedBeatmapDataCache => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LastUsedBeatmapDataCache => ""
     ."LastUsedBeatmapDataCache"
 );
 #[cfg(feature = "LastUsedBeatmapDataCache")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for LastUsedBeatmapDataCache {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::LastUsedBeatmapDataCache {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -24,13 +25,13 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for LastUsedBeatmapDataCache {
     }
 }
 #[cfg(feature = "LastUsedBeatmapDataCache")]
-impl LastUsedBeatmapDataCache {
+impl crate::GlobalNamespace::LastUsedBeatmapDataCache {
     pub fn AreSameBeatmapDataCached(
         &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-        environmentInfo: *mut IEnvironmentInfo,
-        gameplayModifiers: *mut GameplayModifiers,
-        playerSpecificSettings: *mut PlayerSpecificSettings,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+        environmentInfo: *mut crate::GlobalNamespace::IEnvironmentInfo,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+        playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -41,11 +42,11 @@ impl LastUsedBeatmapDataCache {
     }
     pub fn _ctor(
         &mut self,
-        beatmapData: *mut IReadonlyBeatmapData,
-        beatmapKey: BeatmapKey,
-        environmentInfo: *mut IEnvironmentInfo,
-        gameplayModifiers: *mut GameplayModifiers,
-        playerSpecificSettings: *mut PlayerSpecificSettings,
+        beatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
+        beatmapKey: crate::GlobalNamespace::BeatmapKey,
+        environmentInfo: *mut crate::GlobalNamespace::IEnvironmentInfo,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+        playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

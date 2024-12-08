@@ -6,25 +6,25 @@ pub struct SplineUtils {
 }
 #[cfg(feature = "SplineUtils")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SplineUtils => ""."SplineUtils"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SplineUtils => ""."SplineUtils"
 );
 #[cfg(feature = "SplineUtils")]
-impl std::ops::Deref for SplineUtils {
+impl std::ops::Deref for crate::GlobalNamespace::SplineUtils {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SplineUtils")]
-impl std::ops::DerefMut for SplineUtils {
+impl std::ops::DerefMut for crate::GlobalNamespace::SplineUtils {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SplineUtils")]
-impl SplineUtils {}
+impl crate::GlobalNamespace::SplineUtils {}
 #[cfg(feature = "SplineUtils")]
-impl quest_hook::libil2cpp::ObjectType for SplineUtils {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SplineUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

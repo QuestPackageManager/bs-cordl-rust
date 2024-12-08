@@ -44,10 +44,10 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_PDGAssetLink {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PDGAssetLink")]
 impl crate::HoudiniEngineUnity::HEU_PDGAssetLink {
-    #[cfg(feature = "HoudiniEngineUnity+HEU_PDGAssetLink+UpdateUIDelegate")]
-    pub type UpdateUIDelegate = crate::HoudiniEngineUnity::HEU_PDGAssetLink_UpdateUIDelegate;
     #[cfg(feature = "HoudiniEngineUnity+HEU_PDGAssetLink+LinkState")]
     pub type LinkState = crate::HoudiniEngineUnity::HEU_PDGAssetLink_LinkState;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_PDGAssetLink+UpdateUIDelegate")]
+    pub type UpdateUIDelegate = crate::HoudiniEngineUnity::HEU_PDGAssetLink_UpdateUIDelegate;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

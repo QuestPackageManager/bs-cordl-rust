@@ -9,5 +9,6 @@ pub enum UserAgeCategory {
 }
 #[cfg(feature = "UserAgeCategory")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for UserAgeCategory => ""."UserAgeCategory"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::UserAgeCategory => ""
+    ."UserAgeCategory"
 );

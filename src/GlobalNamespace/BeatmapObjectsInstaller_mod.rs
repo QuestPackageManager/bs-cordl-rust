@@ -3,38 +3,39 @@
 #[derive(Debug)]
 pub struct BeatmapObjectsInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _normalBasicNotePrefab: *mut GameNoteController,
-    pub _proModeNotePrefab: *mut GameNoteController,
-    pub _burstSliderHeadNotePrefab: *mut GameNoteController,
-    pub _burstSliderNotePrefab: *mut BurstSliderGameNoteController,
-    pub _bombNotePrefab: *mut BombNoteController,
-    pub _obstaclePrefab: *mut ObstacleController,
-    pub _sliderShortPrefab: *mut SliderController,
-    pub _sliderMediumPrefab: *mut SliderController,
-    pub _sliderLongPrefab: *mut SliderController,
-    pub _noteLineConnectionControllerPrefab: *mut NoteLineConnectionController,
-    pub _beatLinePrefab: *mut BeatLine,
-    pub _sceneSetupData: *mut GameplayCoreSceneSetupData,
+    pub _normalBasicNotePrefab: *mut crate::GlobalNamespace::GameNoteController,
+    pub _proModeNotePrefab: *mut crate::GlobalNamespace::GameNoteController,
+    pub _burstSliderHeadNotePrefab: *mut crate::GlobalNamespace::GameNoteController,
+    pub _burstSliderNotePrefab: *mut crate::GlobalNamespace::BurstSliderGameNoteController,
+    pub _bombNotePrefab: *mut crate::GlobalNamespace::BombNoteController,
+    pub _obstaclePrefab: *mut crate::GlobalNamespace::ObstacleController,
+    pub _sliderShortPrefab: *mut crate::GlobalNamespace::SliderController,
+    pub _sliderMediumPrefab: *mut crate::GlobalNamespace::SliderController,
+    pub _sliderLongPrefab: *mut crate::GlobalNamespace::SliderController,
+    pub _noteLineConnectionControllerPrefab: *mut crate::GlobalNamespace::NoteLineConnectionController,
+    pub _beatLinePrefab: *mut crate::GlobalNamespace::BeatLine,
+    pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
 }
 #[cfg(feature = "BeatmapObjectsInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapObjectsInstaller => ""."BeatmapObjectsInstaller"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapObjectsInstaller => ""
+    ."BeatmapObjectsInstaller"
 );
 #[cfg(feature = "BeatmapObjectsInstaller")]
-impl std::ops::Deref for BeatmapObjectsInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapObjectsInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapObjectsInstaller")]
-impl std::ops::DerefMut for BeatmapObjectsInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapObjectsInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapObjectsInstaller")]
-impl BeatmapObjectsInstaller {
+impl crate::GlobalNamespace::BeatmapObjectsInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -64,7 +65,8 @@ impl BeatmapObjectsInstaller {
     }
 }
 #[cfg(feature = "BeatmapObjectsInstaller")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapObjectsInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapObjectsInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

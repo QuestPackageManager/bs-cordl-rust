@@ -5,7 +5,7 @@ pub struct VRInputModule {
     __cordl_parent: crate::UnityEngine::EventSystems::BaseInputModule,
     pub _vrPointer: *mut crate::VRUIControls::VRPointer,
     pub _rumblePreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    pub _hapticFeedbackManager: *mut HapticFeedbackManager,
+    pub _hapticFeedbackManager: *mut crate::GlobalNamespace::HapticFeedbackManager,
     pub onProcessMousePressEvent: *mut crate::System::Action_1<
         *mut crate::UnityEngine::GameObject,
     >,

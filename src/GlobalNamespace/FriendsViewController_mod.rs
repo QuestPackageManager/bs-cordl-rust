@@ -2,32 +2,33 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FriendsViewController {
-    __cordl_parent: NetworkPlayersViewController,
+    __cordl_parent: crate::GlobalNamespace::NetworkPlayersViewController,
     pub _enableOpenPartyToggle: *mut crate::UnityEngine::UI::Toggle,
-    pub _networkPlayerModel: *mut PlatformNetworkPlayerModel,
-    pub _networkConfig: *mut INetworkConfig,
+    pub _networkPlayerModel: *mut crate::GlobalNamespace::PlatformNetworkPlayerModel,
+    pub _networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
     pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
     pub _allowAnyoneToJoin: bool,
 }
 #[cfg(feature = "FriendsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FriendsViewController => ""."FriendsViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FriendsViewController => ""
+    ."FriendsViewController"
 );
 #[cfg(feature = "FriendsViewController")]
-impl std::ops::Deref for FriendsViewController {
-    type Target = NetworkPlayersViewController;
+impl std::ops::Deref for crate::GlobalNamespace::FriendsViewController {
+    type Target = crate::GlobalNamespace::NetworkPlayersViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FriendsViewController")]
-impl std::ops::DerefMut for FriendsViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::FriendsViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FriendsViewController")]
-impl FriendsViewController {
+impl crate::GlobalNamespace::FriendsViewController {
     pub fn DidDeactivate(
         &mut self,
         removedFromHierarchy: bool,
@@ -116,11 +117,13 @@ impl FriendsViewController {
     }
     pub fn get_networkPlayerModel(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut INetworkPlayerModel> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::INetworkPlayerModel,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut INetworkPlayerModel = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::INetworkPlayerModel = __cordl_object
             .invoke("get_networkPlayerModel", ())?;
         Ok(__cordl_ret)
     }
@@ -136,7 +139,8 @@ impl FriendsViewController {
     }
 }
 #[cfg(feature = "FriendsViewController")]
-impl quest_hook::libil2cpp::ObjectType for FriendsViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FriendsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

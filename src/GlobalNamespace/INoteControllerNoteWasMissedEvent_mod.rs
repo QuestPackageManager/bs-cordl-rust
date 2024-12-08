@@ -6,27 +6,28 @@ pub struct INoteControllerNoteWasMissedEvent {
 }
 #[cfg(feature = "INoteControllerNoteWasMissedEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for INoteControllerNoteWasMissedEvent => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::INoteControllerNoteWasMissedEvent => ""
     ."INoteControllerNoteWasMissedEvent"
 );
 #[cfg(feature = "INoteControllerNoteWasMissedEvent")]
-impl std::ops::Deref for INoteControllerNoteWasMissedEvent {
+impl std::ops::Deref for crate::GlobalNamespace::INoteControllerNoteWasMissedEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "INoteControllerNoteWasMissedEvent")]
-impl std::ops::DerefMut for INoteControllerNoteWasMissedEvent {
+impl std::ops::DerefMut for crate::GlobalNamespace::INoteControllerNoteWasMissedEvent {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "INoteControllerNoteWasMissedEvent")]
-impl INoteControllerNoteWasMissedEvent {
+impl crate::GlobalNamespace::INoteControllerNoteWasMissedEvent {
     pub fn HandleNoteControllerNoteWasMissed(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -42,7 +43,8 @@ impl INoteControllerNoteWasMissedEvent {
     }
 }
 #[cfg(feature = "INoteControllerNoteWasMissedEvent")]
-impl quest_hook::libil2cpp::ObjectType for INoteControllerNoteWasMissedEvent {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::INoteControllerNoteWasMissedEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

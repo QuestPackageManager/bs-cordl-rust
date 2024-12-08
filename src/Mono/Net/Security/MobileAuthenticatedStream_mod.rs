@@ -40,6 +40,10 @@ impl std::ops::DerefMut for crate::Mono::Net::Security::MobileAuthenticatedStrea
 }
 #[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream")]
 impl crate::Mono::Net::Security::MobileAuthenticatedStream {
+    #[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream+Operation")]
+    pub type Operation = crate::Mono::Net::Security::MobileAuthenticatedStream_Operation;
+    #[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream+OperationType")]
+    pub type OperationType = crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType;
     #[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream+_InnerRead_d__66")]
     pub type _InnerRead_d__66 = crate::Mono::Net::Security::MobileAuthenticatedStream__InnerRead_d__66;
     #[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream+_InnerWrite_d__67")]
@@ -48,14 +52,10 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         feature = "Mono+Net+Security+MobileAuthenticatedStream+_ProcessAuthentication_d__48"
     )]
     pub type _ProcessAuthentication_d__48 = crate::Mono::Net::Security::MobileAuthenticatedStream__ProcessAuthentication_d__48;
-    #[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream+Operation")]
-    pub type Operation = crate::Mono::Net::Security::MobileAuthenticatedStream_Operation;
-    #[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream+OperationType")]
-    pub type OperationType = crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType;
-    #[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream+__c__DisplayClass66_0")]
-    pub type __c__DisplayClass66_0 = crate::Mono::Net::Security::MobileAuthenticatedStream___c__DisplayClass66_0;
     #[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream+_StartOperation_d__57")]
     pub type _StartOperation_d__57 = crate::Mono::Net::Security::MobileAuthenticatedStream__StartOperation_d__57;
+    #[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream+__c__DisplayClass66_0")]
+    pub type __c__DisplayClass66_0 = crate::Mono::Net::Security::MobileAuthenticatedStream___c__DisplayClass66_0;
     pub fn AuthenticateAsClient(
         &mut self,
         targetHost: *mut crate::System::String,

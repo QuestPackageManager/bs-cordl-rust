@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LegacyModelConverter {
     __cordl_parent: crate::System::Object,
-    pub _fileStorage: *mut IFileStorage,
+    pub _fileStorage: *mut crate::GlobalNamespace::IFileStorage,
     pub _legacyModel: *mut crate::BeatSaber::GameSettings::LegacySettingsModel,
 }
 #[cfg(feature = "BeatSaber+GameSettings+LegacyModelConverter")]
@@ -57,7 +57,7 @@ impl crate::BeatSaber::GameSettings::LegacyModelConverter {
         Ok(__cordl_ret)
     }
     pub fn New(
-        fileStorage: *mut IFileStorage,
+        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -79,7 +79,7 @@ impl crate::BeatSaber::GameSettings::LegacyModelConverter {
     }
     pub fn _ctor(
         &mut self,
-        fileStorage: *mut IFileStorage,
+        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

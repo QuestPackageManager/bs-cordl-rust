@@ -8,44 +8,48 @@ pub struct MockPlayerAuthenticationTokenProvider {
     pub _hashedUserId_k__BackingField: *mut crate::System::String,
     pub _userName_k__BackingField: *mut crate::System::String,
     pub _platform_k__BackingField: crate::GlobalNamespace::AuthenticationToken_Platform,
-    pub _mockTokenData: XPlatformAccessTokenData,
+    pub _mockTokenData: crate::GlobalNamespace::XPlatformAccessTokenData,
 }
 #[cfg(feature = "MockPlayerAuthenticationTokenProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MockPlayerAuthenticationTokenProvider => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MockPlayerAuthenticationTokenProvider => ""
     ."MockPlayerAuthenticationTokenProvider"
 );
 #[cfg(feature = "MockPlayerAuthenticationTokenProvider")]
-impl std::ops::Deref for MockPlayerAuthenticationTokenProvider {
+impl std::ops::Deref for crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockPlayerAuthenticationTokenProvider")]
-impl std::ops::DerefMut for MockPlayerAuthenticationTokenProvider {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockPlayerAuthenticationTokenProvider")]
-impl MockPlayerAuthenticationTokenProvider {
+impl crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
     pub fn GetAuthenticationToken(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<AuthenticationToken>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::AuthenticationToken,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            AuthenticationToken,
+            crate::GlobalNamespace::AuthenticationToken,
         > = __cordl_object.invoke("GetAuthenticationToken", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetTokenPlatform(
         &mut self,
-        tokenPlatformEnvironment: PlatformEnvironment,
+        tokenPlatformEnvironment: crate::GlobalNamespace::PlatformEnvironment,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::AuthenticationToken_Platform,
     > {
@@ -61,13 +65,15 @@ impl MockPlayerAuthenticationTokenProvider {
         cancellationToken: crate::System::Threading::CancellationToken,
         skipCache: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<XPlatformAccessTokenData>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::XPlatformAccessTokenData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            XPlatformAccessTokenData,
+            crate::GlobalNamespace::XPlatformAccessTokenData,
         > = __cordl_object
             .invoke("GetXPlatformAccessToken", (cancellationToken, skipCache))?;
         Ok(__cordl_ret)
@@ -76,7 +82,7 @@ impl MockPlayerAuthenticationTokenProvider {
         userId: *mut crate::System::String,
         userName: *mut crate::System::String,
         password: *mut crate::System::String,
-        mockTokenData: XPlatformAccessTokenData,
+        mockTokenData: crate::GlobalNamespace::XPlatformAccessTokenData,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -89,7 +95,7 @@ impl MockPlayerAuthenticationTokenProvider {
         userId: *mut crate::System::String,
         userName: *mut crate::System::String,
         password: *mut crate::System::String,
-        mockTokenData: XPlatformAccessTokenData,
+        mockTokenData: crate::GlobalNamespace::XPlatformAccessTokenData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -132,7 +138,8 @@ impl MockPlayerAuthenticationTokenProvider {
     }
 }
 #[cfg(feature = "MockPlayerAuthenticationTokenProvider")]
-impl quest_hook::libil2cpp::ObjectType for MockPlayerAuthenticationTokenProvider {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

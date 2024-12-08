@@ -6,38 +6,38 @@ pub struct AppInit {
     pub _cameraGO: *mut crate::UnityEngine::GameObject,
     pub _asyncSceneContext: *mut crate::BGLib::AppFlow::Initialization::AsyncSceneContext,
     pub sceneSetupData: *mut crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData,
-    pub _setupData: *mut AppInitSetupData,
-    pub _gameScenesManager: *mut GameScenesManager,
+    pub _setupData: *mut crate::GlobalNamespace::AppInitSetupData,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
 }
 #[cfg(feature = "AppInit")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AppInit => ""."AppInit"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AppInit => ""."AppInit"
 );
 #[cfg(feature = "AppInit")]
-impl std::ops::Deref for AppInit {
+impl std::ops::Deref for crate::GlobalNamespace::AppInit {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AppInit")]
-impl std::ops::DerefMut for AppInit {
+impl std::ops::DerefMut for crate::GlobalNamespace::AppInit {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AppInit")]
-impl AppInit {
+impl crate::GlobalNamespace::AppInit {
     #[cfg(feature = "AppInit+AppStartType")]
     pub type AppStartType = crate::GlobalNamespace::AppInit_AppStartType;
     #[cfg(feature = "AppInit+_Awake_d__10")]
     pub type _Awake_d__10 = crate::GlobalNamespace::AppInit__Awake_d__10;
+    #[cfg(feature = "AppInit+_InitializeAsync_d__13")]
+    pub type _InitializeAsync_d__13 = crate::GlobalNamespace::AppInit__InitializeAsync_d__13;
     #[cfg(feature = "AppInit+_StartGameAsync_d__11")]
     pub type _StartGameAsync_d__11 = crate::GlobalNamespace::AppInit__StartGameAsync_d__11;
     #[cfg(feature = "AppInit+__c")]
     pub type __c = crate::GlobalNamespace::AppInit___c;
-    #[cfg(feature = "AppInit+_InitializeAsync_d__13")]
-    pub type _InitializeAsync_d__13 = crate::GlobalNamespace::AppInit__InitializeAsync_d__13;
     pub fn AppStartAndMultiSceneEditorSetup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -164,11 +164,11 @@ impl AppInit {
     }
     pub fn get_gameScenesManager(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut GameScenesManager> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::GameScenesManager> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut GameScenesManager = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::GameScenesManager = __cordl_object
             .invoke("get_gameScenesManager", ())?;
         Ok(__cordl_ret)
     }
@@ -181,7 +181,7 @@ impl AppInit {
     }
 }
 #[cfg(feature = "AppInit")]
-impl quest_hook::libil2cpp::ObjectType for AppInit {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AppInit {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

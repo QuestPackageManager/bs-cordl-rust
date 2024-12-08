@@ -21,8 +21,8 @@ pub struct UnityXRHelper {
     pub _headPositionActionReference: *mut crate::UnityEngine::InputSystem::InputActionReference,
     pub _headOrientationActionReference: *mut crate::UnityEngine::InputSystem::InputActionReference,
     pub _pauseGameActionReference: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub _leftController: *mut UnityXRController,
-    pub _rightController: *mut UnityXRController,
+    pub _leftController: *mut crate::GlobalNamespace::UnityXRController,
+    pub _rightController: *mut crate::GlobalNamespace::UnityXRController,
     pub _headPositionAction: *mut crate::UnityEngine::InputSystem::InputAction,
     pub _headOrientationAction: *mut crate::UnityEngine::InputSystem::InputAction,
     pub _userPresenceAction: *mut crate::UnityEngine::InputSystem::InputAction,
@@ -34,33 +34,34 @@ pub struct UnityXRHelper {
 }
 #[cfg(feature = "UnityXRHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for UnityXRHelper => ""."UnityXRHelper"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::UnityXRHelper => ""
+    ."UnityXRHelper"
 );
 #[cfg(feature = "UnityXRHelper")]
-impl std::ops::Deref for UnityXRHelper {
+impl std::ops::Deref for crate::GlobalNamespace::UnityXRHelper {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityXRHelper")]
-impl std::ops::DerefMut for UnityXRHelper {
+impl std::ops::DerefMut for crate::GlobalNamespace::UnityXRHelper {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityXRHelper")]
-impl UnityXRHelper {
+impl crate::GlobalNamespace::UnityXRHelper {
     #[cfg(feature = "UnityXRHelper+VRControllerManufacturerName")]
     pub type VRControllerManufacturerName = crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName;
     pub fn ControllerFromNode(
         &mut self,
         node: crate::UnityEngine::XR::XRNode,
-    ) -> quest_hook::libil2cpp::Result<*mut UnityXRController> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::UnityXRController> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut UnityXRController = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::UnityXRController = __cordl_object
             .invoke("ControllerFromNode", (node))?;
         Ok(__cordl_ret)
     }
@@ -480,11 +481,14 @@ impl UnityXRHelper {
             .invoke("get_loggerPrefix", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_vrPlatformSDK(&mut self) -> quest_hook::libil2cpp::Result<VRPlatformSDK> {
+    pub fn get_vrPlatformSDK(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::VRPlatformSDK> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: VRPlatformSDK = __cordl_object.invoke("get_vrPlatformSDK", ())?;
+        let __cordl_ret: crate::GlobalNamespace::VRPlatformSDK = __cordl_object
+            .invoke("get_vrPlatformSDK", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_controllersDidChangeReferenceEvent(
@@ -599,7 +603,7 @@ impl UnityXRHelper {
     }
 }
 #[cfg(feature = "UnityXRHelper")]
-impl quest_hook::libil2cpp::ObjectType for UnityXRHelper {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UnityXRHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -87,42 +87,43 @@ pub struct LevelFailedTextOverride {
     >,
     pub _beatmapLevelPacks: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-            *mut BeatmapLevelPackSO,
+            *mut crate::GlobalNamespace::BeatmapLevelPackSO,
         >,
     >,
     pub _beatmapLevels: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-            *mut BeatmapLevelSO,
+            *mut crate::GlobalNamespace::BeatmapLevelSO,
         >,
     >,
-    pub _levelFailedTextEffect: *mut LevelFailedText,
-    pub _beatmapKey: BeatmapKey,
+    pub _levelFailedTextEffect: *mut crate::GlobalNamespace::LevelFailedText,
+    pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
 }
 #[cfg(feature = "LevelFailedTextOverride")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LevelFailedTextOverride => ""."LevelFailedTextOverride"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LevelFailedTextOverride => ""
+    ."LevelFailedTextOverride"
 );
 #[cfg(feature = "LevelFailedTextOverride")]
-impl std::ops::Deref for LevelFailedTextOverride {
+impl std::ops::Deref for crate::GlobalNamespace::LevelFailedTextOverride {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelFailedTextOverride")]
-impl std::ops::DerefMut for LevelFailedTextOverride {
+impl std::ops::DerefMut for crate::GlobalNamespace::LevelFailedTextOverride {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelFailedTextOverride")]
-impl LevelFailedTextOverride {
-    #[cfg(feature = "LevelFailedTextOverride+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::GlobalNamespace::LevelFailedTextOverride___c__DisplayClass6_0;
-    #[cfg(feature = "LevelFailedTextOverride+_Start_d__6")]
-    pub type _Start_d__6 = crate::GlobalNamespace::LevelFailedTextOverride__Start_d__6;
+impl crate::GlobalNamespace::LevelFailedTextOverride {
     #[cfg(feature = "LevelFailedTextOverride+LanguageOverride")]
     pub type LanguageOverride = crate::GlobalNamespace::LevelFailedTextOverride_LanguageOverride;
+    #[cfg(feature = "LevelFailedTextOverride+_Start_d__6")]
+    pub type _Start_d__6 = crate::GlobalNamespace::LevelFailedTextOverride__Start_d__6;
+    #[cfg(feature = "LevelFailedTextOverride+__c__DisplayClass6_0")]
+    pub type __c__DisplayClass6_0 = crate::GlobalNamespace::LevelFailedTextOverride___c__DisplayClass6_0;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -152,7 +153,8 @@ impl LevelFailedTextOverride {
     }
 }
 #[cfg(feature = "LevelFailedTextOverride")]
-impl quest_hook::libil2cpp::ObjectType for LevelFailedTextOverride {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LevelFailedTextOverride {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

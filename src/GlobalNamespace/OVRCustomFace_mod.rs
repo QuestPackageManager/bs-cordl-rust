@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRCustomFace {
-    __cordl_parent: OVRFace,
+    __cordl_parent: crate::GlobalNamespace::OVRFace,
     pub _mappings: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
     >,
@@ -11,23 +11,24 @@ pub struct OVRCustomFace {
 }
 #[cfg(feature = "OVRCustomFace")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRCustomFace => ""."OVRCustomFace"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRCustomFace => ""
+    ."OVRCustomFace"
 );
 #[cfg(feature = "OVRCustomFace")]
-impl std::ops::Deref for OVRCustomFace {
-    type Target = OVRFace;
+impl std::ops::Deref for crate::GlobalNamespace::OVRCustomFace {
+    type Target = crate::GlobalNamespace::OVRFace;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRCustomFace")]
-impl std::ops::DerefMut for OVRCustomFace {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRCustomFace {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRCustomFace")]
-impl OVRCustomFace {
+impl crate::GlobalNamespace::OVRCustomFace {
     #[cfg(feature = "OVRCustomFace+RetargetingType")]
     pub type RetargetingType = crate::GlobalNamespace::OVRCustomFace_RetargetingType;
     pub fn GetCustomBlendShapeNameAndExpressionPairs(
@@ -162,7 +163,7 @@ impl OVRCustomFace {
     }
 }
 #[cfg(feature = "OVRCustomFace")]
-impl quest_hook::libil2cpp::ObjectType for OVRCustomFace {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRCustomFace {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

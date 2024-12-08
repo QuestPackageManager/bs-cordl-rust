@@ -6,23 +6,24 @@ pub struct ILeaderboardIdData {
 }
 #[cfg(feature = "ILeaderboardIdData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ILeaderboardIdData => ""."ILeaderboardIdData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ILeaderboardIdData => ""
+    ."ILeaderboardIdData"
 );
 #[cfg(feature = "ILeaderboardIdData")]
-impl std::ops::Deref for ILeaderboardIdData {
+impl std::ops::Deref for crate::GlobalNamespace::ILeaderboardIdData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ILeaderboardIdData")]
-impl std::ops::DerefMut for ILeaderboardIdData {
+impl std::ops::DerefMut for crate::GlobalNamespace::ILeaderboardIdData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ILeaderboardIdData")]
-impl ILeaderboardIdData {
+impl crate::GlobalNamespace::ILeaderboardIdData {
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
@@ -40,7 +41,7 @@ impl ILeaderboardIdData {
     }
 }
 #[cfg(feature = "ILeaderboardIdData")]
-impl quest_hook::libil2cpp::ObjectType for ILeaderboardIdData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ILeaderboardIdData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

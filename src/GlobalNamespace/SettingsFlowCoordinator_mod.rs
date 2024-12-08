@@ -17,46 +17,47 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct SettingsFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub _playerDataModel: *mut PlayerDataModel,
-    pub _mainSettingsMenuViewController: *mut MainSettingsMenuViewController,
-    pub _settingsNavigationController: *mut SettingsNavigationController,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _mainSettingsMenuViewController: *mut crate::GlobalNamespace::MainSettingsMenuViewController,
+    pub _settingsNavigationController: *mut crate::GlobalNamespace::SettingsNavigationController,
     pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
     pub _flushingService: *mut crate::BGLib::SaveDataCore::SaveDataFlushingService,
-    pub _settingsApplicator: *mut SettingsApplicatorSO,
+    pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
     pub didFinishEvent: *mut crate::System::Action_2<
-        *mut SettingsFlowCoordinator,
+        *mut crate::GlobalNamespace::SettingsFlowCoordinator,
         crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction,
     >,
 }
 #[cfg(feature = "SettingsFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SettingsFlowCoordinator => ""."SettingsFlowCoordinator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SettingsFlowCoordinator => ""
+    ."SettingsFlowCoordinator"
 );
 #[cfg(feature = "SettingsFlowCoordinator")]
-impl std::ops::Deref for SettingsFlowCoordinator {
+impl std::ops::Deref for crate::GlobalNamespace::SettingsFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SettingsFlowCoordinator")]
-impl std::ops::DerefMut for SettingsFlowCoordinator {
+impl std::ops::DerefMut for crate::GlobalNamespace::SettingsFlowCoordinator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SettingsFlowCoordinator")]
-impl SettingsFlowCoordinator {
+impl crate::GlobalNamespace::SettingsFlowCoordinator {
+    #[cfg(feature = "SettingsFlowCoordinator+FinishAction")]
+    pub type FinishAction = crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction;
     #[cfg(feature = "SettingsFlowCoordinator+_ApplySettingsAsync_d__17")]
     pub type _ApplySettingsAsync_d__17 = crate::GlobalNamespace::SettingsFlowCoordinator__ApplySettingsAsync_d__17;
+    #[cfg(feature = "SettingsFlowCoordinator+_CancelSettingsAsync_d__18")]
+    pub type _CancelSettingsAsync_d__18 = crate::GlobalNamespace::SettingsFlowCoordinator__CancelSettingsAsync_d__18;
     #[cfg(
         feature = "SettingsFlowCoordinator+_HandleSettingsNavigationControllerDidFinishAsync_d__16"
     )]
     pub type _HandleSettingsNavigationControllerDidFinishAsync_d__16 = crate::GlobalNamespace::SettingsFlowCoordinator__HandleSettingsNavigationControllerDidFinishAsync_d__16;
-    #[cfg(feature = "SettingsFlowCoordinator+_CancelSettingsAsync_d__18")]
-    pub type _CancelSettingsAsync_d__18 = crate::GlobalNamespace::SettingsFlowCoordinator__CancelSettingsAsync_d__18;
-    #[cfg(feature = "SettingsFlowCoordinator+FinishAction")]
-    pub type FinishAction = crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction;
     pub fn ApplySettingsAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
@@ -107,7 +108,7 @@ impl SettingsFlowCoordinator {
     }
     pub fn HandleDidSelectSettingsSubMenu(
         &mut self,
-        settingsSubMenuInfo: *mut SettingsSubMenuInfo,
+        settingsSubMenuInfo: *mut crate::GlobalNamespace::SettingsSubMenuInfo,
         idx: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -170,7 +171,7 @@ impl SettingsFlowCoordinator {
     pub fn add_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut SettingsFlowCoordinator,
+            *mut crate::GlobalNamespace::SettingsFlowCoordinator,
             crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -184,7 +185,7 @@ impl SettingsFlowCoordinator {
     pub fn remove_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut SettingsFlowCoordinator,
+            *mut crate::GlobalNamespace::SettingsFlowCoordinator,
             crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -197,7 +198,8 @@ impl SettingsFlowCoordinator {
     }
 }
 #[cfg(feature = "SettingsFlowCoordinator")]
-impl quest_hook::libil2cpp::ObjectType for SettingsFlowCoordinator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SettingsFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

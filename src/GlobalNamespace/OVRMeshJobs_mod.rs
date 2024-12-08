@@ -65,23 +65,23 @@ pub struct OVRMeshJobs {
 }
 #[cfg(feature = "OVRMeshJobs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRMeshJobs => ""."OVRMeshJobs"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRMeshJobs => ""."OVRMeshJobs"
 );
 #[cfg(feature = "OVRMeshJobs")]
-impl std::ops::Deref for OVRMeshJobs {
+impl std::ops::Deref for crate::GlobalNamespace::OVRMeshJobs {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRMeshJobs")]
-impl std::ops::DerefMut for OVRMeshJobs {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRMeshJobs {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRMeshJobs")]
-impl OVRMeshJobs {
+impl crate::GlobalNamespace::OVRMeshJobs {
     #[cfg(feature = "OVRMeshJobs+NativeArrayHelper_1")]
     pub type NativeArrayHelper_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRMeshJobs_NativeArrayHelper_1<
         T,
@@ -109,7 +109,7 @@ impl OVRMeshJobs {
     }
 }
 #[cfg(feature = "OVRMeshJobs")]
-impl quest_hook::libil2cpp::ObjectType for OVRMeshJobs {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRMeshJobs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

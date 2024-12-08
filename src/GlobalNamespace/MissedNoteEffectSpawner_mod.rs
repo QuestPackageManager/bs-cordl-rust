@@ -3,34 +3,35 @@
 #[derive(Debug)]
 pub struct MissedNoteEffectSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missedNoteFlyingSpriteSpawner: *mut FlyingSpriteSpawner,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
-    pub _audioTimeSyncController: *mut AudioTimeSyncController,
+    pub _missedNoteFlyingSpriteSpawner: *mut crate::GlobalNamespace::FlyingSpriteSpawner,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
     pub _initData: *mut crate::GlobalNamespace::CoreGameHUDController_InitData,
     pub _spawnPosZ: f32,
 }
 #[cfg(feature = "MissedNoteEffectSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissedNoteEffectSpawner => ""."MissedNoteEffectSpawner"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissedNoteEffectSpawner => ""
+    ."MissedNoteEffectSpawner"
 );
 #[cfg(feature = "MissedNoteEffectSpawner")]
-impl std::ops::Deref for MissedNoteEffectSpawner {
+impl std::ops::Deref for crate::GlobalNamespace::MissedNoteEffectSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissedNoteEffectSpawner")]
-impl std::ops::DerefMut for MissedNoteEffectSpawner {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissedNoteEffectSpawner {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissedNoteEffectSpawner")]
-impl MissedNoteEffectSpawner {
+impl crate::GlobalNamespace::MissedNoteEffectSpawner {
     pub fn HandleNoteWasMissed(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -78,7 +79,8 @@ impl MissedNoteEffectSpawner {
     }
 }
 #[cfg(feature = "MissedNoteEffectSpawner")]
-impl quest_hook::libil2cpp::ObjectType for MissedNoteEffectSpawner {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MissedNoteEffectSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

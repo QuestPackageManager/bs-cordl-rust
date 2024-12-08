@@ -3,29 +3,30 @@
 #[derive(Debug)]
 pub struct SceneCameraBloomPrePass {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _bloomPrepassRenderer: *mut BloomPrePassRendererSO,
-    pub _bloomPrePassEffectContainer: *mut BloomPrePassEffectContainerSO,
+    pub _bloomPrepassRenderer: *mut crate::GlobalNamespace::BloomPrePassRendererSO,
+    pub _bloomPrePassEffectContainer: *mut crate::GlobalNamespace::BloomPrePassEffectContainerSO,
     pub _bloomPrepassRenderTexture: *mut crate::UnityEngine::RenderTexture,
 }
 #[cfg(feature = "SceneCameraBloomPrePass")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SceneCameraBloomPrePass => ""."SceneCameraBloomPrePass"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SceneCameraBloomPrePass => ""
+    ."SceneCameraBloomPrePass"
 );
 #[cfg(feature = "SceneCameraBloomPrePass")]
-impl std::ops::Deref for SceneCameraBloomPrePass {
+impl std::ops::Deref for crate::GlobalNamespace::SceneCameraBloomPrePass {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SceneCameraBloomPrePass")]
-impl std::ops::DerefMut for SceneCameraBloomPrePass {
+impl std::ops::DerefMut for crate::GlobalNamespace::SceneCameraBloomPrePass {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SceneCameraBloomPrePass")]
-impl SceneCameraBloomPrePass {
+impl crate::GlobalNamespace::SceneCameraBloomPrePass {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -45,7 +46,8 @@ impl SceneCameraBloomPrePass {
     }
 }
 #[cfg(feature = "SceneCameraBloomPrePass")]
-impl quest_hook::libil2cpp::ObjectType for SceneCameraBloomPrePass {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SceneCameraBloomPrePass {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

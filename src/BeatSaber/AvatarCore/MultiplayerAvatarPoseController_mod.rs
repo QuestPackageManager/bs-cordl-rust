@@ -6,9 +6,9 @@ pub struct MultiplayerAvatarPoseController {
     pub _leftSaberTransform: *mut crate::UnityEngine::Transform,
     pub _rightSaberTransform: *mut crate::UnityEngine::Transform,
     pub _headTransform: *mut crate::UnityEngine::Transform,
-    pub _nodePoseSyncStateManager: *mut INodePoseSyncStateManager,
+    pub _nodePoseSyncStateManager: *mut crate::GlobalNamespace::INodePoseSyncStateManager,
     pub _avatarPoseRestriction: *mut crate::BeatSaber::AvatarCore::IAvatarPoseRestriction,
-    pub _connectedPlayer: *mut IConnectedPlayer,
+    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
     pub didUpdatePoseEvent: *mut crate::System::Action_1<crate::UnityEngine::Vector3>,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+MultiplayerAvatarPoseController")]
@@ -94,7 +94,7 @@ impl crate::BeatSaber::AvatarCore::MultiplayerAvatarPoseController {
     }
     pub fn set_connectedPlayer(
         &mut self,
-        value: *mut IConnectedPlayer,
+        value: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

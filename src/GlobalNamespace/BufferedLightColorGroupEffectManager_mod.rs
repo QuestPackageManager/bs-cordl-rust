@@ -3,35 +3,39 @@
 #[derive(Debug)]
 pub struct BufferedLightColorGroupEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightGroups: *mut quest_hook::libil2cpp::Il2CppArray<*mut LightGroup>,
+    pub _lightGroups: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::LightGroup,
+    >,
     pub _materialPropertyBlockControllers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut MaterialPropertyBlockController,
+        *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     >,
     pub _container: *mut crate::Zenject::DiContainer,
     pub _bufferedLightColorGroupEffects: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut BufferedLightColorGroupEffect,
+        *mut crate::GlobalNamespace::BufferedLightColorGroupEffect,
     >,
 }
 #[cfg(feature = "BufferedLightColorGroupEffectManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BufferedLightColorGroupEffectManager => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BufferedLightColorGroupEffectManager => ""
     ."BufferedLightColorGroupEffectManager"
 );
 #[cfg(feature = "BufferedLightColorGroupEffectManager")]
-impl std::ops::Deref for BufferedLightColorGroupEffectManager {
+impl std::ops::Deref for crate::GlobalNamespace::BufferedLightColorGroupEffectManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BufferedLightColorGroupEffectManager")]
-impl std::ops::DerefMut for BufferedLightColorGroupEffectManager {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::BufferedLightColorGroupEffectManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BufferedLightColorGroupEffectManager")]
-impl BufferedLightColorGroupEffectManager {
+impl crate::GlobalNamespace::BufferedLightColorGroupEffectManager {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -71,7 +75,8 @@ impl BufferedLightColorGroupEffectManager {
     }
 }
 #[cfg(feature = "BufferedLightColorGroupEffectManager")]
-impl quest_hook::libil2cpp::ObjectType for BufferedLightColorGroupEffectManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BufferedLightColorGroupEffectManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,23 +6,24 @@ pub struct StaticBatchableMesh {
 }
 #[cfg(feature = "StaticBatchableMesh")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StaticBatchableMesh => ""."StaticBatchableMesh"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::StaticBatchableMesh => ""
+    ."StaticBatchableMesh"
 );
 #[cfg(feature = "StaticBatchableMesh")]
-impl std::ops::Deref for StaticBatchableMesh {
+impl std::ops::Deref for crate::GlobalNamespace::StaticBatchableMesh {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StaticBatchableMesh")]
-impl std::ops::DerefMut for StaticBatchableMesh {
+impl std::ops::DerefMut for crate::GlobalNamespace::StaticBatchableMesh {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StaticBatchableMesh")]
-impl StaticBatchableMesh {
+impl crate::GlobalNamespace::StaticBatchableMesh {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,7 +43,7 @@ impl StaticBatchableMesh {
     }
 }
 #[cfg(feature = "StaticBatchableMesh")]
-impl quest_hook::libil2cpp::ObjectType for StaticBatchableMesh {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::StaticBatchableMesh {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

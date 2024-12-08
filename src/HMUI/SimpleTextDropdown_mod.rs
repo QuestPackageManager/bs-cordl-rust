@@ -4,7 +4,7 @@
 pub struct SimpleTextDropdown {
     __cordl_parent: crate::HMUI::DropdownWithTableView,
     pub _text: *mut crate::TMPro::TextMeshProUGUI,
-    pub _cellPrefab: *mut SimpleTextTableCell,
+    pub _cellPrefab: *mut crate::GlobalNamespace::SimpleTextTableCell,
     pub _cellSize: f32,
     pub _texts: *mut crate::System::Collections::Generic::IReadOnlyList_1<
         *mut crate::System::String,

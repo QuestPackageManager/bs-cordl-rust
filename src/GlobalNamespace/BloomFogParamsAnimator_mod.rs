@@ -3,32 +3,33 @@
 #[derive(Debug)]
 pub struct BloomFogParamsAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _bloomFog: *mut BloomFogSO,
+    pub _bloomFog: *mut crate::GlobalNamespace::BloomFogSO,
 }
 #[cfg(feature = "BloomFogParamsAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomFogParamsAnimator => ""."BloomFogParamsAnimator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BloomFogParamsAnimator => ""
+    ."BloomFogParamsAnimator"
 );
 #[cfg(feature = "BloomFogParamsAnimator")]
-impl std::ops::Deref for BloomFogParamsAnimator {
+impl std::ops::Deref for crate::GlobalNamespace::BloomFogParamsAnimator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomFogParamsAnimator")]
-impl std::ops::DerefMut for BloomFogParamsAnimator {
+impl std::ops::DerefMut for crate::GlobalNamespace::BloomFogParamsAnimator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomFogParamsAnimator")]
-impl BloomFogParamsAnimator {
+impl crate::GlobalNamespace::BloomFogParamsAnimator {
     #[cfg(feature = "BloomFogParamsAnimator+_AnimationCoroutine_d__2")]
     pub type _AnimationCoroutine_d__2 = crate::GlobalNamespace::BloomFogParamsAnimator__AnimationCoroutine_d__2;
     pub fn AnimateBloomFogParamsChange(
         &mut self,
-        envFogParams: *mut BloomFogEnvironmentParams,
+        envFogParams: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
         duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -40,7 +41,7 @@ impl BloomFogParamsAnimator {
     }
     pub fn AnimationCoroutine(
         &mut self,
-        envFogParams: *mut BloomFogEnvironmentParams,
+        envFogParams: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
         duration: f32,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -52,11 +53,13 @@ impl BloomFogParamsAnimator {
     }
     pub fn GetDefaultBloomFogParams(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BloomFogEnvironmentParams> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BloomFogEnvironmentParams = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BloomFogEnvironmentParams = __cordl_object
             .invoke("GetDefaultBloomFogParams", ())?;
         Ok(__cordl_ret)
     }
@@ -69,7 +72,7 @@ impl BloomFogParamsAnimator {
     }
     pub fn SetBloomFogParamsChange(
         &mut self,
-        envFogParams: *mut BloomFogEnvironmentParams,
+        envFogParams: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
         transition: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -81,7 +84,7 @@ impl BloomFogParamsAnimator {
     }
     pub fn SetDefaultBloomFogParams(
         &mut self,
-        newDefaultBloomFogParams: *mut BloomFogEnvironmentParams,
+        newDefaultBloomFogParams: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -102,7 +105,8 @@ impl BloomFogParamsAnimator {
     }
 }
 #[cfg(feature = "BloomFogParamsAnimator")]
-impl quest_hook::libil2cpp::ObjectType for BloomFogParamsAnimator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BloomFogParamsAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

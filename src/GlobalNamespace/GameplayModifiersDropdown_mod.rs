@@ -4,37 +4,40 @@
 pub struct GameplayModifiersDropdown {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _simpleTextDropdown: *mut crate::HMUI::SimpleTextDropdown,
-    pub _gameplayModifiersModel: *mut GameplayModifiersModelSO,
+    pub _gameplayModifiersModel: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
     pub didSelectCellWithIdxEvent: *mut crate::System::Action_1<i32>,
     pub _gameplayModifiersData: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::System::Tuple_2<GameplayModifierMask, *mut crate::System::String>,
+        *mut crate::System::Tuple_2<
+            crate::GlobalNamespace::GameplayModifierMask,
+            *mut crate::System::String,
+        >,
     >,
 }
 #[cfg(feature = "GameplayModifiersDropdown")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameplayModifiersDropdown => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameplayModifiersDropdown => ""
     ."GameplayModifiersDropdown"
 );
 #[cfg(feature = "GameplayModifiersDropdown")]
-impl std::ops::Deref for GameplayModifiersDropdown {
+impl std::ops::Deref for crate::GlobalNamespace::GameplayModifiersDropdown {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayModifiersDropdown")]
-impl std::ops::DerefMut for GameplayModifiersDropdown {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameplayModifiersDropdown {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayModifiersDropdown")]
-impl GameplayModifiersDropdown {
+impl crate::GlobalNamespace::GameplayModifiersDropdown {
     #[cfg(feature = "GameplayModifiersDropdown+__c")]
     pub type __c = crate::GlobalNamespace::GameplayModifiersDropdown___c;
     pub fn GetIdxForGameplayModifierMask(
         &mut self,
-        gameplayModifierMask: GameplayModifierMask,
+        gameplayModifierMask: crate::GlobalNamespace::GameplayModifierMask,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -45,11 +48,11 @@ impl GameplayModifiersDropdown {
     }
     pub fn GetSelectedGameplayModifierMask(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<GameplayModifierMask> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::GameplayModifierMask> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: GameplayModifierMask = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::GameplayModifierMask = __cordl_object
             .invoke("GetSelectedGameplayModifierMask", ())?;
         Ok(__cordl_ret)
     }
@@ -87,7 +90,7 @@ impl GameplayModifiersDropdown {
     }
     pub fn SelectCellWithGameplayModifierMask(
         &mut self,
-        gameplayModifierMask: GameplayModifierMask,
+        gameplayModifierMask: crate::GlobalNamespace::GameplayModifierMask,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -118,15 +121,18 @@ impl GameplayModifiersDropdown {
     }
     pub fn _get_gameplayModifiersData_b__7_0(
         &mut self,
-        value: GameplayModifierMask,
+        value: crate::GlobalNamespace::GameplayModifierMask,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Tuple_2<GameplayModifierMask, *mut crate::System::String>,
+        *mut crate::System::Tuple_2<
+            crate::GlobalNamespace::GameplayModifierMask,
+            *mut crate::System::String,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Tuple_2<
-            GameplayModifierMask,
+            crate::GlobalNamespace::GameplayModifierMask,
             *mut crate::System::String,
         > = __cordl_object.invoke("<get_gameplayModifiersData>b__7_0", (value))?;
         Ok(__cordl_ret)
@@ -146,14 +152,20 @@ impl GameplayModifiersDropdown {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::Tuple_2<GameplayModifierMask, *mut crate::System::String>,
+            *mut crate::System::Tuple_2<
+                crate::GlobalNamespace::GameplayModifierMask,
+                *mut crate::System::String,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::Tuple_2<GameplayModifierMask, *mut crate::System::String>,
+            *mut crate::System::Tuple_2<
+                crate::GlobalNamespace::GameplayModifierMask,
+                *mut crate::System::String,
+            >,
         > = __cordl_object.invoke("get_gameplayModifiersData", ())?;
         Ok(__cordl_ret)
     }
@@ -170,7 +182,8 @@ impl GameplayModifiersDropdown {
     }
 }
 #[cfg(feature = "GameplayModifiersDropdown")]
-impl quest_hook::libil2cpp::ObjectType for GameplayModifiersDropdown {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GameplayModifiersDropdown {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

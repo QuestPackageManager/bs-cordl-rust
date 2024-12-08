@@ -26,10 +26,10 @@ impl std::ops::DerefMut for crate::UnityEngine::AudioClip {
 }
 #[cfg(feature = "UnityEngine+AudioClip")]
 impl crate::UnityEngine::AudioClip {
-    #[cfg(feature = "UnityEngine+AudioClip+PCMSetPositionCallback")]
-    pub type PCMSetPositionCallback = crate::UnityEngine::AudioClip_PCMSetPositionCallback;
     #[cfg(feature = "UnityEngine+AudioClip+PCMReaderCallback")]
     pub type PCMReaderCallback = crate::UnityEngine::AudioClip_PCMReaderCallback;
+    #[cfg(feature = "UnityEngine+AudioClip+PCMSetPositionCallback")]
+    pub type PCMSetPositionCallback = crate::UnityEngine::AudioClip_PCMSetPositionCallback;
     pub fn CreateUserSound(
         &mut self,
         name: *mut crate::System::String,

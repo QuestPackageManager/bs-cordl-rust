@@ -23,11 +23,12 @@ pub struct LevelDataAssetDownloadUpdate {
 }
 #[cfg(feature = "LevelDataAssetDownloadUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for LevelDataAssetDownloadUpdate => ""
-    ."LevelDataAssetDownloadUpdate"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LevelDataAssetDownloadUpdate =>
+    ""."LevelDataAssetDownloadUpdate"
 );
 #[cfg(feature = "LevelDataAssetDownloadUpdate")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for LevelDataAssetDownloadUpdate {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::LevelDataAssetDownloadUpdate {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -37,7 +38,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for LevelDataAssetDownloadUpdate
     }
 }
 #[cfg(feature = "LevelDataAssetDownloadUpdate")]
-impl LevelDataAssetDownloadUpdate {
+impl crate::GlobalNamespace::LevelDataAssetDownloadUpdate {
     #[cfg(feature = "LevelDataAssetDownloadUpdate+AssetDownloadingState")]
     pub type AssetDownloadingState = crate::GlobalNamespace::LevelDataAssetDownloadUpdate_AssetDownloadingState;
     pub fn _ctor(

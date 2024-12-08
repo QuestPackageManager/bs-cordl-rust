@@ -667,22 +667,22 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::ReflectionMethodsCache {
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache")]
 impl crate::UnityEngine::UI::ReflectionMethodsCache {
-    #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+RaycastAllCallback")]
-    pub type RaycastAllCallback = crate::UnityEngine::UI::ReflectionMethodsCache_RaycastAllCallback;
+    #[cfg(
+        feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback"
+    )]
+    pub type GetRayIntersectionAllCallback = crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback;
     #[cfg(
         feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllNonAllocCallback"
     )]
     pub type GetRayIntersectionAllNonAllocCallback = crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAllocCallback;
     #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+GetRaycastNonAllocCallback")]
     pub type GetRaycastNonAllocCallback = crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback;
-    #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
-    pub type Raycast3DCallback = crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback;
     #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast2DCallback")]
     pub type Raycast2DCallback = crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback;
-    #[cfg(
-        feature = "UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback"
-    )]
-    pub type GetRayIntersectionAllCallback = crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback;
+    #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
+    pub type Raycast3DCallback = crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback;
+    #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache+RaycastAllCallback")]
+    pub type RaycastAllCallback = crate::UnityEngine::UI::ReflectionMethodsCache_RaycastAllCallback;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

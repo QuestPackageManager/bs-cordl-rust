@@ -6,24 +6,24 @@ pub struct StaticBatchedMeshContainer {
 }
 #[cfg(feature = "StaticBatchedMeshContainer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StaticBatchedMeshContainer => ""
-    ."StaticBatchedMeshContainer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::StaticBatchedMeshContainer =>
+    ""."StaticBatchedMeshContainer"
 );
 #[cfg(feature = "StaticBatchedMeshContainer")]
-impl std::ops::Deref for StaticBatchedMeshContainer {
+impl std::ops::Deref for crate::GlobalNamespace::StaticBatchedMeshContainer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StaticBatchedMeshContainer")]
-impl std::ops::DerefMut for StaticBatchedMeshContainer {
+impl std::ops::DerefMut for crate::GlobalNamespace::StaticBatchedMeshContainer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StaticBatchedMeshContainer")]
-impl StaticBatchedMeshContainer {
+impl crate::GlobalNamespace::StaticBatchedMeshContainer {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -43,7 +43,8 @@ impl StaticBatchedMeshContainer {
     }
 }
 #[cfg(feature = "StaticBatchedMeshContainer")]
-impl quest_hook::libil2cpp::ObjectType for StaticBatchedMeshContainer {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StaticBatchedMeshContainer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

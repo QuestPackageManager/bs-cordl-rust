@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightColorBeatmapEventDataBox {
-    __cordl_parent: BeatmapEventDataBox,
+    __cordl_parent: crate::GlobalNamespace::BeatmapEventDataBox,
     pub _lightColorBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut LightColorBaseData,
+        *mut crate::GlobalNamespace::LightColorBaseData,
     >,
     pub _brightnessStep: f32,
     pub _beatStep: f32,
@@ -12,34 +12,34 @@ pub struct LightColorBeatmapEventDataBox {
 }
 #[cfg(feature = "LightColorBeatmapEventDataBox")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightColorBeatmapEventDataBox => ""
-    ."LightColorBeatmapEventDataBox"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightColorBeatmapEventDataBox
+    => ""."LightColorBeatmapEventDataBox"
 );
 #[cfg(feature = "LightColorBeatmapEventDataBox")]
-impl std::ops::Deref for LightColorBeatmapEventDataBox {
-    type Target = BeatmapEventDataBox;
+impl std::ops::Deref for crate::GlobalNamespace::LightColorBeatmapEventDataBox {
+    type Target = crate::GlobalNamespace::BeatmapEventDataBox;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightColorBeatmapEventDataBox")]
-impl std::ops::DerefMut for LightColorBeatmapEventDataBox {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightColorBeatmapEventDataBox {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightColorBeatmapEventDataBox")]
-impl LightColorBeatmapEventDataBox {
+impl crate::GlobalNamespace::LightColorBeatmapEventDataBox {
     pub fn New(
-        indexFilter: *mut IndexFilter,
+        indexFilter: *mut crate::GlobalNamespace::IndexFilter,
         beatDistributionParam: f32,
         beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         brightnessDistributionParam: f32,
         brightnessDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         brightnessDistributionShouldAffectFirstBaseEvent: bool,
-        brightnessDistributionEaseType: EaseType,
+        brightnessDistributionEaseType: crate::GlobalNamespace::EaseType,
         lightColorBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut LightColorBaseData,
+            *mut crate::GlobalNamespace::LightColorBaseData,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -68,8 +68,10 @@ impl LightColorBeatmapEventDataBox {
         durationOrderIndex: i32,
         distributionOrderIndex: i32,
         maxBeat: f32,
-        beatToTimeConverter: *mut IBeatToTimeConverter,
-        output: *mut crate::System::Collections::Generic::List_1<*mut BeatmapEventData>,
+        beatToTimeConverter: *mut crate::GlobalNamespace::IBeatToTimeConverter,
+        output: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::BeatmapEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -92,15 +94,15 @@ impl LightColorBeatmapEventDataBox {
     }
     pub fn _ctor(
         &mut self,
-        indexFilter: *mut IndexFilter,
+        indexFilter: *mut crate::GlobalNamespace::IndexFilter,
         beatDistributionParam: f32,
         beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         brightnessDistributionParam: f32,
         brightnessDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         brightnessDistributionShouldAffectFirstBaseEvent: bool,
-        brightnessDistributionEaseType: EaseType,
+        brightnessDistributionEaseType: crate::GlobalNamespace::EaseType,
         lightColorBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut LightColorBaseData,
+            *mut crate::GlobalNamespace::LightColorBaseData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -138,7 +140,8 @@ impl LightColorBeatmapEventDataBox {
     }
 }
 #[cfg(feature = "LightColorBeatmapEventDataBox")]
-impl quest_hook::libil2cpp::ObjectType for LightColorBeatmapEventDataBox {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LightColorBeatmapEventDataBox {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

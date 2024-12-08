@@ -120,10 +120,10 @@ impl std::ops::DerefMut for crate::System::Net::Http::HttpContent {
 impl crate::System::Net::Http::HttpContent {
     #[cfg(feature = "System+Net+Http+HttpContent+FixedMemoryStream")]
     pub type FixedMemoryStream = crate::System::Net::Http::HttpContent_FixedMemoryStream;
-    #[cfg(feature = "System+Net+Http+HttpContent+_ReadAsStringAsync_d__20")]
-    pub type _ReadAsStringAsync_d__20 = crate::System::Net::Http::HttpContent__ReadAsStringAsync_d__20;
     #[cfg(feature = "System+Net+Http+HttpContent+_LoadIntoBufferAsync_d__17")]
     pub type _LoadIntoBufferAsync_d__17 = crate::System::Net::Http::HttpContent__LoadIntoBufferAsync_d__17;
+    #[cfg(feature = "System+Net+Http+HttpContent+_ReadAsStringAsync_d__20")]
+    pub type _ReadAsStringAsync_d__20 = crate::System::Net::Http::HttpContent__ReadAsStringAsync_d__20;
     pub fn CopyToAsync_Stream0(
         &mut self,
         stream: *mut crate::System::IO::Stream,

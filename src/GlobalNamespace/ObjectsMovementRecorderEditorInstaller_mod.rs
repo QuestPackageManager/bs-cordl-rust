@@ -6,24 +6,26 @@ pub struct ObjectsMovementRecorderEditorInstaller {
 }
 #[cfg(feature = "ObjectsMovementRecorderEditorInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ObjectsMovementRecorderEditorInstaller => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ObjectsMovementRecorderEditorInstaller => ""
     ."ObjectsMovementRecorderEditorInstaller"
 );
 #[cfg(feature = "ObjectsMovementRecorderEditorInstaller")]
-impl std::ops::Deref for ObjectsMovementRecorderEditorInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::ObjectsMovementRecorderEditorInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ObjectsMovementRecorderEditorInstaller")]
-impl std::ops::DerefMut for ObjectsMovementRecorderEditorInstaller {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::ObjectsMovementRecorderEditorInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ObjectsMovementRecorderEditorInstaller")]
-impl ObjectsMovementRecorderEditorInstaller {
+impl crate::GlobalNamespace::ObjectsMovementRecorderEditorInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -53,7 +55,8 @@ impl ObjectsMovementRecorderEditorInstaller {
     }
 }
 #[cfg(feature = "ObjectsMovementRecorderEditorInstaller")]
-impl quest_hook::libil2cpp::ObjectType for ObjectsMovementRecorderEditorInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ObjectsMovementRecorderEditorInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

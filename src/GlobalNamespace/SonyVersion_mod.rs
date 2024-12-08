@@ -8,23 +8,23 @@ pub struct SonyVersion {
 }
 #[cfg(feature = "SonyVersion")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SonyVersion => ""."SonyVersion"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SonyVersion => ""."SonyVersion"
 );
 #[cfg(feature = "SonyVersion")]
-impl std::ops::Deref for SonyVersion {
+impl std::ops::Deref for crate::GlobalNamespace::SonyVersion {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyVersion")]
-impl std::ops::DerefMut for SonyVersion {
+impl std::ops::DerefMut for crate::GlobalNamespace::SonyVersion {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyVersion")]
-impl SonyVersion {
+impl crate::GlobalNamespace::SonyVersion {
     #[cfg(feature = "SonyVersion+VersionFormat")]
     pub type VersionFormat = crate::GlobalNamespace::SonyVersion_VersionFormat;
     pub fn Get(
@@ -76,7 +76,7 @@ impl SonyVersion {
     }
 }
 #[cfg(feature = "SonyVersion")]
-impl quest_hook::libil2cpp::ObjectType for SonyVersion {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SonyVersion {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

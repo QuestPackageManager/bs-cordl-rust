@@ -4,16 +4,18 @@
 pub struct GameServerPlayersTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _tableView: *mut crate::HMUI::TableView,
-    pub _gameServerPlayerCellPrefab: *mut GameServerPlayerTableCell,
-    pub _gameServerPlayerCellWithoutSongsPrefab: *mut GameServerPlayerTableCell,
-    pub _gameServerPlayerCellWithoutModifiersPrefab: *mut GameServerPlayerTableCell,
+    pub _gameServerPlayerCellPrefab: *mut crate::GlobalNamespace::GameServerPlayerTableCell,
+    pub _gameServerPlayerCellWithoutSongsPrefab: *mut crate::GlobalNamespace::GameServerPlayerTableCell,
+    pub _gameServerPlayerCellWithoutModifiersPrefab: *mut crate::GlobalNamespace::GameServerPlayerTableCell,
     pub _tableHeaderSongGo: *mut crate::UnityEngine::GameObject,
     pub _tableHeaderModifiersGo: *mut crate::UnityEngine::GameObject,
     pub _container: *mut crate::Zenject::DiContainer,
-    pub _entitlementModel: *mut IEntitlementModel,
-    pub selectSuggestedLevelEvent: *mut crate::System::Action_1<BeatmapKey>,
+    pub _entitlementModel: *mut crate::GlobalNamespace::IEntitlementModel,
+    pub selectSuggestedLevelEvent: *mut crate::System::Action_1<
+        crate::GlobalNamespace::BeatmapKey,
+    >,
     pub selectSuggestedGameplayModifiersEvent: *mut crate::System::Action_1<
-        *mut GameplayModifiers,
+        *mut crate::GlobalNamespace::GameplayModifiers,
     >,
     pub kickPlayerEvent: *mut crate::System::Action_1<*mut crate::System::String>,
     pub _initialized: bool,
@@ -21,32 +23,32 @@ pub struct GameServerPlayersTableView {
     pub _allowSelection: bool,
     pub _showSongSelection: bool,
     pub _showModifierSelection: bool,
-    pub _selectedPlayer: *mut IConnectedPlayer,
+    pub _selectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
     pub _sortedConnectedPlayers: *mut crate::System::Collections::Generic::List_1<
-        *mut IConnectedPlayer,
+        *mut crate::GlobalNamespace::IConnectedPlayer,
     >,
-    pub _lobbyPlayersDataModel: *mut ILobbyPlayersDataModel,
+    pub _lobbyPlayersDataModel: *mut crate::GlobalNamespace::ILobbyPlayersDataModel,
 }
 #[cfg(feature = "GameServerPlayersTableView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameServerPlayersTableView => ""
-    ."GameServerPlayersTableView"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameServerPlayersTableView =>
+    ""."GameServerPlayersTableView"
 );
 #[cfg(feature = "GameServerPlayersTableView")]
-impl std::ops::Deref for GameServerPlayersTableView {
+impl std::ops::Deref for crate::GlobalNamespace::GameServerPlayersTableView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameServerPlayersTableView")]
-impl std::ops::DerefMut for GameServerPlayersTableView {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameServerPlayersTableView {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameServerPlayersTableView")]
-impl GameServerPlayersTableView {
+impl crate::GlobalNamespace::GameServerPlayersTableView {
     pub const kCellId: &'static str = "Cell";
     pub const kNoModifiersCellId: &'static str = "NoModifierCell";
     pub const kNoSongsCellId: &'static str = "NoSongCell";
@@ -71,11 +73,13 @@ impl GameServerPlayersTableView {
     }
     pub fn GetCurrentPrefab(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut GameServerPlayerTableCell> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::GameServerPlayerTableCell,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut GameServerPlayerTableCell = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::GameServerPlayerTableCell = __cordl_object
             .invoke("GetCurrentPrefab", ())?;
         Ok(__cordl_ret)
     }
@@ -139,9 +143,9 @@ impl GameServerPlayersTableView {
     pub fn SetData(
         &mut self,
         sortedPlayers: *mut crate::System::Collections::Generic::List_1<
-            *mut IConnectedPlayer,
+            *mut crate::GlobalNamespace::IConnectedPlayer,
         >,
-        lobbyPlayersDataModel: *mut ILobbyPlayersDataModel,
+        lobbyPlayersDataModel: *mut crate::GlobalNamespace::ILobbyPlayersDataModel,
         hasKickPermissions: bool,
         allowSelection: bool,
         showSongSelection: bool,
@@ -169,8 +173,12 @@ impl GameServerPlayersTableView {
     pub fn TryGetLobbyPlayerData(
         &mut self,
         idx: i32,
-        player: quest_hook::libil2cpp::ByRefMut<*mut IConnectedPlayer>,
-        playerData: quest_hook::libil2cpp::ByRefMut<*mut ILobbyPlayerData>,
+        player: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+        >,
+        playerData: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::GlobalNamespace::ILobbyPlayerData,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -202,7 +210,9 @@ impl GameServerPlayersTableView {
     }
     pub fn add_selectSuggestedGameplayModifiersEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut GameplayModifiers>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::GameplayModifiers,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -213,7 +223,7 @@ impl GameServerPlayersTableView {
     }
     pub fn add_selectSuggestedLevelEvent(
         &mut self,
-        value: *mut crate::System::Action_1<BeatmapKey>,
+        value: *mut crate::System::Action_1<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -245,7 +255,9 @@ impl GameServerPlayersTableView {
     }
     pub fn remove_selectSuggestedGameplayModifiersEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut GameplayModifiers>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::GameplayModifiers,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -256,7 +268,7 @@ impl GameServerPlayersTableView {
     }
     pub fn remove_selectSuggestedLevelEvent(
         &mut self,
-        value: *mut crate::System::Action_1<BeatmapKey>,
+        value: *mut crate::System::Action_1<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -267,7 +279,8 @@ impl GameServerPlayersTableView {
     }
 }
 #[cfg(feature = "GameServerPlayersTableView")]
-impl quest_hook::libil2cpp::ObjectType for GameServerPlayersTableView {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GameServerPlayersTableView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

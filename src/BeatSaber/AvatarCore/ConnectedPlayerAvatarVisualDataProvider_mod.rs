@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ConnectedPlayerAvatarVisualDataProvider {
     __cordl_parent: crate::System::Object,
-    pub _connectedPlayer: *mut IConnectedPlayer,
+    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerAvatarVisualDataProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -29,7 +29,7 @@ for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarVisualDataProvider {
 #[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerAvatarVisualDataProvider")]
 impl crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarVisualDataProvider {
     pub fn New(
-        connectedPlayer: *mut IConnectedPlayer,
+        connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -39,7 +39,7 @@ impl crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarVisualDataProvider {
     }
     pub fn _ctor(
         &mut self,
-        connectedPlayer: *mut IConnectedPlayer,
+        connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -50,11 +50,11 @@ impl crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarVisualDataProvider {
     }
     pub fn get_avatarsData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<MultiplayerAvatarsData> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::MultiplayerAvatarsData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: MultiplayerAvatarsData = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::MultiplayerAvatarsData = __cordl_object
             .invoke("get_avatarsData", ())?;
         Ok(__cordl_ret)
     }

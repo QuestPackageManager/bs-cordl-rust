@@ -9,24 +9,24 @@ pub struct OVRSemanticClassification {
 }
 #[cfg(feature = "OVRSemanticClassification")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRSemanticClassification => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRSemanticClassification => ""
     ."OVRSemanticClassification"
 );
 #[cfg(feature = "OVRSemanticClassification")]
-impl std::ops::Deref for OVRSemanticClassification {
+impl std::ops::Deref for crate::GlobalNamespace::OVRSemanticClassification {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSemanticClassification")]
-impl std::ops::DerefMut for OVRSemanticClassification {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRSemanticClassification {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSemanticClassification")]
-impl OVRSemanticClassification {
+impl crate::GlobalNamespace::OVRSemanticClassification {
     pub const LabelSeparator: char = ',';
     pub fn Awake(
         &mut self,
@@ -92,7 +92,8 @@ impl OVRSemanticClassification {
     }
 }
 #[cfg(feature = "OVRSemanticClassification")]
-impl quest_hook::libil2cpp::ObjectType for OVRSemanticClassification {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRSemanticClassification {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

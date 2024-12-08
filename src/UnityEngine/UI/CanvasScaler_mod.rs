@@ -39,12 +39,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::CanvasScaler {
 #[cfg(feature = "UnityEngine+UI+CanvasScaler")]
 impl crate::UnityEngine::UI::CanvasScaler {
     pub const kLogBase: f32 = 2f32;
-    #[cfg(feature = "UnityEngine+UI+CanvasScaler+Unit")]
-    pub type Unit = crate::UnityEngine::UI::CanvasScaler_Unit;
     #[cfg(feature = "UnityEngine+UI+CanvasScaler+ScaleMode")]
     pub type ScaleMode = crate::UnityEngine::UI::CanvasScaler_ScaleMode;
     #[cfg(feature = "UnityEngine+UI+CanvasScaler+ScreenMatchMode")]
     pub type ScreenMatchMode = crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode;
+    #[cfg(feature = "UnityEngine+UI+CanvasScaler+Unit")]
+    pub type Unit = crate::UnityEngine::UI::CanvasScaler_Unit;
     pub fn Canvas_preWillRenderCanvases(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

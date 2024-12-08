@@ -6,19 +6,19 @@ pub struct WaypointsTestMenuViewController {
     pub _btsButton: *mut crate::UnityEngine::UI::Button,
     pub _cancelButton: *mut crate::UnityEngine::UI::Button,
     pub _progressText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _waypointsTestScenesTransitionSetupData: *mut StandardLevelScenesTransitionSetupDataSO,
+    pub _waypointsTestScenesTransitionSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
     pub _previewLevels: *mut crate::System::Collections::Generic::List_1<
-        *mut BeatmapLevelSO,
+        *mut crate::GlobalNamespace::BeatmapLevelSO,
     >,
     pub _characteristics: *mut crate::System::Collections::Generic::List_1<
-        *mut BeatmapCharacteristicSO,
+        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     >,
-    pub _gameScenesManager: *mut GameScenesManager,
-    pub _playerDataModel: *mut PlayerDataModel,
-    pub _coroutineStarter: *mut ICoroutineStarter,
-    pub _environmentsListModel: *mut EnvironmentsListModel,
-    pub _audioClipAsyncLoader: *mut AudioClipAsyncLoader,
-    pub _beatmapDataLoader: *mut BeatmapDataLoader,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _coroutineStarter: *mut crate::GlobalNamespace::ICoroutineStarter,
+    pub _environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
+    pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
+    pub _beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
     pub _graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
     pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
     pub _isCancelled: bool,
@@ -26,24 +26,24 @@ pub struct WaypointsTestMenuViewController {
 }
 #[cfg(feature = "WaypointsTestMenuViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for WaypointsTestMenuViewController => ""
-    ."WaypointsTestMenuViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::WaypointsTestMenuViewController
+    => ""."WaypointsTestMenuViewController"
 );
 #[cfg(feature = "WaypointsTestMenuViewController")]
-impl std::ops::Deref for WaypointsTestMenuViewController {
+impl std::ops::Deref for crate::GlobalNamespace::WaypointsTestMenuViewController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "WaypointsTestMenuViewController")]
-impl std::ops::DerefMut for WaypointsTestMenuViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::WaypointsTestMenuViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "WaypointsTestMenuViewController")]
-impl WaypointsTestMenuViewController {
+impl crate::GlobalNamespace::WaypointsTestMenuViewController {
     #[cfg(feature = "WaypointsTestMenuViewController+_CheckBeatmaps_d__18")]
     pub type _CheckBeatmaps_d__18 = crate::GlobalNamespace::WaypointsTestMenuViewController__CheckBeatmaps_d__18;
     pub fn CheckBeatmaps(
@@ -58,8 +58,8 @@ impl WaypointsTestMenuViewController {
     }
     pub fn HandleMainGameSceneDidFinish(
         &mut self,
-        data: *mut StandardLevelScenesTransitionSetupDataSO,
-        results: *mut LevelCompletionResults,
+        data: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+        results: *mut crate::GlobalNamespace::LevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -138,7 +138,8 @@ impl WaypointsTestMenuViewController {
     }
 }
 #[cfg(feature = "WaypointsTestMenuViewController")]
-impl quest_hook::libil2cpp::ObjectType for WaypointsTestMenuViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::WaypointsTestMenuViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

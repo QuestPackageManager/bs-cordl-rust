@@ -3,29 +3,31 @@
 #[derive(Debug)]
 pub struct SongPreviewPlayerPauseOnInputFocusLost {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _songPreviewPlayer: *mut AudioPlayerBase,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
+    pub _songPreviewPlayer: *mut crate::GlobalNamespace::AudioPlayerBase,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
 }
 #[cfg(feature = "SongPreviewPlayerPauseOnInputFocusLost")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SongPreviewPlayerPauseOnInputFocusLost => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SongPreviewPlayerPauseOnInputFocusLost => ""
     ."SongPreviewPlayerPauseOnInputFocusLost"
 );
 #[cfg(feature = "SongPreviewPlayerPauseOnInputFocusLost")]
-impl std::ops::Deref for SongPreviewPlayerPauseOnInputFocusLost {
+impl std::ops::Deref for crate::GlobalNamespace::SongPreviewPlayerPauseOnInputFocusLost {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongPreviewPlayerPauseOnInputFocusLost")]
-impl std::ops::DerefMut for SongPreviewPlayerPauseOnInputFocusLost {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::SongPreviewPlayerPauseOnInputFocusLost {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongPreviewPlayerPauseOnInputFocusLost")]
-impl SongPreviewPlayerPauseOnInputFocusLost {
+impl crate::GlobalNamespace::SongPreviewPlayerPauseOnInputFocusLost {
     pub fn HandleInputFocusCaptured(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -85,7 +87,8 @@ impl SongPreviewPlayerPauseOnInputFocusLost {
     }
 }
 #[cfg(feature = "SongPreviewPlayerPauseOnInputFocusLost")]
-impl quest_hook::libil2cpp::ObjectType for SongPreviewPlayerPauseOnInputFocusLost {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SongPreviewPlayerPauseOnInputFocusLost {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,33 +2,36 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerDisappearingArrowController {
-    __cordl_parent: DisappearingArrowControllerBase_1<
-        *mut MultiplayerConnectedPlayerGameNoteController,
+    __cordl_parent: crate::GlobalNamespace::DisappearingArrowControllerBase_1<
+        *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
     >,
-    pub _gameNoteController: *mut MultiplayerConnectedPlayerGameNoteController,
+    pub _gameNoteController: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerDisappearingArrowController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerConnectedPlayerDisappearingArrowController =>
-    ""."MultiplayerConnectedPlayerDisappearingArrowController"
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerConnectedPlayerDisappearingArrowController => ""
+    ."MultiplayerConnectedPlayerDisappearingArrowController"
 );
 #[cfg(feature = "MultiplayerConnectedPlayerDisappearingArrowController")]
-impl std::ops::Deref for MultiplayerConnectedPlayerDisappearingArrowController {
-    type Target = DisappearingArrowControllerBase_1<
-        *mut MultiplayerConnectedPlayerGameNoteController,
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerConnectedPlayerDisappearingArrowController {
+    type Target = crate::GlobalNamespace::DisappearingArrowControllerBase_1<
+        *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerDisappearingArrowController")]
-impl std::ops::DerefMut for MultiplayerConnectedPlayerDisappearingArrowController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerConnectedPlayerDisappearingArrowController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerDisappearingArrowController")]
-impl MultiplayerConnectedPlayerDisappearingArrowController {
+impl crate::GlobalNamespace::MultiplayerConnectedPlayerDisappearingArrowController {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -49,19 +52,19 @@ impl MultiplayerConnectedPlayerDisappearingArrowController {
     pub fn get_gameNoteController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut MultiplayerConnectedPlayerGameNoteController,
+        *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MultiplayerConnectedPlayerGameNoteController = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController = __cordl_object
             .invoke("get_gameNoteController", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerDisappearingArrowController")]
 impl quest_hook::libil2cpp::ObjectType
-for MultiplayerConnectedPlayerDisappearingArrowController {
+for crate::GlobalNamespace::MultiplayerConnectedPlayerDisappearingArrowController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct OVRTask_1_Awaiter<TResult: quest_hook::libil2cpp::Type> {
-    pub _task: OVRTask_1<TResult>,
+    pub _task: crate::GlobalNamespace::OVRTask_1<TResult>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "OVRTask_1+Awaiter")]
@@ -54,7 +54,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        task: OVRTask_1<TResult>,
+        task: crate::GlobalNamespace::OVRTask_1<TResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -671,12 +671,12 @@ pub struct OVRTask_1<TResult: quest_hook::libil2cpp::Type> {
 }
 #[cfg(feature = "OVRTask_1")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for OVRTask_1 < TResult > => ""."OVRTask`1<TResult>" <
-    TResult >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRTask_1 < TResult > => ""
+    ."OVRTask`1<TResult>" < TResult >
 );
 #[cfg(feature = "OVRTask_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
-for OVRTask_1<TResult> {
+for crate::GlobalNamespace::OVRTask_1<TResult> {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -686,21 +686,17 @@ for OVRTask_1<TResult> {
     }
 }
 #[cfg(feature = "OVRTask_1")]
-impl<TResult: quest_hook::libil2cpp::Type> OVRTask_1<TResult> {
+impl<TResult: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRTask_1<TResult> {
     #[cfg(feature = "OVRTask_1+Awaiter")]
     pub type Awaiter = crate::GlobalNamespace::OVRTask_1_Awaiter<TResult>;
+    #[cfg(feature = "OVRTask_1+Callback")]
+    pub type Callback = crate::GlobalNamespace::OVRTask_1_Callback<TResult>;
     #[cfg(feature = "OVRTask_1+CallbackInvoker")]
     pub type CallbackInvoker = crate::GlobalNamespace::OVRTask_1_CallbackInvoker<
         TResult,
     >;
-    #[cfg(feature = "OVRTask_1+Callback")]
-    pub type Callback = crate::GlobalNamespace::OVRTask_1_Callback<TResult>;
     #[cfg(feature = "OVRTask_1+CallbackRemover")]
     pub type CallbackRemover = crate::GlobalNamespace::OVRTask_1_CallbackRemover<
-        TResult,
-    >;
-    #[cfg(feature = "OVRTask_1+InternalDataRemover")]
-    pub type InternalDataRemover = crate::GlobalNamespace::OVRTask_1_InternalDataRemover<
         TResult,
     >;
     #[cfg(feature = "OVRTask_1+CallbackWithState_1")]
@@ -708,13 +704,17 @@ impl<TResult: quest_hook::libil2cpp::Type> OVRTask_1<TResult> {
         TResult,
         T,
     >;
-    #[cfg(feature = "OVRTask_1+InternalData_1")]
-    pub type InternalData_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRTask_1_InternalData_1<
+    #[cfg(feature = "OVRTask_1+IncrementalResultSubscriber_1")]
+    pub type IncrementalResultSubscriber_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRTask_1_IncrementalResultSubscriber_1<
         TResult,
         T,
     >;
-    #[cfg(feature = "OVRTask_1+IncrementalResultSubscriber_1")]
-    pub type IncrementalResultSubscriber_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRTask_1_IncrementalResultSubscriber_1<
+    #[cfg(feature = "OVRTask_1+InternalDataRemover")]
+    pub type InternalDataRemover = crate::GlobalNamespace::OVRTask_1_InternalDataRemover<
+        TResult,
+    >;
+    #[cfg(feature = "OVRTask_1+InternalData_1")]
+    pub type InternalData_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRTask_1_InternalData_1<
         TResult,
         T,
     >;
@@ -781,7 +781,7 @@ impl<TResult: quest_hook::libil2cpp::Type> OVRTask_1<TResult> {
     }
     pub fn Equals_OVRTask_1_0(
         &mut self,
-        other: OVRTask_1<TResult>,
+        other: crate::GlobalNamespace::OVRTask_1<TResult>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

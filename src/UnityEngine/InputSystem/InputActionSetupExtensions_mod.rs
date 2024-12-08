@@ -693,13 +693,13 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions {
     )]
     pub type CompositeSyntax = crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax;
     #[cfg(
-        feature = "UnityEngine+InputSystem+InputActionSetupExtensions+__c__DisplayClass5_0"
-    )]
-    pub type __c__DisplayClass5_0 = crate::UnityEngine::InputSystem::InputActionSetupExtensions___c__DisplayClass5_0;
-    #[cfg(
         feature = "UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
     )]
     pub type ControlSchemeSyntax = crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputActionSetupExtensions+__c__DisplayClass5_0"
+    )]
+    pub type __c__DisplayClass5_0 = crate::UnityEngine::InputSystem::InputActionSetupExtensions___c__DisplayClass5_0;
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
 impl quest_hook::libil2cpp::ObjectType

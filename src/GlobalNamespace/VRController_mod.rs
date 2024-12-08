@@ -6,10 +6,10 @@ pub struct VRController {
     pub _node: crate::UnityEngine::XR::XRNode,
     pub _nodeIdx: i32,
     pub _viewAnchorTransform: *mut crate::UnityEngine::Transform,
-    pub _transformOffset: *mut VRControllerTransformOffset,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
+    pub _transformOffset: *mut crate::GlobalNamespace::VRControllerTransformOffset,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
     pub anchorUpdateEvent: *mut crate::System::Action_2<
-        *mut VRController,
+        *mut crate::GlobalNamespace::VRController,
         crate::UnityEngine::Pose,
     >,
     pub _lastTrackedPosition: crate::UnityEngine::Vector3,
@@ -18,26 +18,27 @@ pub struct VRController {
 }
 #[cfg(feature = "VRController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for VRController => ""."VRController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::VRController => ""
+    ."VRController"
 );
 #[cfg(feature = "VRController")]
-impl std::ops::Deref for VRController {
+impl std::ops::Deref for crate::GlobalNamespace::VRController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "VRController")]
-impl std::ops::DerefMut for VRController {
+impl std::ops::DerefMut for crate::GlobalNamespace::VRController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "VRController")]
-impl VRController {
+impl crate::GlobalNamespace::VRController {
     pub fn Init(
         &mut self,
-        vrPlatformHelper: *mut IVRPlatformHelper,
+        vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -137,7 +138,10 @@ impl VRController {
     }
     pub fn add_anchorUpdateEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut VRController, crate::UnityEngine::Pose>,
+        value: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::VRController,
+            crate::UnityEngine::Pose,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -236,7 +240,10 @@ impl VRController {
     }
     pub fn remove_anchorUpdateEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut VRController, crate::UnityEngine::Pose>,
+        value: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::VRController,
+            crate::UnityEngine::Pose,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -280,7 +287,7 @@ impl VRController {
     }
 }
 #[cfg(feature = "VRController")]
-impl quest_hook::libil2cpp::ObjectType for VRController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::VRController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -28,14 +28,14 @@ impl std::ops::DerefMut for crate::Unity::Properties::Internal::Vector4PropertyB
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag")]
 impl crate::Unity::Properties::Internal::Vector4PropertyBag {
+    #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+WProperty")]
+    pub type WProperty = crate::Unity::Properties::Internal::Vector4PropertyBag_WProperty;
     #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+XProperty")]
     pub type XProperty = crate::Unity::Properties::Internal::Vector4PropertyBag_XProperty;
     #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+YProperty")]
     pub type YProperty = crate::Unity::Properties::Internal::Vector4PropertyBag_YProperty;
     #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+ZProperty")]
     pub type ZProperty = crate::Unity::Properties::Internal::Vector4PropertyBag_ZProperty;
-    #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+WProperty")]
-    pub type WProperty = crate::Unity::Properties::Internal::Vector4PropertyBag_WProperty;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

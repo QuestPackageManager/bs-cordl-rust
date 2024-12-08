@@ -8,29 +8,31 @@ pub struct BeatmapObjectAvoidanceYOffsetEvaluator {
     pub _yJumpOffsetBuffer: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData,
     >,
-    pub _audioTimeSource: *mut IAudioTimeSource,
-    pub _beatmapObjectSpawnController: *mut IBeatmapObjectSpawnController,
+    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _beatmapObjectSpawnController: *mut crate::GlobalNamespace::IBeatmapObjectSpawnController,
 }
 #[cfg(feature = "BeatmapObjectAvoidanceYOffsetEvaluator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapObjectAvoidanceYOffsetEvaluator => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator => ""
     ."BeatmapObjectAvoidanceYOffsetEvaluator"
 );
 #[cfg(feature = "BeatmapObjectAvoidanceYOffsetEvaluator")]
-impl std::ops::Deref for BeatmapObjectAvoidanceYOffsetEvaluator {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapObjectAvoidanceYOffsetEvaluator")]
-impl std::ops::DerefMut for BeatmapObjectAvoidanceYOffsetEvaluator {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapObjectAvoidanceYOffsetEvaluator")]
-impl BeatmapObjectAvoidanceYOffsetEvaluator {
+impl crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
     pub const kYJumpOffsetBufferLength: i32 = 2000i32;
     pub const kYJumpOffsetBufferSongTimeInitValue: f32 = -1000f32;
     #[cfg(feature = "BeatmapObjectAvoidanceYOffsetEvaluator+BufferData")]
@@ -57,8 +59,8 @@ impl BeatmapObjectAvoidanceYOffsetEvaluator {
         Ok(__cordl_ret)
     }
     pub fn New(
-        audioTimeSource: *mut IAudioTimeSource,
-        beatmapObjectSpawnController: *mut IBeatmapObjectSpawnController,
+        audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+        beatmapObjectSpawnController: *mut crate::GlobalNamespace::IBeatmapObjectSpawnController,
         moveToPlayerHeadTParam: f32,
         noteSpawnData: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -78,8 +80,8 @@ impl BeatmapObjectAvoidanceYOffsetEvaluator {
     }
     pub fn _ctor(
         &mut self,
-        audioTimeSource: *mut IAudioTimeSource,
-        beatmapObjectSpawnController: *mut IBeatmapObjectSpawnController,
+        audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+        beatmapObjectSpawnController: *mut crate::GlobalNamespace::IBeatmapObjectSpawnController,
         moveToPlayerHeadTParam: f32,
         noteSpawnData: crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -100,7 +102,8 @@ impl BeatmapObjectAvoidanceYOffsetEvaluator {
     }
 }
 #[cfg(feature = "BeatmapObjectAvoidanceYOffsetEvaluator")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapObjectAvoidanceYOffsetEvaluator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

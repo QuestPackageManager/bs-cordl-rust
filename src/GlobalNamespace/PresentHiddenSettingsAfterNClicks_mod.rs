@@ -6,30 +6,31 @@ pub struct PresentHiddenSettingsAfterNClicks {
     pub _hiddenSettingsButton: *mut crate::UnityEngine::UI::Button,
     pub _hiddenSettingsViewController: *mut crate::HMUI::ViewController,
     pub _numberOfClicksRequired: i32,
-    pub _settingsFlowCoordinator: *mut SettingsFlowCoordinator,
+    pub _settingsFlowCoordinator: *mut crate::GlobalNamespace::SettingsFlowCoordinator,
     pub _currentNumberOfClicks: i32,
     pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
 }
 #[cfg(feature = "PresentHiddenSettingsAfterNClicks")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PresentHiddenSettingsAfterNClicks => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PresentHiddenSettingsAfterNClicks => ""
     ."PresentHiddenSettingsAfterNClicks"
 );
 #[cfg(feature = "PresentHiddenSettingsAfterNClicks")]
-impl std::ops::Deref for PresentHiddenSettingsAfterNClicks {
+impl std::ops::Deref for crate::GlobalNamespace::PresentHiddenSettingsAfterNClicks {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PresentHiddenSettingsAfterNClicks")]
-impl std::ops::DerefMut for PresentHiddenSettingsAfterNClicks {
+impl std::ops::DerefMut for crate::GlobalNamespace::PresentHiddenSettingsAfterNClicks {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PresentHiddenSettingsAfterNClicks")]
-impl PresentHiddenSettingsAfterNClicks {
+impl crate::GlobalNamespace::PresentHiddenSettingsAfterNClicks {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -79,7 +80,8 @@ impl PresentHiddenSettingsAfterNClicks {
     }
 }
 #[cfg(feature = "PresentHiddenSettingsAfterNClicks")]
-impl quest_hook::libil2cpp::ObjectType for PresentHiddenSettingsAfterNClicks {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PresentHiddenSettingsAfterNClicks {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

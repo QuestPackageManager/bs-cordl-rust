@@ -67,20 +67,20 @@ impl std::ops::DerefMut for crate::Zenject::DiContainer {
 }
 #[cfg(feature = "Zenject+DiContainer")]
 impl crate::Zenject::DiContainer {
-    #[cfg(feature = "Zenject+DiContainer+__c__DisplayClass178_0")]
-    pub type __c__DisplayClass178_0 = crate::Zenject::DiContainer___c__DisplayClass178_0;
     #[cfg(feature = "Zenject+DiContainer+ProviderInfo")]
     pub type ProviderInfo = crate::Zenject::DiContainer_ProviderInfo;
+    #[cfg(feature = "Zenject+DiContainer+_GetDependencyContracts_d__96")]
+    pub type _GetDependencyContracts_d__96 = crate::Zenject::DiContainer__GetDependencyContracts_d__96;
     #[cfg(feature = "Zenject+DiContainer+__c")]
     pub type __c = crate::Zenject::DiContainer___c;
+    #[cfg(feature = "Zenject+DiContainer+__c__DisplayClass178_0")]
+    pub type __c__DisplayClass178_0 = crate::Zenject::DiContainer___c__DisplayClass178_0;
     #[cfg(feature = "Zenject+DiContainer+__c__DisplayClass203_0_1")]
     pub type __c__DisplayClass203_0_1<TContract: quest_hook::libil2cpp::Type> = crate::Zenject::DiContainer___c__DisplayClass203_0_1<
         TContract,
     >;
     #[cfg(feature = "Zenject+DiContainer+__c__DisplayClass86_0")]
     pub type __c__DisplayClass86_0 = crate::Zenject::DiContainer___c__DisplayClass86_0;
-    #[cfg(feature = "Zenject+DiContainer+_GetDependencyContracts_d__96")]
-    pub type _GetDependencyContracts_d__96 = crate::Zenject::DiContainer__GetDependencyContracts_d__96;
     pub fn BindDisposableExecutionOrder_Type_i32_1(
         &mut self,
         _cordl_type: *mut crate::System::Type,

@@ -6,27 +6,28 @@ pub struct IFlyingObjectEffectDidFinishEvent {
 }
 #[cfg(feature = "IFlyingObjectEffectDidFinishEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IFlyingObjectEffectDidFinishEvent => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::IFlyingObjectEffectDidFinishEvent => ""
     ."IFlyingObjectEffectDidFinishEvent"
 );
 #[cfg(feature = "IFlyingObjectEffectDidFinishEvent")]
-impl std::ops::Deref for IFlyingObjectEffectDidFinishEvent {
+impl std::ops::Deref for crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IFlyingObjectEffectDidFinishEvent")]
-impl std::ops::DerefMut for IFlyingObjectEffectDidFinishEvent {
+impl std::ops::DerefMut for crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IFlyingObjectEffectDidFinishEvent")]
-impl IFlyingObjectEffectDidFinishEvent {
+impl crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent {
     pub fn HandleFlyingObjectEffectDidFinish(
         &mut self,
-        flyingObjectEffect: *mut FlyingObjectEffect,
+        flyingObjectEffect: *mut crate::GlobalNamespace::FlyingObjectEffect,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -42,7 +43,8 @@ impl IFlyingObjectEffectDidFinishEvent {
     }
 }
 #[cfg(feature = "IFlyingObjectEffectDidFinishEvent")]
-impl quest_hook::libil2cpp::ObjectType for IFlyingObjectEffectDidFinishEvent {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

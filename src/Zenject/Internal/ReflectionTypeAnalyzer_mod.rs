@@ -24,24 +24,24 @@ impl std::ops::DerefMut for crate::Zenject::Internal::ReflectionTypeAnalyzer {
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeAnalyzer")]
 impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
-    #[cfg(feature = "Zenject+Internal+ReflectionTypeAnalyzer+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::Zenject::Internal::ReflectionTypeAnalyzer___c__DisplayClass6_0;
     #[cfg(feature = "Zenject+Internal+ReflectionTypeAnalyzer+__c")]
     pub type __c = crate::Zenject::Internal::ReflectionTypeAnalyzer___c;
-    #[cfg(feature = "Zenject+Internal+ReflectionTypeAnalyzer+__c__DisplayClass7_0")]
-    pub type __c__DisplayClass7_0 = crate::Zenject::Internal::ReflectionTypeAnalyzer___c__DisplayClass7_0;
     #[cfg(feature = "Zenject+Internal+ReflectionTypeAnalyzer+__c__DisplayClass11_0")]
     pub type __c__DisplayClass11_0 = crate::Zenject::Internal::ReflectionTypeAnalyzer___c__DisplayClass11_0;
+    #[cfg(feature = "Zenject+Internal+ReflectionTypeAnalyzer+__c__DisplayClass5_0")]
+    pub type __c__DisplayClass5_0 = crate::Zenject::Internal::ReflectionTypeAnalyzer___c__DisplayClass5_0;
     #[cfg(feature = "Zenject+Internal+ReflectionTypeAnalyzer+__c__DisplayClass5_1")]
     pub type __c__DisplayClass5_1 = crate::Zenject::Internal::ReflectionTypeAnalyzer___c__DisplayClass5_1;
+    #[cfg(feature = "Zenject+Internal+ReflectionTypeAnalyzer+__c__DisplayClass6_0")]
+    pub type __c__DisplayClass6_0 = crate::Zenject::Internal::ReflectionTypeAnalyzer___c__DisplayClass6_0;
+    #[cfg(feature = "Zenject+Internal+ReflectionTypeAnalyzer+__c__DisplayClass6_1")]
+    pub type __c__DisplayClass6_1 = crate::Zenject::Internal::ReflectionTypeAnalyzer___c__DisplayClass6_1;
+    #[cfg(feature = "Zenject+Internal+ReflectionTypeAnalyzer+__c__DisplayClass7_0")]
+    pub type __c__DisplayClass7_0 = crate::Zenject::Internal::ReflectionTypeAnalyzer___c__DisplayClass7_0;
     #[cfg(feature = "Zenject+Internal+ReflectionTypeAnalyzer+__c__DisplayClass7_1")]
     pub type __c__DisplayClass7_1 = crate::Zenject::Internal::ReflectionTypeAnalyzer___c__DisplayClass7_1;
     #[cfg(feature = "Zenject+Internal+ReflectionTypeAnalyzer+__c__DisplayClass8_0")]
     pub type __c__DisplayClass8_0 = crate::Zenject::Internal::ReflectionTypeAnalyzer___c__DisplayClass8_0;
-    #[cfg(feature = "Zenject+Internal+ReflectionTypeAnalyzer+__c__DisplayClass5_0")]
-    pub type __c__DisplayClass5_0 = crate::Zenject::Internal::ReflectionTypeAnalyzer___c__DisplayClass5_0;
-    #[cfg(feature = "Zenject+Internal+ReflectionTypeAnalyzer+__c__DisplayClass6_1")]
-    pub type __c__DisplayClass6_1 = crate::Zenject::Internal::ReflectionTypeAnalyzer___c__DisplayClass6_1;
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeAnalyzer")]
 impl quest_hook::libil2cpp::ObjectType

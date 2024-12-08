@@ -21,7 +21,7 @@ pub struct TimelineArrayReference {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub arrayType: crate::GlobalNamespace::TimelineArrayReference_ArrayTypes,
     pub _tubeLightArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut TubeBloomPrePassLight,
+        *mut crate::GlobalNamespace::TubeBloomPrePassLight,
     >,
     pub _canvasGroupArray: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::CanvasGroup,
@@ -33,28 +33,29 @@ pub struct TimelineArrayReference {
         *mut crate::UnityEngine::Transform,
     >,
     pub _directionalLights: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut DirectionalLight,
+        *mut crate::GlobalNamespace::DirectionalLight,
     >,
 }
 #[cfg(feature = "TimelineArrayReference")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TimelineArrayReference => ""."TimelineArrayReference"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TimelineArrayReference => ""
+    ."TimelineArrayReference"
 );
 #[cfg(feature = "TimelineArrayReference")]
-impl std::ops::Deref for TimelineArrayReference {
+impl std::ops::Deref for crate::GlobalNamespace::TimelineArrayReference {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TimelineArrayReference")]
-impl std::ops::DerefMut for TimelineArrayReference {
+impl std::ops::DerefMut for crate::GlobalNamespace::TimelineArrayReference {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TimelineArrayReference")]
-impl TimelineArrayReference {
+impl crate::GlobalNamespace::TimelineArrayReference {
     #[cfg(feature = "TimelineArrayReference+ArrayTypes")]
     pub type ArrayTypes = crate::GlobalNamespace::TimelineArrayReference_ArrayTypes;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -76,7 +77,8 @@ impl TimelineArrayReference {
     }
 }
 #[cfg(feature = "TimelineArrayReference")]
-impl quest_hook::libil2cpp::ObjectType for TimelineArrayReference {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::TimelineArrayReference {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

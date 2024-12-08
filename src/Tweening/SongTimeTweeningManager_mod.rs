@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SongTimeTweeningManager {
     __cordl_parent: crate::Tweening::TweeningManager,
-    pub _audioTimeSource: *mut IAudioTimeSource,
+    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
 }
 #[cfg(feature = "Tweening+SongTimeTweeningManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

@@ -30,12 +30,12 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Guid {
 }
 #[cfg(feature = "System+Guid")]
 impl crate::System::Guid {
+    #[cfg(feature = "System+Guid+GuidParseThrowStyle")]
+    pub type GuidParseThrowStyle = crate::System::Guid_GuidParseThrowStyle;
     #[cfg(feature = "System+Guid+GuidResult")]
     pub type GuidResult = crate::System::Guid_GuidResult;
     #[cfg(feature = "System+Guid+GuidStyles")]
     pub type GuidStyles = crate::System::Guid_GuidStyles;
-    #[cfg(feature = "System+Guid+GuidParseThrowStyle")]
-    pub type GuidParseThrowStyle = crate::System::Guid_GuidParseThrowStyle;
     #[cfg(feature = "System+Guid+ParseFailureKind")]
     pub type ParseFailureKind = crate::System::Guid_ParseFailureKind;
     pub fn CompareTo_Guid1(

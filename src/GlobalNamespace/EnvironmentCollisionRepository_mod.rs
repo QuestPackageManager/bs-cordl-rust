@@ -5,29 +5,29 @@ pub struct EnvironmentCollisionRepository {
     __cordl_parent: crate::System::Object,
     pub _colliders: *mut crate::System::Collections::Generic::Dictionary_2<
         *mut crate::UnityEngine::Collider,
-        *mut ColliderEventEffect,
+        *mut crate::GlobalNamespace::ColliderEventEffect,
     >,
 }
 #[cfg(feature = "EnvironmentCollisionRepository")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnvironmentCollisionRepository => ""
-    ."EnvironmentCollisionRepository"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnvironmentCollisionRepository
+    => ""."EnvironmentCollisionRepository"
 );
 #[cfg(feature = "EnvironmentCollisionRepository")]
-impl std::ops::Deref for EnvironmentCollisionRepository {
+impl std::ops::Deref for crate::GlobalNamespace::EnvironmentCollisionRepository {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentCollisionRepository")]
-impl std::ops::DerefMut for EnvironmentCollisionRepository {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentCollisionRepository {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentCollisionRepository")]
-impl EnvironmentCollisionRepository {
+impl crate::GlobalNamespace::EnvironmentCollisionRepository {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -37,7 +37,7 @@ impl EnvironmentCollisionRepository {
     }
     pub fn RegisterColliderEventEffect(
         &mut self,
-        colliderEventEffect: *mut ColliderEventEffect,
+        colliderEventEffect: *mut crate::GlobalNamespace::ColliderEventEffect,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -49,7 +49,9 @@ impl EnvironmentCollisionRepository {
     pub fn TryGetColliderEventEffect(
         &mut self,
         collider: *mut crate::UnityEngine::Collider,
-        colliderEventEffect: quest_hook::libil2cpp::ByRefMut<*mut ColliderEventEffect>,
+        colliderEventEffect: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::GlobalNamespace::ColliderEventEffect,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -70,7 +72,8 @@ impl EnvironmentCollisionRepository {
     }
 }
 #[cfg(feature = "EnvironmentCollisionRepository")]
-impl quest_hook::libil2cpp::ObjectType for EnvironmentCollisionRepository {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EnvironmentCollisionRepository {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

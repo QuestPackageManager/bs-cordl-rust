@@ -31,11 +31,11 @@ impl crate::BeatSaber::AvatarCore::IAvatarVisualDataProvider {
     }
     pub fn get_avatarsData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<MultiplayerAvatarsData> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::MultiplayerAvatarsData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: MultiplayerAvatarsData = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::MultiplayerAvatarsData = __cordl_object
             .invoke("get_avatarsData", ())?;
         Ok(__cordl_ret)
     }

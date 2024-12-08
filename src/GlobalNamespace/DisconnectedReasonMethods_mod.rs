@@ -6,24 +6,24 @@ pub struct DisconnectedReasonMethods {
 }
 #[cfg(feature = "DisconnectedReasonMethods")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for DisconnectedReasonMethods => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::DisconnectedReasonMethods => ""
     ."DisconnectedReasonMethods"
 );
 #[cfg(feature = "DisconnectedReasonMethods")]
-impl std::ops::Deref for DisconnectedReasonMethods {
+impl std::ops::Deref for crate::GlobalNamespace::DisconnectedReasonMethods {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DisconnectedReasonMethods")]
-impl std::ops::DerefMut for DisconnectedReasonMethods {
+impl std::ops::DerefMut for crate::GlobalNamespace::DisconnectedReasonMethods {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "DisconnectedReasonMethods")]
-impl DisconnectedReasonMethods {
+impl crate::GlobalNamespace::DisconnectedReasonMethods {
     pub const kDisconnectedKicked: &'static str = "DISCONNECTED_KICKED";
     pub const kDisconnectedMasterServerUnreachable: &'static str = "DISCONNECTED_MASTER_SERVER_UNREACHABLE";
     pub const kDisconnectedServerAtCapacity: &'static str = "DISCONNECTED_SERVER_AT_CAPACITY";
@@ -34,7 +34,8 @@ impl DisconnectedReasonMethods {
     pub const kDisconnectedUserInitiated: &'static str = "DISCONNECTED_USER_INITIATED";
 }
 #[cfg(feature = "DisconnectedReasonMethods")]
-impl quest_hook::libil2cpp::ObjectType for DisconnectedReasonMethods {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::DisconnectedReasonMethods {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

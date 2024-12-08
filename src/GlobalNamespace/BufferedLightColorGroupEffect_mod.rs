@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct BufferedLightColorGroupEffect {
     __cordl_parent: crate::System::Object,
-    pub _colorManager: *mut ColorManager,
-    pub _materialPropertyBlockController: *mut MaterialPropertyBlockController,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
-    pub _colorBoostBeatmapDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
+    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _colorBoostBeatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     pub _lightColorBeatmapEventCallbackWrappers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut BeatmapDataCallbackWrapper,
+        *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,
     pub _lastIndex: i32,
     pub _timesBuffer: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
@@ -21,24 +21,24 @@ pub struct BufferedLightColorGroupEffect {
 }
 #[cfg(feature = "BufferedLightColorGroupEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BufferedLightColorGroupEffect => ""
-    ."BufferedLightColorGroupEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BufferedLightColorGroupEffect
+    => ""."BufferedLightColorGroupEffect"
 );
 #[cfg(feature = "BufferedLightColorGroupEffect")]
-impl std::ops::Deref for BufferedLightColorGroupEffect {
+impl std::ops::Deref for crate::GlobalNamespace::BufferedLightColorGroupEffect {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BufferedLightColorGroupEffect")]
-impl std::ops::DerefMut for BufferedLightColorGroupEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::BufferedLightColorGroupEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BufferedLightColorGroupEffect")]
-impl BufferedLightColorGroupEffect {
+impl crate::GlobalNamespace::BufferedLightColorGroupEffect {
     pub const kBufferSize: i32 = 24i32;
     #[cfg(feature = "BufferedLightColorGroupEffect+InitData")]
     pub type InitData = crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData;
@@ -54,7 +54,7 @@ impl BufferedLightColorGroupEffect {
     }
     pub fn GetColor(
         &mut self,
-        colorType: EnvironmentColorType,
+        colorType: crate::GlobalNamespace::EnvironmentColorType,
         colorBoost: bool,
         brightness: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
@@ -80,7 +80,7 @@ impl BufferedLightColorGroupEffect {
     }
     pub fn HandleColorBoostBeatmapEvent(
         &mut self,
-        colorBoost: *mut ColorBoostBeatmapEventData,
+        colorBoost: *mut crate::GlobalNamespace::ColorBoostBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -91,7 +91,7 @@ impl BufferedLightColorGroupEffect {
     }
     pub fn HandleColorChangeBeatmapEvent(
         &mut self,
-        currentEvent: *mut LightColorBeatmapEventData,
+        currentEvent: *mut crate::GlobalNamespace::LightColorBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -102,8 +102,8 @@ impl BufferedLightColorGroupEffect {
     }
     pub fn New(
         initData: *mut crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData,
-        colorManager: *mut ColorManager,
-        beatmapCallbacksController: *mut BeatmapCallbacksController,
+        colorManager: *mut crate::GlobalNamespace::ColorManager,
+        beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -114,8 +114,8 @@ impl BufferedLightColorGroupEffect {
     pub fn _ctor(
         &mut self,
         initData: *mut crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData,
-        colorManager: *mut ColorManager,
-        beatmapCallbacksController: *mut BeatmapCallbacksController,
+        colorManager: *mut crate::GlobalNamespace::ColorManager,
+        beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -126,7 +126,8 @@ impl BufferedLightColorGroupEffect {
     }
 }
 #[cfg(feature = "BufferedLightColorGroupEffect")]
-impl quest_hook::libil2cpp::ObjectType for BufferedLightColorGroupEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BufferedLightColorGroupEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -139,8 +140,8 @@ impl quest_hook::libil2cpp::ObjectType for BufferedLightColorGroupEffect {
 #[derive(Debug)]
 pub struct BufferedLightColorGroupEffect_InitData {
     __cordl_parent: crate::System::Object,
-    pub lightGroup: *mut LightGroup,
-    pub materialPropertyBlockController: *mut MaterialPropertyBlockController,
+    pub lightGroup: *mut crate::GlobalNamespace::LightGroup,
+    pub materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
 }
 #[cfg(feature = "BufferedLightColorGroupEffect+InitData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -165,8 +166,8 @@ for crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData {
 #[cfg(feature = "BufferedLightColorGroupEffect+InitData")]
 impl crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData {
     pub fn New(
-        lightGroup: *mut LightGroup,
-        materialPropertyBlockController: *mut MaterialPropertyBlockController,
+        lightGroup: *mut crate::GlobalNamespace::LightGroup,
+        materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -176,8 +177,8 @@ impl crate::GlobalNamespace::BufferedLightColorGroupEffect_InitData {
     }
     pub fn _ctor(
         &mut self,
-        lightGroup: *mut LightGroup,
-        materialPropertyBlockController: *mut MaterialPropertyBlockController,
+        lightGroup: *mut crate::GlobalNamespace::LightGroup,
+        materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

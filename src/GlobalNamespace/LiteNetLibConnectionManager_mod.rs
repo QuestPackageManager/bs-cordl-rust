@@ -83,7 +83,7 @@ pub struct LiteNetLibConnectionManager {
     __cordl_parent: crate::System::Object,
     pub _unconnectedPacketHeader: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub _netManager: *mut crate::LiteNetLib::NetManager,
-    pub _encryptionLayer: *mut PacketEncryptionLayer,
+    pub _encryptionLayer: *mut crate::GlobalNamespace::PacketEncryptionLayer,
     pub _taskUtility: *mut crate::BGNet::Core::ITaskUtility,
     pub _connections: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
@@ -99,7 +99,7 @@ pub struct LiteNetLibConnectionManager {
     >,
     pub _userId: *mut crate::System::String,
     pub _userName: *mut crate::System::String,
-    pub _connectionRequestHandler: *mut IConnectionRequestHandler,
+    pub _connectionRequestHandler: *mut crate::GlobalNamespace::IConnectionRequestHandler,
     pub _mode: crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode,
     pub _connectionState: crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState,
     pub _backgroundSentryDisconnectCts: *mut crate::System::Threading::CancellationTokenSource,
@@ -110,15 +110,21 @@ pub struct LiteNetLibConnectionManager {
     pub _lastStatisticsUpdateTime: i64,
     pub onInitializedEvent: *mut crate::System::Action,
     pub onConnectedEvent: *mut crate::System::Action,
-    pub onDisconnectedEvent: *mut crate::System::Action_1<DisconnectedReason>,
-    pub onConnectionFailedEvent: *mut crate::System::Action_1<ConnectionFailedReason>,
-    pub onConnectionConnectedEvent: *mut crate::System::Action_1<*mut IConnection>,
+    pub onDisconnectedEvent: *mut crate::System::Action_1<
+        crate::GlobalNamespace::DisconnectedReason,
+    >,
+    pub onConnectionFailedEvent: *mut crate::System::Action_1<
+        crate::GlobalNamespace::ConnectionFailedReason,
+    >,
+    pub onConnectionConnectedEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::IConnection,
+    >,
     pub onConnectionDisconnectedEvent: *mut crate::System::Action_2<
-        *mut IConnection,
-        DisconnectedReason,
+        *mut crate::GlobalNamespace::IConnection,
+        crate::GlobalNamespace::DisconnectedReason,
     >,
     pub onReceivedDataEvent: *mut crate::System::Action_3<
-        *mut IConnection,
+        *mut crate::GlobalNamespace::IConnection,
         *mut crate::LiteNetLib::Utils::NetDataReader,
         crate::BGNet::Core::DeliveryMethod,
     >,
@@ -130,49 +136,49 @@ pub struct LiteNetLibConnectionManager {
 }
 #[cfg(feature = "LiteNetLibConnectionManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LiteNetLibConnectionManager => ""
-    ."LiteNetLibConnectionManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LiteNetLibConnectionManager =>
+    ""."LiteNetLibConnectionManager"
 );
 #[cfg(feature = "LiteNetLibConnectionManager")]
-impl std::ops::Deref for LiteNetLibConnectionManager {
+impl std::ops::Deref for crate::GlobalNamespace::LiteNetLibConnectionManager {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager")]
-impl std::ops::DerefMut for LiteNetLibConnectionManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::LiteNetLibConnectionManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager")]
-impl LiteNetLibConnectionManager {
+impl crate::GlobalNamespace::LiteNetLibConnectionManager {
     pub const kBackgroundDisconnectTimeout: i64 = 1200000000i64;
     pub const kBackgroundShutdownTimeout: i64 = 9000000000i64;
     pub const kStatisticsUpdateInterval: i64 = 300000000i64;
-    #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
-    pub type NetPeerConnection = crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection;
-    #[cfg(feature = "LiteNetLibConnectionManager+__c")]
-    pub type __c = crate::GlobalNamespace::LiteNetLibConnectionManager___c;
-    #[cfg(feature = "LiteNetLibConnectionManager+_BackgroundShutdownSentry_d__127")]
-    pub type _BackgroundShutdownSentry_d__127 = crate::GlobalNamespace::LiteNetLibConnectionManager__BackgroundShutdownSentry_d__127;
-    #[cfg(feature = "LiteNetLibConnectionManager+StartClientParams")]
-    pub type StartClientParams = crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams;
-    #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnectionRequest")]
-    pub type NetPeerConnectionRequest = crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest;
-    #[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
-    pub type LiteNetLibConnectionParamsBase = crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase;
-    #[cfg(feature = "LiteNetLibConnectionManager+StartServerParams")]
-    pub type StartServerParams = crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams;
-    #[cfg(feature = "LiteNetLibConnectionManager+NetworkMode")]
-    pub type NetworkMode = crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode;
-    #[cfg(feature = "LiteNetLibConnectionManager+_BackgroundDisconnectSentry_d__126")]
-    pub type _BackgroundDisconnectSentry_d__126 = crate::GlobalNamespace::LiteNetLibConnectionManager__BackgroundDisconnectSentry_d__126;
-    #[cfg(feature = "LiteNetLibConnectionManager+ConnectionState")]
-    pub type ConnectionState = crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState;
     #[cfg(feature = "LiteNetLibConnectionManager+ConnectToServerParams")]
     pub type ConnectToServerParams = crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams;
+    #[cfg(feature = "LiteNetLibConnectionManager+ConnectionState")]
+    pub type ConnectionState = crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState;
+    #[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
+    pub type LiteNetLibConnectionParamsBase = crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase;
+    #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
+    pub type NetPeerConnection = crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection;
+    #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnectionRequest")]
+    pub type NetPeerConnectionRequest = crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest;
+    #[cfg(feature = "LiteNetLibConnectionManager+NetworkMode")]
+    pub type NetworkMode = crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode;
+    #[cfg(feature = "LiteNetLibConnectionManager+StartClientParams")]
+    pub type StartClientParams = crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams;
+    #[cfg(feature = "LiteNetLibConnectionManager+StartServerParams")]
+    pub type StartServerParams = crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams;
+    #[cfg(feature = "LiteNetLibConnectionManager+_BackgroundDisconnectSentry_d__126")]
+    pub type _BackgroundDisconnectSentry_d__126 = crate::GlobalNamespace::LiteNetLibConnectionManager__BackgroundDisconnectSentry_d__126;
+    #[cfg(feature = "LiteNetLibConnectionManager+_BackgroundShutdownSentry_d__127")]
+    pub type _BackgroundShutdownSentry_d__127 = crate::GlobalNamespace::LiteNetLibConnectionManager__BackgroundShutdownSentry_d__127;
+    #[cfg(feature = "LiteNetLibConnectionManager+__c")]
+    pub type __c = crate::GlobalNamespace::LiteNetLibConnectionManager___c;
     pub fn AcceptAllPendingRequests(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -258,7 +264,7 @@ impl LiteNetLibConnectionManager {
     }
     pub fn Disconnect(
         &mut self,
-        disconnectedReason: DisconnectedReason,
+        disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -269,8 +275,8 @@ impl LiteNetLibConnectionManager {
     }
     pub fn DisconnectInternal(
         &mut self,
-        disconnectedReason: DisconnectedReason,
-        connectionFailedReason: ConnectionFailedReason,
+        disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
+        connectionFailedReason: crate::GlobalNamespace::ConnectionFailedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -335,11 +341,11 @@ impl LiteNetLibConnectionManager {
     pub fn GetConnection_i32_0(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut IConnection> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IConnection> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IConnection = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IConnection = __cordl_object
             .invoke("GetConnection", (index))?;
         Ok(__cordl_ret)
     }
@@ -367,7 +373,7 @@ impl LiteNetLibConnectionManager {
     }
     pub fn Init<T>(
         &mut self,
-        initParams: *mut IConnectionInitParams_1<T>,
+        initParams: *mut crate::GlobalNamespace::IConnectionInitParams_1<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -553,7 +559,7 @@ impl LiteNetLibConnectionManager {
         &mut self,
         writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
         deliveryMethod: crate::BGNet::Core::DeliveryMethod,
-        excludingConnection: *mut IConnection,
+        excludingConnection: *mut crate::GlobalNamespace::IConnection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -599,22 +605,22 @@ impl LiteNetLibConnectionManager {
     pub fn ToConnectionFailedReason(
         &mut self,
         disconnectReason: crate::LiteNetLib::DisconnectReason,
-    ) -> quest_hook::libil2cpp::Result<ConnectionFailedReason> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ConnectionFailedReason> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: ConnectionFailedReason = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::ConnectionFailedReason = __cordl_object
             .invoke("ToConnectionFailedReason", (disconnectReason))?;
         Ok(__cordl_ret)
     }
     pub fn ToDisconnectedReason(
         &mut self,
         disconnectReason: crate::LiteNetLib::DisconnectReason,
-    ) -> quest_hook::libil2cpp::Result<DisconnectedReason> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::DisconnectedReason> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: DisconnectedReason = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::DisconnectedReason = __cordl_object
             .invoke("ToDisconnectedReason", (disconnectReason))?;
         Ok(__cordl_ret)
     }
@@ -710,7 +716,7 @@ impl LiteNetLibConnectionManager {
     }
     pub fn add_onConnectionConnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IConnection>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::IConnection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -721,7 +727,10 @@ impl LiteNetLibConnectionManager {
     }
     pub fn add_onConnectionDisconnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut IConnection, DisconnectedReason>,
+        value: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::IConnection,
+            crate::GlobalNamespace::DisconnectedReason,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -732,7 +741,9 @@ impl LiteNetLibConnectionManager {
     }
     pub fn add_onConnectionFailedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<ConnectionFailedReason>,
+        value: *mut crate::System::Action_1<
+            crate::GlobalNamespace::ConnectionFailedReason,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -743,7 +754,7 @@ impl LiteNetLibConnectionManager {
     }
     pub fn add_onDisconnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<DisconnectedReason>,
+        value: *mut crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -780,7 +791,7 @@ impl LiteNetLibConnectionManager {
     pub fn add_onReceivedDataEvent(
         &mut self,
         value: *mut crate::System::Action_3<
-            *mut IConnection,
+            *mut crate::GlobalNamespace::IConnection,
             *mut crate::LiteNetLib::Utils::NetDataReader,
             crate::BGNet::Core::DeliveryMethod,
         >,
@@ -812,21 +823,25 @@ impl LiteNetLibConnectionManager {
     }
     pub fn get_connectionRequestHandler(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IConnectionRequestHandler> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::IConnectionRequestHandler,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IConnectionRequestHandler = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IConnectionRequestHandler = __cordl_object
             .invoke("get_connectionRequestHandler", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_encryptionLayer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PacketEncryptionLayer> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PacketEncryptionLayer,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PacketEncryptionLayer = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PacketEncryptionLayer = __cordl_object
             .invoke("get_encryptionLayer", ())?;
         Ok(__cordl_ret)
     }
@@ -936,7 +951,7 @@ impl LiteNetLibConnectionManager {
     }
     pub fn remove_onConnectionConnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut IConnection>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::IConnection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -947,7 +962,10 @@ impl LiteNetLibConnectionManager {
     }
     pub fn remove_onConnectionDisconnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut IConnection, DisconnectedReason>,
+        value: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::IConnection,
+            crate::GlobalNamespace::DisconnectedReason,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -958,7 +976,9 @@ impl LiteNetLibConnectionManager {
     }
     pub fn remove_onConnectionFailedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<ConnectionFailedReason>,
+        value: *mut crate::System::Action_1<
+            crate::GlobalNamespace::ConnectionFailedReason,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -969,7 +989,7 @@ impl LiteNetLibConnectionManager {
     }
     pub fn remove_onDisconnectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<DisconnectedReason>,
+        value: *mut crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1006,7 +1026,7 @@ impl LiteNetLibConnectionManager {
     pub fn remove_onReceivedDataEvent(
         &mut self,
         value: *mut crate::System::Action_3<
-            *mut IConnection,
+            *mut crate::GlobalNamespace::IConnection,
             *mut crate::LiteNetLib::Utils::NetDataReader,
             crate::BGNet::Core::DeliveryMethod,
         >,
@@ -1031,7 +1051,8 @@ impl LiteNetLibConnectionManager {
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager")]
-impl quest_hook::libil2cpp::ObjectType for LiteNetLibConnectionManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LiteNetLibConnectionManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -1044,7 +1065,7 @@ impl quest_hook::libil2cpp::ObjectType for LiteNetLibConnectionManager {
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
     __cordl_parent: crate::System::Object,
-    pub connectionRequestHandler: *mut IConnectionRequestHandler,
+    pub connectionRequestHandler: *mut crate::GlobalNamespace::IConnectionRequestHandler,
     pub port: i32,
     pub filterUnencryptedTraffic: bool,
     pub enableUnconnectedMessages: bool,

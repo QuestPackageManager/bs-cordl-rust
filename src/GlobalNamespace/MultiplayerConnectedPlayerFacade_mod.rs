@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerFacade_Factory {
     __cordl_parent: crate::Zenject::PlaceholderFactory_3<
-        *mut IConnectedPlayer,
-        MultiplayerPlayerStartState,
-        *mut MultiplayerConnectedPlayerFacade,
+        *mut crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::MultiplayerPlayerStartState,
+        *mut crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
     >,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerFacade+Factory")]
@@ -18,9 +18,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory {
     type Target = crate::Zenject::PlaceholderFactory_3<
-        *mut IConnectedPlayer,
-        MultiplayerPlayerStartState,
-        *mut MultiplayerConnectedPlayerFacade,
+        *mut crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::MultiplayerPlayerStartState,
+        *mut crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -69,35 +69,36 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory {
 pub struct MultiplayerConnectedPlayerFacade {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _outroAnimator: *mut crate::UnityEngine::GameObject,
-    pub _bigAvatarAnimator: *mut MultiplayerBigAvatarAnimator,
+    pub _bigAvatarAnimator: *mut crate::GlobalNamespace::MultiplayerBigAvatarAnimator,
     pub _bigAvatarDisappearDuration: f32,
-    pub _bigAvatarDisappearEasing: EaseType,
-    pub _songTimeSyncController: *mut MultiplayerConnectedPlayerSongTimeSyncController,
-    pub _introAnimator: *mut MultiplayerConnectedPlayerIntroAnimator,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
-    pub _scoreDiffText: *mut MultiplayerScoreDiffText,
-    pub _beatmapObjectEventManager: *mut IConnectedPlayerBeatmapObjectEventManager,
+    pub _bigAvatarDisappearEasing: crate::GlobalNamespace::EaseType,
+    pub _songTimeSyncController: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController,
+    pub _introAnimator: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerIntroAnimator,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
+    pub _scoreDiffText: *mut crate::GlobalNamespace::MultiplayerScoreDiffText,
+    pub _beatmapObjectEventManager: *mut crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerFacade")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerConnectedPlayerFacade => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerConnectedPlayerFacade => ""
     ."MultiplayerConnectedPlayerFacade"
 );
 #[cfg(feature = "MultiplayerConnectedPlayerFacade")]
-impl std::ops::Deref for MultiplayerConnectedPlayerFacade {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerFacade")]
-impl std::ops::DerefMut for MultiplayerConnectedPlayerFacade {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerFacade")]
-impl MultiplayerConnectedPlayerFacade {
+impl crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
     #[cfg(feature = "MultiplayerConnectedPlayerFacade+Factory")]
     pub type Factory = crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory;
     pub fn HideBigAvatar(
@@ -180,11 +181,13 @@ impl MultiplayerConnectedPlayerFacade {
     }
     pub fn get_introAnimator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut MultiplayerConnectedPlayerIntroAnimator> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::MultiplayerConnectedPlayerIntroAnimator,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MultiplayerConnectedPlayerIntroAnimator = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerIntroAnimator = __cordl_object
             .invoke("get_introAnimator", ())?;
         Ok(__cordl_ret)
     }
@@ -200,17 +203,20 @@ impl MultiplayerConnectedPlayerFacade {
     }
     pub fn get_scoreDiffText(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut MultiplayerScoreDiffText> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::MultiplayerScoreDiffText,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MultiplayerScoreDiffText = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MultiplayerScoreDiffText = __cordl_object
             .invoke("get_scoreDiffText", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerFacade")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerConnectedPlayerFacade {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

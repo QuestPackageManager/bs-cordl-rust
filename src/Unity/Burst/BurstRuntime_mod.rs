@@ -24,16 +24,16 @@ impl std::ops::DerefMut for crate::Unity::Burst::BurstRuntime {
 }
 #[cfg(feature = "Unity+Burst+BurstRuntime")]
 impl crate::Unity::Burst::BurstRuntime {
+    #[cfg(feature = "Unity+Burst+BurstRuntime+HashCode32_1")]
+    pub type HashCode32_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Burst::BurstRuntime_HashCode32_1<
+        T,
+    >;
     #[cfg(feature = "Unity+Burst+BurstRuntime+HashCode64_1")]
     pub type HashCode64_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Burst::BurstRuntime_HashCode64_1<
         T,
     >;
     #[cfg(feature = "Unity+Burst+BurstRuntime+PreserveAttribute")]
     pub type PreserveAttribute = crate::Unity::Burst::BurstRuntime_PreserveAttribute;
-    #[cfg(feature = "Unity+Burst+BurstRuntime+HashCode32_1")]
-    pub type HashCode32_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Burst::BurstRuntime_HashCode32_1<
-        T,
-    >;
 }
 #[cfg(feature = "Unity+Burst+BurstRuntime")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstRuntime {

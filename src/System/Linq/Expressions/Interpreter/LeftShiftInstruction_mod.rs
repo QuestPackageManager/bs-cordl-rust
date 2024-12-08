@@ -28,25 +28,25 @@ for crate::System::Linq::Expressions::Interpreter::LeftShiftInstruction {
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::LeftShiftInstruction {
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftInt64"
+        feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftByte"
     )]
-    pub type LeftShiftInt64 = crate::GlobalNamespace::LeftShiftInstruction_LeftShiftInt64;
+    pub type LeftShiftByte = crate::GlobalNamespace::LeftShiftInstruction_LeftShiftByte;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftInt16"
     )]
     pub type LeftShiftInt16 = crate::GlobalNamespace::LeftShiftInstruction_LeftShiftInt16;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftByte"
+        feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftInt32"
     )]
-    pub type LeftShiftByte = crate::GlobalNamespace::LeftShiftInstruction_LeftShiftByte;
+    pub type LeftShiftInt32 = crate::GlobalNamespace::LeftShiftInstruction_LeftShiftInt32;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftInt64"
+    )]
+    pub type LeftShiftInt64 = crate::GlobalNamespace::LeftShiftInstruction_LeftShiftInt64;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftSByte"
     )]
     pub type LeftShiftSByte = crate::GlobalNamespace::LeftShiftInstruction_LeftShiftSByte;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftUInt64"
-    )]
-    pub type LeftShiftUInt64 = crate::GlobalNamespace::LeftShiftInstruction_LeftShiftUInt64;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftUInt16"
     )]
@@ -56,9 +56,9 @@ impl crate::System::Linq::Expressions::Interpreter::LeftShiftInstruction {
     )]
     pub type LeftShiftUInt32 = crate::GlobalNamespace::LeftShiftInstruction_LeftShiftUInt32;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftInt32"
+        feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftUInt64"
     )]
-    pub type LeftShiftInt32 = crate::GlobalNamespace::LeftShiftInstruction_LeftShiftInt32;
+    pub type LeftShiftUInt64 = crate::GlobalNamespace::LeftShiftInstruction_LeftShiftUInt64;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

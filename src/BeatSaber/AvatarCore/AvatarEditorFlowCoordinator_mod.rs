@@ -36,10 +36,10 @@ impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordi
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarEditorFlowCoordinator")]
 impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
-    #[cfg(feature = "BeatSaber+AvatarCore+AvatarEditorFlowCoordinator+FinishAction")]
-    pub type FinishAction = crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction;
     #[cfg(feature = "BeatSaber+AvatarCore+AvatarEditorFlowCoordinator+EditMode")]
     pub type EditMode = crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode;
+    #[cfg(feature = "BeatSaber+AvatarCore+AvatarEditorFlowCoordinator+FinishAction")]
+    pub type FinishAction = crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction;
     pub fn Finish(
         &mut self,
         finishAction: crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,

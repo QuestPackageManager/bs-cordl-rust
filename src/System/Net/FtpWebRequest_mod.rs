@@ -57,12 +57,12 @@ impl std::ops::DerefMut for crate::System::Net::FtpWebRequest {
 }
 #[cfg(feature = "System+Net+FtpWebRequest")]
 impl crate::System::Net::FtpWebRequest {
-    #[cfg(feature = "System+Net+FtpWebRequest+__c")]
-    pub type __c = crate::System::Net::FtpWebRequest___c;
     #[cfg(feature = "System+Net+FtpWebRequest+RequestStage")]
     pub type RequestStage = crate::System::Net::FtpWebRequest_RequestStage;
     #[cfg(feature = "System+Net+FtpWebRequest+_CreateConnectionAsync_d__86")]
     pub type _CreateConnectionAsync_d__86 = crate::System::Net::FtpWebRequest__CreateConnectionAsync_d__86;
+    #[cfg(feature = "System+Net+FtpWebRequest+__c")]
+    pub type __c = crate::System::Net::FtpWebRequest___c;
     pub fn Abort(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

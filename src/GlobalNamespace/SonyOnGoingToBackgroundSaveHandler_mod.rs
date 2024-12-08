@@ -3,31 +3,32 @@
 #[derive(Debug)]
 pub struct SonyOnGoingToBackgroundSaveHandler {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _playerDataModel: *mut PlayerDataModel,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
     pub _flushingService: *mut crate::BGLib::SaveDataCore::SaveDataFlushingService,
-    pub _sonyBackgroundExecutionHelper: *mut SonyBackgroundExecutionHelper,
-    pub _localLeaderboardModel: *mut LocalLeaderboardsModel,
+    pub _sonyBackgroundExecutionHelper: *mut crate::GlobalNamespace::SonyBackgroundExecutionHelper,
+    pub _localLeaderboardModel: *mut crate::GlobalNamespace::LocalLeaderboardsModel,
 }
 #[cfg(feature = "SonyOnGoingToBackgroundSaveHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SonyOnGoingToBackgroundSaveHandler => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SonyOnGoingToBackgroundSaveHandler => ""
     ."SonyOnGoingToBackgroundSaveHandler"
 );
 #[cfg(feature = "SonyOnGoingToBackgroundSaveHandler")]
-impl std::ops::Deref for SonyOnGoingToBackgroundSaveHandler {
+impl std::ops::Deref for crate::GlobalNamespace::SonyOnGoingToBackgroundSaveHandler {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyOnGoingToBackgroundSaveHandler")]
-impl std::ops::DerefMut for SonyOnGoingToBackgroundSaveHandler {
+impl std::ops::DerefMut for crate::GlobalNamespace::SonyOnGoingToBackgroundSaveHandler {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyOnGoingToBackgroundSaveHandler")]
-impl SonyOnGoingToBackgroundSaveHandler {
+impl crate::GlobalNamespace::SonyOnGoingToBackgroundSaveHandler {
     pub fn HandlePlatformBackgroundExecutionHelperDidGoToBackgroundExecution(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -80,7 +81,8 @@ impl SonyOnGoingToBackgroundSaveHandler {
     }
 }
 #[cfg(feature = "SonyOnGoingToBackgroundSaveHandler")]
-impl quest_hook::libil2cpp::ObjectType for SonyOnGoingToBackgroundSaveHandler {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SonyOnGoingToBackgroundSaveHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

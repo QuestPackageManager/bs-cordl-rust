@@ -7,23 +7,24 @@ pub struct CameraDepthTextureMode {
 }
 #[cfg(feature = "CameraDepthTextureMode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CameraDepthTextureMode => ""."CameraDepthTextureMode"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CameraDepthTextureMode => ""
+    ."CameraDepthTextureMode"
 );
 #[cfg(feature = "CameraDepthTextureMode")]
-impl std::ops::Deref for CameraDepthTextureMode {
+impl std::ops::Deref for crate::GlobalNamespace::CameraDepthTextureMode {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CameraDepthTextureMode")]
-impl std::ops::DerefMut for CameraDepthTextureMode {
+impl std::ops::DerefMut for crate::GlobalNamespace::CameraDepthTextureMode {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CameraDepthTextureMode")]
-impl CameraDepthTextureMode {
+impl crate::GlobalNamespace::CameraDepthTextureMode {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -53,7 +54,8 @@ impl CameraDepthTextureMode {
     }
 }
 #[cfg(feature = "CameraDepthTextureMode")]
-impl quest_hook::libil2cpp::ObjectType for CameraDepthTextureMode {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::CameraDepthTextureMode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

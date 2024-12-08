@@ -3,30 +3,30 @@
 #[derive(Debug)]
 pub struct MultiplayerBigAvatarInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _connectedPlayer: *mut IConnectedPlayer,
+    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
     pub _saberManagerInitData: *mut crate::GlobalNamespace::SaberManager_InitData,
-    pub _playerSpecificSettings: *mut PlayersSpecificSettingsAtGameStartModel,
+    pub _playerSpecificSettings: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
 }
 #[cfg(feature = "MultiplayerBigAvatarInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerBigAvatarInstaller => ""
-    ."MultiplayerBigAvatarInstaller"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerBigAvatarInstaller
+    => ""."MultiplayerBigAvatarInstaller"
 );
 #[cfg(feature = "MultiplayerBigAvatarInstaller")]
-impl std::ops::Deref for MultiplayerBigAvatarInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerBigAvatarInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerBigAvatarInstaller")]
-impl std::ops::DerefMut for MultiplayerBigAvatarInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerBigAvatarInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerBigAvatarInstaller")]
-impl MultiplayerBigAvatarInstaller {
+impl crate::GlobalNamespace::MultiplayerBigAvatarInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -56,7 +56,8 @@ impl MultiplayerBigAvatarInstaller {
     }
 }
 #[cfg(feature = "MultiplayerBigAvatarInstaller")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerBigAvatarInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerBigAvatarInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

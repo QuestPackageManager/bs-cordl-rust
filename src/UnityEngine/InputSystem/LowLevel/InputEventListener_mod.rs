@@ -103,12 +103,12 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
 impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
-    #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState")]
-    pub type ObserverState = crate::UnityEngine::InputSystem::LowLevel::InputEventListener_ObserverState;
     #[cfg(
         feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
     )]
     pub type DisposableObserver = crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObserver;
+    #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState")]
+    pub type ObserverState = crate::UnityEngine::InputSystem::LowLevel::InputEventListener_ObserverState;
     pub fn Subscribe(
         &mut self,
         observer: *mut crate::System::IObserver_1<

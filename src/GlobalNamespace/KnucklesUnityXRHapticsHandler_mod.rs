@@ -11,24 +11,24 @@ pub struct KnucklesUnityXRHapticsHandler {
 }
 #[cfg(feature = "KnucklesUnityXRHapticsHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for KnucklesUnityXRHapticsHandler => ""
-    ."KnucklesUnityXRHapticsHandler"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::KnucklesUnityXRHapticsHandler
+    => ""."KnucklesUnityXRHapticsHandler"
 );
 #[cfg(feature = "KnucklesUnityXRHapticsHandler")]
-impl std::ops::Deref for KnucklesUnityXRHapticsHandler {
+impl std::ops::Deref for crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "KnucklesUnityXRHapticsHandler")]
-impl std::ops::DerefMut for KnucklesUnityXRHapticsHandler {
+impl std::ops::DerefMut for crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "KnucklesUnityXRHapticsHandler")]
-impl KnucklesUnityXRHapticsHandler {
+impl crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
     pub const kRate: f32 = 0.0125f32;
     #[cfg(feature = "KnucklesUnityXRHapticsHandler+_HapticsCoroutine_d__9")]
     pub type _HapticsCoroutine_d__9 = crate::GlobalNamespace::KnucklesUnityXRHapticsHandler__HapticsCoroutine_d__9;
@@ -98,7 +98,8 @@ impl KnucklesUnityXRHapticsHandler {
     }
 }
 #[cfg(feature = "KnucklesUnityXRHapticsHandler")]
-impl quest_hook::libil2cpp::ObjectType for KnucklesUnityXRHapticsHandler {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

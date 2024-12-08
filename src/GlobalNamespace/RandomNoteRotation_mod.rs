@@ -3,28 +3,29 @@
 #[derive(Debug)]
 pub struct RandomNoteRotation {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _noteController: *mut NoteControllerBase,
+    pub _noteController: *mut crate::GlobalNamespace::NoteControllerBase,
     pub _transform: *mut crate::UnityEngine::Transform,
 }
 #[cfg(feature = "RandomNoteRotation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RandomNoteRotation => ""."RandomNoteRotation"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RandomNoteRotation => ""
+    ."RandomNoteRotation"
 );
 #[cfg(feature = "RandomNoteRotation")]
-impl std::ops::Deref for RandomNoteRotation {
+impl std::ops::Deref for crate::GlobalNamespace::RandomNoteRotation {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RandomNoteRotation")]
-impl std::ops::DerefMut for RandomNoteRotation {
+impl std::ops::DerefMut for crate::GlobalNamespace::RandomNoteRotation {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RandomNoteRotation")]
-impl RandomNoteRotation {
+impl crate::GlobalNamespace::RandomNoteRotation {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -37,7 +38,7 @@ impl RandomNoteRotation {
     }
     pub fn HandleNoteControllerDidInit(
         &mut self,
-        noteController: *mut NoteControllerBase,
+        noteController: *mut crate::GlobalNamespace::NoteControllerBase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -75,7 +76,7 @@ impl RandomNoteRotation {
     }
 }
 #[cfg(feature = "RandomNoteRotation")]
-impl quest_hook::libil2cpp::ObjectType for RandomNoteRotation {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RandomNoteRotation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

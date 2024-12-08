@@ -10,23 +10,24 @@ pub struct BeatmapDataBasicInfo {
 }
 #[cfg(feature = "BeatmapDataBasicInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapDataBasicInfo => ""."BeatmapDataBasicInfo"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapDataBasicInfo => ""
+    ."BeatmapDataBasicInfo"
 );
 #[cfg(feature = "BeatmapDataBasicInfo")]
-impl std::ops::Deref for BeatmapDataBasicInfo {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapDataBasicInfo {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDataBasicInfo")]
-impl std::ops::DerefMut for BeatmapDataBasicInfo {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDataBasicInfo {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDataBasicInfo")]
-impl BeatmapDataBasicInfo {
+impl crate::GlobalNamespace::BeatmapDataBasicInfo {
     pub fn New(
         numberOfLines: i32,
         cuttableNotesCount: i32,
@@ -89,7 +90,7 @@ impl BeatmapDataBasicInfo {
     }
 }
 #[cfg(feature = "BeatmapDataBasicInfo")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapDataBasicInfo {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapDataBasicInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

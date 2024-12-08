@@ -7,39 +7,40 @@ pub struct FireworksController {
     pub _minSpawnInterval: f32,
     pub _maxSpawnInterval: f32,
     pub _directionalLights: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut DirectionalLight,
+        *mut crate::GlobalNamespace::DirectionalLight,
     >,
     pub _lightsIntensity: f32,
     pub _currentLightId: i32,
     pub _fireworkItemPool: *mut crate::GlobalNamespace::FireworkItemController_Pool,
     pub _activeFireworks: *mut crate::System::Collections::Generic::List_1<
-        *mut FireworkItemController,
+        *mut crate::GlobalNamespace::FireworkItemController,
     >,
 }
 #[cfg(feature = "FireworksController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FireworksController => ""."FireworksController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FireworksController => ""
+    ."FireworksController"
 );
 #[cfg(feature = "FireworksController")]
-impl std::ops::Deref for FireworksController {
+impl std::ops::Deref for crate::GlobalNamespace::FireworksController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FireworksController")]
-impl std::ops::DerefMut for FireworksController {
+impl std::ops::DerefMut for crate::GlobalNamespace::FireworksController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FireworksController")]
-impl FireworksController {
+impl crate::GlobalNamespace::FireworksController {
     #[cfg(feature = "FireworksController+_SpawningCoroutine_d__10")]
     pub type _SpawningCoroutine_d__10 = crate::GlobalNamespace::FireworksController__SpawningCoroutine_d__10;
     pub fn ClearFireworkItemController(
         &mut self,
-        fireworkItemController: *mut FireworkItemController,
+        fireworkItemController: *mut crate::GlobalNamespace::FireworkItemController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -107,7 +108,7 @@ impl FireworksController {
     }
 }
 #[cfg(feature = "FireworksController")]
-impl quest_hook::libil2cpp::ObjectType for FireworksController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FireworksController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -124,47 +124,6 @@ for crate::GlobalNamespace::OVRTelemetryConstants_Editor {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRTelemetryConstants+Scene+MarkerId")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct Scene_MarkerId {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "OVRTelemetryConstants+Scene+MarkerId")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::Scene_MarkerId => ""
-    ."OVRTelemetryConstants/Scene/MarkerId"
-);
-#[cfg(feature = "OVRTelemetryConstants+Scene+MarkerId")]
-impl std::ops::Deref for crate::GlobalNamespace::Scene_MarkerId {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRTelemetryConstants+Scene+MarkerId")]
-impl std::ops::DerefMut for crate::GlobalNamespace::Scene_MarkerId {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRTelemetryConstants+Scene+MarkerId")]
-impl crate::GlobalNamespace::Scene_MarkerId {
-    pub const SpatialAnchorCreate: i32 = 163068641i32;
-    pub const SpatialAnchorErase: i32 = 163059334i32;
-    pub const SpatialAnchorQuery: i32 = 163057870i32;
-    pub const SpatialAnchorSave: i32 = 163056007i32;
-    pub const SpatialAnchorSetComponentStatus: i32 = 163055742i32;
-}
-#[cfg(feature = "OVRTelemetryConstants+Scene+MarkerId")]
-impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Scene_MarkerId {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "OVRTelemetryConstants+SBB+MarkerId")]
 #[repr(C)]
 #[derive(Debug)]
@@ -244,6 +203,47 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRManager_Ma
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRTelemetryConstants+Scene+MarkerId")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct Scene_MarkerId {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "OVRTelemetryConstants+Scene+MarkerId")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::Scene_MarkerId => ""
+    ."OVRTelemetryConstants/Scene/MarkerId"
+);
+#[cfg(feature = "OVRTelemetryConstants+Scene+MarkerId")]
+impl std::ops::Deref for crate::GlobalNamespace::Scene_MarkerId {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRTelemetryConstants+Scene+MarkerId")]
+impl std::ops::DerefMut for crate::GlobalNamespace::Scene_MarkerId {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRTelemetryConstants+Scene+MarkerId")]
+impl crate::GlobalNamespace::Scene_MarkerId {
+    pub const SpatialAnchorCreate: i32 = 163068641i32;
+    pub const SpatialAnchorErase: i32 = 163059334i32;
+    pub const SpatialAnchorQuery: i32 = 163057870i32;
+    pub const SpatialAnchorSave: i32 = 163056007i32;
+    pub const SpatialAnchorSetComponentStatus: i32 = 163055742i32;
+}
+#[cfg(feature = "OVRTelemetryConstants+Scene+MarkerId")]
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Scene_MarkerId {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "OVRTelemetryConstants+OVRManager")]
 #[repr(C)]
 #[derive(Debug)]
@@ -271,10 +271,10 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRTelemetryConstants_OVRMan
 }
 #[cfg(feature = "OVRTelemetryConstants+OVRManager")]
 impl crate::GlobalNamespace::OVRTelemetryConstants_OVRManager {
-    #[cfg(feature = "OVRTelemetryConstants+OVRManager+ConsentOrigins")]
-    pub type ConsentOrigins = crate::GlobalNamespace::OVRManager_ConsentOrigins;
     #[cfg(feature = "OVRTelemetryConstants+OVRManager+AnnotationTypes")]
     pub type AnnotationTypes = crate::GlobalNamespace::OVRManager_AnnotationTypes;
+    #[cfg(feature = "OVRTelemetryConstants+OVRManager+ConsentOrigins")]
+    pub type ConsentOrigins = crate::GlobalNamespace::OVRManager_ConsentOrigins;
     #[cfg(feature = "OVRTelemetryConstants+OVRManager+MarkerId")]
     pub type MarkerId = crate::GlobalNamespace::OVRManager_MarkerId;
 }
@@ -296,34 +296,36 @@ pub struct OVRTelemetryConstants {
 }
 #[cfg(feature = "OVRTelemetryConstants")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRTelemetryConstants => ""."OVRTelemetryConstants"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRTelemetryConstants => ""
+    ."OVRTelemetryConstants"
 );
 #[cfg(feature = "OVRTelemetryConstants")]
-impl std::ops::Deref for OVRTelemetryConstants {
+impl std::ops::Deref for crate::GlobalNamespace::OVRTelemetryConstants {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTelemetryConstants")]
-impl std::ops::DerefMut for OVRTelemetryConstants {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRTelemetryConstants {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTelemetryConstants")]
-impl OVRTelemetryConstants {
+impl crate::GlobalNamespace::OVRTelemetryConstants {
     #[cfg(feature = "OVRTelemetryConstants+Editor")]
     pub type Editor = crate::GlobalNamespace::OVRTelemetryConstants_Editor;
-    #[cfg(feature = "OVRTelemetryConstants+SBB")]
-    pub type SBB = crate::GlobalNamespace::OVRTelemetryConstants_SBB;
     #[cfg(feature = "OVRTelemetryConstants+OVRManager")]
     pub type OVRManager = crate::GlobalNamespace::OVRTelemetryConstants_OVRManager;
+    #[cfg(feature = "OVRTelemetryConstants+SBB")]
+    pub type SBB = crate::GlobalNamespace::OVRTelemetryConstants_SBB;
     #[cfg(feature = "OVRTelemetryConstants+Scene")]
     pub type Scene = crate::GlobalNamespace::OVRTelemetryConstants_Scene;
 }
 #[cfg(feature = "OVRTelemetryConstants")]
-impl quest_hook::libil2cpp::ObjectType for OVRTelemetryConstants {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRTelemetryConstants {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -357,10 +359,10 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRTelemetryConstants_SBB {
 }
 #[cfg(feature = "OVRTelemetryConstants+SBB")]
 impl crate::GlobalNamespace::OVRTelemetryConstants_SBB {
-    #[cfg(feature = "OVRTelemetryConstants+SBB+MarkerId")]
-    pub type MarkerId = crate::GlobalNamespace::SBB_MarkerId;
     #[cfg(feature = "OVRTelemetryConstants+SBB+AnnotationType")]
     pub type AnnotationType = crate::GlobalNamespace::SBB_AnnotationType;
+    #[cfg(feature = "OVRTelemetryConstants+SBB+MarkerId")]
+    pub type MarkerId = crate::GlobalNamespace::SBB_MarkerId;
 }
 #[cfg(feature = "OVRTelemetryConstants+SBB")]
 impl quest_hook::libil2cpp::ObjectType

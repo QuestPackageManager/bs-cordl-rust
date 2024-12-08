@@ -6,26 +6,29 @@ pub struct LevelCompletionResultsAnalyticsHelper {
 }
 #[cfg(feature = "LevelCompletionResultsAnalyticsHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LevelCompletionResultsAnalyticsHelper => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::LevelCompletionResultsAnalyticsHelper => ""
     ."LevelCompletionResultsAnalyticsHelper"
 );
 #[cfg(feature = "LevelCompletionResultsAnalyticsHelper")]
-impl std::ops::Deref for LevelCompletionResultsAnalyticsHelper {
+impl std::ops::Deref for crate::GlobalNamespace::LevelCompletionResultsAnalyticsHelper {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelCompletionResultsAnalyticsHelper")]
-impl std::ops::DerefMut for LevelCompletionResultsAnalyticsHelper {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::LevelCompletionResultsAnalyticsHelper {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelCompletionResultsAnalyticsHelper")]
-impl LevelCompletionResultsAnalyticsHelper {}
+impl crate::GlobalNamespace::LevelCompletionResultsAnalyticsHelper {}
 #[cfg(feature = "LevelCompletionResultsAnalyticsHelper")]
-impl quest_hook::libil2cpp::ObjectType for LevelCompletionResultsAnalyticsHelper {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LevelCompletionResultsAnalyticsHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

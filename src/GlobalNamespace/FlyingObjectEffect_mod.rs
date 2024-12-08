@@ -15,27 +15,30 @@ pub struct FlyingObjectEffect {
     pub _targetPos: crate::UnityEngine::Vector3,
     pub _duration: f32,
     pub _shake: bool,
-    pub _didFinishEvent: *mut LazyCopyHashSet_1<*mut IFlyingObjectEffectDidFinishEvent>,
+    pub _didFinishEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
+        *mut crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
+    >,
 }
 #[cfg(feature = "FlyingObjectEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FlyingObjectEffect => ""."FlyingObjectEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FlyingObjectEffect => ""
+    ."FlyingObjectEffect"
 );
 #[cfg(feature = "FlyingObjectEffect")]
-impl std::ops::Deref for FlyingObjectEffect {
+impl std::ops::Deref for crate::GlobalNamespace::FlyingObjectEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FlyingObjectEffect")]
-impl std::ops::DerefMut for FlyingObjectEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::FlyingObjectEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FlyingObjectEffect")]
-impl FlyingObjectEffect {
+impl crate::GlobalNamespace::FlyingObjectEffect {
     pub fn InitAndPresent(
         &mut self,
         duration: f32,
@@ -91,19 +94,21 @@ impl FlyingObjectEffect {
     pub fn get_didFinishEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut ILazyCopyHashSet_1<*mut IFlyingObjectEffectDidFinishEvent>,
+        *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ILazyCopyHashSet_1<
-            *mut IFlyingObjectEffectDidFinishEvent,
+        let __cordl_ret: *mut crate::GlobalNamespace::ILazyCopyHashSet_1<
+            *mut crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
         > = __cordl_object.invoke("get_didFinishEvent", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "FlyingObjectEffect")]
-impl quest_hook::libil2cpp::ObjectType for FlyingObjectEffect {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlyingObjectEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

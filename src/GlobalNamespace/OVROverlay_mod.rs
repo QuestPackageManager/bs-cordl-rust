@@ -186,32 +186,32 @@ pub struct OVROverlay {
 }
 #[cfg(feature = "OVROverlay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVROverlay => ""."OVROverlay"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVROverlay => ""."OVROverlay"
 );
 #[cfg(feature = "OVROverlay")]
-impl std::ops::Deref for OVROverlay {
+impl std::ops::Deref for crate::GlobalNamespace::OVROverlay {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVROverlay")]
-impl std::ops::DerefMut for OVROverlay {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVROverlay {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVROverlay")]
-impl OVROverlay {
+impl crate::GlobalNamespace::OVROverlay {
     pub const maxInstances: i32 = 15i32;
+    #[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
+    pub type ExternalSurfaceObjectCreated = crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated;
+    #[cfg(feature = "OVROverlay+LayerTexture")]
+    pub type LayerTexture = crate::GlobalNamespace::OVROverlay_LayerTexture;
     #[cfg(feature = "OVROverlay+OverlayShape")]
     pub type OverlayShape = crate::GlobalNamespace::OVROverlay_OverlayShape;
     #[cfg(feature = "OVROverlay+OverlayType")]
     pub type OverlayType = crate::GlobalNamespace::OVROverlay_OverlayType;
-    #[cfg(feature = "OVROverlay+LayerTexture")]
-    pub type LayerTexture = crate::GlobalNamespace::OVROverlay_LayerTexture;
-    #[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
-    pub type ExternalSurfaceObjectCreated = crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -238,7 +238,7 @@ impl OVROverlay {
     }
     pub fn ComputePoseAndScale(
         &mut self,
-        pose: quest_hook::libil2cpp::ByRefMut<OVRPose>,
+        pose: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPose>,
         scale: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         overlay: quest_hook::libil2cpp::ByRefMut<bool>,
         headLocked: quest_hook::libil2cpp::ByRefMut<bool>,
@@ -252,7 +252,7 @@ impl OVROverlay {
     }
     pub fn ComputeSubmit(
         &mut self,
-        pose: quest_hook::libil2cpp::ByRefMut<OVRPose>,
+        pose: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPose>,
         scale: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         overlay: quest_hook::libil2cpp::ByRefMut<bool>,
         headLocked: quest_hook::libil2cpp::ByRefMut<bool>,
@@ -404,7 +404,7 @@ impl OVROverlay {
     pub fn OpenVROverlayUpdate(
         &mut self,
         scale: crate::UnityEngine::Vector3,
-        pose: OVRPose,
+        pose: crate::GlobalNamespace::OVRPose,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -485,7 +485,7 @@ impl OVROverlay {
         overlay: bool,
         headLocked: bool,
         noDepthBufferTesting: bool,
-        pose: OVRPose,
+        pose: crate::GlobalNamespace::OVRPose,
         scale: crate::UnityEngine::Vector3,
         frameIndex: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -574,7 +574,7 @@ impl OVROverlay {
     }
 }
 #[cfg(feature = "OVROverlay")]
-impl quest_hook::libil2cpp::ObjectType for OVROverlay {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVROverlay {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

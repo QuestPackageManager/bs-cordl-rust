@@ -10,24 +10,24 @@ pub struct PerceivedLoudnessPerLevelModel {
 }
 #[cfg(feature = "PerceivedLoudnessPerLevelModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PerceivedLoudnessPerLevelModel => ""
-    ."PerceivedLoudnessPerLevelModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PerceivedLoudnessPerLevelModel
+    => ""."PerceivedLoudnessPerLevelModel"
 );
 #[cfg(feature = "PerceivedLoudnessPerLevelModel")]
-impl std::ops::Deref for PerceivedLoudnessPerLevelModel {
+impl std::ops::Deref for crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PerceivedLoudnessPerLevelModel")]
-impl std::ops::DerefMut for PerceivedLoudnessPerLevelModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PerceivedLoudnessPerLevelModel")]
-impl PerceivedLoudnessPerLevelModel {
+impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
     pub const kDefaultLoudness: f32 = -6f32;
     pub const kPerceivedLoudnessTarget: f32 = -11f32;
     pub const kSfxLoudnessTarget: f32 = -10f32;
@@ -76,7 +76,7 @@ impl PerceivedLoudnessPerLevelModel {
     }
     pub fn New(
         loudnessPerLeveDataList: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut PerceivedLoudnessSO,
+            *mut crate::GlobalNamespace::PerceivedLoudnessSO,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -88,7 +88,7 @@ impl PerceivedLoudnessPerLevelModel {
     pub fn _ctor(
         &mut self,
         loudnessPerLeveDataList: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut PerceivedLoudnessSO,
+            *mut crate::GlobalNamespace::PerceivedLoudnessSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -100,7 +100,8 @@ impl PerceivedLoudnessPerLevelModel {
     }
 }
 #[cfg(feature = "PerceivedLoudnessPerLevelModel")]
-impl quest_hook::libil2cpp::ObjectType for PerceivedLoudnessPerLevelModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

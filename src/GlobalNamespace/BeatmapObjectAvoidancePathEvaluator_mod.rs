@@ -9,30 +9,31 @@ pub struct BeatmapObjectAvoidancePathEvaluator {
     pub _yOffset: f32,
     pub _noteJumpSpeed: f32,
     pub _moveToPlayerHeadTParam: f32,
-    pub _pathBezierCurveEvaluator: *mut BezierSplineEvaluator,
-    pub _audioTimeSource: *mut IAudioTimeSource,
-    pub _playerTransforms: *mut PlayerTransforms,
+    pub _pathBezierCurveEvaluator: *mut crate::GlobalNamespace::BezierSplineEvaluator,
+    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
 }
 #[cfg(feature = "BeatmapObjectAvoidancePathEvaluator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapObjectAvoidancePathEvaluator => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BeatmapObjectAvoidancePathEvaluator => ""
     ."BeatmapObjectAvoidancePathEvaluator"
 );
 #[cfg(feature = "BeatmapObjectAvoidancePathEvaluator")]
-impl std::ops::Deref for BeatmapObjectAvoidancePathEvaluator {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapObjectAvoidancePathEvaluator {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapObjectAvoidancePathEvaluator")]
-impl std::ops::DerefMut for BeatmapObjectAvoidancePathEvaluator {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapObjectAvoidancePathEvaluator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapObjectAvoidancePathEvaluator")]
-impl BeatmapObjectAvoidancePathEvaluator {
+impl crate::GlobalNamespace::BeatmapObjectAvoidancePathEvaluator {
     pub fn GetCurrentPathPosition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
@@ -44,9 +45,9 @@ impl BeatmapObjectAvoidancePathEvaluator {
         Ok(__cordl_ret)
     }
     pub fn New(
-        audioTimeSource: *mut IAudioTimeSource,
-        playerTransforms: *mut PlayerTransforms,
-        pathBezierCurveEvaluator: *mut BezierSplineEvaluator,
+        audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+        playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
+        pathBezierCurveEvaluator: *mut crate::GlobalNamespace::BezierSplineEvaluator,
         jumpStartZ: f32,
         jumpEndZ: f32,
         yOffset: f32,
@@ -75,9 +76,9 @@ impl BeatmapObjectAvoidancePathEvaluator {
     }
     pub fn _ctor(
         &mut self,
-        audioTimeSource: *mut IAudioTimeSource,
-        playerTransforms: *mut PlayerTransforms,
-        pathBezierCurveEvaluator: *mut BezierSplineEvaluator,
+        audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+        playerTransforms: *mut crate::GlobalNamespace::PlayerTransforms,
+        pathBezierCurveEvaluator: *mut crate::GlobalNamespace::BezierSplineEvaluator,
         jumpStartZ: f32,
         jumpEndZ: f32,
         yOffset: f32,
@@ -107,7 +108,8 @@ impl BeatmapObjectAvoidancePathEvaluator {
     }
 }
 #[cfg(feature = "BeatmapObjectAvoidancePathEvaluator")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapObjectAvoidancePathEvaluator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapObjectAvoidancePathEvaluator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

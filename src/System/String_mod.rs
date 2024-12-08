@@ -51,10 +51,10 @@ impl crate::System::String {
     pub const PROBABILISTICMAP_BLOCK_INDEX_SHIFT: i32 = 3i32;
     pub const PROBABILISTICMAP_SIZE: i32 = 8i32;
     pub const StackallocIntBufferSizeLimit: i32 = 128i32;
-    #[cfg(feature = "System+String+TrimType")]
-    pub type TrimType = crate::System::String_TrimType;
     #[cfg(feature = "System+String+ProbabilisticMap")]
     pub type ProbabilisticMap = crate::System::String_ProbabilisticMap;
+    #[cfg(feature = "System+String+TrimType")]
+    pub type TrimType = crate::System::String_TrimType;
     pub fn Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {

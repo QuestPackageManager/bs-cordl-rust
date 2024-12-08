@@ -24,6 +24,8 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::ArrayUtility {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ArrayUtility")]
 impl crate::UnityEngine::ProBuilder::ArrayUtility {
+    #[cfg(feature = "UnityEngine+ProBuilder+ArrayUtility+SearchRange")]
+    pub type SearchRange = crate::UnityEngine::ProBuilder::ArrayUtility_SearchRange;
     #[cfg(feature = "UnityEngine+ProBuilder+ArrayUtility+__c__23_1")]
     pub type __c__23_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::ProBuilder::ArrayUtility___c__23_1<
         T,
@@ -36,8 +38,6 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
         TSource,
         TKey,
     >;
-    #[cfg(feature = "UnityEngine+ProBuilder+ArrayUtility+SearchRange")]
-    pub type SearchRange = crate::UnityEngine::ProBuilder::ArrayUtility_SearchRange;
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ArrayUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::ArrayUtility {

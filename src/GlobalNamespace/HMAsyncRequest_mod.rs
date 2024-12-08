@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::HMAsyncRequest_CancelHander 
 impl crate::GlobalNamespace::HMAsyncRequest_CancelHander {
     pub fn BeginInvoke(
         &mut self,
-        request: *mut HMAsyncRequest,
+        request: *mut crate::GlobalNamespace::HMAsyncRequest,
         callback: *mut crate::System::AsyncCallback,
         object: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
@@ -50,7 +50,7 @@ impl crate::GlobalNamespace::HMAsyncRequest_CancelHander {
     }
     pub fn Invoke(
         &mut self,
-        request: *mut HMAsyncRequest,
+        request: *mut crate::GlobalNamespace::HMAsyncRequest,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -96,29 +96,30 @@ for crate::GlobalNamespace::HMAsyncRequest_CancelHander {
 #[repr(C)]
 #[derive(Debug)]
 pub struct HMAsyncRequest {
-    __cordl_parent: HMAutoincrementedRequestId,
+    __cordl_parent: crate::GlobalNamespace::HMAutoincrementedRequestId,
     pub _cancelled: bool,
     pub _cancelHander: *mut crate::GlobalNamespace::HMAsyncRequest_CancelHander,
 }
 #[cfg(feature = "HMAsyncRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for HMAsyncRequest => ""."HMAsyncRequest"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::HMAsyncRequest => ""
+    ."HMAsyncRequest"
 );
 #[cfg(feature = "HMAsyncRequest")]
-impl std::ops::Deref for HMAsyncRequest {
-    type Target = HMAutoincrementedRequestId;
+impl std::ops::Deref for crate::GlobalNamespace::HMAsyncRequest {
+    type Target = crate::GlobalNamespace::HMAutoincrementedRequestId;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HMAsyncRequest")]
-impl std::ops::DerefMut for HMAsyncRequest {
+impl std::ops::DerefMut for crate::GlobalNamespace::HMAsyncRequest {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "HMAsyncRequest")]
-impl HMAsyncRequest {
+impl crate::GlobalNamespace::HMAsyncRequest {
     #[cfg(feature = "HMAsyncRequest+CancelHander")]
     pub type CancelHander = crate::GlobalNamespace::HMAsyncRequest_CancelHander;
     pub fn Cancel(
@@ -180,7 +181,7 @@ impl HMAsyncRequest {
     }
 }
 #[cfg(feature = "HMAsyncRequest")]
-impl quest_hook::libil2cpp::ObjectType for HMAsyncRequest {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::HMAsyncRequest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

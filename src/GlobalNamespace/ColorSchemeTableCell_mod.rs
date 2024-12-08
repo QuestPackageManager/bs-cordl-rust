@@ -4,28 +4,29 @@
 pub struct ColorSchemeTableCell {
     __cordl_parent: crate::HMUI::TableCell,
     pub _text: *mut crate::TMPro::TextMeshProUGUI,
-    pub _colorSchemeView: *mut ColorSchemeView,
+    pub _colorSchemeView: *mut crate::GlobalNamespace::ColorSchemeView,
     pub _editIcon: *mut crate::UnityEngine::UI::Image,
 }
 #[cfg(feature = "ColorSchemeTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ColorSchemeTableCell => ""."ColorSchemeTableCell"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ColorSchemeTableCell => ""
+    ."ColorSchemeTableCell"
 );
 #[cfg(feature = "ColorSchemeTableCell")]
-impl std::ops::Deref for ColorSchemeTableCell {
+impl std::ops::Deref for crate::GlobalNamespace::ColorSchemeTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorSchemeTableCell")]
-impl std::ops::DerefMut for ColorSchemeTableCell {
+impl std::ops::DerefMut for crate::GlobalNamespace::ColorSchemeTableCell {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorSchemeTableCell")]
-impl ColorSchemeTableCell {
+impl crate::GlobalNamespace::ColorSchemeTableCell {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -105,7 +106,7 @@ impl ColorSchemeTableCell {
     }
 }
 #[cfg(feature = "ColorSchemeTableCell")]
-impl quest_hook::libil2cpp::ObjectType for ColorSchemeTableCell {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorSchemeTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

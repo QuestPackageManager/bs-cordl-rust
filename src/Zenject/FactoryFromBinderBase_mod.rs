@@ -27,34 +27,34 @@ impl std::ops::DerefMut for crate::Zenject::FactoryFromBinderBase {
 }
 #[cfg(feature = "Zenject+FactoryFromBinderBase")]
 impl crate::Zenject::FactoryFromBinderBase {
-    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass33_0")]
-    pub type __c__DisplayClass33_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass33_0;
-    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass27_0")]
-    pub type __c__DisplayClass27_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass27_0;
-    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass28_0")]
-    pub type __c__DisplayClass28_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass28_0;
-    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass23_0")]
-    pub type __c__DisplayClass23_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass23_0;
-    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass29_0")]
-    pub type __c__DisplayClass29_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass29_0;
-    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass30_0")]
-    pub type __c__DisplayClass30_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass30_0;
-    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass24_0")]
-    pub type __c__DisplayClass24_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass24_0;
-    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass32_0")]
-    pub type __c__DisplayClass32_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass32_0;
-    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass34_0")]
-    pub type __c__DisplayClass34_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass34_0;
-    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass31_0")]
-    pub type __c__DisplayClass31_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass31_0;
-    #[cfg(feature = "Zenject+FactoryFromBinderBase+_get_AllParentTypes_d__17")]
-    pub type _get_AllParentTypes_d__17 = crate::Zenject::FactoryFromBinderBase__get_AllParentTypes_d__17;
-    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass26_0")]
-    pub type __c__DisplayClass26_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass26_0;
     #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass20_0")]
     pub type __c__DisplayClass20_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass20_0;
     #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass21_0")]
     pub type __c__DisplayClass21_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass21_0;
+    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass23_0")]
+    pub type __c__DisplayClass23_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass23_0;
+    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass24_0")]
+    pub type __c__DisplayClass24_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass24_0;
+    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass26_0")]
+    pub type __c__DisplayClass26_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass26_0;
+    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass27_0")]
+    pub type __c__DisplayClass27_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass27_0;
+    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass28_0")]
+    pub type __c__DisplayClass28_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass28_0;
+    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass29_0")]
+    pub type __c__DisplayClass29_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass29_0;
+    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass30_0")]
+    pub type __c__DisplayClass30_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass30_0;
+    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass31_0")]
+    pub type __c__DisplayClass31_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass31_0;
+    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass32_0")]
+    pub type __c__DisplayClass32_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass32_0;
+    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass33_0")]
+    pub type __c__DisplayClass33_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass33_0;
+    #[cfg(feature = "Zenject+FactoryFromBinderBase+__c__DisplayClass34_0")]
+    pub type __c__DisplayClass34_0 = crate::Zenject::FactoryFromBinderBase___c__DisplayClass34_0;
+    #[cfg(feature = "Zenject+FactoryFromBinderBase+_get_AllParentTypes_d__17")]
+    pub type _get_AllParentTypes_d__17 = crate::Zenject::FactoryFromBinderBase__get_AllParentTypes_d__17;
     pub fn CreateIFactoryBinder<T>(
         &mut self,
         factoryId: quest_hook::libil2cpp::ByRefMut<crate::System::Guid>,

@@ -6,29 +6,30 @@ pub struct GenericLogger {
 }
 #[cfg(feature = "GenericLogger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GenericLogger => ""."GenericLogger"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GenericLogger => ""
+    ."GenericLogger"
 );
 #[cfg(feature = "GenericLogger")]
-impl std::ops::Deref for GenericLogger {
+impl std::ops::Deref for crate::GlobalNamespace::GenericLogger {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GenericLogger")]
-impl std::ops::DerefMut for GenericLogger {
+impl std::ops::DerefMut for crate::GlobalNamespace::GenericLogger {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GenericLogger")]
-impl GenericLogger {
+impl crate::GlobalNamespace::GenericLogger {
     pub const kVerboseLogDefineSymbol: &'static str = "VERBOSE_LOGGING";
     #[cfg(feature = "GenericLogger+ScopedStopwatch")]
     pub type ScopedStopwatch = crate::GlobalNamespace::GenericLogger_ScopedStopwatch;
 }
 #[cfg(feature = "GenericLogger")]
-impl quest_hook::libil2cpp::ObjectType for GenericLogger {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GenericLogger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

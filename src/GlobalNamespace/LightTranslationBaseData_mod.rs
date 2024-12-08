@@ -5,33 +5,33 @@ pub struct LightTranslationBaseData {
     __cordl_parent: crate::System::Object,
     pub beat: f32,
     pub usePreviousEventTranslationValue: bool,
-    pub easeType: EaseType,
+    pub easeType: crate::GlobalNamespace::EaseType,
     pub translation: f32,
 }
 #[cfg(feature = "LightTranslationBaseData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightTranslationBaseData => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightTranslationBaseData => ""
     ."LightTranslationBaseData"
 );
 #[cfg(feature = "LightTranslationBaseData")]
-impl std::ops::Deref for LightTranslationBaseData {
+impl std::ops::Deref for crate::GlobalNamespace::LightTranslationBaseData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightTranslationBaseData")]
-impl std::ops::DerefMut for LightTranslationBaseData {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightTranslationBaseData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightTranslationBaseData")]
-impl LightTranslationBaseData {
+impl crate::GlobalNamespace::LightTranslationBaseData {
     pub fn New(
         beat: f32,
         usePreviousEventTranslationValue: bool,
-        easeType: EaseType,
+        easeType: crate::GlobalNamespace::EaseType,
         translation: f32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -47,7 +47,7 @@ impl LightTranslationBaseData {
         &mut self,
         beat: f32,
         usePreviousEventTranslationValue: bool,
-        easeType: EaseType,
+        easeType: crate::GlobalNamespace::EaseType,
         translation: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -62,7 +62,8 @@ impl LightTranslationBaseData {
     }
 }
 #[cfg(feature = "LightTranslationBaseData")]
-impl quest_hook::libil2cpp::ObjectType for LightTranslationBaseData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LightTranslationBaseData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,34 +3,34 @@
 #[derive(Debug)]
 pub struct JoinQuickPlayViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _beatmapDifficultyDropdown: *mut BeatmapDifficultyDropdown,
-    pub _songPacksDropdown: *mut QuickPlaySongPacksDropdown,
+    pub _beatmapDifficultyDropdown: *mut crate::GlobalNamespace::BeatmapDifficultyDropdown,
+    pub _songPacksDropdown: *mut crate::GlobalNamespace::QuickPlaySongPacksDropdown,
     pub _levelSelectionToggle: *mut crate::UnityEngine::UI::Toggle,
     pub _joinButton: *mut crate::UnityEngine::UI::Button,
     pub _cancelJoinButton: *mut crate::UnityEngine::UI::Button,
     pub didFinishEvent: *mut crate::System::Action_1<bool>,
-    pub _multiplayerModeSettings: *mut MultiplayerModeSettings,
+    pub _multiplayerModeSettings: *mut crate::GlobalNamespace::MultiplayerModeSettings,
 }
 #[cfg(feature = "JoinQuickPlayViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for JoinQuickPlayViewController => ""
-    ."JoinQuickPlayViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::JoinQuickPlayViewController =>
+    ""."JoinQuickPlayViewController"
 );
 #[cfg(feature = "JoinQuickPlayViewController")]
-impl std::ops::Deref for JoinQuickPlayViewController {
+impl std::ops::Deref for crate::GlobalNamespace::JoinQuickPlayViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "JoinQuickPlayViewController")]
-impl std::ops::DerefMut for JoinQuickPlayViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::JoinQuickPlayViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "JoinQuickPlayViewController")]
-impl JoinQuickPlayViewController {
+impl crate::GlobalNamespace::JoinQuickPlayViewController {
     pub fn ButtonPressed(
         &mut self,
         success: bool,
@@ -67,8 +67,8 @@ impl JoinQuickPlayViewController {
     }
     pub fn Setup(
         &mut self,
-        quickPlaySetupData: *mut QuickPlaySetupData,
-        multiplayerModeSettings: *mut MultiplayerModeSettings,
+        quickPlaySetupData: *mut crate::GlobalNamespace::QuickPlaySetupData,
+        multiplayerModeSettings: *mut crate::GlobalNamespace::MultiplayerModeSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -120,11 +120,13 @@ impl JoinQuickPlayViewController {
     }
     pub fn get_multiplayerModeSettings(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut MultiplayerModeSettings> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::MultiplayerModeSettings,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MultiplayerModeSettings = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MultiplayerModeSettings = __cordl_object
             .invoke("get_multiplayerModeSettings", ())?;
         Ok(__cordl_ret)
     }
@@ -141,7 +143,8 @@ impl JoinQuickPlayViewController {
     }
 }
 #[cfg(feature = "JoinQuickPlayViewController")]
-impl quest_hook::libil2cpp::ObjectType for JoinQuickPlayViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::JoinQuickPlayViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

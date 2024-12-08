@@ -13,10 +13,12 @@ pub struct OVRMeshAttributes {
 }
 #[cfg(feature = "OVRMeshAttributes")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for OVRMeshAttributes => ""."OVRMeshAttributes"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRMeshAttributes => ""
+    ."OVRMeshAttributes"
 );
 #[cfg(feature = "OVRMeshAttributes")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for OVRMeshAttributes {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRMeshAttributes {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -26,4 +28,4 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for OVRMeshAttributes {
     }
 }
 #[cfg(feature = "OVRMeshAttributes")]
-impl OVRMeshAttributes {}
+impl crate::GlobalNamespace::OVRMeshAttributes {}

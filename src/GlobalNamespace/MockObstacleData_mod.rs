@@ -5,29 +5,30 @@ pub struct MockObstacleData {
     __cordl_parent: crate::System::Object,
     pub _time_k__BackingField: f32,
     pub _lineIndex_k__BackingField: i32,
-    pub _lineLayer_k__BackingField: NoteLineLayer,
+    pub _lineLayer_k__BackingField: crate::GlobalNamespace::NoteLineLayer,
     pub _duration_k__BackingField: f32,
     pub _width_k__BackingField: i32,
 }
 #[cfg(feature = "MockObstacleData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MockObstacleData => ""."MockObstacleData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MockObstacleData => ""
+    ."MockObstacleData"
 );
 #[cfg(feature = "MockObstacleData")]
-impl std::ops::Deref for MockObstacleData {
+impl std::ops::Deref for crate::GlobalNamespace::MockObstacleData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockObstacleData")]
-impl std::ops::DerefMut for MockObstacleData {
+impl std::ops::DerefMut for crate::GlobalNamespace::MockObstacleData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockObstacleData")]
-impl MockObstacleData {
+impl crate::GlobalNamespace::MockObstacleData {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -59,11 +60,14 @@ impl MockObstacleData {
         let __cordl_ret: i32 = __cordl_object.invoke("get_lineIndex", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_lineLayer(&mut self) -> quest_hook::libil2cpp::Result<NoteLineLayer> {
+    pub fn get_lineLayer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteLineLayer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: NoteLineLayer = __cordl_object.invoke("get_lineLayer", ())?;
+        let __cordl_ret: crate::GlobalNamespace::NoteLineLayer = __cordl_object
+            .invoke("get_lineLayer", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -104,7 +108,7 @@ impl MockObstacleData {
     }
     pub fn set_lineLayer(
         &mut self,
-        value: NoteLineLayer,
+        value: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -137,7 +141,7 @@ impl MockObstacleData {
     }
 }
 #[cfg(feature = "MockObstacleData")]
-impl quest_hook::libil2cpp::ObjectType for MockObstacleData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockObstacleData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

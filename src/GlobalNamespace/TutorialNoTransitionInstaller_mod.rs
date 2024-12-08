@@ -3,29 +3,29 @@
 #[derive(Debug)]
 pub struct TutorialNoTransitionInstaller {
     __cordl_parent: crate::Zenject::NoTransitionInstaller,
-    pub _scenesTransitionSetupData: *mut TutorialScenesTransitionSetupDataSO,
-    pub _playerSpecificSettings: *mut PlayerSpecificSettings,
+    pub _scenesTransitionSetupData: *mut crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
+    pub _playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
 }
 #[cfg(feature = "TutorialNoTransitionInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TutorialNoTransitionInstaller => ""
-    ."TutorialNoTransitionInstaller"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TutorialNoTransitionInstaller
+    => ""."TutorialNoTransitionInstaller"
 );
 #[cfg(feature = "TutorialNoTransitionInstaller")]
-impl std::ops::Deref for TutorialNoTransitionInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::TutorialNoTransitionInstaller {
     type Target = crate::Zenject::NoTransitionInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TutorialNoTransitionInstaller")]
-impl std::ops::DerefMut for TutorialNoTransitionInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::TutorialNoTransitionInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TutorialNoTransitionInstaller")]
-impl TutorialNoTransitionInstaller {
+impl crate::GlobalNamespace::TutorialNoTransitionInstaller {
     pub fn InstallBindings(
         &mut self,
         container: *mut crate::Zenject::DiContainer,
@@ -56,7 +56,8 @@ impl TutorialNoTransitionInstaller {
     }
 }
 #[cfg(feature = "TutorialNoTransitionInstaller")]
-impl quest_hook::libil2cpp::ObjectType for TutorialNoTransitionInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::TutorialNoTransitionInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

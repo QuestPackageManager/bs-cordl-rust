@@ -6,23 +6,24 @@ pub struct IExperimentModel {
 }
 #[cfg(feature = "IExperimentModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IExperimentModel => ""."IExperimentModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IExperimentModel => ""
+    ."IExperimentModel"
 );
 #[cfg(feature = "IExperimentModel")]
-impl std::ops::Deref for IExperimentModel {
+impl std::ops::Deref for crate::GlobalNamespace::IExperimentModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IExperimentModel")]
-impl std::ops::DerefMut for IExperimentModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::IExperimentModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IExperimentModel")]
-impl IExperimentModel {
+impl crate::GlobalNamespace::IExperimentModel {
     pub fn IsEmployee(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -37,7 +38,7 @@ impl IExperimentModel {
     }
     pub fn IsInTest(
         &mut self,
-        data: *mut IExperimentData,
+        data: *mut crate::GlobalNamespace::IExperimentData,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<bool>,
     > {
@@ -55,7 +56,7 @@ impl IExperimentModel {
     }
 }
 #[cfg(feature = "IExperimentModel")]
-impl quest_hook::libil2cpp::ObjectType for IExperimentModel {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IExperimentModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

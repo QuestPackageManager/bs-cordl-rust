@@ -5,7 +5,7 @@ pub struct HEU_InputObjectInfo {
     __cordl_parent: crate::System::Object,
     pub _gameObject: *mut crate::UnityEngine::GameObject,
     pub _terrainReference: *mut crate::UnityEngine::Terrain,
-    pub _boundingVolumeReference: *mut HEU_BoundingVolume,
+    pub _boundingVolumeReference: *mut crate::GlobalNamespace::HEU_BoundingVolume,
     pub _tilemapReference: *mut crate::UnityEngine::Tilemaps::Tilemap,
     pub _syncdTransform: crate::UnityEngine::Matrix4x4,
     pub _useTransformOffset: bool,

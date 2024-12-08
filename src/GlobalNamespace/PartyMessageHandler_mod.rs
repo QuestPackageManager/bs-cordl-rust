@@ -214,40 +214,41 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct PartyMessageHandler {
     __cordl_parent: crate::System::Object,
-    pub _serializer: *mut NetworkPacketSerializer_2<
+    pub _serializer: *mut crate::GlobalNamespace::NetworkPacketSerializer_2<
         crate::GlobalNamespace::PartyMessageHandler_MessageType,
-        *mut IConnectedPlayer,
+        *mut crate::GlobalNamespace::IConnectedPlayer,
     >,
-    pub _connectedPlayerManager: *mut ConnectedPlayerManager,
+    pub _connectedPlayerManager: *mut crate::GlobalNamespace::ConnectedPlayerManager,
     pub connectToMasterServerEvent: *mut crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate,
 }
 #[cfg(feature = "PartyMessageHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PartyMessageHandler => ""."PartyMessageHandler"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PartyMessageHandler => ""
+    ."PartyMessageHandler"
 );
 #[cfg(feature = "PartyMessageHandler")]
-impl std::ops::Deref for PartyMessageHandler {
+impl std::ops::Deref for crate::GlobalNamespace::PartyMessageHandler {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PartyMessageHandler")]
-impl std::ops::DerefMut for PartyMessageHandler {
+impl std::ops::DerefMut for crate::GlobalNamespace::PartyMessageHandler {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PartyMessageHandler")]
-impl PartyMessageHandler {
-    #[cfg(feature = "PartyMessageHandler+ServerStatusUpdatedDelegate")]
-    pub type ServerStatusUpdatedDelegate = crate::GlobalNamespace::PartyMessageHandler_ServerStatusUpdatedDelegate;
-    #[cfg(feature = "PartyMessageHandler+ConnectToMasterServerMessage")]
-    pub type ConnectToMasterServerMessage = crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage;
+impl crate::GlobalNamespace::PartyMessageHandler {
     #[cfg(feature = "PartyMessageHandler+ConnectToMasterServerDelegate")]
     pub type ConnectToMasterServerDelegate = crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate;
+    #[cfg(feature = "PartyMessageHandler+ConnectToMasterServerMessage")]
+    pub type ConnectToMasterServerMessage = crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage;
     #[cfg(feature = "PartyMessageHandler+MessageType")]
     pub type MessageType = crate::GlobalNamespace::PartyMessageHandler_MessageType;
+    #[cfg(feature = "PartyMessageHandler+ServerStatusUpdatedDelegate")]
+    pub type ServerStatusUpdatedDelegate = crate::GlobalNamespace::PartyMessageHandler_ServerStatusUpdatedDelegate;
     pub fn ConnectToMasterServer(
         &mut self,
         secret: *mut crate::System::String,
@@ -281,7 +282,7 @@ impl PartyMessageHandler {
         Ok(__cordl_ret)
     }
     pub fn New(
-        connectedPlayerManager: *mut ConnectedPlayerManager,
+        connectedPlayerManager: *mut crate::GlobalNamespace::ConnectedPlayerManager,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -291,7 +292,7 @@ impl PartyMessageHandler {
     }
     pub fn _ctor(
         &mut self,
-        connectedPlayerManager: *mut ConnectedPlayerManager,
+        connectedPlayerManager: *mut crate::GlobalNamespace::ConnectedPlayerManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -324,7 +325,7 @@ impl PartyMessageHandler {
     }
 }
 #[cfg(feature = "PartyMessageHandler")]
-impl quest_hook::libil2cpp::ObjectType for PartyMessageHandler {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PartyMessageHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -363,8 +364,8 @@ for crate::GlobalNamespace::PartyMessageHandler_ServerStatusUpdatedDelegate {
 impl crate::GlobalNamespace::PartyMessageHandler_ServerStatusUpdatedDelegate {
     pub fn BeginInvoke(
         &mut self,
-        selectionMask: BeatmapLevelSelectionMask,
-        configuration: GameplayServerConfiguration,
+        selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+        configuration: crate::GlobalNamespace::GameplayServerConfiguration,
         callback: *mut crate::System::AsyncCallback,
         object: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
@@ -388,8 +389,8 @@ impl crate::GlobalNamespace::PartyMessageHandler_ServerStatusUpdatedDelegate {
     }
     pub fn Invoke(
         &mut self,
-        selectionMask: BeatmapLevelSelectionMask,
-        configuration: GameplayServerConfiguration,
+        selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+        configuration: crate::GlobalNamespace::GameplayServerConfiguration,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

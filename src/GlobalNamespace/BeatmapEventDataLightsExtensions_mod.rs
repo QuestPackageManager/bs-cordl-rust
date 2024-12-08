@@ -6,29 +6,31 @@ pub struct BeatmapEventDataLightsExtensions {
 }
 #[cfg(feature = "BeatmapEventDataLightsExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapEventDataLightsExtensions => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BeatmapEventDataLightsExtensions => ""
     ."BeatmapEventDataLightsExtensions"
 );
 #[cfg(feature = "BeatmapEventDataLightsExtensions")]
-impl std::ops::Deref for BeatmapEventDataLightsExtensions {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapEventDataLightsExtensions")]
-impl std::ops::DerefMut for BeatmapEventDataLightsExtensions {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapEventDataLightsExtensions")]
-impl BeatmapEventDataLightsExtensions {
+impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
     #[cfg(feature = "BeatmapEventDataLightsExtensions+LightSwitchEventEffectDataValues")]
     pub type LightSwitchEventEffectDataValues = crate::GlobalNamespace::BeatmapEventDataLightsExtensions_LightSwitchEventEffectDataValues;
 }
 #[cfg(feature = "BeatmapEventDataLightsExtensions")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapEventDataLightsExtensions {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -53,12 +53,12 @@ impl std::ops::DerefMut for crate::System::Globalization::HebrewNumber {
 }
 #[cfg(feature = "System+Globalization+HebrewNumber")]
 impl crate::System::Globalization::HebrewNumber {
+    #[cfg(feature = "System+Globalization+HebrewNumber+HS")]
+    pub type HS = crate::System::Globalization::HebrewNumber_HS;
     #[cfg(feature = "System+Globalization+HebrewNumber+HebrewToken")]
     pub type HebrewToken = crate::System::Globalization::HebrewNumber_HebrewToken;
     #[cfg(feature = "System+Globalization+HebrewNumber+HebrewValue")]
     pub type HebrewValue = crate::System::Globalization::HebrewNumber_HebrewValue;
-    #[cfg(feature = "System+Globalization+HebrewNumber+HS")]
-    pub type HS = crate::System::Globalization::HebrewNumber_HS;
 }
 #[cfg(feature = "System+Globalization+HebrewNumber")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::HebrewNumber {

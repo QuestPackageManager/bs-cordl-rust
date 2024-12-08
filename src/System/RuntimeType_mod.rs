@@ -154,12 +154,12 @@ impl std::ops::DerefMut for crate::System::RuntimeType {
 #[cfg(feature = "System+RuntimeType")]
 impl crate::System::RuntimeType {
     pub const GenericParameterCountAny: i32 = -1i32;
-    #[cfg(feature = "System+RuntimeType+MemberListType")]
-    pub type MemberListType = crate::System::RuntimeType_MemberListType;
     #[cfg(feature = "System+RuntimeType+ListBuilder_1")]
     pub type ListBuilder_1<T: quest_hook::libil2cpp::Type> = crate::System::RuntimeType_ListBuilder_1<
         T,
     >;
+    #[cfg(feature = "System+RuntimeType+MemberListType")]
+    pub type MemberListType = crate::System::RuntimeType_MemberListType;
     pub fn CheckValue(
         &mut self,
         value: *mut crate::System::Object,

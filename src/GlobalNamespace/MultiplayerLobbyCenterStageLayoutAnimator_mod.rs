@@ -11,24 +11,27 @@ pub struct MultiplayerLobbyCenterStageLayoutAnimator {
 }
 #[cfg(feature = "MultiplayerLobbyCenterStageLayoutAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLobbyCenterStageLayoutAnimator => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLobbyCenterStageLayoutAnimator => ""
     ."MultiplayerLobbyCenterStageLayoutAnimator"
 );
 #[cfg(feature = "MultiplayerLobbyCenterStageLayoutAnimator")]
-impl std::ops::Deref for MultiplayerLobbyCenterStageLayoutAnimator {
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerLobbyCenterStageLayoutAnimator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLobbyCenterStageLayoutAnimator")]
-impl std::ops::DerefMut for MultiplayerLobbyCenterStageLayoutAnimator {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerLobbyCenterStageLayoutAnimator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLobbyCenterStageLayoutAnimator")]
-impl MultiplayerLobbyCenterStageLayoutAnimator {
+impl crate::GlobalNamespace::MultiplayerLobbyCenterStageLayoutAnimator {
     pub fn Move(
         &mut self,
         from: crate::UnityEngine::Vector3,
@@ -93,7 +96,8 @@ impl MultiplayerLobbyCenterStageLayoutAnimator {
     }
 }
 #[cfg(feature = "MultiplayerLobbyCenterStageLayoutAnimator")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLobbyCenterStageLayoutAnimator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLobbyCenterStageLayoutAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

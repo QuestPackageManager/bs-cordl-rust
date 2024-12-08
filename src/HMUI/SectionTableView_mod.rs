@@ -154,10 +154,10 @@ impl std::ops::DerefMut for crate::HMUI::SectionTableView {
 }
 #[cfg(feature = "HMUI+SectionTableView")]
 impl crate::HMUI::SectionTableView {
-    #[cfg(feature = "HMUI+SectionTableView+Section")]
-    pub type Section = crate::HMUI::SectionTableView_Section;
     #[cfg(feature = "HMUI+SectionTableView+IDataSource")]
     type IDataSource = crate::HMUI::SectionTableView_IDataSource;
+    #[cfg(feature = "HMUI+SectionTableView+Section")]
+    pub type Section = crate::HMUI::SectionTableView_Section;
     pub fn CellForIdx(
         &mut self,
         tableView: *mut crate::HMUI::TableView,

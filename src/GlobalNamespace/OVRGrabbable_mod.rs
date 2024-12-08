@@ -12,27 +12,28 @@ pub struct OVRGrabbable {
     >,
     pub m_grabbedKinematic: bool,
     pub m_grabbedCollider: *mut crate::UnityEngine::Collider,
-    pub m_grabbedBy: *mut OVRGrabber,
+    pub m_grabbedBy: *mut crate::GlobalNamespace::OVRGrabber,
 }
 #[cfg(feature = "OVRGrabbable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRGrabbable => ""."OVRGrabbable"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRGrabbable => ""
+    ."OVRGrabbable"
 );
 #[cfg(feature = "OVRGrabbable")]
-impl std::ops::Deref for OVRGrabbable {
+impl std::ops::Deref for crate::GlobalNamespace::OVRGrabbable {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRGrabbable")]
-impl std::ops::DerefMut for OVRGrabbable {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRGrabbable {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRGrabbable")]
-impl OVRGrabbable {
+impl crate::GlobalNamespace::OVRGrabbable {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -45,7 +46,7 @@ impl OVRGrabbable {
     }
     pub fn GrabBegin(
         &mut self,
-        hand: *mut OVRGrabber,
+        hand: *mut crate::GlobalNamespace::OVRGrabber,
         grabPoint: *mut crate::UnityEngine::Collider,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -124,11 +125,14 @@ impl OVRGrabbable {
         > = __cordl_object.invoke("get_grabPoints", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_grabbedBy(&mut self) -> quest_hook::libil2cpp::Result<*mut OVRGrabber> {
+    pub fn get_grabbedBy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::OVRGrabber> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut OVRGrabber = __cordl_object.invoke("get_grabbedBy", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::OVRGrabber = __cordl_object
+            .invoke("get_grabbedBy", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_grabbedRigidbody(
@@ -184,7 +188,7 @@ impl OVRGrabbable {
     }
 }
 #[cfg(feature = "OVRGrabbable")]
-impl quest_hook::libil2cpp::ObjectType for OVRGrabbable {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRGrabbable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

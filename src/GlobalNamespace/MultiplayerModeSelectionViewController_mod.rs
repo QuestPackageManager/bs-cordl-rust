@@ -24,32 +24,34 @@ pub struct MultiplayerModeSelectionViewController {
     pub _createServerButton: *mut crate::UnityEngine::UI::Button,
     pub _maintenanceMessageText: *mut crate::TMPro::TextMeshProUGUI,
     pub _customServerEndPointText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _networkConfig: *mut INetworkConfig,
+    pub _networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
     pub didFinishEvent: *mut crate::System::Action_2<
-        *mut MultiplayerModeSelectionViewController,
+        *mut crate::GlobalNamespace::MultiplayerModeSelectionViewController,
         crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
     >,
 }
 #[cfg(feature = "MultiplayerModeSelectionViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerModeSelectionViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerModeSelectionViewController => ""
     ."MultiplayerModeSelectionViewController"
 );
 #[cfg(feature = "MultiplayerModeSelectionViewController")]
-impl std::ops::Deref for MultiplayerModeSelectionViewController {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerModeSelectionViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerModeSelectionViewController")]
-impl std::ops::DerefMut for MultiplayerModeSelectionViewController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerModeSelectionViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerModeSelectionViewController")]
-impl MultiplayerModeSelectionViewController {
+impl crate::GlobalNamespace::MultiplayerModeSelectionViewController {
     #[cfg(feature = "MultiplayerModeSelectionViewController+MenuButton")]
     pub type MenuButton = crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton;
     pub fn DidActivate(
@@ -88,7 +90,7 @@ impl MultiplayerModeSelectionViewController {
     }
     pub fn SetData(
         &mut self,
-        multiplayerStatusData: *mut MultiplayerStatusData,
+        multiplayerStatusData: *mut crate::GlobalNamespace::MultiplayerStatusData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -150,7 +152,7 @@ impl MultiplayerModeSelectionViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut MultiplayerModeSelectionViewController,
+            *mut crate::GlobalNamespace::MultiplayerModeSelectionViewController,
             crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -164,7 +166,7 @@ impl MultiplayerModeSelectionViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut MultiplayerModeSelectionViewController,
+            *mut crate::GlobalNamespace::MultiplayerModeSelectionViewController,
             crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -177,7 +179,8 @@ impl MultiplayerModeSelectionViewController {
     }
 }
 #[cfg(feature = "MultiplayerModeSelectionViewController")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerModeSelectionViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerModeSelectionViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

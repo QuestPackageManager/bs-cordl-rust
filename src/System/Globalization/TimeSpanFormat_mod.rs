@@ -141,10 +141,10 @@ impl std::ops::DerefMut for crate::System::Globalization::TimeSpanFormat {
 }
 #[cfg(feature = "System+Globalization+TimeSpanFormat")]
 impl crate::System::Globalization::TimeSpanFormat {
-    #[cfg(feature = "System+Globalization+TimeSpanFormat+Pattern")]
-    pub type Pattern = crate::System::Globalization::TimeSpanFormat_Pattern;
     #[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]
     pub type FormatLiterals = crate::System::Globalization::TimeSpanFormat_FormatLiterals;
+    #[cfg(feature = "System+Globalization+TimeSpanFormat+Pattern")]
+    pub type Pattern = crate::System::Globalization::TimeSpanFormat_Pattern;
 }
 #[cfg(feature = "System+Globalization+TimeSpanFormat")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TimeSpanFormat {

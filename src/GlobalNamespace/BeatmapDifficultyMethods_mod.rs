@@ -6,26 +6,27 @@ pub struct BeatmapDifficultyMethods {
 }
 #[cfg(feature = "BeatmapDifficultyMethods")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapDifficultyMethods => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapDifficultyMethods => ""
     ."BeatmapDifficultyMethods"
 );
 #[cfg(feature = "BeatmapDifficultyMethods")]
-impl std::ops::Deref for BeatmapDifficultyMethods {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapDifficultyMethods {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDifficultyMethods")]
-impl std::ops::DerefMut for BeatmapDifficultyMethods {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDifficultyMethods {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDifficultyMethods")]
-impl BeatmapDifficultyMethods {}
+impl crate::GlobalNamespace::BeatmapDifficultyMethods {}
 #[cfg(feature = "BeatmapDifficultyMethods")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapDifficultyMethods {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapDifficultyMethods {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

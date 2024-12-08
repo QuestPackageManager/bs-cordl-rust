@@ -80,7 +80,7 @@ pub struct LocalLeaderboardsModel {
         *mut crate::System::String,
         crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
     >,
-    pub _fileStorage: *mut IFileStorage,
+    pub _fileStorage: *mut crate::GlobalNamespace::IFileStorage,
     pub _maxNumberOfScoresInLeaderboard: i32,
     pub _lastScorePositions: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
@@ -96,45 +96,46 @@ pub struct LocalLeaderboardsModel {
 }
 #[cfg(feature = "LocalLeaderboardsModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LocalLeaderboardsModel => ""."LocalLeaderboardsModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LocalLeaderboardsModel => ""
+    ."LocalLeaderboardsModel"
 );
 #[cfg(feature = "LocalLeaderboardsModel")]
-impl std::ops::Deref for LocalLeaderboardsModel {
+impl std::ops::Deref for crate::GlobalNamespace::LocalLeaderboardsModel {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LocalLeaderboardsModel")]
-impl std::ops::DerefMut for LocalLeaderboardsModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::LocalLeaderboardsModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LocalLeaderboardsModel")]
-impl LocalLeaderboardsModel {
+impl crate::GlobalNamespace::LocalLeaderboardsModel {
     pub const kLocalDailyLeaderboardsFileName: &'static str = "LocalDailyLeaderboards.dat";
     pub const kLocalLeaderboardsFileName: &'static str = "LocalLeaderboards.dat";
-    #[cfg(feature = "LocalLeaderboardsModel+_SaveAsync_d__23")]
-    pub type _SaveAsync_d__23 = crate::GlobalNamespace::LocalLeaderboardsModel__SaveAsync_d__23;
-    #[cfg(feature = "LocalLeaderboardsModel+_LoadLeaderboardsDataAsync_d__16")]
-    pub type _LoadLeaderboardsDataAsync_d__16 = crate::GlobalNamespace::LocalLeaderboardsModel__LoadLeaderboardsDataAsync_d__16;
-    #[cfg(feature = "LocalLeaderboardsModel+__c")]
-    pub type __c = crate::GlobalNamespace::LocalLeaderboardsModel___c;
-    #[cfg(feature = "LocalLeaderboardsModel+_ClearAllLeaderboardsAsync_d__38")]
-    pub type _ClearAllLeaderboardsAsync_d__38 = crate::GlobalNamespace::LocalLeaderboardsModel__ClearAllLeaderboardsAsync_d__38;
-    #[cfg(feature = "LocalLeaderboardsModel+_LoadAsync_d__39")]
-    pub type _LoadAsync_d__39 = crate::GlobalNamespace::LocalLeaderboardsModel__LoadAsync_d__39;
     #[cfg(feature = "LocalLeaderboardsModel+LeaderboardData")]
     pub type LeaderboardData = crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData;
-    #[cfg(feature = "LocalLeaderboardsModel+_SaveLeaderboardsData_d__19")]
-    pub type _SaveLeaderboardsData_d__19 = crate::GlobalNamespace::LocalLeaderboardsModel__SaveLeaderboardsData_d__19;
+    #[cfg(feature = "LocalLeaderboardsModel+LeaderboardType")]
+    pub type LeaderboardType = crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType;
     #[cfg(feature = "LocalLeaderboardsModel+SavedLeaderboardsData")]
     pub type SavedLeaderboardsData = crate::GlobalNamespace::LocalLeaderboardsModel_SavedLeaderboardsData;
     #[cfg(feature = "LocalLeaderboardsModel+ScoreData")]
     pub type ScoreData = crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData;
-    #[cfg(feature = "LocalLeaderboardsModel+LeaderboardType")]
-    pub type LeaderboardType = crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType;
+    #[cfg(feature = "LocalLeaderboardsModel+_ClearAllLeaderboardsAsync_d__38")]
+    pub type _ClearAllLeaderboardsAsync_d__38 = crate::GlobalNamespace::LocalLeaderboardsModel__ClearAllLeaderboardsAsync_d__38;
+    #[cfg(feature = "LocalLeaderboardsModel+_LoadAsync_d__39")]
+    pub type _LoadAsync_d__39 = crate::GlobalNamespace::LocalLeaderboardsModel__LoadAsync_d__39;
+    #[cfg(feature = "LocalLeaderboardsModel+_LoadLeaderboardsDataAsync_d__16")]
+    pub type _LoadLeaderboardsDataAsync_d__16 = crate::GlobalNamespace::LocalLeaderboardsModel__LoadLeaderboardsDataAsync_d__16;
+    #[cfg(feature = "LocalLeaderboardsModel+_SaveAsync_d__23")]
+    pub type _SaveAsync_d__23 = crate::GlobalNamespace::LocalLeaderboardsModel__SaveAsync_d__23;
+    #[cfg(feature = "LocalLeaderboardsModel+_SaveLeaderboardsData_d__19")]
+    pub type _SaveLeaderboardsData_d__19 = crate::GlobalNamespace::LocalLeaderboardsModel__SaveLeaderboardsData_d__19;
+    #[cfg(feature = "LocalLeaderboardsModel+__c")]
+    pub type __c = crate::GlobalNamespace::LocalLeaderboardsModel___c;
     pub fn AddScore_LocalLeaderboardsModel_LeaderboardType_String_i32__cordl_bool0(
         &mut self,
         leaderboardId: *mut crate::System::String,
@@ -360,8 +361,8 @@ impl LocalLeaderboardsModel {
         Ok(__cordl_ret)
     }
     pub fn New(
-        fileStorage: *mut IFileStorage,
-        localLeaderboardsSettingsSo: *mut LocalLeaderboardsSettingsSO,
+        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
+        localLeaderboardsSettingsSo: *mut crate::GlobalNamespace::LocalLeaderboardsSettingsSO,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -446,8 +447,8 @@ impl LocalLeaderboardsModel {
     }
     pub fn _ctor(
         &mut self,
-        fileStorage: *mut IFileStorage,
-        localLeaderboardsSettingsSo: *mut LocalLeaderboardsSettingsSO,
+        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
+        localLeaderboardsSettingsSo: *mut crate::GlobalNamespace::LocalLeaderboardsSettingsSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -486,7 +487,8 @@ impl LocalLeaderboardsModel {
     }
 }
 #[cfg(feature = "LocalLeaderboardsModel")]
-impl quest_hook::libil2cpp::ObjectType for LocalLeaderboardsModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LocalLeaderboardsModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

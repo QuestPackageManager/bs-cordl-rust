@@ -341,20 +341,20 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XsdBuilder {
 }
 #[cfg(feature = "System+Xml+Schema+XsdBuilder")]
 impl crate::System::Xml::Schema::XsdBuilder {
-    #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdEntry")]
-    pub type XsdEntry = crate::System::Xml::Schema::XsdBuilder_XsdEntry;
+    #[cfg(feature = "System+Xml+Schema+XsdBuilder+BuilderNamespaceManager")]
+    pub type BuilderNamespaceManager = crate::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager;
     #[cfg(feature = "System+Xml+Schema+XsdBuilder+State")]
     pub type State = crate::System::Xml::Schema::XsdBuilder_State;
     #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdAttributeEntry")]
     pub type XsdAttributeEntry = crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry;
-    #[cfg(feature = "System+Xml+Schema+XsdBuilder+BuilderNamespaceManager")]
-    pub type BuilderNamespaceManager = crate::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager;
-    #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdInitFunction")]
-    pub type XsdInitFunction = crate::System::Xml::Schema::XsdBuilder_XsdInitFunction;
     #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdBuildFunction")]
     pub type XsdBuildFunction = crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction;
     #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdEndChildFunction")]
     pub type XsdEndChildFunction = crate::System::Xml::Schema::XsdBuilder_XsdEndChildFunction;
+    #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdEntry")]
+    pub type XsdEntry = crate::System::Xml::Schema::XsdBuilder_XsdEntry;
+    #[cfg(feature = "System+Xml+Schema+XsdBuilder+XsdInitFunction")]
+    pub type XsdInitFunction = crate::System::Xml::Schema::XsdBuilder_XsdInitFunction;
     pub fn AddAttribute(
         &mut self,
         value: *mut crate::System::Xml::Schema::XmlSchemaObject,

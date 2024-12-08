@@ -7,23 +7,24 @@ pub struct OVRWaitCursor {
 }
 #[cfg(feature = "OVRWaitCursor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRWaitCursor => ""."OVRWaitCursor"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRWaitCursor => ""
+    ."OVRWaitCursor"
 );
 #[cfg(feature = "OVRWaitCursor")]
-impl std::ops::Deref for OVRWaitCursor {
+impl std::ops::Deref for crate::GlobalNamespace::OVRWaitCursor {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRWaitCursor")]
-impl std::ops::DerefMut for OVRWaitCursor {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRWaitCursor {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRWaitCursor")]
-impl OVRWaitCursor {
+impl crate::GlobalNamespace::OVRWaitCursor {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -53,7 +54,7 @@ impl OVRWaitCursor {
     }
 }
 #[cfg(feature = "OVRWaitCursor")]
-impl quest_hook::libil2cpp::ObjectType for OVRWaitCursor {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRWaitCursor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

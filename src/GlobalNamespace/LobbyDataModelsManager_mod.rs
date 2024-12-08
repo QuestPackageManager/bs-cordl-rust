@@ -3,31 +3,32 @@
 #[derive(Debug)]
 pub struct LobbyDataModelsManager {
     __cordl_parent: crate::System::Object,
-    pub _lobbyStateDataModel: *mut ILobbyStateDataModel,
-    pub _lobbyPlayersDataModel: *mut ILobbyPlayersDataModel,
-    pub _nodePoseSyncStateManager: *mut INodePoseSyncStateManager,
-    pub _lobbyPlayerPermissionsModel: *mut LobbyPlayerPermissionsModel,
-    pub _lobbyGameStateController: *mut ILobbyGameStateControllerBase,
+    pub _lobbyStateDataModel: *mut crate::GlobalNamespace::ILobbyStateDataModel,
+    pub _lobbyPlayersDataModel: *mut crate::GlobalNamespace::ILobbyPlayersDataModel,
+    pub _nodePoseSyncStateManager: *mut crate::GlobalNamespace::INodePoseSyncStateManager,
+    pub _lobbyPlayerPermissionsModel: *mut crate::GlobalNamespace::LobbyPlayerPermissionsModel,
+    pub _lobbyGameStateController: *mut crate::GlobalNamespace::ILobbyGameStateControllerBase,
 }
 #[cfg(feature = "LobbyDataModelsManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LobbyDataModelsManager => ""."LobbyDataModelsManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LobbyDataModelsManager => ""
+    ."LobbyDataModelsManager"
 );
 #[cfg(feature = "LobbyDataModelsManager")]
-impl std::ops::Deref for LobbyDataModelsManager {
+impl std::ops::Deref for crate::GlobalNamespace::LobbyDataModelsManager {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LobbyDataModelsManager")]
-impl std::ops::DerefMut for LobbyDataModelsManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::LobbyDataModelsManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LobbyDataModelsManager")]
-impl LobbyDataModelsManager {
+impl crate::GlobalNamespace::LobbyDataModelsManager {
     pub fn Activate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -67,7 +68,8 @@ impl LobbyDataModelsManager {
     }
 }
 #[cfg(feature = "LobbyDataModelsManager")]
-impl quest_hook::libil2cpp::ObjectType for LobbyDataModelsManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LobbyDataModelsManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,33 +2,33 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GoodCutsMissionObjectiveChecker {
-    __cordl_parent: SimpleValueMissionObjectiveChecker,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
+    __cordl_parent: crate::GlobalNamespace::SimpleValueMissionObjectiveChecker,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
 }
 #[cfg(feature = "GoodCutsMissionObjectiveChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GoodCutsMissionObjectiveChecker => ""
-    ."GoodCutsMissionObjectiveChecker"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GoodCutsMissionObjectiveChecker
+    => ""."GoodCutsMissionObjectiveChecker"
 );
 #[cfg(feature = "GoodCutsMissionObjectiveChecker")]
-impl std::ops::Deref for GoodCutsMissionObjectiveChecker {
-    type Target = SimpleValueMissionObjectiveChecker;
+impl std::ops::Deref for crate::GlobalNamespace::GoodCutsMissionObjectiveChecker {
+    type Target = crate::GlobalNamespace::SimpleValueMissionObjectiveChecker;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GoodCutsMissionObjectiveChecker")]
-impl std::ops::DerefMut for GoodCutsMissionObjectiveChecker {
+impl std::ops::DerefMut for crate::GlobalNamespace::GoodCutsMissionObjectiveChecker {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GoodCutsMissionObjectiveChecker")]
-impl GoodCutsMissionObjectiveChecker {
+impl crate::GlobalNamespace::GoodCutsMissionObjectiveChecker {
     pub fn HandleNoteWasCut(
         &mut self,
-        noteController: *mut NoteController,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -76,7 +76,8 @@ impl GoodCutsMissionObjectiveChecker {
     }
 }
 #[cfg(feature = "GoodCutsMissionObjectiveChecker")]
-impl quest_hook::libil2cpp::ObjectType for GoodCutsMissionObjectiveChecker {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GoodCutsMissionObjectiveChecker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

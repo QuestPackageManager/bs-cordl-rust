@@ -6,24 +6,24 @@ pub struct IDestinationRequestManager {
 }
 #[cfg(feature = "IDestinationRequestManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IDestinationRequestManager => ""
-    ."IDestinationRequestManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IDestinationRequestManager =>
+    ""."IDestinationRequestManager"
 );
 #[cfg(feature = "IDestinationRequestManager")]
-impl std::ops::Deref for IDestinationRequestManager {
+impl std::ops::Deref for crate::GlobalNamespace::IDestinationRequestManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IDestinationRequestManager")]
-impl std::ops::DerefMut for IDestinationRequestManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::IDestinationRequestManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IDestinationRequestManager")]
-impl IDestinationRequestManager {
+impl crate::GlobalNamespace::IDestinationRequestManager {
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -36,7 +36,7 @@ impl IDestinationRequestManager {
     }
     pub fn add_didSendMenuDestinationRequestEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MenuDestination>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::MenuDestination>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -52,17 +52,17 @@ impl IDestinationRequestManager {
     }
     pub fn get_currentMenuDestinationRequest(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut MenuDestination> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::MenuDestination> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MenuDestination = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MenuDestination = __cordl_object
             .invoke("get_currentMenuDestinationRequest", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_didSendMenuDestinationRequestEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MenuDestination>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::MenuDestination>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -73,7 +73,7 @@ impl IDestinationRequestManager {
     }
     pub fn set_currentMenuDestinationRequest(
         &mut self,
-        value: *mut MenuDestination,
+        value: *mut crate::GlobalNamespace::MenuDestination,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -84,7 +84,8 @@ impl IDestinationRequestManager {
     }
 }
 #[cfg(feature = "IDestinationRequestManager")]
-impl quest_hook::libil2cpp::ObjectType for IDestinationRequestManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IDestinationRequestManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -13,43 +13,43 @@ pub struct MultiplayerIntroCountdown {
     pub _setClip: *mut crate::UnityEngine::AudioClip,
     pub _goClip: *mut crate::UnityEngine::AudioClip,
     pub _buildUpClip: *mut crate::UnityEngine::AudioClip,
-    pub _textController0: *mut MultiplayerIntroCountdownTextController,
-    pub _textController1: *mut MultiplayerIntroCountdownTextController,
+    pub _textController0: *mut crate::GlobalNamespace::MultiplayerIntroCountdownTextController,
+    pub _textController1: *mut crate::GlobalNamespace::MultiplayerIntroCountdownTextController,
     pub _audioSource: *mut crate::UnityEngine::AudioSource,
-    pub _multiplayerOffsetByLocalPlayerPosition: *mut MultiplayerOffsetPositionByLocalPlayerPosition,
+    pub _multiplayerOffsetByLocalPlayerPosition: *mut crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition,
     pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
-    pub _currentTextController: *mut MultiplayerIntroCountdownTextController,
+    pub _currentTextController: *mut crate::GlobalNamespace::MultiplayerIntroCountdownTextController,
     pub _fontSize: f32,
     pub _alpha: f32,
 }
 #[cfg(feature = "MultiplayerIntroCountdown")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerIntroCountdown => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerIntroCountdown => ""
     ."MultiplayerIntroCountdown"
 );
 #[cfg(feature = "MultiplayerIntroCountdown")]
-impl std::ops::Deref for MultiplayerIntroCountdown {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerIntroCountdown {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerIntroCountdown")]
-impl std::ops::DerefMut for MultiplayerIntroCountdown {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerIntroCountdown {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerIntroCountdown")]
-impl MultiplayerIntroCountdown {
+impl crate::GlobalNamespace::MultiplayerIntroCountdown {
     #[cfg(feature = "MultiplayerIntroCountdown+_CountdownRoutine_d__23")]
     pub type _CountdownRoutine_d__23 = crate::GlobalNamespace::MultiplayerIntroCountdown__CountdownRoutine_d__23;
-    #[cfg(feature = "MultiplayerIntroCountdown+__c__DisplayClass25_0")]
-    pub type __c__DisplayClass25_0 = crate::GlobalNamespace::MultiplayerIntroCountdown___c__DisplayClass25_0;
-    #[cfg(feature = "MultiplayerIntroCountdown+_PlayDelayed_d__24")]
-    pub type _PlayDelayed_d__24 = crate::GlobalNamespace::MultiplayerIntroCountdown__PlayDelayed_d__24;
     #[cfg(feature = "MultiplayerIntroCountdown+_PhaseRoutine_d__25")]
     pub type _PhaseRoutine_d__25 = crate::GlobalNamespace::MultiplayerIntroCountdown__PhaseRoutine_d__25;
+    #[cfg(feature = "MultiplayerIntroCountdown+_PlayDelayed_d__24")]
+    pub type _PlayDelayed_d__24 = crate::GlobalNamespace::MultiplayerIntroCountdown__PlayDelayed_d__24;
+    #[cfg(feature = "MultiplayerIntroCountdown+__c__DisplayClass25_0")]
+    pub type __c__DisplayClass25_0 = crate::GlobalNamespace::MultiplayerIntroCountdown___c__DisplayClass25_0;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -147,7 +147,8 @@ impl MultiplayerIntroCountdown {
     }
 }
 #[cfg(feature = "MultiplayerIntroCountdown")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerIntroCountdown {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerIntroCountdown {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

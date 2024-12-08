@@ -47,10 +47,10 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_ToolsInfo {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ToolsInfo")]
 impl crate::HoudiniEngineUnity::HEU_ToolsInfo {
-    #[cfg(feature = "HoudiniEngineUnity+HEU_ToolsInfo+PaintMeshVisibility")]
-    pub type PaintMeshVisibility = crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMeshVisibility;
     #[cfg(feature = "HoudiniEngineUnity+HEU_ToolsInfo+PaintMergeMode")]
     pub type PaintMergeMode = crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMergeMode;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_ToolsInfo+PaintMeshVisibility")]
+    pub type PaintMeshVisibility = crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMeshVisibility;
     pub fn IsEquivalentTo(
         &mut self,
         other: *mut crate::HoudiniEngineUnity::HEU_ToolsInfo,

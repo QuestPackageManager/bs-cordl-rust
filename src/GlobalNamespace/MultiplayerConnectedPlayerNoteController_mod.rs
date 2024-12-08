@@ -2,29 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerNoteController {
-    __cordl_parent: NoteController,
+    __cordl_parent: crate::GlobalNamespace::NoteController,
     pub _visualsWrapperGo: *mut crate::UnityEngine::GameObject,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerNoteController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerConnectedPlayerNoteController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerConnectedPlayerNoteController => ""
     ."MultiplayerConnectedPlayerNoteController"
 );
 #[cfg(feature = "MultiplayerConnectedPlayerNoteController")]
-impl std::ops::Deref for MultiplayerConnectedPlayerNoteController {
-    type Target = NoteController;
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController {
+    type Target = crate::GlobalNamespace::NoteController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerNoteController")]
-impl std::ops::DerefMut for MultiplayerConnectedPlayerNoteController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerNoteController")]
-impl MultiplayerConnectedPlayerNoteController {
+impl crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController {
     pub fn HiddenStateDidChange(
         &mut self,
         hide: bool,
@@ -66,7 +69,8 @@ impl MultiplayerConnectedPlayerNoteController {
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerNoteController")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerConnectedPlayerNoteController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

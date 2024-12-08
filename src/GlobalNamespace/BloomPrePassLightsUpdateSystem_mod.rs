@@ -6,24 +6,24 @@ pub struct BloomPrePassLightsUpdateSystem {
 }
 #[cfg(feature = "BloomPrePassLightsUpdateSystem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomPrePassLightsUpdateSystem => ""
-    ."BloomPrePassLightsUpdateSystem"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BloomPrePassLightsUpdateSystem
+    => ""."BloomPrePassLightsUpdateSystem"
 );
 #[cfg(feature = "BloomPrePassLightsUpdateSystem")]
-impl std::ops::Deref for BloomPrePassLightsUpdateSystem {
+impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassLightsUpdateSystem {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassLightsUpdateSystem")]
-impl std::ops::DerefMut for BloomPrePassLightsUpdateSystem {
+impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassLightsUpdateSystem {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassLightsUpdateSystem")]
-impl BloomPrePassLightsUpdateSystem {
+impl crate::GlobalNamespace::BloomPrePassLightsUpdateSystem {
     pub fn LateUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -53,7 +53,8 @@ impl BloomPrePassLightsUpdateSystem {
     }
 }
 #[cfg(feature = "BloomPrePassLightsUpdateSystem")]
-impl quest_hook::libil2cpp::ObjectType for BloomPrePassLightsUpdateSystem {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BloomPrePassLightsUpdateSystem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

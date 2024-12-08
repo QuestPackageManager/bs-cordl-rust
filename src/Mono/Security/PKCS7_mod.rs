@@ -297,14 +297,14 @@ impl std::ops::DerefMut for crate::Mono::Security::PKCS7 {
 }
 #[cfg(feature = "Mono+Security+PKCS7")]
 impl crate::Mono::Security::PKCS7 {
-    #[cfg(feature = "Mono+Security+PKCS7+SignedData")]
-    pub type SignedData = crate::Mono::Security::PKCS7_SignedData;
     #[cfg(feature = "Mono+Security+PKCS7+ContentInfo")]
     pub type ContentInfo = crate::Mono::Security::PKCS7_ContentInfo;
-    #[cfg(feature = "Mono+Security+PKCS7+SignerInfo")]
-    pub type SignerInfo = crate::Mono::Security::PKCS7_SignerInfo;
     #[cfg(feature = "Mono+Security+PKCS7+EncryptedData")]
     pub type EncryptedData = crate::Mono::Security::PKCS7_EncryptedData;
+    #[cfg(feature = "Mono+Security+PKCS7+SignedData")]
+    pub type SignedData = crate::Mono::Security::PKCS7_SignedData;
+    #[cfg(feature = "Mono+Security+PKCS7+SignerInfo")]
+    pub type SignerInfo = crate::Mono::Security::PKCS7_SignerInfo;
 }
 #[cfg(feature = "Mono+Security+PKCS7")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7 {

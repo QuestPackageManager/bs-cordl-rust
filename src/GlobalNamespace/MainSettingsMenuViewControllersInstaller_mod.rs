@@ -3,33 +3,36 @@
 #[derive(Debug)]
 pub struct MainSettingsMenuViewControllersInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _defaultSettingsMenuViewController: *mut MainSettingsMenuViewController,
-    pub _oculusPCSettingsMenuViewController: *mut MainSettingsMenuViewController,
-    pub _questSettingsMenuViewController: *mut MainSettingsMenuViewController,
-    pub _psvrSettingsMenuViewController: *mut MainSettingsMenuViewController,
-    pub _psvr2SettingsMenuViewController: *mut MainSettingsMenuViewController,
-    pub _tabBarViewControllerPrefab: *mut TabBarViewController,
+    pub _defaultSettingsMenuViewController: *mut crate::GlobalNamespace::MainSettingsMenuViewController,
+    pub _oculusPCSettingsMenuViewController: *mut crate::GlobalNamespace::MainSettingsMenuViewController,
+    pub _questSettingsMenuViewController: *mut crate::GlobalNamespace::MainSettingsMenuViewController,
+    pub _psvrSettingsMenuViewController: *mut crate::GlobalNamespace::MainSettingsMenuViewController,
+    pub _psvr2SettingsMenuViewController: *mut crate::GlobalNamespace::MainSettingsMenuViewController,
+    pub _tabBarViewControllerPrefab: *mut crate::GlobalNamespace::TabBarViewController,
 }
 #[cfg(feature = "MainSettingsMenuViewControllersInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MainSettingsMenuViewControllersInstaller => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MainSettingsMenuViewControllersInstaller => ""
     ."MainSettingsMenuViewControllersInstaller"
 );
 #[cfg(feature = "MainSettingsMenuViewControllersInstaller")]
-impl std::ops::Deref for MainSettingsMenuViewControllersInstaller {
+impl std::ops::Deref
+for crate::GlobalNamespace::MainSettingsMenuViewControllersInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainSettingsMenuViewControllersInstaller")]
-impl std::ops::DerefMut for MainSettingsMenuViewControllersInstaller {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MainSettingsMenuViewControllersInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainSettingsMenuViewControllersInstaller")]
-impl MainSettingsMenuViewControllersInstaller {
+impl crate::GlobalNamespace::MainSettingsMenuViewControllersInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -59,7 +62,8 @@ impl MainSettingsMenuViewControllersInstaller {
     }
 }
 #[cfg(feature = "MainSettingsMenuViewControllersInstaller")]
-impl quest_hook::libil2cpp::ObjectType for MainSettingsMenuViewControllersInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MainSettingsMenuViewControllersInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

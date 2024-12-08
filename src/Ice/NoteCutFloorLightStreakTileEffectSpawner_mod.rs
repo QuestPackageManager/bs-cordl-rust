@@ -4,8 +4,8 @@
 pub struct NoteCutFloorLightStreakTileEffectSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _floorLightStreakTileEffect: *mut crate::Ice::FloorLightStreakTileEffect,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
-    pub _colorManager: *mut ColorManager,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
+    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
     pub _spawnColor: crate::UnityEngine::Color,
 }
 #[cfg(feature = "Ice+NoteCutFloorLightStreakTileEffectSpawner")]
@@ -30,8 +30,8 @@ impl std::ops::DerefMut for crate::Ice::NoteCutFloorLightStreakTileEffectSpawner
 impl crate::Ice::NoteCutFloorLightStreakTileEffectSpawner {
     pub fn HandleNoteWasCut(
         &mut self,
-        noteController: *mut NoteController,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

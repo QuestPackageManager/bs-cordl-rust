@@ -3,47 +3,47 @@
 #[derive(Debug)]
 pub struct HydraulicCarSuspensionEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _contractEvent: BasicBeatmapEventType,
+    pub _contractEvent: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _contractEventValues: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _expandEvent: BasicBeatmapEventType,
+    pub _expandEvent: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _expandEventValues: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     pub _springJoint: *mut crate::UnityEngine::SpringJoint,
     pub _contractDistance: f32,
     pub _expandDistance: f32,
     pub _rigidbody: *mut crate::UnityEngine::Rigidbody,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
     pub _contractEventValuesHashSet: *mut crate::System::Collections::Generic::HashSet_1<
         i32,
     >,
     pub _expandEventValuesHashSet: *mut crate::System::Collections::Generic::HashSet_1<
         i32,
     >,
-    pub _contractBeatmapDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
-    pub _expandBeatmapDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _contractBeatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _expandBeatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
 }
 #[cfg(feature = "HydraulicCarSuspensionEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for HydraulicCarSuspensionEffect => ""
-    ."HydraulicCarSuspensionEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::HydraulicCarSuspensionEffect =>
+    ""."HydraulicCarSuspensionEffect"
 );
 #[cfg(feature = "HydraulicCarSuspensionEffect")]
-impl std::ops::Deref for HydraulicCarSuspensionEffect {
+impl std::ops::Deref for crate::GlobalNamespace::HydraulicCarSuspensionEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HydraulicCarSuspensionEffect")]
-impl std::ops::DerefMut for HydraulicCarSuspensionEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::HydraulicCarSuspensionEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "HydraulicCarSuspensionEffect")]
-impl HydraulicCarSuspensionEffect {
+impl crate::GlobalNamespace::HydraulicCarSuspensionEffect {
     pub fn HandleContractBeatmapEvent(
         &mut self,
-        basicBeatmapEventData: *mut BasicBeatmapEventData,
+        basicBeatmapEventData: *mut crate::GlobalNamespace::BasicBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -54,7 +54,7 @@ impl HydraulicCarSuspensionEffect {
     }
     pub fn HandleExpandBeatmapEvent(
         &mut self,
-        basicBeatmapEventData: *mut BasicBeatmapEventData,
+        basicBeatmapEventData: *mut crate::GlobalNamespace::BasicBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -102,7 +102,8 @@ impl HydraulicCarSuspensionEffect {
     }
 }
 #[cfg(feature = "HydraulicCarSuspensionEffect")]
-impl quest_hook::libil2cpp::ObjectType for HydraulicCarSuspensionEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::HydraulicCarSuspensionEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

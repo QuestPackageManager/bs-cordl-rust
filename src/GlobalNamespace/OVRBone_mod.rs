@@ -9,23 +9,23 @@ pub struct OVRBone {
 }
 #[cfg(feature = "OVRBone")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRBone => ""."OVRBone"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRBone => ""."OVRBone"
 );
 #[cfg(feature = "OVRBone")]
-impl std::ops::Deref for OVRBone {
+impl std::ops::Deref for crate::GlobalNamespace::OVRBone {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRBone")]
-impl std::ops::DerefMut for OVRBone {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRBone {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRBone")]
-impl OVRBone {
+impl crate::GlobalNamespace::OVRBone {
     pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -129,7 +129,7 @@ impl OVRBone {
     }
 }
 #[cfg(feature = "OVRBone")]
-impl quest_hook::libil2cpp::ObjectType for OVRBone {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRBone {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

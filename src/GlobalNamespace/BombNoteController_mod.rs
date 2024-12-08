@@ -2,29 +2,30 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BombNoteController {
-    __cordl_parent: NoteController,
-    pub _cuttableBySaber: *mut CuttableBySaber,
+    __cordl_parent: crate::GlobalNamespace::NoteController,
+    pub _cuttableBySaber: *mut crate::GlobalNamespace::CuttableBySaber,
     pub _wrapperGO: *mut crate::UnityEngine::GameObject,
 }
 #[cfg(feature = "BombNoteController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BombNoteController => ""."BombNoteController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BombNoteController => ""
+    ."BombNoteController"
 );
 #[cfg(feature = "BombNoteController")]
-impl std::ops::Deref for BombNoteController {
-    type Target = NoteController;
+impl std::ops::Deref for crate::GlobalNamespace::BombNoteController {
+    type Target = crate::GlobalNamespace::NoteController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BombNoteController")]
-impl std::ops::DerefMut for BombNoteController {
+impl std::ops::DerefMut for crate::GlobalNamespace::BombNoteController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BombNoteController")]
-impl BombNoteController {
+impl crate::GlobalNamespace::BombNoteController {
     #[cfg(feature = "BombNoteController+Pool")]
     pub type Pool = crate::GlobalNamespace::BombNoteController_Pool;
     pub fn Awake(
@@ -49,7 +50,7 @@ impl BombNoteController {
     }
     pub fn HandleWasCutBySaber(
         &mut self,
-        saber: *mut Saber,
+        saber: *mut crate::GlobalNamespace::Saber,
         cutPoint: crate::UnityEngine::Vector3,
         orientation: crate::UnityEngine::Quaternion,
         cutDirVec: crate::UnityEngine::Vector3,
@@ -74,7 +75,7 @@ impl BombNoteController {
     }
     pub fn Init(
         &mut self,
-        noteData: *mut NoteData,
+        noteData: *mut crate::GlobalNamespace::NoteData,
         worldRotation: f32,
         moveStartPos: crate::UnityEngine::Vector3,
         moveEndPos: crate::UnityEngine::Vector3,
@@ -162,7 +163,7 @@ impl BombNoteController {
     }
 }
 #[cfg(feature = "BombNoteController")]
-impl quest_hook::libil2cpp::ObjectType for BombNoteController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BombNoteController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -174,7 +175,9 @@ impl quest_hook::libil2cpp::ObjectType for BombNoteController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BombNoteController_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<*mut BombNoteController>,
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::BombNoteController,
+    >,
 }
 #[cfg(feature = "BombNoteController+Pool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -183,7 +186,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BombNoteController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::BombNoteController_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<*mut BombNoteController>;
+    type Target = crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::BombNoteController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

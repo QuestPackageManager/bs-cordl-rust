@@ -2,39 +2,40 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FlyingScoreEffect {
-    __cordl_parent: FlyingObjectEffect,
+    __cordl_parent: crate::GlobalNamespace::FlyingObjectEffect,
     pub _fadeAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
     pub _maxCutDistanceScoreIndicator: *mut crate::UnityEngine::SpriteRenderer,
     pub _text: *mut crate::TMPro::TextMeshPro,
     pub _color: crate::UnityEngine::Color,
     pub _colorAMultiplier: f32,
     pub _registeredToCallbacks: bool,
-    pub _cutScoreBuffer: *mut IReadonlyCutScoreBuffer,
+    pub _cutScoreBuffer: *mut crate::GlobalNamespace::IReadonlyCutScoreBuffer,
 }
 #[cfg(feature = "FlyingScoreEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FlyingScoreEffect => ""."FlyingScoreEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FlyingScoreEffect => ""
+    ."FlyingScoreEffect"
 );
 #[cfg(feature = "FlyingScoreEffect")]
-impl std::ops::Deref for FlyingScoreEffect {
-    type Target = FlyingObjectEffect;
+impl std::ops::Deref for crate::GlobalNamespace::FlyingScoreEffect {
+    type Target = crate::GlobalNamespace::FlyingObjectEffect;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FlyingScoreEffect")]
-impl std::ops::DerefMut for FlyingScoreEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::FlyingScoreEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FlyingScoreEffect")]
-impl FlyingScoreEffect {
+impl crate::GlobalNamespace::FlyingScoreEffect {
     #[cfg(feature = "FlyingScoreEffect+Pool")]
     pub type Pool = crate::GlobalNamespace::FlyingScoreEffect_Pool;
     pub fn HandleCutScoreBufferDidChange(
         &mut self,
-        cutScoreBuffer: *mut CutScoreBuffer,
+        cutScoreBuffer: *mut crate::GlobalNamespace::CutScoreBuffer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -45,7 +46,7 @@ impl FlyingScoreEffect {
     }
     pub fn HandleCutScoreBufferDidFinish(
         &mut self,
-        cutScoreBuffer: *mut CutScoreBuffer,
+        cutScoreBuffer: *mut crate::GlobalNamespace::CutScoreBuffer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -56,7 +57,7 @@ impl FlyingScoreEffect {
     }
     pub fn InitAndPresent(
         &mut self,
-        cutScoreBuffer: *mut IReadonlyCutScoreBuffer,
+        cutScoreBuffer: *mut crate::GlobalNamespace::IReadonlyCutScoreBuffer,
         duration: f32,
         targetPos: crate::UnityEngine::Vector3,
         color: crate::UnityEngine::Color,
@@ -120,7 +121,7 @@ impl FlyingScoreEffect {
     }
 }
 #[cfg(feature = "FlyingScoreEffect")]
-impl quest_hook::libil2cpp::ObjectType for FlyingScoreEffect {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlyingScoreEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -132,7 +133,9 @@ impl quest_hook::libil2cpp::ObjectType for FlyingScoreEffect {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FlyingScoreEffect_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<*mut FlyingScoreEffect>,
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::FlyingScoreEffect,
+    >,
 }
 #[cfg(feature = "FlyingScoreEffect+Pool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -141,7 +144,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FlyingScoreEffect+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::FlyingScoreEffect_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<*mut FlyingScoreEffect>;
+    type Target = crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::FlyingScoreEffect,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -163,7 +168,7 @@ impl crate::GlobalNamespace::FlyingScoreEffect_Pool {
     }
     pub fn OnDespawned(
         &mut self,
-        item: *mut FlyingScoreEffect,
+        item: *mut crate::GlobalNamespace::FlyingScoreEffect,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

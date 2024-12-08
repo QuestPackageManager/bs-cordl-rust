@@ -4,28 +4,29 @@
 pub struct GameServersFilterText {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _text: *mut crate::HMUI::CurvedTextMeshPro,
-    pub _songPackMasksModel: *mut SongPackMasksModel,
+    pub _songPackMasksModel: *mut crate::GlobalNamespace::SongPackMasksModel,
     pub _stringBuilder: *mut crate::System::Text::StringBuilder,
 }
 #[cfg(feature = "GameServersFilterText")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameServersFilterText => ""."GameServersFilterText"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameServersFilterText => ""
+    ."GameServersFilterText"
 );
 #[cfg(feature = "GameServersFilterText")]
-impl std::ops::Deref for GameServersFilterText {
+impl std::ops::Deref for crate::GlobalNamespace::GameServersFilterText {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameServersFilterText")]
-impl std::ops::DerefMut for GameServersFilterText {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameServersFilterText {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameServersFilterText")]
-impl GameServersFilterText {
+impl crate::GlobalNamespace::GameServersFilterText {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -35,8 +36,8 @@ impl GameServersFilterText {
     }
     pub fn Setup_BeatmapDifficultyMask_SongPackMask__cordl_bool1(
         &mut self,
-        beatmapDifficultyMask: BeatmapDifficultyMask,
-        songPackMask: SongPackMask,
+        beatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
+        songPackMask: crate::GlobalNamespace::SongPackMask,
         visible: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -48,7 +49,7 @@ impl GameServersFilterText {
     }
     pub fn Setup_GameServersFilter__cordl_bool0(
         &mut self,
-        filter: *mut GameServersFilter,
+        filter: *mut crate::GlobalNamespace::GameServersFilter,
         visible: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -70,7 +71,8 @@ impl GameServersFilterText {
     }
 }
 #[cfg(feature = "GameServersFilterText")]
-impl quest_hook::libil2cpp::ObjectType for GameServersFilterText {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GameServersFilterText {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

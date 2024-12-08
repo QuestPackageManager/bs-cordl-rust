@@ -4,31 +4,32 @@
 pub struct RecordingToolSettings {
     __cordl_parent: crate::System::Object,
     pub recordingSettings: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut RecordingSettings,
+        *mut crate::GlobalNamespace::RecordingSettings,
     >,
 }
 #[cfg(feature = "RecordingToolSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RecordingToolSettings => ""."RecordingToolSettings"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RecordingToolSettings => ""
+    ."RecordingToolSettings"
 );
 #[cfg(feature = "RecordingToolSettings")]
-impl std::ops::Deref for RecordingToolSettings {
+impl std::ops::Deref for crate::GlobalNamespace::RecordingToolSettings {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingToolSettings")]
-impl std::ops::DerefMut for RecordingToolSettings {
+impl std::ops::DerefMut for crate::GlobalNamespace::RecordingToolSettings {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingToolSettings")]
-impl RecordingToolSettings {
+impl crate::GlobalNamespace::RecordingToolSettings {
     pub fn New(
         recordingSettings: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut RecordingSettings,
+            *mut crate::GlobalNamespace::RecordingSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -40,7 +41,7 @@ impl RecordingToolSettings {
     pub fn _ctor(
         &mut self,
         recordingSettings: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut RecordingSettings,
+            *mut crate::GlobalNamespace::RecordingSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -52,7 +53,8 @@ impl RecordingToolSettings {
     }
 }
 #[cfg(feature = "RecordingToolSettings")]
-impl quest_hook::libil2cpp::ObjectType for RecordingToolSettings {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::RecordingToolSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

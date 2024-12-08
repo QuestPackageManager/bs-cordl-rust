@@ -2,35 +2,38 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockPlatformAdditionalContentModelInitialDataSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _levelsEntitlements: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut MockPlatformEntitlement,
+        *mut crate::GlobalNamespace::MockPlatformEntitlement,
     >,
     pub _levelPacksEntitlements: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut MockPlatformEntitlement,
+        *mut crate::GlobalNamespace::MockPlatformEntitlement,
     >,
     pub _packBetterBuyThanLevel: bool,
 }
 #[cfg(feature = "MockPlatformAdditionalContentModelInitialDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MockPlatformAdditionalContentModelInitialDataSO => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO => ""
     ."MockPlatformAdditionalContentModelInitialDataSO"
 );
 #[cfg(feature = "MockPlatformAdditionalContentModelInitialDataSO")]
-impl std::ops::Deref for MockPlatformAdditionalContentModelInitialDataSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref
+for crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockPlatformAdditionalContentModelInitialDataSO")]
-impl std::ops::DerefMut for MockPlatformAdditionalContentModelInitialDataSO {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockPlatformAdditionalContentModelInitialDataSO")]
-impl MockPlatformAdditionalContentModelInitialDataSO {
+impl crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -52,14 +55,14 @@ impl MockPlatformAdditionalContentModelInitialDataSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut MockPlatformEntitlement,
+            *mut crate::GlobalNamespace::MockPlatformEntitlement,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut MockPlatformEntitlement,
+            *mut crate::GlobalNamespace::MockPlatformEntitlement,
         > = __cordl_object.invoke("get_levelPacksEntitlements", ())?;
         Ok(__cordl_ret)
     }
@@ -67,14 +70,14 @@ impl MockPlatformAdditionalContentModelInitialDataSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut MockPlatformEntitlement,
+            *mut crate::GlobalNamespace::MockPlatformEntitlement,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut MockPlatformEntitlement,
+            *mut crate::GlobalNamespace::MockPlatformEntitlement,
         > = __cordl_object.invoke("get_levelsEntitlements", ())?;
         Ok(__cordl_ret)
     }
@@ -88,7 +91,7 @@ impl MockPlatformAdditionalContentModelInitialDataSO {
 }
 #[cfg(feature = "MockPlatformAdditionalContentModelInitialDataSO")]
 impl quest_hook::libil2cpp::ObjectType
-for MockPlatformAdditionalContentModelInitialDataSO {
+for crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

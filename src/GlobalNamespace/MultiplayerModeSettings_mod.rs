@@ -4,29 +4,30 @@
 pub struct MultiplayerModeSettings {
     __cordl_parent: crate::System::Object,
     pub createServerPlayersCount: i32,
-    pub quickPlayBeatmapDifficulty: BeatmapDifficultyMask,
+    pub quickPlayBeatmapDifficulty: crate::GlobalNamespace::BeatmapDifficultyMask,
     pub quickPlaySongPackMaskSerializedName: *mut crate::System::String,
     pub quickPlayEnableLevelSelection: bool,
 }
 #[cfg(feature = "MultiplayerModeSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerModeSettings => ""."MultiplayerModeSettings"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerModeSettings => ""
+    ."MultiplayerModeSettings"
 );
 #[cfg(feature = "MultiplayerModeSettings")]
-impl std::ops::Deref for MultiplayerModeSettings {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerModeSettings {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerModeSettings")]
-impl std::ops::DerefMut for MultiplayerModeSettings {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerModeSettings {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerModeSettings")]
-impl MultiplayerModeSettings {
+impl crate::GlobalNamespace::MultiplayerModeSettings {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -46,7 +47,8 @@ impl MultiplayerModeSettings {
     }
 }
 #[cfg(feature = "MultiplayerModeSettings")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerModeSettings {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerModeSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

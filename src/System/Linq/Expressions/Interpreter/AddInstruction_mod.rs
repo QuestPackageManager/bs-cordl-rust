@@ -26,22 +26,22 @@ for crate::System::Linq::Expressions::Interpreter::AddInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::AddInstruction {
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddInt16")]
-    pub type AddInt16 = crate::GlobalNamespace::AddInstruction_AddInt16;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddUInt32")]
-    pub type AddUInt32 = crate::GlobalNamespace::AddInstruction_AddUInt32;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddInt64")]
-    pub type AddInt64 = crate::GlobalNamespace::AddInstruction_AddInt64;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddUInt16")]
-    pub type AddUInt16 = crate::GlobalNamespace::AddInstruction_AddUInt16;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddUInt64")]
-    pub type AddUInt64 = crate::GlobalNamespace::AddInstruction_AddUInt64;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddSingle")]
-    pub type AddSingle = crate::GlobalNamespace::AddInstruction_AddSingle;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddDouble")]
     pub type AddDouble = crate::GlobalNamespace::AddInstruction_AddDouble;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddInt16")]
+    pub type AddInt16 = crate::GlobalNamespace::AddInstruction_AddInt16;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddInt32")]
     pub type AddInt32 = crate::GlobalNamespace::AddInstruction_AddInt32;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddInt64")]
+    pub type AddInt64 = crate::GlobalNamespace::AddInstruction_AddInt64;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddSingle")]
+    pub type AddSingle = crate::GlobalNamespace::AddInstruction_AddSingle;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddUInt16")]
+    pub type AddUInt16 = crate::GlobalNamespace::AddInstruction_AddUInt16;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddUInt32")]
+    pub type AddUInt32 = crate::GlobalNamespace::AddInstruction_AddUInt32;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddInstruction+AddUInt64")]
+    pub type AddUInt64 = crate::GlobalNamespace::AddInstruction_AddUInt64;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

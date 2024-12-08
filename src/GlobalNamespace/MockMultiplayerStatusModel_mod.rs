@@ -3,39 +3,41 @@
 #[derive(Debug)]
 pub struct MockMultiplayerStatusModel {
     __cordl_parent: crate::System::Object,
-    pub _multiplayerStatusData: *mut MultiplayerStatusData,
+    pub _multiplayerStatusData: *mut crate::GlobalNamespace::MultiplayerStatusData,
 }
 #[cfg(feature = "MockMultiplayerStatusModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MockMultiplayerStatusModel => ""
-    ."MockMultiplayerStatusModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MockMultiplayerStatusModel =>
+    ""."MockMultiplayerStatusModel"
 );
 #[cfg(feature = "MockMultiplayerStatusModel")]
-impl std::ops::Deref for MockMultiplayerStatusModel {
+impl std::ops::Deref for crate::GlobalNamespace::MockMultiplayerStatusModel {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockMultiplayerStatusModel")]
-impl std::ops::DerefMut for MockMultiplayerStatusModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::MockMultiplayerStatusModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockMultiplayerStatusModel")]
-impl MockMultiplayerStatusModel {
+impl crate::GlobalNamespace::MockMultiplayerStatusModel {
     pub fn GetMultiplayerStatusAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut MultiplayerStatusData>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::MultiplayerStatusData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut MultiplayerStatusData,
+            *mut crate::GlobalNamespace::MultiplayerStatusData,
         > = __cordl_object.invoke("GetMultiplayerStatusAsync", (cancellationToken))?;
         Ok(__cordl_ret)
     }
@@ -58,7 +60,8 @@ impl MockMultiplayerStatusModel {
     }
 }
 #[cfg(feature = "MockMultiplayerStatusModel")]
-impl quest_hook::libil2cpp::ObjectType for MockMultiplayerStatusModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MockMultiplayerStatusModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

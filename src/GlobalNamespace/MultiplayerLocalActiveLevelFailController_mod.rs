@@ -3,40 +3,43 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalActiveLevelFailController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _levelFailedTextEffect: *mut LevelFailedTextEffect,
-    pub _levelEndActionsPublisher: *mut IMultiplayerLevelEndActionsPublisher,
-    pub _beatmapObjectSpawnController: *mut BeatmapObjectSpawnController,
-    pub _gameSongController: *mut GameSongController,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
-    pub _multiplayerPlayersManager: *mut MultiplayerPlayersManager,
+    pub _levelFailedTextEffect: *mut crate::GlobalNamespace::LevelFailedTextEffect,
+    pub _levelEndActionsPublisher: *mut crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
+    pub _beatmapObjectSpawnController: *mut crate::GlobalNamespace::BeatmapObjectSpawnController,
+    pub _gameSongController: *mut crate::GlobalNamespace::GameSongController,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
+    pub _multiplayerPlayersManager: *mut crate::GlobalNamespace::MultiplayerPlayersManager,
 }
 #[cfg(feature = "MultiplayerLocalActiveLevelFailController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLocalActiveLevelFailController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLocalActiveLevelFailController => ""
     ."MultiplayerLocalActiveLevelFailController"
 );
 #[cfg(feature = "MultiplayerLocalActiveLevelFailController")]
-impl std::ops::Deref for MultiplayerLocalActiveLevelFailController {
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerLocalActiveLevelFailController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalActiveLevelFailController")]
-impl std::ops::DerefMut for MultiplayerLocalActiveLevelFailController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerLocalActiveLevelFailController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalActiveLevelFailController")]
-impl MultiplayerLocalActiveLevelFailController {
+impl crate::GlobalNamespace::MultiplayerLocalActiveLevelFailController {
     #[cfg(
         feature = "MultiplayerLocalActiveLevelFailController+_PlayerFailedCoroutine_d__8"
     )]
     pub type _PlayerFailedCoroutine_d__8 = crate::GlobalNamespace::MultiplayerLocalActiveLevelFailController__PlayerFailedCoroutine_d__8;
     pub fn HandlePlayerDidFinish(
         &mut self,
-        levelCompletionResults: *mut MultiplayerLevelCompletionResults,
+        levelCompletionResults: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -94,7 +97,8 @@ impl MultiplayerLocalActiveLevelFailController {
     }
 }
 #[cfg(feature = "MultiplayerLocalActiveLevelFailController")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLocalActiveLevelFailController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLocalActiveLevelFailController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

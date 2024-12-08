@@ -6,28 +6,28 @@ pub struct INoteControllerNoteWasCutEvent {
 }
 #[cfg(feature = "INoteControllerNoteWasCutEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for INoteControllerNoteWasCutEvent => ""
-    ."INoteControllerNoteWasCutEvent"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::INoteControllerNoteWasCutEvent
+    => ""."INoteControllerNoteWasCutEvent"
 );
 #[cfg(feature = "INoteControllerNoteWasCutEvent")]
-impl std::ops::Deref for INoteControllerNoteWasCutEvent {
+impl std::ops::Deref for crate::GlobalNamespace::INoteControllerNoteWasCutEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "INoteControllerNoteWasCutEvent")]
-impl std::ops::DerefMut for INoteControllerNoteWasCutEvent {
+impl std::ops::DerefMut for crate::GlobalNamespace::INoteControllerNoteWasCutEvent {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "INoteControllerNoteWasCutEvent")]
-impl INoteControllerNoteWasCutEvent {
+impl crate::GlobalNamespace::INoteControllerNoteWasCutEvent {
     pub fn HandleNoteControllerNoteWasCut(
         &mut self,
-        noteController: *mut NoteController,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -43,7 +43,8 @@ impl INoteControllerNoteWasCutEvent {
     }
 }
 #[cfg(feature = "INoteControllerNoteWasCutEvent")]
-impl quest_hook::libil2cpp::ObjectType for INoteControllerNoteWasCutEvent {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::INoteControllerNoteWasCutEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

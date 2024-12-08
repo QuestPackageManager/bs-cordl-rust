@@ -7,23 +7,24 @@ pub struct PlayerDataAsyncLoader {
 }
 #[cfg(feature = "PlayerDataAsyncLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerDataAsyncLoader => ""."PlayerDataAsyncLoader"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerDataAsyncLoader => ""
+    ."PlayerDataAsyncLoader"
 );
 #[cfg(feature = "PlayerDataAsyncLoader")]
-impl std::ops::Deref for PlayerDataAsyncLoader {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerDataAsyncLoader {
     type Target = crate::BGLib::AppFlow::Initialization::AsyncInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerDataAsyncLoader")]
-impl std::ops::DerefMut for PlayerDataAsyncLoader {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerDataAsyncLoader {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerDataAsyncLoader")]
-impl PlayerDataAsyncLoader {
+impl crate::GlobalNamespace::PlayerDataAsyncLoader {
     #[cfg(feature = "PlayerDataAsyncLoader+_LoadResourcesBeforeInstallAsync_d__2")]
     pub type _LoadResourcesBeforeInstallAsync_d__2 = crate::GlobalNamespace::PlayerDataAsyncLoader__LoadResourcesBeforeInstallAsync_d__2;
     pub fn InstallBindings(
@@ -79,7 +80,8 @@ impl PlayerDataAsyncLoader {
     }
 }
 #[cfg(feature = "PlayerDataAsyncLoader")]
-impl quest_hook::libil2cpp::ObjectType for PlayerDataAsyncLoader {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayerDataAsyncLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

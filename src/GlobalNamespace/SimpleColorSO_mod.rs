@@ -2,28 +2,29 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleColorSO {
-    __cordl_parent: ColorSO,
+    __cordl_parent: crate::GlobalNamespace::ColorSO,
     pub _color: crate::UnityEngine::Color,
 }
 #[cfg(feature = "SimpleColorSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SimpleColorSO => ""."SimpleColorSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SimpleColorSO => ""
+    ."SimpleColorSO"
 );
 #[cfg(feature = "SimpleColorSO")]
-impl std::ops::Deref for SimpleColorSO {
-    type Target = ColorSO;
+impl std::ops::Deref for crate::GlobalNamespace::SimpleColorSO {
+    type Target = crate::GlobalNamespace::ColorSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SimpleColorSO")]
-impl std::ops::DerefMut for SimpleColorSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::SimpleColorSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SimpleColorSO")]
-impl SimpleColorSO {
+impl crate::GlobalNamespace::SimpleColorSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -64,7 +65,7 @@ impl SimpleColorSO {
     }
 }
 #[cfg(feature = "SimpleColorSO")]
-impl quest_hook::libil2cpp::ObjectType for SimpleColorSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SimpleColorSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

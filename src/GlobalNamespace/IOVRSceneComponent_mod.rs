@@ -6,23 +6,24 @@ pub struct IOVRSceneComponent {
 }
 #[cfg(feature = "IOVRSceneComponent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IOVRSceneComponent => ""."IOVRSceneComponent"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IOVRSceneComponent => ""
+    ."IOVRSceneComponent"
 );
 #[cfg(feature = "IOVRSceneComponent")]
-impl std::ops::Deref for IOVRSceneComponent {
+impl std::ops::Deref for crate::GlobalNamespace::IOVRSceneComponent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IOVRSceneComponent")]
-impl std::ops::DerefMut for IOVRSceneComponent {
+impl std::ops::DerefMut for crate::GlobalNamespace::IOVRSceneComponent {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IOVRSceneComponent")]
-impl IOVRSceneComponent {
+impl crate::GlobalNamespace::IOVRSceneComponent {
     pub fn Initialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -40,7 +41,7 @@ impl IOVRSceneComponent {
     }
 }
 #[cfg(feature = "IOVRSceneComponent")]
-impl quest_hook::libil2cpp::ObjectType for IOVRSceneComponent {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IOVRSceneComponent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,31 +2,34 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HealthWarningScenesTransitionSetupDataSO {
-    __cordl_parent: SingleFixedSceneScenesTransitionSetupDataSO,
+    __cordl_parent: crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO,
 }
 #[cfg(feature = "HealthWarningScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for HealthWarningScenesTransitionSetupDataSO => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO => ""
     ."HealthWarningScenesTransitionSetupDataSO"
 );
 #[cfg(feature = "HealthWarningScenesTransitionSetupDataSO")]
-impl std::ops::Deref for HealthWarningScenesTransitionSetupDataSO {
-    type Target = SingleFixedSceneScenesTransitionSetupDataSO;
+impl std::ops::Deref
+for crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO {
+    type Target = crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HealthWarningScenesTransitionSetupDataSO")]
-impl std::ops::DerefMut for HealthWarningScenesTransitionSetupDataSO {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "HealthWarningScenesTransitionSetupDataSO")]
-impl HealthWarningScenesTransitionSetupDataSO {
+impl crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO {
     pub fn Init(
         &mut self,
-        healthWarningSceneSetupData: *mut HealthWarningSceneSetupData,
+        healthWarningSceneSetupData: *mut crate::GlobalNamespace::HealthWarningSceneSetupData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -54,7 +57,8 @@ impl HealthWarningScenesTransitionSetupDataSO {
     }
 }
 #[cfg(feature = "HealthWarningScenesTransitionSetupDataSO")]
-impl quest_hook::libil2cpp::ObjectType for HealthWarningScenesTransitionSetupDataSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

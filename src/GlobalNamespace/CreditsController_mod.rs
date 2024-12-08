@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct CreditsController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _creditsSceneSetupDataSO: *mut CreditsScenesTransitionSetupDataSO,
-    pub _audioPlayer: *mut AudioPlayerBase,
+    pub _creditsSceneSetupDataSO: *mut crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
+    pub _audioPlayer: *mut crate::GlobalNamespace::AudioPlayerBase,
     pub _continueButton: *mut crate::UnityEngine::UI::Button,
     pub _contentRectTransform: *mut crate::UnityEngine::RectTransform,
     pub _overflowHeight: f32,
@@ -15,9 +15,9 @@ pub struct CreditsController {
     pub _afterMusicPacksCredits: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::GameObject,
     >,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
     pub _packDefinitions: *mut crate::System::Collections::Generic::IEnumerable_1<
-        *mut PackDefinitionSO,
+        *mut crate::GlobalNamespace::PackDefinitionSO,
     >,
     pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
     pub _didFinish: bool,
@@ -25,23 +25,24 @@ pub struct CreditsController {
 }
 #[cfg(feature = "CreditsController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CreditsController => ""."CreditsController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CreditsController => ""
+    ."CreditsController"
 );
 #[cfg(feature = "CreditsController")]
-impl std::ops::Deref for CreditsController {
+impl std::ops::Deref for crate::GlobalNamespace::CreditsController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CreditsController")]
-impl std::ops::DerefMut for CreditsController {
+impl std::ops::DerefMut for crate::GlobalNamespace::CreditsController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CreditsController")]
-impl CreditsController {
+impl crate::GlobalNamespace::CreditsController {
     #[cfg(feature = "CreditsController+_ScrollCoroutine_d__18")]
     pub type _ScrollCoroutine_d__18 = crate::GlobalNamespace::CreditsController__ScrollCoroutine_d__18;
     #[cfg(feature = "CreditsController+_StartAsync_d__15")]
@@ -204,7 +205,7 @@ impl CreditsController {
     }
 }
 #[cfg(feature = "CreditsController")]
-impl quest_hook::libil2cpp::ObjectType for CreditsController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CreditsController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

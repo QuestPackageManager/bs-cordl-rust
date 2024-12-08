@@ -2,30 +2,33 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MixedLightsColorSetterRuntimeLightWithIds {
-    __cordl_parent: RuntimeLightWithIds,
-    pub _materialPropertyBlockColorSetter: *mut MaterialPropertyBlockColorSetter,
+    __cordl_parent: crate::GlobalNamespace::RuntimeLightWithIds,
+    pub _materialPropertyBlockColorSetter: *mut crate::GlobalNamespace::MaterialPropertyBlockColorSetter,
     pub _lightMultiplier: f32,
 }
 #[cfg(feature = "MixedLightsColorSetterRuntimeLightWithIds")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MixedLightsColorSetterRuntimeLightWithIds => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MixedLightsColorSetterRuntimeLightWithIds => ""
     ."MixedLightsColorSetterRuntimeLightWithIds"
 );
 #[cfg(feature = "MixedLightsColorSetterRuntimeLightWithIds")]
-impl std::ops::Deref for MixedLightsColorSetterRuntimeLightWithIds {
-    type Target = RuntimeLightWithIds;
+impl std::ops::Deref
+for crate::GlobalNamespace::MixedLightsColorSetterRuntimeLightWithIds {
+    type Target = crate::GlobalNamespace::RuntimeLightWithIds;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MixedLightsColorSetterRuntimeLightWithIds")]
-impl std::ops::DerefMut for MixedLightsColorSetterRuntimeLightWithIds {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MixedLightsColorSetterRuntimeLightWithIds {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MixedLightsColorSetterRuntimeLightWithIds")]
-impl MixedLightsColorSetterRuntimeLightWithIds {
+impl crate::GlobalNamespace::MixedLightsColorSetterRuntimeLightWithIds {
     pub fn ColorWasSet(
         &mut self,
         color: crate::UnityEngine::Color,
@@ -56,7 +59,8 @@ impl MixedLightsColorSetterRuntimeLightWithIds {
     }
 }
 #[cfg(feature = "MixedLightsColorSetterRuntimeLightWithIds")]
-impl quest_hook::libil2cpp::ObjectType for MixedLightsColorSetterRuntimeLightWithIds {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MixedLightsColorSetterRuntimeLightWithIds {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

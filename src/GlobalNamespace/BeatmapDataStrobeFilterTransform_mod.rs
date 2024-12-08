@@ -6,30 +6,32 @@ pub struct BeatmapDataStrobeFilterTransform {
 }
 #[cfg(feature = "BeatmapDataStrobeFilterTransform")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapDataStrobeFilterTransform => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BeatmapDataStrobeFilterTransform => ""
     ."BeatmapDataStrobeFilterTransform"
 );
 #[cfg(feature = "BeatmapDataStrobeFilterTransform")]
-impl std::ops::Deref for BeatmapDataStrobeFilterTransform {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDataStrobeFilterTransform")]
-impl std::ops::DerefMut for BeatmapDataStrobeFilterTransform {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDataStrobeFilterTransform")]
-impl BeatmapDataStrobeFilterTransform {
+impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
     pub const kMaxSecondsToConsiderStrobe: f32 = 0.1f32;
     #[cfg(feature = "BeatmapDataStrobeFilterTransform+StrobeStreakData")]
     pub type StrobeStreakData = crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData;
 }
 #[cfg(feature = "BeatmapDataStrobeFilterTransform")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapDataStrobeFilterTransform {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -44,11 +46,11 @@ pub struct BeatmapDataStrobeFilterTransform_StrobeStreakData {
     __cordl_parent: crate::System::Object,
     pub isActive: bool,
     pub strobeStartTime: f32,
-    pub startColorType: EnvironmentColorType,
+    pub startColorType: crate::GlobalNamespace::EnvironmentColorType,
     pub lastSwitchTime: f32,
-    pub lastColorType: EnvironmentColorType,
+    pub lastColorType: crate::GlobalNamespace::EnvironmentColorType,
     pub lastIsOn: bool,
-    pub originalBasicBeatmapEventData: *mut BasicBeatmapEventData,
+    pub originalBasicBeatmapEventData: *mut crate::GlobalNamespace::BasicBeatmapEventData,
     pub _foundFirstColoredEventData: bool,
 }
 #[cfg(feature = "BeatmapDataStrobeFilterTransform+StrobeStreakData")]
@@ -76,7 +78,7 @@ for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
 impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
     pub fn AddStrobeData(
         &mut self,
-        basicBeatmapEventData: *mut BasicBeatmapEventData,
+        basicBeatmapEventData: *mut crate::GlobalNamespace::BasicBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -94,7 +96,7 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
     }
     pub fn StartPotentialStrobe(
         &mut self,
-        startBasicBeatmapEventData: *mut BasicBeatmapEventData,
+        startBasicBeatmapEventData: *mut crate::GlobalNamespace::BasicBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

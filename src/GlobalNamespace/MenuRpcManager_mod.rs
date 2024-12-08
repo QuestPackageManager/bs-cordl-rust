@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_CancelCountdownRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+CancelCountdownRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+CancelCountdownRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_CancelCountdownRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,7 +57,7 @@ for crate::GlobalNamespace::MenuRpcManager_CancelCountdownRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_CancelLevelStartRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+CancelLevelStartRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -67,7 +67,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+CancelLevelStartRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_CancelLevelStartRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -112,7 +112,7 @@ for crate::GlobalNamespace::MenuRpcManager_CancelLevelStartRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_CancelStartGameTimeRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+CancelStartGameTimeRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -122,7 +122,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+CancelStartGameTimeRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_CancelStartGameTimeRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -168,7 +168,7 @@ for crate::GlobalNamespace::MenuRpcManager_CancelStartGameTimeRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_ClearRecommendedBeatmapRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+ClearRecommendedBeatmapRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -179,7 +179,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MenuRpcManager+ClearRecommendedBeatmapRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedBeatmapRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -225,7 +225,7 @@ for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedBeatmapRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_ClearRecommendedGameplayModifiersRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+ClearRecommendedGameplayModifiersRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -236,7 +236,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MenuRpcManager+ClearRecommendedGameplayModifiersRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedGameplayModifiersRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -282,7 +282,7 @@ for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedGameplayModifiersRpc 
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_ClearSelectedBeatmapRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+ClearSelectedBeatmapRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -292,7 +292,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+ClearSelectedBeatmapRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_ClearSelectedBeatmapRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -338,7 +338,7 @@ for crate::GlobalNamespace::MenuRpcManager_ClearSelectedBeatmapRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_ClearSelectedGameplayModifiersRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+ClearSelectedGameplayModifiersRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -349,7 +349,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MenuRpcManager+ClearSelectedGameplayModifiersRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_ClearSelectedGameplayModifiersRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -395,7 +395,7 @@ for crate::GlobalNamespace::MenuRpcManager_ClearSelectedGameplayModifiersRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetCountdownEndTimeRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+GetCountdownEndTimeRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -405,7 +405,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+GetCountdownEndTimeRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetCountdownEndTimeRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -451,7 +451,9 @@ for crate::GlobalNamespace::MenuRpcManager_GetCountdownEndTimeRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetIsEntitledToLevelRpc {
-    __cordl_parent: RemoteProcedureCall_1<*mut crate::System::String>,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::System::String,
+    >,
 }
 #[cfg(feature = "MenuRpcManager+GetIsEntitledToLevelRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -461,7 +463,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+GetIsEntitledToLevelRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetIsEntitledToLevelRpc {
-    type Target = RemoteProcedureCall_1<*mut crate::System::String>;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::System::String,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -507,7 +511,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsEntitledToLevelRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetIsInLobbyRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+GetIsInLobbyRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -516,7 +520,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+GetIsInLobbyRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetIsInLobbyRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -561,7 +565,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsInLobbyRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetIsReadyRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+GetIsReadyRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -570,7 +574,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+GetIsReadyRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetIsReadyRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -615,7 +619,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsReadyRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetIsStartButtonEnabledRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+GetIsStartButtonEnabledRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -626,7 +630,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MenuRpcManager+GetIsStartButtonEnabledRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_GetIsStartButtonEnabledRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -672,7 +676,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsStartButtonEnabledRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetMultiplayerGameStateRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+GetMultiplayerGameStateRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -683,7 +687,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MenuRpcManager+GetMultiplayerGameStateRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_GetMultiplayerGameStateRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -729,7 +733,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetMultiplayerGameStateRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetOwnedSongPacksRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+GetOwnedSongPacksRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -739,7 +743,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+GetOwnedSongPacksRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetOwnedSongPacksRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -784,7 +788,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetOwnedSongPacksRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetPlayersPermissionConfigurationRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+GetPlayersPermissionConfigurationRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -795,7 +799,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MenuRpcManager+GetPlayersPermissionConfigurationRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_GetPlayersPermissionConfigurationRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -841,7 +845,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetPlayersPermissionConfigurationRpc 
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetRecommendedBeatmapRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+GetRecommendedBeatmapRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -852,7 +856,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MenuRpcManager+GetRecommendedBeatmapRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_GetRecommendedBeatmapRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -898,7 +902,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetRecommendedBeatmapRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetRecommendedGameplayModifiersRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+GetRecommendedGameplayModifiersRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -909,7 +913,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MenuRpcManager+GetRecommendedGameplayModifiersRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_GetRecommendedGameplayModifiersRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -955,7 +959,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetRecommendedGameplayModifiersRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetSelectedBeatmapRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+GetSelectedBeatmapRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -965,7 +969,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+GetSelectedBeatmapRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetSelectedBeatmapRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1011,7 +1015,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetSelectedBeatmapRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetSelectedGameplayModifiersRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+GetSelectedGameplayModifiersRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1022,7 +1026,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MenuRpcManager+GetSelectedGameplayModifiersRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_GetSelectedGameplayModifiersRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1068,7 +1072,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetSelectedGameplayModifiersRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_GetStartedLevelRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+GetStartedLevelRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1078,7 +1082,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+GetStartedLevelRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetStartedLevelRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1123,7 +1127,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetStartedLevelRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_InvalidateLevelEntitlementStatusesRpc {
-    __cordl_parent: RemoteProcedureCall,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
 #[cfg(feature = "MenuRpcManager+InvalidateLevelEntitlementStatusesRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1134,7 +1138,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MenuRpcManager+InvalidateLevelEntitlementStatusesRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_InvalidateLevelEntitlementStatusesRpc {
-    type Target = RemoteProcedureCall;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1180,7 +1184,9 @@ for crate::GlobalNamespace::MenuRpcManager_InvalidateLevelEntitlementStatusesRpc
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_LevelLoadErrorRpc {
-    __cordl_parent: RemoteProcedureCall_1<*mut crate::System::String>,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::System::String,
+    >,
 }
 #[cfg(feature = "MenuRpcManager+LevelLoadErrorRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1190,7 +1196,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+LevelLoadErrorRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_LevelLoadErrorRpc {
-    type Target = RemoteProcedureCall_1<*mut crate::System::String>;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::System::String,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1235,7 +1243,9 @@ for crate::GlobalNamespace::MenuRpcManager_LevelLoadErrorRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_LevelLoadSuccessRpc {
-    __cordl_parent: RemoteProcedureCall_1<*mut crate::System::String>,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::System::String,
+    >,
 }
 #[cfg(feature = "MenuRpcManager+LevelLoadSuccessRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1245,7 +1255,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+LevelLoadSuccessRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_LevelLoadSuccessRpc {
-    type Target = RemoteProcedureCall_1<*mut crate::System::String>;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::System::String,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1291,18 +1303,20 @@ for crate::GlobalNamespace::MenuRpcManager_LevelLoadSuccessRpc {
 #[derive(Debug)]
 pub struct MenuRpcManager {
     __cordl_parent: crate::System::Object,
-    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
-    pub _rpcHandler: *mut RpcHandler_1<crate::GlobalNamespace::MenuRpcManager_RpcType>,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _rpcHandler: *mut crate::GlobalNamespace::RpcHandler_1<
+        crate::GlobalNamespace::MenuRpcManager_RpcType,
+    >,
     pub getPlayersPermissionConfigurationEvent: *mut crate::System::Action_1<
         *mut crate::System::String,
     >,
     pub setPlayersPermissionConfigurationEvent: *mut crate::System::Action_2<
         *mut crate::System::String,
-        *mut PlayersLobbyPermissionConfigurationNetSerializable,
+        *mut crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable,
     >,
     pub setPlayersMissingEntitlementsToLevelEvent: *mut crate::System::Action_2<
         *mut crate::System::String,
-        *mut PlayersMissingEntitlementsNetSerializable,
+        *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
     >,
     pub getIsEntitledToLevelEvent: *mut crate::System::Action_2<
         *mut crate::System::String,
@@ -1311,7 +1325,7 @@ pub struct MenuRpcManager {
     pub setIsEntitledToLevelEvent: *mut crate::System::Action_3<
         *mut crate::System::String,
         *mut crate::System::String,
-        EntitlementsStatus,
+        crate::GlobalNamespace::EntitlementsStatus,
     >,
     pub levelEntitlementStatusesInvalidatedEvent: *mut crate::System::Action_1<
         *mut crate::System::String,
@@ -1322,7 +1336,7 @@ pub struct MenuRpcManager {
     >,
     pub setSelectedBeatmapEvent: *mut crate::System::Action_2<
         *mut crate::System::String,
-        *mut BeatmapKeyNetSerializable,
+        *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
     >,
     pub clearSelectedBeatmapEvent: *mut crate::System::Action_1<
         *mut crate::System::String,
@@ -1332,7 +1346,7 @@ pub struct MenuRpcManager {
     >,
     pub recommendBeatmapEvent: *mut crate::System::Action_2<
         *mut crate::System::String,
-        *mut BeatmapKeyNetSerializable,
+        *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
     >,
     pub clearRecommendedBeatmapEvent: *mut crate::System::Action_1<
         *mut crate::System::String,
@@ -1342,7 +1356,7 @@ pub struct MenuRpcManager {
     >,
     pub setSelectedGameplayModifiersEvent: *mut crate::System::Action_2<
         *mut crate::System::String,
-        *mut GameplayModifiers,
+        *mut crate::GlobalNamespace::GameplayModifiers,
     >,
     pub clearSelectedGameplayModifiersEvent: *mut crate::System::Action_1<
         *mut crate::System::String,
@@ -1352,7 +1366,7 @@ pub struct MenuRpcManager {
     >,
     pub recommendGameplayModifiersEvent: *mut crate::System::Action_2<
         *mut crate::System::String,
-        *mut GameplayModifiers,
+        *mut crate::GlobalNamespace::GameplayModifiers,
     >,
     pub clearRecommendedGameplayModifiersEvent: *mut crate::System::Action_1<
         *mut crate::System::String,
@@ -1365,7 +1379,7 @@ pub struct MenuRpcManager {
     >,
     pub setIsStartButtonEnabledEvent: *mut crate::System::Action_2<
         *mut crate::System::String,
-        CannotStartGameReason,
+        crate::GlobalNamespace::CannotStartGameReason,
     >,
     pub levelLoadErrorEvent: *mut crate::System::Action_2<
         *mut crate::System::String,
@@ -1377,8 +1391,8 @@ pub struct MenuRpcManager {
     >,
     pub startedLevelEvent: *mut crate::System::Action_4<
         *mut crate::System::String,
-        *mut BeatmapKeyNetSerializable,
-        *mut GameplayModifiers,
+        *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+        *mut crate::GlobalNamespace::GameplayModifiers,
         i64,
     >,
     pub getStartedLevelEvent: *mut crate::System::Action_1<*mut crate::System::String>,
@@ -1387,7 +1401,7 @@ pub struct MenuRpcManager {
     >,
     pub setMultiplayerGameStateEvent: *mut crate::System::Action_2<
         *mut crate::System::String,
-        MultiplayerGameState,
+        crate::GlobalNamespace::MultiplayerGameState,
     >,
     pub cancelCountdownEvent: *mut crate::System::Action_1<*mut crate::System::String>,
     pub setCountdownEndTimeEvent: *mut crate::System::Action_2<
@@ -1417,7 +1431,7 @@ pub struct MenuRpcManager {
     pub getOwnedSongPacksEvent: *mut crate::System::Action_1<*mut crate::System::String>,
     pub setOwnedSongPacksEvent: *mut crate::System::Action_2<
         *mut crate::System::String,
-        SongPackMask,
+        crate::GlobalNamespace::SongPackMask,
     >,
     pub requestedKickPlayerEvent: *mut crate::System::Action_2<
         *mut crate::System::String,
@@ -1426,106 +1440,107 @@ pub struct MenuRpcManager {
 }
 #[cfg(feature = "MenuRpcManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MenuRpcManager => ""."MenuRpcManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MenuRpcManager => ""
+    ."MenuRpcManager"
 );
 #[cfg(feature = "MenuRpcManager")]
-impl std::ops::Deref for MenuRpcManager {
+impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager")]
-impl std::ops::DerefMut for MenuRpcManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager")]
-impl MenuRpcManager {
+impl crate::GlobalNamespace::MenuRpcManager {
     pub const kMenuState: &'static str = "in_menu";
-    #[cfg(feature = "MenuRpcManager+SelectLevelPackRpc")]
-    pub type SelectLevelPackRpc = crate::GlobalNamespace::MenuRpcManager_SelectLevelPackRpc;
-    #[cfg(feature = "MenuRpcManager+GetIsStartButtonEnabledRpc")]
-    pub type GetIsStartButtonEnabledRpc = crate::GlobalNamespace::MenuRpcManager_GetIsStartButtonEnabledRpc;
-    #[cfg(feature = "MenuRpcManager+ClearSelectedBeatmapRpc")]
-    pub type ClearSelectedBeatmapRpc = crate::GlobalNamespace::MenuRpcManager_ClearSelectedBeatmapRpc;
-    #[cfg(feature = "MenuRpcManager+GetPlayersPermissionConfigurationRpc")]
-    pub type GetPlayersPermissionConfigurationRpc = crate::GlobalNamespace::MenuRpcManager_GetPlayersPermissionConfigurationRpc;
+    #[cfg(feature = "MenuRpcManager+CancelCountdownRpc")]
+    pub type CancelCountdownRpc = crate::GlobalNamespace::MenuRpcManager_CancelCountdownRpc;
+    #[cfg(feature = "MenuRpcManager+CancelLevelStartRpc")]
+    pub type CancelLevelStartRpc = crate::GlobalNamespace::MenuRpcManager_CancelLevelStartRpc;
+    #[cfg(feature = "MenuRpcManager+CancelStartGameTimeRpc")]
+    pub type CancelStartGameTimeRpc = crate::GlobalNamespace::MenuRpcManager_CancelStartGameTimeRpc;
+    #[cfg(feature = "MenuRpcManager+ClearRecommendedBeatmapRpc")]
+    pub type ClearRecommendedBeatmapRpc = crate::GlobalNamespace::MenuRpcManager_ClearRecommendedBeatmapRpc;
     #[cfg(feature = "MenuRpcManager+ClearRecommendedGameplayModifiersRpc")]
     pub type ClearRecommendedGameplayModifiersRpc = crate::GlobalNamespace::MenuRpcManager_ClearRecommendedGameplayModifiersRpc;
+    #[cfg(feature = "MenuRpcManager+ClearSelectedBeatmapRpc")]
+    pub type ClearSelectedBeatmapRpc = crate::GlobalNamespace::MenuRpcManager_ClearSelectedBeatmapRpc;
+    #[cfg(feature = "MenuRpcManager+ClearSelectedGameplayModifiersRpc")]
+    pub type ClearSelectedGameplayModifiersRpc = crate::GlobalNamespace::MenuRpcManager_ClearSelectedGameplayModifiersRpc;
+    #[cfg(feature = "MenuRpcManager+GetCountdownEndTimeRpc")]
+    pub type GetCountdownEndTimeRpc = crate::GlobalNamespace::MenuRpcManager_GetCountdownEndTimeRpc;
+    #[cfg(feature = "MenuRpcManager+GetIsEntitledToLevelRpc")]
+    pub type GetIsEntitledToLevelRpc = crate::GlobalNamespace::MenuRpcManager_GetIsEntitledToLevelRpc;
+    #[cfg(feature = "MenuRpcManager+GetIsInLobbyRpc")]
+    pub type GetIsInLobbyRpc = crate::GlobalNamespace::MenuRpcManager_GetIsInLobbyRpc;
+    #[cfg(feature = "MenuRpcManager+GetIsReadyRpc")]
+    pub type GetIsReadyRpc = crate::GlobalNamespace::MenuRpcManager_GetIsReadyRpc;
+    #[cfg(feature = "MenuRpcManager+GetIsStartButtonEnabledRpc")]
+    pub type GetIsStartButtonEnabledRpc = crate::GlobalNamespace::MenuRpcManager_GetIsStartButtonEnabledRpc;
     #[cfg(feature = "MenuRpcManager+GetMultiplayerGameStateRpc")]
     pub type GetMultiplayerGameStateRpc = crate::GlobalNamespace::MenuRpcManager_GetMultiplayerGameStateRpc;
     #[cfg(feature = "MenuRpcManager+GetOwnedSongPacksRpc")]
     pub type GetOwnedSongPacksRpc = crate::GlobalNamespace::MenuRpcManager_GetOwnedSongPacksRpc;
-    #[cfg(feature = "MenuRpcManager+SetIsInLobbyRpc")]
-    pub type SetIsInLobbyRpc = crate::GlobalNamespace::MenuRpcManager_SetIsInLobbyRpc;
-    #[cfg(feature = "MenuRpcManager+SetOwnedSongPacksRpc")]
-    pub type SetOwnedSongPacksRpc = crate::GlobalNamespace::MenuRpcManager_SetOwnedSongPacksRpc;
-    #[cfg(feature = "MenuRpcManager+SetIsStartButtonEnabledRpc")]
-    pub type SetIsStartButtonEnabledRpc = crate::GlobalNamespace::MenuRpcManager_SetIsStartButtonEnabledRpc;
-    #[cfg(feature = "MenuRpcManager+ClearRecommendedBeatmapRpc")]
-    pub type ClearRecommendedBeatmapRpc = crate::GlobalNamespace::MenuRpcManager_ClearRecommendedBeatmapRpc;
-    #[cfg(feature = "MenuRpcManager+GetIsEntitledToLevelRpc")]
-    pub type GetIsEntitledToLevelRpc = crate::GlobalNamespace::MenuRpcManager_GetIsEntitledToLevelRpc;
-    #[cfg(feature = "MenuRpcManager+RequestKickPlayerRpc")]
-    pub type RequestKickPlayerRpc = crate::GlobalNamespace::MenuRpcManager_RequestKickPlayerRpc;
-    #[cfg(feature = "MenuRpcManager+SetIsEntitledToLevelRpc")]
-    pub type SetIsEntitledToLevelRpc = crate::GlobalNamespace::MenuRpcManager_SetIsEntitledToLevelRpc;
-    #[cfg(feature = "MenuRpcManager+InvalidateLevelEntitlementStatusesRpc")]
-    pub type InvalidateLevelEntitlementStatusesRpc = crate::GlobalNamespace::MenuRpcManager_InvalidateLevelEntitlementStatusesRpc;
-    #[cfg(feature = "MenuRpcManager+RecommendGameplayModifiersRpc")]
-    pub type RecommendGameplayModifiersRpc = crate::GlobalNamespace::MenuRpcManager_RecommendGameplayModifiersRpc;
+    #[cfg(feature = "MenuRpcManager+GetPlayersPermissionConfigurationRpc")]
+    pub type GetPlayersPermissionConfigurationRpc = crate::GlobalNamespace::MenuRpcManager_GetPlayersPermissionConfigurationRpc;
     #[cfg(feature = "MenuRpcManager+GetRecommendedBeatmapRpc")]
     pub type GetRecommendedBeatmapRpc = crate::GlobalNamespace::MenuRpcManager_GetRecommendedBeatmapRpc;
-    #[cfg(feature = "MenuRpcManager+SetStartGameTimeRpc")]
-    pub type SetStartGameTimeRpc = crate::GlobalNamespace::MenuRpcManager_SetStartGameTimeRpc;
+    #[cfg(feature = "MenuRpcManager+GetRecommendedGameplayModifiersRpc")]
+    pub type GetRecommendedGameplayModifiersRpc = crate::GlobalNamespace::MenuRpcManager_GetRecommendedGameplayModifiersRpc;
     #[cfg(feature = "MenuRpcManager+GetSelectedBeatmapRpc")]
     pub type GetSelectedBeatmapRpc = crate::GlobalNamespace::MenuRpcManager_GetSelectedBeatmapRpc;
     #[cfg(feature = "MenuRpcManager+GetSelectedGameplayModifiersRpc")]
     pub type GetSelectedGameplayModifiersRpc = crate::GlobalNamespace::MenuRpcManager_GetSelectedGameplayModifiersRpc;
-    #[cfg(feature = "MenuRpcManager+ClearSelectedGameplayModifiersRpc")]
-    pub type ClearSelectedGameplayModifiersRpc = crate::GlobalNamespace::MenuRpcManager_ClearSelectedGameplayModifiersRpc;
-    #[cfg(feature = "MenuRpcManager+LevelLoadSuccessRpc")]
-    pub type LevelLoadSuccessRpc = crate::GlobalNamespace::MenuRpcManager_LevelLoadSuccessRpc;
-    #[cfg(feature = "MenuRpcManager+GetIsInLobbyRpc")]
-    pub type GetIsInLobbyRpc = crate::GlobalNamespace::MenuRpcManager_GetIsInLobbyRpc;
-    #[cfg(feature = "MenuRpcManager+SetSelectedBeatmapRpc")]
-    pub type SetSelectedBeatmapRpc = crate::GlobalNamespace::MenuRpcManager_SetSelectedBeatmapRpc;
-    #[cfg(feature = "MenuRpcManager+SetPlayersPermissionConfigurationRpc")]
-    pub type SetPlayersPermissionConfigurationRpc = crate::GlobalNamespace::MenuRpcManager_SetPlayersPermissionConfigurationRpc;
-    #[cfg(feature = "MenuRpcManager+GetRecommendedGameplayModifiersRpc")]
-    pub type GetRecommendedGameplayModifiersRpc = crate::GlobalNamespace::MenuRpcManager_GetRecommendedGameplayModifiersRpc;
-    #[cfg(feature = "MenuRpcManager+LevelLoadErrorRpc")]
-    pub type LevelLoadErrorRpc = crate::GlobalNamespace::MenuRpcManager_LevelLoadErrorRpc;
     #[cfg(feature = "MenuRpcManager+GetStartedLevelRpc")]
     pub type GetStartedLevelRpc = crate::GlobalNamespace::MenuRpcManager_GetStartedLevelRpc;
-    #[cfg(feature = "MenuRpcManager+SetSelectedGameplayModifiersRpc")]
-    pub type SetSelectedGameplayModifiersRpc = crate::GlobalNamespace::MenuRpcManager_SetSelectedGameplayModifiersRpc;
-    #[cfg(feature = "MenuRpcManager+CancelLevelStartRpc")]
-    pub type CancelLevelStartRpc = crate::GlobalNamespace::MenuRpcManager_CancelLevelStartRpc;
+    #[cfg(feature = "MenuRpcManager+InvalidateLevelEntitlementStatusesRpc")]
+    pub type InvalidateLevelEntitlementStatusesRpc = crate::GlobalNamespace::MenuRpcManager_InvalidateLevelEntitlementStatusesRpc;
+    #[cfg(feature = "MenuRpcManager+LevelLoadErrorRpc")]
+    pub type LevelLoadErrorRpc = crate::GlobalNamespace::MenuRpcManager_LevelLoadErrorRpc;
+    #[cfg(feature = "MenuRpcManager+LevelLoadSuccessRpc")]
+    pub type LevelLoadSuccessRpc = crate::GlobalNamespace::MenuRpcManager_LevelLoadSuccessRpc;
     #[cfg(feature = "MenuRpcManager+RecommendBeatmapRpc")]
     pub type RecommendBeatmapRpc = crate::GlobalNamespace::MenuRpcManager_RecommendBeatmapRpc;
-    #[cfg(feature = "MenuRpcManager+CancelCountdownRpc")]
-    pub type CancelCountdownRpc = crate::GlobalNamespace::MenuRpcManager_CancelCountdownRpc;
-    #[cfg(feature = "MenuRpcManager+GetIsReadyRpc")]
-    pub type GetIsReadyRpc = crate::GlobalNamespace::MenuRpcManager_GetIsReadyRpc;
-    #[cfg(feature = "MenuRpcManager+SetCountdownEndTimeRpc")]
-    pub type SetCountdownEndTimeRpc = crate::GlobalNamespace::MenuRpcManager_SetCountdownEndTimeRpc;
-    #[cfg(feature = "MenuRpcManager+GetCountdownEndTimeRpc")]
-    pub type GetCountdownEndTimeRpc = crate::GlobalNamespace::MenuRpcManager_GetCountdownEndTimeRpc;
-    #[cfg(feature = "MenuRpcManager+SetIsReadyRpc")]
-    pub type SetIsReadyRpc = crate::GlobalNamespace::MenuRpcManager_SetIsReadyRpc;
-    #[cfg(feature = "MenuRpcManager+SetMultiplayerGameStateRpc")]
-    pub type SetMultiplayerGameStateRpc = crate::GlobalNamespace::MenuRpcManager_SetMultiplayerGameStateRpc;
-    #[cfg(feature = "MenuRpcManager+CancelStartGameTimeRpc")]
-    pub type CancelStartGameTimeRpc = crate::GlobalNamespace::MenuRpcManager_CancelStartGameTimeRpc;
-    #[cfg(feature = "MenuRpcManager+StartLevelRpc")]
-    pub type StartLevelRpc = crate::GlobalNamespace::MenuRpcManager_StartLevelRpc;
+    #[cfg(feature = "MenuRpcManager+RecommendGameplayModifiersRpc")]
+    pub type RecommendGameplayModifiersRpc = crate::GlobalNamespace::MenuRpcManager_RecommendGameplayModifiersRpc;
+    #[cfg(feature = "MenuRpcManager+RequestKickPlayerRpc")]
+    pub type RequestKickPlayerRpc = crate::GlobalNamespace::MenuRpcManager_RequestKickPlayerRpc;
     #[cfg(feature = "MenuRpcManager+RpcType")]
     pub type RpcType = crate::GlobalNamespace::MenuRpcManager_RpcType;
+    #[cfg(feature = "MenuRpcManager+SelectLevelPackRpc")]
+    pub type SelectLevelPackRpc = crate::GlobalNamespace::MenuRpcManager_SelectLevelPackRpc;
+    #[cfg(feature = "MenuRpcManager+SetCountdownEndTimeRpc")]
+    pub type SetCountdownEndTimeRpc = crate::GlobalNamespace::MenuRpcManager_SetCountdownEndTimeRpc;
+    #[cfg(feature = "MenuRpcManager+SetIsEntitledToLevelRpc")]
+    pub type SetIsEntitledToLevelRpc = crate::GlobalNamespace::MenuRpcManager_SetIsEntitledToLevelRpc;
+    #[cfg(feature = "MenuRpcManager+SetIsInLobbyRpc")]
+    pub type SetIsInLobbyRpc = crate::GlobalNamespace::MenuRpcManager_SetIsInLobbyRpc;
+    #[cfg(feature = "MenuRpcManager+SetIsReadyRpc")]
+    pub type SetIsReadyRpc = crate::GlobalNamespace::MenuRpcManager_SetIsReadyRpc;
+    #[cfg(feature = "MenuRpcManager+SetIsStartButtonEnabledRpc")]
+    pub type SetIsStartButtonEnabledRpc = crate::GlobalNamespace::MenuRpcManager_SetIsStartButtonEnabledRpc;
+    #[cfg(feature = "MenuRpcManager+SetMultiplayerGameStateRpc")]
+    pub type SetMultiplayerGameStateRpc = crate::GlobalNamespace::MenuRpcManager_SetMultiplayerGameStateRpc;
+    #[cfg(feature = "MenuRpcManager+SetOwnedSongPacksRpc")]
+    pub type SetOwnedSongPacksRpc = crate::GlobalNamespace::MenuRpcManager_SetOwnedSongPacksRpc;
     #[cfg(feature = "MenuRpcManager+SetPlayersMissingEntitlementsToLevelRpc")]
     pub type SetPlayersMissingEntitlementsToLevelRpc = crate::GlobalNamespace::MenuRpcManager_SetPlayersMissingEntitlementsToLevelRpc;
+    #[cfg(feature = "MenuRpcManager+SetPlayersPermissionConfigurationRpc")]
+    pub type SetPlayersPermissionConfigurationRpc = crate::GlobalNamespace::MenuRpcManager_SetPlayersPermissionConfigurationRpc;
+    #[cfg(feature = "MenuRpcManager+SetSelectedBeatmapRpc")]
+    pub type SetSelectedBeatmapRpc = crate::GlobalNamespace::MenuRpcManager_SetSelectedBeatmapRpc;
+    #[cfg(feature = "MenuRpcManager+SetSelectedGameplayModifiersRpc")]
+    pub type SetSelectedGameplayModifiersRpc = crate::GlobalNamespace::MenuRpcManager_SetSelectedGameplayModifiersRpc;
+    #[cfg(feature = "MenuRpcManager+SetStartGameTimeRpc")]
+    pub type SetStartGameTimeRpc = crate::GlobalNamespace::MenuRpcManager_SetStartGameTimeRpc;
+    #[cfg(feature = "MenuRpcManager+StartLevelRpc")]
+    pub type StartLevelRpc = crate::GlobalNamespace::MenuRpcManager_StartLevelRpc;
     pub fn CancelCountdown(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1608,7 +1623,7 @@ impl MenuRpcManager {
     }
     pub fn EnabledForPlayer(
         &mut self,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2040,7 +2055,7 @@ impl MenuRpcManager {
     pub fn InvokeRecommendBeatmap(
         &mut self,
         userId: *mut crate::System::String,
-        key: *mut BeatmapKeyNetSerializable,
+        key: *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2052,7 +2067,7 @@ impl MenuRpcManager {
     pub fn InvokeRecommendGameplayModifiers(
         &mut self,
         userId: *mut crate::System::String,
-        gameplayModifiers: *mut GameplayModifiers,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2113,7 +2128,7 @@ impl MenuRpcManager {
     pub fn InvokeSetIsStartButtonEnabled(
         &mut self,
         userId: *mut crate::System::String,
-        reason: CannotStartGameReason,
+        reason: crate::GlobalNamespace::CannotStartGameReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2125,7 +2140,7 @@ impl MenuRpcManager {
     pub fn InvokeSetMultiplayerGameState(
         &mut self,
         userId: *mut crate::System::String,
-        lobbyState: MultiplayerGameState,
+        lobbyState: crate::GlobalNamespace::MultiplayerGameState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2137,7 +2152,7 @@ impl MenuRpcManager {
     pub fn InvokeSetOwnedSongPacks(
         &mut self,
         userId: *mut crate::System::String,
-        songPackMask: SongPackMask,
+        songPackMask: crate::GlobalNamespace::SongPackMask,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2149,7 +2164,7 @@ impl MenuRpcManager {
     pub fn InvokeSetPlayersMissingEntitlementsToLevelRpc(
         &mut self,
         userId: *mut crate::System::String,
-        playersMissingEntitlements: *mut PlayersMissingEntitlementsNetSerializable,
+        playersMissingEntitlements: *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2164,7 +2179,7 @@ impl MenuRpcManager {
     pub fn InvokeSetPlayersPermissionConfiguration(
         &mut self,
         userId: *mut crate::System::String,
-        playersPermissionConfiguration: *mut PlayersLobbyPermissionConfigurationNetSerializable,
+        playersPermissionConfiguration: *mut crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2179,7 +2194,7 @@ impl MenuRpcManager {
     pub fn InvokeSetSelectedBeatmap(
         &mut self,
         userId: *mut crate::System::String,
-        key: *mut BeatmapKeyNetSerializable,
+        key: *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2191,7 +2206,7 @@ impl MenuRpcManager {
     pub fn InvokeSetSelectedGameplayModifiers(
         &mut self,
         userId: *mut crate::System::String,
-        gameplayModifiers: *mut GameplayModifiers,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2215,8 +2230,8 @@ impl MenuRpcManager {
     pub fn InvokeStartLevel(
         &mut self,
         userId: *mut crate::System::String,
-        beatmapKeySerializable: *mut BeatmapKeyNetSerializable,
-        gameplayModifiers: *mut GameplayModifiers,
+        beatmapKeySerializable: *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
         startTime: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2252,7 +2267,7 @@ impl MenuRpcManager {
         Ok(__cordl_ret)
     }
     pub fn New(
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
+        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -2262,7 +2277,7 @@ impl MenuRpcManager {
     }
     pub fn RecommendBeatmap(
         &mut self,
-        key: *mut BeatmapKeyNetSerializable,
+        key: *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2273,7 +2288,7 @@ impl MenuRpcManager {
     }
     pub fn RecommendGameplayModifiers(
         &mut self,
-        gameplayModifiers: *mut GameplayModifiers,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2318,7 +2333,7 @@ impl MenuRpcManager {
     pub fn SetIsEntitledToLevel(
         &mut self,
         levelId: *mut crate::System::String,
-        entitlementStatus: EntitlementsStatus,
+        entitlementStatus: crate::GlobalNamespace::EntitlementsStatus,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2351,7 +2366,7 @@ impl MenuRpcManager {
     }
     pub fn SetIsStartButtonEnabled(
         &mut self,
-        reason: CannotStartGameReason,
+        reason: crate::GlobalNamespace::CannotStartGameReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2362,7 +2377,7 @@ impl MenuRpcManager {
     }
     pub fn SetMultiplayerGameState(
         &mut self,
-        lobbyState: MultiplayerGameState,
+        lobbyState: crate::GlobalNamespace::MultiplayerGameState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2373,7 +2388,7 @@ impl MenuRpcManager {
     }
     pub fn SetOwnedSongPacks(
         &mut self,
-        songPackMask: SongPackMask,
+        songPackMask: crate::GlobalNamespace::SongPackMask,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2384,7 +2399,7 @@ impl MenuRpcManager {
     }
     pub fn SetPlayersMissingEntitlementsToLevel(
         &mut self,
-        playersMissingEntitlements: *mut PlayersMissingEntitlementsNetSerializable,
+        playersMissingEntitlements: *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2398,7 +2413,7 @@ impl MenuRpcManager {
     }
     pub fn SetPlayersPermissionConfiguration(
         &mut self,
-        playersPermissionConfiguration: *mut PlayersLobbyPermissionConfigurationNetSerializable,
+        playersPermissionConfiguration: *mut crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2412,7 +2427,7 @@ impl MenuRpcManager {
     }
     pub fn SetSelectedBeatmap(
         &mut self,
-        key: *mut BeatmapKeyNetSerializable,
+        key: *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2423,7 +2438,7 @@ impl MenuRpcManager {
     }
     pub fn SetSelectedGameplayModifiers(
         &mut self,
-        gameplayModifiers: *mut GameplayModifiers,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2445,8 +2460,8 @@ impl MenuRpcManager {
     }
     pub fn StartLevel(
         &mut self,
-        beatmapKeySerializable: *mut BeatmapKeyNetSerializable,
-        gameplayModifiers: *mut GameplayModifiers,
+        beatmapKeySerializable: *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
         startTime: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2461,7 +2476,7 @@ impl MenuRpcManager {
     }
     pub fn _ctor(
         &mut self,
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
+        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2736,7 +2751,7 @@ impl MenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut BeatmapKeyNetSerializable,
+            *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2750,7 +2765,7 @@ impl MenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut GameplayModifiers,
+            *mut crate::GlobalNamespace::GameplayModifiers,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2804,7 +2819,7 @@ impl MenuRpcManager {
         value: *mut crate::System::Action_3<
             *mut crate::System::String,
             *mut crate::System::String,
-            EntitlementsStatus,
+            crate::GlobalNamespace::EntitlementsStatus,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2840,7 +2855,7 @@ impl MenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            CannotStartGameReason,
+            crate::GlobalNamespace::CannotStartGameReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2854,7 +2869,7 @@ impl MenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            MultiplayerGameState,
+            crate::GlobalNamespace::MultiplayerGameState,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2866,7 +2881,10 @@ impl MenuRpcManager {
     }
     pub fn add_setOwnedSongPacksEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut crate::System::String, SongPackMask>,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            crate::GlobalNamespace::SongPackMask,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2879,7 +2897,7 @@ impl MenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut PlayersMissingEntitlementsNetSerializable,
+            *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2893,7 +2911,7 @@ impl MenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut PlayersLobbyPermissionConfigurationNetSerializable,
+            *mut crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2907,7 +2925,7 @@ impl MenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut BeatmapKeyNetSerializable,
+            *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2921,7 +2939,7 @@ impl MenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut GameplayModifiers,
+            *mut crate::GlobalNamespace::GameplayModifiers,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2946,8 +2964,8 @@ impl MenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_4<
             *mut crate::System::String,
-            *mut BeatmapKeyNetSerializable,
-            *mut GameplayModifiers,
+            *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+            *mut crate::GlobalNamespace::GameplayModifiers,
             i64,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2974,11 +2992,13 @@ impl MenuRpcManager {
     }
     pub fn get_multiplayerSessionManager(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IMultiplayerSessionManager> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IMultiplayerSessionManager = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IMultiplayerSessionManager = __cordl_object
             .invoke("get_multiplayerSessionManager", ())?;
         Ok(__cordl_ret)
     }
@@ -3255,7 +3275,7 @@ impl MenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut BeatmapKeyNetSerializable,
+            *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -3269,7 +3289,7 @@ impl MenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut GameplayModifiers,
+            *mut crate::GlobalNamespace::GameplayModifiers,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -3323,7 +3343,7 @@ impl MenuRpcManager {
         value: *mut crate::System::Action_3<
             *mut crate::System::String,
             *mut crate::System::String,
-            EntitlementsStatus,
+            crate::GlobalNamespace::EntitlementsStatus,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -3359,7 +3379,7 @@ impl MenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            CannotStartGameReason,
+            crate::GlobalNamespace::CannotStartGameReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -3373,7 +3393,7 @@ impl MenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            MultiplayerGameState,
+            crate::GlobalNamespace::MultiplayerGameState,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -3385,7 +3405,10 @@ impl MenuRpcManager {
     }
     pub fn remove_setOwnedSongPacksEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut crate::System::String, SongPackMask>,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            crate::GlobalNamespace::SongPackMask,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -3398,7 +3421,7 @@ impl MenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut PlayersMissingEntitlementsNetSerializable,
+            *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -3412,7 +3435,7 @@ impl MenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut PlayersLobbyPermissionConfigurationNetSerializable,
+            *mut crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -3426,7 +3449,7 @@ impl MenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut BeatmapKeyNetSerializable,
+            *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -3440,7 +3463,7 @@ impl MenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::System::String,
-            *mut GameplayModifiers,
+            *mut crate::GlobalNamespace::GameplayModifiers,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -3465,8 +3488,8 @@ impl MenuRpcManager {
         &mut self,
         value: *mut crate::System::Action_4<
             *mut crate::System::String,
-            *mut BeatmapKeyNetSerializable,
-            *mut GameplayModifiers,
+            *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+            *mut crate::GlobalNamespace::GameplayModifiers,
             i64,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -3490,7 +3513,7 @@ impl MenuRpcManager {
     }
 }
 #[cfg(feature = "MenuRpcManager")]
-impl quest_hook::libil2cpp::ObjectType for MenuRpcManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MenuRpcManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -3502,7 +3525,9 @@ impl quest_hook::libil2cpp::ObjectType for MenuRpcManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_RecommendBeatmapRpc {
-    __cordl_parent: RemoteProcedureCall_1<*mut BeatmapKeyNetSerializable>,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+    >,
 }
 #[cfg(feature = "MenuRpcManager+RecommendBeatmapRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3512,7 +3537,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+RecommendBeatmapRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_RecommendBeatmapRpc {
-    type Target = RemoteProcedureCall_1<*mut BeatmapKeyNetSerializable>;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3557,7 +3584,9 @@ for crate::GlobalNamespace::MenuRpcManager_RecommendBeatmapRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_RecommendGameplayModifiersRpc {
-    __cordl_parent: RemoteProcedureCall_1<*mut GameplayModifiers>,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::GlobalNamespace::GameplayModifiers,
+    >,
 }
 #[cfg(feature = "MenuRpcManager+RecommendGameplayModifiersRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3568,7 +3597,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MenuRpcManager+RecommendGameplayModifiersRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_RecommendGameplayModifiersRpc {
-    type Target = RemoteProcedureCall_1<*mut GameplayModifiers>;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::GlobalNamespace::GameplayModifiers,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3614,7 +3645,9 @@ for crate::GlobalNamespace::MenuRpcManager_RecommendGameplayModifiersRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_RequestKickPlayerRpc {
-    __cordl_parent: RemoteProcedureCall_1<*mut crate::System::String>,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::System::String,
+    >,
 }
 #[cfg(feature = "MenuRpcManager+RequestKickPlayerRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3624,7 +3657,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+RequestKickPlayerRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_RequestKickPlayerRpc {
-    type Target = RemoteProcedureCall_1<*mut crate::System::String>;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::System::String,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3719,7 +3754,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SelectLevelPackRpc {
-    __cordl_parent: RemoteProcedureCall_1<*mut crate::System::String>,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::System::String,
+    >,
 }
 #[cfg(feature = "MenuRpcManager+SelectLevelPackRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3729,7 +3766,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+SelectLevelPackRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SelectLevelPackRpc {
-    type Target = RemoteProcedureCall_1<*mut crate::System::String>;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::System::String,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3774,7 +3813,7 @@ for crate::GlobalNamespace::MenuRpcManager_SelectLevelPackRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetCountdownEndTimeRpc {
-    __cordl_parent: RemoteProcedureCall_1<i64>,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<i64>,
 }
 #[cfg(feature = "MenuRpcManager+SetCountdownEndTimeRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3784,7 +3823,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+SetCountdownEndTimeRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetCountdownEndTimeRpc {
-    type Target = RemoteProcedureCall_1<i64>;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_1<i64>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3830,7 +3869,10 @@ for crate::GlobalNamespace::MenuRpcManager_SetCountdownEndTimeRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetIsEntitledToLevelRpc {
-    __cordl_parent: RemoteProcedureCall_2<*mut crate::System::String, i32>,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_2<
+        *mut crate::System::String,
+        i32,
+    >,
 }
 #[cfg(feature = "MenuRpcManager+SetIsEntitledToLevelRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3840,7 +3882,10 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+SetIsEntitledToLevelRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetIsEntitledToLevelRpc {
-    type Target = RemoteProcedureCall_2<*mut crate::System::String, i32>;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_2<
+        *mut crate::System::String,
+        i32,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3886,7 +3931,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsEntitledToLevelRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetIsInLobbyRpc {
-    __cordl_parent: RemoteProcedureCall_1<bool>,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<bool>,
 }
 #[cfg(feature = "MenuRpcManager+SetIsInLobbyRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3895,7 +3940,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+SetIsInLobbyRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetIsInLobbyRpc {
-    type Target = RemoteProcedureCall_1<bool>;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_1<bool>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3940,7 +3985,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsInLobbyRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetIsReadyRpc {
-    __cordl_parent: RemoteProcedureCall_1<bool>,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<bool>,
 }
 #[cfg(feature = "MenuRpcManager+SetIsReadyRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3949,7 +3994,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+SetIsReadyRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetIsReadyRpc {
-    type Target = RemoteProcedureCall_1<bool>;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_1<bool>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3994,7 +4039,9 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsReadyRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetIsStartButtonEnabledRpc {
-    __cordl_parent: RemoteProcedureCall_1<CannotStartGameReason>,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
+        crate::GlobalNamespace::CannotStartGameReason,
+    >,
 }
 #[cfg(feature = "MenuRpcManager+SetIsStartButtonEnabledRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4005,7 +4052,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MenuRpcManager+SetIsStartButtonEnabledRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_SetIsStartButtonEnabledRpc {
-    type Target = RemoteProcedureCall_1<CannotStartGameReason>;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
+        crate::GlobalNamespace::CannotStartGameReason,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4051,7 +4100,9 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsStartButtonEnabledRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetMultiplayerGameStateRpc {
-    __cordl_parent: RemoteProcedureCall_1<MultiplayerGameState>,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
+        crate::GlobalNamespace::MultiplayerGameState,
+    >,
 }
 #[cfg(feature = "MenuRpcManager+SetMultiplayerGameStateRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4062,7 +4113,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MenuRpcManager+SetMultiplayerGameStateRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_SetMultiplayerGameStateRpc {
-    type Target = RemoteProcedureCall_1<MultiplayerGameState>;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
+        crate::GlobalNamespace::MultiplayerGameState,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4108,7 +4161,9 @@ for crate::GlobalNamespace::MenuRpcManager_SetMultiplayerGameStateRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetOwnedSongPacksRpc {
-    __cordl_parent: RemoteProcedureCall_1<SongPackMask>,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
+        crate::GlobalNamespace::SongPackMask,
+    >,
 }
 #[cfg(feature = "MenuRpcManager+SetOwnedSongPacksRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4118,7 +4173,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+SetOwnedSongPacksRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetOwnedSongPacksRpc {
-    type Target = RemoteProcedureCall_1<SongPackMask>;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
+        crate::GlobalNamespace::SongPackMask,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4163,8 +4220,8 @@ for crate::GlobalNamespace::MenuRpcManager_SetOwnedSongPacksRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetPlayersMissingEntitlementsToLevelRpc {
-    __cordl_parent: RemoteProcedureCall_1<
-        *mut PlayersMissingEntitlementsNetSerializable,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
     >,
 }
 #[cfg(feature = "MenuRpcManager+SetPlayersMissingEntitlementsToLevelRpc")]
@@ -4176,7 +4233,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MenuRpcManager+SetPlayersMissingEntitlementsToLevelRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_SetPlayersMissingEntitlementsToLevelRpc {
-    type Target = RemoteProcedureCall_1<*mut PlayersMissingEntitlementsNetSerializable>;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4222,8 +4281,8 @@ for crate::GlobalNamespace::MenuRpcManager_SetPlayersMissingEntitlementsToLevelR
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetPlayersPermissionConfigurationRpc {
-    __cordl_parent: RemoteProcedureCall_1<
-        *mut PlayersLobbyPermissionConfigurationNetSerializable,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable,
     >,
 }
 #[cfg(feature = "MenuRpcManager+SetPlayersPermissionConfigurationRpc")]
@@ -4235,8 +4294,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MenuRpcManager+SetPlayersPermissionConfigurationRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_SetPlayersPermissionConfigurationRpc {
-    type Target = RemoteProcedureCall_1<
-        *mut PlayersLobbyPermissionConfigurationNetSerializable,
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -4283,7 +4342,9 @@ for crate::GlobalNamespace::MenuRpcManager_SetPlayersPermissionConfigurationRpc 
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetSelectedBeatmapRpc {
-    __cordl_parent: RemoteProcedureCall_1<*mut BeatmapKeyNetSerializable>,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+    >,
 }
 #[cfg(feature = "MenuRpcManager+SetSelectedBeatmapRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4293,7 +4354,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+SetSelectedBeatmapRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetSelectedBeatmapRpc {
-    type Target = RemoteProcedureCall_1<*mut BeatmapKeyNetSerializable>;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4339,7 +4402,9 @@ for crate::GlobalNamespace::MenuRpcManager_SetSelectedBeatmapRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetSelectedGameplayModifiersRpc {
-    __cordl_parent: RemoteProcedureCall_1<*mut GameplayModifiers>,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::GlobalNamespace::GameplayModifiers,
+    >,
 }
 #[cfg(feature = "MenuRpcManager+SetSelectedGameplayModifiersRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4350,7 +4415,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MenuRpcManager+SetSelectedGameplayModifiersRpc")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_SetSelectedGameplayModifiersRpc {
-    type Target = RemoteProcedureCall_1<*mut GameplayModifiers>;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
+        *mut crate::GlobalNamespace::GameplayModifiers,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4396,7 +4463,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetSelectedGameplayModifiersRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_SetStartGameTimeRpc {
-    __cordl_parent: RemoteProcedureCall_1<i64>,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<i64>,
 }
 #[cfg(feature = "MenuRpcManager+SetStartGameTimeRpc")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4406,7 +4473,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+SetStartGameTimeRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetStartGameTimeRpc {
-    type Target = RemoteProcedureCall_1<i64>;
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_1<i64>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4451,9 +4518,9 @@ for crate::GlobalNamespace::MenuRpcManager_SetStartGameTimeRpc {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuRpcManager_StartLevelRpc {
-    __cordl_parent: RemoteProcedureCall_3<
-        *mut BeatmapKeyNetSerializable,
-        *mut GameplayModifiers,
+    __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_3<
+        *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+        *mut crate::GlobalNamespace::GameplayModifiers,
         i64,
     >,
 }
@@ -4464,9 +4531,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuRpcManager+StartLevelRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_StartLevelRpc {
-    type Target = RemoteProcedureCall_3<
-        *mut BeatmapKeyNetSerializable,
-        *mut GameplayModifiers,
+    type Target = crate::GlobalNamespace::RemoteProcedureCall_3<
+        *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
+        *mut crate::GlobalNamespace::GameplayModifiers,
         i64,
     >;
     fn deref(&self) -> &Self::Target {

@@ -4,7 +4,7 @@
 pub struct SonyAchievementIdsModelSO_AchievementIdData {
     __cordl_parent: crate::System::Object,
     pub _trophyId: i32,
-    pub _achievement: *mut AchievementSO,
+    pub _achievement: *mut crate::GlobalNamespace::AchievementSO,
 }
 #[cfg(feature = "SonyAchievementIdsModelSO+AchievementIdData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -78,7 +78,7 @@ for crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyAchievementIdsModelSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _achievementsIds: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
     >,
@@ -93,24 +93,24 @@ pub struct SonyAchievementIdsModelSO {
 }
 #[cfg(feature = "SonyAchievementIdsModelSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SonyAchievementIdsModelSO => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SonyAchievementIdsModelSO => ""
     ."SonyAchievementIdsModelSO"
 );
 #[cfg(feature = "SonyAchievementIdsModelSO")]
-impl std::ops::Deref for SonyAchievementIdsModelSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::SonyAchievementIdsModelSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyAchievementIdsModelSO")]
-impl std::ops::DerefMut for SonyAchievementIdsModelSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::SonyAchievementIdsModelSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyAchievementIdsModelSO")]
-impl SonyAchievementIdsModelSO {
+impl crate::GlobalNamespace::SonyAchievementIdsModelSO {
     #[cfg(feature = "SonyAchievementIdsModelSO+AchievementIdData")]
     pub type AchievementIdData = crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData;
     pub fn GetAchievementId(
@@ -191,7 +191,8 @@ impl SonyAchievementIdsModelSO {
     }
 }
 #[cfg(feature = "SonyAchievementIdsModelSO")]
-impl quest_hook::libil2cpp::ObjectType for SonyAchievementIdsModelSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SonyAchievementIdsModelSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

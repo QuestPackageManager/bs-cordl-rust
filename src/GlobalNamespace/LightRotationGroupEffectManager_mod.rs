@@ -4,33 +4,33 @@
 pub struct LightRotationGroupEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lightRotationGroups: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut LightRotationGroup,
+        *mut crate::GlobalNamespace::LightRotationGroup,
     >,
     pub _container: *mut crate::Zenject::DiContainer,
     pub _lightRotationGroupEffects: *mut crate::System::Collections::Generic::List_1<
-        *mut LightRotationGroupEffect,
+        *mut crate::GlobalNamespace::LightRotationGroupEffect,
     >,
 }
 #[cfg(feature = "LightRotationGroupEffectManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightRotationGroupEffectManager => ""
-    ."LightRotationGroupEffectManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightRotationGroupEffectManager
+    => ""."LightRotationGroupEffectManager"
 );
 #[cfg(feature = "LightRotationGroupEffectManager")]
-impl std::ops::Deref for LightRotationGroupEffectManager {
+impl std::ops::Deref for crate::GlobalNamespace::LightRotationGroupEffectManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightRotationGroupEffectManager")]
-impl std::ops::DerefMut for LightRotationGroupEffectManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightRotationGroupEffectManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightRotationGroupEffectManager")]
-impl LightRotationGroupEffectManager {
+impl crate::GlobalNamespace::LightRotationGroupEffectManager {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -70,7 +70,8 @@ impl LightRotationGroupEffectManager {
     }
 }
 #[cfg(feature = "LightRotationGroupEffectManager")]
-impl quest_hook::libil2cpp::ObjectType for LightRotationGroupEffectManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LightRotationGroupEffectManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

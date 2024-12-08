@@ -6,24 +6,24 @@ pub struct LightGroupRotationXTransform {
 }
 #[cfg(feature = "LightGroupRotationXTransform")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightGroupRotationXTransform => ""
-    ."LightGroupRotationXTransform"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightGroupRotationXTransform =>
+    ""."LightGroupRotationXTransform"
 );
 #[cfg(feature = "LightGroupRotationXTransform")]
-impl std::ops::Deref for LightGroupRotationXTransform {
+impl std::ops::Deref for crate::GlobalNamespace::LightGroupRotationXTransform {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightGroupRotationXTransform")]
-impl std::ops::DerefMut for LightGroupRotationXTransform {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightGroupRotationXTransform {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightGroupRotationXTransform")]
-impl LightGroupRotationXTransform {
+impl crate::GlobalNamespace::LightGroupRotationXTransform {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -43,7 +43,8 @@ impl LightGroupRotationXTransform {
     }
 }
 #[cfg(feature = "LightGroupRotationXTransform")]
-impl quest_hook::libil2cpp::ObjectType for LightGroupRotationXTransform {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LightGroupRotationXTransform {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

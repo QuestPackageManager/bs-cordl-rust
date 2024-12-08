@@ -3,30 +3,31 @@
 #[derive(Debug)]
 pub struct FinishTutorialAchievementHandler {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _achievementsModel: *mut AchievementsModelSO,
-    pub _tutorialFinishedSignal: *mut Signal,
-    pub _finishTutorialAchievement: *mut AchievementSO,
+    pub _achievementsModel: *mut crate::GlobalNamespace::AchievementsModelSO,
+    pub _tutorialFinishedSignal: *mut crate::GlobalNamespace::Signal,
+    pub _finishTutorialAchievement: *mut crate::GlobalNamespace::AchievementSO,
 }
 #[cfg(feature = "FinishTutorialAchievementHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FinishTutorialAchievementHandler => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::FinishTutorialAchievementHandler => ""
     ."FinishTutorialAchievementHandler"
 );
 #[cfg(feature = "FinishTutorialAchievementHandler")]
-impl std::ops::Deref for FinishTutorialAchievementHandler {
+impl std::ops::Deref for crate::GlobalNamespace::FinishTutorialAchievementHandler {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FinishTutorialAchievementHandler")]
-impl std::ops::DerefMut for FinishTutorialAchievementHandler {
+impl std::ops::DerefMut for crate::GlobalNamespace::FinishTutorialAchievementHandler {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FinishTutorialAchievementHandler")]
-impl FinishTutorialAchievementHandler {
+impl crate::GlobalNamespace::FinishTutorialAchievementHandler {
     pub fn HandleTutorialFinished(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -76,7 +77,8 @@ impl FinishTutorialAchievementHandler {
     }
 }
 #[cfg(feature = "FinishTutorialAchievementHandler")]
-impl quest_hook::libil2cpp::ObjectType for FinishTutorialAchievementHandler {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FinishTutorialAchievementHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

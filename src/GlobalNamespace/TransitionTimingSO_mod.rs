@@ -2,29 +2,30 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TransitionTimingSO {
-    __cordl_parent: PersistentScriptableObject,
-    pub _easeType: EaseType,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    pub _easeType: crate::GlobalNamespace::EaseType,
     pub _easeDuration: f32,
 }
 #[cfg(feature = "TransitionTimingSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TransitionTimingSO => ""."TransitionTimingSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TransitionTimingSO => ""
+    ."TransitionTimingSO"
 );
 #[cfg(feature = "TransitionTimingSO")]
-impl std::ops::Deref for TransitionTimingSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::TransitionTimingSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TransitionTimingSO")]
-impl std::ops::DerefMut for TransitionTimingSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::TransitionTimingSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TransitionTimingSO")]
-impl TransitionTimingSO {
+impl crate::GlobalNamespace::TransitionTimingSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -49,16 +50,19 @@ impl TransitionTimingSO {
         let __cordl_ret: f32 = __cordl_object.invoke("get_easeDuration", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_easeType(&mut self) -> quest_hook::libil2cpp::Result<EaseType> {
+    pub fn get_easeType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EaseType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: EaseType = __cordl_object.invoke("get_easeType", ())?;
+        let __cordl_ret: crate::GlobalNamespace::EaseType = __cordl_object
+            .invoke("get_easeType", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "TransitionTimingSO")]
-impl quest_hook::libil2cpp::ObjectType for TransitionTimingSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TransitionTimingSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

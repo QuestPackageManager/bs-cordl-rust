@@ -28,9 +28,13 @@ for crate::System::Linq::Expressions::Interpreter::DecrementInstruction {
 #[cfg(feature = "System+Linq+Expressions+Interpreter+DecrementInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::DecrementInstruction {
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementUInt64"
+        feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementDouble"
     )]
-    pub type DecrementUInt64 = crate::GlobalNamespace::DecrementInstruction_DecrementUInt64;
+    pub type DecrementDouble = crate::GlobalNamespace::DecrementInstruction_DecrementDouble;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementInt16"
+    )]
+    pub type DecrementInt16 = crate::GlobalNamespace::DecrementInstruction_DecrementInt16;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementInt32"
     )]
@@ -40,25 +44,21 @@ impl crate::System::Linq::Expressions::Interpreter::DecrementInstruction {
     )]
     pub type DecrementInt64 = crate::GlobalNamespace::DecrementInstruction_DecrementInt64;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementUInt32"
-    )]
-    pub type DecrementUInt32 = crate::GlobalNamespace::DecrementInstruction_DecrementUInt32;
-    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementSingle"
     )]
     pub type DecrementSingle = crate::GlobalNamespace::DecrementInstruction_DecrementSingle;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementInt16"
-    )]
-    pub type DecrementInt16 = crate::GlobalNamespace::DecrementInstruction_DecrementInt16;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementDouble"
-    )]
-    pub type DecrementDouble = crate::GlobalNamespace::DecrementInstruction_DecrementDouble;
-    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementUInt16"
     )]
     pub type DecrementUInt16 = crate::GlobalNamespace::DecrementInstruction_DecrementUInt16;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementUInt32"
+    )]
+    pub type DecrementUInt32 = crate::GlobalNamespace::DecrementInstruction_DecrementUInt32;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementUInt64"
+    )]
+    pub type DecrementUInt64 = crate::GlobalNamespace::DecrementInstruction_DecrementUInt64;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

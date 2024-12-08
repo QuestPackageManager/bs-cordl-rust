@@ -6,23 +6,24 @@ pub struct ILevelEndActions {
 }
 #[cfg(feature = "ILevelEndActions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ILevelEndActions => ""."ILevelEndActions"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ILevelEndActions => ""
+    ."ILevelEndActions"
 );
 #[cfg(feature = "ILevelEndActions")]
-impl std::ops::Deref for ILevelEndActions {
+impl std::ops::Deref for crate::GlobalNamespace::ILevelEndActions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ILevelEndActions")]
-impl std::ops::DerefMut for ILevelEndActions {
+impl std::ops::DerefMut for crate::GlobalNamespace::ILevelEndActions {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ILevelEndActions")]
-impl ILevelEndActions {
+impl crate::GlobalNamespace::ILevelEndActions {
     pub fn add_levelFailedEvent(
         &mut self,
         value: *mut crate::System::Action,
@@ -74,7 +75,7 @@ impl ILevelEndActions {
     }
 }
 #[cfg(feature = "ILevelEndActions")]
-impl quest_hook::libil2cpp::ObjectType for ILevelEndActions {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ILevelEndActions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SceneStartSyncController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
-    pub _gameplayRpcManager: *mut IGameplayRpcManager,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
     pub syncStartDidSuccessEvent: *mut crate::System::Action_1<
         *mut crate::System::String,
     >,
@@ -12,31 +12,31 @@ pub struct SceneStartSyncController {
         *mut crate::System::String,
     >,
     pub syncStartDidFailEvent: *mut crate::System::Action,
-    pub _sceneStartHandler: *mut SceneStartHandler,
-    pub _playersAtGameStartModel: *mut PlayersSpecificSettingsAtGameStartModel,
+    pub _sceneStartHandler: *mut crate::GlobalNamespace::SceneStartHandler,
+    pub _playersAtGameStartModel: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
     pub _waitStartTime: f32,
     pub _sceneSyncStarted: bool,
 }
 #[cfg(feature = "SceneStartSyncController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SceneStartSyncController => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SceneStartSyncController => ""
     ."SceneStartSyncController"
 );
 #[cfg(feature = "SceneStartSyncController")]
-impl std::ops::Deref for SceneStartSyncController {
+impl std::ops::Deref for crate::GlobalNamespace::SceneStartSyncController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SceneStartSyncController")]
-impl std::ops::DerefMut for SceneStartSyncController {
+impl std::ops::DerefMut for crate::GlobalNamespace::SceneStartSyncController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SceneStartSyncController")]
-impl SceneStartSyncController {
+impl crate::GlobalNamespace::SceneStartSyncController {
     pub const kLoadOtherTimeout: f32 = 15f32;
     pub const kLoadSelfTimeout: f32 = 20f32;
     pub fn HandleSceneSetupDidFinish(
@@ -90,7 +90,7 @@ impl SceneStartSyncController {
     }
     pub fn StartSceneLoadSync(
         &mut self,
-        playersAtGameStartModel: *mut PlayersSpecificSettingsAtGameStartModel,
+        playersAtGameStartModel: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -187,7 +187,8 @@ impl SceneStartSyncController {
     }
 }
 #[cfg(feature = "SceneStartSyncController")]
-impl quest_hook::libil2cpp::ObjectType for SceneStartSyncController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SceneStartSyncController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

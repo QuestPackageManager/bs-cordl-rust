@@ -587,18 +587,18 @@ impl std::ops::DerefMut for crate::System::Xml::XmlSqlBinaryReader {
 impl crate::System::Xml::XmlSqlBinaryReader {
     #[cfg(feature = "System+Xml+XmlSqlBinaryReader+AttrInfo")]
     pub type AttrInfo = crate::System::Xml::XmlSqlBinaryReader_AttrInfo;
-    #[cfg(feature = "System+Xml+XmlSqlBinaryReader+SymbolTables")]
-    pub type SymbolTables = crate::System::Xml::XmlSqlBinaryReader_SymbolTables;
-    #[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
-    pub type NestedBinXml = crate::System::Xml::XmlSqlBinaryReader_NestedBinXml;
-    #[cfg(feature = "System+Xml+XmlSqlBinaryReader+ScanState")]
-    pub type ScanState = crate::System::Xml::XmlSqlBinaryReader_ScanState;
     #[cfg(feature = "System+Xml+XmlSqlBinaryReader+ElemInfo")]
     pub type ElemInfo = crate::System::Xml::XmlSqlBinaryReader_ElemInfo;
     #[cfg(feature = "System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
     pub type NamespaceDecl = crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl;
+    #[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
+    pub type NestedBinXml = crate::System::Xml::XmlSqlBinaryReader_NestedBinXml;
     #[cfg(feature = "System+Xml+XmlSqlBinaryReader+QName")]
     pub type QName = crate::System::Xml::XmlSqlBinaryReader_QName;
+    #[cfg(feature = "System+Xml+XmlSqlBinaryReader+ScanState")]
+    pub type ScanState = crate::System::Xml::XmlSqlBinaryReader_ScanState;
+    #[cfg(feature = "System+Xml+XmlSqlBinaryReader+SymbolTables")]
+    pub type SymbolTables = crate::System::Xml::XmlSqlBinaryReader_SymbolTables;
     pub fn AddInitNamespace(
         &mut self,
         prefix: *mut crate::System::String,

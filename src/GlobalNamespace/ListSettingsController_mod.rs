@@ -2,29 +2,30 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListSettingsController {
-    __cordl_parent: IncDecSettingsController,
+    __cordl_parent: crate::GlobalNamespace::IncDecSettingsController,
     pub _idx: i32,
     pub _numberOfElements: i32,
 }
 #[cfg(feature = "ListSettingsController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ListSettingsController => ""."ListSettingsController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ListSettingsController => ""
+    ."ListSettingsController"
 );
 #[cfg(feature = "ListSettingsController")]
-impl std::ops::Deref for ListSettingsController {
-    type Target = IncDecSettingsController;
+impl std::ops::Deref for crate::GlobalNamespace::ListSettingsController {
+    type Target = crate::GlobalNamespace::IncDecSettingsController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ListSettingsController")]
-impl std::ops::DerefMut for ListSettingsController {
+impl std::ops::DerefMut for crate::GlobalNamespace::ListSettingsController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ListSettingsController")]
-impl ListSettingsController {
+impl crate::GlobalNamespace::ListSettingsController {
     pub fn ApplyValue(
         &mut self,
         idx: i32,
@@ -129,7 +130,8 @@ impl ListSettingsController {
     }
 }
 #[cfg(feature = "ListSettingsController")]
-impl quest_hook::libil2cpp::ObjectType for ListSettingsController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ListSettingsController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

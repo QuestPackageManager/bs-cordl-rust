@@ -14,23 +14,24 @@ pub struct SpriteAsyncLoader {
 }
 #[cfg(feature = "SpriteAsyncLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SpriteAsyncLoader => ""."SpriteAsyncLoader"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SpriteAsyncLoader => ""
+    ."SpriteAsyncLoader"
 );
 #[cfg(feature = "SpriteAsyncLoader")]
-impl std::ops::Deref for SpriteAsyncLoader {
+impl std::ops::Deref for crate::GlobalNamespace::SpriteAsyncLoader {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SpriteAsyncLoader")]
-impl std::ops::DerefMut for SpriteAsyncLoader {
+impl std::ops::DerefMut for crate::GlobalNamespace::SpriteAsyncLoader {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SpriteAsyncLoader")]
-impl SpriteAsyncLoader {
+impl crate::GlobalNamespace::SpriteAsyncLoader {
     #[cfg(feature = "SpriteAsyncLoader+_LoadSpriteAsyncInternal_d__4")]
     pub type _LoadSpriteAsyncInternal_d__4 = crate::GlobalNamespace::SpriteAsyncLoader__LoadSpriteAsyncInternal_d__4;
     pub fn ClearCache(
@@ -92,7 +93,7 @@ impl SpriteAsyncLoader {
     }
 }
 #[cfg(feature = "SpriteAsyncLoader")]
-impl quest_hook::libil2cpp::ObjectType for SpriteAsyncLoader {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SpriteAsyncLoader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

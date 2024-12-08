@@ -1786,36 +1786,36 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout")]
 impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
     pub const VariantSeparator: &'static str = ";";
-    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJson")]
-    pub type LayoutJson = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson;
-    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection")]
-    pub type Collection = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection;
+    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Builder")]
+    pub type Builder = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder;
+    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Cache")]
+    pub type Cache = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache;
     #[cfg(
         feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+CacheRefInstance"
     )]
     pub type CacheRefInstance = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstance;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutNotFoundException"
-    )]
-    pub type LayoutNotFoundException = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFoundException;
-    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Cache")]
-    pub type Cache = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache;
+    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection")]
+    pub type Collection = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection;
     #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem")]
     pub type ControlItem = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem;
     #[cfg(
         feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItemJson"
     )]
     pub type ControlItemJson = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson;
-    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::Layouts::InputControlLayout___c;
-    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Builder")]
-    pub type Builder = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder;
     #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Flags")]
     pub type Flags = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Flags;
+    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJson")]
+    pub type LayoutJson = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson;
     #[cfg(
         feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJsonNameAndDescriptorOnly"
     )]
     pub type LayoutJsonNameAndDescriptorOnly = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJsonNameAndDescriptorOnly;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutNotFoundException"
+    )]
+    pub type LayoutNotFoundException = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFoundException;
+    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+__c")]
+    pub type __c = crate::UnityEngine::InputSystem::Layouts::InputControlLayout___c;
     pub fn FindControl(
         &mut self,
         path: crate::UnityEngine::InputSystem::Utilities::InternedString,

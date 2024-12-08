@@ -22,23 +22,24 @@ pub struct DrawIfAttribute {
 }
 #[cfg(feature = "DrawIfAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for DrawIfAttribute => ""."DrawIfAttribute"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::DrawIfAttribute => ""
+    ."DrawIfAttribute"
 );
 #[cfg(feature = "DrawIfAttribute")]
-impl std::ops::Deref for DrawIfAttribute {
+impl std::ops::Deref for crate::GlobalNamespace::DrawIfAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DrawIfAttribute")]
-impl std::ops::DerefMut for DrawIfAttribute {
+impl std::ops::DerefMut for crate::GlobalNamespace::DrawIfAttribute {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "DrawIfAttribute")]
-impl DrawIfAttribute {
+impl crate::GlobalNamespace::DrawIfAttribute {
     #[cfg(feature = "DrawIfAttribute+DisablingType")]
     pub type DisablingType = crate::GlobalNamespace::DrawIfAttribute_DisablingType;
     pub fn New_DrawIfAttribute_DisablingType0(
@@ -93,7 +94,7 @@ impl DrawIfAttribute {
     }
 }
 #[cfg(feature = "DrawIfAttribute")]
-impl quest_hook::libil2cpp::ObjectType for DrawIfAttribute {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DrawIfAttribute {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

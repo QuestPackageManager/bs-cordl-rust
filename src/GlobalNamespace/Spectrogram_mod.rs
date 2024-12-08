@@ -7,28 +7,28 @@ pub struct Spectrogram {
     pub _meshRenderers: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::MeshRenderer,
     >,
-    pub _materialPropertyBlockController: *mut MaterialPropertyBlockController,
-    pub _spectrogramData: *mut BasicSpectrogramData,
+    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _spectrogramData: *mut crate::GlobalNamespace::BasicSpectrogramData,
 }
 #[cfg(feature = "Spectrogram")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for Spectrogram => ""."Spectrogram"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::Spectrogram => ""."Spectrogram"
 );
 #[cfg(feature = "Spectrogram")]
-impl std::ops::Deref for Spectrogram {
+impl std::ops::Deref for crate::GlobalNamespace::Spectrogram {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Spectrogram")]
-impl std::ops::DerefMut for Spectrogram {
+impl std::ops::DerefMut for crate::GlobalNamespace::Spectrogram {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "Spectrogram")]
-impl Spectrogram {
+impl crate::GlobalNamespace::Spectrogram {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -78,7 +78,7 @@ impl Spectrogram {
     }
 }
 #[cfg(feature = "Spectrogram")]
-impl quest_hook::libil2cpp::ObjectType for Spectrogram {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Spectrogram {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

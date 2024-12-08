@@ -4,29 +4,29 @@
 pub struct PlaybackScreenshotRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _directory: *mut crate::System::String,
-    pub _playbackRenderer: *mut PlaybackRenderer,
+    pub _playbackRenderer: *mut crate::GlobalNamespace::PlaybackRenderer,
     pub _frameNumber: i32,
 }
 #[cfg(feature = "PlaybackScreenshotRecorder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlaybackScreenshotRecorder => ""
-    ."PlaybackScreenshotRecorder"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlaybackScreenshotRecorder =>
+    ""."PlaybackScreenshotRecorder"
 );
 #[cfg(feature = "PlaybackScreenshotRecorder")]
-impl std::ops::Deref for PlaybackScreenshotRecorder {
+impl std::ops::Deref for crate::GlobalNamespace::PlaybackScreenshotRecorder {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlaybackScreenshotRecorder")]
-impl std::ops::DerefMut for PlaybackScreenshotRecorder {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlaybackScreenshotRecorder {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlaybackScreenshotRecorder")]
-impl PlaybackScreenshotRecorder {
+impl crate::GlobalNamespace::PlaybackScreenshotRecorder {
     pub fn HandleTexturesReady(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -41,7 +41,7 @@ impl PlaybackScreenshotRecorder {
         &mut self,
         directory: *mut crate::System::String,
         framerate: i32,
-        playbackRenderer: *mut PlaybackRenderer,
+        playbackRenderer: *mut crate::GlobalNamespace::PlaybackRenderer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -111,7 +111,8 @@ impl PlaybackScreenshotRecorder {
     }
 }
 #[cfg(feature = "PlaybackScreenshotRecorder")]
-impl quest_hook::libil2cpp::ObjectType for PlaybackScreenshotRecorder {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlaybackScreenshotRecorder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

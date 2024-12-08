@@ -79,31 +79,31 @@ pub struct CreditsData {
 }
 #[cfg(feature = "CreditsData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CreditsData => ""."CreditsData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CreditsData => ""."CreditsData"
 );
 #[cfg(feature = "CreditsData")]
-impl std::ops::Deref for CreditsData {
+impl std::ops::Deref for crate::GlobalNamespace::CreditsData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CreditsData")]
-impl std::ops::DerefMut for CreditsData {
+impl std::ops::DerefMut for crate::GlobalNamespace::CreditsData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CreditsData")]
-impl CreditsData {
-    #[cfg(feature = "CreditsData+TextStyle")]
-    pub type TextStyle = crate::GlobalNamespace::CreditsData_TextStyle;
-    #[cfg(feature = "CreditsData+Text")]
-    pub type Text = crate::GlobalNamespace::CreditsData_Text;
-    #[cfg(feature = "CreditsData+RootCreditsItem")]
-    pub type RootCreditsItem = crate::GlobalNamespace::CreditsData_RootCreditsItem;
+impl crate::GlobalNamespace::CreditsData {
     #[cfg(feature = "CreditsData+ChildCreditsItem")]
     pub type ChildCreditsItem = crate::GlobalNamespace::CreditsData_ChildCreditsItem;
+    #[cfg(feature = "CreditsData+RootCreditsItem")]
+    pub type RootCreditsItem = crate::GlobalNamespace::CreditsData_RootCreditsItem;
+    #[cfg(feature = "CreditsData+Text")]
+    pub type Text = crate::GlobalNamespace::CreditsData_Text;
+    #[cfg(feature = "CreditsData+TextStyle")]
+    pub type TextStyle = crate::GlobalNamespace::CreditsData_TextStyle;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -123,7 +123,7 @@ impl CreditsData {
     }
 }
 #[cfg(feature = "CreditsData")]
-impl quest_hook::libil2cpp::ObjectType for CreditsData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CreditsData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

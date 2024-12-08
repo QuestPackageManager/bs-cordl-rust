@@ -25,18 +25,18 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::CVRSystem {
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem")]
 impl crate::OVR::OpenVR::CVRSystem {
-    #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
-    pub type _GetControllerStatePacked = crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked;
-    #[cfg(feature = "OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
-    pub type _PollNextEventPacked = crate::OVR::OpenVR::CVRSystem__PollNextEventPacked;
     #[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
     pub type GetControllerStateUnion = crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion;
-    #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
-    pub type _GetControllerStateWithPosePacked = crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked;
-    #[cfg(feature = "OVR+OpenVR+CVRSystem+PollNextEventUnion")]
-    pub type PollNextEventUnion = crate::OVR::OpenVR::CVRSystem_PollNextEventUnion;
     #[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
     pub type GetControllerStateWithPoseUnion = crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion;
+    #[cfg(feature = "OVR+OpenVR+CVRSystem+PollNextEventUnion")]
+    pub type PollNextEventUnion = crate::OVR::OpenVR::CVRSystem_PollNextEventUnion;
+    #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
+    pub type _GetControllerStatePacked = crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked;
+    #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
+    pub type _GetControllerStateWithPosePacked = crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked;
+    #[cfg(feature = "OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
+    pub type _PollNextEventPacked = crate::OVR::OpenVR::CVRSystem__PollNextEventPacked;
     pub fn AcknowledgeQuit_Exiting(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

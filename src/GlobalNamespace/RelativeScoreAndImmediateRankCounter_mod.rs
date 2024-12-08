@@ -3,33 +3,35 @@
 #[derive(Debug)]
 pub struct RelativeScoreAndImmediateRankCounter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _gameplayModifiersModel: *mut GameplayModifiersModelSO,
-    pub _scoreController: *mut IScoreController,
-    pub _gameplayModifiers: *mut GameplayModifiers,
+    pub _gameplayModifiersModel: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
+    pub _scoreController: *mut crate::GlobalNamespace::IScoreController,
+    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     pub relativeScoreOrImmediateRankDidChangeEvent: *mut crate::System::Action,
     pub _relativeScore_k__BackingField: f32,
     pub _immediateRank_k__BackingField: crate::GlobalNamespace::RankModel_Rank,
 }
 #[cfg(feature = "RelativeScoreAndImmediateRankCounter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RelativeScoreAndImmediateRankCounter => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::RelativeScoreAndImmediateRankCounter => ""
     ."RelativeScoreAndImmediateRankCounter"
 );
 #[cfg(feature = "RelativeScoreAndImmediateRankCounter")]
-impl std::ops::Deref for RelativeScoreAndImmediateRankCounter {
+impl std::ops::Deref for crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RelativeScoreAndImmediateRankCounter")]
-impl std::ops::DerefMut for RelativeScoreAndImmediateRankCounter {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RelativeScoreAndImmediateRankCounter")]
-impl RelativeScoreAndImmediateRankCounter {
+impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
     pub fn HandleScoreDidChange(
         &mut self,
         scoreWithoutModifiers: i32,
@@ -162,7 +164,8 @@ impl RelativeScoreAndImmediateRankCounter {
     }
 }
 #[cfg(feature = "RelativeScoreAndImmediateRankCounter")]
-impl quest_hook::libil2cpp::ObjectType for RelativeScoreAndImmediateRankCounter {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

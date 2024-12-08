@@ -2,29 +2,30 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassLightTypeSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _renderingPriority: i32,
     pub _material: *mut crate::UnityEngine::Material,
 }
 #[cfg(feature = "BloomPrePassLightTypeSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomPrePassLightTypeSO => ""."BloomPrePassLightTypeSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BloomPrePassLightTypeSO => ""
+    ."BloomPrePassLightTypeSO"
 );
 #[cfg(feature = "BloomPrePassLightTypeSO")]
-impl std::ops::Deref for BloomPrePassLightTypeSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassLightTypeSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassLightTypeSO")]
-impl std::ops::DerefMut for BloomPrePassLightTypeSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassLightTypeSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassLightTypeSO")]
-impl BloomPrePassLightTypeSO {
+impl crate::GlobalNamespace::BloomPrePassLightTypeSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -61,7 +62,8 @@ impl BloomPrePassLightTypeSO {
     }
 }
 #[cfg(feature = "BloomPrePassLightTypeSO")]
-impl quest_hook::libil2cpp::ObjectType for BloomPrePassLightTypeSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BloomPrePassLightTypeSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

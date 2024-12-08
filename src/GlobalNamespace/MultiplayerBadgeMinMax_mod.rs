@@ -7,5 +7,6 @@ pub enum MultiplayerBadgeMinMax {
 }
 #[cfg(feature = "MultiplayerBadgeMinMax")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for MultiplayerBadgeMinMax => ""."MultiplayerBadgeMinMax"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerBadgeMinMax => ""
+    ."MultiplayerBadgeMinMax"
 );

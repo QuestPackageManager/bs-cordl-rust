@@ -16,16 +16,18 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct NodePoseSyncState {
-    pub _head: PoseSerializable,
-    pub _leftController: PoseSerializable,
-    pub _rightController: PoseSerializable,
+    pub _head: crate::GlobalNamespace::PoseSerializable,
+    pub _leftController: crate::GlobalNamespace::PoseSerializable,
+    pub _rightController: crate::GlobalNamespace::PoseSerializable,
 }
 #[cfg(feature = "NodePoseSyncState")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for NodePoseSyncState => ""."NodePoseSyncState"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NodePoseSyncState => ""
+    ."NodePoseSyncState"
 );
 #[cfg(feature = "NodePoseSyncState")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for NodePoseSyncState {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::NodePoseSyncState {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -35,14 +37,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for NodePoseSyncState {
     }
 }
 #[cfg(feature = "NodePoseSyncState")]
-impl NodePoseSyncState {
+impl crate::GlobalNamespace::NodePoseSyncState {
     #[cfg(feature = "NodePoseSyncState+NodePose")]
     pub type NodePose = crate::GlobalNamespace::NodePoseSyncState_NodePose;
     pub fn ApplyDelta(
         &mut self,
-        delta: quest_hook::libil2cpp::ByRefMut<NodePoseSyncState>,
-    ) -> quest_hook::libil2cpp::Result<NodePoseSyncState> {
-        let __cordl_ret: NodePoseSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        delta: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NodePoseSyncState>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NodePoseSyncState> {
+        let __cordl_ret: crate::GlobalNamespace::NodePoseSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ApplyDelta",
             (delta),
@@ -62,7 +64,7 @@ impl NodePoseSyncState {
     }
     pub fn Equals(
         &mut self,
-        other: quest_hook::libil2cpp::ByRefMut<NodePoseSyncState>,
+        other: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NodePoseSyncState>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -73,9 +75,11 @@ impl NodePoseSyncState {
     }
     pub fn GetDelta(
         &mut self,
-        latest: quest_hook::libil2cpp::ByRefMut<NodePoseSyncState>,
-    ) -> quest_hook::libil2cpp::Result<NodePoseSyncState> {
-        let __cordl_ret: NodePoseSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        latest: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::NodePoseSyncState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NodePoseSyncState> {
+        let __cordl_ret: crate::GlobalNamespace::NodePoseSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetDelta",
             (latest),
@@ -93,8 +97,8 @@ impl NodePoseSyncState {
     pub fn GetState(
         &mut self,
         nodePose: crate::GlobalNamespace::NodePoseSyncState_NodePose,
-    ) -> quest_hook::libil2cpp::Result<PoseSerializable> {
-        let __cordl_ret: PoseSerializable = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PoseSerializable> {
+        let __cordl_ret: crate::GlobalNamespace::PoseSerializable = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetState",
             (nodePose),
@@ -103,7 +107,7 @@ impl NodePoseSyncState {
     }
     pub fn IEquatableByReference_NodePoseSyncState__Equals(
         &mut self,
-        other: quest_hook::libil2cpp::ByRefMut<NodePoseSyncState>,
+        other: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NodePoseSyncState>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -114,9 +118,9 @@ impl NodePoseSyncState {
     }
     pub fn IStateTable_NodePoseSyncState_NodePoseSyncState_NodePose_PoseSerializable__ApplyDelta(
         &mut self,
-        delta: quest_hook::libil2cpp::ByRefMut<NodePoseSyncState>,
-    ) -> quest_hook::libil2cpp::Result<NodePoseSyncState> {
-        let __cordl_ret: NodePoseSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        delta: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NodePoseSyncState>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NodePoseSyncState> {
+        let __cordl_ret: crate::GlobalNamespace::NodePoseSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "IStateTable<NodePoseSyncState,NodePoseSyncState.NodePose,PoseSerializable>.ApplyDelta",
             (delta),
@@ -125,9 +129,11 @@ impl NodePoseSyncState {
     }
     pub fn IStateTable_NodePoseSyncState_NodePoseSyncState_NodePose_PoseSerializable__GetDelta(
         &mut self,
-        stateTable: quest_hook::libil2cpp::ByRefMut<NodePoseSyncState>,
-    ) -> quest_hook::libil2cpp::Result<NodePoseSyncState> {
-        let __cordl_ret: NodePoseSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        stateTable: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::NodePoseSyncState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NodePoseSyncState> {
+        let __cordl_ret: crate::GlobalNamespace::NodePoseSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "IStateTable<NodePoseSyncState,NodePoseSyncState.NodePose,PoseSerializable>.GetDelta",
             (stateTable),
@@ -148,7 +154,7 @@ impl NodePoseSyncState {
     pub fn SetState(
         &mut self,
         nodePose: crate::GlobalNamespace::NodePoseSyncState_NodePose,
-        pose: PoseSerializable,
+        pose: crate::GlobalNamespace::PoseSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

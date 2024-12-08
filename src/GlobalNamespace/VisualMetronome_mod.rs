@@ -22,23 +22,24 @@ pub struct VisualMetronome {
 }
 #[cfg(feature = "VisualMetronome")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for VisualMetronome => ""."VisualMetronome"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::VisualMetronome => ""
+    ."VisualMetronome"
 );
 #[cfg(feature = "VisualMetronome")]
-impl std::ops::Deref for VisualMetronome {
+impl std::ops::Deref for crate::GlobalNamespace::VisualMetronome {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "VisualMetronome")]
-impl std::ops::DerefMut for VisualMetronome {
+impl std::ops::DerefMut for crate::GlobalNamespace::VisualMetronome {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "VisualMetronome")]
-impl VisualMetronome {
+impl crate::GlobalNamespace::VisualMetronome {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -149,7 +150,7 @@ impl VisualMetronome {
     }
 }
 #[cfg(feature = "VisualMetronome")]
-impl quest_hook::libil2cpp::ObjectType for VisualMetronome {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::VisualMetronome {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

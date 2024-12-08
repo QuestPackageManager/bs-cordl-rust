@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LobbyAvatarInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _connectedPlayer: *mut IConnectedPlayer,
+    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+LobbyAvatarInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

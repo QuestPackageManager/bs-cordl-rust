@@ -93,9 +93,9 @@ for crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS5SharedPackageSKUsSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _availableSKUs: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut PS5PublisherSKUSettingsSO,
+        *mut crate::GlobalNamespace::PS5PublisherSKUSettingsSO,
     >,
     pub _conceptId: *mut crate::System::String,
     pub _buildType: crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType,
@@ -104,34 +104,37 @@ pub struct PS5SharedPackageSKUsSO {
 }
 #[cfg(feature = "PS5SharedPackageSKUsSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PS5SharedPackageSKUsSO => ""."PS5SharedPackageSKUsSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PS5SharedPackageSKUsSO => ""
+    ."PS5SharedPackageSKUsSO"
 );
 #[cfg(feature = "PS5SharedPackageSKUsSO")]
-impl std::ops::Deref for PS5SharedPackageSKUsSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::PS5SharedPackageSKUsSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PS5SharedPackageSKUsSO")]
-impl std::ops::DerefMut for PS5SharedPackageSKUsSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::PS5SharedPackageSKUsSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PS5SharedPackageSKUsSO")]
-impl PS5SharedPackageSKUsSO {
-    #[cfg(feature = "PS5SharedPackageSKUsSO+PS5BuildVersion")]
-    pub type PS5BuildVersion = crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion;
+impl crate::GlobalNamespace::PS5SharedPackageSKUsSO {
     #[cfg(feature = "PS5SharedPackageSKUsSO+BuildType")]
     pub type BuildType = crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType;
+    #[cfg(feature = "PS5SharedPackageSKUsSO+PS5BuildVersion")]
+    pub type PS5BuildVersion = crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion;
     pub fn GetPrimarySKU(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PS5PublisherSKUSettingsSO> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PS5PublisherSKUSettingsSO,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PS5PublisherSKUSettingsSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PS5PublisherSKUSettingsSO = __cordl_object
             .invoke("GetPrimarySKU", ())?;
         Ok(__cordl_ret)
     }
@@ -155,13 +158,15 @@ impl PS5SharedPackageSKUsSO {
     pub fn get_availableSKUs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut PS5PublisherSKUSettingsSO>,
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::PS5PublisherSKUSettingsSO,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut PS5PublisherSKUSettingsSO,
+            *mut crate::GlobalNamespace::PS5PublisherSKUSettingsSO,
         > = __cordl_object.invoke("get_availableSKUs", ())?;
         Ok(__cordl_ret)
     }
@@ -213,7 +218,8 @@ impl PS5SharedPackageSKUsSO {
     }
 }
 #[cfg(feature = "PS5SharedPackageSKUsSO")]
-impl quest_hook::libil2cpp::ObjectType for PS5SharedPackageSKUsSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PS5SharedPackageSKUsSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

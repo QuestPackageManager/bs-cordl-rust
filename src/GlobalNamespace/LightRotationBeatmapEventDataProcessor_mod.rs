@@ -2,28 +2,34 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightRotationBeatmapEventDataProcessor {
-    __cordl_parent: BeatmapEventDataProcessor_1<*mut LightRotationBeatmapEventData>,
+    __cordl_parent: crate::GlobalNamespace::BeatmapEventDataProcessor_1<
+        *mut crate::GlobalNamespace::LightRotationBeatmapEventData,
+    >,
 }
 #[cfg(feature = "LightRotationBeatmapEventDataProcessor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightRotationBeatmapEventDataProcessor => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::LightRotationBeatmapEventDataProcessor => ""
     ."LightRotationBeatmapEventDataProcessor"
 );
 #[cfg(feature = "LightRotationBeatmapEventDataProcessor")]
-impl std::ops::Deref for LightRotationBeatmapEventDataProcessor {
-    type Target = BeatmapEventDataProcessor_1<*mut LightRotationBeatmapEventData>;
+impl std::ops::Deref for crate::GlobalNamespace::LightRotationBeatmapEventDataProcessor {
+    type Target = crate::GlobalNamespace::BeatmapEventDataProcessor_1<
+        *mut crate::GlobalNamespace::LightRotationBeatmapEventData,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightRotationBeatmapEventDataProcessor")]
-impl std::ops::DerefMut for LightRotationBeatmapEventDataProcessor {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::LightRotationBeatmapEventDataProcessor {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightRotationBeatmapEventDataProcessor")]
-impl LightRotationBeatmapEventDataProcessor {
+impl crate::GlobalNamespace::LightRotationBeatmapEventDataProcessor {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -34,7 +40,7 @@ impl LightRotationBeatmapEventDataProcessor {
     pub fn ProcessBeforeDeleteEventDataInternal(
         &mut self,
         nodeToDelete: *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut BeatmapDataItem,
+            *mut crate::GlobalNamespace::BeatmapDataItem,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -47,7 +53,7 @@ impl LightRotationBeatmapEventDataProcessor {
     pub fn ProcessInsertedEventDataInternal(
         &mut self,
         insertedNode: *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut BeatmapDataItem,
+            *mut crate::GlobalNamespace::BeatmapDataItem,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -69,7 +75,8 @@ impl LightRotationBeatmapEventDataProcessor {
     }
 }
 #[cfg(feature = "LightRotationBeatmapEventDataProcessor")]
-impl quest_hook::libil2cpp::ObjectType for LightRotationBeatmapEventDataProcessor {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LightRotationBeatmapEventDataProcessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

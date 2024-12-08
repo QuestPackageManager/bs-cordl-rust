@@ -2,29 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HandsMovementMissionObjectiveChecker {
-    __cordl_parent: SimpleValueMissionObjectiveChecker,
-    pub _saberActivityCounter: *mut SaberActivityCounter,
+    __cordl_parent: crate::GlobalNamespace::SimpleValueMissionObjectiveChecker,
+    pub _saberActivityCounter: *mut crate::GlobalNamespace::SaberActivityCounter,
 }
 #[cfg(feature = "HandsMovementMissionObjectiveChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for HandsMovementMissionObjectiveChecker => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::HandsMovementMissionObjectiveChecker => ""
     ."HandsMovementMissionObjectiveChecker"
 );
 #[cfg(feature = "HandsMovementMissionObjectiveChecker")]
-impl std::ops::Deref for HandsMovementMissionObjectiveChecker {
-    type Target = SimpleValueMissionObjectiveChecker;
+impl std::ops::Deref for crate::GlobalNamespace::HandsMovementMissionObjectiveChecker {
+    type Target = crate::GlobalNamespace::SimpleValueMissionObjectiveChecker;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HandsMovementMissionObjectiveChecker")]
-impl std::ops::DerefMut for HandsMovementMissionObjectiveChecker {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::HandsMovementMissionObjectiveChecker {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "HandsMovementMissionObjectiveChecker")]
-impl HandsMovementMissionObjectiveChecker {
+impl crate::GlobalNamespace::HandsMovementMissionObjectiveChecker {
     pub fn HandleTotalDistanceDidChange(
         &mut self,
         distance: f32,
@@ -75,7 +77,8 @@ impl HandsMovementMissionObjectiveChecker {
     }
 }
 #[cfg(feature = "HandsMovementMissionObjectiveChecker")]
-impl quest_hook::libil2cpp::ObjectType for HandsMovementMissionObjectiveChecker {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::HandsMovementMissionObjectiveChecker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

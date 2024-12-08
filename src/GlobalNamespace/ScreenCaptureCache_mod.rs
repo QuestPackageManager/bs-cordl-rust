@@ -10,23 +10,24 @@ pub struct ScreenCaptureCache {
 }
 #[cfg(feature = "ScreenCaptureCache")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ScreenCaptureCache => ""."ScreenCaptureCache"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ScreenCaptureCache => ""
+    ."ScreenCaptureCache"
 );
 #[cfg(feature = "ScreenCaptureCache")]
-impl std::ops::Deref for ScreenCaptureCache {
+impl std::ops::Deref for crate::GlobalNamespace::ScreenCaptureCache {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScreenCaptureCache")]
-impl std::ops::DerefMut for ScreenCaptureCache {
+impl std::ops::DerefMut for crate::GlobalNamespace::ScreenCaptureCache {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScreenCaptureCache")]
-impl ScreenCaptureCache {
+impl crate::GlobalNamespace::ScreenCaptureCache {
     #[cfg(feature = "ScreenCaptureCache+ScreenshotType")]
     pub type ScreenshotType = crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType;
     pub fn GetLastScreenshot(
@@ -71,7 +72,7 @@ impl ScreenCaptureCache {
     }
 }
 #[cfg(feature = "ScreenCaptureCache")]
-impl quest_hook::libil2cpp::ObjectType for ScreenCaptureCache {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScreenCaptureCache {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

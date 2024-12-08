@@ -3,30 +3,31 @@
 #[derive(Debug)]
 pub struct MenuLightsManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _defaultPreset: *mut MenuLightsPresetSO,
+    pub _defaultPreset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
     pub _smooth: f32,
-    pub _lightManager: *mut LightWithIdManager,
-    pub _preset: *mut MenuLightsPresetSO,
+    pub _lightManager: *mut crate::GlobalNamespace::LightWithIdManager,
+    pub _preset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
 }
 #[cfg(feature = "MenuLightsManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MenuLightsManager => ""."MenuLightsManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MenuLightsManager => ""
+    ."MenuLightsManager"
 );
 #[cfg(feature = "MenuLightsManager")]
-impl std::ops::Deref for MenuLightsManager {
+impl std::ops::Deref for crate::GlobalNamespace::MenuLightsManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuLightsManager")]
-impl std::ops::DerefMut for MenuLightsManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::MenuLightsManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuLightsManager")]
-impl MenuLightsManager {
+impl crate::GlobalNamespace::MenuLightsManager {
     #[cfg(feature = "MenuLightsManager+_Start_d__4")]
     pub type _Start_d__4 = crate::GlobalNamespace::MenuLightsManager__Start_d__4;
     pub fn CurrentColorForID(
@@ -71,7 +72,7 @@ impl MenuLightsManager {
     }
     pub fn RefreshLightsDictForPreset(
         &mut self,
-        preset: *mut MenuLightsPresetSO,
+        preset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -94,7 +95,7 @@ impl MenuLightsManager {
     }
     pub fn SetColorPreset(
         &mut self,
-        preset: *mut MenuLightsPresetSO,
+        preset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
         animated: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -106,7 +107,7 @@ impl MenuLightsManager {
     }
     pub fn SetColorsFromPreset(
         &mut self,
-        preset: *mut MenuLightsPresetSO,
+        preset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
         interpolationFactor: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -148,7 +149,7 @@ impl MenuLightsManager {
     }
 }
 #[cfg(feature = "MenuLightsManager")]
-impl quest_hook::libil2cpp::ObjectType for MenuLightsManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MenuLightsManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

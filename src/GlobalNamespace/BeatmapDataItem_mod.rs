@@ -10,28 +10,29 @@ pub struct BeatmapDataItem {
 }
 #[cfg(feature = "BeatmapDataItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapDataItem => ""."BeatmapDataItem"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapDataItem => ""
+    ."BeatmapDataItem"
 );
 #[cfg(feature = "BeatmapDataItem")]
-impl std::ops::Deref for BeatmapDataItem {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapDataItem {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDataItem")]
-impl std::ops::DerefMut for BeatmapDataItem {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDataItem {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDataItem")]
-impl BeatmapDataItem {
+impl crate::GlobalNamespace::BeatmapDataItem {
     #[cfg(feature = "BeatmapDataItem+BeatmapDataItemType")]
     pub type BeatmapDataItemType = crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType;
     pub fn CompareTo(
         &mut self,
-        b: *mut BeatmapDataItem,
+        b: *mut crate::GlobalNamespace::BeatmapDataItem,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -39,11 +40,14 @@ impl BeatmapDataItem {
         let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (b))?;
         Ok(__cordl_ret)
     }
-    pub fn GetCopy(&mut self) -> quest_hook::libil2cpp::Result<*mut BeatmapDataItem> {
+    pub fn GetCopy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapDataItem> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapDataItem = __cordl_object.invoke("GetCopy", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapDataItem = __cordl_object
+            .invoke("GetCopy", ())?;
         Ok(__cordl_ret)
     }
     pub fn New(
@@ -101,7 +105,7 @@ impl BeatmapDataItem {
     }
 }
 #[cfg(feature = "BeatmapDataItem")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapDataItem {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapDataItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

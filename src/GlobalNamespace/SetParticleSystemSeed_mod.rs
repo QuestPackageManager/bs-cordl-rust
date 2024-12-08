@@ -9,23 +9,24 @@ pub struct SetParticleSystemSeed {
 }
 #[cfg(feature = "SetParticleSystemSeed")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SetParticleSystemSeed => ""."SetParticleSystemSeed"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SetParticleSystemSeed => ""
+    ."SetParticleSystemSeed"
 );
 #[cfg(feature = "SetParticleSystemSeed")]
-impl std::ops::Deref for SetParticleSystemSeed {
+impl std::ops::Deref for crate::GlobalNamespace::SetParticleSystemSeed {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SetParticleSystemSeed")]
-impl std::ops::DerefMut for SetParticleSystemSeed {
+impl std::ops::DerefMut for crate::GlobalNamespace::SetParticleSystemSeed {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SetParticleSystemSeed")]
-impl SetParticleSystemSeed {
+impl crate::GlobalNamespace::SetParticleSystemSeed {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -55,7 +56,8 @@ impl SetParticleSystemSeed {
     }
 }
 #[cfg(feature = "SetParticleSystemSeed")]
-impl quest_hook::libil2cpp::ObjectType for SetParticleSystemSeed {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SetParticleSystemSeed {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

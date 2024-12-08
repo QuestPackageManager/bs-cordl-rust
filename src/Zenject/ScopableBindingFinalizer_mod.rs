@@ -29,10 +29,10 @@ impl std::ops::DerefMut for crate::Zenject::ScopableBindingFinalizer {
 }
 #[cfg(feature = "Zenject+ScopableBindingFinalizer")]
 impl crate::Zenject::ScopableBindingFinalizer {
-    #[cfg(feature = "Zenject+ScopableBindingFinalizer+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::Zenject::ScopableBindingFinalizer___c__DisplayClass4_0;
     #[cfg(feature = "Zenject+ScopableBindingFinalizer+__c__DisplayClass3_0")]
     pub type __c__DisplayClass3_0 = crate::Zenject::ScopableBindingFinalizer___c__DisplayClass3_0;
+    #[cfg(feature = "Zenject+ScopableBindingFinalizer+__c__DisplayClass4_0")]
+    pub type __c__DisplayClass4_0 = crate::Zenject::ScopableBindingFinalizer___c__DisplayClass4_0;
     pub fn FinalizeBindingConcrete(
         &mut self,
         container: *mut crate::Zenject::DiContainer,

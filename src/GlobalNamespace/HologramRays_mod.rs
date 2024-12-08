@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HologramRays {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _bloomLight: *mut TubeBloomPrePassLight,
+    pub _bloomLight: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
     pub _raysMeshRenderer: *mut crate::UnityEngine::MeshRenderer,
     pub _targetTransform: *mut crate::UnityEngine::Transform,
     pub _laserHolderTransform: *mut crate::UnityEngine::Transform,
@@ -23,30 +23,31 @@ pub struct HologramRays {
 }
 #[cfg(feature = "HologramRays")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for HologramRays => ""."HologramRays"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::HologramRays => ""
+    ."HologramRays"
 );
 #[cfg(feature = "HologramRays")]
-impl std::ops::Deref for HologramRays {
+impl std::ops::Deref for crate::GlobalNamespace::HologramRays {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HologramRays")]
-impl std::ops::DerefMut for HologramRays {
+impl std::ops::DerefMut for crate::GlobalNamespace::HologramRays {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "HologramRays")]
-impl HologramRays {
+impl crate::GlobalNamespace::HologramRays {
     #[cfg(feature = "HologramRays+_FadingCoroutine_d__28")]
     pub type _FadingCoroutine_d__28 = crate::GlobalNamespace::HologramRays__FadingCoroutine_d__28;
     pub fn Animate(
         &mut self,
         turningOn: bool,
         duration: f32,
-        easeType: EaseType,
+        easeType: crate::GlobalNamespace::EaseType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -69,7 +70,7 @@ impl HologramRays {
         &mut self,
         turningOn: bool,
         duration: f32,
-        easeType: EaseType,
+        easeType: crate::GlobalNamespace::EaseType,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -158,7 +159,7 @@ impl HologramRays {
     }
 }
 #[cfg(feature = "HologramRays")]
-impl quest_hook::libil2cpp::ObjectType for HologramRays {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::HologramRays {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

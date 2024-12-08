@@ -7,11 +7,12 @@ pub struct GetAssetBundleFileResult {
 }
 #[cfg(feature = "GetAssetBundleFileResult")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for GetAssetBundleFileResult => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GetAssetBundleFileResult => ""
     ."GetAssetBundleFileResult"
 );
 #[cfg(feature = "GetAssetBundleFileResult")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for GetAssetBundleFileResult {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::GetAssetBundleFileResult {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -21,7 +22,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for GetAssetBundleFileResult {
     }
 }
 #[cfg(feature = "GetAssetBundleFileResult")]
-impl GetAssetBundleFileResult {
+impl crate::GlobalNamespace::GetAssetBundleFileResult {
     pub fn _ctor(
         &mut self,
         isError: bool,

@@ -24,12 +24,12 @@ for crate::OVR::OpenVR::IVRDriverManager {
 }
 #[cfg(feature = "OVR+OpenVR+IVRDriverManager")]
 impl crate::OVR::OpenVR::IVRDriverManager {
-    #[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverName")]
-    pub type _GetDriverName = crate::OVR::OpenVR::IVRDriverManager__GetDriverName;
-    #[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverHandle")]
-    pub type _GetDriverHandle = crate::OVR::OpenVR::IVRDriverManager__GetDriverHandle;
     #[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverCount")]
     pub type _GetDriverCount = crate::OVR::OpenVR::IVRDriverManager__GetDriverCount;
+    #[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverHandle")]
+    pub type _GetDriverHandle = crate::OVR::OpenVR::IVRDriverManager__GetDriverHandle;
+    #[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverName")]
+    pub type _GetDriverName = crate::OVR::OpenVR::IVRDriverManager__GetDriverName;
 }
 #[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverCount")]
 #[repr(C)]

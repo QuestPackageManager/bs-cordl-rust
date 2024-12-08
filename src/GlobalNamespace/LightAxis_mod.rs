@@ -8,5 +8,5 @@ pub enum LightAxis {
 }
 #[cfg(feature = "LightAxis")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for LightAxis => ""."LightAxis"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightAxis => ""."LightAxis"
 );

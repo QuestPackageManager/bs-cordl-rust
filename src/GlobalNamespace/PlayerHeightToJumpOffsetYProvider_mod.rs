@@ -3,29 +3,30 @@
 #[derive(Debug)]
 pub struct PlayerHeightToJumpOffsetYProvider {
     __cordl_parent: crate::System::Object,
-    pub _playerHeightDetector: *mut PlayerHeightDetector,
+    pub _playerHeightDetector: *mut crate::GlobalNamespace::PlayerHeightDetector,
     pub _jumpOffsetY: f32,
 }
 #[cfg(feature = "PlayerHeightToJumpOffsetYProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerHeightToJumpOffsetYProvider => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PlayerHeightToJumpOffsetYProvider => ""
     ."PlayerHeightToJumpOffsetYProvider"
 );
 #[cfg(feature = "PlayerHeightToJumpOffsetYProvider")]
-impl std::ops::Deref for PlayerHeightToJumpOffsetYProvider {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerHeightToJumpOffsetYProvider {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerHeightToJumpOffsetYProvider")]
-impl std::ops::DerefMut for PlayerHeightToJumpOffsetYProvider {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerHeightToJumpOffsetYProvider {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerHeightToJumpOffsetYProvider")]
-impl PlayerHeightToJumpOffsetYProvider {
+impl crate::GlobalNamespace::PlayerHeightToJumpOffsetYProvider {
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -83,7 +84,8 @@ impl PlayerHeightToJumpOffsetYProvider {
     }
 }
 #[cfg(feature = "PlayerHeightToJumpOffsetYProvider")]
-impl quest_hook::libil2cpp::ObjectType for PlayerHeightToJumpOffsetYProvider {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayerHeightToJumpOffsetYProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

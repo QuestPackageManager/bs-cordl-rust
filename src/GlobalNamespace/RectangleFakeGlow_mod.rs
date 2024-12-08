@@ -6,27 +6,28 @@ pub struct RectangleFakeGlow {
     pub _size: crate::UnityEngine::Vector2,
     pub _edgeSize: f32,
     pub _color: crate::UnityEngine::Color,
-    pub _materialPropertyBlockController: *mut MaterialPropertyBlockController,
+    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
 }
 #[cfg(feature = "RectangleFakeGlow")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RectangleFakeGlow => ""."RectangleFakeGlow"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RectangleFakeGlow => ""
+    ."RectangleFakeGlow"
 );
 #[cfg(feature = "RectangleFakeGlow")]
-impl std::ops::Deref for RectangleFakeGlow {
+impl std::ops::Deref for crate::GlobalNamespace::RectangleFakeGlow {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RectangleFakeGlow")]
-impl std::ops::DerefMut for RectangleFakeGlow {
+impl std::ops::DerefMut for crate::GlobalNamespace::RectangleFakeGlow {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RectangleFakeGlow")]
-impl RectangleFakeGlow {
+impl crate::GlobalNamespace::RectangleFakeGlow {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -107,7 +108,7 @@ impl RectangleFakeGlow {
     }
 }
 #[cfg(feature = "RectangleFakeGlow")]
-impl quest_hook::libil2cpp::ObjectType for RectangleFakeGlow {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RectangleFakeGlow {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

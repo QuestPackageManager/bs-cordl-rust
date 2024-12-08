@@ -3,27 +3,28 @@
 #[derive(Debug)]
 pub struct SongTimeToShaderWriter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioTimeSource: *mut IAudioTimeSource,
+    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
 }
 #[cfg(feature = "SongTimeToShaderWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SongTimeToShaderWriter => ""."SongTimeToShaderWriter"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongTimeToShaderWriter => ""
+    ."SongTimeToShaderWriter"
 );
 #[cfg(feature = "SongTimeToShaderWriter")]
-impl std::ops::Deref for SongTimeToShaderWriter {
+impl std::ops::Deref for crate::GlobalNamespace::SongTimeToShaderWriter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongTimeToShaderWriter")]
-impl std::ops::DerefMut for SongTimeToShaderWriter {
+impl std::ops::DerefMut for crate::GlobalNamespace::SongTimeToShaderWriter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongTimeToShaderWriter")]
-impl SongTimeToShaderWriter {
+impl crate::GlobalNamespace::SongTimeToShaderWriter {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -53,7 +54,8 @@ impl SongTimeToShaderWriter {
     }
 }
 #[cfg(feature = "SongTimeToShaderWriter")]
-impl quest_hook::libil2cpp::ObjectType for SongTimeToShaderWriter {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SongTimeToShaderWriter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

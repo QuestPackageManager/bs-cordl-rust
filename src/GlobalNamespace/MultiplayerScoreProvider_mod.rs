@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MultiplayerScoreProvider {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _scoreSyncStateManager: *mut IScoreSyncStateManager,
+    pub _scoreSyncStateManager: *mut crate::GlobalNamespace::IScoreSyncStateManager,
     pub _firstPlayer_k__BackingField: *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
     pub firstPlayerDidChangeEvent: *mut crate::System::Action_1<
         *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
@@ -19,24 +19,24 @@ pub struct MultiplayerScoreProvider {
 }
 #[cfg(feature = "MultiplayerScoreProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerScoreProvider => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerScoreProvider => ""
     ."MultiplayerScoreProvider"
 );
 #[cfg(feature = "MultiplayerScoreProvider")]
-impl std::ops::Deref for MultiplayerScoreProvider {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerScoreProvider {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerScoreProvider")]
-impl std::ops::DerefMut for MultiplayerScoreProvider {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerScoreProvider {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerScoreProvider")]
-impl MultiplayerScoreProvider {
+impl crate::GlobalNamespace::MultiplayerScoreProvider {
     #[cfg(feature = "MultiplayerScoreProvider+RankedPlayer")]
     pub type RankedPlayer = crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer;
     #[cfg(feature = "MultiplayerScoreProvider+__c")]
@@ -166,7 +166,8 @@ impl MultiplayerScoreProvider {
     }
 }
 #[cfg(feature = "MultiplayerScoreProvider")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerScoreProvider {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerScoreProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -179,12 +180,12 @@ impl quest_hook::libil2cpp::ObjectType for MultiplayerScoreProvider {
 #[derive(Debug)]
 pub struct MultiplayerScoreProvider_RankedPlayer {
     __cordl_parent: crate::System::Object,
-    pub _multiplayerSyncState: *mut MultiplayerSyncState_3<
-        StandardScoreSyncState,
+    pub _multiplayerSyncState: *mut crate::GlobalNamespace::MultiplayerSyncState_3<
+        crate::GlobalNamespace::StandardScoreSyncState,
         crate::GlobalNamespace::StandardScoreSyncState_Score,
         i32,
     >,
-    pub _scoreSyncManager: *mut MultiplayerScoreProvider,
+    pub _scoreSyncManager: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
 }
 #[cfg(feature = "MultiplayerScoreProvider+RankedPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -219,12 +220,12 @@ impl crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer {
         Ok(__cordl_ret)
     }
     pub fn New(
-        multiplayerSyncState: *mut MultiplayerSyncState_3<
-            StandardScoreSyncState,
+        multiplayerSyncState: *mut crate::GlobalNamespace::MultiplayerSyncState_3<
+            crate::GlobalNamespace::StandardScoreSyncState,
             crate::GlobalNamespace::StandardScoreSyncState_Score,
             i32,
         >,
-        scoreSyncManager: *mut MultiplayerScoreProvider,
+        scoreSyncManager: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -234,12 +235,12 @@ impl crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer {
     }
     pub fn _ctor(
         &mut self,
-        multiplayerSyncState: *mut MultiplayerSyncState_3<
-            StandardScoreSyncState,
+        multiplayerSyncState: *mut crate::GlobalNamespace::MultiplayerSyncState_3<
+            crate::GlobalNamespace::StandardScoreSyncState,
             crate::GlobalNamespace::StandardScoreSyncState_Score,
             i32,
         >,
-        scoreSyncManager: *mut MultiplayerScoreProvider,
+        scoreSyncManager: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

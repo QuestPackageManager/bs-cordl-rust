@@ -192,14 +192,14 @@ for crate::System::Net::WebCompletionSource_1<T> {
 }
 #[cfg(feature = "System+Net+WebCompletionSource_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::System::Net::WebCompletionSource_1<T> {
+    #[cfg(feature = "System+Net+WebCompletionSource_1+Result")]
+    pub type Result = crate::System::Net::WebCompletionSource_1_Result<T>;
+    #[cfg(feature = "System+Net+WebCompletionSource_1+Status")]
+    pub type Status = crate::System::Net::WebCompletionSource_1_Status;
     #[cfg(feature = "System+Net+WebCompletionSource_1+_WaitForCompletion_d__15")]
     pub type _WaitForCompletion_d__15 = crate::System::Net::WebCompletionSource_1__WaitForCompletion_d__15<
         T,
     >;
-    #[cfg(feature = "System+Net+WebCompletionSource_1+Status")]
-    pub type Status = crate::System::Net::WebCompletionSource_1_Status;
-    #[cfg(feature = "System+Net+WebCompletionSource_1+Result")]
-    pub type Result = crate::System::Net::WebCompletionSource_1_Result<T>;
     pub fn New(runAsync: bool) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

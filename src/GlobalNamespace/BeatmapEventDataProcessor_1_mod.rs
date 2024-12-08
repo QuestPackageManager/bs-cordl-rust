@@ -7,11 +7,12 @@ pub struct BeatmapEventDataProcessor_1<T: quest_hook::libil2cpp::Type> {
 }
 #[cfg(feature = "BeatmapEventDataProcessor_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapEventDataProcessor_1 < T > => ""
-    ."BeatmapEventDataProcessor`1" < T >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapEventDataProcessor_1 < T
+    > => ""."BeatmapEventDataProcessor`1" < T >
 );
 #[cfg(feature = "BeatmapEventDataProcessor_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for BeatmapEventDataProcessor_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
+for crate::GlobalNamespace::BeatmapEventDataProcessor_1<T> {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -19,13 +20,15 @@ impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for BeatmapEventDataProcess
 }
 #[cfg(feature = "BeatmapEventDataProcessor_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for BeatmapEventDataProcessor_1<T> {
+for crate::GlobalNamespace::BeatmapEventDataProcessor_1<T> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapEventDataProcessor_1")]
-impl<T: quest_hook::libil2cpp::Type> BeatmapEventDataProcessor_1<T> {
+impl<
+    T: quest_hook::libil2cpp::Type,
+> crate::GlobalNamespace::BeatmapEventDataProcessor_1<T> {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -36,7 +39,7 @@ impl<T: quest_hook::libil2cpp::Type> BeatmapEventDataProcessor_1<T> {
     pub fn ProcessBeforeDeleteData(
         &mut self,
         nodeToDelete: *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut BeatmapDataItem,
+            *mut crate::GlobalNamespace::BeatmapDataItem,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -53,7 +56,7 @@ impl<T: quest_hook::libil2cpp::Type> BeatmapEventDataProcessor_1<T> {
     pub fn ProcessBeforeDeleteEventDataInternal(
         &mut self,
         nodeToDelete: *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut BeatmapDataItem,
+            *mut crate::GlobalNamespace::BeatmapDataItem,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -70,7 +73,7 @@ impl<T: quest_hook::libil2cpp::Type> BeatmapEventDataProcessor_1<T> {
     pub fn ProcessInsertedData(
         &mut self,
         insertedNode: *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut BeatmapDataItem,
+            *mut crate::GlobalNamespace::BeatmapDataItem,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -87,7 +90,7 @@ impl<T: quest_hook::libil2cpp::Type> BeatmapEventDataProcessor_1<T> {
     pub fn ProcessInsertedEventDataInternal(
         &mut self,
         insertedNode: *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut BeatmapDataItem,
+            *mut crate::GlobalNamespace::BeatmapDataItem,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -116,7 +119,7 @@ impl<T: quest_hook::libil2cpp::Type> BeatmapEventDataProcessor_1<T> {
 }
 #[cfg(feature = "BeatmapEventDataProcessor_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for BeatmapEventDataProcessor_1<T> {
+for crate::GlobalNamespace::BeatmapEventDataProcessor_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

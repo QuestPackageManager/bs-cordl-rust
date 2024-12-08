@@ -9,23 +9,26 @@ pub struct BinaryHeap_1<T: quest_hook::libil2cpp::Type> {
 }
 #[cfg(feature = "BinaryHeap_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BinaryHeap_1 < T > => ""."BinaryHeap`1" < T >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BinaryHeap_1 < T > => ""
+    ."BinaryHeap`1" < T >
 );
 #[cfg(feature = "BinaryHeap_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for BinaryHeap_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
+for crate::GlobalNamespace::BinaryHeap_1<T> {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BinaryHeap_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for BinaryHeap_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
+for crate::GlobalNamespace::BinaryHeap_1<T> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BinaryHeap_1")]
-impl<T: quest_hook::libil2cpp::Type> BinaryHeap_1<T> {
+impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::BinaryHeap_1<T> {
     pub fn Insert(
         &mut self,
         item: T,
@@ -101,7 +104,7 @@ impl<T: quest_hook::libil2cpp::Type> BinaryHeap_1<T> {
 }
 #[cfg(feature = "BinaryHeap_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for BinaryHeap_1<T> {
+for crate::GlobalNamespace::BinaryHeap_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

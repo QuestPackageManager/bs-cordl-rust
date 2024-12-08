@@ -13,23 +13,24 @@ pub struct LeaderboardPlayerInfo {
 }
 #[cfg(feature = "LeaderboardPlayerInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LeaderboardPlayerInfo => ""."LeaderboardPlayerInfo"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LeaderboardPlayerInfo => ""
+    ."LeaderboardPlayerInfo"
 );
 #[cfg(feature = "LeaderboardPlayerInfo")]
-impl std::ops::Deref for LeaderboardPlayerInfo {
+impl std::ops::Deref for crate::GlobalNamespace::LeaderboardPlayerInfo {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LeaderboardPlayerInfo")]
-impl std::ops::DerefMut for LeaderboardPlayerInfo {
+impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardPlayerInfo {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LeaderboardPlayerInfo")]
-impl LeaderboardPlayerInfo {
+impl crate::GlobalNamespace::LeaderboardPlayerInfo {
     pub fn New(
         succeeded: bool,
         playerId: *mut crate::System::String,
@@ -191,7 +192,8 @@ impl LeaderboardPlayerInfo {
     }
 }
 #[cfg(feature = "LeaderboardPlayerInfo")]
-impl quest_hook::libil2cpp::ObjectType for LeaderboardPlayerInfo {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LeaderboardPlayerInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

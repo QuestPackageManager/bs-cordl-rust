@@ -3,29 +3,30 @@
 #[derive(Debug)]
 pub struct HapticFeedbackManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _rumbleHapticFeedbackPlayer: *mut RumbleHapticFeedbackPlayer,
-    pub _advancedHapticFeedbackPlayer: *mut IHapticFeedbackPlayer,
+    pub _rumbleHapticFeedbackPlayer: *mut crate::GlobalNamespace::RumbleHapticFeedbackPlayer,
+    pub _advancedHapticFeedbackPlayer: *mut crate::GlobalNamespace::IHapticFeedbackPlayer,
     pub hapticFeedbackEnabled: bool,
 }
 #[cfg(feature = "HapticFeedbackManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for HapticFeedbackManager => ""."HapticFeedbackManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::HapticFeedbackManager => ""
+    ."HapticFeedbackManager"
 );
 #[cfg(feature = "HapticFeedbackManager")]
-impl std::ops::Deref for HapticFeedbackManager {
+impl std::ops::Deref for crate::GlobalNamespace::HapticFeedbackManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HapticFeedbackManager")]
-impl std::ops::DerefMut for HapticFeedbackManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::HapticFeedbackManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "HapticFeedbackManager")]
-impl HapticFeedbackManager {
+impl crate::GlobalNamespace::HapticFeedbackManager {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -57,7 +58,8 @@ impl HapticFeedbackManager {
     }
 }
 #[cfg(feature = "HapticFeedbackManager")]
-impl quest_hook::libil2cpp::ObjectType for HapticFeedbackManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::HapticFeedbackManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

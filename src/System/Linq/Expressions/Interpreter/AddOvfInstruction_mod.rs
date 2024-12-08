@@ -27,8 +27,16 @@ for crate::System::Linq::Expressions::Interpreter::AddOvfInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::AddOvfInstruction {
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfInt16")]
+    pub type AddOvfInt16 = crate::GlobalNamespace::AddOvfInstruction_AddOvfInt16;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfInt32")]
+    pub type AddOvfInt32 = crate::GlobalNamespace::AddOvfInstruction_AddOvfInt32;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfInt64")]
     pub type AddOvfInt64 = crate::GlobalNamespace::AddOvfInstruction_AddOvfInt64;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfUInt16"
+    )]
+    pub type AddOvfUInt16 = crate::GlobalNamespace::AddOvfInstruction_AddOvfUInt16;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfUInt32"
     )]
@@ -37,14 +45,6 @@ impl crate::System::Linq::Expressions::Interpreter::AddOvfInstruction {
         feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfUInt64"
     )]
     pub type AddOvfUInt64 = crate::GlobalNamespace::AddOvfInstruction_AddOvfUInt64;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfInt16")]
-    pub type AddOvfInt16 = crate::GlobalNamespace::AddOvfInstruction_AddOvfInt16;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfUInt16"
-    )]
-    pub type AddOvfUInt16 = crate::GlobalNamespace::AddOvfInstruction_AddOvfUInt16;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfInt32")]
-    pub type AddOvfInt32 = crate::GlobalNamespace::AddOvfInstruction_AddOvfInt32;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -4,34 +4,35 @@
 pub struct ColorSchemeDropdown {
     __cordl_parent: crate::HMUI::DropdownWithTableView,
     pub _text: *mut crate::TMPro::TextMeshProUGUI,
-    pub _colorSchemeView: *mut ColorSchemeView,
-    pub _cellPrefab: *mut ColorSchemeTableCell,
+    pub _colorSchemeView: *mut crate::GlobalNamespace::ColorSchemeView,
+    pub _cellPrefab: *mut crate::GlobalNamespace::ColorSchemeTableCell,
     pub _cellReuseIdentifier: *mut crate::System::String,
     pub _cellSize: f32,
     pub _colorSchemes: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut ColorScheme,
+        *mut crate::GlobalNamespace::ColorScheme,
     >,
     pub _initialized: bool,
 }
 #[cfg(feature = "ColorSchemeDropdown")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ColorSchemeDropdown => ""."ColorSchemeDropdown"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ColorSchemeDropdown => ""
+    ."ColorSchemeDropdown"
 );
 #[cfg(feature = "ColorSchemeDropdown")]
-impl std::ops::Deref for ColorSchemeDropdown {
+impl std::ops::Deref for crate::GlobalNamespace::ColorSchemeDropdown {
     type Target = crate::HMUI::DropdownWithTableView;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorSchemeDropdown")]
-impl std::ops::DerefMut for ColorSchemeDropdown {
+impl std::ops::DerefMut for crate::GlobalNamespace::ColorSchemeDropdown {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorSchemeDropdown")]
-impl ColorSchemeDropdown {
+impl crate::GlobalNamespace::ColorSchemeDropdown {
     pub fn CellForIdx(
         &mut self,
         tableView: *mut crate::HMUI::TableView,
@@ -110,7 +111,7 @@ impl ColorSchemeDropdown {
     }
     pub fn RefreshUI(
         &mut self,
-        colorScheme: *mut ColorScheme,
+        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -133,7 +134,7 @@ impl ColorSchemeDropdown {
     pub fn SetData(
         &mut self,
         colorSchemes: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut ColorScheme,
+            *mut crate::GlobalNamespace::ColorScheme,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -155,7 +156,7 @@ impl ColorSchemeDropdown {
     }
 }
 #[cfg(feature = "ColorSchemeDropdown")]
-impl quest_hook::libil2cpp::ObjectType for ColorSchemeDropdown {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorSchemeDropdown {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

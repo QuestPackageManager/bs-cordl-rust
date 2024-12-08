@@ -254,14 +254,14 @@ for crate::System::Data::RBTree_1<K> {
 impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
     #[cfg(feature = "System+Data+RBTree_1+Node")]
     pub type Node = crate::System::Data::RBTree_1_Node<K>;
-    #[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
-    pub type RBTreeEnumerator = crate::System::Data::RBTree_1_RBTreeEnumerator<K>;
-    #[cfg(feature = "System+Data+RBTree_1+TreePage")]
-    pub type TreePage = crate::System::Data::RBTree_1_TreePage<K>;
     #[cfg(feature = "System+Data+RBTree_1+NodeColor")]
     pub type NodeColor = crate::System::Data::RBTree_1_NodeColor;
     #[cfg(feature = "System+Data+RBTree_1+NodePath")]
     pub type NodePath = crate::System::Data::RBTree_1_NodePath<K>;
+    #[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+    pub type RBTreeEnumerator = crate::System::Data::RBTree_1_RBTreeEnumerator<K>;
+    #[cfg(feature = "System+Data+RBTree_1+TreePage")]
+    pub type TreePage = crate::System::Data::RBTree_1_TreePage<K>;
     pub fn Add(&mut self, item: K) -> quest_hook::libil2cpp::Result<i32>
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

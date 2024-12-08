@@ -31,12 +31,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::SortColumnDescriptio
 }
 #[cfg(feature = "UnityEngine+UIElements+SortColumnDescription")]
 impl crate::UnityEngine::UIElements::SortColumnDescription {
-    #[cfg(feature = "UnityEngine+UIElements+SortColumnDescription+UxmlObjectTraits_1")]
-    pub type UxmlObjectTraits_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::SortColumnDescription_UxmlObjectTraits_1<
-        T,
-    >;
     #[cfg(feature = "UnityEngine+UIElements+SortColumnDescription+UxmlObjectFactory_1")]
     pub type UxmlObjectFactory_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::SortColumnDescription_UxmlObjectFactory_1<
+        T,
+    >;
+    #[cfg(feature = "UnityEngine+UIElements+SortColumnDescription+UxmlObjectTraits_1")]
+    pub type UxmlObjectTraits_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::SortColumnDescription_UxmlObjectTraits_1<
         T,
     >;
     pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {

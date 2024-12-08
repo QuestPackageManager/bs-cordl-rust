@@ -17,23 +17,24 @@ pub struct NetworkPlayerTableCell {
 }
 #[cfg(feature = "NetworkPlayerTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NetworkPlayerTableCell => ""."NetworkPlayerTableCell"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NetworkPlayerTableCell => ""
+    ."NetworkPlayerTableCell"
 );
 #[cfg(feature = "NetworkPlayerTableCell")]
-impl std::ops::Deref for NetworkPlayerTableCell {
+impl std::ops::Deref for crate::GlobalNamespace::NetworkPlayerTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NetworkPlayerTableCell")]
-impl std::ops::DerefMut for NetworkPlayerTableCell {
+impl std::ops::DerefMut for crate::GlobalNamespace::NetworkPlayerTableCell {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NetworkPlayerTableCell")]
-impl NetworkPlayerTableCell {
+impl crate::GlobalNamespace::NetworkPlayerTableCell {
     pub fn HighlightDidChange(
         &mut self,
         transitionType: crate::HMUI::SelectableCell_TransitionType,
@@ -131,7 +132,8 @@ impl NetworkPlayerTableCell {
     }
 }
 #[cfg(feature = "NetworkPlayerTableCell")]
-impl quest_hook::libil2cpp::ObjectType for NetworkPlayerTableCell {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NetworkPlayerTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

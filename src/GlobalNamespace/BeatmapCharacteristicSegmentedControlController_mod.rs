@@ -5,34 +5,37 @@ pub struct BeatmapCharacteristicSegmentedControlController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _segmentedControl: *mut crate::HMUI::IconSegmentedControl,
     pub didSelectBeatmapCharacteristicEvent: *mut crate::System::Action_2<
-        *mut BeatmapCharacteristicSegmentedControlController,
-        *mut BeatmapCharacteristicSO,
+        *mut crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
+        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     >,
-    pub _selectedBeatmapCharacteristic: *mut BeatmapCharacteristicSO,
+    pub _selectedBeatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     pub _beatmapCharacteristics: *mut crate::System::Collections::Generic::List_1<
-        *mut BeatmapCharacteristicSO,
+        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     >,
 }
 #[cfg(feature = "BeatmapCharacteristicSegmentedControlController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapCharacteristicSegmentedControlController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BeatmapCharacteristicSegmentedControlController => ""
     ."BeatmapCharacteristicSegmentedControlController"
 );
 #[cfg(feature = "BeatmapCharacteristicSegmentedControlController")]
-impl std::ops::Deref for BeatmapCharacteristicSegmentedControlController {
+impl std::ops::Deref
+for crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapCharacteristicSegmentedControlController")]
-impl std::ops::DerefMut for BeatmapCharacteristicSegmentedControlController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapCharacteristicSegmentedControlController")]
-impl BeatmapCharacteristicSegmentedControlController {
+impl crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
     #[cfg(feature = "BeatmapCharacteristicSegmentedControlController+__c")]
     pub type __c = crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController___c;
     pub fn Awake(
@@ -80,11 +83,11 @@ impl BeatmapCharacteristicSegmentedControlController {
     pub fn SetData(
         &mut self,
         beatmapCharacteristics: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut BeatmapCharacteristicSO,
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         >,
-        selectedBeatmapCharacteristic: *mut BeatmapCharacteristicSO,
+        selectedBeatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         notAllowedCharacteristics: *mut crate::System::Collections::Generic::HashSet_1<
-            *mut BeatmapCharacteristicSO,
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -114,8 +117,8 @@ impl BeatmapCharacteristicSegmentedControlController {
     pub fn add_didSelectBeatmapCharacteristicEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut BeatmapCharacteristicSegmentedControlController,
-            *mut BeatmapCharacteristicSO,
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -127,19 +130,21 @@ impl BeatmapCharacteristicSegmentedControlController {
     }
     pub fn get_selectedBeatmapCharacteristic(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapCharacteristicSO> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapCharacteristicSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapCharacteristicSO = __cordl_object
             .invoke("get_selectedBeatmapCharacteristic", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_didSelectBeatmapCharacteristicEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut BeatmapCharacteristicSegmentedControlController,
-            *mut BeatmapCharacteristicSO,
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -152,7 +157,7 @@ impl BeatmapCharacteristicSegmentedControlController {
 }
 #[cfg(feature = "BeatmapCharacteristicSegmentedControlController")]
 impl quest_hook::libil2cpp::ObjectType
-for BeatmapCharacteristicSegmentedControlController {
+for crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

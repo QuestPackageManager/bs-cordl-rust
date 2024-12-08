@@ -3,33 +3,34 @@
 #[derive(Debug)]
 pub struct NoteDebrisPoolInstaller {
     __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
-    pub _normalNoteDebrisHDPrefab: *mut NoteDebris,
-    pub _normalNoteDebrisLWPrefab: *mut NoteDebris,
-    pub _burstSliderHeadNoteDebrisHDPrefab: *mut NoteDebris,
-    pub _burstSliderHeadNoteDebrisLWPrefab: *mut NoteDebris,
-    pub _burstSliderElementNoteHDPrefab: *mut NoteDebris,
-    pub _burstSliderElementNoteLWPrefab: *mut NoteDebris,
-    pub _noteDebrisHDConditionVariable: *mut BoolSO,
+    pub _normalNoteDebrisHDPrefab: *mut crate::GlobalNamespace::NoteDebris,
+    pub _normalNoteDebrisLWPrefab: *mut crate::GlobalNamespace::NoteDebris,
+    pub _burstSliderHeadNoteDebrisHDPrefab: *mut crate::GlobalNamespace::NoteDebris,
+    pub _burstSliderHeadNoteDebrisLWPrefab: *mut crate::GlobalNamespace::NoteDebris,
+    pub _burstSliderElementNoteHDPrefab: *mut crate::GlobalNamespace::NoteDebris,
+    pub _burstSliderElementNoteLWPrefab: *mut crate::GlobalNamespace::NoteDebris,
+    pub _noteDebrisHDConditionVariable: *mut crate::GlobalNamespace::BoolSO,
 }
 #[cfg(feature = "NoteDebrisPoolInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteDebrisPoolInstaller => ""."NoteDebrisPoolInstaller"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteDebrisPoolInstaller => ""
+    ."NoteDebrisPoolInstaller"
 );
 #[cfg(feature = "NoteDebrisPoolInstaller")]
-impl std::ops::Deref for NoteDebrisPoolInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::NoteDebrisPoolInstaller {
     type Target = crate::Zenject::ScriptableObjectInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteDebrisPoolInstaller")]
-impl std::ops::DerefMut for NoteDebrisPoolInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteDebrisPoolInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteDebrisPoolInstaller")]
-impl NoteDebrisPoolInstaller {
+impl crate::GlobalNamespace::NoteDebrisPoolInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -59,7 +60,8 @@ impl NoteDebrisPoolInstaller {
     }
 }
 #[cfg(feature = "NoteDebrisPoolInstaller")]
-impl quest_hook::libil2cpp::ObjectType for NoteDebrisPoolInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NoteDebrisPoolInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

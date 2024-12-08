@@ -310,10 +310,10 @@ impl crate::System::Net::ServicePointScheduler {
     pub type AsyncManualResetEvent = crate::System::Net::ServicePointScheduler_AsyncManualResetEvent;
     #[cfg(feature = "System+Net+ServicePointScheduler+ConnectionGroup")]
     pub type ConnectionGroup = crate::System::Net::ServicePointScheduler_ConnectionGroup;
-    #[cfg(feature = "System+Net+ServicePointScheduler+_WaitAsync_d__46")]
-    pub type _WaitAsync_d__46 = crate::System::Net::ServicePointScheduler__WaitAsync_d__46;
     #[cfg(feature = "System+Net+ServicePointScheduler+_RunScheduler_d__32")]
     pub type _RunScheduler_d__32 = crate::System::Net::ServicePointScheduler__RunScheduler_d__32;
+    #[cfg(feature = "System+Net+ServicePointScheduler+_WaitAsync_d__46")]
+    pub type _WaitAsync_d__46 = crate::System::Net::ServicePointScheduler__WaitAsync_d__46;
     pub fn Cleanup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

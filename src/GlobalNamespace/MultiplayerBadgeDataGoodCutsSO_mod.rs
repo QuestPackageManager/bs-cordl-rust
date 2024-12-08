@@ -2,31 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerBadgeDataGoodCutsSO {
-    __cordl_parent: MultiplayerBadgeDataMinMaxIntSO,
+    __cordl_parent: crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO,
 }
 #[cfg(feature = "MultiplayerBadgeDataGoodCutsSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerBadgeDataGoodCutsSO => ""
-    ."MultiplayerBadgeDataGoodCutsSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerBadgeDataGoodCutsSO
+    => ""."MultiplayerBadgeDataGoodCutsSO"
 );
 #[cfg(feature = "MultiplayerBadgeDataGoodCutsSO")]
-impl std::ops::Deref for MultiplayerBadgeDataGoodCutsSO {
-    type Target = MultiplayerBadgeDataMinMaxIntSO;
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerBadgeDataGoodCutsSO {
+    type Target = crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerBadgeDataGoodCutsSO")]
-impl std::ops::DerefMut for MultiplayerBadgeDataGoodCutsSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerBadgeDataGoodCutsSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerBadgeDataGoodCutsSO")]
-impl MultiplayerBadgeDataGoodCutsSO {
+impl crate::GlobalNamespace::MultiplayerBadgeDataGoodCutsSO {
     pub fn GetValue(
         &mut self,
-        result: *mut MultiplayerPlayerResultsData,
+        result: *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -53,7 +53,8 @@ impl MultiplayerBadgeDataGoodCutsSO {
     }
 }
 #[cfg(feature = "MultiplayerBadgeDataGoodCutsSO")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerBadgeDataGoodCutsSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerBadgeDataGoodCutsSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

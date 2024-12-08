@@ -66,10 +66,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::EventDispatcher {
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDispatcher")]
 impl crate::UnityEngine::UIElements::EventDispatcher {
-    #[cfg(feature = "UnityEngine+UIElements+EventDispatcher+EventRecord")]
-    pub type EventRecord = crate::UnityEngine::UIElements::EventDispatcher_EventRecord;
     #[cfg(feature = "UnityEngine+UIElements+EventDispatcher+DispatchContext")]
     pub type DispatchContext = crate::UnityEngine::UIElements::EventDispatcher_DispatchContext;
+    #[cfg(feature = "UnityEngine+UIElements+EventDispatcher+EventRecord")]
+    pub type EventRecord = crate::UnityEngine::UIElements::EventDispatcher_EventRecord;
     #[cfg(feature = "UnityEngine+UIElements+EventDispatcher+__c")]
     pub type __c = crate::UnityEngine::UIElements::EventDispatcher___c;
     pub fn ApplyDispatchingStrategies(

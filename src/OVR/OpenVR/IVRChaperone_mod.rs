@@ -28,22 +28,22 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::OVR::OpenVR::IVRChape
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperone")]
 impl crate::OVR::OpenVR::IVRChaperone {
-    #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetPlayAreaRect")]
-    pub type _GetPlayAreaRect = crate::OVR::OpenVR::IVRChaperone__GetPlayAreaRect;
-    #[cfg(feature = "OVR+OpenVR+IVRChaperone+_ReloadInfo")]
-    pub type _ReloadInfo = crate::OVR::OpenVR::IVRChaperone__ReloadInfo;
     #[cfg(feature = "OVR+OpenVR+IVRChaperone+_AreBoundsVisible")]
     pub type _AreBoundsVisible = crate::OVR::OpenVR::IVRChaperone__AreBoundsVisible;
-    #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetCalibrationState")]
-    pub type _GetCalibrationState = crate::OVR::OpenVR::IVRChaperone__GetCalibrationState;
     #[cfg(feature = "OVR+OpenVR+IVRChaperone+_ForceBoundsVisible")]
     pub type _ForceBoundsVisible = crate::OVR::OpenVR::IVRChaperone__ForceBoundsVisible;
-    #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetPlayAreaSize")]
-    pub type _GetPlayAreaSize = crate::OVR::OpenVR::IVRChaperone__GetPlayAreaSize;
-    #[cfg(feature = "OVR+OpenVR+IVRChaperone+_SetSceneColor")]
-    pub type _SetSceneColor = crate::OVR::OpenVR::IVRChaperone__SetSceneColor;
     #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetBoundsColor")]
     pub type _GetBoundsColor = crate::OVR::OpenVR::IVRChaperone__GetBoundsColor;
+    #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetCalibrationState")]
+    pub type _GetCalibrationState = crate::OVR::OpenVR::IVRChaperone__GetCalibrationState;
+    #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetPlayAreaRect")]
+    pub type _GetPlayAreaRect = crate::OVR::OpenVR::IVRChaperone__GetPlayAreaRect;
+    #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetPlayAreaSize")]
+    pub type _GetPlayAreaSize = crate::OVR::OpenVR::IVRChaperone__GetPlayAreaSize;
+    #[cfg(feature = "OVR+OpenVR+IVRChaperone+_ReloadInfo")]
+    pub type _ReloadInfo = crate::OVR::OpenVR::IVRChaperone__ReloadInfo;
+    #[cfg(feature = "OVR+OpenVR+IVRChaperone+_SetSceneColor")]
+    pub type _SetSceneColor = crate::OVR::OpenVR::IVRChaperone__SetSceneColor;
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_AreBoundsVisible")]
 #[repr(C)]

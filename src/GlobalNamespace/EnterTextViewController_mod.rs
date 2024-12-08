@@ -3,33 +3,34 @@
 #[derive(Debug)]
 pub struct EnterTextViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _textEntryController: *mut VRTextEntryController,
+    pub _textEntryController: *mut crate::GlobalNamespace::VRTextEntryController,
     pub _titleText: *mut crate::TMPro::TextMeshProUGUI,
     pub _okButton: *mut crate::UnityEngine::UI::Button,
     pub didFinishEvent: *mut crate::System::Action_2<
-        *mut EnterTextViewController,
+        *mut crate::GlobalNamespace::EnterTextViewController,
         *mut crate::System::String,
     >,
 }
 #[cfg(feature = "EnterTextViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnterTextViewController => ""."EnterTextViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnterTextViewController => ""
+    ."EnterTextViewController"
 );
 #[cfg(feature = "EnterTextViewController")]
-impl std::ops::Deref for EnterTextViewController {
+impl std::ops::Deref for crate::GlobalNamespace::EnterTextViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnterTextViewController")]
-impl std::ops::DerefMut for EnterTextViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnterTextViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnterTextViewController")]
-impl EnterTextViewController {
+impl crate::GlobalNamespace::EnterTextViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -87,7 +88,7 @@ impl EnterTextViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut EnterTextViewController,
+            *mut crate::GlobalNamespace::EnterTextViewController,
             *mut crate::System::String,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -101,7 +102,7 @@ impl EnterTextViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut EnterTextViewController,
+            *mut crate::GlobalNamespace::EnterTextViewController,
             *mut crate::System::String,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -114,7 +115,8 @@ impl EnterTextViewController {
     }
 }
 #[cfg(feature = "EnterTextViewController")]
-impl quest_hook::libil2cpp::ObjectType for EnterTextViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EnterTextViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

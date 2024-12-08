@@ -8,23 +8,24 @@ pub struct BitMaskSparse {
 }
 #[cfg(feature = "BitMaskSparse")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BitMaskSparse => ""."BitMaskSparse"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BitMaskSparse => ""
+    ."BitMaskSparse"
 );
 #[cfg(feature = "BitMaskSparse")]
-impl std::ops::Deref for BitMaskSparse {
+impl std::ops::Deref for crate::GlobalNamespace::BitMaskSparse {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BitMaskSparse")]
-impl std::ops::DerefMut for BitMaskSparse {
+impl std::ops::DerefMut for crate::GlobalNamespace::BitMaskSparse {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BitMaskSparse")]
-impl BitMaskSparse {
+impl crate::GlobalNamespace::BitMaskSparse {
     #[cfg(feature = "BitMaskSparse+__c")]
     pub type __c = crate::GlobalNamespace::BitMaskSparse___c;
     pub fn Deserialize(
@@ -40,7 +41,7 @@ impl BitMaskSparse {
     }
     pub fn Equals(
         &mut self,
-        other: *mut BitMaskSparse,
+        other: *mut crate::GlobalNamespace::BitMaskSparse,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -81,11 +82,11 @@ impl BitMaskSparse {
         &mut self,
         offset: i32,
         bits: u64,
-    ) -> quest_hook::libil2cpp::Result<*mut BitMaskSparse> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BitMaskSparse> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BitMaskSparse = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BitMaskSparse = __cordl_object
             .invoke("SetBits", (offset, bits))?;
         Ok(__cordl_ret)
     }
@@ -119,7 +120,7 @@ impl BitMaskSparse {
     }
 }
 #[cfg(feature = "BitMaskSparse")]
-impl quest_hook::libil2cpp::ObjectType for BitMaskSparse {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BitMaskSparse {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

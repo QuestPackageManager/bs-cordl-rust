@@ -30,13 +30,13 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ConnectElements {
     #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ConnectElements+__c")]
     pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::ConnectElements___c;
     #[cfg(
-        feature = "UnityEngine+ProBuilder+MeshOperations+ConnectElements+__c__DisplayClass3_0"
-    )]
-    pub type __c__DisplayClass3_0 = crate::UnityEngine::ProBuilder::MeshOperations::ConnectElements___c__DisplayClass3_0;
-    #[cfg(
         feature = "UnityEngine+ProBuilder+MeshOperations+ConnectElements+__c__DisplayClass2_0"
     )]
     pub type __c__DisplayClass2_0 = crate::UnityEngine::ProBuilder::MeshOperations::ConnectElements___c__DisplayClass2_0;
+    #[cfg(
+        feature = "UnityEngine+ProBuilder+MeshOperations+ConnectElements+__c__DisplayClass3_0"
+    )]
+    pub type __c__DisplayClass3_0 = crate::UnityEngine::ProBuilder::MeshOperations::ConnectElements___c__DisplayClass3_0;
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ConnectElements")]
 impl quest_hook::libil2cpp::ObjectType

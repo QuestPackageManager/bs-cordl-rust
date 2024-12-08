@@ -291,10 +291,10 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputAction {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputAction")]
 impl crate::UnityEngine::InputSystem::InputAction {
-    #[cfg(feature = "UnityEngine+InputSystem+InputAction+CallbackContext")]
-    pub type CallbackContext = crate::UnityEngine::InputSystem::InputAction_CallbackContext;
     #[cfg(feature = "UnityEngine+InputSystem+InputAction+ActionFlags")]
     pub type ActionFlags = crate::UnityEngine::InputSystem::InputAction_ActionFlags;
+    #[cfg(feature = "UnityEngine+InputSystem+InputAction+CallbackContext")]
+    pub type CallbackContext = crate::UnityEngine::InputSystem::InputAction_CallbackContext;
     pub fn ActiveControlIsValid(
         &mut self,
         control: *mut crate::UnityEngine::InputSystem::InputControl,

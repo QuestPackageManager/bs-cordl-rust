@@ -3,28 +3,29 @@
 #[derive(Debug)]
 pub struct OffsetByBeatmapObjectSpawnCenter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _spawnCenter: *mut BeatmapObjectSpawnCenter,
+    pub _spawnCenter: *mut crate::GlobalNamespace::BeatmapObjectSpawnCenter,
 }
 #[cfg(feature = "OffsetByBeatmapObjectSpawnCenter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OffsetByBeatmapObjectSpawnCenter => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OffsetByBeatmapObjectSpawnCenter => ""
     ."OffsetByBeatmapObjectSpawnCenter"
 );
 #[cfg(feature = "OffsetByBeatmapObjectSpawnCenter")]
-impl std::ops::Deref for OffsetByBeatmapObjectSpawnCenter {
+impl std::ops::Deref for crate::GlobalNamespace::OffsetByBeatmapObjectSpawnCenter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OffsetByBeatmapObjectSpawnCenter")]
-impl std::ops::DerefMut for OffsetByBeatmapObjectSpawnCenter {
+impl std::ops::DerefMut for crate::GlobalNamespace::OffsetByBeatmapObjectSpawnCenter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OffsetByBeatmapObjectSpawnCenter")]
-impl OffsetByBeatmapObjectSpawnCenter {
+impl crate::GlobalNamespace::OffsetByBeatmapObjectSpawnCenter {
     pub fn HandleSpawnCenterDistanceWasFound(
         &mut self,
         distance: f32,
@@ -65,7 +66,8 @@ impl OffsetByBeatmapObjectSpawnCenter {
     }
 }
 #[cfg(feature = "OffsetByBeatmapObjectSpawnCenter")]
-impl quest_hook::libil2cpp::ObjectType for OffsetByBeatmapObjectSpawnCenter {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OffsetByBeatmapObjectSpawnCenter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

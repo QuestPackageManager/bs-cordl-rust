@@ -7,24 +7,24 @@ pub struct PlayingCampaignRichPresenceData {
 }
 #[cfg(feature = "PlayingCampaignRichPresenceData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayingCampaignRichPresenceData => ""
-    ."PlayingCampaignRichPresenceData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayingCampaignRichPresenceData
+    => ""."PlayingCampaignRichPresenceData"
 );
 #[cfg(feature = "PlayingCampaignRichPresenceData")]
-impl std::ops::Deref for PlayingCampaignRichPresenceData {
+impl std::ops::Deref for crate::GlobalNamespace::PlayingCampaignRichPresenceData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayingCampaignRichPresenceData")]
-impl std::ops::DerefMut for PlayingCampaignRichPresenceData {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayingCampaignRichPresenceData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayingCampaignRichPresenceData")]
-impl PlayingCampaignRichPresenceData {
+impl crate::GlobalNamespace::PlayingCampaignRichPresenceData {
     pub const kPlayingCampaignRichPresenceLocalizationKey: &'static str = "PLAYING_CAMPAIGN_PRESENCE";
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -65,7 +65,8 @@ impl PlayingCampaignRichPresenceData {
     }
 }
 #[cfg(feature = "PlayingCampaignRichPresenceData")]
-impl quest_hook::libil2cpp::ObjectType for PlayingCampaignRichPresenceData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayingCampaignRichPresenceData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

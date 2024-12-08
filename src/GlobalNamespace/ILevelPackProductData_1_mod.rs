@@ -7,12 +7,12 @@ pub struct ILevelPackProductData_1<TLevelProductData: quest_hook::libil2cpp::Typ
 }
 #[cfg(feature = "ILevelPackProductData_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ILevelPackProductData_1 < TLevelProductData > => ""
-    ."ILevelPackProductData`1" < TLevelProductData >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ILevelPackProductData_1 <
+    TLevelProductData > => ""."ILevelPackProductData`1" < TLevelProductData >
 );
 #[cfg(feature = "ILevelPackProductData_1")]
 impl<TLevelProductData: quest_hook::libil2cpp::Type> std::ops::Deref
-for ILevelPackProductData_1<TLevelProductData> {
+for crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -20,7 +20,7 @@ for ILevelPackProductData_1<TLevelProductData> {
 }
 #[cfg(feature = "ILevelPackProductData_1")]
 impl<TLevelProductData: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for ILevelPackProductData_1<TLevelProductData> {
+for crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -28,7 +28,7 @@ for ILevelPackProductData_1<TLevelProductData> {
 #[cfg(feature = "ILevelPackProductData_1")]
 impl<
     TLevelProductData: quest_hook::libil2cpp::Type,
-> ILevelPackProductData_1<TLevelProductData> {
+> crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData> {
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
@@ -68,7 +68,7 @@ impl<
 }
 #[cfg(feature = "ILevelPackProductData_1")]
 impl<TLevelProductData: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for ILevelPackProductData_1<TLevelProductData> {
+for crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

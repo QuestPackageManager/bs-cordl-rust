@@ -43,18 +43,18 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::Dropdown {
 #[cfg(feature = "UnityEngine+UI+Dropdown")]
 impl crate::UnityEngine::UI::Dropdown {
     pub const kHighSortingLayer: i32 = 30000i32;
-    #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownItem")]
-    pub type DropdownItem = crate::UnityEngine::UI::Dropdown_DropdownItem;
     #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownEvent")]
     pub type DropdownEvent = crate::UnityEngine::UI::Dropdown_DropdownEvent;
-    #[cfg(feature = "UnityEngine+UI+Dropdown+OptionDataList")]
-    pub type OptionDataList = crate::UnityEngine::UI::Dropdown_OptionDataList;
-    #[cfg(feature = "UnityEngine+UI+Dropdown+__c__DisplayClass63_0")]
-    pub type __c__DisplayClass63_0 = crate::UnityEngine::UI::Dropdown___c__DisplayClass63_0;
+    #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownItem")]
+    pub type DropdownItem = crate::UnityEngine::UI::Dropdown_DropdownItem;
     #[cfg(feature = "UnityEngine+UI+Dropdown+OptionData")]
     pub type OptionData = crate::UnityEngine::UI::Dropdown_OptionData;
+    #[cfg(feature = "UnityEngine+UI+Dropdown+OptionDataList")]
+    pub type OptionDataList = crate::UnityEngine::UI::Dropdown_OptionDataList;
     #[cfg(feature = "UnityEngine+UI+Dropdown+_DelayedDestroyDropdownList_d__75")]
     pub type _DelayedDestroyDropdownList_d__75 = crate::UnityEngine::UI::Dropdown__DelayedDestroyDropdownList_d__75;
+    #[cfg(feature = "UnityEngine+UI+Dropdown+__c__DisplayClass63_0")]
+    pub type __c__DisplayClass63_0 = crate::UnityEngine::UI::Dropdown___c__DisplayClass63_0;
     pub fn AddItem(
         &mut self,
         data: *mut crate::UnityEngine::UI::Dropdown_OptionData,

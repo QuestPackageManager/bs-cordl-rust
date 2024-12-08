@@ -18,23 +18,24 @@ pub struct SmallBufferPool {
 }
 #[cfg(feature = "SmallBufferPool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SmallBufferPool => ""."SmallBufferPool"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SmallBufferPool => ""
+    ."SmallBufferPool"
 );
 #[cfg(feature = "SmallBufferPool")]
-impl std::ops::Deref for SmallBufferPool {
+impl std::ops::Deref for crate::GlobalNamespace::SmallBufferPool {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SmallBufferPool")]
-impl std::ops::DerefMut for SmallBufferPool {
+impl std::ops::DerefMut for crate::GlobalNamespace::SmallBufferPool {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SmallBufferPool")]
-impl SmallBufferPool {
+impl crate::GlobalNamespace::SmallBufferPool {
     pub const kCacheLargeMaxCapacity: i32 = 16i32;
     pub const kCacheLargeSize: i32 = 2048i32;
     pub const kCacheMaxMaxCapacity: i32 = 8i32;
@@ -108,7 +109,7 @@ impl SmallBufferPool {
     }
 }
 #[cfg(feature = "SmallBufferPool")]
-impl quest_hook::libil2cpp::ObjectType for SmallBufferPool {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SmallBufferPool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

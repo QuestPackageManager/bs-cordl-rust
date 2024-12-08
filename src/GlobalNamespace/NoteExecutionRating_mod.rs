@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteExecutionRating {
-    __cordl_parent: BeatmapObjectExecutionRating,
+    __cordl_parent: crate::GlobalNamespace::BeatmapObjectExecutionRating,
     pub rating: crate::GlobalNamespace::NoteExecutionRating_Rating,
     pub cutScore: i32,
     pub beforeCutScore: i32,
@@ -12,23 +12,24 @@ pub struct NoteExecutionRating {
 }
 #[cfg(feature = "NoteExecutionRating")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteExecutionRating => ""."NoteExecutionRating"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteExecutionRating => ""
+    ."NoteExecutionRating"
 );
 #[cfg(feature = "NoteExecutionRating")]
-impl std::ops::Deref for NoteExecutionRating {
-    type Target = BeatmapObjectExecutionRating;
+impl std::ops::Deref for crate::GlobalNamespace::NoteExecutionRating {
+    type Target = crate::GlobalNamespace::BeatmapObjectExecutionRating;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteExecutionRating")]
-impl std::ops::DerefMut for NoteExecutionRating {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteExecutionRating {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteExecutionRating")]
-impl NoteExecutionRating {
+impl crate::GlobalNamespace::NoteExecutionRating {
     #[cfg(feature = "NoteExecutionRating+Rating")]
     pub type Rating = crate::GlobalNamespace::NoteExecutionRating_Rating;
     pub fn New(
@@ -87,7 +88,7 @@ impl NoteExecutionRating {
     }
 }
 #[cfg(feature = "NoteExecutionRating")]
-impl quest_hook::libil2cpp::ObjectType for NoteExecutionRating {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteExecutionRating {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -88,12 +88,12 @@ impl std::ops::DerefMut for crate::System::Collections::ListDictionaryInternal {
 }
 #[cfg(feature = "System+Collections+ListDictionaryInternal")]
 impl crate::System::Collections::ListDictionaryInternal {
+    #[cfg(feature = "System+Collections+ListDictionaryInternal+DictionaryNode")]
+    pub type DictionaryNode = crate::System::Collections::ListDictionaryInternal_DictionaryNode;
     #[cfg(feature = "System+Collections+ListDictionaryInternal+NodeEnumerator")]
     pub type NodeEnumerator = crate::System::Collections::ListDictionaryInternal_NodeEnumerator;
     #[cfg(feature = "System+Collections+ListDictionaryInternal+NodeKeyValueCollection")]
     pub type NodeKeyValueCollection = crate::System::Collections::ListDictionaryInternal_NodeKeyValueCollection;
-    #[cfg(feature = "System+Collections+ListDictionaryInternal+DictionaryNode")]
-    pub type DictionaryNode = crate::System::Collections::ListDictionaryInternal_DictionaryNode;
     pub fn Add(
         &mut self,
         key: *mut crate::System::Object,

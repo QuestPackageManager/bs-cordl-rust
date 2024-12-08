@@ -7,29 +7,29 @@ pub struct LoadGameLoaderAfterSplashScreen {
 }
 #[cfg(feature = "LoadGameLoaderAfterSplashScreen")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LoadGameLoaderAfterSplashScreen => ""
-    ."LoadGameLoaderAfterSplashScreen"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LoadGameLoaderAfterSplashScreen
+    => ""."LoadGameLoaderAfterSplashScreen"
 );
 #[cfg(feature = "LoadGameLoaderAfterSplashScreen")]
-impl std::ops::Deref for LoadGameLoaderAfterSplashScreen {
+impl std::ops::Deref for crate::GlobalNamespace::LoadGameLoaderAfterSplashScreen {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LoadGameLoaderAfterSplashScreen")]
-impl std::ops::DerefMut for LoadGameLoaderAfterSplashScreen {
+impl std::ops::DerefMut for crate::GlobalNamespace::LoadGameLoaderAfterSplashScreen {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LoadGameLoaderAfterSplashScreen")]
-impl LoadGameLoaderAfterSplashScreen {
+impl crate::GlobalNamespace::LoadGameLoaderAfterSplashScreen {
     pub const kGameLoaderSceneName: &'static str = "GameLoader";
-    #[cfg(feature = "LoadGameLoaderAfterSplashScreen+__c")]
-    pub type __c = crate::GlobalNamespace::LoadGameLoaderAfterSplashScreen___c;
     #[cfg(feature = "LoadGameLoaderAfterSplashScreen+_Start_d__2")]
     pub type _Start_d__2 = crate::GlobalNamespace::LoadGameLoaderAfterSplashScreen__Start_d__2;
+    #[cfg(feature = "LoadGameLoaderAfterSplashScreen+__c")]
+    pub type __c = crate::GlobalNamespace::LoadGameLoaderAfterSplashScreen___c;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -59,7 +59,8 @@ impl LoadGameLoaderAfterSplashScreen {
     }
 }
 #[cfg(feature = "LoadGameLoaderAfterSplashScreen")]
-impl quest_hook::libil2cpp::ObjectType for LoadGameLoaderAfterSplashScreen {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LoadGameLoaderAfterSplashScreen {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

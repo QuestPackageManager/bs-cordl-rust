@@ -8,23 +8,24 @@ pub struct PlayerMissionStatsData {
 }
 #[cfg(feature = "PlayerMissionStatsData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerMissionStatsData => ""."PlayerMissionStatsData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerMissionStatsData => ""
+    ."PlayerMissionStatsData"
 );
 #[cfg(feature = "PlayerMissionStatsData")]
-impl std::ops::Deref for PlayerMissionStatsData {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerMissionStatsData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerMissionStatsData")]
-impl std::ops::DerefMut for PlayerMissionStatsData {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerMissionStatsData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerMissionStatsData")]
-impl PlayerMissionStatsData {
+impl crate::GlobalNamespace::PlayerMissionStatsData {
     pub fn New(
         missionId: *mut crate::System::String,
         cleared: bool,
@@ -77,7 +78,8 @@ impl PlayerMissionStatsData {
     }
 }
 #[cfg(feature = "PlayerMissionStatsData")]
-impl quest_hook::libil2cpp::ObjectType for PlayerMissionStatsData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayerMissionStatsData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

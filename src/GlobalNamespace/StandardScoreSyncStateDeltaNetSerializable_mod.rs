@@ -3,30 +3,33 @@
 #[derive(Debug)]
 pub struct StandardScoreSyncStateDeltaNetSerializable {
     __cordl_parent: crate::System::Object,
-    pub _delta: StandardScoreSyncState,
-    pub _baseId_k__BackingField: SyncStateId,
+    pub _delta: crate::GlobalNamespace::StandardScoreSyncState,
+    pub _baseId_k__BackingField: crate::GlobalNamespace::SyncStateId,
     pub _timeOffsetMs_k__BackingField: i32,
 }
 #[cfg(feature = "StandardScoreSyncStateDeltaNetSerializable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StandardScoreSyncStateDeltaNetSerializable => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable => ""
     ."StandardScoreSyncStateDeltaNetSerializable"
 );
 #[cfg(feature = "StandardScoreSyncStateDeltaNetSerializable")]
-impl std::ops::Deref for StandardScoreSyncStateDeltaNetSerializable {
+impl std::ops::Deref
+for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardScoreSyncStateDeltaNetSerializable")]
-impl std::ops::DerefMut for StandardScoreSyncStateDeltaNetSerializable {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandardScoreSyncStateDeltaNetSerializable")]
-impl StandardScoreSyncStateDeltaNetSerializable {
+impl crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
@@ -76,20 +79,23 @@ impl StandardScoreSyncStateDeltaNetSerializable {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_baseId(&mut self) -> quest_hook::libil2cpp::Result<SyncStateId> {
+    pub fn get_baseId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SyncStateId> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: SyncStateId = __cordl_object.invoke("get_baseId", ())?;
+        let __cordl_ret: crate::GlobalNamespace::SyncStateId = __cordl_object
+            .invoke("get_baseId", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_delta(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<StandardScoreSyncState> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::StandardScoreSyncState> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: StandardScoreSyncState = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::StandardScoreSyncState = __cordl_object
             .invoke("get_delta", ())?;
         Ok(__cordl_ret)
     }
@@ -102,7 +108,7 @@ impl StandardScoreSyncStateDeltaNetSerializable {
     }
     pub fn set_baseId(
         &mut self,
-        value: SyncStateId,
+        value: crate::GlobalNamespace::SyncStateId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -113,7 +119,7 @@ impl StandardScoreSyncStateDeltaNetSerializable {
     }
     pub fn set_delta(
         &mut self,
-        value: StandardScoreSyncState,
+        value: crate::GlobalNamespace::StandardScoreSyncState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -135,7 +141,8 @@ impl StandardScoreSyncStateDeltaNetSerializable {
     }
 }
 #[cfg(feature = "StandardScoreSyncStateDeltaNetSerializable")]
-impl quest_hook::libil2cpp::ObjectType for StandardScoreSyncStateDeltaNetSerializable {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

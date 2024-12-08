@@ -8,14 +8,14 @@ pub struct MultiplayerLocalActivePlayerInGameMenuViewController {
     pub _giveUpButton: *mut crate::UnityEngine::UI::Button,
     pub _resumeButton: *mut crate::UnityEngine::UI::Button,
     pub _mainBar: *mut crate::UnityEngine::GameObject,
-    pub _disconnectPromptView: *mut DisconnectPromptView,
-    pub _levelBar: *mut LevelBar,
+    pub _disconnectPromptView: *mut crate::GlobalNamespace::DisconnectPromptView,
+    pub _levelBar: *mut crate::GlobalNamespace::LevelBar,
     pub _menuWrapperGameObject: *mut crate::UnityEngine::GameObject,
     pub _menuControllersGameObject: *mut crate::UnityEngine::GameObject,
-    pub _connectedPlayer: *mut IConnectedPlayer,
-    pub _localPlayerInGameMenuInitData: *mut LocalPlayerInGameMenuInitData,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
-    pub _disconnectHelper: *mut MultiplayerLocalPlayerDisconnectHelper,
+    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _localPlayerInGameMenuInitData: *mut crate::GlobalNamespace::LocalPlayerInGameMenuInitData,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
+    pub _disconnectHelper: *mut crate::GlobalNamespace::MultiplayerLocalPlayerDisconnectHelper,
     pub didPressDisconnectButtonEvent: *mut crate::System::Action,
     pub didPressGiveUpButtonEvent: *mut crate::System::Action,
     pub didPressResumeButtonEvent: *mut crate::System::Action,
@@ -24,24 +24,27 @@ pub struct MultiplayerLocalActivePlayerInGameMenuViewController {
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerInGameMenuViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLocalActivePlayerInGameMenuViewController =>
-    ""."MultiplayerLocalActivePlayerInGameMenuViewController"
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuViewController => ""
+    ."MultiplayerLocalActivePlayerInGameMenuViewController"
 );
 #[cfg(feature = "MultiplayerLocalActivePlayerInGameMenuViewController")]
-impl std::ops::Deref for MultiplayerLocalActivePlayerInGameMenuViewController {
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuViewController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerInGameMenuViewController")]
-impl std::ops::DerefMut for MultiplayerLocalActivePlayerInGameMenuViewController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerInGameMenuViewController")]
-impl MultiplayerLocalActivePlayerInGameMenuViewController {
+impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuViewController {
     pub const kDisabledInteractionDuration: f32 = 0.2f32;
     pub fn Awake(
         &mut self,
@@ -240,7 +243,7 @@ impl MultiplayerLocalActivePlayerInGameMenuViewController {
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerInGameMenuViewController")]
 impl quest_hook::libil2cpp::ObjectType
-for MultiplayerLocalActivePlayerInGameMenuViewController {
+for crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,39 +3,44 @@
 #[derive(Debug)]
 pub struct CutScoreBuffer {
     __cordl_parent: crate::System::Object,
-    pub _saberSwingRatingCounter: *mut SaberSwingRatingCounter,
-    pub _noteCutInfo: NoteCutInfo,
+    pub _saberSwingRatingCounter: *mut crate::GlobalNamespace::SaberSwingRatingCounter,
+    pub _noteCutInfo: crate::GlobalNamespace::NoteCutInfo,
     pub _noteScoreDefinition: *mut crate::GlobalNamespace::ScoreModel_NoteScoreDefinition,
     pub _afterCutScore: i32,
     pub _beforeCutScore: i32,
     pub _centerDistanceCutScore: i32,
     pub _initialized: bool,
     pub _isFinished: bool,
-    pub _didFinishEvent: *mut LazyCopyHashSet_1<*mut ICutScoreBufferDidFinishReceiver>,
-    pub _didChangeEvent: *mut LazyCopyHashSet_1<*mut ICutScoreBufferDidChangeReceiver>,
+    pub _didFinishEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
+        *mut crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver,
+    >,
+    pub _didChangeEvent: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
+        *mut crate::GlobalNamespace::ICutScoreBufferDidChangeReceiver,
+    >,
 }
 #[cfg(feature = "CutScoreBuffer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CutScoreBuffer => ""."CutScoreBuffer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CutScoreBuffer => ""
+    ."CutScoreBuffer"
 );
 #[cfg(feature = "CutScoreBuffer")]
-impl std::ops::Deref for CutScoreBuffer {
+impl std::ops::Deref for crate::GlobalNamespace::CutScoreBuffer {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CutScoreBuffer")]
-impl std::ops::DerefMut for CutScoreBuffer {
+impl std::ops::DerefMut for crate::GlobalNamespace::CutScoreBuffer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CutScoreBuffer")]
-impl CutScoreBuffer {
+impl crate::GlobalNamespace::CutScoreBuffer {
     pub fn HandleSaberSwingRatingCounterDidChange(
         &mut self,
-        swingRatingCounter: *mut ISaberSwingRatingCounter,
+        swingRatingCounter: *mut crate::GlobalNamespace::ISaberSwingRatingCounter,
         rating: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -50,7 +55,7 @@ impl CutScoreBuffer {
     }
     pub fn HandleSaberSwingRatingCounterDidFinish(
         &mut self,
-        swingRatingCounter: *mut ISaberSwingRatingCounter,
+        swingRatingCounter: *mut crate::GlobalNamespace::ISaberSwingRatingCounter,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -61,7 +66,7 @@ impl CutScoreBuffer {
     }
     pub fn Init(
         &mut self,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -88,7 +93,7 @@ impl CutScoreBuffer {
     }
     pub fn RegisterDidChangeReceiver(
         &mut self,
-        receiver: *mut ICutScoreBufferDidChangeReceiver,
+        receiver: *mut crate::GlobalNamespace::ICutScoreBufferDidChangeReceiver,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -99,7 +104,7 @@ impl CutScoreBuffer {
     }
     pub fn RegisterDidFinishReceiver(
         &mut self,
-        receiver: *mut ICutScoreBufferDidFinishReceiver,
+        receiver: *mut crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -110,7 +115,7 @@ impl CutScoreBuffer {
     }
     pub fn UnregisterDidChangeReceiver(
         &mut self,
-        receiver: *mut ICutScoreBufferDidChangeReceiver,
+        receiver: *mut crate::GlobalNamespace::ICutScoreBufferDidChangeReceiver,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -121,7 +126,7 @@ impl CutScoreBuffer {
     }
     pub fn UnregisterDidFinishReceiver(
         &mut self,
-        receiver: *mut ICutScoreBufferDidFinishReceiver,
+        receiver: *mut crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -203,11 +208,14 @@ impl CutScoreBuffer {
         let __cordl_ret: i32 = __cordl_object.invoke("get_maxPossibleCutScore", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_noteCutInfo(&mut self) -> quest_hook::libil2cpp::Result<NoteCutInfo> {
+    pub fn get_noteCutInfo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: NoteCutInfo = __cordl_object.invoke("get_noteCutInfo", ())?;
+        let __cordl_ret: crate::GlobalNamespace::NoteCutInfo = __cordl_object
+            .invoke("get_noteCutInfo", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_noteScoreDefinition(
@@ -224,7 +232,7 @@ impl CutScoreBuffer {
     }
 }
 #[cfg(feature = "CutScoreBuffer")]
-impl quest_hook::libil2cpp::ObjectType for CutScoreBuffer {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CutScoreBuffer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

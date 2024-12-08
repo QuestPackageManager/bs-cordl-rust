@@ -6,23 +6,24 @@ pub struct OVRKtxTexture {
 }
 #[cfg(feature = "OVRKtxTexture")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRKtxTexture => ""."OVRKtxTexture"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRKtxTexture => ""
+    ."OVRKtxTexture"
 );
 #[cfg(feature = "OVRKtxTexture")]
-impl std::ops::Deref for OVRKtxTexture {
+impl std::ops::Deref for crate::GlobalNamespace::OVRKtxTexture {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRKtxTexture")]
-impl std::ops::DerefMut for OVRKtxTexture {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRKtxTexture {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRKtxTexture")]
-impl OVRKtxTexture {
+impl crate::GlobalNamespace::OVRKtxTexture {
     pub const KTX_TTF_ASTC_4x4_RGBA: u32 = 33570826u32;
     pub const KTX_TTF_BC7_RGBA: u32 = 4196870u32;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -44,7 +45,7 @@ impl OVRKtxTexture {
     }
 }
 #[cfg(feature = "OVRKtxTexture")]
-impl quest_hook::libil2cpp::ObjectType for OVRKtxTexture {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRKtxTexture {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

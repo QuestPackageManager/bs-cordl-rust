@@ -7,27 +7,28 @@ pub struct SpectrogramRow {
         *mut crate::UnityEngine::MeshRenderer,
     >,
     pub _dataIndex: i32,
-    pub _spectrogramData: *mut BasicSpectrogramData,
+    pub _spectrogramData: *mut crate::GlobalNamespace::BasicSpectrogramData,
 }
 #[cfg(feature = "SpectrogramRow")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SpectrogramRow => ""."SpectrogramRow"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SpectrogramRow => ""
+    ."SpectrogramRow"
 );
 #[cfg(feature = "SpectrogramRow")]
-impl std::ops::Deref for SpectrogramRow {
+impl std::ops::Deref for crate::GlobalNamespace::SpectrogramRow {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SpectrogramRow")]
-impl std::ops::DerefMut for SpectrogramRow {
+impl std::ops::DerefMut for crate::GlobalNamespace::SpectrogramRow {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SpectrogramRow")]
-impl SpectrogramRow {
+impl crate::GlobalNamespace::SpectrogramRow {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -67,7 +68,7 @@ impl SpectrogramRow {
     }
 }
 #[cfg(feature = "SpectrogramRow")]
-impl quest_hook::libil2cpp::ObjectType for SpectrogramRow {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SpectrogramRow {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

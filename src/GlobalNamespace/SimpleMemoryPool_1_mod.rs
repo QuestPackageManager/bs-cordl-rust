@@ -3,31 +3,33 @@
 #[derive(Debug)]
 pub struct SimpleMemoryPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Object,
-    pub _activeElements: *mut LazyCopyHashSet_1<T>,
+    pub _activeElements: *mut crate::GlobalNamespace::LazyCopyHashSet_1<T>,
     pub _inactiveElements: *mut crate::System::Collections::Generic::List_1<T>,
     pub _createNewItemFunc: *mut crate::System::Func_1<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "SimpleMemoryPool_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SimpleMemoryPool_1 < T > => ""."SimpleMemoryPool`1" < T
-    >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SimpleMemoryPool_1 < T > => ""
+    ."SimpleMemoryPool`1" < T >
 );
 #[cfg(feature = "SimpleMemoryPool_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for SimpleMemoryPool_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
+for crate::GlobalNamespace::SimpleMemoryPool_1<T> {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SimpleMemoryPool_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for SimpleMemoryPool_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
+for crate::GlobalNamespace::SimpleMemoryPool_1<T> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SimpleMemoryPool_1")]
-impl<T: quest_hook::libil2cpp::Type> SimpleMemoryPool_1<T> {
+impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SimpleMemoryPool_1<T> {
     pub fn Despawn(
         &mut self,
         item: T,
@@ -99,7 +101,7 @@ impl<T: quest_hook::libil2cpp::Type> SimpleMemoryPool_1<T> {
 }
 #[cfg(feature = "SimpleMemoryPool_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for SimpleMemoryPool_1<T> {
+for crate::GlobalNamespace::SimpleMemoryPool_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,23 +6,24 @@ pub struct NetworkConstants {
 }
 #[cfg(feature = "NetworkConstants")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NetworkConstants => ""."NetworkConstants"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NetworkConstants => ""
+    ."NetworkConstants"
 );
 #[cfg(feature = "NetworkConstants")]
-impl std::ops::Deref for NetworkConstants {
+impl std::ops::Deref for crate::GlobalNamespace::NetworkConstants {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NetworkConstants")]
-impl std::ops::DerefMut for NetworkConstants {
+impl std::ops::DerefMut for crate::GlobalNamespace::NetworkConstants {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NetworkConstants")]
-impl NetworkConstants {
+impl crate::GlobalNamespace::NetworkConstants {
     pub const backgroundedState: &'static str = "backgrounded";
     pub const dedicatedServerState: &'static str = "dedicated_server";
     pub const finishedLevel: &'static str = "finished_level";
@@ -39,7 +40,7 @@ impl NetworkConstants {
     pub const wasActiveAtLevelStart: &'static str = "was_active_at_level_start";
 }
 #[cfg(feature = "NetworkConstants")]
-impl quest_hook::libil2cpp::ObjectType for NetworkConstants {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NetworkConstants {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,29 +3,29 @@
 #[derive(Debug)]
 pub struct PlayerVRControllersManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _leftHandVRController: *mut VRController,
-    pub _rightHandVRController: *mut VRController,
+    pub _leftHandVRController: *mut crate::GlobalNamespace::VRController,
+    pub _rightHandVRController: *mut crate::GlobalNamespace::VRController,
 }
 #[cfg(feature = "PlayerVRControllersManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerVRControllersManager => ""
-    ."PlayerVRControllersManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerVRControllersManager =>
+    ""."PlayerVRControllersManager"
 );
 #[cfg(feature = "PlayerVRControllersManager")]
-impl std::ops::Deref for PlayerVRControllersManager {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerVRControllersManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerVRControllersManager")]
-impl std::ops::DerefMut for PlayerVRControllersManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerVRControllersManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerVRControllersManager")]
-impl PlayerVRControllersManager {
+impl crate::GlobalNamespace::PlayerVRControllersManager {
     pub fn DisableAllVRControllers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -65,27 +65,28 @@ impl PlayerVRControllersManager {
     }
     pub fn get_leftHandVRController(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut VRController> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::VRController> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut VRController = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::VRController = __cordl_object
             .invoke("get_leftHandVRController", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_rightHandVRController(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut VRController> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::VRController> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut VRController = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::VRController = __cordl_object
             .invoke("get_rightHandVRController", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PlayerVRControllersManager")]
-impl quest_hook::libil2cpp::ObjectType for PlayerVRControllersManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayerVRControllersManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

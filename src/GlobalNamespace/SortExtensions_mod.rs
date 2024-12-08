@@ -6,30 +6,31 @@ pub struct SortExtensions {
 }
 #[cfg(feature = "SortExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SortExtensions => ""."SortExtensions"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SortExtensions => ""
+    ."SortExtensions"
 );
 #[cfg(feature = "SortExtensions")]
-impl std::ops::Deref for SortExtensions {
+impl std::ops::Deref for crate::GlobalNamespace::SortExtensions {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SortExtensions")]
-impl std::ops::DerefMut for SortExtensions {
+impl std::ops::DerefMut for crate::GlobalNamespace::SortExtensions {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SortExtensions")]
-impl SortExtensions {
+impl crate::GlobalNamespace::SortExtensions {
     #[cfg(feature = "SortExtensions+__c__DisplayClass1_0_1")]
     pub type __c__DisplayClass1_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::SortExtensions___c__DisplayClass1_0_1<
         T,
     >;
 }
 #[cfg(feature = "SortExtensions")]
-impl quest_hook::libil2cpp::ObjectType for SortExtensions {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SortExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

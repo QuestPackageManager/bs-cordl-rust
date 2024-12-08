@@ -48,16 +48,16 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_PartData {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PartData")]
 impl crate::HoudiniEngineUnity::HEU_PartData {
+    #[cfg(feature = "HoudiniEngineUnity+HEU_PartData+PartOutputType")]
+    pub type PartOutputType = crate::HoudiniEngineUnity::HEU_PartData_PartOutputType;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_PartData+__c")]
+    pub type __c = crate::HoudiniEngineUnity::HEU_PartData___c;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_PartData+__c__DisplayClass86_0")]
+    pub type __c__DisplayClass86_0 = crate::HoudiniEngineUnity::HEU_PartData___c__DisplayClass86_0;
     #[cfg(feature = "HoudiniEngineUnity+HEU_PartData+__c__DisplayClass88_0")]
     pub type __c__DisplayClass88_0 = crate::HoudiniEngineUnity::HEU_PartData___c__DisplayClass88_0;
     #[cfg(feature = "HoudiniEngineUnity+HEU_PartData+__c__DisplayClass88_1")]
     pub type __c__DisplayClass88_1 = crate::HoudiniEngineUnity::HEU_PartData___c__DisplayClass88_1;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_PartData+__c")]
-    pub type __c = crate::HoudiniEngineUnity::HEU_PartData___c;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_PartData+PartOutputType")]
-    pub type PartOutputType = crate::HoudiniEngineUnity::HEU_PartData_PartOutputType;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_PartData+__c__DisplayClass86_0")]
-    pub type __c__DisplayClass86_0 = crate::HoudiniEngineUnity::HEU_PartData___c__DisplayClass86_0;
     pub fn ApplyHAPITransform(
         &mut self,
         hapiTransform: quest_hook::libil2cpp::ByRefMut<

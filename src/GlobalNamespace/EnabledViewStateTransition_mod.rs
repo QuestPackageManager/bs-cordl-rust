@@ -2,29 +2,33 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnabledViewStateTransition {
-    __cordl_parent: BaseStateTransition_1<*mut crate::UnityEngine::Behaviour>,
-    pub _transition: *mut EnabledTransitionSO,
+    __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
+        *mut crate::UnityEngine::Behaviour,
+    >,
+    pub _transition: *mut crate::GlobalNamespace::EnabledTransitionSO,
 }
 #[cfg(feature = "EnabledViewStateTransition")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnabledViewStateTransition => ""
-    ."EnabledViewStateTransition"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnabledViewStateTransition =>
+    ""."EnabledViewStateTransition"
 );
 #[cfg(feature = "EnabledViewStateTransition")]
-impl std::ops::Deref for EnabledViewStateTransition {
-    type Target = BaseStateTransition_1<*mut crate::UnityEngine::Behaviour>;
+impl std::ops::Deref for crate::GlobalNamespace::EnabledViewStateTransition {
+    type Target = crate::GlobalNamespace::BaseStateTransition_1<
+        *mut crate::UnityEngine::Behaviour,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnabledViewStateTransition")]
-impl std::ops::DerefMut for EnabledViewStateTransition {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnabledViewStateTransition {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnabledViewStateTransition")]
-impl EnabledViewStateTransition {
+impl crate::GlobalNamespace::EnabledViewStateTransition {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -164,17 +168,18 @@ impl EnabledViewStateTransition {
     }
     pub fn get_transition(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BaseTransitionSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BaseTransitionSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BaseTransitionSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BaseTransitionSO = __cordl_object
             .invoke("get_transition", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "EnabledViewStateTransition")]
-impl quest_hook::libil2cpp::ObjectType for EnabledViewStateTransition {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EnabledViewStateTransition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

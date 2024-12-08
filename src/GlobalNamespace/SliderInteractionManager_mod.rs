@@ -3,43 +3,43 @@
 #[derive(Debug)]
 pub struct SliderInteractionManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _colorType: ColorType,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
+    pub _colorType: crate::GlobalNamespace::ColorType,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
     pub _saberInteractionParam_k__BackingField: f32,
     pub sliderWasAddedToActiveSlidersEvent: *mut crate::System::Action_2<
-        *mut SliderInteractionManager,
+        *mut crate::GlobalNamespace::SliderInteractionManager,
         f32,
     >,
     pub allSliderWereRemovedFromActiveSlidersEvent: *mut crate::System::Action_1<
-        *mut SliderInteractionManager,
+        *mut crate::GlobalNamespace::SliderInteractionManager,
     >,
     pub _activeSliders: *mut crate::System::Collections::Generic::List_1<
-        *mut SliderController,
+        *mut crate::GlobalNamespace::SliderController,
     >,
 }
 #[cfg(feature = "SliderInteractionManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SliderInteractionManager => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SliderInteractionManager => ""
     ."SliderInteractionManager"
 );
 #[cfg(feature = "SliderInteractionManager")]
-impl std::ops::Deref for SliderInteractionManager {
+impl std::ops::Deref for crate::GlobalNamespace::SliderInteractionManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderInteractionManager")]
-impl std::ops::DerefMut for SliderInteractionManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::SliderInteractionManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderInteractionManager")]
-impl SliderInteractionManager {
+impl crate::GlobalNamespace::SliderInteractionManager {
     pub fn AddActiveSlider(
         &mut self,
-        newSliderController: *mut SliderController,
+        newSliderController: *mut crate::GlobalNamespace::SliderController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -50,7 +50,7 @@ impl SliderInteractionManager {
     }
     pub fn HandleSliderWasDespawned(
         &mut self,
-        sliderController: *mut SliderController,
+        sliderController: *mut crate::GlobalNamespace::SliderController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -61,7 +61,7 @@ impl SliderInteractionManager {
     }
     pub fn HandleSliderWasSpawned(
         &mut self,
-        sliderController: *mut SliderController,
+        sliderController: *mut crate::GlobalNamespace::SliderController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -89,7 +89,7 @@ impl SliderInteractionManager {
     }
     pub fn RemoveActiveSlider(
         &mut self,
-        sliderController: *mut SliderController,
+        sliderController: *mut crate::GlobalNamespace::SliderController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -130,7 +130,9 @@ impl SliderInteractionManager {
     }
     pub fn add_allSliderWereRemovedFromActiveSlidersEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut SliderInteractionManager>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::SliderInteractionManager,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -141,7 +143,10 @@ impl SliderInteractionManager {
     }
     pub fn add_sliderWasAddedToActiveSlidersEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut SliderInteractionManager, f32>,
+        value: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::SliderInteractionManager,
+            f32,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -150,11 +155,14 @@ impl SliderInteractionManager {
             .invoke("add_sliderWasAddedToActiveSlidersEvent", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn get_colorType(&mut self) -> quest_hook::libil2cpp::Result<ColorType> {
+    pub fn get_colorType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ColorType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: ColorType = __cordl_object.invoke("get_colorType", ())?;
+        let __cordl_ret: crate::GlobalNamespace::ColorType = __cordl_object
+            .invoke("get_colorType", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_saberInteractionParam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -166,7 +174,9 @@ impl SliderInteractionManager {
     }
     pub fn remove_allSliderWereRemovedFromActiveSlidersEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut SliderInteractionManager>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::SliderInteractionManager,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -177,7 +187,10 @@ impl SliderInteractionManager {
     }
     pub fn remove_sliderWasAddedToActiveSlidersEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut SliderInteractionManager, f32>,
+        value: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::SliderInteractionManager,
+            f32,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -199,7 +212,8 @@ impl SliderInteractionManager {
     }
 }
 #[cfg(feature = "SliderInteractionManager")]
-impl quest_hook::libil2cpp::ObjectType for SliderInteractionManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SliderInteractionManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

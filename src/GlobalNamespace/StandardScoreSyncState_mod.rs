@@ -26,10 +26,12 @@ pub struct StandardScoreSyncState {
 }
 #[cfg(feature = "StandardScoreSyncState")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for StandardScoreSyncState => ""."StandardScoreSyncState"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::StandardScoreSyncState => ""
+    ."StandardScoreSyncState"
 );
 #[cfg(feature = "StandardScoreSyncState")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for StandardScoreSyncState {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::StandardScoreSyncState {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -39,14 +41,16 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for StandardScoreSyncState {
     }
 }
 #[cfg(feature = "StandardScoreSyncState")]
-impl StandardScoreSyncState {
+impl crate::GlobalNamespace::StandardScoreSyncState {
     #[cfg(feature = "StandardScoreSyncState+Score")]
     pub type Score = crate::GlobalNamespace::StandardScoreSyncState_Score;
     pub fn ApplyDelta(
         &mut self,
-        delta: quest_hook::libil2cpp::ByRefMut<StandardScoreSyncState>,
-    ) -> quest_hook::libil2cpp::Result<StandardScoreSyncState> {
-        let __cordl_ret: StandardScoreSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        delta: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::StandardScoreSyncState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::StandardScoreSyncState> {
+        let __cordl_ret: crate::GlobalNamespace::StandardScoreSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ApplyDelta",
             (delta),
@@ -66,7 +70,9 @@ impl StandardScoreSyncState {
     }
     pub fn Equals(
         &mut self,
-        other: quest_hook::libil2cpp::ByRefMut<StandardScoreSyncState>,
+        other: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::StandardScoreSyncState,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -77,9 +83,11 @@ impl StandardScoreSyncState {
     }
     pub fn GetDelta(
         &mut self,
-        stateTable: quest_hook::libil2cpp::ByRefMut<StandardScoreSyncState>,
-    ) -> quest_hook::libil2cpp::Result<StandardScoreSyncState> {
-        let __cordl_ret: StandardScoreSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        stateTable: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::StandardScoreSyncState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::StandardScoreSyncState> {
+        let __cordl_ret: crate::GlobalNamespace::StandardScoreSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetDelta",
             (stateTable),
@@ -107,7 +115,9 @@ impl StandardScoreSyncState {
     }
     pub fn IEquatableByReference_StandardScoreSyncState__Equals(
         &mut self,
-        other: quest_hook::libil2cpp::ByRefMut<StandardScoreSyncState>,
+        other: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::StandardScoreSyncState,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -118,9 +128,11 @@ impl StandardScoreSyncState {
     }
     pub fn IStateTable_StandardScoreSyncState_StandardScoreSyncState_Score_System_Int32__ApplyDelta(
         &mut self,
-        delta: quest_hook::libil2cpp::ByRefMut<StandardScoreSyncState>,
-    ) -> quest_hook::libil2cpp::Result<StandardScoreSyncState> {
-        let __cordl_ret: StandardScoreSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        delta: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::StandardScoreSyncState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::StandardScoreSyncState> {
+        let __cordl_ret: crate::GlobalNamespace::StandardScoreSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "IStateTable<StandardScoreSyncState,StandardScoreSyncState.Score,System.Int32>.ApplyDelta",
             (delta),
@@ -129,9 +141,11 @@ impl StandardScoreSyncState {
     }
     pub fn IStateTable_StandardScoreSyncState_StandardScoreSyncState_Score_System_Int32__GetDelta(
         &mut self,
-        stateTable: quest_hook::libil2cpp::ByRefMut<StandardScoreSyncState>,
-    ) -> quest_hook::libil2cpp::Result<StandardScoreSyncState> {
-        let __cordl_ret: StandardScoreSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        stateTable: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::StandardScoreSyncState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::StandardScoreSyncState> {
+        let __cordl_ret: crate::GlobalNamespace::StandardScoreSyncState = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "IStateTable<StandardScoreSyncState,StandardScoreSyncState.Score,System.Int32>.GetDelta",
             (stateTable),

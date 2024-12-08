@@ -19,23 +19,24 @@ pub struct NoteCutParticlesEffect {
 }
 #[cfg(feature = "NoteCutParticlesEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteCutParticlesEffect => ""."NoteCutParticlesEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteCutParticlesEffect => ""
+    ."NoteCutParticlesEffect"
 );
 #[cfg(feature = "NoteCutParticlesEffect")]
-impl std::ops::Deref for NoteCutParticlesEffect {
+impl std::ops::Deref for crate::GlobalNamespace::NoteCutParticlesEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteCutParticlesEffect")]
-impl std::ops::DerefMut for NoteCutParticlesEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteCutParticlesEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteCutParticlesEffect")]
-impl NoteCutParticlesEffect {
+impl crate::GlobalNamespace::NoteCutParticlesEffect {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -97,7 +98,8 @@ impl NoteCutParticlesEffect {
     }
 }
 #[cfg(feature = "NoteCutParticlesEffect")]
-impl quest_hook::libil2cpp::ObjectType for NoteCutParticlesEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NoteCutParticlesEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

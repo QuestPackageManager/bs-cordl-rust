@@ -430,14 +430,14 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::XmlSerializationR
 impl crate::System::Xml::Serialization::XmlSerializationReader {
     #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+CollectionFixup")]
     pub type CollectionFixup = crate::System::Xml::Serialization::XmlSerializationReader_CollectionFixup;
-    #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+WriteCallbackInfo")]
-    pub type WriteCallbackInfo = crate::System::Xml::Serialization::XmlSerializationReader_WriteCallbackInfo;
-    #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+Fixup")]
-    pub type Fixup = crate::System::Xml::Serialization::XmlSerializationReader_Fixup;
     #[cfg(
         feature = "System+Xml+Serialization+XmlSerializationReader+CollectionItemFixup"
     )]
     pub type CollectionItemFixup = crate::System::Xml::Serialization::XmlSerializationReader_CollectionItemFixup;
+    #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+Fixup")]
+    pub type Fixup = crate::System::Xml::Serialization::XmlSerializationReader_Fixup;
+    #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+WriteCallbackInfo")]
+    pub type WriteCallbackInfo = crate::System::Xml::Serialization::XmlSerializationReader_WriteCallbackInfo;
     pub fn AddFixup_XmlSerializationReader_CollectionFixup0(
         &mut self,
         fixup: *mut crate::System::Xml::Serialization::XmlSerializationReader_CollectionFixup,

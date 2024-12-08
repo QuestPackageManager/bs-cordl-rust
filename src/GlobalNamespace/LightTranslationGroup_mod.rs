@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightTranslationGroup {
-    __cordl_parent: LightTransformGroup_3<
-        *mut LightGroupTranslationXTransform,
-        *mut LightGroupTranslationYTransform,
-        *mut LightGroupTranslationZTransform,
+    __cordl_parent: crate::GlobalNamespace::LightTransformGroup_3<
+        *mut crate::GlobalNamespace::LightGroupTranslationXTransform,
+        *mut crate::GlobalNamespace::LightGroupTranslationYTransform,
+        *mut crate::GlobalNamespace::LightGroupTranslationZTransform,
     >,
     pub _xTranslationLimits: crate::UnityEngine::Vector2,
     pub _yTranslationLimits: crate::UnityEngine::Vector2,
@@ -16,27 +16,28 @@ pub struct LightTranslationGroup {
 }
 #[cfg(feature = "LightTranslationGroup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightTranslationGroup => ""."LightTranslationGroup"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightTranslationGroup => ""
+    ."LightTranslationGroup"
 );
 #[cfg(feature = "LightTranslationGroup")]
-impl std::ops::Deref for LightTranslationGroup {
-    type Target = LightTransformGroup_3<
-        *mut LightGroupTranslationXTransform,
-        *mut LightGroupTranslationYTransform,
-        *mut LightGroupTranslationZTransform,
+impl std::ops::Deref for crate::GlobalNamespace::LightTranslationGroup {
+    type Target = crate::GlobalNamespace::LightTransformGroup_3<
+        *mut crate::GlobalNamespace::LightGroupTranslationXTransform,
+        *mut crate::GlobalNamespace::LightGroupTranslationYTransform,
+        *mut crate::GlobalNamespace::LightGroupTranslationZTransform,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightTranslationGroup")]
-impl std::ops::DerefMut for LightTranslationGroup {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightTranslationGroup {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightTranslationGroup")]
-impl LightTranslationGroup {
+impl crate::GlobalNamespace::LightTranslationGroup {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -123,7 +124,8 @@ impl LightTranslationGroup {
     }
 }
 #[cfg(feature = "LightTranslationGroup")]
-impl quest_hook::libil2cpp::ObjectType for LightTranslationGroup {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LightTranslationGroup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

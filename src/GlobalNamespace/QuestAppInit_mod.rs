@@ -3,29 +3,30 @@
 #[derive(Debug)]
 pub struct QuestAppInit {
     __cordl_parent: crate::BeatSaber::Init::BSAppInit,
-    pub _mainSystemInit: *mut MainSystemInit,
-    pub _settingsApplicator: *mut SettingsApplicatorSO,
-    pub _defaultScenesTransitionsFromInit: *mut DefaultScenesTransitionsFromInit,
+    pub _mainSystemInit: *mut crate::GlobalNamespace::MainSystemInit,
+    pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
+    pub _defaultScenesTransitionsFromInit: *mut crate::GlobalNamespace::DefaultScenesTransitionsFromInit,
 }
 #[cfg(feature = "QuestAppInit")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for QuestAppInit => ""."QuestAppInit"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::QuestAppInit => ""
+    ."QuestAppInit"
 );
 #[cfg(feature = "QuestAppInit")]
-impl std::ops::Deref for QuestAppInit {
+impl std::ops::Deref for crate::GlobalNamespace::QuestAppInit {
     type Target = crate::BeatSaber::Init::BSAppInit;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "QuestAppInit")]
-impl std::ops::DerefMut for QuestAppInit {
+impl std::ops::DerefMut for crate::GlobalNamespace::QuestAppInit {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "QuestAppInit")]
-impl QuestAppInit {
+impl crate::GlobalNamespace::QuestAppInit {
     pub fn AppStartAndMultiSceneEditorSetup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -85,7 +86,7 @@ impl QuestAppInit {
     }
 }
 #[cfg(feature = "QuestAppInit")]
-impl quest_hook::libil2cpp::ObjectType for QuestAppInit {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::QuestAppInit {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

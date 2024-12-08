@@ -53,12 +53,12 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     pub const kHttpVerbHEAD: &'static str = "HEAD";
     pub const kHttpVerbPOST: &'static str = "POST";
     pub const kHttpVerbPUT: &'static str = "PUT";
-    #[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestMethod")]
-    pub type UnityWebRequestMethod = crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod;
     #[cfg(feature = "UnityEngine+Networking+UnityWebRequest+Result")]
     pub type Result = crate::UnityEngine::Networking::UnityWebRequest_Result;
     #[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestError")]
     pub type UnityWebRequestError = crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError;
+    #[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestMethod")]
+    pub type UnityWebRequestMethod = crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod;
     pub fn Abort(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

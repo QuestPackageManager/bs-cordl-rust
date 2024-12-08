@@ -1162,13 +1162,37 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves {
 #[cfg(feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves")]
 impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves {
     #[cfg(
-        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP512r1Holder"
+        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP160r1Holder"
     )]
-    pub type BrainpoolP512r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP512r1Holder;
+    pub type BrainpoolP160r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP160r1Holder;
+    #[cfg(
+        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP160t1Holder"
+    )]
+    pub type BrainpoolP160t1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP160t1Holder;
+    #[cfg(
+        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP192r1Holder"
+    )]
+    pub type BrainpoolP192r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP192r1Holder;
     #[cfg(
         feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP192t1Holder"
     )]
     pub type BrainpoolP192t1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP192t1Holder;
+    #[cfg(
+        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP224r1Holder"
+    )]
+    pub type BrainpoolP224r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP224r1Holder;
+    #[cfg(
+        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP224t1Holder"
+    )]
+    pub type BrainpoolP224t1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP224t1Holder;
+    #[cfg(
+        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP256r1Holder"
+    )]
+    pub type BrainpoolP256r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP256r1Holder;
+    #[cfg(
+        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP256t1Holder"
+    )]
+    pub type BrainpoolP256t1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP256t1Holder;
     #[cfg(
         feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP320r1Holder"
     )]
@@ -1182,41 +1206,17 @@ impl crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves {
     )]
     pub type BrainpoolP384r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP384r1Holder;
     #[cfg(
-        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP256r1Holder"
+        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP384t1Holder"
     )]
-    pub type BrainpoolP256r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP256r1Holder;
+    pub type BrainpoolP384t1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP384t1Holder;
     #[cfg(
-        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP160t1Holder"
+        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP512r1Holder"
     )]
-    pub type BrainpoolP160t1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP160t1Holder;
-    #[cfg(
-        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP224t1Holder"
-    )]
-    pub type BrainpoolP224t1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP224t1Holder;
-    #[cfg(
-        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP256t1Holder"
-    )]
-    pub type BrainpoolP256t1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP256t1Holder;
+    pub type BrainpoolP512r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP512r1Holder;
     #[cfg(
         feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP512t1Holder"
     )]
     pub type BrainpoolP512t1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP512t1Holder;
-    #[cfg(
-        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP160r1Holder"
-    )]
-    pub type BrainpoolP160r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP160r1Holder;
-    #[cfg(
-        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP224r1Holder"
-    )]
-    pub type BrainpoolP224r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP224r1Holder;
-    #[cfg(
-        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP192r1Holder"
-    )]
-    pub type BrainpoolP192r1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP192r1Holder;
-    #[cfg(
-        feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP384t1Holder"
-    )]
-    pub type BrainpoolP384t1Holder = crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP384t1Holder;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SongPackMasksModelItem {
     __cordl_parent: crate::System::Object,
-    pub _type: SongPackDataType,
+    pub _type: crate::GlobalNamespace::SongPackDataType,
     pub _serializedName: *mut crate::System::String,
     pub _beatmapLevelPackId: *mut crate::System::String,
     pub _includeTags: crate::GlobalNamespace::PackDefinitionSO_Tags,
@@ -11,33 +11,34 @@ pub struct SongPackMasksModelItem {
 }
 #[cfg(feature = "SongPackMasksModelItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SongPackMasksModelItem => ""."SongPackMasksModelItem"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongPackMasksModelItem => ""
+    ."SongPackMasksModelItem"
 );
 #[cfg(feature = "SongPackMasksModelItem")]
-impl std::ops::Deref for SongPackMasksModelItem {
+impl std::ops::Deref for crate::GlobalNamespace::SongPackMasksModelItem {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongPackMasksModelItem")]
-impl std::ops::DerefMut for SongPackMasksModelItem {
+impl std::ops::DerefMut for crate::GlobalNamespace::SongPackMasksModelItem {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongPackMasksModelItem")]
-impl SongPackMasksModelItem {
+impl crate::GlobalNamespace::SongPackMasksModelItem {
     #[cfg(feature = "SongPackMasksModelItem+__c")]
     pub type __c = crate::GlobalNamespace::SongPackMasksModelItem___c;
     pub fn GetSongPackMask(
         &mut self,
-        beatmapLevelsModel: *mut BeatmapLevelsModel,
-    ) -> quest_hook::libil2cpp::Result<SongPackMask> {
+        beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: SongPackMask = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::SongPackMask = __cordl_object
             .invoke("GetSongPackMask", (beatmapLevelsModel))?;
         Ok(__cordl_ret)
     }
@@ -77,7 +78,8 @@ impl SongPackMasksModelItem {
     }
 }
 #[cfg(feature = "SongPackMasksModelItem")]
-impl quest_hook::libil2cpp::ObjectType for SongPackMasksModelItem {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SongPackMasksModelItem {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

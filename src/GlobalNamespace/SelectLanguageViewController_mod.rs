@@ -4,30 +4,30 @@
 pub struct SelectLanguageViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _continueButton: *mut crate::UnityEngine::UI::Button,
-    pub _languageSettingsController: *mut LanguageSettingsController,
+    pub _languageSettingsController: *mut crate::GlobalNamespace::LanguageSettingsController,
     pub didChangeLanguageEvent: *mut crate::System::Action,
     pub didPressContinueButtonEvent: *mut crate::System::Action,
 }
 #[cfg(feature = "SelectLanguageViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SelectLanguageViewController => ""
-    ."SelectLanguageViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SelectLanguageViewController =>
+    ""."SelectLanguageViewController"
 );
 #[cfg(feature = "SelectLanguageViewController")]
-impl std::ops::Deref for SelectLanguageViewController {
+impl std::ops::Deref for crate::GlobalNamespace::SelectLanguageViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SelectLanguageViewController")]
-impl std::ops::DerefMut for SelectLanguageViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::SelectLanguageViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SelectLanguageViewController")]
-impl SelectLanguageViewController {
+impl crate::GlobalNamespace::SelectLanguageViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -137,7 +137,8 @@ impl SelectLanguageViewController {
     }
 }
 #[cfg(feature = "SelectLanguageViewController")]
-impl quest_hook::libil2cpp::ObjectType for SelectLanguageViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SelectLanguageViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

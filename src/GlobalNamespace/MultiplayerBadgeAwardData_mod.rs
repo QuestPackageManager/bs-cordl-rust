@@ -3,33 +3,33 @@
 #[derive(Debug)]
 pub struct MultiplayerBadgeAwardData {
     __cordl_parent: crate::System::Object,
-    pub _awardedPlayer: *mut IConnectedPlayer,
+    pub _awardedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
     pub _weight: f32,
     pub _title: *mut crate::System::String,
     pub _subtitle: *mut crate::System::String,
     pub _icon: *mut crate::UnityEngine::Sprite,
-    pub _badgeData: *mut MultiplayerBadgeDataSO,
+    pub _badgeData: *mut crate::GlobalNamespace::MultiplayerBadgeDataSO,
 }
 #[cfg(feature = "MultiplayerBadgeAwardData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerBadgeAwardData => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerBadgeAwardData => ""
     ."MultiplayerBadgeAwardData"
 );
 #[cfg(feature = "MultiplayerBadgeAwardData")]
-impl std::ops::Deref for MultiplayerBadgeAwardData {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerBadgeAwardData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerBadgeAwardData")]
-impl std::ops::DerefMut for MultiplayerBadgeAwardData {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerBadgeAwardData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerBadgeAwardData")]
-impl MultiplayerBadgeAwardData {
+impl crate::GlobalNamespace::MultiplayerBadgeAwardData {
     pub fn CompareTo(
         &mut self,
         obj: *mut crate::System::Object,
@@ -41,11 +41,11 @@ impl MultiplayerBadgeAwardData {
         Ok(__cordl_ret)
     }
     pub fn New(
-        awardedPlayer: *mut IConnectedPlayer,
+        awardedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
         weight: f32,
         title: *mut crate::System::String,
         subtitle: *mut crate::System::String,
-        badgeData: *mut MultiplayerBadgeDataSO,
+        badgeData: *mut crate::GlobalNamespace::MultiplayerBadgeDataSO,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -55,11 +55,11 @@ impl MultiplayerBadgeAwardData {
     }
     pub fn _ctor(
         &mut self,
-        awardedPlayer: *mut IConnectedPlayer,
+        awardedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
         weight: f32,
         title: *mut crate::System::String,
         subtitle: *mut crate::System::String,
-        badgeData: *mut MultiplayerBadgeDataSO,
+        badgeData: *mut crate::GlobalNamespace::MultiplayerBadgeDataSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -70,11 +70,11 @@ impl MultiplayerBadgeAwardData {
     }
     pub fn get_awardedPlayer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IConnectedPlayer> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IConnectedPlayer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IConnectedPlayer = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IConnectedPlayer = __cordl_object
             .invoke("get_awardedPlayer", ())?;
         Ok(__cordl_ret)
     }
@@ -120,7 +120,8 @@ impl MultiplayerBadgeAwardData {
     }
 }
 #[cfg(feature = "MultiplayerBadgeAwardData")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerBadgeAwardData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerBadgeAwardData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,24 +6,25 @@ pub struct HEU_ScriptMeshInputUVLayoutExample {
 }
 #[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for HEU_ScriptMeshInputUVLayoutExample => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample => ""
     ."HEU_ScriptMeshInputUVLayoutExample"
 );
 #[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample")]
-impl std::ops::Deref for HEU_ScriptMeshInputUVLayoutExample {
+impl std::ops::Deref for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample")]
-impl std::ops::DerefMut for HEU_ScriptMeshInputUVLayoutExample {
+impl std::ops::DerefMut for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample")]
-impl HEU_ScriptMeshInputUVLayoutExample {
+impl crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample {
     #[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample+OutputMode")]
     pub type OutputMode = crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -45,7 +46,8 @@ impl HEU_ScriptMeshInputUVLayoutExample {
     }
 }
 #[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample")]
-impl quest_hook::libil2cpp::ObjectType for HEU_ScriptMeshInputUVLayoutExample {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

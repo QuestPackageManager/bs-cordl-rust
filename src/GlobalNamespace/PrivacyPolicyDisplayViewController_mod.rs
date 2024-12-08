@@ -4,28 +4,29 @@
 pub struct PrivacyPolicyDisplayViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _textPageScrollView: *mut crate::HMUI::TextPageScrollView,
-    pub _localizedTextAsset: *mut LocalizedTextAsset,
+    pub _localizedTextAsset: *mut crate::GlobalNamespace::LocalizedTextAsset,
 }
 #[cfg(feature = "PrivacyPolicyDisplayViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PrivacyPolicyDisplayViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PrivacyPolicyDisplayViewController => ""
     ."PrivacyPolicyDisplayViewController"
 );
 #[cfg(feature = "PrivacyPolicyDisplayViewController")]
-impl std::ops::Deref for PrivacyPolicyDisplayViewController {
+impl std::ops::Deref for crate::GlobalNamespace::PrivacyPolicyDisplayViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PrivacyPolicyDisplayViewController")]
-impl std::ops::DerefMut for PrivacyPolicyDisplayViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::PrivacyPolicyDisplayViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PrivacyPolicyDisplayViewController")]
-impl PrivacyPolicyDisplayViewController {
+impl crate::GlobalNamespace::PrivacyPolicyDisplayViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -61,7 +62,8 @@ impl PrivacyPolicyDisplayViewController {
     }
 }
 #[cfg(feature = "PrivacyPolicyDisplayViewController")]
-impl quest_hook::libil2cpp::ObjectType for PrivacyPolicyDisplayViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PrivacyPolicyDisplayViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

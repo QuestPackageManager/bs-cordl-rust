@@ -2,27 +2,27 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoolSignal {
-    __cordl_parent: GenericSignal_1<bool>,
+    __cordl_parent: crate::GlobalNamespace::GenericSignal_1<bool>,
 }
 #[cfg(feature = "BoolSignal")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BoolSignal => ""."BoolSignal"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BoolSignal => ""."BoolSignal"
 );
 #[cfg(feature = "BoolSignal")]
-impl std::ops::Deref for BoolSignal {
-    type Target = GenericSignal_1<bool>;
+impl std::ops::Deref for crate::GlobalNamespace::BoolSignal {
+    type Target = crate::GlobalNamespace::GenericSignal_1<bool>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BoolSignal")]
-impl std::ops::DerefMut for BoolSignal {
+impl std::ops::DerefMut for crate::GlobalNamespace::BoolSignal {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BoolSignal")]
-impl BoolSignal {
+impl crate::GlobalNamespace::BoolSignal {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,7 +42,7 @@ impl BoolSignal {
     }
 }
 #[cfg(feature = "BoolSignal")]
-impl quest_hook::libil2cpp::ObjectType for BoolSignal {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BoolSignal {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

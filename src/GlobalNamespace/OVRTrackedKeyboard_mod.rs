@@ -25,13 +25,13 @@ pub struct OVRTrackedKeyboard {
     pub showUntracked: bool,
     pub keyboardQueryFlags: crate::GlobalNamespace::OVRPlugin_TrackedKeyboardQueryFlags,
     pub presentation: crate::GlobalNamespace::OVRTrackedKeyboard_KeyboardPresentation,
-    pub textureFiltering: OVRTextureQualityFiltering,
+    pub textureFiltering: crate::GlobalNamespace::OVRTextureQualityFiltering,
     pub mipmapBias: f32,
     pub PassthroughBorderMultiplier: f32,
     pub keyboardModelShader: *mut crate::UnityEngine::Shader,
     pub keyboardModelAlphaBlendShader: *mut crate::UnityEngine::Shader,
     pub currentKeyboardPresentationStyles: crate::GlobalNamespace::OVRPlugin_TrackedKeyboardPresentationStyles,
-    pub projectedPassthroughOpaque_: *mut OVROverlay,
+    pub projectedPassthroughOpaque_: *mut crate::GlobalNamespace::OVROverlay,
     pub activeKeyboardRenderers_: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::MeshRenderer,
     >,
@@ -48,7 +48,7 @@ pub struct OVRTrackedKeyboard {
     pub PassthroughShader: *mut crate::UnityEngine::Shader,
     pub projectedPassthroughRoot: *mut crate::UnityEngine::Transform,
     pub projectedPassthroughMesh: *mut crate::UnityEngine::MeshFilter,
-    pub ProjectedPassthroughKeyLabel: *mut OVRPassthroughLayer,
+    pub ProjectedPassthroughKeyLabel: *mut crate::GlobalNamespace::OVRPassthroughLayer,
     pub TrackedKeyboardActiveChanged: *mut crate::System::Action_1<
         crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent,
     >,
@@ -57,7 +57,7 @@ pub struct OVRTrackedKeyboard {
     >,
     pub ActiveKeyboardTransform: *mut crate::UnityEngine::Transform,
     pub HandsOverKeyboard: bool,
-    pub cameraRig_: *mut OVRCameraRig,
+    pub cameraRig_: *mut crate::GlobalNamespace::OVRCameraRig,
     pub updateKeyboardRoutine_: *mut crate::UnityEngine::Coroutine,
     pub keyboardBoundingBox_: *mut crate::UnityEngine::BoxCollider,
     pub staleTimeoutCounter_: f32,
@@ -71,45 +71,46 @@ pub struct OVRTrackedKeyboard {
 }
 #[cfg(feature = "OVRTrackedKeyboard")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRTrackedKeyboard => ""."OVRTrackedKeyboard"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRTrackedKeyboard => ""
+    ."OVRTrackedKeyboard"
 );
 #[cfg(feature = "OVRTrackedKeyboard")]
-impl std::ops::Deref for OVRTrackedKeyboard {
+impl std::ops::Deref for crate::GlobalNamespace::OVRTrackedKeyboard {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTrackedKeyboard")]
-impl std::ops::DerefMut for OVRTrackedKeyboard {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRTrackedKeyboard {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTrackedKeyboard")]
-impl OVRTrackedKeyboard {
+impl crate::GlobalNamespace::OVRTrackedKeyboard {
     pub const FILTERED_POSE_TIMEOUT: f32 = 15f32;
     pub const STALE_TIMEOUT: f32 = 10f32;
     #[cfg(feature = "OVRTrackedKeyboard+KeyboardPresentation")]
     pub type KeyboardPresentation = crate::GlobalNamespace::OVRTrackedKeyboard_KeyboardPresentation;
+    #[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardSetActiveEvent")]
+    pub type TrackedKeyboardSetActiveEvent = crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent;
+    #[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardState")]
+    pub type TrackedKeyboardState = crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardState;
     #[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardVisibilityChangedEvent")]
     pub type TrackedKeyboardVisibilityChangedEvent = crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedEvent;
+    #[cfg(feature = "OVRTrackedKeyboard+_InitializeHandPresenceData_d__89")]
+    pub type _InitializeHandPresenceData_d__89 = crate::GlobalNamespace::OVRTrackedKeyboard__InitializeHandPresenceData_d__89;
     #[cfg(feature = "OVRTrackedKeyboard+_StartKeyboardTrackingCoroutine_d__96")]
     pub type _StartKeyboardTrackingCoroutine_d__96 = crate::GlobalNamespace::OVRTrackedKeyboard__StartKeyboardTrackingCoroutine_d__96;
+    #[cfg(feature = "OVRTrackedKeyboard+_Start_d__88")]
+    pub type _Start_d__88 = crate::GlobalNamespace::OVRTrackedKeyboard__Start_d__88;
     #[cfg(feature = "OVRTrackedKeyboard+_UpdateKeyboardPose_d__98")]
     pub type _UpdateKeyboardPose_d__98 = crate::GlobalNamespace::OVRTrackedKeyboard__UpdateKeyboardPose_d__98;
     #[cfg(feature = "OVRTrackedKeyboard+_UpdateTrackingStateCoroutine_d__95")]
     pub type _UpdateTrackingStateCoroutine_d__95 = crate::GlobalNamespace::OVRTrackedKeyboard__UpdateTrackingStateCoroutine_d__95;
-    #[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardSetActiveEvent")]
-    pub type TrackedKeyboardSetActiveEvent = crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent;
     #[cfg(feature = "OVRTrackedKeyboard+__c")]
     pub type __c = crate::GlobalNamespace::OVRTrackedKeyboard___c;
-    #[cfg(feature = "OVRTrackedKeyboard+_Start_d__88")]
-    pub type _Start_d__88 = crate::GlobalNamespace::OVRTrackedKeyboard__Start_d__88;
-    #[cfg(feature = "OVRTrackedKeyboard+_InitializeHandPresenceData_d__89")]
-    pub type _InitializeHandPresenceData_d__89 = crate::GlobalNamespace::OVRTrackedKeyboard__InitializeHandPresenceData_d__89;
-    #[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardState")]
-    pub type TrackedKeyboardState = crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardState;
     pub fn DispatchVisibilityEvent(
         &mut self,
         timeOut: bool,
@@ -398,11 +399,11 @@ impl OVRTrackedKeyboard {
     }
     pub fn get_PassthroughOverlay(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut OVROverlay> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::OVROverlay> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut OVROverlay = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::OVROverlay = __cordl_object
             .invoke("get_PassthroughOverlay", ())?;
         Ok(__cordl_ret)
     }
@@ -509,7 +510,7 @@ impl OVRTrackedKeyboard {
     }
     pub fn set_PassthroughOverlay(
         &mut self,
-        value: *mut OVROverlay,
+        value: *mut crate::GlobalNamespace::OVROverlay,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -586,7 +587,7 @@ impl OVRTrackedKeyboard {
     }
 }
 #[cfg(feature = "OVRTrackedKeyboard")]
-impl quest_hook::libil2cpp::ObjectType for OVRTrackedKeyboard {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTrackedKeyboard {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

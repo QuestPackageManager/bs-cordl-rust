@@ -75,23 +75,23 @@ pub struct OVRMesh {
 }
 #[cfg(feature = "OVRMesh")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRMesh => ""."OVRMesh"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRMesh => ""."OVRMesh"
 );
 #[cfg(feature = "OVRMesh")]
-impl std::ops::Deref for OVRMesh {
+impl std::ops::Deref for crate::GlobalNamespace::OVRMesh {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRMesh")]
-impl std::ops::DerefMut for OVRMesh {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRMesh {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRMesh")]
-impl OVRMesh {
+impl crate::GlobalNamespace::OVRMesh {
     #[cfg(feature = "OVRMesh+IOVRMeshDataProvider")]
     type IOVRMeshDataProvider = crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider;
     #[cfg(feature = "OVRMesh+MeshType")]
@@ -194,7 +194,7 @@ impl OVRMesh {
     }
 }
 #[cfg(feature = "OVRMesh")]
-impl quest_hook::libil2cpp::ObjectType for OVRMesh {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRMesh {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

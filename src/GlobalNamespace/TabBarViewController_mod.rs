@@ -74,23 +74,24 @@ pub struct TabBarViewController {
 }
 #[cfg(feature = "TabBarViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TabBarViewController => ""."TabBarViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TabBarViewController => ""
+    ."TabBarViewController"
 );
 #[cfg(feature = "TabBarViewController")]
-impl std::ops::Deref for TabBarViewController {
+impl std::ops::Deref for crate::GlobalNamespace::TabBarViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TabBarViewController")]
-impl std::ops::DerefMut for TabBarViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::TabBarViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TabBarViewController")]
-impl TabBarViewController {
+impl crate::GlobalNamespace::TabBarViewController {
     #[cfg(feature = "TabBarViewController+TabBarItem")]
     pub type TabBarItem = crate::GlobalNamespace::TabBarViewController_TabBarItem;
     pub fn Clear(
@@ -209,7 +210,7 @@ impl TabBarViewController {
     }
 }
 #[cfg(feature = "TabBarViewController")]
-impl quest_hook::libil2cpp::ObjectType for TabBarViewController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TabBarViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

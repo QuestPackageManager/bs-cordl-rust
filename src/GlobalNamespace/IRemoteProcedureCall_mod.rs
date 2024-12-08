@@ -6,23 +6,24 @@ pub struct IRemoteProcedureCall {
 }
 #[cfg(feature = "IRemoteProcedureCall")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IRemoteProcedureCall => ""."IRemoteProcedureCall"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IRemoteProcedureCall => ""
+    ."IRemoteProcedureCall"
 );
 #[cfg(feature = "IRemoteProcedureCall")]
-impl std::ops::Deref for IRemoteProcedureCall {
+impl std::ops::Deref for crate::GlobalNamespace::IRemoteProcedureCall {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IRemoteProcedureCall")]
-impl std::ops::DerefMut for IRemoteProcedureCall {
+impl std::ops::DerefMut for crate::GlobalNamespace::IRemoteProcedureCall {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IRemoteProcedureCall")]
-impl IRemoteProcedureCall {
+impl crate::GlobalNamespace::IRemoteProcedureCall {
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
@@ -37,7 +38,7 @@ impl IRemoteProcedureCall {
     }
 }
 #[cfg(feature = "IRemoteProcedureCall")]
-impl quest_hook::libil2cpp::ObjectType for IRemoteProcedureCall {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IRemoteProcedureCall {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

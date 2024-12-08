@@ -81,10 +81,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::MeshGenerationContex
 }
 #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
 impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
-    #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams")]
-    pub type RectangleParams = crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams;
     #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams")]
     pub type BorderParams = crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams;
+    #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams")]
+    pub type RectangleParams = crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams;
 }
 #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
 impl quest_hook::libil2cpp::ObjectType

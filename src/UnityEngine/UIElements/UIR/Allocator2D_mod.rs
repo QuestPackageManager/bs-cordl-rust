@@ -76,12 +76,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::Allocator2D {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D")]
 impl crate::UnityEngine::UIElements::UIR::Allocator2D {
-    #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Row")]
-    pub type Row = crate::UnityEngine::UIElements::UIR::Allocator2D_Row;
-    #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Area")]
-    pub type Area = crate::UnityEngine::UIElements::UIR::Allocator2D_Area;
     #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
     pub type Alloc2D = crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D;
+    #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Area")]
+    pub type Area = crate::UnityEngine::UIElements::UIR::Allocator2D_Area;
+    #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Row")]
+    pub type Row = crate::UnityEngine::UIElements::UIR::Allocator2D_Row;
     pub fn Free(
         &mut self,
         alloc2D: crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D,

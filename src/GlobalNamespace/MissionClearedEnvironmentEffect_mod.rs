@@ -3,29 +3,29 @@
 #[derive(Debug)]
 pub struct MissionClearedEnvironmentEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionObjectiveCheckersManager: *mut MissionObjectiveCheckersManager,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
+    pub _missionObjectiveCheckersManager: *mut crate::GlobalNamespace::MissionObjectiveCheckersManager,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
 }
 #[cfg(feature = "MissionClearedEnvironmentEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionClearedEnvironmentEffect => ""
-    ."MissionClearedEnvironmentEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissionClearedEnvironmentEffect
+    => ""."MissionClearedEnvironmentEffect"
 );
 #[cfg(feature = "MissionClearedEnvironmentEffect")]
-impl std::ops::Deref for MissionClearedEnvironmentEffect {
+impl std::ops::Deref for crate::GlobalNamespace::MissionClearedEnvironmentEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionClearedEnvironmentEffect")]
-impl std::ops::DerefMut for MissionClearedEnvironmentEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionClearedEnvironmentEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionClearedEnvironmentEffect")]
-impl MissionClearedEnvironmentEffect {
+impl crate::GlobalNamespace::MissionClearedEnvironmentEffect {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -75,7 +75,8 @@ impl MissionClearedEnvironmentEffect {
     }
 }
 #[cfg(feature = "MissionClearedEnvironmentEffect")]
-impl quest_hook::libil2cpp::ObjectType for MissionClearedEnvironmentEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MissionClearedEnvironmentEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

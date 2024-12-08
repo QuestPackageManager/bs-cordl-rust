@@ -93,13 +93,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchscreenState {
     pub const MaxTouches: i32 = 10i32;
     pub const kTouchDataOffset: i32 = 56i32;
     #[cfg(
-        feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_touchData_e__FixedBuffer"
-    )]
-    pub type _touchData_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__touchData_e__FixedBuffer;
-    #[cfg(
         feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_primaryTouchData_e__FixedBuffer"
     )]
     pub type _primaryTouchData_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__primaryTouchData_e__FixedBuffer;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+LowLevel+TouchscreenState+_touchData_e__FixedBuffer"
+    )]
+    pub type _touchData_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__touchData_e__FixedBuffer;
     pub fn get_format(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -13,9 +13,11 @@ pub struct TubeLightIntensityBehaviour {
     pub _initialized: bool,
     pub _originalLightIntensity: f32,
     pub _originalLaserIntensity: f32,
-    pub _tubeLights: *mut quest_hook::libil2cpp::Il2CppArray<*mut TubeBloomPrePassLight>,
+    pub _tubeLights: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::TubeBloomPrePassLight,
+    >,
     pub _directionalLights: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut DirectionalLight,
+        *mut crate::GlobalNamespace::DirectionalLight,
     >,
     pub _started: bool,
     pub _finished: bool,
@@ -24,24 +26,24 @@ pub struct TubeLightIntensityBehaviour {
 }
 #[cfg(feature = "TubeLightIntensityBehaviour")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TubeLightIntensityBehaviour => ""
-    ."TubeLightIntensityBehaviour"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TubeLightIntensityBehaviour =>
+    ""."TubeLightIntensityBehaviour"
 );
 #[cfg(feature = "TubeLightIntensityBehaviour")]
-impl std::ops::Deref for TubeLightIntensityBehaviour {
+impl std::ops::Deref for crate::GlobalNamespace::TubeLightIntensityBehaviour {
     type Target = crate::UnityEngine::Playables::PlayableBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TubeLightIntensityBehaviour")]
-impl std::ops::DerefMut for TubeLightIntensityBehaviour {
+impl std::ops::DerefMut for crate::GlobalNamespace::TubeLightIntensityBehaviour {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TubeLightIntensityBehaviour")]
-impl TubeLightIntensityBehaviour {
+impl crate::GlobalNamespace::TubeLightIntensityBehaviour {
     pub fn EnableObjects(
         &mut self,
         on: bool,
@@ -96,7 +98,8 @@ impl TubeLightIntensityBehaviour {
     }
 }
 #[cfg(feature = "TubeLightIntensityBehaviour")]
-impl quest_hook::libil2cpp::ObjectType for TubeLightIntensityBehaviour {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::TubeLightIntensityBehaviour {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

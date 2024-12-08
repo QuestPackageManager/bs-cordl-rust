@@ -26,14 +26,14 @@ impl std::ops::DerefMut for crate::Oculus::Platform::CAPI {
 impl crate::Oculus::Platform::CAPI {
     pub const DLL_NAME: &'static str = "ovrplatformloader";
     pub const VoipFilterBufferSize: i32 = 480i32;
-    #[cfg(feature = "Oculus+Platform+CAPI+ovrNetSyncVec3")]
-    pub type ovrNetSyncVec3 = crate::Oculus::Platform::CAPI_ovrNetSyncVec3;
-    #[cfg(feature = "Oculus+Platform+CAPI+OculusInitParams")]
-    pub type OculusInitParams = crate::Oculus::Platform::CAPI_OculusInitParams;
     #[cfg(feature = "Oculus+Platform+CAPI+FilterCallback")]
     pub type FilterCallback = crate::Oculus::Platform::CAPI_FilterCallback;
+    #[cfg(feature = "Oculus+Platform+CAPI+OculusInitParams")]
+    pub type OculusInitParams = crate::Oculus::Platform::CAPI_OculusInitParams;
     #[cfg(feature = "Oculus+Platform+CAPI+ovrKeyValuePair")]
     pub type ovrKeyValuePair = crate::Oculus::Platform::CAPI_ovrKeyValuePair;
+    #[cfg(feature = "Oculus+Platform+CAPI+ovrNetSyncVec3")]
+    pub type ovrNetSyncVec3 = crate::Oculus::Platform::CAPI_ovrNetSyncVec3;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

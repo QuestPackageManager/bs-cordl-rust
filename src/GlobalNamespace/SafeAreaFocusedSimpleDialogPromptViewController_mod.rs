@@ -2,28 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SafeAreaFocusedSimpleDialogPromptViewController {
-    __cordl_parent: SimpleDialogPromptViewController,
+    __cordl_parent: crate::GlobalNamespace::SimpleDialogPromptViewController,
 }
 #[cfg(feature = "SafeAreaFocusedSimpleDialogPromptViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SafeAreaFocusedSimpleDialogPromptViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SafeAreaFocusedSimpleDialogPromptViewController => ""
     ."SafeAreaFocusedSimpleDialogPromptViewController"
 );
 #[cfg(feature = "SafeAreaFocusedSimpleDialogPromptViewController")]
-impl std::ops::Deref for SafeAreaFocusedSimpleDialogPromptViewController {
-    type Target = SimpleDialogPromptViewController;
+impl std::ops::Deref
+for crate::GlobalNamespace::SafeAreaFocusedSimpleDialogPromptViewController {
+    type Target = crate::GlobalNamespace::SimpleDialogPromptViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SafeAreaFocusedSimpleDialogPromptViewController")]
-impl std::ops::DerefMut for SafeAreaFocusedSimpleDialogPromptViewController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::SafeAreaFocusedSimpleDialogPromptViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SafeAreaFocusedSimpleDialogPromptViewController")]
-impl SafeAreaFocusedSimpleDialogPromptViewController {
+impl crate::GlobalNamespace::SafeAreaFocusedSimpleDialogPromptViewController {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -44,7 +47,7 @@ impl SafeAreaFocusedSimpleDialogPromptViewController {
 }
 #[cfg(feature = "SafeAreaFocusedSimpleDialogPromptViewController")]
 impl quest_hook::libil2cpp::ObjectType
-for SafeAreaFocusedSimpleDialogPromptViewController {
+for crate::GlobalNamespace::SafeAreaFocusedSimpleDialogPromptViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

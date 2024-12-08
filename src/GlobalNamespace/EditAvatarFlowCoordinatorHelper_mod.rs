@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct EditAvatarFlowCoordinatorHelper {
     __cordl_parent: crate::System::Object,
-    pub _avatarSystemSelectionFlowCoordinator: *mut AvatarSystemSelectionFlowCoordinator,
-    pub _playerDataModel: *mut PlayerDataModel,
+    pub _avatarSystemSelectionFlowCoordinator: *mut crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
     pub _avatarSystemCollection: *mut crate::BeatSaber::AvatarCore::AvatarSystemCollection,
     pub _container: *mut crate::Zenject::DiContainer,
     pub didFinishEvent: *mut crate::System::Action_2<
@@ -16,24 +16,24 @@ pub struct EditAvatarFlowCoordinatorHelper {
 }
 #[cfg(feature = "EditAvatarFlowCoordinatorHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EditAvatarFlowCoordinatorHelper => ""
-    ."EditAvatarFlowCoordinatorHelper"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EditAvatarFlowCoordinatorHelper
+    => ""."EditAvatarFlowCoordinatorHelper"
 );
 #[cfg(feature = "EditAvatarFlowCoordinatorHelper")]
-impl std::ops::Deref for EditAvatarFlowCoordinatorHelper {
+impl std::ops::Deref for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EditAvatarFlowCoordinatorHelper")]
-impl std::ops::DerefMut for EditAvatarFlowCoordinatorHelper {
+impl std::ops::DerefMut for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EditAvatarFlowCoordinatorHelper")]
-impl EditAvatarFlowCoordinatorHelper {
+impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
     #[cfg(feature = "EditAvatarFlowCoordinatorHelper+FinishAction")]
     pub type FinishAction = crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction;
     #[cfg(feature = "EditAvatarFlowCoordinatorHelper+_Initialize_d__13")]
@@ -58,7 +58,7 @@ impl EditAvatarFlowCoordinatorHelper {
     }
     pub fn HandleAvatarSystemSelectionFlowCoordinatorDidFinish(
         &mut self,
-        flowCoordinator: *mut AvatarSystemSelectionFlowCoordinator,
+        flowCoordinator: *mut crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
         finishAction: crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -184,7 +184,8 @@ impl EditAvatarFlowCoordinatorHelper {
     }
 }
 #[cfg(feature = "EditAvatarFlowCoordinatorHelper")]
-impl quest_hook::libil2cpp::ObjectType for EditAvatarFlowCoordinatorHelper {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

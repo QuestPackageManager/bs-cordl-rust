@@ -6,25 +6,27 @@ pub struct NetDataWriterExtensions {
 }
 #[cfg(feature = "NetDataWriterExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NetDataWriterExtensions => ""."NetDataWriterExtensions"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NetDataWriterExtensions => ""
+    ."NetDataWriterExtensions"
 );
 #[cfg(feature = "NetDataWriterExtensions")]
-impl std::ops::Deref for NetDataWriterExtensions {
+impl std::ops::Deref for crate::GlobalNamespace::NetDataWriterExtensions {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NetDataWriterExtensions")]
-impl std::ops::DerefMut for NetDataWriterExtensions {
+impl std::ops::DerefMut for crate::GlobalNamespace::NetDataWriterExtensions {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NetDataWriterExtensions")]
-impl NetDataWriterExtensions {}
+impl crate::GlobalNamespace::NetDataWriterExtensions {}
 #[cfg(feature = "NetDataWriterExtensions")]
-impl quest_hook::libil2cpp::ObjectType for NetDataWriterExtensions {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NetDataWriterExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

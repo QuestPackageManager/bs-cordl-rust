@@ -6,24 +6,26 @@ pub struct BeatmapDataItemExecutionOrderConstants {
 }
 #[cfg(feature = "BeatmapDataItemExecutionOrderConstants")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapDataItemExecutionOrderConstants => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BeatmapDataItemExecutionOrderConstants => ""
     ."BeatmapDataItemExecutionOrderConstants"
 );
 #[cfg(feature = "BeatmapDataItemExecutionOrderConstants")]
-impl std::ops::Deref for BeatmapDataItemExecutionOrderConstants {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapDataItemExecutionOrderConstants {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDataItemExecutionOrderConstants")]
-impl std::ops::DerefMut for BeatmapDataItemExecutionOrderConstants {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::BeatmapDataItemExecutionOrderConstants {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDataItemExecutionOrderConstants")]
-impl BeatmapDataItemExecutionOrderConstants {
+impl crate::GlobalNamespace::BeatmapDataItemExecutionOrderConstants {
     pub const kBPMChangeBeatmapEventExecutionOrder: i32 = -1001i32;
     pub const kCommonBeatmapEventExecutionOrder: i32 = -100i32;
     pub const kCommonBeatmapObjectDataExecutionOrder: i32 = 100i32;
@@ -48,7 +50,8 @@ impl BeatmapDataItemExecutionOrderConstants {
     }
 }
 #[cfg(feature = "BeatmapDataItemExecutionOrderConstants")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapDataItemExecutionOrderConstants {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapDataItemExecutionOrderConstants {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

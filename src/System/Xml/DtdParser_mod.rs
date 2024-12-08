@@ -60,12 +60,12 @@ impl std::ops::DerefMut for crate::System::Xml::DtdParser {
 }
 #[cfg(feature = "System+Xml+DtdParser")]
 impl crate::System::Xml::DtdParser {
-    #[cfg(feature = "System+Xml+DtdParser+ScanningFunction")]
-    pub type ScanningFunction = crate::System::Xml::DtdParser_ScanningFunction;
-    #[cfg(feature = "System+Xml+DtdParser+ParseElementOnlyContent_LocalFrame")]
-    pub type ParseElementOnlyContent_LocalFrame = crate::System::Xml::DtdParser_ParseElementOnlyContent_LocalFrame;
     #[cfg(feature = "System+Xml+DtdParser+LiteralType")]
     pub type LiteralType = crate::System::Xml::DtdParser_LiteralType;
+    #[cfg(feature = "System+Xml+DtdParser+ParseElementOnlyContent_LocalFrame")]
+    pub type ParseElementOnlyContent_LocalFrame = crate::System::Xml::DtdParser_ParseElementOnlyContent_LocalFrame;
+    #[cfg(feature = "System+Xml+DtdParser+ScanningFunction")]
+    pub type ScanningFunction = crate::System::Xml::DtdParser_ScanningFunction;
     #[cfg(feature = "System+Xml+DtdParser+Token")]
     pub type Token = crate::System::Xml::DtdParser_Token;
     #[cfg(feature = "System+Xml+DtdParser+UndeclaredNotation")]

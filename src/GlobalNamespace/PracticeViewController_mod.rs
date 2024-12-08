@@ -5,48 +5,49 @@ pub struct PracticeViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _songStartSlider: *mut crate::HMUI::TimeSlider,
     pub _speedSlider: *mut crate::HMUI::PercentSlider,
-    pub _levelBar: *mut LevelBar,
+    pub _levelBar: *mut crate::GlobalNamespace::LevelBar,
     pub _playButton: *mut crate::UnityEngine::UI::Button,
     pub _loader: *mut crate::UnityEngine::GameObject,
     pub _value: *mut crate::TMPro::TextMeshProUGUI,
     pub _enabledColor: crate::UnityEngine::Color,
     pub _disabledColor: crate::UnityEngine::Color,
-    pub _playerDataModel: *mut PlayerDataModel,
-    pub _songPreviewPlayer: *mut SongPreviewPlayer,
-    pub _perceivedLoudnessPerLevelModel: *mut PerceivedLoudnessPerLevelModel,
-    pub _beatmapLevelsModel: *mut BeatmapLevelsModel,
-    pub _beatmapLevelsEntitlementModel: *mut BeatmapLevelsEntitlementModel,
-    pub _audioClipAsyncLoader: *mut AudioClipAsyncLoader,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _songPreviewPlayer: *mut crate::GlobalNamespace::SongPreviewPlayer,
+    pub _perceivedLoudnessPerLevelModel: *mut crate::GlobalNamespace::PerceivedLoudnessPerLevelModel,
+    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
+    pub _beatmapLevelsEntitlementModel: *mut crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
+    pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
     pub didPressPlayButtonEvent: *mut crate::System::Action,
-    pub _practiceSettings: *mut PracticeSettings,
+    pub _practiceSettings: *mut crate::GlobalNamespace::PracticeSettings,
     pub _currentPlayingStartTime: f32,
     pub _maxStartSongTime: f32,
     pub _songLength: f32,
     pub _getAudioClipTask: *mut crate::System::Threading::Tasks::Task,
     pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _beatmapKey: BeatmapKey,
-    pub _beatmapLevel: *mut BeatmapLevel,
+    pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
+    pub _beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     pub _audioClip: *mut crate::UnityEngine::AudioClip,
 }
 #[cfg(feature = "PracticeViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PracticeViewController => ""."PracticeViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PracticeViewController => ""
+    ."PracticeViewController"
 );
 #[cfg(feature = "PracticeViewController")]
-impl std::ops::Deref for PracticeViewController {
+impl std::ops::Deref for crate::GlobalNamespace::PracticeViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PracticeViewController")]
-impl std::ops::DerefMut for PracticeViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::PracticeViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PracticeViewController")]
-impl PracticeViewController {
+impl crate::GlobalNamespace::PracticeViewController {
     pub const kMinValueChangeToInstantPlayPreview: f32 = 3f32;
     pub const kWaitBeforePlayPreviewAfterPreviewStartValueChanged: f32 = 1f32;
     #[cfg(feature = "PracticeViewController+_LoadSong_d__33")]
@@ -120,8 +121,8 @@ impl PracticeViewController {
     }
     pub fn Init(
         &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-        beatmapLevel: *mut BeatmapLevel,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -203,11 +204,11 @@ impl PracticeViewController {
     }
     pub fn get_practiceSettings(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut PracticeSettings> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::PracticeSettings> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PracticeSettings = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PracticeSettings = __cordl_object
             .invoke("get_practiceSettings", ())?;
         Ok(__cordl_ret)
     }
@@ -224,7 +225,8 @@ impl PracticeViewController {
     }
 }
 #[cfg(feature = "PracticeViewController")]
-impl quest_hook::libil2cpp::ObjectType for PracticeViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PracticeViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

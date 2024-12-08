@@ -2,29 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundNonLightDynamicRenderer {
-    __cordl_parent: BloomPrePassBackgroundNonLightRendererCore,
+    __cordl_parent: crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore,
     pub _renderer: *mut crate::UnityEngine::Renderer,
 }
 #[cfg(feature = "BloomPrePassBackgroundNonLightDynamicRenderer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomPrePassBackgroundNonLightDynamicRenderer => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BloomPrePassBackgroundNonLightDynamicRenderer => ""
     ."BloomPrePassBackgroundNonLightDynamicRenderer"
 );
 #[cfg(feature = "BloomPrePassBackgroundNonLightDynamicRenderer")]
-impl std::ops::Deref for BloomPrePassBackgroundNonLightDynamicRenderer {
-    type Target = BloomPrePassBackgroundNonLightRendererCore;
+impl std::ops::Deref
+for crate::GlobalNamespace::BloomPrePassBackgroundNonLightDynamicRenderer {
+    type Target = crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundNonLightDynamicRenderer")]
-impl std::ops::DerefMut for BloomPrePassBackgroundNonLightDynamicRenderer {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::BloomPrePassBackgroundNonLightDynamicRenderer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundNonLightDynamicRenderer")]
-impl BloomPrePassBackgroundNonLightDynamicRenderer {
+impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightDynamicRenderer {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -76,7 +79,7 @@ impl BloomPrePassBackgroundNonLightDynamicRenderer {
 }
 #[cfg(feature = "BloomPrePassBackgroundNonLightDynamicRenderer")]
 impl quest_hook::libil2cpp::ObjectType
-for BloomPrePassBackgroundNonLightDynamicRenderer {
+for crate::GlobalNamespace::BloomPrePassBackgroundNonLightDynamicRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

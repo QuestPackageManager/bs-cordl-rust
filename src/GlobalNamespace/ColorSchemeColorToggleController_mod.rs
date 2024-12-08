@@ -10,24 +10,25 @@ pub struct ColorSchemeColorToggleController {
 }
 #[cfg(feature = "ColorSchemeColorToggleController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ColorSchemeColorToggleController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ColorSchemeColorToggleController => ""
     ."ColorSchemeColorToggleController"
 );
 #[cfg(feature = "ColorSchemeColorToggleController")]
-impl std::ops::Deref for ColorSchemeColorToggleController {
+impl std::ops::Deref for crate::GlobalNamespace::ColorSchemeColorToggleController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorSchemeColorToggleController")]
-impl std::ops::DerefMut for ColorSchemeColorToggleController {
+impl std::ops::DerefMut for crate::GlobalNamespace::ColorSchemeColorToggleController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorSchemeColorToggleController")]
-impl ColorSchemeColorToggleController {
+impl crate::GlobalNamespace::ColorSchemeColorToggleController {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -78,7 +79,8 @@ impl ColorSchemeColorToggleController {
     }
 }
 #[cfg(feature = "ColorSchemeColorToggleController")]
-impl quest_hook::libil2cpp::ObjectType for ColorSchemeColorToggleController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ColorSchemeColorToggleController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,23 +6,24 @@ pub struct ImageWithHintItemsList {
 }
 #[cfg(feature = "ImageWithHintItemsList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ImageWithHintItemsList => ""."ImageWithHintItemsList"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ImageWithHintItemsList => ""
+    ."ImageWithHintItemsList"
 );
 #[cfg(feature = "ImageWithHintItemsList")]
-impl std::ops::Deref for ImageWithHintItemsList {
+impl std::ops::Deref for crate::GlobalNamespace::ImageWithHintItemsList {
     type Target = crate::HMUI::UIItemsList_1<*mut crate::HMUI::ImageWithHint>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ImageWithHintItemsList")]
-impl std::ops::DerefMut for ImageWithHintItemsList {
+impl std::ops::DerefMut for crate::GlobalNamespace::ImageWithHintItemsList {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ImageWithHintItemsList")]
-impl ImageWithHintItemsList {
+impl crate::GlobalNamespace::ImageWithHintItemsList {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,7 +43,8 @@ impl ImageWithHintItemsList {
     }
 }
 #[cfg(feature = "ImageWithHintItemsList")]
-impl quest_hook::libil2cpp::ObjectType for ImageWithHintItemsList {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ImageWithHintItemsList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

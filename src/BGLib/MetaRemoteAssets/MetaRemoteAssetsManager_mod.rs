@@ -88,7 +88,7 @@ pub struct MetaRemoteAssetsManager {
     pub _initializationTask: *mut crate::System::Threading::Tasks::Task_1<bool>,
     pub _updateCatalogTask: *mut crate::System::Threading::Tasks::Task,
     pub _appId: *mut crate::System::String,
-    pub _platformUserModel: *mut IPlatformUserModel,
+    pub _platformUserModel: *mut crate::GlobalNamespace::IPlatformUserModel,
     pub _remoteCatalogLoader: *mut crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader,
     pub didCatalogLoadOrUpdateEvent: *mut crate::System::Action,
 }
@@ -115,34 +115,34 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
     pub const MetaServerHost: &'static str = "https://oculus.com";
     pub const kMetaServerCatalogPath: &'static str = "beat-saber/remote-assets/download/catalog.json";
     pub const kPlatformInjectId: &'static str = "MetaRemoteAssetsManager_platform_injectId";
-    #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+_Initialize_d__18")]
-    pub type _Initialize_d__18 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager__Initialize_d__18;
     #[cfg(
-        feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+_UpdateCatalogsInternalAsync_d__24"
+        feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
     )]
-    pub type _UpdateCatalogsInternalAsync_d__24 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager__UpdateCatalogsInternalAsync_d__24;
-    #[cfg(
-        feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+_InitializeInternalAsync_d__20"
-    )]
-    pub type _InitializeInternalAsync_d__20 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager__InitializeInternalAsync_d__20;
+    pub type AddResourceLocatorInput = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput;
     #[cfg(
         feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+_FetchTokenAsync_d__22"
     )]
     pub type _FetchTokenAsync_d__22 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager__FetchTokenAsync_d__22;
     #[cfg(
-        feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
+        feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+_InitializeInternalAsync_d__20"
     )]
-    pub type AddResourceLocatorInput = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput;
+    pub type _InitializeInternalAsync_d__20 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager__InitializeInternalAsync_d__20;
+    #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+_Initialize_d__18")]
+    pub type _Initialize_d__18 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager__Initialize_d__18;
+    #[cfg(
+        feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+_UpdateCatalogsAsync_d__23"
+    )]
+    pub type _UpdateCatalogsAsync_d__23 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager__UpdateCatalogsAsync_d__23;
+    #[cfg(
+        feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+_UpdateCatalogsInternalAsync_d__24"
+    )]
+    pub type _UpdateCatalogsInternalAsync_d__24 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager__UpdateCatalogsInternalAsync_d__24;
     #[cfg(
         feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+_WaitInitAsync_d__19"
     )]
     pub type _WaitInitAsync_d__19 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager__WaitInitAsync_d__19;
     #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+__c")]
     pub type __c = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager___c;
-    #[cfg(
-        feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+_UpdateCatalogsAsync_d__23"
-    )]
-    pub type _UpdateCatalogsAsync_d__23 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager__UpdateCatalogsAsync_d__23;
     pub fn ApplyAddressablesOverrides(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -209,8 +209,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         Ok(__cordl_ret)
     }
     pub fn New(
-        networkConfig: *mut INetworkConfig,
-        platformUserModel: *mut IPlatformUserModel,
+        networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
+        platformUserModel: *mut crate::GlobalNamespace::IPlatformUserModel,
         remoteCatalogLoader: *mut crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader,
         platform: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -270,8 +270,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
     }
     pub fn _ctor(
         &mut self,
-        networkConfig: *mut INetworkConfig,
-        platformUserModel: *mut IPlatformUserModel,
+        networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
+        platformUserModel: *mut crate::GlobalNamespace::IPlatformUserModel,
         remoteCatalogLoader: *mut crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader,
         platform: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

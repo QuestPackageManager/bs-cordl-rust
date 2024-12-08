@@ -11,29 +11,30 @@ pub struct GhostDuplicationEffect {
 }
 #[cfg(feature = "GhostDuplicationEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GhostDuplicationEffect => ""."GhostDuplicationEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GhostDuplicationEffect => ""
+    ."GhostDuplicationEffect"
 );
 #[cfg(feature = "GhostDuplicationEffect")]
-impl std::ops::Deref for GhostDuplicationEffect {
+impl std::ops::Deref for crate::GlobalNamespace::GhostDuplicationEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GhostDuplicationEffect")]
-impl std::ops::DerefMut for GhostDuplicationEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::GhostDuplicationEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GhostDuplicationEffect")]
-impl GhostDuplicationEffect {
+impl crate::GlobalNamespace::GhostDuplicationEffect {
     #[cfg(feature = "GhostDuplicationEffect+GhostEffectParams")]
     pub type GhostEffectParams = crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams;
-    #[cfg(feature = "GhostDuplicationEffect+__c__DisplayClass7_0")]
-    pub type __c__DisplayClass7_0 = crate::GlobalNamespace::GhostDuplicationEffect___c__DisplayClass7_0;
     #[cfg(feature = "GhostDuplicationEffect+_HideRedundantWithDelay_d__8")]
     pub type _HideRedundantWithDelay_d__8 = crate::GlobalNamespace::GhostDuplicationEffect__HideRedundantWithDelay_d__8;
+    #[cfg(feature = "GhostDuplicationEffect+__c__DisplayClass7_0")]
+    pub type __c__DisplayClass7_0 = crate::GlobalNamespace::GhostDuplicationEffect___c__DisplayClass7_0;
     pub fn Animate(
         &mut self,
         ghostEffectParams: crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams,
@@ -164,7 +165,8 @@ impl GhostDuplicationEffect {
     }
 }
 #[cfg(feature = "GhostDuplicationEffect")]
-impl quest_hook::libil2cpp::ObjectType for GhostDuplicationEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GhostDuplicationEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -184,7 +186,7 @@ pub struct GhostDuplicationEffect_GhostEffectParams {
     pub endSize: f32,
     pub duration: f32,
     pub delay: f32,
-    pub easeType: EaseType,
+    pub easeType: crate::GlobalNamespace::EaseType,
     pub distanceCurve: *mut crate::UnityEngine::AnimationCurve,
     pub peakDistance: f32,
     pub lastPhase: bool,

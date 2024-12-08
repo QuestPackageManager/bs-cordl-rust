@@ -2,21 +2,22 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct ColorSchemeNetSerializable {
-    pub saberAColor: ColorNoAlphaSerializable,
-    pub saberBColor: ColorNoAlphaSerializable,
-    pub obstaclesColor: ColorNoAlphaSerializable,
-    pub environmentColor0: ColorNoAlphaSerializable,
-    pub environmentColor1: ColorNoAlphaSerializable,
-    pub environmentColor0Boost: ColorNoAlphaSerializable,
-    pub environmentColor1Boost: ColorNoAlphaSerializable,
+    pub saberAColor: crate::GlobalNamespace::ColorNoAlphaSerializable,
+    pub saberBColor: crate::GlobalNamespace::ColorNoAlphaSerializable,
+    pub obstaclesColor: crate::GlobalNamespace::ColorNoAlphaSerializable,
+    pub environmentColor0: crate::GlobalNamespace::ColorNoAlphaSerializable,
+    pub environmentColor1: crate::GlobalNamespace::ColorNoAlphaSerializable,
+    pub environmentColor0Boost: crate::GlobalNamespace::ColorNoAlphaSerializable,
+    pub environmentColor1Boost: crate::GlobalNamespace::ColorNoAlphaSerializable,
 }
 #[cfg(feature = "ColorSchemeNetSerializable")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for ColorSchemeNetSerializable => ""
-    ."ColorSchemeNetSerializable"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ColorSchemeNetSerializable =>
+    ""."ColorSchemeNetSerializable"
 );
 #[cfg(feature = "ColorSchemeNetSerializable")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for ColorSchemeNetSerializable {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::ColorSchemeNetSerializable {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -26,7 +27,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for ColorSchemeNetSerializable {
     }
 }
 #[cfg(feature = "ColorSchemeNetSerializable")]
-impl ColorSchemeNetSerializable {
+impl crate::GlobalNamespace::ColorSchemeNetSerializable {
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,

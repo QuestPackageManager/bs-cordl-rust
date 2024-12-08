@@ -28,10 +28,10 @@ for crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
 impl crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
     pub fn GetGameLiftPlayerSessionInfo(
         &mut self,
-        authenticationTokenProvider: *mut IAuthenticationTokenProvider,
+        authenticationTokenProvider: *mut crate::GlobalNamespace::IAuthenticationTokenProvider,
         userId: *mut crate::System::String,
-        beatmapLevelSelectionMask: BeatmapLevelSelectionMask,
-        gameplayServerConfiguration: GameplayServerConfiguration,
+        beatmapLevelSelectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+        gameplayServerConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
         secret: *mut crate::System::String,
         code: *mut crate::System::String,
         cancellationToken: crate::System::Threading::CancellationToken,

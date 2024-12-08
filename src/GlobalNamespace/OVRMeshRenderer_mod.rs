@@ -161,8 +161,8 @@ impl crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
 pub struct OVRMeshRenderer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _dataProvider: *mut crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider,
-    pub _ovrMesh: *mut OVRMesh,
-    pub _ovrSkeleton: *mut OVRSkeleton,
+    pub _ovrMesh: *mut crate::GlobalNamespace::OVRMesh,
+    pub _ovrSkeleton: *mut crate::GlobalNamespace::OVRSkeleton,
     pub _confidenceBehavior: crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior,
     pub _systemGestureBehavior: crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior,
     pub _systemGestureMaterial: *mut crate::UnityEngine::Material,
@@ -175,31 +175,32 @@ pub struct OVRMeshRenderer {
 }
 #[cfg(feature = "OVRMeshRenderer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRMeshRenderer => ""."OVRMeshRenderer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRMeshRenderer => ""
+    ."OVRMeshRenderer"
 );
 #[cfg(feature = "OVRMeshRenderer")]
-impl std::ops::Deref for OVRMeshRenderer {
+impl std::ops::Deref for crate::GlobalNamespace::OVRMeshRenderer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRMeshRenderer")]
-impl std::ops::DerefMut for OVRMeshRenderer {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRMeshRenderer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRMeshRenderer")]
-impl OVRMeshRenderer {
+impl crate::GlobalNamespace::OVRMeshRenderer {
     #[cfg(feature = "OVRMeshRenderer+ConfidenceBehavior")]
     pub type ConfidenceBehavior = crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior;
-    #[cfg(feature = "OVRMeshRenderer+SystemGestureBehavior")]
-    pub type SystemGestureBehavior = crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior;
-    #[cfg(feature = "OVRMeshRenderer+MeshRendererData")]
-    pub type MeshRendererData = crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData;
     #[cfg(feature = "OVRMeshRenderer+IOVRMeshRendererDataProvider")]
     type IOVRMeshRendererDataProvider = crate::GlobalNamespace::OVRMeshRenderer_IOVRMeshRendererDataProvider;
+    #[cfg(feature = "OVRMeshRenderer+MeshRendererData")]
+    pub type MeshRendererData = crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData;
+    #[cfg(feature = "OVRMeshRenderer+SystemGestureBehavior")]
+    pub type SystemGestureBehavior = crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -341,7 +342,7 @@ impl OVRMeshRenderer {
     }
 }
 #[cfg(feature = "OVRMeshRenderer")]
-impl quest_hook::libil2cpp::ObjectType for OVRMeshRenderer {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRMeshRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

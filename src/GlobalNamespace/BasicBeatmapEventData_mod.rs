@@ -2,51 +2,55 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicBeatmapEventData {
-    __cordl_parent: BeatmapEventData,
+    __cordl_parent: crate::GlobalNamespace::BeatmapEventData,
     pub _sameTypeIndex_k__BackingField: i32,
-    pub basicBeatmapEventType: BasicBeatmapEventType,
+    pub basicBeatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
     pub value: i32,
     pub floatValue: f32,
 }
 #[cfg(feature = "BasicBeatmapEventData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BasicBeatmapEventData => ""."BasicBeatmapEventData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BasicBeatmapEventData => ""
+    ."BasicBeatmapEventData"
 );
 #[cfg(feature = "BasicBeatmapEventData")]
-impl std::ops::Deref for BasicBeatmapEventData {
-    type Target = BeatmapEventData;
+impl std::ops::Deref for crate::GlobalNamespace::BasicBeatmapEventData {
+    type Target = crate::GlobalNamespace::BeatmapEventData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BasicBeatmapEventData")]
-impl std::ops::DerefMut for BasicBeatmapEventData {
+impl std::ops::DerefMut for crate::GlobalNamespace::BasicBeatmapEventData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BasicBeatmapEventData")]
-impl BasicBeatmapEventData {
-    pub fn GetCopy(&mut self) -> quest_hook::libil2cpp::Result<*mut BeatmapDataItem> {
+impl crate::GlobalNamespace::BasicBeatmapEventData {
+    pub fn GetCopy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapDataItem> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapDataItem = __cordl_object.invoke("GetCopy", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapDataItem = __cordl_object
+            .invoke("GetCopy", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetDefault(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapEventData> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapEventData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapEventData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapEventData = __cordl_object
             .invoke("GetDefault", ())?;
         Ok(__cordl_ret)
     }
     pub fn New(
         _cordl_time: f32,
-        basicBeatmapEventType: BasicBeatmapEventType,
+        basicBeatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
         value: i32,
         floatValue: f32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -61,7 +65,7 @@ impl BasicBeatmapEventData {
     }
     pub fn RecalculateSameTypeIndexFromPreviousEvent(
         &mut self,
-        basicBeatmapEventData: *mut BasicBeatmapEventData,
+        basicBeatmapEventData: *mut crate::GlobalNamespace::BasicBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -86,7 +90,7 @@ impl BasicBeatmapEventData {
     pub fn _ctor(
         &mut self,
         _cordl_time: f32,
-        basicBeatmapEventType: BasicBeatmapEventType,
+        basicBeatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
         value: i32,
         floatValue: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -99,21 +103,25 @@ impl BasicBeatmapEventData {
     }
     pub fn get_nextSameTypeEventData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BasicBeatmapEventData> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BasicBeatmapEventData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BasicBeatmapEventData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BasicBeatmapEventData = __cordl_object
             .invoke("get_nextSameTypeEventData", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_previousSameTypeEventData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BasicBeatmapEventData> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BasicBeatmapEventData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BasicBeatmapEventData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BasicBeatmapEventData = __cordl_object
             .invoke("get_previousSameTypeEventData", ())?;
         Ok(__cordl_ret)
     }
@@ -137,7 +145,8 @@ impl BasicBeatmapEventData {
     }
 }
 #[cfg(feature = "BasicBeatmapEventData")]
-impl quest_hook::libil2cpp::ObjectType for BasicBeatmapEventData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BasicBeatmapEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

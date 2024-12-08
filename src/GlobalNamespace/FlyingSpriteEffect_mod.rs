@@ -2,30 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FlyingSpriteEffect {
-    __cordl_parent: FlyingObjectEffect,
+    __cordl_parent: crate::GlobalNamespace::FlyingObjectEffect,
     pub _spriteRenderer: *mut crate::UnityEngine::SpriteRenderer,
     pub _fadeAnimationCurve: *mut crate::UnityEngine::AnimationCurve,
     pub _color: crate::UnityEngine::Color,
 }
 #[cfg(feature = "FlyingSpriteEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FlyingSpriteEffect => ""."FlyingSpriteEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FlyingSpriteEffect => ""
+    ."FlyingSpriteEffect"
 );
 #[cfg(feature = "FlyingSpriteEffect")]
-impl std::ops::Deref for FlyingSpriteEffect {
-    type Target = FlyingObjectEffect;
+impl std::ops::Deref for crate::GlobalNamespace::FlyingSpriteEffect {
+    type Target = crate::GlobalNamespace::FlyingObjectEffect;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FlyingSpriteEffect")]
-impl std::ops::DerefMut for FlyingSpriteEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::FlyingSpriteEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FlyingSpriteEffect")]
-impl FlyingSpriteEffect {
+impl crate::GlobalNamespace::FlyingSpriteEffect {
     #[cfg(feature = "FlyingSpriteEffect+Pool")]
     pub type Pool = crate::GlobalNamespace::FlyingSpriteEffect_Pool;
     pub fn InitAndPresent(
@@ -78,7 +79,7 @@ impl FlyingSpriteEffect {
     }
 }
 #[cfg(feature = "FlyingSpriteEffect")]
-impl quest_hook::libil2cpp::ObjectType for FlyingSpriteEffect {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlyingSpriteEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -90,7 +91,9 @@ impl quest_hook::libil2cpp::ObjectType for FlyingSpriteEffect {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FlyingSpriteEffect_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<*mut FlyingSpriteEffect>,
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::FlyingSpriteEffect,
+    >,
 }
 #[cfg(feature = "FlyingSpriteEffect+Pool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -99,7 +102,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FlyingSpriteEffect+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::FlyingSpriteEffect_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<*mut FlyingSpriteEffect>;
+    type Target = crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::FlyingSpriteEffect,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

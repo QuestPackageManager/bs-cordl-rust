@@ -6,31 +6,32 @@ pub struct ServerPasswordEntryViewController {
     pub _passwordInput: *mut crate::HMUI::InputFieldView,
     pub _uiKeyboard: *mut crate::HMUI::UIKeyboard,
     pub didFinishEvent: *mut crate::System::Action_2<
-        *mut INetworkPlayer,
+        *mut crate::GlobalNamespace::INetworkPlayer,
         *mut crate::System::String,
     >,
-    pub _selectedNetworkPlayer: *mut INetworkPlayer,
+    pub _selectedNetworkPlayer: *mut crate::GlobalNamespace::INetworkPlayer,
 }
 #[cfg(feature = "ServerPasswordEntryViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ServerPasswordEntryViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ServerPasswordEntryViewController => ""
     ."ServerPasswordEntryViewController"
 );
 #[cfg(feature = "ServerPasswordEntryViewController")]
-impl std::ops::Deref for ServerPasswordEntryViewController {
+impl std::ops::Deref for crate::GlobalNamespace::ServerPasswordEntryViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ServerPasswordEntryViewController")]
-impl std::ops::DerefMut for ServerPasswordEntryViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::ServerPasswordEntryViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ServerPasswordEntryViewController")]
-impl ServerPasswordEntryViewController {
+impl crate::GlobalNamespace::ServerPasswordEntryViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -88,7 +89,7 @@ impl ServerPasswordEntryViewController {
     }
     pub fn Setup(
         &mut self,
-        selectedPlayer: *mut INetworkPlayer,
+        selectedPlayer: *mut crate::GlobalNamespace::INetworkPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -110,7 +111,7 @@ impl ServerPasswordEntryViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut INetworkPlayer,
+            *mut crate::GlobalNamespace::INetworkPlayer,
             *mut crate::System::String,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -124,7 +125,7 @@ impl ServerPasswordEntryViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut INetworkPlayer,
+            *mut crate::GlobalNamespace::INetworkPlayer,
             *mut crate::System::String,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -137,7 +138,8 @@ impl ServerPasswordEntryViewController {
     }
 }
 #[cfg(feature = "ServerPasswordEntryViewController")]
-impl quest_hook::libil2cpp::ObjectType for ServerPasswordEntryViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ServerPasswordEntryViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

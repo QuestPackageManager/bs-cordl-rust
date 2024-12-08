@@ -9,10 +9,10 @@ pub struct BezierCurve {
 }
 #[cfg(feature = "BezierCurve")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for BezierCurve => ""."BezierCurve"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BezierCurve => ""."BezierCurve"
 );
 #[cfg(feature = "BezierCurve")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for BezierCurve {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::BezierCurve {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -22,7 +22,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for BezierCurve {
     }
 }
 #[cfg(feature = "BezierCurve")]
-impl BezierCurve {
+impl crate::GlobalNamespace::BezierCurve {
     pub fn _ctor(
         &mut self,
         p0: crate::UnityEngine::Vector3,

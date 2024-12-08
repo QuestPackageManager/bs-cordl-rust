@@ -8,29 +8,31 @@ pub struct TubeBloomPrePassLightReflectionEffect {
         *mut crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint,
     >,
     pub _environmentLayerMask: crate::UnityEngine::LayerMask,
-    pub _environmentCollisionRepository: *mut EnvironmentCollisionRepository,
+    pub _environmentCollisionRepository: *mut crate::GlobalNamespace::EnvironmentCollisionRepository,
     pub _transform: *mut crate::UnityEngine::Transform,
 }
 #[cfg(feature = "TubeBloomPrePassLightReflectionEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TubeBloomPrePassLightReflectionEffect => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::TubeBloomPrePassLightReflectionEffect => ""
     ."TubeBloomPrePassLightReflectionEffect"
 );
 #[cfg(feature = "TubeBloomPrePassLightReflectionEffect")]
-impl std::ops::Deref for TubeBloomPrePassLightReflectionEffect {
+impl std::ops::Deref for crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TubeBloomPrePassLightReflectionEffect")]
-impl std::ops::DerefMut for TubeBloomPrePassLightReflectionEffect {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TubeBloomPrePassLightReflectionEffect")]
-impl TubeBloomPrePassLightReflectionEffect {
+impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect {
     #[cfg(
         feature = "TubeBloomPrePassLightReflectionEffect+TubeBloomPrePassLightWithHitPoint"
     )]
@@ -102,7 +104,8 @@ impl TubeBloomPrePassLightReflectionEffect {
     }
 }
 #[cfg(feature = "TubeBloomPrePassLightReflectionEffect")]
-impl quest_hook::libil2cpp::ObjectType for TubeBloomPrePassLightReflectionEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -117,11 +120,11 @@ impl quest_hook::libil2cpp::ObjectType for TubeBloomPrePassLightReflectionEffect
 #[derive(Debug)]
 pub struct TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint {
     __cordl_parent: crate::System::Object,
-    pub light: *mut TubeBloomPrePassLight,
+    pub light: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
     pub showHitPoint: bool,
     pub hitPointGameObject: *mut crate::UnityEngine::GameObject,
     pub hitPointTransform: *mut crate::UnityEngine::Transform,
-    pub hitPointLightWithId: *mut InstancedMaterialLightWithId,
+    pub hitPointLightWithId: *mut crate::GlobalNamespace::InstancedMaterialLightWithId,
     pub hitPointDistanceToAlphaCurve: *mut crate::UnityEngine::AnimationCurve,
     pub _hitPointState: bool,
 }

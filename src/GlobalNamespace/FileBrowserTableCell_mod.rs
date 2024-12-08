@@ -9,23 +9,24 @@ pub struct FileBrowserTableCell {
 }
 #[cfg(feature = "FileBrowserTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FileBrowserTableCell => ""."FileBrowserTableCell"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FileBrowserTableCell => ""
+    ."FileBrowserTableCell"
 );
 #[cfg(feature = "FileBrowserTableCell")]
-impl std::ops::Deref for FileBrowserTableCell {
+impl std::ops::Deref for crate::GlobalNamespace::FileBrowserTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FileBrowserTableCell")]
-impl std::ops::DerefMut for FileBrowserTableCell {
+impl std::ops::DerefMut for crate::GlobalNamespace::FileBrowserTableCell {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FileBrowserTableCell")]
-impl FileBrowserTableCell {
+impl crate::GlobalNamespace::FileBrowserTableCell {
     pub fn HighlightDidChange(
         &mut self,
         transitionType: crate::HMUI::SelectableCell_TransitionType,
@@ -88,7 +89,7 @@ impl FileBrowserTableCell {
     }
 }
 #[cfg(feature = "FileBrowserTableCell")]
-impl quest_hook::libil2cpp::ObjectType for FileBrowserTableCell {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FileBrowserTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,7 +6,7 @@ pub struct LightWithIds_LightWithId {
     pub _lightId: i32,
     pub _color: crate::UnityEngine::Color,
     pub _isRegistered: bool,
-    pub _parentLightWithIds: *mut LightWithIds,
+    pub _parentLightWithIds: *mut crate::GlobalNamespace::LightWithIds,
 }
 #[cfg(feature = "LightWithIds+LightWithId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -75,7 +75,7 @@ impl crate::GlobalNamespace::LightWithIds_LightWithId {
     }
     pub fn __SetParentLightWithIds(
         &mut self,
-        parentLightWithIds: *mut LightWithIds,
+        parentLightWithIds: *mut crate::GlobalNamespace::LightWithIds,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -145,7 +145,7 @@ for crate::GlobalNamespace::LightWithIds_LightWithId {
 #[derive(Debug)]
 pub struct LightWithIds {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightManager: *mut LightWithIdManager,
+    pub _lightManager: *mut crate::GlobalNamespace::LightWithIdManager,
     pub _lightWithIds: *mut crate::System::Collections::Generic::IEnumerable_1<
         *mut crate::GlobalNamespace::LightWithIds_LightWithId,
     >,
@@ -154,23 +154,24 @@ pub struct LightWithIds {
 }
 #[cfg(feature = "LightWithIds")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightWithIds => ""."LightWithIds"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightWithIds => ""
+    ."LightWithIds"
 );
 #[cfg(feature = "LightWithIds")]
-impl std::ops::Deref for LightWithIds {
+impl std::ops::Deref for crate::GlobalNamespace::LightWithIds {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightWithIds")]
-impl std::ops::DerefMut for LightWithIds {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightWithIds {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightWithIds")]
-impl LightWithIds {
+impl crate::GlobalNamespace::LightWithIds {
     #[cfg(feature = "LightWithIds+LightWithId")]
     pub type LightWithId = crate::GlobalNamespace::LightWithIds_LightWithId;
     pub fn Awake(
@@ -325,7 +326,7 @@ impl LightWithIds {
     }
 }
 #[cfg(feature = "LightWithIds")]
-impl quest_hook::libil2cpp::ObjectType for LightWithIds {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightWithIds {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

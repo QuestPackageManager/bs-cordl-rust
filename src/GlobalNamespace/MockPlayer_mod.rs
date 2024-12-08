@@ -5,12 +5,12 @@ pub struct MockPlayer {
     __cordl_parent: crate::System::Object,
     pub _isMe_k__BackingField: bool,
     pub _isConnected_k__BackingField: bool,
-    pub _multiplayerAvatarsData_k__BackingField: MultiplayerAvatarsData,
+    pub _multiplayerAvatarsData_k__BackingField: crate::GlobalNamespace::MultiplayerAvatarsData,
     pub _isConnectionOwner_k__BackingField: bool,
     pub _isKicked_k__BackingField: bool,
     pub _currentPartySize_k__BackingField: i32,
-    pub _selectionMask_k__BackingField: BeatmapLevelSelectionMask,
-    pub _configuration_k__BackingField: GameplayServerConfiguration,
+    pub _selectionMask_k__BackingField: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+    pub _configuration_k__BackingField: crate::GlobalNamespace::GameplayServerConfiguration,
     pub _isMyPartyOwner_k__BackingField: bool,
     pub _requiresPassword_k__BackingField: bool,
     pub _isWaitingOnJoin_k__BackingField: bool,
@@ -24,29 +24,29 @@ pub struct MockPlayer {
     pub _playerState: *mut crate::System::Collections::Generic::HashSet_1<
         *mut crate::System::String,
     >,
-    pub _settings: *mut MockPlayerSettings,
-    pub _fsm: *mut MockPlayerFiniteStateMachine,
-    pub _gameplayRpcManager: *mut IGameplayRpcManager,
+    pub _settings: *mut crate::GlobalNamespace::MockPlayerSettings,
+    pub _fsm: *mut crate::GlobalNamespace::MockPlayerFiniteStateMachine,
+    pub _gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
 }
 #[cfg(feature = "MockPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MockPlayer => ""."MockPlayer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MockPlayer => ""."MockPlayer"
 );
 #[cfg(feature = "MockPlayer")]
-impl std::ops::Deref for MockPlayer {
+impl std::ops::Deref for crate::GlobalNamespace::MockPlayer {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockPlayer")]
-impl std::ops::DerefMut for MockPlayer {
+impl std::ops::DerefMut for crate::GlobalNamespace::MockPlayer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockPlayer")]
-impl MockPlayer {
+impl crate::GlobalNamespace::MockPlayer {
     pub fn Block(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -59,12 +59,12 @@ impl MockPlayer {
     }
     pub fn Connect(
         &mut self,
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
-        beatmapLevelsModel: *mut BeatmapLevelsModel,
-        beatmapDataLoader: *mut BeatmapDataLoader,
-        environmentsListModel: *mut EnvironmentsListModel,
-        beatmapCharacteristicCollection: *mut BeatmapCharacteristicCollection,
-        nodePoseSyncStateManager: *mut NodePoseSyncStateManager,
+        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+        beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
+        beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
+        environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
+        beatmapCharacteristicCollection: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
+        nodePoseSyncStateManager: *mut crate::GlobalNamespace::NodePoseSyncStateManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -155,7 +155,7 @@ impl MockPlayer {
         Ok(__cordl_ret)
     }
     pub fn New(
-        settings: *mut MockPlayerSettings,
+        settings: *mut crate::GlobalNamespace::MockPlayerSettings,
         isLocalPlayer: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -166,7 +166,7 @@ impl MockPlayer {
     }
     pub fn RecommendBeatmapLevel(
         &mut self,
-        beatmapDifficulty: BeatmapDifficulty,
+        beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
         beatmapLevelId: *mut crate::System::String,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -261,7 +261,7 @@ impl MockPlayer {
     }
     pub fn _ctor(
         &mut self,
-        settings: *mut MockPlayerSettings,
+        settings: *mut crate::GlobalNamespace::MockPlayerSettings,
         isLocalPlayer: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -322,21 +322,23 @@ impl MockPlayer {
     }
     pub fn get_configuration(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<GameplayServerConfiguration> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::GameplayServerConfiguration,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: GameplayServerConfiguration = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::GameplayServerConfiguration = __cordl_object
             .invoke("get_configuration", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_connectedPlayer(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IConnectedPlayer> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IConnectedPlayer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IConnectedPlayer = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IConnectedPlayer = __cordl_object
             .invoke("get_connectedPlayer", ())?;
         Ok(__cordl_ret)
     }
@@ -356,11 +358,11 @@ impl MockPlayer {
     }
     pub fn get_disconnectedReason(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<DisconnectedReason> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::DisconnectedReason> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: DisconnectedReason = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::DisconnectedReason = __cordl_object
             .invoke("get_disconnectedReason", ())?;
         Ok(__cordl_ret)
     }
@@ -471,11 +473,11 @@ impl MockPlayer {
     }
     pub fn get_multiplayerAvatarsData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<MultiplayerAvatarsData> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::MultiplayerAvatarsData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: MultiplayerAvatarsData = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::MultiplayerAvatarsData = __cordl_object
             .invoke("get_multiplayerAvatarsData", ())?;
         Ok(__cordl_ret)
     }
@@ -495,11 +497,13 @@ impl MockPlayer {
     }
     pub fn get_selectionMask(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BeatmapLevelSelectionMask> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::BeatmapLevelSelectionMask,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapLevelSelectionMask = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::BeatmapLevelSelectionMask = __cordl_object
             .invoke("get_selectionMask", ())?;
         Ok(__cordl_ret)
     }
@@ -601,7 +605,7 @@ impl MockPlayer {
     }
     pub fn set_configuration(
         &mut self,
-        value: GameplayServerConfiguration,
+        value: crate::GlobalNamespace::GameplayServerConfiguration,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -755,7 +759,7 @@ impl MockPlayer {
     }
     pub fn set_multiplayerAvatarsData(
         &mut self,
-        value: MultiplayerAvatarsData,
+        value: crate::GlobalNamespace::MultiplayerAvatarsData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -777,7 +781,7 @@ impl MockPlayer {
     }
     pub fn set_selectionMask(
         &mut self,
-        value: BeatmapLevelSelectionMask,
+        value: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -810,7 +814,7 @@ impl MockPlayer {
     }
 }
 #[cfg(feature = "MockPlayer")]
-impl quest_hook::libil2cpp::ObjectType for MockPlayer {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockPlayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

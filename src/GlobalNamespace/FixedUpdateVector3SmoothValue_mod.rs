@@ -2,28 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FixedUpdateVector3SmoothValue {
-    __cordl_parent: FixedUpdateSmoothValue_1<crate::UnityEngine::Vector3>,
+    __cordl_parent: crate::GlobalNamespace::FixedUpdateSmoothValue_1<
+        crate::UnityEngine::Vector3,
+    >,
 }
 #[cfg(feature = "FixedUpdateVector3SmoothValue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FixedUpdateVector3SmoothValue => ""
-    ."FixedUpdateVector3SmoothValue"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FixedUpdateVector3SmoothValue
+    => ""."FixedUpdateVector3SmoothValue"
 );
 #[cfg(feature = "FixedUpdateVector3SmoothValue")]
-impl std::ops::Deref for FixedUpdateVector3SmoothValue {
-    type Target = FixedUpdateSmoothValue_1<crate::UnityEngine::Vector3>;
+impl std::ops::Deref for crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
+    type Target = crate::GlobalNamespace::FixedUpdateSmoothValue_1<
+        crate::UnityEngine::Vector3,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FixedUpdateVector3SmoothValue")]
-impl std::ops::DerefMut for FixedUpdateVector3SmoothValue {
+impl std::ops::DerefMut for crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FixedUpdateVector3SmoothValue")]
-impl FixedUpdateVector3SmoothValue {
+impl crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
     pub fn Interpolate(
         &mut self,
         value0: crate::UnityEngine::Vector3,
@@ -57,7 +61,8 @@ impl FixedUpdateVector3SmoothValue {
     }
 }
 #[cfg(feature = "FixedUpdateVector3SmoothValue")]
-impl quest_hook::libil2cpp::ObjectType for FixedUpdateVector3SmoothValue {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

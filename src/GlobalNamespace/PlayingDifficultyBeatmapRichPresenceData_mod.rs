@@ -5,32 +5,35 @@ pub struct PlayingDifficultyBeatmapRichPresenceData {
     __cordl_parent: crate::System::Object,
     pub _apiName_k__BackingField: *mut crate::System::String,
     pub _localizedDescription: *mut crate::System::String,
-    pub _beatmapKey: BeatmapKey,
-    pub _beatmapLevel: *mut BeatmapLevel,
+    pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
+    pub _beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
 }
 #[cfg(feature = "PlayingDifficultyBeatmapRichPresenceData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayingDifficultyBeatmapRichPresenceData => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PlayingDifficultyBeatmapRichPresenceData => ""
     ."PlayingDifficultyBeatmapRichPresenceData"
 );
 #[cfg(feature = "PlayingDifficultyBeatmapRichPresenceData")]
-impl std::ops::Deref for PlayingDifficultyBeatmapRichPresenceData {
+impl std::ops::Deref
+for crate::GlobalNamespace::PlayingDifficultyBeatmapRichPresenceData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayingDifficultyBeatmapRichPresenceData")]
-impl std::ops::DerefMut for PlayingDifficultyBeatmapRichPresenceData {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::PlayingDifficultyBeatmapRichPresenceData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayingDifficultyBeatmapRichPresenceData")]
-impl PlayingDifficultyBeatmapRichPresenceData {
+impl crate::GlobalNamespace::PlayingDifficultyBeatmapRichPresenceData {
     pub fn New(
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-        beatmapLevel: *mut BeatmapLevel,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -40,8 +43,8 @@ impl PlayingDifficultyBeatmapRichPresenceData {
     }
     pub fn _ctor(
         &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-        beatmapLevel: *mut BeatmapLevel,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -72,7 +75,8 @@ impl PlayingDifficultyBeatmapRichPresenceData {
     }
 }
 #[cfg(feature = "PlayingDifficultyBeatmapRichPresenceData")]
-impl quest_hook::libil2cpp::ObjectType for PlayingDifficultyBeatmapRichPresenceData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayingDifficultyBeatmapRichPresenceData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

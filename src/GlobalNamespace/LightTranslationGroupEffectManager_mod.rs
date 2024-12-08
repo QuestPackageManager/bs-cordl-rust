@@ -4,33 +4,34 @@
 pub struct LightTranslationGroupEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lightTranslationGroups: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut LightTranslationGroup,
+        *mut crate::GlobalNamespace::LightTranslationGroup,
     >,
     pub _container: *mut crate::Zenject::DiContainer,
     pub _lightTranslationGroupEffects: *mut crate::System::Collections::Generic::List_1<
-        *mut LightTranslationGroupEffect,
+        *mut crate::GlobalNamespace::LightTranslationGroupEffect,
     >,
 }
 #[cfg(feature = "LightTranslationGroupEffectManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightTranslationGroupEffectManager => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::LightTranslationGroupEffectManager => ""
     ."LightTranslationGroupEffectManager"
 );
 #[cfg(feature = "LightTranslationGroupEffectManager")]
-impl std::ops::Deref for LightTranslationGroupEffectManager {
+impl std::ops::Deref for crate::GlobalNamespace::LightTranslationGroupEffectManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightTranslationGroupEffectManager")]
-impl std::ops::DerefMut for LightTranslationGroupEffectManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightTranslationGroupEffectManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightTranslationGroupEffectManager")]
-impl LightTranslationGroupEffectManager {
+impl crate::GlobalNamespace::LightTranslationGroupEffectManager {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -70,7 +71,8 @@ impl LightTranslationGroupEffectManager {
     }
 }
 #[cfg(feature = "LightTranslationGroupEffectManager")]
-impl quest_hook::libil2cpp::ObjectType for LightTranslationGroupEffectManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LightTranslationGroupEffectManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

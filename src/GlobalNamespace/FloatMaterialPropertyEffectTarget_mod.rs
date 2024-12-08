@@ -2,32 +2,33 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatMaterialPropertyEffectTarget {
-    __cordl_parent: FloatFxGroupEffectTarget,
-    pub _materialPropertyBlockController: *mut MaterialPropertyBlockController,
+    __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
+    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     pub _propertyName: *mut crate::System::String,
     pub _valueBounds: crate::UnityEngine::Vector2,
     pub _propertyId: i32,
 }
 #[cfg(feature = "FloatMaterialPropertyEffectTarget")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FloatMaterialPropertyEffectTarget => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::FloatMaterialPropertyEffectTarget => ""
     ."FloatMaterialPropertyEffectTarget"
 );
 #[cfg(feature = "FloatMaterialPropertyEffectTarget")]
-impl std::ops::Deref for FloatMaterialPropertyEffectTarget {
-    type Target = FloatFxGroupEffectTarget;
+impl std::ops::Deref for crate::GlobalNamespace::FloatMaterialPropertyEffectTarget {
+    type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatMaterialPropertyEffectTarget")]
-impl std::ops::DerefMut for FloatMaterialPropertyEffectTarget {
+impl std::ops::DerefMut for crate::GlobalNamespace::FloatMaterialPropertyEffectTarget {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatMaterialPropertyEffectTarget")]
-impl FloatMaterialPropertyEffectTarget {
+impl crate::GlobalNamespace::FloatMaterialPropertyEffectTarget {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -94,7 +95,8 @@ impl FloatMaterialPropertyEffectTarget {
     }
 }
 #[cfg(feature = "FloatMaterialPropertyEffectTarget")]
-impl quest_hook::libil2cpp::ObjectType for FloatMaterialPropertyEffectTarget {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FloatMaterialPropertyEffectTarget {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

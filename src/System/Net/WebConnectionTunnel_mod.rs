@@ -51,12 +51,12 @@ impl std::ops::DerefMut for crate::System::Net::WebConnectionTunnel {
 }
 #[cfg(feature = "System+Net+WebConnectionTunnel")]
 impl crate::System::Net::WebConnectionTunnel {
+    #[cfg(feature = "System+Net+WebConnectionTunnel+NtlmAuthState")]
+    pub type NtlmAuthState = crate::System::Net::WebConnectionTunnel_NtlmAuthState;
     #[cfg(feature = "System+Net+WebConnectionTunnel+_Initialize_d__42")]
     pub type _Initialize_d__42 = crate::System::Net::WebConnectionTunnel__Initialize_d__42;
     #[cfg(feature = "System+Net+WebConnectionTunnel+_ReadHeaders_d__43")]
     pub type _ReadHeaders_d__43 = crate::System::Net::WebConnectionTunnel__ReadHeaders_d__43;
-    #[cfg(feature = "System+Net+WebConnectionTunnel+NtlmAuthState")]
-    pub type NtlmAuthState = crate::System::Net::WebConnectionTunnel_NtlmAuthState;
     pub fn FlushContents(
         &mut self,
         stream: *mut crate::System::IO::Stream,

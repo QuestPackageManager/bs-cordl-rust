@@ -6,31 +6,32 @@ pub struct EmptyPosesSerializer {
 }
 #[cfg(feature = "EmptyPosesSerializer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EmptyPosesSerializer => ""."EmptyPosesSerializer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EmptyPosesSerializer => ""
+    ."EmptyPosesSerializer"
 );
 #[cfg(feature = "EmptyPosesSerializer")]
-impl std::ops::Deref for EmptyPosesSerializer {
+impl std::ops::Deref for crate::GlobalNamespace::EmptyPosesSerializer {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EmptyPosesSerializer")]
-impl std::ops::DerefMut for EmptyPosesSerializer {
+impl std::ops::DerefMut for crate::GlobalNamespace::EmptyPosesSerializer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EmptyPosesSerializer")]
-impl EmptyPosesSerializer {
+impl crate::GlobalNamespace::EmptyPosesSerializer {
     pub fn LoadRecording(
         &mut self,
         path: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut PosesRecordingData> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::PosesRecordingData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PosesRecordingData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PosesRecordingData = __cordl_object
             .invoke("LoadRecording", (path))?;
         Ok(__cordl_ret)
     }
@@ -64,7 +65,7 @@ impl EmptyPosesSerializer {
     pub fn SaveRecording(
         &mut self,
         path: *mut crate::System::String,
-        data: *mut PosesRecordingData,
+        data: *mut crate::GlobalNamespace::PosesRecordingData,
         saveToOldFormat: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -77,7 +78,7 @@ impl EmptyPosesSerializer {
     pub fn SaveToOldFormat(
         &mut self,
         path: *mut crate::System::String,
-        data: *mut PosesRecordingData,
+        data: *mut crate::GlobalNamespace::PosesRecordingData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -98,7 +99,7 @@ impl EmptyPosesSerializer {
     }
 }
 #[cfg(feature = "EmptyPosesSerializer")]
-impl quest_hook::libil2cpp::ObjectType for EmptyPosesSerializer {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EmptyPosesSerializer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

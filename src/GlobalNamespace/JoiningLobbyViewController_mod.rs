@@ -4,30 +4,30 @@
 pub struct JoiningLobbyViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _cancelJoiningButton: *mut crate::UnityEngine::UI::Button,
-    pub _loadingControl: *mut LoadingControl,
+    pub _loadingControl: *mut crate::GlobalNamespace::LoadingControl,
     pub _text: *mut crate::System::String,
     pub didCancelEvent: *mut crate::System::Action,
 }
 #[cfg(feature = "JoiningLobbyViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for JoiningLobbyViewController => ""
-    ."JoiningLobbyViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::JoiningLobbyViewController =>
+    ""."JoiningLobbyViewController"
 );
 #[cfg(feature = "JoiningLobbyViewController")]
-impl std::ops::Deref for JoiningLobbyViewController {
+impl std::ops::Deref for crate::GlobalNamespace::JoiningLobbyViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "JoiningLobbyViewController")]
-impl std::ops::DerefMut for JoiningLobbyViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::JoiningLobbyViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "JoiningLobbyViewController")]
-impl JoiningLobbyViewController {
+impl crate::GlobalNamespace::JoiningLobbyViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -116,7 +116,8 @@ impl JoiningLobbyViewController {
     }
 }
 #[cfg(feature = "JoiningLobbyViewController")]
-impl quest_hook::libil2cpp::ObjectType for JoiningLobbyViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::JoiningLobbyViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

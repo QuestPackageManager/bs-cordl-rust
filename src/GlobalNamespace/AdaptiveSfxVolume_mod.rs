@@ -3,32 +3,33 @@
 #[derive(Debug)]
 pub struct AdaptiveSfxVolume {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioManager: *mut AudioManagerSO,
+    pub _audioManager: *mut crate::GlobalNamespace::AudioManagerSO,
     pub _initData: *mut crate::GlobalNamespace::AdaptiveSfxVolume_InitData,
     pub _minThreshold: f32,
-    pub _buffer: *mut MomentaryLoudnessBuffer,
+    pub _buffer: *mut crate::GlobalNamespace::MomentaryLoudnessBuffer,
     pub _lufsMeter: *mut crate::LufsMetering::LufsMeter,
-    pub _loudnessHistory: *mut MomentaryLoudnessHistory,
+    pub _loudnessHistory: *mut crate::GlobalNamespace::MomentaryLoudnessHistory,
 }
 #[cfg(feature = "AdaptiveSfxVolume")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AdaptiveSfxVolume => ""."AdaptiveSfxVolume"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AdaptiveSfxVolume => ""
+    ."AdaptiveSfxVolume"
 );
 #[cfg(feature = "AdaptiveSfxVolume")]
-impl std::ops::Deref for AdaptiveSfxVolume {
+impl std::ops::Deref for crate::GlobalNamespace::AdaptiveSfxVolume {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AdaptiveSfxVolume")]
-impl std::ops::DerefMut for AdaptiveSfxVolume {
+impl std::ops::DerefMut for crate::GlobalNamespace::AdaptiveSfxVolume {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AdaptiveSfxVolume")]
-impl AdaptiveSfxVolume {
+impl crate::GlobalNamespace::AdaptiveSfxVolume {
     pub const kAverageLoudnessFrames: i32 = 12i32;
     pub const kReadingsPerBuffer: i32 = 4i32;
     #[cfg(feature = "AdaptiveSfxVolume+InitData")]
@@ -105,7 +106,7 @@ impl AdaptiveSfxVolume {
     }
 }
 #[cfg(feature = "AdaptiveSfxVolume")]
-impl quest_hook::libil2cpp::ObjectType for AdaptiveSfxVolume {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AdaptiveSfxVolume {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

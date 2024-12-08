@@ -2,31 +2,34 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayersLobbyPermissionConfigurationNetSerializable {
-    __cordl_parent: PoolableSerializable,
+    __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
     pub _playersPermission: *mut crate::System::Collections::Generic::List_1<
-        *mut PlayerLobbyPermissionConfigurationNetSerializable,
+        *mut crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable,
     >,
 }
 #[cfg(feature = "PlayersLobbyPermissionConfigurationNetSerializable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayersLobbyPermissionConfigurationNetSerializable => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable => ""
     ."PlayersLobbyPermissionConfigurationNetSerializable"
 );
 #[cfg(feature = "PlayersLobbyPermissionConfigurationNetSerializable")]
-impl std::ops::Deref for PlayersLobbyPermissionConfigurationNetSerializable {
-    type Target = PoolableSerializable;
+impl std::ops::Deref
+for crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable {
+    type Target = crate::GlobalNamespace::PoolableSerializable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayersLobbyPermissionConfigurationNetSerializable")]
-impl std::ops::DerefMut for PlayersLobbyPermissionConfigurationNetSerializable {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayersLobbyPermissionConfigurationNetSerializable")]
-impl PlayersLobbyPermissionConfigurationNetSerializable {
+impl crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable {
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
@@ -41,15 +44,15 @@ impl PlayersLobbyPermissionConfigurationNetSerializable {
     pub fn Init(
         &mut self,
         playersPermission: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut PlayerLobbyPermissionConfigurationNetSerializable,
+            *mut crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut PlayersLobbyPermissionConfigurationNetSerializable,
+        *mut crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PlayersLobbyPermissionConfigurationNetSerializable = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable = __cordl_object
             .invoke("Init", (playersPermission))?;
         Ok(__cordl_ret)
     }
@@ -105,21 +108,21 @@ impl PlayersLobbyPermissionConfigurationNetSerializable {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::List_1<
-            *mut PlayerLobbyPermissionConfigurationNetSerializable,
+            *mut crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut PlayerLobbyPermissionConfigurationNetSerializable,
+            *mut crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable,
         > = __cordl_object.invoke("get_playersPermission", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PlayersLobbyPermissionConfigurationNetSerializable")]
 impl quest_hook::libil2cpp::ObjectType
-for PlayersLobbyPermissionConfigurationNetSerializable {
+for crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

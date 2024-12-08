@@ -3,30 +3,32 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalActivePlayerInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _sceneSetupData: *mut GameplayCoreSceneSetupData,
-    pub _playerDataModel: *mut PlayerDataModel,
+    pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
     pub _optionalAvatarDataSender: *mut crate::BeatSaber::AvatarCore::OptionalAvatarDataSender,
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLocalActivePlayerInstaller => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLocalActivePlayerInstaller => ""
     ."MultiplayerLocalActivePlayerInstaller"
 );
 #[cfg(feature = "MultiplayerLocalActivePlayerInstaller")]
-impl std::ops::Deref for MultiplayerLocalActivePlayerInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLocalActivePlayerInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerInstaller")]
-impl std::ops::DerefMut for MultiplayerLocalActivePlayerInstaller {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerLocalActivePlayerInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerInstaller")]
-impl MultiplayerLocalActivePlayerInstaller {
+impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -56,7 +58,8 @@ impl MultiplayerLocalActivePlayerInstaller {
     }
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerInstaller")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLocalActivePlayerInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLocalActivePlayerInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

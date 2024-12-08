@@ -64,17 +64,35 @@ impl std::ops::DerefMut for crate::UnityEngine::AddressableAssets::AddressablesI
 impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     pub const kCacheDataFolder: &'static str = "{UnityEngine.Application.persistentDataPath}/com.unity.addressables/";
     #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass120_0"
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
     )]
-    pub type __c__DisplayClass120_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass120_0;
+    pub type LoadResourceLocationKeyOp = crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeyOp;
     #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass126_0"
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"
     )]
-    pub type __c__DisplayClass126_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass126_0;
+    pub type LoadResourceLocationKeysOp = crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeysOp;
+    #[cfg(feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c")]
+    pub type __c = crate::UnityEngine::AddressableAssets::AddressablesImpl___c;
     #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass156_0"
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass100_0"
     )]
-    pub type __c__DisplayClass156_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass156_0;
+    pub type __c__DisplayClass100_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass100_0;
+    #[cfg(
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass103_0"
+    )]
+    pub type __c__DisplayClass103_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass103_0;
+    #[cfg(
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass106_0"
+    )]
+    pub type __c__DisplayClass106_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass106_0;
+    #[cfg(
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass110_0"
+    )]
+    pub type __c__DisplayClass110_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass110_0;
+    #[cfg(
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass112_0"
+    )]
+    pub type __c__DisplayClass112_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass112_0;
     #[cfg(
         feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass117_0_1"
     )]
@@ -82,45 +100,71 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         TObject,
     >;
     #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass100_0"
-    )]
-    pub type __c__DisplayClass100_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass100_0;
-    #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass128_0"
-    )]
-    pub type __c__DisplayClass128_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass128_0;
-    #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass61_0"
-    )]
-    pub type __c__DisplayClass61_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass61_0;
-    #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass132_0"
-    )]
-    pub type __c__DisplayClass132_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass132_0;
-    #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass155_0"
-    )]
-    pub type __c__DisplayClass155_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass155_0;
-    #[cfg(
         feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass119_0"
     )]
     pub type __c__DisplayClass119_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass119_0;
     #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass112_0"
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass120_0"
     )]
-    pub type __c__DisplayClass112_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass112_0;
+    pub type __c__DisplayClass120_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass120_0;
     #[cfg(
         feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass121_0"
     )]
     pub type __c__DisplayClass121_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass121_0;
     #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass150_0"
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass126_0"
     )]
-    pub type __c__DisplayClass150_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass150_0;
+    pub type __c__DisplayClass126_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass126_0;
+    #[cfg(
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass128_0"
+    )]
+    pub type __c__DisplayClass128_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass128_0;
     #[cfg(
         feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass131_0"
     )]
     pub type __c__DisplayClass131_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass131_0;
+    #[cfg(
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass132_0"
+    )]
+    pub type __c__DisplayClass132_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass132_0;
+    #[cfg(
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass141_0"
+    )]
+    pub type __c__DisplayClass141_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass141_0;
+    #[cfg(
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass142_0"
+    )]
+    pub type __c__DisplayClass142_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass142_0;
+    #[cfg(
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass146_0"
+    )]
+    pub type __c__DisplayClass146_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass146_0;
+    #[cfg(
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass150_0"
+    )]
+    pub type __c__DisplayClass150_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass150_0;
+    #[cfg(
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass155_0"
+    )]
+    pub type __c__DisplayClass155_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass155_0;
+    #[cfg(
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass156_0"
+    )]
+    pub type __c__DisplayClass156_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass156_0;
+    #[cfg(
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass61_0"
+    )]
+    pub type __c__DisplayClass61_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass61_0;
+    #[cfg(
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass72_0"
+    )]
+    pub type __c__DisplayClass72_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass72_0;
+    #[cfg(
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass78_0_1"
+    )]
+    pub type __c__DisplayClass78_0_1<TObject: quest_hook::libil2cpp::Type> = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass78_0_1<
+        TObject,
+    >;
     #[cfg(
         feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass79_0_1"
     )]
@@ -128,33 +172,19 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         TObject,
     >;
     #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"
-    )]
-    pub type LoadResourceLocationKeysOp = crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeysOp;
-    #[cfg(
         feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass83_0"
     )]
     pub type __c__DisplayClass83_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass83_0;
     #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass142_0"
+        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass85_0"
     )]
-    pub type __c__DisplayClass142_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass142_0;
-    #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass72_0"
-    )]
-    pub type __c__DisplayClass72_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass72_0;
-    #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
-    )]
-    pub type LoadResourceLocationKeyOp = crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeyOp;
+    pub type __c__DisplayClass85_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass85_0;
     #[cfg(
         feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass88_0_1"
     )]
     pub type __c__DisplayClass88_0_1<TObject: quest_hook::libil2cpp::Type> = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass88_0_1<
         TObject,
     >;
-    #[cfg(feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c")]
-    pub type __c = crate::UnityEngine::AddressableAssets::AddressablesImpl___c;
     #[cfg(
         feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass89_0_1"
     )]
@@ -162,45 +192,15 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         TObject,
     >;
     #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass106_0"
-    )]
-    pub type __c__DisplayClass106_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass106_0;
-    #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass103_0"
-    )]
-    pub type __c__DisplayClass103_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass103_0;
-    #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass110_0"
-    )]
-    pub type __c__DisplayClass110_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass110_0;
-    #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass141_0"
-    )]
-    pub type __c__DisplayClass141_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass141_0;
-    #[cfg(
         feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass91_0_1"
     )]
     pub type __c__DisplayClass91_0_1<TObject: quest_hook::libil2cpp::Type> = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass91_0_1<
         TObject,
     >;
     #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass85_0"
-    )]
-    pub type __c__DisplayClass85_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass85_0;
-    #[cfg(
         feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass99_0"
     )]
     pub type __c__DisplayClass99_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass99_0;
-    #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass146_0"
-    )]
-    pub type __c__DisplayClass146_0 = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass146_0;
-    #[cfg(
-        feature = "UnityEngine+AddressableAssets+AddressablesImpl+__c__DisplayClass78_0_1"
-    )]
-    pub type __c__DisplayClass78_0_1<TObject: quest_hook::libil2cpp::Type> = crate::UnityEngine::AddressableAssets::AddressablesImpl___c__DisplayClass78_0_1<
-        TObject,
-    >;
     pub fn AddResourceLocator(
         &mut self,
         loc: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,

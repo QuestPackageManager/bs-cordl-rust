@@ -6,31 +6,32 @@ pub struct IPosesSerializer {
 }
 #[cfg(feature = "IPosesSerializer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IPosesSerializer => ""."IPosesSerializer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IPosesSerializer => ""
+    ."IPosesSerializer"
 );
 #[cfg(feature = "IPosesSerializer")]
-impl std::ops::Deref for IPosesSerializer {
+impl std::ops::Deref for crate::GlobalNamespace::IPosesSerializer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IPosesSerializer")]
-impl std::ops::DerefMut for IPosesSerializer {
+impl std::ops::DerefMut for crate::GlobalNamespace::IPosesSerializer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IPosesSerializer")]
-impl IPosesSerializer {
+impl crate::GlobalNamespace::IPosesSerializer {
     pub fn LoadRecording(
         &mut self,
         path: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut PosesRecordingData> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::PosesRecordingData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PosesRecordingData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PosesRecordingData = __cordl_object
             .invoke("LoadRecording", (path))?;
         Ok(__cordl_ret)
     }
@@ -57,7 +58,7 @@ impl IPosesSerializer {
     pub fn SaveRecording(
         &mut self,
         path: *mut crate::System::String,
-        data: *mut PosesRecordingData,
+        data: *mut crate::GlobalNamespace::PosesRecordingData,
         saveToOldFormat: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -70,7 +71,7 @@ impl IPosesSerializer {
     pub fn SaveToOldFormat(
         &mut self,
         path: *mut crate::System::String,
-        data: *mut PosesRecordingData,
+        data: *mut crate::GlobalNamespace::PosesRecordingData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -86,7 +87,7 @@ impl IPosesSerializer {
     }
 }
 #[cfg(feature = "IPosesSerializer")]
-impl quest_hook::libil2cpp::ObjectType for IPosesSerializer {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IPosesSerializer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

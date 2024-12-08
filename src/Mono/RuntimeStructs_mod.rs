@@ -126,14 +126,14 @@ impl std::ops::DerefMut for crate::Mono::RuntimeStructs {
 }
 #[cfg(feature = "Mono+RuntimeStructs")]
 impl crate::Mono::RuntimeStructs {
-    #[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
-    pub type GenericParamInfo = crate::Mono::RuntimeStructs_GenericParamInfo;
-    #[cfg(feature = "Mono+RuntimeStructs+RemoteClass")]
-    pub type RemoteClass = crate::Mono::RuntimeStructs_RemoteClass;
-    #[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
-    pub type MonoClass = crate::Mono::RuntimeStructs_MonoClass;
     #[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
     pub type GPtrArray = crate::Mono::RuntimeStructs_GPtrArray;
+    #[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
+    pub type GenericParamInfo = crate::Mono::RuntimeStructs_GenericParamInfo;
+    #[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
+    pub type MonoClass = crate::Mono::RuntimeStructs_MonoClass;
+    #[cfg(feature = "Mono+RuntimeStructs+RemoteClass")]
+    pub type RemoteClass = crate::Mono::RuntimeStructs_RemoteClass;
 }
 #[cfg(feature = "Mono+RuntimeStructs")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::RuntimeStructs {

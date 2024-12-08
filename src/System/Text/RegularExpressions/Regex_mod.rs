@@ -207,10 +207,10 @@ impl crate::System::Text::RegularExpressions::Regex {
     pub const CacheDictionarySwitchLimit: i32 = 10i32;
     pub const DefaultMatchTimeout_ConfigKeyName: &'static str = "REGEX_DEFAULT_MATCH_TIMEOUT";
     pub const MaxOptionShift: i32 = 10i32;
-    #[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
-    pub type CachedCodeEntryKey = crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey;
     #[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntry")]
     pub type CachedCodeEntry = crate::System::Text::RegularExpressions::Regex_CachedCodeEntry;
+    #[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
+    pub type CachedCodeEntryKey = crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey;
     pub fn FillCacheDictionary(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

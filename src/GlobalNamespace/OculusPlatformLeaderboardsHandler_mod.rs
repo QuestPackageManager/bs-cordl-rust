@@ -2,43 +2,44 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusPlatformLeaderboardsHandler {
-    __cordl_parent: PlatformLeaderboardsHandler,
-    pub _leaderboardIdsModel: *mut LeaderboardIdsModel,
+    __cordl_parent: crate::GlobalNamespace::PlatformLeaderboardsHandler,
+    pub _leaderboardIdsModel: *mut crate::GlobalNamespace::LeaderboardIdsModel,
     pub _oculusRequestIds: *mut crate::System::Collections::Generic::HashSet_1<u64>,
-    pub _gameplayModifiersModel: *mut GameplayModifiersModelSO,
+    pub _gameplayModifiersModel: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
 }
 #[cfg(feature = "OculusPlatformLeaderboardsHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OculusPlatformLeaderboardsHandler => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OculusPlatformLeaderboardsHandler => ""
     ."OculusPlatformLeaderboardsHandler"
 );
 #[cfg(feature = "OculusPlatformLeaderboardsHandler")]
-impl std::ops::Deref for OculusPlatformLeaderboardsHandler {
-    type Target = PlatformLeaderboardsHandler;
+impl std::ops::Deref for crate::GlobalNamespace::OculusPlatformLeaderboardsHandler {
+    type Target = crate::GlobalNamespace::PlatformLeaderboardsHandler;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusPlatformLeaderboardsHandler")]
-impl std::ops::DerefMut for OculusPlatformLeaderboardsHandler {
+impl std::ops::DerefMut for crate::GlobalNamespace::OculusPlatformLeaderboardsHandler {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusPlatformLeaderboardsHandler")]
-impl OculusPlatformLeaderboardsHandler {
-    #[cfg(feature = "OculusPlatformLeaderboardsHandler+__c__DisplayClass7_0")]
-    pub type __c__DisplayClass7_0 = crate::GlobalNamespace::OculusPlatformLeaderboardsHandler___c__DisplayClass7_0;
+impl crate::GlobalNamespace::OculusPlatformLeaderboardsHandler {
     #[cfg(feature = "OculusPlatformLeaderboardsHandler+__c")]
     pub type __c = crate::GlobalNamespace::OculusPlatformLeaderboardsHandler___c;
     #[cfg(feature = "OculusPlatformLeaderboardsHandler+__c__DisplayClass4_0")]
     pub type __c__DisplayClass4_0 = crate::GlobalNamespace::OculusPlatformLeaderboardsHandler___c__DisplayClass4_0;
     #[cfg(feature = "OculusPlatformLeaderboardsHandler+__c__DisplayClass6_0")]
     pub type __c__DisplayClass6_0 = crate::GlobalNamespace::OculusPlatformLeaderboardsHandler___c__DisplayClass6_0;
+    #[cfg(feature = "OculusPlatformLeaderboardsHandler+__c__DisplayClass7_0")]
+    pub type __c__DisplayClass7_0 = crate::GlobalNamespace::OculusPlatformLeaderboardsHandler___c__DisplayClass7_0;
     pub fn AddOculusRequest(
         &mut self,
         oculusRequest: *mut crate::Oculus::Platform::Request,
-        asyncRequest: *mut HMAsyncRequest,
+        asyncRequest: *mut crate::GlobalNamespace::HMAsyncRequest,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -60,17 +61,17 @@ impl OculusPlatformLeaderboardsHandler {
     }
     pub fn GetScores(
         &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         count: i32,
         fromRank: i32,
         scope: crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope,
         referencePlayerId: *mut crate::System::String,
         completionHandler: *mut crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut HMAsyncRequest> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::HMAsyncRequest> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut HMAsyncRequest = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::HMAsyncRequest = __cordl_object
             .invoke(
                 "GetScores",
                 (
@@ -95,11 +96,11 @@ impl OculusPlatformLeaderboardsHandler {
         &mut self,
         scoreData: *mut crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
         completionHandler: *mut crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut HMAsyncRequest> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::HMAsyncRequest> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut HMAsyncRequest = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::HMAsyncRequest = __cordl_object
             .invoke("UploadScore", (scoreData, completionHandler))?;
         Ok(__cordl_ret)
     }
@@ -115,7 +116,8 @@ impl OculusPlatformLeaderboardsHandler {
     }
 }
 #[cfg(feature = "OculusPlatformLeaderboardsHandler")]
-impl quest_hook::libil2cpp::ObjectType for OculusPlatformLeaderboardsHandler {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OculusPlatformLeaderboardsHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

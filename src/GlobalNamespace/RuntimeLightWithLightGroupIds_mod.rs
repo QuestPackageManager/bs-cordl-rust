@@ -83,8 +83,10 @@ for crate::GlobalNamespace::RuntimeLightWithLightGroupIds_LightIntensitiesWithId
 #[repr(C)]
 #[derive(Debug)]
 pub struct RuntimeLightWithLightGroupIds {
-    __cordl_parent: LightWithIds,
-    pub _lightGroupList: *mut quest_hook::libil2cpp::Il2CppArray<*mut LightGroup>,
+    __cordl_parent: crate::GlobalNamespace::LightWithIds,
+    pub _lightGroupList: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::LightGroup,
+    >,
     pub _intensity: f32,
     pub _maxIntensity: f32,
     pub _multiplyColorByAlpha: bool,
@@ -94,24 +96,24 @@ pub struct RuntimeLightWithLightGroupIds {
 }
 #[cfg(feature = "RuntimeLightWithLightGroupIds")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RuntimeLightWithLightGroupIds => ""
-    ."RuntimeLightWithLightGroupIds"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RuntimeLightWithLightGroupIds
+    => ""."RuntimeLightWithLightGroupIds"
 );
 #[cfg(feature = "RuntimeLightWithLightGroupIds")]
-impl std::ops::Deref for RuntimeLightWithLightGroupIds {
-    type Target = LightWithIds;
+impl std::ops::Deref for crate::GlobalNamespace::RuntimeLightWithLightGroupIds {
+    type Target = crate::GlobalNamespace::LightWithIds;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RuntimeLightWithLightGroupIds")]
-impl std::ops::DerefMut for RuntimeLightWithLightGroupIds {
+impl std::ops::DerefMut for crate::GlobalNamespace::RuntimeLightWithLightGroupIds {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RuntimeLightWithLightGroupIds")]
-impl RuntimeLightWithLightGroupIds {
+impl crate::GlobalNamespace::RuntimeLightWithLightGroupIds {
     #[cfg(feature = "RuntimeLightWithLightGroupIds+LightIntensitiesWithId")]
     pub type LightIntensitiesWithId = crate::GlobalNamespace::RuntimeLightWithLightGroupIds_LightIntensitiesWithId;
     pub fn Awake(
@@ -191,7 +193,8 @@ impl RuntimeLightWithLightGroupIds {
     }
 }
 #[cfg(feature = "RuntimeLightWithLightGroupIds")]
-impl quest_hook::libil2cpp::ObjectType for RuntimeLightWithLightGroupIds {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::RuntimeLightWithLightGroupIds {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

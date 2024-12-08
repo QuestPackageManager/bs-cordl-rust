@@ -12,6 +12,6 @@ pub enum OVRTextureQualityFiltering {
 }
 #[cfg(feature = "OVRTextureQualityFiltering")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for OVRTextureQualityFiltering => ""
-    ."OVRTextureQualityFiltering"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRTextureQualityFiltering =>
+    ""."OVRTextureQualityFiltering"
 );

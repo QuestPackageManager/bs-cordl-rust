@@ -6,32 +6,32 @@ pub struct OVRSceneSampleController {
     pub quitKey: crate::UnityEngine::KeyCode,
     pub fadeInTexture: *mut crate::UnityEngine::Texture,
     pub speedRotationIncrement: f32,
-    pub playerController: *mut OVRPlayerController,
-    pub cameraController: *mut OVRCameraRig,
+    pub playerController: *mut crate::GlobalNamespace::OVRPlayerController,
+    pub cameraController: *mut crate::GlobalNamespace::OVRCameraRig,
     pub layerName: *mut crate::System::String,
     pub visionMode: bool,
-    pub gridCube: *mut OVRGridCube,
+    pub gridCube: *mut crate::GlobalNamespace::OVRGridCube,
 }
 #[cfg(feature = "OVRSceneSampleController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRSceneSampleController => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRSceneSampleController => ""
     ."OVRSceneSampleController"
 );
 #[cfg(feature = "OVRSceneSampleController")]
-impl std::ops::Deref for OVRSceneSampleController {
+impl std::ops::Deref for crate::GlobalNamespace::OVRSceneSampleController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSceneSampleController")]
-impl std::ops::DerefMut for OVRSceneSampleController {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneSampleController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSceneSampleController")]
-impl OVRSceneSampleController {
+impl crate::GlobalNamespace::OVRSceneSampleController {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -111,7 +111,8 @@ impl OVRSceneSampleController {
     }
 }
 #[cfg(feature = "OVRSceneSampleController")]
-impl quest_hook::libil2cpp::ObjectType for OVRSceneSampleController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRSceneSampleController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

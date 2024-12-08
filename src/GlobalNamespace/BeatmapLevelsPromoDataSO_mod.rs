@@ -136,24 +136,24 @@ pub struct BeatmapLevelsPromoDataSO {
 }
 #[cfg(feature = "BeatmapLevelsPromoDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapLevelsPromoDataSO => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapLevelsPromoDataSO => ""
     ."BeatmapLevelsPromoDataSO"
 );
 #[cfg(feature = "BeatmapLevelsPromoDataSO")]
-impl std::ops::Deref for BeatmapLevelsPromoDataSO {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelsPromoDataSO {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLevelsPromoDataSO")]
-impl std::ops::DerefMut for BeatmapLevelsPromoDataSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelsPromoDataSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLevelsPromoDataSO")]
-impl BeatmapLevelsPromoDataSO {
+impl crate::GlobalNamespace::BeatmapLevelsPromoDataSO {
     #[cfg(feature = "BeatmapLevelsPromoDataSO+BeatmapLevelsPromo")]
     pub type BeatmapLevelsPromo = crate::GlobalNamespace::BeatmapLevelsPromoDataSO_BeatmapLevelsPromo;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -198,7 +198,8 @@ impl BeatmapLevelsPromoDataSO {
     }
 }
 #[cfg(feature = "BeatmapLevelsPromoDataSO")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapLevelsPromoDataSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapLevelsPromoDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

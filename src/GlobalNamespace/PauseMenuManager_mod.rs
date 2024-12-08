@@ -4,8 +4,8 @@
 pub struct PauseMenuManager_InitData {
     __cordl_parent: crate::System::Object,
     pub backButtonText: *mut crate::System::String,
-    pub beatmapKey: BeatmapKey,
-    pub beatmapLevel: *mut BeatmapLevel,
+    pub beatmapKey: crate::GlobalNamespace::BeatmapKey,
+    pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     pub showRestartButton: bool,
     pub showLevelBar: bool,
 }
@@ -31,8 +31,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PauseMenuManager_InitData {
 impl crate::GlobalNamespace::PauseMenuManager_InitData {
     pub fn New(
         backButtonText: *mut crate::System::String,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-        beatmapLevel: *mut BeatmapLevel,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
         showRestartButton: bool,
         showLevelBar: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -54,8 +54,8 @@ impl crate::GlobalNamespace::PauseMenuManager_InitData {
     pub fn _ctor(
         &mut self,
         backButtonText: *mut crate::System::String,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-        beatmapLevel: *mut BeatmapLevel,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
         showRestartButton: bool,
         showLevelBar: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -91,16 +91,16 @@ for crate::GlobalNamespace::PauseMenuManager_InitData {
 #[derive(Debug)]
 pub struct PauseMenuManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _pauseAnimationController: *mut PauseAnimationController,
-    pub _levelBar: *mut LevelBar,
+    pub _pauseAnimationController: *mut crate::GlobalNamespace::PauseAnimationController,
+    pub _levelBar: *mut crate::GlobalNamespace::LevelBar,
     pub _continueButton: *mut crate::UnityEngine::UI::Button,
     pub _restartButton: *mut crate::UnityEngine::UI::Button,
     pub _backButton: *mut crate::UnityEngine::UI::Button,
     pub _backButtonText: *mut crate::TMPro::TextMeshProUGUI,
     pub _pauseContainerTransform: *mut crate::UnityEngine::Transform,
     pub _initData: *mut crate::GlobalNamespace::PauseMenuManager_InitData,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
-    pub _environmentSpawnRotation: *mut EnvironmentSpawnRotation,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
+    pub _environmentSpawnRotation: *mut crate::GlobalNamespace::EnvironmentSpawnRotation,
     pub didPressContinueButtonEvent: *mut crate::System::Action,
     pub didPressMenuButtonEvent: *mut crate::System::Action,
     pub didPressRestartButtonEvent: *mut crate::System::Action,
@@ -110,23 +110,24 @@ pub struct PauseMenuManager {
 }
 #[cfg(feature = "PauseMenuManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PauseMenuManager => ""."PauseMenuManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PauseMenuManager => ""
+    ."PauseMenuManager"
 );
 #[cfg(feature = "PauseMenuManager")]
-impl std::ops::Deref for PauseMenuManager {
+impl std::ops::Deref for crate::GlobalNamespace::PauseMenuManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PauseMenuManager")]
-impl std::ops::DerefMut for PauseMenuManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::PauseMenuManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PauseMenuManager")]
-impl PauseMenuManager {
+impl crate::GlobalNamespace::PauseMenuManager {
     pub const kDisabledInteractionDuration: f32 = 0.2f32;
     #[cfg(feature = "PauseMenuManager+InitData")]
     pub type InitData = crate::GlobalNamespace::PauseMenuManager_InitData;
@@ -337,7 +338,7 @@ impl PauseMenuManager {
     }
 }
 #[cfg(feature = "PauseMenuManager")]
-impl quest_hook::libil2cpp::ObjectType for PauseMenuManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PauseMenuManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

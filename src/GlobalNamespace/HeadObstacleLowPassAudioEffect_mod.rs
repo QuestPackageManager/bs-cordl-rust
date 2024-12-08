@@ -3,30 +3,30 @@
 #[derive(Debug)]
 pub struct HeadObstacleLowPassAudioEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _playerHeadAndObstacleInteraction: *mut PlayerHeadAndObstacleInteraction,
-    pub _mainAudioEffects: *mut MainAudioEffects,
+    pub _playerHeadAndObstacleInteraction: *mut crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
+    pub _mainAudioEffects: *mut crate::GlobalNamespace::MainAudioEffects,
     pub _headWasInObstacle: bool,
 }
 #[cfg(feature = "HeadObstacleLowPassAudioEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for HeadObstacleLowPassAudioEffect => ""
-    ."HeadObstacleLowPassAudioEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::HeadObstacleLowPassAudioEffect
+    => ""."HeadObstacleLowPassAudioEffect"
 );
 #[cfg(feature = "HeadObstacleLowPassAudioEffect")]
-impl std::ops::Deref for HeadObstacleLowPassAudioEffect {
+impl std::ops::Deref for crate::GlobalNamespace::HeadObstacleLowPassAudioEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HeadObstacleLowPassAudioEffect")]
-impl std::ops::DerefMut for HeadObstacleLowPassAudioEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::HeadObstacleLowPassAudioEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "HeadObstacleLowPassAudioEffect")]
-impl HeadObstacleLowPassAudioEffect {
+impl crate::GlobalNamespace::HeadObstacleLowPassAudioEffect {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -56,7 +56,8 @@ impl HeadObstacleLowPassAudioEffect {
     }
 }
 #[cfg(feature = "HeadObstacleLowPassAudioEffect")]
-impl quest_hook::libil2cpp::ObjectType for HeadObstacleLowPassAudioEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::HeadObstacleLowPassAudioEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

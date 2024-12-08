@@ -8,7 +8,7 @@ pub struct GameEnergyUIPanel {
     pub _batteryLifeSegmentPrefab: *mut crate::UnityEngine::UI::Image,
     pub _batterySegmentSeparatorWidth: f32,
     pub _batterySegmentHorizontalPadding: f32,
-    pub _gameEnergyCounter: *mut IGameEnergyCounter,
+    pub _gameEnergyCounter: *mut crate::GlobalNamespace::IGameEnergyCounter,
     pub _batteryLifeSegments: *mut crate::System::Collections::Generic::List_1<
         *mut crate::UnityEngine::UI::Image,
     >,
@@ -17,23 +17,24 @@ pub struct GameEnergyUIPanel {
 }
 #[cfg(feature = "GameEnergyUIPanel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameEnergyUIPanel => ""."GameEnergyUIPanel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameEnergyUIPanel => ""
+    ."GameEnergyUIPanel"
 );
 #[cfg(feature = "GameEnergyUIPanel")]
-impl std::ops::Deref for GameEnergyUIPanel {
+impl std::ops::Deref for crate::GlobalNamespace::GameEnergyUIPanel {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameEnergyUIPanel")]
-impl std::ops::DerefMut for GameEnergyUIPanel {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameEnergyUIPanel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameEnergyUIPanel")]
-impl GameEnergyUIPanel {
+impl crate::GlobalNamespace::GameEnergyUIPanel {
     pub fn CreateUIForBatteryEnergyType(
         &mut self,
         batteryLives: i32,
@@ -126,7 +127,7 @@ impl GameEnergyUIPanel {
     }
 }
 #[cfg(feature = "GameEnergyUIPanel")]
-impl quest_hook::libil2cpp::ObjectType for GameEnergyUIPanel {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameEnergyUIPanel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

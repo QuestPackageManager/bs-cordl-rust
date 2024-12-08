@@ -7,23 +7,24 @@ pub struct EmitParticles {
 }
 #[cfg(feature = "EmitParticles")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EmitParticles => ""."EmitParticles"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EmitParticles => ""
+    ."EmitParticles"
 );
 #[cfg(feature = "EmitParticles")]
-impl std::ops::Deref for EmitParticles {
+impl std::ops::Deref for crate::GlobalNamespace::EmitParticles {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EmitParticles")]
-impl std::ops::DerefMut for EmitParticles {
+impl std::ops::DerefMut for crate::GlobalNamespace::EmitParticles {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EmitParticles")]
-impl EmitParticles {
+impl crate::GlobalNamespace::EmitParticles {
     pub fn Emit(
         &mut self,
         count: i32,
@@ -54,7 +55,7 @@ impl EmitParticles {
     }
 }
 #[cfg(feature = "EmitParticles")]
-impl quest_hook::libil2cpp::ObjectType for EmitParticles {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EmitParticles {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -28,9 +28,21 @@ for crate::System::Linq::Expressions::Interpreter::ExclusiveOrInstruction {
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::ExclusiveOrInstruction {
     #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrBoolean"
+    )]
+    pub type ExclusiveOrBoolean = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrBoolean;
+    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrByte"
     )]
     pub type ExclusiveOrByte = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrByte;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrInt16"
+    )]
+    pub type ExclusiveOrInt16 = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrInt16;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrInt32"
+    )]
+    pub type ExclusiveOrInt32 = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrInt32;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrInt64"
     )]
@@ -40,10 +52,6 @@ impl crate::System::Linq::Expressions::Interpreter::ExclusiveOrInstruction {
     )]
     pub type ExclusiveOrSByte = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrSByte;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrInt16"
-    )]
-    pub type ExclusiveOrInt16 = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrInt16;
-    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrUInt16"
     )]
     pub type ExclusiveOrUInt16 = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrUInt16;
@@ -52,17 +60,9 @@ impl crate::System::Linq::Expressions::Interpreter::ExclusiveOrInstruction {
     )]
     pub type ExclusiveOrUInt32 = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrUInt32;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrInt32"
-    )]
-    pub type ExclusiveOrInt32 = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrInt32;
-    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrUInt64"
     )]
     pub type ExclusiveOrUInt64 = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrUInt64;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrBoolean"
-    )]
-    pub type ExclusiveOrBoolean = crate::GlobalNamespace::ExclusiveOrInstruction_ExclusiveOrBoolean;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

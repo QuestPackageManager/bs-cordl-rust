@@ -79,14 +79,14 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimelineClip {
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip")]
 impl crate::UnityEngine::Timeline::TimelineClip {
     pub const k_LatestVersion: i32 = 1i32;
-    #[cfg(feature = "UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
-    pub type ClipExtrapolation = crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation;
-    #[cfg(feature = "UnityEngine+Timeline+TimelineClip+Versions")]
-    pub type Versions = crate::UnityEngine::Timeline::TimelineClip_Versions;
-    #[cfg(feature = "UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
-    pub type TimelineClipUpgrade = crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade;
     #[cfg(feature = "UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
     pub type BlendCurveMode = crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode;
+    #[cfg(feature = "UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
+    pub type ClipExtrapolation = crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation;
+    #[cfg(feature = "UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
+    pub type TimelineClipUpgrade = crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade;
+    #[cfg(feature = "UnityEngine+Timeline+TimelineClip+Versions")]
+    pub type Versions = crate::UnityEngine::Timeline::TimelineClip_Versions;
     pub fn ConformEaseValues(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

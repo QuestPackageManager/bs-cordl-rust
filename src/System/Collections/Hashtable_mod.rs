@@ -47,16 +47,16 @@ impl crate::System::Collections::Hashtable {
     pub const LoadFactorName: &'static str = "LoadFactor";
     pub const ValuesName: &'static str = "Values";
     pub const VersionName: &'static str = "Version";
-    #[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
-    pub type HashtableEnumerator = crate::System::Collections::Hashtable_HashtableEnumerator;
     #[cfg(feature = "System+Collections+Hashtable+HashtableDebugView")]
     pub type HashtableDebugView = crate::System::Collections::Hashtable_HashtableDebugView;
+    #[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
+    pub type HashtableEnumerator = crate::System::Collections::Hashtable_HashtableEnumerator;
     #[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
     pub type KeyCollection = crate::System::Collections::Hashtable_KeyCollection;
-    #[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
-    pub type ValueCollection = crate::System::Collections::Hashtable_ValueCollection;
     #[cfg(feature = "System+Collections+Hashtable+SyncHashtable")]
     pub type SyncHashtable = crate::GlobalNamespace::Hashtable_SyncHashtable;
+    #[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
+    pub type ValueCollection = crate::System::Collections::Hashtable_ValueCollection;
     #[cfg(feature = "System+Collections+Hashtable+bucket")]
     pub type bucket = crate::System::Collections::Hashtable_bucket;
     pub fn Add(

@@ -7,10 +7,10 @@ pub struct OVRPose {
 }
 #[cfg(feature = "OVRPose")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for OVRPose => ""."OVRPose"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRPose => ""."OVRPose"
 );
 #[cfg(feature = "OVRPose")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for OVRPose {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRPose {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -20,7 +20,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for OVRPose {
     }
 }
 #[cfg(feature = "OVRPose")]
-impl OVRPose {
+impl crate::GlobalNamespace::OVRPose {
     pub fn Equals(
         &mut self,
         obj: *mut crate::System::Object,
@@ -40,16 +40,20 @@ impl OVRPose {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Inverse(&mut self) -> quest_hook::libil2cpp::Result<OVRPose> {
-        let __cordl_ret: OVRPose = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn Inverse(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPose> {
+        let __cordl_ret: crate::GlobalNamespace::OVRPose = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Inverse",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Rotate180AlongX(&mut self) -> quest_hook::libil2cpp::Result<OVRPose> {
-        let __cordl_ret: OVRPose = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn Rotate180AlongX(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPose> {
+        let __cordl_ret: crate::GlobalNamespace::OVRPose = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Rotate180AlongX",
             (),
@@ -76,8 +80,10 @@ impl OVRPose {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn flipZ(&mut self) -> quest_hook::libil2cpp::Result<OVRPose> {
-        let __cordl_ret: OVRPose = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn flipZ(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPose> {
+        let __cordl_ret: crate::GlobalNamespace::OVRPose = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "flipZ",
             (),

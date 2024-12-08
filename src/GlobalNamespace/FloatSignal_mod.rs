@@ -2,27 +2,27 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatSignal {
-    __cordl_parent: GenericSignal_1<f32>,
+    __cordl_parent: crate::GlobalNamespace::GenericSignal_1<f32>,
 }
 #[cfg(feature = "FloatSignal")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FloatSignal => ""."FloatSignal"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FloatSignal => ""."FloatSignal"
 );
 #[cfg(feature = "FloatSignal")]
-impl std::ops::Deref for FloatSignal {
-    type Target = GenericSignal_1<f32>;
+impl std::ops::Deref for crate::GlobalNamespace::FloatSignal {
+    type Target = crate::GlobalNamespace::GenericSignal_1<f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatSignal")]
-impl std::ops::DerefMut for FloatSignal {
+impl std::ops::DerefMut for crate::GlobalNamespace::FloatSignal {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatSignal")]
-impl FloatSignal {
+impl crate::GlobalNamespace::FloatSignal {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,7 +42,7 @@ impl FloatSignal {
     }
 }
 #[cfg(feature = "FloatSignal")]
-impl quest_hook::libil2cpp::ObjectType for FloatSignal {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FloatSignal {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

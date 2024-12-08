@@ -31,10 +31,10 @@ impl std::ops::DerefMut for crate::System::IO::Compression::DeflateStreamNative 
 }
 #[cfg(feature = "System+IO+Compression+DeflateStreamNative")]
 impl crate::System::IO::Compression::DeflateStreamNative {
-    #[cfg(feature = "System+IO+Compression+DeflateStreamNative+UnmanagedReadOrWrite")]
-    pub type UnmanagedReadOrWrite = crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite;
     #[cfg(feature = "System+IO+Compression+DeflateStreamNative+SafeDeflateStreamHandle")]
     pub type SafeDeflateStreamHandle = crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle;
+    #[cfg(feature = "System+IO+Compression+DeflateStreamNative+UnmanagedReadOrWrite")]
+    pub type UnmanagedReadOrWrite = crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite;
     pub fn CheckResult(
         &mut self,
         result: i32,

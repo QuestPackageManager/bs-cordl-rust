@@ -3,27 +3,28 @@
 #[derive(Debug)]
 pub struct BeatmapLevelMask {
     __cordl_parent: crate::System::Object,
-    pub _bloomFilter: *mut BitMaskSparse,
+    pub _bloomFilter: *mut crate::GlobalNamespace::BitMaskSparse,
 }
 #[cfg(feature = "BeatmapLevelMask")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapLevelMask => ""."BeatmapLevelMask"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapLevelMask => ""
+    ."BeatmapLevelMask"
 );
 #[cfg(feature = "BeatmapLevelMask")]
-impl std::ops::Deref for BeatmapLevelMask {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelMask {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLevelMask")]
-impl std::ops::DerefMut for BeatmapLevelMask {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelMask {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLevelMask")]
-impl BeatmapLevelMask {
+impl crate::GlobalNamespace::BeatmapLevelMask {
     pub const kBitCount: i32 = 16384i32;
     pub const kHashBits: i32 = 14i32;
     pub const kHashCount: i32 = 1i32;
@@ -63,7 +64,7 @@ impl BeatmapLevelMask {
     }
     pub fn Equals_BeatmapLevelMask0(
         &mut self,
-        other: *mut BeatmapLevelMask,
+        other: *mut crate::GlobalNamespace::BeatmapLevelMask,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -172,7 +173,7 @@ impl BeatmapLevelMask {
     }
 }
 #[cfg(feature = "BeatmapLevelMask")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapLevelMask {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLevelMask {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

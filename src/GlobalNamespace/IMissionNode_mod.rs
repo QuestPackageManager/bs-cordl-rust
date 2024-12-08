@@ -6,23 +6,24 @@ pub struct IMissionNode {
 }
 #[cfg(feature = "IMissionNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IMissionNode => ""."IMissionNode"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IMissionNode => ""
+    ."IMissionNode"
 );
 #[cfg(feature = "IMissionNode")]
-impl std::ops::Deref for IMissionNode {
+impl std::ops::Deref for crate::GlobalNamespace::IMissionNode {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IMissionNode")]
-impl std::ops::DerefMut for IMissionNode {
+impl std::ops::DerefMut for crate::GlobalNamespace::IMissionNode {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IMissionNode")]
-impl IMissionNode {
+impl crate::GlobalNamespace::IMissionNode {
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
@@ -30,11 +31,11 @@ impl IMissionNode {
     }
     pub fn get_missionData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut MissionDataSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::MissionDataSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut MissionDataSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::MissionDataSO = __cordl_object
             .invoke("get_missionData", ())?;
         Ok(__cordl_ret)
     }
@@ -50,7 +51,7 @@ impl IMissionNode {
     }
 }
 #[cfg(feature = "IMissionNode")]
-impl quest_hook::libil2cpp::ObjectType for IMissionNode {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IMissionNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

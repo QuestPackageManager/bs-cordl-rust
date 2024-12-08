@@ -4,10 +4,10 @@
 pub struct SimpleLevelStarter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _beatmapLevel: *mut crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-        *mut BeatmapLevelSO,
+        *mut crate::GlobalNamespace::BeatmapLevelSO,
     >,
-    pub _beatmapCharacteristic: *mut BeatmapCharacteristicSO,
-    pub _beatmapDifficulty: BeatmapDifficulty,
+    pub _beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
     pub _useTestNoteCutSoundEffects: bool,
     pub _overrideStrobeFilterSettingsToAllEffects: bool,
     pub _recordingTextAsset: *mut crate::UnityEngine::TextAsset,
@@ -16,32 +16,33 @@ pub struct SimpleLevelStarter {
     >,
     pub _forceOverrideEnvironment: bool,
     pub _button: *mut crate::UnityEngine::UI::Button,
-    pub _menuTransitionsHelper: *mut MenuTransitionsHelper,
-    pub _gameScenesManager: *mut GameScenesManager,
-    pub _playerDataModel: *mut PlayerDataModel,
-    pub _environmentsListModel: *mut EnvironmentsListModel,
+    pub _menuTransitionsHelper: *mut crate::GlobalNamespace::MenuTransitionsHelper,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
     pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
-    pub _gameplayModifiers: *mut GameplayModifiers,
+    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
 }
 #[cfg(feature = "SimpleLevelStarter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SimpleLevelStarter => ""."SimpleLevelStarter"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SimpleLevelStarter => ""
+    ."SimpleLevelStarter"
 );
 #[cfg(feature = "SimpleLevelStarter")]
-impl std::ops::Deref for SimpleLevelStarter {
+impl std::ops::Deref for crate::GlobalNamespace::SimpleLevelStarter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SimpleLevelStarter")]
-impl std::ops::DerefMut for SimpleLevelStarter {
+impl std::ops::DerefMut for crate::GlobalNamespace::SimpleLevelStarter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SimpleLevelStarter")]
-impl SimpleLevelStarter {
+impl crate::GlobalNamespace::SimpleLevelStarter {
     #[cfg(feature = "SimpleLevelStarter+_StartLevel_d__17")]
     pub type _StartLevel_d__17 = crate::GlobalNamespace::SimpleLevelStarter__StartLevel_d__17;
     pub fn Awake(
@@ -66,8 +67,8 @@ impl SimpleLevelStarter {
     }
     pub fn HandleLevelDidFinish(
         &mut self,
-        standardLevelSceneSetupData: *mut StandardLevelScenesTransitionSetupDataSO,
-        levelCompletionResults: *mut LevelCompletionResults,
+        standardLevelSceneSetupData: *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -81,7 +82,7 @@ impl SimpleLevelStarter {
     }
     pub fn InstallEarlyBindings(
         &mut self,
-        scenesTransitionSetupData: *mut ScenesTransitionSetupDataSO,
+        scenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
         container: *mut crate::Zenject::DiContainer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -141,7 +142,7 @@ impl SimpleLevelStarter {
     }
 }
 #[cfg(feature = "SimpleLevelStarter")]
-impl quest_hook::libil2cpp::ObjectType for SimpleLevelStarter {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SimpleLevelStarter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

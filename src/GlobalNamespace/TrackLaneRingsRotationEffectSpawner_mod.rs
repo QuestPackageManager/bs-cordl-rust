@@ -17,41 +17,42 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct TrackLaneRingsRotationEffectSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _trackLaneRingsRotationEffect: *mut TrackLaneRingsRotationEffect,
-    pub _beatmapEventType: BasicBeatmapEventType,
+    pub _trackLaneRingsRotationEffect: *mut crate::GlobalNamespace::TrackLaneRingsRotationEffect,
+    pub _beatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _rotation: f32,
     pub _rotationStep: f32,
     pub _rotationStepType: crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType,
     pub _rotationPropagationSpeed: i32,
     pub _rotationFlexySpeed: f32,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
-    pub _beatmapDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
 }
 #[cfg(feature = "TrackLaneRingsRotationEffectSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TrackLaneRingsRotationEffectSpawner => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::TrackLaneRingsRotationEffectSpawner => ""
     ."TrackLaneRingsRotationEffectSpawner"
 );
 #[cfg(feature = "TrackLaneRingsRotationEffectSpawner")]
-impl std::ops::Deref for TrackLaneRingsRotationEffectSpawner {
+impl std::ops::Deref for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TrackLaneRingsRotationEffectSpawner")]
-impl std::ops::DerefMut for TrackLaneRingsRotationEffectSpawner {
+impl std::ops::DerefMut for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TrackLaneRingsRotationEffectSpawner")]
-impl TrackLaneRingsRotationEffectSpawner {
+impl crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner {
     #[cfg(feature = "TrackLaneRingsRotationEffectSpawner+RotationStepType")]
     pub type RotationStepType = crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType;
     pub fn HandleBeatmapEvent(
         &mut self,
-        basicBeatmapEventData: *mut BasicBeatmapEventData,
+        basicBeatmapEventData: *mut crate::GlobalNamespace::BasicBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -99,7 +100,8 @@ impl TrackLaneRingsRotationEffectSpawner {
     }
 }
 #[cfg(feature = "TrackLaneRingsRotationEffectSpawner")]
-impl quest_hook::libil2cpp::ObjectType for TrackLaneRingsRotationEffectSpawner {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

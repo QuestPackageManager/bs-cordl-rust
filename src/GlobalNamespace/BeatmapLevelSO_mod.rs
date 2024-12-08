@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _version: i32,
     pub _levelID: *mut crate::System::String,
     pub _songName: *mut crate::System::String,
@@ -19,33 +19,36 @@ pub struct BeatmapLevelSO {
     pub _previewDuration: f32,
     pub _songDuration: f32,
     pub _coverImage: *mut crate::UnityEngine::Sprite,
-    pub _environmentName: EnvironmentName,
-    pub _allDirectionsEnvironmentName: EnvironmentName,
-    pub _environmentNames: *mut quest_hook::libil2cpp::Il2CppArray<EnvironmentName>,
+    pub _environmentName: crate::GlobalNamespace::EnvironmentName,
+    pub _allDirectionsEnvironmentName: crate::GlobalNamespace::EnvironmentName,
+    pub _environmentNames: *mut quest_hook::libil2cpp::Il2CppArray<
+        crate::GlobalNamespace::EnvironmentName,
+    >,
     pub _previewDifficultyBeatmapSets: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet,
     >,
-    pub _contentRating: PlayerSensitivityFlag,
+    pub _contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
 }
 #[cfg(feature = "BeatmapLevelSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapLevelSO => ""."BeatmapLevelSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapLevelSO => ""
+    ."BeatmapLevelSO"
 );
 #[cfg(feature = "BeatmapLevelSO")]
-impl std::ops::Deref for BeatmapLevelSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLevelSO")]
-impl std::ops::DerefMut for BeatmapLevelSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLevelSO")]
-impl BeatmapLevelSO {
+impl crate::GlobalNamespace::BeatmapLevelSO {
     #[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmap")]
     pub type PreviewDifficultyBeatmap = crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap;
     #[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmapSet")]
@@ -93,9 +96,11 @@ impl BeatmapLevelSO {
         previewStartTime: f32,
         previewDuration: f32,
         coverImage: *mut crate::UnityEngine::Sprite,
-        environmentName: EnvironmentName,
-        allDirectionEnvironmentName: EnvironmentName,
-        environmentNames: *mut quest_hook::libil2cpp::Il2CppArray<EnvironmentName>,
+        environmentName: crate::GlobalNamespace::EnvironmentName,
+        allDirectionEnvironmentName: crate::GlobalNamespace::EnvironmentName,
+        environmentNames: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::EnvironmentName,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -172,7 +177,7 @@ impl BeatmapLevelSO {
     }
     pub fn __SetEnvironmentName(
         &mut self,
-        targetEnvironmentName: EnvironmentName,
+        targetEnvironmentName: crate::GlobalNamespace::EnvironmentName,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -193,11 +198,11 @@ impl BeatmapLevelSO {
     }
     pub fn get_allDirectionsEnvironmentName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<EnvironmentName> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EnvironmentName> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: EnvironmentName = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentName = __cordl_object
             .invoke("get_allDirectionsEnvironmentName", ())?;
         Ok(__cordl_ret)
     }
@@ -210,11 +215,11 @@ impl BeatmapLevelSO {
     }
     pub fn get_contentRating(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<PlayerSensitivityFlag> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PlayerSensitivityFlag> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: PlayerSensitivityFlag = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::PlayerSensitivityFlag = __cordl_object
             .invoke("get_contentRating", ())?;
         Ok(__cordl_ret)
     }
@@ -230,24 +235,26 @@ impl BeatmapLevelSO {
     }
     pub fn get_environmentName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<EnvironmentName> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EnvironmentName> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: EnvironmentName = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentName = __cordl_object
             .invoke("get_environmentName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_environmentNames(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyList_1<EnvironmentName>,
+        *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            crate::GlobalNamespace::EnvironmentName,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            EnvironmentName,
+            crate::GlobalNamespace::EnvironmentName,
         > = __cordl_object.invoke("get_environmentNames", ())?;
         Ok(__cordl_ret)
     }
@@ -391,7 +398,7 @@ impl BeatmapLevelSO {
     }
 }
 #[cfg(feature = "BeatmapLevelSO")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapLevelSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLevelSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -404,7 +411,7 @@ impl quest_hook::libil2cpp::ObjectType for BeatmapLevelSO {
 #[derive(Debug)]
 pub struct BeatmapLevelSO_PreviewDifficultyBeatmap {
     __cordl_parent: crate::System::Object,
-    pub _difficulty: BeatmapDifficulty,
+    pub _difficulty: crate::GlobalNamespace::BeatmapDifficulty,
     pub _environmentNameIdx: i32,
     pub _beatmapColorSchemeIdx: i32,
     pub _noteJumpMovementSpeed: f32,
@@ -438,7 +445,7 @@ for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
 #[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmap")]
 impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
     pub fn New(
-        difficulty: BeatmapDifficulty,
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
         noteJumpMovementSpeed: f32,
         noteJumpStartBeatOffset: f32,
         environmentNameIdx: i32,
@@ -467,7 +474,7 @@ impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
     }
     pub fn _ctor(
         &mut self,
-        difficulty: BeatmapDifficulty,
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
         noteJumpMovementSpeed: f32,
         noteJumpStartBeatOffset: f32,
         environmentNameIdx: i32,
@@ -521,11 +528,11 @@ impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
     }
     pub fn get_difficulty(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BeatmapDifficulty> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapDifficulty> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapDifficulty = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::BeatmapDifficulty = __cordl_object
             .invoke("get_difficulty", ())?;
         Ok(__cordl_ret)
     }
@@ -580,7 +587,7 @@ for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap {
 #[derive(Debug)]
 pub struct BeatmapLevelSO_PreviewDifficultyBeatmapSet {
     __cordl_parent: crate::System::Object,
-    pub _beatmapCharacteristic: *mut BeatmapCharacteristicSO,
+    pub _beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     pub _previewDifficultyBeatmaps: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap,
     >,
@@ -622,7 +629,7 @@ impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
         Ok(__cordl_ret)
     }
     pub fn New_BeatmapCharacteristicSO0(
-        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
+        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -631,7 +638,7 @@ impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
         Ok(__cordl_object)
     }
     pub fn New_List_1_1(
-        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
+        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         previewDifficultyBeatmaps: *mut crate::System::Collections::Generic::List_1<
             *mut crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap,
         >,
@@ -644,7 +651,7 @@ impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
     }
     pub fn _ctor_BeatmapCharacteristicSO0(
         &mut self,
-        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
+        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -655,7 +662,7 @@ impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
     }
     pub fn _ctor_List_1_1(
         &mut self,
-        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
+        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         previewDifficultyBeatmaps: *mut crate::System::Collections::Generic::List_1<
             *mut crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap,
         >,
@@ -669,11 +676,13 @@ impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
     }
     pub fn get_beatmapCharacteristic(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapCharacteristicSO> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapCharacteristicSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapCharacteristicSO = __cordl_object
             .invoke("get_beatmapCharacteristic", ())?;
         Ok(__cordl_ret)
     }

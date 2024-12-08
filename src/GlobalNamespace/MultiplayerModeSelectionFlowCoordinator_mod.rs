@@ -4,30 +4,30 @@
 pub struct MultiplayerModeSelectionFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
     pub _ambienceAudioClip: *mut crate::UnityEngine::AudioClip,
-    pub _songPackMasksModel: *mut SongPackMasksModel,
-    pub _gameServerBrowserFlowCoordinator: *mut GameServerBrowserFlowCoordinator,
-    pub _gameServerLobbyFlowCoordinator: *mut GameServerLobbyFlowCoordinator,
-    pub _multiplayerModeSelectionViewController: *mut MultiplayerModeSelectionViewController,
-    pub _createServerViewController: *mut CreateServerViewController,
-    pub _joinQuickPlayViewController: *mut JoinQuickPlayViewController,
-    pub _serverCodeEntryViewController: *mut ServerCodeEntryViewController,
-    pub _simpleDialogPromptViewController: *mut SimpleDialogPromptViewController,
-    pub _joiningLobbyViewController: *mut JoiningLobbyViewController,
-    pub _unifiedNetworkPlayerModel: *mut IUnifiedNetworkPlayerModel,
+    pub _songPackMasksModel: *mut crate::GlobalNamespace::SongPackMasksModel,
+    pub _gameServerBrowserFlowCoordinator: *mut crate::GlobalNamespace::GameServerBrowserFlowCoordinator,
+    pub _gameServerLobbyFlowCoordinator: *mut crate::GlobalNamespace::GameServerLobbyFlowCoordinator,
+    pub _multiplayerModeSelectionViewController: *mut crate::GlobalNamespace::MultiplayerModeSelectionViewController,
+    pub _createServerViewController: *mut crate::GlobalNamespace::CreateServerViewController,
+    pub _joinQuickPlayViewController: *mut crate::GlobalNamespace::JoinQuickPlayViewController,
+    pub _serverCodeEntryViewController: *mut crate::GlobalNamespace::ServerCodeEntryViewController,
+    pub _simpleDialogPromptViewController: *mut crate::GlobalNamespace::SimpleDialogPromptViewController,
+    pub _joiningLobbyViewController: *mut crate::GlobalNamespace::JoiningLobbyViewController,
+    pub _unifiedNetworkPlayerModel: *mut crate::GlobalNamespace::IUnifiedNetworkPlayerModel,
     pub _avatarSystemCollection: *mut crate::BeatSaber::AvatarCore::AvatarSystemCollection,
-    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
-    pub _fadeInOutController: *mut FadeInOutController,
-    pub _lobbyDataModelsManager: *mut LobbyDataModelsManager,
-    pub _multiplayerLobbyConnectionController: *mut MultiplayerLobbyConnectionController,
-    pub _multiplayerStatusModel: *mut IMultiplayerStatusModel,
-    pub _quickPlaySetupModel: *mut IQuickPlaySetupModel,
-    pub _playerDataModel: *mut PlayerDataModel,
-    pub _songPreviewPlayer: *mut SongPreviewPlayer,
-    pub _analyticsModel: *mut IAnalyticsModel,
-    pub _lobbyGameStateController: *mut ILobbyGameStateController,
-    pub _xPlatformAuthFeatureFlag: *mut XPlatformAuthFeatureFlag,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _fadeInOutController: *mut crate::GlobalNamespace::FadeInOutController,
+    pub _lobbyDataModelsManager: *mut crate::GlobalNamespace::LobbyDataModelsManager,
+    pub _multiplayerLobbyConnectionController: *mut crate::GlobalNamespace::MultiplayerLobbyConnectionController,
+    pub _multiplayerStatusModel: *mut crate::GlobalNamespace::IMultiplayerStatusModel,
+    pub _quickPlaySetupModel: *mut crate::GlobalNamespace::IQuickPlaySetupModel,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _songPreviewPlayer: *mut crate::GlobalNamespace::SongPreviewPlayer,
+    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
+    pub _lobbyGameStateController: *mut crate::GlobalNamespace::ILobbyGameStateController,
+    pub _xPlatformAuthFeatureFlag: *mut crate::GlobalNamespace::XPlatformAuthFeatureFlag,
     pub didFinishEvent: *mut crate::System::Action_1<
-        *mut MultiplayerModeSelectionFlowCoordinator,
+        *mut crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
     >,
     pub _joiningLobbyCancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
     pub _modeSelectionCancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
@@ -37,29 +37,32 @@ pub struct MultiplayerModeSelectionFlowCoordinator {
     pub _checkingAvailabilityTaskSource: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<
         bool,
     >,
-    pub _quickPlaySetupData: *mut QuickPlaySetupData,
-    pub _lobbyDestination: *mut SelectMultiplayerLobbyDestination,
+    pub _quickPlaySetupData: *mut crate::GlobalNamespace::QuickPlaySetupData,
+    pub _lobbyDestination: *mut crate::GlobalNamespace::SelectMultiplayerLobbyDestination,
 }
 #[cfg(feature = "MultiplayerModeSelectionFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerModeSelectionFlowCoordinator => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator => ""
     ."MultiplayerModeSelectionFlowCoordinator"
 );
 #[cfg(feature = "MultiplayerModeSelectionFlowCoordinator")]
-impl std::ops::Deref for MultiplayerModeSelectionFlowCoordinator {
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerModeSelectionFlowCoordinator")]
-impl std::ops::DerefMut for MultiplayerModeSelectionFlowCoordinator {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerModeSelectionFlowCoordinator")]
-impl MultiplayerModeSelectionFlowCoordinator {
+impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
     #[cfg(
         feature = "MultiplayerModeSelectionFlowCoordinator+_HandleConnectedPlayerManagerCreated_d__50"
     )]
@@ -113,7 +116,7 @@ impl MultiplayerModeSelectionFlowCoordinator {
     }
     pub fn HandleConnectedPlayerManagerCreated(
         &mut self,
-        networkPlayerModel: *mut INetworkPlayerModel,
+        networkPlayerModel: *mut crate::GlobalNamespace::INetworkPlayerModel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -125,7 +128,7 @@ impl MultiplayerModeSelectionFlowCoordinator {
     pub fn HandleCreateServerViewControllerDidFinish(
         &mut self,
         success: bool,
-        data: CreateServerFormData,
+        data: crate::GlobalNamespace::CreateServerFormData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -136,7 +139,7 @@ impl MultiplayerModeSelectionFlowCoordinator {
     }
     pub fn HandleGameServerBrowserFlowCoordinatorDidFinish(
         &mut self,
-        flowCoordinator: *mut GameServerBrowserFlowCoordinator,
+        flowCoordinator: *mut crate::GlobalNamespace::GameServerBrowserFlowCoordinator,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -192,7 +195,7 @@ impl MultiplayerModeSelectionFlowCoordinator {
     pub fn HandleMultiplayerLobbyConnectionControllerConnectionFailed(
         &mut self,
         connectionType: crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
-        reason: ConnectionFailedReason,
+        reason: crate::GlobalNamespace::ConnectionFailedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -229,7 +232,7 @@ impl MultiplayerModeSelectionFlowCoordinator {
     }
     pub fn HandleMultiplayerLobbyControllerDidFinish(
         &mut self,
-        viewController: *mut MultiplayerModeSelectionViewController,
+        viewController: *mut crate::GlobalNamespace::MultiplayerModeSelectionViewController,
         menuButton: crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -264,7 +267,7 @@ impl MultiplayerModeSelectionFlowCoordinator {
     pub fn PresentConnectionErrorDialog(
         &mut self,
         connectionType: crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
-        reason: ConnectionFailedReason,
+        reason: crate::GlobalNamespace::ConnectionFailedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -275,7 +278,7 @@ impl MultiplayerModeSelectionFlowCoordinator {
     }
     pub fn PresentMasterServerUnavailableErrorDialog(
         &mut self,
-        reason: MultiplayerUnavailableReason,
+        reason: crate::GlobalNamespace::MultiplayerUnavailableReason,
         exception: *mut crate::System::Exception,
         maintenanceWindowEndTime: crate::System::Nullable_1<i64>,
         remoteLocalizedMessage: *mut crate::System::String,
@@ -313,7 +316,7 @@ impl MultiplayerModeSelectionFlowCoordinator {
     }
     pub fn Setup(
         &mut self,
-        lobbyDestination: *mut SelectMultiplayerLobbyDestination,
+        lobbyDestination: *mut crate::GlobalNamespace::SelectMultiplayerLobbyDestination,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -428,7 +431,9 @@ impl MultiplayerModeSelectionFlowCoordinator {
     }
     pub fn add_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MultiplayerModeSelectionFlowCoordinator>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -439,7 +444,9 @@ impl MultiplayerModeSelectionFlowCoordinator {
     }
     pub fn remove_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MultiplayerModeSelectionFlowCoordinator>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -450,7 +457,8 @@ impl MultiplayerModeSelectionFlowCoordinator {
     }
 }
 #[cfg(feature = "MultiplayerModeSelectionFlowCoordinator")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerModeSelectionFlowCoordinator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

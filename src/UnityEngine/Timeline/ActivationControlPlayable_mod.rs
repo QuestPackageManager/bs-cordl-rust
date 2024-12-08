@@ -27,10 +27,10 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::ActivationControlPlaya
 }
 #[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable")]
 impl crate::UnityEngine::Timeline::ActivationControlPlayable {
-    #[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState")]
-    pub type PostPlaybackState = crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState;
     #[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+InitialState")]
     pub type InitialState = crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState;
+    #[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState")]
+    pub type PostPlaybackState = crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

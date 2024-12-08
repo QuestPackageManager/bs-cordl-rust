@@ -3,31 +3,32 @@
 #[derive(Debug)]
 pub struct LightmappingSceneSetup {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _beatmapLevelSo: *mut BeatmapLevelSO,
-    pub _beatmapCharacteristic: *mut BeatmapCharacteristicSO,
-    pub _beatmapDifficulty: BeatmapDifficulty,
-    pub _colorScheme: *mut ColorSchemeSO,
-    pub _standardLevelNoTransitionInstallerData: *mut StandardLevelNoTransitionInstallerData,
+    pub _beatmapLevelSo: *mut crate::GlobalNamespace::BeatmapLevelSO,
+    pub _beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub _beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
+    pub _colorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
+    pub _standardLevelNoTransitionInstallerData: *mut crate::GlobalNamespace::StandardLevelNoTransitionInstallerData,
 }
 #[cfg(feature = "LightmappingSceneSetup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightmappingSceneSetup => ""."LightmappingSceneSetup"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightmappingSceneSetup => ""
+    ."LightmappingSceneSetup"
 );
 #[cfg(feature = "LightmappingSceneSetup")]
-impl std::ops::Deref for LightmappingSceneSetup {
+impl std::ops::Deref for crate::GlobalNamespace::LightmappingSceneSetup {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightmappingSceneSetup")]
-impl std::ops::DerefMut for LightmappingSceneSetup {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightmappingSceneSetup {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightmappingSceneSetup")]
-impl LightmappingSceneSetup {
+impl crate::GlobalNamespace::LightmappingSceneSetup {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -57,17 +58,17 @@ impl LightmappingSceneSetup {
     }
     pub fn get_colorScheme(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut ColorSchemeSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::ColorSchemeSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ColorSchemeSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::ColorSchemeSO = __cordl_object
             .invoke("get_colorScheme", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_colorScheme(
         &mut self,
-        value: *mut ColorSchemeSO,
+        value: *mut crate::GlobalNamespace::ColorSchemeSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -78,7 +79,8 @@ impl LightmappingSceneSetup {
     }
 }
 #[cfg(feature = "LightmappingSceneSetup")]
-impl quest_hook::libil2cpp::ObjectType for LightmappingSceneSetup {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LightmappingSceneSetup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

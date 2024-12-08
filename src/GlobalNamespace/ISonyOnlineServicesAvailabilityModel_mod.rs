@@ -6,24 +6,26 @@ pub struct ISonyOnlineServicesAvailabilityModel {
 }
 #[cfg(feature = "ISonyOnlineServicesAvailabilityModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ISonyOnlineServicesAvailabilityModel => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ISonyOnlineServicesAvailabilityModel => ""
     ."ISonyOnlineServicesAvailabilityModel"
 );
 #[cfg(feature = "ISonyOnlineServicesAvailabilityModel")]
-impl std::ops::Deref for ISonyOnlineServicesAvailabilityModel {
+impl std::ops::Deref for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ISonyOnlineServicesAvailabilityModel")]
-impl std::ops::DerefMut for ISonyOnlineServicesAvailabilityModel {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ISonyOnlineServicesAvailabilityModel")]
-impl ISonyOnlineServicesAvailabilityModel {
+impl crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel {
     #[cfg(feature = "ISonyOnlineServicesAvailabilityModel+OnlineServicesAvailability")]
     pub type OnlineServicesAvailability = crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability;
     pub fn GetOnlineServicesAvailabilityAsync(
@@ -48,7 +50,8 @@ impl ISonyOnlineServicesAvailabilityModel {
     }
 }
 #[cfg(feature = "ISonyOnlineServicesAvailabilityModel")]
-impl quest_hook::libil2cpp::ObjectType for ISonyOnlineServicesAvailabilityModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

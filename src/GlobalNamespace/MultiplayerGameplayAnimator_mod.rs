@@ -3,41 +3,41 @@
 #[derive(Debug)]
 pub struct MultiplayerGameplayAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _activeLightsColor: *mut ColorSO,
-    pub _leadingLightsColor: *mut ColorSO,
-    pub _failedLightsColor: *mut ColorSO,
+    pub _activeLightsColor: *mut crate::GlobalNamespace::ColorSO,
+    pub _leadingLightsColor: *mut crate::GlobalNamespace::ColorSO,
+    pub _failedLightsColor: *mut crate::GlobalNamespace::ColorSO,
     pub _leadingSwitchCrossFadeDuration: f32,
     pub _gameplayLightsAnimators: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut LightsAnimator,
+        *mut crate::GlobalNamespace::LightsAnimator,
     >,
     pub _allLightsAnimators: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut LightsAnimator,
+        *mut crate::GlobalNamespace::LightsAnimator,
     >,
-    pub _leadPlayerProvider: *mut MultiplayerLeadPlayerProvider,
-    pub _multiplayerController: *mut MultiplayerController,
+    pub _leadPlayerProvider: *mut crate::GlobalNamespace::MultiplayerLeadPlayerProvider,
+    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
     pub tweeningManager: *mut crate::Tweening::TimeTweeningManager,
-    pub connectedPlayer: *mut IConnectedPlayer,
+    pub connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
 }
 #[cfg(feature = "MultiplayerGameplayAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerGameplayAnimator => ""
-    ."MultiplayerGameplayAnimator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerGameplayAnimator =>
+    ""."MultiplayerGameplayAnimator"
 );
 #[cfg(feature = "MultiplayerGameplayAnimator")]
-impl std::ops::Deref for MultiplayerGameplayAnimator {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerGameplayAnimator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerGameplayAnimator")]
-impl std::ops::DerefMut for MultiplayerGameplayAnimator {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerGameplayAnimator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerGameplayAnimator")]
-impl MultiplayerGameplayAnimator {
+impl crate::GlobalNamespace::MultiplayerGameplayAnimator {
     pub fn AnimateNewLeaderSelected(
         &mut self,
         isLeading: bool,
@@ -110,7 +110,8 @@ impl MultiplayerGameplayAnimator {
     }
 }
 #[cfg(feature = "MultiplayerGameplayAnimator")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerGameplayAnimator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerGameplayAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

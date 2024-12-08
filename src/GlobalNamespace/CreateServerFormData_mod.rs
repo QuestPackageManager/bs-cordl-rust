@@ -7,19 +7,21 @@ pub struct CreateServerFormData {
     pub maxPlayers: i32,
     pub allowInviteOthers: bool,
     pub netDiscoverable: bool,
-    pub difficulties: BeatmapDifficultyMask,
-    pub modifiers: GameplayModifierMask,
-    pub songPacks: SongPackMask,
-    pub gameplayServerMode: GameplayServerMode,
-    pub songSelectionMode: SongSelectionMode,
-    pub gameplayServerControlSettings: GameplayServerControlSettings,
+    pub difficulties: crate::GlobalNamespace::BeatmapDifficultyMask,
+    pub modifiers: crate::GlobalNamespace::GameplayModifierMask,
+    pub songPacks: crate::GlobalNamespace::SongPackMask,
+    pub gameplayServerMode: crate::GlobalNamespace::GameplayServerMode,
+    pub songSelectionMode: crate::GlobalNamespace::SongSelectionMode,
+    pub gameplayServerControlSettings: crate::GlobalNamespace::GameplayServerControlSettings,
 }
 #[cfg(feature = "CreateServerFormData")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for CreateServerFormData => ""."CreateServerFormData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CreateServerFormData => ""
+    ."CreateServerFormData"
 );
 #[cfg(feature = "CreateServerFormData")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for CreateServerFormData {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::CreateServerFormData {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -29,4 +31,4 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for CreateServerFormData {
     }
 }
 #[cfg(feature = "CreateServerFormData")]
-impl CreateServerFormData {}
+impl crate::GlobalNamespace::CreateServerFormData {}

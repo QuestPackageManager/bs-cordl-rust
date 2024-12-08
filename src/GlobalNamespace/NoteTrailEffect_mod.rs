@@ -5,28 +5,29 @@ pub struct NoteTrailEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _particlesPerFrame: i32,
     pub _maxSpawnDistance: f32,
-    pub _noteMovement: *mut NoteMovement,
-    pub _noteTrailParticleSystem: *mut NoteTrailParticleSystem,
+    pub _noteMovement: *mut crate::GlobalNamespace::NoteMovement,
+    pub _noteTrailParticleSystem: *mut crate::GlobalNamespace::NoteTrailParticleSystem,
 }
 #[cfg(feature = "NoteTrailEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteTrailEffect => ""."NoteTrailEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteTrailEffect => ""
+    ."NoteTrailEffect"
 );
 #[cfg(feature = "NoteTrailEffect")]
-impl std::ops::Deref for NoteTrailEffect {
+impl std::ops::Deref for crate::GlobalNamespace::NoteTrailEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteTrailEffect")]
-impl std::ops::DerefMut for NoteTrailEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteTrailEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteTrailEffect")]
-impl NoteTrailEffect {
+impl crate::GlobalNamespace::NoteTrailEffect {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -96,7 +97,7 @@ impl NoteTrailEffect {
     }
 }
 #[cfg(feature = "NoteTrailEffect")]
-impl quest_hook::libil2cpp::ObjectType for NoteTrailEffect {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteTrailEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

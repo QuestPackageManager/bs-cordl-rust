@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RunLevelMenuDestination {
-    __cordl_parent: MenuDestination,
-    pub beatmapLevelPack: *mut BeatmapLevelPack,
-    pub beatmapLevel: *mut BeatmapLevel,
-    pub beatmapDifficulty: BeatmapDifficulty,
-    pub beatmapCharacteristic: *mut BeatmapCharacteristicSO,
-    pub gameplayModifiers: *mut GameplayModifiers,
+    __cordl_parent: crate::GlobalNamespace::MenuDestination,
+    pub beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
+    pub beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+    pub gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     pub practice: bool,
     pub startSongTime: f32,
     pub songSpeedMultiplier: f32,
@@ -18,29 +18,30 @@ pub struct RunLevelMenuDestination {
 }
 #[cfg(feature = "RunLevelMenuDestination")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RunLevelMenuDestination => ""."RunLevelMenuDestination"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RunLevelMenuDestination => ""
+    ."RunLevelMenuDestination"
 );
 #[cfg(feature = "RunLevelMenuDestination")]
-impl std::ops::Deref for RunLevelMenuDestination {
-    type Target = MenuDestination;
+impl std::ops::Deref for crate::GlobalNamespace::RunLevelMenuDestination {
+    type Target = crate::GlobalNamespace::MenuDestination;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RunLevelMenuDestination")]
-impl std::ops::DerefMut for RunLevelMenuDestination {
+impl std::ops::DerefMut for crate::GlobalNamespace::RunLevelMenuDestination {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RunLevelMenuDestination")]
-impl RunLevelMenuDestination {
+impl crate::GlobalNamespace::RunLevelMenuDestination {
     pub fn New(
-        beatmapLevelPack: *mut BeatmapLevelPack,
-        beatmapLevel: *mut BeatmapLevel,
-        beatmapDifficulty: BeatmapDifficulty,
-        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
-        gameplayModifiers: *mut GameplayModifiers,
+        beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+        beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
+        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
         practice: bool,
         startSongTime: f32,
         songSpeedMultiplier: f32,
@@ -73,11 +74,11 @@ impl RunLevelMenuDestination {
     }
     pub fn _ctor(
         &mut self,
-        beatmapLevelPack: *mut BeatmapLevelPack,
-        beatmapLevel: *mut BeatmapLevel,
-        beatmapDifficulty: BeatmapDifficulty,
-        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
-        gameplayModifiers: *mut GameplayModifiers,
+        beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+        beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
+        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
         practice: bool,
         startSongTime: f32,
         songSpeedMultiplier: f32,
@@ -111,7 +112,8 @@ impl RunLevelMenuDestination {
     }
 }
 #[cfg(feature = "RunLevelMenuDestination")]
-impl quest_hook::libil2cpp::ObjectType for RunLevelMenuDestination {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::RunLevelMenuDestination {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

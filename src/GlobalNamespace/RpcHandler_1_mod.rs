@@ -3,45 +3,52 @@
 #[derive(Debug)]
 pub struct RpcHandler_1<TType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Object,
-    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
     pub _messageType: crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
-    pub _rpcSerializer: *mut NetworkPacketSerializer_2<TType, *mut IConnectedPlayer>,
+    pub _rpcSerializer: *mut crate::GlobalNamespace::NetworkPacketSerializer_2<
+        TType,
+        *mut crate::GlobalNamespace::IConnectedPlayer,
+    >,
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
 }
 #[cfg(feature = "RpcHandler_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RpcHandler_1 < TType > => ""."RpcHandler`1" < TType >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RpcHandler_1 < TType > => ""
+    ."RpcHandler`1" < TType >
 );
 #[cfg(feature = "RpcHandler_1")]
-impl<TType: quest_hook::libil2cpp::Type> std::ops::Deref for RpcHandler_1<TType> {
+impl<TType: quest_hook::libil2cpp::Type> std::ops::Deref
+for crate::GlobalNamespace::RpcHandler_1<TType> {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RpcHandler_1")]
-impl<TType: quest_hook::libil2cpp::Type> std::ops::DerefMut for RpcHandler_1<TType> {
+impl<TType: quest_hook::libil2cpp::Type> std::ops::DerefMut
+for crate::GlobalNamespace::RpcHandler_1<TType> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RpcHandler_1")]
-impl<TType: quest_hook::libil2cpp::Type> RpcHandler_1<TType> {
-    #[cfg(feature = "RpcHandler_1+__c__DisplayClass15_0_1")]
-    pub type __c__DisplayClass15_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass15_0_1<
-        TType,
-        T,
-    >;
-    #[cfg(feature = "RpcHandler_1+__c__DisplayClass16_0_2")]
-    pub type __c__DisplayClass16_0_2<
-        T: quest_hook::libil2cpp::Type,
-        T0: quest_hook::libil2cpp::Type,
-    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass16_0_2<TType, T, T0>;
+impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TType> {
     #[cfg(feature = "RpcHandler_1+__c__DisplayClass10_0_1")]
     pub type __c__DisplayClass10_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass10_0_1<
         TType,
         T,
     >;
+    #[cfg(feature = "RpcHandler_1+__c__DisplayClass11_0_2")]
+    pub type __c__DisplayClass11_0_2<
+        T: quest_hook::libil2cpp::Type,
+        T0: quest_hook::libil2cpp::Type,
+    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass11_0_2<TType, T, T0>;
+    #[cfg(feature = "RpcHandler_1+__c__DisplayClass12_0_3")]
+    pub type __c__DisplayClass12_0_3<
+        T: quest_hook::libil2cpp::Type,
+        T0: quest_hook::libil2cpp::Type,
+        T1: quest_hook::libil2cpp::Type,
+    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass12_0_3<TType, T, T0, T1>;
     #[cfg(feature = "RpcHandler_1+__c__DisplayClass13_0_4")]
     pub type __c__DisplayClass13_0_4<
         T: quest_hook::libil2cpp::Type,
@@ -49,19 +56,6 @@ impl<TType: quest_hook::libil2cpp::Type> RpcHandler_1<TType> {
         T1: quest_hook::libil2cpp::Type,
         T2: quest_hook::libil2cpp::Type,
     > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass13_0_4<
-        TType,
-        T,
-        T0,
-        T1,
-        T2,
-    >;
-    #[cfg(feature = "RpcHandler_1+__c__DisplayClass18_0_4")]
-    pub type __c__DisplayClass18_0_4<
-        T: quest_hook::libil2cpp::Type,
-        T0: quest_hook::libil2cpp::Type,
-        T1: quest_hook::libil2cpp::Type,
-        T2: quest_hook::libil2cpp::Type,
-    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass18_0_4<
         TType,
         T,
         T0,
@@ -83,18 +77,35 @@ impl<TType: quest_hook::libil2cpp::Type> RpcHandler_1<TType> {
         T2,
         T3,
     >;
-    #[cfg(feature = "RpcHandler_1+__c__DisplayClass12_0_3")]
-    pub type __c__DisplayClass12_0_3<
+    #[cfg(feature = "RpcHandler_1+__c__DisplayClass15_0_1")]
+    pub type __c__DisplayClass15_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass15_0_1<
+        TType,
+        T,
+    >;
+    #[cfg(feature = "RpcHandler_1+__c__DisplayClass16_0_2")]
+    pub type __c__DisplayClass16_0_2<
         T: quest_hook::libil2cpp::Type,
         T0: quest_hook::libil2cpp::Type,
-        T1: quest_hook::libil2cpp::Type,
-    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass12_0_3<TType, T, T0, T1>;
+    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass16_0_2<TType, T, T0>;
     #[cfg(feature = "RpcHandler_1+__c__DisplayClass17_0_3")]
     pub type __c__DisplayClass17_0_3<
         T: quest_hook::libil2cpp::Type,
         T0: quest_hook::libil2cpp::Type,
         T1: quest_hook::libil2cpp::Type,
     > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass17_0_3<TType, T, T0, T1>;
+    #[cfg(feature = "RpcHandler_1+__c__DisplayClass18_0_4")]
+    pub type __c__DisplayClass18_0_4<
+        T: quest_hook::libil2cpp::Type,
+        T0: quest_hook::libil2cpp::Type,
+        T1: quest_hook::libil2cpp::Type,
+        T2: quest_hook::libil2cpp::Type,
+    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass18_0_4<
+        TType,
+        T,
+        T0,
+        T1,
+        T2,
+    >;
     #[cfg(feature = "RpcHandler_1+__c__DisplayClass19_0_5")]
     pub type __c__DisplayClass19_0_5<
         T: quest_hook::libil2cpp::Type,
@@ -115,11 +126,6 @@ impl<TType: quest_hook::libil2cpp::Type> RpcHandler_1<TType> {
         TType,
         T,
     >;
-    #[cfg(feature = "RpcHandler_1+__c__DisplayClass11_0_2")]
-    pub type __c__DisplayClass11_0_2<
-        T: quest_hook::libil2cpp::Type,
-        T0: quest_hook::libil2cpp::Type,
-    > = crate::GlobalNamespace::RpcHandler_1___c__DisplayClass11_0_2<TType, T, T0>;
     pub fn Destroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -245,7 +251,7 @@ impl<TType: quest_hook::libil2cpp::Type> RpcHandler_1<TType> {
         Ok(__cordl_ret)
     }
     pub fn New(
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
+        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
         messageType: crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -418,7 +424,10 @@ impl<TType: quest_hook::libil2cpp::Type> RpcHandler_1<TType> {
     pub fn RegisterCallback_Action_2_5<T>(
         &mut self,
         _cordl_type: TType,
-        callback: *mut crate::System::Action_2<*mut IConnectedPlayer, T>,
+        callback: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::IConnectedPlayer,
+            T,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -513,7 +522,7 @@ impl<TType: quest_hook::libil2cpp::Type> RpcHandler_1<TType> {
     }
     pub fn _ctor(
         &mut self,
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
+        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
         messageType: crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -530,7 +539,7 @@ impl<TType: quest_hook::libil2cpp::Type> RpcHandler_1<TType> {
 }
 #[cfg(feature = "RpcHandler_1")]
 impl<TType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for RpcHandler_1<TType> {
+for crate::GlobalNamespace::RpcHandler_1<TType> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerLobbyPermissionConfigurationNetSerializable {
-    __cordl_parent: PoolableSerializable,
+    __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
     pub _userId: *mut crate::System::String,
     pub _isServerOwner: bool,
     pub _hasRecommendBeatmapsPermission: bool,
@@ -12,24 +12,27 @@ pub struct PlayerLobbyPermissionConfigurationNetSerializable {
 }
 #[cfg(feature = "PlayerLobbyPermissionConfigurationNetSerializable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerLobbyPermissionConfigurationNetSerializable => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable => ""
     ."PlayerLobbyPermissionConfigurationNetSerializable"
 );
 #[cfg(feature = "PlayerLobbyPermissionConfigurationNetSerializable")]
-impl std::ops::Deref for PlayerLobbyPermissionConfigurationNetSerializable {
-    type Target = PoolableSerializable;
+impl std::ops::Deref
+for crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
+    type Target = crate::GlobalNamespace::PoolableSerializable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerLobbyPermissionConfigurationNetSerializable")]
-impl std::ops::DerefMut for PlayerLobbyPermissionConfigurationNetSerializable {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerLobbyPermissionConfigurationNetSerializable")]
-impl PlayerLobbyPermissionConfigurationNetSerializable {
+impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
@@ -50,12 +53,12 @@ impl PlayerLobbyPermissionConfigurationNetSerializable {
         hasKickVotePermission: bool,
         hasInvitePermission: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut PlayerLobbyPermissionConfigurationNetSerializable,
+        *mut crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PlayerLobbyPermissionConfigurationNetSerializable = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable = __cordl_object
             .invoke(
                 "Init",
                 (
@@ -151,7 +154,7 @@ impl PlayerLobbyPermissionConfigurationNetSerializable {
 }
 #[cfg(feature = "PlayerLobbyPermissionConfigurationNetSerializable")]
 impl quest_hook::libil2cpp::ObjectType
-for PlayerLobbyPermissionConfigurationNetSerializable {
+for crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

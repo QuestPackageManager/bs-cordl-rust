@@ -6,24 +6,24 @@ pub struct IAssetSongAudioClipProvider {
 }
 #[cfg(feature = "IAssetSongAudioClipProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IAssetSongAudioClipProvider => ""
-    ."IAssetSongAudioClipProvider"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IAssetSongAudioClipProvider =>
+    ""."IAssetSongAudioClipProvider"
 );
 #[cfg(feature = "IAssetSongAudioClipProvider")]
-impl std::ops::Deref for IAssetSongAudioClipProvider {
+impl std::ops::Deref for crate::GlobalNamespace::IAssetSongAudioClipProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IAssetSongAudioClipProvider")]
-impl std::ops::DerefMut for IAssetSongAudioClipProvider {
+impl std::ops::DerefMut for crate::GlobalNamespace::IAssetSongAudioClipProvider {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IAssetSongAudioClipProvider")]
-impl IAssetSongAudioClipProvider {
+impl crate::GlobalNamespace::IAssetSongAudioClipProvider {
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
@@ -41,7 +41,8 @@ impl IAssetSongAudioClipProvider {
     }
 }
 #[cfg(feature = "IAssetSongAudioClipProvider")]
-impl quest_hook::libil2cpp::ObjectType for IAssetSongAudioClipProvider {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IAssetSongAudioClipProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

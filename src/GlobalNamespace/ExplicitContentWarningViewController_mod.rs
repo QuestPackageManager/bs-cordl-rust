@@ -5,29 +5,31 @@ pub struct ExplicitContentWarningViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _toggleExplicit: *mut crate::UnityEngine::UI::Toggle,
     pub _continueButton: *mut crate::UnityEngine::UI::Button,
-    pub _playerDataModel: *mut PlayerDataModel,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
     pub didFinishEvent: *mut crate::System::Action,
 }
 #[cfg(feature = "ExplicitContentWarningViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ExplicitContentWarningViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ExplicitContentWarningViewController => ""
     ."ExplicitContentWarningViewController"
 );
 #[cfg(feature = "ExplicitContentWarningViewController")]
-impl std::ops::Deref for ExplicitContentWarningViewController {
+impl std::ops::Deref for crate::GlobalNamespace::ExplicitContentWarningViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ExplicitContentWarningViewController")]
-impl std::ops::DerefMut for ExplicitContentWarningViewController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::ExplicitContentWarningViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ExplicitContentWarningViewController")]
-impl ExplicitContentWarningViewController {
+impl crate::GlobalNamespace::ExplicitContentWarningViewController {
     #[cfg(feature = "ExplicitContentWarningViewController+_HandleClickedEvent_d__8")]
     pub type _HandleClickedEvent_d__8 = crate::GlobalNamespace::ExplicitContentWarningViewController__HandleClickedEvent_d__8;
     pub fn DidActivate(
@@ -109,7 +111,8 @@ impl ExplicitContentWarningViewController {
     }
 }
 #[cfg(feature = "ExplicitContentWarningViewController")]
-impl quest_hook::libil2cpp::ObjectType for ExplicitContentWarningViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ExplicitContentWarningViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

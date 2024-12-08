@@ -2,31 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainEffectGraphicsSettingsPresetsSO {
-    __cordl_parent: NamedPresetsSO,
+    __cordl_parent: crate::GlobalNamespace::NamedPresetsSO,
     pub _presets: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO_Preset,
     >,
 }
 #[cfg(feature = "MainEffectGraphicsSettingsPresetsSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MainEffectGraphicsSettingsPresetsSO => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO => ""
     ."MainEffectGraphicsSettingsPresetsSO"
 );
 #[cfg(feature = "MainEffectGraphicsSettingsPresetsSO")]
-impl std::ops::Deref for MainEffectGraphicsSettingsPresetsSO {
-    type Target = NamedPresetsSO;
+impl std::ops::Deref for crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO {
+    type Target = crate::GlobalNamespace::NamedPresetsSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainEffectGraphicsSettingsPresetsSO")]
-impl std::ops::DerefMut for MainEffectGraphicsSettingsPresetsSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainEffectGraphicsSettingsPresetsSO")]
-impl MainEffectGraphicsSettingsPresetsSO {
+impl crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO {
     #[cfg(feature = "MainEffectGraphicsSettingsPresetsSO+Preset")]
     pub type Preset = crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO_Preset;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -49,13 +50,14 @@ impl MainEffectGraphicsSettingsPresetsSO {
     pub fn get_namedPresets(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut NamedPreset>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::NamedPreset>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<*mut NamedPreset> = __cordl_object
-            .invoke("get_namedPresets", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::NamedPreset,
+        > = __cordl_object.invoke("get_namedPresets", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_presets(
@@ -75,7 +77,8 @@ impl MainEffectGraphicsSettingsPresetsSO {
     }
 }
 #[cfg(feature = "MainEffectGraphicsSettingsPresetsSO")]
-impl quest_hook::libil2cpp::ObjectType for MainEffectGraphicsSettingsPresetsSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -87,8 +90,8 @@ impl quest_hook::libil2cpp::ObjectType for MainEffectGraphicsSettingsPresetsSO {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MainEffectGraphicsSettingsPresetsSO_Preset {
-    __cordl_parent: NamedPreset,
-    pub mainEffect: *mut MainEffectSO,
+    __cordl_parent: crate::GlobalNamespace::NamedPreset,
+    pub mainEffect: *mut crate::GlobalNamespace::MainEffectSO,
 }
 #[cfg(feature = "MainEffectGraphicsSettingsPresetsSO+Preset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -99,7 +102,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MainEffectGraphicsSettingsPresetsSO+Preset")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO_Preset {
-    type Target = NamedPreset;
+    type Target = crate::GlobalNamespace::NamedPreset;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

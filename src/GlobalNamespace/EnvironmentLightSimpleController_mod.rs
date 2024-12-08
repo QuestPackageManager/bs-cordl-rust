@@ -5,28 +5,29 @@ pub struct EnvironmentLightSimpleController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _color: crate::UnityEngine::Color,
     pub _colorId: i32,
-    pub _lightManager: *mut LightWithIdManager,
+    pub _lightManager: *mut crate::GlobalNamespace::LightWithIdManager,
 }
 #[cfg(feature = "EnvironmentLightSimpleController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnvironmentLightSimpleController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::EnvironmentLightSimpleController => ""
     ."EnvironmentLightSimpleController"
 );
 #[cfg(feature = "EnvironmentLightSimpleController")]
-impl std::ops::Deref for EnvironmentLightSimpleController {
+impl std::ops::Deref for crate::GlobalNamespace::EnvironmentLightSimpleController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentLightSimpleController")]
-impl std::ops::DerefMut for EnvironmentLightSimpleController {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentLightSimpleController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentLightSimpleController")]
-impl EnvironmentLightSimpleController {
+impl crate::GlobalNamespace::EnvironmentLightSimpleController {
     pub fn LateUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -56,7 +57,8 @@ impl EnvironmentLightSimpleController {
     }
 }
 #[cfg(feature = "EnvironmentLightSimpleController")]
-impl quest_hook::libil2cpp::ObjectType for EnvironmentLightSimpleController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EnvironmentLightSimpleController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -28,10 +28,10 @@ impl crate::System::Runtime::InteropServices::Marshal {
         feature = "System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer"
     )]
     pub type MarshalerInstanceKeyComparer = crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyComparer;
-    #[cfg(feature = "System+Runtime+InteropServices+Marshal+__c")]
-    pub type __c = crate::System::Runtime::InteropServices::Marshal___c;
     #[cfg(feature = "System+Runtime+InteropServices+Marshal+SecureStringAllocator")]
     pub type SecureStringAllocator = crate::System::Runtime::InteropServices::Marshal_SecureStringAllocator;
+    #[cfg(feature = "System+Runtime+InteropServices+Marshal+__c")]
+    pub type __c = crate::System::Runtime::InteropServices::Marshal___c;
 }
 #[cfg(feature = "System+Runtime+InteropServices+Marshal")]
 impl quest_hook::libil2cpp::ObjectType

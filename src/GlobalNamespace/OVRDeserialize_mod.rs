@@ -32,46 +32,47 @@ pub struct OVRDeserialize {
 }
 #[cfg(feature = "OVRDeserialize")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRDeserialize => ""."OVRDeserialize"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRDeserialize => ""
+    ."OVRDeserialize"
 );
 #[cfg(feature = "OVRDeserialize")]
-impl std::ops::Deref for OVRDeserialize {
+impl std::ops::Deref for crate::GlobalNamespace::OVRDeserialize {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRDeserialize")]
-impl std::ops::DerefMut for OVRDeserialize {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRDeserialize {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRDeserialize")]
-impl OVRDeserialize {
-    #[cfg(feature = "OVRDeserialize+SpatialAnchorCreateCompleteData")]
-    pub type SpatialAnchorCreateCompleteData = crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData;
-    #[cfg(feature = "OVRDeserialize+SpaceQueryResultsData")]
-    pub type SpaceQueryResultsData = crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData;
-    #[cfg(feature = "OVRDeserialize+SpaceQueryCompleteData")]
-    pub type SpaceQueryCompleteData = crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData;
-    #[cfg(feature = "OVRDeserialize+SpaceSaveCompleteData")]
-    pub type SpaceSaveCompleteData = crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData;
-    #[cfg(feature = "OVRDeserialize+SpaceShareResultData")]
-    pub type SpaceShareResultData = crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData;
-    #[cfg(feature = "OVRDeserialize+SpaceSetComponentStatusCompleteData")]
-    pub type SpaceSetComponentStatusCompleteData = crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData;
+impl crate::GlobalNamespace::OVRDeserialize {
     #[cfg(feature = "OVRDeserialize+DisplayRefreshRateChangedData")]
     pub type DisplayRefreshRateChangedData = crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData;
     #[cfg(feature = "OVRDeserialize+SceneCaptureCompleteData")]
     pub type SceneCaptureCompleteData = crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData;
-    #[cfg(feature = "OVRDeserialize+SpaceListSaveResultData")]
-    pub type SpaceListSaveResultData = crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData;
     #[cfg(feature = "OVRDeserialize+SpaceEraseCompleteData")]
     pub type SpaceEraseCompleteData = crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData;
+    #[cfg(feature = "OVRDeserialize+SpaceListSaveResultData")]
+    pub type SpaceListSaveResultData = crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData;
+    #[cfg(feature = "OVRDeserialize+SpaceQueryCompleteData")]
+    pub type SpaceQueryCompleteData = crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData;
+    #[cfg(feature = "OVRDeserialize+SpaceQueryResultsData")]
+    pub type SpaceQueryResultsData = crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData;
+    #[cfg(feature = "OVRDeserialize+SpaceSaveCompleteData")]
+    pub type SpaceSaveCompleteData = crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData;
+    #[cfg(feature = "OVRDeserialize+SpaceSetComponentStatusCompleteData")]
+    pub type SpaceSetComponentStatusCompleteData = crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData;
+    #[cfg(feature = "OVRDeserialize+SpaceShareResultData")]
+    pub type SpaceShareResultData = crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData;
+    #[cfg(feature = "OVRDeserialize+SpatialAnchorCreateCompleteData")]
+    pub type SpatialAnchorCreateCompleteData = crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData;
 }
 #[cfg(feature = "OVRDeserialize")]
-impl quest_hook::libil2cpp::ObjectType for OVRDeserialize {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRDeserialize {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

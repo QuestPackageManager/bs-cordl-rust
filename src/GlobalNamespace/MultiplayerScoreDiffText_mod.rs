@@ -23,36 +23,36 @@ pub struct MultiplayerScoreDiffText {
     pub _onPlatformText: *mut crate::TMPro::TextMeshPro,
     pub _backgroundSpriteRenderer: *mut crate::UnityEngine::SpriteRenderer,
     pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
-    pub _connectedPlayer: *mut IConnectedPlayer,
-    pub _leadPlayerProvider: *mut MultiplayerLeadPlayerProvider,
+    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
+    pub _leadPlayerProvider: *mut crate::GlobalNamespace::MultiplayerLeadPlayerProvider,
     pub _currentBackgroundColor: crate::UnityEngine::Color,
     pub _state: crate::GlobalNamespace::MultiplayerScoreDiffText_State,
     pub _onPlatformTextAlphaTween: *mut crate::Tweening::FloatTween,
 }
 #[cfg(feature = "MultiplayerScoreDiffText")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerScoreDiffText => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerScoreDiffText => ""
     ."MultiplayerScoreDiffText"
 );
 #[cfg(feature = "MultiplayerScoreDiffText")]
-impl std::ops::Deref for MultiplayerScoreDiffText {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerScoreDiffText {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerScoreDiffText")]
-impl std::ops::DerefMut for MultiplayerScoreDiffText {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerScoreDiffText {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerScoreDiffText")]
-impl MultiplayerScoreDiffText {
-    #[cfg(feature = "MultiplayerScoreDiffText+State")]
-    pub type State = crate::GlobalNamespace::MultiplayerScoreDiffText_State;
+impl crate::GlobalNamespace::MultiplayerScoreDiffText {
     #[cfg(feature = "MultiplayerScoreDiffText+HorizontalPosition")]
     pub type HorizontalPosition = crate::GlobalNamespace::MultiplayerScoreDiffText_HorizontalPosition;
+    #[cfg(feature = "MultiplayerScoreDiffText+State")]
+    pub type State = crate::GlobalNamespace::MultiplayerScoreDiffText_State;
     pub fn AnimateHide(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -177,7 +177,8 @@ impl MultiplayerScoreDiffText {
     }
 }
 #[cfg(feature = "MultiplayerScoreDiffText")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerScoreDiffText {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerScoreDiffText {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

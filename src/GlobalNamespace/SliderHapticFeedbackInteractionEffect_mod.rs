@@ -2,32 +2,34 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderHapticFeedbackInteractionEffect {
-    __cordl_parent: SliderInteractionEffect,
+    __cordl_parent: crate::GlobalNamespace::SliderInteractionEffect,
     pub _hapticPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    pub _hapticFeedbackManager: *mut HapticFeedbackManager,
-    pub _gamePause: *mut IGamePause,
-    pub _saberType: SaberType,
+    pub _hapticFeedbackManager: *mut crate::GlobalNamespace::HapticFeedbackManager,
+    pub _gamePause: *mut crate::GlobalNamespace::IGamePause,
+    pub _saberType: crate::GlobalNamespace::SaberType,
 }
 #[cfg(feature = "SliderHapticFeedbackInteractionEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SliderHapticFeedbackInteractionEffect => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SliderHapticFeedbackInteractionEffect => ""
     ."SliderHapticFeedbackInteractionEffect"
 );
 #[cfg(feature = "SliderHapticFeedbackInteractionEffect")]
-impl std::ops::Deref for SliderHapticFeedbackInteractionEffect {
-    type Target = SliderInteractionEffect;
+impl std::ops::Deref for crate::GlobalNamespace::SliderHapticFeedbackInteractionEffect {
+    type Target = crate::GlobalNamespace::SliderInteractionEffect;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderHapticFeedbackInteractionEffect")]
-impl std::ops::DerefMut for SliderHapticFeedbackInteractionEffect {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::SliderHapticFeedbackInteractionEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderHapticFeedbackInteractionEffect")]
-impl SliderHapticFeedbackInteractionEffect {
+impl crate::GlobalNamespace::SliderHapticFeedbackInteractionEffect {
     pub const kVibrationSaberInteractionParamThreshold: f32 = 0.2f32;
     pub fn EndEffect(
         &mut self,
@@ -99,7 +101,8 @@ impl SliderHapticFeedbackInteractionEffect {
     }
 }
 #[cfg(feature = "SliderHapticFeedbackInteractionEffect")]
-impl quest_hook::libil2cpp::ObjectType for SliderHapticFeedbackInteractionEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SliderHapticFeedbackInteractionEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

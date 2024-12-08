@@ -7,24 +7,24 @@ pub struct HEU_ScriptCallbackExample {
 }
 #[cfg(feature = "HEU_ScriptCallbackExample")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for HEU_ScriptCallbackExample => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::HEU_ScriptCallbackExample => ""
     ."HEU_ScriptCallbackExample"
 );
 #[cfg(feature = "HEU_ScriptCallbackExample")]
-impl std::ops::Deref for HEU_ScriptCallbackExample {
+impl std::ops::Deref for crate::GlobalNamespace::HEU_ScriptCallbackExample {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HEU_ScriptCallbackExample")]
-impl std::ops::DerefMut for HEU_ScriptCallbackExample {
+impl std::ops::DerefMut for crate::GlobalNamespace::HEU_ScriptCallbackExample {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "HEU_ScriptCallbackExample")]
-impl HEU_ScriptCallbackExample {
+impl crate::GlobalNamespace::HEU_ScriptCallbackExample {
     pub fn AssetCallbackNoMsg(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -65,7 +65,8 @@ impl HEU_ScriptCallbackExample {
     }
 }
 #[cfg(feature = "HEU_ScriptCallbackExample")]
-impl quest_hook::libil2cpp::ObjectType for HEU_ScriptCallbackExample {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::HEU_ScriptCallbackExample {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

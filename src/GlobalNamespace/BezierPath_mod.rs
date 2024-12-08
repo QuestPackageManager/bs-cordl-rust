@@ -13,23 +13,23 @@ pub struct BezierPath {
 }
 #[cfg(feature = "BezierPath")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BezierPath => ""."BezierPath"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BezierPath => ""."BezierPath"
 );
 #[cfg(feature = "BezierPath")]
-impl std::ops::Deref for BezierPath {
+impl std::ops::Deref for crate::GlobalNamespace::BezierPath {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BezierPath")]
-impl std::ops::DerefMut for BezierPath {
+impl std::ops::DerefMut for crate::GlobalNamespace::BezierPath {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BezierPath")]
-impl BezierPath {
+impl crate::GlobalNamespace::BezierPath {
     pub const kAutoControlLength: f32 = 0.3f32;
     #[cfg(feature = "BezierPath+ControlMode")]
     pub type ControlMode = crate::GlobalNamespace::BezierPath_ControlMode;
@@ -304,7 +304,7 @@ impl BezierPath {
     }
 }
 #[cfg(feature = "BezierPath")]
-impl quest_hook::libil2cpp::ObjectType for BezierPath {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BezierPath {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -502,16 +502,16 @@ impl std::ops::DerefMut for crate::TMPro::TMP_Dropdown {
 impl crate::TMPro::TMP_Dropdown {
     #[cfg(feature = "TMPro+TMP_Dropdown+DropdownEvent")]
     pub type DropdownEvent = crate::TMPro::TMP_Dropdown_DropdownEvent;
-    #[cfg(feature = "TMPro+TMP_Dropdown+__c__DisplayClass69_0")]
-    pub type __c__DisplayClass69_0 = crate::TMPro::TMP_Dropdown___c__DisplayClass69_0;
-    #[cfg(feature = "TMPro+TMP_Dropdown+OptionDataList")]
-    pub type OptionDataList = crate::TMPro::TMP_Dropdown_OptionDataList;
-    #[cfg(feature = "TMPro+TMP_Dropdown+_DelayedDestroyDropdownList_d__81")]
-    pub type _DelayedDestroyDropdownList_d__81 = crate::TMPro::TMP_Dropdown__DelayedDestroyDropdownList_d__81;
     #[cfg(feature = "TMPro+TMP_Dropdown+DropdownItem")]
     pub type DropdownItem = crate::TMPro::TMP_Dropdown_DropdownItem;
     #[cfg(feature = "TMPro+TMP_Dropdown+OptionData")]
     pub type OptionData = crate::TMPro::TMP_Dropdown_OptionData;
+    #[cfg(feature = "TMPro+TMP_Dropdown+OptionDataList")]
+    pub type OptionDataList = crate::TMPro::TMP_Dropdown_OptionDataList;
+    #[cfg(feature = "TMPro+TMP_Dropdown+_DelayedDestroyDropdownList_d__81")]
+    pub type _DelayedDestroyDropdownList_d__81 = crate::TMPro::TMP_Dropdown__DelayedDestroyDropdownList_d__81;
+    #[cfg(feature = "TMPro+TMP_Dropdown+__c__DisplayClass69_0")]
+    pub type __c__DisplayClass69_0 = crate::TMPro::TMP_Dropdown___c__DisplayClass69_0;
     pub fn AddItem(
         &mut self,
         data: *mut crate::TMPro::TMP_Dropdown_OptionData,

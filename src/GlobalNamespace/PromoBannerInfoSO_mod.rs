@@ -2,30 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PromoBannerInfoSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _bannerImage: *mut crate::UnityEngine::Sprite,
     pub _bannerPromoText: *mut crate::System::String,
     pub _bannerPromoTextPosition: f32,
 }
 #[cfg(feature = "PromoBannerInfoSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PromoBannerInfoSO => ""."PromoBannerInfoSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PromoBannerInfoSO => ""
+    ."PromoBannerInfoSO"
 );
 #[cfg(feature = "PromoBannerInfoSO")]
-impl std::ops::Deref for PromoBannerInfoSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::PromoBannerInfoSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PromoBannerInfoSO")]
-impl std::ops::DerefMut for PromoBannerInfoSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::PromoBannerInfoSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PromoBannerInfoSO")]
-impl PromoBannerInfoSO {
+impl crate::GlobalNamespace::PromoBannerInfoSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -72,7 +73,7 @@ impl PromoBannerInfoSO {
     }
 }
 #[cfg(feature = "PromoBannerInfoSO")]
-impl quest_hook::libil2cpp::ObjectType for PromoBannerInfoSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PromoBannerInfoSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

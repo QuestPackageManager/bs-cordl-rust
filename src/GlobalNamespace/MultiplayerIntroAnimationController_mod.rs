@@ -19,34 +19,35 @@ pub struct MultiplayerIntroAnimationController {
     pub _firstConnectedPlayerStart: f32,
     pub _spawnDuration: f32,
     pub _endMarkerName: *mut crate::System::String,
-    pub _scoreRingManager: *mut MultiplayerScoreRingManager,
-    pub _multiplayerPlayersManager: *mut MultiplayerPlayersManager,
-    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
-    pub _layoutProvider: *mut MultiplayerLayoutProvider,
+    pub _scoreRingManager: *mut crate::GlobalNamespace::MultiplayerScoreRingManager,
+    pub _multiplayerPlayersManager: *mut crate::GlobalNamespace::MultiplayerPlayersManager,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
+    pub _layoutProvider: *mut crate::GlobalNamespace::MultiplayerLayoutProvider,
     pub _onCompleted: *mut crate::System::Action,
     pub _introDuration: i64,
     pub _bindingFinished: bool,
 }
 #[cfg(feature = "MultiplayerIntroAnimationController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerIntroAnimationController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerIntroAnimationController => ""
     ."MultiplayerIntroAnimationController"
 );
 #[cfg(feature = "MultiplayerIntroAnimationController")]
-impl std::ops::Deref for MultiplayerIntroAnimationController {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerIntroAnimationController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerIntroAnimationController")]
-impl std::ops::DerefMut for MultiplayerIntroAnimationController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerIntroAnimationController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerIntroAnimationController")]
-impl MultiplayerIntroAnimationController {
+impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
     pub fn BindRingsAndSetTiming(
         &mut self,
         connectedPlayersCount: i32,
@@ -78,7 +79,7 @@ impl MultiplayerIntroAnimationController {
     pub fn CalculatePlayerIndexSequence(
         &mut self,
         allActivePlayer: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut IConnectedPlayer,
+            *mut crate::GlobalNamespace::IConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::Queue_1<i32>,
@@ -171,7 +172,8 @@ impl MultiplayerIntroAnimationController {
     }
 }
 #[cfg(feature = "MultiplayerIntroAnimationController")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerIntroAnimationController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerIntroAnimationController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

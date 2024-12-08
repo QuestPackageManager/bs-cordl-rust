@@ -538,20 +538,20 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputControlExtensi
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
 impl crate::UnityEngine::InputSystem::InputControlExtensions {
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
-    )]
-    pub type InputEventControlEnumerator = crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator;
+    #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+ControlBuilder")]
+    pub type ControlBuilder = crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder;
+    #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder")]
+    pub type DeviceBuilder = crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder;
     #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+Enumerate")]
     pub type Enumerate = crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate;
     #[cfg(
         feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
     )]
     pub type InputEventControlCollection = crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection;
-    #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder")]
-    pub type DeviceBuilder = crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder;
-    #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+ControlBuilder")]
-    pub type ControlBuilder = crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+    )]
+    pub type InputEventControlEnumerator = crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator;
     #[cfg(
         feature = "UnityEngine+InputSystem+InputControlExtensions+_GetAllButtonPresses_d__43"
     )]

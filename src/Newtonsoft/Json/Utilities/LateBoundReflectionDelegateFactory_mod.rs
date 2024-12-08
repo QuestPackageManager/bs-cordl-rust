@@ -28,6 +28,22 @@ for crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory {
 #[cfg(feature = "Newtonsoft+Json+Utilities+LateBoundReflectionDelegateFactory")]
 impl crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory {
     #[cfg(
+        feature = "Newtonsoft+Json+Utilities+LateBoundReflectionDelegateFactory+__c__DisplayClass3_0"
+    )]
+    pub type __c__DisplayClass3_0 = crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory___c__DisplayClass3_0;
+    #[cfg(
+        feature = "Newtonsoft+Json+Utilities+LateBoundReflectionDelegateFactory+__c__DisplayClass4_0_1"
+    )]
+    pub type __c__DisplayClass4_0_1<T: quest_hook::libil2cpp::Type> = crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory___c__DisplayClass4_0_1<
+        T,
+    >;
+    #[cfg(
+        feature = "Newtonsoft+Json+Utilities+LateBoundReflectionDelegateFactory+__c__DisplayClass5_0_1"
+    )]
+    pub type __c__DisplayClass5_0_1<T: quest_hook::libil2cpp::Type> = crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory___c__DisplayClass5_0_1<
+        T,
+    >;
+    #[cfg(
         feature = "Newtonsoft+Json+Utilities+LateBoundReflectionDelegateFactory+__c__DisplayClass6_0_1"
     )]
     pub type __c__DisplayClass6_0_1<T: quest_hook::libil2cpp::Type> = crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory___c__DisplayClass6_0_1<
@@ -49,22 +65,6 @@ impl crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory {
         feature = "Newtonsoft+Json+Utilities+LateBoundReflectionDelegateFactory+__c__DisplayClass9_0_1"
     )]
     pub type __c__DisplayClass9_0_1<T: quest_hook::libil2cpp::Type> = crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory___c__DisplayClass9_0_1<
-        T,
-    >;
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+LateBoundReflectionDelegateFactory+__c__DisplayClass3_0"
-    )]
-    pub type __c__DisplayClass3_0 = crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory___c__DisplayClass3_0;
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+LateBoundReflectionDelegateFactory+__c__DisplayClass5_0_1"
-    )]
-    pub type __c__DisplayClass5_0_1<T: quest_hook::libil2cpp::Type> = crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory___c__DisplayClass5_0_1<
-        T,
-    >;
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+LateBoundReflectionDelegateFactory+__c__DisplayClass4_0_1"
-    )]
-    pub type __c__DisplayClass4_0_1<T: quest_hook::libil2cpp::Type> = crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory___c__DisplayClass4_0_1<
         T,
     >;
     pub fn CreateDefaultConstructor<T>(

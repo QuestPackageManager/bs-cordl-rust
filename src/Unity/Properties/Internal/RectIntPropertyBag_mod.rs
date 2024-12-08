@@ -100,12 +100,12 @@ impl std::ops::DerefMut for crate::Unity::Properties::Internal::RectIntPropertyB
 impl crate::Unity::Properties::Internal::RectIntPropertyBag {
     #[cfg(feature = "Unity+Properties+Internal+RectIntPropertyBag+HeightProperty")]
     pub type HeightProperty = crate::Unity::Properties::Internal::RectIntPropertyBag_HeightProperty;
+    #[cfg(feature = "Unity+Properties+Internal+RectIntPropertyBag+WidthProperty")]
+    pub type WidthProperty = crate::Unity::Properties::Internal::RectIntPropertyBag_WidthProperty;
     #[cfg(feature = "Unity+Properties+Internal+RectIntPropertyBag+XProperty")]
     pub type XProperty = crate::Unity::Properties::Internal::RectIntPropertyBag_XProperty;
     #[cfg(feature = "Unity+Properties+Internal+RectIntPropertyBag+YProperty")]
     pub type YProperty = crate::Unity::Properties::Internal::RectIntPropertyBag_YProperty;
-    #[cfg(feature = "Unity+Properties+Internal+RectIntPropertyBag+WidthProperty")]
-    pub type WidthProperty = crate::Unity::Properties::Internal::RectIntPropertyBag_WidthProperty;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

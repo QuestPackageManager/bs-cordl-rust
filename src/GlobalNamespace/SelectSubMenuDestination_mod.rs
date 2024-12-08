@@ -20,29 +20,29 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectSubMenuDestination {
-    __cordl_parent: MenuDestination,
+    __cordl_parent: crate::GlobalNamespace::MenuDestination,
     pub menuDestination: crate::GlobalNamespace::SelectSubMenuDestination_Destination,
 }
 #[cfg(feature = "SelectSubMenuDestination")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SelectSubMenuDestination => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SelectSubMenuDestination => ""
     ."SelectSubMenuDestination"
 );
 #[cfg(feature = "SelectSubMenuDestination")]
-impl std::ops::Deref for SelectSubMenuDestination {
-    type Target = MenuDestination;
+impl std::ops::Deref for crate::GlobalNamespace::SelectSubMenuDestination {
+    type Target = crate::GlobalNamespace::MenuDestination;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SelectSubMenuDestination")]
-impl std::ops::DerefMut for SelectSubMenuDestination {
+impl std::ops::DerefMut for crate::GlobalNamespace::SelectSubMenuDestination {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SelectSubMenuDestination")]
-impl SelectSubMenuDestination {
+impl crate::GlobalNamespace::SelectSubMenuDestination {
     #[cfg(feature = "SelectSubMenuDestination+Destination")]
     pub type Destination = crate::GlobalNamespace::SelectSubMenuDestination_Destination;
     pub fn New(
@@ -67,7 +67,8 @@ impl SelectSubMenuDestination {
     }
 }
 #[cfg(feature = "SelectSubMenuDestination")]
-impl quest_hook::libil2cpp::ObjectType for SelectSubMenuDestination {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SelectSubMenuDestination {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

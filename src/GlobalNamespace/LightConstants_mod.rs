@@ -22,30 +22,31 @@ pub struct LightConstants {
 }
 #[cfg(feature = "LightConstants")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightConstants => ""."LightConstants"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightConstants => ""
+    ."LightConstants"
 );
 #[cfg(feature = "LightConstants")]
-impl std::ops::Deref for LightConstants {
+impl std::ops::Deref for crate::GlobalNamespace::LightConstants {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightConstants")]
-impl std::ops::DerefMut for LightConstants {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightConstants {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightConstants")]
-impl LightConstants {
+impl crate::GlobalNamespace::LightConstants {
     pub const kBaseLightId: i32 = 25i32;
     pub const kLightProbeLightBakeIdPrefix: &'static str = "_LightProbeLightBakeId";
     #[cfg(feature = "LightConstants+BakeId")]
     pub type BakeId = crate::GlobalNamespace::LightConstants_BakeId;
 }
 #[cfg(feature = "LightConstants")]
-impl quest_hook::libil2cpp::ObjectType for LightConstants {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightConstants {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

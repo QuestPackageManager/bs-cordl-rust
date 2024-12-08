@@ -6,23 +6,24 @@ pub struct ICoroutineStarter {
 }
 #[cfg(feature = "ICoroutineStarter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ICoroutineStarter => ""."ICoroutineStarter"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ICoroutineStarter => ""
+    ."ICoroutineStarter"
 );
 #[cfg(feature = "ICoroutineStarter")]
-impl std::ops::Deref for ICoroutineStarter {
+impl std::ops::Deref for crate::GlobalNamespace::ICoroutineStarter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ICoroutineStarter")]
-impl std::ops::DerefMut for ICoroutineStarter {
+impl std::ops::DerefMut for crate::GlobalNamespace::ICoroutineStarter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ICoroutineStarter")]
-impl ICoroutineStarter {
+impl crate::GlobalNamespace::ICoroutineStarter {
     pub fn StartCoroutine(
         &mut self,
         routine: *mut crate::System::Collections::IEnumerator,
@@ -52,7 +53,7 @@ impl ICoroutineStarter {
     }
 }
 #[cfg(feature = "ICoroutineStarter")]
-impl quest_hook::libil2cpp::ObjectType for ICoroutineStarter {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ICoroutineStarter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

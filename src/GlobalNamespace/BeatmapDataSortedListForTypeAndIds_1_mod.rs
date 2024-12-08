@@ -5,11 +5,11 @@ pub struct BeatmapDataSortedListForTypeAndIds_1<TBase: quest_hook::libil2cpp::Ty
     __cordl_parent: crate::System::Object,
     pub _items: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::System::ValueTuple_2<*mut crate::System::Type, i32>,
-        *mut ISortedList_1<TBase>,
+        *mut crate::GlobalNamespace::ISortedList_1<TBase>,
     >,
     pub _sortedListsDataProcessors: *mut crate::System::Collections::Generic::Dictionary_2<
         *mut crate::System::Type,
-        *mut ISortedListItemProcessor_1<TBase>,
+        *mut crate::GlobalNamespace::ISortedListItemProcessor_1<TBase>,
     >,
     pub _itemToNodeMap: *mut crate::System::Collections::Generic::Dictionary_2<
         TBase,
@@ -19,12 +19,13 @@ pub struct BeatmapDataSortedListForTypeAndIds_1<TBase: quest_hook::libil2cpp::Ty
 }
 #[cfg(feature = "BeatmapDataSortedListForTypeAndIds_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapDataSortedListForTypeAndIds_1 < TBase > => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1 < TBase > => ""
     ."BeatmapDataSortedListForTypeAndIds`1" < TBase >
 );
 #[cfg(feature = "BeatmapDataSortedListForTypeAndIds_1")]
 impl<TBase: quest_hook::libil2cpp::Type> std::ops::Deref
-for BeatmapDataSortedListForTypeAndIds_1<TBase> {
+for crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<TBase> {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -32,13 +33,15 @@ for BeatmapDataSortedListForTypeAndIds_1<TBase> {
 }
 #[cfg(feature = "BeatmapDataSortedListForTypeAndIds_1")]
 impl<TBase: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for BeatmapDataSortedListForTypeAndIds_1<TBase> {
+for crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<TBase> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDataSortedListForTypeAndIds_1")]
-impl<TBase: quest_hook::libil2cpp::Type> BeatmapDataSortedListForTypeAndIds_1<TBase> {
+impl<
+    TBase: quest_hook::libil2cpp::Type,
+> crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<TBase> {
     #[cfg(feature = "BeatmapDataSortedListForTypeAndIds_1+__c")]
     pub type __c = crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1___c<
         TBase,
@@ -82,7 +85,7 @@ impl<TBase: quest_hook::libil2cpp::Type> BeatmapDataSortedListForTypeAndIds_1<TB
         &mut self,
         _cordl_type: *mut crate::System::Type,
         typeIdentifier: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut ISortedList_1<TBase>>
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::ISortedList_1<TBase>>
     where
         TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -90,7 +93,7 @@ impl<TBase: quest_hook::libil2cpp::Type> BeatmapDataSortedListForTypeAndIds_1<TB
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ISortedList_1<TBase> = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::ISortedList_1<TBase> = __cordl_object
             .invoke("GetList", (_cordl_type, typeIdentifier))?;
         Ok(__cordl_ret)
     }
@@ -184,7 +187,7 @@ impl<TBase: quest_hook::libil2cpp::Type> BeatmapDataSortedListForTypeAndIds_1<TB
 }
 #[cfg(feature = "BeatmapDataSortedListForTypeAndIds_1")]
 impl<TBase: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for BeatmapDataSortedListForTypeAndIds_1<TBase> {
+for crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<TBase> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

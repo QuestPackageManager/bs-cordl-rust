@@ -368,12 +368,12 @@ impl std::ops::DerefMut for crate::Zenject::Internal::ReflectionTypeInfo {
 impl crate::Zenject::Internal::ReflectionTypeInfo {
     #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectConstructorInfo")]
     pub type InjectConstructorInfo = crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo;
-    #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectParameterInfo")]
-    pub type InjectParameterInfo = crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo;
     #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectFieldInfo")]
     pub type InjectFieldInfo = crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo;
     #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectMethodInfo")]
     pub type InjectMethodInfo = crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo;
+    #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectParameterInfo")]
+    pub type InjectParameterInfo = crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo;
     #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectPropertyInfo")]
     pub type InjectPropertyInfo = crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo;
     pub fn New(

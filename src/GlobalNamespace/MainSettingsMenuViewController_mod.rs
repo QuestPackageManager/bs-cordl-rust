@@ -4,36 +4,36 @@
 pub struct MainSettingsMenuViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub didSelectSettingsSubMenuEvent: *mut crate::System::Action_2<
-        *mut SettingsSubMenuInfo,
+        *mut crate::GlobalNamespace::SettingsSubMenuInfo,
         i32,
     >,
     pub _settingsSubMenuInfos: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut SettingsSubMenuInfo,
+        *mut crate::GlobalNamespace::SettingsSubMenuInfo,
     >,
     pub _settingsMenuSegmentedControl: *mut crate::HMUI::TextSegmentedControl,
-    pub _selectedSubMenuInfo: *mut SettingsSubMenuInfo,
+    pub _selectedSubMenuInfo: *mut crate::GlobalNamespace::SettingsSubMenuInfo,
     pub _selectedSubMenuInfoIdx: i32,
 }
 #[cfg(feature = "MainSettingsMenuViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MainSettingsMenuViewController => ""
-    ."MainSettingsMenuViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MainSettingsMenuViewController
+    => ""."MainSettingsMenuViewController"
 );
 #[cfg(feature = "MainSettingsMenuViewController")]
-impl std::ops::Deref for MainSettingsMenuViewController {
+impl std::ops::Deref for crate::GlobalNamespace::MainSettingsMenuViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainSettingsMenuViewController")]
-impl std::ops::DerefMut for MainSettingsMenuViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MainSettingsMenuViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainSettingsMenuViewController")]
-impl MainSettingsMenuViewController {
+impl crate::GlobalNamespace::MainSettingsMenuViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -95,7 +95,10 @@ impl MainSettingsMenuViewController {
     }
     pub fn add_didSelectSettingsSubMenuEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut SettingsSubMenuInfo, i32>,
+        value: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::SettingsSubMenuInfo,
+            i32,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -113,17 +116,22 @@ impl MainSettingsMenuViewController {
     }
     pub fn get_selectedSubMenuInfo(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut SettingsSubMenuInfo> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::SettingsSubMenuInfo,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut SettingsSubMenuInfo = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::SettingsSubMenuInfo = __cordl_object
             .invoke("get_selectedSubMenuInfo", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_didSelectSettingsSubMenuEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut SettingsSubMenuInfo, i32>,
+        value: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::SettingsSubMenuInfo,
+            i32,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -134,7 +142,8 @@ impl MainSettingsMenuViewController {
     }
 }
 #[cfg(feature = "MainSettingsMenuViewController")]
-impl quest_hook::libil2cpp::ObjectType for MainSettingsMenuViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MainSettingsMenuViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -66,23 +66,24 @@ pub struct RecordingUIController {
 }
 #[cfg(feature = "RecordingUIController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RecordingUIController => ""."RecordingUIController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RecordingUIController => ""
+    ."RecordingUIController"
 );
 #[cfg(feature = "RecordingUIController")]
-impl std::ops::Deref for RecordingUIController {
+impl std::ops::Deref for crate::GlobalNamespace::RecordingUIController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingUIController")]
-impl std::ops::DerefMut for RecordingUIController {
+impl std::ops::DerefMut for crate::GlobalNamespace::RecordingUIController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingUIController")]
-impl RecordingUIController {
+impl crate::GlobalNamespace::RecordingUIController {
     #[cfg(feature = "RecordingUIController+InitData")]
     pub type InitData = crate::GlobalNamespace::RecordingUIController_InitData;
     pub fn Init(
@@ -124,7 +125,8 @@ impl RecordingUIController {
     }
 }
 #[cfg(feature = "RecordingUIController")]
-impl quest_hook::libil2cpp::ObjectType for RecordingUIController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::RecordingUIController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

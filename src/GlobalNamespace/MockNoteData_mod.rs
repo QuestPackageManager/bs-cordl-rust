@@ -6,30 +6,31 @@ pub struct MockNoteData {
     pub _time_k__BackingField: f32,
     pub _lineIndex_k__BackingField: i32,
     pub _gameplayType_k__BackingField: crate::GlobalNamespace::NoteData_GameplayType,
-    pub _colorType_k__BackingField: ColorType,
-    pub _cutDirection_k__BackingField: NoteCutDirection,
-    pub _noteLineLayer_k__BackingField: NoteLineLayer,
+    pub _colorType_k__BackingField: crate::GlobalNamespace::ColorType,
+    pub _cutDirection_k__BackingField: crate::GlobalNamespace::NoteCutDirection,
+    pub _noteLineLayer_k__BackingField: crate::GlobalNamespace::NoteLineLayer,
     pub _duration_k__BackingField: f32,
 }
 #[cfg(feature = "MockNoteData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MockNoteData => ""."MockNoteData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MockNoteData => ""
+    ."MockNoteData"
 );
 #[cfg(feature = "MockNoteData")]
-impl std::ops::Deref for MockNoteData {
+impl std::ops::Deref for crate::GlobalNamespace::MockNoteData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockNoteData")]
-impl std::ops::DerefMut for MockNoteData {
+impl std::ops::DerefMut for crate::GlobalNamespace::MockNoteData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockNoteData")]
-impl MockNoteData {
+impl crate::GlobalNamespace::MockNoteData {
     pub fn Mirror(
         &mut self,
         lineCount: i32,
@@ -58,20 +59,23 @@ impl MockNoteData {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_colorType(&mut self) -> quest_hook::libil2cpp::Result<ColorType> {
+    pub fn get_colorType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ColorType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: ColorType = __cordl_object.invoke("get_colorType", ())?;
+        let __cordl_ret: crate::GlobalNamespace::ColorType = __cordl_object
+            .invoke("get_colorType", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_cutDirection(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<NoteCutDirection> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutDirection> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: NoteCutDirection = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::NoteCutDirection = __cordl_object
             .invoke("get_cutDirection", ())?;
         Ok(__cordl_ret)
     }
@@ -99,11 +103,14 @@ impl MockNoteData {
         let __cordl_ret: i32 = __cordl_object.invoke("get_lineIndex", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_noteLineLayer(&mut self) -> quest_hook::libil2cpp::Result<NoteLineLayer> {
+    pub fn get_noteLineLayer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteLineLayer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: NoteLineLayer = __cordl_object.invoke("get_noteLineLayer", ())?;
+        let __cordl_ret: crate::GlobalNamespace::NoteLineLayer = __cordl_object
+            .invoke("get_noteLineLayer", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -115,7 +122,7 @@ impl MockNoteData {
     }
     pub fn set_colorType(
         &mut self,
-        value: ColorType,
+        value: crate::GlobalNamespace::ColorType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -126,7 +133,7 @@ impl MockNoteData {
     }
     pub fn set_cutDirection(
         &mut self,
-        value: NoteCutDirection,
+        value: crate::GlobalNamespace::NoteCutDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -170,7 +177,7 @@ impl MockNoteData {
     }
     pub fn set_noteLineLayer(
         &mut self,
-        value: NoteLineLayer,
+        value: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -192,7 +199,7 @@ impl MockNoteData {
     }
 }
 #[cfg(feature = "MockNoteData")]
-impl quest_hook::libil2cpp::ObjectType for MockNoteData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockNoteData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

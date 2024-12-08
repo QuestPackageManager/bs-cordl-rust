@@ -22,23 +22,24 @@ pub struct ParametricBoxController {
 }
 #[cfg(feature = "ParametricBoxController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ParametricBoxController => ""."ParametricBoxController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ParametricBoxController => ""
+    ."ParametricBoxController"
 );
 #[cfg(feature = "ParametricBoxController")]
-impl std::ops::Deref for ParametricBoxController {
+impl std::ops::Deref for crate::GlobalNamespace::ParametricBoxController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ParametricBoxController")]
-impl std::ops::DerefMut for ParametricBoxController {
+impl std::ops::DerefMut for crate::GlobalNamespace::ParametricBoxController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ParametricBoxController")]
-impl ParametricBoxController {
+impl crate::GlobalNamespace::ParametricBoxController {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -144,7 +145,8 @@ impl ParametricBoxController {
     }
 }
 #[cfg(feature = "ParametricBoxController")]
-impl quest_hook::libil2cpp::ObjectType for ParametricBoxController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ParametricBoxController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

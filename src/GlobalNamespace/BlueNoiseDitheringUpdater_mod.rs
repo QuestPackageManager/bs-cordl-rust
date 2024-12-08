@@ -3,29 +3,29 @@
 #[derive(Debug)]
 pub struct BlueNoiseDitheringUpdater {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _blueNoiseDithering: *mut BlueNoiseDithering,
-    pub _randomValueToShader: *mut RandomValueToShader,
+    pub _blueNoiseDithering: *mut crate::GlobalNamespace::BlueNoiseDithering,
+    pub _randomValueToShader: *mut crate::GlobalNamespace::RandomValueToShader,
 }
 #[cfg(feature = "BlueNoiseDitheringUpdater")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BlueNoiseDitheringUpdater => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BlueNoiseDitheringUpdater => ""
     ."BlueNoiseDitheringUpdater"
 );
 #[cfg(feature = "BlueNoiseDitheringUpdater")]
-impl std::ops::Deref for BlueNoiseDitheringUpdater {
+impl std::ops::Deref for crate::GlobalNamespace::BlueNoiseDitheringUpdater {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BlueNoiseDitheringUpdater")]
-impl std::ops::DerefMut for BlueNoiseDitheringUpdater {
+impl std::ops::DerefMut for crate::GlobalNamespace::BlueNoiseDitheringUpdater {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BlueNoiseDitheringUpdater")]
-impl BlueNoiseDitheringUpdater {
+impl crate::GlobalNamespace::BlueNoiseDitheringUpdater {
     pub fn HandleCameraPreRender(
         &mut self,
         camera: *mut crate::UnityEngine::Camera,
@@ -76,7 +76,8 @@ impl BlueNoiseDitheringUpdater {
     }
 }
 #[cfg(feature = "BlueNoiseDitheringUpdater")]
-impl quest_hook::libil2cpp::ObjectType for BlueNoiseDitheringUpdater {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BlueNoiseDitheringUpdater {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

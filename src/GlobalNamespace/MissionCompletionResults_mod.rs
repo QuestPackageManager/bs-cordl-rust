@@ -3,35 +3,35 @@
 #[derive(Debug)]
 pub struct MissionCompletionResults {
     __cordl_parent: crate::System::Object,
-    pub levelCompletionResults: *mut LevelCompletionResults,
+    pub levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
     pub missionObjectiveResults: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut MissionObjectiveResult,
+        *mut crate::GlobalNamespace::MissionObjectiveResult,
     >,
 }
 #[cfg(feature = "MissionCompletionResults")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionCompletionResults => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissionCompletionResults => ""
     ."MissionCompletionResults"
 );
 #[cfg(feature = "MissionCompletionResults")]
-impl std::ops::Deref for MissionCompletionResults {
+impl std::ops::Deref for crate::GlobalNamespace::MissionCompletionResults {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionCompletionResults")]
-impl std::ops::DerefMut for MissionCompletionResults {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionCompletionResults {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionCompletionResults")]
-impl MissionCompletionResults {
+impl crate::GlobalNamespace::MissionCompletionResults {
     pub fn New(
-        levelCompletionResults: *mut LevelCompletionResults,
+        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
         missionObjectiveResults: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut MissionObjectiveResult,
+            *mut crate::GlobalNamespace::MissionObjectiveResult,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -42,9 +42,9 @@ impl MissionCompletionResults {
     }
     pub fn _ctor(
         &mut self,
-        levelCompletionResults: *mut LevelCompletionResults,
+        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
         missionObjectiveResults: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut MissionObjectiveResult,
+            *mut crate::GlobalNamespace::MissionObjectiveResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -63,7 +63,8 @@ impl MissionCompletionResults {
     }
 }
 #[cfg(feature = "MissionCompletionResults")]
-impl quest_hook::libil2cpp::ObjectType for MissionCompletionResults {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MissionCompletionResults {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

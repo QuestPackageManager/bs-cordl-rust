@@ -8,24 +8,24 @@ pub struct ClickButtonWithCommandArgument {
 }
 #[cfg(feature = "ClickButtonWithCommandArgument")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ClickButtonWithCommandArgument => ""
-    ."ClickButtonWithCommandArgument"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ClickButtonWithCommandArgument
+    => ""."ClickButtonWithCommandArgument"
 );
 #[cfg(feature = "ClickButtonWithCommandArgument")]
-impl std::ops::Deref for ClickButtonWithCommandArgument {
+impl std::ops::Deref for crate::GlobalNamespace::ClickButtonWithCommandArgument {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ClickButtonWithCommandArgument")]
-impl std::ops::DerefMut for ClickButtonWithCommandArgument {
+impl std::ops::DerefMut for crate::GlobalNamespace::ClickButtonWithCommandArgument {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ClickButtonWithCommandArgument")]
-impl ClickButtonWithCommandArgument {
+impl crate::GlobalNamespace::ClickButtonWithCommandArgument {
     #[cfg(feature = "ClickButtonWithCommandArgument+_Start_d__2")]
     pub type _Start_d__2 = crate::GlobalNamespace::ClickButtonWithCommandArgument__Start_d__2;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -57,7 +57,8 @@ impl ClickButtonWithCommandArgument {
     }
 }
 #[cfg(feature = "ClickButtonWithCommandArgument")]
-impl quest_hook::libil2cpp::ObjectType for ClickButtonWithCommandArgument {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ClickButtonWithCommandArgument {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

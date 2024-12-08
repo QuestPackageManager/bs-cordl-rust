@@ -2,32 +2,33 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderMeshConstructorCrossedStrips {
-    __cordl_parent: SliderMeshConstructor,
+    __cordl_parent: crate::GlobalNamespace::SliderMeshConstructor,
     pub _triangleMap: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
 }
 #[cfg(feature = "SliderMeshConstructorCrossedStrips")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SliderMeshConstructorCrossedStrips => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SliderMeshConstructorCrossedStrips => ""
     ."SliderMeshConstructorCrossedStrips"
 );
 #[cfg(feature = "SliderMeshConstructorCrossedStrips")]
-impl std::ops::Deref for SliderMeshConstructorCrossedStrips {
-    type Target = SliderMeshConstructor;
+impl std::ops::Deref for crate::GlobalNamespace::SliderMeshConstructorCrossedStrips {
+    type Target = crate::GlobalNamespace::SliderMeshConstructor;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderMeshConstructorCrossedStrips")]
-impl std::ops::DerefMut for SliderMeshConstructorCrossedStrips {
+impl std::ops::DerefMut for crate::GlobalNamespace::SliderMeshConstructorCrossedStrips {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderMeshConstructorCrossedStrips")]
-impl SliderMeshConstructorCrossedStrips {
+impl crate::GlobalNamespace::SliderMeshConstructorCrossedStrips {
     pub fn CreateSliderMeshInternal(
         &mut self,
-        path: *mut VertexPath,
+        path: *mut crate::GlobalNamespace::VertexPath,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -38,7 +39,7 @@ impl SliderMeshConstructorCrossedStrips {
     }
     pub fn GetTrianglesCount(
         &mut self,
-        path: *mut VertexPath,
+        path: *mut crate::GlobalNamespace::VertexPath,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -48,7 +49,7 @@ impl SliderMeshConstructorCrossedStrips {
     }
     pub fn GetVertexCount(
         &mut self,
-        path: *mut VertexPath,
+        path: *mut crate::GlobalNamespace::VertexPath,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -75,7 +76,8 @@ impl SliderMeshConstructorCrossedStrips {
     }
 }
 #[cfg(feature = "SliderMeshConstructorCrossedStrips")]
-impl quest_hook::libil2cpp::ObjectType for SliderMeshConstructorCrossedStrips {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SliderMeshConstructorCrossedStrips {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

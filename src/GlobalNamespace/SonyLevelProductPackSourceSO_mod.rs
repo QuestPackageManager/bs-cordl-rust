@@ -4,7 +4,7 @@
 pub struct SonyLevelProductPackSourceSO_LevelProductPackSource {
     __cordl_parent: crate::System::Object,
     pub _packIndex: i32,
-    pub _levelPack: *mut BeatmapLevelPackSO,
+    pub _levelPack: *mut crate::GlobalNamespace::BeatmapLevelPackSO,
     pub _levelProductsData: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource,
     >,
@@ -35,7 +35,7 @@ impl crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource
     #[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductPackSource+__c")]
     pub type __c = crate::GlobalNamespace::LevelProductPackSource___c;
     pub fn New(
-        levelPack: *mut BeatmapLevelPackSO,
+        levelPack: *mut crate::GlobalNamespace::BeatmapLevelPackSO,
         packIndex: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource
     }
     pub fn _ctor(
         &mut self,
-        levelPack: *mut BeatmapLevelPackSO,
+        levelPack: *mut crate::GlobalNamespace::BeatmapLevelPackSO,
         packIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -58,11 +58,11 @@ impl crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource
     }
     pub fn get_levelPack(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevelPackSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapLevelPackSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapLevelPackSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapLevelPackSO = __cordl_object
             .invoke("get_levelPack", ())?;
         Ok(__cordl_ret)
     }
@@ -212,7 +212,7 @@ pub struct SonyLevelProductPackSourceSO_LevelProductSource {
     pub _ps5SieaAcCode: *mut crate::System::String,
     pub _ps4SieeDcCode: *mut crate::System::String,
     pub _ps4SieaAcCode: *mut crate::System::String,
-    pub _level: *mut BeatmapLevelSO,
+    pub _level: *mut crate::GlobalNamespace::BeatmapLevelSO,
 }
 #[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductSource")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -238,7 +238,7 @@ for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource {
 #[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductSource")]
 impl crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource {
     pub fn New(
-        level: *mut BeatmapLevelSO,
+        level: *mut crate::GlobalNamespace::BeatmapLevelSO,
         levelIndex: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -249,7 +249,7 @@ impl crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource {
     }
     pub fn _ctor(
         &mut self,
-        level: *mut BeatmapLevelSO,
+        level: *mut crate::GlobalNamespace::BeatmapLevelSO,
         levelIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -259,11 +259,14 @@ impl crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource {
             .invoke(".ctor", (level, levelIndex))?;
         Ok(__cordl_ret)
     }
-    pub fn get_level(&mut self) -> quest_hook::libil2cpp::Result<*mut BeatmapLevelSO> {
+    pub fn get_level(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapLevelSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapLevelSO = __cordl_object.invoke("get_level", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapLevelSO = __cordl_object
+            .invoke("get_level", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_levelIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -372,7 +375,7 @@ for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyLevelProductPackSourceSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _levelProductPackSource: *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource,
     pub _levelProductRedirectionSources: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource,
@@ -380,24 +383,24 @@ pub struct SonyLevelProductPackSourceSO {
 }
 #[cfg(feature = "SonyLevelProductPackSourceSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SonyLevelProductPackSourceSO => ""
-    ."SonyLevelProductPackSourceSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SonyLevelProductPackSourceSO =>
+    ""."SonyLevelProductPackSourceSO"
 );
 #[cfg(feature = "SonyLevelProductPackSourceSO")]
-impl std::ops::Deref for SonyLevelProductPackSourceSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::SonyLevelProductPackSourceSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyLevelProductPackSourceSO")]
-impl std::ops::DerefMut for SonyLevelProductPackSourceSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::SonyLevelProductPackSourceSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyLevelProductPackSourceSO")]
-impl SonyLevelProductPackSourceSO {
+impl crate::GlobalNamespace::SonyLevelProductPackSourceSO {
     #[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductPackSource")]
     pub type LevelProductPackSource = crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource;
     #[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductRedirectionSource")]
@@ -461,7 +464,8 @@ impl SonyLevelProductPackSourceSO {
     }
 }
 #[cfg(feature = "SonyLevelProductPackSourceSO")]
-impl quest_hook::libil2cpp::ObjectType for SonyLevelProductPackSourceSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SonyLevelProductPackSourceSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

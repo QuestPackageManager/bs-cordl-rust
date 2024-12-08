@@ -66,6 +66,13 @@ impl crate::Newtonsoft::Json::Utilities::FSharpUtils {
     pub const FSharpListTypeName: &'static str = "FSharpList`1";
     pub const FSharpMapTypeName: &'static str = "FSharpMap`2";
     pub const FSharpSetTypeName: &'static str = "FSharpSet`1";
+    #[cfg(feature = "Newtonsoft+Json+Utilities+FSharpUtils+__c__55_2")]
+    pub type __c__55_2<
+        TKey: quest_hook::libil2cpp::Type,
+        TValue: quest_hook::libil2cpp::Type,
+    > = crate::Newtonsoft::Json::Utilities::FSharpUtils___c__55_2<TKey, TValue>;
+    #[cfg(feature = "Newtonsoft+Json+Utilities+FSharpUtils+__c__DisplayClass52_0")]
+    pub type __c__DisplayClass52_0 = crate::Newtonsoft::Json::Utilities::FSharpUtils___c__DisplayClass52_0;
     #[cfg(feature = "Newtonsoft+Json+Utilities+FSharpUtils+__c__DisplayClass55_0_2")]
     pub type __c__DisplayClass55_0_2<
         TKey: quest_hook::libil2cpp::Type,
@@ -74,13 +81,6 @@ impl crate::Newtonsoft::Json::Utilities::FSharpUtils {
         TKey,
         TValue,
     >;
-    #[cfg(feature = "Newtonsoft+Json+Utilities+FSharpUtils+__c__55_2")]
-    pub type __c__55_2<
-        TKey: quest_hook::libil2cpp::Type,
-        TValue: quest_hook::libil2cpp::Type,
-    > = crate::Newtonsoft::Json::Utilities::FSharpUtils___c__55_2<TKey, TValue>;
-    #[cfg(feature = "Newtonsoft+Json+Utilities+FSharpUtils+__c__DisplayClass52_0")]
-    pub type __c__DisplayClass52_0 = crate::Newtonsoft::Json::Utilities::FSharpUtils___c__DisplayClass52_0;
     pub fn BuildMapCreator<TKey, TValue>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

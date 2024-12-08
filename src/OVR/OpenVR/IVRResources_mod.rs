@@ -22,10 +22,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::OVR::OpenVR::IVRResou
 }
 #[cfg(feature = "OVR+OpenVR+IVRResources")]
 impl crate::OVR::OpenVR::IVRResources {
-    #[cfg(feature = "OVR+OpenVR+IVRResources+_LoadSharedResource")]
-    pub type _LoadSharedResource = crate::OVR::OpenVR::IVRResources__LoadSharedResource;
     #[cfg(feature = "OVR+OpenVR+IVRResources+_GetResourceFullPath")]
     pub type _GetResourceFullPath = crate::OVR::OpenVR::IVRResources__GetResourceFullPath;
+    #[cfg(feature = "OVR+OpenVR+IVRResources+_LoadSharedResource")]
+    pub type _LoadSharedResource = crate::OVR::OpenVR::IVRResources__LoadSharedResource;
 }
 #[cfg(feature = "OVR+OpenVR+IVRResources+_GetResourceFullPath")]
 #[repr(C)]

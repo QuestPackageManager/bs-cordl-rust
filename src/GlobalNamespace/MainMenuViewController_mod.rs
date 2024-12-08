@@ -12,11 +12,11 @@ pub struct MainMenuViewController {
     pub _multiplayerButton: *mut crate::UnityEngine::UI::Button,
     pub _optionsButton: *mut crate::UnityEngine::UI::Button,
     pub _musicPackPromoButton: *mut crate::UnityEngine::UI::Button,
-    pub _musicPackPromoBanner: *mut MusicPackPromoBanner,
-    pub _dlcPromoPanelModel: *mut DlcPromoPanelModel,
-    pub _analyticsModel: *mut IAnalyticsModel,
+    pub _musicPackPromoBanner: *mut crate::GlobalNamespace::MusicPackPromoBanner,
+    pub _dlcPromoPanelModel: *mut crate::GlobalNamespace::DlcPromoPanelModel,
+    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
     pub didFinishEvent: *mut crate::System::Action_2<
-        *mut MainMenuViewController,
+        *mut crate::GlobalNamespace::MainMenuViewController,
         crate::GlobalNamespace::MainMenuViewController_MenuButton,
     >,
     pub promoButtonWasPressedEvent: *mut crate::System::Action_1<
@@ -26,23 +26,24 @@ pub struct MainMenuViewController {
 }
 #[cfg(feature = "MainMenuViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MainMenuViewController => ""."MainMenuViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MainMenuViewController => ""
+    ."MainMenuViewController"
 );
 #[cfg(feature = "MainMenuViewController")]
-impl std::ops::Deref for MainMenuViewController {
+impl std::ops::Deref for crate::GlobalNamespace::MainMenuViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainMenuViewController")]
-impl std::ops::DerefMut for MainMenuViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MainMenuViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainMenuViewController")]
-impl MainMenuViewController {
+impl crate::GlobalNamespace::MainMenuViewController {
     #[cfg(feature = "MainMenuViewController+MenuButton")]
     pub type MenuButton = crate::GlobalNamespace::MainMenuViewController_MenuButton;
     #[cfg(feature = "MainMenuViewController+_LoadMusicPackPromoDataAsync_d__21")]
@@ -194,7 +195,7 @@ impl MainMenuViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut MainMenuViewController,
+            *mut crate::GlobalNamespace::MainMenuViewController,
             crate::GlobalNamespace::MainMenuViewController_MenuButton,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -221,7 +222,7 @@ impl MainMenuViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut MainMenuViewController,
+            *mut crate::GlobalNamespace::MainMenuViewController,
             crate::GlobalNamespace::MainMenuViewController_MenuButton,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -247,7 +248,8 @@ impl MainMenuViewController {
     }
 }
 #[cfg(feature = "MainMenuViewController")]
-impl quest_hook::libil2cpp::ObjectType for MainMenuViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MainMenuViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

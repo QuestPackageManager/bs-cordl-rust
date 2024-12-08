@@ -2,30 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectMultiplayerLobbyDestination {
-    __cordl_parent: MenuDestination,
+    __cordl_parent: crate::GlobalNamespace::MenuDestination,
     pub lobbySecret: *mut crate::System::String,
     pub lobbyCode: *mut crate::System::String,
 }
 #[cfg(feature = "SelectMultiplayerLobbyDestination")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SelectMultiplayerLobbyDestination => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SelectMultiplayerLobbyDestination => ""
     ."SelectMultiplayerLobbyDestination"
 );
 #[cfg(feature = "SelectMultiplayerLobbyDestination")]
-impl std::ops::Deref for SelectMultiplayerLobbyDestination {
-    type Target = MenuDestination;
+impl std::ops::Deref for crate::GlobalNamespace::SelectMultiplayerLobbyDestination {
+    type Target = crate::GlobalNamespace::MenuDestination;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SelectMultiplayerLobbyDestination")]
-impl std::ops::DerefMut for SelectMultiplayerLobbyDestination {
+impl std::ops::DerefMut for crate::GlobalNamespace::SelectMultiplayerLobbyDestination {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SelectMultiplayerLobbyDestination")]
-impl SelectMultiplayerLobbyDestination {
+impl crate::GlobalNamespace::SelectMultiplayerLobbyDestination {
     pub fn New_String0(
         lobbySecret: *mut crate::System::String,
         lobbyCode: *mut crate::System::String,
@@ -70,7 +71,8 @@ impl SelectMultiplayerLobbyDestination {
     }
 }
 #[cfg(feature = "SelectMultiplayerLobbyDestination")]
-impl quest_hook::libil2cpp::ObjectType for SelectMultiplayerLobbyDestination {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SelectMultiplayerLobbyDestination {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

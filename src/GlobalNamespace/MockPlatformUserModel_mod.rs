@@ -3,37 +3,42 @@
 #[derive(Debug)]
 pub struct MockPlatformUserModel {
     __cordl_parent: crate::System::Object,
-    pub platformUserInfoDidChangeEvent: *mut crate::System::Action_1<*mut UserInfo>,
+    pub platformUserInfoDidChangeEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::UserInfo,
+    >,
 }
 #[cfg(feature = "MockPlatformUserModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MockPlatformUserModel => ""."MockPlatformUserModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MockPlatformUserModel => ""
+    ."MockPlatformUserModel"
 );
 #[cfg(feature = "MockPlatformUserModel")]
-impl std::ops::Deref for MockPlatformUserModel {
+impl std::ops::Deref for crate::GlobalNamespace::MockPlatformUserModel {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockPlatformUserModel")]
-impl std::ops::DerefMut for MockPlatformUserModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::MockPlatformUserModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockPlatformUserModel")]
-impl MockPlatformUserModel {
+impl crate::GlobalNamespace::MockPlatformUserModel {
     pub fn GetUserAuthToken(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut PlatformUserAuthTokenData>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::PlatformUserAuthTokenData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut PlatformUserAuthTokenData,
+            *mut crate::GlobalNamespace::PlatformUserAuthTokenData,
         > = __cordl_object.invoke("GetUserAuthToken", ())?;
         Ok(__cordl_ret)
     }
@@ -61,13 +66,16 @@ impl MockPlatformUserModel {
         &mut self,
         ctx: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut UserInfo>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::UserInfo,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<*mut UserInfo> = __cordl_object
-            .invoke("GetUserInfo", (ctx))?;
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::UserInfo,
+        > = __cordl_object.invoke("GetUserInfo", (ctx))?;
         Ok(__cordl_ret)
     }
     pub fn GetUserNamesForUserIds(
@@ -103,13 +111,15 @@ impl MockPlatformUserModel {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<XPlatformAccessTokenData>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            crate::GlobalNamespace::XPlatformAccessTokenData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            XPlatformAccessTokenData,
+            crate::GlobalNamespace::XPlatformAccessTokenData,
         > = __cordl_object.invoke("RequestXPlatformAccessToken", (cancellationToken))?;
         Ok(__cordl_ret)
     }
@@ -125,7 +135,7 @@ impl MockPlatformUserModel {
     }
     pub fn add_platformUserInfoDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut UserInfo>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::UserInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -146,7 +156,7 @@ impl MockPlatformUserModel {
     }
     pub fn remove_platformUserInfoDidChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut UserInfo>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::UserInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -157,7 +167,8 @@ impl MockPlatformUserModel {
     }
 }
 #[cfg(feature = "MockPlatformUserModel")]
-impl quest_hook::libil2cpp::ObjectType for MockPlatformUserModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MockPlatformUserModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

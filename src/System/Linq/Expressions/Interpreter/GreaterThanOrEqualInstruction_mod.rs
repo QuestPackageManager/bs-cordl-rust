@@ -29,33 +29,17 @@ for crate::System::Linq::Expressions::Interpreter::GreaterThanOrEqualInstruction
 #[cfg(feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::GreaterThanOrEqualInstruction {
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualUInt32"
+        feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualByte"
     )]
-    pub type GreaterThanOrEqualUInt32 = crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUInt32;
+    pub type GreaterThanOrEqualByte = crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualByte;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualChar"
     )]
     pub type GreaterThanOrEqualChar = crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualChar;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualSingle"
-    )]
-    pub type GreaterThanOrEqualSingle = crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualSingle;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualUInt64"
-    )]
-    pub type GreaterThanOrEqualUInt64 = crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUInt64;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualByte"
-    )]
-    pub type GreaterThanOrEqualByte = crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualByte;
-    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualDouble"
     )]
     pub type GreaterThanOrEqualDouble = crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualDouble;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualInt64"
-    )]
-    pub type GreaterThanOrEqualInt64 = crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualInt64;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualInt16"
     )]
@@ -65,13 +49,29 @@ impl crate::System::Linq::Expressions::Interpreter::GreaterThanOrEqualInstructio
     )]
     pub type GreaterThanOrEqualInt32 = crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualInt32;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualUInt16"
+        feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualInt64"
     )]
-    pub type GreaterThanOrEqualUInt16 = crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUInt16;
+    pub type GreaterThanOrEqualInt64 = crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualInt64;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualSByte"
     )]
     pub type GreaterThanOrEqualSByte = crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualSByte;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualSingle"
+    )]
+    pub type GreaterThanOrEqualSingle = crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualSingle;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualUInt16"
+    )]
+    pub type GreaterThanOrEqualUInt16 = crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUInt16;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualUInt32"
+    )]
+    pub type GreaterThanOrEqualUInt32 = crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUInt32;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualUInt64"
+    )]
+    pub type GreaterThanOrEqualUInt64 = crate::GlobalNamespace::GreaterThanOrEqualInstruction_GreaterThanOrEqualUInt64;
     pub fn New(
         nullValue: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {

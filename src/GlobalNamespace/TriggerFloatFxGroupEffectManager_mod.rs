@@ -3,32 +3,35 @@
 #[derive(Debug)]
 pub struct TriggerFloatFxGroupEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _floatFxGroups: *mut quest_hook::libil2cpp::Il2CppArray<*mut FloatFxGroup>,
+    pub _floatFxGroups: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::FloatFxGroup,
+    >,
     pub _container: *mut crate::Zenject::DiContainer,
     pub _floatFxGroupEffects: *mut crate::System::Collections::Generic::List_1<
-        *mut TriggerFloatFxGroupEffect,
+        *mut crate::GlobalNamespace::TriggerFloatFxGroupEffect,
     >,
 }
 #[cfg(feature = "TriggerFloatFxGroupEffectManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TriggerFloatFxGroupEffectManager => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::TriggerFloatFxGroupEffectManager => ""
     ."TriggerFloatFxGroupEffectManager"
 );
 #[cfg(feature = "TriggerFloatFxGroupEffectManager")]
-impl std::ops::Deref for TriggerFloatFxGroupEffectManager {
+impl std::ops::Deref for crate::GlobalNamespace::TriggerFloatFxGroupEffectManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TriggerFloatFxGroupEffectManager")]
-impl std::ops::DerefMut for TriggerFloatFxGroupEffectManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::TriggerFloatFxGroupEffectManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TriggerFloatFxGroupEffectManager")]
-impl TriggerFloatFxGroupEffectManager {
+impl crate::GlobalNamespace::TriggerFloatFxGroupEffectManager {
     #[cfg(feature = "TriggerFloatFxGroupEffectManager+__c")]
     pub type __c = crate::GlobalNamespace::TriggerFloatFxGroupEffectManager___c;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -70,7 +73,8 @@ impl TriggerFloatFxGroupEffectManager {
     }
 }
 #[cfg(feature = "TriggerFloatFxGroupEffectManager")]
-impl quest_hook::libil2cpp::ObjectType for TriggerFloatFxGroupEffectManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::TriggerFloatFxGroupEffectManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

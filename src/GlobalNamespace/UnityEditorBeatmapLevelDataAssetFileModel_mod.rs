@@ -6,26 +6,30 @@ pub struct UnityEditorBeatmapLevelDataAssetFileModel {
 }
 #[cfg(feature = "UnityEditorBeatmapLevelDataAssetFileModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for UnityEditorBeatmapLevelDataAssetFileModel => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel => ""
     ."UnityEditorBeatmapLevelDataAssetFileModel"
 );
 #[cfg(feature = "UnityEditorBeatmapLevelDataAssetFileModel")]
-impl std::ops::Deref for UnityEditorBeatmapLevelDataAssetFileModel {
+impl std::ops::Deref
+for crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEditorBeatmapLevelDataAssetFileModel")]
-impl std::ops::DerefMut for UnityEditorBeatmapLevelDataAssetFileModel {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEditorBeatmapLevelDataAssetFileModel")]
-impl UnityEditorBeatmapLevelDataAssetFileModel {}
+impl crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {}
 #[cfg(feature = "UnityEditorBeatmapLevelDataAssetFileModel")]
-impl quest_hook::libil2cpp::ObjectType for UnityEditorBeatmapLevelDataAssetFileModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

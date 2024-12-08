@@ -6,26 +6,27 @@ pub struct IReadonlyCutScoreBuffer {
 }
 #[cfg(feature = "IReadonlyCutScoreBuffer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IReadonlyCutScoreBuffer => ""."IReadonlyCutScoreBuffer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IReadonlyCutScoreBuffer => ""
+    ."IReadonlyCutScoreBuffer"
 );
 #[cfg(feature = "IReadonlyCutScoreBuffer")]
-impl std::ops::Deref for IReadonlyCutScoreBuffer {
+impl std::ops::Deref for crate::GlobalNamespace::IReadonlyCutScoreBuffer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IReadonlyCutScoreBuffer")]
-impl std::ops::DerefMut for IReadonlyCutScoreBuffer {
+impl std::ops::DerefMut for crate::GlobalNamespace::IReadonlyCutScoreBuffer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IReadonlyCutScoreBuffer")]
-impl IReadonlyCutScoreBuffer {
+impl crate::GlobalNamespace::IReadonlyCutScoreBuffer {
     pub fn RegisterDidChangeReceiver(
         &mut self,
-        receiver: *mut ICutScoreBufferDidChangeReceiver,
+        receiver: *mut crate::GlobalNamespace::ICutScoreBufferDidChangeReceiver,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -36,7 +37,7 @@ impl IReadonlyCutScoreBuffer {
     }
     pub fn RegisterDidFinishReceiver(
         &mut self,
-        receiver: *mut ICutScoreBufferDidFinishReceiver,
+        receiver: *mut crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -47,7 +48,7 @@ impl IReadonlyCutScoreBuffer {
     }
     pub fn UnregisterDidChangeReceiver(
         &mut self,
-        receiver: *mut ICutScoreBufferDidChangeReceiver,
+        receiver: *mut crate::GlobalNamespace::ICutScoreBufferDidChangeReceiver,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -58,7 +59,7 @@ impl IReadonlyCutScoreBuffer {
     }
     pub fn UnregisterDidFinishReceiver(
         &mut self,
-        receiver: *mut ICutScoreBufferDidFinishReceiver,
+        receiver: *mut crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -128,11 +129,14 @@ impl IReadonlyCutScoreBuffer {
         let __cordl_ret: i32 = __cordl_object.invoke("get_maxPossibleCutScore", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_noteCutInfo(&mut self) -> quest_hook::libil2cpp::Result<NoteCutInfo> {
+    pub fn get_noteCutInfo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: NoteCutInfo = __cordl_object.invoke("get_noteCutInfo", ())?;
+        let __cordl_ret: crate::GlobalNamespace::NoteCutInfo = __cordl_object
+            .invoke("get_noteCutInfo", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_noteScoreDefinition(
@@ -149,7 +153,8 @@ impl IReadonlyCutScoreBuffer {
     }
 }
 #[cfg(feature = "IReadonlyCutScoreBuffer")]
-impl quest_hook::libil2cpp::ObjectType for IReadonlyCutScoreBuffer {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IReadonlyCutScoreBuffer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

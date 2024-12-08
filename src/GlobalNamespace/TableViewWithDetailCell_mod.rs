@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TableViewWithDetailCell_IDat
 impl crate::GlobalNamespace::TableViewWithDetailCell_IDataSource {
     pub fn CellForContent(
         &mut self,
-        tableView: *mut TableViewWithDetailCell,
+        tableView: *mut crate::GlobalNamespace::TableViewWithDetailCell,
         idx: i32,
         detailOpened: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
@@ -40,7 +40,7 @@ impl crate::GlobalNamespace::TableViewWithDetailCell_IDataSource {
     }
     pub fn CellForDetail(
         &mut self,
-        tableView: *mut TableViewWithDetailCell,
+        tableView: *mut crate::GlobalNamespace::TableViewWithDetailCell,
         contentIdx: i32,
     ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -86,11 +86,11 @@ for crate::GlobalNamespace::TableViewWithDetailCell_IDataSource {
 pub struct TableViewWithDetailCell {
     __cordl_parent: crate::HMUI::TableView,
     pub didSelectContentCellEvent: *mut crate::System::Action_2<
-        *mut TableViewWithDetailCell,
+        *mut crate::GlobalNamespace::TableViewWithDetailCell,
         i32,
     >,
     pub didDeselectContentCellEvent: *mut crate::System::Action_2<
-        *mut TableViewWithDetailCell,
+        *mut crate::GlobalNamespace::TableViewWithDetailCell,
         i32,
     >,
     pub _dataSource: *mut crate::GlobalNamespace::TableViewWithDetailCell_IDataSource,
@@ -98,23 +98,24 @@ pub struct TableViewWithDetailCell {
 }
 #[cfg(feature = "TableViewWithDetailCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TableViewWithDetailCell => ""."TableViewWithDetailCell"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TableViewWithDetailCell => ""
+    ."TableViewWithDetailCell"
 );
 #[cfg(feature = "TableViewWithDetailCell")]
-impl std::ops::Deref for TableViewWithDetailCell {
+impl std::ops::Deref for crate::GlobalNamespace::TableViewWithDetailCell {
     type Target = crate::HMUI::TableView;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TableViewWithDetailCell")]
-impl std::ops::DerefMut for TableViewWithDetailCell {
+impl std::ops::DerefMut for crate::GlobalNamespace::TableViewWithDetailCell {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TableViewWithDetailCell")]
-impl TableViewWithDetailCell {
+impl crate::GlobalNamespace::TableViewWithDetailCell {
     #[cfg(feature = "TableViewWithDetailCell+IDataSource")]
     type IDataSource = crate::GlobalNamespace::TableViewWithDetailCell_IDataSource;
     pub fn CellForIdx(
@@ -194,7 +195,10 @@ impl TableViewWithDetailCell {
     }
     pub fn add_didDeselectContentCellEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut TableViewWithDetailCell, i32>,
+        value: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::TableViewWithDetailCell,
+            i32,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -205,7 +209,10 @@ impl TableViewWithDetailCell {
     }
     pub fn add_didSelectContentCellEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut TableViewWithDetailCell, i32>,
+        value: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::TableViewWithDetailCell,
+            i32,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -228,7 +235,10 @@ impl TableViewWithDetailCell {
     }
     pub fn remove_didDeselectContentCellEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut TableViewWithDetailCell, i32>,
+        value: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::TableViewWithDetailCell,
+            i32,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -239,7 +249,10 @@ impl TableViewWithDetailCell {
     }
     pub fn remove_didSelectContentCellEvent(
         &mut self,
-        value: *mut crate::System::Action_2<*mut TableViewWithDetailCell, i32>,
+        value: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::TableViewWithDetailCell,
+            i32,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -261,7 +274,8 @@ impl TableViewWithDetailCell {
     }
 }
 #[cfg(feature = "TableViewWithDetailCell")]
-impl quest_hook::libil2cpp::ObjectType for TableViewWithDetailCell {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::TableViewWithDetailCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

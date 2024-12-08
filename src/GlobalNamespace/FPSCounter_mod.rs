@@ -13,23 +13,23 @@ pub struct FPSCounter {
 }
 #[cfg(feature = "FPSCounter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FPSCounter => ""."FPSCounter"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FPSCounter => ""."FPSCounter"
 );
 #[cfg(feature = "FPSCounter")]
-impl std::ops::Deref for FPSCounter {
+impl std::ops::Deref for crate::GlobalNamespace::FPSCounter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FPSCounter")]
-impl std::ops::DerefMut for FPSCounter {
+impl std::ops::DerefMut for crate::GlobalNamespace::FPSCounter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FPSCounter")]
-impl FPSCounter {
+impl crate::GlobalNamespace::FPSCounter {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -141,7 +141,7 @@ impl FPSCounter {
     }
 }
 #[cfg(feature = "FPSCounter")]
-impl quest_hook::libil2cpp::ObjectType for FPSCounter {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FPSCounter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,28 +3,28 @@
 #[derive(Debug)]
 pub struct MockScoreSyncStateSender {
     __cordl_parent: crate::System::Object,
-    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
 }
 #[cfg(feature = "MockScoreSyncStateSender")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MockScoreSyncStateSender => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MockScoreSyncStateSender => ""
     ."MockScoreSyncStateSender"
 );
 #[cfg(feature = "MockScoreSyncStateSender")]
-impl std::ops::Deref for MockScoreSyncStateSender {
+impl std::ops::Deref for crate::GlobalNamespace::MockScoreSyncStateSender {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockScoreSyncStateSender")]
-impl std::ops::DerefMut for MockScoreSyncStateSender {
+impl std::ops::DerefMut for crate::GlobalNamespace::MockScoreSyncStateSender {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MockScoreSyncStateSender")]
-impl MockScoreSyncStateSender {
+impl crate::GlobalNamespace::MockScoreSyncStateSender {
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -37,8 +37,8 @@ impl MockScoreSyncStateSender {
     }
     pub fn HandleScoreSyncStateUpdate(
         &mut self,
-        nodePose: *mut StandardScoreSyncStateNetSerializable,
-        connectedPlayer: *mut IConnectedPlayer,
+        nodePose: *mut crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+        connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -48,7 +48,7 @@ impl MockScoreSyncStateSender {
         Ok(__cordl_ret)
     }
     pub fn New(
-        msm: *mut IMultiplayerSessionManager,
+        msm: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -82,7 +82,7 @@ impl MockScoreSyncStateSender {
     }
     pub fn _ctor(
         &mut self,
-        msm: *mut IMultiplayerSessionManager,
+        msm: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -93,7 +93,8 @@ impl MockScoreSyncStateSender {
     }
 }
 #[cfg(feature = "MockScoreSyncStateSender")]
-impl quest_hook::libil2cpp::ObjectType for MockScoreSyncStateSender {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MockScoreSyncStateSender {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

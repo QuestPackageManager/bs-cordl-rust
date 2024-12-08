@@ -3,29 +3,29 @@
 #[derive(Debug)]
 pub struct FireworksItemPoolInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _fireworksController: *mut FireworksController,
-    pub _fireworkItemControllerPrefab: *mut FireworkItemController,
+    pub _fireworksController: *mut crate::GlobalNamespace::FireworksController,
+    pub _fireworkItemControllerPrefab: *mut crate::GlobalNamespace::FireworkItemController,
 }
 #[cfg(feature = "FireworksItemPoolInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FireworksItemPoolInstaller => ""
-    ."FireworksItemPoolInstaller"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FireworksItemPoolInstaller =>
+    ""."FireworksItemPoolInstaller"
 );
 #[cfg(feature = "FireworksItemPoolInstaller")]
-impl std::ops::Deref for FireworksItemPoolInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::FireworksItemPoolInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FireworksItemPoolInstaller")]
-impl std::ops::DerefMut for FireworksItemPoolInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::FireworksItemPoolInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FireworksItemPoolInstaller")]
-impl FireworksItemPoolInstaller {
+impl crate::GlobalNamespace::FireworksItemPoolInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -55,7 +55,8 @@ impl FireworksItemPoolInstaller {
     }
 }
 #[cfg(feature = "FireworksItemPoolInstaller")]
-impl quest_hook::libil2cpp::ObjectType for FireworksItemPoolInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FireworksItemPoolInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

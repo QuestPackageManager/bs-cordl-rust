@@ -24,23 +24,23 @@ pub struct UserInfo {
 }
 #[cfg(feature = "UserInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for UserInfo => ""."UserInfo"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::UserInfo => ""."UserInfo"
 );
 #[cfg(feature = "UserInfo")]
-impl std::ops::Deref for UserInfo {
+impl std::ops::Deref for crate::GlobalNamespace::UserInfo {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UserInfo")]
-impl std::ops::DerefMut for UserInfo {
+impl std::ops::DerefMut for crate::GlobalNamespace::UserInfo {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "UserInfo")]
-impl UserInfo {
+impl crate::GlobalNamespace::UserInfo {
     #[cfg(feature = "UserInfo+Platform")]
     pub type Platform = crate::GlobalNamespace::UserInfo_Platform;
     pub fn New(
@@ -69,7 +69,7 @@ impl UserInfo {
     }
 }
 #[cfg(feature = "UserInfo")]
-impl quest_hook::libil2cpp::ObjectType for UserInfo {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UserInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

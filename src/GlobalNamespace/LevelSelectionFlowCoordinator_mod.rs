@@ -3,32 +3,32 @@
 #[derive(Debug)]
 pub struct LevelSelectionFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub playerDataModel: *mut PlayerDataModel,
-    pub levelSelectionNavigationController: *mut LevelSelectionNavigationController,
-    pub _searchFilterParamsViewController: *mut SearchFilterParamsViewController,
-    pub _levelSearchViewController: *mut LevelSearchViewController,
+    pub playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub levelSelectionNavigationController: *mut crate::GlobalNamespace::LevelSelectionNavigationController,
+    pub _searchFilterParamsViewController: *mut crate::GlobalNamespace::SearchFilterParamsViewController,
+    pub _levelSearchViewController: *mut crate::GlobalNamespace::LevelSearchViewController,
     pub _startState: *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
 }
 #[cfg(feature = "LevelSelectionFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LevelSelectionFlowCoordinator => ""
-    ."LevelSelectionFlowCoordinator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LevelSelectionFlowCoordinator
+    => ""."LevelSelectionFlowCoordinator"
 );
 #[cfg(feature = "LevelSelectionFlowCoordinator")]
-impl std::ops::Deref for LevelSelectionFlowCoordinator {
+impl std::ops::Deref for crate::GlobalNamespace::LevelSelectionFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelSelectionFlowCoordinator")]
-impl std::ops::DerefMut for LevelSelectionFlowCoordinator {
+impl std::ops::DerefMut for crate::GlobalNamespace::LevelSelectionFlowCoordinator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelSelectionFlowCoordinator")]
-impl LevelSelectionFlowCoordinator {
+impl crate::GlobalNamespace::LevelSelectionFlowCoordinator {
     #[cfg(feature = "LevelSelectionFlowCoordinator+State")]
     pub type State = crate::GlobalNamespace::LevelSelectionFlowCoordinator_State;
     pub fn ActionButtonWasPressed(
@@ -71,8 +71,8 @@ impl LevelSelectionFlowCoordinator {
     }
     pub fn HandleLevelSearchViewControllerDidPressSearchButton(
         &mut self,
-        viewController: *mut LevelSearchViewController,
-        filter: LevelFilter,
+        viewController: *mut crate::GlobalNamespace::LevelSearchViewController,
+        filter: crate::GlobalNamespace::LevelFilter,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -86,7 +86,7 @@ impl LevelSelectionFlowCoordinator {
     }
     pub fn HandleLevelSelectionNavigationControllerDidChangeDifficultyBeatmap(
         &mut self,
-        viewController: *mut LevelSelectionNavigationController,
+        viewController: *mut crate::GlobalNamespace::LevelSelectionNavigationController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -100,7 +100,7 @@ impl LevelSelectionFlowCoordinator {
     }
     pub fn HandleLevelSelectionNavigationControllerDidChangeLevelDetailContent(
         &mut self,
-        viewController: *mut LevelSelectionNavigationController,
+        viewController: *mut crate::GlobalNamespace::LevelSelectionNavigationController,
         contentType: crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -115,7 +115,7 @@ impl LevelSelectionFlowCoordinator {
     }
     pub fn HandleLevelSelectionNavigationControllerDidPressActionButton(
         &mut self,
-        viewController: *mut LevelSelectionNavigationController,
+        viewController: *mut crate::GlobalNamespace::LevelSelectionNavigationController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -129,8 +129,8 @@ impl LevelSelectionFlowCoordinator {
     }
     pub fn HandleLevelSelectionNavigationControllerDidPressPracticeButton(
         &mut self,
-        viewController: *mut LevelSelectionNavigationController,
-        beatmapLevel: *mut BeatmapLevel,
+        viewController: *mut crate::GlobalNamespace::LevelSelectionNavigationController,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -144,8 +144,8 @@ impl LevelSelectionFlowCoordinator {
     }
     pub fn HandleLevelSelectionNavigationControllerDidSelectPack(
         &mut self,
-        viewController: *mut LevelSelectionNavigationController,
-        pack: *mut BeatmapLevelPack,
+        viewController: *mut crate::GlobalNamespace::LevelSelectionNavigationController,
+        pack: *mut crate::GlobalNamespace::BeatmapLevelPack,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -159,8 +159,8 @@ impl LevelSelectionFlowCoordinator {
     }
     pub fn HandleSearchFilterParamsViewControllerDidFinish(
         &mut self,
-        viewController: *mut SearchFilterParamsViewController,
-        filter: LevelFilter,
+        viewController: *mut crate::GlobalNamespace::SearchFilterParamsViewController,
+        filter: crate::GlobalNamespace::LevelFilter,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -269,8 +269,8 @@ impl LevelSelectionFlowCoordinator {
     }
     pub fn SelectionDidChange(
         &mut self,
-        pack: *mut BeatmapLevelPack,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        pack: *mut crate::GlobalNamespace::BeatmapLevelPack,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -328,11 +328,11 @@ impl LevelSelectionFlowCoordinator {
     }
     pub fn get_allowedBeatmapDifficultyMask(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BeatmapDifficultyMask> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapDifficultyMask> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapDifficultyMask = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::BeatmapDifficultyMask = __cordl_object
             .invoke("get_allowedBeatmapDifficultyMask", ())?;
         Ok(__cordl_ret)
     }
@@ -407,43 +407,45 @@ impl LevelSelectionFlowCoordinator {
     pub fn get_notAllowedCharacteristics(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut BeatmapCharacteristicSO>,
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut BeatmapCharacteristicSO,
+            *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         > = __cordl_object.invoke("get_notAllowedCharacteristics", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_selectedBeatmapKey(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BeatmapKey> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapKey> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapKey = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::BeatmapKey = __cordl_object
             .invoke("get_selectedBeatmapKey", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_selectedBeatmapLevel(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevel> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapLevel> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapLevel = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapLevel = __cordl_object
             .invoke("get_selectedBeatmapLevel", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_selectedBeatmapLevelPack(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevelPack> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapLevelPack> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapLevelPack = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapLevelPack = __cordl_object
             .invoke("get_selectedBeatmapLevelPack", ())?;
         Ok(__cordl_ret)
     }
@@ -469,16 +471,20 @@ impl LevelSelectionFlowCoordinator {
             .invoke("get_showBackButtonForMainViewController", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_songPackMask(&mut self) -> quest_hook::libil2cpp::Result<SongPackMask> {
+    pub fn get_songPackMask(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: SongPackMask = __cordl_object.invoke("get_songPackMask", ())?;
+        let __cordl_ret: crate::GlobalNamespace::SongPackMask = __cordl_object
+            .invoke("get_songPackMask", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "LevelSelectionFlowCoordinator")]
-impl quest_hook::libil2cpp::ObjectType for LevelSelectionFlowCoordinator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LevelSelectionFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -494,9 +500,9 @@ pub struct LevelSelectionFlowCoordinator_State {
     pub levelCategory: crate::System::Nullable_1<
         crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
     >,
-    pub beatmapLevelPack: *mut BeatmapLevelPack,
-    pub beatmapKey: BeatmapKey,
-    pub beatmapLevel: *mut BeatmapLevel,
+    pub beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
+    pub beatmapKey: crate::GlobalNamespace::BeatmapKey,
+    pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
 }
 #[cfg(feature = "LevelSelectionFlowCoordinator+State")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -520,7 +526,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LevelSelectionFlowCoordinato
 #[cfg(feature = "LevelSelectionFlowCoordinator+State")]
 impl crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
     pub fn New_BeatmapLevelPack1(
-        beatmapLevelPack: *mut BeatmapLevelPack,
+        beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -529,8 +535,8 @@ impl crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
         Ok(__cordl_object)
     }
     pub fn New_BeatmapLevelPack_BeatmapLevel2(
-        beatmapLevelPack: *mut BeatmapLevelPack,
-        beatmapLevel: *mut BeatmapLevel,
+        beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -542,9 +548,9 @@ impl crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
         levelCategory: crate::System::Nullable_1<
             crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
         >,
-        beatmapLevelPack: *mut BeatmapLevelPack,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-        beatmapLevel: *mut BeatmapLevel,
+        beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -557,7 +563,7 @@ impl crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
     }
     pub fn _ctor_BeatmapLevelPack1(
         &mut self,
-        beatmapLevelPack: *mut BeatmapLevelPack,
+        beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -568,8 +574,8 @@ impl crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
     }
     pub fn _ctor_BeatmapLevelPack_BeatmapLevel2(
         &mut self,
-        beatmapLevelPack: *mut BeatmapLevelPack,
-        beatmapLevel: *mut BeatmapLevel,
+        beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -583,9 +589,9 @@ impl crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
         levelCategory: crate::System::Nullable_1<
             crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
         >,
-        beatmapLevelPack: *mut BeatmapLevelPack,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-        beatmapLevel: *mut BeatmapLevel,
+        beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

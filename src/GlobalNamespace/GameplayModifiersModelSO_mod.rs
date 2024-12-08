@@ -29,7 +29,7 @@ for crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter 
 impl crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter {
     pub fn BeginInvoke(
         &mut self,
-        gameplayModifiers: *mut GameplayModifiers,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
         callback: *mut crate::System::AsyncCallback,
         object: *mut crate::System::Object,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter
     }
     pub fn Invoke(
         &mut self,
-        gameplayModifiers: *mut GameplayModifiers,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -97,86 +97,93 @@ for crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter 
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplayModifiersModelSO {
-    __cordl_parent: PersistentScriptableObject,
-    pub _batteryEnergy: *mut GameplayModifierParamsSO,
-    pub _instaFail: *mut GameplayModifierParamsSO,
-    pub _noObstacles: *mut GameplayModifierParamsSO,
-    pub _noBombs: *mut GameplayModifierParamsSO,
-    pub _fastNotes: *mut GameplayModifierParamsSO,
-    pub _strictAngles: *mut GameplayModifierParamsSO,
-    pub _disappearingArrows: *mut GameplayModifierParamsSO,
-    pub _fasterSong: *mut GameplayModifierParamsSO,
-    pub _slowerSong: *mut GameplayModifierParamsSO,
-    pub _noArrows: *mut GameplayModifierParamsSO,
-    pub _ghostNotes: *mut GameplayModifierParamsSO,
-    pub _noFailOn0Energy: *mut GameplayModifierParamsSO,
-    pub _superFastSong: *mut GameplayModifierParamsSO,
-    pub _proMode: *mut GameplayModifierParamsSO,
-    pub _zenMode: *mut GameplayModifierParamsSO,
-    pub _smallCubes: *mut GameplayModifierParamsSO,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    pub _batteryEnergy: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    pub _instaFail: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    pub _noObstacles: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    pub _noBombs: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    pub _fastNotes: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    pub _strictAngles: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    pub _disappearingArrows: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    pub _fasterSong: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    pub _slowerSong: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    pub _noArrows: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    pub _ghostNotes: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    pub _noFailOn0Energy: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    pub _superFastSong: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    pub _proMode: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    pub _zenMode: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    pub _smallCubes: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
     pub _gameplayModifierGetters: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut GameplayModifierParamsSO,
+        *mut crate::GlobalNamespace::GameplayModifierParamsSO,
         *mut crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
     >,
 }
 #[cfg(feature = "GameplayModifiersModelSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameplayModifiersModelSO => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameplayModifiersModelSO => ""
     ."GameplayModifiersModelSO"
 );
 #[cfg(feature = "GameplayModifiersModelSO")]
-impl std::ops::Deref for GameplayModifiersModelSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::GameplayModifiersModelSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayModifiersModelSO")]
-impl std::ops::DerefMut for GameplayModifiersModelSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameplayModifiersModelSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayModifiersModelSO")]
-impl GameplayModifiersModelSO {
+impl crate::GlobalNamespace::GameplayModifiersModelSO {
     pub const kMaxPossibleMultiplier: f32 = 1.21f32;
-    #[cfg(feature = "GameplayModifiersModelSO+__c")]
-    pub type __c = crate::GlobalNamespace::GameplayModifiersModelSO___c;
     #[cfg(feature = "GameplayModifiersModelSO+GameplayModifierBoolGetter")]
     pub type GameplayModifierBoolGetter = crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter;
+    #[cfg(feature = "GameplayModifiersModelSO+__c")]
+    pub type __c = crate::GlobalNamespace::GameplayModifiersModelSO___c;
     pub fn CreateGameplayModifiers(
         &mut self,
-        valueGetter: *mut crate::System::Func_2<*mut GameplayModifierParamsSO, bool>,
-    ) -> quest_hook::libil2cpp::Result<*mut GameplayModifiers> {
+        valueGetter: *mut crate::System::Func_2<
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+            bool,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::GameplayModifiers> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut GameplayModifiers = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::GameplayModifiers = __cordl_object
             .invoke("CreateGameplayModifiers", (valueGetter))?;
         Ok(__cordl_ret)
     }
     pub fn CreateModifierParamsList(
         &mut self,
-        gameplayModifiers: *mut GameplayModifiers,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<*mut GameplayModifierParamsSO>,
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut GameplayModifierParamsSO,
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
         > = __cordl_object.invoke("CreateModifierParamsList", (gameplayModifiers))?;
         Ok(__cordl_ret)
     }
     pub fn GetGameplayModifierParams(
         &mut self,
-        modifier: GameplayModifierMask,
-    ) -> quest_hook::libil2cpp::Result<*mut GameplayModifierParamsSO> {
+        modifier: crate::GlobalNamespace::GameplayModifierMask,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut GameplayModifierParamsSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::GameplayModifierParamsSO = __cordl_object
             .invoke("GetGameplayModifierParams", (modifier))?;
         Ok(__cordl_ret)
     }
@@ -184,7 +191,7 @@ impl GameplayModifiersModelSO {
         &mut self,
         multipliedScore: i32,
         modifierParams: *mut crate::System::Collections::Generic::List_1<
-            *mut GameplayModifierParamsSO,
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
         >,
         energy: f32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -200,8 +207,8 @@ impl GameplayModifiersModelSO {
     }
     pub fn GetModifierBoolValue(
         &mut self,
-        gameplayModifiers: *mut GameplayModifiers,
-        gameplayModifierParams: *mut GameplayModifierParamsSO,
+        gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+        gameplayModifierParams: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -215,7 +222,10 @@ impl GameplayModifiersModelSO {
     }
     pub fn GetSongSpeedFromValueGetter(
         &mut self,
-        valueGetter: *mut crate::System::Func_2<*mut GameplayModifierParamsSO, bool>,
+        valueGetter: *mut crate::System::Func_2<
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
+            bool,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::GameplayModifiers_SongSpeed,
     > {
@@ -229,7 +239,7 @@ impl GameplayModifiersModelSO {
     pub fn GetTotalMultiplier(
         &mut self,
         modifierParams: *mut crate::System::Collections::Generic::List_1<
-            *mut GameplayModifierParamsSO,
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
         >,
         energy: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
@@ -244,9 +254,9 @@ impl GameplayModifiersModelSO {
         &mut self,
         maxMultipliedScore: i32,
         modifierParams: *mut crate::System::Collections::Generic::List_1<
-            *mut GameplayModifierParamsSO,
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
         >,
-        gameplayModifiersModel: *mut GameplayModifiersModelSO,
+        gameplayModifiersModel: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
         energy: f32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -263,7 +273,7 @@ impl GameplayModifiersModelSO {
         &mut self,
         maxMultipliedScore: i32,
         modifierParams: *mut crate::System::Collections::Generic::List_1<
-            *mut GameplayModifierParamsSO,
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
         >,
         energy: f32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -308,7 +318,7 @@ impl GameplayModifiersModelSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut GameplayModifierParamsSO,
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
             *mut crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
         >,
     > {
@@ -316,14 +326,15 @@ impl GameplayModifiersModelSO {
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut GameplayModifierParamsSO,
+            *mut crate::GlobalNamespace::GameplayModifierParamsSO,
             *mut crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
         > = __cordl_object.invoke("get_gameplayModifierGetters", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "GameplayModifiersModelSO")]
-impl quest_hook::libil2cpp::ObjectType for GameplayModifiersModelSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GameplayModifiersModelSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

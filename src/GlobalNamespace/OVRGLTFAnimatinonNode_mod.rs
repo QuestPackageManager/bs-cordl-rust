@@ -30,12 +30,12 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {}
 #[derive(Debug)]
 pub struct OVRGLTFAnimatinonNode {
     __cordl_parent: crate::System::Object,
-    pub m_intputNodeType: OVRGLTFInputNode,
+    pub m_intputNodeType: crate::GlobalNamespace::OVRGLTFInputNode,
     pub m_jsonData: *mut crate::OVRSimpleJSON::JSONNode,
-    pub m_binaryChunk: OVRBinaryChunk,
+    pub m_binaryChunk: crate::GlobalNamespace::OVRBinaryChunk,
     pub m_gameObj: *mut crate::UnityEngine::GameObject,
     pub m_inputNodeState: crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState,
-    pub m_morphTargetHandler: *mut OVRGLTFAnimationNodeMorphTargetHandler,
+    pub m_morphTargetHandler: *mut crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
     pub m_translations: *mut crate::System::Collections::Generic::List_1<
         crate::UnityEngine::Vector3,
     >,
@@ -50,31 +50,32 @@ pub struct OVRGLTFAnimatinonNode {
 }
 #[cfg(feature = "OVRGLTFAnimatinonNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRGLTFAnimatinonNode => ""."OVRGLTFAnimatinonNode"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRGLTFAnimatinonNode => ""
+    ."OVRGLTFAnimatinonNode"
 );
 #[cfg(feature = "OVRGLTFAnimatinonNode")]
-impl std::ops::Deref for OVRGLTFAnimatinonNode {
+impl std::ops::Deref for crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRGLTFAnimatinonNode")]
-impl std::ops::DerefMut for OVRGLTFAnimatinonNode {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRGLTFAnimatinonNode")]
-impl OVRGLTFAnimatinonNode {
-    #[cfg(feature = "OVRGLTFAnimatinonNode+ThumbstickDirection")]
-    pub type ThumbstickDirection = crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection;
+impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
+    #[cfg(feature = "OVRGLTFAnimatinonNode+InputNodeState")]
+    pub type InputNodeState = crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState;
     #[cfg(feature = "OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
     pub type OVRGLTFTransformType = crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType;
     #[cfg(feature = "OVRGLTFAnimatinonNode+OVRInterpolationType")]
     pub type OVRInterpolationType = crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType;
-    #[cfg(feature = "OVRGLTFAnimatinonNode+InputNodeState")]
-    pub type InputNodeState = crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState;
+    #[cfg(feature = "OVRGLTFAnimatinonNode+ThumbstickDirection")]
+    pub type ThumbstickDirection = crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection;
     pub fn AddChannel(
         &mut self,
         channel: *mut crate::OVRSimpleJSON::JSONNode,
@@ -175,10 +176,10 @@ impl OVRGLTFAnimatinonNode {
     }
     pub fn New(
         jsonData: *mut crate::OVRSimpleJSON::JSONNode,
-        binaryChunk: OVRBinaryChunk,
-        inputNodeType: OVRGLTFInputNode,
+        binaryChunk: crate::GlobalNamespace::OVRBinaryChunk,
+        inputNodeType: crate::GlobalNamespace::OVRGLTFInputNode,
         gameObj: *mut crate::UnityEngine::GameObject,
-        morphTargetHandler: *mut OVRGLTFAnimationNodeMorphTargetHandler,
+        morphTargetHandler: *mut crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -256,10 +257,10 @@ impl OVRGLTFAnimatinonNode {
     pub fn _ctor(
         &mut self,
         jsonData: *mut crate::OVRSimpleJSON::JSONNode,
-        binaryChunk: OVRBinaryChunk,
-        inputNodeType: OVRGLTFInputNode,
+        binaryChunk: crate::GlobalNamespace::OVRBinaryChunk,
+        inputNodeType: crate::GlobalNamespace::OVRGLTFInputNode,
         gameObj: *mut crate::UnityEngine::GameObject,
-        morphTargetHandler: *mut OVRGLTFAnimationNodeMorphTargetHandler,
+        morphTargetHandler: *mut crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -273,7 +274,8 @@ impl OVRGLTFAnimatinonNode {
     }
 }
 #[cfg(feature = "OVRGLTFAnimatinonNode")]
-impl quest_hook::libil2cpp::ObjectType for OVRGLTFAnimatinonNode {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

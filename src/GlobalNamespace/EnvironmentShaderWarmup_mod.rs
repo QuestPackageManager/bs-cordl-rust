@@ -6,29 +6,30 @@ pub struct EnvironmentShaderWarmup {
     pub _materials: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::Material,
     >,
-    pub _mainCamera: *mut MainCamera,
-    pub _gameScenesManager: *mut GameScenesManager,
+    pub _mainCamera: *mut crate::GlobalNamespace::MainCamera,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
     pub _parentingTransform: *mut crate::UnityEngine::Transform,
 }
 #[cfg(feature = "EnvironmentShaderWarmup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnvironmentShaderWarmup => ""."EnvironmentShaderWarmup"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnvironmentShaderWarmup => ""
+    ."EnvironmentShaderWarmup"
 );
 #[cfg(feature = "EnvironmentShaderWarmup")]
-impl std::ops::Deref for EnvironmentShaderWarmup {
+impl std::ops::Deref for crate::GlobalNamespace::EnvironmentShaderWarmup {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentShaderWarmup")]
-impl std::ops::DerefMut for EnvironmentShaderWarmup {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentShaderWarmup {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentShaderWarmup")]
-impl EnvironmentShaderWarmup {
+impl crate::GlobalNamespace::EnvironmentShaderWarmup {
     pub const kNumberOfColumns: i32 = 4i32;
     pub const kNumberOfRows: i32 = 4i32;
     #[cfg(feature = "EnvironmentShaderWarmup+_Start_d__6")]
@@ -62,7 +63,8 @@ impl EnvironmentShaderWarmup {
     }
 }
 #[cfg(feature = "EnvironmentShaderWarmup")]
-impl quest_hook::libil2cpp::ObjectType for EnvironmentShaderWarmup {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EnvironmentShaderWarmup {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

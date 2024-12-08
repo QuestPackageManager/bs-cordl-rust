@@ -6,27 +6,28 @@ pub struct INoteCutSoundEffectDidFinishEvent {
 }
 #[cfg(feature = "INoteCutSoundEffectDidFinishEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for INoteCutSoundEffectDidFinishEvent => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::INoteCutSoundEffectDidFinishEvent => ""
     ."INoteCutSoundEffectDidFinishEvent"
 );
 #[cfg(feature = "INoteCutSoundEffectDidFinishEvent")]
-impl std::ops::Deref for INoteCutSoundEffectDidFinishEvent {
+impl std::ops::Deref for crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "INoteCutSoundEffectDidFinishEvent")]
-impl std::ops::DerefMut for INoteCutSoundEffectDidFinishEvent {
+impl std::ops::DerefMut for crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "INoteCutSoundEffectDidFinishEvent")]
-impl INoteCutSoundEffectDidFinishEvent {
+impl crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent {
     pub fn HandleNoteCutSoundEffectDidFinish(
         &mut self,
-        noteCutSoundEffect: *mut NoteCutSoundEffect,
+        noteCutSoundEffect: *mut crate::GlobalNamespace::NoteCutSoundEffect,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -42,7 +43,8 @@ impl INoteCutSoundEffectDidFinishEvent {
     }
 }
 #[cfg(feature = "INoteCutSoundEffectDidFinishEvent")]
-impl quest_hook::libil2cpp::ObjectType for INoteCutSoundEffectDidFinishEvent {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

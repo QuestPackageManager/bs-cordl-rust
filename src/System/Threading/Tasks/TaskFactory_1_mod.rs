@@ -177,15 +177,6 @@ impl<
         TResult,
         TInstance,
     >;
-    #[cfg(feature = "System+Threading+Tasks+TaskFactory_1+__c__DisplayClass41_0_2")]
-    pub type __c__DisplayClass41_0_2<
-        TArg1: quest_hook::libil2cpp::Type,
-        TArg2: quest_hook::libil2cpp::Type,
-    > = crate::System::Threading::Tasks::TaskFactory_1___c__DisplayClass41_0_2<
-        TResult,
-        TArg1,
-        TArg2,
-    >;
     #[cfg(feature = "System+Threading+Tasks+TaskFactory_1+__c__DisplayClass35_0")]
     pub type __c__DisplayClass35_0 = crate::System::Threading::Tasks::TaskFactory_1___c__DisplayClass35_0<
         TResult,
@@ -194,6 +185,15 @@ impl<
     pub type __c__DisplayClass38_0_1<TArg1: quest_hook::libil2cpp::Type> = crate::System::Threading::Tasks::TaskFactory_1___c__DisplayClass38_0_1<
         TResult,
         TArg1,
+    >;
+    #[cfg(feature = "System+Threading+Tasks+TaskFactory_1+__c__DisplayClass41_0_2")]
+    pub type __c__DisplayClass41_0_2<
+        TArg1: quest_hook::libil2cpp::Type,
+        TArg2: quest_hook::libil2cpp::Type,
+    > = crate::System::Threading::Tasks::TaskFactory_1___c__DisplayClass41_0_2<
+        TResult,
+        TArg1,
+        TArg2,
     >;
     pub fn FromAsync_Func_3_Object0(
         &mut self,

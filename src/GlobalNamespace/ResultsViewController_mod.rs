@@ -13,44 +13,45 @@ pub struct ResultsViewController {
     pub _comboText: *mut crate::TMPro::TextMeshProUGUI,
     pub _clearedBannerGo: *mut crate::UnityEngine::GameObject,
     pub _failedBannerGo: *mut crate::UnityEngine::GameObject,
-    pub _levelBar: *mut LevelBar,
+    pub _levelBar: *mut crate::GlobalNamespace::LevelBar,
     pub _levelClearedAudioClip: *mut crate::UnityEngine::AudioClip,
-    pub _fireworksController: *mut FireworksController,
-    pub _songPreviewPlayer: *mut SongPreviewPlayer,
-    pub _menuDestinationRequest: *mut MenuDestination,
+    pub _fireworksController: *mut crate::GlobalNamespace::FireworksController,
+    pub _songPreviewPlayer: *mut crate::GlobalNamespace::SongPreviewPlayer,
+    pub _menuDestinationRequest: *mut crate::GlobalNamespace::MenuDestination,
     pub continueButtonPressedEvent: *mut crate::System::Action_1<
-        *mut ResultsViewController,
+        *mut crate::GlobalNamespace::ResultsViewController,
     >,
     pub restartButtonPressedEvent: *mut crate::System::Action_1<
-        *mut ResultsViewController,
+        *mut crate::GlobalNamespace::ResultsViewController,
     >,
-    pub _levelCompletionResults: *mut LevelCompletionResults,
-    pub _transformedBeatmapData: *mut IReadonlyBeatmapData,
-    pub _beatmapKey: BeatmapKey,
-    pub _beatmapLevel: *mut BeatmapLevel,
+    pub _levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
+    pub _transformedBeatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
+    pub _beatmapKey: crate::GlobalNamespace::BeatmapKey,
+    pub _beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     pub _startFireworksAfterDelayCoroutine: *mut crate::UnityEngine::Coroutine,
     pub _newHighScore: bool,
     pub _practice: bool,
 }
 #[cfg(feature = "ResultsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ResultsViewController => ""."ResultsViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ResultsViewController => ""
+    ."ResultsViewController"
 );
 #[cfg(feature = "ResultsViewController")]
-impl std::ops::Deref for ResultsViewController {
+impl std::ops::Deref for crate::GlobalNamespace::ResultsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ResultsViewController")]
-impl std::ops::DerefMut for ResultsViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::ResultsViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ResultsViewController")]
-impl ResultsViewController {
+impl crate::GlobalNamespace::ResultsViewController {
     #[cfg(feature = "ResultsViewController+_StartFireworksAfterDelay_d__33")]
     pub type _StartFireworksAfterDelay_d__33 = crate::GlobalNamespace::ResultsViewController__StartFireworksAfterDelay_d__33;
     pub fn ContinueButtonPressed(
@@ -93,10 +94,10 @@ impl ResultsViewController {
     }
     pub fn Init(
         &mut self,
-        levelCompletionResults: *mut LevelCompletionResults,
-        transformedBeatmapData: *mut IReadonlyBeatmapData,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
-        beatmapLevel: *mut BeatmapLevel,
+        levelCompletionResults: *mut crate::GlobalNamespace::LevelCompletionResults,
+        transformedBeatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
         practice: bool,
         newHighScore: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -126,7 +127,7 @@ impl ResultsViewController {
     }
     pub fn ProcessMenuDestinationRequest(
         &mut self,
-        menuDestination: *mut MenuDestination,
+        menuDestination: *mut crate::GlobalNamespace::MenuDestination,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -178,7 +179,9 @@ impl ResultsViewController {
     }
     pub fn add_continueButtonPressedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ResultsViewController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ResultsViewController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -189,7 +192,9 @@ impl ResultsViewController {
     }
     pub fn add_restartButtonPressedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ResultsViewController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ResultsViewController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -207,7 +212,9 @@ impl ResultsViewController {
     }
     pub fn remove_continueButtonPressedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ResultsViewController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ResultsViewController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -218,7 +225,9 @@ impl ResultsViewController {
     }
     pub fn remove_restartButtonPressedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut ResultsViewController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::ResultsViewController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -229,7 +238,8 @@ impl ResultsViewController {
     }
 }
 #[cfg(feature = "ResultsViewController")]
-impl quest_hook::libil2cpp::ObjectType for ResultsViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ResultsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

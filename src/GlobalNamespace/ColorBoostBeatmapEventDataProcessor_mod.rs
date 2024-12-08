@@ -2,28 +2,33 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorBoostBeatmapEventDataProcessor {
-    __cordl_parent: BeatmapEventDataProcessor_1<*mut ColorBoostBeatmapEventData>,
+    __cordl_parent: crate::GlobalNamespace::BeatmapEventDataProcessor_1<
+        *mut crate::GlobalNamespace::ColorBoostBeatmapEventData,
+    >,
 }
 #[cfg(feature = "ColorBoostBeatmapEventDataProcessor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ColorBoostBeatmapEventDataProcessor => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ColorBoostBeatmapEventDataProcessor => ""
     ."ColorBoostBeatmapEventDataProcessor"
 );
 #[cfg(feature = "ColorBoostBeatmapEventDataProcessor")]
-impl std::ops::Deref for ColorBoostBeatmapEventDataProcessor {
-    type Target = BeatmapEventDataProcessor_1<*mut ColorBoostBeatmapEventData>;
+impl std::ops::Deref for crate::GlobalNamespace::ColorBoostBeatmapEventDataProcessor {
+    type Target = crate::GlobalNamespace::BeatmapEventDataProcessor_1<
+        *mut crate::GlobalNamespace::ColorBoostBeatmapEventData,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorBoostBeatmapEventDataProcessor")]
-impl std::ops::DerefMut for ColorBoostBeatmapEventDataProcessor {
+impl std::ops::DerefMut for crate::GlobalNamespace::ColorBoostBeatmapEventDataProcessor {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorBoostBeatmapEventDataProcessor")]
-impl ColorBoostBeatmapEventDataProcessor {
+impl crate::GlobalNamespace::ColorBoostBeatmapEventDataProcessor {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -43,7 +48,8 @@ impl ColorBoostBeatmapEventDataProcessor {
     }
 }
 #[cfg(feature = "ColorBoostBeatmapEventDataProcessor")]
-impl quest_hook::libil2cpp::ObjectType for ColorBoostBeatmapEventDataProcessor {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ColorBoostBeatmapEventDataProcessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

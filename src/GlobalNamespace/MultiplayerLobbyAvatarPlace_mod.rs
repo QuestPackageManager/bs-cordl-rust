@@ -6,24 +6,24 @@ pub struct MultiplayerLobbyAvatarPlace {
 }
 #[cfg(feature = "MultiplayerLobbyAvatarPlace")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLobbyAvatarPlace => ""
-    ."MultiplayerLobbyAvatarPlace"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerLobbyAvatarPlace =>
+    ""."MultiplayerLobbyAvatarPlace"
 );
 #[cfg(feature = "MultiplayerLobbyAvatarPlace")]
-impl std::ops::Deref for MultiplayerLobbyAvatarPlace {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLobbyAvatarPlace {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLobbyAvatarPlace")]
-impl std::ops::DerefMut for MultiplayerLobbyAvatarPlace {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLobbyAvatarPlace {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLobbyAvatarPlace")]
-impl MultiplayerLobbyAvatarPlace {
+impl crate::GlobalNamespace::MultiplayerLobbyAvatarPlace {
     #[cfg(feature = "MultiplayerLobbyAvatarPlace+Pool")]
     pub type Pool = crate::GlobalNamespace::MultiplayerLobbyAvatarPlace_Pool;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -57,7 +57,8 @@ impl MultiplayerLobbyAvatarPlace {
     }
 }
 #[cfg(feature = "MultiplayerLobbyAvatarPlace")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLobbyAvatarPlace {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLobbyAvatarPlace {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -69,7 +70,9 @@ impl quest_hook::libil2cpp::ObjectType for MultiplayerLobbyAvatarPlace {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLobbyAvatarPlace_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<*mut MultiplayerLobbyAvatarPlace>,
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::MultiplayerLobbyAvatarPlace,
+    >,
 }
 #[cfg(feature = "MultiplayerLobbyAvatarPlace+Pool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -79,7 +82,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerLobbyAvatarPlace+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLobbyAvatarPlace_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<*mut MultiplayerLobbyAvatarPlace>;
+    type Target = crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::MultiplayerLobbyAvatarPlace,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

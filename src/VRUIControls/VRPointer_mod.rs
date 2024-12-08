@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct VRPointer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _leftVRController: *mut VRController,
-    pub _rightVRController: *mut VRController,
+    pub _leftVRController: *mut crate::GlobalNamespace::VRController,
+    pub _rightVRController: *mut crate::GlobalNamespace::VRController,
     pub _laserPointerPrefab: *mut crate::VRUIControls::VRLaserPointer,
     pub _cursorPrefab: *mut crate::UnityEngine::Transform,
     pub _defaultLaserPointerLength: f32,
@@ -16,7 +16,7 @@ pub struct VRPointer {
     pub _leftCursorTransform: *mut crate::UnityEngine::Transform,
     pub _rightCursorTransform: *mut crate::UnityEngine::Transform,
     pub _eventSystem: *mut crate::UnityEngine::EventSystems::EventSystem,
-    pub _lastSelectedVrController: *mut VRController,
+    pub _lastSelectedVrController: *mut crate::GlobalNamespace::VRController,
     pub _lastSelectedControllerWasRight: bool,
     pub _rightControllerWasReleased: bool,
     pub _leftControllerWasReleased: bool,
@@ -237,11 +237,11 @@ impl crate::VRUIControls::VRPointer {
     }
     pub fn get_lastSelectedVrController(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut VRController> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::VRController> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut VRController = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::VRController = __cordl_object
             .invoke("get_lastSelectedVrController", ())?;
         Ok(__cordl_ret)
     }

@@ -11,24 +11,24 @@ pub struct LevelPackHeaderTableCell {
 }
 #[cfg(feature = "LevelPackHeaderTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LevelPackHeaderTableCell => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LevelPackHeaderTableCell => ""
     ."LevelPackHeaderTableCell"
 );
 #[cfg(feature = "LevelPackHeaderTableCell")]
-impl std::ops::Deref for LevelPackHeaderTableCell {
+impl std::ops::Deref for crate::GlobalNamespace::LevelPackHeaderTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelPackHeaderTableCell")]
-impl std::ops::DerefMut for LevelPackHeaderTableCell {
+impl std::ops::DerefMut for crate::GlobalNamespace::LevelPackHeaderTableCell {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelPackHeaderTableCell")]
-impl LevelPackHeaderTableCell {
+impl crate::GlobalNamespace::LevelPackHeaderTableCell {
     pub fn HighlightDidChange(
         &mut self,
         transitionType: crate::HMUI::SelectableCell_TransitionType,
@@ -91,7 +91,8 @@ impl LevelPackHeaderTableCell {
     }
 }
 #[cfg(feature = "LevelPackHeaderTableCell")]
-impl quest_hook::libil2cpp::ObjectType for LevelPackHeaderTableCell {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LevelPackHeaderTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

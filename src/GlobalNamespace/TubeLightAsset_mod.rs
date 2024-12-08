@@ -3,27 +3,28 @@
 #[derive(Debug)]
 pub struct TubeLightAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
-    pub _template: *mut TubeLightBehaviour,
+    pub _template: *mut crate::GlobalNamespace::TubeLightBehaviour,
 }
 #[cfg(feature = "TubeLightAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TubeLightAsset => ""."TubeLightAsset"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TubeLightAsset => ""
+    ."TubeLightAsset"
 );
 #[cfg(feature = "TubeLightAsset")]
-impl std::ops::Deref for TubeLightAsset {
+impl std::ops::Deref for crate::GlobalNamespace::TubeLightAsset {
     type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TubeLightAsset")]
-impl std::ops::DerefMut for TubeLightAsset {
+impl std::ops::DerefMut for crate::GlobalNamespace::TubeLightAsset {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TubeLightAsset")]
-impl TubeLightAsset {
+impl crate::GlobalNamespace::TubeLightAsset {
     pub fn CreatePlayable(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,
@@ -65,7 +66,7 @@ impl TubeLightAsset {
     }
 }
 #[cfg(feature = "TubeLightAsset")]
-impl quest_hook::libil2cpp::ObjectType for TubeLightAsset {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TubeLightAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

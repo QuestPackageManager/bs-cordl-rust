@@ -6,23 +6,24 @@ pub struct IStandaloneMonobehavior {
 }
 #[cfg(feature = "IStandaloneMonobehavior")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IStandaloneMonobehavior => ""."IStandaloneMonobehavior"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IStandaloneMonobehavior => ""
+    ."IStandaloneMonobehavior"
 );
 #[cfg(feature = "IStandaloneMonobehavior")]
-impl std::ops::Deref for IStandaloneMonobehavior {
+impl std::ops::Deref for crate::GlobalNamespace::IStandaloneMonobehavior {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IStandaloneMonobehavior")]
-impl std::ops::DerefMut for IStandaloneMonobehavior {
+impl std::ops::DerefMut for crate::GlobalNamespace::IStandaloneMonobehavior {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IStandaloneMonobehavior")]
-impl IStandaloneMonobehavior {
+impl crate::GlobalNamespace::IStandaloneMonobehavior {
     pub fn Dispatch(
         &mut self,
         action: *mut crate::System::Action,
@@ -47,7 +48,7 @@ impl IStandaloneMonobehavior {
     }
     pub fn RunAsync(
         &mut self,
-        runner: *mut IStandaloneThreadRunner,
+        runner: *mut crate::GlobalNamespace::IStandaloneThreadRunner,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -74,7 +75,8 @@ impl IStandaloneMonobehavior {
     }
 }
 #[cfg(feature = "IStandaloneMonobehavior")]
-impl quest_hook::libil2cpp::ObjectType for IStandaloneMonobehavior {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IStandaloneMonobehavior {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

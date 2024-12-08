@@ -6,24 +6,24 @@ pub struct IgnoreForReflectionProbeBaking {
 }
 #[cfg(feature = "IgnoreForReflectionProbeBaking")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IgnoreForReflectionProbeBaking => ""
-    ."IgnoreForReflectionProbeBaking"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IgnoreForReflectionProbeBaking
+    => ""."IgnoreForReflectionProbeBaking"
 );
 #[cfg(feature = "IgnoreForReflectionProbeBaking")]
-impl std::ops::Deref for IgnoreForReflectionProbeBaking {
+impl std::ops::Deref for crate::GlobalNamespace::IgnoreForReflectionProbeBaking {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IgnoreForReflectionProbeBaking")]
-impl std::ops::DerefMut for IgnoreForReflectionProbeBaking {
+impl std::ops::DerefMut for crate::GlobalNamespace::IgnoreForReflectionProbeBaking {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IgnoreForReflectionProbeBaking")]
-impl IgnoreForReflectionProbeBaking {
+impl crate::GlobalNamespace::IgnoreForReflectionProbeBaking {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -43,7 +43,8 @@ impl IgnoreForReflectionProbeBaking {
     }
 }
 #[cfg(feature = "IgnoreForReflectionProbeBaking")]
-impl quest_hook::libil2cpp::ObjectType for IgnoreForReflectionProbeBaking {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IgnoreForReflectionProbeBaking {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

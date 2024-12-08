@@ -48,23 +48,24 @@ pub struct SynchronizedActionQueue {
 }
 #[cfg(feature = "SynchronizedActionQueue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SynchronizedActionQueue => ""."SynchronizedActionQueue"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SynchronizedActionQueue => ""
+    ."SynchronizedActionQueue"
 );
 #[cfg(feature = "SynchronizedActionQueue")]
-impl std::ops::Deref for SynchronizedActionQueue {
+impl std::ops::Deref for crate::GlobalNamespace::SynchronizedActionQueue {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SynchronizedActionQueue")]
-impl std::ops::DerefMut for SynchronizedActionQueue {
+impl std::ops::DerefMut for crate::GlobalNamespace::SynchronizedActionQueue {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SynchronizedActionQueue")]
-impl SynchronizedActionQueue {
+impl crate::GlobalNamespace::SynchronizedActionQueue {
     #[cfg(feature = "SynchronizedActionQueue+SynchronizedAction")]
     pub type SynchronizedAction = crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction;
     pub fn Clear(
@@ -119,7 +120,8 @@ impl SynchronizedActionQueue {
     }
 }
 #[cfg(feature = "SynchronizedActionQueue")]
-impl quest_hook::libil2cpp::ObjectType for SynchronizedActionQueue {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SynchronizedActionQueue {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

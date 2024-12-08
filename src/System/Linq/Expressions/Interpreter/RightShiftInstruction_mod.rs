@@ -28,37 +28,37 @@ for crate::System::Linq::Expressions::Interpreter::RightShiftInstruction {
 #[cfg(feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::RightShiftInstruction {
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftSByte"
-    )]
-    pub type RightShiftSByte = crate::GlobalNamespace::RightShiftInstruction_RightShiftSByte;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt64"
-    )]
-    pub type RightShiftUInt64 = crate::GlobalNamespace::RightShiftInstruction_RightShiftUInt64;
-    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftByte"
     )]
     pub type RightShiftByte = crate::GlobalNamespace::RightShiftInstruction_RightShiftByte;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt16"
-    )]
-    pub type RightShiftUInt16 = crate::GlobalNamespace::RightShiftInstruction_RightShiftUInt16;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftInt32"
-    )]
-    pub type RightShiftInt32 = crate::GlobalNamespace::RightShiftInstruction_RightShiftInt32;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftInt16"
     )]
     pub type RightShiftInt16 = crate::GlobalNamespace::RightShiftInstruction_RightShiftInt16;
     #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftInt32"
+    )]
+    pub type RightShiftInt32 = crate::GlobalNamespace::RightShiftInstruction_RightShiftInt32;
+    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftInt64"
     )]
     pub type RightShiftInt64 = crate::GlobalNamespace::RightShiftInstruction_RightShiftInt64;
     #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftSByte"
+    )]
+    pub type RightShiftSByte = crate::GlobalNamespace::RightShiftInstruction_RightShiftSByte;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt16"
+    )]
+    pub type RightShiftUInt16 = crate::GlobalNamespace::RightShiftInstruction_RightShiftUInt16;
+    #[cfg(
         feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt32"
     )]
     pub type RightShiftUInt32 = crate::GlobalNamespace::RightShiftInstruction_RightShiftUInt32;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftUInt64"
+    )]
+    pub type RightShiftUInt64 = crate::GlobalNamespace::RightShiftInstruction_RightShiftUInt64;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

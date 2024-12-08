@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KawaseBloomMainEffectSO {
-    __cordl_parent: MainEffectSO,
-    pub _kawaseBlurRenderer: *mut KawaseBlurRendererSO,
+    __cordl_parent: crate::GlobalNamespace::MainEffectSO,
+    pub _kawaseBlurRenderer: *mut crate::GlobalNamespace::KawaseBlurRendererSO,
     pub _mainEffectShader: *mut crate::UnityEngine::Shader,
     pub _bloomIntensity: f32,
     pub _bloomIterations: i32,
@@ -16,23 +16,24 @@ pub struct KawaseBloomMainEffectSO {
 }
 #[cfg(feature = "KawaseBloomMainEffectSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for KawaseBloomMainEffectSO => ""."KawaseBloomMainEffectSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::KawaseBloomMainEffectSO => ""
+    ."KawaseBloomMainEffectSO"
 );
 #[cfg(feature = "KawaseBloomMainEffectSO")]
-impl std::ops::Deref for KawaseBloomMainEffectSO {
-    type Target = MainEffectSO;
+impl std::ops::Deref for crate::GlobalNamespace::KawaseBloomMainEffectSO {
+    type Target = crate::GlobalNamespace::MainEffectSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "KawaseBloomMainEffectSO")]
-impl std::ops::DerefMut for KawaseBloomMainEffectSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::KawaseBloomMainEffectSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "KawaseBloomMainEffectSO")]
-impl KawaseBloomMainEffectSO {
+impl crate::GlobalNamespace::KawaseBloomMainEffectSO {
     pub fn LazyInitializeMaterials(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -112,7 +113,8 @@ impl KawaseBloomMainEffectSO {
     }
 }
 #[cfg(feature = "KawaseBloomMainEffectSO")]
-impl quest_hook::libil2cpp::ObjectType for KawaseBloomMainEffectSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::KawaseBloomMainEffectSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

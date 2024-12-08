@@ -24,19 +24,19 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::AotHelper {
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+AotHelper")]
 impl crate::Newtonsoft::Json::Utilities::AotHelper {
+    #[cfg(feature = "Newtonsoft+Json+Utilities+AotHelper+__c__1_1")]
+    pub type __c__1_1<T: quest_hook::libil2cpp::Type> = crate::Newtonsoft::Json::Utilities::AotHelper___c__1_1<
+        T,
+    >;
+    #[cfg(feature = "Newtonsoft+Json+Utilities+AotHelper+__c__2_1")]
+    pub type __c__2_1<T: quest_hook::libil2cpp::Type> = crate::Newtonsoft::Json::Utilities::AotHelper___c__2_1<
+        T,
+    >;
     #[cfg(feature = "Newtonsoft+Json+Utilities+AotHelper+__c__3_2")]
     pub type __c__3_2<
         TKey: quest_hook::libil2cpp::Type,
         TValue: quest_hook::libil2cpp::Type,
     > = crate::Newtonsoft::Json::Utilities::AotHelper___c__3_2<TKey, TValue>;
-    #[cfg(feature = "Newtonsoft+Json+Utilities+AotHelper+__c__2_1")]
-    pub type __c__2_1<T: quest_hook::libil2cpp::Type> = crate::Newtonsoft::Json::Utilities::AotHelper___c__2_1<
-        T,
-    >;
-    #[cfg(feature = "Newtonsoft+Json+Utilities+AotHelper+__c__1_1")]
-    pub type __c__1_1<T: quest_hook::libil2cpp::Type> = crate::Newtonsoft::Json::Utilities::AotHelper___c__1_1<
-        T,
-    >;
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+AotHelper")]
 impl quest_hook::libil2cpp::ObjectType

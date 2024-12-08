@@ -6,24 +6,24 @@ pub struct UseOnlyForReflectionProbeBaking {
 }
 #[cfg(feature = "UseOnlyForReflectionProbeBaking")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for UseOnlyForReflectionProbeBaking => ""
-    ."UseOnlyForReflectionProbeBaking"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::UseOnlyForReflectionProbeBaking
+    => ""."UseOnlyForReflectionProbeBaking"
 );
 #[cfg(feature = "UseOnlyForReflectionProbeBaking")]
-impl std::ops::Deref for UseOnlyForReflectionProbeBaking {
+impl std::ops::Deref for crate::GlobalNamespace::UseOnlyForReflectionProbeBaking {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UseOnlyForReflectionProbeBaking")]
-impl std::ops::DerefMut for UseOnlyForReflectionProbeBaking {
+impl std::ops::DerefMut for crate::GlobalNamespace::UseOnlyForReflectionProbeBaking {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "UseOnlyForReflectionProbeBaking")]
-impl UseOnlyForReflectionProbeBaking {
+impl crate::GlobalNamespace::UseOnlyForReflectionProbeBaking {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -53,7 +53,8 @@ impl UseOnlyForReflectionProbeBaking {
     }
 }
 #[cfg(feature = "UseOnlyForReflectionProbeBaking")]
-impl quest_hook::libil2cpp::ObjectType for UseOnlyForReflectionProbeBaking {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::UseOnlyForReflectionProbeBaking {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

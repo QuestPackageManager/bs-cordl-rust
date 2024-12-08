@@ -8,31 +8,31 @@ pub struct ScoreMultiplierUIController {
     >,
     pub _multiplierProgressImage: *mut crate::UnityEngine::UI::Image,
     pub _multiplierAnimator: *mut crate::UnityEngine::Animator,
-    pub _scoreController: *mut IScoreController,
+    pub _scoreController: *mut crate::GlobalNamespace::IScoreController,
     pub _prevMultiplier: i32,
     pub _multiplierIncreasedTriggerId: i32,
     pub _progressTarget: f32,
 }
 #[cfg(feature = "ScoreMultiplierUIController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ScoreMultiplierUIController => ""
-    ."ScoreMultiplierUIController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ScoreMultiplierUIController =>
+    ""."ScoreMultiplierUIController"
 );
 #[cfg(feature = "ScoreMultiplierUIController")]
-impl std::ops::Deref for ScoreMultiplierUIController {
+impl std::ops::Deref for crate::GlobalNamespace::ScoreMultiplierUIController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScoreMultiplierUIController")]
-impl std::ops::DerefMut for ScoreMultiplierUIController {
+impl std::ops::DerefMut for crate::GlobalNamespace::ScoreMultiplierUIController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScoreMultiplierUIController")]
-impl ScoreMultiplierUIController {
+impl crate::GlobalNamespace::ScoreMultiplierUIController {
     pub fn HandleMultiplierDidChange(
         &mut self,
         multiplier: i32,
@@ -124,7 +124,8 @@ impl ScoreMultiplierUIController {
     }
 }
 #[cfg(feature = "ScoreMultiplierUIController")]
-impl quest_hook::libil2cpp::ObjectType for ScoreMultiplierUIController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ScoreMultiplierUIController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

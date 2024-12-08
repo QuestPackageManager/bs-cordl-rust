@@ -2,30 +2,33 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundParticleSystemRenderer {
-    __cordl_parent: BloomPrePassBackgroundNonLightRendererCore,
+    __cordl_parent: crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore,
     pub _particleSystem: *mut crate::UnityEngine::ParticleSystem,
     pub _renderer: *mut crate::UnityEngine::Renderer,
 }
 #[cfg(feature = "BloomPrePassBackgroundParticleSystemRenderer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomPrePassBackgroundParticleSystemRenderer => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BloomPrePassBackgroundParticleSystemRenderer => ""
     ."BloomPrePassBackgroundParticleSystemRenderer"
 );
 #[cfg(feature = "BloomPrePassBackgroundParticleSystemRenderer")]
-impl std::ops::Deref for BloomPrePassBackgroundParticleSystemRenderer {
-    type Target = BloomPrePassBackgroundNonLightRendererCore;
+impl std::ops::Deref
+for crate::GlobalNamespace::BloomPrePassBackgroundParticleSystemRenderer {
+    type Target = crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundParticleSystemRenderer")]
-impl std::ops::DerefMut for BloomPrePassBackgroundParticleSystemRenderer {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::BloomPrePassBackgroundParticleSystemRenderer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundParticleSystemRenderer")]
-impl BloomPrePassBackgroundParticleSystemRenderer {
+impl crate::GlobalNamespace::BloomPrePassBackgroundParticleSystemRenderer {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -65,7 +68,8 @@ impl BloomPrePassBackgroundParticleSystemRenderer {
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundParticleSystemRenderer")]
-impl quest_hook::libil2cpp::ObjectType for BloomPrePassBackgroundParticleSystemRenderer {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BloomPrePassBackgroundParticleSystemRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,10 +6,12 @@ pub struct OVRRoomLayout {
 }
 #[cfg(feature = "OVRRoomLayout")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for OVRRoomLayout => ""."OVRRoomLayout"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRRoomLayout => ""
+    ."OVRRoomLayout"
 );
 #[cfg(feature = "OVRRoomLayout")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for OVRRoomLayout {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRRoomLayout {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -19,10 +21,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for OVRRoomLayout {
     }
 }
 #[cfg(feature = "OVRRoomLayout")]
-impl OVRRoomLayout {
+impl crate::GlobalNamespace::OVRRoomLayout {
     pub fn Equals_OVRRoomLayout0(
         &mut self,
-        other: OVRRoomLayout,
+        other: crate::GlobalNamespace::OVRRoomLayout,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -44,9 +46,11 @@ impl OVRRoomLayout {
     }
     pub fn FetchLayoutAnchorsAsync(
         &mut self,
-        anchors: *mut crate::System::Collections::Generic::List_1<OVRAnchor>,
-    ) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
-        let __cordl_ret: OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        anchors: *mut crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::OVRAnchor,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
+        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "FetchLayoutAnchorsAsync",
             (anchors),
@@ -63,9 +67,9 @@ impl OVRRoomLayout {
     }
     pub fn IOVRAnchorComponent_OVRRoomLayout__FromAnchor(
         &mut self,
-        anchor: OVRAnchor,
-    ) -> quest_hook::libil2cpp::Result<OVRRoomLayout> {
-        let __cordl_ret: OVRRoomLayout = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        anchor: crate::GlobalNamespace::OVRAnchor,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRRoomLayout> {
+        let __cordl_ret: crate::GlobalNamespace::OVRRoomLayout = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "IOVRAnchorComponent<OVRRoomLayout>.FromAnchor",
             (anchor),
@@ -76,8 +80,8 @@ impl OVRRoomLayout {
         &mut self,
         enabled: bool,
         timeout: f64,
-    ) -> quest_hook::libil2cpp::Result<OVRTask_1<bool>> {
-        let __cordl_ret: OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
+        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "IOVRAnchorComponent<OVRRoomLayout>.SetEnabledAsync",
             (enabled, timeout),
@@ -133,7 +137,7 @@ impl OVRRoomLayout {
     }
     pub fn _ctor(
         &mut self,
-        anchor: OVRAnchor,
+        anchor: crate::GlobalNamespace::OVRAnchor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

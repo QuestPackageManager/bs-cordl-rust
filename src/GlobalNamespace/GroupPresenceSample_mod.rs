@@ -18,23 +18,24 @@ pub struct GroupPresenceSample {
 }
 #[cfg(feature = "GroupPresenceSample")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GroupPresenceSample => ""."GroupPresenceSample"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GroupPresenceSample => ""
+    ."GroupPresenceSample"
 );
 #[cfg(feature = "GroupPresenceSample")]
-impl std::ops::Deref for GroupPresenceSample {
+impl std::ops::Deref for crate::GlobalNamespace::GroupPresenceSample {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GroupPresenceSample")]
-impl std::ops::DerefMut for GroupPresenceSample {
+impl std::ops::DerefMut for crate::GlobalNamespace::GroupPresenceSample {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GroupPresenceSample")]
-impl GroupPresenceSample {
+impl crate::GlobalNamespace::GroupPresenceSample {
     pub fn ClearPresence(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -337,7 +338,7 @@ impl GroupPresenceSample {
     }
 }
 #[cfg(feature = "GroupPresenceSample")]
-impl quest_hook::libil2cpp::ObjectType for GroupPresenceSample {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GroupPresenceSample {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

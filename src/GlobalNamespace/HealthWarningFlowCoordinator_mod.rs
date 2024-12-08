@@ -3,21 +3,21 @@
 #[derive(Debug)]
 pub struct HealthWarningFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub _appInitScenesTransitionSetupDataContainer: *mut AppInitScenesTransitionSetupDataContainerSO,
-    pub _selectLanguageViewController: *mut SelectLanguageViewController,
-    pub _selectRegionViewController: *mut SelectRegionViewController,
-    pub _eulaViewController: *mut EulaViewController,
-    pub _privacyPolicyViewController: *mut PrivacyPolicyViewController,
-    pub _healthWarningViewController: *mut HealthWarningViewController,
-    pub _explicitContentWarningViewController: *mut ExplicitContentWarningViewController,
-    pub _noUserAgeWarningViewController: *mut NoUserAgeWarningViewController,
-    pub _endOfLifeNoticeViewController: *mut EndOfLifeNoticeViewController,
-    pub _playerDataModel: *mut PlayerDataModel,
-    pub _fadeInOut: *mut FadeInOutController,
-    pub _gameScenesManager: *mut GameScenesManager,
+    pub _appInitScenesTransitionSetupDataContainer: *mut crate::GlobalNamespace::AppInitScenesTransitionSetupDataContainerSO,
+    pub _selectLanguageViewController: *mut crate::GlobalNamespace::SelectLanguageViewController,
+    pub _selectRegionViewController: *mut crate::GlobalNamespace::SelectRegionViewController,
+    pub _eulaViewController: *mut crate::GlobalNamespace::EulaViewController,
+    pub _privacyPolicyViewController: *mut crate::GlobalNamespace::PrivacyPolicyViewController,
+    pub _healthWarningViewController: *mut crate::GlobalNamespace::HealthWarningViewController,
+    pub _explicitContentWarningViewController: *mut crate::GlobalNamespace::ExplicitContentWarningViewController,
+    pub _noUserAgeWarningViewController: *mut crate::GlobalNamespace::NoUserAgeWarningViewController,
+    pub _endOfLifeNoticeViewController: *mut crate::GlobalNamespace::EndOfLifeNoticeViewController,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _fadeInOut: *mut crate::GlobalNamespace::FadeInOutController,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
     pub _initData: *mut crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData,
     pub _flushingService: *mut crate::BGLib::SaveDataCore::SaveDataFlushingService,
-    pub _platformInit: *mut IPlatformInit,
+    pub _platformInit: *mut crate::GlobalNamespace::IPlatformInit,
     pub _viewControllerTitles: *mut crate::System::Collections::Generic::Dictionary_2<
         *mut crate::HMUI::ViewController,
         *mut crate::System::String,
@@ -26,32 +26,32 @@ pub struct HealthWarningFlowCoordinator {
 }
 #[cfg(feature = "HealthWarningFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for HealthWarningFlowCoordinator => ""
-    ."HealthWarningFlowCoordinator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::HealthWarningFlowCoordinator =>
+    ""."HealthWarningFlowCoordinator"
 );
 #[cfg(feature = "HealthWarningFlowCoordinator")]
-impl std::ops::Deref for HealthWarningFlowCoordinator {
+impl std::ops::Deref for crate::GlobalNamespace::HealthWarningFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HealthWarningFlowCoordinator")]
-impl std::ops::DerefMut for HealthWarningFlowCoordinator {
+impl std::ops::DerefMut for crate::GlobalNamespace::HealthWarningFlowCoordinator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "HealthWarningFlowCoordinator")]
-impl HealthWarningFlowCoordinator {
+impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
+    #[cfg(feature = "HealthWarningFlowCoordinator+InitData")]
+    pub type InitData = crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData;
     #[cfg(
         feature = "HealthWarningFlowCoordinator+_HandleSelectLanguageViewControllerDidChangeLanguageAsync_d__21"
     )]
     pub type _HandleSelectLanguageViewControllerDidChangeLanguageAsync_d__21 = crate::GlobalNamespace::HealthWarningFlowCoordinator__HandleSelectLanguageViewControllerDidChangeLanguageAsync_d__21;
     #[cfg(feature = "HealthWarningFlowCoordinator+_WaitForUserAgeCategory_d__29")]
     pub type _WaitForUserAgeCategory_d__29 = crate::GlobalNamespace::HealthWarningFlowCoordinator__WaitForUserAgeCategory_d__29;
-    #[cfg(feature = "HealthWarningFlowCoordinator+InitData")]
-    pub type InitData = crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData;
     pub fn CheckPlayerSensitivityFlagAndContinueFlow(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -278,7 +278,8 @@ impl HealthWarningFlowCoordinator {
     }
 }
 #[cfg(feature = "HealthWarningFlowCoordinator")]
-impl quest_hook::libil2cpp::ObjectType for HealthWarningFlowCoordinator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::HealthWarningFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -291,7 +292,7 @@ impl quest_hook::libil2cpp::ObjectType for HealthWarningFlowCoordinator {
 #[derive(Debug)]
 pub struct HealthWarningFlowCoordinator_InitData {
     __cordl_parent: crate::System::Object,
-    pub nextScenesTransitionSetupData: *mut ScenesTransitionSetupDataSO,
+    pub nextScenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
 }
 #[cfg(feature = "HealthWarningFlowCoordinator+InitData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -316,7 +317,7 @@ for crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData {
 #[cfg(feature = "HealthWarningFlowCoordinator+InitData")]
 impl crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData {
     pub fn New(
-        nextScenesTransitionSetupData: *mut ScenesTransitionSetupDataSO,
+        nextScenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -326,7 +327,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData {
     }
     pub fn _ctor(
         &mut self,
-        nextScenesTransitionSetupData: *mut ScenesTransitionSetupDataSO,
+        nextScenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

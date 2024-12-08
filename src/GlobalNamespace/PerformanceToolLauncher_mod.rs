@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct PerformanceToolLauncher_Assets {
-    pub visualizer: *mut PerformanceVisualizer,
-    pub recorder: *mut PerformanceRecorder,
+    pub visualizer: *mut crate::GlobalNamespace::PerformanceVisualizer,
+    pub recorder: *mut crate::GlobalNamespace::PerformanceRecorder,
 }
 #[cfg(feature = "PerformanceToolLauncher+Assets")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -58,39 +58,40 @@ pub struct PerformanceToolLauncher {
 }
 #[cfg(feature = "PerformanceToolLauncher")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PerformanceToolLauncher => ""."PerformanceToolLauncher"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PerformanceToolLauncher => ""
+    ."PerformanceToolLauncher"
 );
 #[cfg(feature = "PerformanceToolLauncher")]
-impl std::ops::Deref for PerformanceToolLauncher {
+impl std::ops::Deref for crate::GlobalNamespace::PerformanceToolLauncher {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PerformanceToolLauncher")]
-impl std::ops::DerefMut for PerformanceToolLauncher {
+impl std::ops::DerefMut for crate::GlobalNamespace::PerformanceToolLauncher {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PerformanceToolLauncher")]
-impl PerformanceToolLauncher {
+impl crate::GlobalNamespace::PerformanceToolLauncher {
     #[cfg(feature = "PerformanceToolLauncher+Assets")]
     pub type Assets = crate::GlobalNamespace::PerformanceToolLauncher_Assets;
-    #[cfg(feature = "PerformanceToolLauncher+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::GlobalNamespace::PerformanceToolLauncher___c__DisplayClass4_0;
     #[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
     pub type OverrideConfig = crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig;
+    #[cfg(feature = "PerformanceToolLauncher+__c__DisplayClass4_0")]
+    pub type __c__DisplayClass4_0 = crate::GlobalNamespace::PerformanceToolLauncher___c__DisplayClass4_0;
     pub fn Initialize(
         &mut self,
         sceneContext: *mut crate::Zenject::SceneContext,
         mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
         graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
-        playerDataModel: *mut PlayerDataModel,
-        mainCamera: *mut MainCamera,
-        songController: *mut SongController,
-        gamePause: *mut IGamePause,
-        sceneSetupData: *mut GameplayCoreSceneSetupData,
+        playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+        mainCamera: *mut crate::GlobalNamespace::MainCamera,
+        songController: *mut crate::GlobalNamespace::SongController,
+        gamePause: *mut crate::GlobalNamespace::IGamePause,
+        sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
         overrideConfig: crate::System::Nullable_1<
             crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig,
         >,
@@ -134,7 +135,8 @@ impl PerformanceToolLauncher {
     }
 }
 #[cfg(feature = "PerformanceToolLauncher")]
-impl quest_hook::libil2cpp::ObjectType for PerformanceToolLauncher {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PerformanceToolLauncher {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

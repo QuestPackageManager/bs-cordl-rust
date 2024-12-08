@@ -6,24 +6,24 @@ pub struct HEU_AssetEventReceiverTest {
 }
 #[cfg(feature = "HEU_AssetEventReceiverTest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for HEU_AssetEventReceiverTest => ""
-    ."HEU_AssetEventReceiverTest"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::HEU_AssetEventReceiverTest =>
+    ""."HEU_AssetEventReceiverTest"
 );
 #[cfg(feature = "HEU_AssetEventReceiverTest")]
-impl std::ops::Deref for HEU_AssetEventReceiverTest {
+impl std::ops::Deref for crate::GlobalNamespace::HEU_AssetEventReceiverTest {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HEU_AssetEventReceiverTest")]
-impl std::ops::DerefMut for HEU_AssetEventReceiverTest {
+impl std::ops::DerefMut for crate::GlobalNamespace::HEU_AssetEventReceiverTest {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "HEU_AssetEventReceiverTest")]
-impl HEU_AssetEventReceiverTest {
+impl crate::GlobalNamespace::HEU_AssetEventReceiverTest {
     pub fn BakedCallback(
         &mut self,
         asset: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset,
@@ -88,7 +88,8 @@ impl HEU_AssetEventReceiverTest {
     }
 }
 #[cfg(feature = "HEU_AssetEventReceiverTest")]
-impl quest_hook::libil2cpp::ObjectType for HEU_AssetEventReceiverTest {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::HEU_AssetEventReceiverTest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

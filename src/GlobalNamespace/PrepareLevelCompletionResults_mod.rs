@@ -3,45 +3,47 @@
 #[derive(Debug)]
 pub struct PrepareLevelCompletionResults {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _gameplayModifiersModelSO: *mut GameplayModifiersModelSO,
-    pub _saberActivityCounter: *mut SaberActivityCounter,
-    pub _beatmapObjectExecutionRatingsRecorder: *mut BeatmapObjectExecutionRatingsRecorder,
-    pub _scoreController: *mut IScoreController,
-    pub _gameEnergyCounter: *mut GameEnergyCounter,
-    pub _beatmapData: *mut IReadonlyBeatmapData,
-    pub _audioTimeSyncController: *mut AudioTimeSyncController,
-    pub _gameplayModifiers: *mut GameplayModifiers,
-    pub _comboController: *mut ComboController,
+    pub _gameplayModifiersModelSO: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
+    pub _saberActivityCounter: *mut crate::GlobalNamespace::SaberActivityCounter,
+    pub _beatmapObjectExecutionRatingsRecorder: *mut crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder,
+    pub _scoreController: *mut crate::GlobalNamespace::IScoreController,
+    pub _gameEnergyCounter: *mut crate::GlobalNamespace::GameEnergyCounter,
+    pub _beatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
+    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
+    pub _comboController: *mut crate::GlobalNamespace::ComboController,
 }
 #[cfg(feature = "PrepareLevelCompletionResults")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PrepareLevelCompletionResults => ""
-    ."PrepareLevelCompletionResults"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PrepareLevelCompletionResults
+    => ""."PrepareLevelCompletionResults"
 );
 #[cfg(feature = "PrepareLevelCompletionResults")]
-impl std::ops::Deref for PrepareLevelCompletionResults {
+impl std::ops::Deref for crate::GlobalNamespace::PrepareLevelCompletionResults {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PrepareLevelCompletionResults")]
-impl std::ops::DerefMut for PrepareLevelCompletionResults {
+impl std::ops::DerefMut for crate::GlobalNamespace::PrepareLevelCompletionResults {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PrepareLevelCompletionResults")]
-impl PrepareLevelCompletionResults {
+impl crate::GlobalNamespace::PrepareLevelCompletionResults {
     pub fn FillLevelCompletionResults(
         &mut self,
         levelEndStateType: crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType,
         levelEndAction: crate::GlobalNamespace::LevelCompletionResults_LevelEndAction,
-    ) -> quest_hook::libil2cpp::Result<*mut LevelCompletionResults> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::LevelCompletionResults,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut LevelCompletionResults = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::LevelCompletionResults = __cordl_object
             .invoke("FillLevelCompletionResults", (levelEndStateType, levelEndAction))?;
         Ok(__cordl_ret)
     }
@@ -64,7 +66,8 @@ impl PrepareLevelCompletionResults {
     }
 }
 #[cfg(feature = "PrepareLevelCompletionResults")]
-impl quest_hook::libil2cpp::ObjectType for PrepareLevelCompletionResults {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PrepareLevelCompletionResults {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

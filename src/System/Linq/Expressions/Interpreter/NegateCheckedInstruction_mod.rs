@@ -28,17 +28,17 @@ for crate::System::Linq::Expressions::Interpreter::NegateCheckedInstruction {
 #[cfg(feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::NegateCheckedInstruction {
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt64"
+        feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt16"
     )]
-    pub type NegateCheckedInt64 = crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt64;
+    pub type NegateCheckedInt16 = crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt16;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt32"
     )]
     pub type NegateCheckedInt32 = crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt32;
     #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt16"
+        feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt64"
     )]
-    pub type NegateCheckedInt16 = crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt16;
+    pub type NegateCheckedInt64 = crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt64;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

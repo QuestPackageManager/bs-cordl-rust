@@ -6,32 +6,33 @@ pub struct EmptyPlatformAchievementsHandler {
 }
 #[cfg(feature = "EmptyPlatformAchievementsHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EmptyPlatformAchievementsHandler => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::EmptyPlatformAchievementsHandler => ""
     ."EmptyPlatformAchievementsHandler"
 );
 #[cfg(feature = "EmptyPlatformAchievementsHandler")]
-impl std::ops::Deref for EmptyPlatformAchievementsHandler {
+impl std::ops::Deref for crate::GlobalNamespace::EmptyPlatformAchievementsHandler {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EmptyPlatformAchievementsHandler")]
-impl std::ops::DerefMut for EmptyPlatformAchievementsHandler {
+impl std::ops::DerefMut for crate::GlobalNamespace::EmptyPlatformAchievementsHandler {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EmptyPlatformAchievementsHandler")]
-impl EmptyPlatformAchievementsHandler {
+impl crate::GlobalNamespace::EmptyPlatformAchievementsHandler {
     pub fn GetUnlockedAchievements(
         &mut self,
         completionHandler: *mut crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsCompletionHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut HMAsyncRequest> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::HMAsyncRequest> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut HMAsyncRequest = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::HMAsyncRequest = __cordl_object
             .invoke("GetUnlockedAchievements", (completionHandler))?;
         Ok(__cordl_ret)
     }
@@ -56,11 +57,11 @@ impl EmptyPlatformAchievementsHandler {
         &mut self,
         achievementId: *mut crate::System::String,
         completionHandler: *mut crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompletionHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut HMAsyncRequest> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::HMAsyncRequest> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut HMAsyncRequest = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::HMAsyncRequest = __cordl_object
             .invoke("UnlockAchievement", (achievementId, completionHandler))?;
         Ok(__cordl_ret)
     }
@@ -76,7 +77,8 @@ impl EmptyPlatformAchievementsHandler {
     }
 }
 #[cfg(feature = "EmptyPlatformAchievementsHandler")]
-impl quest_hook::libil2cpp::ObjectType for EmptyPlatformAchievementsHandler {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::EmptyPlatformAchievementsHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

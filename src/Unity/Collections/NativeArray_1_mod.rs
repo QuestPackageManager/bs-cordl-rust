@@ -245,10 +245,10 @@ for crate::Unity::Collections::NativeArray_1<T> {
 }
 #[cfg(feature = "Unity+Collections+NativeArray_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::Unity::Collections::NativeArray_1<T> {
-    #[cfg(feature = "Unity+Collections+NativeArray_1+ReadOnly")]
-    pub type ReadOnly = crate::Unity::Collections::NativeArray_1_ReadOnly<T>;
     #[cfg(feature = "Unity+Collections+NativeArray_1+Enumerator")]
     pub type Enumerator = crate::Unity::Collections::NativeArray_1_Enumerator<T>;
+    #[cfg(feature = "Unity+Collections+NativeArray_1+ReadOnly")]
+    pub type ReadOnly = crate::Unity::Collections::NativeArray_1_ReadOnly<T>;
     pub fn AsReadOnly(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -208,24 +208,24 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_HoudiniAsset {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset")]
 impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
-    #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookResult")]
-    pub type AssetCookResult = crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookResult;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+__c__DisplayClass365_0")]
-    pub type __c__DisplayClass365_0 = crate::HoudiniEngineUnity::HEU_HoudiniAsset___c__DisplayClass365_0;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+UpdateUIDelegate")]
-    pub type UpdateUIDelegate = crate::HoudiniEngineUnity::HEU_HoudiniAsset_UpdateUIDelegate;
     #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetBuildAction")]
     pub type AssetBuildAction = crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetBuildAction;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookResult")]
+    pub type AssetCookResult = crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookResult;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookStatus")]
+    pub type AssetCookStatus = crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookStatus;
     #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetInstantiationMethod")]
     pub type AssetInstantiationMethod = crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetInstantiationMethod;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+HEU_AssetType")]
+    pub type HEU_AssetType = crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+UpdateUIDelegate")]
+    pub type UpdateUIDelegate = crate::HoudiniEngineUnity::HEU_HoudiniAsset_UpdateUIDelegate;
     #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+__c")]
     pub type __c = crate::HoudiniEngineUnity::HEU_HoudiniAsset___c;
     #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+__c__DisplayClass281_0")]
     pub type __c__DisplayClass281_0 = crate::HoudiniEngineUnity::HEU_HoudiniAsset___c__DisplayClass281_0;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookStatus")]
-    pub type AssetCookStatus = crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookStatus;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+HEU_AssetType")]
-    pub type HEU_AssetType = crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+__c__DisplayClass365_0")]
+    pub type __c__DisplayClass365_0 = crate::HoudiniEngineUnity::HEU_HoudiniAsset___c__DisplayClass365_0;
     pub fn AddAttributeStore(
         &mut self,
         attributeStore: *mut crate::HoudiniEngineUnity::HEU_AttributesStore,

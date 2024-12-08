@@ -3,15 +3,15 @@
 #[derive(Debug)]
 pub struct IntroTutorialController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _redRing: *mut IntroTutorialRing,
-    pub _blueRing: *mut IntroTutorialRing,
+    pub _redRing: *mut crate::GlobalNamespace::IntroTutorialRing,
+    pub _blueRing: *mut crate::GlobalNamespace::IntroTutorialRing,
     pub _redRingWrapper: *mut crate::UnityEngine::GameObject,
     pub _blueRingWrapper: *mut crate::UnityEngine::GameObject,
     pub _textCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
     pub _shockWavePS: *mut crate::UnityEngine::ParticleSystem,
-    pub _finishForParams: *mut BloomFogEnvironmentParams,
-    pub _bloomFogAnimator: *mut BloomFogParamsAnimator,
-    pub _gamePause: *mut IGamePause,
+    pub _finishForParams: *mut crate::GlobalNamespace::BloomFogEnvironmentParams,
+    pub _bloomFogAnimator: *mut crate::GlobalNamespace::BloomFogParamsAnimator,
+    pub _gamePause: *mut crate::GlobalNamespace::IGamePause,
     pub introTutorialDidFinishEvent: *mut crate::System::Action,
     pub _showingFinishAnimation: bool,
     pub _redRingWrapperActive: bool,
@@ -19,23 +19,24 @@ pub struct IntroTutorialController {
 }
 #[cfg(feature = "IntroTutorialController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IntroTutorialController => ""."IntroTutorialController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IntroTutorialController => ""
+    ."IntroTutorialController"
 );
 #[cfg(feature = "IntroTutorialController")]
-impl std::ops::Deref for IntroTutorialController {
+impl std::ops::Deref for crate::GlobalNamespace::IntroTutorialController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IntroTutorialController")]
-impl std::ops::DerefMut for IntroTutorialController {
+impl std::ops::DerefMut for crate::GlobalNamespace::IntroTutorialController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IntroTutorialController")]
-impl IntroTutorialController {
+impl crate::GlobalNamespace::IntroTutorialController {
     #[cfg(feature = "IntroTutorialController+_ShowFinishAnimationCoroutine_d__22")]
     pub type _ShowFinishAnimationCoroutine_d__22 = crate::GlobalNamespace::IntroTutorialController__ShowFinishAnimationCoroutine_d__22;
     pub fn CleanUp(
@@ -170,7 +171,8 @@ impl IntroTutorialController {
     }
 }
 #[cfg(feature = "IntroTutorialController")]
-impl quest_hook::libil2cpp::ObjectType for IntroTutorialController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IntroTutorialController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

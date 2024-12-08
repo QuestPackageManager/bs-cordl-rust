@@ -8,24 +8,24 @@ pub struct SimpleTextWithIconTableCell {
 }
 #[cfg(feature = "SimpleTextWithIconTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SimpleTextWithIconTableCell => ""
-    ."SimpleTextWithIconTableCell"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SimpleTextWithIconTableCell =>
+    ""."SimpleTextWithIconTableCell"
 );
 #[cfg(feature = "SimpleTextWithIconTableCell")]
-impl std::ops::Deref for SimpleTextWithIconTableCell {
+impl std::ops::Deref for crate::GlobalNamespace::SimpleTextWithIconTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SimpleTextWithIconTableCell")]
-impl std::ops::DerefMut for SimpleTextWithIconTableCell {
+impl std::ops::DerefMut for crate::GlobalNamespace::SimpleTextWithIconTableCell {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SimpleTextWithIconTableCell")]
-impl SimpleTextWithIconTableCell {
+impl crate::GlobalNamespace::SimpleTextWithIconTableCell {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -87,7 +87,8 @@ impl SimpleTextWithIconTableCell {
     }
 }
 #[cfg(feature = "SimpleTextWithIconTableCell")]
-impl quest_hook::libil2cpp::ObjectType for SimpleTextWithIconTableCell {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SimpleTextWithIconTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

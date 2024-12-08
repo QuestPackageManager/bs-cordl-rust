@@ -4,37 +4,37 @@
 pub struct AudioLatencyViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _setupCanvasGroup: *mut crate::UnityEngine::CanvasGroup,
-    pub _volumeSettingsList: *mut FormattedFloatListSettingsController,
-    pub _ambientSettingsList: *mut FormattedFloatListSettingsController,
+    pub _volumeSettingsList: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
+    pub _ambientSettingsList: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
     pub _overrideAudioLatencyToggle: *mut crate::UnityEngine::UI::Toggle,
     pub _slider: *mut crate::HMUI::RangeValuesTextSlider,
-    pub _visualMetronome: *mut VisualMetronome,
+    pub _visualMetronome: *mut crate::GlobalNamespace::VisualMetronome,
     pub _disabledAlpha: f32,
-    pub _songPreviewPlayer: *mut SongPreviewPlayer,
+    pub _songPreviewPlayer: *mut crate::GlobalNamespace::SongPreviewPlayer,
     pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
     pub _graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
     pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
 }
 #[cfg(feature = "AudioLatencyViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AudioLatencyViewController => ""
-    ."AudioLatencyViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AudioLatencyViewController =>
+    ""."AudioLatencyViewController"
 );
 #[cfg(feature = "AudioLatencyViewController")]
-impl std::ops::Deref for AudioLatencyViewController {
+impl std::ops::Deref for crate::GlobalNamespace::AudioLatencyViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AudioLatencyViewController")]
-impl std::ops::DerefMut for AudioLatencyViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::AudioLatencyViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AudioLatencyViewController")]
-impl AudioLatencyViewController {
+impl crate::GlobalNamespace::AudioLatencyViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -65,7 +65,7 @@ impl AudioLatencyViewController {
     }
     pub fn HandleAmbientVolumeChanged(
         &mut self,
-        _: *mut FormattedFloatListSettingsController,
+        _: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
         newValue: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -88,7 +88,7 @@ impl AudioLatencyViewController {
     }
     pub fn HandleVolumeChanged(
         &mut self,
-        _: *mut FormattedFloatListSettingsController,
+        _: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
         newValue: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -150,7 +150,8 @@ impl AudioLatencyViewController {
     }
 }
 #[cfg(feature = "AudioLatencyViewController")]
-impl quest_hook::libil2cpp::ObjectType for AudioLatencyViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::AudioLatencyViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

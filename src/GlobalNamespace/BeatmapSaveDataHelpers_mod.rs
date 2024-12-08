@@ -6,30 +6,32 @@ pub struct BeatmapSaveDataHelpers {
 }
 #[cfg(feature = "BeatmapSaveDataHelpers")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapSaveDataHelpers => ""."BeatmapSaveDataHelpers"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapSaveDataHelpers => ""
+    ."BeatmapSaveDataHelpers"
 );
 #[cfg(feature = "BeatmapSaveDataHelpers")]
-impl std::ops::Deref for BeatmapSaveDataHelpers {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapSaveDataHelpers {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapSaveDataHelpers")]
-impl std::ops::DerefMut for BeatmapSaveDataHelpers {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapSaveDataHelpers {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapSaveDataHelpers")]
-impl BeatmapSaveDataHelpers {
+impl crate::GlobalNamespace::BeatmapSaveDataHelpers {
     #[cfg(feature = "BeatmapSaveDataHelpers+VersionSerializedData")]
     pub type VersionSerializedData = crate::GlobalNamespace::BeatmapSaveDataHelpers_VersionSerializedData;
     #[cfg(feature = "BeatmapSaveDataHelpers+__c__DisplayClass6_0")]
     pub type __c__DisplayClass6_0 = crate::GlobalNamespace::BeatmapSaveDataHelpers___c__DisplayClass6_0;
 }
 #[cfg(feature = "BeatmapSaveDataHelpers")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapSaveDataHelpers {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapSaveDataHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

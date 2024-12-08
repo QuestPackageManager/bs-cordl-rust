@@ -4,29 +4,30 @@
 pub struct BeatmapEventDataBoxGroupProcessor {
     __cordl_parent: crate::System::Object,
     pub _dirtyBoxGroups: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut BeatmapEventDataBoxGroup,
+        *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
     >,
 }
 #[cfg(feature = "BeatmapEventDataBoxGroupProcessor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapEventDataBoxGroupProcessor => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BeatmapEventDataBoxGroupProcessor => ""
     ."BeatmapEventDataBoxGroupProcessor"
 );
 #[cfg(feature = "BeatmapEventDataBoxGroupProcessor")]
-impl std::ops::Deref for BeatmapEventDataBoxGroupProcessor {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapEventDataBoxGroupProcessor {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapEventDataBoxGroupProcessor")]
-impl std::ops::DerefMut for BeatmapEventDataBoxGroupProcessor {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapEventDataBoxGroupProcessor {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapEventDataBoxGroupProcessor")]
-impl BeatmapEventDataBoxGroupProcessor {
+impl crate::GlobalNamespace::BeatmapEventDataBoxGroupProcessor {
     pub fn ClearDirtyData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -47,7 +48,7 @@ impl BeatmapEventDataBoxGroupProcessor {
     pub fn ProcessBeforeDeleteData(
         &mut self,
         nodeToDelete: *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut BeatmapEventDataBoxGroup,
+            *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -60,7 +61,7 @@ impl BeatmapEventDataBoxGroupProcessor {
     pub fn ProcessInsertedData(
         &mut self,
         insertedNode: *mut crate::System::Collections::Generic::LinkedListNode_1<
-            *mut BeatmapEventDataBoxGroup,
+            *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -84,20 +85,21 @@ impl BeatmapEventDataBoxGroupProcessor {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyCollection_1<
-            *mut BeatmapEventDataBoxGroup,
+            *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyCollection_1<
-            *mut BeatmapEventDataBoxGroup,
+            *mut crate::GlobalNamespace::BeatmapEventDataBoxGroup,
         > = __cordl_object.invoke("get_dirtyBoxGroups", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapEventDataBoxGroupProcessor")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapEventDataBoxGroupProcessor {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapEventDataBoxGroupProcessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

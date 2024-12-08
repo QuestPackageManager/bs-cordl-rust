@@ -3,35 +3,36 @@
 #[derive(Debug)]
 pub struct MultiplayerSettingsPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _serverCodeView: *mut ServerCodeView,
+    pub _serverCodeView: *mut crate::GlobalNamespace::ServerCodeView,
     pub _spectateToggle: *mut crate::UnityEngine::UI::Toggle,
     pub _connectionSettingsWrapper: *mut crate::UnityEngine::GameObject,
     pub _spectateSettingsWrapper: *mut crate::UnityEngine::GameObject,
     pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
-    pub _lobbyPlayerData: *mut ILobbyPlayerData,
+    pub _lobbyPlayerData: *mut crate::GlobalNamespace::ILobbyPlayerData,
     pub _refreshed: bool,
     pub playerActiveStateChangedEvent: *mut crate::System::Action_1<bool>,
 }
 #[cfg(feature = "MultiplayerSettingsPanelController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerSettingsPanelController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerSettingsPanelController => ""
     ."MultiplayerSettingsPanelController"
 );
 #[cfg(feature = "MultiplayerSettingsPanelController")]
-impl std::ops::Deref for MultiplayerSettingsPanelController {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerSettingsPanelController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerSettingsPanelController")]
-impl std::ops::DerefMut for MultiplayerSettingsPanelController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerSettingsPanelController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerSettingsPanelController")]
-impl MultiplayerSettingsPanelController {
+impl crate::GlobalNamespace::MultiplayerSettingsPanelController {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -104,7 +105,7 @@ impl MultiplayerSettingsPanelController {
     }
     pub fn SetLobbyPlayerDataModel(
         &mut self,
-        lobbyPlayerData: *mut ILobbyPlayerData,
+        lobbyPlayerData: *mut crate::GlobalNamespace::ILobbyPlayerData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -169,7 +170,8 @@ impl MultiplayerSettingsPanelController {
     }
 }
 #[cfg(feature = "MultiplayerSettingsPanelController")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerSettingsPanelController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerSettingsPanelController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

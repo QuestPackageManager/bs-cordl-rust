@@ -27,12 +27,12 @@ impl std::ops::DerefMut for crate::System::IO::TextWriter {
 }
 #[cfg(feature = "System+IO+TextWriter")]
 impl crate::System::IO::TextWriter {
-    #[cfg(feature = "System+IO+TextWriter+__c")]
-    pub type __c = crate::System::IO::TextWriter___c;
-    #[cfg(feature = "System+IO+TextWriter+SyncTextWriter")]
-    pub type SyncTextWriter = crate::GlobalNamespace::TextWriter_SyncTextWriter;
     #[cfg(feature = "System+IO+TextWriter+NullTextWriter")]
     pub type NullTextWriter = crate::GlobalNamespace::TextWriter_NullTextWriter;
+    #[cfg(feature = "System+IO+TextWriter+SyncTextWriter")]
+    pub type SyncTextWriter = crate::GlobalNamespace::TextWriter_SyncTextWriter;
+    #[cfg(feature = "System+IO+TextWriter+__c")]
+    pub type __c = crate::System::IO::TextWriter___c;
     pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

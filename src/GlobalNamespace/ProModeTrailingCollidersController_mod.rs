@@ -3,33 +3,34 @@
 #[derive(Debug)]
 pub struct ProModeTrailingCollidersController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _mainSmallCuttableBySaber: *mut BoxCuttableBySaber,
+    pub _mainSmallCuttableBySaber: *mut crate::GlobalNamespace::BoxCuttableBySaber,
     pub _trailingSmallCuttableBySaberList: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut BoxCuttableBySaber,
+        *mut crate::GlobalNamespace::BoxCuttableBySaber,
     >,
-    pub _noteMovement: *mut NoteMovement,
+    pub _noteMovement: *mut crate::GlobalNamespace::NoteMovement,
     pub _transform: *mut crate::UnityEngine::Transform,
 }
 #[cfg(feature = "ProModeTrailingCollidersController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ProModeTrailingCollidersController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ProModeTrailingCollidersController => ""
     ."ProModeTrailingCollidersController"
 );
 #[cfg(feature = "ProModeTrailingCollidersController")]
-impl std::ops::Deref for ProModeTrailingCollidersController {
+impl std::ops::Deref for crate::GlobalNamespace::ProModeTrailingCollidersController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ProModeTrailingCollidersController")]
-impl std::ops::DerefMut for ProModeTrailingCollidersController {
+impl std::ops::DerefMut for crate::GlobalNamespace::ProModeTrailingCollidersController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ProModeTrailingCollidersController")]
-impl ProModeTrailingCollidersController {
+impl crate::GlobalNamespace::ProModeTrailingCollidersController {
     pub fn HandleNoteDidMoveInJumpPhase(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -79,7 +80,8 @@ impl ProModeTrailingCollidersController {
     }
 }
 #[cfg(feature = "ProModeTrailingCollidersController")]
-impl quest_hook::libil2cpp::ObjectType for ProModeTrailingCollidersController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ProModeTrailingCollidersController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

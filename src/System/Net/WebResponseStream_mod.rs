@@ -38,16 +38,16 @@ impl std::ops::DerefMut for crate::System::Net::WebResponseStream {
 }
 #[cfg(feature = "System+Net+WebResponseStream")]
 impl crate::System::Net::WebResponseStream {
-    #[cfg(feature = "System+Net+WebResponseStream+_ReadAllAsyncInner_d__47")]
-    pub type _ReadAllAsyncInner_d__47 = crate::System::Net::WebResponseStream__ReadAllAsyncInner_d__47;
     #[cfg(feature = "System+Net+WebResponseStream+_InitReadAsync_d__52")]
     pub type _InitReadAsync_d__52 = crate::System::Net::WebResponseStream__InitReadAsync_d__52;
-    #[cfg(feature = "System+Net+WebResponseStream+__c__DisplayClass41_0")]
-    pub type __c__DisplayClass41_0 = crate::System::Net::WebResponseStream___c__DisplayClass41_0;
+    #[cfg(feature = "System+Net+WebResponseStream+_ReadAllAsyncInner_d__47")]
+    pub type _ReadAllAsyncInner_d__47 = crate::System::Net::WebResponseStream__ReadAllAsyncInner_d__47;
     #[cfg(feature = "System+Net+WebResponseStream+_ReadAllAsync_d__48")]
     pub type _ReadAllAsync_d__48 = crate::System::Net::WebResponseStream__ReadAllAsync_d__48;
     #[cfg(feature = "System+Net+WebResponseStream+_ReadAsync_d__40")]
     pub type _ReadAsync_d__40 = crate::System::Net::WebResponseStream__ReadAsync_d__40;
+    #[cfg(feature = "System+Net+WebResponseStream+__c__DisplayClass41_0")]
+    pub type __c__DisplayClass41_0 = crate::System::Net::WebResponseStream___c__DisplayClass41_0;
     pub fn Close_internal(
         &mut self,
         disposed: quest_hook::libil2cpp::ByRefMut<bool>,

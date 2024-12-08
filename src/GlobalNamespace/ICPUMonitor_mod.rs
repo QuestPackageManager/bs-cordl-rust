@@ -6,23 +6,23 @@ pub struct ICPUMonitor {
 }
 #[cfg(feature = "ICPUMonitor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ICPUMonitor => ""."ICPUMonitor"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ICPUMonitor => ""."ICPUMonitor"
 );
 #[cfg(feature = "ICPUMonitor")]
-impl std::ops::Deref for ICPUMonitor {
+impl std::ops::Deref for crate::GlobalNamespace::ICPUMonitor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ICPUMonitor")]
-impl std::ops::DerefMut for ICPUMonitor {
+impl std::ops::DerefMut for crate::GlobalNamespace::ICPUMonitor {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ICPUMonitor")]
-impl ICPUMonitor {
+impl crate::GlobalNamespace::ICPUMonitor {
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
@@ -37,7 +37,7 @@ impl ICPUMonitor {
     }
 }
 #[cfg(feature = "ICPUMonitor")]
-impl quest_hook::libil2cpp::ObjectType for ICPUMonitor {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ICPUMonitor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

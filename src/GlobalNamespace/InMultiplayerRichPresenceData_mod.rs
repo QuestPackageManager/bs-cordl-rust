@@ -11,24 +11,24 @@ pub struct InMultiplayerRichPresenceData {
 }
 #[cfg(feature = "InMultiplayerRichPresenceData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for InMultiplayerRichPresenceData => ""
-    ."InMultiplayerRichPresenceData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::InMultiplayerRichPresenceData
+    => ""."InMultiplayerRichPresenceData"
 );
 #[cfg(feature = "InMultiplayerRichPresenceData")]
-impl std::ops::Deref for InMultiplayerRichPresenceData {
+impl std::ops::Deref for crate::GlobalNamespace::InMultiplayerRichPresenceData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "InMultiplayerRichPresenceData")]
-impl std::ops::DerefMut for InMultiplayerRichPresenceData {
+impl std::ops::DerefMut for crate::GlobalNamespace::InMultiplayerRichPresenceData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "InMultiplayerRichPresenceData")]
-impl InMultiplayerRichPresenceData {
+impl crate::GlobalNamespace::InMultiplayerRichPresenceData {
     pub const kInMultiplayerLobbyRichPresenceLocalizationKey: &'static str = "IN_MULTIPLAYER_LOBBY_PRESENCE";
     pub fn New(
         multiplayerSecret: *mut crate::System::String,
@@ -162,7 +162,8 @@ impl InMultiplayerRichPresenceData {
     }
 }
 #[cfg(feature = "InMultiplayerRichPresenceData")]
-impl quest_hook::libil2cpp::ObjectType for InMultiplayerRichPresenceData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::InMultiplayerRichPresenceData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

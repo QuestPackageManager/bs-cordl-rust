@@ -2,29 +2,29 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LanguageSettingsController {
-    __cordl_parent: DropdownSettingsController,
+    __cordl_parent: crate::GlobalNamespace::DropdownSettingsController,
     pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
 }
 #[cfg(feature = "LanguageSettingsController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LanguageSettingsController => ""
-    ."LanguageSettingsController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LanguageSettingsController =>
+    ""."LanguageSettingsController"
 );
 #[cfg(feature = "LanguageSettingsController")]
-impl std::ops::Deref for LanguageSettingsController {
-    type Target = DropdownSettingsController;
+impl std::ops::Deref for crate::GlobalNamespace::LanguageSettingsController {
+    type Target = crate::GlobalNamespace::DropdownSettingsController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LanguageSettingsController")]
-impl std::ops::DerefMut for LanguageSettingsController {
+impl std::ops::DerefMut for crate::GlobalNamespace::LanguageSettingsController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LanguageSettingsController")]
-impl LanguageSettingsController {
+impl crate::GlobalNamespace::LanguageSettingsController {
     pub fn ApplyValue(
         &mut self,
         idx: i32,
@@ -78,7 +78,8 @@ impl LanguageSettingsController {
     }
 }
 #[cfg(feature = "LanguageSettingsController")]
-impl quest_hook::libil2cpp::ObjectType for LanguageSettingsController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LanguageSettingsController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

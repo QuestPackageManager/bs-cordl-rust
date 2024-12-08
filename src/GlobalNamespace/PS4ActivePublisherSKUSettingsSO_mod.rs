@@ -2,29 +2,29 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PS4ActivePublisherSKUSettingsSO {
-    __cordl_parent: PersistentScriptableObject,
-    pub activePublisherSKUSettings: *mut PS4PublisherSKUSettingsSO,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    pub activePublisherSKUSettings: *mut crate::GlobalNamespace::PS4PublisherSKUSettingsSO,
 }
 #[cfg(feature = "PS4ActivePublisherSKUSettingsSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PS4ActivePublisherSKUSettingsSO => ""
-    ."PS4ActivePublisherSKUSettingsSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PS4ActivePublisherSKUSettingsSO
+    => ""."PS4ActivePublisherSKUSettingsSO"
 );
 #[cfg(feature = "PS4ActivePublisherSKUSettingsSO")]
-impl std::ops::Deref for PS4ActivePublisherSKUSettingsSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::PS4ActivePublisherSKUSettingsSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PS4ActivePublisherSKUSettingsSO")]
-impl std::ops::DerefMut for PS4ActivePublisherSKUSettingsSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::PS4ActivePublisherSKUSettingsSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PS4ActivePublisherSKUSettingsSO")]
-impl PS4ActivePublisherSKUSettingsSO {
+impl crate::GlobalNamespace::PS4ActivePublisherSKUSettingsSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -44,7 +44,8 @@ impl PS4ActivePublisherSKUSettingsSO {
     }
 }
 #[cfg(feature = "PS4ActivePublisherSKUSettingsSO")]
-impl quest_hook::libil2cpp::ObjectType for PS4ActivePublisherSKUSettingsSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PS4ActivePublisherSKUSettingsSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

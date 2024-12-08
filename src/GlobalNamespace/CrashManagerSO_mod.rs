@@ -2,29 +2,30 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CrashManagerSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _logString: *mut crate::System::String,
     pub _stackTrace: *mut crate::System::String,
 }
 #[cfg(feature = "CrashManagerSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CrashManagerSO => ""."CrashManagerSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CrashManagerSO => ""
+    ."CrashManagerSO"
 );
 #[cfg(feature = "CrashManagerSO")]
-impl std::ops::Deref for CrashManagerSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::CrashManagerSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CrashManagerSO")]
-impl std::ops::DerefMut for CrashManagerSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::CrashManagerSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CrashManagerSO")]
-impl CrashManagerSO {
+impl crate::GlobalNamespace::CrashManagerSO {
     pub fn HandleLog(
         &mut self,
         logString: *mut crate::System::String,
@@ -97,7 +98,7 @@ impl CrashManagerSO {
     }
 }
 #[cfg(feature = "CrashManagerSO")]
-impl quest_hook::libil2cpp::ObjectType for CrashManagerSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CrashManagerSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -368,68 +368,68 @@ pub struct OVRManager {
 }
 #[cfg(feature = "OVRManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRManager => ""."OVRManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRManager => ""."OVRManager"
 );
 #[cfg(feature = "OVRManager")]
-impl std::ops::Deref for OVRManager {
+impl std::ops::Deref for crate::GlobalNamespace::OVRManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRManager")]
-impl std::ops::DerefMut for OVRManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRManager")]
-impl OVRManager {
+impl crate::GlobalNamespace::OVRManager {
     pub const _pixelStepPerFrame: i32 = 32i32;
-    #[cfg(feature = "OVRManager+ProcessorPerformanceLevel")]
-    pub type ProcessorPerformanceLevel = crate::GlobalNamespace::OVRManager_ProcessorPerformanceLevel;
+    #[cfg(feature = "OVRManager+CameraDevice")]
+    pub type CameraDevice = crate::GlobalNamespace::OVRManager_CameraDevice;
     #[cfg(feature = "OVRManager+ColorSpace")]
     pub type ColorSpace = crate::GlobalNamespace::OVRManager_ColorSpace;
+    #[cfg(feature = "OVRManager+CompositionMethod")]
+    pub type CompositionMethod = crate::GlobalNamespace::OVRManager_CompositionMethod;
+    #[cfg(feature = "OVRManager+ControllerDrivenHandPosesType")]
+    pub type ControllerDrivenHandPosesType = crate::GlobalNamespace::OVRManager_ControllerDrivenHandPosesType;
+    #[cfg(feature = "OVRManager+DepthQuality")]
+    pub type DepthQuality = crate::GlobalNamespace::OVRManager_DepthQuality;
     #[cfg(feature = "OVRManager+EventListener")]
     type EventListener = crate::GlobalNamespace::OVRManager_EventListener;
+    #[cfg(feature = "OVRManager+EyeTextureFormat")]
+    pub type EyeTextureFormat = crate::GlobalNamespace::OVRManager_EyeTextureFormat;
+    #[cfg(feature = "OVRManager+FixedFoveatedRenderingLevel")]
+    pub type FixedFoveatedRenderingLevel = crate::GlobalNamespace::OVRManager_FixedFoveatedRenderingLevel;
+    #[cfg(feature = "OVRManager+FoveatedRenderingLevel")]
+    pub type FoveatedRenderingLevel = crate::GlobalNamespace::OVRManager_FoveatedRenderingLevel;
+    #[cfg(feature = "OVRManager+InstantiateMrcCameraDelegate")]
+    pub type InstantiateMrcCameraDelegate = crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate;
+    #[cfg(feature = "OVRManager+MrcActivationMode")]
+    pub type MrcActivationMode = crate::GlobalNamespace::OVRManager_MrcActivationMode;
     #[cfg(feature = "OVRManager+MrcCameraType")]
     pub type MrcCameraType = crate::GlobalNamespace::OVRManager_MrcCameraType;
     #[cfg(feature = "OVRManager+PassthroughCapabilities")]
     pub type PassthroughCapabilities = crate::GlobalNamespace::OVRManager_PassthroughCapabilities;
-    #[cfg(feature = "OVRManager+__c")]
-    pub type __c = crate::GlobalNamespace::OVRManager___c;
-    #[cfg(feature = "OVRManager+SystemHeadsetType")]
-    pub type SystemHeadsetType = crate::GlobalNamespace::OVRManager_SystemHeadsetType;
-    #[cfg(feature = "OVRManager+InstantiateMrcCameraDelegate")]
-    pub type InstantiateMrcCameraDelegate = crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate;
-    #[cfg(feature = "OVRManager+FoveatedRenderingLevel")]
-    pub type FoveatedRenderingLevel = crate::GlobalNamespace::OVRManager_FoveatedRenderingLevel;
     #[cfg(feature = "OVRManager+PassthroughInitializationState")]
     pub type PassthroughInitializationState = crate::GlobalNamespace::OVRManager_PassthroughInitializationState;
-    #[cfg(feature = "OVRManager+ControllerDrivenHandPosesType")]
-    pub type ControllerDrivenHandPosesType = crate::GlobalNamespace::OVRManager_ControllerDrivenHandPosesType;
-    #[cfg(feature = "OVRManager+EyeTextureFormat")]
-    pub type EyeTextureFormat = crate::GlobalNamespace::OVRManager_EyeTextureFormat;
+    #[cfg(feature = "OVRManager+ProcessorPerformanceLevel")]
+    pub type ProcessorPerformanceLevel = crate::GlobalNamespace::OVRManager_ProcessorPerformanceLevel;
+    #[cfg(feature = "OVRManager+SystemHeadsetType")]
+    pub type SystemHeadsetType = crate::GlobalNamespace::OVRManager_SystemHeadsetType;
+    #[cfg(feature = "OVRManager+TiledMultiResLevel")]
+    pub type TiledMultiResLevel = crate::GlobalNamespace::OVRManager_TiledMultiResLevel;
     #[cfg(feature = "OVRManager+TrackingOrigin")]
     pub type TrackingOrigin = crate::GlobalNamespace::OVRManager_TrackingOrigin;
     #[cfg(feature = "OVRManager+VirtualGreenScreenType")]
     pub type VirtualGreenScreenType = crate::GlobalNamespace::OVRManager_VirtualGreenScreenType;
-    #[cfg(feature = "OVRManager+XrApi")]
-    pub type XrApi = crate::GlobalNamespace::OVRManager_XrApi;
-    #[cfg(feature = "OVRManager+MrcActivationMode")]
-    pub type MrcActivationMode = crate::GlobalNamespace::OVRManager_MrcActivationMode;
     #[cfg(feature = "OVRManager+XRDevice")]
     pub type XRDevice = crate::GlobalNamespace::OVRManager_XRDevice;
-    #[cfg(feature = "OVRManager+FixedFoveatedRenderingLevel")]
-    pub type FixedFoveatedRenderingLevel = crate::GlobalNamespace::OVRManager_FixedFoveatedRenderingLevel;
-    #[cfg(feature = "OVRManager+TiledMultiResLevel")]
-    pub type TiledMultiResLevel = crate::GlobalNamespace::OVRManager_TiledMultiResLevel;
-    #[cfg(feature = "OVRManager+CameraDevice")]
-    pub type CameraDevice = crate::GlobalNamespace::OVRManager_CameraDevice;
-    #[cfg(feature = "OVRManager+DepthQuality")]
-    pub type DepthQuality = crate::GlobalNamespace::OVRManager_DepthQuality;
-    #[cfg(feature = "OVRManager+CompositionMethod")]
-    pub type CompositionMethod = crate::GlobalNamespace::OVRManager_CompositionMethod;
+    #[cfg(feature = "OVRManager+XrApi")]
+    pub type XrApi = crate::GlobalNamespace::OVRManager_XrApi;
+    #[cfg(feature = "OVRManager+__c")]
+    pub type __c = crate::GlobalNamespace::OVRManager___c;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1585,7 +1585,7 @@ impl OVRManager {
     }
 }
 #[cfg(feature = "OVRManager")]
-impl quest_hook::libil2cpp::ObjectType for OVRManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

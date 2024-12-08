@@ -28,22 +28,22 @@ for crate::System::Linq::Expressions::Interpreter::OrInstruction {
 impl crate::System::Linq::Expressions::Interpreter::OrInstruction {
     #[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrBoolean")]
     pub type OrBoolean = crate::GlobalNamespace::OrInstruction_OrBoolean;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrInt32")]
-    pub type OrInt32 = crate::GlobalNamespace::OrInstruction_OrInt32;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrUInt32")]
-    pub type OrUInt32 = crate::GlobalNamespace::OrInstruction_OrUInt32;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrInt16")]
-    pub type OrInt16 = crate::GlobalNamespace::OrInstruction_OrInt16;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrByte")]
     pub type OrByte = crate::GlobalNamespace::OrInstruction_OrByte;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrUInt64")]
-    pub type OrUInt64 = crate::GlobalNamespace::OrInstruction_OrUInt64;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrSByte")]
-    pub type OrSByte = crate::GlobalNamespace::OrInstruction_OrSByte;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrInt16")]
+    pub type OrInt16 = crate::GlobalNamespace::OrInstruction_OrInt16;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrInt32")]
+    pub type OrInt32 = crate::GlobalNamespace::OrInstruction_OrInt32;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrInt64")]
     pub type OrInt64 = crate::GlobalNamespace::OrInstruction_OrInt64;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrSByte")]
+    pub type OrSByte = crate::GlobalNamespace::OrInstruction_OrSByte;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrUInt16")]
     pub type OrUInt16 = crate::GlobalNamespace::OrInstruction_OrUInt16;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrUInt32")]
+    pub type OrUInt32 = crate::GlobalNamespace::OrInstruction_OrUInt32;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+OrInstruction+OrUInt64")]
+    pub type OrUInt64 = crate::GlobalNamespace::OrInstruction_OrUInt64;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

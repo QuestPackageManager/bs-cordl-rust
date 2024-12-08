@@ -194,14 +194,14 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
     pub const SKEIN_1024: i32 = 1024i32;
     pub const SKEIN_256: i32 = 256i32;
     pub const SKEIN_512: i32 = 512i32;
-    #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
-    pub type Parameter = crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter;
-    #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
-    pub type UbiTweak = crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak;
     #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
     pub type Configuration = crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration;
+    #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
+    pub type Parameter = crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter;
     #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
     pub type UBI = crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI;
+    #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
+    pub type UbiTweak = crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak;
     pub fn CheckInitialised(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

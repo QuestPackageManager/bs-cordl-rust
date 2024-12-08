@@ -27,10 +27,10 @@ for crate::UnityEngine::UI::CoroutineTween::ColorTween {
 }
 #[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween")]
 impl crate::UnityEngine::UI::CoroutineTween::ColorTween {
-    #[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenMode")]
-    pub type ColorTweenMode = crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenMode;
     #[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenCallback")]
     pub type ColorTweenCallback = crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenCallback;
+    #[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenMode")]
+    pub type ColorTweenMode = crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenMode;
     pub fn AddOnChangedCallback(
         &mut self,
         callback: *mut crate::UnityEngine::Events::UnityAction_1<

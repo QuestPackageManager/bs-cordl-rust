@@ -37,14 +37,14 @@ impl std::ops::DerefMut for crate::System::IO::StreamWriter {
 impl crate::System::IO::StreamWriter {
     #[cfg(feature = "System+IO+StreamWriter+_DisposeAsyncCore_d__33")]
     pub type _DisposeAsyncCore_d__33 = crate::System::IO::StreamWriter__DisposeAsyncCore_d__33;
+    #[cfg(feature = "System+IO+StreamWriter+_FlushAsyncInternal_d__74")]
+    pub type _FlushAsyncInternal_d__74 = crate::System::IO::StreamWriter__FlushAsyncInternal_d__74;
     #[cfg(feature = "System+IO+StreamWriter+_WriteAsyncInternal_d__57")]
     pub type _WriteAsyncInternal_d__57 = crate::System::IO::StreamWriter__WriteAsyncInternal_d__57;
     #[cfg(feature = "System+IO+StreamWriter+_WriteAsyncInternal_d__59")]
     pub type _WriteAsyncInternal_d__59 = crate::System::IO::StreamWriter__WriteAsyncInternal_d__59;
     #[cfg(feature = "System+IO+StreamWriter+_WriteAsyncInternal_d__62")]
     pub type _WriteAsyncInternal_d__62 = crate::System::IO::StreamWriter__WriteAsyncInternal_d__62;
-    #[cfg(feature = "System+IO+StreamWriter+_FlushAsyncInternal_d__74")]
-    pub type _FlushAsyncInternal_d__74 = crate::System::IO::StreamWriter__FlushAsyncInternal_d__74;
     pub fn CheckAsyncTaskInProgress(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

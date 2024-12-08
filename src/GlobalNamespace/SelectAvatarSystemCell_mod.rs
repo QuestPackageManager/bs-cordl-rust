@@ -20,23 +20,24 @@ pub struct SelectAvatarSystemCell {
 }
 #[cfg(feature = "SelectAvatarSystemCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SelectAvatarSystemCell => ""."SelectAvatarSystemCell"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SelectAvatarSystemCell => ""
+    ."SelectAvatarSystemCell"
 );
 #[cfg(feature = "SelectAvatarSystemCell")]
-impl std::ops::Deref for SelectAvatarSystemCell {
+impl std::ops::Deref for crate::GlobalNamespace::SelectAvatarSystemCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SelectAvatarSystemCell")]
-impl std::ops::DerefMut for SelectAvatarSystemCell {
+impl std::ops::DerefMut for crate::GlobalNamespace::SelectAvatarSystemCell {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SelectAvatarSystemCell")]
-impl SelectAvatarSystemCell {
+impl crate::GlobalNamespace::SelectAvatarSystemCell {
     #[cfg(feature = "SelectAvatarSystemCell+_Load_d__14")]
     pub type _Load_d__14 = crate::GlobalNamespace::SelectAvatarSystemCell__Load_d__14;
     #[cfg(feature = "SelectAvatarSystemCell+_ReloadIsCreated_d__17")]
@@ -240,7 +241,8 @@ impl SelectAvatarSystemCell {
     }
 }
 #[cfg(feature = "SelectAvatarSystemCell")]
-impl quest_hook::libil2cpp::ObjectType for SelectAvatarSystemCell {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SelectAvatarSystemCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

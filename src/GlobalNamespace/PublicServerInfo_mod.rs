@@ -7,10 +7,12 @@ pub struct PublicServerInfo {
 }
 #[cfg(feature = "PublicServerInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for PublicServerInfo => ""."PublicServerInfo"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PublicServerInfo => ""
+    ."PublicServerInfo"
 );
 #[cfg(feature = "PublicServerInfo")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for PublicServerInfo {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::PublicServerInfo {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -20,7 +22,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for PublicServerInfo {
     }
 }
 #[cfg(feature = "PublicServerInfo")]
-impl PublicServerInfo {
+impl crate::GlobalNamespace::PublicServerInfo {
     pub fn Serialize(
         &mut self,
         writer: *mut crate::LiteNetLib::Utils::NetDataWriter,

@@ -8,28 +8,29 @@ pub struct OVRControllerDrivenHandPosesSample {
     pub buttonNatural: *mut crate::UnityEngine::UI::Button,
     pub leftLinePointer: *mut crate::UnityEngine::LineRenderer,
     pub rightLinePointer: *mut crate::UnityEngine::LineRenderer,
-    pub cameraRig: *mut OVRCameraRig,
+    pub cameraRig: *mut crate::GlobalNamespace::OVRCameraRig,
 }
 #[cfg(feature = "OVRControllerDrivenHandPosesSample")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRControllerDrivenHandPosesSample => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRControllerDrivenHandPosesSample => ""
     ."OVRControllerDrivenHandPosesSample"
 );
 #[cfg(feature = "OVRControllerDrivenHandPosesSample")]
-impl std::ops::Deref for OVRControllerDrivenHandPosesSample {
+impl std::ops::Deref for crate::GlobalNamespace::OVRControllerDrivenHandPosesSample {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRControllerDrivenHandPosesSample")]
-impl std::ops::DerefMut for OVRControllerDrivenHandPosesSample {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRControllerDrivenHandPosesSample {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRControllerDrivenHandPosesSample")]
-impl OVRControllerDrivenHandPosesSample {
+impl crate::GlobalNamespace::OVRControllerDrivenHandPosesSample {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -160,7 +161,8 @@ impl OVRControllerDrivenHandPosesSample {
     }
 }
 #[cfg(feature = "OVRControllerDrivenHandPosesSample")]
-impl quest_hook::libil2cpp::ObjectType for OVRControllerDrivenHandPosesSample {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRControllerDrivenHandPosesSample {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

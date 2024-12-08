@@ -142,13 +142,13 @@ for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization {
 #[cfg(feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization")]
 impl crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization {
     #[cfg(
-        feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization+__c__DisplayClass1_0"
-    )]
-    pub type __c__DisplayClass1_0 = crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization___c__DisplayClass1_0;
-    #[cfg(
         feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization+CacheInitOp"
     )]
     pub type CacheInitOp = crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_CacheInitOp;
+    #[cfg(
+        feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization+__c__DisplayClass1_0"
+    )]
+    pub type __c__DisplayClass1_0 = crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization___c__DisplayClass1_0;
     pub fn Initialize(
         &mut self,
         id: *mut crate::System::String,

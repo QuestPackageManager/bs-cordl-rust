@@ -9,5 +9,6 @@ pub enum GameStateType {
 }
 #[cfg(feature = "GameStateType")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for GameStateType => ""."GameStateType"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameStateType => ""
+    ."GameStateType"
 );

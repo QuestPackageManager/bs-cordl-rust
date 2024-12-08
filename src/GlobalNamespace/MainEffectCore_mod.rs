@@ -6,23 +6,24 @@ pub struct MainEffectCore {
 }
 #[cfg(feature = "MainEffectCore")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MainEffectCore => ""."MainEffectCore"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MainEffectCore => ""
+    ."MainEffectCore"
 );
 #[cfg(feature = "MainEffectCore")]
-impl std::ops::Deref for MainEffectCore {
+impl std::ops::Deref for crate::GlobalNamespace::MainEffectCore {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainEffectCore")]
-impl std::ops::DerefMut for MainEffectCore {
+impl std::ops::DerefMut for crate::GlobalNamespace::MainEffectCore {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainEffectCore")]
-impl MainEffectCore {
+impl crate::GlobalNamespace::MainEffectCore {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,7 +43,7 @@ impl MainEffectCore {
     }
 }
 #[cfg(feature = "MainEffectCore")]
-impl quest_hook::libil2cpp::ObjectType for MainEffectCore {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MainEffectCore {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -111,36 +111,37 @@ pub struct DiffieHellmanUtility {
 }
 #[cfg(feature = "DiffieHellmanUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for DiffieHellmanUtility => ""."DiffieHellmanUtility"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::DiffieHellmanUtility => ""
+    ."DiffieHellmanUtility"
 );
 #[cfg(feature = "DiffieHellmanUtility")]
-impl std::ops::Deref for DiffieHellmanUtility {
+impl std::ops::Deref for crate::GlobalNamespace::DiffieHellmanUtility {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DiffieHellmanUtility")]
-impl std::ops::DerefMut for DiffieHellmanUtility {
+impl std::ops::DerefMut for crate::GlobalNamespace::DiffieHellmanUtility {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "DiffieHellmanUtility")]
-impl DiffieHellmanUtility {
+impl crate::GlobalNamespace::DiffieHellmanUtility {
     pub const kMaxDiffieHellmanPublicKeyLength: i32 = 2048i32;
     pub const kMaxElipticalCurvePublicKeyLength: i32 = 256i32;
-    #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
-    pub type OperationTimer = crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer;
-    #[cfg(feature = "DiffieHellmanUtility+KeyType")]
-    pub type KeyType = crate::GlobalNamespace::DiffieHellmanUtility_KeyType;
     #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
     pub type DiffieHellmanKeyPair = crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair;
     #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
     pub type ElipticalCurveKeyPair = crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair;
+    #[cfg(feature = "DiffieHellmanUtility+KeyType")]
+    pub type KeyType = crate::GlobalNamespace::DiffieHellmanUtility_KeyType;
+    #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
+    pub type OperationTimer = crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer;
 }
 #[cfg(feature = "DiffieHellmanUtility")]
-impl quest_hook::libil2cpp::ObjectType for DiffieHellmanUtility {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DiffieHellmanUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

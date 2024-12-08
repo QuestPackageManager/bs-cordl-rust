@@ -191,14 +191,14 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch")]
 impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
-    #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+FingerAndTouchState")]
-    pub type FingerAndTouchState = crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState;
-    #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+GlobalState")]
-    pub type GlobalState = crate::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState;
     #[cfg(
         feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+ExtraDataPerTouchState"
     )]
     pub type ExtraDataPerTouchState = crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState;
+    #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+FingerAndTouchState")]
+    pub type FingerAndTouchState = crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState;
+    #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+GlobalState")]
+    pub type GlobalState = crate::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState;
     #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+__c")]
     pub type __c = crate::UnityEngine::InputSystem::EnhancedTouch::Touch___c;
     pub fn Equals_Object1(

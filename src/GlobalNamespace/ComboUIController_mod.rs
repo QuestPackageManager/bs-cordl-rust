@@ -5,29 +5,30 @@ pub struct ComboUIController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _comboText: *mut crate::TMPro::TextMeshProUGUI,
     pub _animator: *mut crate::UnityEngine::Animator,
-    pub _comboController: *mut IComboController,
+    pub _comboController: *mut crate::GlobalNamespace::IComboController,
     pub _comboLostId: i32,
     pub _fullComboLost: bool,
 }
 #[cfg(feature = "ComboUIController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ComboUIController => ""."ComboUIController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ComboUIController => ""
+    ."ComboUIController"
 );
 #[cfg(feature = "ComboUIController")]
-impl std::ops::Deref for ComboUIController {
+impl std::ops::Deref for crate::GlobalNamespace::ComboUIController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ComboUIController")]
-impl std::ops::DerefMut for ComboUIController {
+impl std::ops::DerefMut for crate::GlobalNamespace::ComboUIController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ComboUIController")]
-impl ComboUIController {
+impl crate::GlobalNamespace::ComboUIController {
     pub fn HandleComboBreakingEventHappened(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -118,7 +119,7 @@ impl ComboUIController {
     }
 }
 #[cfg(feature = "ComboUIController")]
-impl quest_hook::libil2cpp::ObjectType for ComboUIController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ComboUIController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -27,10 +27,10 @@ impl std::ops::DerefMut for crate::System::Net::ContextAwareResult {
 }
 #[cfg(feature = "System+Net+ContextAwareResult")]
 impl crate::System::Net::ContextAwareResult {
-    #[cfg(feature = "System+Net+ContextAwareResult+__c")]
-    pub type __c = crate::System::Net::ContextAwareResult___c;
     #[cfg(feature = "System+Net+ContextAwareResult+StateFlags")]
     pub type StateFlags = crate::System::Net::ContextAwareResult_StateFlags;
+    #[cfg(feature = "System+Net+ContextAwareResult+__c")]
+    pub type __c = crate::System::Net::ContextAwareResult___c;
     pub fn CaptureOrComplete(
         &mut self,
         cachedContext: quest_hook::libil2cpp::ByRefMut<

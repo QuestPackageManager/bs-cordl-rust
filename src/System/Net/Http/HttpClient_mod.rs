@@ -30,10 +30,10 @@ impl std::ops::DerefMut for crate::System::Net::Http::HttpClient {
 }
 #[cfg(feature = "System+Net+Http+HttpClient")]
 impl crate::System::Net::Http::HttpClient {
-    #[cfg(feature = "System+Net+Http+HttpClient+_SendAsyncWorker_d__47")]
-    pub type _SendAsyncWorker_d__47 = crate::System::Net::Http::HttpClient__SendAsyncWorker_d__47;
     #[cfg(feature = "System+Net+Http+HttpClient+_GetStringAsync_d__53")]
     pub type _GetStringAsync_d__53 = crate::System::Net::Http::HttpClient__GetStringAsync_d__53;
+    #[cfg(feature = "System+Net+Http+HttpClient+_SendAsyncWorker_d__47")]
+    pub type _SendAsyncWorker_d__47 = crate::System::Net::Http::HttpClient__SendAsyncWorker_d__47;
     pub fn Dispose(
         &mut self,
         disposing: bool,

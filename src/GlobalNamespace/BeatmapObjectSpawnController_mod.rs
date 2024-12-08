@@ -3,46 +3,46 @@
 #[derive(Debug)]
 pub struct BeatmapObjectSpawnController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _beatmapObjectSpawnMovementData: *mut BeatmapObjectSpawnMovementData,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
-    pub _beatmapObjectSpawner: *mut IBeatmapObjectSpawner,
-    pub _jumpOffsetYProvider: *mut IJumpOffsetYProvider,
+    pub _beatmapObjectSpawnMovementData: *mut crate::GlobalNamespace::BeatmapObjectSpawnMovementData,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _beatmapObjectSpawner: *mut crate::GlobalNamespace::IBeatmapObjectSpawner,
+    pub _jumpOffsetYProvider: *mut crate::GlobalNamespace::IJumpOffsetYProvider,
     pub _initData: *mut crate::GlobalNamespace::BeatmapObjectSpawnController_InitData,
     pub didInitEvent: *mut crate::System::Action,
     pub _disableSpawning: bool,
     pub _isInitialized: bool,
-    pub _obstacleDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
-    pub _noteDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
-    pub _sliderDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
-    pub _spawnRotationCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _obstacleDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _noteDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _sliderDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+    pub _spawnRotationCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     pub _spawnRotation: f32,
 }
 #[cfg(feature = "BeatmapObjectSpawnController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapObjectSpawnController => ""
-    ."BeatmapObjectSpawnController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapObjectSpawnController =>
+    ""."BeatmapObjectSpawnController"
 );
 #[cfg(feature = "BeatmapObjectSpawnController")]
-impl std::ops::Deref for BeatmapObjectSpawnController {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapObjectSpawnController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapObjectSpawnController")]
-impl std::ops::DerefMut for BeatmapObjectSpawnController {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapObjectSpawnController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapObjectSpawnController")]
-impl BeatmapObjectSpawnController {
+impl crate::GlobalNamespace::BeatmapObjectSpawnController {
     #[cfg(feature = "BeatmapObjectSpawnController+InitData")]
     pub type InitData = crate::GlobalNamespace::BeatmapObjectSpawnController_InitData;
     pub fn Get2DNoteOffset(
         &mut self,
         noteLineIndex: i32,
-        noteLineLayer: NoteLineLayer,
+        noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -53,7 +53,7 @@ impl BeatmapObjectSpawnController {
     }
     pub fn HandleNoteDataCallback(
         &mut self,
-        noteData: *mut NoteData,
+        noteData: *mut crate::GlobalNamespace::NoteData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -64,7 +64,7 @@ impl BeatmapObjectSpawnController {
     }
     pub fn HandleObstacleDataCallback(
         &mut self,
-        obstacleData: *mut ObstacleData,
+        obstacleData: *mut crate::GlobalNamespace::ObstacleData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -75,7 +75,7 @@ impl BeatmapObjectSpawnController {
     }
     pub fn HandleSliderDataCallback(
         &mut self,
-        sliderNoteData: *mut SliderData,
+        sliderNoteData: *mut crate::GlobalNamespace::SliderData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -86,7 +86,7 @@ impl BeatmapObjectSpawnController {
     }
     pub fn HandleSpawnRotationCallback(
         &mut self,
-        beatmapEventData: *mut SpawnRotationBeatmapEventData,
+        beatmapEventData: *mut crate::GlobalNamespace::SpawnRotationBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -97,7 +97,7 @@ impl BeatmapObjectSpawnController {
     }
     pub fn JumpPosYForLineLayerAtDistanceFromPlayerWithoutJumpOffset(
         &mut self,
-        lineLayer: NoteLineLayer,
+        lineLayer: crate::GlobalNamespace::NoteLineLayer,
         distanceFromPlayer: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -170,11 +170,13 @@ impl BeatmapObjectSpawnController {
     }
     pub fn get_beatmapObjectSpawnMovementData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapObjectSpawnMovementData> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::BeatmapObjectSpawnMovementData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapObjectSpawnMovementData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapObjectSpawnMovementData = __cordl_object
             .invoke("get_beatmapObjectSpawnMovementData", ())?;
         Ok(__cordl_ret)
     }
@@ -254,7 +256,8 @@ impl BeatmapObjectSpawnController {
     }
 }
 #[cfg(feature = "BeatmapObjectSpawnController")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapObjectSpawnController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapObjectSpawnController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

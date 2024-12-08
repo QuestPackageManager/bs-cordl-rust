@@ -6,23 +6,24 @@ pub struct IUnityXRHapticsHandler {
 }
 #[cfg(feature = "IUnityXRHapticsHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IUnityXRHapticsHandler => ""."IUnityXRHapticsHandler"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IUnityXRHapticsHandler => ""
+    ."IUnityXRHapticsHandler"
 );
 #[cfg(feature = "IUnityXRHapticsHandler")]
-impl std::ops::Deref for IUnityXRHapticsHandler {
+impl std::ops::Deref for crate::GlobalNamespace::IUnityXRHapticsHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IUnityXRHapticsHandler")]
-impl std::ops::DerefMut for IUnityXRHapticsHandler {
+impl std::ops::DerefMut for crate::GlobalNamespace::IUnityXRHapticsHandler {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IUnityXRHapticsHandler")]
-impl IUnityXRHapticsHandler {
+impl crate::GlobalNamespace::IUnityXRHapticsHandler {
     pub fn StopHaptics(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -52,7 +53,8 @@ impl IUnityXRHapticsHandler {
     }
 }
 #[cfg(feature = "IUnityXRHapticsHandler")]
-impl quest_hook::libil2cpp::ObjectType for IUnityXRHapticsHandler {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IUnityXRHapticsHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

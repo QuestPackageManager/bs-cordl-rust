@@ -104,16 +104,16 @@ impl std::ops::DerefMut for crate::System::DateTimeParse {
 }
 #[cfg(feature = "System+DateTimeParse")]
 impl crate::System::DateTimeParse {
-    #[cfg(feature = "System+DateTimeParse+TM")]
-    pub type TM = crate::System::DateTimeParse_TM;
-    #[cfg(feature = "System+DateTimeParse+DTT")]
-    pub type DTT = crate::System::DateTimeParse_DTT;
     #[cfg(feature = "System+DateTimeParse+DS")]
     pub type DS = crate::System::DateTimeParse_DS;
-    #[cfg(feature = "System+DateTimeParse+__c")]
-    pub type __c = crate::System::DateTimeParse___c;
+    #[cfg(feature = "System+DateTimeParse+DTT")]
+    pub type DTT = crate::System::DateTimeParse_DTT;
     #[cfg(feature = "System+DateTimeParse+MatchNumberDelegate")]
     pub type MatchNumberDelegate = crate::System::DateTimeParse_MatchNumberDelegate;
+    #[cfg(feature = "System+DateTimeParse+TM")]
+    pub type TM = crate::System::DateTimeParse_TM;
+    #[cfg(feature = "System+DateTimeParse+__c")]
+    pub type __c = crate::System::DateTimeParse___c;
 }
 #[cfg(feature = "System+DateTimeParse")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::DateTimeParse {

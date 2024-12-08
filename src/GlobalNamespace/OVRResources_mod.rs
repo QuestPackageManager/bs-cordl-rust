@@ -6,23 +6,24 @@ pub struct OVRResources {
 }
 #[cfg(feature = "OVRResources")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRResources => ""."OVRResources"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRResources => ""
+    ."OVRResources"
 );
 #[cfg(feature = "OVRResources")]
-impl std::ops::Deref for OVRResources {
+impl std::ops::Deref for crate::GlobalNamespace::OVRResources {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRResources")]
-impl std::ops::DerefMut for OVRResources {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRResources {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRResources")]
-impl OVRResources {
+impl crate::GlobalNamespace::OVRResources {
     #[cfg(feature = "OVRResources+__c__DisplayClass2_0")]
     pub type __c__DisplayClass2_0 = crate::GlobalNamespace::OVRResources___c__DisplayClass2_0;
     #[cfg(feature = "OVRResources+__c__DisplayClass3_0_1")]
@@ -48,7 +49,7 @@ impl OVRResources {
     }
 }
 #[cfg(feature = "OVRResources")]
-impl quest_hook::libil2cpp::ObjectType for OVRResources {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRResources {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

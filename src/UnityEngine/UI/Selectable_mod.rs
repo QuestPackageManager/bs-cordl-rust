@@ -40,10 +40,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::Selectable {
 }
 #[cfg(feature = "UnityEngine+UI+Selectable")]
 impl crate::UnityEngine::UI::Selectable {
-    #[cfg(feature = "UnityEngine+UI+Selectable+Transition")]
-    pub type Transition = crate::UnityEngine::UI::Selectable_Transition;
     #[cfg(feature = "UnityEngine+UI+Selectable+SelectionState")]
     pub type SelectionState = crate::UnityEngine::UI::Selectable_SelectionState;
+    #[cfg(feature = "UnityEngine+UI+Selectable+Transition")]
+    pub type Transition = crate::UnityEngine::UI::Selectable_Transition;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

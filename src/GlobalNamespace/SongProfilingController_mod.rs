@@ -3,28 +3,29 @@
 #[derive(Debug)]
 pub struct SongProfilingController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _sceneSetupData: *mut GameplayCoreSceneSetupData,
+    pub _sceneSetupData: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
     pub _fps: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
 }
 #[cfg(feature = "SongProfilingController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SongProfilingController => ""."SongProfilingController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongProfilingController => ""
+    ."SongProfilingController"
 );
 #[cfg(feature = "SongProfilingController")]
-impl std::ops::Deref for SongProfilingController {
+impl std::ops::Deref for crate::GlobalNamespace::SongProfilingController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongProfilingController")]
-impl std::ops::DerefMut for SongProfilingController {
+impl std::ops::DerefMut for crate::GlobalNamespace::SongProfilingController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongProfilingController")]
-impl SongProfilingController {
+impl crate::GlobalNamespace::SongProfilingController {
     pub const kLowFPSCountLimit: i32 = 110i32;
     pub const kProfileFramesPerLog: i32 = 2000i32;
     pub const kProfilerMaxUsedMemory: i32 = 268435456i32;
@@ -134,7 +135,8 @@ impl SongProfilingController {
     }
 }
 #[cfg(feature = "SongProfilingController")]
-impl quest_hook::libil2cpp::ObjectType for SongProfilingController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SongProfilingController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

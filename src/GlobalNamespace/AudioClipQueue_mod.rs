@@ -11,23 +11,24 @@ pub struct AudioClipQueue {
 }
 #[cfg(feature = "AudioClipQueue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AudioClipQueue => ""."AudioClipQueue"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AudioClipQueue => ""
+    ."AudioClipQueue"
 );
 #[cfg(feature = "AudioClipQueue")]
-impl std::ops::Deref for AudioClipQueue {
+impl std::ops::Deref for crate::GlobalNamespace::AudioClipQueue {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AudioClipQueue")]
-impl std::ops::DerefMut for AudioClipQueue {
+impl std::ops::DerefMut for crate::GlobalNamespace::AudioClipQueue {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AudioClipQueue")]
-impl AudioClipQueue {
+impl crate::GlobalNamespace::AudioClipQueue {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -79,7 +80,7 @@ impl AudioClipQueue {
     }
 }
 #[cfg(feature = "AudioClipQueue")]
-impl quest_hook::libil2cpp::ObjectType for AudioClipQueue {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AudioClipQueue {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

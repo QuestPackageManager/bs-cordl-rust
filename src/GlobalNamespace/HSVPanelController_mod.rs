@@ -3,33 +3,34 @@
 #[derive(Debug)]
 pub struct HSVPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _colorSaturationValueSlider: *mut ColorSaturationValueSlider,
-    pub _colorHueSlider: *mut ColorHueSlider,
+    pub _colorSaturationValueSlider: *mut crate::GlobalNamespace::ColorSaturationValueSlider,
+    pub _colorHueSlider: *mut crate::GlobalNamespace::ColorHueSlider,
     pub colorDidChangeEvent: *mut crate::System::Action_2<
         crate::UnityEngine::Color,
-        ColorChangeUIEventType,
+        crate::GlobalNamespace::ColorChangeUIEventType,
     >,
     pub _hsvColor: crate::UnityEngine::Vector3,
 }
 #[cfg(feature = "HSVPanelController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for HSVPanelController => ""."HSVPanelController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::HSVPanelController => ""
+    ."HSVPanelController"
 );
 #[cfg(feature = "HSVPanelController")]
-impl std::ops::Deref for HSVPanelController {
+impl std::ops::Deref for crate::GlobalNamespace::HSVPanelController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HSVPanelController")]
-impl std::ops::DerefMut for HSVPanelController {
+impl std::ops::DerefMut for crate::GlobalNamespace::HSVPanelController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "HSVPanelController")]
-impl HSVPanelController {
+impl crate::GlobalNamespace::HSVPanelController {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -42,9 +43,9 @@ impl HSVPanelController {
     }
     pub fn HandleColorHueDidChange(
         &mut self,
-        slider: *mut ColorHueSlider,
+        slider: *mut crate::GlobalNamespace::ColorHueSlider,
         hue: f32,
-        colorChangeUIEventType: ColorChangeUIEventType,
+        colorChangeUIEventType: crate::GlobalNamespace::ColorChangeUIEventType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -55,9 +56,9 @@ impl HSVPanelController {
     }
     pub fn HandleColorSaturationOrValueDidChange(
         &mut self,
-        slider: *mut ColorSaturationValueSlider,
+        slider: *mut crate::GlobalNamespace::ColorSaturationValueSlider,
         colorSaturationAndValue: crate::UnityEngine::Vector2,
-        colorChangeUIEventType: ColorChangeUIEventType,
+        colorChangeUIEventType: crate::GlobalNamespace::ColorChangeUIEventType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -120,7 +121,7 @@ impl HSVPanelController {
         &mut self,
         value: *mut crate::System::Action_2<
             crate::UnityEngine::Color,
-            ColorChangeUIEventType,
+            crate::GlobalNamespace::ColorChangeUIEventType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -144,7 +145,7 @@ impl HSVPanelController {
         &mut self,
         value: *mut crate::System::Action_2<
             crate::UnityEngine::Color,
-            ColorChangeUIEventType,
+            crate::GlobalNamespace::ColorChangeUIEventType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -167,7 +168,7 @@ impl HSVPanelController {
     }
 }
 #[cfg(feature = "HSVPanelController")]
-impl quest_hook::libil2cpp::ObjectType for HSVPanelController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::HSVPanelController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

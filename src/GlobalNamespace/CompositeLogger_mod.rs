@@ -4,31 +4,32 @@
 pub struct CompositeLogger {
     __cordl_parent: crate::System::Object,
     pub _loggers: *mut crate::System::Collections::Generic::List_1<
-        *mut IBeatSaberLogger,
+        *mut crate::GlobalNamespace::IBeatSaberLogger,
     >,
 }
 #[cfg(feature = "CompositeLogger")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CompositeLogger => ""."CompositeLogger"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CompositeLogger => ""
+    ."CompositeLogger"
 );
 #[cfg(feature = "CompositeLogger")]
-impl std::ops::Deref for CompositeLogger {
+impl std::ops::Deref for crate::GlobalNamespace::CompositeLogger {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CompositeLogger")]
-impl std::ops::DerefMut for CompositeLogger {
+impl std::ops::DerefMut for crate::GlobalNamespace::CompositeLogger {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CompositeLogger")]
-impl CompositeLogger {
+impl crate::GlobalNamespace::CompositeLogger {
     pub fn AddLogger(
         &mut self,
-        logger: *mut IBeatSaberLogger,
+        logger: *mut crate::GlobalNamespace::IBeatSaberLogger,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -130,7 +131,9 @@ impl CompositeLogger {
         Ok(__cordl_ret)
     }
     pub fn New(
-        loggers: *mut crate::System::Collections::Generic::List_1<*mut IBeatSaberLogger>,
+        loggers: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::IBeatSaberLogger,
+        >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -140,7 +143,9 @@ impl CompositeLogger {
     }
     pub fn _ctor(
         &mut self,
-        loggers: *mut crate::System::Collections::Generic::List_1<*mut IBeatSaberLogger>,
+        loggers: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::IBeatSaberLogger,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -151,7 +156,7 @@ impl CompositeLogger {
     }
 }
 #[cfg(feature = "CompositeLogger")]
-impl quest_hook::libil2cpp::ObjectType for CompositeLogger {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CompositeLogger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

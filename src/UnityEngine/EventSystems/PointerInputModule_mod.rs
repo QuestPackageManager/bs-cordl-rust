@@ -311,10 +311,10 @@ impl crate::UnityEngine::EventSystems::PointerInputModule {
     pub const kMouseLeftId: i32 = -1i32;
     pub const kMouseMiddleId: i32 = -3i32;
     pub const kMouseRightId: i32 = -2i32;
-    #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseButtonEventData")]
-    pub type MouseButtonEventData = crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData;
     #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+ButtonState")]
     pub type ButtonState = crate::UnityEngine::EventSystems::PointerInputModule_ButtonState;
+    #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseButtonEventData")]
+    pub type MouseButtonEventData = crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData;
     #[cfg(feature = "UnityEngine+EventSystems+PointerInputModule+MouseState")]
     pub type MouseState = crate::UnityEngine::EventSystems::PointerInputModule_MouseState;
     pub fn ClearSelection(

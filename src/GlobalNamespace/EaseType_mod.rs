@@ -40,5 +40,5 @@ pub enum EaseType {
 }
 #[cfg(feature = "EaseType")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for EaseType => ""."EaseType"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EaseType => ""."EaseType"
 );

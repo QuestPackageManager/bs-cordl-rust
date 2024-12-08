@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MissionHelpViewController_MissionHelpGameObjectPair {
     __cordl_parent: crate::System::Object,
-    pub missionHelp: *mut MissionHelpSO,
+    pub missionHelp: *mut crate::GlobalNamespace::MissionHelpSO,
     pub gameObject: *mut crate::UnityEngine::GameObject,
 }
 #[cfg(feature = "MissionHelpViewController+MissionHelpGameObjectPair")]
@@ -66,29 +66,31 @@ pub struct MissionHelpViewController {
     pub _missionHelpGameObjectPairs: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::MissionHelpViewController_MissionHelpGameObjectPair,
     >,
-    pub didFinishEvent: *mut crate::System::Action_1<*mut MissionHelpViewController>,
-    pub _missionHelp: *mut MissionHelpSO,
+    pub didFinishEvent: *mut crate::System::Action_1<
+        *mut crate::GlobalNamespace::MissionHelpViewController,
+    >,
+    pub _missionHelp: *mut crate::GlobalNamespace::MissionHelpSO,
 }
 #[cfg(feature = "MissionHelpViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionHelpViewController => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissionHelpViewController => ""
     ."MissionHelpViewController"
 );
 #[cfg(feature = "MissionHelpViewController")]
-impl std::ops::Deref for MissionHelpViewController {
+impl std::ops::Deref for crate::GlobalNamespace::MissionHelpViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionHelpViewController")]
-impl std::ops::DerefMut for MissionHelpViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionHelpViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionHelpViewController")]
-impl MissionHelpViewController {
+impl crate::GlobalNamespace::MissionHelpViewController {
     #[cfg(feature = "MissionHelpViewController+MissionHelpGameObjectPair")]
     pub type MissionHelpGameObjectPair = crate::GlobalNamespace::MissionHelpViewController_MissionHelpGameObjectPair;
     pub fn DidActivate(
@@ -136,7 +138,7 @@ impl MissionHelpViewController {
     }
     pub fn Setup(
         &mut self,
-        missionHelp: *mut MissionHelpSO,
+        missionHelp: *mut crate::GlobalNamespace::MissionHelpSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -157,7 +159,9 @@ impl MissionHelpViewController {
     }
     pub fn add_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MissionHelpViewController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::MissionHelpViewController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -168,7 +172,9 @@ impl MissionHelpViewController {
     }
     pub fn remove_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MissionHelpViewController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::MissionHelpViewController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -179,7 +185,8 @@ impl MissionHelpViewController {
     }
 }
 #[cfg(feature = "MissionHelpViewController")]
-impl quest_hook::libil2cpp::ObjectType for MissionHelpViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MissionHelpViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

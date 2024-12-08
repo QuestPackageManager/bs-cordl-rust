@@ -3,29 +3,30 @@
 #[derive(Debug)]
 pub struct SliderControllerBase {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _materialPropertyBlockController: *mut MaterialPropertyBlockController,
-    pub _cutoutAnimateEffect: *mut CutoutAnimateEffect,
+    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _cutoutAnimateEffect: *mut crate::GlobalNamespace::CutoutAnimateEffect,
     pub _dissolving: bool,
 }
 #[cfg(feature = "SliderControllerBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SliderControllerBase => ""."SliderControllerBase"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SliderControllerBase => ""
+    ."SliderControllerBase"
 );
 #[cfg(feature = "SliderControllerBase")]
-impl std::ops::Deref for SliderControllerBase {
+impl std::ops::Deref for crate::GlobalNamespace::SliderControllerBase {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderControllerBase")]
-impl std::ops::DerefMut for SliderControllerBase {
+impl std::ops::DerefMut for crate::GlobalNamespace::SliderControllerBase {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderControllerBase")]
-impl SliderControllerBase {
+impl crate::GlobalNamespace::SliderControllerBase {
     pub fn AnimateCutout(
         &mut self,
         cutoutStart: f32,
@@ -58,7 +59,7 @@ impl SliderControllerBase {
     }
 }
 #[cfg(feature = "SliderControllerBase")]
-impl quest_hook::libil2cpp::ObjectType for SliderControllerBase {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SliderControllerBase {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

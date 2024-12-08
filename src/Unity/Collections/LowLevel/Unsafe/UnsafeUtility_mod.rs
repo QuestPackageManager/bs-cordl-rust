@@ -81,12 +81,12 @@ impl std::ops::DerefMut for crate::Unity::Collections::LowLevel::Unsafe::UnsafeU
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility")]
 impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility {
-    #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility+TypeFlagsCache_1")]
-    pub type TypeFlagsCache_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_TypeFlagsCache_1<
-        T,
-    >;
     #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility+AlignOfHelper_1")]
     pub type AlignOfHelper_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_AlignOfHelper_1<
+        T,
+    >;
+    #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+UnsafeUtility+TypeFlagsCache_1")]
+    pub type TypeFlagsCache_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_TypeFlagsCache_1<
         T,
     >;
 }

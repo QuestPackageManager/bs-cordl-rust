@@ -185,16 +185,16 @@ impl std::ops::DerefMut for crate::System::Threading::OSSpecificSynchronizationC
 }
 #[cfg(feature = "System+Threading+OSSpecificSynchronizationContext")]
 impl crate::System::Threading::OSSpecificSynchronizationContext {
-    #[cfg(feature = "System+Threading+OSSpecificSynchronizationContext+__c")]
-    pub type __c = crate::System::Threading::OSSpecificSynchronizationContext___c;
-    #[cfg(
-        feature = "System+Threading+OSSpecificSynchronizationContext+InvocationEntryDelegate"
-    )]
-    pub type InvocationEntryDelegate = crate::System::Threading::OSSpecificSynchronizationContext_InvocationEntryDelegate;
     #[cfg(
         feature = "System+Threading+OSSpecificSynchronizationContext+InvocationContext"
     )]
     pub type InvocationContext = crate::System::Threading::OSSpecificSynchronizationContext_InvocationContext;
+    #[cfg(
+        feature = "System+Threading+OSSpecificSynchronizationContext+InvocationEntryDelegate"
+    )]
+    pub type InvocationEntryDelegate = crate::System::Threading::OSSpecificSynchronizationContext_InvocationEntryDelegate;
+    #[cfg(feature = "System+Threading+OSSpecificSynchronizationContext+__c")]
+    pub type __c = crate::System::Threading::OSSpecificSynchronizationContext___c;
     pub fn CreateCopy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

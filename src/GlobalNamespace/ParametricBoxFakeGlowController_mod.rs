@@ -10,28 +10,28 @@ pub struct ParametricBoxFakeGlowController {
     pub edgeSizeMultiplier: f32,
     pub color: crate::UnityEngine::Color,
     pub _meshRenderer: *mut crate::UnityEngine::MeshRenderer,
-    pub _materialPropertyBlockController: *mut MaterialPropertyBlockController,
+    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
 }
 #[cfg(feature = "ParametricBoxFakeGlowController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ParametricBoxFakeGlowController => ""
-    ."ParametricBoxFakeGlowController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ParametricBoxFakeGlowController
+    => ""."ParametricBoxFakeGlowController"
 );
 #[cfg(feature = "ParametricBoxFakeGlowController")]
-impl std::ops::Deref for ParametricBoxFakeGlowController {
+impl std::ops::Deref for crate::GlobalNamespace::ParametricBoxFakeGlowController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ParametricBoxFakeGlowController")]
-impl std::ops::DerefMut for ParametricBoxFakeGlowController {
+impl std::ops::DerefMut for crate::GlobalNamespace::ParametricBoxFakeGlowController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ParametricBoxFakeGlowController")]
-impl ParametricBoxFakeGlowController {
+impl crate::GlobalNamespace::ParametricBoxFakeGlowController {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -102,7 +102,8 @@ impl ParametricBoxFakeGlowController {
     }
 }
 #[cfg(feature = "ParametricBoxFakeGlowController")]
-impl quest_hook::libil2cpp::ObjectType for ParametricBoxFakeGlowController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ParametricBoxFakeGlowController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

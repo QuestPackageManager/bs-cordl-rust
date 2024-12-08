@@ -12,5 +12,6 @@ pub enum OVRGLTFInputNode {
 }
 #[cfg(feature = "OVRGLTFInputNode")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for OVRGLTFInputNode => ""."OVRGLTFInputNode"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRGLTFInputNode => ""
+    ."OVRGLTFInputNode"
 );

@@ -3,28 +3,31 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalInactivePlayerResultsController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _multiplayerController: *mut MultiplayerController,
+    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerResultsController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLocalInactivePlayerResultsController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLocalInactivePlayerResultsController => ""
     ."MultiplayerLocalInactivePlayerResultsController"
 );
 #[cfg(feature = "MultiplayerLocalInactivePlayerResultsController")]
-impl std::ops::Deref for MultiplayerLocalInactivePlayerResultsController {
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerLocalInactivePlayerResultsController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerResultsController")]
-impl std::ops::DerefMut for MultiplayerLocalInactivePlayerResultsController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerLocalInactivePlayerResultsController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerResultsController")]
-impl MultiplayerLocalInactivePlayerResultsController {
+impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerResultsController {
     pub fn HandleMultiplayerStateChange(
         &mut self,
         state: crate::GlobalNamespace::MultiplayerController_State,
@@ -87,7 +90,7 @@ impl MultiplayerLocalInactivePlayerResultsController {
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerResultsController")]
 impl quest_hook::libil2cpp::ObjectType
-for MultiplayerLocalInactivePlayerResultsController {
+for crate::GlobalNamespace::MultiplayerLocalInactivePlayerResultsController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

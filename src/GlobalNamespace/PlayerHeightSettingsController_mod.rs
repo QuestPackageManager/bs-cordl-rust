@@ -5,7 +5,7 @@ pub struct PlayerHeightSettingsController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _text: *mut crate::TMPro::TextMeshProUGUI,
     pub _setButton: *mut crate::UnityEngine::UI::Button,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
     pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
     pub valueDidChangeEvent: *mut crate::System::Action_1<f32>,
     pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
@@ -13,24 +13,24 @@ pub struct PlayerHeightSettingsController {
 }
 #[cfg(feature = "PlayerHeightSettingsController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerHeightSettingsController => ""
-    ."PlayerHeightSettingsController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerHeightSettingsController
+    => ""."PlayerHeightSettingsController"
 );
 #[cfg(feature = "PlayerHeightSettingsController")]
-impl std::ops::Deref for PlayerHeightSettingsController {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerHeightSettingsController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerHeightSettingsController")]
-impl std::ops::DerefMut for PlayerHeightSettingsController {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerHeightSettingsController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerHeightSettingsController")]
-impl PlayerHeightSettingsController {
+impl crate::GlobalNamespace::PlayerHeightSettingsController {
     pub fn AutoSetHeight(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -120,7 +120,8 @@ impl PlayerHeightSettingsController {
     }
 }
 #[cfg(feature = "PlayerHeightSettingsController")]
-impl quest_hook::libil2cpp::ObjectType for PlayerHeightSettingsController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayerHeightSettingsController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,24 +6,24 @@ pub struct IMultiplayerRichPresenceData {
 }
 #[cfg(feature = "IMultiplayerRichPresenceData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IMultiplayerRichPresenceData => ""
-    ."IMultiplayerRichPresenceData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IMultiplayerRichPresenceData =>
+    ""."IMultiplayerRichPresenceData"
 );
 #[cfg(feature = "IMultiplayerRichPresenceData")]
-impl std::ops::Deref for IMultiplayerRichPresenceData {
+impl std::ops::Deref for crate::GlobalNamespace::IMultiplayerRichPresenceData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IMultiplayerRichPresenceData")]
-impl std::ops::DerefMut for IMultiplayerRichPresenceData {
+impl std::ops::DerefMut for crate::GlobalNamespace::IMultiplayerRichPresenceData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IMultiplayerRichPresenceData")]
-impl IMultiplayerRichPresenceData {
+impl crate::GlobalNamespace::IMultiplayerRichPresenceData {
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
@@ -95,7 +95,8 @@ impl IMultiplayerRichPresenceData {
     }
 }
 #[cfg(feature = "IMultiplayerRichPresenceData")]
-impl quest_hook::libil2cpp::ObjectType for IMultiplayerRichPresenceData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IMultiplayerRichPresenceData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

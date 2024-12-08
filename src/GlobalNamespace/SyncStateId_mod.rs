@@ -6,10 +6,10 @@ pub struct SyncStateId {
 }
 #[cfg(feature = "SyncStateId")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for SyncStateId => ""."SyncStateId"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SyncStateId => ""."SyncStateId"
 );
 #[cfg(feature = "SyncStateId")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for SyncStateId {
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::SyncStateId {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -19,9 +19,12 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for SyncStateId {
     }
 }
 #[cfg(feature = "SyncStateId")]
-impl SyncStateId {
+impl crate::GlobalNamespace::SyncStateId {
     pub const kMaxValue: u8 = 128u8;
-    pub fn Before(&mut self, other: SyncStateId) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn Before(
+        &mut self,
+        other: crate::GlobalNamespace::SyncStateId,
+    ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Before",
@@ -32,8 +35,8 @@ impl SyncStateId {
     pub fn CreateFromSerializedData(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-    ) -> quest_hook::libil2cpp::Result<SyncStateId> {
-        let __cordl_ret: SyncStateId = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SyncStateId> {
+        let __cordl_ret: crate::GlobalNamespace::SyncStateId = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "CreateFromSerializedData",
             (reader),
@@ -53,7 +56,7 @@ impl SyncStateId {
     }
     pub fn Equals_SyncStateId0(
         &mut self,
-        other: SyncStateId,
+        other: crate::GlobalNamespace::SyncStateId,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -70,8 +73,10 @@ impl SyncStateId {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Increment(&mut self) -> quest_hook::libil2cpp::Result<SyncStateId> {
-        let __cordl_ret: SyncStateId = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    pub fn Increment(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SyncStateId> {
+        let __cordl_ret: crate::GlobalNamespace::SyncStateId = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Increment",
             (),

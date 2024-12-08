@@ -489,22 +489,22 @@ impl std::ops::DerefMut for crate::System::TimeZoneInfo {
 }
 #[cfg(feature = "System+TimeZoneInfo")]
 impl crate::System::TimeZoneInfo {
-    #[cfg(feature = "System+TimeZoneInfo+__c")]
-    pub type __c = crate::System::TimeZoneInfo___c;
-    #[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
-    pub type TransitionTime = crate::System::TimeZoneInfo_TransitionTime;
-    #[cfg(feature = "System+TimeZoneInfo+CachedData")]
-    pub type CachedData = crate::System::TimeZoneInfo_CachedData;
-    #[cfg(feature = "System+TimeZoneInfo+TZifHead")]
-    pub type TZifHead = crate::System::TimeZoneInfo_TZifHead;
-    #[cfg(feature = "System+TimeZoneInfo+TZVersion")]
-    pub type TZVersion = crate::System::TimeZoneInfo_TZVersion;
-    #[cfg(feature = "System+TimeZoneInfo+__c__DisplayClass16_0")]
-    pub type __c__DisplayClass16_0 = crate::System::TimeZoneInfo___c__DisplayClass16_0;
     #[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
     pub type AdjustmentRule = crate::System::TimeZoneInfo_AdjustmentRule;
+    #[cfg(feature = "System+TimeZoneInfo+CachedData")]
+    pub type CachedData = crate::System::TimeZoneInfo_CachedData;
+    #[cfg(feature = "System+TimeZoneInfo+TZVersion")]
+    pub type TZVersion = crate::System::TimeZoneInfo_TZVersion;
+    #[cfg(feature = "System+TimeZoneInfo+TZifHead")]
+    pub type TZifHead = crate::System::TimeZoneInfo_TZifHead;
     #[cfg(feature = "System+TimeZoneInfo+TZifType")]
     pub type TZifType = crate::System::TimeZoneInfo_TZifType;
+    #[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
+    pub type TransitionTime = crate::System::TimeZoneInfo_TransitionTime;
+    #[cfg(feature = "System+TimeZoneInfo+__c")]
+    pub type __c = crate::System::TimeZoneInfo___c;
+    #[cfg(feature = "System+TimeZoneInfo+__c__DisplayClass16_0")]
+    pub type __c__DisplayClass16_0 = crate::System::TimeZoneInfo___c__DisplayClass16_0;
     pub fn CompareAdjustmentRuleToDateTime(
         &mut self,
         rule: *mut crate::System::TimeZoneInfo_AdjustmentRule,

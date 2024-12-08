@@ -6,27 +6,27 @@ pub struct IBeatEffectDidFinishEvent {
 }
 #[cfg(feature = "IBeatEffectDidFinishEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IBeatEffectDidFinishEvent => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IBeatEffectDidFinishEvent => ""
     ."IBeatEffectDidFinishEvent"
 );
 #[cfg(feature = "IBeatEffectDidFinishEvent")]
-impl std::ops::Deref for IBeatEffectDidFinishEvent {
+impl std::ops::Deref for crate::GlobalNamespace::IBeatEffectDidFinishEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IBeatEffectDidFinishEvent")]
-impl std::ops::DerefMut for IBeatEffectDidFinishEvent {
+impl std::ops::DerefMut for crate::GlobalNamespace::IBeatEffectDidFinishEvent {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IBeatEffectDidFinishEvent")]
-impl IBeatEffectDidFinishEvent {
+impl crate::GlobalNamespace::IBeatEffectDidFinishEvent {
     pub fn HandleBeatEffectDidFinish(
         &mut self,
-        beatEffect: *mut BeatEffect,
+        beatEffect: *mut crate::GlobalNamespace::BeatEffect,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -42,7 +42,8 @@ impl IBeatEffectDidFinishEvent {
     }
 }
 #[cfg(feature = "IBeatEffectDidFinishEvent")]
-impl quest_hook::libil2cpp::ObjectType for IBeatEffectDidFinishEvent {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IBeatEffectDidFinishEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,64 +3,65 @@
 #[derive(Debug)]
 pub struct MainFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
-    pub _defaultLightsPreset: *mut MenuLightsPresetSO,
-    pub _soloFreePlayFlowCoordinator: *mut SoloFreePlayFlowCoordinator,
-    pub _partyFreePlayFlowCoordinator: *mut PartyFreePlayFlowCoordinator,
-    pub _campaignFlowCoordinator: *mut CampaignFlowCoordinator,
-    pub _settingsFlowCoordinator: *mut SettingsFlowCoordinator,
-    pub _multiplayerModeSelectionFlowCoordinator: *mut MultiplayerModeSelectionFlowCoordinator,
-    pub _helpFlowCoordinator: *mut HelpFlowCoordinator,
-    pub _editAvatarFlowCoordinatorHelper: *mut EditAvatarFlowCoordinatorHelper,
-    pub _simpleDialogPromptViewController: *mut SimpleDialogPromptViewController,
-    pub _mainMenuViewController: *mut MainMenuViewController,
-    pub _playerOptionsViewController: *mut PlayerOptionsViewController,
-    pub _optionsViewController: *mut OptionsViewController,
-    pub _playerDataModel: *mut PlayerDataModel,
-    pub _menuLightsManager: *mut MenuLightsManager,
-    pub _fadeInOut: *mut FadeInOutController,
-    pub _beatmapLevelsModel: *mut BeatmapLevelsModel,
-    pub _menuTransitionsHelper: *mut MenuTransitionsHelper,
-    pub _analyticsModel: *mut IAnalyticsModel,
+    pub _defaultLightsPreset: *mut crate::GlobalNamespace::MenuLightsPresetSO,
+    pub _soloFreePlayFlowCoordinator: *mut crate::GlobalNamespace::SoloFreePlayFlowCoordinator,
+    pub _partyFreePlayFlowCoordinator: *mut crate::GlobalNamespace::PartyFreePlayFlowCoordinator,
+    pub _campaignFlowCoordinator: *mut crate::GlobalNamespace::CampaignFlowCoordinator,
+    pub _settingsFlowCoordinator: *mut crate::GlobalNamespace::SettingsFlowCoordinator,
+    pub _multiplayerModeSelectionFlowCoordinator: *mut crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
+    pub _helpFlowCoordinator: *mut crate::GlobalNamespace::HelpFlowCoordinator,
+    pub _editAvatarFlowCoordinatorHelper: *mut crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper,
+    pub _simpleDialogPromptViewController: *mut crate::GlobalNamespace::SimpleDialogPromptViewController,
+    pub _mainMenuViewController: *mut crate::GlobalNamespace::MainMenuViewController,
+    pub _playerOptionsViewController: *mut crate::GlobalNamespace::PlayerOptionsViewController,
+    pub _optionsViewController: *mut crate::GlobalNamespace::OptionsViewController,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
+    pub _menuLightsManager: *mut crate::GlobalNamespace::MenuLightsManager,
+    pub _fadeInOut: *mut crate::GlobalNamespace::FadeInOutController,
+    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
+    pub _menuTransitionsHelper: *mut crate::GlobalNamespace::MenuTransitionsHelper,
+    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
     pub _avatarSystemCollection: *mut crate::BeatSaber::AvatarCore::AvatarSystemCollection,
-    pub _menuDestinationRequest: *mut MenuDestination,
+    pub _menuDestinationRequest: *mut crate::GlobalNamespace::MenuDestination,
     pub _afterDialogPromptFlowCoordinator: *mut crate::HMUI::FlowCoordinator,
     pub _goToMultiplayerAfterAvatarCreation: bool,
 }
 #[cfg(feature = "MainFlowCoordinator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MainFlowCoordinator => ""."MainFlowCoordinator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MainFlowCoordinator => ""
+    ."MainFlowCoordinator"
 );
 #[cfg(feature = "MainFlowCoordinator")]
-impl std::ops::Deref for MainFlowCoordinator {
+impl std::ops::Deref for crate::GlobalNamespace::MainFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainFlowCoordinator")]
-impl std::ops::DerefMut for MainFlowCoordinator {
+impl std::ops::DerefMut for crate::GlobalNamespace::MainFlowCoordinator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MainFlowCoordinator")]
-impl MainFlowCoordinator {
+impl crate::GlobalNamespace::MainFlowCoordinator {
+    #[cfg(
+        feature = "MainFlowCoordinator+_HandleEditAvatarFlowCoordinatorHelperDidFinish_d__34"
+    )]
+    pub type _HandleEditAvatarFlowCoordinatorHelperDidFinish_d__34 = crate::GlobalNamespace::MainFlowCoordinator__HandleEditAvatarFlowCoordinatorHelperDidFinish_d__34;
     #[cfg(
         feature = "MainFlowCoordinator+_HandleMultiplayerDisclaimerDidFinishAction_d__29"
     )]
     pub type _HandleMultiplayerDisclaimerDidFinishAction_d__29 = crate::GlobalNamespace::MainFlowCoordinator__HandleMultiplayerDisclaimerDidFinishAction_d__29;
     #[cfg(
-        feature = "MainFlowCoordinator+_ProcessMenuDestinationRequestAfterFrameCoroutine_d__43"
-    )]
-    pub type _ProcessMenuDestinationRequestAfterFrameCoroutine_d__43 = crate::GlobalNamespace::MainFlowCoordinator__ProcessMenuDestinationRequestAfterFrameCoroutine_d__43;
-    #[cfg(
         feature = "MainFlowCoordinator+_PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_d__42"
     )]
     pub type _PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_d__42 = crate::GlobalNamespace::MainFlowCoordinator__PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_d__42;
     #[cfg(
-        feature = "MainFlowCoordinator+_HandleEditAvatarFlowCoordinatorHelperDidFinish_d__34"
+        feature = "MainFlowCoordinator+_ProcessMenuDestinationRequestAfterFrameCoroutine_d__43"
     )]
-    pub type _HandleEditAvatarFlowCoordinatorHelperDidFinish_d__34 = crate::GlobalNamespace::MainFlowCoordinator__HandleEditAvatarFlowCoordinatorHelperDidFinish_d__34;
+    pub type _ProcessMenuDestinationRequestAfterFrameCoroutine_d__43 = crate::GlobalNamespace::MainFlowCoordinator__ProcessMenuDestinationRequestAfterFrameCoroutine_d__43;
     #[cfg(feature = "MainFlowCoordinator+_ProcessMenuDestinationRequest_d__41")]
     pub type _ProcessMenuDestinationRequest_d__41 = crate::GlobalNamespace::MainFlowCoordinator__ProcessMenuDestinationRequest_d__41;
     pub fn BackButtonWasPressed(
@@ -104,7 +105,7 @@ impl MainFlowCoordinator {
     }
     pub fn HandleCampaignFlowCoordinatorDidFinish(
         &mut self,
-        flowCoordinator: *mut CampaignFlowCoordinator,
+        flowCoordinator: *mut crate::GlobalNamespace::CampaignFlowCoordinator,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -130,7 +131,7 @@ impl MainFlowCoordinator {
     }
     pub fn HandleHelpFlowCoordinatorDidFinish(
         &mut self,
-        helpFlowCoordinator: *mut HelpFlowCoordinator,
+        helpFlowCoordinator: *mut crate::GlobalNamespace::HelpFlowCoordinator,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -152,7 +153,7 @@ impl MainFlowCoordinator {
     }
     pub fn HandleMainMenuViewControllerDidFinish(
         &mut self,
-        viewController: *mut MainMenuViewController,
+        viewController: *mut crate::GlobalNamespace::MainMenuViewController,
         subMenuType: crate::GlobalNamespace::MainMenuViewController_MenuButton,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -189,7 +190,7 @@ impl MainFlowCoordinator {
     }
     pub fn HandleMultiplayerModeSelectionFlowCoordinatorDidFinish(
         &mut self,
-        multiplayerModeSelectionFlowCoordinator: *mut MultiplayerModeSelectionFlowCoordinator,
+        multiplayerModeSelectionFlowCoordinator: *mut crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -214,7 +215,7 @@ impl MainFlowCoordinator {
     }
     pub fn HandlePartyFreePlayFlowCoordinatorDidFinish(
         &mut self,
-        flowCoordinator: *mut LevelSelectionFlowCoordinator,
+        flowCoordinator: *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -236,7 +237,7 @@ impl MainFlowCoordinator {
     }
     pub fn HandleSettingsFlowCoordinatorDidFinish(
         &mut self,
-        settingsFlowCoordinator: *mut SettingsFlowCoordinator,
+        settingsFlowCoordinator: *mut crate::GlobalNamespace::SettingsFlowCoordinator,
         finishAction: crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -251,7 +252,7 @@ impl MainFlowCoordinator {
     }
     pub fn HandleSoloFreePlayFlowCoordinatorDidFinish(
         &mut self,
-        flowCoordinator: *mut LevelSelectionFlowCoordinator,
+        flowCoordinator: *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -304,7 +305,7 @@ impl MainFlowCoordinator {
     }
     pub fn ProcessMenuDestinationRequest(
         &mut self,
-        destination: *mut MenuDestination,
+        destination: *mut crate::GlobalNamespace::MenuDestination,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -315,7 +316,7 @@ impl MainFlowCoordinator {
     }
     pub fn ProcessMenuDestinationRequestAfterFrameCoroutine(
         &mut self,
-        destination: *mut MenuDestination,
+        destination: *mut crate::GlobalNamespace::MenuDestination,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -397,7 +398,7 @@ impl MainFlowCoordinator {
     }
 }
 #[cfg(feature = "MainFlowCoordinator")]
-impl quest_hook::libil2cpp::ObjectType for MainFlowCoordinator {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MainFlowCoordinator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

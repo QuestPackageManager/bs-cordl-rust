@@ -2,30 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FxBeatmapEventData {
-    __cordl_parent: BeatmapEventData,
+    __cordl_parent: crate::GlobalNamespace::BeatmapEventData,
     pub groupId: i32,
     pub elementId: i32,
     pub usePreviousEventValue: bool,
 }
 #[cfg(feature = "FxBeatmapEventData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FxBeatmapEventData => ""."FxBeatmapEventData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FxBeatmapEventData => ""
+    ."FxBeatmapEventData"
 );
 #[cfg(feature = "FxBeatmapEventData")]
-impl std::ops::Deref for FxBeatmapEventData {
-    type Target = BeatmapEventData;
+impl std::ops::Deref for crate::GlobalNamespace::FxBeatmapEventData {
+    type Target = crate::GlobalNamespace::BeatmapEventData;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FxBeatmapEventData")]
-impl std::ops::DerefMut for FxBeatmapEventData {
+impl std::ops::DerefMut for crate::GlobalNamespace::FxBeatmapEventData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FxBeatmapEventData")]
-impl FxBeatmapEventData {
+impl crate::GlobalNamespace::FxBeatmapEventData {
     pub fn New(
         _cordl_time: f32,
         groupId: i32,
@@ -57,7 +58,7 @@ impl FxBeatmapEventData {
     }
 }
 #[cfg(feature = "FxBeatmapEventData")]
-impl quest_hook::libil2cpp::ObjectType for FxBeatmapEventData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FxBeatmapEventData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

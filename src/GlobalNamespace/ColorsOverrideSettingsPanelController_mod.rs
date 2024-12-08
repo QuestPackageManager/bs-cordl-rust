@@ -5,38 +5,40 @@ pub struct ColorsOverrideSettingsPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _overrideColorsToggle: *mut crate::UnityEngine::UI::Toggle,
     pub _detailsPanelGO: *mut crate::UnityEngine::GameObject,
-    pub _colorSchemeDropDown: *mut ColorSchemeDropdown,
-    pub _editColorSchemeController: *mut EditColorSchemeController,
+    pub _colorSchemeDropDown: *mut crate::GlobalNamespace::ColorSchemeDropdown,
+    pub _editColorSchemeController: *mut crate::GlobalNamespace::EditColorSchemeController,
     pub _editColorSchemeModalView: *mut crate::HMUI::ModalView,
     pub _editColorSchemeButton: *mut crate::UnityEngine::UI::Button,
     pub _presentPanelAnimation: *mut crate::HMUI::PanelAnimationSO,
     pub _dismissPanelAnimation: *mut crate::HMUI::PanelAnimationSO,
-    pub _analyticsModel: *mut IAnalyticsModel,
-    pub _colorSchemesSettings: *mut ColorSchemesSettings,
+    pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
+    pub _colorSchemesSettings: *mut crate::GlobalNamespace::ColorSchemesSettings,
     pub _initialized: bool,
     pub _isDirty: bool,
     pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
 }
 #[cfg(feature = "ColorsOverrideSettingsPanelController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ColorsOverrideSettingsPanelController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ColorsOverrideSettingsPanelController => ""
     ."ColorsOverrideSettingsPanelController"
 );
 #[cfg(feature = "ColorsOverrideSettingsPanelController")]
-impl std::ops::Deref for ColorsOverrideSettingsPanelController {
+impl std::ops::Deref for crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorsOverrideSettingsPanelController")]
-impl std::ops::DerefMut for ColorsOverrideSettingsPanelController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorsOverrideSettingsPanelController")]
-impl ColorsOverrideSettingsPanelController {
+impl crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
     pub fn HandleDropDownDidSelectCellWithIdx(
         &mut self,
         dropDownWithTableView: *mut crate::HMUI::DropdownWithTableView,
@@ -61,7 +63,7 @@ impl ColorsOverrideSettingsPanelController {
     }
     pub fn HandleEditColorSchemeControllerDidChangeColorScheme(
         &mut self,
-        colorScheme: *mut ColorScheme,
+        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -143,7 +145,7 @@ impl ColorsOverrideSettingsPanelController {
     }
     pub fn SetData(
         &mut self,
-        colorSchemesSettings: *mut ColorSchemesSettings,
+        colorSchemesSettings: *mut crate::GlobalNamespace::ColorSchemesSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -174,7 +176,8 @@ impl ColorsOverrideSettingsPanelController {
     }
 }
 #[cfg(feature = "ColorsOverrideSettingsPanelController")]
-impl quest_hook::libil2cpp::ObjectType for ColorsOverrideSettingsPanelController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ColorsOverrideSettingsPanelController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

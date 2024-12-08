@@ -153,10 +153,10 @@ impl std::ops::DerefMut for crate::Mono::Security::Cryptography::PKCS8 {
 }
 #[cfg(feature = "Mono+Security+Cryptography+PKCS8")]
 impl crate::Mono::Security::Cryptography::PKCS8 {
-    #[cfg(feature = "Mono+Security+Cryptography+PKCS8+PrivateKeyInfo")]
-    pub type PrivateKeyInfo = crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo;
     #[cfg(feature = "Mono+Security+Cryptography+PKCS8+EncryptedPrivateKeyInfo")]
     pub type EncryptedPrivateKeyInfo = crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo;
+    #[cfg(feature = "Mono+Security+Cryptography+PKCS8+PrivateKeyInfo")]
+    pub type PrivateKeyInfo = crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo;
 }
 #[cfg(feature = "Mono+Security+Cryptography+PKCS8")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::Cryptography::PKCS8 {

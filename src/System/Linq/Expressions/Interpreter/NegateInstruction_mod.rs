@@ -27,20 +27,20 @@ for crate::System::Linq::Expressions::Interpreter::NegateInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::NegateInstruction {
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateInt32")]
-    pub type NegateInt32 = crate::GlobalNamespace::NegateInstruction_NegateInt32;
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateSingle"
-    )]
-    pub type NegateSingle = crate::GlobalNamespace::NegateInstruction_NegateSingle;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateInt16")]
-    pub type NegateInt16 = crate::GlobalNamespace::NegateInstruction_NegateInt16;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateDouble"
     )]
     pub type NegateDouble = crate::GlobalNamespace::NegateInstruction_NegateDouble;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateInt16")]
+    pub type NegateInt16 = crate::GlobalNamespace::NegateInstruction_NegateInt16;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateInt32")]
+    pub type NegateInt32 = crate::GlobalNamespace::NegateInstruction_NegateInt32;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateInt64")]
     pub type NegateInt64 = crate::GlobalNamespace::NegateInstruction_NegateInt64;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+NegateInstruction+NegateSingle"
+    )]
+    pub type NegateSingle = crate::GlobalNamespace::NegateInstruction_NegateSingle;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

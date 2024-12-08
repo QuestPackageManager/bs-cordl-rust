@@ -6,23 +6,24 @@ pub struct IInvitePlatformHandler {
 }
 #[cfg(feature = "IInvitePlatformHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IInvitePlatformHandler => ""."IInvitePlatformHandler"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IInvitePlatformHandler => ""
+    ."IInvitePlatformHandler"
 );
 #[cfg(feature = "IInvitePlatformHandler")]
-impl std::ops::Deref for IInvitePlatformHandler {
+impl std::ops::Deref for crate::GlobalNamespace::IInvitePlatformHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IInvitePlatformHandler")]
-impl std::ops::DerefMut for IInvitePlatformHandler {
+impl std::ops::DerefMut for crate::GlobalNamespace::IInvitePlatformHandler {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IInvitePlatformHandler")]
-impl IInvitePlatformHandler {
+impl crate::GlobalNamespace::IInvitePlatformHandler {
     pub fn OpenInvitePanel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -47,7 +48,8 @@ impl IInvitePlatformHandler {
     }
 }
 #[cfg(feature = "IInvitePlatformHandler")]
-impl quest_hook::libil2cpp::ObjectType for IInvitePlatformHandler {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IInvitePlatformHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

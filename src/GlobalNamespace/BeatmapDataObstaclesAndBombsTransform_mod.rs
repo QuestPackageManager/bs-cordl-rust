@@ -6,29 +6,32 @@ pub struct BeatmapDataObstaclesAndBombsTransform {
 }
 #[cfg(feature = "BeatmapDataObstaclesAndBombsTransform")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapDataObstaclesAndBombsTransform => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::BeatmapDataObstaclesAndBombsTransform => ""
     ."BeatmapDataObstaclesAndBombsTransform"
 );
 #[cfg(feature = "BeatmapDataObstaclesAndBombsTransform")]
-impl std::ops::Deref for BeatmapDataObstaclesAndBombsTransform {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapDataObstaclesAndBombsTransform {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDataObstaclesAndBombsTransform")]
-impl std::ops::DerefMut for BeatmapDataObstaclesAndBombsTransform {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::BeatmapDataObstaclesAndBombsTransform {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDataObstaclesAndBombsTransform")]
-impl BeatmapDataObstaclesAndBombsTransform {
+impl crate::GlobalNamespace::BeatmapDataObstaclesAndBombsTransform {
     #[cfg(feature = "BeatmapDataObstaclesAndBombsTransform+__c__DisplayClass0_0")]
     pub type __c__DisplayClass0_0 = crate::GlobalNamespace::BeatmapDataObstaclesAndBombsTransform___c__DisplayClass0_0;
 }
 #[cfg(feature = "BeatmapDataObstaclesAndBombsTransform")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapDataObstaclesAndBombsTransform {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BeatmapDataObstaclesAndBombsTransform {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

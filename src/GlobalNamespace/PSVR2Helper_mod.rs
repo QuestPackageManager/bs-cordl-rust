@@ -47,7 +47,7 @@ pub struct PSVR2Helper {
     pub _defaultPose: crate::UnityEngine::Pose,
     pub _controllers: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::UnityEngine::XR::XRNode,
-        *mut UnityXRController,
+        *mut crate::GlobalNamespace::UnityXRController,
     >,
     pub _controllersWithRumble: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::UnityEngine::XR::XRNode,
@@ -72,23 +72,23 @@ pub struct PSVR2Helper {
 }
 #[cfg(feature = "PSVR2Helper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PSVR2Helper => ""."PSVR2Helper"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PSVR2Helper => ""."PSVR2Helper"
 );
 #[cfg(feature = "PSVR2Helper")]
-impl std::ops::Deref for PSVR2Helper {
+impl std::ops::Deref for crate::GlobalNamespace::PSVR2Helper {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PSVR2Helper")]
-impl std::ops::DerefMut for PSVR2Helper {
+impl std::ops::DerefMut for crate::GlobalNamespace::PSVR2Helper {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PSVR2Helper")]
-impl PSVR2Helper {
+impl crate::GlobalNamespace::PSVR2Helper {
     pub const kLeftControllerName: &'static str = "PSVR2ControllerLeft";
     pub const kMaxHMDFrequency: i32 = 25i32;
     pub const kRightControllerName: &'static str = "PSVR2ControllerRight";
@@ -469,11 +469,14 @@ impl PSVR2Helper {
         let __cordl_ret: bool = __cordl_object.invoke("get_isAlwaysWireless", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_vrPlatformSDK(&mut self) -> quest_hook::libil2cpp::Result<VRPlatformSDK> {
+    pub fn get_vrPlatformSDK(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::VRPlatformSDK> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: VRPlatformSDK = __cordl_object.invoke("get_vrPlatformSDK", ())?;
+        let __cordl_ret: crate::GlobalNamespace::VRPlatformSDK = __cordl_object
+            .invoke("get_vrPlatformSDK", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_controllersDidChangeReferenceEvent(
@@ -577,7 +580,7 @@ impl PSVR2Helper {
     }
 }
 #[cfg(feature = "PSVR2Helper")]
-impl quest_hook::libil2cpp::ObjectType for PSVR2Helper {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PSVR2Helper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

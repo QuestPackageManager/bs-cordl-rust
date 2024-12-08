@@ -3,30 +3,32 @@
 #[derive(Debug)]
 pub struct PCAppInit {
     __cordl_parent: crate::BeatSaber::Init::BSAppInit,
-    pub _mainSystemInit: *mut MainSystemInit,
-    pub _settingsApplicator: *mut SettingsApplicatorSO,
-    pub _defaultScenesTransitionsFromInit: *mut DefaultScenesTransitionsFromInit,
-    pub _playerDataModel: *mut crate::Zenject::LazyInject_1<*mut PlayerDataModel>,
+    pub _mainSystemInit: *mut crate::GlobalNamespace::MainSystemInit,
+    pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
+    pub _defaultScenesTransitionsFromInit: *mut crate::GlobalNamespace::DefaultScenesTransitionsFromInit,
+    pub _playerDataModel: *mut crate::Zenject::LazyInject_1<
+        *mut crate::GlobalNamespace::PlayerDataModel,
+    >,
 }
 #[cfg(feature = "PCAppInit")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PCAppInit => ""."PCAppInit"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PCAppInit => ""."PCAppInit"
 );
 #[cfg(feature = "PCAppInit")]
-impl std::ops::Deref for PCAppInit {
+impl std::ops::Deref for crate::GlobalNamespace::PCAppInit {
     type Target = crate::BeatSaber::Init::BSAppInit;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PCAppInit")]
-impl std::ops::DerefMut for PCAppInit {
+impl std::ops::DerefMut for crate::GlobalNamespace::PCAppInit {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PCAppInit")]
-impl PCAppInit {
+impl crate::GlobalNamespace::PCAppInit {
     pub const kMissingOpenXRRuntimeErrorSubtitle: &'static str = "LABEL_MISSING_OPEN_XR_RUNTIME_ERROR";
     pub const kMissingOpenXRRuntimeErrorTitle: &'static str = "TITLE_MISSING_OPEN_XR_RUNTIME_ERROR";
     pub fn AppStartAndMultiSceneEditorSetup(
@@ -88,7 +90,7 @@ impl PCAppInit {
     }
 }
 #[cfg(feature = "PCAppInit")]
-impl quest_hook::libil2cpp::ObjectType for PCAppInit {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PCAppInit {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

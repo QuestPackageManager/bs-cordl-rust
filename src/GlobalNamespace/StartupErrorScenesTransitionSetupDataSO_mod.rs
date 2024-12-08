@@ -2,31 +2,34 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StartupErrorScenesTransitionSetupDataSO {
-    __cordl_parent: SingleFixedSceneScenesTransitionSetupDataSO,
+    __cordl_parent: crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO,
 }
 #[cfg(feature = "StartupErrorScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StartupErrorScenesTransitionSetupDataSO => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::StartupErrorScenesTransitionSetupDataSO => ""
     ."StartupErrorScenesTransitionSetupDataSO"
 );
 #[cfg(feature = "StartupErrorScenesTransitionSetupDataSO")]
-impl std::ops::Deref for StartupErrorScenesTransitionSetupDataSO {
-    type Target = SingleFixedSceneScenesTransitionSetupDataSO;
+impl std::ops::Deref
+for crate::GlobalNamespace::StartupErrorScenesTransitionSetupDataSO {
+    type Target = crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StartupErrorScenesTransitionSetupDataSO")]
-impl std::ops::DerefMut for StartupErrorScenesTransitionSetupDataSO {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::StartupErrorScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StartupErrorScenesTransitionSetupDataSO")]
-impl StartupErrorScenesTransitionSetupDataSO {
+impl crate::GlobalNamespace::StartupErrorScenesTransitionSetupDataSO {
     pub fn Init(
         &mut self,
-        startupErrorSceneSetupData: *mut StartupErrorSceneSetupData,
+        startupErrorSceneSetupData: *mut crate::GlobalNamespace::StartupErrorSceneSetupData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -54,7 +57,8 @@ impl StartupErrorScenesTransitionSetupDataSO {
     }
 }
 #[cfg(feature = "StartupErrorScenesTransitionSetupDataSO")]
-impl quest_hook::libil2cpp::ObjectType for StartupErrorScenesTransitionSetupDataSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StartupErrorScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,24 +6,24 @@ pub struct IUnifiedNetworkPlayerModel {
 }
 #[cfg(feature = "IUnifiedNetworkPlayerModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IUnifiedNetworkPlayerModel => ""
-    ."IUnifiedNetworkPlayerModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IUnifiedNetworkPlayerModel =>
+    ""."IUnifiedNetworkPlayerModel"
 );
 #[cfg(feature = "IUnifiedNetworkPlayerModel")]
-impl std::ops::Deref for IUnifiedNetworkPlayerModel {
+impl std::ops::Deref for crate::GlobalNamespace::IUnifiedNetworkPlayerModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IUnifiedNetworkPlayerModel")]
-impl std::ops::DerefMut for IUnifiedNetworkPlayerModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::IUnifiedNetworkPlayerModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IUnifiedNetworkPlayerModel")]
-impl IUnifiedNetworkPlayerModel {
+impl crate::GlobalNamespace::IUnifiedNetworkPlayerModel {
     pub fn ResetMasterServerReachability(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -47,8 +47,8 @@ impl IUnifiedNetworkPlayerModel {
     }
     pub fn SetServerFilter(
         &mut self,
-        selectionMask: BeatmapLevelSelectionMask,
-        configuration: GameplayServerConfiguration,
+        selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+        configuration: crate::GlobalNamespace::GameplayServerConfiguration,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -86,13 +86,15 @@ impl IUnifiedNetworkPlayerModel {
     pub fn get_publicServers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<*mut INetworkPlayer>,
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::GlobalNamespace::INetworkPlayer,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut INetworkPlayer,
+            *mut crate::GlobalNamespace::INetworkPlayer,
         > = __cordl_object.invoke("get_publicServers", ())?;
         Ok(__cordl_ret)
     }
@@ -119,7 +121,8 @@ impl IUnifiedNetworkPlayerModel {
     }
 }
 #[cfg(feature = "IUnifiedNetworkPlayerModel")]
-impl quest_hook::libil2cpp::ObjectType for IUnifiedNetworkPlayerModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IUnifiedNetworkPlayerModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

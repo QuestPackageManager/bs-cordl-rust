@@ -3,28 +3,29 @@
 #[derive(Debug)]
 pub struct ShaderWarmupSceneStart {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _sceneSetupData: *mut ShaderWarmupSceneSetupData,
-    pub _gameScenesManager: *mut GameScenesManager,
+    pub _sceneSetupData: *mut crate::GlobalNamespace::ShaderWarmupSceneSetupData,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
 }
 #[cfg(feature = "ShaderWarmupSceneStart")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ShaderWarmupSceneStart => ""."ShaderWarmupSceneStart"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ShaderWarmupSceneStart => ""
+    ."ShaderWarmupSceneStart"
 );
 #[cfg(feature = "ShaderWarmupSceneStart")]
-impl std::ops::Deref for ShaderWarmupSceneStart {
+impl std::ops::Deref for crate::GlobalNamespace::ShaderWarmupSceneStart {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ShaderWarmupSceneStart")]
-impl std::ops::DerefMut for ShaderWarmupSceneStart {
+impl std::ops::DerefMut for crate::GlobalNamespace::ShaderWarmupSceneStart {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ShaderWarmupSceneStart")]
-impl ShaderWarmupSceneStart {
+impl crate::GlobalNamespace::ShaderWarmupSceneStart {
     #[cfg(feature = "ShaderWarmupSceneStart+_Start_d__2")]
     pub type _Start_d__2 = crate::GlobalNamespace::ShaderWarmupSceneStart__Start_d__2;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -56,7 +57,8 @@ impl ShaderWarmupSceneStart {
     }
 }
 #[cfg(feature = "ShaderWarmupSceneStart")]
-impl quest_hook::libil2cpp::ObjectType for ShaderWarmupSceneStart {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ShaderWarmupSceneStart {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

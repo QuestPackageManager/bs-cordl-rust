@@ -2,29 +2,30 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorSchemeSO {
-    __cordl_parent: PersistentScriptableObject,
-    pub _colorScheme: *mut ColorScheme,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    pub _colorScheme: *mut crate::GlobalNamespace::ColorScheme,
     pub _order: i32,
 }
 #[cfg(feature = "ColorSchemeSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ColorSchemeSO => ""."ColorSchemeSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ColorSchemeSO => ""
+    ."ColorSchemeSO"
 );
 #[cfg(feature = "ColorSchemeSO")]
-impl std::ops::Deref for ColorSchemeSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::ColorSchemeSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorSchemeSO")]
-impl std::ops::DerefMut for ColorSchemeSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::ColorSchemeSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorSchemeSO")]
-impl ColorSchemeSO {
+impl crate::GlobalNamespace::ColorSchemeSO {
     pub fn LogColorScheme(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -54,11 +55,11 @@ impl ColorSchemeSO {
     }
     pub fn get_colorScheme(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut ColorScheme> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::ColorScheme> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ColorScheme = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::ColorScheme = __cordl_object
             .invoke("get_colorScheme", ())?;
         Ok(__cordl_ret)
     }
@@ -71,7 +72,7 @@ impl ColorSchemeSO {
     }
 }
 #[cfg(feature = "ColorSchemeSO")]
-impl quest_hook::libil2cpp::ObjectType for ColorSchemeSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorSchemeSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

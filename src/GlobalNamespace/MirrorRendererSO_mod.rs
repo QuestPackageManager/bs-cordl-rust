@@ -61,7 +61,7 @@ impl crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirrorRendererSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _reflectLayers: crate::UnityEngine::LayerMask,
     pub _stereoTextureWidth: i32,
     pub _stereoTextureHeight: i32,
@@ -70,8 +70,8 @@ pub struct MirrorRendererSO {
     pub _maxAntiAliasing: i32,
     pub _disableDepthTexture: bool,
     pub _enableBloomPrePass: bool,
-    pub _bloomPrePassRenderer: *mut BloomPrePassRendererSO,
-    pub _bloomPrePassEffect: *mut BloomPrePassEffectSO,
+    pub _bloomPrePassRenderer: *mut crate::GlobalNamespace::BloomPrePassRendererSO,
+    pub _bloomPrePassEffect: *mut crate::GlobalNamespace::BloomPrePassEffectSO,
     pub _clearDepthShader: *mut crate::UnityEngine::Shader,
     pub _bloomPrePassRenderTexture: *mut crate::UnityEngine::RenderTexture,
     pub _mirrorCamera: *mut crate::UnityEngine::Camera,
@@ -86,23 +86,24 @@ pub struct MirrorRendererSO {
 }
 #[cfg(feature = "MirrorRendererSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MirrorRendererSO => ""."MirrorRendererSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MirrorRendererSO => ""
+    ."MirrorRendererSO"
 );
 #[cfg(feature = "MirrorRendererSO")]
-impl std::ops::Deref for MirrorRendererSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::MirrorRendererSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MirrorRendererSO")]
-impl std::ops::DerefMut for MirrorRendererSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::MirrorRendererSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MirrorRendererSO")]
-impl MirrorRendererSO {
+impl crate::GlobalNamespace::MirrorRendererSO {
     pub const kWaterLayer: i32 = 4i32;
     #[cfg(feature = "MirrorRendererSO+CameraTransformData")]
     pub type CameraTransformData = crate::GlobalNamespace::MirrorRendererSO_CameraTransformData;
@@ -253,7 +254,7 @@ impl MirrorRendererSO {
     }
 }
 #[cfg(feature = "MirrorRendererSO")]
-impl quest_hook::libil2cpp::ObjectType for MirrorRendererSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MirrorRendererSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

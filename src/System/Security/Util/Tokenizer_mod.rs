@@ -267,14 +267,14 @@ impl std::ops::DerefMut for crate::System::Security::Util::Tokenizer {
 }
 #[cfg(feature = "System+Security+Util+Tokenizer")]
 impl crate::System::Security::Util::Tokenizer {
-    #[cfg(feature = "System+Security+Util+Tokenizer+TokenSource")]
-    pub type TokenSource = crate::System::Security::Util::Tokenizer_TokenSource;
     #[cfg(feature = "System+Security+Util+Tokenizer+ITokenReader")]
     type ITokenReader = crate::System::Security::Util::Tokenizer_ITokenReader;
-    #[cfg(feature = "System+Security+Util+Tokenizer+StringMaker")]
-    pub type StringMaker = crate::System::Security::Util::Tokenizer_StringMaker;
     #[cfg(feature = "System+Security+Util+Tokenizer+StreamTokenReader")]
     pub type StreamTokenReader = crate::System::Security::Util::Tokenizer_StreamTokenReader;
+    #[cfg(feature = "System+Security+Util+Tokenizer+StringMaker")]
+    pub type StringMaker = crate::System::Security::Util::Tokenizer_StringMaker;
+    #[cfg(feature = "System+Security+Util+Tokenizer+TokenSource")]
+    pub type TokenSource = crate::System::Security::Util::Tokenizer_TokenSource;
     pub fn BasicInitialization(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

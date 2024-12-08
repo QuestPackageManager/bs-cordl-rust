@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct GetMultiplayerInstanceResponse {
-    pub errorCode: MultiplayerPlacementErrorCode,
+    pub errorCode: crate::GlobalNamespace::MultiplayerPlacementErrorCode,
     pub playerSessionInfo: *mut crate::BGNet::Core::GameLift::PlayerSessionInfo,
     pub pollIntervalMs: i32,
     pub ticketId: *mut crate::System::String,
@@ -31,7 +31,7 @@ for crate::BGNet::Core::GameLift::GetMultiplayerInstanceResponse {
 impl crate::BGNet::Core::GameLift::GetMultiplayerInstanceResponse {
     pub fn _ctor(
         &mut self,
-        errorCode: MultiplayerPlacementErrorCode,
+        errorCode: crate::GlobalNamespace::MultiplayerPlacementErrorCode,
         playerSessionInfo: *mut crate::BGNet::Core::GameLift::PlayerSessionInfo,
         pollIntervalMs: i32,
         ticketId: *mut crate::System::String,

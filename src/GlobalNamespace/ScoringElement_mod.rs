@@ -77,37 +77,38 @@ for crate::GlobalNamespace::ScoringElement_Pool_1<T> {
 #[derive(Debug)]
 pub struct ScoringElement {
     __cordl_parent: crate::System::Object,
-    pub _noteData_k__BackingField: *mut NoteData,
+    pub _noteData_k__BackingField: *mut crate::GlobalNamespace::NoteData,
     pub _multiplier_k__BackingField: i32,
     pub _maxMultiplier_k__BackingField: i32,
     pub _isFinished_k__BackingField: bool,
 }
 #[cfg(feature = "ScoringElement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ScoringElement => ""."ScoringElement"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ScoringElement => ""
+    ."ScoringElement"
 );
 #[cfg(feature = "ScoringElement")]
-impl std::ops::Deref for ScoringElement {
+impl std::ops::Deref for crate::GlobalNamespace::ScoringElement {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScoringElement")]
-impl std::ops::DerefMut for ScoringElement {
+impl std::ops::DerefMut for crate::GlobalNamespace::ScoringElement {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScoringElement")]
-impl ScoringElement {
+impl crate::GlobalNamespace::ScoringElement {
     #[cfg(feature = "ScoringElement+Pool_1")]
     pub type Pool_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::ScoringElement_Pool_1<
         T,
     >;
     pub fn CompareTo(
         &mut self,
-        other: *mut ScoringElement,
+        other: *mut crate::GlobalNamespace::ScoringElement,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -208,11 +209,14 @@ impl ScoringElement {
             .invoke("get_multiplierEventType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_noteData(&mut self) -> quest_hook::libil2cpp::Result<*mut NoteData> {
+    pub fn get_noteData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::NoteData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut NoteData = __cordl_object.invoke("get_noteData", ())?;
+        let __cordl_ret: *mut crate::GlobalNamespace::NoteData = __cordl_object
+            .invoke("get_noteData", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -269,7 +273,7 @@ impl ScoringElement {
     }
     pub fn set_noteData(
         &mut self,
-        value: *mut NoteData,
+        value: *mut crate::GlobalNamespace::NoteData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -280,7 +284,7 @@ impl ScoringElement {
     }
 }
 #[cfg(feature = "ScoringElement")]
-impl quest_hook::libil2cpp::ObjectType for ScoringElement {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoringElement {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -16,9 +16,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 pub struct ImageView {
     __cordl_parent: crate::UnityEngine::UI::Image,
     pub _useScriptableObjectColors: bool,
-    pub _colorSo: *mut ColorSO,
-    pub _color0So: *mut ColorSO,
-    pub _color1So: *mut ColorSO,
+    pub _colorSo: *mut crate::GlobalNamespace::ColorSO,
+    pub _color0So: *mut crate::GlobalNamespace::ColorSO,
+    pub _color1So: *mut crate::GlobalNamespace::ColorSO,
     pub _skew: f32,
     pub _gradient: bool,
     pub _color0: crate::UnityEngine::Color,

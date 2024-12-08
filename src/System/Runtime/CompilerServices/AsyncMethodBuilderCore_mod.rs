@@ -25,9 +25,9 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore")]
 impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
     #[cfg(
-        feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+__c__DisplayClass5_0"
+        feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+ContinuationWrapper"
     )]
-    pub type __c__DisplayClass5_0 = crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore___c__DisplayClass5_0;
+    pub type ContinuationWrapper = crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_ContinuationWrapper;
     #[cfg(
         feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+MoveNextRunner"
     )]
@@ -35,9 +35,9 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
     #[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+__c")]
     pub type __c = crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore___c;
     #[cfg(
-        feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+ContinuationWrapper"
+        feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+__c__DisplayClass5_0"
     )]
-    pub type ContinuationWrapper = crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_ContinuationWrapper;
+    pub type __c__DisplayClass5_0 = crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore___c__DisplayClass5_0;
     pub fn GetCompletionAction(
         &mut self,
         taskForTracing: *mut crate::System::Threading::Tasks::Task,

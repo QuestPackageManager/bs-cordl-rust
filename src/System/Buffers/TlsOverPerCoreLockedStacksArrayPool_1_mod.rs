@@ -302,18 +302,18 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1<T> {
-    #[cfg(
-        feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+PerCoreLockedStacks"
-    )]
-    pub type PerCoreLockedStacks = crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
+    #[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+LockedStack")]
+    pub type LockedStack = crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<
         T,
     >;
     #[cfg(
         feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+MemoryPressure"
     )]
     pub type MemoryPressure = crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure;
-    #[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+LockedStack")]
-    pub type LockedStack = crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<
+    #[cfg(
+        feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+PerCoreLockedStacks"
+    )]
+    pub type PerCoreLockedStacks = crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
         T,
     >;
     pub fn CreatePerCoreLockedStacks(

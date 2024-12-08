@@ -3,40 +3,40 @@
 #[derive(Debug)]
 pub struct LightRotationEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _event: BasicBeatmapEventType,
+    pub _event: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _rotationVector: crate::UnityEngine::Vector3,
     pub _rotationSpeedMultiplier: f32,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
-    pub _audioTimeSource: *mut IAudioTimeSource,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
     pub _transform: *mut crate::UnityEngine::Transform,
     pub _startRotation: crate::UnityEngine::Quaternion,
     pub _rotationSpeed: f32,
-    pub _beatmapDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
 }
 #[cfg(feature = "LightRotationEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightRotationEventEffect => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightRotationEventEffect => ""
     ."LightRotationEventEffect"
 );
 #[cfg(feature = "LightRotationEventEffect")]
-impl std::ops::Deref for LightRotationEventEffect {
+impl std::ops::Deref for crate::GlobalNamespace::LightRotationEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightRotationEventEffect")]
-impl std::ops::DerefMut for LightRotationEventEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightRotationEventEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightRotationEventEffect")]
-impl LightRotationEventEffect {
+impl crate::GlobalNamespace::LightRotationEventEffect {
     pub const kSpeedMultiplier: f32 = 20f32;
     pub fn HandleBeatmapEvent(
         &mut self,
-        basicBeatmapEventData: *mut BasicBeatmapEventData,
+        basicBeatmapEventData: *mut crate::GlobalNamespace::BasicBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -94,7 +94,8 @@ impl LightRotationEventEffect {
     }
 }
 #[cfg(feature = "LightRotationEventEffect")]
-impl quest_hook::libil2cpp::ObjectType for LightRotationEventEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LightRotationEventEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

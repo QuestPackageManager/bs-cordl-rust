@@ -14,31 +14,31 @@ pub struct PlayerStatisticsViewController {
     pub _totalScoreText: *mut crate::TMPro::TextMeshProUGUI,
     pub _fullComboCountText: *mut crate::TMPro::TextMeshProUGUI,
     pub _handDistanceTravelledText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _playerDataModel: *mut PlayerDataModel,
+    pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
     pub _statsScopeDatas: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData,
     >,
 }
 #[cfg(feature = "PlayerStatisticsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerStatisticsViewController => ""
-    ."PlayerStatisticsViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerStatisticsViewController
+    => ""."PlayerStatisticsViewController"
 );
 #[cfg(feature = "PlayerStatisticsViewController")]
-impl std::ops::Deref for PlayerStatisticsViewController {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerStatisticsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerStatisticsViewController")]
-impl std::ops::DerefMut for PlayerStatisticsViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerStatisticsViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerStatisticsViewController")]
-impl PlayerStatisticsViewController {
+impl crate::GlobalNamespace::PlayerStatisticsViewController {
     #[cfg(feature = "PlayerStatisticsViewController+StatsScopeData")]
     pub type StatsScopeData = crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData;
     pub fn DidActivate(
@@ -174,7 +174,8 @@ impl PlayerStatisticsViewController {
     }
 }
 #[cfg(feature = "PlayerStatisticsViewController")]
-impl quest_hook::libil2cpp::ObjectType for PlayerStatisticsViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayerStatisticsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

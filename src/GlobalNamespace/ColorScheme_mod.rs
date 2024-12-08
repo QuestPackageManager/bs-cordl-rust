@@ -21,25 +21,25 @@ pub struct ColorScheme {
 }
 #[cfg(feature = "ColorScheme")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ColorScheme => ""."ColorScheme"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ColorScheme => ""."ColorScheme"
 );
 #[cfg(feature = "ColorScheme")]
-impl std::ops::Deref for ColorScheme {
+impl std::ops::Deref for crate::GlobalNamespace::ColorScheme {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorScheme")]
-impl std::ops::DerefMut for ColorScheme {
+impl std::ops::DerefMut for crate::GlobalNamespace::ColorScheme {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorScheme")]
-impl ColorScheme {
+impl crate::GlobalNamespace::ColorScheme {
     pub fn New_ColorSchemeSO3(
-        colorScheme: *mut ColorSchemeSO,
+        colorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -48,8 +48,8 @@ impl ColorScheme {
         Ok(__cordl_object)
     }
     pub fn New_ColorScheme_ColorSchemeSO2(
-        colorScheme: *mut ColorScheme,
-        environmentColorScheme: *mut ColorSchemeSO,
+        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
+        environmentColorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -58,7 +58,7 @@ impl ColorScheme {
         Ok(__cordl_object)
     }
     pub fn New_ColorScheme_Color_Color4(
-        colorScheme: *mut ColorScheme,
+        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
         environmentColorW: crate::UnityEngine::Color,
         environmentColorWBoost: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -72,7 +72,7 @@ impl ColorScheme {
         Ok(__cordl_object)
     }
     pub fn New_ColorScheme_Color_Color_Color_Color_Color__cordl_bool_Color_Color_Color_Color1(
-        colorScheme: *mut ColorScheme,
+        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
         saberAColor: crate::UnityEngine::Color,
         saberBColor: crate::UnityEngine::Color,
         environmentColor0: crate::UnityEngine::Color,
@@ -149,7 +149,7 @@ impl ColorScheme {
     }
     pub fn _ctor_ColorSchemeSO3(
         &mut self,
-        colorScheme: *mut ColorSchemeSO,
+        colorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -160,8 +160,8 @@ impl ColorScheme {
     }
     pub fn _ctor_ColorScheme_ColorSchemeSO2(
         &mut self,
-        colorScheme: *mut ColorScheme,
-        environmentColorScheme: *mut ColorSchemeSO,
+        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
+        environmentColorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -172,7 +172,7 @@ impl ColorScheme {
     }
     pub fn _ctor_ColorScheme_Color_Color4(
         &mut self,
-        colorScheme: *mut ColorScheme,
+        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
         environmentColorW: crate::UnityEngine::Color,
         environmentColorWBoost: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -185,7 +185,7 @@ impl ColorScheme {
     }
     pub fn _ctor_ColorScheme_Color_Color_Color_Color_Color__cordl_bool_Color_Color_Color_Color1(
         &mut self,
-        colorScheme: *mut ColorScheme,
+        colorScheme: *mut crate::GlobalNamespace::ColorScheme,
         saberAColor: crate::UnityEngine::Color,
         saberBColor: crate::UnityEngine::Color,
         environmentColor0: crate::UnityEngine::Color,
@@ -409,7 +409,7 @@ impl ColorScheme {
     }
 }
 #[cfg(feature = "ColorScheme")]
-impl quest_hook::libil2cpp::ObjectType for ColorScheme {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorScheme {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

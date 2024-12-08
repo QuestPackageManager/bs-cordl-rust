@@ -3,16 +3,16 @@
 #[derive(Debug)]
 pub struct GameScenesManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _emptyTransitionSceneInfo: *mut SceneInfo,
+    pub _emptyTransitionSceneInfo: *mut crate::GlobalNamespace::SceneInfo,
     pub _zenjectSceneLoader: *mut crate::Zenject::ZenjectSceneLoader,
     pub transitionDidStartEvent: *mut crate::System::Action_1<f32>,
     pub beforeDismissingScenesEvent: *mut crate::System::Action,
     pub transitionDidFinishEvent: *mut crate::System::Action_2<
-        *mut ScenesTransitionSetupDataSO,
+        *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
         *mut crate::Zenject::DiContainer,
     >,
     pub installEarlyBindingsEvent: *mut crate::System::Action_2<
-        *mut ScenesTransitionSetupDataSO,
+        *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
         *mut crate::Zenject::DiContainer,
     >,
     pub _inTransition: bool,
@@ -31,54 +31,55 @@ pub struct GameScenesManager {
 }
 #[cfg(feature = "GameScenesManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameScenesManager => ""."GameScenesManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameScenesManager => ""
+    ."GameScenesManager"
 );
 #[cfg(feature = "GameScenesManager")]
-impl std::ops::Deref for GameScenesManager {
+impl std::ops::Deref for crate::GlobalNamespace::GameScenesManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameScenesManager")]
-impl std::ops::DerefMut for GameScenesManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameScenesManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameScenesManager")]
-impl GameScenesManager {
+impl crate::GlobalNamespace::GameScenesManager {
     pub const kLongTransitionLength: f32 = 1.3f32;
     pub const kRootContainerGOName: &'static str = "RootContainer";
     pub const kShortTransitionLength: f32 = 0.35f32;
     pub const kStandardTransitionLength: f32 = 0.7f32;
-    #[cfg(feature = "GameScenesManager+__c__DisplayClass43_0")]
-    pub type __c__DisplayClass43_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass43_0;
+    #[cfg(feature = "GameScenesManager+SceneDismissType")]
+    pub type SceneDismissType = crate::GlobalNamespace::GameScenesManager_SceneDismissType;
     #[cfg(feature = "GameScenesManager+ScenePresentType")]
     pub type ScenePresentType = crate::GlobalNamespace::GameScenesManager_ScenePresentType;
-    #[cfg(feature = "GameScenesManager+__c__DisplayClass39_0")]
-    pub type __c__DisplayClass39_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass39_0;
-    #[cfg(feature = "GameScenesManager+__c__DisplayClass36_0")]
-    pub type __c__DisplayClass36_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass36_0;
-    #[cfg(feature = "GameScenesManager+__c__DisplayClass35_0")]
-    pub type __c__DisplayClass35_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass35_0;
+    #[cfg(feature = "GameScenesManager+ScenesStackData")]
+    pub type ScenesStackData = crate::GlobalNamespace::GameScenesManager_ScenesStackData;
     #[cfg(feature = "GameScenesManager+_ScenesTransitionCoroutine_d__42")]
     pub type _ScenesTransitionCoroutine_d__42 = crate::GlobalNamespace::GameScenesManager__ScenesTransitionCoroutine_d__42;
     #[cfg(feature = "GameScenesManager+_WaitUntilTaskCompleted_d__43")]
     pub type _WaitUntilTaskCompleted_d__43 = crate::GlobalNamespace::GameScenesManager__WaitUntilTaskCompleted_d__43;
-    #[cfg(feature = "GameScenesManager+SceneDismissType")]
-    pub type SceneDismissType = crate::GlobalNamespace::GameScenesManager_SceneDismissType;
-    #[cfg(feature = "GameScenesManager+ScenesStackData")]
-    pub type ScenesStackData = crate::GlobalNamespace::GameScenesManager_ScenesStackData;
-    #[cfg(feature = "GameScenesManager+__c__DisplayClass38_0")]
-    pub type __c__DisplayClass38_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass38_0;
-    #[cfg(feature = "GameScenesManager+__c__DisplayClass37_0")]
-    pub type __c__DisplayClass37_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass37_0;
     #[cfg(feature = "GameScenesManager+__c__DisplayClass34_0")]
     pub type __c__DisplayClass34_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass34_0;
+    #[cfg(feature = "GameScenesManager+__c__DisplayClass35_0")]
+    pub type __c__DisplayClass35_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass35_0;
+    #[cfg(feature = "GameScenesManager+__c__DisplayClass36_0")]
+    pub type __c__DisplayClass36_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass36_0;
+    #[cfg(feature = "GameScenesManager+__c__DisplayClass37_0")]
+    pub type __c__DisplayClass37_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass37_0;
+    #[cfg(feature = "GameScenesManager+__c__DisplayClass38_0")]
+    pub type __c__DisplayClass38_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass38_0;
+    #[cfg(feature = "GameScenesManager+__c__DisplayClass39_0")]
+    pub type __c__DisplayClass39_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass39_0;
+    #[cfg(feature = "GameScenesManager+__c__DisplayClass43_0")]
+    pub type __c__DisplayClass43_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass43_0;
     pub fn AppendScenes(
         &mut self,
-        scenesTransitionSetupData: *mut ScenesTransitionSetupDataSO,
+        scenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
         minDuration: f32,
         afterMinDurationCallback: *mut crate::System::Action,
         finishCallback: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
@@ -113,7 +114,7 @@ impl GameScenesManager {
     }
     pub fn ClearAndOpenScenes(
         &mut self,
-        scenesTransitionSetupData: *mut ScenesTransitionSetupDataSO,
+        scenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
         minDuration: f32,
         afterMinDurationCallback: *mut crate::System::Action,
         finishCallback: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
@@ -219,7 +220,7 @@ impl GameScenesManager {
     }
     pub fn PushScenes(
         &mut self,
-        scenesTransitionSetupData: *mut ScenesTransitionSetupDataSO,
+        scenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
         minDuration: f32,
         afterMinDurationCallback: *mut crate::System::Action,
         finishCallback: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
@@ -255,7 +256,7 @@ impl GameScenesManager {
     }
     pub fn RemoveScenes(
         &mut self,
-        scenesTransitionSetupDataSo: *mut ScenesTransitionSetupDataSO,
+        scenesTransitionSetupDataSo: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
         minDuration: f32,
         afterMinDurationCallback: *mut crate::System::Action,
         finishCallback: *mut crate::System::Action_1<*mut crate::Zenject::DiContainer>,
@@ -288,7 +289,7 @@ impl GameScenesManager {
     }
     pub fn ReplaceScenes(
         &mut self,
-        scenesTransitionSetupData: *mut ScenesTransitionSetupDataSO,
+        scenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
         beforeNewScenesActivateRoutines: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Collections::IEnumerator,
         >,
@@ -314,7 +315,9 @@ impl GameScenesManager {
     }
     pub fn SceneNamesFromSceneInfoArray(
         &mut self,
-        sceneInfos: *mut quest_hook::libil2cpp::Il2CppArray<*mut SceneInfo>,
+        sceneInfos: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::SceneInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::List_1<*mut crate::System::String>,
     > {
@@ -328,7 +331,7 @@ impl GameScenesManager {
     }
     pub fn ScenesTransitionCoroutine(
         &mut self,
-        newScenesTransitionSetupData: *mut ScenesTransitionSetupDataSO,
+        newScenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
         scenesToPresent: *mut crate::System::Collections::Generic::List_1<
             *mut crate::System::String,
         >,
@@ -412,7 +415,7 @@ impl GameScenesManager {
     pub fn add_installEarlyBindingsEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut ScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
             *mut crate::Zenject::DiContainer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -426,7 +429,7 @@ impl GameScenesManager {
     pub fn add_transitionDidFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut ScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
             *mut crate::Zenject::DiContainer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -510,7 +513,7 @@ impl GameScenesManager {
     pub fn remove_installEarlyBindingsEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut ScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
             *mut crate::Zenject::DiContainer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -524,7 +527,7 @@ impl GameScenesManager {
     pub fn remove_transitionDidFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut ScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
             *mut crate::Zenject::DiContainer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -548,7 +551,7 @@ impl GameScenesManager {
     }
 }
 #[cfg(feature = "GameScenesManager")]
-impl quest_hook::libil2cpp::ObjectType for GameScenesManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameScenesManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

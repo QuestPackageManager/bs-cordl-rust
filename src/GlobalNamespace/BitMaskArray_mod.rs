@@ -8,23 +8,24 @@ pub struct BitMaskArray {
 }
 #[cfg(feature = "BitMaskArray")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BitMaskArray => ""."BitMaskArray"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BitMaskArray => ""
+    ."BitMaskArray"
 );
 #[cfg(feature = "BitMaskArray")]
-impl std::ops::Deref for BitMaskArray {
+impl std::ops::Deref for crate::GlobalNamespace::BitMaskArray {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BitMaskArray")]
-impl std::ops::DerefMut for BitMaskArray {
+impl std::ops::DerefMut for crate::GlobalNamespace::BitMaskArray {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BitMaskArray")]
-impl BitMaskArray {
+impl crate::GlobalNamespace::BitMaskArray {
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
@@ -38,7 +39,7 @@ impl BitMaskArray {
     }
     pub fn Equals(
         &mut self,
-        other: *mut BitMaskArray,
+        other: *mut crate::GlobalNamespace::BitMaskArray,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -79,11 +80,11 @@ impl BitMaskArray {
         &mut self,
         offset: i32,
         bits: u64,
-    ) -> quest_hook::libil2cpp::Result<*mut BitMaskArray> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BitMaskArray> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BitMaskArray = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BitMaskArray = __cordl_object
             .invoke("SetBits", (offset, bits))?;
         Ok(__cordl_ret)
     }
@@ -117,7 +118,7 @@ impl BitMaskArray {
     }
 }
 #[cfg(feature = "BitMaskArray")]
-impl quest_hook::libil2cpp::ObjectType for BitMaskArray {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BitMaskArray {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

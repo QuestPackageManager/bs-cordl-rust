@@ -6,28 +6,29 @@ pub struct OVRSpaceQuery {
 }
 #[cfg(feature = "OVRSpaceQuery")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRSpaceQuery => ""."OVRSpaceQuery"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRSpaceQuery => ""
+    ."OVRSpaceQuery"
 );
 #[cfg(feature = "OVRSpaceQuery")]
-impl std::ops::Deref for OVRSpaceQuery {
+impl std::ops::Deref for crate::GlobalNamespace::OVRSpaceQuery {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSpaceQuery")]
-impl std::ops::DerefMut for OVRSpaceQuery {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRSpaceQuery {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSpaceQuery")]
-impl OVRSpaceQuery {
+impl crate::GlobalNamespace::OVRSpaceQuery {
     #[cfg(feature = "OVRSpaceQuery+Options")]
     pub type Options = crate::GlobalNamespace::OVRSpaceQuery_Options;
 }
 #[cfg(feature = "OVRSpaceQuery")]
-impl quest_hook::libil2cpp::ObjectType for OVRSpaceQuery {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSpaceQuery {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

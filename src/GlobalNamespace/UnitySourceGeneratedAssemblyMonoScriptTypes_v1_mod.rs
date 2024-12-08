@@ -35,24 +35,27 @@ pub struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
 }
 #[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for UnitySourceGeneratedAssemblyMonoScriptTypes_v1 => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 => ""
     ."UnitySourceGeneratedAssemblyMonoScriptTypes_v1"
 );
 #[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
-impl std::ops::Deref for UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
+impl std::ops::Deref
+for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
-impl std::ops::DerefMut for UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
-impl UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
+impl crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
     #[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
     pub type MonoScriptData = crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -75,7 +78,7 @@ impl UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
 }
 #[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
 impl quest_hook::libil2cpp::ObjectType
-for UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
+for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

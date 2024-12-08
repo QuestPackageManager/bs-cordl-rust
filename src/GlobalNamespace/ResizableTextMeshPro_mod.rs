@@ -9,23 +9,24 @@ pub struct ResizableTextMeshPro {
 }
 #[cfg(feature = "ResizableTextMeshPro")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ResizableTextMeshPro => ""."ResizableTextMeshPro"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ResizableTextMeshPro => ""
+    ."ResizableTextMeshPro"
 );
 #[cfg(feature = "ResizableTextMeshPro")]
-impl std::ops::Deref for ResizableTextMeshPro {
+impl std::ops::Deref for crate::GlobalNamespace::ResizableTextMeshPro {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ResizableTextMeshPro")]
-impl std::ops::DerefMut for ResizableTextMeshPro {
+impl std::ops::DerefMut for crate::GlobalNamespace::ResizableTextMeshPro {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ResizableTextMeshPro")]
-impl ResizableTextMeshPro {
+impl crate::GlobalNamespace::ResizableTextMeshPro {
     pub fn HandleTextDidChange(
         &mut self,
         textMeshPro: *mut crate::UnityEngine::Object,
@@ -86,7 +87,7 @@ impl ResizableTextMeshPro {
     }
 }
 #[cfg(feature = "ResizableTextMeshPro")]
-impl quest_hook::libil2cpp::ObjectType for ResizableTextMeshPro {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ResizableTextMeshPro {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

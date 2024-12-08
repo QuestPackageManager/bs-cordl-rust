@@ -8,23 +8,24 @@ pub struct FileDifficultyBeatmap {
 }
 #[cfg(feature = "FileDifficultyBeatmap")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FileDifficultyBeatmap => ""."FileDifficultyBeatmap"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FileDifficultyBeatmap => ""
+    ."FileDifficultyBeatmap"
 );
 #[cfg(feature = "FileDifficultyBeatmap")]
-impl std::ops::Deref for FileDifficultyBeatmap {
+impl std::ops::Deref for crate::GlobalNamespace::FileDifficultyBeatmap {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FileDifficultyBeatmap")]
-impl std::ops::DerefMut for FileDifficultyBeatmap {
+impl std::ops::DerefMut for crate::GlobalNamespace::FileDifficultyBeatmap {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FileDifficultyBeatmap")]
-impl FileDifficultyBeatmap {
+impl crate::GlobalNamespace::FileDifficultyBeatmap {
     pub fn GetBeatmapString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -95,7 +96,8 @@ impl FileDifficultyBeatmap {
     }
 }
 #[cfg(feature = "FileDifficultyBeatmap")]
-impl quest_hook::libil2cpp::ObjectType for FileDifficultyBeatmap {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FileDifficultyBeatmap {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

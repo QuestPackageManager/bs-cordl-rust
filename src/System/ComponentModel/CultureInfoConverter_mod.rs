@@ -98,10 +98,10 @@ impl std::ops::DerefMut for crate::System::ComponentModel::CultureInfoConverter 
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter")]
 impl crate::System::ComponentModel::CultureInfoConverter {
     pub const DefaultInvariantCultureString: &'static str = "(Default)";
-    #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureInfoMapper")]
-    pub type CultureInfoMapper = crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper;
     #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureComparer")]
     pub type CultureComparer = crate::System::ComponentModel::CultureInfoConverter_CultureComparer;
+    #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureInfoMapper")]
+    pub type CultureInfoMapper = crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper;
     pub fn CanConvertFrom(
         &mut self,
         context: *mut crate::System::ComponentModel::ITypeDescriptorContext,

@@ -5,29 +5,30 @@ pub struct TutorialInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
     pub _audioClip: *mut crate::UnityEngine::AudioClip,
     pub _songBPM: f32,
-    pub _playerHeightDetectorPrefab: *mut PlayerHeightDetector,
-    pub _effectPoolsManualInstaller: *mut EffectPoolsManualInstaller,
-    pub _sceneSetupData: *mut TutorialSceneSetupData,
+    pub _playerHeightDetectorPrefab: *mut crate::GlobalNamespace::PlayerHeightDetector,
+    pub _effectPoolsManualInstaller: *mut crate::GlobalNamespace::EffectPoolsManualInstaller,
+    pub _sceneSetupData: *mut crate::GlobalNamespace::TutorialSceneSetupData,
 }
 #[cfg(feature = "TutorialInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TutorialInstaller => ""."TutorialInstaller"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TutorialInstaller => ""
+    ."TutorialInstaller"
 );
 #[cfg(feature = "TutorialInstaller")]
-impl std::ops::Deref for TutorialInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::TutorialInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TutorialInstaller")]
-impl std::ops::DerefMut for TutorialInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::TutorialInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TutorialInstaller")]
-impl TutorialInstaller {
+impl crate::GlobalNamespace::TutorialInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -57,7 +58,7 @@ impl TutorialInstaller {
     }
 }
 #[cfg(feature = "TutorialInstaller")]
-impl quest_hook::libil2cpp::ObjectType for TutorialInstaller {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TutorialInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

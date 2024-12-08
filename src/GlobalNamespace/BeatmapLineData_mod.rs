@@ -4,31 +4,32 @@
 pub struct BeatmapLineData {
     __cordl_parent: crate::System::Object,
     pub _beatmapObjectsData: *mut crate::System::Collections::Generic::List_1<
-        *mut BeatmapObjectData,
+        *mut crate::GlobalNamespace::BeatmapObjectData,
     >,
 }
 #[cfg(feature = "BeatmapLineData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatmapLineData => ""."BeatmapLineData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatmapLineData => ""
+    ."BeatmapLineData"
 );
 #[cfg(feature = "BeatmapLineData")]
-impl std::ops::Deref for BeatmapLineData {
+impl std::ops::Deref for crate::GlobalNamespace::BeatmapLineData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLineData")]
-impl std::ops::DerefMut for BeatmapLineData {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLineData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLineData")]
-impl BeatmapLineData {
+impl crate::GlobalNamespace::BeatmapLineData {
     pub fn AddBeatmapObjectData(
         &mut self,
-        beatmapObjectData: *mut BeatmapObjectData,
+        beatmapObjectData: *mut crate::GlobalNamespace::BeatmapObjectData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -39,7 +40,7 @@ impl BeatmapLineData {
     }
     pub fn New_List_1_1(
         beatmapObjectData: *mut crate::System::Collections::Generic::List_1<
-            *mut BeatmapObjectData,
+            *mut crate::GlobalNamespace::BeatmapObjectData,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -58,7 +59,7 @@ impl BeatmapLineData {
     pub fn _ctor_List_1_1(
         &mut self,
         beatmapObjectData: *mut crate::System::Collections::Generic::List_1<
-            *mut BeatmapObjectData,
+            *mut crate::GlobalNamespace::BeatmapObjectData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -82,19 +83,21 @@ impl BeatmapLineData {
     pub fn get_beatmapObjectsData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyList_1<*mut BeatmapObjectData>,
+        *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut crate::GlobalNamespace::BeatmapObjectData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut BeatmapObjectData,
+            *mut crate::GlobalNamespace::BeatmapObjectData,
         > = __cordl_object.invoke("get_beatmapObjectsData", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BeatmapLineData")]
-impl quest_hook::libil2cpp::ObjectType for BeatmapLineData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLineData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

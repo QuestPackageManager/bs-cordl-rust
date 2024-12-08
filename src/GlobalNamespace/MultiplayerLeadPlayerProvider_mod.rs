@@ -5,8 +5,8 @@ pub struct MultiplayerLeadPlayerProvider {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _timeToGainFirstLead: f32,
     pub _timeToLooseLead: f32,
-    pub _scoreProvider: *mut MultiplayerScoreProvider,
-    pub _multiplayerController: *mut MultiplayerController,
+    pub _scoreProvider: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
+    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
     pub newLeaderWasSelectedEvent: *mut crate::System::Action_1<
         *mut crate::System::String,
     >,
@@ -16,24 +16,24 @@ pub struct MultiplayerLeadPlayerProvider {
 }
 #[cfg(feature = "MultiplayerLeadPlayerProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLeadPlayerProvider => ""
-    ."MultiplayerLeadPlayerProvider"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerLeadPlayerProvider
+    => ""."MultiplayerLeadPlayerProvider"
 );
 #[cfg(feature = "MultiplayerLeadPlayerProvider")]
-impl std::ops::Deref for MultiplayerLeadPlayerProvider {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLeadPlayerProvider {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLeadPlayerProvider")]
-impl std::ops::DerefMut for MultiplayerLeadPlayerProvider {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLeadPlayerProvider {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLeadPlayerProvider")]
-impl MultiplayerLeadPlayerProvider {
+impl crate::GlobalNamespace::MultiplayerLeadPlayerProvider {
     pub fn HandleFirstPlayerDidChange(
         &mut self,
         firstPlayer: *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
@@ -147,7 +147,8 @@ impl MultiplayerLeadPlayerProvider {
     }
 }
 #[cfg(feature = "MultiplayerLeadPlayerProvider")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLeadPlayerProvider {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLeadPlayerProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

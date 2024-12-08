@@ -9,12 +9,14 @@ pub struct SaberBurnMarkArea {
     pub _textureHeight: i32,
     pub _burnMarksFadeOutStrength: f32,
     pub _fadeOutShader: *mut crate::UnityEngine::Shader,
-    pub _colorManager: *mut ColorManager,
-    pub _saberManager: *mut SaberManager,
+    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
+    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
     pub _disableBlitTimer: f32,
     pub _renderer: *mut crate::UnityEngine::Renderer,
     pub _fadeOutStrengthShaderPropertyID: i32,
-    pub _sabers: *mut quest_hook::libil2cpp::Il2CppArray<*mut Saber>,
+    pub _sabers: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::Saber,
+    >,
     pub _plane: crate::UnityEngine::Plane,
     pub _prevBurnMarkPos: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::UnityEngine::Vector3,
@@ -35,23 +37,24 @@ pub struct SaberBurnMarkArea {
 }
 #[cfg(feature = "SaberBurnMarkArea")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SaberBurnMarkArea => ""."SaberBurnMarkArea"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SaberBurnMarkArea => ""
+    ."SaberBurnMarkArea"
 );
 #[cfg(feature = "SaberBurnMarkArea")]
-impl std::ops::Deref for SaberBurnMarkArea {
+impl std::ops::Deref for crate::GlobalNamespace::SaberBurnMarkArea {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberBurnMarkArea")]
-impl std::ops::DerefMut for SaberBurnMarkArea {
+impl std::ops::DerefMut for crate::GlobalNamespace::SaberBurnMarkArea {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberBurnMarkArea")]
-impl SaberBurnMarkArea {
+impl crate::GlobalNamespace::SaberBurnMarkArea {
     pub const kDisableBlitAfterSecondsThreshold: f32 = 5f32;
     pub fn GetBurnMarkPos(
         &mut self,
@@ -146,7 +149,7 @@ impl SaberBurnMarkArea {
     }
 }
 #[cfg(feature = "SaberBurnMarkArea")]
-impl quest_hook::libil2cpp::ObjectType for SaberBurnMarkArea {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberBurnMarkArea {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

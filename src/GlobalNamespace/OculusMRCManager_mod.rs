@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct OculusMRCManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
     pub _instantiateMixedRealityBackgroundCameraGameObject: *mut crate::System::Func_2<
         *mut crate::UnityEngine::GameObject,
         *mut crate::UnityEngine::GameObject,
@@ -43,23 +43,24 @@ pub struct OculusMRCManager {
 }
 #[cfg(feature = "OculusMRCManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OculusMRCManager => ""."OculusMRCManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OculusMRCManager => ""
+    ."OculusMRCManager"
 );
 #[cfg(feature = "OculusMRCManager")]
-impl std::ops::Deref for OculusMRCManager {
+impl std::ops::Deref for crate::GlobalNamespace::OculusMRCManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusMRCManager")]
-impl std::ops::DerefMut for OculusMRCManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::OculusMRCManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusMRCManager")]
-impl OculusMRCManager {
+impl crate::GlobalNamespace::OculusMRCManager {
     pub fn Init(
         &mut self,
         instantiateMixedRealityBackgroundCameraGameObject: *mut crate::System::Func_2<
@@ -710,7 +711,7 @@ impl OculusMRCManager {
     }
 }
 #[cfg(feature = "OculusMRCManager")]
-impl quest_hook::libil2cpp::ObjectType for OculusMRCManager {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OculusMRCManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

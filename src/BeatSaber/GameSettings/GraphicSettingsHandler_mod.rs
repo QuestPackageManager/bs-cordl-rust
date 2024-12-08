@@ -31,6 +31,10 @@ impl std::ops::DerefMut for crate::BeatSaber::GameSettings::GraphicSettingsHandl
 #[cfg(feature = "BeatSaber+GameSettings+GraphicSettingsHandler")]
 impl crate::BeatSaber::GameSettings::GraphicSettingsHandler {
     #[cfg(
+        feature = "BeatSaber+GameSettings+GraphicSettingsHandler+_InternalLoadAsync_d__16"
+    )]
+    pub type _InternalLoadAsync_d__16 = crate::BeatSaber::GameSettings::GraphicSettingsHandler__InternalLoadAsync_d__16;
+    #[cfg(
         feature = "BeatSaber+GameSettings+GraphicSettingsHandler+_PerformPostLoadAsync_d__15"
     )]
     pub type _PerformPostLoadAsync_d__15 = crate::BeatSaber::GameSettings::GraphicSettingsHandler__PerformPostLoadAsync_d__15;
@@ -38,10 +42,6 @@ impl crate::BeatSaber::GameSettings::GraphicSettingsHandler {
         feature = "BeatSaber+GameSettings+GraphicSettingsHandler+_TryUpdateCurrentPerformancePresetAsync_d__14"
     )]
     pub type _TryUpdateCurrentPerformancePresetAsync_d__14 = crate::BeatSaber::GameSettings::GraphicSettingsHandler__TryUpdateCurrentPerformancePresetAsync_d__14;
-    #[cfg(
-        feature = "BeatSaber+GameSettings+GraphicSettingsHandler+_InternalLoadAsync_d__16"
-    )]
-    pub type _InternalLoadAsync_d__16 = crate::BeatSaber::GameSettings::GraphicSettingsHandler__InternalLoadAsync_d__16;
     pub fn InternalLoadAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -68,7 +68,7 @@ impl crate::BeatSaber::GameSettings::GraphicSettingsHandler {
         Ok(__cordl_ret)
     }
     pub fn New_GraphicSettings1(
-        fileStorage: *mut IFileStorage,
+        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
         instance: *mut crate::BeatSaber::GameSettings::GraphicSettings,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -78,7 +78,7 @@ impl crate::BeatSaber::GameSettings::GraphicSettingsHandler {
         Ok(__cordl_object)
     }
     pub fn New_IFileStorage0(
-        fileStorage: *mut IFileStorage,
+        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -163,7 +163,7 @@ impl crate::BeatSaber::GameSettings::GraphicSettingsHandler {
     }
     pub fn _ctor_GraphicSettings1(
         &mut self,
-        fileStorage: *mut IFileStorage,
+        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
         instance: *mut crate::BeatSaber::GameSettings::GraphicSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -175,7 +175,7 @@ impl crate::BeatSaber::GameSettings::GraphicSettingsHandler {
     }
     pub fn _ctor_IFileStorage0(
         &mut self,
-        fileStorage: *mut IFileStorage,
+        fileStorage: *mut crate::GlobalNamespace::IFileStorage,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -206,11 +206,11 @@ impl crate::BeatSaber::GameSettings::GraphicSettingsHandler {
     }
     pub fn get_preferredStorageLocation(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<StoragePreference> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::StoragePreference> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: StoragePreference = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::StoragePreference = __cordl_object
             .invoke("get_preferredStorageLocation", ())?;
         Ok(__cordl_ret)
     }

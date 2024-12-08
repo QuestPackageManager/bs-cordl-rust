@@ -3,29 +3,29 @@
 #[derive(Debug)]
 pub struct OVRFace {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _faceExpressions: *mut OVRFaceExpressions,
+    pub _faceExpressions: *mut crate::GlobalNamespace::OVRFaceExpressions,
     pub _blendShapeStrengthMultiplier: f32,
     pub _skinnedMeshRenderer: *mut crate::UnityEngine::SkinnedMeshRenderer,
 }
 #[cfg(feature = "OVRFace")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRFace => ""."OVRFace"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRFace => ""."OVRFace"
 );
 #[cfg(feature = "OVRFace")]
-impl std::ops::Deref for OVRFace {
+impl std::ops::Deref for crate::GlobalNamespace::OVRFace {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRFace")]
-impl std::ops::DerefMut for OVRFace {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRFace {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRFace")]
-impl OVRFace {
+impl crate::GlobalNamespace::OVRFace {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -80,11 +80,11 @@ impl OVRFace {
     }
     pub fn SearchFaceExpressions(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut OVRFaceExpressions> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::OVRFaceExpressions> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut OVRFaceExpressions = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::OVRFaceExpressions = __cordl_object
             .invoke("SearchFaceExpressions", ())?;
         Ok(__cordl_ret)
     }
@@ -130,11 +130,11 @@ impl OVRFace {
     }
     pub fn get_FaceExpressions(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut OVRFaceExpressions> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::OVRFaceExpressions> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut OVRFaceExpressions = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::OVRFaceExpressions = __cordl_object
             .invoke("get_FaceExpressions", ())?;
         Ok(__cordl_ret)
     }
@@ -161,7 +161,7 @@ impl OVRFace {
     }
     pub fn set_FaceExpressions(
         &mut self,
-        value: *mut OVRFaceExpressions,
+        value: *mut crate::GlobalNamespace::OVRFaceExpressions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -172,7 +172,7 @@ impl OVRFace {
     }
 }
 #[cfg(feature = "OVRFace")]
-impl quest_hook::libil2cpp::ObjectType for OVRFace {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRFace {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

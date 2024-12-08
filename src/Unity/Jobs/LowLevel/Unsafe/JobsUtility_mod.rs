@@ -67,10 +67,10 @@ impl std::ops::DerefMut for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
 }
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
 impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
-    #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
-    pub type PanicFunction_ = crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_;
     #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters")]
     pub type JobScheduleParameters = crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters;
+    #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
+    pub type PanicFunction_ = crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_;
 }
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
 impl quest_hook::libil2cpp::ObjectType

@@ -16,23 +16,24 @@ pub struct LoadingControl {
 }
 #[cfg(feature = "LoadingControl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LoadingControl => ""."LoadingControl"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LoadingControl => ""
+    ."LoadingControl"
 );
 #[cfg(feature = "LoadingControl")]
-impl std::ops::Deref for LoadingControl {
+impl std::ops::Deref for crate::GlobalNamespace::LoadingControl {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LoadingControl")]
-impl std::ops::DerefMut for LoadingControl {
+impl std::ops::DerefMut for crate::GlobalNamespace::LoadingControl {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LoadingControl")]
-impl LoadingControl {
+impl crate::GlobalNamespace::LoadingControl {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -156,7 +157,7 @@ impl LoadingControl {
     }
 }
 #[cfg(feature = "LoadingControl")]
-impl quest_hook::libil2cpp::ObjectType for LoadingControl {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LoadingControl {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

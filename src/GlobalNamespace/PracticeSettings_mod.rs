@@ -9,23 +9,24 @@ pub struct PracticeSettings {
 }
 #[cfg(feature = "PracticeSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PracticeSettings => ""."PracticeSettings"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PracticeSettings => ""
+    ."PracticeSettings"
 );
 #[cfg(feature = "PracticeSettings")]
-impl std::ops::Deref for PracticeSettings {
+impl std::ops::Deref for crate::GlobalNamespace::PracticeSettings {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PracticeSettings")]
-impl std::ops::DerefMut for PracticeSettings {
+impl std::ops::DerefMut for crate::GlobalNamespace::PracticeSettings {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PracticeSettings")]
-impl PracticeSettings {
+impl crate::GlobalNamespace::PracticeSettings {
     pub const kDelayBeforeStart: f32 = 1f32;
     pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -35,7 +36,7 @@ impl PracticeSettings {
         Ok(__cordl_object)
     }
     pub fn New_PracticeSettings1(
-        practiceSettings: *mut PracticeSettings,
+        practiceSettings: *mut crate::GlobalNamespace::PracticeSettings,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -75,7 +76,7 @@ impl PracticeSettings {
     }
     pub fn _ctor_PracticeSettings1(
         &mut self,
-        practiceSettings: *mut PracticeSettings,
+        practiceSettings: *mut crate::GlobalNamespace::PracticeSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -155,7 +156,7 @@ impl PracticeSettings {
     }
 }
 #[cfg(feature = "PracticeSettings")]
-impl quest_hook::libil2cpp::ObjectType for PracticeSettings {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PracticeSettings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

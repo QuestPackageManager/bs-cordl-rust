@@ -64,7 +64,7 @@ for crate::GlobalNamespace::RumbleHapticFeedbackPlayer_RumbleData {
 #[derive(Debug)]
 pub struct RumbleHapticFeedbackPlayer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
     pub _rumblesByNode: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::UnityEngine::XR::XRNode,
         *mut crate::System::Collections::Generic::Dictionary_2<
@@ -75,24 +75,24 @@ pub struct RumbleHapticFeedbackPlayer {
 }
 #[cfg(feature = "RumbleHapticFeedbackPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RumbleHapticFeedbackPlayer => ""
-    ."RumbleHapticFeedbackPlayer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RumbleHapticFeedbackPlayer =>
+    ""."RumbleHapticFeedbackPlayer"
 );
 #[cfg(feature = "RumbleHapticFeedbackPlayer")]
-impl std::ops::Deref for RumbleHapticFeedbackPlayer {
+impl std::ops::Deref for crate::GlobalNamespace::RumbleHapticFeedbackPlayer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RumbleHapticFeedbackPlayer")]
-impl std::ops::DerefMut for RumbleHapticFeedbackPlayer {
+impl std::ops::DerefMut for crate::GlobalNamespace::RumbleHapticFeedbackPlayer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RumbleHapticFeedbackPlayer")]
-impl RumbleHapticFeedbackPlayer {
+impl crate::GlobalNamespace::RumbleHapticFeedbackPlayer {
     pub const kContinuousRumbleFrameDuration: f32 = 0.016666668f32;
     #[cfg(feature = "RumbleHapticFeedbackPlayer+RumbleData")]
     pub type RumbleData = crate::GlobalNamespace::RumbleHapticFeedbackPlayer_RumbleData;
@@ -173,7 +173,8 @@ impl RumbleHapticFeedbackPlayer {
     }
 }
 #[cfg(feature = "RumbleHapticFeedbackPlayer")]
-impl quest_hook::libil2cpp::ObjectType for RumbleHapticFeedbackPlayer {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::RumbleHapticFeedbackPlayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

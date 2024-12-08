@@ -11,5 +11,5 @@ pub enum OVRGLTFType {
 }
 #[cfg(feature = "OVRGLTFType")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for OVRGLTFType => ""."OVRGLTFType"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRGLTFType => ""."OVRGLTFType"
 );

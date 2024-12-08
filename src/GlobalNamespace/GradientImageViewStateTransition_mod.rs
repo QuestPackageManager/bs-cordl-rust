@@ -2,31 +2,36 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GradientImageViewStateTransition {
-    __cordl_parent: BaseStateTransition_1<*mut crate::HMUI::ImageView>,
-    pub _transition: *mut GradientTransitionSO,
+    __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
+        *mut crate::HMUI::ImageView,
+    >,
+    pub _transition: *mut crate::GlobalNamespace::GradientTransitionSO,
     pub _colorTweenA: *mut crate::Tweening::ColorTween,
     pub _colorTweenB: *mut crate::Tweening::ColorTween,
 }
 #[cfg(feature = "GradientImageViewStateTransition")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GradientImageViewStateTransition => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::GradientImageViewStateTransition => ""
     ."GradientImageViewStateTransition"
 );
 #[cfg(feature = "GradientImageViewStateTransition")]
-impl std::ops::Deref for GradientImageViewStateTransition {
-    type Target = BaseStateTransition_1<*mut crate::HMUI::ImageView>;
+impl std::ops::Deref for crate::GlobalNamespace::GradientImageViewStateTransition {
+    type Target = crate::GlobalNamespace::BaseStateTransition_1<
+        *mut crate::HMUI::ImageView,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GradientImageViewStateTransition")]
-impl std::ops::DerefMut for GradientImageViewStateTransition {
+impl std::ops::DerefMut for crate::GlobalNamespace::GradientImageViewStateTransition {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GradientImageViewStateTransition")]
-impl GradientImageViewStateTransition {
+impl crate::GlobalNamespace::GradientImageViewStateTransition {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -250,17 +255,18 @@ impl GradientImageViewStateTransition {
     }
     pub fn get_transition(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BaseTransitionSO> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BaseTransitionSO> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BaseTransitionSO = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BaseTransitionSO = __cordl_object
             .invoke("get_transition", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "GradientImageViewStateTransition")]
-impl quest_hook::libil2cpp::ObjectType for GradientImageViewStateTransition {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GradientImageViewStateTransition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

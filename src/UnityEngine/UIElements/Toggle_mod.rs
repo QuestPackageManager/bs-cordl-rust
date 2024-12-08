@@ -24,10 +24,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Toggle {
 }
 #[cfg(feature = "UnityEngine+UIElements+Toggle")]
 impl crate::UnityEngine::UIElements::Toggle {
-    #[cfg(feature = "UnityEngine+UIElements+Toggle+UxmlTraits")]
-    pub type UxmlTraits = crate::UnityEngine::UIElements::Toggle_UxmlTraits;
     #[cfg(feature = "UnityEngine+UIElements+Toggle+UxmlFactory")]
     pub type UxmlFactory = crate::UnityEngine::UIElements::Toggle_UxmlFactory;
+    #[cfg(feature = "UnityEngine+UIElements+Toggle+UxmlTraits")]
+    pub type UxmlTraits = crate::UnityEngine::UIElements::Toggle_UxmlTraits;
     pub fn InitLabel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

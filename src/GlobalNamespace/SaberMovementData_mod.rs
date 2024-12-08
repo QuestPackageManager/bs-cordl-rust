@@ -3,37 +3,42 @@
 #[derive(Debug)]
 pub struct SaberMovementData {
     __cordl_parent: crate::System::Object,
-    pub _data: *mut quest_hook::libil2cpp::Il2CppArray<BladeMovementDataElement>,
-    pub _dataProcessors: *mut LazyCopyHashSet_1<*mut ISaberMovementDataProcessor>,
+    pub _data: *mut quest_hook::libil2cpp::Il2CppArray<
+        crate::GlobalNamespace::BladeMovementDataElement,
+    >,
+    pub _dataProcessors: *mut crate::GlobalNamespace::LazyCopyHashSet_1<
+        *mut crate::GlobalNamespace::ISaberMovementDataProcessor,
+    >,
     pub _nextAddIndex: i32,
     pub _validCount: i32,
     pub _bladeSpeed: f32,
 }
 #[cfg(feature = "SaberMovementData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SaberMovementData => ""."SaberMovementData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SaberMovementData => ""
+    ."SaberMovementData"
 );
 #[cfg(feature = "SaberMovementData")]
-impl std::ops::Deref for SaberMovementData {
+impl std::ops::Deref for crate::GlobalNamespace::SaberMovementData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberMovementData")]
-impl std::ops::DerefMut for SaberMovementData {
+impl std::ops::DerefMut for crate::GlobalNamespace::SaberMovementData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberMovementData")]
-impl SaberMovementData {
+impl crate::GlobalNamespace::SaberMovementData {
     pub const kOutOfRangeBladeSpeed: f32 = 100f32;
     pub const kSmoothDownBladeSpeedCoef: f32 = 2f32;
     pub const kSmoothUpBladeSpeedCoef: f32 = 24f32;
     pub fn AddDataProcessor(
         &mut self,
-        dataProcessor: *mut ISaberMovementDataProcessor,
+        dataProcessor: *mut crate::GlobalNamespace::ISaberMovementDataProcessor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -136,7 +141,7 @@ impl SaberMovementData {
     }
     pub fn RemoveDataProcessor(
         &mut self,
-        dataProcessor: *mut ISaberMovementDataProcessor,
+        dataProcessor: *mut crate::GlobalNamespace::ISaberMovementDataProcessor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -147,7 +152,7 @@ impl SaberMovementData {
     }
     pub fn RequestLastDataProcessing(
         &mut self,
-        dataProcessor: *mut ISaberMovementDataProcessor,
+        dataProcessor: *mut crate::GlobalNamespace::ISaberMovementDataProcessor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -175,27 +180,31 @@ impl SaberMovementData {
     }
     pub fn get_lastAddedData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BladeMovementDataElement> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::BladeMovementDataElement,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BladeMovementDataElement = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::BladeMovementDataElement = __cordl_object
             .invoke("get_lastAddedData", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_prevAddedData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BladeMovementDataElement> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::BladeMovementDataElement,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BladeMovementDataElement = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::BladeMovementDataElement = __cordl_object
             .invoke("get_prevAddedData", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "SaberMovementData")]
-impl quest_hook::libil2cpp::ObjectType for SaberMovementData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberMovementData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

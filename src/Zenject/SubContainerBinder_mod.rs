@@ -28,30 +28,30 @@ impl std::ops::DerefMut for crate::Zenject::SubContainerBinder {
 }
 #[cfg(feature = "Zenject+SubContainerBinder")]
 impl crate::Zenject::SubContainerBinder {
-    #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass7_0")]
-    pub type __c__DisplayClass7_0 = crate::Zenject::SubContainerBinder___c__DisplayClass7_0;
-    #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass18_0")]
-    pub type __c__DisplayClass18_0 = crate::Zenject::SubContainerBinder___c__DisplayClass18_0;
-    #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass24_0")]
-    pub type __c__DisplayClass24_0 = crate::Zenject::SubContainerBinder___c__DisplayClass24_0;
-    #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass15_0")]
-    pub type __c__DisplayClass15_0 = crate::Zenject::SubContainerBinder___c__DisplayClass15_0;
-    #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass20_0")]
-    pub type __c__DisplayClass20_0 = crate::Zenject::SubContainerBinder___c__DisplayClass20_0;
-    #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass12_0")]
-    pub type __c__DisplayClass12_0 = crate::Zenject::SubContainerBinder___c__DisplayClass12_0;
-    #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass11_0")]
-    pub type __c__DisplayClass11_0 = crate::Zenject::SubContainerBinder___c__DisplayClass11_0;
-    #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass22_0")]
-    pub type __c__DisplayClass22_0 = crate::Zenject::SubContainerBinder___c__DisplayClass22_0;
-    #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass8_0")]
-    pub type __c__DisplayClass8_0 = crate::Zenject::SubContainerBinder___c__DisplayClass8_0;
     #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass10_0")]
     pub type __c__DisplayClass10_0 = crate::Zenject::SubContainerBinder___c__DisplayClass10_0;
+    #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass11_0")]
+    pub type __c__DisplayClass11_0 = crate::Zenject::SubContainerBinder___c__DisplayClass11_0;
+    #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass12_0")]
+    pub type __c__DisplayClass12_0 = crate::Zenject::SubContainerBinder___c__DisplayClass12_0;
     #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass13_0")]
     pub type __c__DisplayClass13_0 = crate::Zenject::SubContainerBinder___c__DisplayClass13_0;
+    #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass15_0")]
+    pub type __c__DisplayClass15_0 = crate::Zenject::SubContainerBinder___c__DisplayClass15_0;
     #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass17_0")]
     pub type __c__DisplayClass17_0 = crate::Zenject::SubContainerBinder___c__DisplayClass17_0;
+    #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass18_0")]
+    pub type __c__DisplayClass18_0 = crate::Zenject::SubContainerBinder___c__DisplayClass18_0;
+    #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass20_0")]
+    pub type __c__DisplayClass20_0 = crate::Zenject::SubContainerBinder___c__DisplayClass20_0;
+    #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass22_0")]
+    pub type __c__DisplayClass22_0 = crate::Zenject::SubContainerBinder___c__DisplayClass22_0;
+    #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass24_0")]
+    pub type __c__DisplayClass24_0 = crate::Zenject::SubContainerBinder___c__DisplayClass24_0;
+    #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass7_0")]
+    pub type __c__DisplayClass7_0 = crate::Zenject::SubContainerBinder___c__DisplayClass7_0;
+    #[cfg(feature = "Zenject+SubContainerBinder+__c__DisplayClass8_0")]
+    pub type __c__DisplayClass8_0 = crate::Zenject::SubContainerBinder___c__DisplayClass8_0;
     pub fn ByInstaller_0<TInstaller>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -2,30 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AchievementIdsModelSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _achievementsIds: *mut crate::System::Collections::Generic::List_1<
-        *mut AchievementSO,
+        *mut crate::GlobalNamespace::AchievementSO,
     >,
 }
 #[cfg(feature = "AchievementIdsModelSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AchievementIdsModelSO => ""."AchievementIdsModelSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AchievementIdsModelSO => ""
+    ."AchievementIdsModelSO"
 );
 #[cfg(feature = "AchievementIdsModelSO")]
-impl std::ops::Deref for AchievementIdsModelSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::AchievementIdsModelSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AchievementIdsModelSO")]
-impl std::ops::DerefMut for AchievementIdsModelSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::AchievementIdsModelSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AchievementIdsModelSO")]
-impl AchievementIdsModelSO {
+impl crate::GlobalNamespace::AchievementIdsModelSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -46,19 +47,22 @@ impl AchievementIdsModelSO {
     pub fn get_achievementsIds(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<*mut AchievementSO>,
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::AchievementSO,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut AchievementSO,
+            *mut crate::GlobalNamespace::AchievementSO,
         > = __cordl_object.invoke("get_achievementsIds", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "AchievementIdsModelSO")]
-impl quest_hook::libil2cpp::ObjectType for AchievementIdsModelSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::AchievementIdsModelSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

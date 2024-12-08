@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct NoteCutter_CuttableBySaberSortParams {
     __cordl_parent: crate::System::Object,
-    pub cuttableBySaber: *mut CuttableBySaber,
+    pub cuttableBySaber: *mut crate::GlobalNamespace::CuttableBySaber,
     pub distance: f32,
     pub pos: crate::UnityEngine::Vector3,
 }
@@ -140,23 +140,23 @@ pub struct NoteCutter {
 }
 #[cfg(feature = "NoteCutter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteCutter => ""."NoteCutter"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteCutter => ""."NoteCutter"
 );
 #[cfg(feature = "NoteCutter")]
-impl std::ops::Deref for NoteCutter {
+impl std::ops::Deref for crate::GlobalNamespace::NoteCutter {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteCutter")]
-impl std::ops::DerefMut for NoteCutter {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteCutter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteCutter")]
-impl NoteCutter {
+impl crate::GlobalNamespace::NoteCutter {
     pub const kMaxNumberOfColliders: i32 = 16i32;
     #[cfg(feature = "NoteCutter+CuttableBySaberSortParams")]
     pub type CuttableBySaberSortParams = crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParams;
@@ -164,7 +164,7 @@ impl NoteCutter {
     pub type CuttableBySaberSortParamsComparer = crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParamsComparer;
     pub fn Cut(
         &mut self,
-        saber: *mut Saber,
+        saber: *mut crate::GlobalNamespace::Saber,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -192,7 +192,7 @@ impl NoteCutter {
     }
 }
 #[cfg(feature = "NoteCutter")]
-impl quest_hook::libil2cpp::ObjectType for NoteCutter {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteCutter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

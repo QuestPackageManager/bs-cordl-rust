@@ -8,10 +8,12 @@ pub struct Vector3Serializable {
 }
 #[cfg(feature = "Vector3Serializable")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for Vector3Serializable => ""."Vector3Serializable"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::Vector3Serializable => ""
+    ."Vector3Serializable"
 );
 #[cfg(feature = "Vector3Serializable")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for Vector3Serializable {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::Vector3Serializable {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -21,10 +23,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for Vector3Serializable {
     }
 }
 #[cfg(feature = "Vector3Serializable")]
-impl Vector3Serializable {
+impl crate::GlobalNamespace::Vector3Serializable {
     pub fn Approximately(
         &mut self,
-        other: Vector3Serializable,
+        other: crate::GlobalNamespace::Vector3Serializable,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -57,7 +59,7 @@ impl Vector3Serializable {
     }
     pub fn Equals_Vector3Serializable0(
         &mut self,
-        other: Vector3Serializable,
+        other: crate::GlobalNamespace::Vector3Serializable,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

@@ -2,30 +2,31 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityLightWithId {
-    __cordl_parent: LightWithIdMonoBehaviour,
+    __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
     pub _light: *mut crate::UnityEngine::Light,
     pub _intensity: f32,
     pub _minAlpha: f32,
 }
 #[cfg(feature = "UnityLightWithId")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for UnityLightWithId => ""."UnityLightWithId"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::UnityLightWithId => ""
+    ."UnityLightWithId"
 );
 #[cfg(feature = "UnityLightWithId")]
-impl std::ops::Deref for UnityLightWithId {
-    type Target = LightWithIdMonoBehaviour;
+impl std::ops::Deref for crate::GlobalNamespace::UnityLightWithId {
+    type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityLightWithId")]
-impl std::ops::DerefMut for UnityLightWithId {
+impl std::ops::DerefMut for crate::GlobalNamespace::UnityLightWithId {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityLightWithId")]
-impl UnityLightWithId {
+impl crate::GlobalNamespace::UnityLightWithId {
     pub fn ColorWasSet(
         &mut self,
         color: crate::UnityEngine::Color,
@@ -66,7 +67,7 @@ impl UnityLightWithId {
     }
 }
 #[cfg(feature = "UnityLightWithId")]
-impl quest_hook::libil2cpp::ObjectType for UnityLightWithId {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UnityLightWithId {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

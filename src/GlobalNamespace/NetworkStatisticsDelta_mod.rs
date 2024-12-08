@@ -18,10 +18,12 @@ pub struct NetworkStatisticsDelta {
 }
 #[cfg(feature = "NetworkStatisticsDelta")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for NetworkStatisticsDelta => ""."NetworkStatisticsDelta"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NetworkStatisticsDelta => ""
+    ."NetworkStatisticsDelta"
 );
 #[cfg(feature = "NetworkStatisticsDelta")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for NetworkStatisticsDelta {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::NetworkStatisticsDelta {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -31,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for NetworkStatisticsDelta {
     }
 }
 #[cfg(feature = "NetworkStatisticsDelta")]
-impl NetworkStatisticsDelta {
+impl crate::GlobalNamespace::NetworkStatisticsDelta {
     pub fn _ctor(
         &mut self,
         packetsSentDelta: i64,

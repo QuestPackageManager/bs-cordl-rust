@@ -9,5 +9,6 @@ pub enum EnvironmentType {
 }
 #[cfg(feature = "EnvironmentType")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for EnvironmentType => ""."EnvironmentType"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnvironmentType => ""
+    ."EnvironmentType"
 );

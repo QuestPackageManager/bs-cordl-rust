@@ -16,14 +16,14 @@ pub struct ReferenceCountingCache_2<
 }
 #[cfg(feature = "ReferenceCountingCache_2")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ReferenceCountingCache_2 < TKey, TValue > => ""
-    ."ReferenceCountingCache`2" < TKey, TValue >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ReferenceCountingCache_2 <
+    TKey, TValue > => ""."ReferenceCountingCache`2" < TKey, TValue >
 );
 #[cfg(feature = "ReferenceCountingCache_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> std::ops::Deref for ReferenceCountingCache_2<TKey, TValue> {
+> std::ops::Deref for crate::GlobalNamespace::ReferenceCountingCache_2<TKey, TValue> {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -33,7 +33,7 @@ impl<
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> std::ops::DerefMut for ReferenceCountingCache_2<TKey, TValue> {
+> std::ops::DerefMut for crate::GlobalNamespace::ReferenceCountingCache_2<TKey, TValue> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -42,7 +42,7 @@ impl<
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> ReferenceCountingCache_2<TKey, TValue> {
+> crate::GlobalNamespace::ReferenceCountingCache_2<TKey, TValue> {
     pub fn AddReference(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<i32>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -142,7 +142,8 @@ impl<
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::ObjectType for ReferenceCountingCache_2<TKey, TValue> {
+> quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ReferenceCountingCache_2<TKey, TValue> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

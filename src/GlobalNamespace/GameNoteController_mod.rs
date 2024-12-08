@@ -2,41 +2,42 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameNoteController {
-    __cordl_parent: NoteController,
+    __cordl_parent: crate::GlobalNamespace::NoteController,
     pub _bigCuttableBySaberList: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut BoxCuttableBySaber,
+        *mut crate::GlobalNamespace::BoxCuttableBySaber,
     >,
     pub _smallCuttableBySaberList: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut BoxCuttableBySaber,
+        *mut crate::GlobalNamespace::BoxCuttableBySaber,
     >,
     pub _wrapperGO: *mut crate::UnityEngine::GameObject,
-    pub _audioTimeSyncController: *mut AudioTimeSyncController,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
     pub cubeNoteControllerDidInitEvent: *mut crate::System::Action_1<
-        *mut GameNoteController,
+        *mut crate::GlobalNamespace::GameNoteController,
     >,
-    pub _noteVisualModifierType: NoteVisualModifierType,
+    pub _noteVisualModifierType: crate::GlobalNamespace::NoteVisualModifierType,
     pub _gameplayType: crate::GlobalNamespace::NoteData_GameplayType,
     pub _cutAngleTolerance: f32,
 }
 #[cfg(feature = "GameNoteController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameNoteController => ""."GameNoteController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameNoteController => ""
+    ."GameNoteController"
 );
 #[cfg(feature = "GameNoteController")]
-impl std::ops::Deref for GameNoteController {
-    type Target = NoteController;
+impl std::ops::Deref for crate::GlobalNamespace::GameNoteController {
+    type Target = crate::GlobalNamespace::NoteController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameNoteController")]
-impl std::ops::DerefMut for GameNoteController {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameNoteController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameNoteController")]
-impl GameNoteController {
+impl crate::GlobalNamespace::GameNoteController {
     #[cfg(feature = "GameNoteController+Pool")]
     pub type Pool = crate::GlobalNamespace::GameNoteController_Pool;
     pub fn Awake(
@@ -51,7 +52,7 @@ impl GameNoteController {
     }
     pub fn HandleBigWasCutBySaber(
         &mut self,
-        saber: *mut Saber,
+        saber: *mut crate::GlobalNamespace::Saber,
         cutPoint: crate::UnityEngine::Vector3,
         orientation: crate::UnityEngine::Quaternion,
         cutDirVec: crate::UnityEngine::Vector3,
@@ -68,7 +69,7 @@ impl GameNoteController {
     }
     pub fn HandleCut(
         &mut self,
-        saber: *mut Saber,
+        saber: *mut crate::GlobalNamespace::Saber,
         cutPoint: crate::UnityEngine::Vector3,
         orientation: crate::UnityEngine::Quaternion,
         cutDirVec: crate::UnityEngine::Vector3,
@@ -86,7 +87,7 @@ impl GameNoteController {
     }
     pub fn HandleSmallWasCutBySaber(
         &mut self,
-        saber: *mut Saber,
+        saber: *mut crate::GlobalNamespace::Saber,
         cutPoint: crate::UnityEngine::Vector3,
         orientation: crate::UnityEngine::Quaternion,
         cutDirVec: crate::UnityEngine::Vector3,
@@ -114,7 +115,7 @@ impl GameNoteController {
     }
     pub fn Init(
         &mut self,
-        noteData: *mut NoteData,
+        noteData: *mut crate::GlobalNamespace::NoteData,
         worldRotation: f32,
         moveStartPos: crate::UnityEngine::Vector3,
         moveEndPos: crate::UnityEngine::Vector3,
@@ -122,7 +123,7 @@ impl GameNoteController {
         moveDuration: f32,
         jumpDuration: f32,
         jumpGravity: f32,
-        noteVisualModifierType: NoteVisualModifierType,
+        noteVisualModifierType: crate::GlobalNamespace::NoteVisualModifierType,
         cutAngleTolerance: f32,
         uniformScale: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -218,7 +219,9 @@ impl GameNoteController {
     }
     pub fn add_cubeNoteControllerDidInitEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut GameNoteController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::GameNoteController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -239,27 +242,29 @@ impl GameNoteController {
     }
     pub fn get_noteMovement(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut NoteMovement> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::NoteMovement> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut NoteMovement = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::NoteMovement = __cordl_object
             .invoke("get_noteMovement", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_noteVisualModifierType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<NoteVisualModifierType> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteVisualModifierType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: NoteVisualModifierType = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::NoteVisualModifierType = __cordl_object
             .invoke("get_noteVisualModifierType", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_cubeNoteControllerDidInitEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut GameNoteController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::GameNoteController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -270,7 +275,7 @@ impl GameNoteController {
     }
 }
 #[cfg(feature = "GameNoteController")]
-impl quest_hook::libil2cpp::ObjectType for GameNoteController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameNoteController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -282,7 +287,9 @@ impl quest_hook::libil2cpp::ObjectType for GameNoteController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameNoteController_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<*mut GameNoteController>,
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::GameNoteController,
+    >,
 }
 #[cfg(feature = "GameNoteController+Pool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -291,7 +298,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameNoteController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::GameNoteController_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<*mut GameNoteController>;
+    type Target = crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::GameNoteController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

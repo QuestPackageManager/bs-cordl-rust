@@ -65,14 +65,14 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_Curve {
 impl crate::HoudiniEngineUnity::HEU_Curve {
     #[cfg(feature = "HoudiniEngineUnity+HEU_Curve+CurveDrawCollision")]
     pub type CurveDrawCollision = crate::HoudiniEngineUnity::HEU_Curve_CurveDrawCollision;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_Curve+__c__DisplayClass38_0")]
-    pub type __c__DisplayClass38_0 = crate::HoudiniEngineUnity::HEU_Curve___c__DisplayClass38_0;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_Curve+__c__DisplayClass40_0")]
-    pub type __c__DisplayClass40_0 = crate::HoudiniEngineUnity::HEU_Curve___c__DisplayClass40_0;
     #[cfg(feature = "HoudiniEngineUnity+HEU_Curve+CurveEditState")]
     pub type CurveEditState = crate::HoudiniEngineUnity::HEU_Curve_CurveEditState;
     #[cfg(feature = "HoudiniEngineUnity+HEU_Curve+Interaction")]
     pub type Interaction = crate::HoudiniEngineUnity::HEU_Curve_Interaction;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_Curve+__c__DisplayClass38_0")]
+    pub type __c__DisplayClass38_0 = crate::HoudiniEngineUnity::HEU_Curve___c__DisplayClass38_0;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_Curve+__c__DisplayClass40_0")]
+    pub type __c__DisplayClass40_0 = crate::HoudiniEngineUnity::HEU_Curve___c__DisplayClass40_0;
     #[cfg(feature = "HoudiniEngineUnity+HEU_Curve+__c__DisplayClass48_0")]
     pub type __c__DisplayClass48_0 = crate::HoudiniEngineUnity::HEU_Curve___c__DisplayClass48_0;
     pub fn DestroyAllData(

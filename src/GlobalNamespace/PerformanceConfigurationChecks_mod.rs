@@ -100,7 +100,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationChecks_GameConfig {}
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct PerformanceConfigurationChecks_LevelConfig {
-    pub modifiers: GameplayModifierMask,
+    pub modifiers: crate::GlobalNamespace::GameplayModifierMask,
 }
 #[cfg(feature = "PerformanceConfigurationChecks+LevelConfig")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -243,40 +243,40 @@ pub struct PerformanceConfigurationChecks {
 }
 #[cfg(feature = "PerformanceConfigurationChecks")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PerformanceConfigurationChecks => ""
-    ."PerformanceConfigurationChecks"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PerformanceConfigurationChecks
+    => ""."PerformanceConfigurationChecks"
 );
 #[cfg(feature = "PerformanceConfigurationChecks")]
-impl std::ops::Deref for PerformanceConfigurationChecks {
+impl std::ops::Deref for crate::GlobalNamespace::PerformanceConfigurationChecks {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PerformanceConfigurationChecks")]
-impl std::ops::DerefMut for PerformanceConfigurationChecks {
+impl std::ops::DerefMut for crate::GlobalNamespace::PerformanceConfigurationChecks {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PerformanceConfigurationChecks")]
-impl PerformanceConfigurationChecks {
+impl crate::GlobalNamespace::PerformanceConfigurationChecks {
+    #[cfg(feature = "PerformanceConfigurationChecks+AppConfig")]
+    pub type AppConfig = crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig;
+    #[cfg(feature = "PerformanceConfigurationChecks+GameConfig")]
+    pub type GameConfig = crate::GlobalNamespace::PerformanceConfigurationChecks_GameConfig;
+    #[cfg(feature = "PerformanceConfigurationChecks+LevelConfig")]
+    pub type LevelConfig = crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig;
     #[cfg(feature = "PerformanceConfigurationChecks+Mismatch")]
     pub type Mismatch = crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch;
     #[cfg(feature = "PerformanceConfigurationChecks+OVRConfig")]
     pub type OVRConfig = crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig;
-    #[cfg(feature = "PerformanceConfigurationChecks+AppConfig")]
-    pub type AppConfig = crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig;
-    #[cfg(feature = "PerformanceConfigurationChecks+XRConfig")]
-    pub type XRConfig = crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig;
-    #[cfg(feature = "PerformanceConfigurationChecks+PlayerConfig")]
-    pub type PlayerConfig = crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig;
-    #[cfg(feature = "PerformanceConfigurationChecks+LevelConfig")]
-    pub type LevelConfig = crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig;
     #[cfg(feature = "PerformanceConfigurationChecks+OculusXRConfig")]
     pub type OculusXRConfig = crate::GlobalNamespace::PerformanceConfigurationChecks_OculusXRConfig;
-    #[cfg(feature = "PerformanceConfigurationChecks+GameConfig")]
-    pub type GameConfig = crate::GlobalNamespace::PerformanceConfigurationChecks_GameConfig;
+    #[cfg(feature = "PerformanceConfigurationChecks+PlayerConfig")]
+    pub type PlayerConfig = crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig;
+    #[cfg(feature = "PerformanceConfigurationChecks+XRConfig")]
+    pub type XRConfig = crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig;
     pub fn CreateErrorLog(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
@@ -305,8 +305,8 @@ impl PerformanceConfigurationChecks {
         &mut self,
         mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
         graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
-        playerSettings: *mut PlayerSpecificSettings,
-        modifiers: GameplayModifierMask,
+        playerSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+        modifiers: crate::GlobalNamespace::GameplayModifierMask,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -339,8 +339,8 @@ impl PerformanceConfigurationChecks {
         &mut self,
         mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
         graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
-        playerSettings: *mut PlayerSpecificSettings,
-        modifiers: GameplayModifierMask,
+        playerSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
+        modifiers: crate::GlobalNamespace::GameplayModifierMask,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -364,7 +364,8 @@ impl PerformanceConfigurationChecks {
     }
 }
 #[cfg(feature = "PerformanceConfigurationChecks")]
-impl quest_hook::libil2cpp::ObjectType for PerformanceConfigurationChecks {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PerformanceConfigurationChecks {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -379,7 +380,7 @@ pub struct PerformanceConfigurationChecks_PlayerConfig {
     pub leftHanded: bool,
     pub automaticPlayerHeight: bool,
     pub playerHeight: f32,
-    pub noteJumpDurationTypeSettings: NoteJumpDurationTypeSettings,
+    pub noteJumpDurationTypeSettings: crate::GlobalNamespace::NoteJumpDurationTypeSettings,
     pub noteJumpFixedDuration: f32,
     pub noteJumpStartBeatOffset: f32,
     pub autoRestart: bool,
@@ -388,14 +389,14 @@ pub struct PerformanceConfigurationChecks_PlayerConfig {
     pub reduceDebris: bool,
     pub noFailEffects: bool,
     pub hideNoteSpawnEffect: bool,
-    pub arcVisibility: ArcVisibilityType,
+    pub arcVisibility: crate::GlobalNamespace::ArcVisibilityType,
     pub saberTrailIntensity: f32,
     pub noTextsAndHuds: bool,
     pub advancedHud: bool,
     pub sfxVolume: f32,
     pub adaptiveSfx: bool,
-    pub environmentEffectsFilterDefaultPreset: EnvironmentEffectsFilterPreset,
-    pub environmentEffectsFilterExpertPlusPreset: EnvironmentEffectsFilterPreset,
+    pub environmentEffectsFilterDefaultPreset: crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+    pub environmentEffectsFilterExpertPlusPreset: crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
 }
 #[cfg(feature = "PerformanceConfigurationChecks+PlayerConfig")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

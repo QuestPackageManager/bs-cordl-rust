@@ -38,14 +38,14 @@ impl std::ops::DerefMut for crate::Oculus::Haptics::Ffi {
 impl crate::Oculus::Haptics::Ffi {
     pub const InvalidId: i32 = -1i32;
     pub const NativeLibName: &'static str = "haptics_sdk";
-    #[cfg(feature = "Oculus+Haptics+Ffi+NullBackendStatistics")]
-    pub type NullBackendStatistics = crate::Oculus::Haptics::Ffi_NullBackendStatistics;
     #[cfg(feature = "Oculus+Haptics+Ffi+Controller")]
     pub type Controller = crate::Oculus::Haptics::Ffi_Controller;
-    #[cfg(feature = "Oculus+Haptics+Ffi+LogLevel")]
-    pub type LogLevel = crate::Oculus::Haptics::Ffi_LogLevel;
     #[cfg(feature = "Oculus+Haptics+Ffi+LogCallback")]
     pub type LogCallback = crate::Oculus::Haptics::Ffi_LogCallback;
+    #[cfg(feature = "Oculus+Haptics+Ffi+LogLevel")]
+    pub type LogLevel = crate::Oculus::Haptics::Ffi_LogLevel;
+    #[cfg(feature = "Oculus+Haptics+Ffi+NullBackendStatistics")]
+    pub type NullBackendStatistics = crate::Oculus::Haptics::Ffi_NullBackendStatistics;
     #[cfg(feature = "Oculus+Haptics+Ffi+Result")]
     pub type Result = crate::Oculus::Haptics::Ffi_Result;
     #[cfg(feature = "Oculus+Haptics+Ffi+SdkVersion")]

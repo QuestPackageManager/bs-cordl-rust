@@ -13,29 +13,30 @@ pub struct OVRRuntimeController {
     pub m_hasInputFocusPrev: bool,
     pub m_controllerConnectedPrev: bool,
     pub m_animationNodes: *mut crate::System::Collections::Generic::Dictionary_2<
-        OVRGLTFInputNode,
-        *mut OVRGLTFAnimatinonNode,
+        crate::GlobalNamespace::OVRGLTFInputNode,
+        *mut crate::GlobalNamespace::OVRGLTFAnimatinonNode,
     >,
 }
 #[cfg(feature = "OVRRuntimeController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRRuntimeController => ""."OVRRuntimeController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRRuntimeController => ""
+    ."OVRRuntimeController"
 );
 #[cfg(feature = "OVRRuntimeController")]
-impl std::ops::Deref for OVRRuntimeController {
+impl std::ops::Deref for crate::GlobalNamespace::OVRRuntimeController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRRuntimeController")]
-impl std::ops::DerefMut for OVRRuntimeController {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRRuntimeController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRRuntimeController")]
-impl OVRRuntimeController {
+impl crate::GlobalNamespace::OVRRuntimeController {
     #[cfg(feature = "OVRRuntimeController+_UpdateControllerModel_d__16")]
     pub type _UpdateControllerModel_d__16 = crate::GlobalNamespace::OVRRuntimeController__UpdateControllerModel_d__16;
     pub fn InputFocusAquired(
@@ -138,7 +139,7 @@ impl OVRRuntimeController {
     }
 }
 #[cfg(feature = "OVRRuntimeController")]
-impl quest_hook::libil2cpp::ObjectType for OVRRuntimeController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRRuntimeController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

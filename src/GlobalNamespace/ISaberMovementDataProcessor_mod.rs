@@ -6,28 +6,28 @@ pub struct ISaberMovementDataProcessor {
 }
 #[cfg(feature = "ISaberMovementDataProcessor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ISaberMovementDataProcessor => ""
-    ."ISaberMovementDataProcessor"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ISaberMovementDataProcessor =>
+    ""."ISaberMovementDataProcessor"
 );
 #[cfg(feature = "ISaberMovementDataProcessor")]
-impl std::ops::Deref for ISaberMovementDataProcessor {
+impl std::ops::Deref for crate::GlobalNamespace::ISaberMovementDataProcessor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ISaberMovementDataProcessor")]
-impl std::ops::DerefMut for ISaberMovementDataProcessor {
+impl std::ops::DerefMut for crate::GlobalNamespace::ISaberMovementDataProcessor {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ISaberMovementDataProcessor")]
-impl ISaberMovementDataProcessor {
+impl crate::GlobalNamespace::ISaberMovementDataProcessor {
     pub fn ProcessNewData(
         &mut self,
-        newData: BladeMovementDataElement,
-        prevData: BladeMovementDataElement,
+        newData: crate::GlobalNamespace::BladeMovementDataElement,
+        prevData: crate::GlobalNamespace::BladeMovementDataElement,
         prevDataAreValid: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -44,7 +44,8 @@ impl ISaberMovementDataProcessor {
     }
 }
 #[cfg(feature = "ISaberMovementDataProcessor")]
-impl quest_hook::libil2cpp::ObjectType for ISaberMovementDataProcessor {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ISaberMovementDataProcessor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

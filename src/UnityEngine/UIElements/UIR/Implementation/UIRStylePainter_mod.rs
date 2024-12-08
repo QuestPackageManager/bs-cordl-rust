@@ -168,16 +168,16 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter")]
 impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
+    #[cfg(
+        feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+ClosingInfo"
+    )]
+    pub type ClosingInfo = crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo;
     #[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+Entry")]
     pub type Entry = crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry;
     #[cfg(
         feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+RepeatRectUV"
     )]
     pub type RepeatRectUV = crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV;
-    #[cfg(
-        feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+ClosingInfo"
-    )]
-    pub type ClosingInfo = crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo;
     pub fn AdjustSpriteWinding(
         &mut self,
         vertices: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,

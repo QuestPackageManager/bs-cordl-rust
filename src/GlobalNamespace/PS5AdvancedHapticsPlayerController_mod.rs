@@ -4,39 +4,40 @@
 pub struct PS5AdvancedHapticsPlayerController {
     __cordl_parent: crate::System::Object,
     pub _hapticsPlayerPool: *mut crate::GlobalNamespace::HapticsAudioClipPlayer_Pool,
-    pub _coroutineStarter: *mut ICoroutineStarter,
+    pub _coroutineStarter: *mut crate::GlobalNamespace::ICoroutineStarter,
     pub _activePlayers: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::System::ValueTuple_2<
             crate::UnityEngine::XR::XRNode,
             *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
         >,
-        *mut HapticsAudioClipPlayer,
+        *mut crate::GlobalNamespace::HapticsAudioClipPlayer,
     >,
 }
 #[cfg(feature = "PS5AdvancedHapticsPlayerController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PS5AdvancedHapticsPlayerController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PS5AdvancedHapticsPlayerController => ""
     ."PS5AdvancedHapticsPlayerController"
 );
 #[cfg(feature = "PS5AdvancedHapticsPlayerController")]
-impl std::ops::Deref for PS5AdvancedHapticsPlayerController {
+impl std::ops::Deref for crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PS5AdvancedHapticsPlayerController")]
-impl std::ops::DerefMut for PS5AdvancedHapticsPlayerController {
+impl std::ops::DerefMut for crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PS5AdvancedHapticsPlayerController")]
-impl PS5AdvancedHapticsPlayerController {
-    #[cfg(feature = "PS5AdvancedHapticsPlayerController+__c__DisplayClass7_0")]
-    pub type __c__DisplayClass7_0 = crate::GlobalNamespace::PS5AdvancedHapticsPlayerController___c__DisplayClass7_0;
+impl crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
     #[cfg(feature = "PS5AdvancedHapticsPlayerController+__c__DisplayClass6_0")]
     pub type __c__DisplayClass6_0 = crate::GlobalNamespace::PS5AdvancedHapticsPlayerController___c__DisplayClass6_0;
+    #[cfg(feature = "PS5AdvancedHapticsPlayerController+__c__DisplayClass7_0")]
+    pub type __c__DisplayClass7_0 = crate::GlobalNamespace::PS5AdvancedHapticsPlayerController___c__DisplayClass7_0;
     pub fn CanPlayHapticPreset(
         &mut self,
         hapticPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
@@ -68,7 +69,7 @@ impl PS5AdvancedHapticsPlayerController {
     }
     pub fn OnHapticPlayFinishedCallback(
         &mut self,
-        player: *mut HapticsAudioClipPlayer,
+        player: *mut crate::GlobalNamespace::HapticsAudioClipPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -125,7 +126,8 @@ impl PS5AdvancedHapticsPlayerController {
     }
 }
 #[cfg(feature = "PS5AdvancedHapticsPlayerController")]
-impl quest_hook::libil2cpp::ObjectType for PS5AdvancedHapticsPlayerController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

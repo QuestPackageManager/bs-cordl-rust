@@ -7,10 +7,12 @@ pub struct MultiplayerAvatarData {
 }
 #[cfg(feature = "MultiplayerAvatarData")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for MultiplayerAvatarData => ""."MultiplayerAvatarData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerAvatarData => ""
+    ."MultiplayerAvatarData"
 );
 #[cfg(feature = "MultiplayerAvatarData")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for MultiplayerAvatarData {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::MultiplayerAvatarData {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -20,7 +22,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for MultiplayerAvatarData {
     }
 }
 #[cfg(feature = "MultiplayerAvatarData")]
-impl MultiplayerAvatarData {
+impl crate::GlobalNamespace::MultiplayerAvatarData {
     pub fn _ctor(
         &mut self,
         avatarTypeIdentifierHash: u32,

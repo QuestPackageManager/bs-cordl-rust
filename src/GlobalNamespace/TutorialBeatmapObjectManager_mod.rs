@@ -60,39 +60,43 @@ for crate::GlobalNamespace::TutorialBeatmapObjectManager_InitData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialBeatmapObjectManager {
-    __cordl_parent: BeatmapObjectManager,
-    pub _tutorialNotePoolContainer: *mut MemoryPoolContainer_1<
-        *mut TutorialNoteController,
+    __cordl_parent: crate::GlobalNamespace::BeatmapObjectManager,
+    pub _tutorialNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
+        *mut crate::GlobalNamespace::TutorialNoteController,
     >,
-    pub _bombNotePoolContainer: *mut MemoryPoolContainer_1<*mut BombNoteController>,
-    pub _obstaclePoolContainer: *mut MemoryPoolContainer_1<*mut ObstacleController>,
+    pub _bombNotePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
+        *mut crate::GlobalNamespace::BombNoteController,
+    >,
+    pub _obstaclePoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
+        *mut crate::GlobalNamespace::ObstacleController,
+    >,
     pub _initData: *mut crate::GlobalNamespace::TutorialBeatmapObjectManager_InitData,
 }
 #[cfg(feature = "TutorialBeatmapObjectManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TutorialBeatmapObjectManager => ""
-    ."TutorialBeatmapObjectManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TutorialBeatmapObjectManager =>
+    ""."TutorialBeatmapObjectManager"
 );
 #[cfg(feature = "TutorialBeatmapObjectManager")]
-impl std::ops::Deref for TutorialBeatmapObjectManager {
-    type Target = BeatmapObjectManager;
+impl std::ops::Deref for crate::GlobalNamespace::TutorialBeatmapObjectManager {
+    type Target = crate::GlobalNamespace::BeatmapObjectManager;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TutorialBeatmapObjectManager")]
-impl std::ops::DerefMut for TutorialBeatmapObjectManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::TutorialBeatmapObjectManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TutorialBeatmapObjectManager")]
-impl TutorialBeatmapObjectManager {
+impl crate::GlobalNamespace::TutorialBeatmapObjectManager {
     #[cfg(feature = "TutorialBeatmapObjectManager+InitData")]
     pub type InitData = crate::GlobalNamespace::TutorialBeatmapObjectManager_InitData;
     pub fn DespawnInternal_NoteController0(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -103,7 +107,7 @@ impl TutorialBeatmapObjectManager {
     }
     pub fn DespawnInternal_ObstacleController1(
         &mut self,
-        obstacleController: *mut ObstacleController,
+        obstacleController: *mut crate::GlobalNamespace::ObstacleController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -114,7 +118,7 @@ impl TutorialBeatmapObjectManager {
     }
     pub fn DespawnInternal_SliderController2(
         &mut self,
-        sliderNoteController: *mut SliderController,
+        sliderNoteController: *mut crate::GlobalNamespace::SliderController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -146,7 +150,7 @@ impl TutorialBeatmapObjectManager {
     }
     pub fn ProcessNoteData(
         &mut self,
-        noteData: *mut NoteData,
+        noteData: *mut crate::GlobalNamespace::NoteData,
         noteSpawnData: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteSpawnData,
         >,
@@ -165,7 +169,7 @@ impl TutorialBeatmapObjectManager {
     }
     pub fn ProcessObstacleData(
         &mut self,
-        obstacleData: *mut ObstacleData,
+        obstacleData: *mut crate::GlobalNamespace::ObstacleData,
         obstacleSpawnData: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_ObstacleSpawnData,
         >,
@@ -180,7 +184,7 @@ impl TutorialBeatmapObjectManager {
     }
     pub fn ProcessSliderData(
         &mut self,
-        sliderData: *mut SliderData,
+        sliderData: *mut crate::GlobalNamespace::SliderData,
         sliderSpawnData: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapObjectSpawnMovementData_SliderSpawnData,
         >,
@@ -206,19 +210,22 @@ impl TutorialBeatmapObjectManager {
     pub fn get_activeObstacleControllers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<*mut ObstacleController>,
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::ObstacleController,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut ObstacleController,
+            *mut crate::GlobalNamespace::ObstacleController,
         > = __cordl_object.invoke("get_activeObstacleControllers", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "TutorialBeatmapObjectManager")]
-impl quest_hook::libil2cpp::ObjectType for TutorialBeatmapObjectManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::TutorialBeatmapObjectManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,24 +6,25 @@ pub struct UnsupportedAdvancedHapticsPlayer {
 }
 #[cfg(feature = "UnsupportedAdvancedHapticsPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for UnsupportedAdvancedHapticsPlayer => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::UnsupportedAdvancedHapticsPlayer => ""
     ."UnsupportedAdvancedHapticsPlayer"
 );
 #[cfg(feature = "UnsupportedAdvancedHapticsPlayer")]
-impl std::ops::Deref for UnsupportedAdvancedHapticsPlayer {
+impl std::ops::Deref for crate::GlobalNamespace::UnsupportedAdvancedHapticsPlayer {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnsupportedAdvancedHapticsPlayer")]
-impl std::ops::DerefMut for UnsupportedAdvancedHapticsPlayer {
+impl std::ops::DerefMut for crate::GlobalNamespace::UnsupportedAdvancedHapticsPlayer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnsupportedAdvancedHapticsPlayer")]
-impl UnsupportedAdvancedHapticsPlayer {
+impl crate::GlobalNamespace::UnsupportedAdvancedHapticsPlayer {
     pub fn CanPlayHapticPreset(
         &mut self,
         hapticPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
@@ -67,7 +68,8 @@ impl UnsupportedAdvancedHapticsPlayer {
     }
 }
 #[cfg(feature = "UnsupportedAdvancedHapticsPlayer")]
-impl quest_hook::libil2cpp::ObjectType for UnsupportedAdvancedHapticsPlayer {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::UnsupportedAdvancedHapticsPlayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

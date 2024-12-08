@@ -11,23 +11,24 @@ pub struct HealthCheckService {
 }
 #[cfg(feature = "HealthCheckService")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for HealthCheckService => ""."HealthCheckService"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::HealthCheckService => ""
+    ."HealthCheckService"
 );
 #[cfg(feature = "HealthCheckService")]
-impl std::ops::Deref for HealthCheckService {
+impl std::ops::Deref for crate::GlobalNamespace::HealthCheckService {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HealthCheckService")]
-impl std::ops::DerefMut for HealthCheckService {
+impl std::ops::DerefMut for crate::GlobalNamespace::HealthCheckService {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "HealthCheckService")]
-impl HealthCheckService {
+impl crate::GlobalNamespace::HealthCheckService {
     pub const kTimeoutLengthMs: i32 = 1000i32;
     pub fn Dispose(
         &mut self,
@@ -76,7 +77,7 @@ impl HealthCheckService {
     }
 }
 #[cfg(feature = "HealthCheckService")]
-impl quest_hook::libil2cpp::ObjectType for HealthCheckService {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::HealthCheckService {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

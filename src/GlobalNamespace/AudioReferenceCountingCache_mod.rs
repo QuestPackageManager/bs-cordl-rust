@@ -2,19 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioReferenceCountingCache {
-    __cordl_parent: ReferenceCountingCache_2<
+    __cordl_parent: crate::GlobalNamespace::ReferenceCountingCache_2<
         i32,
         *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
     >,
 }
 #[cfg(feature = "AudioReferenceCountingCache")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AudioReferenceCountingCache => ""
-    ."AudioReferenceCountingCache"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AudioReferenceCountingCache =>
+    ""."AudioReferenceCountingCache"
 );
 #[cfg(feature = "AudioReferenceCountingCache")]
-impl std::ops::Deref for AudioReferenceCountingCache {
-    type Target = ReferenceCountingCache_2<
+impl std::ops::Deref for crate::GlobalNamespace::AudioReferenceCountingCache {
+    type Target = crate::GlobalNamespace::ReferenceCountingCache_2<
         i32,
         *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
     >;
@@ -23,13 +23,13 @@ impl std::ops::Deref for AudioReferenceCountingCache {
     }
 }
 #[cfg(feature = "AudioReferenceCountingCache")]
-impl std::ops::DerefMut for AudioReferenceCountingCache {
+impl std::ops::DerefMut for crate::GlobalNamespace::AudioReferenceCountingCache {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AudioReferenceCountingCache")]
-impl AudioReferenceCountingCache {
+impl crate::GlobalNamespace::AudioReferenceCountingCache {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -49,7 +49,8 @@ impl AudioReferenceCountingCache {
     }
 }
 #[cfg(feature = "AudioReferenceCountingCache")]
-impl quest_hook::libil2cpp::ObjectType for AudioReferenceCountingCache {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::AudioReferenceCountingCache {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

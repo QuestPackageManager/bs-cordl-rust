@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct MultiplayerLobbyAvatarController_Factory {
     __cordl_parent: crate::Zenject::PlaceholderFactory_2<
-        *mut IConnectedPlayer,
-        *mut MultiplayerLobbyAvatarController,
+        *mut crate::GlobalNamespace::IConnectedPlayer,
+        *mut crate::GlobalNamespace::MultiplayerLobbyAvatarController,
     >,
 }
 #[cfg(feature = "MultiplayerLobbyAvatarController+Factory")]
@@ -17,8 +17,8 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
     type Target = crate::Zenject::PlaceholderFactory_2<
-        *mut IConnectedPlayer,
-        *mut MultiplayerLobbyAvatarController,
+        *mut crate::GlobalNamespace::IConnectedPlayer,
+        *mut crate::GlobalNamespace::MultiplayerLobbyAvatarController,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -67,7 +67,7 @@ for crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
 pub struct MultiplayerLobbyAvatarController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _spawnEffect: *mut crate::UnityEngine::Playables::PlayableDirector,
-    pub _despawnVFXController: *mut VFXController,
+    pub _despawnVFXController: *mut crate::GlobalNamespace::VFXController,
     pub _spawnAvatarDelay: f32,
     pub _despawnAvatarDelay: f32,
     pub _destroyAvatarDelay: f32,
@@ -77,32 +77,33 @@ pub struct MultiplayerLobbyAvatarController {
 }
 #[cfg(feature = "MultiplayerLobbyAvatarController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLobbyAvatarController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLobbyAvatarController => ""
     ."MultiplayerLobbyAvatarController"
 );
 #[cfg(feature = "MultiplayerLobbyAvatarController")]
-impl std::ops::Deref for MultiplayerLobbyAvatarController {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLobbyAvatarController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLobbyAvatarController")]
-impl std::ops::DerefMut for MultiplayerLobbyAvatarController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLobbyAvatarController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLobbyAvatarController")]
-impl MultiplayerLobbyAvatarController {
-    #[cfg(
-        feature = "MultiplayerLobbyAvatarController+_ShowDespawnAnimationAndDestroy_d__10"
-    )]
-    pub type _ShowDespawnAnimationAndDestroy_d__10 = crate::GlobalNamespace::MultiplayerLobbyAvatarController__ShowDespawnAnimationAndDestroy_d__10;
+impl crate::GlobalNamespace::MultiplayerLobbyAvatarController {
     #[cfg(feature = "MultiplayerLobbyAvatarController+Factory")]
     pub type Factory = crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory;
     #[cfg(feature = "MultiplayerLobbyAvatarController+_DespawnAnimationCoroutine_d__12")]
     pub type _DespawnAnimationCoroutine_d__12 = crate::GlobalNamespace::MultiplayerLobbyAvatarController__DespawnAnimationCoroutine_d__12;
+    #[cfg(
+        feature = "MultiplayerLobbyAvatarController+_ShowDespawnAnimationAndDestroy_d__10"
+    )]
+    pub type _ShowDespawnAnimationAndDestroy_d__10 = crate::GlobalNamespace::MultiplayerLobbyAvatarController__ShowDespawnAnimationAndDestroy_d__10;
     #[cfg(feature = "MultiplayerLobbyAvatarController+_SpawnAnimationCoroutine_d__8")]
     pub type _SpawnAnimationCoroutine_d__8 = crate::GlobalNamespace::MultiplayerLobbyAvatarController__SpawnAnimationCoroutine_d__8;
     pub fn ActivateVisualObjects(
@@ -187,7 +188,8 @@ impl MultiplayerLobbyAvatarController {
     }
 }
 #[cfg(feature = "MultiplayerLobbyAvatarController")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLobbyAvatarController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLobbyAvatarController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

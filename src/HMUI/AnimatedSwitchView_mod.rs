@@ -46,14 +46,14 @@ impl std::ops::DerefMut for crate::HMUI::AnimatedSwitchView {
 }
 #[cfg(feature = "HMUI+AnimatedSwitchView")]
 impl crate::HMUI::AnimatedSwitchView {
-    #[cfg(feature = "HMUI+AnimatedSwitchView+ColorBlock")]
-    pub type ColorBlock = crate::HMUI::AnimatedSwitchView_ColorBlock;
     #[cfg(feature = "HMUI+AnimatedSwitchView+AnimationState")]
     pub type AnimationState = crate::HMUI::AnimatedSwitchView_AnimationState;
-    #[cfg(feature = "HMUI+AnimatedSwitchView+__c")]
-    pub type __c = crate::HMUI::AnimatedSwitchView___c;
+    #[cfg(feature = "HMUI+AnimatedSwitchView+ColorBlock")]
+    pub type ColorBlock = crate::HMUI::AnimatedSwitchView_ColorBlock;
     #[cfg(feature = "HMUI+AnimatedSwitchView+GetColorDelegate")]
     pub type GetColorDelegate = crate::HMUI::AnimatedSwitchView_GetColorDelegate;
+    #[cfg(feature = "HMUI+AnimatedSwitchView+__c")]
+    pub type __c = crate::HMUI::AnimatedSwitchView___c;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

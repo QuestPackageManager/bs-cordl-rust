@@ -378,12 +378,12 @@ impl std::ops::DerefMut for crate::System::Text::UTF7Encoding {
 impl crate::System::Text::UTF7Encoding {
     #[cfg(feature = "System+Text+UTF7Encoding+Decoder")]
     pub type Decoder = crate::System::Text::UTF7Encoding_Decoder;
-    #[cfg(feature = "System+Text+UTF7Encoding+Encoder")]
-    pub type Encoder = crate::System::Text::UTF7Encoding_Encoder;
     #[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7Fallback")]
     pub type DecoderUTF7Fallback = crate::System::Text::UTF7Encoding_DecoderUTF7Fallback;
     #[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
     pub type DecoderUTF7FallbackBuffer = crate::System::Text::UTF7Encoding_DecoderUTF7FallbackBuffer;
+    #[cfg(feature = "System+Text+UTF7Encoding+Encoder")]
+    pub type Encoder = crate::System::Text::UTF7Encoding_Encoder;
     pub fn Equals(
         &mut self,
         value: *mut crate::System::Object,

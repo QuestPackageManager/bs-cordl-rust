@@ -3,30 +3,33 @@
 #[derive(Debug)]
 pub struct BezierSpline {
     __cordl_parent: crate::System::Object,
-    pub _segments: *mut crate::System::Collections::Generic::List_1<BezierCurve>,
+    pub _segments: *mut crate::System::Collections::Generic::List_1<
+        crate::GlobalNamespace::BezierCurve,
+    >,
     pub _sourceDataPoints: *mut crate::System::Collections::Generic::List_1<
         crate::UnityEngine::Vector3,
     >,
 }
 #[cfg(feature = "BezierSpline")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BezierSpline => ""."BezierSpline"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BezierSpline => ""
+    ."BezierSpline"
 );
 #[cfg(feature = "BezierSpline")]
-impl std::ops::Deref for BezierSpline {
+impl std::ops::Deref for crate::GlobalNamespace::BezierSpline {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BezierSpline")]
-impl std::ops::DerefMut for BezierSpline {
+impl std::ops::DerefMut for crate::GlobalNamespace::BezierSpline {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BezierSpline")]
-impl BezierSpline {
+impl crate::GlobalNamespace::BezierSpline {
     #[cfg(feature = "BezierSpline+ComputeControlPointsResults")]
     pub type ComputeControlPointsResults = crate::GlobalNamespace::BezierSpline_ComputeControlPointsResults;
     #[cfg(feature = "BezierSpline+__c")]
@@ -116,18 +119,21 @@ impl BezierSpline {
     pub fn get_segments(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<BezierCurve>,
+        *mut crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::BezierCurve,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<BezierCurve> = __cordl_object
-            .invoke("get_segments", ())?;
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::BezierCurve,
+        > = __cordl_object.invoke("get_segments", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "BezierSpline")]
-impl quest_hook::libil2cpp::ObjectType for BezierSpline {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BezierSpline {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

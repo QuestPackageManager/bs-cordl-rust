@@ -5,28 +5,28 @@ pub struct LevelInfo {
     __cordl_parent: crate::System::Object,
     pub _levelID_k__BackingField: *mut crate::System::String,
     pub _beatmaps_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut BeatmapInfo,
+        *mut crate::GlobalNamespace::BeatmapInfo,
     >,
 }
 #[cfg(feature = "LevelInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LevelInfo => ""."LevelInfo"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LevelInfo => ""."LevelInfo"
 );
 #[cfg(feature = "LevelInfo")]
-impl std::ops::Deref for LevelInfo {
+impl std::ops::Deref for crate::GlobalNamespace::LevelInfo {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelInfo")]
-impl std::ops::DerefMut for LevelInfo {
+impl std::ops::DerefMut for crate::GlobalNamespace::LevelInfo {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelInfo")]
-impl LevelInfo {
+impl crate::GlobalNamespace::LevelInfo {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -47,13 +47,14 @@ impl LevelInfo {
     pub fn get_beatmaps(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut BeatmapInfo>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapInfo>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<*mut BeatmapInfo> = __cordl_object
-            .invoke("get_beatmaps", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BeatmapInfo,
+        > = __cordl_object.invoke("get_beatmaps", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_levelID(
@@ -68,7 +69,9 @@ impl LevelInfo {
     }
     pub fn set_beatmaps(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<*mut BeatmapInfo>,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::BeatmapInfo,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -90,7 +93,7 @@ impl LevelInfo {
     }
 }
 #[cfg(feature = "LevelInfo")]
-impl quest_hook::libil2cpp::ObjectType for LevelInfo {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LevelInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

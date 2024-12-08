@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialLightWithIds {
-    __cordl_parent: RuntimeLightWithIds,
+    __cordl_parent: crate::GlobalNamespace::RuntimeLightWithIds,
     pub _meshRenderer: *mut crate::UnityEngine::MeshRenderer,
     pub _setAlphaOnly: bool,
     pub _alphaIntoColor: bool,
@@ -14,23 +14,24 @@ pub struct MaterialLightWithIds {
 }
 #[cfg(feature = "MaterialLightWithIds")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MaterialLightWithIds => ""."MaterialLightWithIds"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MaterialLightWithIds => ""
+    ."MaterialLightWithIds"
 );
 #[cfg(feature = "MaterialLightWithIds")]
-impl std::ops::Deref for MaterialLightWithIds {
-    type Target = RuntimeLightWithIds;
+impl std::ops::Deref for crate::GlobalNamespace::MaterialLightWithIds {
+    type Target = crate::GlobalNamespace::RuntimeLightWithIds;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MaterialLightWithIds")]
-impl std::ops::DerefMut for MaterialLightWithIds {
+impl std::ops::DerefMut for crate::GlobalNamespace::MaterialLightWithIds {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MaterialLightWithIds")]
-impl MaterialLightWithIds {
+impl crate::GlobalNamespace::MaterialLightWithIds {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -71,7 +72,7 @@ impl MaterialLightWithIds {
     }
 }
 #[cfg(feature = "MaterialLightWithIds")]
-impl quest_hook::libil2cpp::ObjectType for MaterialLightWithIds {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MaterialLightWithIds {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

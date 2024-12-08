@@ -3,30 +3,32 @@
 #[derive(Debug)]
 pub struct NodePoseSyncStateDeltaNetSerializable {
     __cordl_parent: crate::System::Object,
-    pub _delta: NodePoseSyncState,
-    pub _baseId_k__BackingField: SyncStateId,
+    pub _delta: crate::GlobalNamespace::NodePoseSyncState,
+    pub _baseId_k__BackingField: crate::GlobalNamespace::SyncStateId,
     pub _timeOffsetMs_k__BackingField: i32,
 }
 #[cfg(feature = "NodePoseSyncStateDeltaNetSerializable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NodePoseSyncStateDeltaNetSerializable => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable => ""
     ."NodePoseSyncStateDeltaNetSerializable"
 );
 #[cfg(feature = "NodePoseSyncStateDeltaNetSerializable")]
-impl std::ops::Deref for NodePoseSyncStateDeltaNetSerializable {
+impl std::ops::Deref for crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NodePoseSyncStateDeltaNetSerializable")]
-impl std::ops::DerefMut for NodePoseSyncStateDeltaNetSerializable {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NodePoseSyncStateDeltaNetSerializable")]
-impl NodePoseSyncStateDeltaNetSerializable {
+impl crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable {
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
@@ -76,18 +78,24 @@ impl NodePoseSyncStateDeltaNetSerializable {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_baseId(&mut self) -> quest_hook::libil2cpp::Result<SyncStateId> {
+    pub fn get_baseId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SyncStateId> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: SyncStateId = __cordl_object.invoke("get_baseId", ())?;
+        let __cordl_ret: crate::GlobalNamespace::SyncStateId = __cordl_object
+            .invoke("get_baseId", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_delta(&mut self) -> quest_hook::libil2cpp::Result<NodePoseSyncState> {
+    pub fn get_delta(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NodePoseSyncState> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: NodePoseSyncState = __cordl_object.invoke("get_delta", ())?;
+        let __cordl_ret: crate::GlobalNamespace::NodePoseSyncState = __cordl_object
+            .invoke("get_delta", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_timeOffsetMs(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -99,7 +107,7 @@ impl NodePoseSyncStateDeltaNetSerializable {
     }
     pub fn set_baseId(
         &mut self,
-        value: SyncStateId,
+        value: crate::GlobalNamespace::SyncStateId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -110,7 +118,7 @@ impl NodePoseSyncStateDeltaNetSerializable {
     }
     pub fn set_delta(
         &mut self,
-        value: NodePoseSyncState,
+        value: crate::GlobalNamespace::NodePoseSyncState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -132,7 +140,8 @@ impl NodePoseSyncStateDeltaNetSerializable {
     }
 }
 #[cfg(feature = "NodePoseSyncStateDeltaNetSerializable")]
-impl quest_hook::libil2cpp::ObjectType for NodePoseSyncStateDeltaNetSerializable {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

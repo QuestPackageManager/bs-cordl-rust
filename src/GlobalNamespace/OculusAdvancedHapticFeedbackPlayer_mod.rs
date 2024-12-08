@@ -63,8 +63,8 @@ for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState
 #[derive(Debug)]
 pub struct OculusAdvancedHapticFeedbackPlayer {
     __cordl_parent: crate::System::Object,
-    pub _vrPlatformHelper: *mut IVRPlatformHelper,
-    pub _oculusVRHelper: *mut OculusVRHelper,
+    pub _vrPlatformHelper: *mut crate::GlobalNamespace::IVRPlatformHelper,
+    pub _oculusVRHelper: *mut crate::GlobalNamespace::OculusVRHelper,
     pub _hapticPlayerStatesDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::System::ValueTuple_2<
             *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
@@ -78,24 +78,25 @@ pub struct OculusAdvancedHapticFeedbackPlayer {
 }
 #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OculusAdvancedHapticFeedbackPlayer => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer => ""
     ."OculusAdvancedHapticFeedbackPlayer"
 );
 #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
-impl std::ops::Deref for OculusAdvancedHapticFeedbackPlayer {
+impl std::ops::Deref for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
-impl std::ops::DerefMut for OculusAdvancedHapticFeedbackPlayer {
+impl std::ops::DerefMut for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
-impl OculusAdvancedHapticFeedbackPlayer {
+impl crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
     #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]
     pub type HapticPlayerState = crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState;
     pub fn CanPlayHapticPreset(
@@ -193,7 +194,8 @@ impl OculusAdvancedHapticFeedbackPlayer {
     }
 }
 #[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
-impl quest_hook::libil2cpp::ObjectType for OculusAdvancedHapticFeedbackPlayer {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,39 +2,40 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoreSyncStateManager {
-    __cordl_parent: MultiplayerSyncStateManager_5<
-        StandardScoreSyncState,
+    __cordl_parent: crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+        crate::GlobalNamespace::StandardScoreSyncState,
         crate::GlobalNamespace::StandardScoreSyncState_Score,
         i32,
-        *mut StandardScoreSyncStateNetSerializable,
-        *mut StandardScoreSyncStateDeltaNetSerializable,
+        *mut crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+        *mut crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
     >,
 }
 #[cfg(feature = "ScoreSyncStateManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ScoreSyncStateManager => ""."ScoreSyncStateManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ScoreSyncStateManager => ""
+    ."ScoreSyncStateManager"
 );
 #[cfg(feature = "ScoreSyncStateManager")]
-impl std::ops::Deref for ScoreSyncStateManager {
-    type Target = MultiplayerSyncStateManager_5<
-        StandardScoreSyncState,
+impl std::ops::Deref for crate::GlobalNamespace::ScoreSyncStateManager {
+    type Target = crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+        crate::GlobalNamespace::StandardScoreSyncState,
         crate::GlobalNamespace::StandardScoreSyncState_Score,
         i32,
-        *mut StandardScoreSyncStateNetSerializable,
-        *mut StandardScoreSyncStateDeltaNetSerializable,
+        *mut crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+        *mut crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScoreSyncStateManager")]
-impl std::ops::DerefMut for ScoreSyncStateManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::ScoreSyncStateManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScoreSyncStateManager")]
-impl ScoreSyncStateManager {
+impl crate::GlobalNamespace::ScoreSyncStateManager {
     pub fn Interpolate(
         &mut self,
         prev: i32,
@@ -82,13 +83,15 @@ impl ScoreSyncStateManager {
     pub fn get_deltaSerializablePool(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut IPacketPool_1<*mut StandardScoreSyncStateDeltaNetSerializable>,
+        *mut crate::GlobalNamespace::IPacketPool_1<
+            *mut crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IPacketPool_1<
-            *mut StandardScoreSyncStateDeltaNetSerializable,
+        let __cordl_ret: *mut crate::GlobalNamespace::IPacketPool_1<
+            *mut crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
         > = __cordl_object.invoke("get_deltaSerializablePool", ())?;
         Ok(__cordl_ret)
     }
@@ -138,19 +141,22 @@ impl ScoreSyncStateManager {
     pub fn get_serializablePool(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut IPacketPool_1<*mut StandardScoreSyncStateNetSerializable>,
+        *mut crate::GlobalNamespace::IPacketPool_1<
+            *mut crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IPacketPool_1<
-            *mut StandardScoreSyncStateNetSerializable,
+        let __cordl_ret: *mut crate::GlobalNamespace::IPacketPool_1<
+            *mut crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
         > = __cordl_object.invoke("get_serializablePool", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "ScoreSyncStateManager")]
-impl quest_hook::libil2cpp::ObjectType for ScoreSyncStateManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ScoreSyncStateManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

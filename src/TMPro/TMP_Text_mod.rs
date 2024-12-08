@@ -333,16 +333,16 @@ impl std::ops::DerefMut for crate::TMPro::TMP_Text {
 }
 #[cfg(feature = "TMPro+TMP_Text")]
 impl crate::TMPro::TMP_Text {
-    #[cfg(feature = "TMPro+TMP_Text+UnicodeChar")]
-    pub type UnicodeChar = crate::TMPro::TMP_Text_UnicodeChar;
-    #[cfg(feature = "TMPro+TMP_Text+SpecialCharacter")]
-    pub type SpecialCharacter = crate::TMPro::TMP_Text_SpecialCharacter;
-    #[cfg(feature = "TMPro+TMP_Text+TextInputSources")]
-    pub type TextInputSources = crate::TMPro::TMP_Text_TextInputSources;
     #[cfg(feature = "TMPro+TMP_Text+CharacterSubstitution")]
     pub type CharacterSubstitution = crate::TMPro::TMP_Text_CharacterSubstitution;
+    #[cfg(feature = "TMPro+TMP_Text+SpecialCharacter")]
+    pub type SpecialCharacter = crate::TMPro::TMP_Text_SpecialCharacter;
     #[cfg(feature = "TMPro+TMP_Text+TextBackingContainer")]
     pub type TextBackingContainer = crate::TMPro::TMP_Text_TextBackingContainer;
+    #[cfg(feature = "TMPro+TMP_Text+TextInputSources")]
+    pub type TextInputSources = crate::TMPro::TMP_Text_TextInputSources;
+    #[cfg(feature = "TMPro+TMP_Text+UnicodeChar")]
+    pub type UnicodeChar = crate::TMPro::TMP_Text_UnicodeChar;
     #[cfg(feature = "TMPro+TMP_Text+__c")]
     pub type __c = crate::TMPro::TMP_Text___c;
     pub fn AddFloatToInternalTextBackingArray(

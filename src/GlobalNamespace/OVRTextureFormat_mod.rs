@@ -9,5 +9,6 @@ pub enum OVRTextureFormat {
 }
 #[cfg(feature = "OVRTextureFormat")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for OVRTextureFormat => ""."OVRTextureFormat"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRTextureFormat => ""
+    ."OVRTextureFormat"
 );

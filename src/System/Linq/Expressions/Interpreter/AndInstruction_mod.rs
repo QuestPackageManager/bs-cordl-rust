@@ -26,24 +26,24 @@ for crate::System::Linq::Expressions::Interpreter::AndInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::AndInstruction {
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndBoolean")]
+    pub type AndBoolean = crate::GlobalNamespace::AndInstruction_AndBoolean;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndByte")]
+    pub type AndByte = crate::GlobalNamespace::AndInstruction_AndByte;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndInt16")]
+    pub type AndInt16 = crate::GlobalNamespace::AndInstruction_AndInt16;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndInt32")]
+    pub type AndInt32 = crate::GlobalNamespace::AndInstruction_AndInt32;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndInt64")]
     pub type AndInt64 = crate::GlobalNamespace::AndInstruction_AndInt64;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndSByte")]
     pub type AndSByte = crate::GlobalNamespace::AndInstruction_AndSByte;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndInt16")]
-    pub type AndInt16 = crate::GlobalNamespace::AndInstruction_AndInt16;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndUInt32")]
-    pub type AndUInt32 = crate::GlobalNamespace::AndInstruction_AndUInt32;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndUInt16")]
     pub type AndUInt16 = crate::GlobalNamespace::AndInstruction_AndUInt16;
+    #[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndUInt32")]
+    pub type AndUInt32 = crate::GlobalNamespace::AndInstruction_AndUInt32;
     #[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndUInt64")]
     pub type AndUInt64 = crate::GlobalNamespace::AndInstruction_AndUInt64;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndBoolean")]
-    pub type AndBoolean = crate::GlobalNamespace::AndInstruction_AndBoolean;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndInt32")]
-    pub type AndInt32 = crate::GlobalNamespace::AndInstruction_AndInt32;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndByte")]
-    pub type AndByte = crate::GlobalNamespace::AndInstruction_AndByte;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

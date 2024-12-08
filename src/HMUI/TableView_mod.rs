@@ -231,14 +231,14 @@ impl std::ops::DerefMut for crate::HMUI::TableView {
 }
 #[cfg(feature = "HMUI+TableView")]
 impl crate::HMUI::TableView {
-    #[cfg(feature = "HMUI+TableView+TableType")]
-    pub type TableType = crate::HMUI::TableView_TableType;
-    #[cfg(feature = "HMUI+TableView+IDataSource")]
-    type IDataSource = crate::HMUI::TableView_IDataSource;
     #[cfg(feature = "HMUI+TableView+CellsGroup")]
     pub type CellsGroup = crate::HMUI::TableView_CellsGroup;
+    #[cfg(feature = "HMUI+TableView+IDataSource")]
+    type IDataSource = crate::HMUI::TableView_IDataSource;
     #[cfg(feature = "HMUI+TableView+ScrollPositionType")]
     pub type ScrollPositionType = crate::HMUI::TableView_ScrollPositionType;
+    #[cfg(feature = "HMUI+TableView+TableType")]
+    pub type TableType = crate::HMUI::TableView_TableType;
     pub fn AddCellToReusableCells(
         &mut self,
         cell: *mut crate::HMUI::TableCell,

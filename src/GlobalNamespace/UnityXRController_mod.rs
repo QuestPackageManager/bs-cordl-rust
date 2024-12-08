@@ -30,11 +30,11 @@ impl crate::GlobalNamespace::UnityXRController_Configuration {
     pub fn CreateController(
         &mut self,
         node: crate::UnityEngine::XR::XRNode,
-    ) -> quest_hook::libil2cpp::Result<*mut UnityXRController> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::UnityXRController> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut UnityXRController = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::UnityXRController = __cordl_object
             .invoke("CreateController", (node))?;
         Ok(__cordl_ret)
     }
@@ -145,27 +145,28 @@ pub struct UnityXRController {
     pub thumbstickAction: *mut crate::UnityEngine::InputSystem::InputAction,
     pub node: crate::UnityEngine::XR::XRNode,
     pub _manufacturerName_k__BackingField: crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName,
-    pub _hapticsHandler: *mut IUnityXRHapticsHandler,
+    pub _hapticsHandler: *mut crate::GlobalNamespace::IUnityXRHapticsHandler,
 }
 #[cfg(feature = "UnityXRController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for UnityXRController => ""."UnityXRController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::UnityXRController => ""
+    ."UnityXRController"
 );
 #[cfg(feature = "UnityXRController")]
-impl std::ops::Deref for UnityXRController {
+impl std::ops::Deref for crate::GlobalNamespace::UnityXRController {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityXRController")]
-impl std::ops::DerefMut for UnityXRController {
+impl std::ops::DerefMut for crate::GlobalNamespace::UnityXRController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityXRController")]
-impl UnityXRController {
+impl crate::GlobalNamespace::UnityXRController {
     #[cfg(feature = "UnityXRController+Configuration")]
     pub type Configuration = crate::GlobalNamespace::UnityXRController_Configuration;
     pub fn New(
@@ -243,11 +244,13 @@ impl UnityXRController {
     }
     pub fn get_hapticsHandler(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IUnityXRHapticsHandler> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::IUnityXRHapticsHandler,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IUnityXRHapticsHandler = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IUnityXRHapticsHandler = __cordl_object
             .invoke("get_hapticsHandler", ())?;
         Ok(__cordl_ret)
     }
@@ -276,7 +279,7 @@ impl UnityXRController {
     }
 }
 #[cfg(feature = "UnityXRController")]
-impl quest_hook::libil2cpp::ObjectType for UnityXRController {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UnityXRController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

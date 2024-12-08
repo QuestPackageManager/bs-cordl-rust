@@ -7,5 +7,6 @@ pub enum OpenProductStoreResult {
 }
 #[cfg(feature = "OpenProductStoreResult")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for OpenProductStoreResult => ""."OpenProductStoreResult"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OpenProductStoreResult => ""
+    ."OpenProductStoreResult"
 );

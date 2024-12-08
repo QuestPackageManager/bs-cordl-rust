@@ -2,29 +2,29 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ComboMissionObjectiveChecker {
-    __cordl_parent: SimpleValueMissionObjectiveChecker,
-    pub _comboController: *mut ComboController,
+    __cordl_parent: crate::GlobalNamespace::SimpleValueMissionObjectiveChecker,
+    pub _comboController: *mut crate::GlobalNamespace::ComboController,
 }
 #[cfg(feature = "ComboMissionObjectiveChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ComboMissionObjectiveChecker => ""
-    ."ComboMissionObjectiveChecker"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ComboMissionObjectiveChecker =>
+    ""."ComboMissionObjectiveChecker"
 );
 #[cfg(feature = "ComboMissionObjectiveChecker")]
-impl std::ops::Deref for ComboMissionObjectiveChecker {
-    type Target = SimpleValueMissionObjectiveChecker;
+impl std::ops::Deref for crate::GlobalNamespace::ComboMissionObjectiveChecker {
+    type Target = crate::GlobalNamespace::SimpleValueMissionObjectiveChecker;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ComboMissionObjectiveChecker")]
-impl std::ops::DerefMut for ComboMissionObjectiveChecker {
+impl std::ops::DerefMut for crate::GlobalNamespace::ComboMissionObjectiveChecker {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ComboMissionObjectiveChecker")]
-impl ComboMissionObjectiveChecker {
+impl crate::GlobalNamespace::ComboMissionObjectiveChecker {
     pub fn HandleComboDidChange(
         &mut self,
         combo: i32,
@@ -75,7 +75,8 @@ impl ComboMissionObjectiveChecker {
     }
 }
 #[cfg(feature = "ComboMissionObjectiveChecker")]
-impl quest_hook::libil2cpp::ObjectType for ComboMissionObjectiveChecker {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ComboMissionObjectiveChecker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

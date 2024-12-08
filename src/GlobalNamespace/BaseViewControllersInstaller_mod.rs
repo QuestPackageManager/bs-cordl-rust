@@ -3,29 +3,29 @@
 #[derive(Debug)]
 pub struct BaseViewControllersInstaller {
     __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
-    pub _simpleDialogPromptViewControllerPrefab: *mut SimpleDialogPromptViewController,
-    pub _safeAreaFocusedSimpleDialogPromptViewControllerPrefab: *mut SafeAreaFocusedSimpleDialogPromptViewController,
+    pub _simpleDialogPromptViewControllerPrefab: *mut crate::GlobalNamespace::SimpleDialogPromptViewController,
+    pub _safeAreaFocusedSimpleDialogPromptViewControllerPrefab: *mut crate::GlobalNamespace::SafeAreaFocusedSimpleDialogPromptViewController,
 }
 #[cfg(feature = "BaseViewControllersInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BaseViewControllersInstaller => ""
-    ."BaseViewControllersInstaller"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BaseViewControllersInstaller =>
+    ""."BaseViewControllersInstaller"
 );
 #[cfg(feature = "BaseViewControllersInstaller")]
-impl std::ops::Deref for BaseViewControllersInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::BaseViewControllersInstaller {
     type Target = crate::Zenject::ScriptableObjectInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BaseViewControllersInstaller")]
-impl std::ops::DerefMut for BaseViewControllersInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::BaseViewControllersInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BaseViewControllersInstaller")]
-impl BaseViewControllersInstaller {
+impl crate::GlobalNamespace::BaseViewControllersInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -55,7 +55,8 @@ impl BaseViewControllersInstaller {
     }
 }
 #[cfg(feature = "BaseViewControllersInstaller")]
-impl quest_hook::libil2cpp::ObjectType for BaseViewControllersInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BaseViewControllersInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

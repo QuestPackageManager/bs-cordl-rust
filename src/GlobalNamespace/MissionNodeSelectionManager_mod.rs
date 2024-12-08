@@ -3,33 +3,35 @@
 #[derive(Debug)]
 pub struct MissionNodeSelectionManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionNodesManager: *mut MissionNodesManager,
+    pub _missionNodesManager: *mut crate::GlobalNamespace::MissionNodesManager,
     pub didSelectMissionNodeEvent: *mut crate::System::Action_1<
-        *mut MissionNodeVisualController,
+        *mut crate::GlobalNamespace::MissionNodeVisualController,
     >,
-    pub _missionNodes: *mut quest_hook::libil2cpp::Il2CppArray<*mut MissionNode>,
-    pub _selectedNode: *mut MissionNodeVisualController,
+    pub _missionNodes: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::MissionNode,
+    >,
+    pub _selectedNode: *mut crate::GlobalNamespace::MissionNodeVisualController,
 }
 #[cfg(feature = "MissionNodeSelectionManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionNodeSelectionManager => ""
-    ."MissionNodeSelectionManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissionNodeSelectionManager =>
+    ""."MissionNodeSelectionManager"
 );
 #[cfg(feature = "MissionNodeSelectionManager")]
-impl std::ops::Deref for MissionNodeSelectionManager {
+impl std::ops::Deref for crate::GlobalNamespace::MissionNodeSelectionManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionNodeSelectionManager")]
-impl std::ops::DerefMut for MissionNodeSelectionManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionNodeSelectionManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionNodeSelectionManager")]
-impl MissionNodeSelectionManager {
+impl crate::GlobalNamespace::MissionNodeSelectionManager {
     pub fn DeselectSelectedNode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -42,7 +44,7 @@ impl MissionNodeSelectionManager {
     }
     pub fn HandleNodeWasDisplayed(
         &mut self,
-        missionNode: *mut MissionNodeVisualController,
+        missionNode: *mut crate::GlobalNamespace::MissionNodeVisualController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -53,7 +55,7 @@ impl MissionNodeSelectionManager {
     }
     pub fn HandleNodeWasSelect(
         &mut self,
-        missionNode: *mut MissionNodeVisualController,
+        missionNode: *mut crate::GlobalNamespace::MissionNodeVisualController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -101,7 +103,9 @@ impl MissionNodeSelectionManager {
     }
     pub fn add_didSelectMissionNodeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MissionNodeVisualController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::MissionNodeVisualController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -112,7 +116,9 @@ impl MissionNodeSelectionManager {
     }
     pub fn remove_didSelectMissionNodeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut MissionNodeVisualController>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::MissionNodeVisualController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -123,7 +129,8 @@ impl MissionNodeSelectionManager {
     }
 }
 #[cfg(feature = "MissionNodeSelectionManager")]
-impl quest_hook::libil2cpp::ObjectType for MissionNodeSelectionManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MissionNodeSelectionManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

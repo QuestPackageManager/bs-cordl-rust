@@ -29,18 +29,18 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
 impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
     pub const CasePropertyName: &'static str = "Case";
     pub const FieldsPropertyName: &'static str = "Fields";
-    #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
-    pub type UnionCase = crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase;
-    #[cfg(
-        feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+__c__DisplayClass9_0"
-    )]
-    pub type __c__DisplayClass9_0 = crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter___c__DisplayClass9_0;
     #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
     pub type Union = crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union;
+    #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
+    pub type UnionCase = crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase;
     #[cfg(
         feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+__c__DisplayClass8_0"
     )]
     pub type __c__DisplayClass8_0 = crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter___c__DisplayClass8_0;
+    #[cfg(
+        feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+__c__DisplayClass9_0"
+    )]
+    pub type __c__DisplayClass9_0 = crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter___c__DisplayClass9_0;
     pub fn CanConvert(
         &mut self,
         objectType: *mut crate::System::Type,

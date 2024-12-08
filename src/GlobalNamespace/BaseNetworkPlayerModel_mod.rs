@@ -2,44 +2,45 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseNetworkPlayerModel {
-    __cordl_parent: StandaloneMonobehavior,
-    pub _connectedPlayerManager: *mut ConnectedPlayerManager,
-    pub _partyManager: *mut INetworkPlayerModel,
-    pub _configuration: GameplayServerConfiguration,
-    pub _selectionMask: BeatmapLevelSelectionMask,
+    __cordl_parent: crate::GlobalNamespace::StandaloneMonobehavior,
+    pub _connectedPlayerManager: *mut crate::GlobalNamespace::ConnectedPlayerManager,
+    pub _partyManager: *mut crate::GlobalNamespace::INetworkPlayerModel,
+    pub _configuration: crate::GlobalNamespace::GameplayServerConfiguration,
+    pub _selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     pub _discoveryEnabled_k__BackingField: bool,
     pub connectedPlayerManagerCreatedEvent: *mut crate::System::Action_1<
-        *mut INetworkPlayerModel,
+        *mut crate::GlobalNamespace::INetworkPlayerModel,
     >,
     pub connectedPlayerManagerDestroyedEvent: *mut crate::System::Action_1<
-        *mut INetworkPlayerModel,
+        *mut crate::GlobalNamespace::INetworkPlayerModel,
     >,
 }
 #[cfg(feature = "BaseNetworkPlayerModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BaseNetworkPlayerModel => ""."BaseNetworkPlayerModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BaseNetworkPlayerModel => ""
+    ."BaseNetworkPlayerModel"
 );
 #[cfg(feature = "BaseNetworkPlayerModel")]
-impl std::ops::Deref for BaseNetworkPlayerModel {
-    type Target = StandaloneMonobehavior;
+impl std::ops::Deref for crate::GlobalNamespace::BaseNetworkPlayerModel {
+    type Target = crate::GlobalNamespace::StandaloneMonobehavior;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BaseNetworkPlayerModel")]
-impl std::ops::DerefMut for BaseNetworkPlayerModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::BaseNetworkPlayerModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BaseNetworkPlayerModel")]
-impl BaseNetworkPlayerModel {
+impl crate::GlobalNamespace::BaseNetworkPlayerModel {
+    #[cfg(feature = "BaseNetworkPlayerModel+PartyConfig")]
+    pub type PartyConfig = crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig;
     #[cfg(feature = "BaseNetworkPlayerModel+_GetOtherPlayers_d__56")]
     pub type _GetOtherPlayers_d__56 = crate::GlobalNamespace::BaseNetworkPlayerModel__GetOtherPlayers_d__56;
     #[cfg(feature = "BaseNetworkPlayerModel+_GetPartyPlayers_d__55")]
     pub type _GetPartyPlayers_d__55 = crate::GlobalNamespace::BaseNetworkPlayerModel__GetPartyPlayers_d__55;
-    #[cfg(feature = "BaseNetworkPlayerModel+PartyConfig")]
-    pub type PartyConfig = crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig;
     pub fn Connected(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -62,7 +63,7 @@ impl BaseNetworkPlayerModel {
     }
     pub fn ConnectionFailed(
         &mut self,
-        reason: ConnectionFailedReason,
+        reason: crate::GlobalNamespace::ConnectionFailedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -73,7 +74,7 @@ impl BaseNetworkPlayerModel {
     }
     pub fn CreateConnectedPlayerManager<T>(
         &mut self,
-        initParams: *mut IConnectionInitParams_1<T>,
+        initParams: *mut crate::GlobalNamespace::IConnectionInitParams_1<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -88,7 +89,7 @@ impl BaseNetworkPlayerModel {
     }
     pub fn CreatePartyConnection<T>(
         &mut self,
-        createConfig: *mut INetworkPlayerModelPartyConfig_1<T>,
+        createConfig: *mut crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -123,7 +124,7 @@ impl BaseNetworkPlayerModel {
     }
     pub fn Disconnected(
         &mut self,
-        disconnectedReason: DisconnectedReason,
+        disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -135,39 +136,45 @@ impl BaseNetworkPlayerModel {
     pub fn GetOtherPlayers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<*mut INetworkPlayer>,
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::GlobalNamespace::INetworkPlayer,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut INetworkPlayer,
+            *mut crate::GlobalNamespace::INetworkPlayer,
         > = __cordl_object.invoke("GetOtherPlayers", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetPartyPlayers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<*mut INetworkPlayer>,
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::GlobalNamespace::INetworkPlayer,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut INetworkPlayer,
+            *mut crate::GlobalNamespace::INetworkPlayer,
         > = __cordl_object.invoke("GetPartyPlayers", ())?;
         Ok(__cordl_ret)
     }
     pub fn INetworkPlayerModel_get_otherPlayers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<*mut INetworkPlayer>,
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::GlobalNamespace::INetworkPlayer,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut INetworkPlayer,
+            *mut crate::GlobalNamespace::INetworkPlayer,
         > = __cordl_object.invoke("INetworkPlayerModel.get_otherPlayers", ())?;
         Ok(__cordl_ret)
     }
@@ -212,7 +219,7 @@ impl BaseNetworkPlayerModel {
     }
     pub fn PlayerConnected(
         &mut self,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -223,7 +230,7 @@ impl BaseNetworkPlayerModel {
     }
     pub fn PlayerDisconnected(
         &mut self,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -234,7 +241,7 @@ impl BaseNetworkPlayerModel {
     }
     pub fn PlayerOrderChanged(
         &mut self,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -245,7 +252,7 @@ impl BaseNetworkPlayerModel {
     }
     pub fn PlayerStateChanged(
         &mut self,
-        player: *mut IConnectedPlayer,
+        player: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -276,7 +283,9 @@ impl BaseNetworkPlayerModel {
     }
     pub fn add_connectedPlayerManagerCreatedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut INetworkPlayerModel>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::INetworkPlayerModel,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -287,7 +296,9 @@ impl BaseNetworkPlayerModel {
     }
     pub fn add_connectedPlayerManagerDestroyedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut INetworkPlayerModel>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::INetworkPlayerModel,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -298,7 +309,7 @@ impl BaseNetworkPlayerModel {
     }
     pub fn add_inviteRequestedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut INetworkPlayer>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -309,7 +320,7 @@ impl BaseNetworkPlayerModel {
     }
     pub fn add_joinRequestedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut INetworkPlayer>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -320,7 +331,9 @@ impl BaseNetworkPlayerModel {
     }
     pub fn add_partyChangedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut INetworkPlayerModel>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::INetworkPlayerModel,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -342,21 +355,25 @@ impl BaseNetworkPlayerModel {
     }
     pub fn get_configuration(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<GameplayServerConfiguration> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::GameplayServerConfiguration,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: GameplayServerConfiguration = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::GameplayServerConfiguration = __cordl_object
             .invoke("get_configuration", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_connectedPlayerManager(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut ConnectedPlayerManager> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::ConnectedPlayerManager,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ConnectedPlayerManager = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::ConnectedPlayerManager = __cordl_object
             .invoke("get_connectedPlayerManager", ())?;
         Ok(__cordl_ret)
     }
@@ -424,40 +441,48 @@ impl BaseNetworkPlayerModel {
     }
     pub fn get_partyManager(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut INetworkPlayerModel> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::INetworkPlayerModel,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut INetworkPlayerModel = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::INetworkPlayerModel = __cordl_object
             .invoke("get_partyManager", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_partyPlayers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<*mut INetworkPlayer>,
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::GlobalNamespace::INetworkPlayer,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut INetworkPlayer,
+            *mut crate::GlobalNamespace::INetworkPlayer,
         > = __cordl_object.invoke("get_partyPlayers", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_selectionMask(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<BeatmapLevelSelectionMask> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::BeatmapLevelSelectionMask,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapLevelSelectionMask = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::BeatmapLevelSelectionMask = __cordl_object
             .invoke("get_selectionMask", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_connectedPlayerManagerCreatedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut INetworkPlayerModel>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::INetworkPlayerModel,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -468,7 +493,9 @@ impl BaseNetworkPlayerModel {
     }
     pub fn remove_connectedPlayerManagerDestroyedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut INetworkPlayerModel>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::INetworkPlayerModel,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -479,7 +506,7 @@ impl BaseNetworkPlayerModel {
     }
     pub fn remove_inviteRequestedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut INetworkPlayer>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -490,7 +517,7 @@ impl BaseNetworkPlayerModel {
     }
     pub fn remove_joinRequestedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut INetworkPlayer>,
+        value: *mut crate::System::Action_1<*mut crate::GlobalNamespace::INetworkPlayer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -501,7 +528,9 @@ impl BaseNetworkPlayerModel {
     }
     pub fn remove_partyChangedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut INetworkPlayerModel>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::INetworkPlayerModel,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -534,7 +563,8 @@ impl BaseNetworkPlayerModel {
     }
 }
 #[cfg(feature = "BaseNetworkPlayerModel")]
-impl quest_hook::libil2cpp::ObjectType for BaseNetworkPlayerModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BaseNetworkPlayerModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -547,9 +577,9 @@ impl quest_hook::libil2cpp::ObjectType for BaseNetworkPlayerModel {
 #[derive(Debug)]
 pub struct BaseNetworkPlayerModel_PartyConfig {
     __cordl_parent: crate::System::Object,
-    pub selectionMask: BeatmapLevelSelectionMask,
-    pub configuration: GameplayServerConfiguration,
-    pub partyManager: *mut INetworkPlayerModel,
+    pub selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+    pub configuration: crate::GlobalNamespace::GameplayServerConfiguration,
+    pub partyManager: *mut crate::GlobalNamespace::INetworkPlayerModel,
 }
 #[cfg(feature = "BaseNetworkPlayerModel+PartyConfig")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

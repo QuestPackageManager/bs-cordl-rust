@@ -642,14 +642,14 @@ pub struct VRControllersRecorder {
     pub _cameraFOV: f32,
     pub _controllersTimeOffset: f32,
     pub _controllersSmooth: f32,
-    pub _controller0: *mut VRController,
-    pub _controller1: *mut VRController,
+    pub _controller0: *mut crate::GlobalNamespace::VRController,
+    pub _controller1: *mut crate::GlobalNamespace::VRController,
     pub _headTransform: *mut crate::UnityEngine::Transform,
     pub _camera: *mut crate::UnityEngine::Camera,
     pub _recorderCamera: *mut crate::UnityEngine::Camera,
     pub _spawnRotationTransform: *mut crate::UnityEngine::Transform,
     pub _originTransform: *mut crate::UnityEngine::Transform,
-    pub _audioTimeSyncController: *mut AudioTimeSyncController,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
     pub _controller0Transform: *mut crate::UnityEngine::Transform,
     pub _controller1Transform: *mut crate::UnityEngine::Transform,
     pub _hasHead: bool,
@@ -660,37 +660,38 @@ pub struct VRControllersRecorder {
 }
 #[cfg(feature = "VRControllersRecorder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for VRControllersRecorder => ""."VRControllersRecorder"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::VRControllersRecorder => ""
+    ."VRControllersRecorder"
 );
 #[cfg(feature = "VRControllersRecorder")]
-impl std::ops::Deref for VRControllersRecorder {
+impl std::ops::Deref for crate::GlobalNamespace::VRControllersRecorder {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "VRControllersRecorder")]
-impl std::ops::DerefMut for VRControllersRecorder {
+impl std::ops::DerefMut for crate::GlobalNamespace::VRControllersRecorder {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "VRControllersRecorder")]
-impl VRControllersRecorder {
+impl crate::GlobalNamespace::VRControllersRecorder {
     pub const kHeaderChar: char = 'v';
     pub const kRecorderVersion: u32 = 30209u32;
     pub const kSavedDataRecorderVersion: u32 = 1979777280u32;
     pub const kSavedDataWithOffsetRecorderVersion: u32 = 7733505u32;
-    #[cfg(feature = "VRControllersRecorder+TypeSerializationBinder")]
-    pub type TypeSerializationBinder = crate::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder;
     #[cfg(feature = "VRControllersRecorder+Keyframe")]
     pub type Keyframe = crate::GlobalNamespace::VRControllersRecorder_Keyframe;
+    #[cfg(feature = "VRControllersRecorder+Mode")]
+    pub type Mode = crate::GlobalNamespace::VRControllersRecorder_Mode;
     #[cfg(feature = "VRControllersRecorder+SavedData")]
     pub type SavedData = crate::GlobalNamespace::VRControllersRecorder_SavedData;
     #[cfg(feature = "VRControllersRecorder+State")]
     pub type State = crate::GlobalNamespace::VRControllersRecorder_State;
-    #[cfg(feature = "VRControllersRecorder+Mode")]
-    pub type Mode = crate::GlobalNamespace::VRControllersRecorder_Mode;
+    #[cfg(feature = "VRControllersRecorder+TypeSerializationBinder")]
+    pub type TypeSerializationBinder = crate::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder;
     pub fn CheckNodes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -703,7 +704,7 @@ impl VRControllersRecorder {
     }
     pub fn HandleControllerAnchorUpdate(
         &mut self,
-        controller: *mut VRController,
+        controller: *mut crate::GlobalNamespace::VRController,
         poseOffset: crate::UnityEngine::Pose,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -968,7 +969,8 @@ impl VRControllersRecorder {
     }
 }
 #[cfg(feature = "VRControllersRecorder")]
-impl quest_hook::libil2cpp::ObjectType for VRControllersRecorder {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::VRControllersRecorder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

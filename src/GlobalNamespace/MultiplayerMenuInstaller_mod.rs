@@ -6,24 +6,24 @@ pub struct MultiplayerMenuInstaller {
 }
 #[cfg(feature = "MultiplayerMenuInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerMenuInstaller => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerMenuInstaller => ""
     ."MultiplayerMenuInstaller"
 );
 #[cfg(feature = "MultiplayerMenuInstaller")]
-impl std::ops::Deref for MultiplayerMenuInstaller {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerMenuInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerMenuInstaller")]
-impl std::ops::DerefMut for MultiplayerMenuInstaller {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerMenuInstaller {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerMenuInstaller")]
-impl MultiplayerMenuInstaller {
+impl crate::GlobalNamespace::MultiplayerMenuInstaller {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -53,7 +53,8 @@ impl MultiplayerMenuInstaller {
     }
 }
 #[cfg(feature = "MultiplayerMenuInstaller")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerMenuInstaller {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerMenuInstaller {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

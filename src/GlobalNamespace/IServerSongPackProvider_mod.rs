@@ -6,34 +6,36 @@ pub struct IServerSongPackProvider {
 }
 #[cfg(feature = "IServerSongPackProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IServerSongPackProvider => ""."IServerSongPackProvider"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IServerSongPackProvider => ""
+    ."IServerSongPackProvider"
 );
 #[cfg(feature = "IServerSongPackProvider")]
-impl std::ops::Deref for IServerSongPackProvider {
+impl std::ops::Deref for crate::GlobalNamespace::IServerSongPackProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IServerSongPackProvider")]
-impl std::ops::DerefMut for IServerSongPackProvider {
+impl std::ops::DerefMut for crate::GlobalNamespace::IServerSongPackProvider {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IServerSongPackProvider")]
-impl IServerSongPackProvider {
+impl crate::GlobalNamespace::IServerSongPackProvider {
     pub fn DecomposeSongPackMask(
         &mut self,
-        songPackMask: SongPackMask,
+        songPackMask: crate::GlobalNamespace::SongPackMask,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<SongPackMask>,
+        *mut quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::SongPackMask>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<SongPackMask> = __cordl_object
-            .invoke("DecomposeSongPackMask", (songPackMask))?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            crate::GlobalNamespace::SongPackMask,
+        > = __cordl_object.invoke("DecomposeSongPackMask", (songPackMask))?;
         Ok(__cordl_ret)
     }
     pub fn from_object_mut(
@@ -43,7 +45,8 @@ impl IServerSongPackProvider {
     }
 }
 #[cfg(feature = "IServerSongPackProvider")]
-impl quest_hook::libil2cpp::ObjectType for IServerSongPackProvider {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IServerSongPackProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

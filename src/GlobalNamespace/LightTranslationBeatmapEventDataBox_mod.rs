@@ -2,46 +2,47 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightTranslationBeatmapEventDataBox {
-    __cordl_parent: BeatmapEventDataBox,
+    __cordl_parent: crate::GlobalNamespace::BeatmapEventDataBox,
     pub _lightTranslationBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut LightTranslationBaseData,
+        *mut crate::GlobalNamespace::LightTranslationBaseData,
     >,
-    pub _axis: LightAxis,
+    pub _axis: crate::GlobalNamespace::LightAxis,
     pub _translationDirection: f32,
     pub _beatStep: f32,
 }
 #[cfg(feature = "LightTranslationBeatmapEventDataBox")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightTranslationBeatmapEventDataBox => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::LightTranslationBeatmapEventDataBox => ""
     ."LightTranslationBeatmapEventDataBox"
 );
 #[cfg(feature = "LightTranslationBeatmapEventDataBox")]
-impl std::ops::Deref for LightTranslationBeatmapEventDataBox {
-    type Target = BeatmapEventDataBox;
+impl std::ops::Deref for crate::GlobalNamespace::LightTranslationBeatmapEventDataBox {
+    type Target = crate::GlobalNamespace::BeatmapEventDataBox;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightTranslationBeatmapEventDataBox")]
-impl std::ops::DerefMut for LightTranslationBeatmapEventDataBox {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightTranslationBeatmapEventDataBox {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightTranslationBeatmapEventDataBox")]
-impl LightTranslationBeatmapEventDataBox {
+impl crate::GlobalNamespace::LightTranslationBeatmapEventDataBox {
     pub fn New(
-        indexFilter: *mut IndexFilter,
+        indexFilter: *mut crate::GlobalNamespace::IndexFilter,
         beatDistributionParam: f32,
         beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
-        axis: LightAxis,
+        axis: crate::GlobalNamespace::LightAxis,
         flipTranslation: bool,
         gapDistributionParam: f32,
         gapDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         gapDistributionShouldAffectFirstBaseEvent: bool,
-        gapDistributionEaseType: EaseType,
+        gapDistributionEaseType: crate::GlobalNamespace::EaseType,
         lightTranslationBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut LightTranslationBaseData,
+            *mut crate::GlobalNamespace::LightTranslationBaseData,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -72,8 +73,10 @@ impl LightTranslationBeatmapEventDataBox {
         durationOrderIndex: i32,
         distributionOrderIndex: i32,
         maxBeat: f32,
-        beatToTimeConverter: *mut IBeatToTimeConverter,
-        output: *mut crate::System::Collections::Generic::List_1<*mut BeatmapEventData>,
+        beatToTimeConverter: *mut crate::GlobalNamespace::IBeatToTimeConverter,
+        output: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::GlobalNamespace::BeatmapEventData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -96,17 +99,17 @@ impl LightTranslationBeatmapEventDataBox {
     }
     pub fn _ctor(
         &mut self,
-        indexFilter: *mut IndexFilter,
+        indexFilter: *mut crate::GlobalNamespace::IndexFilter,
         beatDistributionParam: f32,
         beatDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
-        axis: LightAxis,
+        axis: crate::GlobalNamespace::LightAxis,
         flipTranslation: bool,
         gapDistributionParam: f32,
         gapDistributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         gapDistributionShouldAffectFirstBaseEvent: bool,
-        gapDistributionEaseType: EaseType,
+        gapDistributionEaseType: crate::GlobalNamespace::EaseType,
         lightTranslationBaseDataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut LightTranslationBaseData,
+            *mut crate::GlobalNamespace::LightTranslationBaseData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -146,7 +149,8 @@ impl LightTranslationBeatmapEventDataBox {
     }
 }
 #[cfg(feature = "LightTranslationBeatmapEventDataBox")]
-impl quest_hook::libil2cpp::ObjectType for LightTranslationBeatmapEventDataBox {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LightTranslationBeatmapEventDataBox {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

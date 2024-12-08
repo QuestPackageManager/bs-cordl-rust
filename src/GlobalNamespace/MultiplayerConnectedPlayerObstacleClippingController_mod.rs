@@ -4,29 +4,32 @@
 pub struct MultiplayerConnectedPlayerObstacleClippingController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _materialPropertyBlockControllers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut MaterialPropertyBlockController,
+        *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     >,
 }
 #[cfg(feature = "MultiplayerConnectedPlayerObstacleClippingController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerConnectedPlayerObstacleClippingController =>
-    ""."MultiplayerConnectedPlayerObstacleClippingController"
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerConnectedPlayerObstacleClippingController => ""
+    ."MultiplayerConnectedPlayerObstacleClippingController"
 );
 #[cfg(feature = "MultiplayerConnectedPlayerObstacleClippingController")]
-impl std::ops::Deref for MultiplayerConnectedPlayerObstacleClippingController {
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleClippingController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerObstacleClippingController")]
-impl std::ops::DerefMut for MultiplayerConnectedPlayerObstacleClippingController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleClippingController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerObstacleClippingController")]
-impl MultiplayerConnectedPlayerObstacleClippingController {
+impl crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleClippingController {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -59,7 +62,7 @@ impl MultiplayerConnectedPlayerObstacleClippingController {
 }
 #[cfg(feature = "MultiplayerConnectedPlayerObstacleClippingController")]
 impl quest_hook::libil2cpp::ObjectType
-for MultiplayerConnectedPlayerObstacleClippingController {
+for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleClippingController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

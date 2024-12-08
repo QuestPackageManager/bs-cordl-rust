@@ -45,13 +45,13 @@ impl<
     TObject: quest_hook::libil2cpp::Type,
     TSignal: quest_hook::libil2cpp::Type,
 > crate::Zenject::BindSignalFromBinder_2<TObject, TSignal> {
+    #[cfg(feature = "Zenject+BindSignalFromBinder_2+__c")]
+    pub type __c = crate::Zenject::BindSignalFromBinder_2___c<TObject, TSignal>;
     #[cfg(feature = "Zenject+BindSignalFromBinder_2+__c__DisplayClass8_0")]
     pub type __c__DisplayClass8_0 = crate::Zenject::BindSignalFromBinder_2___c__DisplayClass8_0<
         TObject,
         TSignal,
     >;
-    #[cfg(feature = "Zenject+BindSignalFromBinder_2+__c")]
-    pub type __c = crate::Zenject::BindSignalFromBinder_2___c<TObject, TSignal>;
     pub fn From(
         &mut self,
         objectBindCallback: *mut crate::System::Action_1<

@@ -6,10 +6,12 @@ pub struct EnvironmentName {
 }
 #[cfg(feature = "EnvironmentName")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for EnvironmentName => ""."EnvironmentName"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnvironmentName => ""
+    ."EnvironmentName"
 );
 #[cfg(feature = "EnvironmentName")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for EnvironmentName {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::EnvironmentName {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -19,10 +21,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for EnvironmentName {
     }
 }
 #[cfg(feature = "EnvironmentName")]
-impl EnvironmentName {
+impl crate::GlobalNamespace::EnvironmentName {
     pub fn Equals_EnvironmentName0(
         &mut self,
-        other: EnvironmentName,
+        other: crate::GlobalNamespace::EnvironmentName,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

@@ -27,12 +27,12 @@ for crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping {
 }
 #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+Lightmapping")]
 impl crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping {
-    #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+Lightmapping+__c")]
-    pub type __c = crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping___c;
     #[cfg(
         feature = "UnityEngine+Experimental+GlobalIllumination+Lightmapping+RequestLightsDelegate"
     )]
     pub type RequestLightsDelegate = crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLightsDelegate;
+    #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+Lightmapping+__c")]
+    pub type __c = crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping___c;
 }
 #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+Lightmapping")]
 impl quest_hook::libil2cpp::ObjectType

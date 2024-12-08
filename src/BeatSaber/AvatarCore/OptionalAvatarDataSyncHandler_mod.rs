@@ -4,17 +4,17 @@
 pub struct OptionalAvatarDataSyncHandler {
     __cordl_parent: crate::System::Object,
     pub didChangeOptionalAvatarDataEvent: *mut crate::System::Action_2<
-        *mut IConnectedPlayer,
+        *mut crate::GlobalNamespace::IConnectedPlayer,
         crate::BeatSaber::AvatarCore::OptionalAvatarData,
     >,
     pub _latestOptionalAvatarDataDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut IConnectedPlayer,
+        *mut crate::GlobalNamespace::IConnectedPlayer,
         *mut crate::System::Collections::Generic::Dictionary_2<
             u32,
             crate::BeatSaber::AvatarCore::OptionalAvatarData,
         >,
     >,
-    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
+    pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarDataSyncHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -50,8 +50,8 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
     pub fn HandleOptionalAvatarDataChanged(
         &mut self,
         dataType: u32,
-        data: *mut ByteArrayNetSerializable,
-        connectedPlayer: *mut IConnectedPlayer,
+        data: *mut crate::GlobalNamespace::ByteArrayNetSerializable,
+        connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<
         crate::BeatSaber::AvatarCore::OptionalAvatarData,
     > {
@@ -68,7 +68,7 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
     pub fn HandleOptionalAvatarDataPacket(
         &mut self,
         packet: *mut crate::BeatSaber::AvatarCore::OptionalAvatarDataPacket,
-        connectedPlayer: *mut IConnectedPlayer,
+        connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -78,7 +78,7 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
         Ok(__cordl_ret)
     }
     pub fn New(
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
+        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -99,7 +99,7 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
     }
     pub fn TryGetAllLatestOptionalAvatarData(
         &mut self,
-        connectedPlayer: *mut IConnectedPlayer,
+        connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
         data: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Collections::Generic::Dictionary_2<
                 u32,
@@ -116,7 +116,7 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
     }
     pub fn _ctor(
         &mut self,
-        multiplayerSessionManager: *mut IMultiplayerSessionManager,
+        multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -128,7 +128,7 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
     pub fn add_didChangeOptionalAvatarDataEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut IConnectedPlayer,
+            *mut crate::GlobalNamespace::IConnectedPlayer,
             crate::BeatSaber::AvatarCore::OptionalAvatarData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -142,7 +142,7 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
     pub fn remove_didChangeOptionalAvatarDataEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut IConnectedPlayer,
+            *mut crate::GlobalNamespace::IConnectedPlayer,
             crate::BeatSaber::AvatarCore::OptionalAvatarData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

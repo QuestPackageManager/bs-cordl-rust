@@ -19,7 +19,7 @@ pub struct NetworkPacketSerializer_2<
         u8,
     >,
     pub _subSerializerRegistry: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut INetworkPacketSubSerializer_1<TData>,
+        *mut crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData>,
         u8,
     >,
     pub _internalWriter: *mut crate::LiteNetLib::Utils::NetDataWriter,
@@ -28,14 +28,14 @@ pub struct NetworkPacketSerializer_2<
 }
 #[cfg(feature = "NetworkPacketSerializer_2")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NetworkPacketSerializer_2 < TType, TData > => ""
-    ."NetworkPacketSerializer`2" < TType, TData >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NetworkPacketSerializer_2 <
+    TType, TData > => ""."NetworkPacketSerializer`2" < TType, TData >
 );
 #[cfg(feature = "NetworkPacketSerializer_2")]
 impl<
     TType: quest_hook::libil2cpp::Type,
     TData: quest_hook::libil2cpp::Type,
-> std::ops::Deref for NetworkPacketSerializer_2<TType, TData> {
+> std::ops::Deref for crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -45,7 +45,8 @@ impl<
 impl<
     TType: quest_hook::libil2cpp::Type,
     TData: quest_hook::libil2cpp::Type,
-> std::ops::DerefMut for NetworkPacketSerializer_2<TType, TData> {
+> std::ops::DerefMut
+for crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -54,15 +55,26 @@ impl<
 impl<
     TType: quest_hook::libil2cpp::Type,
     TData: quest_hook::libil2cpp::Type,
-> NetworkPacketSerializer_2<TType, TData> {
-    #[cfg(feature = "NetworkPacketSerializer_2+__c__DisplayClass5_0_1")]
-    pub type __c__DisplayClass5_0_1<TPacket: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::NetworkPacketSerializer_2___c__DisplayClass5_0_1<
+> crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
+    #[cfg(feature = "NetworkPacketSerializer_2+__c__6_1")]
+    pub type __c__6_1<TPacket: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::NetworkPacketSerializer_2___c__6_1<
         TType,
         TData,
         TPacket,
     >;
-    #[cfg(feature = "NetworkPacketSerializer_2+__c__DisplayClass8_0_1")]
-    pub type __c__DisplayClass8_0_1<TPacket: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::NetworkPacketSerializer_2___c__DisplayClass8_0_1<
+    #[cfg(feature = "NetworkPacketSerializer_2+__c__DisplayClass10_0")]
+    pub type __c__DisplayClass10_0 = crate::GlobalNamespace::NetworkPacketSerializer_2___c__DisplayClass10_0<
+        TType,
+        TData,
+    >;
+    #[cfg(feature = "NetworkPacketSerializer_2+__c__DisplayClass4_0_1")]
+    pub type __c__DisplayClass4_0_1<TPacket: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::NetworkPacketSerializer_2___c__DisplayClass4_0_1<
+        TType,
+        TData,
+        TPacket,
+    >;
+    #[cfg(feature = "NetworkPacketSerializer_2+__c__DisplayClass5_0_1")]
+    pub type __c__DisplayClass5_0_1<TPacket: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::NetworkPacketSerializer_2___c__DisplayClass5_0_1<
         TType,
         TData,
         TPacket,
@@ -73,26 +85,15 @@ impl<
         TData,
         TPacket,
     >;
-    #[cfg(feature = "NetworkPacketSerializer_2+__c__DisplayClass4_0_1")]
-    pub type __c__DisplayClass4_0_1<TPacket: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::NetworkPacketSerializer_2___c__DisplayClass4_0_1<
-        TType,
-        TData,
-        TPacket,
-    >;
-    #[cfg(feature = "NetworkPacketSerializer_2+__c__DisplayClass10_0")]
-    pub type __c__DisplayClass10_0 = crate::GlobalNamespace::NetworkPacketSerializer_2___c__DisplayClass10_0<
-        TType,
-        TData,
-    >;
-    #[cfg(feature = "NetworkPacketSerializer_2+__c__6_1")]
-    pub type __c__6_1<TPacket: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::NetworkPacketSerializer_2___c__6_1<
+    #[cfg(feature = "NetworkPacketSerializer_2+__c__DisplayClass8_0_1")]
+    pub type __c__DisplayClass8_0_1<TPacket: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::NetworkPacketSerializer_2___c__DisplayClass8_0_1<
         TType,
         TData,
         TPacket,
     >;
     pub fn CopyFrom(
         &mut self,
-        other: *mut NetworkPacketSerializer_2<TType, TData>,
+        other: *mut crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -347,7 +348,9 @@ impl<
     pub fn RegisterSubSerializer(
         &mut self,
         packetType: TType,
-        subSubSerializer: *mut INetworkPacketSubSerializer_1<TData>,
+        subSubSerializer: *mut crate::GlobalNamespace::INetworkPacketSubSerializer_1<
+            TData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -404,7 +407,7 @@ impl<
         _cordl_type: *mut crate::System::Type,
         packetType: quest_hook::libil2cpp::ByRefMut<u8>,
         subSerializer: quest_hook::libil2cpp::ByRefMut<
-            *mut INetworkPacketSubSerializer_1<TData>,
+            *mut crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -442,7 +445,9 @@ impl<
     pub fn UnregisterSubSerializer(
         &mut self,
         packetType: TType,
-        subSubSerializer: *mut INetworkPacketSubSerializer_1<TData>,
+        subSubSerializer: *mut crate::GlobalNamespace::INetworkPacketSubSerializer_1<
+            TData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -476,7 +481,8 @@ impl<
 impl<
     TType: quest_hook::libil2cpp::Type,
     TData: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::ObjectType for NetworkPacketSerializer_2<TType, TData> {
+> quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

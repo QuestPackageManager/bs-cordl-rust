@@ -39,11 +39,11 @@ impl crate::GlobalNamespace::ParticleSystemEmitEventEffect_BeatmapEditorParticle
         Ok(__cordl_ret)
     }
     pub fn New(
-        beatmapEvent: BasicBeatmapEventType,
+        beatmapEvent: crate::GlobalNamespace::BasicBeatmapEventType,
         particleSystemParentTransform: *mut crate::UnityEngine::Transform,
         particleSystemMaxSpawnedSystems: i32,
-        audioTimeSource: *mut IAudioTimeSource,
-        beatmapCallbacksController: *mut BeatmapCallbacksController,
+        audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+        beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
         particleSystemEventControllerPool: *mut crate::GlobalNamespace::ParticleSystemEventController_Pool,
         tickableManager: *mut crate::Zenject::TickableManager,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -76,11 +76,11 @@ impl crate::GlobalNamespace::ParticleSystemEmitEventEffect_BeatmapEditorParticle
     }
     pub fn _ctor(
         &mut self,
-        beatmapEvent: BasicBeatmapEventType,
+        beatmapEvent: crate::GlobalNamespace::BasicBeatmapEventType,
         particleSystemParentTransform: *mut crate::UnityEngine::Transform,
         particleSystemMaxSpawnedSystems: i32,
-        audioTimeSource: *mut IAudioTimeSource,
-        beatmapCallbacksController: *mut BeatmapCallbacksController,
+        audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+        beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
         particleSystemEventControllerPool: *mut crate::GlobalNamespace::ParticleSystemEventController_Pool,
         tickableManager: *mut crate::Zenject::TickableManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -118,8 +118,8 @@ for crate::GlobalNamespace::ParticleSystemEmitEventEffect_BeatmapEditorParticleS
 #[derive(Debug)]
 pub struct ParticleSystemEmitEventEffect_GameplayParticleSystemEmitBehavior {
     __cordl_parent: crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBehavior,
-    pub _pauseController: *mut PauseController,
-    pub _songSpeedData: *mut SongSpeedData,
+    pub _pauseController: *mut crate::GlobalNamespace::PauseController,
+    pub _songSpeedData: *mut crate::GlobalNamespace::SongSpeedData,
 }
 #[cfg(feature = "ParticleSystemEmitEventEffect+GameplayParticleSystemEmitBehavior")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -157,11 +157,13 @@ impl crate::GlobalNamespace::ParticleSystemEmitEventEffect_GameplayParticleSyste
     pub fn EmitParticles(
         &mut self,
         startTime: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut ParticleSystemEventController> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::ParticleSystemEventController,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ParticleSystemEventController = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::ParticleSystemEventController = __cordl_object
             .invoke("EmitParticles", (startTime))?;
         Ok(__cordl_ret)
     }
@@ -186,14 +188,14 @@ impl crate::GlobalNamespace::ParticleSystemEmitEventEffect_GameplayParticleSyste
         Ok(__cordl_ret)
     }
     pub fn New(
-        beatmapEvent: BasicBeatmapEventType,
+        beatmapEvent: crate::GlobalNamespace::BasicBeatmapEventType,
         particleSystemParentTransform: *mut crate::UnityEngine::Transform,
         particleSystemMaxSpawnedSystems: i32,
-        audioTimeSource: *mut IAudioTimeSource,
-        beatmapCallbacksController: *mut BeatmapCallbacksController,
+        audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+        beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
         particleSystemEventControllerPool: *mut crate::GlobalNamespace::ParticleSystemEventController_Pool,
-        pauseController: *mut PauseController,
-        songSpeedData: *mut SongSpeedData,
+        pauseController: *mut crate::GlobalNamespace::PauseController,
+        songSpeedData: *mut crate::GlobalNamespace::SongSpeedData,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -215,14 +217,14 @@ impl crate::GlobalNamespace::ParticleSystemEmitEventEffect_GameplayParticleSyste
     }
     pub fn _ctor(
         &mut self,
-        beatmapEvent: BasicBeatmapEventType,
+        beatmapEvent: crate::GlobalNamespace::BasicBeatmapEventType,
         particleSystemParentTransform: *mut crate::UnityEngine::Transform,
         particleSystemMaxSpawnedSystems: i32,
-        audioTimeSource: *mut IAudioTimeSource,
-        beatmapCallbacksController: *mut BeatmapCallbacksController,
+        audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+        beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
         particleSystemEventControllerPool: *mut crate::GlobalNamespace::ParticleSystemEventController_Pool,
-        pauseController: *mut PauseController,
-        songSpeedData: *mut SongSpeedData,
+        pauseController: *mut crate::GlobalNamespace::PauseController,
+        songSpeedData: *mut crate::GlobalNamespace::SongSpeedData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -259,14 +261,14 @@ for crate::GlobalNamespace::ParticleSystemEmitEventEffect_GameplayParticleSystem
 #[derive(Debug)]
 pub struct ParticleSystemEmitEventEffect_ParticleSystemEmitBehavior {
     __cordl_parent: crate::System::Object,
-    pub _audioTimeSource: *mut IAudioTimeSource,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
-    pub _particleSystemEventControllerPoolContainer: *mut MemoryPoolContainer_1<
-        *mut ParticleSystemEventController,
+    pub _audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _particleSystemEventControllerPoolContainer: *mut crate::GlobalNamespace::MemoryPoolContainer_1<
+        *mut crate::GlobalNamespace::ParticleSystemEventController,
     >,
     pub _particleSystemParentTransform: *mut crate::UnityEngine::Transform,
     pub _particleSystemMaxSpawnedSystems: i32,
-    pub _beatmapDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _beatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
 }
 #[cfg(feature = "ParticleSystemEmitEventEffect+ParticleSystemEmitBehavior")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -304,17 +306,19 @@ impl crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBeh
     pub fn EmitParticles(
         &mut self,
         startTime: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut ParticleSystemEventController> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::ParticleSystemEventController,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ParticleSystemEventController = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::ParticleSystemEventController = __cordl_object
             .invoke("EmitParticles", (startTime))?;
         Ok(__cordl_ret)
     }
     pub fn HandleBeatmapEvent(
         &mut self,
-        basicBeatmapEventData: *mut BasicBeatmapEventData,
+        basicBeatmapEventData: *mut crate::GlobalNamespace::BasicBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -324,11 +328,11 @@ impl crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBeh
         Ok(__cordl_ret)
     }
     pub fn New(
-        beatmapEvent: BasicBeatmapEventType,
+        beatmapEvent: crate::GlobalNamespace::BasicBeatmapEventType,
         particleSystemParentTransform: *mut crate::UnityEngine::Transform,
         particleSystemMaxSpawnedSystems: i32,
-        audioTimeSource: *mut IAudioTimeSource,
-        beatmapCallbacksController: *mut BeatmapCallbacksController,
+        audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+        beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
         particleSystemEventControllerPool: *mut crate::GlobalNamespace::ParticleSystemEventController_Pool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -349,11 +353,11 @@ impl crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBeh
     }
     pub fn _ctor(
         &mut self,
-        beatmapEvent: BasicBeatmapEventType,
+        beatmapEvent: crate::GlobalNamespace::BasicBeatmapEventType,
         particleSystemParentTransform: *mut crate::UnityEngine::Transform,
         particleSystemMaxSpawnedSystems: i32,
-        audioTimeSource: *mut IAudioTimeSource,
-        beatmapCallbacksController: *mut BeatmapCallbacksController,
+        audioTimeSource: *mut crate::GlobalNamespace::IAudioTimeSource,
+        beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
         particleSystemEventControllerPool: *mut crate::GlobalNamespace::ParticleSystemEventController_Pool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -389,41 +393,41 @@ for crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBeha
 #[derive(Debug)]
 pub struct ParticleSystemEmitEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _beatmapEvent: BasicBeatmapEventType,
+    pub _beatmapEvent: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _particleSystemParentTransform: *mut crate::UnityEngine::Transform,
     pub _particleSystemMaxSpawnedSystems: i32,
-    pub _environmentContext: EnvironmentContext,
+    pub _environmentContext: crate::GlobalNamespace::EnvironmentContext,
     pub _diContainer: *mut crate::Zenject::DiContainer,
     pub _particleSystemEmitBehavior: *mut crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBehavior,
 }
 #[cfg(feature = "ParticleSystemEmitEventEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ParticleSystemEmitEventEffect => ""
-    ."ParticleSystemEmitEventEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ParticleSystemEmitEventEffect
+    => ""."ParticleSystemEmitEventEffect"
 );
 #[cfg(feature = "ParticleSystemEmitEventEffect")]
-impl std::ops::Deref for ParticleSystemEmitEventEffect {
+impl std::ops::Deref for crate::GlobalNamespace::ParticleSystemEmitEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ParticleSystemEmitEventEffect")]
-impl std::ops::DerefMut for ParticleSystemEmitEventEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::ParticleSystemEmitEventEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ParticleSystemEmitEventEffect")]
-impl ParticleSystemEmitEventEffect {
-    #[cfg(feature = "ParticleSystemEmitEventEffect+GameplayParticleSystemEmitBehavior")]
-    pub type GameplayParticleSystemEmitBehavior = crate::GlobalNamespace::ParticleSystemEmitEventEffect_GameplayParticleSystemEmitBehavior;
-    #[cfg(feature = "ParticleSystemEmitEventEffect+ParticleSystemEmitBehavior")]
-    pub type ParticleSystemEmitBehavior = crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBehavior;
+impl crate::GlobalNamespace::ParticleSystemEmitEventEffect {
     #[cfg(
         feature = "ParticleSystemEmitEventEffect+BeatmapEditorParticleSystemEmitBehavior"
     )]
     pub type BeatmapEditorParticleSystemEmitBehavior = crate::GlobalNamespace::ParticleSystemEmitEventEffect_BeatmapEditorParticleSystemEmitBehavior;
+    #[cfg(feature = "ParticleSystemEmitEventEffect+GameplayParticleSystemEmitBehavior")]
+    pub type GameplayParticleSystemEmitBehavior = crate::GlobalNamespace::ParticleSystemEmitEventEffect_GameplayParticleSystemEmitBehavior;
+    #[cfg(feature = "ParticleSystemEmitEventEffect+ParticleSystemEmitBehavior")]
+    pub type ParticleSystemEmitBehavior = crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBehavior;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -463,7 +467,8 @@ impl ParticleSystemEmitEventEffect {
     }
 }
 #[cfg(feature = "ParticleSystemEmitEventEffect")]
-impl quest_hook::libil2cpp::ObjectType for ParticleSystemEmitEventEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ParticleSystemEmitEventEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -57,10 +57,10 @@ impl crate::System::Globalization::CultureInfo {
     pub const InvariantCultureId: i32 = 127i32;
     pub const LOCALE_INVARIANT: i32 = 127i32;
     pub const MSG_READONLY: &'static str = "This instance is read only";
-    #[cfg(feature = "System+Globalization+CultureInfo+OnCultureInfoChangedDelegate")]
-    pub type OnCultureInfoChangedDelegate = crate::System::Globalization::CultureInfo_OnCultureInfoChangedDelegate;
     #[cfg(feature = "System+Globalization+CultureInfo+Data")]
     pub type Data = crate::System::Globalization::CultureInfo_Data;
+    #[cfg(feature = "System+Globalization+CultureInfo+OnCultureInfoChangedDelegate")]
+    pub type OnCultureInfoChangedDelegate = crate::System::Globalization::CultureInfo_OnCultureInfoChangedDelegate;
     pub fn CheckNeutral(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

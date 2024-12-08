@@ -4,50 +4,50 @@
 pub struct NoteCutCoreEffectsSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _shockWaveYPos: f32,
-    pub _noteCutParticlesEffect: *mut NoteCutParticlesEffect,
-    pub _noteDebrisSpawner: *mut NoteDebrisSpawner,
-    pub _noteCutHapticEffect: *mut NoteCutHapticEffect,
-    pub _shockwaveEffect: *mut ShockwaveEffect,
-    pub _bombExplosionEffect: *mut BombExplosionEffect,
-    pub _colorManager: *mut ColorManager,
-    pub _beatmapObjectManager: *mut BeatmapObjectManager,
-    pub _audioTimeSyncController: *mut AudioTimeSyncController,
+    pub _noteCutParticlesEffect: *mut crate::GlobalNamespace::NoteCutParticlesEffect,
+    pub _noteDebrisSpawner: *mut crate::GlobalNamespace::NoteDebrisSpawner,
+    pub _noteCutHapticEffect: *mut crate::GlobalNamespace::NoteCutHapticEffect,
+    pub _shockwaveEffect: *mut crate::GlobalNamespace::ShockwaveEffect,
+    pub _bombExplosionEffect: *mut crate::GlobalNamespace::BombExplosionEffect,
+    pub _colorManager: *mut crate::GlobalNamespace::ColorManager,
+    pub _beatmapObjectManager: *mut crate::GlobalNamespace::BeatmapObjectManager,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
     pub _sliderInteractionManagers: *mut crate::System::Collections::Generic::List_1<
-        *mut SliderInteractionManager,
+        *mut crate::GlobalNamespace::SliderInteractionManager,
     >,
     pub _colorTypeToSliderInteractionManagerDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        ColorType,
-        *mut SliderInteractionManager,
+        crate::GlobalNamespace::ColorType,
+        *mut crate::GlobalNamespace::SliderInteractionManager,
     >,
 }
 #[cfg(feature = "NoteCutCoreEffectsSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteCutCoreEffectsSpawner => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteCutCoreEffectsSpawner => ""
     ."NoteCutCoreEffectsSpawner"
 );
 #[cfg(feature = "NoteCutCoreEffectsSpawner")]
-impl std::ops::Deref for NoteCutCoreEffectsSpawner {
+impl std::ops::Deref for crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteCutCoreEffectsSpawner")]
-impl std::ops::DerefMut for NoteCutCoreEffectsSpawner {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteCutCoreEffectsSpawner")]
-impl NoteCutCoreEffectsSpawner {
+impl crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
     pub const kBurstSliderElementParticlesCount: i32 = 20i32;
     pub const kBurstSliderElementSparkleParticlesCount: i32 = 50i32;
     pub const kNormalNoteExplosionParticlesCount: i32 = 50i32;
     pub const kNormalNoteSparkleParticlesCount: i32 = 150i32;
     pub fn HandleNoteWasCut(
         &mut self,
-        noteController: *mut NoteController,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
+        noteController: *mut crate::GlobalNamespace::NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::NoteCutInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -58,7 +58,7 @@ impl NoteCutCoreEffectsSpawner {
     }
     pub fn IsArcHapticsCurrentlyActive(
         &mut self,
-        colorType: ColorType,
+        colorType: crate::GlobalNamespace::ColorType,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -86,7 +86,7 @@ impl NoteCutCoreEffectsSpawner {
     }
     pub fn PlayHitChainNoteHapticEffect(
         &mut self,
-        noteCutInfo: NoteCutInfo,
+        noteCutInfo: crate::GlobalNamespace::NoteCutInfo,
         isChainHead: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -98,8 +98,8 @@ impl NoteCutCoreEffectsSpawner {
     }
     pub fn PlayHitNoteHapticEffect(
         &mut self,
-        noteCutInfo: NoteCutInfo,
-        noteData: *mut NoteData,
+        noteCutInfo: crate::GlobalNamespace::NoteCutInfo,
+        noteData: *mut crate::GlobalNamespace::NoteData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -110,8 +110,10 @@ impl NoteCutCoreEffectsSpawner {
     }
     pub fn SpawnBombCutEffect(
         &mut self,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
-        noteController: *mut NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::NoteCutInfo,
+        >,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -122,8 +124,10 @@ impl NoteCutCoreEffectsSpawner {
     }
     pub fn SpawnNoteCutEffect(
         &mut self,
-        noteCutInfo: quest_hook::libil2cpp::ByRefMut<NoteCutInfo>,
-        noteController: *mut NoteController,
+        noteCutInfo: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::NoteCutInfo,
+        >,
+        noteController: *mut crate::GlobalNamespace::NoteController,
         sparkleParticlesCount: i32,
         explosionParticlesCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -164,7 +168,8 @@ impl NoteCutCoreEffectsSpawner {
     }
 }
 #[cfg(feature = "NoteCutCoreEffectsSpawner")]
-impl quest_hook::libil2cpp::ObjectType for NoteCutCoreEffectsSpawner {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::NoteCutCoreEffectsSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -7,23 +7,24 @@ pub struct ImageEffectController {
 }
 #[cfg(feature = "ImageEffectController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ImageEffectController => ""."ImageEffectController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ImageEffectController => ""
+    ."ImageEffectController"
 );
 #[cfg(feature = "ImageEffectController")]
-impl std::ops::Deref for ImageEffectController {
+impl std::ops::Deref for crate::GlobalNamespace::ImageEffectController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ImageEffectController")]
-impl std::ops::DerefMut for ImageEffectController {
+impl std::ops::DerefMut for crate::GlobalNamespace::ImageEffectController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ImageEffectController")]
-impl ImageEffectController {
+impl crate::GlobalNamespace::ImageEffectController {
     #[cfg(feature = "ImageEffectController+RenderImageCallback")]
     pub type RenderImageCallback = crate::GlobalNamespace::ImageEffectController_RenderImageCallback;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -68,7 +69,8 @@ impl ImageEffectController {
     }
 }
 #[cfg(feature = "ImageEffectController")]
-impl quest_hook::libil2cpp::ObjectType for ImageEffectController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ImageEffectController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,29 +2,30 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DirectionalLightWithLightGroupIds {
-    __cordl_parent: RuntimeLightWithLightGroupIds,
-    pub _directionalLight: *mut DirectionalLight,
+    __cordl_parent: crate::GlobalNamespace::RuntimeLightWithLightGroupIds,
+    pub _directionalLight: *mut crate::GlobalNamespace::DirectionalLight,
 }
 #[cfg(feature = "DirectionalLightWithLightGroupIds")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for DirectionalLightWithLightGroupIds => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::DirectionalLightWithLightGroupIds => ""
     ."DirectionalLightWithLightGroupIds"
 );
 #[cfg(feature = "DirectionalLightWithLightGroupIds")]
-impl std::ops::Deref for DirectionalLightWithLightGroupIds {
-    type Target = RuntimeLightWithLightGroupIds;
+impl std::ops::Deref for crate::GlobalNamespace::DirectionalLightWithLightGroupIds {
+    type Target = crate::GlobalNamespace::RuntimeLightWithLightGroupIds;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DirectionalLightWithLightGroupIds")]
-impl std::ops::DerefMut for DirectionalLightWithLightGroupIds {
+impl std::ops::DerefMut for crate::GlobalNamespace::DirectionalLightWithLightGroupIds {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "DirectionalLightWithLightGroupIds")]
-impl DirectionalLightWithLightGroupIds {
+impl crate::GlobalNamespace::DirectionalLightWithLightGroupIds {
     pub fn ColorWasSet(
         &mut self,
         color: crate::UnityEngine::Color,
@@ -55,7 +56,8 @@ impl DirectionalLightWithLightGroupIds {
     }
 }
 #[cfg(feature = "DirectionalLightWithLightGroupIds")]
-impl quest_hook::libil2cpp::ObjectType for DirectionalLightWithLightGroupIds {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::DirectionalLightWithLightGroupIds {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

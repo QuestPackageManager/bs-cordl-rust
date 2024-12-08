@@ -9,5 +9,6 @@ pub enum EntitlementsStatus {
 }
 #[cfg(feature = "EntitlementsStatus")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for EntitlementsStatus => ""."EntitlementsStatus"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EntitlementsStatus => ""
+    ."EntitlementsStatus"
 );

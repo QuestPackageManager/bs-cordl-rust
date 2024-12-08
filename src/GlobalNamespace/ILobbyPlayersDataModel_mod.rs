@@ -6,23 +6,24 @@ pub struct ILobbyPlayersDataModel {
 }
 #[cfg(feature = "ILobbyPlayersDataModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ILobbyPlayersDataModel => ""."ILobbyPlayersDataModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ILobbyPlayersDataModel => ""
+    ."ILobbyPlayersDataModel"
 );
 #[cfg(feature = "ILobbyPlayersDataModel")]
-impl std::ops::Deref for ILobbyPlayersDataModel {
+impl std::ops::Deref for crate::GlobalNamespace::ILobbyPlayersDataModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ILobbyPlayersDataModel")]
-impl std::ops::DerefMut for ILobbyPlayersDataModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::ILobbyPlayersDataModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ILobbyPlayersDataModel")]
-impl ILobbyPlayersDataModel {
+impl crate::GlobalNamespace::ILobbyPlayersDataModel {
     pub fn Activate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -96,7 +97,7 @@ impl ILobbyPlayersDataModel {
     }
     pub fn SetLocalPlayerBeatmapLevel(
         &mut self,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<BeatmapKey>,
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -107,7 +108,7 @@ impl ILobbyPlayersDataModel {
     }
     pub fn SetLocalPlayerGameplayModifiers(
         &mut self,
-        modifiers: *mut GameplayModifiers,
+        modifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -198,7 +199,8 @@ impl ILobbyPlayersDataModel {
     }
 }
 #[cfg(feature = "ILobbyPlayersDataModel")]
-impl quest_hook::libil2cpp::ObjectType for ILobbyPlayersDataModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ILobbyPlayersDataModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

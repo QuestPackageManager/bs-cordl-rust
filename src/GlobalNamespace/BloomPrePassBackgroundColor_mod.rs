@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundColor {
-    __cordl_parent: BloomPrePassNonLightPass,
+    __cordl_parent: crate::GlobalNamespace::BloomPrePassNonLightPass,
     pub _intensity: f32,
     pub _minAlpha: f32,
     pub _grayscaleFactor: f32,
@@ -11,24 +11,24 @@ pub struct BloomPrePassBackgroundColor {
 }
 #[cfg(feature = "BloomPrePassBackgroundColor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomPrePassBackgroundColor => ""
-    ."BloomPrePassBackgroundColor"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BloomPrePassBackgroundColor =>
+    ""."BloomPrePassBackgroundColor"
 );
 #[cfg(feature = "BloomPrePassBackgroundColor")]
-impl std::ops::Deref for BloomPrePassBackgroundColor {
-    type Target = BloomPrePassNonLightPass;
+impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassBackgroundColor {
+    type Target = crate::GlobalNamespace::BloomPrePassNonLightPass;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundColor")]
-impl std::ops::DerefMut for BloomPrePassBackgroundColor {
+impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassBackgroundColor {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundColor")]
-impl BloomPrePassBackgroundColor {
+impl crate::GlobalNamespace::BloomPrePassBackgroundColor {
     pub fn InitIfNeeded(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -102,7 +102,8 @@ impl BloomPrePassBackgroundColor {
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundColor")]
-impl quest_hook::libil2cpp::ObjectType for BloomPrePassBackgroundColor {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BloomPrePassBackgroundColor {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -7,23 +7,23 @@ pub struct TimeHelper {
 }
 #[cfg(feature = "TimeHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TimeHelper => ""."TimeHelper"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TimeHelper => ""."TimeHelper"
 );
 #[cfg(feature = "TimeHelper")]
-impl std::ops::Deref for TimeHelper {
+impl std::ops::Deref for crate::GlobalNamespace::TimeHelper {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TimeHelper")]
-impl std::ops::DerefMut for TimeHelper {
+impl std::ops::DerefMut for crate::GlobalNamespace::TimeHelper {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TimeHelper")]
-impl TimeHelper {
+impl crate::GlobalNamespace::TimeHelper {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -73,7 +73,7 @@ impl TimeHelper {
     }
 }
 #[cfg(feature = "TimeHelper")]
-impl quest_hook::libil2cpp::ObjectType for TimeHelper {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TimeHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,33 +2,33 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirroredSliderController {
-    __cordl_parent: SliderControllerBase,
+    __cordl_parent: crate::GlobalNamespace::SliderControllerBase,
     pub _meshFilter: *mut crate::UnityEngine::MeshFilter,
-    pub _beatmapObjectSpawnController: *mut IBeatmapObjectSpawnController,
-    pub _followedSlider: *mut SliderController,
+    pub _beatmapObjectSpawnController: *mut crate::GlobalNamespace::IBeatmapObjectSpawnController,
+    pub _followedSlider: *mut crate::GlobalNamespace::SliderController,
     pub _transform: *mut crate::UnityEngine::Transform,
     pub _followedTransform: *mut crate::UnityEngine::Transform,
 }
 #[cfg(feature = "MirroredSliderController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MirroredSliderController => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MirroredSliderController => ""
     ."MirroredSliderController"
 );
 #[cfg(feature = "MirroredSliderController")]
-impl std::ops::Deref for MirroredSliderController {
-    type Target = SliderControllerBase;
+impl std::ops::Deref for crate::GlobalNamespace::MirroredSliderController {
+    type Target = crate::GlobalNamespace::SliderControllerBase;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MirroredSliderController")]
-impl std::ops::DerefMut for MirroredSliderController {
+impl std::ops::DerefMut for crate::GlobalNamespace::MirroredSliderController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MirroredSliderController")]
-impl MirroredSliderController {
+impl crate::GlobalNamespace::MirroredSliderController {
     #[cfg(feature = "MirroredSliderController+Pool")]
     pub type Pool = crate::GlobalNamespace::MirroredSliderController_Pool;
     pub fn Awake(
@@ -54,7 +54,7 @@ impl MirroredSliderController {
     }
     pub fn HandleSliderDidStartDissolving(
         &mut self,
-        sliderController: *mut SliderController,
+        sliderController: *mut crate::GlobalNamespace::SliderController,
         duration: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -66,7 +66,7 @@ impl MirroredSliderController {
     }
     pub fn Mirror(
         &mut self,
-        sliderController: *mut SliderController,
+        sliderController: *mut crate::GlobalNamespace::SliderController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -146,7 +146,8 @@ impl MirroredSliderController {
     }
 }
 #[cfg(feature = "MirroredSliderController")]
-impl quest_hook::libil2cpp::ObjectType for MirroredSliderController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MirroredSliderController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -158,7 +159,9 @@ impl quest_hook::libil2cpp::ObjectType for MirroredSliderController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirroredSliderController_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<*mut MirroredSliderController>,
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::MirroredSliderController,
+    >,
 }
 #[cfg(feature = "MirroredSliderController+Pool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -167,7 +170,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MirroredSliderController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::MirroredSliderController_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<*mut MirroredSliderController>;
+    type Target = crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::MirroredSliderController,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

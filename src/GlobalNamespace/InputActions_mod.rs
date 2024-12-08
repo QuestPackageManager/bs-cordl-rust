@@ -3,27 +3,28 @@
 #[derive(Debug)]
 pub struct InputActions {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _keyboardManager: *mut UIKeyboardManager,
+    pub _keyboardManager: *mut crate::GlobalNamespace::UIKeyboardManager,
 }
 #[cfg(feature = "InputActions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for InputActions => ""."InputActions"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::InputActions => ""
+    ."InputActions"
 );
 #[cfg(feature = "InputActions")]
-impl std::ops::Deref for InputActions {
+impl std::ops::Deref for crate::GlobalNamespace::InputActions {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "InputActions")]
-impl std::ops::DerefMut for InputActions {
+impl std::ops::DerefMut for crate::GlobalNamespace::InputActions {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "InputActions")]
-impl InputActions {
+impl crate::GlobalNamespace::InputActions {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -53,7 +54,7 @@ impl InputActions {
     }
 }
 #[cfg(feature = "InputActions")]
-impl quest_hook::libil2cpp::ObjectType for InputActions {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::InputActions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

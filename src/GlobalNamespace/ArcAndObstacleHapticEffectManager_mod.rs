@@ -4,40 +4,41 @@
 pub struct ArcAndObstacleHapticEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _hapticPreset: *mut crate::Libraries::HM::HMLib::VR::HapticPresetSO,
-    pub _obstacleSaberSparkleEffectManager: *mut ObstacleSaberSparkleEffectManager,
+    pub _obstacleSaberSparkleEffectManager: *mut crate::GlobalNamespace::ObstacleSaberSparkleEffectManager,
     pub _sliderInteractionManagers: *mut crate::System::Collections::Generic::List_1<
-        *mut SliderInteractionManager,
+        *mut crate::GlobalNamespace::SliderInteractionManager,
     >,
-    pub _saberManager: *mut SaberManager,
-    pub _hapticFeedbackManager: *mut HapticFeedbackManager,
+    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
+    pub _hapticFeedbackManager: *mut crate::GlobalNamespace::HapticFeedbackManager,
     pub _leftHandEffectState: *mut crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState,
     pub _rightHandEffectState: *mut crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState,
 }
 #[cfg(feature = "ArcAndObstacleHapticEffectManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ArcAndObstacleHapticEffectManager => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ArcAndObstacleHapticEffectManager => ""
     ."ArcAndObstacleHapticEffectManager"
 );
 #[cfg(feature = "ArcAndObstacleHapticEffectManager")]
-impl std::ops::Deref for ArcAndObstacleHapticEffectManager {
+impl std::ops::Deref for crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ArcAndObstacleHapticEffectManager")]
-impl std::ops::DerefMut for ArcAndObstacleHapticEffectManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ArcAndObstacleHapticEffectManager")]
-impl ArcAndObstacleHapticEffectManager {
+impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
     #[cfg(feature = "ArcAndObstacleHapticEffectManager+EffectState")]
     pub type EffectState = crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState;
     pub fn GetState_ColorType1(
         &mut self,
-        colorType: ColorType,
+        colorType: crate::GlobalNamespace::ColorType,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState,
     > {
@@ -50,7 +51,7 @@ impl ArcAndObstacleHapticEffectManager {
     }
     pub fn GetState_SaberType0(
         &mut self,
-        saberType: SaberType,
+        saberType: crate::GlobalNamespace::SaberType,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState,
     > {
@@ -63,7 +64,7 @@ impl ArcAndObstacleHapticEffectManager {
     }
     pub fn HandleSliderInteractionManagerAllSliderWereRemovedFromActiveSliders(
         &mut self,
-        sliderInteractionManager: *mut SliderInteractionManager,
+        sliderInteractionManager: *mut crate::GlobalNamespace::SliderInteractionManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -77,7 +78,7 @@ impl ArcAndObstacleHapticEffectManager {
     }
     pub fn HandleSliderInteractionManagerSliderWasAddedToActiveSliders(
         &mut self,
-        sliderInteractionManager: *mut SliderInteractionManager,
+        sliderInteractionManager: *mut crate::GlobalNamespace::SliderInteractionManager,
         sliderInteractionParam: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -92,7 +93,7 @@ impl ArcAndObstacleHapticEffectManager {
     }
     pub fn HandleSparkleEffectDidEnd(
         &mut self,
-        saberType: SaberType,
+        saberType: crate::GlobalNamespace::SaberType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -103,7 +104,7 @@ impl ArcAndObstacleHapticEffectManager {
     }
     pub fn HandleSparkleEffectDidStart(
         &mut self,
-        saberType: SaberType,
+        saberType: crate::GlobalNamespace::SaberType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -183,7 +184,8 @@ impl ArcAndObstacleHapticEffectManager {
     }
 }
 #[cfg(feature = "ArcAndObstacleHapticEffectManager")]
-impl quest_hook::libil2cpp::ObjectType for ArcAndObstacleHapticEffectManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -196,8 +198,8 @@ impl quest_hook::libil2cpp::ObjectType for ArcAndObstacleHapticEffectManager {
 #[derive(Debug)]
 pub struct ArcAndObstacleHapticEffectManager_EffectState {
     __cordl_parent: crate::System::Object,
-    pub colorType: ColorType,
-    pub sliderInteractionManager: *mut SliderInteractionManager,
+    pub colorType: crate::GlobalNamespace::ColorType,
+    pub sliderInteractionManager: *mut crate::GlobalNamespace::SliderInteractionManager,
     pub isInTheObstacle: bool,
     pub isSliderActive: bool,
 }

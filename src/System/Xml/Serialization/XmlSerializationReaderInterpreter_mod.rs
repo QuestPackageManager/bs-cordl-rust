@@ -206,13 +206,13 @@ for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter")]
 impl crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
     #[cfg(
-        feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"
-    )]
-    pub type ReaderCallbackInfo = crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_ReaderCallbackInfo;
-    #[cfg(
         feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+FixupCallbackInfo"
     )]
     pub type FixupCallbackInfo = crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_FixupCallbackInfo;
+    #[cfg(
+        feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"
+    )]
+    pub type ReaderCallbackInfo = crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_ReaderCallbackInfo;
     pub fn AddListValue(
         &mut self,
         listType: *mut crate::System::Xml::Serialization::TypeData,

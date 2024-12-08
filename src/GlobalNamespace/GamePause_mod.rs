@@ -6,34 +6,34 @@ pub struct GamePause {
     pub didPauseEvent: *mut crate::System::Action,
     pub willResumeEvent: *mut crate::System::Action,
     pub didResumeEvent: *mut crate::System::Action,
-    pub _gameEnergyCounter: *mut GameEnergyCounter,
-    pub _playerHeadAndObstacleInteraction: *mut PlayerHeadAndObstacleInteraction,
-    pub _scoreController: *mut IScoreController,
-    pub _beatmapObjectExecutionRatingsRecorder: *mut BeatmapObjectExecutionRatingsRecorder,
-    pub _songController: *mut SongController,
-    pub _saberManager: *mut SaberManager,
-    pub _audioListenerController: *mut AudioListenerController,
+    pub _gameEnergyCounter: *mut crate::GlobalNamespace::GameEnergyCounter,
+    pub _playerHeadAndObstacleInteraction: *mut crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
+    pub _scoreController: *mut crate::GlobalNamespace::IScoreController,
+    pub _beatmapObjectExecutionRatingsRecorder: *mut crate::GlobalNamespace::BeatmapObjectExecutionRatingsRecorder,
+    pub _songController: *mut crate::GlobalNamespace::SongController,
+    pub _saberManager: *mut crate::GlobalNamespace::SaberManager,
+    pub _audioListenerController: *mut crate::GlobalNamespace::AudioListenerController,
     pub _pause: bool,
 }
 #[cfg(feature = "GamePause")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GamePause => ""."GamePause"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GamePause => ""."GamePause"
 );
 #[cfg(feature = "GamePause")]
-impl std::ops::Deref for GamePause {
+impl std::ops::Deref for crate::GlobalNamespace::GamePause {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GamePause")]
-impl std::ops::DerefMut for GamePause {
+impl std::ops::DerefMut for crate::GlobalNamespace::GamePause {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GamePause")]
-impl GamePause {
+impl crate::GlobalNamespace::GamePause {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -156,7 +156,7 @@ impl GamePause {
     }
 }
 #[cfg(feature = "GamePause")]
-impl quest_hook::libil2cpp::ObjectType for GamePause {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GamePause {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

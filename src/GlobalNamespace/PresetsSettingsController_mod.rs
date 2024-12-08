@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PresetsSettingsController {
-    __cordl_parent: ListSettingsController,
-    pub _presets: *mut NamedPresetsSO,
+    __cordl_parent: crate::GlobalNamespace::ListSettingsController,
+    pub _presets: *mut crate::GlobalNamespace::NamedPresetsSO,
     pub _limitNumberOfElements: bool,
     pub _numberOfElementsLimit: i32,
     pub _customIndex: i32,
@@ -11,24 +11,24 @@ pub struct PresetsSettingsController {
 }
 #[cfg(feature = "PresetsSettingsController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PresetsSettingsController => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PresetsSettingsController => ""
     ."PresetsSettingsController"
 );
 #[cfg(feature = "PresetsSettingsController")]
-impl std::ops::Deref for PresetsSettingsController {
-    type Target = ListSettingsController;
+impl std::ops::Deref for crate::GlobalNamespace::PresetsSettingsController {
+    type Target = crate::GlobalNamespace::ListSettingsController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PresetsSettingsController")]
-impl std::ops::DerefMut for PresetsSettingsController {
+impl std::ops::DerefMut for crate::GlobalNamespace::PresetsSettingsController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PresetsSettingsController")]
-impl PresetsSettingsController {
+impl crate::GlobalNamespace::PresetsSettingsController {
     pub fn ApplyValue(
         &mut self,
         idx: i32,
@@ -144,7 +144,8 @@ impl PresetsSettingsController {
     }
 }
 #[cfg(feature = "PresetsSettingsController")]
-impl quest_hook::libil2cpp::ObjectType for PresetsSettingsController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PresetsSettingsController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

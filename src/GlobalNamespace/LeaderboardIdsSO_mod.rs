@@ -84,30 +84,31 @@ for crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardIdsSO {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _leaderboardIds: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
     >,
 }
 #[cfg(feature = "LeaderboardIdsSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LeaderboardIdsSO => ""."LeaderboardIdsSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LeaderboardIdsSO => ""
+    ."LeaderboardIdsSO"
 );
 #[cfg(feature = "LeaderboardIdsSO")]
-impl std::ops::Deref for LeaderboardIdsSO {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::LeaderboardIdsSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LeaderboardIdsSO")]
-impl std::ops::DerefMut for LeaderboardIdsSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardIdsSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LeaderboardIdsSO")]
-impl LeaderboardIdsSO {
+impl crate::GlobalNamespace::LeaderboardIdsSO {
     #[cfg(feature = "LeaderboardIdsSO+LeaderboardIdData")]
     pub type LeaderboardIdData = crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData;
     pub fn Add(
@@ -125,13 +126,15 @@ impl LeaderboardIdsSO {
     pub fn ILeaderboardIdContainer_get_leaderboardIds(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<*mut ILeaderboardIdData>,
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::GlobalNamespace::ILeaderboardIdData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut ILeaderboardIdData,
+            *mut crate::GlobalNamespace::ILeaderboardIdData,
         > = __cordl_object.invoke("ILeaderboardIdContainer.get_leaderboardIds", ())?;
         Ok(__cordl_ret)
     }
@@ -182,7 +185,7 @@ impl LeaderboardIdsSO {
     }
 }
 #[cfg(feature = "LeaderboardIdsSO")]
-impl quest_hook::libil2cpp::ObjectType for LeaderboardIdsSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LeaderboardIdsSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

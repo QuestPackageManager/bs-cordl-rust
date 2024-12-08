@@ -6,7 +6,7 @@ pub struct LocalStateBuffer_3<
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: StateBuffer_3<TStateTable, TType, TState>,
+    __cordl_parent: crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState>,
     pub _current: crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
         TStateTable,
         TType,
@@ -30,23 +30,25 @@ pub struct LocalStateBuffer_3<
             TState,
         >,
     >,
-    pub _lastSentSyncStateId: SyncStateId,
+    pub _lastSentSyncStateId: crate::GlobalNamespace::SyncStateId,
     __cordl_phantom_TStateTable: std::marker::PhantomData<TStateTable>,
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
     __cordl_phantom_TState: std::marker::PhantomData<TState>,
 }
 #[cfg(feature = "LocalStateBuffer_3")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LocalStateBuffer_3 < TStateTable, TType, TState > => ""
-    ."LocalStateBuffer`3" < TStateTable, TType, TState >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LocalStateBuffer_3 <
+    TStateTable, TType, TState > => ""."LocalStateBuffer`3" < TStateTable, TType, TState
+    >
 );
 #[cfg(feature = "LocalStateBuffer_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
-> std::ops::Deref for LocalStateBuffer_3<TStateTable, TType, TState> {
-    type Target = StateBuffer_3<TStateTable, TType, TState>;
+> std::ops::Deref
+for crate::GlobalNamespace::LocalStateBuffer_3<TStateTable, TType, TState> {
+    type Target = crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,7 +58,8 @@ impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
-> std::ops::DerefMut for LocalStateBuffer_3<TStateTable, TType, TState> {
+> std::ops::DerefMut
+for crate::GlobalNamespace::LocalStateBuffer_3<TStateTable, TType, TState> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -66,7 +69,7 @@ impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
-> LocalStateBuffer_3<TStateTable, TType, TState> {
+> crate::GlobalNamespace::LocalStateBuffer_3<TStateTable, TType, TState> {
     pub const kMaxSentDeltas: i32 = 4i32;
     pub const kMaxSentStates: i32 = 4i32;
     pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -194,7 +197,7 @@ impl<
         &mut self,
         state: quest_hook::libil2cpp::ByRefMut<TStateTable>,
         _cordl_time: quest_hook::libil2cpp::ByRefMut<i64>,
-        id: quest_hook::libil2cpp::ByRefMut<SyncStateId>,
+        id: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::SyncStateId>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -215,7 +218,7 @@ impl<
         &mut self,
         delta: quest_hook::libil2cpp::ByRefMut<TStateTable>,
         timeOffset: quest_hook::libil2cpp::ByRefMut<i32>,
-        baseId: quest_hook::libil2cpp::ByRefMut<SyncStateId>,
+        baseId: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::SyncStateId>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -278,7 +281,8 @@ impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::ObjectType for LocalStateBuffer_3<TStateTable, TType, TState> {
+> quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LocalStateBuffer_3<TStateTable, TType, TState> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

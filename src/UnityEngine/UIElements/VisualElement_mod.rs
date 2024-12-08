@@ -1206,34 +1206,34 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElement {
 #[cfg(feature = "UnityEngine+UIElements+VisualElement")]
 impl crate::UnityEngine::UIElements::VisualElement {
     pub const k_RootVisualContainerName: &'static str = "rootVisualContainer";
-    #[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
-    pub type TypeData = crate::UnityEngine::UIElements::VisualElement_TypeData;
-    #[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
-    pub type TimerStateScheduledItem = crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem;
-    #[cfg(feature = "UnityEngine+UIElements+VisualElement+__c__DisplayClass492_0")]
-    pub type __c__DisplayClass492_0 = crate::UnityEngine::UIElements::VisualElement___c__DisplayClass492_0;
-    #[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
-    pub type UxmlTraits = crate::UnityEngine::UIElements::VisualElement_UxmlTraits;
-    #[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
-    pub type Hierarchy = crate::UnityEngine::UIElements::VisualElement_Hierarchy;
-    #[cfg(feature = "UnityEngine+UIElements+VisualElement+MeasureMode")]
-    pub type MeasureMode = crate::UnityEngine::UIElements::VisualElement_MeasureMode;
-    #[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
-    pub type CustomStyleAccess = crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess;
-    #[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
-    pub type UxmlFactory = crate::UnityEngine::UIElements::VisualElement_UxmlFactory;
     #[cfg(
         feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem"
     )]
     pub type BaseVisualElementScheduledItem = crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem;
+    #[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
+    pub type CustomStyleAccess = crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess;
+    #[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
+    pub type Hierarchy = crate::UnityEngine::UIElements::VisualElement_Hierarchy;
+    #[cfg(feature = "UnityEngine+UIElements+VisualElement+MeasureMode")]
+    pub type MeasureMode = crate::UnityEngine::UIElements::VisualElement_MeasureMode;
+    #[cfg(feature = "UnityEngine+UIElements+VisualElement+RenderTargetMode")]
+    pub type RenderTargetMode = crate::UnityEngine::UIElements::VisualElement_RenderTargetMode;
+    #[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
+    pub type SimpleScheduledItem = crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem;
+    #[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
+    pub type TimerStateScheduledItem = crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem;
+    #[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
+    pub type TypeData = crate::UnityEngine::UIElements::VisualElement_TypeData;
+    #[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
+    pub type UxmlFactory = crate::UnityEngine::UIElements::VisualElement_UxmlFactory;
+    #[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
+    pub type UxmlTraits = crate::UnityEngine::UIElements::VisualElement_UxmlTraits;
     #[cfg(feature = "UnityEngine+UIElements+VisualElement+VisualElementScheduledItem_1")]
     pub type VisualElementScheduledItem_1<ActionType: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
         ActionType,
     >;
-    #[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
-    pub type SimpleScheduledItem = crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem;
-    #[cfg(feature = "UnityEngine+UIElements+VisualElement+RenderTargetMode")]
-    pub type RenderTargetMode = crate::UnityEngine::UIElements::VisualElement_RenderTargetMode;
+    #[cfg(feature = "UnityEngine+UIElements+VisualElement+__c__DisplayClass492_0")]
+    pub type __c__DisplayClass492_0 = crate::UnityEngine::UIElements::VisualElement___c__DisplayClass492_0;
     pub fn Add(
         &mut self,
         child: *mut crate::UnityEngine::UIElements::VisualElement,

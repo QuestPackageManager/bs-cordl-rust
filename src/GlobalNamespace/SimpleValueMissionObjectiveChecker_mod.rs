@@ -2,28 +2,29 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleValueMissionObjectiveChecker {
-    __cordl_parent: MissionObjectiveChecker,
+    __cordl_parent: crate::GlobalNamespace::MissionObjectiveChecker,
 }
 #[cfg(feature = "SimpleValueMissionObjectiveChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SimpleValueMissionObjectiveChecker => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SimpleValueMissionObjectiveChecker => ""
     ."SimpleValueMissionObjectiveChecker"
 );
 #[cfg(feature = "SimpleValueMissionObjectiveChecker")]
-impl std::ops::Deref for SimpleValueMissionObjectiveChecker {
-    type Target = MissionObjectiveChecker;
+impl std::ops::Deref for crate::GlobalNamespace::SimpleValueMissionObjectiveChecker {
+    type Target = crate::GlobalNamespace::MissionObjectiveChecker;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SimpleValueMissionObjectiveChecker")]
-impl std::ops::DerefMut for SimpleValueMissionObjectiveChecker {
+impl std::ops::DerefMut for crate::GlobalNamespace::SimpleValueMissionObjectiveChecker {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SimpleValueMissionObjectiveChecker")]
-impl SimpleValueMissionObjectiveChecker {
+impl crate::GlobalNamespace::SimpleValueMissionObjectiveChecker {
     pub fn CheckAndUpdateStatus(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -53,7 +54,8 @@ impl SimpleValueMissionObjectiveChecker {
     }
 }
 #[cfg(feature = "SimpleValueMissionObjectiveChecker")]
-impl quest_hook::libil2cpp::ObjectType for SimpleValueMissionObjectiveChecker {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SimpleValueMissionObjectiveChecker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

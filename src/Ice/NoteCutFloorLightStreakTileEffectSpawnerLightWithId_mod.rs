@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteCutFloorLightStreakTileEffectSpawnerLightWithId {
-    __cordl_parent: LightWithIdMonoBehaviour,
+    __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
     pub _noteCutFloorLightStreakTileEffectSpawner: *mut crate::Ice::NoteCutFloorLightStreakTileEffectSpawner,
 }
 #[cfg(feature = "Ice+NoteCutFloorLightStreakTileEffectSpawnerLightWithId")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Ice+NoteCutFloorLightStreakTileEffectSpawnerLightWithId")]
 impl std::ops::Deref
 for crate::Ice::NoteCutFloorLightStreakTileEffectSpawnerLightWithId {
-    type Target = LightWithIdMonoBehaviour;
+    type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -10,23 +10,24 @@ pub struct EnableOnVisible {
 }
 #[cfg(feature = "EnableOnVisible")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnableOnVisible => ""."EnableOnVisible"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnableOnVisible => ""
+    ."EnableOnVisible"
 );
 #[cfg(feature = "EnableOnVisible")]
-impl std::ops::Deref for EnableOnVisible {
+impl std::ops::Deref for crate::GlobalNamespace::EnableOnVisible {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnableOnVisible")]
-impl std::ops::DerefMut for EnableOnVisible {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnableOnVisible {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnableOnVisible")]
-impl EnableOnVisible {
+impl crate::GlobalNamespace::EnableOnVisible {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -98,7 +99,7 @@ impl EnableOnVisible {
     }
 }
 #[cfg(feature = "EnableOnVisible")]
-impl quest_hook::libil2cpp::ObjectType for EnableOnVisible {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EnableOnVisible {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

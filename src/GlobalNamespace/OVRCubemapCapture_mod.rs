@@ -12,23 +12,24 @@ pub struct OVRCubemapCapture {
 }
 #[cfg(feature = "OVRCubemapCapture")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRCubemapCapture => ""."OVRCubemapCapture"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRCubemapCapture => ""
+    ."OVRCubemapCapture"
 );
 #[cfg(feature = "OVRCubemapCapture")]
-impl std::ops::Deref for OVRCubemapCapture {
+impl std::ops::Deref for crate::GlobalNamespace::OVRCubemapCapture {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRCubemapCapture")]
-impl std::ops::DerefMut for OVRCubemapCapture {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRCubemapCapture {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRCubemapCapture")]
-impl OVRCubemapCapture {
+impl crate::GlobalNamespace::OVRCubemapCapture {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -58,7 +59,7 @@ impl OVRCubemapCapture {
     }
 }
 #[cfg(feature = "OVRCubemapCapture")]
-impl quest_hook::libil2cpp::ObjectType for OVRCubemapCapture {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRCubemapCapture {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

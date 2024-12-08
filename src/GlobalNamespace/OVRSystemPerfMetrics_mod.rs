@@ -6,23 +6,24 @@ pub struct OVRSystemPerfMetrics {
 }
 #[cfg(feature = "OVRSystemPerfMetrics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRSystemPerfMetrics => ""."OVRSystemPerfMetrics"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRSystemPerfMetrics => ""
+    ."OVRSystemPerfMetrics"
 );
 #[cfg(feature = "OVRSystemPerfMetrics")]
-impl std::ops::Deref for OVRSystemPerfMetrics {
+impl std::ops::Deref for crate::GlobalNamespace::OVRSystemPerfMetrics {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSystemPerfMetrics")]
-impl std::ops::DerefMut for OVRSystemPerfMetrics {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRSystemPerfMetrics {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSystemPerfMetrics")]
-impl OVRSystemPerfMetrics {
+impl crate::GlobalNamespace::OVRSystemPerfMetrics {
     pub const MaxBufferLength: i32 = 65536i32;
     pub const MaxMessageLength: i32 = 65532i32;
     pub const PayloadTypeMetrics: i32 = 100i32;
@@ -50,7 +51,7 @@ impl OVRSystemPerfMetrics {
     }
 }
 #[cfg(feature = "OVRSystemPerfMetrics")]
-impl quest_hook::libil2cpp::ObjectType for OVRSystemPerfMetrics {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSystemPerfMetrics {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

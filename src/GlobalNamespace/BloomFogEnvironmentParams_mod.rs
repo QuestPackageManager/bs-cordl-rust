@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomFogEnvironmentParams {
-    __cordl_parent: PersistentScriptableObject,
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub attenuation: f32,
     pub offset: f32,
     pub heightFogStartY: f32,
@@ -13,24 +13,24 @@ pub struct BloomFogEnvironmentParams {
 }
 #[cfg(feature = "BloomFogEnvironmentParams")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BloomFogEnvironmentParams => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BloomFogEnvironmentParams => ""
     ."BloomFogEnvironmentParams"
 );
 #[cfg(feature = "BloomFogEnvironmentParams")]
-impl std::ops::Deref for BloomFogEnvironmentParams {
-    type Target = PersistentScriptableObject;
+impl std::ops::Deref for crate::GlobalNamespace::BloomFogEnvironmentParams {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomFogEnvironmentParams")]
-impl std::ops::DerefMut for BloomFogEnvironmentParams {
+impl std::ops::DerefMut for crate::GlobalNamespace::BloomFogEnvironmentParams {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomFogEnvironmentParams")]
-impl BloomFogEnvironmentParams {
+impl crate::GlobalNamespace::BloomFogEnvironmentParams {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -50,7 +50,8 @@ impl BloomFogEnvironmentParams {
     }
 }
 #[cfg(feature = "BloomFogEnvironmentParams")]
-impl quest_hook::libil2cpp::ObjectType for BloomFogEnvironmentParams {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::BloomFogEnvironmentParams {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

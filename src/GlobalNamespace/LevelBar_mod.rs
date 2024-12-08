@@ -17,28 +17,28 @@ pub struct LevelBar {
     pub _useArtworkBackground: bool,
     pub _artworkBackgroundImage: *mut crate::HMUI::ImageView,
     pub _defaultArtworkImage: *mut crate::UnityEngine::Sprite,
-    pub _beatmapLevelsModel: *mut BeatmapLevelsModel,
+    pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
     pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
 }
 #[cfg(feature = "LevelBar")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LevelBar => ""."LevelBar"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LevelBar => ""."LevelBar"
 );
 #[cfg(feature = "LevelBar")]
-impl std::ops::Deref for LevelBar {
+impl std::ops::Deref for crate::GlobalNamespace::LevelBar {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelBar")]
-impl std::ops::DerefMut for LevelBar {
+impl std::ops::DerefMut for crate::GlobalNamespace::LevelBar {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelBar")]
-impl LevelBar {
+impl crate::GlobalNamespace::LevelBar {
     #[cfg(feature = "LevelBar+_SetupData_d__20")]
     pub type _SetupData_d__20 = crate::GlobalNamespace::LevelBar__SetupData_d__20;
     #[cfg(feature = "LevelBar+_Setup_d__18")]
@@ -64,9 +64,9 @@ impl LevelBar {
     }
     pub fn SetupData(
         &mut self,
-        beatmapLevel: *mut BeatmapLevel,
-        beatmapDifficulty: BeatmapDifficulty,
-        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+        beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
+        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -80,7 +80,7 @@ impl LevelBar {
     }
     pub fn Setup_BeatmapKey0(
         &mut self,
-        beatmapKey: BeatmapKey,
+        beatmapKey: crate::GlobalNamespace::BeatmapKey,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -91,9 +91,9 @@ impl LevelBar {
     }
     pub fn Setup_BeatmapLevel_BeatmapDifficulty_BeatmapCharacteristicSO1(
         &mut self,
-        beatmapLevel: *mut BeatmapLevel,
-        beatmapDifficulty: BeatmapDifficulty,
-        beatmapCharacteristic: *mut BeatmapCharacteristicSO,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+        beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
+        beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -125,7 +125,7 @@ impl LevelBar {
     }
 }
 #[cfg(feature = "LevelBar")]
-impl quest_hook::libil2cpp::ObjectType for LevelBar {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LevelBar {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

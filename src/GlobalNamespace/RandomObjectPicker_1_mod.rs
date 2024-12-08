@@ -10,24 +10,26 @@ pub struct RandomObjectPicker_1<T: quest_hook::libil2cpp::Type> {
 }
 #[cfg(feature = "RandomObjectPicker_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RandomObjectPicker_1 < T > => ""."RandomObjectPicker`1"
-    < T >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RandomObjectPicker_1 < T > =>
+    ""."RandomObjectPicker`1" < T >
 );
 #[cfg(feature = "RandomObjectPicker_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for RandomObjectPicker_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
+for crate::GlobalNamespace::RandomObjectPicker_1<T> {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RandomObjectPicker_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for RandomObjectPicker_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
+for crate::GlobalNamespace::RandomObjectPicker_1<T> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RandomObjectPicker_1")]
-impl<T: quest_hook::libil2cpp::Type> RandomObjectPicker_1<T> {
+impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RandomObjectPicker_1<T> {
     pub fn New_Il2CppArray1(
         objects: *mut quest_hook::libil2cpp::Il2CppArray<T>,
         minimumPickInterval: f32,
@@ -94,7 +96,7 @@ impl<T: quest_hook::libil2cpp::Type> RandomObjectPicker_1<T> {
 }
 #[cfg(feature = "RandomObjectPicker_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for RandomObjectPicker_1<T> {
+for crate::GlobalNamespace::RandomObjectPicker_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -11,23 +11,24 @@ pub struct StepValuePicker {
 }
 #[cfg(feature = "StepValuePicker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StepValuePicker => ""."StepValuePicker"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::StepValuePicker => ""
+    ."StepValuePicker"
 );
 #[cfg(feature = "StepValuePicker")]
-impl std::ops::Deref for StepValuePicker {
+impl std::ops::Deref for crate::GlobalNamespace::StepValuePicker {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StepValuePicker")]
-impl std::ops::DerefMut for StepValuePicker {
+impl std::ops::DerefMut for crate::GlobalNamespace::StepValuePicker {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StepValuePicker")]
-impl StepValuePicker {
+impl crate::GlobalNamespace::StepValuePicker {
     pub fn DecButtonPressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -174,7 +175,7 @@ impl StepValuePicker {
     }
 }
 #[cfg(feature = "StepValuePicker")]
-impl quest_hook::libil2cpp::ObjectType for StepValuePicker {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::StepValuePicker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

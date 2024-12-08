@@ -4,7 +4,7 @@
 pub struct SongPacksDropdown {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _simpleTextDropdown: *mut crate::HMUI::SimpleTextDropdown,
-    pub _songPackMasksModel: *mut SongPackMasksModel,
+    pub _songPackMasksModel: *mut crate::GlobalNamespace::SongPackMasksModel,
     pub didSelectCellWithIdxEvent: *mut crate::System::Action_1<i32>,
     pub _initialized: bool,
     pub _songPackSerializedNames: *mut crate::System::Collections::Generic::List_1<
@@ -13,28 +13,29 @@ pub struct SongPacksDropdown {
 }
 #[cfg(feature = "SongPacksDropdown")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SongPacksDropdown => ""."SongPacksDropdown"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongPacksDropdown => ""
+    ."SongPacksDropdown"
 );
 #[cfg(feature = "SongPacksDropdown")]
-impl std::ops::Deref for SongPacksDropdown {
+impl std::ops::Deref for crate::GlobalNamespace::SongPacksDropdown {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongPacksDropdown")]
-impl std::ops::DerefMut for SongPacksDropdown {
+impl std::ops::DerefMut for crate::GlobalNamespace::SongPacksDropdown {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongPacksDropdown")]
-impl SongPacksDropdown {
+impl crate::GlobalNamespace::SongPacksDropdown {
     #[cfg(feature = "SongPacksDropdown+__c")]
     pub type __c = crate::GlobalNamespace::SongPacksDropdown___c;
     pub fn GetIdxForSongPackMask(
         &mut self,
-        songPackMask: SongPackMask,
+        songPackMask: crate::GlobalNamespace::SongPackMask,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -45,11 +46,11 @@ impl SongPacksDropdown {
     }
     pub fn GetSelectedSongPackMask(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<SongPackMask> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: SongPackMask = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::SongPackMask = __cordl_object
             .invoke("GetSelectedSongPackMask", ())?;
         Ok(__cordl_ret)
     }
@@ -97,7 +98,7 @@ impl SongPacksDropdown {
     }
     pub fn SelectCellWithSongPackMask(
         &mut self,
-        songPackMask: SongPackMask,
+        songPackMask: crate::GlobalNamespace::SongPackMask,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -163,7 +164,7 @@ impl SongPacksDropdown {
     }
 }
 #[cfg(feature = "SongPacksDropdown")]
-impl quest_hook::libil2cpp::ObjectType for SongPacksDropdown {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongPacksDropdown {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

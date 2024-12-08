@@ -77,35 +77,36 @@ for crate::GlobalNamespace::ScreenCaptureAfterDelay_InitData {
 #[derive(Debug)]
 pub struct ScreenCaptureAfterDelay {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _mainEffectController: *mut MainEffectController,
-    pub _screenCaptureCache: *mut ScreenCaptureCache,
+    pub _mainEffectController: *mut crate::GlobalNamespace::MainEffectController,
+    pub _screenCaptureCache: *mut crate::GlobalNamespace::ScreenCaptureCache,
     pub _initData: *mut crate::GlobalNamespace::ScreenCaptureAfterDelay_InitData,
     pub _captureTexture: *mut crate::UnityEngine::Texture2D,
     pub _captureRenderTexture: *mut crate::UnityEngine::RenderTexture,
 }
 #[cfg(feature = "ScreenCaptureAfterDelay")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ScreenCaptureAfterDelay => ""."ScreenCaptureAfterDelay"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ScreenCaptureAfterDelay => ""
+    ."ScreenCaptureAfterDelay"
 );
 #[cfg(feature = "ScreenCaptureAfterDelay")]
-impl std::ops::Deref for ScreenCaptureAfterDelay {
+impl std::ops::Deref for crate::GlobalNamespace::ScreenCaptureAfterDelay {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScreenCaptureAfterDelay")]
-impl std::ops::DerefMut for ScreenCaptureAfterDelay {
+impl std::ops::DerefMut for crate::GlobalNamespace::ScreenCaptureAfterDelay {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScreenCaptureAfterDelay")]
-impl ScreenCaptureAfterDelay {
-    #[cfg(feature = "ScreenCaptureAfterDelay+_Start_d__6")]
-    pub type _Start_d__6 = crate::GlobalNamespace::ScreenCaptureAfterDelay__Start_d__6;
+impl crate::GlobalNamespace::ScreenCaptureAfterDelay {
     #[cfg(feature = "ScreenCaptureAfterDelay+InitData")]
     pub type InitData = crate::GlobalNamespace::ScreenCaptureAfterDelay_InitData;
+    #[cfg(feature = "ScreenCaptureAfterDelay+_Start_d__6")]
+    pub type _Start_d__6 = crate::GlobalNamespace::ScreenCaptureAfterDelay__Start_d__6;
     pub fn HandleMainEffectControllerAfterImageEffectEvent(
         &mut self,
         renderTexture: *mut crate::UnityEngine::RenderTexture,
@@ -156,7 +157,8 @@ impl ScreenCaptureAfterDelay {
     }
 }
 #[cfg(feature = "ScreenCaptureAfterDelay")]
-impl quest_hook::libil2cpp::ObjectType for ScreenCaptureAfterDelay {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ScreenCaptureAfterDelay {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

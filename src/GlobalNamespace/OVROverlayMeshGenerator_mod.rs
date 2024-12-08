@@ -29,7 +29,7 @@ pub struct OVROverlayMeshGenerator {
         crate::UnityEngine::Vector2,
     >,
     pub _Tris: *mut crate::System::Collections::Generic::List_1<i32>,
-    pub _Overlay: *mut OVROverlay,
+    pub _Overlay: *mut crate::GlobalNamespace::OVROverlay,
     pub _MeshFilter: *mut crate::UnityEngine::MeshFilter,
     pub _MeshCollider: *mut crate::UnityEngine::MeshCollider,
     pub _MeshRenderer: *mut crate::UnityEngine::MeshRenderer,
@@ -47,23 +47,24 @@ pub struct OVROverlayMeshGenerator {
 }
 #[cfg(feature = "OVROverlayMeshGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVROverlayMeshGenerator => ""."OVROverlayMeshGenerator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVROverlayMeshGenerator => ""
+    ."OVROverlayMeshGenerator"
 );
 #[cfg(feature = "OVROverlayMeshGenerator")]
-impl std::ops::Deref for OVROverlayMeshGenerator {
+impl std::ops::Deref for crate::GlobalNamespace::OVROverlayMeshGenerator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVROverlayMeshGenerator")]
-impl std::ops::DerefMut for OVROverlayMeshGenerator {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVROverlayMeshGenerator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVROverlayMeshGenerator")]
-impl OVROverlayMeshGenerator {
+impl crate::GlobalNamespace::OVROverlayMeshGenerator {
     #[cfg(feature = "OVROverlayMeshGenerator+CubeFace")]
     pub type CubeFace = crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace;
     pub fn Awake(
@@ -117,7 +118,7 @@ impl OVROverlayMeshGenerator {
     }
     pub fn SetOverlay(
         &mut self,
-        overlay: *mut OVROverlay,
+        overlay: *mut crate::GlobalNamespace::OVROverlay,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -163,7 +164,8 @@ impl OVROverlayMeshGenerator {
     }
 }
 #[cfg(feature = "OVROverlayMeshGenerator")]
-impl quest_hook::libil2cpp::ObjectType for OVROverlayMeshGenerator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVROverlayMeshGenerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

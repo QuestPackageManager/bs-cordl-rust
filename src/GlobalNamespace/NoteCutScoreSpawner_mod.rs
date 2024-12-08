@@ -3,31 +3,32 @@
 #[derive(Debug)]
 pub struct NoteCutScoreSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _flyingScoreSpawner: *mut FlyingScoreSpawner,
-    pub _scoreController: *mut IScoreController,
+    pub _flyingScoreSpawner: *mut crate::GlobalNamespace::FlyingScoreSpawner,
+    pub _scoreController: *mut crate::GlobalNamespace::IScoreController,
 }
 #[cfg(feature = "NoteCutScoreSpawner")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for NoteCutScoreSpawner => ""."NoteCutScoreSpawner"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteCutScoreSpawner => ""
+    ."NoteCutScoreSpawner"
 );
 #[cfg(feature = "NoteCutScoreSpawner")]
-impl std::ops::Deref for NoteCutScoreSpawner {
+impl std::ops::Deref for crate::GlobalNamespace::NoteCutScoreSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteCutScoreSpawner")]
-impl std::ops::DerefMut for NoteCutScoreSpawner {
+impl std::ops::DerefMut for crate::GlobalNamespace::NoteCutScoreSpawner {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteCutScoreSpawner")]
-impl NoteCutScoreSpawner {
+impl crate::GlobalNamespace::NoteCutScoreSpawner {
     pub fn HandleScoringForNoteStarted(
         &mut self,
-        scoringElement: *mut ScoringElement,
+        scoringElement: *mut crate::GlobalNamespace::ScoringElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -75,7 +76,7 @@ impl NoteCutScoreSpawner {
     }
 }
 #[cfg(feature = "NoteCutScoreSpawner")]
-impl quest_hook::libil2cpp::ObjectType for NoteCutScoreSpawner {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteCutScoreSpawner {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

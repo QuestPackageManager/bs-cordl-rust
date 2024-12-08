@@ -10,23 +10,24 @@ pub struct TextOnlyTableCell {
 }
 #[cfg(feature = "TextOnlyTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TextOnlyTableCell => ""."TextOnlyTableCell"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TextOnlyTableCell => ""
+    ."TextOnlyTableCell"
 );
 #[cfg(feature = "TextOnlyTableCell")]
-impl std::ops::Deref for TextOnlyTableCell {
+impl std::ops::Deref for crate::GlobalNamespace::TextOnlyTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TextOnlyTableCell")]
-impl std::ops::DerefMut for TextOnlyTableCell {
+impl std::ops::DerefMut for crate::GlobalNamespace::TextOnlyTableCell {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TextOnlyTableCell")]
-impl TextOnlyTableCell {
+impl crate::GlobalNamespace::TextOnlyTableCell {
     pub fn HighlightDidChange(
         &mut self,
         transitionType: crate::HMUI::SelectableCell_TransitionType,
@@ -99,7 +100,7 @@ impl TextOnlyTableCell {
     }
 }
 #[cfg(feature = "TextOnlyTableCell")]
-impl quest_hook::libil2cpp::ObjectType for TextOnlyTableCell {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TextOnlyTableCell {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

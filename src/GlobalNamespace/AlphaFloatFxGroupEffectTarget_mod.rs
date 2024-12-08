@@ -2,35 +2,35 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AlphaFloatFxGroupEffectTarget {
-    __cordl_parent: FloatFxGroupEffectTarget,
+    __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _staticColor: crate::UnityEngine::Color,
     pub _property: *mut crate::System::String,
     pub _materialPropertyBlockControllers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut MaterialPropertyBlockController,
+        *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     >,
     pub _propertyId: i32,
     pub _isInitialized: bool,
 }
 #[cfg(feature = "AlphaFloatFxGroupEffectTarget")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AlphaFloatFxGroupEffectTarget => ""
-    ."AlphaFloatFxGroupEffectTarget"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AlphaFloatFxGroupEffectTarget
+    => ""."AlphaFloatFxGroupEffectTarget"
 );
 #[cfg(feature = "AlphaFloatFxGroupEffectTarget")]
-impl std::ops::Deref for AlphaFloatFxGroupEffectTarget {
-    type Target = FloatFxGroupEffectTarget;
+impl std::ops::Deref for crate::GlobalNamespace::AlphaFloatFxGroupEffectTarget {
+    type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AlphaFloatFxGroupEffectTarget")]
-impl std::ops::DerefMut for AlphaFloatFxGroupEffectTarget {
+impl std::ops::DerefMut for crate::GlobalNamespace::AlphaFloatFxGroupEffectTarget {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AlphaFloatFxGroupEffectTarget")]
-impl AlphaFloatFxGroupEffectTarget {
+impl crate::GlobalNamespace::AlphaFloatFxGroupEffectTarget {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -107,7 +107,8 @@ impl AlphaFloatFxGroupEffectTarget {
     }
 }
 #[cfg(feature = "AlphaFloatFxGroupEffectTarget")]
-impl quest_hook::libil2cpp::ObjectType for AlphaFloatFxGroupEffectTarget {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::AlphaFloatFxGroupEffectTarget {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

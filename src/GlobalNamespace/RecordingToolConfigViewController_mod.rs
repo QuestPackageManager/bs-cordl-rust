@@ -4,28 +4,29 @@
 pub struct RecordingToolConfigViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _textPageScrollView: *mut crate::HMUI::TextPageScrollView,
-    pub _recordingToolManager: *mut RecordingToolManager,
+    pub _recordingToolManager: *mut crate::GlobalNamespace::RecordingToolManager,
 }
 #[cfg(feature = "RecordingToolConfigViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for RecordingToolConfigViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::RecordingToolConfigViewController => ""
     ."RecordingToolConfigViewController"
 );
 #[cfg(feature = "RecordingToolConfigViewController")]
-impl std::ops::Deref for RecordingToolConfigViewController {
+impl std::ops::Deref for crate::GlobalNamespace::RecordingToolConfigViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingToolConfigViewController")]
-impl std::ops::DerefMut for RecordingToolConfigViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::RecordingToolConfigViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "RecordingToolConfigViewController")]
-impl RecordingToolConfigViewController {
+impl crate::GlobalNamespace::RecordingToolConfigViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -61,7 +62,8 @@ impl RecordingToolConfigViewController {
     }
 }
 #[cfg(feature = "RecordingToolConfigViewController")]
-impl quest_hook::libil2cpp::ObjectType for RecordingToolConfigViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::RecordingToolConfigViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

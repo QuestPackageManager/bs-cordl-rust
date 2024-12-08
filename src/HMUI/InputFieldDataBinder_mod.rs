@@ -6,7 +6,7 @@ pub struct InputFieldDataBinder {
     pub _bindings: *mut crate::System::Collections::Generic::List_1<
         *mut crate::System::Tuple_4<
             *mut crate::UnityEngine::UI::InputField,
-            *mut IObservableChange,
+            *mut crate::GlobalNamespace::IObservableChange,
             *mut crate::UnityEngine::Events::UnityAction_1<*mut crate::System::String>,
             *mut crate::System::Action,
         >,
@@ -32,15 +32,15 @@ impl std::ops::DerefMut for crate::HMUI::InputFieldDataBinder {
 }
 #[cfg(feature = "HMUI+InputFieldDataBinder")]
 impl crate::HMUI::InputFieldDataBinder {
+    #[cfg(feature = "HMUI+InputFieldDataBinder+__c__3_1")]
+    pub type __c__3_1<T: quest_hook::libil2cpp::Type> = crate::HMUI::InputFieldDataBinder___c__3_1<
+        T,
+    >;
     #[cfg(feature = "HMUI+InputFieldDataBinder+__c__DisplayClass2_0_2")]
     pub type __c__DisplayClass2_0_2<
         T0: quest_hook::libil2cpp::Type,
         T1: quest_hook::libil2cpp::Type,
     > = crate::HMUI::InputFieldDataBinder___c__DisplayClass2_0_2<T0, T1>;
-    #[cfg(feature = "HMUI+InputFieldDataBinder+__c__3_1")]
-    pub type __c__3_1<T: quest_hook::libil2cpp::Type> = crate::HMUI::InputFieldDataBinder___c__3_1<
-        T,
-    >;
     pub fn AddBindings<T0, T1>(
         &mut self,
         bindingData: *mut crate::System::Collections::Generic::List_1<

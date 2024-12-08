@@ -128,14 +128,14 @@ impl crate::Unity::Mathematics::math {
     pub const SQRT2_DBL: f64 = 1.4142135623730951f64;
     pub const _cordl_INFINITY: f32 = std::f32::INFINITY;
     pub const _cordl_NAN: f32 = std::f64::NAN;
-    #[cfg(feature = "Unity+Mathematics+math+RotationOrder")]
-    pub type RotationOrder = crate::Unity::Mathematics::math_RotationOrder;
-    #[cfg(feature = "Unity+Mathematics+math+ShuffleComponent")]
-    pub type ShuffleComponent = crate::Unity::Mathematics::math_ShuffleComponent;
     #[cfg(feature = "Unity+Mathematics+math+IntFloatUnion")]
     pub type IntFloatUnion = crate::Unity::Mathematics::math_IntFloatUnion;
     #[cfg(feature = "Unity+Mathematics+math+LongDoubleUnion")]
     pub type LongDoubleUnion = crate::Unity::Mathematics::math_LongDoubleUnion;
+    #[cfg(feature = "Unity+Mathematics+math+RotationOrder")]
+    pub type RotationOrder = crate::Unity::Mathematics::math_RotationOrder;
+    #[cfg(feature = "Unity+Mathematics+math+ShuffleComponent")]
+    pub type ShuffleComponent = crate::Unity::Mathematics::math_ShuffleComponent;
 }
 #[cfg(feature = "Unity+Mathematics+math")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Mathematics::math {

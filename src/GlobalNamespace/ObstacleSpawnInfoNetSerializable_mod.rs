@@ -2,16 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObstacleSpawnInfoNetSerializable {
-    __cordl_parent: PoolableSerializable,
+    __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
     pub _cordl_time: f32,
     pub lineIndex: i32,
-    pub lineLayer: NoteLineLayer,
+    pub lineLayer: crate::GlobalNamespace::NoteLineLayer,
     pub duration: f32,
     pub width: i32,
     pub height: i32,
-    pub moveStartPos: Vector3Serializable,
-    pub moveEndPos: Vector3Serializable,
-    pub jumpEndPos: Vector3Serializable,
+    pub moveStartPos: crate::GlobalNamespace::Vector3Serializable,
+    pub moveEndPos: crate::GlobalNamespace::Vector3Serializable,
+    pub jumpEndPos: crate::GlobalNamespace::Vector3Serializable,
     pub obstacleHeight: f32,
     pub moveDuration: f32,
     pub jumpDuration: f32,
@@ -20,24 +20,25 @@ pub struct ObstacleSpawnInfoNetSerializable {
 }
 #[cfg(feature = "ObstacleSpawnInfoNetSerializable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ObstacleSpawnInfoNetSerializable => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ObstacleSpawnInfoNetSerializable => ""
     ."ObstacleSpawnInfoNetSerializable"
 );
 #[cfg(feature = "ObstacleSpawnInfoNetSerializable")]
-impl std::ops::Deref for ObstacleSpawnInfoNetSerializable {
-    type Target = PoolableSerializable;
+impl std::ops::Deref for crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable {
+    type Target = crate::GlobalNamespace::PoolableSerializable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ObstacleSpawnInfoNetSerializable")]
-impl std::ops::DerefMut for ObstacleSpawnInfoNetSerializable {
+impl std::ops::DerefMut for crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ObstacleSpawnInfoNetSerializable")]
-impl ObstacleSpawnInfoNetSerializable {
+impl crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable {
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
@@ -53,7 +54,7 @@ impl ObstacleSpawnInfoNetSerializable {
         &mut self,
         _cordl_time: f32,
         lineIndex: i32,
-        lineLayer: NoteLineLayer,
+        lineLayer: crate::GlobalNamespace::NoteLineLayer,
         duration: f32,
         width: i32,
         height: i32,
@@ -65,11 +66,13 @@ impl ObstacleSpawnInfoNetSerializable {
         jumpDuration: f32,
         noteLinesDistance: f32,
         rotation: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut ObstacleSpawnInfoNetSerializable> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut ObstacleSpawnInfoNetSerializable = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable = __cordl_object
             .invoke(
                 "Init",
                 (
@@ -121,7 +124,8 @@ impl ObstacleSpawnInfoNetSerializable {
     }
 }
 #[cfg(feature = "ObstacleSpawnInfoNetSerializable")]
-impl quest_hook::libil2cpp::ObjectType for ObstacleSpawnInfoNetSerializable {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

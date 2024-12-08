@@ -390,7 +390,7 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerAllOverallStatsData {
 pub struct PlayerSaveDataV1_0_1_PlayerLevelStatsData {
     __cordl_parent: crate::System::Object,
     pub levelId: *mut crate::System::String,
-    pub difficulty: BeatmapDifficulty,
+    pub difficulty: crate::GlobalNamespace::BeatmapDifficulty,
     pub highScore: i32,
     pub maxCombo: i32,
     pub fullCombo: bool,
@@ -658,42 +658,43 @@ pub struct PlayerSaveDataV1_0_1 {
     pub guestPlayers: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_GuestPlayer,
     >,
-    pub lastSelectedBeatmapDifficulty: BeatmapDifficulty,
+    pub lastSelectedBeatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerSaveDataV1_0_1 => ""."PlayerSaveDataV1_0_1"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerSaveDataV1_0_1 => ""
+    ."PlayerSaveDataV1_0_1"
 );
 #[cfg(feature = "PlayerSaveDataV1_0_1")]
-impl std::ops::Deref for PlayerSaveDataV1_0_1 {
+impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveDataV1_0_1 {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1")]
-impl std::ops::DerefMut for PlayerSaveDataV1_0_1 {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveDataV1_0_1 {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1")]
-impl PlayerSaveDataV1_0_1 {
+impl crate::GlobalNamespace::PlayerSaveDataV1_0_1 {
     pub const kCurrentVersion: &'static str = "";
-    #[cfg(feature = "PlayerSaveDataV1_0_1+LocalPlayer")]
-    pub type LocalPlayer = crate::GlobalNamespace::PlayerSaveDataV1_0_1_LocalPlayer;
-    #[cfg(feature = "PlayerSaveDataV1_0_1+PlayerMissionStatsData")]
-    pub type PlayerMissionStatsData = crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerMissionStatsData;
     #[cfg(feature = "PlayerSaveDataV1_0_1+AchievementsData")]
     pub type AchievementsData = crate::GlobalNamespace::PlayerSaveDataV1_0_1_AchievementsData;
+    #[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers")]
+    pub type GameplayModifiers = crate::GlobalNamespace::PlayerSaveDataV1_0_1_GameplayModifiers;
     #[cfg(feature = "PlayerSaveDataV1_0_1+GuestPlayer")]
     pub type GuestPlayer = crate::GlobalNamespace::PlayerSaveDataV1_0_1_GuestPlayer;
+    #[cfg(feature = "PlayerSaveDataV1_0_1+LocalPlayer")]
+    pub type LocalPlayer = crate::GlobalNamespace::PlayerSaveDataV1_0_1_LocalPlayer;
     #[cfg(feature = "PlayerSaveDataV1_0_1+PlayerAllOverallStatsData")]
     pub type PlayerAllOverallStatsData = crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerAllOverallStatsData;
     #[cfg(feature = "PlayerSaveDataV1_0_1+PlayerLevelStatsData")]
     pub type PlayerLevelStatsData = crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerLevelStatsData;
-    #[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers")]
-    pub type GameplayModifiers = crate::GlobalNamespace::PlayerSaveDataV1_0_1_GameplayModifiers;
+    #[cfg(feature = "PlayerSaveDataV1_0_1+PlayerMissionStatsData")]
+    pub type PlayerMissionStatsData = crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerMissionStatsData;
     #[cfg(feature = "PlayerSaveDataV1_0_1+PlayerOverallStatsData")]
     pub type PlayerOverallStatsData = crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerOverallStatsData;
     #[cfg(feature = "PlayerSaveDataV1_0_1+PlayerSpecificSettings")]
@@ -717,7 +718,7 @@ impl PlayerSaveDataV1_0_1 {
     }
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1")]
-impl quest_hook::libil2cpp::ObjectType for PlayerSaveDataV1_0_1 {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerSaveDataV1_0_1 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

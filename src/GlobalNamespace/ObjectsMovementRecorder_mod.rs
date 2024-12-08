@@ -28,8 +28,8 @@ pub struct ObjectsMovementRecorder_InitData {
         *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
     >,
     pub saveToOldFormat: bool,
-    pub posesSerializer: *mut IPosesSerializer,
-    pub logger: *mut IBeatSaberLogger,
+    pub posesSerializer: *mut crate::GlobalNamespace::IPosesSerializer,
+    pub logger: *mut crate::GlobalNamespace::IBeatSaberLogger,
 }
 #[cfg(feature = "ObjectsMovementRecorder+InitData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -65,8 +65,8 @@ impl crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
             *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
         >,
         saveToOldFormat: bool,
-        logger: *mut IBeatSaberLogger,
-        posesSerializer: *mut IPosesSerializer,
+        logger: *mut crate::GlobalNamespace::IBeatSaberLogger,
+        posesSerializer: *mut crate::GlobalNamespace::IPosesSerializer,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -104,8 +104,8 @@ impl crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
             *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
         >,
         saveToOldFormat: bool,
-        logger: *mut IBeatSaberLogger,
-        posesSerializer: *mut IPosesSerializer,
+        logger: *mut crate::GlobalNamespace::IBeatSaberLogger,
+        posesSerializer: *mut crate::GlobalNamespace::IPosesSerializer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -159,14 +159,16 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug)]
 pub struct ObjectsMovementRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _poseObjects: *mut quest_hook::libil2cpp::Il2CppArray<*mut PoseObject>,
-    pub _livPoseObjectId: *mut PoseObjectIdSO,
-    pub _recorder: *mut PosesRecorder,
-    pub _playback: *mut PosesPlayback,
-    pub _playbackScreenshotRecorder: *mut PlaybackScreenshotRecorder,
-    pub _playbackRender: *mut PlaybackRenderer,
+    pub _poseObjects: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::PoseObject,
+    >,
+    pub _livPoseObjectId: *mut crate::GlobalNamespace::PoseObjectIdSO,
+    pub _recorder: *mut crate::GlobalNamespace::PosesRecorder,
+    pub _playback: *mut crate::GlobalNamespace::PosesPlayback,
+    pub _playbackScreenshotRecorder: *mut crate::GlobalNamespace::PlaybackScreenshotRecorder,
+    pub _playbackRender: *mut crate::GlobalNamespace::PlaybackRenderer,
     pub _externalCameraPrefab: *mut crate::UnityEngine::Camera,
-    pub _audioTimeSyncController: *mut AudioTimeSyncController,
+    pub _audioTimeSyncController: *mut crate::GlobalNamespace::AudioTimeSyncController,
     pub _hmdCamera: *mut crate::UnityEngine::Camera,
     pub _initData: *mut crate::GlobalNamespace::ObjectsMovementRecorder_InitData,
     pub _mode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
@@ -176,34 +178,35 @@ pub struct ObjectsMovementRecorder {
     pub _playbackScreenshots: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
     >,
-    pub _logger: *mut IBeatSaberLogger,
-    pub _posesSerializer: *mut IPosesSerializer,
+    pub _logger: *mut crate::GlobalNamespace::IBeatSaberLogger,
+    pub _posesSerializer: *mut crate::GlobalNamespace::IPosesSerializer,
 }
 #[cfg(feature = "ObjectsMovementRecorder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ObjectsMovementRecorder => ""."ObjectsMovementRecorder"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ObjectsMovementRecorder => ""
+    ."ObjectsMovementRecorder"
 );
 #[cfg(feature = "ObjectsMovementRecorder")]
-impl std::ops::Deref for ObjectsMovementRecorder {
+impl std::ops::Deref for crate::GlobalNamespace::ObjectsMovementRecorder {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ObjectsMovementRecorder")]
-impl std::ops::DerefMut for ObjectsMovementRecorder {
+impl std::ops::DerefMut for crate::GlobalNamespace::ObjectsMovementRecorder {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ObjectsMovementRecorder")]
-impl ObjectsMovementRecorder {
+impl crate::GlobalNamespace::ObjectsMovementRecorder {
+    #[cfg(feature = "ObjectsMovementRecorder+CameraView")]
+    pub type CameraView = crate::GlobalNamespace::ObjectsMovementRecorder_CameraView;
     #[cfg(feature = "ObjectsMovementRecorder+InitData")]
     pub type InitData = crate::GlobalNamespace::ObjectsMovementRecorder_InitData;
     #[cfg(feature = "ObjectsMovementRecorder+Mode")]
     pub type Mode = crate::GlobalNamespace::ObjectsMovementRecorder_Mode;
-    #[cfg(feature = "ObjectsMovementRecorder+CameraView")]
-    pub type CameraView = crate::GlobalNamespace::ObjectsMovementRecorder_CameraView;
     pub fn HandleGameStateChanged(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -253,7 +256,8 @@ impl ObjectsMovementRecorder {
     }
 }
 #[cfg(feature = "ObjectsMovementRecorder")]
-impl quest_hook::libil2cpp::ObjectType for ObjectsMovementRecorder {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ObjectsMovementRecorder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

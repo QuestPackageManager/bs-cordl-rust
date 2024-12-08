@@ -2,30 +2,33 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerDuelConnectedPlayerGameplayAnimator {
-    __cordl_parent: MultiplayerGameplayAnimator,
-    pub _avatarScaleAnimator: *mut ScaleAnimator,
-    pub _failController: *mut MultiplayerConnectedPlayerLevelFailController,
+    __cordl_parent: crate::GlobalNamespace::MultiplayerGameplayAnimator,
+    pub _avatarScaleAnimator: *mut crate::GlobalNamespace::ScaleAnimator,
+    pub _failController: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerLevelFailController,
 }
 #[cfg(feature = "MultiplayerDuelConnectedPlayerGameplayAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerDuelConnectedPlayerGameplayAnimator => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerDuelConnectedPlayerGameplayAnimator => ""
     ."MultiplayerDuelConnectedPlayerGameplayAnimator"
 );
 #[cfg(feature = "MultiplayerDuelConnectedPlayerGameplayAnimator")]
-impl std::ops::Deref for MultiplayerDuelConnectedPlayerGameplayAnimator {
-    type Target = MultiplayerGameplayAnimator;
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerDuelConnectedPlayerGameplayAnimator {
+    type Target = crate::GlobalNamespace::MultiplayerGameplayAnimator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerDuelConnectedPlayerGameplayAnimator")]
-impl std::ops::DerefMut for MultiplayerDuelConnectedPlayerGameplayAnimator {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerDuelConnectedPlayerGameplayAnimator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerDuelConnectedPlayerGameplayAnimator")]
-impl MultiplayerDuelConnectedPlayerGameplayAnimator {
+impl crate::GlobalNamespace::MultiplayerDuelConnectedPlayerGameplayAnimator {
     pub fn AnimateNewLeaderSelected(
         &mut self,
         isLeading: bool,
@@ -98,7 +101,7 @@ impl MultiplayerDuelConnectedPlayerGameplayAnimator {
 }
 #[cfg(feature = "MultiplayerDuelConnectedPlayerGameplayAnimator")]
 impl quest_hook::libil2cpp::ObjectType
-for MultiplayerDuelConnectedPlayerGameplayAnimator {
+for crate::GlobalNamespace::MultiplayerDuelConnectedPlayerGameplayAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

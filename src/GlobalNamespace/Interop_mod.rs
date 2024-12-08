@@ -270,32 +270,32 @@ pub struct Interop {
 }
 #[cfg(feature = "Interop")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for Interop => ""."Interop"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::Interop => ""."Interop"
 );
 #[cfg(feature = "Interop")]
-impl std::ops::Deref for Interop {
+impl std::ops::Deref for crate::GlobalNamespace::Interop {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Interop")]
-impl std::ops::DerefMut for Interop {
+impl std::ops::DerefMut for crate::GlobalNamespace::Interop {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "Interop")]
-impl Interop {
-    #[cfg(feature = "Interop+Sys")]
-    pub type Sys = crate::GlobalNamespace::Interop_Sys;
-    #[cfg(feature = "Interop+ErrorInfo")]
-    pub type ErrorInfo = crate::GlobalNamespace::Interop_ErrorInfo;
+impl crate::GlobalNamespace::Interop {
     #[cfg(feature = "Interop+Error")]
     pub type Error = crate::GlobalNamespace::Interop_Error;
+    #[cfg(feature = "Interop+ErrorInfo")]
+    pub type ErrorInfo = crate::GlobalNamespace::Interop_ErrorInfo;
+    #[cfg(feature = "Interop+Sys")]
+    pub type Sys = crate::GlobalNamespace::Interop_Sys;
 }
 #[cfg(feature = "Interop")]
-impl quest_hook::libil2cpp::ObjectType for Interop {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interop {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

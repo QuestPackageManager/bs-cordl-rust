@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRGazePointer {
-    __cordl_parent: OVRCursor,
+    __cordl_parent: crate::GlobalNamespace::OVRCursor,
     pub gazeIcon: *mut crate::UnityEngine::Transform,
     pub hideByDefault: bool,
     pub showTimeoutPeriod: f32,
@@ -18,27 +18,28 @@ pub struct OVRGazePointer {
     pub positionSetsThisFrame: i32,
     pub lastShowRequestTime: f32,
     pub lastHideRequestTime: f32,
-    pub progressIndicator: *mut OVRProgressIndicator,
+    pub progressIndicator: *mut crate::GlobalNamespace::OVRProgressIndicator,
 }
 #[cfg(feature = "OVRGazePointer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRGazePointer => ""."OVRGazePointer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRGazePointer => ""
+    ."OVRGazePointer"
 );
 #[cfg(feature = "OVRGazePointer")]
-impl std::ops::Deref for OVRGazePointer {
-    type Target = OVRCursor;
+impl std::ops::Deref for crate::GlobalNamespace::OVRGazePointer {
+    type Target = crate::GlobalNamespace::OVRCursor;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRGazePointer")]
-impl std::ops::DerefMut for OVRGazePointer {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRGazePointer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRGazePointer")]
-impl OVRGazePointer {
+impl crate::GlobalNamespace::OVRGazePointer {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -213,7 +214,7 @@ impl OVRGazePointer {
     }
 }
 #[cfg(feature = "OVRGazePointer")]
-impl quest_hook::libil2cpp::ObjectType for OVRGazePointer {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRGazePointer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

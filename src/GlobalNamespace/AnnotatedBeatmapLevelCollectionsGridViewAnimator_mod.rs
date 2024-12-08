@@ -6,7 +6,7 @@ pub struct AnnotatedBeatmapLevelCollectionsGridViewAnimator {
     pub _viewportTransform: *mut crate::UnityEngine::RectTransform,
     pub _contentTransform: *mut crate::UnityEngine::RectTransform,
     pub _transitionDuration: f32,
-    pub _easeType: EaseType,
+    pub _easeType: crate::GlobalNamespace::EaseType,
     pub _padding: f32,
     pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
     pub _columnWidth: f32,
@@ -21,24 +21,27 @@ pub struct AnnotatedBeatmapLevelCollectionsGridViewAnimator {
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridViewAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AnnotatedBeatmapLevelCollectionsGridViewAnimator => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator => ""
     ."AnnotatedBeatmapLevelCollectionsGridViewAnimator"
 );
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridViewAnimator")]
-impl std::ops::Deref for AnnotatedBeatmapLevelCollectionsGridViewAnimator {
+impl std::ops::Deref
+for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridViewAnimator")]
-impl std::ops::DerefMut for AnnotatedBeatmapLevelCollectionsGridViewAnimator {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridViewAnimator")]
-impl AnnotatedBeatmapLevelCollectionsGridViewAnimator {
+impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
     pub fn AnimateClose(
         &mut self,
         selectedColumn: i32,
@@ -231,7 +234,7 @@ impl AnnotatedBeatmapLevelCollectionsGridViewAnimator {
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridViewAnimator")]
 impl quest_hook::libil2cpp::ObjectType
-for AnnotatedBeatmapLevelCollectionsGridViewAnimator {
+for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

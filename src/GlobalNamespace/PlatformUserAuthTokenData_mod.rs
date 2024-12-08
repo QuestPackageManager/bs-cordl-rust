@@ -4,31 +4,31 @@
 pub struct PlatformUserAuthTokenData {
     __cordl_parent: crate::System::Object,
     pub _token_k__BackingField: *mut crate::System::String,
-    pub _validPlatformEnvironment_k__BackingField: PlatformEnvironment,
+    pub _validPlatformEnvironment_k__BackingField: crate::GlobalNamespace::PlatformEnvironment,
 }
 #[cfg(feature = "PlatformUserAuthTokenData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlatformUserAuthTokenData => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlatformUserAuthTokenData => ""
     ."PlatformUserAuthTokenData"
 );
 #[cfg(feature = "PlatformUserAuthTokenData")]
-impl std::ops::Deref for PlatformUserAuthTokenData {
+impl std::ops::Deref for crate::GlobalNamespace::PlatformUserAuthTokenData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformUserAuthTokenData")]
-impl std::ops::DerefMut for PlatformUserAuthTokenData {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlatformUserAuthTokenData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformUserAuthTokenData")]
-impl PlatformUserAuthTokenData {
+impl crate::GlobalNamespace::PlatformUserAuthTokenData {
     pub fn New(
         token: *mut crate::System::String,
-        validPlatformEnvironment: PlatformEnvironment,
+        validPlatformEnvironment: crate::GlobalNamespace::PlatformEnvironment,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -39,7 +39,7 @@ impl PlatformUserAuthTokenData {
     pub fn _ctor(
         &mut self,
         token: *mut crate::System::String,
-        validPlatformEnvironment: PlatformEnvironment,
+        validPlatformEnvironment: crate::GlobalNamespace::PlatformEnvironment,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -60,11 +60,11 @@ impl PlatformUserAuthTokenData {
     }
     pub fn get_validPlatformEnvironment(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<PlatformEnvironment> {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PlatformEnvironment> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: PlatformEnvironment = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::PlatformEnvironment = __cordl_object
             .invoke("get_validPlatformEnvironment", ())?;
         Ok(__cordl_ret)
     }
@@ -81,7 +81,7 @@ impl PlatformUserAuthTokenData {
     }
     pub fn set_validPlatformEnvironment(
         &mut self,
-        value: PlatformEnvironment,
+        value: crate::GlobalNamespace::PlatformEnvironment,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -92,7 +92,8 @@ impl PlatformUserAuthTokenData {
     }
 }
 #[cfg(feature = "PlatformUserAuthTokenData")]
-impl quest_hook::libil2cpp::ObjectType for PlatformUserAuthTokenData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlatformUserAuthTokenData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

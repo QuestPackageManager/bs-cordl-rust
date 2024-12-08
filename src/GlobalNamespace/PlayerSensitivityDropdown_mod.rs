@@ -2,34 +2,38 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSensitivityDropdown {
-    __cordl_parent: ValueDropdownController_1<PlayerSensitivityFlag>,
+    __cordl_parent: crate::GlobalNamespace::ValueDropdownController_1<
+        crate::GlobalNamespace::PlayerSensitivityFlag,
+    >,
 }
 #[cfg(feature = "PlayerSensitivityDropdown")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayerSensitivityDropdown => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerSensitivityDropdown => ""
     ."PlayerSensitivityDropdown"
 );
 #[cfg(feature = "PlayerSensitivityDropdown")]
-impl std::ops::Deref for PlayerSensitivityDropdown {
-    type Target = ValueDropdownController_1<PlayerSensitivityFlag>;
+impl std::ops::Deref for crate::GlobalNamespace::PlayerSensitivityDropdown {
+    type Target = crate::GlobalNamespace::ValueDropdownController_1<
+        crate::GlobalNamespace::PlayerSensitivityFlag,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSensitivityDropdown")]
-impl std::ops::DerefMut for PlayerSensitivityDropdown {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSensitivityDropdown {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSensitivityDropdown")]
-impl PlayerSensitivityDropdown {
+impl crate::GlobalNamespace::PlayerSensitivityDropdown {
     pub fn GetNamedValues(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::System::Tuple_2<
-                PlayerSensitivityFlag,
+                crate::GlobalNamespace::PlayerSensitivityFlag,
                 *mut crate::System::String,
             >,
         >,
@@ -39,7 +43,7 @@ impl PlayerSensitivityDropdown {
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::System::Tuple_2<
-                PlayerSensitivityFlag,
+                crate::GlobalNamespace::PlayerSensitivityFlag,
                 *mut crate::System::String,
             >,
         > = __cordl_object.invoke("GetNamedValues", ())?;
@@ -64,7 +68,8 @@ impl PlayerSensitivityDropdown {
     }
 }
 #[cfg(feature = "PlayerSensitivityDropdown")]
-impl quest_hook::libil2cpp::ObjectType for PlayerSensitivityDropdown {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayerSensitivityDropdown {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

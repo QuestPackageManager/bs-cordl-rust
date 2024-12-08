@@ -17,24 +17,24 @@ pub struct OVRSpectatorModeDomeTest {
 }
 #[cfg(feature = "OVRSpectatorModeDomeTest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRSpectatorModeDomeTest => ""
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRSpectatorModeDomeTest => ""
     ."OVRSpectatorModeDomeTest"
 );
 #[cfg(feature = "OVRSpectatorModeDomeTest")]
-impl std::ops::Deref for OVRSpectatorModeDomeTest {
+impl std::ops::Deref for crate::GlobalNamespace::OVRSpectatorModeDomeTest {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSpectatorModeDomeTest")]
-impl std::ops::DerefMut for OVRSpectatorModeDomeTest {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRSpectatorModeDomeTest {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSpectatorModeDomeTest")]
-impl OVRSpectatorModeDomeTest {
+impl crate::GlobalNamespace::OVRSpectatorModeDomeTest {
     pub const distance_far: f32 = 1.2f32;
     pub const distance_near: f32 = 0.5f32;
     pub const elevationLimit: f32 = 30f32;
@@ -163,7 +163,8 @@ impl OVRSpectatorModeDomeTest {
     }
 }
 #[cfg(feature = "OVRSpectatorModeDomeTest")]
-impl quest_hook::libil2cpp::ObjectType for OVRSpectatorModeDomeTest {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRSpectatorModeDomeTest {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

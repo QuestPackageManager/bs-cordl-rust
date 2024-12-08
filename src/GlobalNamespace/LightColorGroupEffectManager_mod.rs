@@ -3,37 +3,39 @@
 #[derive(Debug)]
 pub struct LightColorGroupEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _lightGroups: *mut quest_hook::libil2cpp::Il2CppArray<*mut LightGroup>,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
+    pub _lightGroups: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::LightGroup,
+    >,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
     pub _container: *mut crate::Zenject::DiContainer,
-    pub _colorBoostBeatmapDataCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _colorBoostBeatmapDataCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     pub _lightColorGroupEffects: *mut crate::System::Collections::Generic::List_1<
-        *mut LightColorGroupEffect,
+        *mut crate::GlobalNamespace::LightColorGroupEffect,
     >,
 }
 #[cfg(feature = "LightColorGroupEffectManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LightColorGroupEffectManager => ""
-    ."LightColorGroupEffectManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightColorGroupEffectManager =>
+    ""."LightColorGroupEffectManager"
 );
 #[cfg(feature = "LightColorGroupEffectManager")]
-impl std::ops::Deref for LightColorGroupEffectManager {
+impl std::ops::Deref for crate::GlobalNamespace::LightColorGroupEffectManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightColorGroupEffectManager")]
-impl std::ops::DerefMut for LightColorGroupEffectManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::LightColorGroupEffectManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightColorGroupEffectManager")]
-impl LightColorGroupEffectManager {
+impl crate::GlobalNamespace::LightColorGroupEffectManager {
     pub fn HandleColorBoostBeatmapEvent(
         &mut self,
-        eventData: *mut ColorBoostBeatmapEventData,
+        eventData: *mut crate::GlobalNamespace::ColorBoostBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -82,19 +84,22 @@ impl LightColorGroupEffectManager {
     pub fn get_lightGroups(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IReadOnlyCollection_1<*mut LightGroup>,
+        *mut crate::System::Collections::Generic::IReadOnlyCollection_1<
+            *mut crate::GlobalNamespace::LightGroup,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyCollection_1<
-            *mut LightGroup,
+            *mut crate::GlobalNamespace::LightGroup,
         > = __cordl_object.invoke("get_lightGroups", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "LightColorGroupEffectManager")]
-impl quest_hook::libil2cpp::ObjectType for LightColorGroupEffectManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LightColorGroupEffectManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -387,14 +387,14 @@ impl std::ops::DerefMut for crate::System::Text::Encoding {
 }
 #[cfg(feature = "System+Text+Encoding")]
 impl crate::System::Text::Encoding {
-    #[cfg(feature = "System+Text+Encoding+EncodingCharBuffer")]
-    pub type EncodingCharBuffer = crate::System::Text::Encoding_EncodingCharBuffer;
     #[cfg(feature = "System+Text+Encoding+DefaultDecoder")]
     pub type DefaultDecoder = crate::System::Text::Encoding_DefaultDecoder;
-    #[cfg(feature = "System+Text+Encoding+EncodingByteBuffer")]
-    pub type EncodingByteBuffer = crate::System::Text::Encoding_EncodingByteBuffer;
     #[cfg(feature = "System+Text+Encoding+DefaultEncoder")]
     pub type DefaultEncoder = crate::System::Text::Encoding_DefaultEncoder;
+    #[cfg(feature = "System+Text+Encoding+EncodingByteBuffer")]
+    pub type EncodingByteBuffer = crate::System::Text::Encoding_EncodingByteBuffer;
+    #[cfg(feature = "System+Text+Encoding+EncodingCharBuffer")]
+    pub type EncodingCharBuffer = crate::System::Text::Encoding_EncodingCharBuffer;
     pub fn Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {

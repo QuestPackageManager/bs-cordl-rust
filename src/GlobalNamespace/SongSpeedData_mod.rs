@@ -7,23 +7,24 @@ pub struct SongSpeedData {
 }
 #[cfg(feature = "SongSpeedData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SongSpeedData => ""."SongSpeedData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongSpeedData => ""
+    ."SongSpeedData"
 );
 #[cfg(feature = "SongSpeedData")]
-impl std::ops::Deref for SongSpeedData {
+impl std::ops::Deref for crate::GlobalNamespace::SongSpeedData {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongSpeedData")]
-impl std::ops::DerefMut for SongSpeedData {
+impl std::ops::DerefMut for crate::GlobalNamespace::SongSpeedData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SongSpeedData")]
-impl SongSpeedData {
+impl crate::GlobalNamespace::SongSpeedData {
     pub fn New(speedMul: f32) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -44,7 +45,7 @@ impl SongSpeedData {
     }
 }
 #[cfg(feature = "SongSpeedData")]
-impl quest_hook::libil2cpp::ObjectType for SongSpeedData {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongSpeedData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

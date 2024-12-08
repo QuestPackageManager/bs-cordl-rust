@@ -6,23 +6,24 @@ pub struct IPoolablePacket {
 }
 #[cfg(feature = "IPoolablePacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IPoolablePacket => ""."IPoolablePacket"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::IPoolablePacket => ""
+    ."IPoolablePacket"
 );
 #[cfg(feature = "IPoolablePacket")]
-impl std::ops::Deref for IPoolablePacket {
+impl std::ops::Deref for crate::GlobalNamespace::IPoolablePacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IPoolablePacket")]
-impl std::ops::DerefMut for IPoolablePacket {
+impl std::ops::DerefMut for crate::GlobalNamespace::IPoolablePacket {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IPoolablePacket")]
-impl IPoolablePacket {
+impl crate::GlobalNamespace::IPoolablePacket {
     pub fn Release(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -40,7 +41,7 @@ impl IPoolablePacket {
     }
 }
 #[cfg(feature = "IPoolablePacket")]
-impl quest_hook::libil2cpp::ObjectType for IPoolablePacket {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IPoolablePacket {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

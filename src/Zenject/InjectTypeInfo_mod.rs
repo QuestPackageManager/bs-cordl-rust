@@ -231,10 +231,10 @@ impl std::ops::DerefMut for crate::Zenject::InjectTypeInfo {
 }
 #[cfg(feature = "Zenject+InjectTypeInfo")]
 impl crate::Zenject::InjectTypeInfo {
-    #[cfg(feature = "Zenject+InjectTypeInfo+InjectMemberInfo")]
-    pub type InjectMemberInfo = crate::Zenject::InjectTypeInfo_InjectMemberInfo;
     #[cfg(feature = "Zenject+InjectTypeInfo+InjectConstructorInfo")]
     pub type InjectConstructorInfo = crate::Zenject::InjectTypeInfo_InjectConstructorInfo;
+    #[cfg(feature = "Zenject+InjectTypeInfo+InjectMemberInfo")]
+    pub type InjectMemberInfo = crate::Zenject::InjectTypeInfo_InjectMemberInfo;
     #[cfg(feature = "Zenject+InjectTypeInfo+InjectMethodInfo")]
     pub type InjectMethodInfo = crate::Zenject::InjectTypeInfo_InjectMethodInfo;
     pub fn New(

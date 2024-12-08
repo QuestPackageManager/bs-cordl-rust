@@ -6,27 +6,28 @@ pub struct IMultiplayerLevelEndActionsListener {
 }
 #[cfg(feature = "IMultiplayerLevelEndActionsListener")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for IMultiplayerLevelEndActionsListener => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::IMultiplayerLevelEndActionsListener => ""
     ."IMultiplayerLevelEndActionsListener"
 );
 #[cfg(feature = "IMultiplayerLevelEndActionsListener")]
-impl std::ops::Deref for IMultiplayerLevelEndActionsListener {
+impl std::ops::Deref for crate::GlobalNamespace::IMultiplayerLevelEndActionsListener {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "IMultiplayerLevelEndActionsListener")]
-impl std::ops::DerefMut for IMultiplayerLevelEndActionsListener {
+impl std::ops::DerefMut for crate::GlobalNamespace::IMultiplayerLevelEndActionsListener {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "IMultiplayerLevelEndActionsListener")]
-impl IMultiplayerLevelEndActionsListener {
+impl crate::GlobalNamespace::IMultiplayerLevelEndActionsListener {
     pub fn ReportPlayerDidFinish(
         &mut self,
-        results: *mut MultiplayerLevelCompletionResults,
+        results: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -37,7 +38,7 @@ impl IMultiplayerLevelEndActionsListener {
     }
     pub fn ReportPlayerNetworkDidFailed(
         &mut self,
-        results: *mut MultiplayerLevelCompletionResults,
+        results: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -53,7 +54,8 @@ impl IMultiplayerLevelEndActionsListener {
     }
 }
 #[cfg(feature = "IMultiplayerLevelEndActionsListener")]
-impl quest_hook::libil2cpp::ObjectType for IMultiplayerLevelEndActionsListener {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::IMultiplayerLevelEndActionsListener {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

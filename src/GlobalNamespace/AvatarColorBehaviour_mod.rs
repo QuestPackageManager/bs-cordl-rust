@@ -5,29 +5,30 @@ pub struct AvatarColorBehaviour {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub _startColor: crate::UnityEngine::Color,
     pub _endColor: crate::UnityEngine::Color,
-    pub _easeType: EaseType,
+    pub _easeType: crate::GlobalNamespace::EaseType,
     pub _avatarVisualController: *mut crate::BeatSaber::AvatarCore::AvatarVisualController,
     pub _duration: f32,
 }
 #[cfg(feature = "AvatarColorBehaviour")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AvatarColorBehaviour => ""."AvatarColorBehaviour"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AvatarColorBehaviour => ""
+    ."AvatarColorBehaviour"
 );
 #[cfg(feature = "AvatarColorBehaviour")]
-impl std::ops::Deref for AvatarColorBehaviour {
+impl std::ops::Deref for crate::GlobalNamespace::AvatarColorBehaviour {
     type Target = crate::UnityEngine::Playables::PlayableBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AvatarColorBehaviour")]
-impl std::ops::DerefMut for AvatarColorBehaviour {
+impl std::ops::DerefMut for crate::GlobalNamespace::AvatarColorBehaviour {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AvatarColorBehaviour")]
-impl AvatarColorBehaviour {
+impl crate::GlobalNamespace::AvatarColorBehaviour {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -82,7 +83,7 @@ impl AvatarColorBehaviour {
     }
 }
 #[cfg(feature = "AvatarColorBehaviour")]
-impl quest_hook::libil2cpp::ObjectType for AvatarColorBehaviour {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AvatarColorBehaviour {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

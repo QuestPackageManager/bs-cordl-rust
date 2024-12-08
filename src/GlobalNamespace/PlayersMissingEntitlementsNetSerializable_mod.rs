@@ -2,31 +2,34 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayersMissingEntitlementsNetSerializable {
-    __cordl_parent: PoolableSerializable,
+    __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
     pub _playersWithoutEntitlements: *mut crate::System::Collections::Generic::List_1<
         *mut crate::System::String,
     >,
 }
 #[cfg(feature = "PlayersMissingEntitlementsNetSerializable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlayersMissingEntitlementsNetSerializable => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PlayersMissingEntitlementsNetSerializable => ""
     ."PlayersMissingEntitlementsNetSerializable"
 );
 #[cfg(feature = "PlayersMissingEntitlementsNetSerializable")]
-impl std::ops::Deref for PlayersMissingEntitlementsNetSerializable {
-    type Target = PoolableSerializable;
+impl std::ops::Deref
+for crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
+    type Target = crate::GlobalNamespace::PoolableSerializable;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayersMissingEntitlementsNetSerializable")]
-impl std::ops::DerefMut for PlayersMissingEntitlementsNetSerializable {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayersMissingEntitlementsNetSerializable")]
-impl PlayersMissingEntitlementsNetSerializable {
+impl crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
@@ -43,11 +46,13 @@ impl PlayersMissingEntitlementsNetSerializable {
         playersWithoutEntitlements: *mut crate::System::Collections::Generic::IEnumerable_1<
             *mut crate::System::String,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut PlayersMissingEntitlementsNetSerializable> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut PlayersMissingEntitlementsNetSerializable = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable = __cordl_object
             .invoke("Init", (playersWithoutEntitlements))?;
         Ok(__cordl_ret)
     }
@@ -94,7 +99,8 @@ impl PlayersMissingEntitlementsNetSerializable {
     }
 }
 #[cfg(feature = "PlayersMissingEntitlementsNetSerializable")]
-impl quest_hook::libil2cpp::ObjectType for PlayersMissingEntitlementsNetSerializable {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

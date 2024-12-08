@@ -77,11 +77,11 @@ for crate::GlobalNamespace::MissionLevelGameplayManager_InitData {
 #[derive(Debug)]
 pub struct MissionLevelGameplayManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _missionObjectiveCheckersManager: *mut MissionObjectiveCheckersManager,
-    pub _gameScenesManager: *mut GameScenesManager,
-    pub _gameSongController: *mut GameSongController,
-    pub _gameEnergyCounter: *mut GameEnergyCounter,
-    pub _pauseController: *mut PauseController,
+    pub _missionObjectiveCheckersManager: *mut crate::GlobalNamespace::MissionObjectiveCheckersManager,
+    pub _gameScenesManager: *mut crate::GlobalNamespace::GameScenesManager,
+    pub _gameSongController: *mut crate::GlobalNamespace::GameSongController,
+    pub _gameEnergyCounter: *mut crate::GlobalNamespace::GameEnergyCounter,
+    pub _pauseController: *mut crate::GlobalNamespace::PauseController,
     pub _initData: *mut crate::GlobalNamespace::MissionLevelGameplayManager_InitData,
     pub levelWillStartIntroEvent: *mut crate::System::Action,
     pub levelDidStartEvent: *mut crate::System::Action,
@@ -92,30 +92,30 @@ pub struct MissionLevelGameplayManager {
 }
 #[cfg(feature = "MissionLevelGameplayManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MissionLevelGameplayManager => ""
-    ."MissionLevelGameplayManager"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MissionLevelGameplayManager =>
+    ""."MissionLevelGameplayManager"
 );
 #[cfg(feature = "MissionLevelGameplayManager")]
-impl std::ops::Deref for MissionLevelGameplayManager {
+impl std::ops::Deref for crate::GlobalNamespace::MissionLevelGameplayManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionLevelGameplayManager")]
-impl std::ops::DerefMut for MissionLevelGameplayManager {
+impl std::ops::DerefMut for crate::GlobalNamespace::MissionLevelGameplayManager {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionLevelGameplayManager")]
-impl MissionLevelGameplayManager {
-    #[cfg(feature = "MissionLevelGameplayManager+_Start_d__23")]
-    pub type _Start_d__23 = crate::GlobalNamespace::MissionLevelGameplayManager__Start_d__23;
-    #[cfg(feature = "MissionLevelGameplayManager+InitData")]
-    pub type InitData = crate::GlobalNamespace::MissionLevelGameplayManager_InitData;
+impl crate::GlobalNamespace::MissionLevelGameplayManager {
     #[cfg(feature = "MissionLevelGameplayManager+GameState")]
     pub type GameState = crate::GlobalNamespace::MissionLevelGameplayManager_GameState;
+    #[cfg(feature = "MissionLevelGameplayManager+InitData")]
+    pub type InitData = crate::GlobalNamespace::MissionLevelGameplayManager_InitData;
+    #[cfg(feature = "MissionLevelGameplayManager+_Start_d__23")]
+    pub type _Start_d__23 = crate::GlobalNamespace::MissionLevelGameplayManager__Start_d__23;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -314,7 +314,8 @@ impl MissionLevelGameplayManager {
     }
 }
 #[cfg(feature = "MissionLevelGameplayManager")]
-impl quest_hook::libil2cpp::ObjectType for MissionLevelGameplayManager {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MissionLevelGameplayManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

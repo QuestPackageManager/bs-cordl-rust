@@ -257,16 +257,16 @@ impl std::ops::DerefMut for crate::LiteNetLib::NatPunchModule {
 #[cfg(feature = "LiteNetLib+NatPunchModule")]
 impl crate::LiteNetLib::NatPunchModule {
     pub const MaxTokenLength: i32 = 256i32;
-    #[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
-    pub type NatIntroduceResponsePacket = crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket;
-    #[cfg(feature = "LiteNetLib+NatPunchModule+SuccessEventData")]
-    pub type SuccessEventData = crate::LiteNetLib::NatPunchModule_SuccessEventData;
-    #[cfg(feature = "LiteNetLib+NatPunchModule+NatPunchPacket")]
-    pub type NatPunchPacket = crate::LiteNetLib::NatPunchModule_NatPunchPacket;
     #[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
     pub type NatIntroduceRequestPacket = crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket;
+    #[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
+    pub type NatIntroduceResponsePacket = crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket;
+    #[cfg(feature = "LiteNetLib+NatPunchModule+NatPunchPacket")]
+    pub type NatPunchPacket = crate::LiteNetLib::NatPunchModule_NatPunchPacket;
     #[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
     pub type RequestEventData = crate::LiteNetLib::NatPunchModule_RequestEventData;
+    #[cfg(feature = "LiteNetLib+NatPunchModule+SuccessEventData")]
+    pub type SuccessEventData = crate::LiteNetLib::NatPunchModule_SuccessEventData;
     pub fn Init(
         &mut self,
         listener: *mut crate::LiteNetLib::INatPunchListener,

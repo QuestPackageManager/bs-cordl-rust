@@ -2,33 +2,34 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorTransitionSO {
-    __cordl_parent: BaseTransitionSO,
-    pub _normalColor: *mut ColorSO,
-    pub _highlightedColor: *mut ColorSO,
-    pub _pressedColor: *mut ColorSO,
-    pub _disabledColor: *mut ColorSO,
-    pub _selectedColor: *mut ColorSO,
-    pub _selectedAndHighlightedColor: *mut ColorSO,
+    __cordl_parent: crate::GlobalNamespace::BaseTransitionSO,
+    pub _normalColor: *mut crate::GlobalNamespace::ColorSO,
+    pub _highlightedColor: *mut crate::GlobalNamespace::ColorSO,
+    pub _pressedColor: *mut crate::GlobalNamespace::ColorSO,
+    pub _disabledColor: *mut crate::GlobalNamespace::ColorSO,
+    pub _selectedColor: *mut crate::GlobalNamespace::ColorSO,
+    pub _selectedAndHighlightedColor: *mut crate::GlobalNamespace::ColorSO,
 }
 #[cfg(feature = "ColorTransitionSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ColorTransitionSO => ""."ColorTransitionSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ColorTransitionSO => ""
+    ."ColorTransitionSO"
 );
 #[cfg(feature = "ColorTransitionSO")]
-impl std::ops::Deref for ColorTransitionSO {
-    type Target = BaseTransitionSO;
+impl std::ops::Deref for crate::GlobalNamespace::ColorTransitionSO {
+    type Target = crate::GlobalNamespace::BaseTransitionSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorTransitionSO")]
-impl std::ops::DerefMut for ColorTransitionSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::ColorTransitionSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorTransitionSO")]
-impl ColorTransitionSO {
+impl crate::GlobalNamespace::ColorTransitionSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -108,7 +109,7 @@ impl ColorTransitionSO {
     }
 }
 #[cfg(feature = "ColorTransitionSO")]
-impl quest_hook::libil2cpp::ObjectType for ColorTransitionSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorTransitionSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

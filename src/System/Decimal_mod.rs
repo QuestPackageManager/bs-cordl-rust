@@ -210,16 +210,16 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Decimal_DecCa
 }
 #[cfg(feature = "System+Decimal+DecCalc")]
 impl crate::System::Decimal_DecCalc {
-    #[cfg(feature = "System+Decimal+DecCalc+Buf16")]
-    pub type Buf16 = crate::System::DecCalc_Buf16;
-    #[cfg(feature = "System+Decimal+DecCalc+RoundingMode")]
-    pub type RoundingMode = crate::System::DecCalc_RoundingMode;
     #[cfg(feature = "System+Decimal+DecCalc+Buf12")]
     pub type Buf12 = crate::System::DecCalc_Buf12;
+    #[cfg(feature = "System+Decimal+DecCalc+Buf16")]
+    pub type Buf16 = crate::System::DecCalc_Buf16;
     #[cfg(feature = "System+Decimal+DecCalc+Buf24")]
     pub type Buf24 = crate::System::DecCalc_Buf24;
     #[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
     pub type PowerOvfl = crate::System::DecCalc_PowerOvfl;
+    #[cfg(feature = "System+Decimal+DecCalc+RoundingMode")]
+    pub type RoundingMode = crate::System::DecCalc_RoundingMode;
     pub fn get_High(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

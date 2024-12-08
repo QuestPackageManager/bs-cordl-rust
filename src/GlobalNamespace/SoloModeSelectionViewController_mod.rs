@@ -23,30 +23,30 @@ pub struct SoloModeSelectionViewController {
     pub _noArrowsModeButton: *mut crate::UnityEngine::UI::Button,
     pub _dismissButton: *mut crate::UnityEngine::UI::Button,
     pub didFinishEvent: *mut crate::System::Action_2<
-        *mut SoloModeSelectionViewController,
+        *mut crate::GlobalNamespace::SoloModeSelectionViewController,
         crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
     >,
 }
 #[cfg(feature = "SoloModeSelectionViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SoloModeSelectionViewController => ""
-    ."SoloModeSelectionViewController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SoloModeSelectionViewController
+    => ""."SoloModeSelectionViewController"
 );
 #[cfg(feature = "SoloModeSelectionViewController")]
-impl std::ops::Deref for SoloModeSelectionViewController {
+impl std::ops::Deref for crate::GlobalNamespace::SoloModeSelectionViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SoloModeSelectionViewController")]
-impl std::ops::DerefMut for SoloModeSelectionViewController {
+impl std::ops::DerefMut for crate::GlobalNamespace::SoloModeSelectionViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SoloModeSelectionViewController")]
-impl SoloModeSelectionViewController {
+impl crate::GlobalNamespace::SoloModeSelectionViewController {
     #[cfg(feature = "SoloModeSelectionViewController+MenuType")]
     pub type MenuType = crate::GlobalNamespace::SoloModeSelectionViewController_MenuType;
     pub fn DidActivate(
@@ -136,7 +136,7 @@ impl SoloModeSelectionViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut SoloModeSelectionViewController,
+            *mut crate::GlobalNamespace::SoloModeSelectionViewController,
             crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -150,7 +150,7 @@ impl SoloModeSelectionViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut SoloModeSelectionViewController,
+            *mut crate::GlobalNamespace::SoloModeSelectionViewController,
             crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -163,7 +163,8 @@ impl SoloModeSelectionViewController {
     }
 }
 #[cfg(feature = "SoloModeSelectionViewController")]
-impl quest_hook::libil2cpp::ObjectType for SoloModeSelectionViewController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SoloModeSelectionViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

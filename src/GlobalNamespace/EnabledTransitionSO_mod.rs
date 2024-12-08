@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnabledTransitionSO {
-    __cordl_parent: BaseTransitionSO,
+    __cordl_parent: crate::GlobalNamespace::BaseTransitionSO,
     pub _normalState: bool,
     pub _highlightedState: bool,
     pub _pressedState: bool,
@@ -12,23 +12,24 @@ pub struct EnabledTransitionSO {
 }
 #[cfg(feature = "EnabledTransitionSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for EnabledTransitionSO => ""."EnabledTransitionSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnabledTransitionSO => ""
+    ."EnabledTransitionSO"
 );
 #[cfg(feature = "EnabledTransitionSO")]
-impl std::ops::Deref for EnabledTransitionSO {
-    type Target = BaseTransitionSO;
+impl std::ops::Deref for crate::GlobalNamespace::EnabledTransitionSO {
+    type Target = crate::GlobalNamespace::BaseTransitionSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnabledTransitionSO")]
-impl std::ops::DerefMut for EnabledTransitionSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::EnabledTransitionSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnabledTransitionSO")]
-impl EnabledTransitionSO {
+impl crate::GlobalNamespace::EnabledTransitionSO {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -93,7 +94,7 @@ impl EnabledTransitionSO {
     }
 }
 #[cfg(feature = "EnabledTransitionSO")]
-impl quest_hook::libil2cpp::ObjectType for EnabledTransitionSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EnabledTransitionSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

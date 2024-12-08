@@ -12,28 +12,29 @@ pub struct ScaleAnimator {
 }
 #[cfg(feature = "ScaleAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ScaleAnimator => ""."ScaleAnimator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ScaleAnimator => ""
+    ."ScaleAnimator"
 );
 #[cfg(feature = "ScaleAnimator")]
-impl std::ops::Deref for ScaleAnimator {
+impl std::ops::Deref for crate::GlobalNamespace::ScaleAnimator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScaleAnimator")]
-impl std::ops::DerefMut for ScaleAnimator {
+impl std::ops::DerefMut for crate::GlobalNamespace::ScaleAnimator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ScaleAnimator")]
-impl ScaleAnimator {
+impl crate::GlobalNamespace::ScaleAnimator {
     pub fn Animate(
         &mut self,
         show: bool,
         duration: f32,
-        easeType: EaseType,
+        easeType: crate::GlobalNamespace::EaseType,
         delay: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -156,7 +157,7 @@ impl ScaleAnimator {
     }
 }
 #[cfg(feature = "ScaleAnimator")]
-impl quest_hook::libil2cpp::ObjectType for ScaleAnimator {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScaleAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

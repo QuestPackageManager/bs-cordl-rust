@@ -51,16 +51,16 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::TrackAsset {
 impl crate::UnityEngine::Timeline::TrackAsset {
     pub const kDefaultCurvesName: &'static str = "Track Parameters";
     pub const k_LatestVersion: i32 = 3i32;
-    #[cfg(feature = "UnityEngine+Timeline+TrackAsset+__c")]
-    pub type __c = crate::UnityEngine::Timeline::TrackAsset___c;
-    #[cfg(feature = "UnityEngine+Timeline+TrackAsset+TransientBuildData")]
-    pub type TransientBuildData = crate::UnityEngine::Timeline::TrackAsset_TransientBuildData;
-    #[cfg(feature = "UnityEngine+Timeline+TrackAsset+_get_outputs_d__65")]
-    pub type _get_outputs_d__65 = crate::UnityEngine::Timeline::TrackAsset__get_outputs_d__65;
-    #[cfg(feature = "UnityEngine+Timeline+TrackAsset+Versions")]
-    pub type Versions = crate::UnityEngine::Timeline::TrackAsset_Versions;
     #[cfg(feature = "UnityEngine+Timeline+TrackAsset+TrackAssetUpgrade")]
     pub type TrackAssetUpgrade = crate::UnityEngine::Timeline::TrackAsset_TrackAssetUpgrade;
+    #[cfg(feature = "UnityEngine+Timeline+TrackAsset+TransientBuildData")]
+    pub type TransientBuildData = crate::UnityEngine::Timeline::TrackAsset_TransientBuildData;
+    #[cfg(feature = "UnityEngine+Timeline+TrackAsset+Versions")]
+    pub type Versions = crate::UnityEngine::Timeline::TrackAsset_Versions;
+    #[cfg(feature = "UnityEngine+Timeline+TrackAsset+__c")]
+    pub type __c = crate::UnityEngine::Timeline::TrackAsset___c;
+    #[cfg(feature = "UnityEngine+Timeline+TrackAsset+_get_outputs_d__65")]
+    pub type _get_outputs_d__65 = crate::UnityEngine::Timeline::TrackAsset__get_outputs_d__65;
     pub fn AddChild(
         &mut self,
         child: *mut crate::UnityEngine::Timeline::TrackAsset,

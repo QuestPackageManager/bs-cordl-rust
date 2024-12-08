@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatLine {
-    __cordl_parent: LightWithIdMonoBehaviour,
-    pub _tubeBloomPrePassLight: *mut TubeBloomPrePassLight,
+    __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
+    pub _tubeBloomPrePassLight: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
     pub _arriveFadeCurve: *mut crate::UnityEngine::AnimationCurve,
     pub _jumpFadeCurve: *mut crate::UnityEngine::AnimationCurve,
     pub _alphaMul: f32,
@@ -16,27 +16,27 @@ pub struct BeatLine {
 }
 #[cfg(feature = "BeatLine")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for BeatLine => ""."BeatLine"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BeatLine => ""."BeatLine"
 );
 #[cfg(feature = "BeatLine")]
-impl std::ops::Deref for BeatLine {
-    type Target = LightWithIdMonoBehaviour;
+impl std::ops::Deref for crate::GlobalNamespace::BeatLine {
+    type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatLine")]
-impl std::ops::DerefMut for BeatLine {
+impl std::ops::DerefMut for crate::GlobalNamespace::BeatLine {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatLine")]
-impl BeatLine {
-    #[cfg(feature = "BeatLine+Pool")]
-    pub type Pool = crate::GlobalNamespace::BeatLine_Pool;
+impl crate::GlobalNamespace::BeatLine {
     #[cfg(feature = "BeatLine+HighlightData")]
     pub type HighlightData = crate::GlobalNamespace::BeatLine_HighlightData;
+    #[cfg(feature = "BeatLine+Pool")]
+    pub type Pool = crate::GlobalNamespace::BeatLine_Pool;
     pub fn AddHighlight(
         &mut self,
         startTime: f32,
@@ -117,7 +117,7 @@ impl BeatLine {
     }
 }
 #[cfg(feature = "BeatLine")]
-impl quest_hook::libil2cpp::ObjectType for BeatLine {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatLine {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -155,7 +155,9 @@ impl crate::GlobalNamespace::BeatLine_HighlightData {}
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatLine_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<*mut BeatLine>,
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::BeatLine,
+    >,
 }
 #[cfg(feature = "BeatLine+Pool")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -164,7 +166,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatLine+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatLine_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<*mut BeatLine>;
+    type Target = crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::BeatLine,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

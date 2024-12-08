@@ -3,43 +3,44 @@
 #[derive(Debug)]
 pub struct GameplayModifiersPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _gameplayModifiersModel: *mut GameplayModifiersModelSO,
+    pub _gameplayModifiersModel: *mut crate::GlobalNamespace::GameplayModifiersModelSO,
     pub _totalMultiplierValueText: *mut crate::TMPro::TextMeshProUGUI,
     pub _maxRankValueText: *mut crate::TMPro::TextMeshProUGUI,
     pub _positiveColor: crate::UnityEngine::Color,
     pub _negativeColor: crate::UnityEngine::Color,
     pub didChangeGameplayModifiersEvent: *mut crate::System::Action,
-    pub _gameplayModifiers: *mut GameplayModifiers,
+    pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     pub _toggleBinder: *mut crate::HMUI::ToggleBinder,
     pub _gameplayModifierToggles: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut GameplayModifierToggle,
+        *mut crate::GlobalNamespace::GameplayModifierToggle,
     >,
     pub _changingGameplayModifierToggles: bool,
     pub _toggleForGameplayModifierParam: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut GameplayModifierParamsSO,
+        *mut crate::GlobalNamespace::GameplayModifierParamsSO,
         *mut crate::UnityEngine::UI::Toggle,
     >,
 }
 #[cfg(feature = "GameplayModifiersPanelController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameplayModifiersPanelController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::GameplayModifiersPanelController => ""
     ."GameplayModifiersPanelController"
 );
 #[cfg(feature = "GameplayModifiersPanelController")]
-impl std::ops::Deref for GameplayModifiersPanelController {
+impl std::ops::Deref for crate::GlobalNamespace::GameplayModifiersPanelController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayModifiersPanelController")]
-impl std::ops::DerefMut for GameplayModifiersPanelController {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameplayModifiersPanelController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayModifiersPanelController")]
-impl GameplayModifiersPanelController {
+impl crate::GlobalNamespace::GameplayModifiersPanelController {
     #[cfg(feature = "GameplayModifiersPanelController+__c__DisplayClass16_0")]
     pub type __c__DisplayClass16_0 = crate::GlobalNamespace::GameplayModifiersPanelController___c__DisplayClass16_0;
     pub fn Awake(
@@ -54,7 +55,7 @@ impl GameplayModifiersPanelController {
     }
     pub fn GetToggleValueWithGameplayModifierParams(
         &mut self,
-        gameplayModifierParams: *mut GameplayModifierParamsSO,
+        gameplayModifierParams: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -105,7 +106,7 @@ impl GameplayModifiersPanelController {
     }
     pub fn SetData(
         &mut self,
-        newGameplayModifiers: *mut GameplayModifiers,
+        newGameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -116,7 +117,7 @@ impl GameplayModifiersPanelController {
     }
     pub fn SetToggleValueWithGameplayModifierParams(
         &mut self,
-        gameplayModifierParams: *mut GameplayModifierParamsSO,
+        gameplayModifierParams: *mut crate::GlobalNamespace::GameplayModifierParamsSO,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -152,11 +153,11 @@ impl GameplayModifiersPanelController {
     }
     pub fn get_gameplayModifiers(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut GameplayModifiers> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::GameplayModifiers> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut GameplayModifiers = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::GameplayModifiers = __cordl_object
             .invoke("get_gameplayModifiers", ())?;
         Ok(__cordl_ret)
     }
@@ -173,7 +174,8 @@ impl GameplayModifiersPanelController {
     }
 }
 #[cfg(feature = "GameplayModifiersPanelController")]
-impl quest_hook::libil2cpp::ObjectType for GameplayModifiersPanelController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GameplayModifiersPanelController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -1041,20 +1041,20 @@ impl std::ops::DerefMut for crate::System::ComponentModel::TypeDescriptor {
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor")]
 impl crate::System::ComponentModel::TypeDescriptor {
-    #[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorComObject")]
-    pub type TypeDescriptorComObject = crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject;
-    #[cfg(feature = "System+ComponentModel+TypeDescriptor+IUnimplemented")]
-    type IUnimplemented = crate::System::ComponentModel::TypeDescriptor_IUnimplemented;
     #[cfg(feature = "System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem")]
     pub type AttributeFilterCacheItem = crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem;
     #[cfg(feature = "System+ComponentModel+TypeDescriptor+FilterCacheItem")]
     pub type FilterCacheItem = crate::System::ComponentModel::TypeDescriptor_FilterCacheItem;
+    #[cfg(feature = "System+ComponentModel+TypeDescriptor+IUnimplemented")]
+    type IUnimplemented = crate::System::ComponentModel::TypeDescriptor_IUnimplemented;
     #[cfg(feature = "System+ComponentModel+TypeDescriptor+MemberDescriptorComparer")]
     pub type MemberDescriptorComparer = crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer;
     #[cfg(feature = "System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
     pub type MergedTypeDescriptor = crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor;
     #[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
     pub type TypeDescriptionNode = crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode;
+    #[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorComObject")]
+    pub type TypeDescriptorComObject = crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject;
     #[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorInterface")]
     pub type TypeDescriptorInterface = crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface;
 }

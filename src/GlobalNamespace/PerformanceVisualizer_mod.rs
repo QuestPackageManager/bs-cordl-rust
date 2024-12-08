@@ -6,23 +6,24 @@ pub struct PerformanceVisualizer {
 }
 #[cfg(feature = "PerformanceVisualizer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PerformanceVisualizer => ""."PerformanceVisualizer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PerformanceVisualizer => ""
+    ."PerformanceVisualizer"
 );
 #[cfg(feature = "PerformanceVisualizer")]
-impl std::ops::Deref for PerformanceVisualizer {
+impl std::ops::Deref for crate::GlobalNamespace::PerformanceVisualizer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PerformanceVisualizer")]
-impl std::ops::DerefMut for PerformanceVisualizer {
+impl std::ops::DerefMut for crate::GlobalNamespace::PerformanceVisualizer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PerformanceVisualizer")]
-impl PerformanceVisualizer {
+impl crate::GlobalNamespace::PerformanceVisualizer {
     pub fn Initialize(
         &mut self,
         mainCamera: *mut crate::UnityEngine::Camera,
@@ -55,7 +56,8 @@ impl PerformanceVisualizer {
     }
 }
 #[cfg(feature = "PerformanceVisualizer")]
-impl quest_hook::libil2cpp::ObjectType for PerformanceVisualizer {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PerformanceVisualizer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

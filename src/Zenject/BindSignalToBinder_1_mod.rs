@@ -32,6 +32,10 @@ for crate::Zenject::BindSignalToBinder_1<TSignal> {
 impl<
     TSignal: quest_hook::libil2cpp::Type,
 > crate::Zenject::BindSignalToBinder_1<TSignal> {
+    #[cfg(feature = "Zenject+BindSignalToBinder_1+__c__DisplayClass6_0")]
+    pub type __c__DisplayClass6_0 = crate::Zenject::BindSignalToBinder_1___c__DisplayClass6_0<
+        TSignal,
+    >;
     #[cfg(feature = "Zenject+BindSignalToBinder_1+__c__DisplayClass7_0")]
     pub type __c__DisplayClass7_0 = crate::Zenject::BindSignalToBinder_1___c__DisplayClass7_0<
         TSignal,
@@ -50,10 +54,6 @@ impl<
     pub type __c__DisplayClass9_0_1<TObject: quest_hook::libil2cpp::Type> = crate::Zenject::BindSignalToBinder_1___c__DisplayClass9_0_1<
         TSignal,
         TObject,
-    >;
-    #[cfg(feature = "Zenject+BindSignalToBinder_1+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::Zenject::BindSignalToBinder_1___c__DisplayClass6_0<
-        TSignal,
     >;
     #[cfg(feature = "Zenject+BindSignalToBinder_1+__c__DisplayClass9_1_1")]
     pub type __c__DisplayClass9_1_1<TObject: quest_hook::libil2cpp::Type> = crate::Zenject::BindSignalToBinder_1___c__DisplayClass9_1_1<

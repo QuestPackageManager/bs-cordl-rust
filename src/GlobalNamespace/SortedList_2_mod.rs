@@ -7,19 +7,21 @@ pub struct SortedList_2<
 > {
     __cordl_parent: crate::System::Object,
     pub _items: *mut crate::System::Collections::Generic::LinkedList_1<TBase>,
-    pub _sortedListDataProcessor: *mut ISortedListItemProcessor_1<TBase>,
+    pub _sortedListDataProcessor: *mut crate::GlobalNamespace::ISortedListItemProcessor_1<
+        TBase,
+    >,
     pub _lastUsedNode: *mut crate::System::Collections::Generic::LinkedListNode_1<TBase>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
     __cordl_phantom_TBase: std::marker::PhantomData<TBase>,
 }
 #[cfg(feature = "SortedList_2")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SortedList_2 < T, TBase > => ""."SortedList`2" < T,
-    TBase >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SortedList_2 < T, TBase > => ""
+    ."SortedList`2" < T, TBase >
 );
 #[cfg(feature = "SortedList_2")]
 impl<T: quest_hook::libil2cpp::Type, TBase: quest_hook::libil2cpp::Type> std::ops::Deref
-for SortedList_2<T, TBase> {
+for crate::GlobalNamespace::SortedList_2<T, TBase> {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -29,7 +31,7 @@ for SortedList_2<T, TBase> {
 impl<
     T: quest_hook::libil2cpp::Type,
     TBase: quest_hook::libil2cpp::Type,
-> std::ops::DerefMut for SortedList_2<T, TBase> {
+> std::ops::DerefMut for crate::GlobalNamespace::SortedList_2<T, TBase> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -38,7 +40,7 @@ impl<
 impl<
     T: quest_hook::libil2cpp::Type,
     TBase: quest_hook::libil2cpp::Type,
-> SortedList_2<T, TBase> {
+> crate::GlobalNamespace::SortedList_2<T, TBase> {
     pub fn InsertInternal(
         &mut self,
         newItem: *mut crate::System::Collections::Generic::LinkedListNode_1<TBase>,
@@ -94,7 +96,9 @@ impl<
         Ok(__cordl_ret)
     }
     pub fn New(
-        sortedListDataProcessor: *mut ISortedListItemProcessor_1<TBase>,
+        sortedListDataProcessor: *mut crate::GlobalNamespace::ISortedListItemProcessor_1<
+            TBase,
+        >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -138,7 +142,9 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        sortedListDataProcessor: *mut ISortedListItemProcessor_1<TBase>,
+        sortedListDataProcessor: *mut crate::GlobalNamespace::ISortedListItemProcessor_1<
+            TBase,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -189,7 +195,7 @@ impl<
 impl<
     T: quest_hook::libil2cpp::Type,
     TBase: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::ObjectType for SortedList_2<T, TBase> {
+> quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SortedList_2<T, TBase> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

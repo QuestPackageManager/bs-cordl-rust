@@ -9,28 +9,28 @@ pub struct ParametricBoxFrameController {
     pub edgeSize: f32,
     pub color: crate::UnityEngine::Color,
     pub _meshRenderer: *mut crate::UnityEngine::MeshRenderer,
-    pub _materialPropertyBlockController: *mut MaterialPropertyBlockController,
+    pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
 }
 #[cfg(feature = "ParametricBoxFrameController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ParametricBoxFrameController => ""
-    ."ParametricBoxFrameController"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ParametricBoxFrameController =>
+    ""."ParametricBoxFrameController"
 );
 #[cfg(feature = "ParametricBoxFrameController")]
-impl std::ops::Deref for ParametricBoxFrameController {
+impl std::ops::Deref for crate::GlobalNamespace::ParametricBoxFrameController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ParametricBoxFrameController")]
-impl std::ops::DerefMut for ParametricBoxFrameController {
+impl std::ops::DerefMut for crate::GlobalNamespace::ParametricBoxFrameController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ParametricBoxFrameController")]
-impl ParametricBoxFrameController {
+impl crate::GlobalNamespace::ParametricBoxFrameController {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -101,7 +101,8 @@ impl ParametricBoxFrameController {
     }
 }
 #[cfg(feature = "ParametricBoxFrameController")]
-impl quest_hook::libil2cpp::ObjectType for ParametricBoxFrameController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ParametricBoxFrameController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -2,31 +2,33 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirrorRendererGraphicsSettingsPresets {
-    __cordl_parent: NamedPresetsSO,
+    __cordl_parent: crate::GlobalNamespace::NamedPresetsSO,
     pub _presets: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset,
     >,
 }
 #[cfg(feature = "MirrorRendererGraphicsSettingsPresets")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MirrorRendererGraphicsSettingsPresets => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MirrorRendererGraphicsSettingsPresets => ""
     ."MirrorRendererGraphicsSettingsPresets"
 );
 #[cfg(feature = "MirrorRendererGraphicsSettingsPresets")]
-impl std::ops::Deref for MirrorRendererGraphicsSettingsPresets {
-    type Target = NamedPresetsSO;
+impl std::ops::Deref for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
+    type Target = crate::GlobalNamespace::NamedPresetsSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MirrorRendererGraphicsSettingsPresets")]
-impl std::ops::DerefMut for MirrorRendererGraphicsSettingsPresets {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MirrorRendererGraphicsSettingsPresets")]
-impl MirrorRendererGraphicsSettingsPresets {
+impl crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
     #[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset")]
     pub type Preset = crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -49,13 +51,14 @@ impl MirrorRendererGraphicsSettingsPresets {
     pub fn get_namedPresets(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut NamedPreset>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::NamedPreset>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<*mut NamedPreset> = __cordl_object
-            .invoke("get_namedPresets", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::NamedPreset,
+        > = __cordl_object.invoke("get_namedPresets", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_presets(
@@ -75,7 +78,8 @@ impl MirrorRendererGraphicsSettingsPresets {
     }
 }
 #[cfg(feature = "MirrorRendererGraphicsSettingsPresets")]
-impl quest_hook::libil2cpp::ObjectType for MirrorRendererGraphicsSettingsPresets {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -100,7 +104,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirrorRendererGraphicsSettingsPresets_Preset {
-    __cordl_parent: NamedPreset,
+    __cordl_parent: crate::GlobalNamespace::NamedPreset,
     pub mirrorType: crate::GlobalNamespace::Preset_MirrorType,
     pub reflectLayers: crate::UnityEngine::LayerMask,
     pub stereoTextureWidth: i32,
@@ -119,7 +123,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
-    type Target = NamedPreset;
+    type Target = crate::GlobalNamespace::NamedPreset;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

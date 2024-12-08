@@ -3,36 +3,38 @@
 #[derive(Debug)]
 pub struct TubeBloomPrePassLightCollisionEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _tubeBloomPrePassLight: *mut TubeBloomPrePassLight,
+    pub _tubeBloomPrePassLight: *mut crate::GlobalNamespace::TubeBloomPrePassLight,
     pub _environmentLayerMask: crate::UnityEngine::LayerMask,
     pub _showHitPoint: bool,
     pub _hitPointGameObject: *mut crate::UnityEngine::GameObject,
     pub _hitPointTransform: *mut crate::UnityEngine::Transform,
-    pub _hitPointLightWithId: *mut InstancedMaterialLightWithId,
+    pub _hitPointLightWithId: *mut crate::GlobalNamespace::InstancedMaterialLightWithId,
     pub _hitPointDistanceToAlphaCurve: *mut crate::UnityEngine::AnimationCurve,
     pub _transform: *mut crate::UnityEngine::Transform,
     pub _hitPointState: bool,
 }
 #[cfg(feature = "TubeBloomPrePassLightCollisionEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for TubeBloomPrePassLightCollisionEffect => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::TubeBloomPrePassLightCollisionEffect => ""
     ."TubeBloomPrePassLightCollisionEffect"
 );
 #[cfg(feature = "TubeBloomPrePassLightCollisionEffect")]
-impl std::ops::Deref for TubeBloomPrePassLightCollisionEffect {
+impl std::ops::Deref for crate::GlobalNamespace::TubeBloomPrePassLightCollisionEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TubeBloomPrePassLightCollisionEffect")]
-impl std::ops::DerefMut for TubeBloomPrePassLightCollisionEffect {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::TubeBloomPrePassLightCollisionEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "TubeBloomPrePassLightCollisionEffect")]
-impl TubeBloomPrePassLightCollisionEffect {
+impl crate::GlobalNamespace::TubeBloomPrePassLightCollisionEffect {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -72,7 +74,8 @@ impl TubeBloomPrePassLightCollisionEffect {
     }
 }
 #[cfg(feature = "TubeBloomPrePassLightCollisionEffect")]
-impl quest_hook::libil2cpp::ObjectType for TubeBloomPrePassLightCollisionEffect {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::TubeBloomPrePassLightCollisionEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

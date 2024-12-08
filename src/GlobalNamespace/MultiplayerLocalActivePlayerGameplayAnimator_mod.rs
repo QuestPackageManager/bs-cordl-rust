@@ -2,33 +2,36 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLocalActivePlayerGameplayAnimator {
-    __cordl_parent: MultiplayerGameplayAnimator,
-    pub _coreGameHUDController: *mut CoreGameHUDController,
-    pub _multiplayerPositionHUDController: *mut MultiplayerPositionHUDController,
-    pub _levelEndActionsPublisher: *mut IMultiplayerLevelEndActionsPublisher,
+    __cordl_parent: crate::GlobalNamespace::MultiplayerGameplayAnimator,
+    pub _coreGameHUDController: *mut crate::GlobalNamespace::CoreGameHUDController,
+    pub _multiplayerPositionHUDController: *mut crate::GlobalNamespace::MultiplayerPositionHUDController,
+    pub _levelEndActionsPublisher: *mut crate::GlobalNamespace::IMultiplayerLevelEndActionsPublisher,
     pub _fadeOutHUDTween: *mut crate::Tweening::FloatTween,
     pub _initialized: bool,
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerGameplayAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLocalActivePlayerGameplayAnimator => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLocalActivePlayerGameplayAnimator => ""
     ."MultiplayerLocalActivePlayerGameplayAnimator"
 );
 #[cfg(feature = "MultiplayerLocalActivePlayerGameplayAnimator")]
-impl std::ops::Deref for MultiplayerLocalActivePlayerGameplayAnimator {
-    type Target = MultiplayerGameplayAnimator;
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayAnimator {
+    type Target = crate::GlobalNamespace::MultiplayerGameplayAnimator;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerGameplayAnimator")]
-impl std::ops::DerefMut for MultiplayerLocalActivePlayerGameplayAnimator {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayAnimator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerGameplayAnimator")]
-impl MultiplayerLocalActivePlayerGameplayAnimator {
+impl crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayAnimator {
     pub fn AnimateNewLeaderSelected(
         &mut self,
         isLeading: bool,
@@ -42,7 +45,7 @@ impl MultiplayerLocalActivePlayerGameplayAnimator {
     }
     pub fn HandlePlayerDidFinish(
         &mut self,
-        levelCompletionResults: *mut MultiplayerLevelCompletionResults,
+        levelCompletionResults: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -122,7 +125,8 @@ impl MultiplayerLocalActivePlayerGameplayAnimator {
     }
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerGameplayAnimator")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLocalActivePlayerGameplayAnimator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,24 +6,24 @@ pub struct FlowCoordinatorAvatarsHelper {
 }
 #[cfg(feature = "FlowCoordinatorAvatarsHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FlowCoordinatorAvatarsHelper => ""
-    ."FlowCoordinatorAvatarsHelper"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FlowCoordinatorAvatarsHelper =>
+    ""."FlowCoordinatorAvatarsHelper"
 );
 #[cfg(feature = "FlowCoordinatorAvatarsHelper")]
-impl std::ops::Deref for FlowCoordinatorAvatarsHelper {
+impl std::ops::Deref for crate::GlobalNamespace::FlowCoordinatorAvatarsHelper {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FlowCoordinatorAvatarsHelper")]
-impl std::ops::DerefMut for FlowCoordinatorAvatarsHelper {
+impl std::ops::DerefMut for crate::GlobalNamespace::FlowCoordinatorAvatarsHelper {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FlowCoordinatorAvatarsHelper")]
-impl FlowCoordinatorAvatarsHelper {
+impl crate::GlobalNamespace::FlowCoordinatorAvatarsHelper {
     #[cfg(
         feature = "FlowCoordinatorAvatarsHelper+_HasUserSelectedAvatarSystemWithCreatedAvatar_d__0"
     )]
@@ -49,7 +49,8 @@ impl FlowCoordinatorAvatarsHelper {
     }
 }
 #[cfg(feature = "FlowCoordinatorAvatarsHelper")]
-impl quest_hook::libil2cpp::ObjectType for FlowCoordinatorAvatarsHelper {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::FlowCoordinatorAvatarsHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

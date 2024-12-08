@@ -25,10 +25,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::ColorTween {
 }
 #[cfg(feature = "TMPro+ColorTween")]
 impl crate::TMPro::ColorTween {
-    #[cfg(feature = "TMPro+ColorTween+ColorTweenMode")]
-    pub type ColorTweenMode = crate::TMPro::ColorTween_ColorTweenMode;
     #[cfg(feature = "TMPro+ColorTween+ColorTweenCallback")]
     pub type ColorTweenCallback = crate::TMPro::ColorTween_ColorTweenCallback;
+    #[cfg(feature = "TMPro+ColorTween+ColorTweenMode")]
+    pub type ColorTweenMode = crate::TMPro::ColorTween_ColorTweenMode;
     pub fn AddOnChangedCallback(
         &mut self,
         callback: *mut crate::UnityEngine::Events::UnityAction_1<

@@ -3,39 +3,42 @@
 #[derive(Debug)]
 pub struct AnnotatedBeatmapLevelCollectionsViewController {
     __cordl_parent: crate::HMUI::ViewController,
-    pub _annotatedBeatmapLevelCollectionsGridView: *mut AnnotatedBeatmapLevelCollectionsGridView,
-    pub _loadingControl: *mut LoadingControl,
-    pub _additionalContentModel: *mut IAdditionalContentModel,
+    pub _annotatedBeatmapLevelCollectionsGridView: *mut crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView,
+    pub _loadingControl: *mut crate::GlobalNamespace::LoadingControl,
+    pub _additionalContentModel: *mut crate::GlobalNamespace::IAdditionalContentModel,
     pub didOpenBeatmapLevelCollectionsEvent: *mut crate::System::Action,
     pub didCloseBeatmapLevelCollectionsEvent: *mut crate::System::Action,
     pub didSelectAnnotatedBeatmapLevelCollectionEvent: *mut crate::System::Action_1<
-        *mut BeatmapLevelPack,
+        *mut crate::GlobalNamespace::BeatmapLevelPack,
     >,
     pub _selectedItemIndex: i32,
     pub _annotatedBeatmapLevelCollections: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut BeatmapLevelPack,
+        *mut crate::GlobalNamespace::BeatmapLevelPack,
     >,
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsViewController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AnnotatedBeatmapLevelCollectionsViewController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController => ""
     ."AnnotatedBeatmapLevelCollectionsViewController"
 );
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsViewController")]
-impl std::ops::Deref for AnnotatedBeatmapLevelCollectionsViewController {
+impl std::ops::Deref
+for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsViewController")]
-impl std::ops::DerefMut for AnnotatedBeatmapLevelCollectionsViewController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsViewController")]
-impl AnnotatedBeatmapLevelCollectionsViewController {
+impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,
@@ -96,7 +99,7 @@ impl AnnotatedBeatmapLevelCollectionsViewController {
     }
     pub fn HandleDidSelectAnnotatedBeatmapLevelCollection(
         &mut self,
-        beatmapLevelCollection: *mut BeatmapLevelPack,
+        beatmapLevelCollection: *mut crate::GlobalNamespace::BeatmapLevelPack,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -128,7 +131,7 @@ impl AnnotatedBeatmapLevelCollectionsViewController {
     pub fn SetData(
         &mut self,
         annotatedBeatmapLevelCollections: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut BeatmapLevelPack,
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
         >,
         selectedItemIndex: i32,
         hideIfOneOrNoPacks: bool,
@@ -187,7 +190,9 @@ impl AnnotatedBeatmapLevelCollectionsViewController {
     }
     pub fn add_didSelectAnnotatedBeatmapLevelCollectionEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut BeatmapLevelPack>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -198,11 +203,11 @@ impl AnnotatedBeatmapLevelCollectionsViewController {
     }
     pub fn get_selectedAnnotatedBeatmapLevelPack(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut BeatmapLevelPack> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapLevelPack> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut BeatmapLevelPack = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::BeatmapLevelPack = __cordl_object
             .invoke("get_selectedAnnotatedBeatmapLevelPack", ())?;
         Ok(__cordl_ret)
     }
@@ -237,7 +242,9 @@ impl AnnotatedBeatmapLevelCollectionsViewController {
     }
     pub fn remove_didSelectAnnotatedBeatmapLevelCollectionEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut BeatmapLevelPack>,
+        value: *mut crate::System::Action_1<
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -249,7 +256,7 @@ impl AnnotatedBeatmapLevelCollectionsViewController {
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionsViewController")]
 impl quest_hook::libil2cpp::ObjectType
-for AnnotatedBeatmapLevelCollectionsViewController {
+for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -9,10 +9,10 @@ pub struct AsyncOperationBase_1<TObject: quest_hook::libil2cpp::Type> {
     pub m_Error: *mut crate::System::Exception,
     pub m_RM: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
     pub m_Version: i32,
-    pub m_DestroyedAction: *mut DelegateList_1<
+    pub m_DestroyedAction: *mut crate::GlobalNamespace::DelegateList_1<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     >,
-    pub m_CompletedActionT: *mut DelegateList_1<
+    pub m_CompletedActionT: *mut crate::GlobalNamespace::DelegateList_1<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             TObject,
         >,
@@ -33,7 +33,7 @@ pub struct AsyncOperationBase_1<TObject: quest_hook::libil2cpp::Type> {
         *mut crate::System::Object,
     >,
     pub m_InDeferredCallbackQueue: bool,
-    pub m_UpdateCallbacks: *mut DelegateList_1<f32>,
+    pub m_UpdateCallbacks: *mut crate::GlobalNamespace::DelegateList_1<f32>,
     pub m_UpdateCallback: *mut crate::System::Action_1<f32>,
     __cordl_phantom_TObject: std::marker::PhantomData<TObject>,
 }
@@ -334,7 +334,7 @@ impl<
         &mut self,
         rm: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
         dependency: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-        updateCallbacks: *mut DelegateList_1<f32>,
+        updateCallbacks: *mut crate::GlobalNamespace::DelegateList_1<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -475,7 +475,7 @@ impl<
         &mut self,
         rm: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
         dependency: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-        updateCallbacks: *mut DelegateList_1<f32>,
+        updateCallbacks: *mut crate::GlobalNamespace::DelegateList_1<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

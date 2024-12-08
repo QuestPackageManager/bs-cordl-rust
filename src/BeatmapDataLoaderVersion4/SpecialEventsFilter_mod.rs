@@ -40,7 +40,7 @@ impl crate::BeatmapDataLoaderVersion4::SpecialEventsFilter {
     }
     pub fn New(
         basicEventTypesWithKeywords: *mut crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords,
-        environmentKeywords: *mut EnvironmentKeywords,
+        environmentKeywords: *mut crate::GlobalNamespace::EnvironmentKeywords,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -51,7 +51,7 @@ impl crate::BeatmapDataLoaderVersion4::SpecialEventsFilter {
     pub fn _ctor(
         &mut self,
         basicEventTypesWithKeywords: *mut crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords,
-        environmentKeywords: *mut EnvironmentKeywords,
+        environmentKeywords: *mut crate::GlobalNamespace::EnvironmentKeywords,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

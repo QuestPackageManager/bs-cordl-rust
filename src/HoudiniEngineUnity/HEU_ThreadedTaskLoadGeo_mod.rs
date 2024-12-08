@@ -285,16 +285,16 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo")]
 impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
-    #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+LoadType")]
-    pub type LoadType = crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_LoadType;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadCallback")]
+    pub type HEU_LoadCallback = crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallback;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadCallbackType")]
+    pub type HEU_LoadCallbackType = crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallbackType;
     #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadData")]
     pub type HEU_LoadData = crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadData;
     #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadObject")]
     pub type HEU_LoadObject = crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadObject;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadCallbackType")]
-    pub type HEU_LoadCallbackType = crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallbackType;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadCallback")]
-    pub type HEU_LoadCallback = crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallback;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+LoadType")]
+    pub type LoadType = crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_LoadType;
     pub fn AppendLog(
         &mut self,
         status: crate::HoudiniEngineUnity::HEU_LoadData_LoadStatus,

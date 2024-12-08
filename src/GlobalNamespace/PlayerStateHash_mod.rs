@@ -2,14 +2,16 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct PlayerStateHash {
-    pub _bloomFilter: BitMask128,
+    pub _bloomFilter: crate::GlobalNamespace::BitMask128,
 }
 #[cfg(feature = "PlayerStateHash")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for PlayerStateHash => ""."PlayerStateHash"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerStateHash => ""
+    ."PlayerStateHash"
 );
 #[cfg(feature = "PlayerStateHash")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for PlayerStateHash {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::PlayerStateHash {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -19,14 +21,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for PlayerStateHash {
     }
 }
 #[cfg(feature = "PlayerStateHash")]
-impl PlayerStateHash {
+impl crate::GlobalNamespace::PlayerStateHash {
     pub const kToStringPrefix: &'static str = "[PlayerStateMask ";
     pub const kToStringSuffix: &'static str = "]";
     pub fn AddState(
         &mut self,
         state: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<PlayerStateHash> {
-        let __cordl_ret: PlayerStateHash = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PlayerStateHash> {
+        let __cordl_ret: crate::GlobalNamespace::PlayerStateHash = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "AddState",
             (state),
@@ -47,8 +49,8 @@ impl PlayerStateHash {
     pub fn CreateFromSerializedData(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-    ) -> quest_hook::libil2cpp::Result<PlayerStateHash> {
-        let __cordl_ret: PlayerStateHash = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PlayerStateHash> {
+        let __cordl_ret: crate::GlobalNamespace::PlayerStateHash = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "CreateFromSerializedData",
             (reader),
@@ -68,7 +70,7 @@ impl PlayerStateHash {
     }
     pub fn Equals_PlayerStateHash0(
         &mut self,
-        other: PlayerStateHash,
+        other: crate::GlobalNamespace::PlayerStateHash,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -128,7 +130,7 @@ impl PlayerStateHash {
     }
     pub fn _ctor_BitMask128_0(
         &mut self,
-        bloomFilter: BitMask128,
+        bloomFilter: crate::GlobalNamespace::BitMask128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

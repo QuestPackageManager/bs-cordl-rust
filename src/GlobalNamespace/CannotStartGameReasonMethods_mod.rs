@@ -6,31 +6,32 @@ pub struct CannotStartGameReasonMethods {
 }
 #[cfg(feature = "CannotStartGameReasonMethods")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for CannotStartGameReasonMethods => ""
-    ."CannotStartGameReasonMethods"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CannotStartGameReasonMethods =>
+    ""."CannotStartGameReasonMethods"
 );
 #[cfg(feature = "CannotStartGameReasonMethods")]
-impl std::ops::Deref for CannotStartGameReasonMethods {
+impl std::ops::Deref for crate::GlobalNamespace::CannotStartGameReasonMethods {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CannotStartGameReasonMethods")]
-impl std::ops::DerefMut for CannotStartGameReasonMethods {
+impl std::ops::DerefMut for crate::GlobalNamespace::CannotStartGameReasonMethods {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "CannotStartGameReasonMethods")]
-impl CannotStartGameReasonMethods {
+impl crate::GlobalNamespace::CannotStartGameReasonMethods {
     pub const kAllPlayersNotInLobby: &'static str = "LABEL_CANT_START_GAME_ALL_PLAYERS_NOT_IN_LOBBY";
     pub const kAllPlayersSpectating: &'static str = "LABEL_CANT_START_GAME_ALL_PLAYERS_SPECTATING";
     pub const kDoNotOwnSong: &'static str = "LABEL_CANT_START_GAME_DO_NOT_OWN_SONG";
     pub const kNoSongSelected: &'static str = "LABEL_CANT_START_GAME_NO_SONG_SELECTED";
 }
 #[cfg(feature = "CannotStartGameReasonMethods")]
-impl quest_hook::libil2cpp::ObjectType for CannotStartGameReasonMethods {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::CannotStartGameReasonMethods {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

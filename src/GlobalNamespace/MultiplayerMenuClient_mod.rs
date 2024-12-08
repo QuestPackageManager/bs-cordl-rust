@@ -3,28 +3,29 @@
 #[derive(Debug)]
 pub struct MultiplayerMenuClient {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _menuPlayerController: *mut MenuPlayerController,
-    pub _nodePoseSyncStateManager: *mut INodePoseSyncStateManager,
+    pub _menuPlayerController: *mut crate::GlobalNamespace::MenuPlayerController,
+    pub _nodePoseSyncStateManager: *mut crate::GlobalNamespace::INodePoseSyncStateManager,
 }
 #[cfg(feature = "MultiplayerMenuClient")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerMenuClient => ""."MultiplayerMenuClient"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerMenuClient => ""
+    ."MultiplayerMenuClient"
 );
 #[cfg(feature = "MultiplayerMenuClient")]
-impl std::ops::Deref for MultiplayerMenuClient {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerMenuClient {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerMenuClient")]
-impl std::ops::DerefMut for MultiplayerMenuClient {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerMenuClient {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerMenuClient")]
-impl MultiplayerMenuClient {
+impl crate::GlobalNamespace::MultiplayerMenuClient {
     pub fn LateUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -54,7 +55,8 @@ impl MultiplayerMenuClient {
     }
 }
 #[cfg(feature = "MultiplayerMenuClient")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerMenuClient {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerMenuClient {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

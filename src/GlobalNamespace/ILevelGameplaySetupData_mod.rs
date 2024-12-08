@@ -6,48 +6,53 @@ pub struct ILevelGameplaySetupData {
 }
 #[cfg(feature = "ILevelGameplaySetupData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ILevelGameplaySetupData => ""."ILevelGameplaySetupData"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ILevelGameplaySetupData => ""
+    ."ILevelGameplaySetupData"
 );
 #[cfg(feature = "ILevelGameplaySetupData")]
-impl std::ops::Deref for ILevelGameplaySetupData {
+impl std::ops::Deref for crate::GlobalNamespace::ILevelGameplaySetupData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ILevelGameplaySetupData")]
-impl std::ops::DerefMut for ILevelGameplaySetupData {
+impl std::ops::DerefMut for crate::GlobalNamespace::ILevelGameplaySetupData {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ILevelGameplaySetupData")]
-impl ILevelGameplaySetupData {
+impl crate::GlobalNamespace::ILevelGameplaySetupData {
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
         unsafe { (object_param as *mut Self) }
     }
-    pub fn get_beatmapKey(&mut self) -> quest_hook::libil2cpp::Result<BeatmapKey> {
+    pub fn get_beatmapKey(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapKey> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: BeatmapKey = __cordl_object.invoke("get_beatmapKey", ())?;
+        let __cordl_ret: crate::GlobalNamespace::BeatmapKey = __cordl_object
+            .invoke("get_beatmapKey", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_gameplayModifiers(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut GameplayModifiers> {
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::GameplayModifiers> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut GameplayModifiers = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::GameplayModifiers = __cordl_object
             .invoke("get_gameplayModifiers", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "ILevelGameplaySetupData")]
-impl quest_hook::libil2cpp::ObjectType for ILevelGameplaySetupData {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ILevelGameplaySetupData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

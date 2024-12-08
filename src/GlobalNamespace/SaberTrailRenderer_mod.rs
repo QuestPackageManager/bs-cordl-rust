@@ -18,23 +18,24 @@ pub struct SaberTrailRenderer {
 }
 #[cfg(feature = "SaberTrailRenderer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SaberTrailRenderer => ""."SaberTrailRenderer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SaberTrailRenderer => ""
+    ."SaberTrailRenderer"
 );
 #[cfg(feature = "SaberTrailRenderer")]
-impl std::ops::Deref for SaberTrailRenderer {
+impl std::ops::Deref for crate::GlobalNamespace::SaberTrailRenderer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberTrailRenderer")]
-impl std::ops::DerefMut for SaberTrailRenderer {
+impl std::ops::DerefMut for crate::GlobalNamespace::SaberTrailRenderer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberTrailRenderer")]
-impl SaberTrailRenderer {
+impl crate::GlobalNamespace::SaberTrailRenderer {
     pub const kMinMotionBlurSpeed: f32 = 2.5f32;
     pub const kMotionBlurStrength: f32 = 0.8f32;
     pub fn Init(
@@ -124,7 +125,7 @@ impl SaberTrailRenderer {
     }
     pub fn UpdateMesh(
         &mut self,
-        trailElementCollection: *mut TrailElementCollection,
+        trailElementCollection: *mut crate::GlobalNamespace::TrailElementCollection,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -136,7 +137,7 @@ impl SaberTrailRenderer {
     }
     pub fn UpdateVertices(
         &mut self,
-        trailElementCollection: *mut TrailElementCollection,
+        trailElementCollection: *mut crate::GlobalNamespace::TrailElementCollection,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -158,7 +159,7 @@ impl SaberTrailRenderer {
     }
 }
 #[cfg(feature = "SaberTrailRenderer")]
-impl quest_hook::libil2cpp::ObjectType for SaberTrailRenderer {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberTrailRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

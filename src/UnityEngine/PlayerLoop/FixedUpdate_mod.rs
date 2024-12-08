@@ -134,32 +134,32 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate")]
 impl crate::UnityEngine::PlayerLoop::FixedUpdate {
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsClothFixedUpdate")]
-    pub type PhysicsClothFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsClothFixedUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+XRFixedUpdate")]
-    pub type XRFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_XRFixedUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunDelayedFixedFrameRate")]
-    pub type ScriptRunDelayedFixedFrameRate = crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunDelayedFixedFrameRate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+LegacyFixedAnimationUpdate")]
-    pub type LegacyFixedAnimationUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_LegacyFixedAnimationUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunBehaviourFixedUpdate")]
-    pub type ScriptRunBehaviourFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunBehaviourFixedUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsFixedUpdate")]
-    pub type PhysicsFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsFixedUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+AudioFixedUpdate")]
+    pub type AudioFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_AudioFixedUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ClearLines")]
+    pub type ClearLines = crate::UnityEngine::PlayerLoop::FixedUpdate_ClearLines;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedSampleTime")]
+    pub type DirectorFixedSampleTime = crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedSampleTime;
     #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdate")]
     pub type DirectorFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdate;
     #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdatePostPhysics")]
     pub type DirectorFixedUpdatePostPhysics = crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdatePostPhysics;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedSampleTime")]
-    pub type DirectorFixedSampleTime = crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedSampleTime;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+LegacyFixedAnimationUpdate")]
+    pub type LegacyFixedAnimationUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_LegacyFixedAnimationUpdate;
     #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+NewInputFixedUpdate")]
     pub type NewInputFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_NewInputFixedUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ClearLines")]
-    pub type ClearLines = crate::UnityEngine::PlayerLoop::FixedUpdate_ClearLines;
     #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+Physics2DFixedUpdate")]
     pub type Physics2DFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_Physics2DFixedUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+AudioFixedUpdate")]
-    pub type AudioFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_AudioFixedUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsClothFixedUpdate")]
+    pub type PhysicsClothFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsClothFixedUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsFixedUpdate")]
+    pub type PhysicsFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsFixedUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunBehaviourFixedUpdate")]
+    pub type ScriptRunBehaviourFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunBehaviourFixedUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunDelayedFixedFrameRate")]
+    pub type ScriptRunDelayedFixedFrameRate = crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunDelayedFixedFrameRate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+XRFixedUpdate")]
+    pub type XRFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_XRFixedUpdate;
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+LegacyFixedAnimationUpdate")]
 #[repr(C)]

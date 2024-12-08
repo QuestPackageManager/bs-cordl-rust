@@ -8,5 +8,6 @@ pub enum SongPackDataType {
 }
 #[cfg(feature = "SongPackDataType")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for SongPackDataType => ""."SongPackDataType"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongPackDataType => ""
+    ."SongPackDataType"
 );

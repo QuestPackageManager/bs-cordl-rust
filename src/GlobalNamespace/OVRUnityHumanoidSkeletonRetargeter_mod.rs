@@ -346,7 +346,7 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
     pub type BoneData = crate::GlobalNamespace::OVRSkeletonMetadata_BoneData;
     pub fn AssembleSkeleton(
         &mut self,
-        skeleton: *mut OVRSkeleton,
+        skeleton: *mut crate::GlobalNamespace::OVRSkeleton,
         useBindPose: bool,
         customBoneIdToHumanBodyBone: *mut crate::System::Collections::Generic::Dictionary_2<
             crate::GlobalNamespace::OVRSkeleton_BoneId,
@@ -376,7 +376,7 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
     }
     pub fn BuildBoneDataSkeleton(
         &mut self,
-        skeleton: *mut OVRSkeleton,
+        skeleton: *mut crate::GlobalNamespace::OVRSkeleton,
         useBindPose: bool,
         customBoneIdToHumanBodyBone: *mut crate::System::Collections::Generic::Dictionary_2<
             crate::GlobalNamespace::OVRSkeleton_BoneId,
@@ -413,7 +413,7 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
         Ok(__cordl_object)
     }
     pub fn New_OVRSkeleton__cordl_bool_Dictionary_2_2(
-        skeleton: *mut OVRSkeleton,
+        skeleton: *mut crate::GlobalNamespace::OVRSkeleton,
         useBindPose: bool,
         customBoneIdToHumanBodyBone: *mut crate::System::Collections::Generic::Dictionary_2<
             crate::GlobalNamespace::OVRSkeleton_BoneId,
@@ -448,7 +448,7 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
     }
     pub fn _ctor_OVRSkeleton__cordl_bool_Dictionary_2_2(
         &mut self,
-        skeleton: *mut OVRSkeleton,
+        skeleton: *mut crate::GlobalNamespace::OVRSkeleton,
         useBindPose: bool,
         customBoneIdToHumanBodyBone: *mut crate::System::Collections::Generic::Dictionary_2<
             crate::GlobalNamespace::OVRSkeleton_BoneId,
@@ -505,7 +505,7 @@ for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetada
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRUnityHumanoidSkeletonRetargeter {
-    __cordl_parent: OVRSkeleton,
+    __cordl_parent: crate::GlobalNamespace::OVRSkeleton,
     pub _sourceSkeletonData: *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata,
     pub _sourceSkeletonTPoseData: *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata,
     pub _targetSkeletonData: *mut crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata,
@@ -531,30 +531,31 @@ pub struct OVRUnityHumanoidSkeletonRetargeter {
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRUnityHumanoidSkeletonRetargeter => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter => ""
     ."OVRUnityHumanoidSkeletonRetargeter"
 );
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter")]
-impl std::ops::Deref for OVRUnityHumanoidSkeletonRetargeter {
-    type Target = OVRSkeleton;
+impl std::ops::Deref for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter {
+    type Target = crate::GlobalNamespace::OVRSkeleton;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter")]
-impl std::ops::DerefMut for OVRUnityHumanoidSkeletonRetargeter {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter")]
-impl OVRUnityHumanoidSkeletonRetargeter {
-    #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+OVRSkeletonMetadata")]
-    pub type OVRSkeletonMetadata = crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata;
-    #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+OVRHumanBodyBonesMappings")]
-    pub type OVRHumanBodyBonesMappings = crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings;
+impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter {
     #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+JointAdjustment")]
     pub type JointAdjustment = crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment;
+    #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+OVRHumanBodyBonesMappings")]
+    pub type OVRHumanBodyBonesMappings = crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings;
+    #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+OVRSkeletonMetadata")]
+    pub type OVRSkeletonMetadata = crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata;
     pub fn AdjustCustomBoneIdToHumanBodyBoneMapping(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -813,7 +814,8 @@ impl OVRUnityHumanoidSkeletonRetargeter {
     }
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter")]
-impl quest_hook::libil2cpp::ObjectType for OVRUnityHumanoidSkeletonRetargeter {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

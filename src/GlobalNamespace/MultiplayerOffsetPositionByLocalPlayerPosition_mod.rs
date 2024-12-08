@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MultiplayerOffsetPositionByLocalPlayerPosition {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _multiplayerPlayersManager: *mut MultiplayerPlayersManager,
+    pub _multiplayerPlayersManager: *mut crate::GlobalNamespace::MultiplayerPlayersManager,
     pub _positionOffset: crate::UnityEngine::Vector3,
     pub _rotationOffset: crate::UnityEngine::Quaternion,
     pub _lastParentPosition: crate::UnityEngine::Vector3,
@@ -11,24 +11,27 @@ pub struct MultiplayerOffsetPositionByLocalPlayerPosition {
 }
 #[cfg(feature = "MultiplayerOffsetPositionByLocalPlayerPosition")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerOffsetPositionByLocalPlayerPosition => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition => ""
     ."MultiplayerOffsetPositionByLocalPlayerPosition"
 );
 #[cfg(feature = "MultiplayerOffsetPositionByLocalPlayerPosition")]
-impl std::ops::Deref for MultiplayerOffsetPositionByLocalPlayerPosition {
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerOffsetPositionByLocalPlayerPosition")]
-impl std::ops::DerefMut for MultiplayerOffsetPositionByLocalPlayerPosition {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerOffsetPositionByLocalPlayerPosition")]
-impl MultiplayerOffsetPositionByLocalPlayerPosition {
+impl crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition {
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -90,7 +93,7 @@ impl MultiplayerOffsetPositionByLocalPlayerPosition {
 }
 #[cfg(feature = "MultiplayerOffsetPositionByLocalPlayerPosition")]
 impl quest_hook::libil2cpp::ObjectType
-for MultiplayerOffsetPositionByLocalPlayerPosition {
+for crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

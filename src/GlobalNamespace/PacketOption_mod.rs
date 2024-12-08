@@ -8,5 +8,6 @@ pub enum PacketOption {
 }
 #[cfg(feature = "PacketOption")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for PacketOption => ""."PacketOption"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PacketOption => ""
+    ."PacketOption"
 );

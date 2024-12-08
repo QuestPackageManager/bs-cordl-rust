@@ -27,7 +27,7 @@ pub struct GhostEffectBehaviour {
     pub _startTransform: *mut crate::UnityEngine::Transform,
     pub _endLocalPosition: crate::UnityEngine::Vector3,
     pub _endTransform: *mut crate::UnityEngine::Transform,
-    pub _positionEasing: EaseType,
+    pub _positionEasing: crate::GlobalNamespace::EaseType,
     pub _endBehavior: crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior,
     pub progress: f32,
     pub textMeshPros: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -43,23 +43,24 @@ pub struct GhostEffectBehaviour {
 }
 #[cfg(feature = "GhostEffectBehaviour")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GhostEffectBehaviour => ""."GhostEffectBehaviour"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GhostEffectBehaviour => ""
+    ."GhostEffectBehaviour"
 );
 #[cfg(feature = "GhostEffectBehaviour")]
-impl std::ops::Deref for GhostEffectBehaviour {
+impl std::ops::Deref for crate::GlobalNamespace::GhostEffectBehaviour {
     type Target = crate::UnityEngine::Playables::PlayableBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GhostEffectBehaviour")]
-impl std::ops::DerefMut for GhostEffectBehaviour {
+impl std::ops::DerefMut for crate::GlobalNamespace::GhostEffectBehaviour {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GhostEffectBehaviour")]
-impl GhostEffectBehaviour {
+impl crate::GlobalNamespace::GhostEffectBehaviour {
     #[cfg(feature = "GhostEffectBehaviour+EndBehavior")]
     pub type EndBehavior = crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior;
     #[cfg(feature = "GhostEffectBehaviour+GhostEffectType")]
@@ -119,7 +120,7 @@ impl GhostEffectBehaviour {
     }
 }
 #[cfg(feature = "GhostEffectBehaviour")]
-impl quest_hook::libil2cpp::ObjectType for GhostEffectBehaviour {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GhostEffectBehaviour {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

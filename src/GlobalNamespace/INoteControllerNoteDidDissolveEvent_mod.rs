@@ -6,27 +6,28 @@ pub struct INoteControllerNoteDidDissolveEvent {
 }
 #[cfg(feature = "INoteControllerNoteDidDissolveEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for INoteControllerNoteDidDissolveEvent => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::INoteControllerNoteDidDissolveEvent => ""
     ."INoteControllerNoteDidDissolveEvent"
 );
 #[cfg(feature = "INoteControllerNoteDidDissolveEvent")]
-impl std::ops::Deref for INoteControllerNoteDidDissolveEvent {
+impl std::ops::Deref for crate::GlobalNamespace::INoteControllerNoteDidDissolveEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "INoteControllerNoteDidDissolveEvent")]
-impl std::ops::DerefMut for INoteControllerNoteDidDissolveEvent {
+impl std::ops::DerefMut for crate::GlobalNamespace::INoteControllerNoteDidDissolveEvent {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "INoteControllerNoteDidDissolveEvent")]
-impl INoteControllerNoteDidDissolveEvent {
+impl crate::GlobalNamespace::INoteControllerNoteDidDissolveEvent {
     pub fn HandleNoteControllerNoteDidDissolve(
         &mut self,
-        noteController: *mut NoteController,
+        noteController: *mut crate::GlobalNamespace::NoteController,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -42,7 +43,8 @@ impl INoteControllerNoteDidDissolveEvent {
     }
 }
 #[cfg(feature = "INoteControllerNoteDidDissolveEvent")]
-impl quest_hook::libil2cpp::ObjectType for INoteControllerNoteDidDissolveEvent {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::INoteControllerNoteDidDissolveEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

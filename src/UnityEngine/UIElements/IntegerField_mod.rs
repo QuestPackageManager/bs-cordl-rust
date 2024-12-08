@@ -24,12 +24,12 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IntegerField {
 }
 #[cfg(feature = "UnityEngine+UIElements+IntegerField")]
 impl crate::UnityEngine::UIElements::IntegerField {
-    #[cfg(feature = "UnityEngine+UIElements+IntegerField+UxmlTraits")]
-    pub type UxmlTraits = crate::UnityEngine::UIElements::IntegerField_UxmlTraits;
-    #[cfg(feature = "UnityEngine+UIElements+IntegerField+UxmlFactory")]
-    pub type UxmlFactory = crate::UnityEngine::UIElements::IntegerField_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+IntegerField+IntegerInput")]
     pub type IntegerInput = crate::UnityEngine::UIElements::IntegerField_IntegerInput;
+    #[cfg(feature = "UnityEngine+UIElements+IntegerField+UxmlFactory")]
+    pub type UxmlFactory = crate::UnityEngine::UIElements::IntegerField_UxmlFactory;
+    #[cfg(feature = "UnityEngine+UIElements+IntegerField+UxmlTraits")]
+    pub type UxmlTraits = crate::UnityEngine::UIElements::IntegerField_UxmlTraits;
     pub fn ApplyInputDeviceDelta(
         &mut self,
         delta: crate::UnityEngine::Vector3,

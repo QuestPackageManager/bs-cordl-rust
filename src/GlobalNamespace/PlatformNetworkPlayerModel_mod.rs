@@ -59,28 +59,28 @@ for crate::GlobalNamespace::PlatformNetworkPlayerModel_CreatePartyConfig {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformNetworkPlayerModel {
-    __cordl_parent: BaseNetworkPlayerModel,
+    __cordl_parent: crate::GlobalNamespace::BaseNetworkPlayerModel,
 }
 #[cfg(feature = "PlatformNetworkPlayerModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlatformNetworkPlayerModel => ""
-    ."PlatformNetworkPlayerModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlatformNetworkPlayerModel =>
+    ""."PlatformNetworkPlayerModel"
 );
 #[cfg(feature = "PlatformNetworkPlayerModel")]
-impl std::ops::Deref for PlatformNetworkPlayerModel {
-    type Target = BaseNetworkPlayerModel;
+impl std::ops::Deref for crate::GlobalNamespace::PlatformNetworkPlayerModel {
+    type Target = crate::GlobalNamespace::BaseNetworkPlayerModel;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformNetworkPlayerModel")]
-impl std::ops::DerefMut for PlatformNetworkPlayerModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlatformNetworkPlayerModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformNetworkPlayerModel")]
-impl PlatformNetworkPlayerModel {
+impl crate::GlobalNamespace::PlatformNetworkPlayerModel {
     #[cfg(feature = "PlatformNetworkPlayerModel+CreatePartyConfig")]
     pub type CreatePartyConfig = crate::GlobalNamespace::PlatformNetworkPlayerModel_CreatePartyConfig;
     pub fn DestroyPartyConnection(
@@ -113,19 +113,22 @@ impl PlatformNetworkPlayerModel {
     pub fn get_friends(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<*mut INetworkPlayer>,
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::GlobalNamespace::INetworkPlayer,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut INetworkPlayer,
+            *mut crate::GlobalNamespace::INetworkPlayer,
         > = __cordl_object.invoke("get_friends", ())?;
         Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "PlatformNetworkPlayerModel")]
-impl quest_hook::libil2cpp::ObjectType for PlatformNetworkPlayerModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlatformNetworkPlayerModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -48,33 +48,34 @@ pub struct GameplayModifiersConfiguration {
 }
 #[cfg(feature = "GameplayModifiersConfiguration")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GameplayModifiersConfiguration => ""
-    ."GameplayModifiersConfiguration"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameplayModifiersConfiguration
+    => ""."GameplayModifiersConfiguration"
 );
 #[cfg(feature = "GameplayModifiersConfiguration")]
-impl std::ops::Deref for GameplayModifiersConfiguration {
+impl std::ops::Deref for crate::GlobalNamespace::GameplayModifiersConfiguration {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayModifiersConfiguration")]
-impl std::ops::DerefMut for GameplayModifiersConfiguration {
+impl std::ops::DerefMut for crate::GlobalNamespace::GameplayModifiersConfiguration {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayModifiersConfiguration")]
-impl GameplayModifiersConfiguration {
+impl crate::GlobalNamespace::GameplayModifiersConfiguration {
     #[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
     pub type CutAngleTolerance = crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance;
-    #[cfg(feature = "GameplayModifiersConfiguration+SongSpeed")]
-    pub type SongSpeed = crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed;
     #[cfg(feature = "GameplayModifiersConfiguration+NoteUniformScale")]
     pub type NoteUniformScale = crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale;
+    #[cfg(feature = "GameplayModifiersConfiguration+SongSpeed")]
+    pub type SongSpeed = crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed;
 }
 #[cfg(feature = "GameplayModifiersConfiguration")]
-impl quest_hook::libil2cpp::ObjectType for GameplayModifiersConfiguration {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GameplayModifiersConfiguration {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

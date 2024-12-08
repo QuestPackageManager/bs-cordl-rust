@@ -3,15 +3,16 @@
 #[derive(Debug, Clone)]
 pub struct LoadBeatmapLevelDataResult {
     pub isError: bool,
-    pub beatmapLevelData: *mut IBeatmapLevelData,
+    pub beatmapLevelData: *mut crate::GlobalNamespace::IBeatmapLevelData,
 }
 #[cfg(feature = "LoadBeatmapLevelDataResult")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for LoadBeatmapLevelDataResult => ""
-    ."LoadBeatmapLevelDataResult"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LoadBeatmapLevelDataResult =>
+    ""."LoadBeatmapLevelDataResult"
 );
 #[cfg(feature = "LoadBeatmapLevelDataResult")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for LoadBeatmapLevelDataResult {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::LoadBeatmapLevelDataResult {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -21,11 +22,11 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for LoadBeatmapLevelDataResult {
     }
 }
 #[cfg(feature = "LoadBeatmapLevelDataResult")]
-impl LoadBeatmapLevelDataResult {
+impl crate::GlobalNamespace::LoadBeatmapLevelDataResult {
     pub fn _ctor(
         &mut self,
         isError: bool,
-        beatmapLevelData: *mut IBeatmapLevelData,
+        beatmapLevelData: *mut crate::GlobalNamespace::IBeatmapLevelData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

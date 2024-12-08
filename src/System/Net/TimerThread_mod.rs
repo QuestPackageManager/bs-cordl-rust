@@ -640,20 +640,20 @@ impl std::ops::DerefMut for crate::System::Net::TimerThread {
 }
 #[cfg(feature = "System+Net+TimerThread")]
 impl crate::System::Net::TimerThread {
-    #[cfg(feature = "System+Net+TimerThread+TimerNode")]
-    pub type TimerNode = crate::System::Net::TimerThread_TimerNode;
-    #[cfg(feature = "System+Net+TimerThread+InfiniteTimer")]
-    pub type InfiniteTimer = crate::System::Net::TimerThread_InfiniteTimer;
-    #[cfg(feature = "System+Net+TimerThread+Timer")]
-    pub type Timer = crate::System::Net::TimerThread_Timer;
     #[cfg(feature = "System+Net+TimerThread+Callback")]
     pub type Callback = crate::System::Net::TimerThread_Callback;
-    #[cfg(feature = "System+Net+TimerThread+TimerQueue")]
-    pub type TimerQueue = crate::System::Net::TimerThread_TimerQueue;
+    #[cfg(feature = "System+Net+TimerThread+InfiniteTimer")]
+    pub type InfiniteTimer = crate::System::Net::TimerThread_InfiniteTimer;
     #[cfg(feature = "System+Net+TimerThread+InfiniteTimerQueue")]
     pub type InfiniteTimerQueue = crate::System::Net::TimerThread_InfiniteTimerQueue;
     #[cfg(feature = "System+Net+TimerThread+Queue")]
     pub type Queue = crate::System::Net::TimerThread_Queue;
+    #[cfg(feature = "System+Net+TimerThread+Timer")]
+    pub type Timer = crate::System::Net::TimerThread_Timer;
+    #[cfg(feature = "System+Net+TimerThread+TimerNode")]
+    pub type TimerNode = crate::System::Net::TimerThread_TimerNode;
+    #[cfg(feature = "System+Net+TimerThread+TimerQueue")]
+    pub type TimerQueue = crate::System::Net::TimerThread_TimerQueue;
 }
 #[cfg(feature = "System+Net+TimerThread")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::TimerThread {

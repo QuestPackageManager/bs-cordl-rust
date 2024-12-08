@@ -2,29 +2,30 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelScenesTransitionSetupDataSO {
-    __cordl_parent: ScenesTransitionSetupDataSO,
-    pub _gameplayCoreSceneSetupData_k__BackingField: *mut GameplayCoreSceneSetupData,
+    __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
+    pub _gameplayCoreSceneSetupData_k__BackingField: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
 }
 #[cfg(feature = "LevelScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LevelScenesTransitionSetupDataSO => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::LevelScenesTransitionSetupDataSO => ""
     ."LevelScenesTransitionSetupDataSO"
 );
 #[cfg(feature = "LevelScenesTransitionSetupDataSO")]
-impl std::ops::Deref for LevelScenesTransitionSetupDataSO {
-    type Target = ScenesTransitionSetupDataSO;
+impl std::ops::Deref for crate::GlobalNamespace::LevelScenesTransitionSetupDataSO {
+    type Target = crate::GlobalNamespace::ScenesTransitionSetupDataSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelScenesTransitionSetupDataSO")]
-impl std::ops::DerefMut for LevelScenesTransitionSetupDataSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::LevelScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelScenesTransitionSetupDataSO")]
-impl LevelScenesTransitionSetupDataSO {
+impl crate::GlobalNamespace::LevelScenesTransitionSetupDataSO {
     pub fn BeforeScenesWillBeActivated(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -64,27 +65,31 @@ impl LevelScenesTransitionSetupDataSO {
     }
     pub fn get_gameplayCoreSceneSetupData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut GameplayCoreSceneSetupData> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut GameplayCoreSceneSetupData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData = __cordl_object
             .invoke("get_gameplayCoreSceneSetupData", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_transformedBeatmapData(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut IReadonlyBeatmapData> {
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::GlobalNamespace::IReadonlyBeatmapData,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut IReadonlyBeatmapData = __cordl_object
+        let __cordl_ret: *mut crate::GlobalNamespace::IReadonlyBeatmapData = __cordl_object
             .invoke("get_transformedBeatmapData", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_gameplayCoreSceneSetupData(
         &mut self,
-        value: *mut GameplayCoreSceneSetupData,
+        value: *mut crate::GlobalNamespace::GameplayCoreSceneSetupData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -95,7 +100,8 @@ impl LevelScenesTransitionSetupDataSO {
     }
 }
 #[cfg(feature = "LevelScenesTransitionSetupDataSO")]
-impl quest_hook::libil2cpp::ObjectType for LevelScenesTransitionSetupDataSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LevelScenesTransitionSetupDataSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

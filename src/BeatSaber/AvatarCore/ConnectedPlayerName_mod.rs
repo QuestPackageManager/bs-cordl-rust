@@ -4,7 +4,7 @@
 pub struct ConnectedPlayerName {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _nameText: *mut crate::TMPro::TextMeshProUGUI,
-    pub _connectedPlayer: *mut IConnectedPlayer,
+    pub _connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerName")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

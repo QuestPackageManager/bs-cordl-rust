@@ -6,40 +6,40 @@ pub struct FireEffect {
     pub _groupId: i32,
     pub _elementId: i32,
     pub _lightId: i32,
-    pub _flipBookPropertyBlockController: *mut MaterialPropertyBlockController,
-    pub _bloomPropertyBlockController: *mut MaterialPropertyBlockController,
-    pub _privatePointLightPropertyBlockController: *mut MaterialPropertyBlockController,
-    pub _bloomPrePassRenderer: *mut BloomPrePassBackgroundNonLightRenderer,
+    pub _flipBookPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _bloomPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _privatePointLightPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
+    pub _bloomPrePassRenderer: *mut crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer,
     pub _bloomIntensityMultiplier: f32,
     pub _pointLightColor: crate::UnityEngine::Color,
     pub _contributeCustomLightColor: bool,
-    pub _customLightColorContribution: *mut ColorSO,
-    pub _beatmapCallbacksController: *mut BeatmapCallbacksController,
-    pub _lightWithIdManager: *mut LightWithIdManager,
-    pub _lightColorBeatmapEventCallbackWrapper: *mut BeatmapDataCallbackWrapper,
+    pub _customLightColorContribution: *mut crate::GlobalNamespace::ColorSO,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _lightWithIdManager: *mut crate::GlobalNamespace::LightWithIdManager,
+    pub _lightColorBeatmapEventCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
 }
 #[cfg(feature = "FireEffect")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for FireEffect => ""."FireEffect"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::FireEffect => ""."FireEffect"
 );
 #[cfg(feature = "FireEffect")]
-impl std::ops::Deref for FireEffect {
+impl std::ops::Deref for crate::GlobalNamespace::FireEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FireEffect")]
-impl std::ops::DerefMut for FireEffect {
+impl std::ops::DerefMut for crate::GlobalNamespace::FireEffect {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "FireEffect")]
-impl FireEffect {
+impl crate::GlobalNamespace::FireEffect {
     pub fn HandleColorChangeBeatmapEvent(
         &mut self,
-        e: *mut LightColorBeatmapEventData,
+        e: *mut crate::GlobalNamespace::LightColorBeatmapEventData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -109,7 +109,7 @@ impl FireEffect {
     }
 }
 #[cfg(feature = "FireEffect")]
-impl quest_hook::libil2cpp::ObjectType for FireEffect {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FireEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

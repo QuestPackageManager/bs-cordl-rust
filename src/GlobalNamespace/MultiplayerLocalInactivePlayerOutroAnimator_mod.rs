@@ -4,28 +4,31 @@
 pub struct MultiplayerLocalInactivePlayerOutroAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _outroPlayableDirector: *mut crate::UnityEngine::Playables::PlayableDirector,
-    pub _multiplayerController: *mut MultiplayerController,
+    pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerOutroAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLocalInactivePlayerOutroAnimator => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLocalInactivePlayerOutroAnimator => ""
     ."MultiplayerLocalInactivePlayerOutroAnimator"
 );
 #[cfg(feature = "MultiplayerLocalInactivePlayerOutroAnimator")]
-impl std::ops::Deref for MultiplayerLocalInactivePlayerOutroAnimator {
+impl std::ops::Deref
+for crate::GlobalNamespace::MultiplayerLocalInactivePlayerOutroAnimator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerOutroAnimator")]
-impl std::ops::DerefMut for MultiplayerLocalInactivePlayerOutroAnimator {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerLocalInactivePlayerOutroAnimator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerOutroAnimator")]
-impl MultiplayerLocalInactivePlayerOutroAnimator {
+impl crate::GlobalNamespace::MultiplayerLocalInactivePlayerOutroAnimator {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -55,7 +58,8 @@ impl MultiplayerLocalInactivePlayerOutroAnimator {
     }
 }
 #[cfg(feature = "MultiplayerLocalInactivePlayerOutroAnimator")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLocalInactivePlayerOutroAnimator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLocalInactivePlayerOutroAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

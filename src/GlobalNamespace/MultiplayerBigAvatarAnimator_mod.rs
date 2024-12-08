@@ -4,7 +4,7 @@
 pub struct MultiplayerBigAvatarAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _displayedScale: f32,
-    pub _hologramRays: *mut HologramRays,
+    pub _hologramRays: *mut crate::GlobalNamespace::HologramRays,
     pub _avatarTransform: *mut crate::UnityEngine::Transform,
     pub _tweeningManager: *mut crate::Tweening::TimeTweeningManager,
     pub _scaleUpTween: *mut crate::Tweening::Tween_1<f32>,
@@ -13,29 +13,29 @@ pub struct MultiplayerBigAvatarAnimator {
 }
 #[cfg(feature = "MultiplayerBigAvatarAnimator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerBigAvatarAnimator => ""
-    ."MultiplayerBigAvatarAnimator"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerBigAvatarAnimator =>
+    ""."MultiplayerBigAvatarAnimator"
 );
 #[cfg(feature = "MultiplayerBigAvatarAnimator")]
-impl std::ops::Deref for MultiplayerBigAvatarAnimator {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerBigAvatarAnimator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerBigAvatarAnimator")]
-impl std::ops::DerefMut for MultiplayerBigAvatarAnimator {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerBigAvatarAnimator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerBigAvatarAnimator")]
-impl MultiplayerBigAvatarAnimator {
+impl crate::GlobalNamespace::MultiplayerBigAvatarAnimator {
     pub fn Animate(
         &mut self,
         show: bool,
         duration: f32,
-        easeType: EaseType,
+        easeType: crate::GlobalNamespace::EaseType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -137,7 +137,8 @@ impl MultiplayerBigAvatarAnimator {
     }
 }
 #[cfg(feature = "MultiplayerBigAvatarAnimator")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerBigAvatarAnimator {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerBigAvatarAnimator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

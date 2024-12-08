@@ -10,27 +10,28 @@ pub struct LocalizedTextAsset {
 }
 #[cfg(feature = "LocalizedTextAsset")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for LocalizedTextAsset => ""."LocalizedTextAsset"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LocalizedTextAsset => ""
+    ."LocalizedTextAsset"
 );
 #[cfg(feature = "LocalizedTextAsset")]
-impl std::ops::Deref for LocalizedTextAsset {
+impl std::ops::Deref for crate::GlobalNamespace::LocalizedTextAsset {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LocalizedTextAsset")]
-impl std::ops::DerefMut for LocalizedTextAsset {
+impl std::ops::DerefMut for crate::GlobalNamespace::LocalizedTextAsset {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "LocalizedTextAsset")]
-impl LocalizedTextAsset {
-    #[cfg(feature = "LocalizedTextAsset+__c")]
-    pub type __c = crate::GlobalNamespace::LocalizedTextAsset___c;
+impl crate::GlobalNamespace::LocalizedTextAsset {
     #[cfg(feature = "LocalizedTextAsset+TextInfo")]
     pub type TextInfo = crate::GlobalNamespace::LocalizedTextAsset_TextInfo;
+    #[cfg(feature = "LocalizedTextAsset+__c")]
+    pub type __c = crate::GlobalNamespace::LocalizedTextAsset___c;
     #[cfg(feature = "LocalizedTextAsset+__c__DisplayClass6_0")]
     pub type __c__DisplayClass6_0 = crate::GlobalNamespace::LocalizedTextAsset___c__DisplayClass6_0;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -77,7 +78,7 @@ impl LocalizedTextAsset {
     }
 }
 #[cfg(feature = "LocalizedTextAsset")]
-impl quest_hook::libil2cpp::ObjectType for LocalizedTextAsset {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LocalizedTextAsset {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

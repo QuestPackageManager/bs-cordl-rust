@@ -12,23 +12,24 @@ pub struct OVRRaycaster {
 }
 #[cfg(feature = "OVRRaycaster")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OVRRaycaster => ""."OVRRaycaster"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRRaycaster => ""
+    ."OVRRaycaster"
 );
 #[cfg(feature = "OVRRaycaster")]
-impl std::ops::Deref for OVRRaycaster {
+impl std::ops::Deref for crate::GlobalNamespace::OVRRaycaster {
     type Target = crate::UnityEngine::UI::GraphicRaycaster;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRRaycaster")]
-impl std::ops::DerefMut for OVRRaycaster {
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRRaycaster {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRRaycaster")]
-impl OVRRaycaster {
+impl crate::GlobalNamespace::OVRRaycaster {
     #[cfg(feature = "OVRRaycaster+RaycastHit")]
     pub type RaycastHit = crate::GlobalNamespace::OVRRaycaster_RaycastHit;
     #[cfg(feature = "OVRRaycaster+__c")]
@@ -177,7 +178,7 @@ impl OVRRaycaster {
     }
 }
 #[cfg(feature = "OVRRaycaster")]
-impl quest_hook::libil2cpp::ObjectType for OVRRaycaster {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRRaycaster {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

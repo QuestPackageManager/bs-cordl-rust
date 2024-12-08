@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct MultiplayerStatusModel_MultiplayerStatusDataFB {
     __cordl_parent: crate::System::Object,
-    pub data: *mut quest_hook::libil2cpp::Il2CppArray<*mut MultiplayerStatusData>,
+    pub data: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::MultiplayerStatusData,
+    >,
 }
 #[cfg(feature = "MultiplayerStatusModel+MultiplayerStatusDataFB")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -61,31 +63,32 @@ for crate::GlobalNamespace::MultiplayerStatusModel_MultiplayerStatusDataFB {
 #[derive(Debug)]
 pub struct MultiplayerStatusModel {
     __cordl_parent: crate::System::Object,
-    pub _networkConfig: *mut INetworkConfig,
+    pub _networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
     pub _client: *mut crate::System::Net::Http::HttpClient,
     pub _request: *mut crate::System::Threading::Tasks::Task_1<
-        *mut MultiplayerStatusData,
+        *mut crate::GlobalNamespace::MultiplayerStatusData,
     >,
 }
 #[cfg(feature = "MultiplayerStatusModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerStatusModel => ""."MultiplayerStatusModel"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::MultiplayerStatusModel => ""
+    ."MultiplayerStatusModel"
 );
 #[cfg(feature = "MultiplayerStatusModel")]
-impl std::ops::Deref for MultiplayerStatusModel {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerStatusModel {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerStatusModel")]
-impl std::ops::DerefMut for MultiplayerStatusModel {
+impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerStatusModel {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerStatusModel")]
-impl MultiplayerStatusModel {
+impl crate::GlobalNamespace::MultiplayerStatusModel {
     pub const kRequestTimeoutSeconds: i32 = 60i32;
     #[cfg(feature = "MultiplayerStatusModel+MultiplayerStatusDataFB")]
     pub type MultiplayerStatusDataFB = crate::GlobalNamespace::MultiplayerStatusModel_MultiplayerStatusDataFB;
@@ -95,26 +98,30 @@ impl MultiplayerStatusModel {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut MultiplayerStatusData>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::MultiplayerStatusData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut MultiplayerStatusData,
+            *mut crate::GlobalNamespace::MultiplayerStatusData,
         > = __cordl_object.invoke("GetMultiplayerStatusAsync", (cancellationToken))?;
         Ok(__cordl_ret)
     }
     pub fn GetMultiplayerStatusAsyncInternal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut MultiplayerStatusData>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut crate::GlobalNamespace::MultiplayerStatusData,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut MultiplayerStatusData,
+            *mut crate::GlobalNamespace::MultiplayerStatusData,
         > = __cordl_object.invoke("GetMultiplayerStatusAsyncInternal", ())?;
         Ok(__cordl_ret)
     }
@@ -164,7 +171,8 @@ impl MultiplayerStatusModel {
     }
 }
 #[cfg(feature = "MultiplayerStatusModel")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerStatusModel {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerStatusModel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

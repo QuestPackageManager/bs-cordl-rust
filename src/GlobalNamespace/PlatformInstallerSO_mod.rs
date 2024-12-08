@@ -3,31 +3,32 @@
 #[derive(Debug)]
 pub struct PlatformInstallerSO {
     __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
-    pub _setupData: *mut AppInitSetupData,
-    pub _ps4AchievementIdsModel: *mut SonyAchievementIdsModelSO,
-    pub _ps5AchievementIdsModel: *mut SonyAchievementIdsModelSO,
-    pub _achievementIdsModel: *mut AchievementIdsModelSO,
-    pub _mockPlatformAdditionalContentModelInitialData: *mut MockPlatformAdditionalContentModelInitialDataSO,
+    pub _setupData: *mut crate::GlobalNamespace::AppInitSetupData,
+    pub _ps4AchievementIdsModel: *mut crate::GlobalNamespace::SonyAchievementIdsModelSO,
+    pub _ps5AchievementIdsModel: *mut crate::GlobalNamespace::SonyAchievementIdsModelSO,
+    pub _achievementIdsModel: *mut crate::GlobalNamespace::AchievementIdsModelSO,
+    pub _mockPlatformAdditionalContentModelInitialData: *mut crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
 }
 #[cfg(feature = "PlatformInstallerSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for PlatformInstallerSO => ""."PlatformInstallerSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlatformInstallerSO => ""
+    ."PlatformInstallerSO"
 );
 #[cfg(feature = "PlatformInstallerSO")]
-impl std::ops::Deref for PlatformInstallerSO {
+impl std::ops::Deref for crate::GlobalNamespace::PlatformInstallerSO {
     type Target = crate::Zenject::ScriptableObjectInstaller;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformInstallerSO")]
-impl std::ops::DerefMut for PlatformInstallerSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::PlatformInstallerSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformInstallerSO")]
-impl PlatformInstallerSO {
+impl crate::GlobalNamespace::PlatformInstallerSO {
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -57,7 +58,7 @@ impl PlatformInstallerSO {
     }
 }
 #[cfg(feature = "PlatformInstallerSO")]
-impl quest_hook::libil2cpp::ObjectType for PlatformInstallerSO {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlatformInstallerSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -6,28 +6,28 @@ pub struct AutoRecord {
 }
 #[cfg(feature = "AutoRecord")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for AutoRecord => ""."AutoRecord"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AutoRecord => ""."AutoRecord"
 );
 #[cfg(feature = "AutoRecord")]
-impl std::ops::Deref for AutoRecord {
+impl std::ops::Deref for crate::GlobalNamespace::AutoRecord {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AutoRecord")]
-impl std::ops::DerefMut for AutoRecord {
+impl std::ops::DerefMut for crate::GlobalNamespace::AutoRecord {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "AutoRecord")]
-impl AutoRecord {
+impl crate::GlobalNamespace::AutoRecord {
     #[cfg(feature = "AutoRecord+Beatmap")]
     pub type Beatmap = crate::GlobalNamespace::AutoRecord_Beatmap;
 }
 #[cfg(feature = "AutoRecord")]
-impl quest_hook::libil2cpp::ObjectType for AutoRecord {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AutoRecord {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -41,7 +41,9 @@ impl quest_hook::libil2cpp::ObjectType for AutoRecord {
 pub struct AutoRecord_Beatmap {
     pub beatsPerMinute: f32,
     pub noteLineCount: i32,
-    pub items: *mut quest_hook::libil2cpp::Il2CppArray<*mut BeatmapDataItem>,
+    pub items: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::BeatmapDataItem,
+    >,
 }
 #[cfg(feature = "AutoRecord+Beatmap")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

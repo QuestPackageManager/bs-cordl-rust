@@ -4,31 +4,32 @@
 pub struct ResultsTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _tableView: *mut crate::HMUI::TableView,
-    pub _cellPrefab: *mut ResultsTableCell,
+    pub _cellPrefab: *mut crate::GlobalNamespace::ResultsTableCell,
     pub _rowHeight: f32,
     pub _dataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut MultiplayerPlayerResultsData,
+        *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
     >,
 }
 #[cfg(feature = "ResultsTableView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for ResultsTableView => ""."ResultsTableView"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::ResultsTableView => ""
+    ."ResultsTableView"
 );
 #[cfg(feature = "ResultsTableView")]
-impl std::ops::Deref for ResultsTableView {
+impl std::ops::Deref for crate::GlobalNamespace::ResultsTableView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ResultsTableView")]
-impl std::ops::DerefMut for ResultsTableView {
+impl std::ops::DerefMut for crate::GlobalNamespace::ResultsTableView {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "ResultsTableView")]
-impl ResultsTableView {
+impl crate::GlobalNamespace::ResultsTableView {
     pub const kCellIdentifier: &'static str = "Cell";
     pub fn CellForIdx(
         &mut self,
@@ -66,7 +67,7 @@ impl ResultsTableView {
     pub fn SetData(
         &mut self,
         dataList: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut MultiplayerPlayerResultsData,
+            *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -88,7 +89,7 @@ impl ResultsTableView {
     }
 }
 #[cfg(feature = "ResultsTableView")]
-impl quest_hook::libil2cpp::ObjectType for ResultsTableView {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ResultsTableView {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -3,29 +3,30 @@
 #[derive(Debug)]
 pub struct SaberModelContainer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _saber: *mut Saber,
-    pub _saberModelControllerPrefab: *mut SaberModelController,
+    pub _saber: *mut crate::GlobalNamespace::Saber,
+    pub _saberModelControllerPrefab: *mut crate::GlobalNamespace::SaberModelController,
     pub _container: *mut crate::Zenject::DiContainer,
 }
 #[cfg(feature = "SaberModelContainer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for SaberModelContainer => ""."SaberModelContainer"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SaberModelContainer => ""
+    ."SaberModelContainer"
 );
 #[cfg(feature = "SaberModelContainer")]
-impl std::ops::Deref for SaberModelContainer {
+impl std::ops::Deref for crate::GlobalNamespace::SaberModelContainer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberModelContainer")]
-impl std::ops::DerefMut for SaberModelContainer {
+impl std::ops::DerefMut for crate::GlobalNamespace::SaberModelContainer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SaberModelContainer")]
-impl SaberModelContainer {
+impl crate::GlobalNamespace::SaberModelContainer {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -55,7 +56,7 @@ impl SaberModelContainer {
     }
 }
 #[cfg(feature = "SaberModelContainer")]
-impl quest_hook::libil2cpp::ObjectType for SaberModelContainer {
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberModelContainer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

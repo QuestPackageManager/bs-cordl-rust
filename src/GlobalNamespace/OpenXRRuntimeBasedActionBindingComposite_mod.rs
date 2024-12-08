@@ -8,24 +8,27 @@ pub struct OpenXRRuntimeBasedActionBindingComposite {
 }
 #[cfg(feature = "OpenXRRuntimeBasedActionBindingComposite")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for OpenXRRuntimeBasedActionBindingComposite => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite => ""
     ."OpenXRRuntimeBasedActionBindingComposite"
 );
 #[cfg(feature = "OpenXRRuntimeBasedActionBindingComposite")]
-impl std::ops::Deref for OpenXRRuntimeBasedActionBindingComposite {
+impl std::ops::Deref
+for crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
     type Target = crate::UnityEngine::InputSystem::InputBindingComposite_1<f32>;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OpenXRRuntimeBasedActionBindingComposite")]
-impl std::ops::DerefMut for OpenXRRuntimeBasedActionBindingComposite {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "OpenXRRuntimeBasedActionBindingComposite")]
-impl OpenXRRuntimeBasedActionBindingComposite {
+impl crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
     pub fn EvaluateMagnitude(
         &mut self,
         context: quest_hook::libil2cpp::ByRefMut<
@@ -69,7 +72,8 @@ impl OpenXRRuntimeBasedActionBindingComposite {
     }
 }
 #[cfg(feature = "OpenXRRuntimeBasedActionBindingComposite")]
-impl quest_hook::libil2cpp::ObjectType for OpenXRRuntimeBasedActionBindingComposite {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

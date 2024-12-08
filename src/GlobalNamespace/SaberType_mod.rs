@@ -7,5 +7,5 @@ pub enum SaberType {
 }
 #[cfg(feature = "SaberType")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for SaberType => ""."SaberType"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SaberType => ""."SaberType"
 );

@@ -29,10 +29,10 @@ impl std::ops::DerefMut for crate::System::Security::Cryptography::DerSequenceRe
 }
 #[cfg(feature = "System+Security+Cryptography+DerSequenceReader")]
 impl crate::System::Security::Cryptography::DerSequenceReader {
-    #[cfg(feature = "System+Security+Cryptography+DerSequenceReader+__c")]
-    pub type __c = crate::System::Security::Cryptography::DerSequenceReader___c;
     #[cfg(feature = "System+Security+Cryptography+DerSequenceReader+DerTag")]
     pub type DerTag = crate::System::Security::Cryptography::DerSequenceReader_DerTag;
+    #[cfg(feature = "System+Security+Cryptography+DerSequenceReader+__c")]
+    pub type __c = crate::System::Security::Cryptography::DerSequenceReader___c;
     pub fn EatLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

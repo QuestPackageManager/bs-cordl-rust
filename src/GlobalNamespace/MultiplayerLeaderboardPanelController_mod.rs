@@ -4,30 +4,32 @@
 pub struct MultiplayerLeaderboardPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _items: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut MultiplayerLeaderboardPanelItem,
+        *mut crate::GlobalNamespace::MultiplayerLeaderboardPanelItem,
     >,
-    pub _scoreProvider: *mut MultiplayerScoreProvider,
+    pub _scoreProvider: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
 }
 #[cfg(feature = "MultiplayerLeaderboardPanelController")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for MultiplayerLeaderboardPanelController => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLeaderboardPanelController => ""
     ."MultiplayerLeaderboardPanelController"
 );
 #[cfg(feature = "MultiplayerLeaderboardPanelController")]
-impl std::ops::Deref for MultiplayerLeaderboardPanelController {
+impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLeaderboardPanelController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLeaderboardPanelController")]
-impl std::ops::DerefMut for MultiplayerLeaderboardPanelController {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::MultiplayerLeaderboardPanelController {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLeaderboardPanelController")]
-impl MultiplayerLeaderboardPanelController {
+impl crate::GlobalNamespace::MultiplayerLeaderboardPanelController {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -67,7 +69,8 @@ impl MultiplayerLeaderboardPanelController {
     }
 }
 #[cfg(feature = "MultiplayerLeaderboardPanelController")]
-impl quest_hook::libil2cpp::ObjectType for MultiplayerLeaderboardPanelController {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::MultiplayerLeaderboardPanelController {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

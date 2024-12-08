@@ -2,28 +2,28 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandaloneSettingsApplicatorSO {
-    __cordl_parent: SettingsApplicatorSO,
+    __cordl_parent: crate::GlobalNamespace::SettingsApplicatorSO,
 }
 #[cfg(feature = "StandaloneSettingsApplicatorSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for StandaloneSettingsApplicatorSO => ""
-    ."StandaloneSettingsApplicatorSO"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::StandaloneSettingsApplicatorSO
+    => ""."StandaloneSettingsApplicatorSO"
 );
 #[cfg(feature = "StandaloneSettingsApplicatorSO")]
-impl std::ops::Deref for StandaloneSettingsApplicatorSO {
-    type Target = SettingsApplicatorSO;
+impl std::ops::Deref for crate::GlobalNamespace::StandaloneSettingsApplicatorSO {
+    type Target = crate::GlobalNamespace::SettingsApplicatorSO;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandaloneSettingsApplicatorSO")]
-impl std::ops::DerefMut for StandaloneSettingsApplicatorSO {
+impl std::ops::DerefMut for crate::GlobalNamespace::StandaloneSettingsApplicatorSO {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "StandaloneSettingsApplicatorSO")]
-impl StandaloneSettingsApplicatorSO {
+impl crate::GlobalNamespace::StandaloneSettingsApplicatorSO {
     pub fn ApplyWindowSettings(
         &mut self,
         resolution: crate::UnityEngine::Vector2Int,
@@ -55,7 +55,8 @@ impl StandaloneSettingsApplicatorSO {
     }
 }
 #[cfg(feature = "StandaloneSettingsApplicatorSO")]
-impl quest_hook::libil2cpp::ObjectType for StandaloneSettingsApplicatorSO {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StandaloneSettingsApplicatorSO {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

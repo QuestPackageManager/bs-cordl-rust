@@ -2,29 +2,32 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GenericSignal_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: Signal,
+    __cordl_parent: crate::GlobalNamespace::Signal,
     pub _floatEvent: *mut crate::System::Action_1<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "GenericSignal_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for GenericSignal_1 < T > => ""."GenericSignal`1" < T >
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::GenericSignal_1 < T > => ""
+    ."GenericSignal`1" < T >
 );
 #[cfg(feature = "GenericSignal_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for GenericSignal_1<T> {
-    type Target = Signal;
+impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
+for crate::GlobalNamespace::GenericSignal_1<T> {
+    type Target = crate::GlobalNamespace::Signal;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GenericSignal_1")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for GenericSignal_1<T> {
+impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
+for crate::GlobalNamespace::GenericSignal_1<T> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "GenericSignal_1")]
-impl<T: quest_hook::libil2cpp::Type> GenericSignal_1<T> {
+impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::GenericSignal_1<T> {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -106,7 +109,7 @@ impl<T: quest_hook::libil2cpp::Type> GenericSignal_1<T> {
 }
 #[cfg(feature = "GenericSignal_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for GenericSignal_1<T> {
+for crate::GlobalNamespace::GenericSignal_1<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

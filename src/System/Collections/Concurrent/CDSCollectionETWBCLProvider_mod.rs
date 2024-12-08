@@ -27,24 +27,15 @@ for crate::System::Collections::Concurrent::CDSCollectionETWBCLProvider {
 }
 #[cfg(feature = "System+Collections+Concurrent+CDSCollectionETWBCLProvider")]
 impl crate::System::Collections::Concurrent::CDSCollectionETWBCLProvider {
-    pub fn ConcurrentBag_TryPeekSteals(
+    pub fn ConcurrentDictionary_AcquiringAllLocks(
         &mut self,
+        numOfBuckets: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConcurrentBag_TryPeekSteals", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ConcurrentBag_TryTakeSteals(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConcurrentBag_TryTakeSteals", ())?;
+            .invoke("ConcurrentDictionary_AcquiringAllLocks", (numOfBuckets))?;
         Ok(__cordl_ret)
     }
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {

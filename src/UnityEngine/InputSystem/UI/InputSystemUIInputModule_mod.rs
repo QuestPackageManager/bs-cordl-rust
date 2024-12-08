@@ -139,13 +139,13 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
     pub const kClickSpeed: f32 = 0.3f32;
     pub const kPixelPerLine: f32 = 20f32;
     #[cfg(
-        feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
-    )]
-    pub type InputActionReferenceState = crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionReferenceState;
-    #[cfg(
         feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
     )]
     pub type CursorLockBehavior = crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBehavior;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
+    )]
+    pub type InputActionReferenceState = crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionReferenceState;
     pub fn ActivateModule(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
