@@ -1,18 +1,3 @@
-#[cfg(feature = "SoloModeSelectionViewController+MenuType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum SoloModeSelectionViewController_MenuType {
-    Back = 3i32,
-    FreePlayMode = 0i32,
-    NoArrowsMode = 1i32,
-    OneSaberMode = 2i32,
-}
-#[cfg(feature = "SoloModeSelectionViewController+MenuType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SoloModeSelectionViewController_MenuType => ""
-    ."SoloModeSelectionViewController/MenuType"
-);
 #[cfg(feature = "SoloModeSelectionViewController")]
 #[repr(C)]
 #[derive(Debug)]
@@ -172,3 +157,18 @@ for crate::GlobalNamespace::SoloModeSelectionViewController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "SoloModeSelectionViewController+MenuType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum SoloModeSelectionViewController_MenuType {
+    Back = 3i32,
+    FreePlayMode = 0i32,
+    NoArrowsMode = 1i32,
+    OneSaberMode = 2i32,
+}
+#[cfg(feature = "SoloModeSelectionViewController+MenuType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SoloModeSelectionViewController_MenuType => ""
+    ."SoloModeSelectionViewController/MenuType"
+);

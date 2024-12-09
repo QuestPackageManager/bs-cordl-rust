@@ -137,7 +137,7 @@ impl crate::GlobalNamespace::QuickPlaySongPacksDropdown {
     }
     pub fn _LazyInit_b__15_1(
         &mut self,
-        pack: *mut crate::GlobalNamespace::QuickPlaySongPacksOverride_PredefinedPack,
+        pack: *mut crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_PredefinedPack,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem,
     > {

@@ -1,66 +1,3 @@
-#[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
-    pub _textCommitField: *mut crate::UnityEngine::UI::InputField,
-    pub _position: crate::UnityEngine::Vector3,
-    pub _rotation: crate::UnityEngine::Quaternion,
-    pub _scale: crate::UnityEngine::Vector3,
-    pub _rightControllerDirectTransform: *mut crate::UnityEngine::Transform,
-    pub _rightControllerRootTransform: *mut crate::UnityEngine::Transform,
-    pub _leftControllerDirectTransform: *mut crate::UnityEngine::Transform,
-    pub _leftControllerRootTransform: *mut crate::UnityEngine::Transform,
-    pub _controllerRayInteraction: bool,
-    pub _controllerDirectInteraction: bool,
-    pub _handLeft: *mut crate::GlobalNamespace::OVRHand,
-    pub _handRight: *mut crate::GlobalNamespace::OVRHand,
-    pub _handRayInteraction: bool,
-    pub _handDirectInteraction: bool,
-    pub _controllerRaycaster: *mut crate::UnityEngine::EventSystems::OVRPhysicsRaycaster,
-    pub _handRaycaster: *mut crate::UnityEngine::EventSystems::OVRPhysicsRaycaster,
-}
-#[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup => ""
-    ."OVRVirtualKeyboardSampleControls/OVRVirtualKeyboardBackup"
-);
-#[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
-impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
-    pub fn RestoreTo(
-        &mut self,
-        keyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "RestoreTo",
-            (keyboard),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        keyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (keyboard),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "OVRVirtualKeyboardSampleControls")]
 #[repr(C)]
 #[derive(Debug)]
@@ -240,5 +177,68 @@ for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
+    pub _textCommitField: *mut crate::UnityEngine::UI::InputField,
+    pub _position: crate::UnityEngine::Vector3,
+    pub _rotation: crate::UnityEngine::Quaternion,
+    pub _scale: crate::UnityEngine::Vector3,
+    pub _rightControllerDirectTransform: *mut crate::UnityEngine::Transform,
+    pub _rightControllerRootTransform: *mut crate::UnityEngine::Transform,
+    pub _leftControllerDirectTransform: *mut crate::UnityEngine::Transform,
+    pub _leftControllerRootTransform: *mut crate::UnityEngine::Transform,
+    pub _controllerRayInteraction: bool,
+    pub _controllerDirectInteraction: bool,
+    pub _handLeft: *mut crate::GlobalNamespace::OVRHand,
+    pub _handRight: *mut crate::GlobalNamespace::OVRHand,
+    pub _handRayInteraction: bool,
+    pub _handDirectInteraction: bool,
+    pub _controllerRaycaster: *mut crate::UnityEngine::EventSystems::OVRPhysicsRaycaster,
+    pub _handRaycaster: *mut crate::UnityEngine::EventSystems::OVRPhysicsRaycaster,
+}
+#[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup => ""
+    ."OVRVirtualKeyboardSampleControls/OVRVirtualKeyboardBackup"
+);
+#[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
+impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
+    pub fn RestoreTo(
+        &mut self,
+        keyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "RestoreTo",
+            (keyboard),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        keyboard: *mut crate::GlobalNamespace::OVRVirtualKeyboard,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (keyboard),
+        )?;
+        Ok(__cordl_ret)
     }
 }

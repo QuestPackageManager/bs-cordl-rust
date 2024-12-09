@@ -1,39 +1,3 @@
-#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+DeviceType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum TrackedPoseDriver_DeviceType {
-    GenericXRController = 1i32,
-    GenericXRDevice = 0i32,
-    GenericXRRemote = 2i32,
-}
-#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+DeviceType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType =>
-    "UnityEngine.SpatialTracking"."TrackedPoseDriver/DeviceType"
-);
-#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackedPose")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum TrackedPoseDriver_TrackedPose {
-    Center = 2i32,
-    ColorCamera = 6i32,
-    DepthCameraDeprecated = 7i32,
-    DeviceDeprecated = 9i32,
-    FisheyeCameraDeprected = 8i32,
-    Head = 3i32,
-    LeftEye = 0i32,
-    LeftPose = 4i32,
-    RemotePose = 10i32,
-    RightEye = 1i32,
-    RightPose = 5i32,
-}
-#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackedPose")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose =>
-    "UnityEngine.SpatialTracking"."TrackedPoseDriver/TrackedPose"
-);
 #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver")]
 #[repr(C)]
 #[derive(Debug)]
@@ -415,6 +379,42 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+DeviceType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TrackedPoseDriver_DeviceType {
+    GenericXRController = 1i32,
+    GenericXRDevice = 0i32,
+    GenericXRRemote = 2i32,
+}
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+DeviceType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType =>
+    "UnityEngine.SpatialTracking"."TrackedPoseDriver/DeviceType"
+);
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackedPose")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TrackedPoseDriver_TrackedPose {
+    Center = 2i32,
+    ColorCamera = 6i32,
+    DepthCameraDeprecated = 7i32,
+    DeviceDeprecated = 9i32,
+    FisheyeCameraDeprected = 8i32,
+    Head = 3i32,
+    LeftEye = 0i32,
+    LeftPose = 4i32,
+    RemotePose = 10i32,
+    RightEye = 1i32,
+    RightPose = 5i32,
+}
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackedPose")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose =>
+    "UnityEngine.SpatialTracking"."TrackedPoseDriver/TrackedPose"
+);
 #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackingType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

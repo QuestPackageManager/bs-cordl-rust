@@ -297,7 +297,7 @@ for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
 #[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler")]
 impl crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
     #[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
-    pub type Map = crate::System::Xml::Schema::FacetsCompiler_Map;
+    pub type Map = crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map;
     pub fn CheckDupFlag(
         &mut self,
         facet: *mut crate::System::Xml::Schema::XmlSchemaFacet,
@@ -554,18 +554,19 @@ impl crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
 #[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
 #[repr(C)]
 #[derive(Debug, Clone)]
-pub struct FacetsCompiler_Map {
+pub struct FacetsCompiler_FacetsChecker_Map {
     pub _cordl_match: char,
     pub replacement: *mut crate::System::String,
 }
 #[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::Schema::FacetsCompiler_Map =>
-    "System.Xml.Schema"."FacetsChecker/FacetsCompiler/Map"
+    in quest_hook::libil2cpp for crate
+    ::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map => "System.Xml.Schema"
+    ."FacetsChecker/FacetsCompiler/Map"
 );
 #[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Xml::Schema::FacetsCompiler_Map {
+for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -575,7 +576,7 @@ for crate::System::Xml::Schema::FacetsCompiler_Map {
     }
 }
 #[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
-impl crate::System::Xml::Schema::FacetsCompiler_Map {
+impl crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
     pub fn _ctor(
         &mut self,
         m: char,

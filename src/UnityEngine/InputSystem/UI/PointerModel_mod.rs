@@ -1,168 +1,3 @@
-#[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel+ButtonState")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct PointerModel_ButtonState {
-    pub m_IsPressed: bool,
-    pub m_FramePressState: crate::UnityEngine::EventSystems::PointerEventData_FramePressState,
-    pub m_PressTime: f32,
-    pub m_PressRaycast: crate::UnityEngine::EventSystems::RaycastResult,
-    pub m_PressObject: *mut crate::UnityEngine::GameObject,
-    pub m_RawPressObject: *mut crate::UnityEngine::GameObject,
-    pub m_LastPressObject: *mut crate::UnityEngine::GameObject,
-    pub m_DragObject: *mut crate::UnityEngine::GameObject,
-    pub m_PressPosition: crate::UnityEngine::Vector2,
-    pub m_ClickTime: f32,
-    pub m_ClickCount: i32,
-    pub m_Dragging: bool,
-    pub m_ClickedOnSameGameObject: bool,
-    pub m_IgnoreNextClick: bool,
-}
-#[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel+ButtonState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::UI::PointerModel_ButtonState =>
-    "UnityEngine.InputSystem.UI"."PointerModel/ButtonState"
-);
-#[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel+ButtonState")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::UI::PointerModel_ButtonState {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel+ButtonState")]
-impl crate::UnityEngine::InputSystem::UI::PointerModel_ButtonState {
-    pub fn CopyPressStateFrom(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CopyPressStateFrom",
-            (eventData),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn CopyPressStateTo(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CopyPressStateTo",
-            (eventData),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnEndFrame(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "OnEndFrame",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_clickedOnSameGameObject(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_clickedOnSameGameObject",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ignoreNextClick(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_ignoreNextClick",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isPressed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isPressed",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_pressTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_pressTime",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_wasPressedThisFrame(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_wasPressedThisFrame",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_wasReleasedThisFrame(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_wasReleasedThisFrame",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_clickedOnSameGameObject(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_clickedOnSameGameObject",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ignoreNextClick(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_ignoreNextClick",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_isPressed(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_isPressed",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_pressTime(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_pressTime",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -423,6 +258,171 @@ impl crate::UnityEngine::InputSystem::UI::PointerModel {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "set_worldPosition",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel+ButtonState")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct PointerModel_ButtonState {
+    pub m_IsPressed: bool,
+    pub m_FramePressState: crate::UnityEngine::EventSystems::PointerEventData_FramePressState,
+    pub m_PressTime: f32,
+    pub m_PressRaycast: crate::UnityEngine::EventSystems::RaycastResult,
+    pub m_PressObject: *mut crate::UnityEngine::GameObject,
+    pub m_RawPressObject: *mut crate::UnityEngine::GameObject,
+    pub m_LastPressObject: *mut crate::UnityEngine::GameObject,
+    pub m_DragObject: *mut crate::UnityEngine::GameObject,
+    pub m_PressPosition: crate::UnityEngine::Vector2,
+    pub m_ClickTime: f32,
+    pub m_ClickCount: i32,
+    pub m_Dragging: bool,
+    pub m_ClickedOnSameGameObject: bool,
+    pub m_IgnoreNextClick: bool,
+}
+#[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel+ButtonState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::UI::PointerModel_ButtonState =>
+    "UnityEngine.InputSystem.UI"."PointerModel/ButtonState"
+);
+#[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel+ButtonState")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::UI::PointerModel_ButtonState {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel+ButtonState")]
+impl crate::UnityEngine::InputSystem::UI::PointerModel_ButtonState {
+    pub fn CopyPressStateFrom(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CopyPressStateFrom",
+            (eventData),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn CopyPressStateTo(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CopyPressStateTo",
+            (eventData),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnEndFrame(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "OnEndFrame",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_clickedOnSameGameObject(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_clickedOnSameGameObject",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ignoreNextClick(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_ignoreNextClick",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isPressed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_isPressed",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_pressTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_pressTime",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_wasPressedThisFrame(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_wasPressedThisFrame",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_wasReleasedThisFrame(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_wasReleasedThisFrame",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_clickedOnSameGameObject(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_clickedOnSameGameObject",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ignoreNextClick(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_ignoreNextClick",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_isPressed(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_isPressed",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_pressTime(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_pressTime",
             (value),
         )?;
         Ok(__cordl_ret)

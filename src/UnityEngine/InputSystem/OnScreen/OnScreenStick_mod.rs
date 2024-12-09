@@ -1,17 +1,3 @@
-#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick+Behaviour")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OnScreenStick_Behaviour {
-    ExactPositionWithDynamicOrigin = 2i32,
-    ExactPositionWithStaticOrigin = 1i32,
-    RelativePositionWithStaticOrigin = 0i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick+Behaviour")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::OnScreen::OnScreenStick_Behaviour =>
-    "UnityEngine.InputSystem.OnScreen"."OnScreenStick/Behaviour"
-);
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick")]
 #[repr(C)]
 #[derive(Debug)]
@@ -336,3 +322,17 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick+Behaviour")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OnScreenStick_Behaviour {
+    ExactPositionWithDynamicOrigin = 2i32,
+    ExactPositionWithStaticOrigin = 1i32,
+    RelativePositionWithStaticOrigin = 0i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick+Behaviour")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::OnScreen::OnScreenStick_Behaviour =>
+    "UnityEngine.InputSystem.OnScreen"."OnScreenStick/Behaviour"
+);

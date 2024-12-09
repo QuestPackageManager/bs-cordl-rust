@@ -1,15 +1,3 @@
-#[cfg(feature = "EnvironmentSizeData+CeilingType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum EnvironmentSizeData_CeilingType {
-    LowCeiling = 1i32,
-    NoCeiling = 0i32,
-}
-#[cfg(feature = "EnvironmentSizeData+CeilingType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnvironmentSizeData_CeilingType
-    => ""."EnvironmentSizeData/CeilingType"
-);
 #[cfg(feature = "EnvironmentSizeData")]
 #[repr(C)]
 #[derive(Debug)]
@@ -108,6 +96,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EnvironmentSi
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "EnvironmentSizeData+CeilingType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum EnvironmentSizeData_CeilingType {
+    LowCeiling = 1i32,
+    NoCeiling = 0i32,
+}
+#[cfg(feature = "EnvironmentSizeData+CeilingType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EnvironmentSizeData_CeilingType
+    => ""."EnvironmentSizeData/CeilingType"
+);
 #[cfg(feature = "EnvironmentSizeData+FloorType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

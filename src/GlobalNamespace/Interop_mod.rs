@@ -1,39 +1,42 @@
-#[cfg(feature = "Interop+Sys+DirectoryEntry")]
+#[cfg(feature = "Interop")]
 #[repr(C)]
-#[derive(Debug, Clone)]
-pub struct Sys_DirectoryEntry {
-    pub Name: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub NameLength: i32,
-    pub InodeType: crate::GlobalNamespace::Sys_NodeType,
+#[derive(Debug)]
+pub struct Interop {
+    __cordl_parent: crate::System::Object,
 }
-#[cfg(feature = "Interop+Sys+DirectoryEntry")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::Sys_DirectoryEntry => ""
-    ."Interop/Sys/DirectoryEntry"
+#[cfg(feature = "Interop")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::Interop => ""."Interop"
 );
-#[cfg(feature = "Interop+Sys+DirectoryEntry")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::Sys_DirectoryEntry {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+#[cfg(feature = "Interop")]
+impl std::ops::Deref for crate::GlobalNamespace::Interop {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "Interop+Sys+DirectoryEntry")]
-impl crate::GlobalNamespace::Sys_DirectoryEntry {
-    pub fn GetName(
-        &mut self,
-        buffer: crate::System::Span_1<char>,
-    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetName",
-            (buffer),
-        )?;
-        Ok(__cordl_ret)
+#[cfg(feature = "Interop")]
+impl std::ops::DerefMut for crate::GlobalNamespace::Interop {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Interop")]
+impl crate::GlobalNamespace::Interop {
+    #[cfg(feature = "Interop+Error")]
+    pub type Error = crate::GlobalNamespace::Interop_Error;
+    #[cfg(feature = "Interop+ErrorInfo")]
+    pub type ErrorInfo = crate::GlobalNamespace::Interop_ErrorInfo;
+    #[cfg(feature = "Interop+Sys")]
+    pub type Sys = crate::GlobalNamespace::Interop_Sys;
+}
+#[cfg(feature = "Interop")]
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interop {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
 #[cfg(feature = "Interop+Error")]
@@ -211,140 +214,6 @@ impl crate::GlobalNamespace::Interop_ErrorInfo {
         Ok(__cordl_ret)
     }
 }
-#[cfg(feature = "Interop+Sys+FileStatus")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct Sys_FileStatus {
-    pub Flags: crate::GlobalNamespace::Sys_FileStatusFlags,
-    pub Mode: i32,
-    pub Uid: u32,
-    pub Gid: u32,
-    pub Size: i64,
-    pub ATime: i64,
-    pub ATimeNsec: i64,
-    pub MTime: i64,
-    pub MTimeNsec: i64,
-    pub CTime: i64,
-    pub CTimeNsec: i64,
-    pub BirthTime: i64,
-    pub BirthTimeNsec: i64,
-    pub Dev: i64,
-    pub Ino: i64,
-    pub UserFlags: u32,
-}
-#[cfg(feature = "Interop+Sys+FileStatus")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::Sys_FileStatus => ""
-    ."Interop/Sys/FileStatus"
-);
-#[cfg(feature = "Interop+Sys+FileStatus")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::Sys_FileStatus {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "Interop+Sys+FileStatus")]
-impl crate::GlobalNamespace::Sys_FileStatus {}
-#[cfg(feature = "Interop+Sys+FileStatusFlags")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Sys_FileStatusFlags {
-    HasBirthTime = 1i32,
-    None = 0i32,
-}
-#[cfg(feature = "Interop+Sys+FileStatusFlags")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::Sys_FileStatusFlags => ""
-    ."Interop/Sys/FileStatusFlags"
-);
-#[cfg(feature = "Interop")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct Interop {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "Interop")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::Interop => ""."Interop"
-);
-#[cfg(feature = "Interop")]
-impl std::ops::Deref for crate::GlobalNamespace::Interop {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Interop")]
-impl std::ops::DerefMut for crate::GlobalNamespace::Interop {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Interop")]
-impl crate::GlobalNamespace::Interop {
-    #[cfg(feature = "Interop+Error")]
-    pub type Error = crate::GlobalNamespace::Interop_Error;
-    #[cfg(feature = "Interop+ErrorInfo")]
-    pub type ErrorInfo = crate::GlobalNamespace::Interop_ErrorInfo;
-    #[cfg(feature = "Interop+Sys")]
-    pub type Sys = crate::GlobalNamespace::Interop_Sys;
-}
-#[cfg(feature = "Interop")]
-impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interop {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "Interop+Sys+NodeType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Sys_NodeType {
-    DT_BLK = 6i32,
-    DT_CHR = 2i32,
-    DT_DIR = 4i32,
-    DT_FIFO = 1i32,
-    DT_LNK = 10i32,
-    DT_REG = 8i32,
-    DT_SOCK = 12i32,
-    DT_UNKNOWN = 0i32,
-    DT_WHT = 14i32,
-}
-#[cfg(feature = "Interop+Sys+NodeType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::Sys_NodeType => ""
-    ."Interop/Sys/NodeType"
-);
-#[cfg(feature = "Interop+Sys+Permissions")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Sys_Permissions {
-    Mask = 511i32,
-    S_IRGRP = 32i32,
-    S_IROTH = 4i32,
-    S_IRUSR = 256i32,
-    S_IRWXG = 56i32,
-    S_IRWXO = 7i32,
-    S_IRWXU = 448i32,
-    S_IWGRP = 16i32,
-    S_IWOTH = 2i32,
-    S_IWUSR = 128i32,
-    S_IXGRP = 8i32,
-    S_IXOTH = 1i32,
-    S_IXUSR = 64i32,
-}
-#[cfg(feature = "Interop+Sys+Permissions")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::Sys_Permissions => ""
-    ."Interop/Sys/Permissions"
-);
 #[cfg(feature = "Interop+Sys")]
 #[repr(C)]
 #[derive(Debug)]
@@ -371,15 +240,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::Interop_Sys {
 #[cfg(feature = "Interop+Sys")]
 impl crate::GlobalNamespace::Interop_Sys {
     #[cfg(feature = "Interop+Sys+DirectoryEntry")]
-    pub type DirectoryEntry = crate::GlobalNamespace::Sys_DirectoryEntry;
+    pub type DirectoryEntry = crate::GlobalNamespace::Sys_Interop_DirectoryEntry;
     #[cfg(feature = "Interop+Sys+FileStatus")]
-    pub type FileStatus = crate::GlobalNamespace::Sys_FileStatus;
+    pub type FileStatus = crate::GlobalNamespace::Sys_Interop_FileStatus;
     #[cfg(feature = "Interop+Sys+FileStatusFlags")]
-    pub type FileStatusFlags = crate::GlobalNamespace::Sys_FileStatusFlags;
+    pub type FileStatusFlags = crate::GlobalNamespace::Sys_Interop_FileStatusFlags;
     #[cfg(feature = "Interop+Sys+NodeType")]
-    pub type NodeType = crate::GlobalNamespace::Sys_NodeType;
+    pub type NodeType = crate::GlobalNamespace::Sys_Interop_NodeType;
     #[cfg(feature = "Interop+Sys+Permissions")]
-    pub type Permissions = crate::GlobalNamespace::Sys_Permissions;
+    pub type Permissions = crate::GlobalNamespace::Sys_Interop_Permissions;
 }
 #[cfg(feature = "Interop+Sys")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interop_Sys {
@@ -390,3 +259,134 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interop_Sys {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Interop+Sys+DirectoryEntry")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct Sys_Interop_DirectoryEntry {
+    pub Name: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub NameLength: i32,
+    pub InodeType: crate::GlobalNamespace::Sys_Interop_NodeType,
+}
+#[cfg(feature = "Interop+Sys+DirectoryEntry")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::Sys_Interop_DirectoryEntry =>
+    ""."Interop/Sys/DirectoryEntry"
+);
+#[cfg(feature = "Interop+Sys+DirectoryEntry")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "Interop+Sys+DirectoryEntry")]
+impl crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
+    pub fn GetName(
+        &mut self,
+        buffer: crate::System::Span_1<char>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
+        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetName",
+            (buffer),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "Interop+Sys+FileStatus")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct Sys_Interop_FileStatus {
+    pub Flags: crate::GlobalNamespace::Sys_Interop_FileStatusFlags,
+    pub Mode: i32,
+    pub Uid: u32,
+    pub Gid: u32,
+    pub Size: i64,
+    pub ATime: i64,
+    pub ATimeNsec: i64,
+    pub MTime: i64,
+    pub MTimeNsec: i64,
+    pub CTime: i64,
+    pub CTimeNsec: i64,
+    pub BirthTime: i64,
+    pub BirthTimeNsec: i64,
+    pub Dev: i64,
+    pub Ino: i64,
+    pub UserFlags: u32,
+}
+#[cfg(feature = "Interop+Sys+FileStatus")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::Sys_Interop_FileStatus => ""
+    ."Interop/Sys/FileStatus"
+);
+#[cfg(feature = "Interop+Sys+FileStatus")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::Sys_Interop_FileStatus {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "Interop+Sys+FileStatus")]
+impl crate::GlobalNamespace::Sys_Interop_FileStatus {}
+#[cfg(feature = "Interop+Sys+FileStatusFlags")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Sys_Interop_FileStatusFlags {
+    HasBirthTime = 1i32,
+    None = 0i32,
+}
+#[cfg(feature = "Interop+Sys+FileStatusFlags")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::Sys_Interop_FileStatusFlags =>
+    ""."Interop/Sys/FileStatusFlags"
+);
+#[cfg(feature = "Interop+Sys+NodeType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Sys_Interop_NodeType {
+    DT_BLK = 6i32,
+    DT_CHR = 2i32,
+    DT_DIR = 4i32,
+    DT_FIFO = 1i32,
+    DT_LNK = 10i32,
+    DT_REG = 8i32,
+    DT_SOCK = 12i32,
+    DT_UNKNOWN = 0i32,
+    DT_WHT = 14i32,
+}
+#[cfg(feature = "Interop+Sys+NodeType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::Sys_Interop_NodeType => ""
+    ."Interop/Sys/NodeType"
+);
+#[cfg(feature = "Interop+Sys+Permissions")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Sys_Interop_Permissions {
+    Mask = 511i32,
+    S_IRGRP = 32i32,
+    S_IROTH = 4i32,
+    S_IRUSR = 256i32,
+    S_IRWXG = 56i32,
+    S_IRWXO = 7i32,
+    S_IRWXU = 448i32,
+    S_IWGRP = 16i32,
+    S_IWOTH = 2i32,
+    S_IWUSR = 128i32,
+    S_IXGRP = 8i32,
+    S_IXOTH = 1i32,
+    S_IXUSR = 64i32,
+}
+#[cfg(feature = "Interop+Sys+Permissions")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::Sys_Interop_Permissions => ""
+    ."Interop/Sys/Permissions"
+);

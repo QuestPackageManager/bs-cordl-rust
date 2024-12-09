@@ -1,24 +1,3 @@
-#[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Anchor")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum AutoUnwrapSettings_Anchor {
-    LowerCenter = 7i32,
-    LowerLeft = 6i32,
-    LowerRight = 8i32,
-    MiddleCenter = 4i32,
-    MiddleLeft = 3i32,
-    MiddleRight = 5i32,
-    None = 9i32,
-    UpperCenter = 1i32,
-    UpperLeft = 0i32,
-    UpperRight = 2i32,
-}
-#[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Anchor")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor => "UnityEngine.ProBuilder"
-    ."AutoUnwrapSettings/Anchor"
-);
 #[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -270,6 +249,27 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         Ok(__cordl_ret)
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Anchor")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum AutoUnwrapSettings_Anchor {
+    LowerCenter = 7i32,
+    LowerLeft = 6i32,
+    LowerRight = 8i32,
+    MiddleCenter = 4i32,
+    MiddleLeft = 3i32,
+    MiddleRight = 5i32,
+    None = 9i32,
+    UpperCenter = 1i32,
+    UpperLeft = 0i32,
+    UpperRight = 2i32,
+}
+#[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Anchor")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor => "UnityEngine.ProBuilder"
+    ."AutoUnwrapSettings/Anchor"
+);
 #[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Fill")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

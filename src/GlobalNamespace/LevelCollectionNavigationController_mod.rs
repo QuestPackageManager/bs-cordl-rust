@@ -1,16 +1,3 @@
-#[cfg(feature = "LevelCollectionNavigationController+AlphaAnimationType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum LevelCollectionNavigationController_AlphaAnimationType {
-    In = 0i32,
-    Out = 1i32,
-}
-#[cfg(feature = "LevelCollectionNavigationController+AlphaAnimationType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationType => ""
-    ."LevelCollectionNavigationController/AlphaAnimationType"
-);
 #[cfg(feature = "LevelCollectionNavigationController")]
 #[repr(C)]
 #[derive(Debug)]
@@ -644,3 +631,16 @@ for crate::GlobalNamespace::LevelCollectionNavigationController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LevelCollectionNavigationController+AlphaAnimationType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum LevelCollectionNavigationController_AlphaAnimationType {
+    In = 0i32,
+    Out = 1i32,
+}
+#[cfg(feature = "LevelCollectionNavigationController+AlphaAnimationType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationType => ""
+    ."LevelCollectionNavigationController/AlphaAnimationType"
+);

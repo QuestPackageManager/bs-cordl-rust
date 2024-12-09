@@ -1,1114 +1,3 @@
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct VisualElement_BaseVisualElementScheduledItem {
-    __cordl_parent: crate::UnityEngine::UIElements::ScheduledItem,
-    pub _element_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub isScheduled: bool,
-    pub m_Activator: *mut crate::UnityEngine::UIElements::VisualElementPanelActivator,
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem =>
-    "UnityEngine.UIElements"."VisualElement/BaseVisualElementScheduledItem"
-);
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
-impl std::ops::Deref
-for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem {
-    type Target = crate::UnityEngine::UIElements::ScheduledItem;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
-impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
-impl crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem {
-    pub fn CanBeActivated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("CanBeActivated", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Every(
-        &mut self,
-        intervalMs: i64,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem = __cordl_object
-            .invoke("Every", (intervalMs))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ExecuteLater(
-        &mut self,
-        delayMs: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExecuteLater", (delayMs))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        handler: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (handler))?;
-        Ok(__cordl_object)
-    }
-    pub fn OnItemUnscheduled(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnItemUnscheduled", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPanelActivate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPanelActivate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPanelDeactivate(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPanelDeactivate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Pause(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Pause", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Resume(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Resume", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn StartingIn(
-        &mut self,
-        delayMs: i64,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem = __cordl_object
-            .invoke("StartingIn", (delayMs))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        handler: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (handler))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_element(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
-            .invoke("get_element", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_element(
-        &mut self,
-        value: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_element", (value))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct VisualElement_CustomStyleAccess {
-    __cordl_parent: crate::System::Object,
-    pub m_CustomProperties: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
-        crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
-    >,
-    pub m_DpiScaling: f32,
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::VisualElement_CustomStyleAccess =>
-    "UnityEngine.UIElements"."VisualElement/CustomStyleAccess"
-);
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
-impl std::ops::Deref
-for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
-impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
-impl crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn SetContext(
-        &mut self,
-        customProperties: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
-        >,
-        dpiScaling: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetContext", (customProperties, dpiScaling))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetValue_CustomStyleProperty_1_ByRefMut0(
-        &mut self,
-        property: crate::UnityEngine::UIElements::CustomStyleProperty_1<f32>,
-        value: quest_hook::libil2cpp::ByRefMut<f32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetValue_CustomStyleProperty_1_ByRefMut1(
-        &mut self,
-        property: crate::UnityEngine::UIElements::CustomStyleProperty_1<i32>,
-        value: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetValue_CustomStyleProperty_1_ByRefMut2(
-        &mut self,
-        property: crate::UnityEngine::UIElements::CustomStyleProperty_1<
-            crate::UnityEngine::Color,
-        >,
-        value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetValue_CustomStyleProperty_1_ByRefMut3(
-        &mut self,
-        property: crate::UnityEngine::UIElements::CustomStyleProperty_1<
-            *mut crate::UnityEngine::Texture2D,
-        >,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Texture2D>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetValue_CustomStyleProperty_1_ByRefMut4(
-        &mut self,
-        property: crate::UnityEngine::UIElements::CustomStyleProperty_1<
-            *mut crate::UnityEngine::Sprite,
-        >,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Sprite>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetValue_CustomStyleProperty_1_ByRefMut5(
-        &mut self,
-        property: crate::UnityEngine::UIElements::CustomStyleProperty_1<
-            *mut crate::UnityEngine::UIElements::VectorImage,
-        >,
-        value: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::UnityEngine::UIElements::VectorImage,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetValue_CustomStyleProperty_1_ByRefMut6(
-        &mut self,
-        property: crate::UnityEngine::UIElements::CustomStyleProperty_1<
-            *mut crate::System::String,
-        >,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TryGetValue_String_StyleValueType_ByRefMut7(
-        &mut self,
-        propertyName: *mut crate::System::String,
-        valueType: crate::UnityEngine::UIElements::StyleValueType,
-        customProp: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetValue", (propertyName, valueType, customProp))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct VisualElement_Hierarchy {
-    pub m_Owner: *mut crate::UnityEngine::UIElements::VisualElement,
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::VisualElement_Hierarchy
-    => "UnityEngine.UIElements"."VisualElement/Hierarchy"
-);
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
-impl crate::UnityEngine::UIElements::VisualElement_Hierarchy {
-    pub const k_InvalidHierarchyChangeMsg: &'static str = "Cannot modify VisualElement hierarchy during layout calculation";
-    pub fn Add(
-        &mut self,
-        child: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Add",
-            (child),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn BringToFront(
-        &mut self,
-        child: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "BringToFront",
-            (child),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Children(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-        >,
-    > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "Children", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Clear",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ElementAt(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ElementAt",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_VisualElement_Hierarchy0(
-        &mut self,
-        other: crate::UnityEngine::UIElements::VisualElement_Hierarchy,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IndexOf(
-        &mut self,
-        element: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IndexOf",
-            (element),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Insert(
-        &mut self,
-        index: i32,
-        child: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Insert",
-            (index, child),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveChildElement(
-        &mut self,
-        child: *mut crate::UnityEngine::UIElements::VisualElement,
-        currentIndex: i32,
-        nextIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveChildElement",
-            (child, currentIndex, nextIndex),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn PlaceBehind(
-        &mut self,
-        child: *mut crate::UnityEngine::UIElements::VisualElement,
-        over: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "PlaceBehind",
-            (child, over),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn PutChildAtIndex(
-        &mut self,
-        child: *mut crate::UnityEngine::UIElements::VisualElement,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "PutChildAtIndex",
-            (child, index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReleaseChildList(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ReleaseChildList",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Remove(
-        &mut self,
-        child: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Remove",
-            (child),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveAt(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "RemoveAt",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveChildAtIndex(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "RemoveChildAtIndex",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SendToBack(
-        &mut self,
-        child: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SendToBack",
-            (child),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetParent(
-        &mut self,
-        value: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetParent",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        element: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (element),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item(
-        &mut self,
-        key: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Item",
-            (key),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_childCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_childCount",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_children(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-        >,
-    > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::VisualElement,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_children", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_parent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_parent",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+MeasureMode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum VisualElement_MeasureMode {
-    AtMost = 2i32,
-    Exactly = 1i32,
-    Undefined = 0i32,
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+MeasureMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::VisualElement_MeasureMode => "UnityEngine.UIElements"
-    ."VisualElement/MeasureMode"
-);
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+RenderTargetMode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum VisualElement_RenderTargetMode {
-    GammaToLinear = 3i32,
-    LinearToGamma = 2i32,
-    NoColorConversion = 1i32,
-    None = 0i32,
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+RenderTargetMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::VisualElement_RenderTargetMode => "UnityEngine.UIElements"
-    ."VisualElement/RenderTargetMode"
-);
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct VisualElement_SimpleScheduledItem {
-    __cordl_parent: crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
-        *mut crate::System::Action,
-    >,
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::VisualElement_SimpleScheduledItem =>
-    "UnityEngine.UIElements"."VisualElement/SimpleScheduledItem"
-);
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
-impl std::ops::Deref
-for crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem {
-    type Target = crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
-        *mut crate::System::Action,
-    >;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
-impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
-impl crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem {
-    pub fn New(
-        handler: *mut crate::UnityEngine::UIElements::VisualElement,
-        updateEvent: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (handler, updateEvent))?;
-        Ok(__cordl_object)
-    }
-    pub fn PerformTimerUpdate(
-        &mut self,
-        state: crate::UnityEngine::UIElements::TimerState,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PerformTimerUpdate", (state))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        handler: *mut crate::UnityEngine::UIElements::VisualElement,
-        updateEvent: *mut crate::System::Action,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (handler, updateEvent))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct VisualElement_TimerStateScheduledItem {
-    __cordl_parent: crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
-        *mut crate::System::Action_1<crate::UnityEngine::UIElements::TimerState>,
-    >,
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem =>
-    "UnityEngine.UIElements"."VisualElement/TimerStateScheduledItem"
-);
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
-impl std::ops::Deref
-for crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
-    type Target = crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
-        *mut crate::System::Action_1<crate::UnityEngine::UIElements::TimerState>,
-    >;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
-impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
-impl crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
-    pub fn New(
-        handler: *mut crate::UnityEngine::UIElements::VisualElement,
-        updateEvent: *mut crate::System::Action_1<
-            crate::UnityEngine::UIElements::TimerState,
-        >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (handler, updateEvent))?;
-        Ok(__cordl_object)
-    }
-    pub fn PerformTimerUpdate(
-        &mut self,
-        state: crate::UnityEngine::UIElements::TimerState,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PerformTimerUpdate", (state))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        handler: *mut crate::UnityEngine::UIElements::VisualElement,
-        updateEvent: *mut crate::System::Action_1<
-            crate::UnityEngine::UIElements::TimerState,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (handler, updateEvent))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct VisualElement_TypeData {
-    __cordl_parent: crate::System::Object,
-    pub _type_k__BackingField: *mut crate::System::Type,
-    pub m_FullTypeName: *mut crate::System::String,
-    pub m_TypeName: *mut crate::System::String,
-    pub m_TypeNamespace: *mut crate::System::String,
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::VisualElement_TypeData
-    => "UnityEngine.UIElements"."VisualElement/TypeData"
-);
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
-impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElement_TypeData {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
-impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElement_TypeData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
-impl crate::UnityEngine::UIElements::VisualElement_TypeData {
-    pub fn New(
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (_cordl_type))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_type))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_fullTypeName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_fullTypeName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_type", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_typeName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_typeName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_typeNamespace(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_typeNamespace", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::VisualElement_TypeData {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct VisualElement_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-        *mut crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
-    >,
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::VisualElement_UxmlFactory => "UnityEngine.UIElements"
-    ."VisualElement/UxmlFactory"
-);
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
-impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElement_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-        *mut crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
-    >;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
-impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElement_UxmlFactory {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
-impl crate::UnityEngine::UIElements::VisualElement_UxmlFactory {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::VisualElement_UxmlFactory {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct VisualElement_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlTraits,
-    pub m_Name: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_ViewDataKey: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_PickingMode: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::UIElements::PickingMode,
-    >,
-    pub m_Tooltip: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_UsageHints: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-        crate::UnityEngine::UIElements::UsageHints,
-    >,
-    pub _focusIndex_k__BackingField: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub m_TabIndex: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    pub _focusable_k__BackingField: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    pub m_Class: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_ContentContainer: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-    pub m_Style: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::VisualElement_UxmlTraits => "UnityEngine.UIElements"
-    ."VisualElement/UxmlTraits"
-);
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
-impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElement_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::UxmlTraits;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
-impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElement_UxmlTraits {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
-impl crate::UnityEngine::UIElements::VisualElement_UxmlTraits {
-    pub fn Init(
-        &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-        bag: *mut crate::UnityEngine::UIElements::IUxmlAttributes,
-        cc: crate::UnityEngine::UIElements::CreationContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (ve, bag, cc))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_focusIndex(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription = __cordl_object
-            .invoke("get_focusIndex", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_focusable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription = __cordl_object
-            .invoke("get_focusable", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::VisualElement_UxmlTraits {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "UnityEngine+UIElements+VisualElement")]
 #[repr(C)]
 #[derive(Debug)]
@@ -4671,6 +3560,1117 @@ impl crate::UnityEngine::UIElements::VisualElement {
 #[cfg(feature = "UnityEngine+UIElements+VisualElement")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::VisualElement {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct VisualElement_BaseVisualElementScheduledItem {
+    __cordl_parent: crate::UnityEngine::UIElements::ScheduledItem,
+    pub _element_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub isScheduled: bool,
+    pub m_Activator: *mut crate::UnityEngine::UIElements::VisualElementPanelActivator,
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem =>
+    "UnityEngine.UIElements"."VisualElement/BaseVisualElementScheduledItem"
+);
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
+impl std::ops::Deref
+for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem {
+    type Target = crate::UnityEngine::UIElements::ScheduledItem;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
+impl std::ops::DerefMut
+for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
+impl crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem {
+    pub fn CanBeActivated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("CanBeActivated", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Every(
+        &mut self,
+        intervalMs: i64,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem = __cordl_object
+            .invoke("Every", (intervalMs))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ExecuteLater(
+        &mut self,
+        delayMs: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ExecuteLater", (delayMs))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        handler: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (handler))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnItemUnscheduled(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnItemUnscheduled", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPanelActivate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPanelActivate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPanelDeactivate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPanelDeactivate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Pause(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Pause", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Resume(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Resume", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartingIn(
+        &mut self,
+        delayMs: i64,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem = __cordl_object
+            .invoke("StartingIn", (delayMs))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        handler: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (handler))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_element(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
+            .invoke("get_element", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_element(
+        &mut self,
+        value: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_element", (value))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct VisualElement_CustomStyleAccess {
+    __cordl_parent: crate::System::Object,
+    pub m_CustomProperties: *mut crate::System::Collections::Generic::Dictionary_2<
+        *mut crate::System::String,
+        crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+    >,
+    pub m_DpiScaling: f32,
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::VisualElement_CustomStyleAccess =>
+    "UnityEngine.UIElements"."VisualElement/CustomStyleAccess"
+);
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
+impl std::ops::Deref
+for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
+impl std::ops::DerefMut
+for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
+impl crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SetContext(
+        &mut self,
+        customProperties: *mut crate::System::Collections::Generic::Dictionary_2<
+            *mut crate::System::String,
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        >,
+        dpiScaling: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetContext", (customProperties, dpiScaling))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetValue_CustomStyleProperty_1_ByRefMut0(
+        &mut self,
+        property: crate::UnityEngine::UIElements::CustomStyleProperty_1<f32>,
+        value: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetValue_CustomStyleProperty_1_ByRefMut1(
+        &mut self,
+        property: crate::UnityEngine::UIElements::CustomStyleProperty_1<i32>,
+        value: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetValue_CustomStyleProperty_1_ByRefMut2(
+        &mut self,
+        property: crate::UnityEngine::UIElements::CustomStyleProperty_1<
+            crate::UnityEngine::Color,
+        >,
+        value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetValue_CustomStyleProperty_1_ByRefMut3(
+        &mut self,
+        property: crate::UnityEngine::UIElements::CustomStyleProperty_1<
+            *mut crate::UnityEngine::Texture2D,
+        >,
+        value: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Texture2D>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetValue_CustomStyleProperty_1_ByRefMut4(
+        &mut self,
+        property: crate::UnityEngine::UIElements::CustomStyleProperty_1<
+            *mut crate::UnityEngine::Sprite,
+        >,
+        value: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Sprite>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetValue_CustomStyleProperty_1_ByRefMut5(
+        &mut self,
+        property: crate::UnityEngine::UIElements::CustomStyleProperty_1<
+            *mut crate::UnityEngine::UIElements::VectorImage,
+        >,
+        value: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::UnityEngine::UIElements::VectorImage,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetValue_CustomStyleProperty_1_ByRefMut6(
+        &mut self,
+        property: crate::UnityEngine::UIElements::CustomStyleProperty_1<
+            *mut crate::System::String,
+        >,
+        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryGetValue", (property, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetValue_String_StyleValueType_ByRefMut7(
+        &mut self,
+        propertyName: *mut crate::System::String,
+        valueType: crate::UnityEngine::UIElements::StyleValueType,
+        customProp: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("TryGetValue", (propertyName, valueType, customProp))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct VisualElement_Hierarchy {
+    pub m_Owner: *mut crate::UnityEngine::UIElements::VisualElement,
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::VisualElement_Hierarchy
+    => "UnityEngine.UIElements"."VisualElement/Hierarchy"
+);
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
+impl crate::UnityEngine::UIElements::VisualElement_Hierarchy {
+    pub const k_InvalidHierarchyChangeMsg: &'static str = "Cannot modify VisualElement hierarchy during layout calculation";
+    pub fn Add(
+        &mut self,
+        child: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Add",
+            (child),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn BringToFront(
+        &mut self,
+        child: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "BringToFront",
+            (child),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Children(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
+    > {
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "Children", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Clear(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Clear",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ElementAt(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ElementAt",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_Object1(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_VisualElement_Hierarchy0(
+        &mut self,
+        other: crate::UnityEngine::UIElements::VisualElement_Hierarchy,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IndexOf(
+        &mut self,
+        element: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IndexOf",
+            (element),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Insert(
+        &mut self,
+        index: i32,
+        child: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Insert",
+            (index, child),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn MoveChildElement(
+        &mut self,
+        child: *mut crate::UnityEngine::UIElements::VisualElement,
+        currentIndex: i32,
+        nextIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MoveChildElement",
+            (child, currentIndex, nextIndex),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn PlaceBehind(
+        &mut self,
+        child: *mut crate::UnityEngine::UIElements::VisualElement,
+        over: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "PlaceBehind",
+            (child, over),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn PutChildAtIndex(
+        &mut self,
+        child: *mut crate::UnityEngine::UIElements::VisualElement,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "PutChildAtIndex",
+            (child, index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReleaseChildList(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ReleaseChildList",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Remove(
+        &mut self,
+        child: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Remove",
+            (child),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveAt(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "RemoveAt",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveChildAtIndex(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "RemoveChildAtIndex",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SendToBack(
+        &mut self,
+        child: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SendToBack",
+            (child),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetParent(
+        &mut self,
+        value: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetParent",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        element: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (element),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item(
+        &mut self,
+        key: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Item",
+            (key),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_childCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_childCount",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_children(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        >,
+    > {
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::VisualElement,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_children", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_parent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_parent",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+MeasureMode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum VisualElement_MeasureMode {
+    AtMost = 2i32,
+    Exactly = 1i32,
+    Undefined = 0i32,
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+MeasureMode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::VisualElement_MeasureMode => "UnityEngine.UIElements"
+    ."VisualElement/MeasureMode"
+);
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+RenderTargetMode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum VisualElement_RenderTargetMode {
+    GammaToLinear = 3i32,
+    LinearToGamma = 2i32,
+    NoColorConversion = 1i32,
+    None = 0i32,
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+RenderTargetMode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::VisualElement_RenderTargetMode => "UnityEngine.UIElements"
+    ."VisualElement/RenderTargetMode"
+);
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct VisualElement_SimpleScheduledItem {
+    __cordl_parent: crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
+        *mut crate::System::Action,
+    >,
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::VisualElement_SimpleScheduledItem =>
+    "UnityEngine.UIElements"."VisualElement/SimpleScheduledItem"
+);
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
+impl std::ops::Deref
+for crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem {
+    type Target = crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
+        *mut crate::System::Action,
+    >;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
+impl std::ops::DerefMut
+for crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
+impl crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem {
+    pub fn New(
+        handler: *mut crate::UnityEngine::UIElements::VisualElement,
+        updateEvent: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (handler, updateEvent))?;
+        Ok(__cordl_object)
+    }
+    pub fn PerformTimerUpdate(
+        &mut self,
+        state: crate::UnityEngine::UIElements::TimerState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PerformTimerUpdate", (state))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        handler: *mut crate::UnityEngine::UIElements::VisualElement,
+        updateEvent: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (handler, updateEvent))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct VisualElement_TimerStateScheduledItem {
+    __cordl_parent: crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
+        *mut crate::System::Action_1<crate::UnityEngine::UIElements::TimerState>,
+    >,
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem =>
+    "UnityEngine.UIElements"."VisualElement/TimerStateScheduledItem"
+);
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
+impl std::ops::Deref
+for crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
+    type Target = crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
+        *mut crate::System::Action_1<crate::UnityEngine::UIElements::TimerState>,
+    >;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
+impl std::ops::DerefMut
+for crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
+impl crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
+    pub fn New(
+        handler: *mut crate::UnityEngine::UIElements::VisualElement,
+        updateEvent: *mut crate::System::Action_1<
+            crate::UnityEngine::UIElements::TimerState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (handler, updateEvent))?;
+        Ok(__cordl_object)
+    }
+    pub fn PerformTimerUpdate(
+        &mut self,
+        state: crate::UnityEngine::UIElements::TimerState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PerformTimerUpdate", (state))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        handler: *mut crate::UnityEngine::UIElements::VisualElement,
+        updateEvent: *mut crate::System::Action_1<
+            crate::UnityEngine::UIElements::TimerState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (handler, updateEvent))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct VisualElement_TypeData {
+    __cordl_parent: crate::System::Object,
+    pub _type_k__BackingField: *mut crate::System::Type,
+    pub m_FullTypeName: *mut crate::System::String,
+    pub m_TypeName: *mut crate::System::String,
+    pub m_TypeNamespace: *mut crate::System::String,
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::VisualElement_TypeData
+    => "UnityEngine.UIElements"."VisualElement/TypeData"
+);
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
+impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElement_TypeData {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
+impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElement_TypeData {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
+impl crate::UnityEngine::UIElements::VisualElement_TypeData {
+    pub fn New(
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_type))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_fullTypeName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_fullTypeName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_type", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_typeName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_typeName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_typeNamespace(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_typeNamespace", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UIElements::VisualElement_TypeData {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct VisualElement_UxmlFactory {
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+        *mut crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
+    >,
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::VisualElement_UxmlFactory => "UnityEngine.UIElements"
+    ."VisualElement/UxmlFactory"
+);
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
+impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElement_UxmlFactory {
+    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+        *mut crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
+    >;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
+impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElement_UxmlFactory {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
+impl crate::UnityEngine::UIElements::VisualElement_UxmlFactory {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UIElements::VisualElement_UxmlFactory {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct VisualElement_UxmlTraits {
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlTraits,
+    pub m_Name: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    pub m_ViewDataKey: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    pub m_PickingMode: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+        crate::UnityEngine::UIElements::PickingMode,
+    >,
+    pub m_Tooltip: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    pub m_UsageHints: *mut crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+        crate::UnityEngine::UIElements::UsageHints,
+    >,
+    pub _focusIndex_k__BackingField: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    pub m_TabIndex: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    pub _focusable_k__BackingField: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    pub m_Class: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    pub m_ContentContainer: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    pub m_Style: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::VisualElement_UxmlTraits => "UnityEngine.UIElements"
+    ."VisualElement/UxmlTraits"
+);
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
+impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElement_UxmlTraits {
+    type Target = crate::UnityEngine::UIElements::UxmlTraits;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
+impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElement_UxmlTraits {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
+impl crate::UnityEngine::UIElements::VisualElement_UxmlTraits {
+    pub fn Init(
+        &mut self,
+        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        bag: *mut crate::UnityEngine::UIElements::IUxmlAttributes,
+        cc: crate::UnityEngine::UIElements::CreationContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (ve, bag, cc))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_focusIndex(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription = __cordl_object
+            .invoke("get_focusIndex", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_focusable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription = __cordl_object
+            .invoke("get_focusable", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UIElements::VisualElement_UxmlTraits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

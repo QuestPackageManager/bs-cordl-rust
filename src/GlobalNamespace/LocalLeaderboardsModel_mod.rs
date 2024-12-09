@@ -1,76 +1,3 @@
-#[cfg(feature = "LocalLeaderboardsModel+LeaderboardData")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct LocalLeaderboardsModel_LeaderboardData {
-    __cordl_parent: crate::System::Object,
-    pub _leaderboardId: *mut crate::System::String,
-    pub _scores: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
-    >,
-}
-#[cfg(feature = "LocalLeaderboardsModel+LeaderboardData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData => ""
-    ."LocalLeaderboardsModel/LeaderboardData"
-);
-#[cfg(feature = "LocalLeaderboardsModel+LeaderboardData")]
-impl std::ops::Deref for crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "LocalLeaderboardsModel+LeaderboardData")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "LocalLeaderboardsModel+LeaderboardData")]
-impl crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "LocalLeaderboardsModel+LeaderboardData")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "LocalLeaderboardsModel+LeaderboardType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum LocalLeaderboardsModel_LeaderboardType {
-    AllTime = 0i32,
-    Daily = 1i32,
-}
-#[cfg(feature = "LocalLeaderboardsModel+LeaderboardType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType => ""
-    ."LocalLeaderboardsModel/LeaderboardType"
-);
 #[cfg(feature = "LocalLeaderboardsModel")]
 #[repr(C)]
 #[derive(Debug)]
@@ -496,6 +423,79 @@ for crate::GlobalNamespace::LocalLeaderboardsModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LocalLeaderboardsModel+LeaderboardData")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct LocalLeaderboardsModel_LeaderboardData {
+    __cordl_parent: crate::System::Object,
+    pub _leaderboardId: *mut crate::System::String,
+    pub _scores: *mut crate::System::Collections::Generic::List_1<
+        *mut crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+    >,
+}
+#[cfg(feature = "LocalLeaderboardsModel+LeaderboardData")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData => ""
+    ."LocalLeaderboardsModel/LeaderboardData"
+);
+#[cfg(feature = "LocalLeaderboardsModel+LeaderboardData")]
+impl std::ops::Deref for crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "LocalLeaderboardsModel+LeaderboardData")]
+impl std::ops::DerefMut
+for crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "LocalLeaderboardsModel+LeaderboardData")]
+impl crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "LocalLeaderboardsModel+LeaderboardData")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "LocalLeaderboardsModel+LeaderboardType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum LocalLeaderboardsModel_LeaderboardType {
+    AllTime = 0i32,
+    Daily = 1i32,
+}
+#[cfg(feature = "LocalLeaderboardsModel+LeaderboardType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType => ""
+    ."LocalLeaderboardsModel/LeaderboardType"
+);
 #[cfg(feature = "LocalLeaderboardsModel+SavedLeaderboardsData")]
 #[repr(C)]
 #[derive(Debug)]

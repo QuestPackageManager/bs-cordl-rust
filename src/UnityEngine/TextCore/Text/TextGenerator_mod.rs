@@ -1,120 +1,3 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct TextGenerator_MissingCharacterEventCallback {
-    __cordl_parent: crate::System::MulticastDelegate,
-}
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallback =>
-    "UnityEngine.TextCore.Text"."TextGenerator/MissingCharacterEventCallback"
-);
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
-impl std::ops::Deref
-for crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallback {
-    type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
-impl std::ops::DerefMut
-for crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
-impl crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallback {
-    pub fn Invoke(
-        &mut self,
-        unicode: u32,
-        stringIndex: i32,
-        text: *mut crate::UnityEngine::TextCore::Text::TextInfo,
-        fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (unicode, stringIndex, text, fontAsset))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallback {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct TextGenerator_SpecialCharacter {
-    pub character: *mut crate::UnityEngine::TextCore::Text::Character,
-    pub fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
-    pub material: *mut crate::UnityEngine::Material,
-    pub materialIndex: i32,
-}
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter =>
-    "UnityEngine.TextCore.Text"."TextGenerator/SpecialCharacter"
-);
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
-impl crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter {
-    pub fn _ctor(
-        &mut self,
-        character: *mut crate::UnityEngine::TextCore::Text::Character,
-        materialIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (character, materialIndex),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator")]
 #[repr(C)]
 #[derive(Debug)]
@@ -715,5 +598,122 @@ for crate::UnityEngine::TextCore::Text::TextGenerator {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct TextGenerator_MissingCharacterEventCallback {
+    __cordl_parent: crate::System::MulticastDelegate,
+}
+#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallback =>
+    "UnityEngine.TextCore.Text"."TextGenerator/MissingCharacterEventCallback"
+);
+#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
+impl std::ops::Deref
+for crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallback {
+    type Target = crate::System::MulticastDelegate;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
+impl std::ops::DerefMut
+for crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallback {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
+impl crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallback {
+    pub fn Invoke(
+        &mut self,
+        unicode: u32,
+        stringIndex: i32,
+        text: *mut crate::UnityEngine::TextCore::Text::TextInfo,
+        fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (unicode, stringIndex, text, fontAsset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallback {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct TextGenerator_SpecialCharacter {
+    pub character: *mut crate::UnityEngine::TextCore::Text::Character,
+    pub fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
+    pub material: *mut crate::UnityEngine::Material,
+    pub materialIndex: i32,
+}
+#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter =>
+    "UnityEngine.TextCore.Text"."TextGenerator/SpecialCharacter"
+);
+#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
+impl crate::UnityEngine::TextCore::Text::TextGenerator_SpecialCharacter {
+    pub fn _ctor(
+        &mut self,
+        character: *mut crate::UnityEngine::TextCore::Text::Character,
+        materialIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (character, materialIndex),
+        )?;
+        Ok(__cordl_ret)
     }
 }

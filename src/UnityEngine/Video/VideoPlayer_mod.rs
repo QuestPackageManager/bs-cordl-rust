@@ -1,289 +1,3 @@
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct VideoPlayer_ErrorEventHandler {
-    __cordl_parent: crate::System::MulticastDelegate,
-}
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::Video::VideoPlayer_ErrorEventHandler => "UnityEngine.Video"
-    ."VideoPlayer/ErrorEventHandler"
-);
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
-impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler {
-    type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
-impl std::ops::DerefMut for crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
-impl crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler {
-    pub fn Invoke(
-        &mut self,
-        source: *mut crate::UnityEngine::Video::VideoPlayer,
-        message: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (source, message))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct VideoPlayer_EventHandler {
-    __cordl_parent: crate::System::MulticastDelegate,
-}
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Video::VideoPlayer_EventHandler =>
-    "UnityEngine.Video"."VideoPlayer/EventHandler"
-);
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
-impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_EventHandler {
-    type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
-impl std::ops::DerefMut for crate::UnityEngine::Video::VideoPlayer_EventHandler {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
-impl crate::UnityEngine::Video::VideoPlayer_EventHandler {
-    pub fn Invoke(
-        &mut self,
-        source: *mut crate::UnityEngine::Video::VideoPlayer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (source))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Video::VideoPlayer_EventHandler {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct VideoPlayer_FrameReadyEventHandler {
-    __cordl_parent: crate::System::MulticastDelegate,
-}
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler => "UnityEngine.Video"
-    ."VideoPlayer/FrameReadyEventHandler"
-);
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
-impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler {
-    type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
-impl std::ops::DerefMut
-for crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
-impl crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler {
-    pub fn Invoke(
-        &mut self,
-        source: *mut crate::UnityEngine::Video::VideoPlayer,
-        frameIdx: i64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (source, frameIdx))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct VideoPlayer_TimeEventHandler {
-    __cordl_parent: crate::System::MulticastDelegate,
-}
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Video::VideoPlayer_TimeEventHandler
-    => "UnityEngine.Video"."VideoPlayer/TimeEventHandler"
-);
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
-impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_TimeEventHandler {
-    type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
-impl std::ops::DerefMut for crate::UnityEngine::Video::VideoPlayer_TimeEventHandler {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
-impl crate::UnityEngine::Video::VideoPlayer_TimeEventHandler {
-    pub fn Invoke(
-        &mut self,
-        source: *mut crate::UnityEngine::Video::VideoPlayer,
-        seconds: f64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (source, seconds))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Video::VideoPlayer_TimeEventHandler {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "UnityEngine+Video+VideoPlayer")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1365,6 +1079,292 @@ impl crate::UnityEngine::Video::VideoPlayer {
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Video::VideoPlayer {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct VideoPlayer_ErrorEventHandler {
+    __cordl_parent: crate::System::MulticastDelegate,
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::Video::VideoPlayer_ErrorEventHandler => "UnityEngine.Video"
+    ."VideoPlayer/ErrorEventHandler"
+);
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
+impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler {
+    type Target = crate::System::MulticastDelegate;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
+impl std::ops::DerefMut for crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
+impl crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler {
+    pub fn Invoke(
+        &mut self,
+        source: *mut crate::UnityEngine::Video::VideoPlayer,
+        message: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (source, message))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct VideoPlayer_EventHandler {
+    __cordl_parent: crate::System::MulticastDelegate,
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::Video::VideoPlayer_EventHandler =>
+    "UnityEngine.Video"."VideoPlayer/EventHandler"
+);
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
+impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_EventHandler {
+    type Target = crate::System::MulticastDelegate;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
+impl std::ops::DerefMut for crate::UnityEngine::Video::VideoPlayer_EventHandler {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
+impl crate::UnityEngine::Video::VideoPlayer_EventHandler {
+    pub fn Invoke(
+        &mut self,
+        source: *mut crate::UnityEngine::Video::VideoPlayer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (source))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::Video::VideoPlayer_EventHandler {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct VideoPlayer_FrameReadyEventHandler {
+    __cordl_parent: crate::System::MulticastDelegate,
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler => "UnityEngine.Video"
+    ."VideoPlayer/FrameReadyEventHandler"
+);
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
+impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler {
+    type Target = crate::System::MulticastDelegate;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
+impl std::ops::DerefMut
+for crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
+impl crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler {
+    pub fn Invoke(
+        &mut self,
+        source: *mut crate::UnityEngine::Video::VideoPlayer,
+        frameIdx: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (source, frameIdx))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct VideoPlayer_TimeEventHandler {
+    __cordl_parent: crate::System::MulticastDelegate,
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::Video::VideoPlayer_TimeEventHandler
+    => "UnityEngine.Video"."VideoPlayer/TimeEventHandler"
+);
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
+impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_TimeEventHandler {
+    type Target = crate::System::MulticastDelegate;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
+impl std::ops::DerefMut for crate::UnityEngine::Video::VideoPlayer_TimeEventHandler {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
+impl crate::UnityEngine::Video::VideoPlayer_TimeEventHandler {
+    pub fn Invoke(
+        &mut self,
+        source: *mut crate::UnityEngine::Video::VideoPlayer,
+        seconds: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (source, seconds))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::Video::VideoPlayer_TimeEventHandler {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

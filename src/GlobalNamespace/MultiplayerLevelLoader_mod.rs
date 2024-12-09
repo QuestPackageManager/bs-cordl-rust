@@ -1,17 +1,3 @@
-#[cfg(feature = "MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum MultiplayerLevelLoader_MultiplayerBeatmapLoaderState {
-    LoadingBeatmap = 1i32,
-    NotLoading = 0i32,
-    WaitingForCountdown = 2i32,
-}
-#[cfg(feature = "MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState => ""
-    ."MultiplayerLevelLoader/MultiplayerBeatmapLoaderState"
-);
 #[cfg(feature = "MultiplayerLevelLoader")]
 #[repr(C)]
 #[derive(Debug)]
@@ -196,3 +182,17 @@ for crate::GlobalNamespace::MultiplayerLevelLoader {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum MultiplayerLevelLoader_MultiplayerBeatmapLoaderState {
+    LoadingBeatmap = 1i32,
+    NotLoading = 0i32,
+    WaitingForCountdown = 2i32,
+}
+#[cfg(feature = "MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState => ""
+    ."MultiplayerLevelLoader/MultiplayerBeatmapLoaderState"
+);

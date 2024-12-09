@@ -1,21 +1,3 @@
-#[cfg(
-    feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
-)]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum MeshValidation_AttributeValidationStrategy {
-    Nullify = 1i32,
-    Resize = 0i32,
-}
-#[cfg(
-    feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeValidationStrategy
-    => "UnityEngine.ProBuilder.MeshOperations"
-    ."MeshValidation/AttributeValidationStrategy"
-);
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation")]
 #[repr(C)]
 #[derive(Debug)]
@@ -69,3 +51,21 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
+)]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum MeshValidation_AttributeValidationStrategy {
+    Nullify = 1i32,
+    Resize = 0i32,
+}
+#[cfg(
+    feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeValidationStrategy
+    => "UnityEngine.ProBuilder.MeshOperations"
+    ."MeshValidation/AttributeValidationStrategy"
+);

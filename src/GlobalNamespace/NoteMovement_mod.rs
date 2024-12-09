@@ -1,16 +1,3 @@
-#[cfg(feature = "NoteMovement+MovementPhase")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum NoteMovement_MovementPhase {
-    Jumping = 2i32,
-    MovingOnTheFloor = 1i32,
-    None = 0i32,
-}
-#[cfg(feature = "NoteMovement+MovementPhase")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteMovement_MovementPhase =>
-    ""."NoteMovement/MovementPhase"
-);
 #[cfg(feature = "NoteMovement")]
 #[repr(C)]
 #[derive(Debug)]
@@ -497,3 +484,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteMovement 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NoteMovement+MovementPhase")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum NoteMovement_MovementPhase {
+    Jumping = 2i32,
+    MovingOnTheFloor = 1i32,
+    None = 0i32,
+}
+#[cfg(feature = "NoteMovement+MovementPhase")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteMovement_MovementPhase =>
+    ""."NoteMovement/MovementPhase"
+);

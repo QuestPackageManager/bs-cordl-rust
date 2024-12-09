@@ -1,28 +1,3 @@
-#[cfg(feature = "System+Data+DataError+ColumnError")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct DataError_ColumnError {
-    pub _column: *mut crate::System::Data::DataColumn,
-    pub _error: *mut crate::System::String,
-}
-#[cfg(feature = "System+Data+DataError+ColumnError")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::DataError_ColumnError =>
-    "System.Data"."DataError/ColumnError"
-);
-#[cfg(feature = "System+Data+DataError+ColumnError")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Data::DataError_ColumnError {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Data+DataError+ColumnError")]
-impl crate::System::Data::DataError_ColumnError {}
 #[cfg(feature = "System+Data+DataError")]
 #[repr(C)]
 #[derive(Debug)]
@@ -209,3 +184,28 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataError {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Data+DataError+ColumnError")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct DataError_ColumnError {
+    pub _column: *mut crate::System::Data::DataColumn,
+    pub _error: *mut crate::System::String,
+}
+#[cfg(feature = "System+Data+DataError+ColumnError")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Data::DataError_ColumnError =>
+    "System.Data"."DataError/ColumnError"
+);
+#[cfg(feature = "System+Data+DataError+ColumnError")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::Data::DataError_ColumnError {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Data+DataError+ColumnError")]
+impl crate::System::Data::DataError_ColumnError {}

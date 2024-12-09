@@ -1,16 +1,3 @@
-#[cfg(feature = "UnityEngine+UI+ScrollRect+MovementType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ScrollRect_MovementType {
-    Clamped = 2i32,
-    Elastic = 1i32,
-    Unrestricted = 0i32,
-}
-#[cfg(feature = "UnityEngine+UI+ScrollRect+MovementType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::ScrollRect_MovementType =>
-    "UnityEngine.UI"."ScrollRect/MovementType"
-);
 #[cfg(feature = "UnityEngine+UI+ScrollRect")]
 #[repr(C)]
 #[derive(Debug)]
@@ -948,6 +935,19 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::ScrollRect {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+ScrollRect+MovementType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ScrollRect_MovementType {
+    Clamped = 2i32,
+    Elastic = 1i32,
+    Unrestricted = 0i32,
+}
+#[cfg(feature = "UnityEngine+UI+ScrollRect+MovementType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UI::ScrollRect_MovementType =>
+    "UnityEngine.UI"."ScrollRect/MovementType"
+);
 #[cfg(feature = "UnityEngine+UI+ScrollRect+ScrollRectEvent")]
 #[repr(C)]
 #[derive(Debug)]

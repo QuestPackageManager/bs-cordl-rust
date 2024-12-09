@@ -1,16 +1,3 @@
-#[cfg(feature = "System+Net+WebConnectionTunnel+NtlmAuthState")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum WebConnectionTunnel_NtlmAuthState {
-    Challenge = 1i32,
-    None = 0i32,
-    Response = 2i32,
-}
-#[cfg(feature = "System+Net+WebConnectionTunnel+NtlmAuthState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::WebConnectionTunnel_NtlmAuthState
-    => "System.Net"."WebConnectionTunnel/NtlmAuthState"
-);
 #[cfg(feature = "System+Net+WebConnectionTunnel")]
 #[repr(C)]
 #[derive(Debug)]
@@ -310,3 +297,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebConnectionTunn
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+WebConnectionTunnel+NtlmAuthState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum WebConnectionTunnel_NtlmAuthState {
+    Challenge = 1i32,
+    None = 0i32,
+    Response = 2i32,
+}
+#[cfg(feature = "System+Net+WebConnectionTunnel+NtlmAuthState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Net::WebConnectionTunnel_NtlmAuthState
+    => "System.Net"."WebConnectionTunnel/NtlmAuthState"
+);

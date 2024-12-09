@@ -1,16 +1,3 @@
-#[cfg(feature = "PlatformException+ErrorType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum PlatformException_ErrorType {
-    PlatformInitialization = 1i32,
-    PlatformNotInstalled = 0i32,
-    PlatformUserEntitlement = 2i32,
-}
-#[cfg(feature = "PlatformException+ErrorType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlatformException_ErrorType =>
-    ""."PlatformException/ErrorType"
-);
 #[cfg(feature = "PlatformException")]
 #[repr(C)]
 #[derive(Debug)]
@@ -104,3 +91,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlatformExcep
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "PlatformException+ErrorType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PlatformException_ErrorType {
+    PlatformInitialization = 1i32,
+    PlatformNotInstalled = 0i32,
+    PlatformUserEntitlement = 2i32,
+}
+#[cfg(feature = "PlatformException+ErrorType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlatformException_ErrorType =>
+    ""."PlatformException/ErrorType"
+);

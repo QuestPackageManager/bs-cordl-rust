@@ -1,3 +1,45 @@
+#[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct SampleTelemetryEvents {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::Meta::XR::Samples::Telemetry::SampleTelemetryEvents => "Meta.XR.Samples.Telemetry"
+    ."SampleTelemetryEvents"
+);
+#[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
+impl std::ops::Deref for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
+impl std::ops::DerefMut for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
+impl crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents {
+    #[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents+AnnotationTypes")]
+    pub type AnnotationTypes = crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_AnnotationTypes;
+    #[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents+EventTypes")]
+    pub type EventTypes = crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_EventTypes;
+}
+#[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents+AnnotationTypes")]
 #[repr(C)]
 #[derive(Debug)]
@@ -80,48 +122,6 @@ impl crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_EventTypes {
 #[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents+EventTypes")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_EventTypes {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct SampleTelemetryEvents {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Meta::XR::Samples::Telemetry::SampleTelemetryEvents => "Meta.XR.Samples.Telemetry"
-    ."SampleTelemetryEvents"
-);
-#[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
-impl std::ops::Deref for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
-impl std::ops::DerefMut for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
-impl crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents {
-    #[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents+AnnotationTypes")]
-    pub type AnnotationTypes = crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_AnnotationTypes;
-    #[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents+EventTypes")]
-    pub type EventTypes = crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_EventTypes;
-}
-#[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

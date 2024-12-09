@@ -1,3 +1,48 @@
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct StyleSheetCache {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::StyleSheets::StyleSheetCache =>
+    "UnityEngine.UIElements.StyleSheets"."StyleSheetCache"
+);
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
+impl std::ops::Deref for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
+impl std::ops::DerefMut
+for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
+impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
+    #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
+    pub type SheetHandleKey = crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey;
+    #[cfg(
+        feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
+    )]
+    pub type SheetHandleKeyComparer = crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer;
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -120,51 +165,6 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct StyleSheetCache {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::StyleSheets::StyleSheetCache =>
-    "UnityEngine.UIElements.StyleSheets"."StyleSheetCache"
-);
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
-impl std::ops::Deref for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
-impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
-impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
-    #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
-    pub type SheetHandleKey = crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey;
-    #[cfg(
-        feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
-    )]
-    pub type SheetHandleKeyComparer = crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer;
-}
-#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

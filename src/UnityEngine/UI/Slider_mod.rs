@@ -1,29 +1,3 @@
-#[cfg(feature = "UnityEngine+UI+Slider+Axis")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Slider_Axis {
-    Horizontal = 0i32,
-    Vertical = 1i32,
-}
-#[cfg(feature = "UnityEngine+UI+Slider+Axis")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Slider_Axis => "UnityEngine.UI"
-    ."Slider/Axis"
-);
-#[cfg(feature = "UnityEngine+UI+Slider+Direction")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Slider_Direction {
-    BottomToTop = 2i32,
-    LeftToRight = 0i32,
-    RightToLeft = 1i32,
-    TopToBottom = 3i32,
-}
-#[cfg(feature = "UnityEngine+UI+Slider+Direction")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Slider_Direction =>
-    "UnityEngine.UI"."Slider/Direction"
-);
 #[cfg(feature = "UnityEngine+UI+Slider")]
 #[repr(C)]
 #[derive(Debug)]
@@ -556,6 +530,32 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Slider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+Slider+Axis")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Slider_Axis {
+    Horizontal = 0i32,
+    Vertical = 1i32,
+}
+#[cfg(feature = "UnityEngine+UI+Slider+Axis")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Slider_Axis => "UnityEngine.UI"
+    ."Slider/Axis"
+);
+#[cfg(feature = "UnityEngine+UI+Slider+Direction")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Slider_Direction {
+    BottomToTop = 2i32,
+    LeftToRight = 0i32,
+    RightToLeft = 1i32,
+    TopToBottom = 3i32,
+}
+#[cfg(feature = "UnityEngine+UI+Slider+Direction")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Slider_Direction =>
+    "UnityEngine.UI"."Slider/Direction"
+);
 #[cfg(feature = "UnityEngine+UI+Slider+SliderEvent")]
 #[repr(C)]
 #[derive(Debug)]

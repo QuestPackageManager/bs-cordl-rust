@@ -1,120 +1,3 @@
-#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ParsingFunction")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XmlValidatingReaderImpl_ParsingFunction {
-    Error = 6i32,
-    InReadBinaryContent = 4i32,
-    Init = 1i32,
-    None = 7i32,
-    ParseDtdFromContext = 2i32,
-    Read = 0i32,
-    ReaderClosed = 5i32,
-    ResolveEntityInternally = 3i32,
-}
-#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ParsingFunction")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::XmlValidatingReaderImpl_ParsingFunction => "System.Xml"
-    ."XmlValidatingReaderImpl/ParsingFunction"
-);
-#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ValidationEventHandling")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct XmlValidatingReaderImpl_ValidationEventHandling {
-    __cordl_parent: crate::System::Object,
-    pub reader: *mut crate::System::Xml::XmlValidatingReaderImpl,
-    pub eventHandler: *mut crate::System::Xml::Schema::ValidationEventHandler,
-}
-#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ValidationEventHandling")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling => "System.Xml"
-    ."XmlValidatingReaderImpl/ValidationEventHandling"
-);
-#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ValidationEventHandling")]
-impl std::ops::Deref
-for crate::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ValidationEventHandling")]
-impl std::ops::DerefMut
-for crate::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ValidationEventHandling")]
-impl crate::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling {
-    pub fn AddHandler(
-        &mut self,
-        handler: *mut crate::System::Xml::Schema::ValidationEventHandler,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddHandler", (handler))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        reader: *mut crate::System::Xml::XmlValidatingReaderImpl,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (reader))?;
-        Ok(__cordl_object)
-    }
-    pub fn System_Xml_IValidationEventHandling_SendEvent(
-        &mut self,
-        exception: *mut crate::System::Exception,
-        severity: crate::System::Xml::Schema::XmlSeverityType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "System.Xml.IValidationEventHandling.SendEvent",
-                (exception, severity),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IValidationEventHandling_get_EventHandler(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("System.Xml.IValidationEventHandling.get_EventHandler", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        reader: *mut crate::System::Xml::XmlValidatingReaderImpl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (reader))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ValidationEventHandling")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "System+Xml+XmlValidatingReaderImpl")]
 #[repr(C)]
 #[derive(Debug)]
@@ -783,6 +666,123 @@ impl crate::System::Xml::XmlValidatingReaderImpl {
 }
 #[cfg(feature = "System+Xml+XmlValidatingReaderImpl")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlValidatingReaderImpl {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ParsingFunction")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XmlValidatingReaderImpl_ParsingFunction {
+    Error = 6i32,
+    InReadBinaryContent = 4i32,
+    Init = 1i32,
+    None = 7i32,
+    ParseDtdFromContext = 2i32,
+    Read = 0i32,
+    ReaderClosed = 5i32,
+    ResolveEntityInternally = 3i32,
+}
+#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ParsingFunction")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Xml::XmlValidatingReaderImpl_ParsingFunction => "System.Xml"
+    ."XmlValidatingReaderImpl/ParsingFunction"
+);
+#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ValidationEventHandling")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct XmlValidatingReaderImpl_ValidationEventHandling {
+    __cordl_parent: crate::System::Object,
+    pub reader: *mut crate::System::Xml::XmlValidatingReaderImpl,
+    pub eventHandler: *mut crate::System::Xml::Schema::ValidationEventHandler,
+}
+#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ValidationEventHandling")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling => "System.Xml"
+    ."XmlValidatingReaderImpl/ValidationEventHandling"
+);
+#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ValidationEventHandling")]
+impl std::ops::Deref
+for crate::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ValidationEventHandling")]
+impl std::ops::DerefMut
+for crate::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ValidationEventHandling")]
+impl crate::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling {
+    pub fn AddHandler(
+        &mut self,
+        handler: *mut crate::System::Xml::Schema::ValidationEventHandler,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddHandler", (handler))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        reader: *mut crate::System::Xml::XmlValidatingReaderImpl,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (reader))?;
+        Ok(__cordl_object)
+    }
+    pub fn System_Xml_IValidationEventHandling_SendEvent(
+        &mut self,
+        exception: *mut crate::System::Exception,
+        severity: crate::System::Xml::Schema::XmlSeverityType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "System.Xml.IValidationEventHandling.SendEvent",
+                (exception, severity),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IValidationEventHandling_get_EventHandler(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("System.Xml.IValidationEventHandling.get_EventHandler", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        reader: *mut crate::System::Xml::XmlValidatingReaderImpl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (reader))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ValidationEventHandling")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

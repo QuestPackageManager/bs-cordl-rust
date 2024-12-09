@@ -302,20 +302,6 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLevelL
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum LevelDownloadingUpdate_DownloadingState {
-    Completed = 2i32,
-    Downloading = 1i32,
-    PreparingToDownload = 0i32,
-}
-#[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LevelDownloadingUpdate_DownloadingState => ""
-    ."BeatmapLevelLoader/LevelDownloadingUpdate/DownloadingState"
-);
 #[cfg(feature = "BeatmapLevelLoader+InitData")]
 #[repr(C)]
 #[derive(Debug)]
@@ -378,7 +364,7 @@ for crate::GlobalNamespace::BeatmapLevelLoader_InitData {
 pub struct BeatmapLevelLoader_LevelDownloadingUpdate {
     pub levelID: *mut crate::System::String,
     pub progress: f32,
-    pub downloadingState: crate::GlobalNamespace::LevelDownloadingUpdate_DownloadingState,
+    pub downloadingState: crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState,
 }
 #[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -400,12 +386,12 @@ for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
 #[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate")]
 impl crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
     #[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
-    pub type DownloadingState = crate::GlobalNamespace::LevelDownloadingUpdate_DownloadingState;
+    pub type DownloadingState = crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState;
     pub fn _ctor(
         &mut self,
         levelID: *mut crate::System::String,
         progress: f32,
-        downloadingState: crate::GlobalNamespace::LevelDownloadingUpdate_DownloadingState,
+        downloadingState: crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -415,3 +401,17 @@ impl crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
         Ok(__cordl_ret)
     }
 }
+#[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState {
+    Completed = 2i32,
+    Downloading = 1i32,
+    PreparingToDownload = 0i32,
+}
+#[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState => ""
+    ."BeatmapLevelLoader/LevelDownloadingUpdate/DownloadingState"
+);

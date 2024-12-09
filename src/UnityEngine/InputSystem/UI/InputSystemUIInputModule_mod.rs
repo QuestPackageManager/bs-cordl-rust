@@ -1,54 +1,3 @@
-#[cfg(
-    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
-)]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum InputSystemUIInputModule_CursorLockBehavior {
-    OutsideScreen = 0i32,
-    ScreenCenter = 1i32,
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBehavior =>
-    "UnityEngine.InputSystem.UI"."InputSystemUIInputModule/CursorLockBehavior"
-);
-#[cfg(
-    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
-)]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct InputSystemUIInputModule_InputActionReferenceState {
-    pub refCount: i32,
-    pub enabledByInputModule: bool,
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionReferenceState =>
-    "UnityEngine.InputSystem.UI"."InputSystemUIInputModule/InputActionReferenceState"
-);
-#[cfg(
-    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
-)]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionReferenceState {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
-)]
-impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionReferenceState {}
 #[cfg(feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1274,3 +1223,54 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
+)]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum InputSystemUIInputModule_CursorLockBehavior {
+    OutsideScreen = 0i32,
+    ScreenCenter = 1i32,
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBehavior =>
+    "UnityEngine.InputSystem.UI"."InputSystemUIInputModule/CursorLockBehavior"
+);
+#[cfg(
+    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
+)]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct InputSystemUIInputModule_InputActionReferenceState {
+    pub refCount: i32,
+    pub enabledByInputModule: bool,
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionReferenceState =>
+    "UnityEngine.InputSystem.UI"."InputSystemUIInputModule/InputActionReferenceState"
+);
+#[cfg(
+    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
+)]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionReferenceState {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
+)]
+impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionReferenceState {}

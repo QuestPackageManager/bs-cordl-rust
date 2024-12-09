@@ -1,15 +1,3 @@
-#[cfg(feature = "Org+BouncyCastle+Bcpg+Attr+ImageAttrib+Format")]
-#[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ImageAttrib_Format {
-    Jpeg = 1u8,
-}
-#[cfg(feature = "Org+BouncyCastle+Bcpg+Attr+ImageAttrib+Format")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Bcpg::Attr::ImageAttrib_Format => "Org.BouncyCastle.Bcpg.Attr"
-    ."ImageAttrib/Format"
-);
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Attr+ImageAttrib")]
 #[repr(C)]
 #[derive(Debug)]
@@ -141,3 +129,15 @@ for crate::Org::BouncyCastle::Bcpg::Attr::ImageAttrib {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+Attr+ImageAttrib+Format")]
+#[repr(u8)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ImageAttrib_Format {
+    Jpeg = 1u8,
+}
+#[cfg(feature = "Org+BouncyCastle+Bcpg+Attr+ImageAttrib+Format")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::Org::BouncyCastle::Bcpg::Attr::ImageAttrib_Format => "Org.BouncyCastle.Bcpg.Attr"
+    ."ImageAttrib/Format"
+);

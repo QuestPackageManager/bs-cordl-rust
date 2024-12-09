@@ -1,42 +1,3 @@
-#[cfg(
-    feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription+DeviceDescriptionJson"
-)]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct InputDeviceDescription_DeviceDescriptionJson {
-    pub interface: *mut crate::System::String,
-    pub _cordl_type: *mut crate::System::String,
-    pub product: *mut crate::System::String,
-    pub serial: *mut crate::System::String,
-    pub version: *mut crate::System::String,
-    pub manufacturer: *mut crate::System::String,
-    pub capabilities: *mut crate::System::String,
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription+DeviceDescriptionJson"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::Layouts::InputDeviceDescription_DeviceDescriptionJson =>
-    "UnityEngine.InputSystem.Layouts"."InputDeviceDescription/DeviceDescriptionJson"
-);
-#[cfg(
-    feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription+DeviceDescriptionJson"
-)]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription_DeviceDescriptionJson {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription+DeviceDescriptionJson"
-)]
-impl crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription_DeviceDescriptionJson {}
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -278,3 +239,42 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
         Ok(__cordl_ret)
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription+DeviceDescriptionJson"
+)]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct InputDeviceDescription_DeviceDescriptionJson {
+    pub interface: *mut crate::System::String,
+    pub _cordl_type: *mut crate::System::String,
+    pub product: *mut crate::System::String,
+    pub serial: *mut crate::System::String,
+    pub version: *mut crate::System::String,
+    pub manufacturer: *mut crate::System::String,
+    pub capabilities: *mut crate::System::String,
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription+DeviceDescriptionJson"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::Layouts::InputDeviceDescription_DeviceDescriptionJson =>
+    "UnityEngine.InputSystem.Layouts"."InputDeviceDescription/DeviceDescriptionJson"
+);
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription+DeviceDescriptionJson"
+)]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription_DeviceDescriptionJson {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription+DeviceDescriptionJson"
+)]
+impl crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription_DeviceDescriptionJson {}

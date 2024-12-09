@@ -1,3 +1,45 @@
+#[cfg(feature = "Oculus+Platform+PlatformInternal")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct PlatformInternal {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "Oculus+Platform+PlatformInternal")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::Oculus::Platform::PlatformInternal =>
+    "Oculus.Platform"."PlatformInternal"
+);
+#[cfg(feature = "Oculus+Platform+PlatformInternal")]
+impl std::ops::Deref for crate::Oculus::Platform::PlatformInternal {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Oculus+Platform+PlatformInternal")]
+impl std::ops::DerefMut for crate::Oculus::Platform::PlatformInternal {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Oculus+Platform+PlatformInternal")]
+impl crate::Oculus::Platform::PlatformInternal {
+    #[cfg(feature = "Oculus+Platform+PlatformInternal+HTTP")]
+    pub type HTTP = crate::Oculus::Platform::PlatformInternal_HTTP;
+    #[cfg(feature = "Oculus+Platform+PlatformInternal+MessageTypeInternal")]
+    pub type MessageTypeInternal = crate::Oculus::Platform::PlatformInternal_MessageTypeInternal;
+    #[cfg(feature = "Oculus+Platform+PlatformInternal+Users")]
+    pub type Users = crate::Oculus::Platform::PlatformInternal_Users;
+}
+#[cfg(feature = "Oculus+Platform+PlatformInternal")]
+impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::PlatformInternal {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "Oculus+Platform+PlatformInternal+HTTP")]
 #[repr(C)]
 #[derive(Debug)]
@@ -109,48 +151,6 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
     ::Oculus::Platform::PlatformInternal_MessageTypeInternal => "Oculus.Platform"
     ."PlatformInternal/MessageTypeInternal"
 );
-#[cfg(feature = "Oculus+Platform+PlatformInternal")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct PlatformInternal {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "Oculus+Platform+PlatformInternal")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Oculus::Platform::PlatformInternal =>
-    "Oculus.Platform"."PlatformInternal"
-);
-#[cfg(feature = "Oculus+Platform+PlatformInternal")]
-impl std::ops::Deref for crate::Oculus::Platform::PlatformInternal {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Oculus+Platform+PlatformInternal")]
-impl std::ops::DerefMut for crate::Oculus::Platform::PlatformInternal {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Oculus+Platform+PlatformInternal")]
-impl crate::Oculus::Platform::PlatformInternal {
-    #[cfg(feature = "Oculus+Platform+PlatformInternal+HTTP")]
-    pub type HTTP = crate::Oculus::Platform::PlatformInternal_HTTP;
-    #[cfg(feature = "Oculus+Platform+PlatformInternal+MessageTypeInternal")]
-    pub type MessageTypeInternal = crate::Oculus::Platform::PlatformInternal_MessageTypeInternal;
-    #[cfg(feature = "Oculus+Platform+PlatformInternal+Users")]
-    pub type Users = crate::Oculus::Platform::PlatformInternal_Users;
-}
-#[cfg(feature = "Oculus+Platform+PlatformInternal")]
-impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::PlatformInternal {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "Oculus+Platform+PlatformInternal+Users")]
 #[repr(C)]
 #[derive(Debug)]

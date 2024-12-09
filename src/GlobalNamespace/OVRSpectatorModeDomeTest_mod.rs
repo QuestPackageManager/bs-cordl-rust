@@ -8,7 +8,7 @@ pub struct OVRSpectatorModeDomeTest {
     pub defaultFov: crate::GlobalNamespace::OVRPlugin_Fovf,
     pub SpectatorAnchor: *mut crate::UnityEngine::Transform,
     pub Head: *mut crate::UnityEngine::Transform,
-    pub camMode: crate::GlobalNamespace::Media_PlatformCameraMode,
+    pub camMode: crate::GlobalNamespace::Media_OVRPlugin_PlatformCameraMode,
     pub readyToSwitch: bool,
     pub SpectatorCamera: *mut crate::UnityEngine::Transform,
     pub distance: f32,

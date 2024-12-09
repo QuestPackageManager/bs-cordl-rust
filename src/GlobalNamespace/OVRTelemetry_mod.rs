@@ -1,3 +1,47 @@
+#[cfg(feature = "OVRTelemetry")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRTelemetry {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "OVRTelemetry")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRTelemetry => ""
+    ."OVRTelemetry"
+);
+#[cfg(feature = "OVRTelemetry")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRTelemetry {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRTelemetry")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRTelemetry {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRTelemetry")]
+impl crate::GlobalNamespace::OVRTelemetry {
+    #[cfg(feature = "OVRTelemetry+MarkerPoint")]
+    pub type MarkerPoint = crate::GlobalNamespace::OVRTelemetry_MarkerPoint;
+    #[cfg(feature = "OVRTelemetry+NullTelemetryClient")]
+    pub type NullTelemetryClient = crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient;
+    #[cfg(feature = "OVRTelemetry+QPLTelemetryClient")]
+    pub type QPLTelemetryClient = crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient;
+    #[cfg(feature = "OVRTelemetry+TelemetryClient")]
+    pub type TelemetryClient = crate::GlobalNamespace::OVRTelemetry_TelemetryClient;
+}
+#[cfg(feature = "OVRTelemetry")]
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetry {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "OVRTelemetry+MarkerPoint")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -122,7 +166,7 @@ impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
     pub fn MarkerEnd(
         &mut self,
         markerId: i32,
-        resultTypeId: crate::GlobalNamespace::Qpl_ResultType,
+        resultTypeId: crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
         instanceKey: i32,
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -184,50 +228,6 @@ impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
 #[cfg(feature = "OVRTelemetry+NullTelemetryClient")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "OVRTelemetry")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct OVRTelemetry {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "OVRTelemetry")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRTelemetry => ""
-    ."OVRTelemetry"
-);
-#[cfg(feature = "OVRTelemetry")]
-impl std::ops::Deref for crate::GlobalNamespace::OVRTelemetry {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRTelemetry")]
-impl std::ops::DerefMut for crate::GlobalNamespace::OVRTelemetry {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRTelemetry")]
-impl crate::GlobalNamespace::OVRTelemetry {
-    #[cfg(feature = "OVRTelemetry+MarkerPoint")]
-    pub type MarkerPoint = crate::GlobalNamespace::OVRTelemetry_MarkerPoint;
-    #[cfg(feature = "OVRTelemetry+NullTelemetryClient")]
-    pub type NullTelemetryClient = crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient;
-    #[cfg(feature = "OVRTelemetry+QPLTelemetryClient")]
-    pub type QPLTelemetryClient = crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient;
-    #[cfg(feature = "OVRTelemetry+TelemetryClient")]
-    pub type TelemetryClient = crate::GlobalNamespace::OVRTelemetry_TelemetryClient;
-}
-#[cfg(feature = "OVRTelemetry")]
-impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetry {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -304,7 +304,7 @@ impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
     pub fn MarkerEnd(
         &mut self,
         markerId: i32,
-        resultTypeId: crate::GlobalNamespace::Qpl_ResultType,
+        resultTypeId: crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
         instanceKey: i32,
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -442,7 +442,7 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
     pub fn MarkerEnd(
         &mut self,
         markerId: i32,
-        resultTypeId: crate::GlobalNamespace::Qpl_ResultType,
+        resultTypeId: crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
         instanceKey: i32,
         timestampMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

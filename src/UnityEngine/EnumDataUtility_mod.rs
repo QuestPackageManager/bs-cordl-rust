@@ -1,16 +1,3 @@
-#[cfg(feature = "UnityEngine+EnumDataUtility+CachedType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum EnumDataUtility_CachedType {
-    ExcludeObsolete = 0i32,
-    IncludeAllObsolete = 2i32,
-    IncludeObsoleteExceptErrors = 1i32,
-}
-#[cfg(feature = "UnityEngine+EnumDataUtility+CachedType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::EnumDataUtility_CachedType =>
-    "UnityEngine"."EnumDataUtility/CachedType"
-);
 #[cfg(feature = "UnityEngine+EnumDataUtility")]
 #[repr(C)]
 #[derive(Debug)]
@@ -55,3 +42,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::EnumDataUtility {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+EnumDataUtility+CachedType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum EnumDataUtility_CachedType {
+    ExcludeObsolete = 0i32,
+    IncludeAllObsolete = 2i32,
+    IncludeObsoleteExceptErrors = 1i32,
+}
+#[cfg(feature = "UnityEngine+EnumDataUtility+CachedType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::EnumDataUtility_CachedType =>
+    "UnityEngine"."EnumDataUtility/CachedType"
+);

@@ -1,16 +1,3 @@
-#[cfg(feature = "HMUI+NavigationController+Alignment")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum NavigationController_Alignment {
-    Beginning = 0i32,
-    End = 2i32,
-    Middle = 1i32,
-}
-#[cfg(feature = "HMUI+NavigationController+Alignment")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::NavigationController_Alignment => "HMUI"
-    ."NavigationController/Alignment"
-);
 #[cfg(feature = "HMUI+NavigationController")]
 #[repr(C)]
 #[derive(Debug)]
@@ -176,6 +163,19 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::NavigationController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HMUI+NavigationController+Alignment")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum NavigationController_Alignment {
+    Beginning = 0i32,
+    End = 2i32,
+    Middle = 1i32,
+}
+#[cfg(feature = "HMUI+NavigationController+Alignment")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::HMUI::NavigationController_Alignment => "HMUI"
+    ."NavigationController/Alignment"
+);
 #[cfg(feature = "HMUI+NavigationController+Orientation")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

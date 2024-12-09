@@ -1,21 +1,3 @@
-#[cfg(feature = "SelectSubMenuDestination+Destination")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum SelectSubMenuDestination_Destination {
-    Campaign = 1i32,
-    MainMenu = 0i32,
-    Multiplayer = 6i32,
-    PartyFreePlay = 3i32,
-    Settings = 4i32,
-    SoloFreePlay = 2i32,
-    Tutorial = 5i32,
-}
-#[cfg(feature = "SelectSubMenuDestination+Destination")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SelectSubMenuDestination_Destination => ""
-    ."SelectSubMenuDestination/Destination"
-);
 #[cfg(feature = "SelectSubMenuDestination")]
 #[repr(C)]
 #[derive(Debug)]
@@ -76,3 +58,21 @@ for crate::GlobalNamespace::SelectSubMenuDestination {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "SelectSubMenuDestination+Destination")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum SelectSubMenuDestination_Destination {
+    Campaign = 1i32,
+    MainMenu = 0i32,
+    Multiplayer = 6i32,
+    PartyFreePlay = 3i32,
+    Settings = 4i32,
+    SoloFreePlay = 2i32,
+    Tutorial = 5i32,
+}
+#[cfg(feature = "SelectSubMenuDestination+Destination")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SelectSubMenuDestination_Destination => ""
+    ."SelectSubMenuDestination/Destination"
+);

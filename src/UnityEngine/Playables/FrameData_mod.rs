@@ -1,31 +1,3 @@
-#[cfg(feature = "UnityEngine+Playables+FrameData+EvaluationType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum FrameData_EvaluationType {
-    Evaluate = 0i32,
-    Playback = 1i32,
-}
-#[cfg(feature = "UnityEngine+Playables+FrameData+EvaluationType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Playables::FrameData_EvaluationType
-    => "UnityEngine.Playables"."FrameData/EvaluationType"
-);
-#[cfg(feature = "UnityEngine+Playables+FrameData+Flags")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum FrameData_Flags {
-    EffectivePlayStateDelayed = 16i32,
-    EffectivePlayStatePlaying = 32i32,
-    Evaluate = 1i32,
-    Hold = 8i32,
-    Loop = 4i32,
-    SeekOccured = 2i32,
-}
-#[cfg(feature = "UnityEngine+Playables+FrameData+Flags")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Playables::FrameData_Flags =>
-    "UnityEngine.Playables"."FrameData/Flags"
-);
 #[cfg(feature = "UnityEngine+Playables+FrameData")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -146,3 +118,31 @@ impl crate::UnityEngine::Playables::FrameData {
         Ok(__cordl_ret)
     }
 }
+#[cfg(feature = "UnityEngine+Playables+FrameData+EvaluationType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum FrameData_EvaluationType {
+    Evaluate = 0i32,
+    Playback = 1i32,
+}
+#[cfg(feature = "UnityEngine+Playables+FrameData+EvaluationType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::Playables::FrameData_EvaluationType
+    => "UnityEngine.Playables"."FrameData/EvaluationType"
+);
+#[cfg(feature = "UnityEngine+Playables+FrameData+Flags")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum FrameData_Flags {
+    EffectivePlayStateDelayed = 16i32,
+    EffectivePlayStatePlaying = 32i32,
+    Evaluate = 1i32,
+    Hold = 8i32,
+    Loop = 4i32,
+    SeekOccured = 2i32,
+}
+#[cfg(feature = "UnityEngine+Playables+FrameData+Flags")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::Playables::FrameData_Flags =>
+    "UnityEngine.Playables"."FrameData/Flags"
+);

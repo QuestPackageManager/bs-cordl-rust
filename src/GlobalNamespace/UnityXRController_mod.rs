@@ -1,140 +1,3 @@
-#[cfg(feature = "UnityXRController+Configuration")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct UnityXRController_Configuration {
-    __cordl_parent: crate::System::Object,
-    pub _positionActionReference_k__BackingField: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub _orientationActionReference_k__BackingField: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    pub _thumbstickActionReference_k__BackingField: *mut crate::UnityEngine::InputSystem::InputActionReference,
-}
-#[cfg(feature = "UnityXRController+Configuration")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::UnityXRController_Configuration
-    => ""."UnityXRController/Configuration"
-);
-#[cfg(feature = "UnityXRController+Configuration")]
-impl std::ops::Deref for crate::GlobalNamespace::UnityXRController_Configuration {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityXRController+Configuration")]
-impl std::ops::DerefMut for crate::GlobalNamespace::UnityXRController_Configuration {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityXRController+Configuration")]
-impl crate::GlobalNamespace::UnityXRController_Configuration {
-    pub fn CreateController(
-        &mut self,
-        node: crate::UnityEngine::XR::XRNode,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::UnityXRController> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::GlobalNamespace::UnityXRController = __cordl_object
-            .invoke("CreateController", (node))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_orientationActionReference(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputActionReference,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputActionReference = __cordl_object
-            .invoke("get_orientationActionReference", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_positionActionReference(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputActionReference,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputActionReference = __cordl_object
-            .invoke("get_positionActionReference", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_thumbstickActionReference(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputActionReference,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputActionReference = __cordl_object
-            .invoke("get_thumbstickActionReference", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_orientationActionReference(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_orientationActionReference", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_positionActionReference(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_positionActionReference", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_thumbstickActionReference(
-        &mut self,
-        value: *mut crate::UnityEngine::InputSystem::InputActionReference,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_thumbstickActionReference", (value))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityXRController+Configuration")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::UnityXRController_Configuration {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "UnityXRController")]
 #[repr(C)]
 #[derive(Debug)]
@@ -280,6 +143,143 @@ impl crate::GlobalNamespace::UnityXRController {
 }
 #[cfg(feature = "UnityXRController")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UnityXRController {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityXRController+Configuration")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct UnityXRController_Configuration {
+    __cordl_parent: crate::System::Object,
+    pub _positionActionReference_k__BackingField: *mut crate::UnityEngine::InputSystem::InputActionReference,
+    pub _orientationActionReference_k__BackingField: *mut crate::UnityEngine::InputSystem::InputActionReference,
+    pub _thumbstickActionReference_k__BackingField: *mut crate::UnityEngine::InputSystem::InputActionReference,
+}
+#[cfg(feature = "UnityXRController+Configuration")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::UnityXRController_Configuration
+    => ""."UnityXRController/Configuration"
+);
+#[cfg(feature = "UnityXRController+Configuration")]
+impl std::ops::Deref for crate::GlobalNamespace::UnityXRController_Configuration {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityXRController+Configuration")]
+impl std::ops::DerefMut for crate::GlobalNamespace::UnityXRController_Configuration {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityXRController+Configuration")]
+impl crate::GlobalNamespace::UnityXRController_Configuration {
+    pub fn CreateController(
+        &mut self,
+        node: crate::UnityEngine::XR::XRNode,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::UnityXRController> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::GlobalNamespace::UnityXRController = __cordl_object
+            .invoke("CreateController", (node))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_orientationActionReference(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputActionReference,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputActionReference = __cordl_object
+            .invoke("get_orientationActionReference", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_positionActionReference(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputActionReference,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputActionReference = __cordl_object
+            .invoke("get_positionActionReference", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_thumbstickActionReference(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputActionReference,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputActionReference = __cordl_object
+            .invoke("get_thumbstickActionReference", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_orientationActionReference(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::InputActionReference,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_orientationActionReference", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_positionActionReference(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::InputActionReference,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_positionActionReference", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_thumbstickActionReference(
+        &mut self,
+        value: *mut crate::UnityEngine::InputSystem::InputActionReference,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_thumbstickActionReference", (value))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityXRController+Configuration")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::UnityXRController_Configuration {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -1,17 +1,3 @@
-#[cfg(feature = "LevelDataAssetDownloadUpdate+AssetDownloadingState")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum LevelDataAssetDownloadUpdate_AssetDownloadingState {
-    Completed = 2i32,
-    Downloading = 1i32,
-    PreparingToDownload = 0i32,
-}
-#[cfg(feature = "LevelDataAssetDownloadUpdate+AssetDownloadingState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LevelDataAssetDownloadUpdate_AssetDownloadingState => ""
-    ."LevelDataAssetDownloadUpdate/AssetDownloadingState"
-);
 #[cfg(feature = "LevelDataAssetDownloadUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -56,3 +42,17 @@ impl crate::GlobalNamespace::LevelDataAssetDownloadUpdate {
         Ok(__cordl_ret)
     }
 }
+#[cfg(feature = "LevelDataAssetDownloadUpdate+AssetDownloadingState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum LevelDataAssetDownloadUpdate_AssetDownloadingState {
+    Completed = 2i32,
+    Downloading = 1i32,
+    PreparingToDownload = 0i32,
+}
+#[cfg(feature = "LevelDataAssetDownloadUpdate+AssetDownloadingState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::LevelDataAssetDownloadUpdate_AssetDownloadingState => ""
+    ."LevelDataAssetDownloadUpdate/AssetDownloadingState"
+);

@@ -1,24 +1,3 @@
-#[cfg(
-    feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
-)]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum EventTrackDefinitionSO_DataTransformationType {
-    DeltaRotation = 2i32,
-    Light = 1i32,
-    NoTransformation = 0i32,
-    Switch = 3i32,
-    TurnOffValueDuration = 4i32,
-    ValueDuration = 5i32,
-}
-#[cfg(
-    feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType =>
-    "BeatSaber.TrackDefinitions"."EventTrackDefinitionSO/DataTransformationType"
-);
 #[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
 #[repr(C)]
 #[derive(Debug)]
@@ -122,6 +101,27 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
+)]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum EventTrackDefinitionSO_DataTransformationType {
+    DeltaRotation = 2i32,
+    Light = 1i32,
+    NoTransformation = 0i32,
+    Switch = 3i32,
+    TurnOffValueDuration = 4i32,
+    ValueDuration = 5i32,
+}
+#[cfg(
+    feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType =>
+    "BeatSaber.TrackDefinitions"."EventTrackDefinitionSO/DataTransformationType"
+);
 #[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

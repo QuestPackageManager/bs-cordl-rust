@@ -13,7 +13,7 @@ pub struct FileSystemEnumerator_1<TResult: quest_hook::libil2cpp::Type> {
     pub _pending: *mut crate::System::Collections::Generic::Queue_1<
         *mut crate::System::String,
     >,
-    pub _entry: crate::GlobalNamespace::Sys_DirectoryEntry,
+    pub _entry: crate::GlobalNamespace::Sys_Interop_DirectoryEntry,
     pub _current: TResult,
     pub _pathBuffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
     pub _entryBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,

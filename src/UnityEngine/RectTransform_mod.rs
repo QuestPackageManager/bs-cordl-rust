@@ -1,100 +1,3 @@
-#[cfg(feature = "UnityEngine+RectTransform+Axis")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum RectTransform_Axis {
-    Horizontal = 0i32,
-    Vertical = 1i32,
-}
-#[cfg(feature = "UnityEngine+RectTransform+Axis")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::RectTransform_Axis => "UnityEngine"
-    ."RectTransform/Axis"
-);
-#[cfg(feature = "UnityEngine+RectTransform+Edge")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum RectTransform_Edge {
-    Bottom = 3i32,
-    Left = 0i32,
-    Right = 1i32,
-    Top = 2i32,
-}
-#[cfg(feature = "UnityEngine+RectTransform+Edge")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::RectTransform_Edge => "UnityEngine"
-    ."RectTransform/Edge"
-);
-#[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct RectTransform_ReapplyDrivenProperties {
-    __cordl_parent: crate::System::MulticastDelegate,
-}
-#[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::RectTransform_ReapplyDrivenProperties => "UnityEngine"
-    ."RectTransform/ReapplyDrivenProperties"
-);
-#[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
-impl std::ops::Deref for crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
-    type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
-impl std::ops::DerefMut for crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
-impl crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
-    pub fn Invoke(
-        &mut self,
-        driven: *mut crate::UnityEngine::RectTransform,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (driven))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "UnityEngine+RectTransform")]
 #[repr(C)]
 #[derive(Debug)]
@@ -569,6 +472,103 @@ impl crate::UnityEngine::RectTransform {
 }
 #[cfg(feature = "UnityEngine+RectTransform")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::RectTransform {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+RectTransform+Axis")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum RectTransform_Axis {
+    Horizontal = 0i32,
+    Vertical = 1i32,
+}
+#[cfg(feature = "UnityEngine+RectTransform+Axis")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::RectTransform_Axis => "UnityEngine"
+    ."RectTransform/Axis"
+);
+#[cfg(feature = "UnityEngine+RectTransform+Edge")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum RectTransform_Edge {
+    Bottom = 3i32,
+    Left = 0i32,
+    Right = 1i32,
+    Top = 2i32,
+}
+#[cfg(feature = "UnityEngine+RectTransform+Edge")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::RectTransform_Edge => "UnityEngine"
+    ."RectTransform/Edge"
+);
+#[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct RectTransform_ReapplyDrivenProperties {
+    __cordl_parent: crate::System::MulticastDelegate,
+}
+#[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::RectTransform_ReapplyDrivenProperties => "UnityEngine"
+    ."RectTransform/ReapplyDrivenProperties"
+);
+#[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
+impl std::ops::Deref for crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
+    type Target = crate::System::MulticastDelegate;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
+impl std::ops::DerefMut for crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
+impl crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
+    pub fn Invoke(
+        &mut self,
+        driven: *mut crate::UnityEngine::RectTransform,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (driven))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

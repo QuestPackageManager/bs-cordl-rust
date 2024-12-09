@@ -1,42 +1,3 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector+PseudoStateData")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct StyleComplexSelector_PseudoStateData {
-    pub state: crate::UnityEngine::UIElements::PseudoStates,
-    pub negate: bool,
-}
-#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector+PseudoStateData")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::StyleComplexSelector_PseudoStateData =>
-    "UnityEngine.UIElements"."StyleComplexSelector/PseudoStateData"
-);
-#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector+PseudoStateData")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::StyleComplexSelector_PseudoStateData {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector+PseudoStateData")]
-impl crate::UnityEngine::UIElements::StyleComplexSelector_PseudoStateData {
-    pub fn _ctor(
-        &mut self,
-        state: crate::UnityEngine::UIElements::PseudoStates,
-        negate: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (state, negate),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector")]
 #[repr(C)]
 #[derive(Debug)]
@@ -216,5 +177,44 @@ for crate::UnityEngine::UIElements::StyleComplexSelector {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector+PseudoStateData")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct StyleComplexSelector_PseudoStateData {
+    pub state: crate::UnityEngine::UIElements::PseudoStates,
+    pub negate: bool,
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector+PseudoStateData")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::StyleComplexSelector_PseudoStateData =>
+    "UnityEngine.UIElements"."StyleComplexSelector/PseudoStateData"
+);
+#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector+PseudoStateData")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::StyleComplexSelector_PseudoStateData {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector+PseudoStateData")]
+impl crate::UnityEngine::UIElements::StyleComplexSelector_PseudoStateData {
+    pub fn _ctor(
+        &mut self,
+        state: crate::UnityEngine::UIElements::PseudoStates,
+        negate: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (state, negate),
+        )?;
+        Ok(__cordl_ret)
     }
 }

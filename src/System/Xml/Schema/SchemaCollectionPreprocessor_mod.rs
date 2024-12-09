@@ -1,17 +1,3 @@
-#[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor+Compositor")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum SchemaCollectionPreprocessor_Compositor {
-    Import = 2i32,
-    Include = 1i32,
-    Root = 0i32,
-}
-#[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor+Compositor")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::Schema::SchemaCollectionPreprocessor_Compositor => "System.Xml.Schema"
-    ."SchemaCollectionPreprocessor/Compositor"
-);
 #[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor")]
 #[repr(C)]
 #[derive(Debug)]
@@ -465,3 +451,17 @@ for crate::System::Xml::Schema::SchemaCollectionPreprocessor {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor+Compositor")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum SchemaCollectionPreprocessor_Compositor {
+    Import = 2i32,
+    Include = 1i32,
+    Root = 0i32,
+}
+#[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor+Compositor")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Xml::Schema::SchemaCollectionPreprocessor_Compositor => "System.Xml.Schema"
+    ."SchemaCollectionPreprocessor/Compositor"
+);

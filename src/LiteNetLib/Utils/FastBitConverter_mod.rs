@@ -1,3 +1,43 @@
+#[cfg(feature = "LiteNetLib+Utils+FastBitConverter")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct FastBitConverter {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "LiteNetLib+Utils+FastBitConverter")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::LiteNetLib::Utils::FastBitConverter =>
+    "LiteNetLib.Utils"."FastBitConverter"
+);
+#[cfg(feature = "LiteNetLib+Utils+FastBitConverter")]
+impl std::ops::Deref for crate::LiteNetLib::Utils::FastBitConverter {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "LiteNetLib+Utils+FastBitConverter")]
+impl std::ops::DerefMut for crate::LiteNetLib::Utils::FastBitConverter {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "LiteNetLib+Utils+FastBitConverter")]
+impl crate::LiteNetLib::Utils::FastBitConverter {
+    #[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
+    pub type ConverterHelperDouble = crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble;
+    #[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
+    pub type ConverterHelperFloat = crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat;
+}
+#[cfg(feature = "LiteNetLib+Utils+FastBitConverter")]
+impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::FastBitConverter {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -48,43 +88,3 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
 }
 #[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
 impl crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {}
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct FastBitConverter {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::LiteNetLib::Utils::FastBitConverter =>
-    "LiteNetLib.Utils"."FastBitConverter"
-);
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter")]
-impl std::ops::Deref for crate::LiteNetLib::Utils::FastBitConverter {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter")]
-impl std::ops::DerefMut for crate::LiteNetLib::Utils::FastBitConverter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter")]
-impl crate::LiteNetLib::Utils::FastBitConverter {
-    #[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
-    pub type ConverterHelperDouble = crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble;
-    #[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
-    pub type ConverterHelperFloat = crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat;
-}
-#[cfg(feature = "LiteNetLib+Utils+FastBitConverter")]
-impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::FastBitConverter {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}

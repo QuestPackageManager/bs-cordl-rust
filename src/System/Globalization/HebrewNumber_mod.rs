@@ -1,32 +1,3 @@
-#[cfg(feature = "System+Globalization+HebrewNumber+HS")]
-#[repr(i8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum HebrewNumber_HS {
-    END = 100i8,
-    S400 = 1i8,
-    S400_400 = 2i8,
-    S400_400_100 = 13i8,
-    S400_400_DQ = 12i8,
-    S400_DQ = 11i8,
-    S400_X0 = 4i8,
-    S400_X00 = 3i8,
-    S400_X00_X0 = 6i8,
-    S9 = 14i8,
-    S9_DQ = 16i8,
-    Start = 0i8,
-    X = 8i8,
-    X0 = 9i8,
-    X00 = 10i8,
-    X00_DQ = 5i8,
-    X00_S9 = 15i8,
-    X0_DQ = 7i8,
-    _err = -1i8,
-}
-#[cfg(feature = "System+Globalization+HebrewNumber+HS")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Globalization::HebrewNumber_HS =>
-    "System.Globalization"."HebrewNumber/HS"
-);
 #[cfg(feature = "System+Globalization+HebrewNumber")]
 #[repr(C)]
 #[derive(Debug)]
@@ -69,6 +40,35 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::HebrewN
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Globalization+HebrewNumber+HS")]
+#[repr(i8)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum HebrewNumber_HS {
+    END = 100i8,
+    S400 = 1i8,
+    S400_400 = 2i8,
+    S400_400_100 = 13i8,
+    S400_400_DQ = 12i8,
+    S400_DQ = 11i8,
+    S400_X0 = 4i8,
+    S400_X00 = 3i8,
+    S400_X00_X0 = 6i8,
+    S9 = 14i8,
+    S9_DQ = 16i8,
+    Start = 0i8,
+    X = 8i8,
+    X0 = 9i8,
+    X00 = 10i8,
+    X00_DQ = 5i8,
+    X00_S9 = 15i8,
+    X0_DQ = 7i8,
+    _err = -1i8,
+}
+#[cfg(feature = "System+Globalization+HebrewNumber+HS")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Globalization::HebrewNumber_HS =>
+    "System.Globalization"."HebrewNumber/HS"
+);
 #[cfg(feature = "System+Globalization+HebrewNumber+HebrewToken")]
 #[repr(i16)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

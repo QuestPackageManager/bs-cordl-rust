@@ -1,18 +1,3 @@
-#[cfg(feature = "System+Data+Common+ObjectStorage+Families")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ObjectStorage_Families {
-    ARRAY = 4i32,
-    BOOLEAN = 3i32,
-    DATETIME = 0i32,
-    NUMBER = 1i32,
-    STRING = 2i32,
-}
-#[cfg(feature = "System+Data+Common+ObjectStorage+Families")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::Common::ObjectStorage_Families =>
-    "System.Data.Common"."ObjectStorage/Families"
-);
 #[cfg(feature = "System+Data+Common+ObjectStorage")]
 #[repr(C)]
 #[derive(Debug)]
@@ -285,6 +270,21 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::Common::ObjectSt
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Data+Common+ObjectStorage+Families")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ObjectStorage_Families {
+    ARRAY = 4i32,
+    BOOLEAN = 3i32,
+    DATETIME = 0i32,
+    NUMBER = 1i32,
+    STRING = 2i32,
+}
+#[cfg(feature = "System+Data+Common+ObjectStorage+Families")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Data::Common::ObjectStorage_Families =>
+    "System.Data.Common"."ObjectStorage/Families"
+);
 #[cfg(feature = "System+Data+Common+ObjectStorage+TempAssemblyComparer")]
 #[repr(C)]
 #[derive(Debug)]

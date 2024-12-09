@@ -1,299 +1,3 @@
-#[cfg(feature = "OVRManager+CameraDevice")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRManager_CameraDevice {
-    WebCamera0 = 0i32,
-    WebCamera1 = 1i32,
-    ZEDCamera = 2i32,
-}
-#[cfg(feature = "OVRManager+CameraDevice")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRManager_CameraDevice => ""
-    ."OVRManager/CameraDevice"
-);
-#[cfg(feature = "OVRManager+ColorSpace")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRManager_ColorSpace {
-    Adobe_RGB = 8i32,
-    P3 = 7i32,
-    Quest = 6i32,
-    Rec_2020 = 2i32,
-    Rec_709 = 3i32,
-    Rift_CV1 = 4i32,
-    Rift_S = 5i32,
-    Unknown = 0i32,
-    Unmanaged = 1i32,
-}
-#[cfg(feature = "OVRManager+ColorSpace")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRManager_ColorSpace => ""
-    ."OVRManager/ColorSpace"
-);
-#[cfg(feature = "OVRManager+CompositionMethod")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRManager_CompositionMethod {
-    Direct = 1i32,
-    External = 0i32,
-}
-#[cfg(feature = "OVRManager+CompositionMethod")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRManager_CompositionMethod =>
-    ""."OVRManager/CompositionMethod"
-);
-#[cfg(feature = "OVRManager+ControllerDrivenHandPosesType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRManager_ControllerDrivenHandPosesType {
-    ConformingToController = 1i32,
-    Natural = 2i32,
-    None = 0i32,
-}
-#[cfg(feature = "OVRManager+ControllerDrivenHandPosesType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OVRManager_ControllerDrivenHandPosesType => ""
-    ."OVRManager/ControllerDrivenHandPosesType"
-);
-#[cfg(feature = "OVRManager+DepthQuality")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRManager_DepthQuality {
-    High = 2i32,
-    Low = 0i32,
-    Medium = 1i32,
-}
-#[cfg(feature = "OVRManager+DepthQuality")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRManager_DepthQuality => ""
-    ."OVRManager/DepthQuality"
-);
-#[cfg(feature = "OVRManager+EventListener")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct OVRManager_EventListener {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-}
-#[cfg(feature = "OVRManager+EventListener")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRManager_EventListener => ""
-    ."OVRManager/EventListener"
-);
-#[cfg(feature = "OVRManager+EventListener")]
-impl std::ops::Deref for crate::GlobalNamespace::OVRManager_EventListener {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRManager+EventListener")]
-impl std::ops::DerefMut for crate::GlobalNamespace::OVRManager_EventListener {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRManager+EventListener")]
-impl crate::GlobalNamespace::OVRManager_EventListener {
-    pub fn OnEvent(
-        &mut self,
-        eventData: crate::GlobalNamespace::OVRPlugin_EventDataBuffer,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEvent", (eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
-    }
-}
-#[cfg(feature = "OVRManager+EventListener")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRManager_EventListener {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "OVRManager+EyeTextureFormat")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRManager_EyeTextureFormat {
-    Default = 0i32,
-    R11G11B10_FP = 3i32,
-    R16G16B16A16_FP = 2i32,
-}
-#[cfg(feature = "OVRManager+EyeTextureFormat")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRManager_EyeTextureFormat =>
-    ""."OVRManager/EyeTextureFormat"
-);
-#[cfg(feature = "OVRManager+FixedFoveatedRenderingLevel")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRManager_FixedFoveatedRenderingLevel {
-    High = 3i32,
-    HighTop = 4i32,
-    Low = 1i32,
-    Medium = 2i32,
-    Off = 0i32,
-}
-#[cfg(feature = "OVRManager+FixedFoveatedRenderingLevel")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OVRManager_FixedFoveatedRenderingLevel => ""
-    ."OVRManager/FixedFoveatedRenderingLevel"
-);
-#[cfg(feature = "OVRManager+FoveatedRenderingLevel")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRManager_FoveatedRenderingLevel {
-    High = 3i32,
-    HighTop = 4i32,
-    Low = 1i32,
-    Medium = 2i32,
-    Off = 0i32,
-}
-#[cfg(feature = "OVRManager+FoveatedRenderingLevel")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OVRManager_FoveatedRenderingLevel => ""
-    ."OVRManager/FoveatedRenderingLevel"
-);
-#[cfg(feature = "OVRManager+InstantiateMrcCameraDelegate")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct OVRManager_InstantiateMrcCameraDelegate {
-    __cordl_parent: crate::System::MulticastDelegate,
-}
-#[cfg(feature = "OVRManager+InstantiateMrcCameraDelegate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate => ""
-    ."OVRManager/InstantiateMrcCameraDelegate"
-);
-#[cfg(feature = "OVRManager+InstantiateMrcCameraDelegate")]
-impl std::ops::Deref
-for crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate {
-    type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRManager+InstantiateMrcCameraDelegate")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRManager+InstantiateMrcCameraDelegate")]
-impl crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate {
-    pub fn BeginInvoke(
-        &mut self,
-        mainCameraGameObject: *mut crate::UnityEngine::GameObject,
-        cameraType: crate::GlobalNamespace::OVRManager_MrcCameraType,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (mainCameraGameObject, cameraType, callback, object),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-        mainCameraGameObject: *mut crate::UnityEngine::GameObject,
-        cameraType: crate::GlobalNamespace::OVRManager_MrcCameraType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
-            .invoke("Invoke", (mainCameraGameObject, cameraType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "OVRManager+InstantiateMrcCameraDelegate")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "OVRManager+MrcActivationMode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRManager_MrcActivationMode {
-    Automatic = 0i32,
-    Disabled = 1i32,
-}
-#[cfg(feature = "OVRManager+MrcActivationMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRManager_MrcActivationMode =>
-    ""."OVRManager/MrcActivationMode"
-);
-#[cfg(feature = "OVRManager+MrcCameraType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRManager_MrcCameraType {
-    Background = 2i32,
-    Foreground = 1i32,
-    Normal = 0i32,
-}
-#[cfg(feature = "OVRManager+MrcCameraType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRManager_MrcCameraType => ""
-    ."OVRManager/MrcCameraType"
-);
 #[cfg(feature = "OVRManager")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1593,6 +1297,302 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRManager+CameraDevice")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRManager_CameraDevice {
+    WebCamera0 = 0i32,
+    WebCamera1 = 1i32,
+    ZEDCamera = 2i32,
+}
+#[cfg(feature = "OVRManager+CameraDevice")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRManager_CameraDevice => ""
+    ."OVRManager/CameraDevice"
+);
+#[cfg(feature = "OVRManager+ColorSpace")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRManager_ColorSpace {
+    Adobe_RGB = 8i32,
+    P3 = 7i32,
+    Quest = 6i32,
+    Rec_2020 = 2i32,
+    Rec_709 = 3i32,
+    Rift_CV1 = 4i32,
+    Rift_S = 5i32,
+    Unknown = 0i32,
+    Unmanaged = 1i32,
+}
+#[cfg(feature = "OVRManager+ColorSpace")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRManager_ColorSpace => ""
+    ."OVRManager/ColorSpace"
+);
+#[cfg(feature = "OVRManager+CompositionMethod")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRManager_CompositionMethod {
+    Direct = 1i32,
+    External = 0i32,
+}
+#[cfg(feature = "OVRManager+CompositionMethod")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRManager_CompositionMethod =>
+    ""."OVRManager/CompositionMethod"
+);
+#[cfg(feature = "OVRManager+ControllerDrivenHandPosesType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRManager_ControllerDrivenHandPosesType {
+    ConformingToController = 1i32,
+    Natural = 2i32,
+    None = 0i32,
+}
+#[cfg(feature = "OVRManager+ControllerDrivenHandPosesType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRManager_ControllerDrivenHandPosesType => ""
+    ."OVRManager/ControllerDrivenHandPosesType"
+);
+#[cfg(feature = "OVRManager+DepthQuality")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRManager_DepthQuality {
+    High = 2i32,
+    Low = 0i32,
+    Medium = 1i32,
+}
+#[cfg(feature = "OVRManager+DepthQuality")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRManager_DepthQuality => ""
+    ."OVRManager/DepthQuality"
+);
+#[cfg(feature = "OVRManager+EventListener")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRManager_EventListener {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "OVRManager+EventListener")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRManager_EventListener => ""
+    ."OVRManager/EventListener"
+);
+#[cfg(feature = "OVRManager+EventListener")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRManager_EventListener {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRManager+EventListener")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRManager_EventListener {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRManager+EventListener")]
+impl crate::GlobalNamespace::OVRManager_EventListener {
+    pub fn OnEvent(
+        &mut self,
+        eventData: crate::GlobalNamespace::OVRPlugin_EventDataBuffer,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnEvent", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+}
+#[cfg(feature = "OVRManager+EventListener")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRManager_EventListener {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "OVRManager+EyeTextureFormat")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRManager_EyeTextureFormat {
+    Default = 0i32,
+    R11G11B10_FP = 3i32,
+    R16G16B16A16_FP = 2i32,
+}
+#[cfg(feature = "OVRManager+EyeTextureFormat")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRManager_EyeTextureFormat =>
+    ""."OVRManager/EyeTextureFormat"
+);
+#[cfg(feature = "OVRManager+FixedFoveatedRenderingLevel")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRManager_FixedFoveatedRenderingLevel {
+    High = 3i32,
+    HighTop = 4i32,
+    Low = 1i32,
+    Medium = 2i32,
+    Off = 0i32,
+}
+#[cfg(feature = "OVRManager+FixedFoveatedRenderingLevel")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRManager_FixedFoveatedRenderingLevel => ""
+    ."OVRManager/FixedFoveatedRenderingLevel"
+);
+#[cfg(feature = "OVRManager+FoveatedRenderingLevel")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRManager_FoveatedRenderingLevel {
+    High = 3i32,
+    HighTop = 4i32,
+    Low = 1i32,
+    Medium = 2i32,
+    Off = 0i32,
+}
+#[cfg(feature = "OVRManager+FoveatedRenderingLevel")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRManager_FoveatedRenderingLevel => ""
+    ."OVRManager/FoveatedRenderingLevel"
+);
+#[cfg(feature = "OVRManager+InstantiateMrcCameraDelegate")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRManager_InstantiateMrcCameraDelegate {
+    __cordl_parent: crate::System::MulticastDelegate,
+}
+#[cfg(feature = "OVRManager+InstantiateMrcCameraDelegate")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate => ""
+    ."OVRManager/InstantiateMrcCameraDelegate"
+);
+#[cfg(feature = "OVRManager+InstantiateMrcCameraDelegate")]
+impl std::ops::Deref
+for crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate {
+    type Target = crate::System::MulticastDelegate;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRManager+InstantiateMrcCameraDelegate")]
+impl std::ops::DerefMut
+for crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRManager+InstantiateMrcCameraDelegate")]
+impl crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate {
+    pub fn BeginInvoke(
+        &mut self,
+        mainCameraGameObject: *mut crate::UnityEngine::GameObject,
+        cameraType: crate::GlobalNamespace::OVRManager_MrcCameraType,
+        callback: *mut crate::System::AsyncCallback,
+        object: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke(
+                "BeginInvoke",
+                (mainCameraGameObject, cameraType, callback, object),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+        mainCameraGameObject: *mut crate::UnityEngine::GameObject,
+        cameraType: crate::GlobalNamespace::OVRManager_MrcCameraType,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::GameObject = __cordl_object
+            .invoke("Invoke", (mainCameraGameObject, cameraType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "OVRManager+InstantiateMrcCameraDelegate")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "OVRManager+MrcActivationMode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRManager_MrcActivationMode {
+    Automatic = 0i32,
+    Disabled = 1i32,
+}
+#[cfg(feature = "OVRManager+MrcActivationMode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRManager_MrcActivationMode =>
+    ""."OVRManager/MrcActivationMode"
+);
+#[cfg(feature = "OVRManager+MrcCameraType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRManager_MrcCameraType {
+    Background = 2i32,
+    Foreground = 1i32,
+    Normal = 0i32,
+}
+#[cfg(feature = "OVRManager+MrcCameraType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRManager_MrcCameraType => ""
+    ."OVRManager/MrcCameraType"
+);
 #[cfg(feature = "OVRManager+PassthroughCapabilities")]
 #[repr(C)]
 #[derive(Debug)]

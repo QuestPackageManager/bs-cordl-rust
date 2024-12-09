@@ -1,3 +1,93 @@
+#[cfg(feature = "VideoProjectionEffect")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct VideoProjectionEffect {
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    pub _videoProjectionDataModel: *mut crate::GlobalNamespace::VideoProjectionDataModelSO,
+    pub _videoPlayer: *mut crate::GlobalNamespace::SongTimeSyncedVideoPlayer,
+    pub _videoEventType: crate::GlobalNamespace::BasicBeatmapEventType,
+    pub _initData: *mut crate::GlobalNamespace::VideoProjectionEffect_InitData,
+    pub _environmentContext: crate::GlobalNamespace::EnvironmentContext,
+    pub _beatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
+    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
+    pub _behavior: *mut crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior,
+}
+#[cfg(feature = "VideoProjectionEffect")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::VideoProjectionEffect => ""
+    ."VideoProjectionEffect"
+);
+#[cfg(feature = "VideoProjectionEffect")]
+impl std::ops::Deref for crate::GlobalNamespace::VideoProjectionEffect {
+    type Target = crate::UnityEngine::MonoBehaviour;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "VideoProjectionEffect")]
+impl std::ops::DerefMut for crate::GlobalNamespace::VideoProjectionEffect {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "VideoProjectionEffect")]
+impl crate::GlobalNamespace::VideoProjectionEffect {
+    #[cfg(feature = "VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior")]
+    pub type BeatmapEditorVideoProjectionBehavior = crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior;
+    #[cfg(feature = "VideoProjectionEffect+GameplayVideoProjectionBehavior")]
+    pub type GameplayVideoProjectionBehavior = crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavior;
+    #[cfg(feature = "VideoProjectionEffect+InitData")]
+    pub type InitData = crate::GlobalNamespace::VideoProjectionEffect_InitData;
+    #[cfg(feature = "VideoProjectionEffect+VideoProjectionBehavior")]
+    pub type VideoProjectionBehavior = crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Start(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Start", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "VideoProjectionEffect")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::VideoProjectionEffect {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior")]
 #[repr(C)]
 #[derive(Debug)]
@@ -282,11 +372,11 @@ impl crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
     #[cfg(
         feature = "VideoProjectionEffect+VideoProjectionBehavior+_LoadPreviewCoverAsset_d__8"
     )]
-    pub type _LoadPreviewCoverAsset_d__8 = crate::GlobalNamespace::VideoProjectionBehavior__LoadPreviewCoverAsset_d__8;
+    pub type _LoadPreviewCoverAsset_d__8 = crate::GlobalNamespace::VideoProjectionBehavior_VideoProjectionEffect__LoadPreviewCoverAsset_d__8;
     #[cfg(
         feature = "VideoProjectionEffect+VideoProjectionBehavior+__c__DisplayClass7_0"
     )]
-    pub type __c__DisplayClass7_0 = crate::GlobalNamespace::VideoProjectionBehavior___c__DisplayClass7_0;
+    pub type __c__DisplayClass7_0 = crate::GlobalNamespace::VideoProjectionBehavior_VideoProjectionEffect___c__DisplayClass7_0;
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -346,96 +436,6 @@ impl crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
 #[cfg(feature = "VideoProjectionEffect+VideoProjectionBehavior")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "VideoProjectionEffect")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct VideoProjectionEffect {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _videoProjectionDataModel: *mut crate::GlobalNamespace::VideoProjectionDataModelSO,
-    pub _videoPlayer: *mut crate::GlobalNamespace::SongTimeSyncedVideoPlayer,
-    pub _videoEventType: crate::GlobalNamespace::BasicBeatmapEventType,
-    pub _initData: *mut crate::GlobalNamespace::VideoProjectionEffect_InitData,
-    pub _environmentContext: crate::GlobalNamespace::EnvironmentContext,
-    pub _beatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
-    pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
-    pub _behavior: *mut crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior,
-}
-#[cfg(feature = "VideoProjectionEffect")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::VideoProjectionEffect => ""
-    ."VideoProjectionEffect"
-);
-#[cfg(feature = "VideoProjectionEffect")]
-impl std::ops::Deref for crate::GlobalNamespace::VideoProjectionEffect {
-    type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "VideoProjectionEffect")]
-impl std::ops::DerefMut for crate::GlobalNamespace::VideoProjectionEffect {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "VideoProjectionEffect")]
-impl crate::GlobalNamespace::VideoProjectionEffect {
-    #[cfg(feature = "VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior")]
-    pub type BeatmapEditorVideoProjectionBehavior = crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior;
-    #[cfg(feature = "VideoProjectionEffect+GameplayVideoProjectionBehavior")]
-    pub type GameplayVideoProjectionBehavior = crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavior;
-    #[cfg(feature = "VideoProjectionEffect+InitData")]
-    pub type InitData = crate::GlobalNamespace::VideoProjectionEffect_InitData;
-    #[cfg(feature = "VideoProjectionEffect+VideoProjectionBehavior")]
-    pub type VideoProjectionBehavior = crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "VideoProjectionEffect")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::VideoProjectionEffect {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

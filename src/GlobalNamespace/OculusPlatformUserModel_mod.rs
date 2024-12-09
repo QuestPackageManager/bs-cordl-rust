@@ -1,61 +1,3 @@
-#[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
-    pub __1__state: i32,
-    pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<
-        *mut crate::Oculus::Platform::Message_1<
-            *mut crate::Oculus::Platform::Models::User,
-        >,
-    >,
-    pub userId: *mut crate::System::String,
-    pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
-        *mut crate::Oculus::Platform::Message_1<
-            *mut crate::Oculus::Platform::Models::User,
-        >,
-    >,
-}
-#[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d
-    => ""."OculusPlatformUserModel/<<GetUserNamesForUserIds>g__Fetch|16_0>d"
-);
-#[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
-impl crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
-    pub fn MoveNext(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveNext",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetStateMachine(
-        &mut self,
-        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetStateMachine",
-            (stateMachine),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "OculusPlatformUserModel")]
 #[repr(C)]
 #[derive(Debug)]
@@ -276,5 +218,63 @@ for crate::GlobalNamespace::OculusPlatformUserModel {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
+    pub __1__state: i32,
+    pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<
+        *mut crate::Oculus::Platform::Message_1<
+            *mut crate::Oculus::Platform::Models::User,
+        >,
+    >,
+    pub userId: *mut crate::System::String,
+    pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+        *mut crate::Oculus::Platform::Message_1<
+            *mut crate::Oculus::Platform::Models::User,
+        >,
+    >,
+}
+#[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d
+    => ""."OculusPlatformUserModel/<<GetUserNamesForUserIds>g__Fetch|16_0>d"
+);
+#[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
+impl crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
+    pub fn MoveNext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MoveNext",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetStateMachine(
+        &mut self,
+        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetStateMachine",
+            (stateMachine),
+        )?;
+        Ok(__cordl_ret)
     }
 }

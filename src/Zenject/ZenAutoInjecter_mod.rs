@@ -1,16 +1,3 @@
-#[cfg(feature = "Zenject+ZenAutoInjecter+ContainerSources")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ZenAutoInjecter_ContainerSources {
-    ProjectContext = 1i32,
-    SceneContext = 0i32,
-    SearchHierarchy = 2i32,
-}
-#[cfg(feature = "Zenject+ZenAutoInjecter+ContainerSources")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Zenject::ZenAutoInjecter_ContainerSources =>
-    "Zenject"."ZenAutoInjecter/ContainerSources"
-);
 #[cfg(feature = "Zenject+ZenAutoInjecter")]
 #[repr(C)]
 #[derive(Debug)]
@@ -131,3 +118,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ZenAutoInjecter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+ZenAutoInjecter+ContainerSources")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ZenAutoInjecter_ContainerSources {
+    ProjectContext = 1i32,
+    SceneContext = 0i32,
+    SearchHierarchy = 2i32,
+}
+#[cfg(feature = "Zenject+ZenAutoInjecter+ContainerSources")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::Zenject::ZenAutoInjecter_ContainerSources =>
+    "Zenject"."ZenAutoInjecter/ContainerSources"
+);

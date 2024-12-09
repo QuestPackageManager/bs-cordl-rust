@@ -1,21 +1,3 @@
-#[cfg(feature = "OVROverlayMeshGenerator+CubeFace")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVROverlayMeshGenerator_CubeFace {
-    Back = 5i32,
-    Bottom = 3i32,
-    COUNT = 6i32,
-    Front = 4i32,
-    Left = 1i32,
-    Right = 0i32,
-    Top = 2i32,
-}
-#[cfg(feature = "OVROverlayMeshGenerator+CubeFace")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OVROverlayMeshGenerator_CubeFace => ""
-    ."OVROverlayMeshGenerator/CubeFace"
-);
 #[cfg(feature = "OVROverlayMeshGenerator")]
 #[repr(C)]
 #[derive(Debug)]
@@ -173,3 +155,21 @@ for crate::GlobalNamespace::OVROverlayMeshGenerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVROverlayMeshGenerator+CubeFace")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVROverlayMeshGenerator_CubeFace {
+    Back = 5i32,
+    Bottom = 3i32,
+    COUNT = 6i32,
+    Front = 4i32,
+    Left = 1i32,
+    Right = 0i32,
+    Top = 2i32,
+}
+#[cfg(feature = "OVROverlayMeshGenerator+CubeFace")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVROverlayMeshGenerator_CubeFace => ""
+    ."OVROverlayMeshGenerator/CubeFace"
+);

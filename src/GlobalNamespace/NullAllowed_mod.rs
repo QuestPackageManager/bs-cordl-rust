@@ -1,15 +1,3 @@
-#[cfg(feature = "NullAllowed+Context")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum NullAllowed_Context {
-    Everywhere = 0i32,
-    Prefab = 1i32,
-}
-#[cfg(feature = "NullAllowed+Context")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::NullAllowed_Context => ""
-    ."NullAllowed/Context"
-);
 #[cfg(feature = "NullAllowed")]
 #[repr(C)]
 #[derive(Debug)]
@@ -78,3 +66,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NullAllowed {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NullAllowed+Context")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum NullAllowed_Context {
+    Everywhere = 0i32,
+    Prefab = 1i32,
+}
+#[cfg(feature = "NullAllowed+Context")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NullAllowed_Context => ""
+    ."NullAllowed/Context"
+);

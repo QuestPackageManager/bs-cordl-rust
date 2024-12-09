@@ -1,163 +1,3 @@
-#[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct PKCS12_DeriveBytes {
-    __cordl_parent: crate::System::Object,
-    pub _hashName: *mut crate::System::String,
-    pub _iterations: i32,
-    pub _password: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-}
-#[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Security::X509::PKCS12_DeriveBytes =>
-    "Mono.Security.X509"."PKCS12/DeriveBytes"
-);
-#[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
-impl std::ops::Deref for crate::Mono::Security::X509::PKCS12_DeriveBytes {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
-impl std::ops::DerefMut for crate::Mono::Security::X509::PKCS12_DeriveBytes {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
-impl crate::Mono::Security::X509::PKCS12_DeriveBytes {
-    pub fn Adjust(
-        &mut self,
-        a: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        aOff: i32,
-        b: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Adjust", (a, aOff, b))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Derive(
-        &mut self,
-        diversifier: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        n: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("Derive", (diversifier, n))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DeriveIV(
-        &mut self,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("DeriveIV", (_cordl_size))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DeriveKey(
-        &mut self,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("DeriveKey", (_cordl_size))?;
-        Ok(__cordl_ret)
-    }
-    pub fn DeriveMAC(
-        &mut self,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("DeriveMAC", (_cordl_size))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_HashName(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_HashName", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_IterationCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IterationCount", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Password(
-        &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Password", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Salt(
-        &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Salt", (value))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Mono::Security::X509::PKCS12_DeriveBytes {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "Mono+Security+X509+PKCS12")]
 #[repr(C)]
 #[derive(Debug)]
@@ -546,6 +386,166 @@ impl crate::Mono::Security::X509::PKCS12 {
 }
 #[cfg(feature = "Mono+Security+X509+PKCS12")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::X509::PKCS12 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct PKCS12_DeriveBytes {
+    __cordl_parent: crate::System::Object,
+    pub _hashName: *mut crate::System::String,
+    pub _iterations: i32,
+    pub _password: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _salt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+}
+#[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::Mono::Security::X509::PKCS12_DeriveBytes =>
+    "Mono.Security.X509"."PKCS12/DeriveBytes"
+);
+#[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
+impl std::ops::Deref for crate::Mono::Security::X509::PKCS12_DeriveBytes {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
+impl std::ops::DerefMut for crate::Mono::Security::X509::PKCS12_DeriveBytes {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
+impl crate::Mono::Security::X509::PKCS12_DeriveBytes {
+    pub fn Adjust(
+        &mut self,
+        a: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        aOff: i32,
+        b: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Adjust", (a, aOff, b))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Derive(
+        &mut self,
+        diversifier: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        n: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("Derive", (diversifier, n))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DeriveIV(
+        &mut self,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("DeriveIV", (_cordl_size))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DeriveKey(
+        &mut self,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("DeriveKey", (_cordl_size))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DeriveMAC(
+        &mut self,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("DeriveMAC", (_cordl_size))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_HashName(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_HashName", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_IterationCount(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IterationCount", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Password(
+        &mut self,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Password", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Salt(
+        &mut self,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Salt", (value))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "Mono+Security+X509+PKCS12+DeriveBytes")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::Mono::Security::X509::PKCS12_DeriveBytes {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

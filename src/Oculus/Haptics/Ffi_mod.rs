@@ -1,16 +1,3 @@
-#[cfg(feature = "Oculus+Haptics+Ffi+Controller")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Ffi_Controller {
-    Both = 2i32,
-    Left = 0i32,
-    Right = 1i32,
-}
-#[cfg(feature = "Oculus+Haptics+Ffi+Controller")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Oculus::Haptics::Ffi_Controller =>
-    "Oculus.Haptics"."Ffi/Controller"
-);
 #[cfg(feature = "Oculus+Haptics+Ffi")]
 #[repr(C)]
 #[derive(Debug)]
@@ -77,6 +64,19 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Haptics::Ffi {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Oculus+Haptics+Ffi+Controller")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Ffi_Controller {
+    Both = 2i32,
+    Left = 0i32,
+    Right = 1i32,
+}
+#[cfg(feature = "Oculus+Haptics+Ffi+Controller")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::Oculus::Haptics::Ffi_Controller =>
+    "Oculus.Haptics"."Ffi/Controller"
+);
 #[cfg(feature = "Oculus+Haptics+Ffi+LogCallback")]
 #[repr(C)]
 #[derive(Debug)]

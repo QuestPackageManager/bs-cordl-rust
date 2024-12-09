@@ -1,3 +1,69 @@
+#[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct ColorPropertyBag {
+    __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<
+        crate::UnityEngine::Color,
+    >,
+}
+#[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::Unity::Properties::Internal::ColorPropertyBag =>
+    "Unity.Properties.Internal"."ColorPropertyBag"
+);
+#[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag")]
+impl std::ops::Deref for crate::Unity::Properties::Internal::ColorPropertyBag {
+    type Target = crate::Unity::Properties::ContainerPropertyBag_1<
+        crate::UnityEngine::Color,
+    >;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag")]
+impl std::ops::DerefMut for crate::Unity::Properties::Internal::ColorPropertyBag {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag")]
+impl crate::Unity::Properties::Internal::ColorPropertyBag {
+    #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+AProperty")]
+    pub type AProperty = crate::Unity::Properties::Internal::ColorPropertyBag_AProperty;
+    #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+BProperty")]
+    pub type BProperty = crate::Unity::Properties::Internal::ColorPropertyBag_BProperty;
+    #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+GProperty")]
+    pub type GProperty = crate::Unity::Properties::Internal::ColorPropertyBag_GProperty;
+    #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+RProperty")]
+    pub type RProperty = crate::Unity::Properties::Internal::ColorPropertyBag_RProperty;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::Unity::Properties::Internal::ColorPropertyBag {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+AProperty")]
 #[repr(C)]
 #[derive(Debug)]
@@ -123,72 +189,6 @@ impl crate::Unity::Properties::Internal::ColorPropertyBag_BProperty {
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+BProperty")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::Internal::ColorPropertyBag_BProperty {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct ColorPropertyBag {
-    __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<
-        crate::UnityEngine::Color,
-    >,
-}
-#[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Unity::Properties::Internal::ColorPropertyBag =>
-    "Unity.Properties.Internal"."ColorPropertyBag"
-);
-#[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag")]
-impl std::ops::Deref for crate::Unity::Properties::Internal::ColorPropertyBag {
-    type Target = crate::Unity::Properties::ContainerPropertyBag_1<
-        crate::UnityEngine::Color,
-    >;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag")]
-impl std::ops::DerefMut for crate::Unity::Properties::Internal::ColorPropertyBag {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag")]
-impl crate::Unity::Properties::Internal::ColorPropertyBag {
-    #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+AProperty")]
-    pub type AProperty = crate::Unity::Properties::Internal::ColorPropertyBag_AProperty;
-    #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+BProperty")]
-    pub type BProperty = crate::Unity::Properties::Internal::ColorPropertyBag_BProperty;
-    #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+GProperty")]
-    pub type GProperty = crate::Unity::Properties::Internal::ColorPropertyBag_GProperty;
-    #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+RProperty")]
-    pub type RProperty = crate::Unity::Properties::Internal::ColorPropertyBag_RProperty;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Unity::Properties::Internal::ColorPropertyBag {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

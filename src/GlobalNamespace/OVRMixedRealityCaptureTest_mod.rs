@@ -1,17 +1,3 @@
-#[cfg(feature = "OVRMixedRealityCaptureTest+CameraMode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRMixedRealityCaptureTest_CameraMode {
-    Normal = 0i32,
-    OverrideFov = 1i32,
-    ThirdPerson = 2i32,
-}
-#[cfg(feature = "OVRMixedRealityCaptureTest+CameraMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OVRMixedRealityCaptureTest_CameraMode => ""
-    ."OVRMixedRealityCaptureTest/CameraMode"
-);
 #[cfg(feature = "OVRMixedRealityCaptureTest")]
 #[repr(C)]
 #[derive(Debug)]
@@ -112,3 +98,17 @@ for crate::GlobalNamespace::OVRMixedRealityCaptureTest {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRMixedRealityCaptureTest+CameraMode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRMixedRealityCaptureTest_CameraMode {
+    Normal = 0i32,
+    OverrideFov = 1i32,
+    ThirdPerson = 2i32,
+}
+#[cfg(feature = "OVRMixedRealityCaptureTest+CameraMode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRMixedRealityCaptureTest_CameraMode => ""
+    ."OVRMixedRealityCaptureTest/CameraMode"
+);

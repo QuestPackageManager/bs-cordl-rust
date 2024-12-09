@@ -1,3 +1,43 @@
+#[cfg(feature = "System+Globalization+TimeSpanFormat")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct TimeSpanFormat {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "System+Globalization+TimeSpanFormat")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::Globalization::TimeSpanFormat =>
+    "System.Globalization"."TimeSpanFormat"
+);
+#[cfg(feature = "System+Globalization+TimeSpanFormat")]
+impl std::ops::Deref for crate::System::Globalization::TimeSpanFormat {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Globalization+TimeSpanFormat")]
+impl std::ops::DerefMut for crate::System::Globalization::TimeSpanFormat {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Globalization+TimeSpanFormat")]
+impl crate::System::Globalization::TimeSpanFormat {
+    #[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]
+    pub type FormatLiterals = crate::System::Globalization::TimeSpanFormat_FormatLiterals;
+    #[cfg(feature = "System+Globalization+TimeSpanFormat+Pattern")]
+    pub type Pattern = crate::System::Globalization::TimeSpanFormat_Pattern;
+}
+#[cfg(feature = "System+Globalization+TimeSpanFormat")]
+impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TimeSpanFormat {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -115,43 +155,3 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate ::System::Globalization::TimeSpanFormat_Pattern =>
     "System.Globalization"."TimeSpanFormat/Pattern"
 );
-#[cfg(feature = "System+Globalization+TimeSpanFormat")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct TimeSpanFormat {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "System+Globalization+TimeSpanFormat")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Globalization::TimeSpanFormat =>
-    "System.Globalization"."TimeSpanFormat"
-);
-#[cfg(feature = "System+Globalization+TimeSpanFormat")]
-impl std::ops::Deref for crate::System::Globalization::TimeSpanFormat {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Globalization+TimeSpanFormat")]
-impl std::ops::DerefMut for crate::System::Globalization::TimeSpanFormat {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Globalization+TimeSpanFormat")]
-impl crate::System::Globalization::TimeSpanFormat {
-    #[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]
-    pub type FormatLiterals = crate::System::Globalization::TimeSpanFormat_FormatLiterals;
-    #[cfg(feature = "System+Globalization+TimeSpanFormat+Pattern")]
-    pub type Pattern = crate::System::Globalization::TimeSpanFormat_Pattern;
-}
-#[cfg(feature = "System+Globalization+TimeSpanFormat")]
-impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TimeSpanFormat {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}

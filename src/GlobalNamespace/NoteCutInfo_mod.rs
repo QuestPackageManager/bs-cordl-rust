@@ -1,18 +1,3 @@
-#[cfg(feature = "NoteCutInfo+FailReason")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum NoteCutInfo_FailReason {
-    CutHarder = 3i32,
-    None = 0i32,
-    TooSoon = 1i32,
-    WrongColor = 2i32,
-    WrongDirection = 4i32,
-}
-#[cfg(feature = "NoteCutInfo+FailReason")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteCutInfo_FailReason => ""
-    ."NoteCutInfo/FailReason"
-);
 #[cfg(feature = "NoteCutInfo")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -131,3 +116,18 @@ impl crate::GlobalNamespace::NoteCutInfo {
         Ok(__cordl_ret)
     }
 }
+#[cfg(feature = "NoteCutInfo+FailReason")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum NoteCutInfo_FailReason {
+    CutHarder = 3i32,
+    None = 0i32,
+    TooSoon = 1i32,
+    WrongColor = 2i32,
+    WrongDirection = 4i32,
+}
+#[cfg(feature = "NoteCutInfo+FailReason")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteCutInfo_FailReason => ""
+    ."NoteCutInfo/FailReason"
+);

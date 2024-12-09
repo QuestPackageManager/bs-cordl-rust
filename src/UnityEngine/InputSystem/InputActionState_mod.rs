@@ -1,450 +1,7 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct InputActionState_ActionMapIndices {
-    pub actionStartIndex: i32,
-    pub actionCount: i32,
-    pub controlStartIndex: i32,
-    pub controlCount: i32,
-    pub bindingStartIndex: i32,
-    pub bindingCount: i32,
-    pub interactionStartIndex: i32,
-    pub interactionCount: i32,
-    pub processorStartIndex: i32,
-    pub processorCount: i32,
-    pub compositeStartIndex: i32,
-    pub compositeCount: i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputActionState_ActionMapIndices =>
-    "UnityEngine.InputSystem"."InputActionState/ActionMapIndices"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
-impl crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct InputActionState_BindingState {
-    padding: [u8; 32usize],
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputActionState_BindingState =>
-    "UnityEngine.InputSystem"."InputActionState/BindingState"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::InputActionState_BindingState {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
-impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
-    #[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState+Flags")]
-    pub type Flags = crate::UnityEngine::InputSystem::BindingState_Flags;
-    pub fn get_actionIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_actionIndex",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_chainsWithNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_chainsWithNext",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_compositeOrCompositeBindingIndex(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_compositeOrCompositeBindingIndex",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_controlCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_controlCount",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_controlStartIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_controlStartIndex",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_flags(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::BindingState_Flags,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::BindingState_Flags = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_flags",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_initialStateCheckPending(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_initialStateCheckPending",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_interactionCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_interactionCount",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_interactionStartIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_interactionStartIndex",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isComposite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isComposite",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isEndOfChain(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isEndOfChain",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isPartOfChain(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isPartOfChain",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_isPartOfComposite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isPartOfComposite",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_mapIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_mapIndex",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_partIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_partIndex",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_pressTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_pressTime",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_processorCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_processorCount",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_processorStartIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_processorStartIndex",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_triggerEventIdForComposite(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_triggerEventIdForComposite",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_wantsInitialStateCheck(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_wantsInitialStateCheck",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_actionIndex(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_actionIndex",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_chainsWithNext(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_chainsWithNext",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_compositeOrCompositeBindingIndex(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_compositeOrCompositeBindingIndex",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_controlCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_controlCount",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_controlStartIndex(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_controlStartIndex",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_flags(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::BindingState_Flags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_flags",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_initialStateCheckPending(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_initialStateCheckPending",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_interactionCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_interactionCount",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_interactionStartIndex(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_interactionStartIndex",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_isComposite(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_isComposite",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_isEndOfChain(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_isEndOfChain",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_isPartOfComposite(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_isPartOfComposite",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_mapIndex(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_mapIndex",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_partIndex(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_partIndex",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_pressTime(
-        &mut self,
-        value: f64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_pressTime",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_processorCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_processorCount",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_processorStartIndex(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_processorStartIndex",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_triggerEventIdForComposite(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_triggerEventIdForComposite",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_wantsInitialStateCheck(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_wantsInitialStateCheck",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState+Flags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum BindingState_Flags {
+pub enum BindingState_InputActionState_Flags {
     ChainsWithNext = 1i32,
     Composite = 4i32,
     EndOfChain = 2i32,
@@ -454,73 +11,10 @@ pub enum BindingState_Flags {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState+Flags")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::BindingState_Flags =>
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::BindingState_InputActionState_Flags =>
     "UnityEngine.InputSystem"."InputActionState/BindingState/Flags"
 );
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState+Flags")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum TriggerState_Flags {
-    Button = 32i32,
-    HasMultipleConcurrentActuations = 8i32,
-    HaveMagnitude = 1i32,
-    InProcessing = 16i32,
-    MayNeedConflictResolution = 4i32,
-    PassThrough = 2i32,
-    Pressed = 64i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState+Flags")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::TriggerState_Flags =>
-    "UnityEngine.InputSystem"."InputActionState/TriggerState/Flags"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum InteractionState_Flags {
-    TimerRunning = 1i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::InteractionState_Flags
-    => "UnityEngine.InputSystem"."InputActionState/InteractionState/Flags"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct InputActionState_GlobalState {
-    pub globalList: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
-        crate::System::Runtime::InteropServices::GCHandle,
-    >,
-    pub onActionChange: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-        *mut crate::System::Action_2<
-            *mut crate::System::Object,
-            crate::UnityEngine::InputSystem::InputActionChange,
-        >,
-    >,
-    pub onActionControlsChanged: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-        *mut crate::System::Action_1<*mut crate::System::Object>,
-    >,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputActionState_GlobalState => "UnityEngine.InputSystem"
-    ."InputActionState/GlobalState"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::InputActionState_GlobalState {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
-impl crate::UnityEngine::InputSystem::InputActionState_GlobalState {}
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1871,6 +1365,485 @@ for crate::UnityEngine::InputSystem::InputActionState {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct InputActionState_ActionMapIndices {
+    pub actionStartIndex: i32,
+    pub actionCount: i32,
+    pub controlStartIndex: i32,
+    pub controlCount: i32,
+    pub bindingStartIndex: i32,
+    pub bindingCount: i32,
+    pub interactionStartIndex: i32,
+    pub interactionCount: i32,
+    pub processorStartIndex: i32,
+    pub processorCount: i32,
+    pub compositeStartIndex: i32,
+    pub compositeCount: i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputActionState_ActionMapIndices =>
+    "UnityEngine.InputSystem"."InputActionState/ActionMapIndices"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
+impl crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct InputActionState_BindingState {
+    padding: [u8; 32usize],
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputActionState_BindingState =>
+    "UnityEngine.InputSystem"."InputActionState/BindingState"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::InputActionState_BindingState {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState")]
+impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
+    #[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState+Flags")]
+    pub type Flags = crate::UnityEngine::InputSystem::BindingState_InputActionState_Flags;
+    pub fn get_actionIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_actionIndex",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_chainsWithNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_chainsWithNext",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_compositeOrCompositeBindingIndex(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_compositeOrCompositeBindingIndex",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_controlCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_controlCount",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_controlStartIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_controlStartIndex",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_flags(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::BindingState_InputActionState_Flags,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::BindingState_InputActionState_Flags = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_flags",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_initialStateCheckPending(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_initialStateCheckPending",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_interactionCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_interactionCount",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_interactionStartIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_interactionStartIndex",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isComposite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_isComposite",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isEndOfChain(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_isEndOfChain",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isPartOfChain(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_isPartOfChain",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isPartOfComposite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_isPartOfComposite",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_mapIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_mapIndex",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_partIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_partIndex",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_pressTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_pressTime",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_processorCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_processorCount",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_processorStartIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_processorStartIndex",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_triggerEventIdForComposite(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_triggerEventIdForComposite",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_wantsInitialStateCheck(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_wantsInitialStateCheck",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_actionIndex(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_actionIndex",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_chainsWithNext(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_chainsWithNext",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_compositeOrCompositeBindingIndex(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_compositeOrCompositeBindingIndex",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_controlCount(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_controlCount",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_controlStartIndex(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_controlStartIndex",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_flags(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::BindingState_InputActionState_Flags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_flags",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_initialStateCheckPending(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_initialStateCheckPending",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_interactionCount(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_interactionCount",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_interactionStartIndex(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_interactionStartIndex",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_isComposite(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_isComposite",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_isEndOfChain(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_isEndOfChain",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_isPartOfComposite(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_isPartOfComposite",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_mapIndex(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_mapIndex",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_partIndex(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_partIndex",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_pressTime(
+        &mut self,
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_pressTime",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_processorCount(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_processorCount",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_processorStartIndex(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_processorStartIndex",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_triggerEventIdForComposite(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_triggerEventIdForComposite",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_wantsInitialStateCheck(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_wantsInitialStateCheck",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct InputActionState_GlobalState {
+    pub globalList: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
+        crate::System::Runtime::InteropServices::GCHandle,
+    >,
+    pub onActionChange: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
+        *mut crate::System::Action_2<
+            *mut crate::System::Object,
+            crate::UnityEngine::InputSystem::InputActionChange,
+        >,
+    >,
+    pub onActionControlsChanged: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
+        *mut crate::System::Action_1<*mut crate::System::Object>,
+    >,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputActionState_GlobalState => "UnityEngine.InputSystem"
+    ."InputActionState/GlobalState"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::InputActionState_GlobalState {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
+impl crate::UnityEngine::InputSystem::InputActionState_GlobalState {}
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -1897,7 +1870,7 @@ for crate::UnityEngine::InputSystem::InputActionState_InteractionState {
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState")]
 impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
     #[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]
-    pub type Flags = crate::UnityEngine::InputSystem::InteractionState_Flags;
+    pub type Flags = crate::UnityEngine::InputSystem::InteractionState_InputActionState_Flags;
     pub fn get_isTimerRunning(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -2126,7 +2099,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
     pub const kMaxNumControls: i32 = 65535i32;
     pub const kMaxNumMaps: i32 = 255i32;
     #[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState+Flags")]
-    pub type Flags = crate::UnityEngine::InputSystem::TriggerState_Flags;
+    pub type Flags = crate::UnityEngine::InputSystem::TriggerState_InputActionState_Flags;
     pub fn get_bindingIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -2146,9 +2119,9 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
     pub fn get_flags(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::TriggerState_Flags,
+        crate::UnityEngine::InputSystem::TriggerState_InputActionState_Flags,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::TriggerState_Flags = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: crate::UnityEngine::InputSystem::TriggerState_InputActionState_Flags = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_flags",
             (),
@@ -2363,7 +2336,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
     }
     pub fn set_flags(
         &mut self,
-        value: crate::UnityEngine::InputSystem::TriggerState_Flags,
+        value: crate::UnityEngine::InputSystem::TriggerState_InputActionState_Flags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -2665,3 +2638,33 @@ impl crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
         Ok(__cordl_ret)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum InteractionState_InputActionState_Flags {
+    TimerRunning = 1i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InteractionState_InputActionState_Flags =>
+    "UnityEngine.InputSystem"."InputActionState/InteractionState/Flags"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState+Flags")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TriggerState_InputActionState_Flags {
+    Button = 32i32,
+    HasMultipleConcurrentActuations = 8i32,
+    HaveMagnitude = 1i32,
+    InProcessing = 16i32,
+    MayNeedConflictResolution = 4i32,
+    PassThrough = 2i32,
+    Pressed = 64i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState+Flags")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::TriggerState_InputActionState_Flags =>
+    "UnityEngine.InputSystem"."InputActionState/TriggerState/Flags"
+);

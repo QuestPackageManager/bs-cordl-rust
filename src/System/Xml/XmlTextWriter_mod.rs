@@ -1,160 +1,3 @@
-#[cfg(feature = "System+Xml+XmlTextWriter+Namespace")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct XmlTextWriter_Namespace {
-    pub prefix: *mut crate::System::String,
-    pub ns: *mut crate::System::String,
-    pub declared: bool,
-    pub prevNsIndex: i32,
-}
-#[cfg(feature = "System+Xml+XmlTextWriter+Namespace")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextWriter_Namespace =>
-    "System.Xml"."XmlTextWriter/Namespace"
-);
-#[cfg(feature = "System+Xml+XmlTextWriter+Namespace")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Xml::XmlTextWriter_Namespace {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextWriter+Namespace")]
-impl crate::System::Xml::XmlTextWriter_Namespace {
-    pub fn Set(
-        &mut self,
-        prefix: *mut crate::System::String,
-        ns: *mut crate::System::String,
-        declared: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Set",
-            (prefix, ns, declared),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextWriter+NamespaceState")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XmlTextWriter_NamespaceState {
-    DeclaredAndWrittenOut = 3i32,
-    DeclaredButNotWrittenOut = 2i32,
-    NotDeclaredButInScope = 1i32,
-    Uninitialized = 0i32,
-}
-#[cfg(feature = "System+Xml+XmlTextWriter+NamespaceState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextWriter_NamespaceState =>
-    "System.Xml"."XmlTextWriter/NamespaceState"
-);
-#[cfg(feature = "System+Xml+XmlTextWriter+SpecialAttr")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XmlTextWriter_SpecialAttr {
-    None = 0i32,
-    XmlLang = 2i32,
-    XmlNs = 3i32,
-    XmlSpace = 1i32,
-}
-#[cfg(feature = "System+Xml+XmlTextWriter+SpecialAttr")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextWriter_SpecialAttr =>
-    "System.Xml"."XmlTextWriter/SpecialAttr"
-);
-#[cfg(feature = "System+Xml+XmlTextWriter+State")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XmlTextWriter_State {
-    AttrOnly = 6i32,
-    Attribute = 4i32,
-    Closed = 9i32,
-    Content = 5i32,
-    Element = 3i32,
-    Epilog = 7i32,
-    Error = 8i32,
-    PostDTD = 2i32,
-    Prolog = 1i32,
-    Start = 0i32,
-}
-#[cfg(feature = "System+Xml+XmlTextWriter+State")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextWriter_State => "System.Xml"
-    ."XmlTextWriter/State"
-);
-#[cfg(feature = "System+Xml+XmlTextWriter+TagInfo")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct XmlTextWriter_TagInfo {
-    pub name: *mut crate::System::String,
-    pub prefix: *mut crate::System::String,
-    pub defaultNs: *mut crate::System::String,
-    pub defaultNsState: crate::System::Xml::XmlTextWriter_NamespaceState,
-    pub xmlSpace: crate::System::Xml::XmlSpace,
-    pub xmlLang: *mut crate::System::String,
-    pub prevNsTop: i32,
-    pub prefixCount: i32,
-    pub mixed: bool,
-}
-#[cfg(feature = "System+Xml+XmlTextWriter+TagInfo")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextWriter_TagInfo =>
-    "System.Xml"."XmlTextWriter/TagInfo"
-);
-#[cfg(feature = "System+Xml+XmlTextWriter+TagInfo")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Xml::XmlTextWriter_TagInfo {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextWriter+TagInfo")]
-impl crate::System::Xml::XmlTextWriter_TagInfo {
-    pub fn Init(
-        &mut self,
-        nsTop: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Init",
-            (nsTop),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextWriter+Token")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XmlTextWriter_Token {
-    Base64 = 10i32,
-    CData = 3i32,
-    Comment = 2i32,
-    Content = 9i32,
-    Doctype = 1i32,
-    Empty = 13i32,
-    EndAttribute = 8i32,
-    EndElement = 5i32,
-    LongEndElement = 6i32,
-    PI = 0i32,
-    RawData = 11i32,
-    StartAttribute = 7i32,
-    StartElement = 4i32,
-    Whitespace = 12i32,
-}
-#[cfg(feature = "System+Xml+XmlTextWriter+Token")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextWriter_Token => "System.Xml"
-    ."XmlTextWriter/Token"
-);
 #[cfg(feature = "System+Xml+XmlTextWriter")]
 #[repr(C)]
 #[derive(Debug)]
@@ -887,3 +730,160 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlTextWriter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+XmlTextWriter+Namespace")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct XmlTextWriter_Namespace {
+    pub prefix: *mut crate::System::String,
+    pub ns: *mut crate::System::String,
+    pub declared: bool,
+    pub prevNsIndex: i32,
+}
+#[cfg(feature = "System+Xml+XmlTextWriter+Namespace")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextWriter_Namespace =>
+    "System.Xml"."XmlTextWriter/Namespace"
+);
+#[cfg(feature = "System+Xml+XmlTextWriter+Namespace")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::Xml::XmlTextWriter_Namespace {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextWriter+Namespace")]
+impl crate::System::Xml::XmlTextWriter_Namespace {
+    pub fn Set(
+        &mut self,
+        prefix: *mut crate::System::String,
+        ns: *mut crate::System::String,
+        declared: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Set",
+            (prefix, ns, declared),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextWriter+NamespaceState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XmlTextWriter_NamespaceState {
+    DeclaredAndWrittenOut = 3i32,
+    DeclaredButNotWrittenOut = 2i32,
+    NotDeclaredButInScope = 1i32,
+    Uninitialized = 0i32,
+}
+#[cfg(feature = "System+Xml+XmlTextWriter+NamespaceState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextWriter_NamespaceState =>
+    "System.Xml"."XmlTextWriter/NamespaceState"
+);
+#[cfg(feature = "System+Xml+XmlTextWriter+SpecialAttr")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XmlTextWriter_SpecialAttr {
+    None = 0i32,
+    XmlLang = 2i32,
+    XmlNs = 3i32,
+    XmlSpace = 1i32,
+}
+#[cfg(feature = "System+Xml+XmlTextWriter+SpecialAttr")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextWriter_SpecialAttr =>
+    "System.Xml"."XmlTextWriter/SpecialAttr"
+);
+#[cfg(feature = "System+Xml+XmlTextWriter+State")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XmlTextWriter_State {
+    AttrOnly = 6i32,
+    Attribute = 4i32,
+    Closed = 9i32,
+    Content = 5i32,
+    Element = 3i32,
+    Epilog = 7i32,
+    Error = 8i32,
+    PostDTD = 2i32,
+    Prolog = 1i32,
+    Start = 0i32,
+}
+#[cfg(feature = "System+Xml+XmlTextWriter+State")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextWriter_State => "System.Xml"
+    ."XmlTextWriter/State"
+);
+#[cfg(feature = "System+Xml+XmlTextWriter+TagInfo")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct XmlTextWriter_TagInfo {
+    pub name: *mut crate::System::String,
+    pub prefix: *mut crate::System::String,
+    pub defaultNs: *mut crate::System::String,
+    pub defaultNsState: crate::System::Xml::XmlTextWriter_NamespaceState,
+    pub xmlSpace: crate::System::Xml::XmlSpace,
+    pub xmlLang: *mut crate::System::String,
+    pub prevNsTop: i32,
+    pub prefixCount: i32,
+    pub mixed: bool,
+}
+#[cfg(feature = "System+Xml+XmlTextWriter+TagInfo")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextWriter_TagInfo =>
+    "System.Xml"."XmlTextWriter/TagInfo"
+);
+#[cfg(feature = "System+Xml+XmlTextWriter+TagInfo")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::Xml::XmlTextWriter_TagInfo {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextWriter+TagInfo")]
+impl crate::System::Xml::XmlTextWriter_TagInfo {
+    pub fn Init(
+        &mut self,
+        nsTop: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Init",
+            (nsTop),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextWriter+Token")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XmlTextWriter_Token {
+    Base64 = 10i32,
+    CData = 3i32,
+    Comment = 2i32,
+    Content = 9i32,
+    Doctype = 1i32,
+    Empty = 13i32,
+    EndAttribute = 8i32,
+    EndElement = 5i32,
+    LongEndElement = 6i32,
+    PI = 0i32,
+    RawData = 11i32,
+    StartAttribute = 7i32,
+    StartElement = 4i32,
+    Whitespace = 12i32,
+}
+#[cfg(feature = "System+Xml+XmlTextWriter+Token")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextWriter_Token => "System.Xml"
+    ."XmlTextWriter/Token"
+);

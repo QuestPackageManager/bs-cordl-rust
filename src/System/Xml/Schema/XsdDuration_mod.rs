@@ -1,33 +1,3 @@
-#[cfg(feature = "System+Xml+Schema+XsdDuration+DurationType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XsdDuration_DurationType {
-    DayTimeDuration = 2i32,
-    Duration = 0i32,
-    YearMonthDuration = 1i32,
-}
-#[cfg(feature = "System+Xml+Schema+XsdDuration+DurationType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::Schema::XsdDuration_DurationType =>
-    "System.Xml.Schema"."XsdDuration/DurationType"
-);
-#[cfg(feature = "System+Xml+Schema+XsdDuration+Parts")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XsdDuration_Parts {
-    HasDays = 4i32,
-    HasHours = 8i32,
-    HasMinutes = 16i32,
-    HasMonths = 2i32,
-    HasNone = 0i32,
-    HasSeconds = 32i32,
-    HasYears = 1i32,
-}
-#[cfg(feature = "System+Xml+Schema+XsdDuration+Parts")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::Schema::XsdDuration_Parts =>
-    "System.Xml.Schema"."XsdDuration/Parts"
-);
 #[cfg(feature = "System+Xml+Schema+XsdDuration")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -256,3 +226,33 @@ impl crate::System::Xml::Schema::XsdDuration {
         Ok(__cordl_ret)
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdDuration+DurationType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XsdDuration_DurationType {
+    DayTimeDuration = 2i32,
+    Duration = 0i32,
+    YearMonthDuration = 1i32,
+}
+#[cfg(feature = "System+Xml+Schema+XsdDuration+DurationType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::Schema::XsdDuration_DurationType =>
+    "System.Xml.Schema"."XsdDuration/DurationType"
+);
+#[cfg(feature = "System+Xml+Schema+XsdDuration+Parts")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XsdDuration_Parts {
+    HasDays = 4i32,
+    HasHours = 8i32,
+    HasMinutes = 16i32,
+    HasMonths = 2i32,
+    HasNone = 0i32,
+    HasSeconds = 32i32,
+    HasYears = 1i32,
+}
+#[cfg(feature = "System+Xml+Schema+XsdDuration+Parts")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::Schema::XsdDuration_Parts =>
+    "System.Xml.Schema"."XsdDuration/Parts"
+);

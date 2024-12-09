@@ -1,47 +1,3 @@
-#[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct Task_1_TaskWhenAnyCast<TResult: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
-    __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
-}
-#[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Threading::Tasks::Task_1_TaskWhenAnyCast
-    < TResult > => "System.Threading.Tasks"."Task`1/TaskWhenAnyCast" < TResult >
-);
-#[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
-impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
-for crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
-impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
-impl<
-    TResult: quest_hook::libil2cpp::Type,
-> crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {
-    #[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast+__c")]
-    pub type __c = crate::System::Threading::Tasks::TaskWhenAnyCast___c<TResult>;
-}
-#[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
-impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "System+Threading+Tasks+Task_1")]
 #[repr(C)]
 #[derive(Debug)]
@@ -613,6 +569,50 @@ impl<
 #[cfg(feature = "System+Threading+Tasks+Task_1")]
 impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::Tasks::Task_1<TResult> {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct Task_1_TaskWhenAnyCast<TResult: quest_hook::libil2cpp::Type> {
+    __cordl_parent: crate::System::Object,
+    __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
+}
+#[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::Threading::Tasks::Task_1_TaskWhenAnyCast
+    < TResult > => "System.Threading.Tasks"."Task`1/TaskWhenAnyCast" < TResult >
+);
+#[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
+impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
+for crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
+impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
+for crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
+impl<
+    TResult: quest_hook::libil2cpp::Type,
+> crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {
+    #[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast+__c")]
+    pub type __c = crate::System::Threading::Tasks::TaskWhenAnyCast_Task_1___c<TResult>;
+}
+#[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
+impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
+for crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

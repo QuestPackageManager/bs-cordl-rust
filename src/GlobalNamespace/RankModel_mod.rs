@@ -1,21 +1,3 @@
-#[cfg(feature = "RankModel+Rank")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum RankModel_Rank {
-    A = 4i32,
-    B = 3i32,
-    C = 2i32,
-    D = 1i32,
-    E = 0i32,
-    S = 5i32,
-    SS = 6i32,
-    SSS = 7i32,
-}
-#[cfg(feature = "RankModel+Rank")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::RankModel_Rank => ""
-    ."RankModel/Rank"
-);
 #[cfg(feature = "RankModel")]
 #[repr(C)]
 #[derive(Debug)]
@@ -53,3 +35,21 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RankModel {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "RankModel+Rank")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum RankModel_Rank {
+    A = 4i32,
+    B = 3i32,
+    C = 2i32,
+    D = 1i32,
+    E = 0i32,
+    S = 5i32,
+    SS = 6i32,
+    SSS = 7i32,
+}
+#[cfg(feature = "RankModel+Rank")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::RankModel_Rank => ""
+    ."RankModel/Rank"
+);

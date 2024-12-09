@@ -1,19 +1,3 @@
-#[cfg(feature = "System+Xml+XsdCachingReader+CachingReaderState")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XsdCachingReader_CachingReaderState {
-    Error = 5i32,
-    Init = 1i32,
-    None = 0i32,
-    ReaderClosed = 4i32,
-    Record = 2i32,
-    Replay = 3i32,
-}
-#[cfg(feature = "System+Xml+XsdCachingReader+CachingReaderState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XsdCachingReader_CachingReaderState
-    => "System.Xml"."XsdCachingReader/CachingReaderState"
-);
 #[cfg(feature = "System+Xml+XsdCachingReader")]
 #[repr(C)]
 #[derive(Debug)]
@@ -593,3 +577,19 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XsdCachingReader 
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+XsdCachingReader+CachingReaderState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XsdCachingReader_CachingReaderState {
+    Error = 5i32,
+    Init = 1i32,
+    None = 0i32,
+    ReaderClosed = 4i32,
+    Record = 2i32,
+    Replay = 3i32,
+}
+#[cfg(feature = "System+Xml+XsdCachingReader+CachingReaderState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XsdCachingReader_CachingReaderState
+    => "System.Xml"."XsdCachingReader/CachingReaderState"
+);

@@ -39,11 +39,11 @@ impl crate::GlobalNamespace::CastInstruction_CastInstructionNoT {
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Ref"
     )]
-    pub type Ref = crate::GlobalNamespace::CastInstructionNoT_Ref;
+    pub type Ref = crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Ref;
     #[cfg(
         feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Value"
     )]
-    pub type Value = crate::GlobalNamespace::CastInstructionNoT_Value;
+    pub type Value = crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Value;
     pub fn ConvertNull(
         &mut self,
         frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,

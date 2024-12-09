@@ -335,7 +335,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
 impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
     #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::Utilities::JsonValue___c;
+    pub type __c = crate::UnityEngine::InputSystem::Utilities::JsonValue_JsonParser___c;
     pub fn Equals_JsonParser_JsonValue0(
         &mut self,
         other: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,

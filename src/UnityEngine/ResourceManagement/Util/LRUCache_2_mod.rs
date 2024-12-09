@@ -1,76 +1,3 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct LRUCache_2_Entry<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> {
-    pub lruNode: *mut crate::System::Collections::Generic::LinkedListNode_1<TKey>,
-    pub Value: TValue,
-    __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
-    __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry < TKey, TValue > =>
-    "UnityEngine.ResourceManagement.Util"."LRUCache`2/Entry<TKey,TValue>" < TKey, TValue
-    >
-);
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
-unsafe impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue> {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue> {
-    pub fn Equals(
-        &mut self,
-        other: crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<
-            TKey,
-            TValue,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -167,6 +94,79 @@ impl<
             self,
             ".ctor",
             (limit),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct LRUCache_2_Entry<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> {
+    pub lruNode: *mut crate::System::Collections::Generic::LinkedListNode_1<TKey>,
+    pub Value: TValue,
+    __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
+    __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry < TKey, TValue > =>
+    "UnityEngine.ResourceManagement.Util"."LRUCache`2/Entry<TKey,TValue>" < TKey, TValue
+    >
+);
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
+unsafe impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue> {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue> {
+    pub fn Equals(
+        &mut self,
+        other: crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<
+            TKey,
+            TValue,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
         )?;
         Ok(__cordl_ret)
     }

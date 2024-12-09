@@ -1,29 +1,3 @@
-#[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct ParticleSystemRenderer_BakeTextureOutput {
-    pub vertices: *mut crate::UnityEngine::Texture2D,
-    pub indices: *mut crate::UnityEngine::Texture2D,
-}
-#[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ParticleSystemRenderer_BakeTextureOutput => "UnityEngine"
-    ."ParticleSystemRenderer/BakeTextureOutput"
-);
-#[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
-impl crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {}
 #[cfg(feature = "UnityEngine+ParticleSystemRenderer")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1061,3 +1035,29 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ParticleSystemRen
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct ParticleSystemRenderer_BakeTextureOutput {
+    pub vertices: *mut crate::UnityEngine::Texture2D,
+    pub indices: *mut crate::UnityEngine::Texture2D,
+}
+#[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::ParticleSystemRenderer_BakeTextureOutput => "UnityEngine"
+    ."ParticleSystemRenderer/BakeTextureOutput"
+);
+#[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
+impl crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {}

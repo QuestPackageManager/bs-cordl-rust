@@ -1,21 +1,3 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputControl+ControlFlags")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum InputControl_ControlFlags {
-    ConfigUpToDate = 1i32,
-    DontReset = 16i32,
-    IsButton = 8i32,
-    IsNoisy = 2i32,
-    IsSynthetic = 4i32,
-    SetupFinished = 32i32,
-    UsesStateFromOtherControl = 64i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControl+ControlFlags")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputControl_ControlFlags => "UnityEngine.InputSystem"
-    ."InputControl/ControlFlags"
-);
 #[cfg(feature = "UnityEngine+InputSystem+InputControl")]
 #[repr(C)]
 #[derive(Debug)]
@@ -821,3 +803,21 @@ for crate::UnityEngine::InputSystem::InputControl {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControl+ControlFlags")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum InputControl_ControlFlags {
+    ConfigUpToDate = 1i32,
+    DontReset = 16i32,
+    IsButton = 8i32,
+    IsNoisy = 2i32,
+    IsSynthetic = 4i32,
+    SetupFinished = 32i32,
+    UsesStateFromOtherControl = 64i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControl+ControlFlags")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputControl_ControlFlags => "UnityEngine.InputSystem"
+    ."InputControl/ControlFlags"
+);

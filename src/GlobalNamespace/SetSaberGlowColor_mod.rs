@@ -1,62 +1,3 @@
-#[cfg(feature = "SetSaberGlowColor+PropertyTintColorPair")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct SetSaberGlowColor_PropertyTintColorPair {
-    __cordl_parent: crate::System::Object,
-    pub tintColor: crate::UnityEngine::Color,
-    pub property: *mut crate::System::String,
-}
-#[cfg(feature = "SetSaberGlowColor+PropertyTintColorPair")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair => ""
-    ."SetSaberGlowColor/PropertyTintColorPair"
-);
-#[cfg(feature = "SetSaberGlowColor+PropertyTintColorPair")]
-impl std::ops::Deref
-for crate::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "SetSaberGlowColor+PropertyTintColorPair")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "SetSaberGlowColor+PropertyTintColorPair")]
-impl crate::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "SetSaberGlowColor+PropertyTintColorPair")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "SetSaberGlowColor")]
 #[repr(C)]
 #[derive(Debug)]
@@ -144,6 +85,65 @@ impl crate::GlobalNamespace::SetSaberGlowColor {
 }
 #[cfg(feature = "SetSaberGlowColor")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SetSaberGlowColor {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "SetSaberGlowColor+PropertyTintColorPair")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct SetSaberGlowColor_PropertyTintColorPair {
+    __cordl_parent: crate::System::Object,
+    pub tintColor: crate::UnityEngine::Color,
+    pub property: *mut crate::System::String,
+}
+#[cfg(feature = "SetSaberGlowColor+PropertyTintColorPair")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair => ""
+    ."SetSaberGlowColor/PropertyTintColorPair"
+);
+#[cfg(feature = "SetSaberGlowColor+PropertyTintColorPair")]
+impl std::ops::Deref
+for crate::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "SetSaberGlowColor+PropertyTintColorPair")]
+impl std::ops::DerefMut
+for crate::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "SetSaberGlowColor+PropertyTintColorPair")]
+impl crate::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "SetSaberGlowColor+PropertyTintColorPair")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

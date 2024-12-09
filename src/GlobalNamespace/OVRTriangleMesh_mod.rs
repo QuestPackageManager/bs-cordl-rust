@@ -1,115 +1,3 @@
-#[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct OVRTriangleMesh_FlipTriangleWindingJob {
-    pub Triangles: crate::Unity::Collections::NativeArray_1<
-        crate::GlobalNamespace::OVRTriangleMesh_Triangle,
-    >,
-}
-#[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob => ""
-    ."OVRTriangleMesh/FlipTriangleWindingJob"
-);
-#[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
-impl crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
-    pub fn Execute(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Execute",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct OVRTriangleMesh_GetMeshJob {
-    pub Space: u64,
-    pub Positions: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
-    pub Indices: crate::Unity::Collections::NativeArray_1<i32>,
-}
-#[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRTriangleMesh_GetMeshJob =>
-    ""."OVRTriangleMesh/GetMeshJob"
-);
-#[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
-impl crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
-    pub fn Execute(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Execute",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "OVRTriangleMesh+NegateXJob")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct OVRTriangleMesh_NegateXJob {
-    pub Positions: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
-}
-#[cfg(feature = "OVRTriangleMesh+NegateXJob")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRTriangleMesh_NegateXJob =>
-    ""."OVRTriangleMesh/NegateXJob"
-);
-#[cfg(feature = "OVRTriangleMesh+NegateXJob")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "OVRTriangleMesh+NegateXJob")]
-impl crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
-    pub fn Execute(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Execute",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "OVRTriangleMesh")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -320,6 +208,118 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
             self,
             "get_Type",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct OVRTriangleMesh_FlipTriangleWindingJob {
+    pub Triangles: crate::Unity::Collections::NativeArray_1<
+        crate::GlobalNamespace::OVRTriangleMesh_Triangle,
+    >,
+}
+#[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob => ""
+    ."OVRTriangleMesh/FlipTriangleWindingJob"
+);
+#[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRTriangleMesh+FlipTriangleWindingJob")]
+impl crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
+    pub fn Execute(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Execute",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct OVRTriangleMesh_GetMeshJob {
+    pub Space: u64,
+    pub Positions: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
+    pub Indices: crate::Unity::Collections::NativeArray_1<i32>,
+}
+#[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRTriangleMesh_GetMeshJob =>
+    ""."OVRTriangleMesh/GetMeshJob"
+);
+#[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRTriangleMesh+GetMeshJob")]
+impl crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
+    pub fn Execute(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Execute",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "OVRTriangleMesh+NegateXJob")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct OVRTriangleMesh_NegateXJob {
+    pub Positions: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
+}
+#[cfg(feature = "OVRTriangleMesh+NegateXJob")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRTriangleMesh_NegateXJob =>
+    ""."OVRTriangleMesh/NegateXJob"
+);
+#[cfg(feature = "OVRTriangleMesh+NegateXJob")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRTriangleMesh+NegateXJob")]
+impl crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
+    pub fn Execute(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Execute",
+            (index),
         )?;
         Ok(__cordl_ret)
     }

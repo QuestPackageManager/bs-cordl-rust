@@ -1,3 +1,214 @@
+#[cfg(feature = "LiteNetLib+NatPunchModule")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct NatPunchModule {
+    __cordl_parent: crate::System::Object,
+    pub _socket: *mut crate::LiteNetLib::NetSocket,
+    pub _requestEvents: *mut crate::System::Collections::Generic::Queue_1<
+        crate::LiteNetLib::NatPunchModule_RequestEventData,
+    >,
+    pub _successEvents: *mut crate::System::Collections::Generic::Queue_1<
+        crate::LiteNetLib::NatPunchModule_SuccessEventData,
+    >,
+    pub _cacheReader: *mut crate::LiteNetLib::Utils::NetDataReader,
+    pub _cacheWriter: *mut crate::LiteNetLib::Utils::NetDataWriter,
+    pub _netPacketProcessor: *mut crate::LiteNetLib::Utils::NetPacketProcessor,
+    pub _natPunchListener: *mut crate::LiteNetLib::INatPunchListener,
+}
+#[cfg(feature = "LiteNetLib+NatPunchModule")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::LiteNetLib::NatPunchModule => "LiteNetLib"
+    ."NatPunchModule"
+);
+#[cfg(feature = "LiteNetLib+NatPunchModule")]
+impl std::ops::Deref for crate::LiteNetLib::NatPunchModule {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "LiteNetLib+NatPunchModule")]
+impl std::ops::DerefMut for crate::LiteNetLib::NatPunchModule {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "LiteNetLib+NatPunchModule")]
+impl crate::LiteNetLib::NatPunchModule {
+    pub const MaxTokenLength: i32 = 256i32;
+    #[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
+    pub type NatIntroduceRequestPacket = crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket;
+    #[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
+    pub type NatIntroduceResponsePacket = crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket;
+    #[cfg(feature = "LiteNetLib+NatPunchModule+NatPunchPacket")]
+    pub type NatPunchPacket = crate::LiteNetLib::NatPunchModule_NatPunchPacket;
+    #[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
+    pub type RequestEventData = crate::LiteNetLib::NatPunchModule_RequestEventData;
+    #[cfg(feature = "LiteNetLib+NatPunchModule+SuccessEventData")]
+    pub type SuccessEventData = crate::LiteNetLib::NatPunchModule_SuccessEventData;
+    pub fn Init(
+        &mut self,
+        listener: *mut crate::LiteNetLib::INatPunchListener,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (listener))?;
+        Ok(__cordl_ret)
+    }
+    pub fn NatIntroduce(
+        &mut self,
+        hostInternal: *mut crate::System::Net::IPEndPoint,
+        hostExternal: *mut crate::System::Net::IPEndPoint,
+        clientInternal: *mut crate::System::Net::IPEndPoint,
+        clientExternal: *mut crate::System::Net::IPEndPoint,
+        additionalInfo: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "NatIntroduce",
+                (
+                    hostInternal,
+                    hostExternal,
+                    clientInternal,
+                    clientExternal,
+                    additionalInfo,
+                ),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        socket: *mut crate::LiteNetLib::NetSocket,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (socket))?;
+        Ok(__cordl_object)
+    }
+    pub fn OnNatIntroductionRequest(
+        &mut self,
+        req: *mut crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket,
+        senderEndPoint: *mut crate::System::Net::IPEndPoint,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnNatIntroductionRequest", (req, senderEndPoint))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnNatIntroductionResponse(
+        &mut self,
+        req: *mut crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnNatIntroductionResponse", (req))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnNatPunch(
+        &mut self,
+        req: *mut crate::LiteNetLib::NatPunchModule_NatPunchPacket,
+        senderEndPoint: *mut crate::System::Net::IPEndPoint,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnNatPunch", (req, senderEndPoint))?;
+        Ok(__cordl_ret)
+    }
+    pub fn PollEvents(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PollEvents", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ProcessMessage(
+        &mut self,
+        senderEndPoint: *mut crate::System::Net::IPEndPoint,
+        packet: *mut crate::LiteNetLib::NetPacket,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ProcessMessage", (senderEndPoint, packet))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Send<T>(
+        &mut self,
+        packet: T,
+        target: *mut crate::System::Net::IPEndPoint,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Send", (packet, target))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SendNatIntroduceRequest_IPEndPoint_String1(
+        &mut self,
+        masterServerEndPoint: *mut crate::System::Net::IPEndPoint,
+        additionalInfo: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendNatIntroduceRequest", (masterServerEndPoint, additionalInfo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SendNatIntroduceRequest_String_i32_String0(
+        &mut self,
+        host: *mut crate::System::String,
+        port: i32,
+        additionalInfo: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendNatIntroduceRequest", (host, port, additionalInfo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        socket: *mut crate::LiteNetLib::NetSocket,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (socket))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "LiteNetLib+NatPunchModule")]
+impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NatPunchModule {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
 #[repr(C)]
 #[derive(Debug)]
@@ -212,217 +423,6 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
 #[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "LiteNetLib+NatPunchModule")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct NatPunchModule {
-    __cordl_parent: crate::System::Object,
-    pub _socket: *mut crate::LiteNetLib::NetSocket,
-    pub _requestEvents: *mut crate::System::Collections::Generic::Queue_1<
-        crate::LiteNetLib::NatPunchModule_RequestEventData,
-    >,
-    pub _successEvents: *mut crate::System::Collections::Generic::Queue_1<
-        crate::LiteNetLib::NatPunchModule_SuccessEventData,
-    >,
-    pub _cacheReader: *mut crate::LiteNetLib::Utils::NetDataReader,
-    pub _cacheWriter: *mut crate::LiteNetLib::Utils::NetDataWriter,
-    pub _netPacketProcessor: *mut crate::LiteNetLib::Utils::NetPacketProcessor,
-    pub _natPunchListener: *mut crate::LiteNetLib::INatPunchListener,
-}
-#[cfg(feature = "LiteNetLib+NatPunchModule")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::LiteNetLib::NatPunchModule => "LiteNetLib"
-    ."NatPunchModule"
-);
-#[cfg(feature = "LiteNetLib+NatPunchModule")]
-impl std::ops::Deref for crate::LiteNetLib::NatPunchModule {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "LiteNetLib+NatPunchModule")]
-impl std::ops::DerefMut for crate::LiteNetLib::NatPunchModule {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "LiteNetLib+NatPunchModule")]
-impl crate::LiteNetLib::NatPunchModule {
-    pub const MaxTokenLength: i32 = 256i32;
-    #[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
-    pub type NatIntroduceRequestPacket = crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket;
-    #[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
-    pub type NatIntroduceResponsePacket = crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket;
-    #[cfg(feature = "LiteNetLib+NatPunchModule+NatPunchPacket")]
-    pub type NatPunchPacket = crate::LiteNetLib::NatPunchModule_NatPunchPacket;
-    #[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
-    pub type RequestEventData = crate::LiteNetLib::NatPunchModule_RequestEventData;
-    #[cfg(feature = "LiteNetLib+NatPunchModule+SuccessEventData")]
-    pub type SuccessEventData = crate::LiteNetLib::NatPunchModule_SuccessEventData;
-    pub fn Init(
-        &mut self,
-        listener: *mut crate::LiteNetLib::INatPunchListener,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (listener))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NatIntroduce(
-        &mut self,
-        hostInternal: *mut crate::System::Net::IPEndPoint,
-        hostExternal: *mut crate::System::Net::IPEndPoint,
-        clientInternal: *mut crate::System::Net::IPEndPoint,
-        clientExternal: *mut crate::System::Net::IPEndPoint,
-        additionalInfo: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "NatIntroduce",
-                (
-                    hostInternal,
-                    hostExternal,
-                    clientInternal,
-                    clientExternal,
-                    additionalInfo,
-                ),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        socket: *mut crate::LiteNetLib::NetSocket,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (socket))?;
-        Ok(__cordl_object)
-    }
-    pub fn OnNatIntroductionRequest(
-        &mut self,
-        req: *mut crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket,
-        senderEndPoint: *mut crate::System::Net::IPEndPoint,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnNatIntroductionRequest", (req, senderEndPoint))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnNatIntroductionResponse(
-        &mut self,
-        req: *mut crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnNatIntroductionResponse", (req))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnNatPunch(
-        &mut self,
-        req: *mut crate::LiteNetLib::NatPunchModule_NatPunchPacket,
-        senderEndPoint: *mut crate::System::Net::IPEndPoint,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnNatPunch", (req, senderEndPoint))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PollEvents(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PollEvents", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ProcessMessage(
-        &mut self,
-        senderEndPoint: *mut crate::System::Net::IPEndPoint,
-        packet: *mut crate::LiteNetLib::NetPacket,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessMessage", (senderEndPoint, packet))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Send<T>(
-        &mut self,
-        packet: T,
-        target: *mut crate::System::Net::IPEndPoint,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Send", (packet, target))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SendNatIntroduceRequest_IPEndPoint_String1(
-        &mut self,
-        masterServerEndPoint: *mut crate::System::Net::IPEndPoint,
-        additionalInfo: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendNatIntroduceRequest", (masterServerEndPoint, additionalInfo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SendNatIntroduceRequest_String_i32_String0(
-        &mut self,
-        host: *mut crate::System::String,
-        port: i32,
-        additionalInfo: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendNatIntroduceRequest", (host, port, additionalInfo))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        socket: *mut crate::LiteNetLib::NetSocket,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (socket))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "LiteNetLib+NatPunchModule")]
-impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NatPunchModule {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

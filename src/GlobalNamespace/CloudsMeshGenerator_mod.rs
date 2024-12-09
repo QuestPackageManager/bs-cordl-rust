@@ -1,34 +1,3 @@
-#[cfg(feature = "CloudsMeshGenerator+Cloud")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct CloudsMeshGenerator_Cloud {
-    pub precisionOpaqueMesh: *mut crate::UnityEngine::Mesh,
-    pub lowPolyMesh: *mut crate::UnityEngine::Mesh,
-    pub sizeModifier: f32,
-    pub bottomThreshold: f32,
-    pub weight: i32,
-    pub precisionVertexCount: i32,
-    pub lowPolyVertexCount: i32,
-    pub generatedCount: i32,
-}
-#[cfg(feature = "CloudsMeshGenerator+Cloud")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::CloudsMeshGenerator_Cloud => ""
-    ."CloudsMeshGenerator/Cloud"
-);
-#[cfg(feature = "CloudsMeshGenerator+Cloud")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "CloudsMeshGenerator+Cloud")]
-impl crate::GlobalNamespace::CloudsMeshGenerator_Cloud {}
 #[cfg(feature = "CloudsMeshGenerator")]
 #[repr(C)]
 #[derive(Debug)]
@@ -133,6 +102,37 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CloudsMeshGen
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "CloudsMeshGenerator+Cloud")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct CloudsMeshGenerator_Cloud {
+    pub precisionOpaqueMesh: *mut crate::UnityEngine::Mesh,
+    pub lowPolyMesh: *mut crate::UnityEngine::Mesh,
+    pub sizeModifier: f32,
+    pub bottomThreshold: f32,
+    pub weight: i32,
+    pub precisionVertexCount: i32,
+    pub lowPolyVertexCount: i32,
+    pub generatedCount: i32,
+}
+#[cfg(feature = "CloudsMeshGenerator+Cloud")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::CloudsMeshGenerator_Cloud => ""
+    ."CloudsMeshGenerator/Cloud"
+);
+#[cfg(feature = "CloudsMeshGenerator+Cloud")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "CloudsMeshGenerator+Cloud")]
+impl crate::GlobalNamespace::CloudsMeshGenerator_Cloud {}
 #[cfg(feature = "CloudsMeshGenerator+ProhibitedRadius")]
 #[repr(C)]
 #[derive(Debug, Clone)]

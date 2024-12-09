@@ -1,508 +1,3 @@
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+AttrInfo")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct XmlSqlBinaryReader_AttrInfo {
-    pub name: crate::System::Xml::XmlSqlBinaryReader_QName,
-    pub val: *mut crate::System::String,
-    pub contentPos: i32,
-    pub hashCode: i32,
-    pub prevHash: i32,
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+AttrInfo")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlSqlBinaryReader_AttrInfo =>
-    "System.Xml"."XmlSqlBinaryReader/AttrInfo"
-);
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+AttrInfo")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+AttrInfo")]
-impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
-    pub fn AdjustPosition(
-        &mut self,
-        adj: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AdjustPosition",
-            (adj),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetLocalnameAndNamespaceUri(
-        &mut self,
-        localname: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-        namespaceUri: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetLocalnameAndNamespaceUri",
-            (localname, namespaceUri),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetLocalnameAndNamespaceUriAndHash(
-        &mut self,
-        hasher: *mut crate::System::Xml::SecureStringHasher,
-        localname: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-        namespaceUri: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetLocalnameAndNamespaceUriAndHash",
-            (hasher, localname, namespaceUri),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn MatchHashNS(
-        &mut self,
-        hash: i32,
-        localname: *mut crate::System::String,
-        namespaceUri: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MatchHashNS",
-            (hash, localname, namespaceUri),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn MatchNS(
-        &mut self,
-        localname: *mut crate::System::String,
-        namespaceUri: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MatchNS",
-            (localname, namespaceUri),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Set_String0(
-        &mut self,
-        n: crate::System::Xml::XmlSqlBinaryReader_QName,
-        v: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Set",
-            (n, v),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Set_i32_1(
-        &mut self,
-        n: crate::System::Xml::XmlSqlBinaryReader_QName,
-        pos: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Set",
-            (n, pos),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ElemInfo")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct XmlSqlBinaryReader_ElemInfo {
-    pub name: crate::System::Xml::XmlSqlBinaryReader_QName,
-    pub xmlLang: *mut crate::System::String,
-    pub xmlSpace: crate::System::Xml::XmlSpace,
-    pub xmlspacePreserve: bool,
-    pub nsdecls: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ElemInfo")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlSqlBinaryReader_ElemInfo =>
-    "System.Xml"."XmlSqlBinaryReader/ElemInfo"
-);
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ElemInfo")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ElemInfo")]
-impl crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
-    pub fn Clear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
-    > {
-        let __cordl_ret: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Clear",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Set(
-        &mut self,
-        name: crate::System::Xml::XmlSqlBinaryReader_QName,
-        xmlspacePreserve: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Set",
-            (name, xmlspacePreserve),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct XmlSqlBinaryReader_NamespaceDecl {
-    __cordl_parent: crate::System::Object,
-    pub prefix: *mut crate::System::String,
-    pub uri: *mut crate::System::String,
-    pub scopeLink: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
-    pub prevLink: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
-    pub scope: i32,
-    pub implied: bool,
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlSqlBinaryReader_NamespaceDecl =>
-    "System.Xml"."XmlSqlBinaryReader/NamespaceDecl"
-);
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
-impl std::ops::Deref for crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
-impl std::ops::DerefMut for crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
-impl crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl {
-    pub fn New(
-        prefix: *mut crate::System::String,
-        nsuri: *mut crate::System::String,
-        nextInScope: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
-        prevDecl: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
-        scope: i32,
-        implied: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (prefix, nsuri, nextInScope, prevDecl, scope, implied),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        prefix: *mut crate::System::String,
-        nsuri: *mut crate::System::String,
-        nextInScope: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
-        prevDecl: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
-        scope: i32,
-        implied: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (prefix, nsuri, nextInScope, prevDecl, scope, implied))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct XmlSqlBinaryReader_NestedBinXml {
-    __cordl_parent: crate::System::Object,
-    pub symbolTables: crate::System::Xml::XmlSqlBinaryReader_SymbolTables,
-    pub docState: i32,
-    pub next: *mut crate::System::Xml::XmlSqlBinaryReader_NestedBinXml,
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlSqlBinaryReader_NestedBinXml =>
-    "System.Xml"."XmlSqlBinaryReader/NestedBinXml"
-);
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
-impl std::ops::Deref for crate::System::Xml::XmlSqlBinaryReader_NestedBinXml {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
-impl std::ops::DerefMut for crate::System::Xml::XmlSqlBinaryReader_NestedBinXml {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
-impl crate::System::Xml::XmlSqlBinaryReader_NestedBinXml {
-    pub fn New(
-        symbolTables: crate::System::Xml::XmlSqlBinaryReader_SymbolTables,
-        docState: i32,
-        next: *mut crate::System::Xml::XmlSqlBinaryReader_NestedBinXml,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (symbolTables, docState, next))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        symbolTables: crate::System::Xml::XmlSqlBinaryReader_SymbolTables,
-        docState: i32,
-        next: *mut crate::System::Xml::XmlSqlBinaryReader_NestedBinXml,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (symbolTables, docState, next))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Xml::XmlSqlBinaryReader_NestedBinXml {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+QName")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct XmlSqlBinaryReader_QName {
-    pub prefix: *mut crate::System::String,
-    pub localname: *mut crate::System::String,
-    pub namespaceUri: *mut crate::System::String,
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+QName")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlSqlBinaryReader_QName =>
-    "System.Xml"."XmlSqlBinaryReader/QName"
-);
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+QName")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Xml::XmlSqlBinaryReader_QName {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+QName")]
-impl crate::System::Xml::XmlSqlBinaryReader_QName {
-    pub fn CheckPrefixNS(
-        &mut self,
-        prefix: *mut crate::System::String,
-        namespaceUri: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CheckPrefixNS",
-            (prefix, namespaceUri),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Clear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Clear",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals(
-        &mut self,
-        other: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetNSHashCode(
-        &mut self,
-        hasher: *mut crate::System::Xml::SecureStringHasher,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetNSHashCode",
-            (hasher),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn MatchNs(
-        &mut self,
-        lname: *mut crate::System::String,
-        nsUri: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MatchNs",
-            (lname, nsUri),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn MatchPrefix(
-        &mut self,
-        prefix: *mut crate::System::String,
-        lname: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MatchPrefix",
-            (prefix, lname),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Set(
-        &mut self,
-        prefix: *mut crate::System::String,
-        lname: *mut crate::System::String,
-        nsUri: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Set",
-            (prefix, lname, nsUri),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        prefix: *mut crate::System::String,
-        lname: *mut crate::System::String,
-        nsUri: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (prefix, lname, nsUri),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ScanState")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XmlSqlBinaryReader_ScanState {
-    Attr = 2i32,
-    AttrVal = 3i32,
-    AttrValPseudoValue = 4i32,
-    Closed = 8i32,
-    Doc = 0i32,
-    _cordl_EOF = 7i32,
-    Error = 6i32,
-    Init = 5i32,
-    XmlText = 1i32,
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ScanState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlSqlBinaryReader_ScanState =>
-    "System.Xml"."XmlSqlBinaryReader/ScanState"
-);
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+SymbolTables")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct XmlSqlBinaryReader_SymbolTables {
-    pub symtable: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    pub symCount: i32,
-    pub qnametable: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Xml::XmlSqlBinaryReader_QName,
-    >,
-    pub qnameCount: i32,
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+SymbolTables")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlSqlBinaryReader_SymbolTables =>
-    "System.Xml"."XmlSqlBinaryReader/SymbolTables"
-);
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+SymbolTables")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Xml::XmlSqlBinaryReader_SymbolTables {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Xml+XmlSqlBinaryReader+SymbolTables")]
-impl crate::System::Xml::XmlSqlBinaryReader_SymbolTables {
-    pub fn Init(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Init",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1792,5 +1287,510 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlSqlBinaryReade
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+AttrInfo")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct XmlSqlBinaryReader_AttrInfo {
+    pub name: crate::System::Xml::XmlSqlBinaryReader_QName,
+    pub val: *mut crate::System::String,
+    pub contentPos: i32,
+    pub hashCode: i32,
+    pub prevHash: i32,
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+AttrInfo")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlSqlBinaryReader_AttrInfo =>
+    "System.Xml"."XmlSqlBinaryReader/AttrInfo"
+);
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+AttrInfo")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+AttrInfo")]
+impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
+    pub fn AdjustPosition(
+        &mut self,
+        adj: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "AdjustPosition",
+            (adj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetLocalnameAndNamespaceUri(
+        &mut self,
+        localname: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        namespaceUri: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetLocalnameAndNamespaceUri",
+            (localname, namespaceUri),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetLocalnameAndNamespaceUriAndHash(
+        &mut self,
+        hasher: *mut crate::System::Xml::SecureStringHasher,
+        localname: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        namespaceUri: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetLocalnameAndNamespaceUriAndHash",
+            (hasher, localname, namespaceUri),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn MatchHashNS(
+        &mut self,
+        hash: i32,
+        localname: *mut crate::System::String,
+        namespaceUri: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MatchHashNS",
+            (hash, localname, namespaceUri),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn MatchNS(
+        &mut self,
+        localname: *mut crate::System::String,
+        namespaceUri: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MatchNS",
+            (localname, namespaceUri),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Set_String0(
+        &mut self,
+        n: crate::System::Xml::XmlSqlBinaryReader_QName,
+        v: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Set",
+            (n, v),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Set_i32_1(
+        &mut self,
+        n: crate::System::Xml::XmlSqlBinaryReader_QName,
+        pos: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Set",
+            (n, pos),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ElemInfo")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct XmlSqlBinaryReader_ElemInfo {
+    pub name: crate::System::Xml::XmlSqlBinaryReader_QName,
+    pub xmlLang: *mut crate::System::String,
+    pub xmlSpace: crate::System::Xml::XmlSpace,
+    pub xmlspacePreserve: bool,
+    pub nsdecls: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ElemInfo")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlSqlBinaryReader_ElemInfo =>
+    "System.Xml"."XmlSqlBinaryReader/ElemInfo"
+);
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ElemInfo")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ElemInfo")]
+impl crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
+    pub fn Clear(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
+    > {
+        let __cordl_ret: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Clear",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Set(
+        &mut self,
+        name: crate::System::Xml::XmlSqlBinaryReader_QName,
+        xmlspacePreserve: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Set",
+            (name, xmlspacePreserve),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct XmlSqlBinaryReader_NamespaceDecl {
+    __cordl_parent: crate::System::Object,
+    pub prefix: *mut crate::System::String,
+    pub uri: *mut crate::System::String,
+    pub scopeLink: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
+    pub prevLink: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
+    pub scope: i32,
+    pub implied: bool,
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlSqlBinaryReader_NamespaceDecl =>
+    "System.Xml"."XmlSqlBinaryReader/NamespaceDecl"
+);
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
+impl std::ops::Deref for crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
+impl std::ops::DerefMut for crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
+impl crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl {
+    pub fn New(
+        prefix: *mut crate::System::String,
+        nsuri: *mut crate::System::String,
+        nextInScope: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
+        prevDecl: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
+        scope: i32,
+        implied: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (prefix, nsuri, nextInScope, prevDecl, scope, implied),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        prefix: *mut crate::System::String,
+        nsuri: *mut crate::System::String,
+        nextInScope: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
+        prevDecl: *mut crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
+        scope: i32,
+        implied: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (prefix, nsuri, nextInScope, prevDecl, scope, implied))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct XmlSqlBinaryReader_NestedBinXml {
+    __cordl_parent: crate::System::Object,
+    pub symbolTables: crate::System::Xml::XmlSqlBinaryReader_SymbolTables,
+    pub docState: i32,
+    pub next: *mut crate::System::Xml::XmlSqlBinaryReader_NestedBinXml,
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlSqlBinaryReader_NestedBinXml =>
+    "System.Xml"."XmlSqlBinaryReader/NestedBinXml"
+);
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
+impl std::ops::Deref for crate::System::Xml::XmlSqlBinaryReader_NestedBinXml {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
+impl std::ops::DerefMut for crate::System::Xml::XmlSqlBinaryReader_NestedBinXml {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
+impl crate::System::Xml::XmlSqlBinaryReader_NestedBinXml {
+    pub fn New(
+        symbolTables: crate::System::Xml::XmlSqlBinaryReader_SymbolTables,
+        docState: i32,
+        next: *mut crate::System::Xml::XmlSqlBinaryReader_NestedBinXml,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (symbolTables, docState, next))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        symbolTables: crate::System::Xml::XmlSqlBinaryReader_SymbolTables,
+        docState: i32,
+        next: *mut crate::System::Xml::XmlSqlBinaryReader_NestedBinXml,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (symbolTables, docState, next))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Xml::XmlSqlBinaryReader_NestedBinXml {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+QName")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct XmlSqlBinaryReader_QName {
+    pub prefix: *mut crate::System::String,
+    pub localname: *mut crate::System::String,
+    pub namespaceUri: *mut crate::System::String,
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+QName")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlSqlBinaryReader_QName =>
+    "System.Xml"."XmlSqlBinaryReader/QName"
+);
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+QName")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::Xml::XmlSqlBinaryReader_QName {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+QName")]
+impl crate::System::Xml::XmlSqlBinaryReader_QName {
+    pub fn CheckPrefixNS(
+        &mut self,
+        prefix: *mut crate::System::String,
+        namespaceUri: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CheckPrefixNS",
+            (prefix, namespaceUri),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Clear(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Clear",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals(
+        &mut self,
+        other: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNSHashCode(
+        &mut self,
+        hasher: *mut crate::System::Xml::SecureStringHasher,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetNSHashCode",
+            (hasher),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn MatchNs(
+        &mut self,
+        lname: *mut crate::System::String,
+        nsUri: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MatchNs",
+            (lname, nsUri),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn MatchPrefix(
+        &mut self,
+        prefix: *mut crate::System::String,
+        lname: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MatchPrefix",
+            (prefix, lname),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Set(
+        &mut self,
+        prefix: *mut crate::System::String,
+        lname: *mut crate::System::String,
+        nsUri: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Set",
+            (prefix, lname, nsUri),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        prefix: *mut crate::System::String,
+        lname: *mut crate::System::String,
+        nsUri: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (prefix, lname, nsUri),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ScanState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XmlSqlBinaryReader_ScanState {
+    Attr = 2i32,
+    AttrVal = 3i32,
+    AttrValPseudoValue = 4i32,
+    Closed = 8i32,
+    Doc = 0i32,
+    _cordl_EOF = 7i32,
+    Error = 6i32,
+    Init = 5i32,
+    XmlText = 1i32,
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ScanState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlSqlBinaryReader_ScanState =>
+    "System.Xml"."XmlSqlBinaryReader/ScanState"
+);
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+SymbolTables")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct XmlSqlBinaryReader_SymbolTables {
+    pub symtable: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub symCount: i32,
+    pub qnametable: *mut quest_hook::libil2cpp::Il2CppArray<
+        crate::System::Xml::XmlSqlBinaryReader_QName,
+    >,
+    pub qnameCount: i32,
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+SymbolTables")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlSqlBinaryReader_SymbolTables =>
+    "System.Xml"."XmlSqlBinaryReader/SymbolTables"
+);
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+SymbolTables")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::Xml::XmlSqlBinaryReader_SymbolTables {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+SymbolTables")]
+impl crate::System::Xml::XmlSqlBinaryReader_SymbolTables {
+    pub fn Init(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Init",
+            (),
+        )?;
+        Ok(__cordl_ret)
     }
 }

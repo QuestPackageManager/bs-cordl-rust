@@ -1,18 +1,3 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils+ConvertResult")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ConvertUtils_ConvertResult {
-    CannotConvertNull = 1i32,
-    NoValidConversion = 3i32,
-    NotInstantiableType = 2i32,
-    Success = 0i32,
-}
-#[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils+ConvertResult")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::Newtonsoft::Json::Utilities::ConvertUtils_ConvertResult =>
-    "Newtonsoft.Json.Utilities"."ConvertUtils/ConvertResult"
-);
 #[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils")]
 #[repr(C)]
 #[derive(Debug)]
@@ -54,3 +39,18 @@ for crate::Newtonsoft::Json::Utilities::ConvertUtils {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils+ConvertResult")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ConvertUtils_ConvertResult {
+    CannotConvertNull = 1i32,
+    NoValidConversion = 3i32,
+    NotInstantiableType = 2i32,
+    Success = 0i32,
+}
+#[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils+ConvertResult")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::Newtonsoft::Json::Utilities::ConvertUtils_ConvertResult =>
+    "Newtonsoft.Json.Utilities"."ConvertUtils/ConvertResult"
+);

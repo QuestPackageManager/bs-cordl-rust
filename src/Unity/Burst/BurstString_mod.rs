@@ -1,27 +1,3 @@
-#[cfg(feature = "Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct tBigInt__m_blocks_e__FixedBuffer {
-    pub FixedElementField: u32,
-}
-#[cfg(feature = "Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Unity::Burst::tBigInt__m_blocks_e__FixedBuffer
-    => "Unity.Burst"."BurstString/tBigInt/<m_blocks>e__FixedBuffer"
-);
-#[cfg(feature = "Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Burst::tBigInt__m_blocks_e__FixedBuffer {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
-impl crate::Unity::Burst::tBigInt__m_blocks_e__FixedBuffer {}
 #[cfg(feature = "Unity+Burst+BurstString")]
 #[repr(C)]
 #[derive(Debug)]
@@ -324,7 +300,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug, Clone)]
 pub struct BurstString_tBigInt {
     pub m_length: i32,
-    pub m_blocks: crate::Unity::Burst::tBigInt__m_blocks_e__FixedBuffer,
+    pub m_blocks: crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer,
 }
 #[cfg(feature = "Unity+Burst+BurstString+tBigInt")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -346,7 +322,7 @@ for crate::Unity::Burst::BurstString_tBigInt {
 impl crate::Unity::Burst::BurstString_tBigInt {
     pub const c_BigInt_MaxBlocks: i32 = 35i32;
     #[cfg(feature = "Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
-    pub type _m_blocks_e__FixedBuffer = crate::Unity::Burst::tBigInt__m_blocks_e__FixedBuffer;
+    pub type _m_blocks_e__FixedBuffer = crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer;
     pub fn GetBlock(&mut self, idx: i32) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -510,3 +486,28 @@ impl crate::Unity::Burst::BurstString_tFloatUnion64 {
         Ok(__cordl_ret)
     }
 }
+#[cfg(feature = "Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct tBigInt_BurstString__m_blocks_e__FixedBuffer {
+    pub FixedElementField: u32,
+}
+#[cfg(feature = "Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer => "Unity.Burst"
+    ."BurstString/tBigInt/<m_blocks>e__FixedBuffer"
+);
+#[cfg(feature = "Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
+impl crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {}

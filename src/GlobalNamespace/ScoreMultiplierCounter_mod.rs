@@ -1,17 +1,3 @@
-#[cfg(feature = "ScoreMultiplierCounter+MultiplierEventType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ScoreMultiplierCounter_MultiplierEventType {
-    Negative = 2i32,
-    Neutral = 1i32,
-    Positive = 0i32,
-}
-#[cfg(feature = "ScoreMultiplierCounter+MultiplierEventType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType => ""
-    ."ScoreMultiplierCounter/MultiplierEventType"
-);
 #[cfg(feature = "ScoreMultiplierCounter")]
 #[repr(C)]
 #[derive(Debug)]
@@ -106,3 +92,17 @@ for crate::GlobalNamespace::ScoreMultiplierCounter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ScoreMultiplierCounter+MultiplierEventType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ScoreMultiplierCounter_MultiplierEventType {
+    Negative = 2i32,
+    Neutral = 1i32,
+    Positive = 0i32,
+}
+#[cfg(feature = "ScoreMultiplierCounter+MultiplierEventType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType => ""
+    ."ScoreMultiplierCounter/MultiplierEventType"
+);

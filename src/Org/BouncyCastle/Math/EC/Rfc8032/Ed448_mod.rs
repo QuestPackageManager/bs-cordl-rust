@@ -1,16 +1,3 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+Algorithm")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Ed448_Algorithm {
-    Ed448 = 0i32,
-    Ed448ph = 1i32,
-}
-#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+Algorithm")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_Algorithm =>
-    "Org.BouncyCastle.Math.EC.Rfc8032"."Ed448/Algorithm"
-);
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448")]
 #[repr(C)]
 #[derive(Debug)]
@@ -99,6 +86,19 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+Algorithm")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Ed448_Algorithm {
+    Ed448 = 0i32,
+    Ed448ph = 1i32,
+}
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+Algorithm")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_Algorithm =>
+    "Org.BouncyCastle.Math.EC.Rfc8032"."Ed448/Algorithm"
+);
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointExt")]
 #[repr(C)]
 #[derive(Debug)]

@@ -1,17 +1,3 @@
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ScrollView_NestedInteractionKind {
-    Default = 0i32,
-    ForwardScrolling = 2i32,
-    StopScrolling = 1i32,
-}
-#[cfg(feature = "UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::ScrollView_NestedInteractionKind =>
-    "UnityEngine.UIElements"."ScrollView/NestedInteractionKind"
-);
 #[cfg(feature = "UnityEngine+UIElements+ScrollView")]
 #[repr(C)]
 #[derive(Debug)]
@@ -917,6 +903,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Scrol
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ScrollView_NestedInteractionKind {
+    Default = 0i32,
+    ForwardScrolling = 2i32,
+    StopScrolling = 1i32,
+}
+#[cfg(feature = "UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::ScrollView_NestedInteractionKind =>
+    "UnityEngine.UIElements"."ScrollView/NestedInteractionKind"
+);
 #[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

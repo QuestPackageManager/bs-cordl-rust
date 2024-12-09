@@ -1,28 +1,3 @@
-#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct TestBuilder_AndNode {
-    pub Depth: i32,
-    pub Node: *mut crate::System::Linq::Expressions::Expression,
-}
-#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Dynamic::TestBuilder_AndNode =>
-    "System.Dynamic"."BindingRestrictions/TestBuilder/AndNode"
-);
-#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Dynamic::TestBuilder_AndNode {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
-impl crate::System::Dynamic::TestBuilder_AndNode {}
 #[cfg(feature = "System+Dynamic+BindingRestrictions")]
 #[repr(C)]
 #[derive(Debug)]
@@ -173,7 +148,7 @@ pub struct BindingRestrictions_TestBuilder {
         *mut crate::System::Dynamic::BindingRestrictions,
     >,
     pub _tests: *mut crate::System::Collections::Generic::Stack_1<
-        crate::System::Dynamic::TestBuilder_AndNode,
+        crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode,
     >,
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder")]
@@ -197,7 +172,7 @@ impl std::ops::DerefMut for crate::System::Dynamic::BindingRestrictions_TestBuil
 #[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder")]
 impl crate::System::Dynamic::BindingRestrictions_TestBuilder {
     #[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
-    pub type AndNode = crate::System::Dynamic::TestBuilder_AndNode;
+    pub type AndNode = crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode;
     pub fn Append(
         &mut self,
         restrictions: *mut crate::System::Dynamic::BindingRestrictions,
@@ -261,3 +236,29 @@ for crate::System::Dynamic::BindingRestrictions_TestBuilder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct TestBuilder_BindingRestrictions_AndNode {
+    pub Depth: i32,
+    pub Node: *mut crate::System::Linq::Expressions::Expression,
+}
+#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Dynamic::TestBuilder_BindingRestrictions_AndNode => "System.Dynamic"
+    ."BindingRestrictions/TestBuilder/AndNode"
+);
+#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
+impl crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {}

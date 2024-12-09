@@ -1,3 +1,58 @@
+#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct InputControlExtensions {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::InputControlExtensions
+    => "UnityEngine.InputSystem"."InputControlExtensions"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
+impl std::ops::Deref for crate::UnityEngine::InputSystem::InputControlExtensions {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
+impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputControlExtensions {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
+impl crate::UnityEngine::InputSystem::InputControlExtensions {
+    #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+ControlBuilder")]
+    pub type ControlBuilder = crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder;
+    #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder")]
+    pub type DeviceBuilder = crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder;
+    #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+Enumerate")]
+    pub type Enumerate = crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
+    )]
+    pub type InputEventControlCollection = crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
+    )]
+    pub type InputEventControlEnumerator = crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputControlExtensions+_GetAllButtonPresses_d__43"
+    )]
+    pub type _GetAllButtonPresses_d__43 = crate::UnityEngine::InputSystem::InputControlExtensions__GetAllButtonPresses_d__43;
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::InputSystem::InputControlExtensions {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+ControlBuilder")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -512,61 +567,6 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
     ::UnityEngine::InputSystem::InputControlExtensions_Enumerate =>
     "UnityEngine.InputSystem"."InputControlExtensions/Enumerate"
 );
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct InputControlExtensions {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::InputControlExtensions
-    => "UnityEngine.InputSystem"."InputControlExtensions"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
-impl std::ops::Deref for crate::UnityEngine::InputSystem::InputControlExtensions {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
-impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputControlExtensions {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
-impl crate::UnityEngine::InputSystem::InputControlExtensions {
-    #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+ControlBuilder")]
-    pub type ControlBuilder = crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder;
-    #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder")]
-    pub type DeviceBuilder = crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder;
-    #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+Enumerate")]
-    pub type Enumerate = crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
-    )]
-    pub type InputEventControlCollection = crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
-    )]
-    pub type InputEventControlEnumerator = crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputControlExtensions+_GetAllButtonPresses_d__43"
-    )]
-    pub type _GetAllButtonPresses_d__43 = crate::UnityEngine::InputSystem::InputControlExtensions__GetAllButtonPresses_d__43;
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::InputControlExtensions {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(
     feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
 )]

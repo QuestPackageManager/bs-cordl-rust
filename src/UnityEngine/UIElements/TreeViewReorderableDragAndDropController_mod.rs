@@ -1,77 +1,3 @@
-#[cfg(
-    feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController+DropData"
-)]
-#[repr(C)]
-#[derive(Debug)]
-pub struct TreeViewReorderableDragAndDropController_DropData {
-    __cordl_parent: crate::System::Object,
-    pub expandedIdsBeforeDrag: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub draggedIds: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub lastItemId: i32,
-    pub expandItemBeginTimerMs: f32,
-    pub expandItemBeginPosition: crate::UnityEngine::Vector2,
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController+DropData"
-)]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_DropData =>
-    "UnityEngine.UIElements"."TreeViewReorderableDragAndDropController/DropData"
-);
-#[cfg(
-    feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController+DropData"
-)]
-impl std::ops::Deref
-for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_DropData {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController+DropData"
-)]
-impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_DropData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController+DropData"
-)]
-impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_DropData {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController+DropData"
-)]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_DropData {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController")]
 #[repr(C)]
 #[derive(Debug)]
@@ -231,6 +157,80 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
 #[cfg(feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController+DropData"
+)]
+#[repr(C)]
+#[derive(Debug)]
+pub struct TreeViewReorderableDragAndDropController_DropData {
+    __cordl_parent: crate::System::Object,
+    pub expandedIdsBeforeDrag: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub draggedIds: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub lastItemId: i32,
+    pub expandItemBeginTimerMs: f32,
+    pub expandItemBeginPosition: crate::UnityEngine::Vector2,
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController+DropData"
+)]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_DropData =>
+    "UnityEngine.UIElements"."TreeViewReorderableDragAndDropController/DropData"
+);
+#[cfg(
+    feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController+DropData"
+)]
+impl std::ops::Deref
+for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_DropData {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController+DropData"
+)]
+impl std::ops::DerefMut
+for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_DropData {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController+DropData"
+)]
+impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_DropData {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController+DropData"
+)]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_DropData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

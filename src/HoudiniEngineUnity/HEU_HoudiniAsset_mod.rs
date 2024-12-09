@@ -1,82 +1,3 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetBuildAction")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum HEU_HoudiniAsset_AssetBuildAction {
-    COOK = 2i32,
-    DUPLICATE = 5i32,
-    INVALID = 3i32,
-    NONE = 0i32,
-    RELOAD = 1i32,
-    RESET_PARAMS = 6i32,
-    STRIP_HEDATA = 4i32,
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetBuildAction")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_HoudiniAsset_AssetBuildAction => "HoudiniEngineUnity"
-    ."HEU_HoudiniAsset/AssetBuildAction"
-);
-#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookResult")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum HEU_HoudiniAsset_AssetCookResult {
-    ERRORED = 2i32,
-    NONE = 0i32,
-    SUCCESS = 1i32,
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookResult")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookResult => "HoudiniEngineUnity"
-    ."HEU_HoudiniAsset/AssetCookResult"
-);
-#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookStatus")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum HEU_HoudiniAsset_AssetCookStatus {
-    COOKING = 1i32,
-    LOADING = 3i32,
-    NONE = 0i32,
-    POSTCOOK = 2i32,
-    POSTLOAD = 4i32,
-    PRELOAD = 5i32,
-    SELECT_SUBASSET = 6i32,
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookStatus")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookStatus => "HoudiniEngineUnity"
-    ."HEU_HoudiniAsset/AssetCookStatus"
-);
-#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetInstantiationMethod")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum HEU_HoudiniAsset_AssetInstantiationMethod {
-    DEFAULT = 0i32,
-    DUPLICATED = 1i32,
-    UNDO = 2i32,
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetInstantiationMethod")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_HoudiniAsset_AssetInstantiationMethod =>
-    "HoudiniEngineUnity"."HEU_HoudiniAsset/AssetInstantiationMethod"
-);
-#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+HEU_AssetType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum HEU_HoudiniAsset_HEU_AssetType {
-    TYPE_CURVE = 2i32,
-    TYPE_HDA = 1i32,
-    TYPE_INPUT = 3i32,
-    TYPE_INVALID = 0i32,
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+HEU_AssetType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType => "HoudiniEngineUnity"
-    ."HEU_HoudiniAsset/HEU_AssetType"
-);
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset")]
 #[repr(C)]
 #[derive(Debug)]
@@ -2745,6 +2666,85 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_Houdin
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetBuildAction")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum HEU_HoudiniAsset_AssetBuildAction {
+    COOK = 2i32,
+    DUPLICATE = 5i32,
+    INVALID = 3i32,
+    NONE = 0i32,
+    RELOAD = 1i32,
+    RESET_PARAMS = 6i32,
+    STRIP_HEDATA = 4i32,
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetBuildAction")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::HoudiniEngineUnity::HEU_HoudiniAsset_AssetBuildAction => "HoudiniEngineUnity"
+    ."HEU_HoudiniAsset/AssetBuildAction"
+);
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookResult")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum HEU_HoudiniAsset_AssetCookResult {
+    ERRORED = 2i32,
+    NONE = 0i32,
+    SUCCESS = 1i32,
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookResult")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookResult => "HoudiniEngineUnity"
+    ."HEU_HoudiniAsset/AssetCookResult"
+);
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookStatus")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum HEU_HoudiniAsset_AssetCookStatus {
+    COOKING = 1i32,
+    LOADING = 3i32,
+    NONE = 0i32,
+    POSTCOOK = 2i32,
+    POSTLOAD = 4i32,
+    PRELOAD = 5i32,
+    SELECT_SUBASSET = 6i32,
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookStatus")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookStatus => "HoudiniEngineUnity"
+    ."HEU_HoudiniAsset/AssetCookStatus"
+);
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetInstantiationMethod")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum HEU_HoudiniAsset_AssetInstantiationMethod {
+    DEFAULT = 0i32,
+    DUPLICATED = 1i32,
+    UNDO = 2i32,
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetInstantiationMethod")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::HoudiniEngineUnity::HEU_HoudiniAsset_AssetInstantiationMethod =>
+    "HoudiniEngineUnity"."HEU_HoudiniAsset/AssetInstantiationMethod"
+);
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+HEU_AssetType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum HEU_HoudiniAsset_HEU_AssetType {
+    TYPE_CURVE = 2i32,
+    TYPE_HDA = 1i32,
+    TYPE_INPUT = 3i32,
+    TYPE_INVALID = 0i32,
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+HEU_AssetType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType => "HoudiniEngineUnity"
+    ."HEU_HoudiniAsset/HEU_AssetType"
+);
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+UpdateUIDelegate")]
 #[repr(C)]
 #[derive(Debug)]

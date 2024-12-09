@@ -1,45 +1,3 @@
-#[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct GameplayModifiersConfiguration_CutAngleTolerance {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance => ""
-    ."GameplayModifiersConfiguration/CutAngleTolerance"
-);
-#[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
-impl std::ops::Deref
-for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
-impl crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
-    pub const kDefault: f32 = 60f32;
-    pub const kStrict: f32 = 40f32;
-}
-#[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "GameplayModifiersConfiguration")]
 #[repr(C)]
 #[derive(Debug)]
@@ -76,6 +34,48 @@ impl crate::GlobalNamespace::GameplayModifiersConfiguration {
 #[cfg(feature = "GameplayModifiersConfiguration")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameplayModifiersConfiguration {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct GameplayModifiersConfiguration_CutAngleTolerance {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance => ""
+    ."GameplayModifiersConfiguration/CutAngleTolerance"
+);
+#[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
+impl std::ops::Deref
+for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
+impl std::ops::DerefMut
+for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
+impl crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
+    pub const kDefault: f32 = 60f32;
+    pub const kStrict: f32 = 40f32;
+}
+#[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

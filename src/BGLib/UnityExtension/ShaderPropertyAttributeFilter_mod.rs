@@ -1,21 +1,3 @@
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ShaderPropertyAttributeFilter_PropType {
-    Any = 0i32,
-    Color = 1i32,
-    Float = 3i32,
-    Int = 6i32,
-    Range = 4i32,
-    Texture = 5i32,
-    Vector = 2i32,
-}
-#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType =>
-    "BGLib.UnityExtension"."ShaderPropertyAttributeFilter/PropType"
-);
 #[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter")]
 #[repr(C)]
 #[derive(Debug)]
@@ -80,3 +62,21 @@ for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ShaderPropertyAttributeFilter_PropType {
+    Any = 0i32,
+    Color = 1i32,
+    Float = 3i32,
+    Int = 6i32,
+    Range = 4i32,
+    Texture = 5i32,
+    Vector = 2i32,
+}
+#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType =>
+    "BGLib.UnityExtension"."ShaderPropertyAttributeFilter/PropType"
+);

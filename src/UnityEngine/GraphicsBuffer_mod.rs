@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::UnityEngine::GraphicsBuffer {
 #[cfg(feature = "UnityEngine+GraphicsBuffer")]
 impl crate::UnityEngine::GraphicsBuffer {
     #[cfg(feature = "UnityEngine+GraphicsBuffer+Target")]
-    pub type Target = crate::UnityEngine::GraphicsBuffer_Target;
+    pub type TargetType = crate::UnityEngine::GraphicsBuffer_Target;
 }
 #[cfg(feature = "UnityEngine+GraphicsBuffer")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GraphicsBuffer {

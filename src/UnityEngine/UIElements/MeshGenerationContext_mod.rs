@@ -1,17 +1,3 @@
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum MeshGenerationContext_MeshFlags {
-    None = 0i32,
-    SkipDynamicAtlas = 2i32,
-    UVisDisplacement = 1i32,
-}
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::MeshGenerationContext_MeshFlags =>
-    "UnityEngine.UIElements"."MeshGenerationContext/MeshFlags"
-);
 #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext")]
 #[repr(C)]
 #[derive(Debug)]
@@ -90,3 +76,17 @@ for crate::UnityEngine::UIElements::MeshGenerationContext {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum MeshGenerationContext_MeshFlags {
+    None = 0i32,
+    SkipDynamicAtlas = 2i32,
+    UVisDisplacement = 1i32,
+}
+#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::MeshGenerationContext_MeshFlags =>
+    "UnityEngine.UIElements"."MeshGenerationContext/MeshFlags"
+);

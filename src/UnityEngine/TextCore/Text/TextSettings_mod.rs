@@ -1,42 +1,3 @@
-#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct TextSettings_FontReferenceMap {
-    pub font: *mut crate::UnityEngine::Font,
-    pub fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
-}
-#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap =>
-    "UnityEngine.TextCore.Text"."TextSettings/FontReferenceMap"
-);
-#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
-impl crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap {
-    pub fn _ctor(
-        &mut self,
-        font: *mut crate::UnityEngine::Font,
-        fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (font, fontAsset),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "UnityEngine+TextCore+Text+TextSettings")]
 #[repr(C)]
 #[derive(Debug)]
@@ -522,5 +483,44 @@ for crate::UnityEngine::TextCore::Text::TextSettings {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct TextSettings_FontReferenceMap {
+    pub font: *mut crate::UnityEngine::Font,
+    pub fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
+}
+#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap =>
+    "UnityEngine.TextCore.Text"."TextSettings/FontReferenceMap"
+);
+#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
+impl crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap {
+    pub fn _ctor(
+        &mut self,
+        font: *mut crate::UnityEngine::Font,
+        fontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (font, fontAsset),
+        )?;
+        Ok(__cordl_ret)
     }
 }

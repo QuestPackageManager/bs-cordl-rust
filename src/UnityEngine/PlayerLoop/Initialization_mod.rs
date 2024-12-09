@@ -1,3 +1,40 @@
+#[cfg(feature = "UnityEngine+PlayerLoop+Initialization")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct Initialization {}
+#[cfg(feature = "UnityEngine+PlayerLoop+Initialization")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::PlayerLoop::Initialization =>
+    "UnityEngine.PlayerLoop"."Initialization"
+);
+#[cfg(feature = "UnityEngine+PlayerLoop+Initialization")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::PlayerLoop::Initialization {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+PlayerLoop+Initialization")]
+impl crate::UnityEngine::PlayerLoop::Initialization {
+    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+AsyncUploadTimeSlicedUpdate")]
+    pub type AsyncUploadTimeSlicedUpdate = crate::UnityEngine::PlayerLoop::Initialization_AsyncUploadTimeSlicedUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+DirectorSampleTime")]
+    pub type DirectorSampleTime = crate::UnityEngine::PlayerLoop::Initialization_DirectorSampleTime;
+    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+ProfilerStartFrame")]
+    pub type ProfilerStartFrame = crate::UnityEngine::PlayerLoop::Initialization_ProfilerStartFrame;
+    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+SynchronizeInputs")]
+    pub type SynchronizeInputs = crate::UnityEngine::PlayerLoop::Initialization_SynchronizeInputs;
+    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+SynchronizeState")]
+    pub type SynchronizeState = crate::UnityEngine::PlayerLoop::Initialization_SynchronizeState;
+    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+UpdateCameraMotionVectors")]
+    pub type UpdateCameraMotionVectors = crate::UnityEngine::PlayerLoop::Initialization_UpdateCameraMotionVectors;
+    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+XREarlyUpdate")]
+    pub type XREarlyUpdate = crate::UnityEngine::PlayerLoop::Initialization_XREarlyUpdate;
+}
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+AsyncUploadTimeSlicedUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -44,43 +81,6 @@ for crate::UnityEngine::PlayerLoop::Initialization_DirectorSampleTime {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+DirectorSampleTime")]
 impl crate::UnityEngine::PlayerLoop::Initialization_DirectorSampleTime {}
-#[cfg(feature = "UnityEngine+PlayerLoop+Initialization")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct Initialization {}
-#[cfg(feature = "UnityEngine+PlayerLoop+Initialization")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::PlayerLoop::Initialization =>
-    "UnityEngine.PlayerLoop"."Initialization"
-);
-#[cfg(feature = "UnityEngine+PlayerLoop+Initialization")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::PlayerLoop::Initialization {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+PlayerLoop+Initialization")]
-impl crate::UnityEngine::PlayerLoop::Initialization {
-    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+AsyncUploadTimeSlicedUpdate")]
-    pub type AsyncUploadTimeSlicedUpdate = crate::UnityEngine::PlayerLoop::Initialization_AsyncUploadTimeSlicedUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+DirectorSampleTime")]
-    pub type DirectorSampleTime = crate::UnityEngine::PlayerLoop::Initialization_DirectorSampleTime;
-    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+ProfilerStartFrame")]
-    pub type ProfilerStartFrame = crate::UnityEngine::PlayerLoop::Initialization_ProfilerStartFrame;
-    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+SynchronizeInputs")]
-    pub type SynchronizeInputs = crate::UnityEngine::PlayerLoop::Initialization_SynchronizeInputs;
-    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+SynchronizeState")]
-    pub type SynchronizeState = crate::UnityEngine::PlayerLoop::Initialization_SynchronizeState;
-    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+UpdateCameraMotionVectors")]
-    pub type UpdateCameraMotionVectors = crate::UnityEngine::PlayerLoop::Initialization_UpdateCameraMotionVectors;
-    #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+XREarlyUpdate")]
-    pub type XREarlyUpdate = crate::UnityEngine::PlayerLoop::Initialization_XREarlyUpdate;
-}
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+ProfilerStartFrame")]
 #[repr(C)]
 #[derive(Debug, Clone)]

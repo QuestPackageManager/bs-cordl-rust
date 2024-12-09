@@ -1,175 +1,3 @@
-#[cfg(feature = "HMUI+TableView+CellsGroup")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct TableView_CellsGroup {
-    __cordl_parent: crate::System::Object,
-    pub _reuseIdentifier: *mut crate::System::String,
-    pub _cells: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::HMUI::TableCell,
-    >,
-}
-#[cfg(feature = "HMUI+TableView+CellsGroup")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::TableView_CellsGroup => "HMUI"
-    ."TableView/CellsGroup"
-);
-#[cfg(feature = "HMUI+TableView+CellsGroup")]
-impl std::ops::Deref for crate::HMUI::TableView_CellsGroup {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "HMUI+TableView+CellsGroup")]
-impl std::ops::DerefMut for crate::HMUI::TableView_CellsGroup {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "HMUI+TableView+CellsGroup")]
-impl crate::HMUI::TableView_CellsGroup {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_cells(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<*mut crate::HMUI::TableCell>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::HMUI::TableCell,
-        > = __cordl_object.invoke("get_cells", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_reuseIdentifier(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_reuseIdentifier", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "HMUI+TableView+CellsGroup")]
-impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TableView_CellsGroup {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "HMUI+TableView+IDataSource")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct TableView_IDataSource {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-}
-#[cfg(feature = "HMUI+TableView+IDataSource")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::TableView_IDataSource => "HMUI"
-    ."TableView/IDataSource"
-);
-#[cfg(feature = "HMUI+TableView+IDataSource")]
-impl std::ops::Deref for crate::HMUI::TableView_IDataSource {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "HMUI+TableView+IDataSource")]
-impl std::ops::DerefMut for crate::HMUI::TableView_IDataSource {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "HMUI+TableView+IDataSource")]
-impl crate::HMUI::TableView_IDataSource {
-    pub fn CellForIdx(
-        &mut self,
-        tableView: *mut crate::HMUI::TableView,
-        idx: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
-            .invoke("CellForIdx", (tableView, idx))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("CellSize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
-    }
-}
-#[cfg(feature = "HMUI+TableView+IDataSource")]
-impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TableView_IDataSource {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "HMUI+TableView+ScrollPositionType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum TableView_ScrollPositionType {
-    Beginning = 0i32,
-    Center = 1i32,
-    End = 2i32,
-}
-#[cfg(feature = "HMUI+TableView+ScrollPositionType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::TableView_ScrollPositionType => "HMUI"
-    ."TableView/ScrollPositionType"
-);
-#[cfg(feature = "HMUI+TableView+TableType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum TableView_TableType {
-    Horizontal = 1i32,
-    Vertical = 0i32,
-}
-#[cfg(feature = "HMUI+TableView+TableType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::TableView_TableType => "HMUI"
-    ."TableView/TableType"
-);
 #[cfg(feature = "HMUI+TableView")]
 #[repr(C)]
 #[derive(Debug)]
@@ -771,3 +599,175 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TableView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HMUI+TableView+CellsGroup")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct TableView_CellsGroup {
+    __cordl_parent: crate::System::Object,
+    pub _reuseIdentifier: *mut crate::System::String,
+    pub _cells: *mut crate::System::Collections::Generic::List_1<
+        *mut crate::HMUI::TableCell,
+    >,
+}
+#[cfg(feature = "HMUI+TableView+CellsGroup")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::HMUI::TableView_CellsGroup => "HMUI"
+    ."TableView/CellsGroup"
+);
+#[cfg(feature = "HMUI+TableView+CellsGroup")]
+impl std::ops::Deref for crate::HMUI::TableView_CellsGroup {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "HMUI+TableView+CellsGroup")]
+impl std::ops::DerefMut for crate::HMUI::TableView_CellsGroup {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "HMUI+TableView+CellsGroup")]
+impl crate::HMUI::TableView_CellsGroup {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_cells(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<*mut crate::HMUI::TableCell>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::HMUI::TableCell,
+        > = __cordl_object.invoke("get_cells", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_reuseIdentifier(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_reuseIdentifier", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "HMUI+TableView+CellsGroup")]
+impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TableView_CellsGroup {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "HMUI+TableView+IDataSource")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct TableView_IDataSource {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "HMUI+TableView+IDataSource")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::HMUI::TableView_IDataSource => "HMUI"
+    ."TableView/IDataSource"
+);
+#[cfg(feature = "HMUI+TableView+IDataSource")]
+impl std::ops::Deref for crate::HMUI::TableView_IDataSource {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "HMUI+TableView+IDataSource")]
+impl std::ops::DerefMut for crate::HMUI::TableView_IDataSource {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "HMUI+TableView+IDataSource")]
+impl crate::HMUI::TableView_IDataSource {
+    pub fn CellForIdx(
+        &mut self,
+        tableView: *mut crate::HMUI::TableView,
+        idx: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
+            .invoke("CellForIdx", (tableView, idx))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CellSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("CellSize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+}
+#[cfg(feature = "HMUI+TableView+IDataSource")]
+impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TableView_IDataSource {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "HMUI+TableView+ScrollPositionType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TableView_ScrollPositionType {
+    Beginning = 0i32,
+    Center = 1i32,
+    End = 2i32,
+}
+#[cfg(feature = "HMUI+TableView+ScrollPositionType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::HMUI::TableView_ScrollPositionType => "HMUI"
+    ."TableView/ScrollPositionType"
+);
+#[cfg(feature = "HMUI+TableView+TableType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TableView_TableType {
+    Horizontal = 1i32,
+    Vertical = 0i32,
+}
+#[cfg(feature = "HMUI+TableView+TableType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::HMUI::TableView_TableType => "HMUI"
+    ."TableView/TableType"
+);

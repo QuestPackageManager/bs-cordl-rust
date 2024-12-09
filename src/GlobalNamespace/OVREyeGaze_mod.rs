@@ -1,28 +1,3 @@
-#[cfg(feature = "OVREyeGaze+EyeId")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVREyeGaze_EyeId {
-    Left = 0i32,
-    Right = 1i32,
-}
-#[cfg(feature = "OVREyeGaze+EyeId")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVREyeGaze_EyeId => ""
-    ."OVREyeGaze/EyeId"
-);
-#[cfg(feature = "OVREyeGaze+EyeTrackingMode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVREyeGaze_EyeTrackingMode {
-    HeadSpace = 0i32,
-    TrackingSpace = 2i32,
-    WorldSpace = 1i32,
-}
-#[cfg(feature = "OVREyeGaze+EyeTrackingMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVREyeGaze_EyeTrackingMode =>
-    ""."OVREyeGaze/EyeTrackingMode"
-);
 #[cfg(feature = "OVREyeGaze")]
 #[repr(C)]
 #[derive(Debug)]
@@ -214,3 +189,28 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVREyeGaze {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVREyeGaze+EyeId")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVREyeGaze_EyeId {
+    Left = 0i32,
+    Right = 1i32,
+}
+#[cfg(feature = "OVREyeGaze+EyeId")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVREyeGaze_EyeId => ""
+    ."OVREyeGaze/EyeId"
+);
+#[cfg(feature = "OVREyeGaze+EyeTrackingMode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVREyeGaze_EyeTrackingMode {
+    HeadSpace = 0i32,
+    TrackingSpace = 2i32,
+    WorldSpace = 1i32,
+}
+#[cfg(feature = "OVREyeGaze+EyeTrackingMode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVREyeGaze_EyeTrackingMode =>
+    ""."OVREyeGaze/EyeTrackingMode"
+);

@@ -1,68 +1,3 @@
-#[cfg(feature = "OVRMesh+IOVRMeshDataProvider")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct OVRMesh_IOVRMeshDataProvider {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-}
-#[cfg(feature = "OVRMesh+IOVRMeshDataProvider")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRMesh_IOVRMeshDataProvider =>
-    ""."OVRMesh/IOVRMeshDataProvider"
-);
-#[cfg(feature = "OVRMesh+IOVRMeshDataProvider")]
-impl std::ops::Deref for crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRMesh+IOVRMeshDataProvider")]
-impl std::ops::DerefMut for crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRMesh+IOVRMeshDataProvider")]
-impl crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
-    pub fn GetMeshType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRMesh_MeshType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRMesh_MeshType = __cordl_object
-            .invoke("GetMeshType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
-    }
-}
-#[cfg(feature = "OVRMesh+IOVRMeshDataProvider")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "OVRMesh+MeshType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRMesh_MeshType {
-    HandLeft = 0i32,
-    HandRight = 1i32,
-    None = -1i32,
-}
-#[cfg(feature = "OVRMesh+MeshType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRMesh_MeshType => ""
-    ."OVRMesh/MeshType"
-);
 #[cfg(feature = "OVRMesh")]
 #[repr(C)]
 #[derive(Debug)]
@@ -202,3 +137,68 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRMesh {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRMesh+IOVRMeshDataProvider")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRMesh_IOVRMeshDataProvider {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "OVRMesh+IOVRMeshDataProvider")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRMesh_IOVRMeshDataProvider =>
+    ""."OVRMesh/IOVRMeshDataProvider"
+);
+#[cfg(feature = "OVRMesh+IOVRMeshDataProvider")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRMesh+IOVRMeshDataProvider")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRMesh+IOVRMeshDataProvider")]
+impl crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
+    pub fn GetMeshType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRMesh_MeshType> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::OVRMesh_MeshType = __cordl_object
+            .invoke("GetMeshType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+}
+#[cfg(feature = "OVRMesh+IOVRMeshDataProvider")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "OVRMesh+MeshType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRMesh_MeshType {
+    HandLeft = 0i32,
+    HandRight = 1i32,
+    None = -1i32,
+}
+#[cfg(feature = "OVRMesh+MeshType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRMesh_MeshType => ""
+    ."OVRMesh/MeshType"
+);

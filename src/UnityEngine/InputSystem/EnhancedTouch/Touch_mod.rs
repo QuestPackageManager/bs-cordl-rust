@@ -1,169 +1,3 @@
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+ExtraDataPerTouchState")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct Touch_ExtraDataPerTouchState {
-    pub accumulatedDelta: crate::UnityEngine::Vector2,
-    pub uniqueId: u32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+ExtraDataPerTouchState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState =>
-    "UnityEngine.InputSystem.EnhancedTouch"."Touch/ExtraDataPerTouchState"
-);
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+ExtraDataPerTouchState")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+ExtraDataPerTouchState")]
-impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState {}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+FingerAndTouchState")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct Touch_FingerAndTouchState {
-    pub updateMask: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
-    pub fingers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-    >,
-    pub activeFingers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-    >,
-    pub activeTouches: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    >,
-    pub activeFingerCount: i32,
-    pub activeTouchCount: i32,
-    pub totalFingerCount: i32,
-    pub lastId: u32,
-    pub haveBuiltActiveTouches: bool,
-    pub haveActiveTouchesNeedingRefreshNextUpdate: bool,
-    pub activeTouchState: *mut crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<
-        crate::UnityEngine::InputSystem::LowLevel::TouchState,
-    >,
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+FingerAndTouchState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState =>
-    "UnityEngine.InputSystem.EnhancedTouch"."Touch/FingerAndTouchState"
-);
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+FingerAndTouchState")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+FingerAndTouchState")]
-impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState {
-    pub fn AddFingers(
-        &mut self,
-        screen: *mut crate::UnityEngine::InputSystem::Touchscreen,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AddFingers",
-            (screen),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Destroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Destroy",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveFingers(
-        &mut self,
-        screen: *mut crate::UnityEngine::InputSystem::Touchscreen,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "RemoveFingers",
-            (screen),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateActiveFingers(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "UpdateActiveFingers",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn UpdateActiveTouches(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "UpdateActiveTouches",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+GlobalState")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct Touch_GlobalState {
-    pub touchscreens: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
-        *mut crate::UnityEngine::InputSystem::Touchscreen,
-    >,
-    pub historyLengthPerFinger: i32,
-    pub onFingerDown: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-        *mut crate::System::Action_1<
-            *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-        >,
-    >,
-    pub onFingerMove: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-        *mut crate::System::Action_1<
-            *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-        >,
-    >,
-    pub onFingerUp: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-        *mut crate::System::Action_1<
-            *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-        >,
-    >,
-    pub playerState: crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState,
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+GlobalState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState =>
-    "UnityEngine.InputSystem.EnhancedTouch"."Touch/GlobalState"
-);
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+GlobalState")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+GlobalState")]
-impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState {}
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -478,3 +312,169 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
         Ok(__cordl_ret)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+ExtraDataPerTouchState")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct Touch_ExtraDataPerTouchState {
+    pub accumulatedDelta: crate::UnityEngine::Vector2,
+    pub uniqueId: u32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+ExtraDataPerTouchState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState =>
+    "UnityEngine.InputSystem.EnhancedTouch"."Touch/ExtraDataPerTouchState"
+);
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+ExtraDataPerTouchState")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+ExtraDataPerTouchState")]
+impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState {}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+FingerAndTouchState")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct Touch_FingerAndTouchState {
+    pub updateMask: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+    pub fingers: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
+    >,
+    pub activeFingers: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
+    >,
+    pub activeTouches: *mut quest_hook::libil2cpp::Il2CppArray<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    >,
+    pub activeFingerCount: i32,
+    pub activeTouchCount: i32,
+    pub totalFingerCount: i32,
+    pub lastId: u32,
+    pub haveBuiltActiveTouches: bool,
+    pub haveActiveTouchesNeedingRefreshNextUpdate: bool,
+    pub activeTouchState: *mut crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<
+        crate::UnityEngine::InputSystem::LowLevel::TouchState,
+    >,
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+FingerAndTouchState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState =>
+    "UnityEngine.InputSystem.EnhancedTouch"."Touch/FingerAndTouchState"
+);
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+FingerAndTouchState")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+FingerAndTouchState")]
+impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState {
+    pub fn AddFingers(
+        &mut self,
+        screen: *mut crate::UnityEngine::InputSystem::Touchscreen,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "AddFingers",
+            (screen),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Destroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Destroy",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveFingers(
+        &mut self,
+        screen: *mut crate::UnityEngine::InputSystem::Touchscreen,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "RemoveFingers",
+            (screen),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateActiveFingers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "UpdateActiveFingers",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateActiveTouches(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "UpdateActiveTouches",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+GlobalState")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct Touch_GlobalState {
+    pub touchscreens: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
+        *mut crate::UnityEngine::InputSystem::Touchscreen,
+    >,
+    pub historyLengthPerFinger: i32,
+    pub onFingerDown: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
+        *mut crate::System::Action_1<
+            *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
+        >,
+    >,
+    pub onFingerMove: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
+        *mut crate::System::Action_1<
+            *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
+        >,
+    >,
+    pub onFingerUp: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
+        *mut crate::System::Action_1<
+            *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
+        >,
+    >,
+    pub playerState: crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState,
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+GlobalState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState =>
+    "UnityEngine.InputSystem.EnhancedTouch"."Touch/GlobalState"
+);
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+GlobalState")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+GlobalState")]
+impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState {}

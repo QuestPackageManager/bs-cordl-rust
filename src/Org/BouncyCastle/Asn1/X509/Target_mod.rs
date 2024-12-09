@@ -1,15 +1,3 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target+Choice")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Target_Choice {
-    Group = 1i32,
-    Name = 0i32,
-}
-#[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target+Choice")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Asn1::X509::Target_Choice =>
-    "Org.BouncyCastle.Asn1.X509"."Target/Choice"
-);
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target")]
 #[repr(C)]
 #[derive(Debug)]
@@ -126,3 +114,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Asn1::X509:
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target+Choice")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Target_Choice {
+    Group = 1i32,
+    Name = 0i32,
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target+Choice")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Asn1::X509::Target_Choice =>
+    "Org.BouncyCastle.Asn1.X509"."Target/Choice"
+);

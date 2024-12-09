@@ -1,17 +1,3 @@
-#[cfg(feature = "OptionsViewController+OptionsButton")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OptionsViewController_OptionsButton {
-    EditAvatar = 0i32,
-    PlayerOptions = 1i32,
-    Settings = 2i32,
-}
-#[cfg(feature = "OptionsViewController+OptionsButton")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OptionsViewController_OptionsButton => ""
-    ."OptionsViewController/OptionsButton"
-);
 #[cfg(feature = "OptionsViewController")]
 #[repr(C)]
 #[derive(Debug)]
@@ -146,3 +132,17 @@ for crate::GlobalNamespace::OptionsViewController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OptionsViewController+OptionsButton")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OptionsViewController_OptionsButton {
+    EditAvatar = 0i32,
+    PlayerOptions = 1i32,
+    Settings = 2i32,
+}
+#[cfg(feature = "OptionsViewController+OptionsButton")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OptionsViewController_OptionsButton => ""
+    ."OptionsViewController/OptionsButton"
+);

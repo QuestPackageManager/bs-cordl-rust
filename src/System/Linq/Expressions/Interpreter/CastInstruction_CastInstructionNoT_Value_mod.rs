@@ -3,20 +3,22 @@
 )]
 #[repr(C)]
 #[derive(Debug)]
-pub struct CastInstructionNoT_Value {
+pub struct CastInstructionNoT_CastInstruction_Value {
     __cordl_parent: crate::GlobalNamespace::CastInstruction_CastInstructionNoT,
 }
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Value"
 )]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::CastInstructionNoT_Value =>
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::CastInstructionNoT_CastInstruction_Value =>
     "System.Linq.Expressions.Interpreter"."CastInstruction/CastInstructionNoT/Value"
 );
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Value"
 )]
-impl std::ops::Deref for crate::GlobalNamespace::CastInstructionNoT_Value {
+impl std::ops::Deref
+for crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Value {
     type Target = crate::GlobalNamespace::CastInstruction_CastInstructionNoT;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -25,7 +27,8 @@ impl std::ops::Deref for crate::GlobalNamespace::CastInstructionNoT_Value {
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Value"
 )]
-impl std::ops::DerefMut for crate::GlobalNamespace::CastInstructionNoT_Value {
+impl std::ops::DerefMut
+for crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Value {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -33,7 +36,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::CastInstructionNoT_Value {
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Value"
 )]
-impl crate::GlobalNamespace::CastInstructionNoT_Value {
+impl crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Value {
     pub fn ConvertNull(
         &mut self,
         frame: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
@@ -68,7 +71,7 @@ impl crate::GlobalNamespace::CastInstructionNoT_Value {
     feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Value"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::CastInstructionNoT_Value {
+for crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Value {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

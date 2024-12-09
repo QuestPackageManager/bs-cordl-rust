@@ -1,3 +1,49 @@
+#[cfg(feature = "System+DateTimeParse")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct DateTimeParse {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "System+DateTimeParse")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::DateTimeParse => "System"
+    ."DateTimeParse"
+);
+#[cfg(feature = "System+DateTimeParse")]
+impl std::ops::Deref for crate::System::DateTimeParse {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+DateTimeParse")]
+impl std::ops::DerefMut for crate::System::DateTimeParse {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+DateTimeParse")]
+impl crate::System::DateTimeParse {
+    #[cfg(feature = "System+DateTimeParse+DS")]
+    pub type DS = crate::System::DateTimeParse_DS;
+    #[cfg(feature = "System+DateTimeParse+DTT")]
+    pub type DTT = crate::System::DateTimeParse_DTT;
+    #[cfg(feature = "System+DateTimeParse+MatchNumberDelegate")]
+    pub type MatchNumberDelegate = crate::System::DateTimeParse_MatchNumberDelegate;
+    #[cfg(feature = "System+DateTimeParse+TM")]
+    pub type TM = crate::System::DateTimeParse_TM;
+    #[cfg(feature = "System+DateTimeParse+__c")]
+    pub type __c = crate::System::DateTimeParse___c;
+}
+#[cfg(feature = "System+DateTimeParse")]
+impl quest_hook::libil2cpp::ObjectType for crate::System::DateTimeParse {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "System+DateTimeParse+DS")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -78,52 +124,6 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate ::System::DateTimeParse_DTT => "System"
     ."DateTimeParse/DTT"
 );
-#[cfg(feature = "System+DateTimeParse")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct DateTimeParse {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "System+DateTimeParse")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::DateTimeParse => "System"
-    ."DateTimeParse"
-);
-#[cfg(feature = "System+DateTimeParse")]
-impl std::ops::Deref for crate::System::DateTimeParse {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+DateTimeParse")]
-impl std::ops::DerefMut for crate::System::DateTimeParse {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+DateTimeParse")]
-impl crate::System::DateTimeParse {
-    #[cfg(feature = "System+DateTimeParse+DS")]
-    pub type DS = crate::System::DateTimeParse_DS;
-    #[cfg(feature = "System+DateTimeParse+DTT")]
-    pub type DTT = crate::System::DateTimeParse_DTT;
-    #[cfg(feature = "System+DateTimeParse+MatchNumberDelegate")]
-    pub type MatchNumberDelegate = crate::System::DateTimeParse_MatchNumberDelegate;
-    #[cfg(feature = "System+DateTimeParse+TM")]
-    pub type TM = crate::System::DateTimeParse_TM;
-    #[cfg(feature = "System+DateTimeParse+__c")]
-    pub type __c = crate::System::DateTimeParse___c;
-}
-#[cfg(feature = "System+DateTimeParse")]
-impl quest_hook::libil2cpp::ObjectType for crate::System::DateTimeParse {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "System+DateTimeParse+MatchNumberDelegate")]
 #[repr(C)]
 #[derive(Debug)]

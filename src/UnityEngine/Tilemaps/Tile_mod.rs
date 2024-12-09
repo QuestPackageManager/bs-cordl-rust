@@ -1,16 +1,3 @@
-#[cfg(feature = "UnityEngine+Tilemaps+Tile+ColliderType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Tile_ColliderType {
-    Grid = 2i32,
-    None = 0i32,
-    Sprite = 1i32,
-}
-#[cfg(feature = "UnityEngine+Tilemaps+Tile+ColliderType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Tilemaps::Tile_ColliderType =>
-    "UnityEngine.Tilemaps"."Tile/ColliderType"
-);
 #[cfg(feature = "UnityEngine+Tilemaps+Tile")]
 #[repr(C)]
 #[derive(Debug)]
@@ -211,3 +198,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Tilemaps::Tile {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Tilemaps+Tile+ColliderType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Tile_ColliderType {
+    Grid = 2i32,
+    None = 0i32,
+    Sprite = 1i32,
+}
+#[cfg(feature = "UnityEngine+Tilemaps+Tile+ColliderType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::Tilemaps::Tile_ColliderType =>
+    "UnityEngine.Tilemaps"."Tile/ColliderType"
+);

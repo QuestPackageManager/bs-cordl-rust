@@ -1,481 +1,3 @@
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct ResourceManager_CompletedOperation_1<TObject: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        TObject,
-    >,
-    pub m_Success: bool,
-    pub m_Exception: *mut crate::System::Exception,
-    pub m_ReleaseDependenciesOnFailure: bool,
-    __cordl_phantom_TObject: std::marker::PhantomData<TObject>,
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1 < TObject >
-    => "UnityEngine.ResourceManagement"."ResourceManager/CompletedOperation`1" < TObject
-    >
-);
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
-impl<TObject: quest_hook::libil2cpp::Type> std::ops::Deref
-for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<
-    TObject,
-> {
-    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        TObject,
-    >;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
-impl<TObject: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<
-    TObject,
-> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
-impl<
-    TObject: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<TObject> {
-    pub fn Execute(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Execute", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Init_Exception1(
-        &mut self,
-        result: TObject,
-        success: bool,
-        exception: *mut crate::System::Exception,
-        releaseDependenciesOnFailure: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (result, success, exception, releaseDependenciesOnFailure))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Init_String0(
-        &mut self,
-        result: TObject,
-        success: bool,
-        errorMsg: *mut crate::System::String,
-        releaseDependenciesOnFailure: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (result, success, errorMsg, releaseDependenciesOnFailure))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InvokeWaitForCompletion(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("InvokeWaitForCompletion", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_DebugName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
-    where
-        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_DebugName", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
-impl<TObject: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<
-    TObject,
-> {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
-)]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct ResourceManager_DeferredCallbackRegisterRequest {
-    pub operation: *mut crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
-    pub incrementRefCount: bool,
-}
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest =>
-    "UnityEngine.ResourceManagement"."ResourceManager/DeferredCallbackRegisterRequest"
-);
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
-)]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
-)]
-impl crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {}
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct ResourceManager_DiagnosticEventContext {
-    pub _OperationHandle_k__BackingField: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-    pub _Type_k__BackingField: crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType,
-    pub _EventValue_k__BackingField: i32,
-    pub _Location_k__BackingField: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-    pub _Context_k__BackingField: *mut crate::System::Object,
-    pub _Error_k__BackingField: *mut crate::System::String,
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext =>
-    "UnityEngine.ResourceManagement"."ResourceManager/DiagnosticEventContext"
-);
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
-impl crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
-    pub fn _ctor(
-        &mut self,
-        op: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-        _cordl_type: crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType,
-        eventValue: i32,
-        error: *mut crate::System::String,
-        context: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (op, _cordl_type, eventValue, error, context),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Context(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Context",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Error(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Error",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_EventValue(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_EventValue",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Location(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Location",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_OperationHandle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-    > {
-        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_OperationHandle",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType,
-    > {
-        let __cordl_ret: crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Type",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ResourceManager_DiagnosticEventType {
-    AsyncOperationComplete = 3i32,
-    AsyncOperationCreate = 1i32,
-    AsyncOperationDestroy = 5i32,
-    AsyncOperationFail = 0i32,
-    AsyncOperationPercentComplete = 2i32,
-    AsyncOperationReferenceCount = 4i32,
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType =>
-    "UnityEngine.ResourceManagement"."ResourceManager/DiagnosticEventType"
-);
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct ResourceManager_InstanceOperation {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        *mut crate::UnityEngine::GameObject,
-    >,
-    pub m_dependency: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-        *mut crate::UnityEngine::GameObject,
-    >,
-    pub m_instantiationParams: crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters,
-    pub m_instanceProvider: *mut crate::UnityEngine::ResourceManagement::ResourceProviders::IInstanceProvider,
-    pub m_instance: *mut crate::UnityEngine::GameObject,
-    pub m_scene: crate::UnityEngine::SceneManagement::Scene,
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation =>
-    "UnityEngine.ResourceManagement"."ResourceManager/InstanceOperation"
-);
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
-impl std::ops::Deref
-for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
-    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        *mut crate::UnityEngine::GameObject,
-    >;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
-impl std::ops::DerefMut
-for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
-impl crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
-    pub fn Destroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Destroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Execute(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Execute", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDependencies(
-        &mut self,
-        deps: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetDependencies", (deps))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetDownloadStatus(
-        &mut self,
-        visited: *mut crate::System::Collections::Generic::HashSet_1<
-            *mut crate::System::Object,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus = __cordl_object
-            .invoke("GetDownloadStatus", (visited))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Init(
-        &mut self,
-        rm: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
-        instanceProvider: *mut crate::UnityEngine::ResourceManagement::ResourceProviders::IInstanceProvider,
-        instantiationParams: crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters,
-        dependency: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::UnityEngine::GameObject,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (rm, instanceProvider, instantiationParams, dependency))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InstanceScene(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SceneManagement::Scene> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::SceneManagement::Scene = __cordl_object
-            .invoke("InstanceScene", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InvokeWaitForCompletion(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("InvokeWaitForCompletion", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_DebugName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_DebugName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Progress(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_Progress", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1685,6 +1207,484 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::ResourceManager {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct ResourceManager_CompletedOperation_1<TObject: quest_hook::libil2cpp::Type> {
+    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+        TObject,
+    >,
+    pub m_Success: bool,
+    pub m_Exception: *mut crate::System::Exception,
+    pub m_ReleaseDependenciesOnFailure: bool,
+    __cordl_phantom_TObject: std::marker::PhantomData<TObject>,
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1 < TObject >
+    => "UnityEngine.ResourceManagement"."ResourceManager/CompletedOperation`1" < TObject
+    >
+);
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
+impl<TObject: quest_hook::libil2cpp::Type> std::ops::Deref
+for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<
+    TObject,
+> {
+    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+        TObject,
+    >;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
+impl<TObject: quest_hook::libil2cpp::Type> std::ops::DerefMut
+for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<
+    TObject,
+> {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
+impl<
+    TObject: quest_hook::libil2cpp::Type,
+> crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<TObject> {
+    pub fn Execute(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Execute", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init_Exception1(
+        &mut self,
+        result: TObject,
+        success: bool,
+        exception: *mut crate::System::Exception,
+        releaseDependenciesOnFailure: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (result, success, exception, releaseDependenciesOnFailure))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init_String0(
+        &mut self,
+        result: TObject,
+        success: bool,
+        errorMsg: *mut crate::System::String,
+        releaseDependenciesOnFailure: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (result, success, errorMsg, releaseDependenciesOnFailure))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InvokeWaitForCompletion(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("InvokeWaitForCompletion", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_DebugName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    where
+        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_DebugName", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
+impl<TObject: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<
+    TObject,
+> {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
+)]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct ResourceManager_DeferredCallbackRegisterRequest {
+    pub operation: *mut crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
+    pub incrementRefCount: bool,
+}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest =>
+    "UnityEngine.ResourceManagement"."ResourceManager/DeferredCallbackRegisterRequest"
+);
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
+)]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
+)]
+impl crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct ResourceManager_DiagnosticEventContext {
+    pub _OperationHandle_k__BackingField: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+    pub _Type_k__BackingField: crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType,
+    pub _EventValue_k__BackingField: i32,
+    pub _Location_k__BackingField: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    pub _Context_k__BackingField: *mut crate::System::Object,
+    pub _Error_k__BackingField: *mut crate::System::String,
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext =>
+    "UnityEngine.ResourceManagement"."ResourceManager/DiagnosticEventContext"
+);
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
+impl crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
+    pub fn _ctor(
+        &mut self,
+        op: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        _cordl_type: crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType,
+        eventValue: i32,
+        error: *mut crate::System::String,
+        context: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (op, _cordl_type, eventValue, error, context),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Context(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Context",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Error(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Error",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_EventValue(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_EventValue",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Location(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Location",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_OperationHandle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+    > {
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_OperationHandle",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType,
+    > {
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Type",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ResourceManager_DiagnosticEventType {
+    AsyncOperationComplete = 3i32,
+    AsyncOperationCreate = 1i32,
+    AsyncOperationDestroy = 5i32,
+    AsyncOperationFail = 0i32,
+    AsyncOperationPercentComplete = 2i32,
+    AsyncOperationReferenceCount = 4i32,
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType =>
+    "UnityEngine.ResourceManagement"."ResourceManager/DiagnosticEventType"
+);
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct ResourceManager_InstanceOperation {
+    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+        *mut crate::UnityEngine::GameObject,
+    >,
+    pub m_dependency: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+        *mut crate::UnityEngine::GameObject,
+    >,
+    pub m_instantiationParams: crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters,
+    pub m_instanceProvider: *mut crate::UnityEngine::ResourceManagement::ResourceProviders::IInstanceProvider,
+    pub m_instance: *mut crate::UnityEngine::GameObject,
+    pub m_scene: crate::UnityEngine::SceneManagement::Scene,
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation =>
+    "UnityEngine.ResourceManagement"."ResourceManager/InstanceOperation"
+);
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
+impl std::ops::Deref
+for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
+    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+        *mut crate::UnityEngine::GameObject,
+    >;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
+impl std::ops::DerefMut
+for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
+impl crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
+    pub fn Destroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Destroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Execute(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Execute", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDependencies(
+        &mut self,
+        deps: *mut crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetDependencies", (deps))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetDownloadStatus(
+        &mut self,
+        visited: *mut crate::System::Collections::Generic::HashSet_1<
+            *mut crate::System::Object,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus = __cordl_object
+            .invoke("GetDownloadStatus", (visited))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+        rm: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
+        instanceProvider: *mut crate::UnityEngine::ResourceManagement::ResourceProviders::IInstanceProvider,
+        instantiationParams: crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters,
+        dependency: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            *mut crate::UnityEngine::GameObject,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (rm, instanceProvider, instantiationParams, dependency))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InstanceScene(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SceneManagement::Scene> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::SceneManagement::Scene = __cordl_object
+            .invoke("InstanceScene", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn InvokeWaitForCompletion(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("InvokeWaitForCompletion", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_DebugName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_DebugName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Progress(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_Progress", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

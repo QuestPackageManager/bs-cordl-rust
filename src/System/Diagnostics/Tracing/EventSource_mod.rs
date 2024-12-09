@@ -1,64 +1,3 @@
-#[cfg(feature = "System+Diagnostics+Tracing+EventSource+EventData")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct EventSource_EventData {
-    pub _DataPointer_k__BackingField: crate::System::IntPtr,
-    pub _Size_k__BackingField: i32,
-    pub _Reserved_k__BackingField: i32,
-}
-#[cfg(feature = "System+Diagnostics+Tracing+EventSource+EventData")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Diagnostics::Tracing::EventSource_EventData => "System.Diagnostics.Tracing"
-    ."EventSource/EventData"
-);
-#[cfg(feature = "System+Diagnostics+Tracing+EventSource+EventData")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Diagnostics::Tracing::EventSource_EventData {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Diagnostics+Tracing+EventSource+EventData")]
-impl crate::System::Diagnostics::Tracing::EventSource_EventData {
-    pub fn set_DataPointer(
-        &mut self,
-        value: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_DataPointer",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Reserved(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_Reserved",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Size(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_Size",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "System+Diagnostics+Tracing+EventSource")]
 #[repr(C)]
 #[derive(Debug)]
@@ -342,5 +281,66 @@ for crate::System::Diagnostics::Tracing::EventSource {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Diagnostics+Tracing+EventSource+EventData")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct EventSource_EventData {
+    pub _DataPointer_k__BackingField: crate::System::IntPtr,
+    pub _Size_k__BackingField: i32,
+    pub _Reserved_k__BackingField: i32,
+}
+#[cfg(feature = "System+Diagnostics+Tracing+EventSource+EventData")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Diagnostics::Tracing::EventSource_EventData => "System.Diagnostics.Tracing"
+    ."EventSource/EventData"
+);
+#[cfg(feature = "System+Diagnostics+Tracing+EventSource+EventData")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::Diagnostics::Tracing::EventSource_EventData {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Diagnostics+Tracing+EventSource+EventData")]
+impl crate::System::Diagnostics::Tracing::EventSource_EventData {
+    pub fn set_DataPointer(
+        &mut self,
+        value: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_DataPointer",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Reserved(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_Reserved",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Size(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_Size",
+            (value),
+        )?;
+        Ok(__cordl_ret)
     }
 }

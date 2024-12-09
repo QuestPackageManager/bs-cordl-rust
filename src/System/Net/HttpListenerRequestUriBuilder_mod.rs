@@ -1,16 +1,3 @@
-#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+EncodingType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum HttpListenerRequestUriBuilder_EncodingType {
-    Primary = 0i32,
-    Secondary = 1i32,
-}
-#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+EncodingType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Net::HttpListenerRequestUriBuilder_EncodingType => "System.Net"
-    ."HttpListenerRequestUriBuilder/EncodingType"
-);
 #[cfg(feature = "System+Net+HttpListenerRequestUriBuilder")]
 #[repr(C)]
 #[derive(Debug)]
@@ -198,6 +185,19 @@ for crate::System::Net::HttpListenerRequestUriBuilder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+EncodingType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum HttpListenerRequestUriBuilder_EncodingType {
+    Primary = 0i32,
+    Secondary = 1i32,
+}
+#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+EncodingType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Net::HttpListenerRequestUriBuilder_EncodingType => "System.Net"
+    ."HttpListenerRequestUriBuilder/EncodingType"
+);
 #[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+ParsingResult")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

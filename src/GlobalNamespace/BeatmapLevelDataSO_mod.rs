@@ -540,7 +540,7 @@ for crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmapSet {
 #[cfg(feature = "BeatmapLevelDataSO+DifficultyBeatmapSet")]
 impl crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmapSet {
     #[cfg(feature = "BeatmapLevelDataSO+DifficultyBeatmapSet+__c")]
-    pub type __c = crate::GlobalNamespace::DifficultyBeatmapSet___c;
+    pub type __c = crate::GlobalNamespace::DifficultyBeatmapSet_BeatmapLevelDataSO___c;
     pub fn Add(
         &mut self,
         difficultyBeatmap: *mut crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmap,

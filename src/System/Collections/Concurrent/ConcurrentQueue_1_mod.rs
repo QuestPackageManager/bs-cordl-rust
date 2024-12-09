@@ -346,7 +346,7 @@ for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
 pub struct ConcurrentQueue_1_Segment<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Object,
     pub _slots: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::System::Collections::Concurrent::Segment_Slot<T>,
+        crate::System::Collections::Concurrent::Segment_ConcurrentQueue_1_Slot<T>,
     >,
     pub _slotsMask: i32,
     pub _headAndTail: crate::System::Collections::Concurrent::PaddedHeadAndTail,
@@ -383,7 +383,9 @@ impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T> {
     #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1+Segment+Slot")]
-    pub type Slot = crate::System::Collections::Concurrent::Segment_Slot<T>;
+    pub type Slot = crate::System::Collections::Concurrent::Segment_ConcurrentQueue_1_Slot<
+        T,
+    >;
     pub fn EnsureFrozenForEnqueues(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -481,19 +483,20 @@ for crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T> {
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1+Segment+Slot")]
 #[repr(C)]
 #[derive(Debug, Clone)]
-pub struct Segment_Slot<T: quest_hook::libil2cpp::Type> {
+pub struct Segment_ConcurrentQueue_1_Slot<T: quest_hook::libil2cpp::Type> {
     pub Item: T,
     pub SequenceNumber: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1+Segment+Slot")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Collections::Concurrent::Segment_Slot <
-    T > => "System.Collections.Concurrent"."ConcurrentQueue`1/Segment/Slot<T>" < T >
+    in quest_hook::libil2cpp for crate
+    ::System::Collections::Concurrent::Segment_ConcurrentQueue_1_Slot < T > =>
+    "System.Collections.Concurrent"."ConcurrentQueue`1/Segment/Slot<T>" < T >
 );
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1+Segment+Slot")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
-for crate::System::Collections::Concurrent::Segment_Slot<T> {
+for crate::System::Collections::Concurrent::Segment_ConcurrentQueue_1_Slot<T> {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -505,4 +508,4 @@ for crate::System::Collections::Concurrent::Segment_Slot<T> {
 #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1+Segment+Slot")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> crate::System::Collections::Concurrent::Segment_Slot<T> {}
+> crate::System::Collections::Concurrent::Segment_ConcurrentQueue_1_Slot<T> {}

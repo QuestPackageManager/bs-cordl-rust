@@ -1,84 +1,3 @@
-#[cfg(feature = "OVRDisplay+EyeFov")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct OVRDisplay_EyeFov {
-    pub UpFov: f32,
-    pub DownFov: f32,
-    pub LeftFov: f32,
-    pub RightFov: f32,
-}
-#[cfg(feature = "OVRDisplay+EyeFov")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRDisplay_EyeFov => ""
-    ."OVRDisplay/EyeFov"
-);
-#[cfg(feature = "OVRDisplay+EyeFov")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDisplay_EyeFov {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "OVRDisplay+EyeFov")]
-impl crate::GlobalNamespace::OVRDisplay_EyeFov {}
-#[cfg(feature = "OVRDisplay+EyeRenderDesc")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct OVRDisplay_EyeRenderDesc {
-    pub resolution: crate::UnityEngine::Vector2,
-    pub fov: crate::UnityEngine::Vector2,
-    pub fullFov: crate::GlobalNamespace::OVRDisplay_EyeFov,
-}
-#[cfg(feature = "OVRDisplay+EyeRenderDesc")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRDisplay_EyeRenderDesc => ""
-    ."OVRDisplay/EyeRenderDesc"
-);
-#[cfg(feature = "OVRDisplay+EyeRenderDesc")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "OVRDisplay+EyeRenderDesc")]
-impl crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {}
-#[cfg(feature = "OVRDisplay+LatencyData")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct OVRDisplay_LatencyData {
-    pub render: f32,
-    pub timeWarp: f32,
-    pub postPresent: f32,
-    pub renderError: f32,
-    pub timeWarpError: f32,
-}
-#[cfg(feature = "OVRDisplay+LatencyData")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRDisplay_LatencyData => ""
-    ."OVRDisplay/LatencyData"
-);
-#[cfg(feature = "OVRDisplay+LatencyData")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRDisplay_LatencyData {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "OVRDisplay+LatencyData")]
-impl crate::GlobalNamespace::OVRDisplay_LatencyData {}
 #[cfg(feature = "OVRDisplay")]
 #[repr(C)]
 #[derive(Debug)]
@@ -313,3 +232,84 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRDisplay {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRDisplay+EyeFov")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct OVRDisplay_EyeFov {
+    pub UpFov: f32,
+    pub DownFov: f32,
+    pub LeftFov: f32,
+    pub RightFov: f32,
+}
+#[cfg(feature = "OVRDisplay+EyeFov")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRDisplay_EyeFov => ""
+    ."OVRDisplay/EyeFov"
+);
+#[cfg(feature = "OVRDisplay+EyeFov")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRDisplay_EyeFov {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRDisplay+EyeFov")]
+impl crate::GlobalNamespace::OVRDisplay_EyeFov {}
+#[cfg(feature = "OVRDisplay+EyeRenderDesc")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct OVRDisplay_EyeRenderDesc {
+    pub resolution: crate::UnityEngine::Vector2,
+    pub fov: crate::UnityEngine::Vector2,
+    pub fullFov: crate::GlobalNamespace::OVRDisplay_EyeFov,
+}
+#[cfg(feature = "OVRDisplay+EyeRenderDesc")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRDisplay_EyeRenderDesc => ""
+    ."OVRDisplay/EyeRenderDesc"
+);
+#[cfg(feature = "OVRDisplay+EyeRenderDesc")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRDisplay+EyeRenderDesc")]
+impl crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {}
+#[cfg(feature = "OVRDisplay+LatencyData")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct OVRDisplay_LatencyData {
+    pub render: f32,
+    pub timeWarp: f32,
+    pub postPresent: f32,
+    pub renderError: f32,
+    pub timeWarpError: f32,
+}
+#[cfg(feature = "OVRDisplay+LatencyData")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRDisplay_LatencyData => ""
+    ."OVRDisplay/LatencyData"
+);
+#[cfg(feature = "OVRDisplay+LatencyData")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRDisplay_LatencyData {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRDisplay+LatencyData")]
+impl crate::GlobalNamespace::OVRDisplay_LatencyData {}

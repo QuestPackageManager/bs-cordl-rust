@@ -1,16 +1,3 @@
-#[cfg(feature = "TextFadeTransitions+State")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum TextFadeTransitions_State {
-    FadingIn = 2i32,
-    FadingOut = 1i32,
-    NotInTransition = 0i32,
-}
-#[cfg(feature = "TextFadeTransitions+State")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::TextFadeTransitions_State => ""
-    ."TextFadeTransitions/State"
-);
 #[cfg(feature = "TextFadeTransitions")]
 #[repr(C)]
 #[derive(Debug)]
@@ -123,3 +110,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TextFadeTrans
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "TextFadeTransitions+State")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TextFadeTransitions_State {
+    FadingIn = 2i32,
+    FadingOut = 1i32,
+    NotInTransition = 0i32,
+}
+#[cfg(feature = "TextFadeTransitions+State")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::TextFadeTransitions_State => ""
+    ."TextFadeTransitions/State"
+);

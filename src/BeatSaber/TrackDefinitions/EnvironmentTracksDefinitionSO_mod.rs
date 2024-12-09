@@ -1,3 +1,127 @@
+#[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct EnvironmentTracksDefinitionSO {
+    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
+    pub _environmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
+    pub _basicEventTrackInfos: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo,
+    >,
+    pub _eventBoxGroupPageInfos: *mut crate::System::Collections::Generic::List_1<
+        *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo,
+    >,
+}
+#[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO =>
+    "BeatSaber.TrackDefinitions"."EnvironmentTracksDefinitionSO"
+);
+#[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
+impl std::ops::Deref
+for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
+    type Target = crate::GlobalNamespace::PersistentScriptableObject;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
+impl std::ops::DerefMut
+for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
+impl crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
+    #[cfg(
+        feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackInfo"
+    )]
+    pub type BasicEventTrackInfo = crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo;
+    #[cfg(
+        feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
+    )]
+    pub type BasicEventTrackPage = crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackPage;
+    #[cfg(
+        feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupPageInfo"
+    )]
+    pub type EventBoxGroupPageInfo = crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo;
+    #[cfg(
+        feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupTrackInfo"
+    )]
+    pub type EventBoxGroupTrackInfo = crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo;
+    #[cfg(
+        feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
+    )]
+    pub type OverrideDefaultLightAxis = crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDefaultLightAxis;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_basicEventTrackInfos(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo,
+        > = __cordl_object.invoke("get_basicEventTrackInfos", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_environmentInfo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::EnvironmentInfoSO> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::GlobalNamespace::EnvironmentInfoSO = __cordl_object
+            .invoke("get_environmentInfo", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_eventBoxGroupPageInfos(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo,
+        > = __cordl_object.invoke("get_eventBoxGroupPageInfos", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(
     feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackInfo"
 )]
@@ -146,130 +270,6 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
     ::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackPage =>
     "BeatSaber.TrackDefinitions"."EnvironmentTracksDefinitionSO/BasicEventTrackPage"
 );
-#[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct EnvironmentTracksDefinitionSO {
-    __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _environmentInfo: *mut crate::GlobalNamespace::EnvironmentInfoSO,
-    pub _basicEventTrackInfos: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo,
-    >,
-    pub _eventBoxGroupPageInfos: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo,
-    >,
-}
-#[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO =>
-    "BeatSaber.TrackDefinitions"."EnvironmentTracksDefinitionSO"
-);
-#[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
-impl std::ops::Deref
-for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
-    type Target = crate::GlobalNamespace::PersistentScriptableObject;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
-impl std::ops::DerefMut
-for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
-impl crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
-    #[cfg(
-        feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackInfo"
-    )]
-    pub type BasicEventTrackInfo = crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo;
-    #[cfg(
-        feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
-    )]
-    pub type BasicEventTrackPage = crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackPage;
-    #[cfg(
-        feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupPageInfo"
-    )]
-    pub type EventBoxGroupPageInfo = crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo;
-    #[cfg(
-        feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupTrackInfo"
-    )]
-    pub type EventBoxGroupTrackInfo = crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo;
-    #[cfg(
-        feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
-    )]
-    pub type OverrideDefaultLightAxis = crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDefaultLightAxis;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_basicEventTrackInfos(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo,
-        > = __cordl_object.invoke("get_basicEventTrackInfos", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_environmentInfo(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::EnvironmentInfoSO> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::GlobalNamespace::EnvironmentInfoSO = __cordl_object
-            .invoke("get_environmentInfo", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_eventBoxGroupPageInfos(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo,
-        > = __cordl_object.invoke("get_eventBoxGroupPageInfos", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(
     feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupPageInfo"
 )]

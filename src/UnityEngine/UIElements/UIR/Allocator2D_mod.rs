@@ -1,45 +1,3 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct Allocator2D_Alloc2D {
-    pub rect: crate::UnityEngine::RectInt,
-    pub row: *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
-    pub alloc: crate::UnityEngine::UIElements::UIR::Alloc,
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D => "UnityEngine.UIElements.UIR"
-    ."Allocator2D/Alloc2D"
-);
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
-impl crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
-    pub fn _ctor(
-        &mut self,
-        row: *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
-        alloc: crate::UnityEngine::UIElements::UIR::Alloc,
-        width: i32,
-        height: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (row, alloc, width, height),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D")]
 #[repr(C)]
 #[derive(Debug)]
@@ -141,6 +99,48 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct Allocator2D_Alloc2D {
+    pub rect: crate::UnityEngine::RectInt,
+    pub row: *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+    pub alloc: crate::UnityEngine::UIElements::UIR::Alloc,
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D => "UnityEngine.UIElements.UIR"
+    ."Allocator2D/Alloc2D"
+);
+#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
+impl crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
+    pub fn _ctor(
+        &mut self,
+        row: *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+        alloc: crate::UnityEngine::UIElements::UIR::Alloc,
+        width: i32,
+        height: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (row, alloc, width, height),
+        )?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Area")]

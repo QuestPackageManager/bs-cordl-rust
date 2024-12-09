@@ -1,200 +1,3 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingJson")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct InputActionMap_BindingJson {
-    pub name: *mut crate::System::String,
-    pub id: *mut crate::System::String,
-    pub path: *mut crate::System::String,
-    pub interactions: *mut crate::System::String,
-    pub processors: *mut crate::System::String,
-    pub groups: *mut crate::System::String,
-    pub action: *mut crate::System::String,
-    pub isComposite: bool,
-    pub isPartOfComposite: bool,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingJson")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputActionMap_BindingJson => "UnityEngine.InputSystem"
-    ."InputActionMap/BindingJson"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingJson")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::InputActionMap_BindingJson {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingJson")]
-impl crate::UnityEngine::InputSystem::InputActionMap_BindingJson {
-    pub fn ToBinding(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::InputBinding> {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputBinding = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToBinding",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideJson")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct InputActionMap_BindingOverrideJson {
-    pub action: *mut crate::System::String,
-    pub id: *mut crate::System::String,
-    pub path: *mut crate::System::String,
-    pub interactions: *mut crate::System::String,
-    pub processors: *mut crate::System::String,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideJson")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson =>
-    "UnityEngine.InputSystem"."InputActionMap/BindingOverrideJson"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideJson")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideJson")]
-impl crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideListJson")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct InputActionMap_BindingOverrideListJson {
-    pub bindings: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson,
-    >,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideListJson")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputActionMap_BindingOverrideListJson =>
-    "UnityEngine.InputSystem"."InputActionMap/BindingOverrideListJson"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideListJson")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideListJson {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideListJson")]
-impl crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideListJson {}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+DeviceArray")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct InputActionMap_DeviceArray {
-    pub m_HaveValue: bool,
-    pub m_DeviceCount: i32,
-    pub m_DeviceArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
-    >,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+DeviceArray")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputActionMap_DeviceArray => "UnityEngine.InputSystem"
-    ."InputActionMap/DeviceArray"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+DeviceArray")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::InputActionMap_DeviceArray {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+DeviceArray")]
-impl crate::UnityEngine::InputSystem::InputActionMap_DeviceArray {
-    pub fn Get(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Nullable_1<
-            crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
-            >,
-        >,
-    > {
-        let __cordl_ret: crate::System::Nullable_1<
-            crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
-            >,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "Get", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn IndexOf(
-        &mut self,
-        device: *mut crate::UnityEngine::InputSystem::InputDevice,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IndexOf",
-            (device),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Remove(
-        &mut self,
-        device: *mut crate::UnityEngine::InputSystem::InputDevice,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Remove",
-            (device),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Set(
-        &mut self,
-        devices: crate::System::Nullable_1<
-            crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-                *mut crate::UnityEngine::InputSystem::InputDevice,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Set",
-            (devices),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+Flags")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum InputActionMap_Flags {
-    BindingResolutionNeedsFullReResolve = 2i32,
-    BindingsForEachActionInitialized = 8i32,
-    ControlsForEachActionInitialized = 4i32,
-    NeedToResolveBindings = 1i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+Flags")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::InputActionMap_Flags
-    => "UnityEngine.InputSystem"."InputActionMap/Flags"
-);
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
 #[repr(C)]
 #[derive(Debug)]
@@ -962,6 +765,203 @@ for crate::UnityEngine::InputSystem::InputActionMap {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingJson")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct InputActionMap_BindingJson {
+    pub name: *mut crate::System::String,
+    pub id: *mut crate::System::String,
+    pub path: *mut crate::System::String,
+    pub interactions: *mut crate::System::String,
+    pub processors: *mut crate::System::String,
+    pub groups: *mut crate::System::String,
+    pub action: *mut crate::System::String,
+    pub isComposite: bool,
+    pub isPartOfComposite: bool,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingJson")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputActionMap_BindingJson => "UnityEngine.InputSystem"
+    ."InputActionMap/BindingJson"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingJson")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::InputActionMap_BindingJson {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingJson")]
+impl crate::UnityEngine::InputSystem::InputActionMap_BindingJson {
+    pub fn ToBinding(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::InputBinding> {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputBinding = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToBinding",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideJson")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct InputActionMap_BindingOverrideJson {
+    pub action: *mut crate::System::String,
+    pub id: *mut crate::System::String,
+    pub path: *mut crate::System::String,
+    pub interactions: *mut crate::System::String,
+    pub processors: *mut crate::System::String,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideJson")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson =>
+    "UnityEngine.InputSystem"."InputActionMap/BindingOverrideJson"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideJson")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideJson")]
+impl crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideListJson")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct InputActionMap_BindingOverrideListJson {
+    pub bindings: *mut crate::System::Collections::Generic::List_1<
+        crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson,
+    >,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideListJson")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputActionMap_BindingOverrideListJson =>
+    "UnityEngine.InputSystem"."InputActionMap/BindingOverrideListJson"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideListJson")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideListJson {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideListJson")]
+impl crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideListJson {}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+DeviceArray")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct InputActionMap_DeviceArray {
+    pub m_HaveValue: bool,
+    pub m_DeviceCount: i32,
+    pub m_DeviceArray: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::UnityEngine::InputSystem::InputDevice,
+    >,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+DeviceArray")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputActionMap_DeviceArray => "UnityEngine.InputSystem"
+    ."InputActionMap/DeviceArray"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+DeviceArray")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::InputActionMap_DeviceArray {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+DeviceArray")]
+impl crate::UnityEngine::InputSystem::InputActionMap_DeviceArray {
+    pub fn Get(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<
+            crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+            >,
+        >,
+    > {
+        let __cordl_ret: crate::System::Nullable_1<
+            crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+            >,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "Get", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn IndexOf(
+        &mut self,
+        device: *mut crate::UnityEngine::InputSystem::InputDevice,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IndexOf",
+            (device),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Remove(
+        &mut self,
+        device: *mut crate::UnityEngine::InputSystem::InputDevice,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Remove",
+            (device),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Set(
+        &mut self,
+        devices: crate::System::Nullable_1<
+            crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Set",
+            (devices),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+Flags")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum InputActionMap_Flags {
+    BindingResolutionNeedsFullReResolve = 2i32,
+    BindingsForEachActionInitialized = 8i32,
+    ControlsForEachActionInitialized = 4i32,
+    NeedToResolveBindings = 1i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+Flags")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::InputActionMap_Flags
+    => "UnityEngine.InputSystem"."InputActionMap/Flags"
+);
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadActionJson")]
 #[repr(C)]
 #[derive(Debug, Clone)]

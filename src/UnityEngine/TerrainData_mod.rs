@@ -1,22 +1,3 @@
-#[cfg(feature = "UnityEngine+TerrainData+BoundaryValueType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum TerrainData_BoundaryValueType {
-    MaxAlphamapRes = 6i32,
-    MaxBaseMapRes = 8i32,
-    MaxCoveragePerRes = 4i32,
-    MaxDetailPatchCount = 3i32,
-    MaxDetailResPerPatch = 2i32,
-    MaxHeightmapRes = 0i32,
-    MinAlphamapRes = 5i32,
-    MinBaseMapRes = 7i32,
-    MinDetailResPerPatch = 1i32,
-}
-#[cfg(feature = "UnityEngine+TerrainData+BoundaryValueType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::TerrainData_BoundaryValueType =>
-    "UnityEngine"."TerrainData/BoundaryValueType"
-);
 #[cfg(feature = "UnityEngine+TerrainData")]
 #[repr(C)]
 #[derive(Debug)]
@@ -537,3 +518,22 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TerrainData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+TerrainData+BoundaryValueType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TerrainData_BoundaryValueType {
+    MaxAlphamapRes = 6i32,
+    MaxBaseMapRes = 8i32,
+    MaxCoveragePerRes = 4i32,
+    MaxDetailPatchCount = 3i32,
+    MaxDetailResPerPatch = 2i32,
+    MaxHeightmapRes = 0i32,
+    MinAlphamapRes = 5i32,
+    MinBaseMapRes = 7i32,
+    MinDetailResPerPatch = 1i32,
+}
+#[cfg(feature = "UnityEngine+TerrainData+BoundaryValueType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::TerrainData_BoundaryValueType =>
+    "UnityEngine"."TerrainData/BoundaryValueType"
+);

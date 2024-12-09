@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct FileStatus {
-    pub _fileStatus: crate::GlobalNamespace::Sys_FileStatus,
+    pub _fileStatus: crate::GlobalNamespace::Sys_Interop_FileStatus,
     pub _fileStatusInitialized: i32,
     pub _InitiallyDirectory_k__BackingField: bool,
     pub _isDirectory: bool,

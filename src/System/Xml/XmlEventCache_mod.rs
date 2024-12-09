@@ -1,159 +1,3 @@
-#[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct XmlEventCache_XmlEvent {
-    pub eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-    pub s1: *mut crate::System::String,
-    pub s2: *mut crate::System::String,
-    pub s3: *mut crate::System::String,
-    pub o: *mut crate::System::Object,
-}
-#[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlEventCache_XmlEvent =>
-    "System.Xml"."XmlEventCache/XmlEvent"
-);
-#[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Xml::XmlEventCache_XmlEvent {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
-impl crate::System::Xml::XmlEventCache_XmlEvent {
-    pub fn InitEvent_Object5(
-        &mut self,
-        eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-        o: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "InitEvent",
-            (eventType, o),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitEvent_String1(
-        &mut self,
-        eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-        s1: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "InitEvent",
-            (eventType, s1),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitEvent_String_String2(
-        &mut self,
-        eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-        s1: *mut crate::System::String,
-        s2: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "InitEvent",
-            (eventType, s1, s2),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitEvent_String_String_String3(
-        &mut self,
-        eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-        s1: *mut crate::System::String,
-        s2: *mut crate::System::String,
-        s3: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "InitEvent",
-            (eventType, s1, s2, s3),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitEvent_String_String_String_Object4(
-        &mut self,
-        eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-        s1: *mut crate::System::String,
-        s2: *mut crate::System::String,
-        s3: *mut crate::System::String,
-        o: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "InitEvent",
-            (eventType, s1, s2, s3, o),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn InitEvent_XmlEventCache_XmlEventType0(
-        &mut self,
-        eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "InitEvent",
-            (eventType),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_EventType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlEventCache_XmlEventType> {
-        let __cordl_ret: crate::System::Xml::XmlEventCache_XmlEventType = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_EventType",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Object(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Object",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_String1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_String1",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_String2(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_String2",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_String3(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_String3",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "System+Xml+XmlEventCache")]
 #[repr(C)]
 #[derive(Debug)]
@@ -656,6 +500,162 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlEventCache {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct XmlEventCache_XmlEvent {
+    pub eventType: crate::System::Xml::XmlEventCache_XmlEventType,
+    pub s1: *mut crate::System::String,
+    pub s2: *mut crate::System::String,
+    pub s3: *mut crate::System::String,
+    pub o: *mut crate::System::Object,
+}
+#[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlEventCache_XmlEvent =>
+    "System.Xml"."XmlEventCache/XmlEvent"
+);
+#[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::Xml::XmlEventCache_XmlEvent {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
+impl crate::System::Xml::XmlEventCache_XmlEvent {
+    pub fn InitEvent_Object5(
+        &mut self,
+        eventType: crate::System::Xml::XmlEventCache_XmlEventType,
+        o: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "InitEvent",
+            (eventType, o),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitEvent_String1(
+        &mut self,
+        eventType: crate::System::Xml::XmlEventCache_XmlEventType,
+        s1: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "InitEvent",
+            (eventType, s1),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitEvent_String_String2(
+        &mut self,
+        eventType: crate::System::Xml::XmlEventCache_XmlEventType,
+        s1: *mut crate::System::String,
+        s2: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "InitEvent",
+            (eventType, s1, s2),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitEvent_String_String_String3(
+        &mut self,
+        eventType: crate::System::Xml::XmlEventCache_XmlEventType,
+        s1: *mut crate::System::String,
+        s2: *mut crate::System::String,
+        s3: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "InitEvent",
+            (eventType, s1, s2, s3),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitEvent_String_String_String_Object4(
+        &mut self,
+        eventType: crate::System::Xml::XmlEventCache_XmlEventType,
+        s1: *mut crate::System::String,
+        s2: *mut crate::System::String,
+        s3: *mut crate::System::String,
+        o: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "InitEvent",
+            (eventType, s1, s2, s3, o),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitEvent_XmlEventCache_XmlEventType0(
+        &mut self,
+        eventType: crate::System::Xml::XmlEventCache_XmlEventType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "InitEvent",
+            (eventType),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_EventType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlEventCache_XmlEventType> {
+        let __cordl_ret: crate::System::Xml::XmlEventCache_XmlEventType = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_EventType",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Object(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Object",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_String1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_String1",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_String2(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_String2",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_String3(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_String3",
+            (),
+        )?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+XmlEventCache+XmlEventType")]

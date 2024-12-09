@@ -1,18 +1,136 @@
-#[cfg(feature = "PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData")]
+#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum PlayerSpecificSettings_ArcVisibilityTypeSaveData {
-    High = 3i32,
-    Low = 1i32,
-    None = 0i32,
-    Standard = 2i32,
+pub enum GameplayModifiers_PlayerSaveData_EnabledObstacleType {
+    All = 0i32,
+    FullHeightOnly = 1i32,
+    None = 2i32,
 }
-#[cfg(feature = "PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData")]
+#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::PlayerSpecificSettings_ArcVisibilityTypeSaveData => ""
-    ."PlayerSaveData/PlayerSpecificSettings/ArcVisibilityTypeSaveData"
+    ::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType => ""
+    ."PlayerSaveData/GameplayModifiers/EnabledObstacleType"
 );
+#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnergyType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum GameplayModifiers_PlayerSaveData_EnergyType {
+    Bar = 0i32,
+    Battery = 1i32,
+}
+#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnergyType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType => ""
+    ."PlayerSaveData/GameplayModifiers/EnergyType"
+);
+#[cfg(feature = "PlayerSaveData+GameplayModifiers+SongSpeed")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum GameplayModifiers_PlayerSaveData_SongSpeed {
+    Faster = 1i32,
+    Normal = 0i32,
+    Slower = 2i32,
+}
+#[cfg(feature = "PlayerSaveData+GameplayModifiers+SongSpeed")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed => ""
+    ."PlayerSaveData/GameplayModifiers/SongSpeed"
+);
+#[cfg(feature = "PlayerSaveData")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct PlayerSaveData {
+    __cordl_parent: crate::GlobalNamespace::VersionSaveData,
+    pub localPlayers: *mut crate::System::Collections::Generic::List_1<
+        *mut crate::GlobalNamespace::PlayerSaveData_LocalPlayer,
+    >,
+    pub guestPlayers: *mut crate::System::Collections::Generic::List_1<
+        *mut crate::GlobalNamespace::PlayerSaveData_GuestPlayer,
+    >,
+}
+#[cfg(feature = "PlayerSaveData")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerSaveData => ""
+    ."PlayerSaveData"
+);
+#[cfg(feature = "PlayerSaveData")]
+impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveData {
+    type Target = crate::GlobalNamespace::VersionSaveData;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "PlayerSaveData")]
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "PlayerSaveData")]
+impl crate::GlobalNamespace::PlayerSaveData {
+    pub const kCurrentVersion: &'static str = "2.0.27";
+    #[cfg(feature = "PlayerSaveData+ColorScheme")]
+    pub type ColorScheme = crate::GlobalNamespace::PlayerSaveData_ColorScheme;
+    #[cfg(feature = "PlayerSaveData+ColorSchemesSettings")]
+    pub type ColorSchemesSettings = crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings;
+    #[cfg(feature = "PlayerSaveData+GameplayModifiers")]
+    pub type GameplayModifiers = crate::GlobalNamespace::PlayerSaveData_GameplayModifiers;
+    #[cfg(feature = "PlayerSaveData+GuestPlayer")]
+    pub type GuestPlayer = crate::GlobalNamespace::PlayerSaveData_GuestPlayer;
+    #[cfg(feature = "PlayerSaveData+LocalPlayer")]
+    pub type LocalPlayer = crate::GlobalNamespace::PlayerSaveData_LocalPlayer;
+    #[cfg(feature = "PlayerSaveData+MultiplayerModeSettings")]
+    pub type MultiplayerModeSettings = crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings;
+    #[cfg(feature = "PlayerSaveData+OverrideEnvironmentSettings")]
+    pub type OverrideEnvironmentSettings = crate::GlobalNamespace::PlayerSaveData_OverrideEnvironmentSettings;
+    #[cfg(feature = "PlayerSaveData+PlayerAgreementsData")]
+    pub type PlayerAgreementsData = crate::GlobalNamespace::PlayerSaveData_PlayerAgreementsData;
+    #[cfg(feature = "PlayerSaveData+PlayerAllOverallStatsData")]
+    pub type PlayerAllOverallStatsData = crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData;
+    #[cfg(feature = "PlayerSaveData+PlayerLevelStatsData")]
+    pub type PlayerLevelStatsData = crate::GlobalNamespace::PlayerSaveData_PlayerLevelStatsData;
+    #[cfg(feature = "PlayerSaveData+PlayerMissionStatsData")]
+    pub type PlayerMissionStatsData = crate::GlobalNamespace::PlayerSaveData_PlayerMissionStatsData;
+    #[cfg(feature = "PlayerSaveData+PlayerOverallStatsData")]
+    pub type PlayerOverallStatsData = crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData;
+    #[cfg(feature = "PlayerSaveData+PlayerSensitivityFlagSaveData")]
+    pub type PlayerSensitivityFlagSaveData = crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData;
+    #[cfg(feature = "PlayerSaveData+PlayerSpecificSettings")]
+    pub type PlayerSpecificSettings = crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings;
+    #[cfg(feature = "PlayerSaveData+PracticeSettings")]
+    pub type PracticeSettings = crate::GlobalNamespace::PlayerSaveData_PracticeSettings;
+    #[cfg(feature = "PlayerSaveData+UserAgeCategorySaveData")]
+    pub type UserAgeCategorySaveData = crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "PlayerSaveData")]
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerSaveData {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "PlayerSaveData+ColorScheme")]
 #[repr(C)]
 #[derive(Debug)]
@@ -193,65 +311,21 @@ for crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum GameplayModifiers_EnabledObstacleType {
-    All = 0i32,
-    FullHeightOnly = 1i32,
-    None = 2i32,
-}
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameplayModifiers_EnabledObstacleType => ""
-    ."PlayerSaveData/GameplayModifiers/EnabledObstacleType"
-);
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnergyType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum GameplayModifiers_EnergyType {
-    Bar = 0i32,
-    Battery = 1i32,
-}
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnergyType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameplayModifiers_EnergyType =>
-    ""."PlayerSaveData/GameplayModifiers/EnergyType"
-);
-#[cfg(
-    feature = "PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
-)]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum PlayerSpecificSettings_EnvironmentEffectsFilterPresetSaveData {
-    AllEffects = 0i32,
-    NoEffects = 10i32,
-    StrobeFilter = 1i32,
-}
-#[cfg(
-    feature = "PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::PlayerSpecificSettings_EnvironmentEffectsFilterPresetSaveData =>
-    ""."PlayerSaveData/PlayerSpecificSettings/EnvironmentEffectsFilterPresetSaveData"
-);
 #[cfg(feature = "PlayerSaveData+GameplayModifiers")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveData_GameplayModifiers {
     __cordl_parent: crate::System::Object,
-    pub energyType: crate::GlobalNamespace::GameplayModifiers_EnergyType,
+    pub energyType: crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType,
     pub instaFail: bool,
     pub failOnSaberClash: bool,
-    pub enabledObstacleType: crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType,
+    pub enabledObstacleType: crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType,
     pub fastNotes: bool,
     pub strictAngles: bool,
     pub disappearingArrows: bool,
     pub ghostNotes: bool,
     pub noBombs: bool,
-    pub songSpeed: crate::GlobalNamespace::GameplayModifiers_SongSpeed,
+    pub songSpeed: crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed,
     pub noArrows: bool,
     pub noFailOn0Energy: bool,
     pub proMode: bool,
@@ -280,11 +354,11 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData_GameplayModif
 #[cfg(feature = "PlayerSaveData+GameplayModifiers")]
 impl crate::GlobalNamespace::PlayerSaveData_GameplayModifiers {
     #[cfg(feature = "PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
-    pub type EnabledObstacleType = crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType;
+    pub type EnabledObstacleType = crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType;
     #[cfg(feature = "PlayerSaveData+GameplayModifiers+EnergyType")]
-    pub type EnergyType = crate::GlobalNamespace::GameplayModifiers_EnergyType;
+    pub type EnergyType = crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType;
     #[cfg(feature = "PlayerSaveData+GameplayModifiers+SongSpeed")]
-    pub type SongSpeed = crate::GlobalNamespace::GameplayModifiers_SongSpeed;
+    pub type SongSpeed = crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -518,23 +592,6 @@ for crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
-)]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum PlayerSpecificSettings_NoteJumpDurationTypeSettingsSaveData {
-    Dynamic = 0i32,
-    Static = 1i32,
-}
-#[cfg(
-    feature = "PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::PlayerSpecificSettings_NoteJumpDurationTypeSettingsSaveData => ""
-    ."PlayerSaveData/PlayerSpecificSettings/NoteJumpDurationTypeSettingsSaveData"
-);
 #[cfg(feature = "PlayerSaveData+OverrideEnvironmentSettings")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1017,98 +1074,6 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerSaveData")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct PlayerSaveData {
-    __cordl_parent: crate::GlobalNamespace::VersionSaveData,
-    pub localPlayers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::PlayerSaveData_LocalPlayer,
-    >,
-    pub guestPlayers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::PlayerSaveData_GuestPlayer,
-    >,
-}
-#[cfg(feature = "PlayerSaveData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlayerSaveData => ""
-    ."PlayerSaveData"
-);
-#[cfg(feature = "PlayerSaveData")]
-impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveData {
-    type Target = crate::GlobalNamespace::VersionSaveData;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "PlayerSaveData")]
-impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "PlayerSaveData")]
-impl crate::GlobalNamespace::PlayerSaveData {
-    pub const kCurrentVersion: &'static str = "2.0.27";
-    #[cfg(feature = "PlayerSaveData+ColorScheme")]
-    pub type ColorScheme = crate::GlobalNamespace::PlayerSaveData_ColorScheme;
-    #[cfg(feature = "PlayerSaveData+ColorSchemesSettings")]
-    pub type ColorSchemesSettings = crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings;
-    #[cfg(feature = "PlayerSaveData+GameplayModifiers")]
-    pub type GameplayModifiers = crate::GlobalNamespace::PlayerSaveData_GameplayModifiers;
-    #[cfg(feature = "PlayerSaveData+GuestPlayer")]
-    pub type GuestPlayer = crate::GlobalNamespace::PlayerSaveData_GuestPlayer;
-    #[cfg(feature = "PlayerSaveData+LocalPlayer")]
-    pub type LocalPlayer = crate::GlobalNamespace::PlayerSaveData_LocalPlayer;
-    #[cfg(feature = "PlayerSaveData+MultiplayerModeSettings")]
-    pub type MultiplayerModeSettings = crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings;
-    #[cfg(feature = "PlayerSaveData+OverrideEnvironmentSettings")]
-    pub type OverrideEnvironmentSettings = crate::GlobalNamespace::PlayerSaveData_OverrideEnvironmentSettings;
-    #[cfg(feature = "PlayerSaveData+PlayerAgreementsData")]
-    pub type PlayerAgreementsData = crate::GlobalNamespace::PlayerSaveData_PlayerAgreementsData;
-    #[cfg(feature = "PlayerSaveData+PlayerAllOverallStatsData")]
-    pub type PlayerAllOverallStatsData = crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData;
-    #[cfg(feature = "PlayerSaveData+PlayerLevelStatsData")]
-    pub type PlayerLevelStatsData = crate::GlobalNamespace::PlayerSaveData_PlayerLevelStatsData;
-    #[cfg(feature = "PlayerSaveData+PlayerMissionStatsData")]
-    pub type PlayerMissionStatsData = crate::GlobalNamespace::PlayerSaveData_PlayerMissionStatsData;
-    #[cfg(feature = "PlayerSaveData+PlayerOverallStatsData")]
-    pub type PlayerOverallStatsData = crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData;
-    #[cfg(feature = "PlayerSaveData+PlayerSensitivityFlagSaveData")]
-    pub type PlayerSensitivityFlagSaveData = crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData;
-    #[cfg(feature = "PlayerSaveData+PlayerSpecificSettings")]
-    pub type PlayerSpecificSettings = crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings;
-    #[cfg(feature = "PlayerSaveData+PracticeSettings")]
-    pub type PracticeSettings = crate::GlobalNamespace::PlayerSaveData_PracticeSettings;
-    #[cfg(feature = "PlayerSaveData+UserAgeCategorySaveData")]
-    pub type UserAgeCategorySaveData = crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "PlayerSaveData")]
-impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerSaveData {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "PlayerSaveData+PlayerSensitivityFlagSaveData")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -1138,7 +1103,7 @@ pub struct PlayerSaveData_PlayerSpecificSettings {
     pub noTextsAndHuds: bool,
     pub advancedHud: bool,
     pub saberTrailIntensity: f32,
-    pub _noteJumpDurationTypeSettingsSaveData: crate::GlobalNamespace::PlayerSpecificSettings_NoteJumpDurationTypeSettingsSaveData,
+    pub _noteJumpDurationTypeSettingsSaveData: crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData,
     pub noteJumpFixedDuration: f32,
     pub autoRestart: bool,
     pub noFailEffects: bool,
@@ -1146,9 +1111,9 @@ pub struct PlayerSaveData_PlayerSpecificSettings {
     pub hideNoteSpawnEffect: bool,
     pub adaptiveSfx: bool,
     pub arcsHapticFeedback: bool,
-    pub arcsVisibleSaveData: crate::GlobalNamespace::PlayerSpecificSettings_ArcVisibilityTypeSaveData,
-    pub environmentEffectsFilterDefaultPreset: crate::GlobalNamespace::PlayerSpecificSettings_EnvironmentEffectsFilterPresetSaveData,
-    pub environmentEffectsFilterExpertPlusPreset: crate::GlobalNamespace::PlayerSpecificSettings_EnvironmentEffectsFilterPresetSaveData,
+    pub arcsVisibleSaveData: crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData,
+    pub environmentEffectsFilterDefaultPreset: crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData,
+    pub environmentEffectsFilterExpertPlusPreset: crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData,
     pub headsetHapticIntensity: f32,
 }
 #[cfg(feature = "PlayerSaveData+PlayerSpecificSettings")]
@@ -1174,15 +1139,15 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings {
 #[cfg(feature = "PlayerSaveData+PlayerSpecificSettings")]
 impl crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings {
     #[cfg(feature = "PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData")]
-    pub type ArcVisibilityTypeSaveData = crate::GlobalNamespace::PlayerSpecificSettings_ArcVisibilityTypeSaveData;
+    pub type ArcVisibilityTypeSaveData = crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData;
     #[cfg(
         feature = "PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
     )]
-    pub type EnvironmentEffectsFilterPresetSaveData = crate::GlobalNamespace::PlayerSpecificSettings_EnvironmentEffectsFilterPresetSaveData;
+    pub type EnvironmentEffectsFilterPresetSaveData = crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData;
     #[cfg(
         feature = "PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
     )]
-    pub type NoteJumpDurationTypeSettingsSaveData = crate::GlobalNamespace::PlayerSpecificSettings_NoteJumpDurationTypeSettingsSaveData;
+    pub type NoteJumpDurationTypeSettingsSaveData = crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -1267,19 +1232,6 @@ for crate::GlobalNamespace::PlayerSaveData_PracticeSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+SongSpeed")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum GameplayModifiers_SongSpeed {
-    Faster = 1i32,
-    Normal = 0i32,
-    Slower = 2i32,
-}
-#[cfg(feature = "PlayerSaveData+GameplayModifiers+SongSpeed")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::GameplayModifiers_SongSpeed =>
-    ""."PlayerSaveData/GameplayModifiers/SongSpeed"
-);
 #[cfg(feature = "PlayerSaveData+UserAgeCategorySaveData")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -1294,4 +1246,54 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate
     ::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData => ""
     ."PlayerSaveData/UserAgeCategorySaveData"
+);
+#[cfg(feature = "PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData {
+    High = 3i32,
+    Low = 1i32,
+    None = 0i32,
+    Standard = 2i32,
+}
+#[cfg(feature = "PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData =>
+    ""."PlayerSaveData/PlayerSpecificSettings/ArcVisibilityTypeSaveData"
+);
+#[cfg(
+    feature = "PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
+)]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData {
+    AllEffects = 0i32,
+    NoEffects = 10i32,
+    StrobeFilter = 1i32,
+}
+#[cfg(
+    feature = "PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData
+    => ""."PlayerSaveData/PlayerSpecificSettings/EnvironmentEffectsFilterPresetSaveData"
+);
+#[cfg(
+    feature = "PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
+)]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData {
+    Dynamic = 0i32,
+    Static = 1i32,
+}
+#[cfg(
+    feature = "PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData
+    => ""."PlayerSaveData/PlayerSpecificSettings/NoteJumpDurationTypeSettingsSaveData"
 );

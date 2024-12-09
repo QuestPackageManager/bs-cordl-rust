@@ -1,96 +1,9 @@
 #[cfg(
-    feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration"
-)]
-#[repr(C)]
-#[derive(Debug)]
-pub struct TbsCertificateList_RevokedCertificatesEnumeration {
-    __cordl_parent: crate::System::Object,
-    pub en: *mut crate::System::Collections::IEnumerable,
-}
-#[cfg(
-    feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration"
-)]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X509::TbsCertificateList_RevokedCertificatesEnumeration =>
-    "Org.BouncyCastle.Asn1.X509"."TbsCertificateList/RevokedCertificatesEnumeration"
-);
-#[cfg(
-    feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration"
-)]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList_RevokedCertificatesEnumeration {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(
-    feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration"
-)]
-impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList_RevokedCertificatesEnumeration {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(
-    feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration"
-)]
-impl crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList_RevokedCertificatesEnumeration {
-    #[cfg(
-        feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration+RevokedCertificatesEnumerator"
-    )]
-    pub type RevokedCertificatesEnumerator = crate::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_RevokedCertificatesEnumerator;
-    pub fn GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("GetEnumerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        en: *mut crate::System::Collections::IEnumerable,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (en))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        en: *mut crate::System::Collections::IEnumerable,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (en))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(
-    feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration"
-)]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList_RevokedCertificatesEnumeration {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(
     feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration+RevokedCertificatesEnumerator"
 )]
 #[repr(C)]
 #[derive(Debug)]
-pub struct RevokedCertificatesEnumeration_RevokedCertificatesEnumerator {
+pub struct RevokedCertificatesEnumeration_TbsCertificateList_RevokedCertificatesEnumerator {
     __cordl_parent: crate::System::Object,
     pub e: *mut crate::System::Collections::IEnumerator,
 }
@@ -99,7 +12,7 @@ pub struct RevokedCertificatesEnumeration_RevokedCertificatesEnumerator {
 )]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
     in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_RevokedCertificatesEnumerator
+    ::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_TbsCertificateList_RevokedCertificatesEnumerator
     => "Org.BouncyCastle.Asn1.X509"
     ."TbsCertificateList/RevokedCertificatesEnumeration/RevokedCertificatesEnumerator"
 );
@@ -107,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
     feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration+RevokedCertificatesEnumerator"
 )]
 impl std::ops::Deref
-for crate::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_RevokedCertificatesEnumerator {
+for crate::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_TbsCertificateList_RevokedCertificatesEnumerator {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -117,7 +30,7 @@ for crate::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_Revoked
     feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration+RevokedCertificatesEnumerator"
 )]
 impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_RevokedCertificatesEnumerator {
+for crate::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_TbsCertificateList_RevokedCertificatesEnumerator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -125,7 +38,7 @@ for crate::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_Revoked
 #[cfg(
     feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration+RevokedCertificatesEnumerator"
 )]
-impl crate::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_RevokedCertificatesEnumerator {
+impl crate::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_TbsCertificateList_RevokedCertificatesEnumerator {
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -178,7 +91,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_Revoke
     feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration+RevokedCertificatesEnumerator"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_RevokedCertificatesEnumerator {
+for crate::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_TbsCertificateList_RevokedCertificatesEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -357,6 +270,93 @@ impl crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList {
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration"
+)]
+#[repr(C)]
+#[derive(Debug)]
+pub struct TbsCertificateList_RevokedCertificatesEnumeration {
+    __cordl_parent: crate::System::Object,
+    pub en: *mut crate::System::Collections::IEnumerable,
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration"
+)]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::Org::BouncyCastle::Asn1::X509::TbsCertificateList_RevokedCertificatesEnumeration =>
+    "Org.BouncyCastle.Asn1.X509"."TbsCertificateList/RevokedCertificatesEnumeration"
+);
+#[cfg(
+    feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration"
+)]
+impl std::ops::Deref
+for crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList_RevokedCertificatesEnumeration {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration"
+)]
+impl std::ops::DerefMut
+for crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList_RevokedCertificatesEnumeration {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration"
+)]
+impl crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList_RevokedCertificatesEnumeration {
+    #[cfg(
+        feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration+RevokedCertificatesEnumerator"
+    )]
+    pub type RevokedCertificatesEnumerator = crate::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_TbsCertificateList_RevokedCertificatesEnumerator;
+    pub fn GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("GetEnumerator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        en: *mut crate::System::Collections::IEnumerable,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (en))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        en: *mut crate::System::Collections::IEnumerable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (en))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration"
+)]
+impl quest_hook::libil2cpp::ObjectType
+for crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList_RevokedCertificatesEnumeration {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

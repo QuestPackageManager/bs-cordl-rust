@@ -1,16 +1,3 @@
-#[cfg(feature = "MultiplayerScoreDiffText+HorizontalPosition")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum MultiplayerScoreDiffText_HorizontalPosition {
-    Left = 0i32,
-    Right = 1i32,
-}
-#[cfg(feature = "MultiplayerScoreDiffText+HorizontalPosition")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::MultiplayerScoreDiffText_HorizontalPosition => ""
-    ."MultiplayerScoreDiffText/HorizontalPosition"
-);
 #[cfg(feature = "MultiplayerScoreDiffText")]
 #[repr(C)]
 #[derive(Debug)]
@@ -186,6 +173,19 @@ for crate::GlobalNamespace::MultiplayerScoreDiffText {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerScoreDiffText+HorizontalPosition")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum MultiplayerScoreDiffText_HorizontalPosition {
+    Left = 0i32,
+    Right = 1i32,
+}
+#[cfg(feature = "MultiplayerScoreDiffText+HorizontalPosition")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerScoreDiffText_HorizontalPosition => ""
+    ."MultiplayerScoreDiffText/HorizontalPosition"
+);
 #[cfg(feature = "MultiplayerScoreDiffText+State")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

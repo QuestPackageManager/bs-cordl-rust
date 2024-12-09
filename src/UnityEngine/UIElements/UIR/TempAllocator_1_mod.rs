@@ -1,32 +1,3 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1+Page")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct TempAllocator_1_Page<T: quest_hook::libil2cpp::Type> {
-    pub array: crate::Unity::Collections::NativeArray_1<T>,
-    pub used: i32,
-    __cordl_phantom_T: std::marker::PhantomData<T>,
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1+Page")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::UIR::TempAllocator_1_Page < T > =>
-    "UnityEngine.UIElements.UIR"."TempAllocator`1/Page<T>" < T >
-);
-#[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1+Page")]
-unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T> {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1+Page")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T> {}
 #[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1")]
 #[repr(C)]
 #[derive(Debug)]
@@ -203,3 +174,32 @@ for crate::UnityEngine::UIElements::UIR::TempAllocator_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1+Page")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct TempAllocator_1_Page<T: quest_hook::libil2cpp::Type> {
+    pub array: crate::Unity::Collections::NativeArray_1<T>,
+    pub used: i32,
+    __cordl_phantom_T: std::marker::PhantomData<T>,
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1+Page")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::UIR::TempAllocator_1_Page < T > =>
+    "UnityEngine.UIElements.UIR"."TempAllocator`1/Page<T>" < T >
+);
+#[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1+Page")]
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T> {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1+Page")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T> {}

@@ -1,3 +1,96 @@
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct EarlyUpdate {}
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::PlayerLoop::EarlyUpdate =>
+    "UnityEngine.PlayerLoop"."EarlyUpdate"
+);
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::PlayerLoop::EarlyUpdate {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate")]
+impl crate::UnityEngine::PlayerLoop::EarlyUpdate {
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ARCoreUpdate")]
+    pub type ARCoreUpdate = crate::UnityEngine::PlayerLoop::EarlyUpdate_ARCoreUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+AnalyticsCoreStatsUpdate")]
+    pub type AnalyticsCoreStatsUpdate = crate::UnityEngine::PlayerLoop::EarlyUpdate_AnalyticsCoreStatsUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ClearIntermediateRenderers")]
+    pub type ClearIntermediateRenderers = crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearIntermediateRenderers;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ClearLines")]
+    pub type ClearLines = crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearLines;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+DeliverIosPlatformEvents")]
+    pub type DeliverIosPlatformEvents = crate::UnityEngine::PlayerLoop::EarlyUpdate_DeliverIosPlatformEvents;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+DispatchEventQueueEvents")]
+    pub type DispatchEventQueueEvents = crate::UnityEngine::PlayerLoop::EarlyUpdate_DispatchEventQueueEvents;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ExecuteMainThreadJobs")]
+    pub type ExecuteMainThreadJobs = crate::UnityEngine::PlayerLoop::EarlyUpdate_ExecuteMainThreadJobs;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+GpuTimestamp")]
+    pub type GpuTimestamp = crate::UnityEngine::PlayerLoop::EarlyUpdate_GpuTimestamp;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PerformanceAnalyticsUpdate")]
+    pub type PerformanceAnalyticsUpdate = crate::UnityEngine::PlayerLoop::EarlyUpdate_PerformanceAnalyticsUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+Physics2DEarlyUpdate")]
+    pub type Physics2DEarlyUpdate = crate::UnityEngine::PlayerLoop::EarlyUpdate_Physics2DEarlyUpdate;
+    #[cfg(
+        feature = "UnityEngine+PlayerLoop+EarlyUpdate+PhysicsResetInterpolatedTransformPosition"
+    )]
+    pub type PhysicsResetInterpolatedTransformPosition = crate::UnityEngine::PlayerLoop::EarlyUpdate_PhysicsResetInterpolatedTransformPosition;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PlayerCleanupCachedData")]
+    pub type PlayerCleanupCachedData = crate::UnityEngine::PlayerLoop::EarlyUpdate_PlayerCleanupCachedData;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PollHtcsPlayerConnection")]
+    pub type PollHtcsPlayerConnection = crate::UnityEngine::PlayerLoop::EarlyUpdate_PollHtcsPlayerConnection;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PollPlayerConnection")]
+    pub type PollPlayerConnection = crate::UnityEngine::PlayerLoop::EarlyUpdate_PollPlayerConnection;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PresentBeforeUpdate")]
+    pub type PresentBeforeUpdate = crate::UnityEngine::PlayerLoop::EarlyUpdate_PresentBeforeUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ProcessMouseInWindow")]
+    pub type ProcessMouseInWindow = crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessMouseInWindow;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ProcessRemoteInput")]
+    pub type ProcessRemoteInput = crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessRemoteInput;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+RendererNotifyInvisible")]
+    pub type RendererNotifyInvisible = crate::UnityEngine::PlayerLoop::EarlyUpdate_RendererNotifyInvisible;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ResetFrameStatsAfterPresent")]
+    pub type ResetFrameStatsAfterPresent = crate::UnityEngine::PlayerLoop::EarlyUpdate_ResetFrameStatsAfterPresent;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ScriptRunDelayedStartupFrame")]
+    pub type ScriptRunDelayedStartupFrame = crate::UnityEngine::PlayerLoop::EarlyUpdate_ScriptRunDelayedStartupFrame;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+SpriteAtlasManagerUpdate")]
+    pub type SpriteAtlasManagerUpdate = crate::UnityEngine::PlayerLoop::EarlyUpdate_SpriteAtlasManagerUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+TangoUpdate")]
+    pub type TangoUpdate = crate::UnityEngine::PlayerLoop::EarlyUpdate_TangoUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UnityWebRequestUpdate")]
+    pub type UnityWebRequestUpdate = crate::UnityEngine::PlayerLoop::EarlyUpdate_UnityWebRequestUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateAsyncInstantiate")]
+    pub type UpdateAsyncInstantiate = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncInstantiate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateAsyncReadbackManager")]
+    pub type UpdateAsyncReadbackManager = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncReadbackManager;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateCanvasRectTransform")]
+    pub type UpdateCanvasRectTransform = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateCanvasRectTransform;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateContentLoading")]
+    pub type UpdateContentLoading = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateContentLoading;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateInputManager")]
+    pub type UpdateInputManager = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateInputManager;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateKinect")]
+    pub type UpdateKinect = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateKinect;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateMainGameViewRect")]
+    pub type UpdateMainGameViewRect = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateMainGameViewRect;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdatePreloading")]
+    pub type UpdatePreloading = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdatePreloading;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateStreamingManager")]
+    pub type UpdateStreamingManager = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateStreamingManager;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateTextureStreamingManager")]
+    pub type UpdateTextureStreamingManager = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateTextureStreamingManager;
+    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+XRUpdate")]
+    pub type XRUpdate = crate::UnityEngine::PlayerLoop::EarlyUpdate_XRUpdate;
+}
 #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ARCoreUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -135,99 +228,6 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_DispatchEventQueueEvents {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+DispatchEventQueueEvents")]
 impl crate::UnityEngine::PlayerLoop::EarlyUpdate_DispatchEventQueueEvents {}
-#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct EarlyUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::PlayerLoop::EarlyUpdate =>
-    "UnityEngine.PlayerLoop"."EarlyUpdate"
-);
-#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::PlayerLoop::EarlyUpdate {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate")]
-impl crate::UnityEngine::PlayerLoop::EarlyUpdate {
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ARCoreUpdate")]
-    pub type ARCoreUpdate = crate::UnityEngine::PlayerLoop::EarlyUpdate_ARCoreUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+AnalyticsCoreStatsUpdate")]
-    pub type AnalyticsCoreStatsUpdate = crate::UnityEngine::PlayerLoop::EarlyUpdate_AnalyticsCoreStatsUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ClearIntermediateRenderers")]
-    pub type ClearIntermediateRenderers = crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearIntermediateRenderers;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ClearLines")]
-    pub type ClearLines = crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearLines;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+DeliverIosPlatformEvents")]
-    pub type DeliverIosPlatformEvents = crate::UnityEngine::PlayerLoop::EarlyUpdate_DeliverIosPlatformEvents;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+DispatchEventQueueEvents")]
-    pub type DispatchEventQueueEvents = crate::UnityEngine::PlayerLoop::EarlyUpdate_DispatchEventQueueEvents;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ExecuteMainThreadJobs")]
-    pub type ExecuteMainThreadJobs = crate::UnityEngine::PlayerLoop::EarlyUpdate_ExecuteMainThreadJobs;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+GpuTimestamp")]
-    pub type GpuTimestamp = crate::UnityEngine::PlayerLoop::EarlyUpdate_GpuTimestamp;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PerformanceAnalyticsUpdate")]
-    pub type PerformanceAnalyticsUpdate = crate::UnityEngine::PlayerLoop::EarlyUpdate_PerformanceAnalyticsUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+Physics2DEarlyUpdate")]
-    pub type Physics2DEarlyUpdate = crate::UnityEngine::PlayerLoop::EarlyUpdate_Physics2DEarlyUpdate;
-    #[cfg(
-        feature = "UnityEngine+PlayerLoop+EarlyUpdate+PhysicsResetInterpolatedTransformPosition"
-    )]
-    pub type PhysicsResetInterpolatedTransformPosition = crate::UnityEngine::PlayerLoop::EarlyUpdate_PhysicsResetInterpolatedTransformPosition;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PlayerCleanupCachedData")]
-    pub type PlayerCleanupCachedData = crate::UnityEngine::PlayerLoop::EarlyUpdate_PlayerCleanupCachedData;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PollHtcsPlayerConnection")]
-    pub type PollHtcsPlayerConnection = crate::UnityEngine::PlayerLoop::EarlyUpdate_PollHtcsPlayerConnection;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PollPlayerConnection")]
-    pub type PollPlayerConnection = crate::UnityEngine::PlayerLoop::EarlyUpdate_PollPlayerConnection;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PresentBeforeUpdate")]
-    pub type PresentBeforeUpdate = crate::UnityEngine::PlayerLoop::EarlyUpdate_PresentBeforeUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ProcessMouseInWindow")]
-    pub type ProcessMouseInWindow = crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessMouseInWindow;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ProcessRemoteInput")]
-    pub type ProcessRemoteInput = crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessRemoteInput;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+RendererNotifyInvisible")]
-    pub type RendererNotifyInvisible = crate::UnityEngine::PlayerLoop::EarlyUpdate_RendererNotifyInvisible;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ResetFrameStatsAfterPresent")]
-    pub type ResetFrameStatsAfterPresent = crate::UnityEngine::PlayerLoop::EarlyUpdate_ResetFrameStatsAfterPresent;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ScriptRunDelayedStartupFrame")]
-    pub type ScriptRunDelayedStartupFrame = crate::UnityEngine::PlayerLoop::EarlyUpdate_ScriptRunDelayedStartupFrame;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+SpriteAtlasManagerUpdate")]
-    pub type SpriteAtlasManagerUpdate = crate::UnityEngine::PlayerLoop::EarlyUpdate_SpriteAtlasManagerUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+TangoUpdate")]
-    pub type TangoUpdate = crate::UnityEngine::PlayerLoop::EarlyUpdate_TangoUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UnityWebRequestUpdate")]
-    pub type UnityWebRequestUpdate = crate::UnityEngine::PlayerLoop::EarlyUpdate_UnityWebRequestUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateAsyncInstantiate")]
-    pub type UpdateAsyncInstantiate = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncInstantiate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateAsyncReadbackManager")]
-    pub type UpdateAsyncReadbackManager = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncReadbackManager;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateCanvasRectTransform")]
-    pub type UpdateCanvasRectTransform = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateCanvasRectTransform;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateContentLoading")]
-    pub type UpdateContentLoading = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateContentLoading;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateInputManager")]
-    pub type UpdateInputManager = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateInputManager;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateKinect")]
-    pub type UpdateKinect = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateKinect;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateMainGameViewRect")]
-    pub type UpdateMainGameViewRect = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateMainGameViewRect;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdatePreloading")]
-    pub type UpdatePreloading = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdatePreloading;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateStreamingManager")]
-    pub type UpdateStreamingManager = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateStreamingManager;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateTextureStreamingManager")]
-    pub type UpdateTextureStreamingManager = crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateTextureStreamingManager;
-    #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+XRUpdate")]
-    pub type XRUpdate = crate::UnityEngine::PlayerLoop::EarlyUpdate_XRUpdate;
-}
 #[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ExecuteMainThreadJobs")]
 #[repr(C)]
 #[derive(Debug, Clone)]

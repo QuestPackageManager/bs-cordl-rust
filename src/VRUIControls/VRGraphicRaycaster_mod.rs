@@ -1,46 +1,3 @@
-#[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct VRGraphicRaycaster_VRGraphicRaycastResult {
-    pub graphic: *mut crate::UnityEngine::UI::Graphic,
-    pub distance: f32,
-    pub position: crate::UnityEngine::Vector3,
-    pub insideRootCanvasPosition: crate::UnityEngine::Vector2,
-}
-#[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult => "VRUIControls"
-    ."VRGraphicRaycaster/VRGraphicRaycastResult"
-);
-#[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
-impl crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
-    pub fn _ctor(
-        &mut self,
-        graphic: *mut crate::UnityEngine::UI::Graphic,
-        distance: f32,
-        position: crate::UnityEngine::Vector3,
-        insideRootCanvasPosition: crate::UnityEngine::Vector2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (graphic, distance, position, insideRootCanvasPosition),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "VRUIControls+VRGraphicRaycaster")]
 #[repr(C)]
 #[derive(Debug)]
@@ -138,5 +95,48 @@ impl quest_hook::libil2cpp::ObjectType for crate::VRUIControls::VRGraphicRaycast
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct VRGraphicRaycaster_VRGraphicRaycastResult {
+    pub graphic: *mut crate::UnityEngine::UI::Graphic,
+    pub distance: f32,
+    pub position: crate::UnityEngine::Vector3,
+    pub insideRootCanvasPosition: crate::UnityEngine::Vector2,
+}
+#[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult => "VRUIControls"
+    ."VRGraphicRaycaster/VRGraphicRaycastResult"
+);
+#[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
+impl crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
+    pub fn _ctor(
+        &mut self,
+        graphic: *mut crate::UnityEngine::UI::Graphic,
+        distance: f32,
+        position: crate::UnityEngine::Vector3,
+        insideRootCanvasPosition: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (graphic, distance, position, insideRootCanvasPosition),
+        )?;
+        Ok(__cordl_ret)
     }
 }

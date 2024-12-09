@@ -1,3 +1,69 @@
+#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct InputActionRebindingExtensions {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputActionRebindingExtensions =>
+    "UnityEngine.InputSystem"."InputActionRebindingExtensions"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
+impl std::ops::Deref
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
+impl std::ops::DerefMut
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
+impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
+    )]
+    pub type DeferBindingResolutionWrapper = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper;
+    #[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter")]
+    pub type Parameter = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
+    )]
+    pub type ParameterEnumerable = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+    )]
+    pub type ParameterEnumerator = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
+    )]
+    pub type ParameterOverride = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
+    )]
+    pub type RebindingOperation = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+__c__DisplayClass25_0"
+    )]
+    pub type __c__DisplayClass25_0 = crate::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0;
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(
     feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
 )]
@@ -81,96 +147,6 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindin
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
-)]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum RebindingOperation_Flags {
-    AddNewBinding = 256i32,
-    Canceled = 4i32,
-    Completed = 2i32,
-    DontGeneralizePathOfSelectedControl = 128i32,
-    DontIgnoreNoisyControls = 64i32,
-    OnAfterUpdateHooked = 16i32,
-    OnEventHooked = 8i32,
-    Started = 1i32,
-    SuppressMatchingEvents = 512i32,
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::RebindingOperation_Flags => "UnityEngine.InputSystem"
-    ."InputActionRebindingExtensions/RebindingOperation/Flags"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct InputActionRebindingExtensions {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputActionRebindingExtensions =>
-    "UnityEngine.InputSystem"."InputActionRebindingExtensions"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
-impl std::ops::Deref
-for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
-impl std::ops::DerefMut
-for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
-impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
-    )]
-    pub type DeferBindingResolutionWrapper = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper;
-    #[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter")]
-    pub type Parameter = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
-    )]
-    pub type ParameterEnumerable = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
-    )]
-    pub type ParameterEnumerator = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
-    )]
-    pub type ParameterOverride = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
-    )]
-    pub type RebindingOperation = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+__c__DisplayClass25_0"
-    )]
-    pub type __c__DisplayClass25_0 = crate::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0;
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -577,7 +553,7 @@ pub struct InputActionRebindingExtensions_RebindingOperation {
     pub m_OnAfterUpdateDelegate: *mut crate::System::Action,
     pub m_LayoutCache: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache,
     pub m_PathBuilder: *mut crate::System::Text::StringBuilder,
-    pub m_Flags: crate::UnityEngine::InputSystem::RebindingOperation_Flags,
+    pub m_Flags: crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions_Flags,
     pub m_StartingActuations: *mut crate::System::Collections::Generic::Dictionary_2<
         *mut crate::UnityEngine::InputSystem::InputControl,
         f32,
@@ -618,11 +594,11 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
     #[cfg(
         feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
     )]
-    pub type Flags = crate::UnityEngine::InputSystem::RebindingOperation_Flags;
+    pub type Flags = crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions_Flags;
     #[cfg(
         feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+__c__DisplayClass32_0"
     )]
-    pub type __c__DisplayClass32_0 = crate::UnityEngine::InputSystem::RebindingOperation___c__DisplayClass32_0;
+    pub type __c__DisplayClass32_0 = crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0;
     pub fn AddCandidate(
         &mut self,
         control: *mut crate::UnityEngine::InputSystem::InputControl,
@@ -1318,3 +1294,28 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOpe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
+)]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum RebindingOperation_InputActionRebindingExtensions_Flags {
+    AddNewBinding = 256i32,
+    Canceled = 4i32,
+    Completed = 2i32,
+    DontGeneralizePathOfSelectedControl = 128i32,
+    DontIgnoreNoisyControls = 64i32,
+    OnAfterUpdateHooked = 16i32,
+    OnEventHooked = 8i32,
+    Started = 1i32,
+    SuppressMatchingEvents = 512i32,
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions_Flags
+    => "UnityEngine.InputSystem"
+    ."InputActionRebindingExtensions/RebindingOperation/Flags"
+);

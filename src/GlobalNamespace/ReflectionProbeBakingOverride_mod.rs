@@ -1,17 +1,3 @@
-#[cfg(feature = "ReflectionProbeBakingOverride+ActiveStateHandling")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ReflectionProbeBakingOverride_ActiveStateHandling {
-    Disable = 2i32,
-    Enable = 1i32,
-    LeaveAsIs = 0i32,
-}
-#[cfg(feature = "ReflectionProbeBakingOverride+ActiveStateHandling")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling => ""
-    ."ReflectionProbeBakingOverride/ActiveStateHandling"
-);
 #[cfg(feature = "ReflectionProbeBakingOverride")]
 #[repr(C)]
 #[derive(Debug)]
@@ -85,3 +71,17 @@ for crate::GlobalNamespace::ReflectionProbeBakingOverride {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ReflectionProbeBakingOverride+ActiveStateHandling")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ReflectionProbeBakingOverride_ActiveStateHandling {
+    Disable = 2i32,
+    Enable = 1i32,
+    LeaveAsIs = 0i32,
+}
+#[cfg(feature = "ReflectionProbeBakingOverride+ActiveStateHandling")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling => ""
+    ."ReflectionProbeBakingOverride/ActiveStateHandling"
+);

@@ -1,32 +1,3 @@
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum TimelineClip_BlendCurveMode {
-    Auto = 0i32,
-    Manual = 1i32,
-}
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::Timeline::TimelineClip_BlendCurveMode => "UnityEngine.Timeline"
-    ."TimelineClip/BlendCurveMode"
-);
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum TimelineClip_ClipExtrapolation {
-    Continue = 4i32,
-    Hold = 1i32,
-    Loop = 2i32,
-    None = 0i32,
-    PingPong = 3i32,
-}
-#[cfg(feature = "UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::Timeline::TimelineClip_ClipExtrapolation => "UnityEngine.Timeline"
-    ."TimelineClip/ClipExtrapolation"
-);
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip")]
 #[repr(C)]
 #[derive(Debug)]
@@ -904,6 +875,35 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::Timelin
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TimelineClip_BlendCurveMode {
+    Auto = 0i32,
+    Manual = 1i32,
+}
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::Timeline::TimelineClip_BlendCurveMode => "UnityEngine.Timeline"
+    ."TimelineClip/BlendCurveMode"
+);
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TimelineClip_ClipExtrapolation {
+    Continue = 4i32,
+    Hold = 1i32,
+    Loop = 2i32,
+    None = 0i32,
+    PingPong = 3i32,
+}
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::Timeline::TimelineClip_ClipExtrapolation => "UnityEngine.Timeline"
+    ."TimelineClip/ClipExtrapolation"
+);
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
 #[repr(C)]
 #[derive(Debug)]

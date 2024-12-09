@@ -1,3 +1,184 @@
+#[cfg(feature = "System+Linq+Lookup_2")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct Lookup_2<
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> {
+    __cordl_parent: crate::System::Object,
+    pub comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+    pub groupings: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::System::Linq::Lookup_2_Grouping<TKey, TElement>,
+    >,
+    pub lastGrouping: *mut crate::System::Linq::Lookup_2_Grouping<TKey, TElement>,
+    pub count: i32,
+    __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
+    __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
+}
+#[cfg(feature = "System+Linq+Lookup_2")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::Linq::Lookup_2 < TKey, TElement > =>
+    "System.Linq"."Lookup`2" < TKey, TElement >
+);
+#[cfg(feature = "System+Linq+Lookup_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> std::ops::Deref for crate::System::Linq::Lookup_2<TKey, TElement> {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Linq+Lookup_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> std::ops::DerefMut for crate::System::Linq::Lookup_2<TKey, TElement> {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Linq+Lookup_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> crate::System::Linq::Lookup_2<TKey, TElement> {
+    #[cfg(feature = "System+Linq+Lookup_2+Grouping")]
+    pub type Grouping = crate::System::Linq::Lookup_2_Grouping<TKey, TElement>;
+    #[cfg(feature = "System+Linq+Lookup_2+_GetEnumerator_d__12")]
+    pub type _GetEnumerator_d__12 = crate::System::Linq::Lookup_2__GetEnumerator_d__12<
+        TKey,
+        TElement,
+    >;
+    pub fn GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerator_1<
+            *mut crate::System::Linq::IGrouping_2<TKey, TElement>,
+        >,
+    >
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
+            *mut crate::System::Linq::IGrouping_2<TKey, TElement>,
+        > = __cordl_object.invoke("GetEnumerator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetGrouping(
+        &mut self,
+        key: TKey,
+        create: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Linq::Lookup_2_Grouping<TKey, TElement>,
+    >
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Linq::Lookup_2_Grouping<TKey, TElement> = __cordl_object
+            .invoke("GetGrouping", (key, create))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InternalGetHashCode(
+        &mut self,
+        key: TKey,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("InternalGetHashCode", (key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (comparer))?;
+        Ok(__cordl_object)
+    }
+    pub fn Resize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Resize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IEnumerable_GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (comparer))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Linq+Lookup_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TElement: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::ObjectType for crate::System::Linq::Lookup_2<TKey, TElement> {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "System+Linq+Lookup_2+Grouping")]
 #[repr(C)]
 #[derive(Debug)]
@@ -45,7 +226,7 @@ impl<
     TElement: quest_hook::libil2cpp::Type,
 > crate::System::Linq::Lookup_2_Grouping<TKey, TElement> {
     #[cfg(feature = "System+Linq+Lookup_2+Grouping+_GetEnumerator_d__7")]
-    pub type _GetEnumerator_d__7 = crate::System::Linq::Grouping__GetEnumerator_d__7<
+    pub type _GetEnumerator_d__7 = crate::System::Linq::Grouping_Lookup_2__GetEnumerator_d__7<
         TKey,
         TElement,
     >;
@@ -358,187 +539,6 @@ impl<
     TElement: quest_hook::libil2cpp::Type,
 > quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Lookup_2_Grouping<TKey, TElement> {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+Linq+Lookup_2")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct Lookup_2<
-    TKey: quest_hook::libil2cpp::Type,
-    TElement: quest_hook::libil2cpp::Type,
-> {
-    __cordl_parent: crate::System::Object,
-    pub comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
-    pub groupings: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Linq::Lookup_2_Grouping<TKey, TElement>,
-    >,
-    pub lastGrouping: *mut crate::System::Linq::Lookup_2_Grouping<TKey, TElement>,
-    pub count: i32,
-    __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
-    __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
-}
-#[cfg(feature = "System+Linq+Lookup_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Linq::Lookup_2 < TKey, TElement > =>
-    "System.Linq"."Lookup`2" < TKey, TElement >
-);
-#[cfg(feature = "System+Linq+Lookup_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TElement: quest_hook::libil2cpp::Type,
-> std::ops::Deref for crate::System::Linq::Lookup_2<TKey, TElement> {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Linq+Lookup_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TElement: quest_hook::libil2cpp::Type,
-> std::ops::DerefMut for crate::System::Linq::Lookup_2<TKey, TElement> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Linq+Lookup_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TElement: quest_hook::libil2cpp::Type,
-> crate::System::Linq::Lookup_2<TKey, TElement> {
-    #[cfg(feature = "System+Linq+Lookup_2+Grouping")]
-    pub type Grouping = crate::System::Linq::Lookup_2_Grouping<TKey, TElement>;
-    #[cfg(feature = "System+Linq+Lookup_2+_GetEnumerator_d__12")]
-    pub type _GetEnumerator_d__12 = crate::System::Linq::Lookup_2__GetEnumerator_d__12<
-        TKey,
-        TElement,
-    >;
-    pub fn GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<
-            *mut crate::System::Linq::IGrouping_2<TKey, TElement>,
-        >,
-    >
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            *mut crate::System::Linq::IGrouping_2<TKey, TElement>,
-        > = __cordl_object.invoke("GetEnumerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetGrouping(
-        &mut self,
-        key: TKey,
-        create: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Lookup_2_Grouping<TKey, TElement>,
-    >
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Linq::Lookup_2_Grouping<TKey, TElement> = __cordl_object
-            .invoke("GetGrouping", (key, create))?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalGetHashCode(
-        &mut self,
-        key: TKey,
-    ) -> quest_hook::libil2cpp::Result<i32>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("InternalGetHashCode", (key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (comparer))?;
-        Ok(__cordl_object)
-    }
-    pub fn Resize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Resize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IEnumerable_GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (comparer))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Linq+Lookup_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TElement: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::ObjectType for crate::System::Linq::Lookup_2<TKey, TElement> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

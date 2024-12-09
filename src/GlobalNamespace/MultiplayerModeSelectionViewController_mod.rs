@@ -1,18 +1,3 @@
-#[cfg(feature = "MultiplayerModeSelectionViewController+MenuButton")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum MultiplayerModeSelectionViewController_MenuButton {
-    CreateServer = 1i32,
-    GameBrowser = 3i32,
-    JoinWithCode = 2i32,
-    QuickPlay = 0i32,
-}
-#[cfg(feature = "MultiplayerModeSelectionViewController+MenuButton")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton => ""
-    ."MultiplayerModeSelectionViewController/MenuButton"
-);
 #[cfg(feature = "MultiplayerModeSelectionViewController")]
 #[repr(C)]
 #[derive(Debug)]
@@ -188,3 +173,18 @@ for crate::GlobalNamespace::MultiplayerModeSelectionViewController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerModeSelectionViewController+MenuButton")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum MultiplayerModeSelectionViewController_MenuButton {
+    CreateServer = 1i32,
+    GameBrowser = 3i32,
+    JoinWithCode = 2i32,
+    QuickPlay = 0i32,
+}
+#[cfg(feature = "MultiplayerModeSelectionViewController+MenuButton")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton => ""
+    ."MultiplayerModeSelectionViewController/MenuButton"
+);

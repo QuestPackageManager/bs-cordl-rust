@@ -1,159 +1,3 @@
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct InputUser_CompareDevicesByUserAccount {
-    pub platformUserAccountHandle: crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
-}
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccount =>
-    "UnityEngine.InputSystem.Users"."InputUser/CompareDevicesByUserAccount"
-);
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccount {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
-impl crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccount {
-    pub fn Compare(
-        &mut self,
-        x: *mut crate::UnityEngine::InputSystem::InputDevice,
-        y: *mut crate::UnityEngine::InputSystem::InputDevice,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Compare",
-            (x, y),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+ControlSchemeChangeSyntax")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct InputUser_ControlSchemeChangeSyntax {
-    pub m_UserIndex: i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+ControlSchemeChangeSyntax")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax =>
-    "UnityEngine.InputSystem.Users"."InputUser/ControlSchemeChangeSyntax"
-);
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+ControlSchemeChangeSyntax")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+ControlSchemeChangeSyntax")]
-impl crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax {
-    pub fn AndPairRemainingDevices(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AndPairRemainingDevices",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+GlobalState")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct InputUser_GlobalState {
-    pub pairingStateVersion: i32,
-    pub lastUserId: u32,
-    pub allUserCount: i32,
-    pub allPairedDeviceCount: i32,
-    pub allLostDeviceCount: i32,
-    pub allUsers: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::Users::InputUser,
-    >,
-    pub allUserData: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::Users::InputUser_UserData,
-    >,
-    pub allPairedDevices: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
-    >,
-    pub allLostDevices: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
-    >,
-    pub ongoingAccountSelections: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
-        crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection,
-    >,
-    pub onChange: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-        *mut crate::System::Action_3<
-            crate::UnityEngine::InputSystem::Users::InputUser,
-            crate::UnityEngine::InputSystem::Users::InputUserChange,
-            *mut crate::UnityEngine::InputSystem::InputDevice,
-        >,
-    >,
-    pub onUnpairedDeviceUsed: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-        *mut crate::System::Action_2<
-            *mut crate::UnityEngine::InputSystem::InputControl,
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        >,
-    >,
-    pub onPreFilterUnpairedDeviceUsed: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-        *mut crate::System::Func_3<
-            *mut crate::UnityEngine::InputSystem::InputDevice,
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            bool,
-        >,
-    >,
-    pub actionChangeDelegate: *mut crate::System::Action_2<
-        *mut crate::System::Object,
-        crate::UnityEngine::InputSystem::InputActionChange,
-    >,
-    pub onDeviceChangeDelegate: *mut crate::System::Action_2<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
-        crate::UnityEngine::InputSystem::InputDeviceChange,
-    >,
-    pub onEventDelegate: *mut crate::System::Action_2<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        *mut crate::UnityEngine::InputSystem::InputDevice,
-    >,
-    pub onActionChangeHooked: bool,
-    pub onDeviceChangeHooked: bool,
-    pub onEventHooked: bool,
-    pub listenForUnpairedDeviceActivity: i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+GlobalState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::Users::InputUser_GlobalState =>
-    "UnityEngine.InputSystem.Users"."InputUser/GlobalState"
-);
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+GlobalState")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::Users::InputUser_GlobalState {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+GlobalState")]
-impl crate::UnityEngine::InputSystem::Users::InputUser_GlobalState {}
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -472,6 +316,162 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
         Ok(__cordl_ret)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct InputUser_CompareDevicesByUserAccount {
+    pub platformUserAccountHandle: crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
+}
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccount =>
+    "UnityEngine.InputSystem.Users"."InputUser/CompareDevicesByUserAccount"
+);
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccount {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
+impl crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccount {
+    pub fn Compare(
+        &mut self,
+        x: *mut crate::UnityEngine::InputSystem::InputDevice,
+        y: *mut crate::UnityEngine::InputSystem::InputDevice,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Compare",
+            (x, y),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+ControlSchemeChangeSyntax")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct InputUser_ControlSchemeChangeSyntax {
+    pub m_UserIndex: i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+ControlSchemeChangeSyntax")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax =>
+    "UnityEngine.InputSystem.Users"."InputUser/ControlSchemeChangeSyntax"
+);
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+ControlSchemeChangeSyntax")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+ControlSchemeChangeSyntax")]
+impl crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax {
+    pub fn AndPairRemainingDevices(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "AndPairRemainingDevices",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+GlobalState")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct InputUser_GlobalState {
+    pub pairingStateVersion: i32,
+    pub lastUserId: u32,
+    pub allUserCount: i32,
+    pub allPairedDeviceCount: i32,
+    pub allLostDeviceCount: i32,
+    pub allUsers: *mut quest_hook::libil2cpp::Il2CppArray<
+        crate::UnityEngine::InputSystem::Users::InputUser,
+    >,
+    pub allUserData: *mut quest_hook::libil2cpp::Il2CppArray<
+        crate::UnityEngine::InputSystem::Users::InputUser_UserData,
+    >,
+    pub allPairedDevices: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::UnityEngine::InputSystem::InputDevice,
+    >,
+    pub allLostDevices: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::UnityEngine::InputSystem::InputDevice,
+    >,
+    pub ongoingAccountSelections: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
+        crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection,
+    >,
+    pub onChange: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
+        *mut crate::System::Action_3<
+            crate::UnityEngine::InputSystem::Users::InputUser,
+            crate::UnityEngine::InputSystem::Users::InputUserChange,
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        >,
+    >,
+    pub onUnpairedDeviceUsed: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
+        *mut crate::System::Action_2<
+            *mut crate::UnityEngine::InputSystem::InputControl,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        >,
+    >,
+    pub onPreFilterUnpairedDeviceUsed: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
+        *mut crate::System::Func_3<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            bool,
+        >,
+    >,
+    pub actionChangeDelegate: *mut crate::System::Action_2<
+        *mut crate::System::Object,
+        crate::UnityEngine::InputSystem::InputActionChange,
+    >,
+    pub onDeviceChangeDelegate: *mut crate::System::Action_2<
+        *mut crate::UnityEngine::InputSystem::InputDevice,
+        crate::UnityEngine::InputSystem::InputDeviceChange,
+    >,
+    pub onEventDelegate: *mut crate::System::Action_2<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        *mut crate::UnityEngine::InputSystem::InputDevice,
+    >,
+    pub onActionChangeHooked: bool,
+    pub onDeviceChangeHooked: bool,
+    pub onEventHooked: bool,
+    pub listenForUnpairedDeviceActivity: i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+GlobalState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::Users::InputUser_GlobalState =>
+    "UnityEngine.InputSystem.Users"."InputUser/GlobalState"
+);
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+GlobalState")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::Users::InputUser_GlobalState {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+GlobalState")]
+impl crate::UnityEngine::InputSystem::Users::InputUser_GlobalState {}
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+OngoingAccountSelection")]
 #[repr(C)]
 #[derive(Debug, Clone)]

@@ -1,32 +1,3 @@
-#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {
-    pub FilePathsData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub TypesData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub TotalTypes: i32,
-    pub TotalFiles: i32,
-    pub IsEditorOnly: bool,
-}
-#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData =>
-    ""."UnitySourceGeneratedAssemblyMonoScriptTypes_v1/MonoScriptData"
-);
-#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
-impl crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {}
 #[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
 #[repr(C)]
 #[derive(Debug)]
@@ -86,3 +57,32 @@ for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {
+    pub FilePathsData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub TypesData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub TotalTypes: i32,
+    pub TotalFiles: i32,
+    pub IsEditorOnly: bool,
+}
+#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData =>
+    ""."UnitySourceGeneratedAssemblyMonoScriptTypes_v1/MonoScriptData"
+);
+#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
+impl crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {}

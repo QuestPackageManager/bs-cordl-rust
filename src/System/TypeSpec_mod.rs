@@ -1,16 +1,3 @@
-#[cfg(feature = "System+TypeSpec+DisplayNameFormat")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum TypeSpec_DisplayNameFormat {
-    Default = 0i32,
-    NO_MODIFIERS = 2i32,
-    WANT_ASSEMBLY = 1i32,
-}
-#[cfg(feature = "System+TypeSpec+DisplayNameFormat")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::TypeSpec_DisplayNameFormat => "System"
-    ."TypeSpec/DisplayNameFormat"
-);
 #[cfg(feature = "System+TypeSpec")]
 #[repr(C)]
 #[derive(Debug)]
@@ -167,3 +154,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TypeSpec {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+TypeSpec+DisplayNameFormat")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TypeSpec_DisplayNameFormat {
+    Default = 0i32,
+    NO_MODIFIERS = 2i32,
+    WANT_ASSEMBLY = 1i32,
+}
+#[cfg(feature = "System+TypeSpec+DisplayNameFormat")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::TypeSpec_DisplayNameFormat => "System"
+    ."TypeSpec/DisplayNameFormat"
+);

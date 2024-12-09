@@ -1,127 +1,3 @@
-#[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct OVROverlay_ExternalSurfaceObjectCreated {
-    __cordl_parent: crate::System::MulticastDelegate,
-}
-#[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated => ""
-    ."OVROverlay/ExternalSurfaceObjectCreated"
-);
-#[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
-impl std::ops::Deref
-for crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
-    type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
-impl crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
-    pub fn BeginInvoke(
-        &mut self,
-        callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
-            .invoke("BeginInvoke", (callback, object))?;
-        Ok(__cordl_ret)
-    }
-    pub fn EndInvoke(
-        &mut self,
-        result: *mut crate::System::IAsyncResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (result))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Invoke(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "OVROverlay+LayerTexture")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct OVROverlay_LayerTexture {
-    pub appTexture: *mut crate::UnityEngine::Texture,
-    pub appTexturePtr: crate::System::IntPtr,
-    pub swapChain: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::Texture,
-    >,
-    pub swapChainPtr: *mut quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
-}
-#[cfg(feature = "OVROverlay+LayerTexture")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVROverlay_LayerTexture => ""
-    ."OVROverlay/LayerTexture"
-);
-#[cfg(feature = "OVROverlay+LayerTexture")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVROverlay_LayerTexture {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "OVROverlay+LayerTexture")]
-impl crate::GlobalNamespace::OVROverlay_LayerTexture {}
 #[cfg(feature = "OVROverlay")]
 #[repr(C)]
 #[derive(Debug)]
@@ -582,6 +458,130 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVROverlay {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVROverlay_ExternalSurfaceObjectCreated {
+    __cordl_parent: crate::System::MulticastDelegate,
+}
+#[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated => ""
+    ."OVROverlay/ExternalSurfaceObjectCreated"
+);
+#[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
+impl std::ops::Deref
+for crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
+    type Target = crate::System::MulticastDelegate;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
+impl std::ops::DerefMut
+for crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
+impl crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
+    pub fn BeginInvoke(
+        &mut self,
+        callback: *mut crate::System::AsyncCallback,
+        object: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IAsyncResult = __cordl_object
+            .invoke("BeginInvoke", (callback, object))?;
+        Ok(__cordl_ret)
+    }
+    pub fn EndInvoke(
+        &mut self,
+        result: *mut crate::System::IAsyncResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EndInvoke", (result))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Invoke(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "OVROverlay+ExternalSurfaceObjectCreated")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVROverlay_ExternalSurfaceObjectCreated {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "OVROverlay+LayerTexture")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct OVROverlay_LayerTexture {
+    pub appTexture: *mut crate::UnityEngine::Texture,
+    pub appTexturePtr: crate::System::IntPtr,
+    pub swapChain: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::UnityEngine::Texture,
+    >,
+    pub swapChainPtr: *mut quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
+}
+#[cfg(feature = "OVROverlay+LayerTexture")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVROverlay_LayerTexture => ""
+    ."OVROverlay/LayerTexture"
+);
+#[cfg(feature = "OVROverlay+LayerTexture")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVROverlay_LayerTexture {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVROverlay+LayerTexture")]
+impl crate::GlobalNamespace::OVROverlay_LayerTexture {}
 #[cfg(feature = "OVROverlay+OverlayShape")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

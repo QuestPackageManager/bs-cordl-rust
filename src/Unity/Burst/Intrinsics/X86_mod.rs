@@ -1,18 +1,160 @@
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx+CMP")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Avx_X86_CMP {
+    EQ_OQ = 0i32,
+    EQ_OS = 16i32,
+    EQ_UQ = 8i32,
+    EQ_US = 24i32,
+    FALSE_OQ = 11i32,
+    FALSE_OS = 27i32,
+    GE_OQ = 29i32,
+    GE_OS = 13i32,
+    GT_OQ = 30i32,
+    GT_OS = 14i32,
+    LE_OQ = 18i32,
+    LE_OS = 2i32,
+    LT_OQ = 17i32,
+    LT_OS = 1i32,
+    NEQ_OQ = 12i32,
+    NEQ_OS = 28i32,
+    NEQ_UQ = 4i32,
+    NEQ_US = 20i32,
+    NGE_UQ = 25i32,
+    NGE_US = 9i32,
+    NGT_UQ = 26i32,
+    NGT_US = 10i32,
+    NLE_UQ = 22i32,
+    NLE_US = 6i32,
+    NLT_UQ = 21i32,
+    NLT_US = 5i32,
+    ORD_Q = 7i32,
+    ORD_S = 23i32,
+    TRUE_UQ = 15i32,
+    TRUE_US = 31i32,
+    UNORD_Q = 3i32,
+    UNORD_S = 19i32,
+}
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx+CMP")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::Unity::Burst::Intrinsics::Avx_X86_CMP =>
+    "Unity.Burst.Intrinsics"."X86/Avx/CMP"
+);
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma+Union")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct Fma_X86_Union {
+    padding: [u8; 4usize],
+}
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma+Union")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::Unity::Burst::Intrinsics::Fma_X86_Union =>
+    "Unity.Burst.Intrinsics"."X86/Fma/Union"
+);
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma+Union")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::Unity::Burst::Intrinsics::Fma_X86_Union {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma+Union")]
+impl crate::Unity::Burst::Intrinsics::Fma_X86_Union {}
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+SIDD")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Sse4_2_X86_SIDD {
+    BIT_MASK = 0i32,
+    CMP_EQUAL_EACH = 8i32,
+    CMP_EQUAL_ORDERED = 12i32,
+    CMP_RANGES = 4i32,
+    MASKED_NEGATIVE_POLARITY = 48i32,
+    MASKED_POSITIVE_POLARITY = 32i32,
+    MOST_SIGNIFICANT = 64i32,
+    NEGATIVE_POLARITY = 16i32,
+    SBYTE_OPS = 2i32,
+    SWORD_OPS = 3i32,
+    UWORD_OPS = 1i32,
+}
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+SIDD")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::Unity::Burst::Intrinsics::Sse4_2_X86_SIDD =>
+    "Unity.Burst.Intrinsics"."X86/Sse4_2/SIDD"
+);
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct Sse4_2_X86_StrBoolArray {
+    pub Bits: crate::Unity::Burst::Intrinsics::StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffer,
+}
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray => "Unity.Burst.Intrinsics"
+    ."X86/Sse4_2/StrBoolArray"
+);
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray")]
+impl crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray {
+    #[cfg(
+        feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray+_Bits_e__FixedBuffer"
+    )]
+    pub type _Bits_e__FixedBuffer = crate::Unity::Burst::Intrinsics::StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffer;
+    pub fn GetBit(
+        &mut self,
+        aindex: i32,
+        bindex: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetBit",
+            (aindex, bindex),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetBit(
+        &mut self,
+        aindex: i32,
+        bindex: i32,
+        val: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetBit",
+            (aindex, bindex, val),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray+_Bits_e__FixedBuffer")]
 #[repr(C)]
 #[derive(Debug, Clone)]
-pub struct StrBoolArray__Bits_e__FixedBuffer {
+pub struct StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffer {
     pub FixedElementField: u16,
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray+_Bits_e__FixedBuffer")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate
-    ::Unity::Burst::Intrinsics::StrBoolArray__Bits_e__FixedBuffer =>
+    ::Unity::Burst::Intrinsics::StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffer =>
     "Unity.Burst.Intrinsics"."X86/Sse4_2/StrBoolArray/<Bits>e__FixedBuffer"
 );
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray+_Bits_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Burst::Intrinsics::StrBoolArray__Bits_e__FixedBuffer {
+for crate::Unity::Burst::Intrinsics::StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffer {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -22,7 +164,75 @@ for crate::Unity::Burst::Intrinsics::StrBoolArray__Bits_e__FixedBuffer {
     }
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray+_Bits_e__FixedBuffer")]
-impl crate::Unity::Burst::Intrinsics::StrBoolArray__Bits_e__FixedBuffer {}
+impl crate::Unity::Burst::Intrinsics::StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffer {}
+#[cfg(feature = "Unity+Burst+Intrinsics+X86")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct X86 {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "Unity+Burst+Intrinsics+X86")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::Unity::Burst::Intrinsics::X86 =>
+    "Unity.Burst.Intrinsics"."X86"
+);
+#[cfg(feature = "Unity+Burst+Intrinsics+X86")]
+impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86 {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Unity+Burst+Intrinsics+X86")]
+impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86 {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Unity+Burst+Intrinsics+X86")]
+impl crate::Unity::Burst::Intrinsics::X86 {
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx")]
+    pub type Avx = crate::Unity::Burst::Intrinsics::X86_Avx;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx2")]
+    pub type Avx2 = crate::Unity::Burst::Intrinsics::X86_Avx2;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Bmi1")]
+    pub type Bmi1 = crate::Unity::Burst::Intrinsics::X86_Bmi1;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Bmi2")]
+    pub type Bmi2 = crate::Unity::Burst::Intrinsics::X86_Bmi2;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+F16C")]
+    pub type F16C = crate::Unity::Burst::Intrinsics::X86_F16C;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma")]
+    pub type Fma = crate::Unity::Burst::Intrinsics::X86_Fma;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+MXCSRBits")]
+    pub type MXCSRBits = crate::Unity::Burst::Intrinsics::X86_MXCSRBits;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Popcnt")]
+    pub type Popcnt = crate::Unity::Burst::Intrinsics::X86_Popcnt;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingMode")]
+    pub type RoundingMode = crate::Unity::Burst::Intrinsics::X86_RoundingMode;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingScope")]
+    pub type RoundingScope = crate::Unity::Burst::Intrinsics::X86_RoundingScope;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse")]
+    pub type Sse = crate::Unity::Burst::Intrinsics::X86_Sse;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse2")]
+    pub type Sse2 = crate::Unity::Burst::Intrinsics::X86_Sse2;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse3")]
+    pub type Sse3 = crate::Unity::Burst::Intrinsics::X86_Sse3;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_1")]
+    pub type Sse4_1 = crate::Unity::Burst::Intrinsics::X86_Sse4_1;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2")]
+    pub type Sse4_2 = crate::Unity::Burst::Intrinsics::X86_Sse4_2;
+    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Ssse3")]
+    pub type Ssse3 = crate::Unity::Burst::Intrinsics::X86_Ssse3;
+}
+#[cfg(feature = "Unity+Burst+Intrinsics+X86")]
+impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx")]
 #[repr(C)]
 #[derive(Debug)]
@@ -50,7 +260,7 @@ impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Avx {
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx")]
 impl crate::Unity::Burst::Intrinsics::X86_Avx {
     #[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx+CMP")]
-    pub type CMP = crate::Unity::Burst::Intrinsics::Avx_CMP;
+    pub type CMP = crate::Unity::Burst::Intrinsics::Avx_X86_CMP;
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_Avx {
@@ -166,48 +376,6 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx+CMP")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Avx_CMP {
-    EQ_OQ = 0i32,
-    EQ_OS = 16i32,
-    EQ_UQ = 8i32,
-    EQ_US = 24i32,
-    FALSE_OQ = 11i32,
-    FALSE_OS = 27i32,
-    GE_OQ = 29i32,
-    GE_OS = 13i32,
-    GT_OQ = 30i32,
-    GT_OS = 14i32,
-    LE_OQ = 18i32,
-    LE_OS = 2i32,
-    LT_OQ = 17i32,
-    LT_OS = 1i32,
-    NEQ_OQ = 12i32,
-    NEQ_OS = 28i32,
-    NEQ_UQ = 4i32,
-    NEQ_US = 20i32,
-    NGE_UQ = 25i32,
-    NGE_US = 9i32,
-    NGT_UQ = 26i32,
-    NGT_US = 10i32,
-    NLE_UQ = 22i32,
-    NLE_US = 6i32,
-    NLT_UQ = 21i32,
-    NLT_US = 5i32,
-    ORD_Q = 7i32,
-    ORD_S = 23i32,
-    TRUE_UQ = 15i32,
-    TRUE_US = 31i32,
-    UNORD_Q = 3i32,
-    UNORD_S = 19i32,
-}
-#[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx+CMP")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Unity::Burst::Intrinsics::Avx_CMP =>
-    "Unity.Burst.Intrinsics"."X86/Avx/CMP"
-);
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+F16C")]
 #[repr(C)]
 #[derive(Debug)]
@@ -270,7 +438,7 @@ impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Fma {
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma")]
 impl crate::Unity::Burst::Intrinsics::X86_Fma {
     #[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma+Union")]
-    pub type Union = crate::Unity::Burst::Intrinsics::Fma_Union;
+    pub type Union = crate::Unity::Burst::Intrinsics::Fma_X86_Union;
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_Fma {
@@ -412,27 +580,6 @@ impl crate::Unity::Burst::Intrinsics::X86_RoundingScope {
         Ok(__cordl_ret)
     }
 }
-#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+SIDD")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Sse4_2_SIDD {
-    BIT_MASK = 0i32,
-    CMP_EQUAL_EACH = 8i32,
-    CMP_EQUAL_ORDERED = 12i32,
-    CMP_RANGES = 4i32,
-    MASKED_NEGATIVE_POLARITY = 48i32,
-    MASKED_POSITIVE_POLARITY = 32i32,
-    MOST_SIGNIFICANT = 64i32,
-    NEGATIVE_POLARITY = 16i32,
-    SBYTE_OPS = 2i32,
-    SWORD_OPS = 3i32,
-    UWORD_OPS = 1i32,
-}
-#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+SIDD")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Unity::Burst::Intrinsics::Sse4_2_SIDD =>
-    "Unity.Burst.Intrinsics"."X86/Sse4_2/SIDD"
-);
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse")]
 #[repr(C)]
 #[derive(Debug)]
@@ -600,9 +747,9 @@ impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2")]
 impl crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
     #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+SIDD")]
-    pub type SIDD = crate::Unity::Burst::Intrinsics::Sse4_2_SIDD;
+    pub type SIDD = crate::Unity::Burst::Intrinsics::Sse4_2_X86_SIDD;
     #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray")]
-    pub type StrBoolArray = crate::Unity::Burst::Intrinsics::Sse4_2_StrBoolArray;
+    pub type StrBoolArray = crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray;
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
@@ -641,152 +788,6 @@ impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Ssse3 {
 impl crate::Unity::Burst::Intrinsics::X86_Ssse3 {}
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Ssse3")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_Ssse3 {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct Sse4_2_StrBoolArray {
-    pub Bits: crate::Unity::Burst::Intrinsics::StrBoolArray__Bits_e__FixedBuffer,
-}
-#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Unity::Burst::Intrinsics::Sse4_2_StrBoolArray =>
-    "Unity.Burst.Intrinsics"."X86/Sse4_2/StrBoolArray"
-);
-#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Burst::Intrinsics::Sse4_2_StrBoolArray {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray")]
-impl crate::Unity::Burst::Intrinsics::Sse4_2_StrBoolArray {
-    #[cfg(
-        feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray+_Bits_e__FixedBuffer"
-    )]
-    pub type _Bits_e__FixedBuffer = crate::Unity::Burst::Intrinsics::StrBoolArray__Bits_e__FixedBuffer;
-    pub fn GetBit(
-        &mut self,
-        aindex: i32,
-        bindex: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetBit",
-            (aindex, bindex),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetBit(
-        &mut self,
-        aindex: i32,
-        bindex: i32,
-        val: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetBit",
-            (aindex, bindex, val),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma+Union")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct Fma_Union {
-    padding: [u8; 4usize],
-}
-#[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma+Union")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Unity::Burst::Intrinsics::Fma_Union =>
-    "Unity.Burst.Intrinsics"."X86/Fma/Union"
-);
-#[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma+Union")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Unity::Burst::Intrinsics::Fma_Union {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma+Union")]
-impl crate::Unity::Burst::Intrinsics::Fma_Union {}
-#[cfg(feature = "Unity+Burst+Intrinsics+X86")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct X86 {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "Unity+Burst+Intrinsics+X86")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Unity::Burst::Intrinsics::X86 =>
-    "Unity.Burst.Intrinsics"."X86"
-);
-#[cfg(feature = "Unity+Burst+Intrinsics+X86")]
-impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86 {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Unity+Burst+Intrinsics+X86")]
-impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86 {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Unity+Burst+Intrinsics+X86")]
-impl crate::Unity::Burst::Intrinsics::X86 {
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx")]
-    pub type Avx = crate::Unity::Burst::Intrinsics::X86_Avx;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx2")]
-    pub type Avx2 = crate::Unity::Burst::Intrinsics::X86_Avx2;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Bmi1")]
-    pub type Bmi1 = crate::Unity::Burst::Intrinsics::X86_Bmi1;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Bmi2")]
-    pub type Bmi2 = crate::Unity::Burst::Intrinsics::X86_Bmi2;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+F16C")]
-    pub type F16C = crate::Unity::Burst::Intrinsics::X86_F16C;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma")]
-    pub type Fma = crate::Unity::Burst::Intrinsics::X86_Fma;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+MXCSRBits")]
-    pub type MXCSRBits = crate::Unity::Burst::Intrinsics::X86_MXCSRBits;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Popcnt")]
-    pub type Popcnt = crate::Unity::Burst::Intrinsics::X86_Popcnt;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingMode")]
-    pub type RoundingMode = crate::Unity::Burst::Intrinsics::X86_RoundingMode;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingScope")]
-    pub type RoundingScope = crate::Unity::Burst::Intrinsics::X86_RoundingScope;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse")]
-    pub type Sse = crate::Unity::Burst::Intrinsics::X86_Sse;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse2")]
-    pub type Sse2 = crate::Unity::Burst::Intrinsics::X86_Sse2;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse3")]
-    pub type Sse3 = crate::Unity::Burst::Intrinsics::X86_Sse3;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_1")]
-    pub type Sse4_1 = crate::Unity::Burst::Intrinsics::X86_Sse4_1;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2")]
-    pub type Sse4_2 = crate::Unity::Burst::Intrinsics::X86_Sse4_2;
-    #[cfg(feature = "Unity+Burst+Intrinsics+X86+Ssse3")]
-    pub type Ssse3 = crate::Unity::Burst::Intrinsics::X86_Ssse3;
-}
-#[cfg(feature = "Unity+Burst+Intrinsics+X86")]
-impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -1,335 +1,9 @@
 #[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+AnimationDataSet_2"
-)]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct StylePropertyAnimationSystem_AnimationDataSet_2<
-    TTimingData: quest_hook::libil2cpp::Type,
-    TStyleData: quest_hook::libil2cpp::Type,
-> {
-    pub elements: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-    >,
-    pub properties: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-    >,
-    pub timing: *mut quest_hook::libil2cpp::Il2CppArray<TTimingData>,
-    pub style: *mut quest_hook::libil2cpp::Il2CppArray<TStyleData>,
-    pub count: i32,
-    pub indices: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
-        i32,
-    >,
-    __cordl_phantom_TTimingData: std::marker::PhantomData<TTimingData>,
-    __cordl_phantom_TStyleData: std::marker::PhantomData<TStyleData>,
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+AnimationDataSet_2"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::StylePropertyAnimationSystem_AnimationDataSet_2 <
-    TTimingData, TStyleData > => "UnityEngine.UIElements"
-    ."StylePropertyAnimationSystem/AnimationDataSet`2<TTimingData,TStyleData>" <
-    TTimingData, TStyleData >
-);
-#[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+AnimationDataSet_2"
-)]
-unsafe impl<
-    TTimingData: quest_hook::libil2cpp::Type,
-    TStyleData: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_AnimationDataSet_2<
-    TTimingData,
-    TStyleData,
-> {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+AnimationDataSet_2"
-)]
-impl<
-    TTimingData: quest_hook::libil2cpp::Type,
-    TStyleData: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::UIElements::StylePropertyAnimationSystem_AnimationDataSet_2<
-    TTimingData,
-    TStyleData,
-> {
-    pub fn Add(
-        &mut self,
-        owner: *mut crate::UnityEngine::UIElements::VisualElement,
-        prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-        timingData: TTimingData,
-        styleData: TStyleData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Add",
-            (owner, prop, timingData, styleData),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetActivePropertiesForElement(
-        &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-        outProperties: *mut crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetActivePropertiesForElement",
-            (ve, outProperties),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn IndexOf(
-        &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-        prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-        index: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IndexOf",
-            (ve, prop, index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn LocalInit(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "LocalInit",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Remove(
-        &mut self,
-        cancelledIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Remove",
-            (cancelledIndex),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveAll_1(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "RemoveAll",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveAll_VisualElement0(
-        &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "RemoveAll",
-            (ve),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Replace(
-        &mut self,
-        index: i32,
-        timingData: TTimingData,
-        styleData: TStyleData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Replace",
-            (index, timingData, styleData),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_capacity(&mut self) -> quest_hook::libil2cpp::Result<i32>
-    where
-        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_capacity",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_capacity(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_capacity",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair"
-)]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct StylePropertyAnimationSystem_ElementPropertyPair {
-    pub element: *mut crate::UnityEngine::UIElements::VisualElement,
-    pub property: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair =>
-    "UnityEngine.UIElements"."StylePropertyAnimationSystem/ElementPropertyPair"
-);
-#[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair"
-)]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair"
-)]
-impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair {
-    #[cfg(
-        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair+EqualityComparer"
-    )]
-    pub type EqualityComparer = crate::UnityEngine::UIElements::ElementPropertyPair_EqualityComparer;
-    pub fn _ctor(
-        &mut self,
-        element: *mut crate::UnityEngine::UIElements::VisualElement,
-        property: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (element, property),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+EmptyData"
-)]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct Values_1_EmptyData<T: quest_hook::libil2cpp::Type> {
-    __cordl_phantom_T: std::marker::PhantomData<T>,
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+EmptyData"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::Values_1_EmptyData < T
-    > => "UnityEngine.UIElements"."StylePropertyAnimationSystem/Values`1/EmptyData<T>" <
-    T >
-);
-#[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+EmptyData"
-)]
-unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::Values_1_EmptyData<T> {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+EmptyData"
-)]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::UIElements::Values_1_EmptyData<T> {}
-#[cfg(
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair+EqualityComparer"
 )]
 #[repr(C)]
 #[derive(Debug)]
-pub struct ElementPropertyPair_EqualityComparer {
+pub struct ElementPropertyPair_StylePropertyAnimationSystem_EqualityComparer {
     __cordl_parent: crate::System::Object,
 }
 #[cfg(
@@ -337,15 +11,15 @@ pub struct ElementPropertyPair_EqualityComparer {
 )]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
     in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::ElementPropertyPair_EqualityComparer =>
-    "UnityEngine.UIElements"
+    ::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSystem_EqualityComparer
+    => "UnityEngine.UIElements"
     ."StylePropertyAnimationSystem/ElementPropertyPair/EqualityComparer"
 );
 #[cfg(
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair+EqualityComparer"
 )]
 impl std::ops::Deref
-for crate::UnityEngine::UIElements::ElementPropertyPair_EqualityComparer {
+for crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSystem_EqualityComparer {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -355,7 +29,7 @@ for crate::UnityEngine::UIElements::ElementPropertyPair_EqualityComparer {
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair+EqualityComparer"
 )]
 impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::ElementPropertyPair_EqualityComparer {
+for crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSystem_EqualityComparer {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
@@ -363,7 +37,7 @@ for crate::UnityEngine::UIElements::ElementPropertyPair_EqualityComparer {
 #[cfg(
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair+EqualityComparer"
 )]
-impl crate::UnityEngine::UIElements::ElementPropertyPair_EqualityComparer {
+impl crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSystem_EqualityComparer {
     pub fn Equals(
         &mut self,
         x: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
@@ -407,7 +81,7 @@ impl crate::UnityEngine::UIElements::ElementPropertyPair_EqualityComparer {
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair+EqualityComparer"
 )]
 impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::ElementPropertyPair_EqualityComparer {
+for crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSystem_EqualityComparer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -415,45 +89,6 @@ for crate::UnityEngine::UIElements::ElementPropertyPair_EqualityComparer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+StyleData"
-)]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct Values_1_StyleData<T: quest_hook::libil2cpp::Type> {
-    pub startValue: T,
-    pub endValue: T,
-    pub reversingAdjustedStartValue: T,
-    pub currentValue: T,
-    __cordl_phantom_T: std::marker::PhantomData<T>,
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+StyleData"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::Values_1_StyleData < T
-    > => "UnityEngine.UIElements"."StylePropertyAnimationSystem/Values`1/StyleData<T>" <
-    T >
-);
-#[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+StyleData"
-)]
-unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::Values_1_StyleData<T> {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+StyleData"
-)]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::UIElements::Values_1_StyleData<T> {}
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1053,33 +688,51 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TimingData"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+AnimationDataSet_2"
 )]
 #[repr(C)]
 #[derive(Debug, Clone)]
-pub struct Values_1_TimingData<T: quest_hook::libil2cpp::Type> {
-    pub startTimeMs: i64,
-    pub durationMs: i32,
-    pub easingCurve: *mut crate::System::Func_2<f32, f32>,
-    pub easedProgress: f32,
-    pub reversingShorteningFactor: f32,
-    pub isStarted: bool,
-    pub delayMs: i32,
-    __cordl_phantom_T: std::marker::PhantomData<T>,
+pub struct StylePropertyAnimationSystem_AnimationDataSet_2<
+    TTimingData: quest_hook::libil2cpp::Type,
+    TStyleData: quest_hook::libil2cpp::Type,
+> {
+    pub elements: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub properties: *mut quest_hook::libil2cpp::Il2CppArray<
+        crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+    >,
+    pub timing: *mut quest_hook::libil2cpp::Il2CppArray<TTimingData>,
+    pub style: *mut quest_hook::libil2cpp::Il2CppArray<TStyleData>,
+    pub count: i32,
+    pub indices: *mut crate::System::Collections::Generic::Dictionary_2<
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
+        i32,
+    >,
+    __cordl_phantom_TTimingData: std::marker::PhantomData<TTimingData>,
+    __cordl_phantom_TStyleData: std::marker::PhantomData<TStyleData>,
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TimingData"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+AnimationDataSet_2"
 )]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::Values_1_TimingData < T
-    > => "UnityEngine.UIElements"."StylePropertyAnimationSystem/Values`1/TimingData<T>" <
-    T >
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::StylePropertyAnimationSystem_AnimationDataSet_2 <
+    TTimingData, TStyleData > => "UnityEngine.UIElements"
+    ."StylePropertyAnimationSystem/AnimationDataSet`2<TTimingData,TStyleData>" <
+    TTimingData, TStyleData >
 );
 #[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TimingData"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+AnimationDataSet_2"
 )]
-unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::Values_1_TimingData<T> {
+unsafe impl<
+    TTimingData: quest_hook::libil2cpp::Type,
+    TStyleData: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_AnimationDataSet_2<
+    TTimingData,
+    TStyleData,
+> {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -1089,151 +742,240 @@ for crate::UnityEngine::UIElements::Values_1_TimingData<T> {
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TimingData"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+AnimationDataSet_2"
 )]
 impl<
-    T: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::UIElements::Values_1_TimingData<T> {}
+    TTimingData: quest_hook::libil2cpp::Type,
+    TStyleData: quest_hook::libil2cpp::Type,
+> crate::UnityEngine::UIElements::StylePropertyAnimationSystem_AnimationDataSet_2<
+    TTimingData,
+    TStyleData,
+> {
+    pub fn Add(
+        &mut self,
+        owner: *mut crate::UnityEngine::UIElements::VisualElement,
+        prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+        timingData: TTimingData,
+        styleData: TStyleData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Add",
+            (owner, prop, timingData, styleData),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetActivePropertiesForElement(
+        &mut self,
+        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        outProperties: *mut crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetActivePropertiesForElement",
+            (ve, outProperties),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn IndexOf(
+        &mut self,
+        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+        index: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "IndexOf",
+            (ve, prop, index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn LocalInit(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "LocalInit",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Remove(
+        &mut self,
+        cancelledIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Remove",
+            (cancelledIndex),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveAll_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "RemoveAll",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveAll_VisualElement0(
+        &mut self,
+        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "RemoveAll",
+            (ve),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Replace(
+        &mut self,
+        index: i32,
+        timingData: TTimingData,
+        styleData: TStyleData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Replace",
+            (index, timingData, styleData),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_capacity(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_capacity",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_capacity(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_capacity",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
 #[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair"
 )]
 #[repr(C)]
-#[derive(Debug)]
-pub struct Values_1_TransitionEventsFrameState<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
-    pub elementPropertyStateDelta: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
-        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_TransitionState,
-    >,
-    pub elementPropertyQueuedEvents: *mut crate::System::Collections::Generic::Dictionary_2<
-        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
-        *mut crate::System::Collections::Generic::Queue_1<
-            *mut crate::UnityEngine::UIElements::EventBase,
-        >,
-    >,
-    pub panel: *mut crate::UnityEngine::UIElements::IPanel,
-    pub m_ChangesCount: i32,
-    __cordl_phantom_T: std::marker::PhantomData<T>,
+#[derive(Debug, Clone)]
+pub struct StylePropertyAnimationSystem_ElementPropertyPair {
+    pub element: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub property: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair"
 )]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
+quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::Values_1_TransitionEventsFrameState < T > =>
-    "UnityEngine.UIElements"
-    ."StylePropertyAnimationSystem/Values`1/TransitionEventsFrameState" < T >
+    ::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair =>
+    "UnityEngine.UIElements"."StylePropertyAnimationSystem/ElementPropertyPair"
 );
 #[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair"
 )]
-impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
-for crate::UnityEngine::UIElements::Values_1_TransitionEventsFrameState<T> {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
 #[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair"
 )]
-impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for crate::UnityEngine::UIElements::Values_1_TransitionEventsFrameState<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
-)]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::UIElements::Values_1_TransitionEventsFrameState<T> {
+impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair {
     #[cfg(
-        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState+__c"
+        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair+EqualityComparer"
     )]
-    pub type __c = crate::UnityEngine::UIElements::TransitionEventsFrameState___c<T>;
-    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn RegisterChange(
+    pub type EqualityComparer = crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSystem_EqualityComparer;
+    pub fn _ctor(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+        element: *mut crate::UnityEngine::UIElements::VisualElement,
+        property: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterChange", ())?;
+            ".ctor",
+            (element, property),
+        )?;
         Ok(__cordl_ret)
-    }
-    pub fn StateChanged(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("StateChanged", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnregisterChange(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnregisterChange", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
-)]
-impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::Values_1_TransitionEventsFrameState<T> {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+TransitionState")]
@@ -3181,18 +2923,24 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslate
 pub struct StylePropertyAnimationSystem_Values_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values,
     pub m_CurrentTimeMs: i64,
-    pub m_CurrentFrameEventsState: *mut crate::UnityEngine::UIElements::Values_1_TransitionEventsFrameState<
+    pub m_CurrentFrameEventsState: *mut crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
         T,
     >,
-    pub m_NextFrameEventsState: *mut crate::UnityEngine::UIElements::Values_1_TransitionEventsFrameState<
+    pub m_NextFrameEventsState: *mut crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
         T,
     >,
     pub running: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_AnimationDataSet_2<
-        crate::UnityEngine::UIElements::Values_1_TimingData<T>,
-        crate::UnityEngine::UIElements::Values_1_StyleData<T>,
+        crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TimingData<
+            T,
+        >,
+        crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_StyleData<
+            T,
+        >,
     >,
     pub completed: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_AnimationDataSet_2<
-        crate::UnityEngine::UIElements::Values_1_EmptyData<T>,
+        crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_EmptyData<
+            T,
+        >,
         T,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -3225,19 +2973,25 @@ impl<
     #[cfg(
         feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+EmptyData"
     )]
-    pub type EmptyData = crate::UnityEngine::UIElements::Values_1_EmptyData<T>;
+    pub type EmptyData = crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_EmptyData<
+        T,
+    >;
     #[cfg(
         feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+StyleData"
     )]
-    pub type StyleData = crate::UnityEngine::UIElements::Values_1_StyleData<T>;
+    pub type StyleData = crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_StyleData<
+        T,
+    >;
     #[cfg(
         feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TimingData"
     )]
-    pub type TimingData = crate::UnityEngine::UIElements::Values_1_TimingData<T>;
+    pub type TimingData = crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TimingData<
+        T,
+    >;
     #[cfg(
         feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
     )]
-    pub type TransitionEventsFrameState = crate::UnityEngine::UIElements::Values_1_TransitionEventsFrameState<
+    pub type TransitionEventsFrameState = crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
         T,
     >;
     pub fn CancelAllAnimations_0(
@@ -3655,6 +3409,282 @@ impl<
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<T> {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+EmptyData"
+)]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct Values_1_StylePropertyAnimationSystem_EmptyData<
+    T: quest_hook::libil2cpp::Type,
+> {
+    __cordl_phantom_T: std::marker::PhantomData<T>,
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+EmptyData"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_EmptyData < T > =>
+    "UnityEngine.UIElements"."StylePropertyAnimationSystem/Values`1/EmptyData<T>" < T >
+);
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+EmptyData"
+)]
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_EmptyData<T> {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+EmptyData"
+)]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_EmptyData<T> {}
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+StyleData"
+)]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct Values_1_StylePropertyAnimationSystem_StyleData<
+    T: quest_hook::libil2cpp::Type,
+> {
+    pub startValue: T,
+    pub endValue: T,
+    pub reversingAdjustedStartValue: T,
+    pub currentValue: T,
+    __cordl_phantom_T: std::marker::PhantomData<T>,
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+StyleData"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_StyleData < T > =>
+    "UnityEngine.UIElements"."StylePropertyAnimationSystem/Values`1/StyleData<T>" < T >
+);
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+StyleData"
+)]
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_StyleData<T> {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+StyleData"
+)]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_StyleData<T> {}
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TimingData"
+)]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct Values_1_StylePropertyAnimationSystem_TimingData<
+    T: quest_hook::libil2cpp::Type,
+> {
+    pub startTimeMs: i64,
+    pub durationMs: i32,
+    pub easingCurve: *mut crate::System::Func_2<f32, f32>,
+    pub easedProgress: f32,
+    pub reversingShorteningFactor: f32,
+    pub isStarted: bool,
+    pub delayMs: i32,
+    __cordl_phantom_T: std::marker::PhantomData<T>,
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TimingData"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TimingData < T > =>
+    "UnityEngine.UIElements"."StylePropertyAnimationSystem/Values`1/TimingData<T>" < T >
+);
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TimingData"
+)]
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TimingData<T> {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TimingData"
+)]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TimingData<T> {}
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
+)]
+#[repr(C)]
+#[derive(Debug)]
+pub struct Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
+    T: quest_hook::libil2cpp::Type,
+> {
+    __cordl_parent: crate::System::Object,
+    pub elementPropertyStateDelta: *mut crate::System::Collections::Generic::Dictionary_2<
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_TransitionState,
+    >,
+    pub elementPropertyQueuedEvents: *mut crate::System::Collections::Generic::Dictionary_2<
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
+        *mut crate::System::Collections::Generic::Queue_1<
+            *mut crate::UnityEngine::UIElements::EventBase,
+        >,
+    >,
+    pub panel: *mut crate::UnityEngine::UIElements::IPanel,
+    pub m_ChangesCount: i32,
+    __cordl_phantom_T: std::marker::PhantomData<T>,
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
+)]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState
+    < T > => "UnityEngine.UIElements"
+    ."StylePropertyAnimationSystem/Values`1/TransitionEventsFrameState" < T >
+);
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
+)]
+impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
+for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
+    T,
+> {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
+)]
+impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
+for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
+    T,
+> {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
+)]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
+    T,
+> {
+    #[cfg(
+        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState+__c"
+    )]
+    pub type __c = crate::UnityEngine::UIElements::TransitionEventsFrameState_Values_1_StylePropertyAnimationSystem___c<
+        T,
+    >;
+    pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Clear", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn RegisterChange(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterChange", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn StateChanged(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("StateChanged", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnregisterChange(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UnregisterChange", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
+)]
+impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
+    T,
+> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

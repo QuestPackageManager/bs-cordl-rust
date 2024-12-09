@@ -1,35 +1,3 @@
-#[cfg(
-    feature = "UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
-)]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum SupportedRenderingFeatures_LightmapMixedBakeModes {
-    IndirectOnly = 1i32,
-    None = 0i32,
-    Shadowmask = 4i32,
-    Subtractive = 2i32,
-}
-#[cfg(
-    feature = "UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes =>
-    "UnityEngine.Rendering"."SupportedRenderingFeatures/LightmapMixedBakeModes"
-);
-#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum SupportedRenderingFeatures_ReflectionProbeModes {
-    None = 0i32,
-    Rotation = 1i32,
-}
-#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeModes =>
-    "UnityEngine.Rendering"."SupportedRenderingFeatures/ReflectionProbeModes"
-);
 #[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures")]
 #[repr(C)]
 #[derive(Debug)]
@@ -215,3 +183,35 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
+)]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum SupportedRenderingFeatures_LightmapMixedBakeModes {
+    IndirectOnly = 1i32,
+    None = 0i32,
+    Shadowmask = 4i32,
+    Subtractive = 2i32,
+}
+#[cfg(
+    feature = "UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes =>
+    "UnityEngine.Rendering"."SupportedRenderingFeatures/LightmapMixedBakeModes"
+);
+#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum SupportedRenderingFeatures_ReflectionProbeModes {
+    None = 0i32,
+    Rotation = 1i32,
+}
+#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeModes =>
+    "UnityEngine.Rendering"."SupportedRenderingFeatures/ReflectionProbeModes"
+);

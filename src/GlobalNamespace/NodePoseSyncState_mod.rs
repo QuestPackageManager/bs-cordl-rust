@@ -1,17 +1,3 @@
-#[cfg(feature = "NodePoseSyncState+NodePose")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum NodePoseSyncState_NodePose {
-    Count = 3i32,
-    Head = 0i32,
-    LeftController = 1i32,
-    RightController = 2i32,
-}
-#[cfg(feature = "NodePoseSyncState+NodePose")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::NodePoseSyncState_NodePose =>
-    ""."NodePoseSyncState/NodePose"
-);
 #[cfg(feature = "NodePoseSyncState")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -164,3 +150,17 @@ impl crate::GlobalNamespace::NodePoseSyncState {
         Ok(__cordl_ret)
     }
 }
+#[cfg(feature = "NodePoseSyncState+NodePose")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum NodePoseSyncState_NodePose {
+    Count = 3i32,
+    Head = 0i32,
+    LeftController = 1i32,
+    RightController = 2i32,
+}
+#[cfg(feature = "NodePoseSyncState+NodePose")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NodePoseSyncState_NodePose =>
+    ""."NodePoseSyncState/NodePose"
+);

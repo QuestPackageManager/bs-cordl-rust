@@ -1,42 +1,3 @@
-#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Axis")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum GridLayoutGroup_Axis {
-    Horizontal = 0i32,
-    Vertical = 1i32,
-}
-#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Axis")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::GridLayoutGroup_Axis =>
-    "UnityEngine.UI"."GridLayoutGroup/Axis"
-);
-#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Constraint")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum GridLayoutGroup_Constraint {
-    FixedColumnCount = 1i32,
-    FixedRowCount = 2i32,
-    Flexible = 0i32,
-}
-#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Constraint")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::GridLayoutGroup_Constraint =>
-    "UnityEngine.UI"."GridLayoutGroup/Constraint"
-);
-#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Corner")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum GridLayoutGroup_Corner {
-    LowerLeft = 2i32,
-    LowerRight = 3i32,
-    UpperLeft = 0i32,
-    UpperRight = 1i32,
-}
-#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Corner")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::GridLayoutGroup_Corner =>
-    "UnityEngine.UI"."GridLayoutGroup/Corner"
-);
 #[cfg(feature = "UnityEngine+UI+GridLayoutGroup")]
 #[repr(C)]
 #[derive(Debug)]
@@ -278,3 +239,42 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::GridLayoutGro
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Axis")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum GridLayoutGroup_Axis {
+    Horizontal = 0i32,
+    Vertical = 1i32,
+}
+#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Axis")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UI::GridLayoutGroup_Axis =>
+    "UnityEngine.UI"."GridLayoutGroup/Axis"
+);
+#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Constraint")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum GridLayoutGroup_Constraint {
+    FixedColumnCount = 1i32,
+    FixedRowCount = 2i32,
+    Flexible = 0i32,
+}
+#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Constraint")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UI::GridLayoutGroup_Constraint =>
+    "UnityEngine.UI"."GridLayoutGroup/Constraint"
+);
+#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Corner")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum GridLayoutGroup_Corner {
+    LowerLeft = 2i32,
+    LowerRight = 3i32,
+    UpperLeft = 0i32,
+    UpperRight = 1i32,
+}
+#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Corner")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UI::GridLayoutGroup_Corner =>
+    "UnityEngine.UI"."GridLayoutGroup/Corner"
+);

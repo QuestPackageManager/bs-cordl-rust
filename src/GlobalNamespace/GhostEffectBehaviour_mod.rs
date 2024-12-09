@@ -1,17 +1,3 @@
-#[cfg(feature = "GhostEffectBehaviour+EndBehavior")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum GhostEffectBehaviour_EndBehavior {
-    DisableAll = 0i32,
-    DisableCopies = 1i32,
-    Nothing = 2i32,
-}
-#[cfg(feature = "GhostEffectBehaviour+EndBehavior")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GhostEffectBehaviour_EndBehavior => ""
-    ."GhostEffectBehaviour/EndBehavior"
-);
 #[cfg(feature = "GhostEffectBehaviour")]
 #[repr(C)]
 #[derive(Debug)]
@@ -128,6 +114,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GhostEffectBe
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "GhostEffectBehaviour+EndBehavior")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum GhostEffectBehaviour_EndBehavior {
+    DisableAll = 0i32,
+    DisableCopies = 1i32,
+    Nothing = 2i32,
+}
+#[cfg(feature = "GhostEffectBehaviour+EndBehavior")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::GhostEffectBehaviour_EndBehavior => ""
+    ."GhostEffectBehaviour/EndBehavior"
+);
 #[cfg(feature = "GhostEffectBehaviour+GhostEffectType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

@@ -1,17 +1,3 @@
-#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Vector3Composite_Mode {
-    Analog = 0i32,
-    Digital = 2i32,
-    DigitalNormalized = 1i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::Composites::Vector3Composite_Mode =>
-    "UnityEngine.InputSystem.Composites"."Vector3Composite/Mode"
-);
 #[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite")]
 #[repr(C)]
 #[derive(Debug)]
@@ -94,3 +80,17 @@ for crate::UnityEngine::InputSystem::Composites::Vector3Composite {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Vector3Composite_Mode {
+    Analog = 0i32,
+    Digital = 2i32,
+    DigitalNormalized = 1i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::Composites::Vector3Composite_Mode =>
+    "UnityEngine.InputSystem.Composites"."Vector3Composite/Mode"
+);

@@ -1,16 +1,3 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum InputProcessor_CachingPolicy {
-    CacheResult = 0i32,
-    EvaluateOnEveryRead = 1i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputProcessor_CachingPolicy => "UnityEngine.InputSystem"
-    ."InputProcessor/CachingPolicy"
-);
 #[cfg(feature = "UnityEngine+InputSystem+InputProcessor")]
 #[repr(C)]
 #[derive(Debug)]
@@ -104,3 +91,16 @@ for crate::UnityEngine::InputSystem::InputProcessor {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum InputProcessor_CachingPolicy {
+    CacheResult = 0i32,
+    EvaluateOnEveryRead = 1i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputProcessor_CachingPolicy => "UnityEngine.InputSystem"
+    ."InputProcessor/CachingPolicy"
+);

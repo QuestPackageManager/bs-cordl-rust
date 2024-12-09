@@ -1,65 +1,3 @@
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
-#[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ProBuilderMesh_CacheValidState {
-    SharedTexture = 2u8,
-    SharedVertex = 1u8,
-}
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ProBuilder::ProBuilderMesh_CacheValidState => "UnityEngine.ProBuilder"
-    ."ProBuilderMesh/CacheValidState"
-);
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct ProBuilderMesh_NonVersionedEditScope {
-    pub m_Mesh: *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
-    pub m_VersionIndex: u16,
-    pub m_InstanceVersionIndex: u16,
-}
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope =>
-    "UnityEngine.ProBuilder"."ProBuilderMesh/NonVersionedEditScope"
-);
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
-impl crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        mesh: *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (mesh),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1828,5 +1766,67 @@ for crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
+#[repr(u8)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ProBuilderMesh_CacheValidState {
+    SharedTexture = 2u8,
+    SharedVertex = 1u8,
+}
+#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::ProBuilder::ProBuilderMesh_CacheValidState => "UnityEngine.ProBuilder"
+    ."ProBuilderMesh/CacheValidState"
+);
+#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct ProBuilderMesh_NonVersionedEditScope {
+    pub m_Mesh: *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+    pub m_VersionIndex: u16,
+    pub m_InstanceVersionIndex: u16,
+}
+#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope =>
+    "UnityEngine.ProBuilder"."ProBuilderMesh/NonVersionedEditScope"
+);
+#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
+impl crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        mesh: *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (mesh),
+        )?;
+        Ok(__cordl_ret)
     }
 }

@@ -1,16 +1,3 @@
-#[cfg(feature = "UnityEngine+EventSystems+OVRInputModule+InputMode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRInputModule_InputMode {
-    Buttons = 1i32,
-    Mouse = 0i32,
-}
-#[cfg(feature = "UnityEngine+EventSystems+OVRInputModule+InputMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::EventSystems::OVRInputModule_InputMode => "UnityEngine.EventSystems"
-    ."OVRInputModule/InputMode"
-);
 #[cfg(feature = "UnityEngine+EventSystems+OVRInputModule")]
 #[repr(C)]
 #[derive(Debug)]
@@ -486,3 +473,16 @@ for crate::UnityEngine::EventSystems::OVRInputModule {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+OVRInputModule+InputMode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRInputModule_InputMode {
+    Buttons = 1i32,
+    Mouse = 0i32,
+}
+#[cfg(feature = "UnityEngine+EventSystems+OVRInputModule+InputMode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::EventSystems::OVRInputModule_InputMode => "UnityEngine.EventSystems"
+    ."OVRInputModule/InputMode"
+);

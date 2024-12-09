@@ -1,16 +1,3 @@
-#[cfg(feature = "MultiplayerConditionalActiveByLayout+Condition")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum MultiplayerConditionalActiveByLayout_Condition {
-    HideIf = 1i32,
-    ShowIf = 0i32,
-}
-#[cfg(feature = "MultiplayerConditionalActiveByLayout+Condition")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition => ""
-    ."MultiplayerConditionalActiveByLayout/Condition"
-);
 #[cfg(feature = "MultiplayerConditionalActiveByLayout")]
 #[repr(C)]
 #[derive(Debug)]
@@ -94,3 +81,16 @@ for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerConditionalActiveByLayout+Condition")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum MultiplayerConditionalActiveByLayout_Condition {
+    HideIf = 1i32,
+    ShowIf = 0i32,
+}
+#[cfg(feature = "MultiplayerConditionalActiveByLayout+Condition")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition => ""
+    ."MultiplayerConditionalActiveByLayout/Condition"
+);

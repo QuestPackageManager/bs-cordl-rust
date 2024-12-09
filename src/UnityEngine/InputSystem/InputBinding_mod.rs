@@ -1,31 +1,3 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputBinding+DisplayStringOptions")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum InputBinding_DisplayStringOptions {
-    DontIncludeInteractions = 4i32,
-    DontOmitDevice = 2i32,
-    DontUseShortDisplayNames = 1i32,
-    IgnoreBindingOverrides = 8i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputBinding+DisplayStringOptions")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputBinding_DisplayStringOptions =>
-    "UnityEngine.InputSystem"."InputBinding/DisplayStringOptions"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputBinding+Flags")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum InputBinding_Flags {
-    Composite = 4i32,
-    None = 0i32,
-    PartOfComposite = 8i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputBinding+Flags")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::InputBinding_Flags =>
-    "UnityEngine.InputSystem"."InputBinding/Flags"
-);
 #[cfg(feature = "UnityEngine+InputSystem+InputBinding")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -511,6 +483,34 @@ impl crate::UnityEngine::InputSystem::InputBinding {
         Ok(__cordl_ret)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding+DisplayStringOptions")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum InputBinding_DisplayStringOptions {
+    DontIncludeInteractions = 4i32,
+    DontOmitDevice = 2i32,
+    DontUseShortDisplayNames = 1i32,
+    IgnoreBindingOverrides = 8i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding+DisplayStringOptions")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputBinding_DisplayStringOptions =>
+    "UnityEngine.InputSystem"."InputBinding/DisplayStringOptions"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding+Flags")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum InputBinding_Flags {
+    Composite = 4i32,
+    None = 0i32,
+    PartOfComposite = 8i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding+Flags")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::InputBinding_Flags =>
+    "UnityEngine.InputSystem"."InputBinding/Flags"
+);
 #[cfg(feature = "UnityEngine+InputSystem+InputBinding+MatchOptions")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

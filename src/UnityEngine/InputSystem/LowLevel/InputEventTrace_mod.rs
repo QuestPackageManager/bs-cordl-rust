@@ -1,239 +1,3 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct InputEventTrace_DeviceInfo {
-    pub m_DeviceId: i32,
-    pub m_Layout: *mut crate::System::String,
-    pub m_StateFormat: crate::UnityEngine::InputSystem::Utilities::FourCC,
-    pub m_StateSizeInBytes: i32,
-    pub m_FullLayoutJson: *mut crate::System::String,
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo =>
-    "UnityEngine.InputSystem.LowLevel"."InputEventTrace/DeviceInfo"
-);
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
-impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
-    pub fn get_deviceId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_deviceId",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_layout(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_layout",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_stateFormat(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::FourCC,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_stateFormat",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_stateSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_stateSizeInBytes",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_deviceId(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_deviceId",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_layout(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_layout",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_stateFormat(
-        &mut self,
-        value: crate::UnityEngine::InputSystem::Utilities::FourCC,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_stateFormat",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_stateSizeInBytes(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_stateSizeInBytes",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct InputEventTrace_Enumerator {
-    __cordl_parent: crate::System::Object,
-    pub m_Trace: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
-    pub m_ChangeCounter: i32,
-    pub m_Current: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator =>
-    "UnityEngine.InputSystem.LowLevel"."InputEventTrace/Enumerator"
-);
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
-impl std::ops::Deref
-for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
-impl std::ops::DerefMut
-for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
-impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        trace: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (trace))?;
-        Ok(__cordl_object)
-    }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IEnumerator_get_Current(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("System.Collections.IEnumerator.get_Current", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        trace: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (trace))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Current(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr = __cordl_object
-            .invoke("get_Current", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum InputEventTrace_FileFlags {
-    FixedUpdate = 1i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags =>
-    "UnityEngine.InputSystem.LowLevel"."InputEventTrace/FileFlags"
-);
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace")]
 #[repr(C)]
 #[derive(Debug)]
@@ -791,6 +555,242 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct InputEventTrace_DeviceInfo {
+    pub m_DeviceId: i32,
+    pub m_Layout: *mut crate::System::String,
+    pub m_StateFormat: crate::UnityEngine::InputSystem::Utilities::FourCC,
+    pub m_StateSizeInBytes: i32,
+    pub m_FullLayoutJson: *mut crate::System::String,
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo =>
+    "UnityEngine.InputSystem.LowLevel"."InputEventTrace/DeviceInfo"
+);
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
+impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
+    pub fn get_deviceId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_deviceId",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_layout(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_layout",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_stateFormat(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_stateFormat",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_stateSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_stateSizeInBytes",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_deviceId(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_deviceId",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_layout(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_layout",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_stateFormat(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::Utilities::FourCC,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_stateFormat",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_stateSizeInBytes(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_stateSizeInBytes",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct InputEventTrace_Enumerator {
+    __cordl_parent: crate::System::Object,
+    pub m_Trace: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
+    pub m_ChangeCounter: i32,
+    pub m_Current: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator =>
+    "UnityEngine.InputSystem.LowLevel"."InputEventTrace/Enumerator"
+);
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
+impl std::ops::Deref
+for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
+impl std::ops::DerefMut
+for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
+impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        trace: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (trace))?;
+        Ok(__cordl_object)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IEnumerator_get_Current(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("System.Collections.IEnumerator.get_Current", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        trace: *mut crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (trace))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Current(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr = __cordl_object
+            .invoke("get_Current", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum InputEventTrace_FileFlags {
+    FixedUpdate = 1i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags =>
+    "UnityEngine.InputSystem.LowLevel"."InputEventTrace/FileFlags"
+);
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController")]
 #[repr(C)]
 #[derive(Debug)]
@@ -845,11 +845,11 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController
     #[cfg(
         feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController+__c"
     )]
-    pub type __c = crate::UnityEngine::InputSystem::LowLevel::ReplayController___c;
+    pub type __c = crate::UnityEngine::InputSystem::LowLevel::ReplayController_InputEventTrace___c;
     #[cfg(
         feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController+__c__DisplayClass43_0"
     )]
-    pub type __c__DisplayClass43_0 = crate::UnityEngine::InputSystem::LowLevel::ReplayController___c__DisplayClass43_0;
+    pub type __c__DisplayClass43_0 = crate::UnityEngine::InputSystem::LowLevel::ReplayController_InputEventTrace___c__DisplayClass43_0;
     pub fn ApplyDeviceMapping(
         &mut self,
         originalDeviceId: i32,

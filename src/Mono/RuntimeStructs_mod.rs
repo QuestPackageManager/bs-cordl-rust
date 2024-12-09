@@ -1,3 +1,46 @@
+#[cfg(feature = "Mono+RuntimeStructs")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct RuntimeStructs {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "Mono+RuntimeStructs")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::Mono::RuntimeStructs => "Mono"."RuntimeStructs"
+);
+#[cfg(feature = "Mono+RuntimeStructs")]
+impl std::ops::Deref for crate::Mono::RuntimeStructs {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Mono+RuntimeStructs")]
+impl std::ops::DerefMut for crate::Mono::RuntimeStructs {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Mono+RuntimeStructs")]
+impl crate::Mono::RuntimeStructs {
+    #[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
+    pub type GPtrArray = crate::Mono::RuntimeStructs_GPtrArray;
+    #[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
+    pub type GenericParamInfo = crate::Mono::RuntimeStructs_GenericParamInfo;
+    #[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
+    pub type MonoClass = crate::Mono::RuntimeStructs_MonoClass;
+    #[cfg(feature = "Mono+RuntimeStructs+RemoteClass")]
+    pub type RemoteClass = crate::Mono::RuntimeStructs_RemoteClass;
+}
+#[cfg(feature = "Mono+RuntimeStructs")]
+impl quest_hook::libil2cpp::ObjectType for crate::Mono::RuntimeStructs {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -101,46 +144,3 @@ for crate::Mono::RuntimeStructs_RemoteClass {
 }
 #[cfg(feature = "Mono+RuntimeStructs+RemoteClass")]
 impl crate::Mono::RuntimeStructs_RemoteClass {}
-#[cfg(feature = "Mono+RuntimeStructs")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct RuntimeStructs {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "Mono+RuntimeStructs")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::RuntimeStructs => "Mono"."RuntimeStructs"
-);
-#[cfg(feature = "Mono+RuntimeStructs")]
-impl std::ops::Deref for crate::Mono::RuntimeStructs {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Mono+RuntimeStructs")]
-impl std::ops::DerefMut for crate::Mono::RuntimeStructs {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Mono+RuntimeStructs")]
-impl crate::Mono::RuntimeStructs {
-    #[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
-    pub type GPtrArray = crate::Mono::RuntimeStructs_GPtrArray;
-    #[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
-    pub type GenericParamInfo = crate::Mono::RuntimeStructs_GenericParamInfo;
-    #[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
-    pub type MonoClass = crate::Mono::RuntimeStructs_MonoClass;
-    #[cfg(feature = "Mono+RuntimeStructs+RemoteClass")]
-    pub type RemoteClass = crate::Mono::RuntimeStructs_RemoteClass;
-}
-#[cfg(feature = "Mono+RuntimeStructs")]
-impl quest_hook::libil2cpp::ObjectType for crate::Mono::RuntimeStructs {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}

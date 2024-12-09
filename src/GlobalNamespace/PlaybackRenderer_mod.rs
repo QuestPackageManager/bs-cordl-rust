@@ -219,7 +219,7 @@ pub struct PlaybackRenderer_PlaybackScreenshot {
     __cordl_parent: crate::System::Object,
     pub _name: *mut crate::System::String,
     pub _layerMask: crate::UnityEngine::LayerMask,
-    pub _type: crate::GlobalNamespace::PlaybackScreenshot_Type,
+    pub _type: crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type,
     pub _texture: *mut crate::UnityEngine::RenderTexture,
     pub _path: *mut crate::System::String,
     pub _backgroundColor: crate::UnityEngine::Color,
@@ -246,7 +246,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlaybackRenderer_PlaybackScr
 #[cfg(feature = "PlaybackRenderer+PlaybackScreenshot")]
 impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
     #[cfg(feature = "PlaybackRenderer+PlaybackScreenshot+Type")]
-    pub type Type = crate::GlobalNamespace::PlaybackScreenshot_Type;
+    pub type Type = crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type;
     pub fn CreateTexture(
         &mut self,
         width: i32,
@@ -262,7 +262,7 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
     pub fn New(
         name: *mut crate::System::String,
         layerMask: crate::UnityEngine::LayerMask,
-        _cordl_type: crate::GlobalNamespace::PlaybackScreenshot_Type,
+        _cordl_type: crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type,
         backgroundColor: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -275,7 +275,7 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
         &mut self,
         name: *mut crate::System::String,
         layerMask: crate::UnityEngine::LayerMask,
-        _cordl_type: crate::GlobalNamespace::PlaybackScreenshot_Type,
+        _cordl_type: crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type,
         backgroundColor: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -337,11 +337,13 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
     }
     pub fn get_type(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PlaybackScreenshot_Type> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type,
+    > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::GlobalNamespace::PlaybackScreenshot_Type = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type = __cordl_object
             .invoke("get_type", ())?;
         Ok(__cordl_ret)
     }
@@ -370,12 +372,13 @@ for crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
 #[cfg(feature = "PlaybackRenderer+PlaybackScreenshot+Type")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum PlaybackScreenshot_Type {
+pub enum PlaybackScreenshot_PlaybackRenderer_Type {
     Background = 2i32,
     Foreground = 1i32,
 }
 #[cfg(feature = "PlaybackRenderer+PlaybackScreenshot+Type")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::PlaybackScreenshot_Type => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type => ""
     ."PlaybackRenderer/PlaybackScreenshot/Type"
 );

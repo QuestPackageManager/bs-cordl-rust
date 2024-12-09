@@ -1,17 +1,3 @@
-#[cfg(feature = "SettingsFlowCoordinator+FinishAction")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum SettingsFlowCoordinator_FinishAction {
-    Apply = 2i32,
-    Cancel = 0i32,
-    _cordl_Ok = 1i32,
-}
-#[cfg(feature = "SettingsFlowCoordinator+FinishAction")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SettingsFlowCoordinator_FinishAction => ""
-    ."SettingsFlowCoordinator/FinishAction"
-);
 #[cfg(feature = "SettingsFlowCoordinator")]
 #[repr(C)]
 #[derive(Debug)]
@@ -207,3 +193,17 @@ for crate::GlobalNamespace::SettingsFlowCoordinator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "SettingsFlowCoordinator+FinishAction")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum SettingsFlowCoordinator_FinishAction {
+    Apply = 2i32,
+    Cancel = 0i32,
+    _cordl_Ok = 1i32,
+}
+#[cfg(feature = "SettingsFlowCoordinator+FinishAction")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SettingsFlowCoordinator_FinishAction => ""
+    ."SettingsFlowCoordinator/FinishAction"
+);

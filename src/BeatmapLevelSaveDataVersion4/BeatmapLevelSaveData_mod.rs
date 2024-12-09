@@ -1,60 +1,3 @@
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct BeatmapLevelSaveData_AudioData {
-    pub songFilename: *mut crate::System::String,
-    pub songDuration: f32,
-    pub audioDataFilename: *mut crate::System::String,
-    pub bpm: f32,
-    pub lufs: f32,
-    pub previewStartTime: f32,
-    pub previewDuration: f32,
-}
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData =>
-    "BeatmapLevelSaveDataVersion4"."BeatmapLevelSaveData/AudioData"
-);
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
-impl crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {}
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct BeatmapLevelSaveData_BeatmapAuthors {
-    pub mappers: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    pub lighters: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-}
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors =>
-    "BeatmapLevelSaveDataVersion4"."BeatmapLevelSaveData/BeatmapAuthors"
-);
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
-impl crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {}
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
 #[repr(C)]
 #[derive(Debug)]
@@ -137,6 +80,63 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct BeatmapLevelSaveData_AudioData {
+    pub songFilename: *mut crate::System::String,
+    pub songDuration: f32,
+    pub audioDataFilename: *mut crate::System::String,
+    pub bpm: f32,
+    pub lufs: f32,
+    pub previewStartTime: f32,
+    pub previewDuration: f32,
+}
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData =>
+    "BeatmapLevelSaveDataVersion4"."BeatmapLevelSaveData/AudioData"
+);
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
+impl crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {}
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct BeatmapLevelSaveData_BeatmapAuthors {
+    pub mappers: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub lighters: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+}
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors =>
+    "BeatmapLevelSaveDataVersion4"."BeatmapLevelSaveData/BeatmapAuthors"
+);
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
+impl crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {}
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme")]
 #[repr(C)]
 #[derive(Debug)]

@@ -1,21 +1,3 @@
-#[cfg(feature = "System+Net+WebHeaderCollection+RfcChar")]
-#[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum WebHeaderCollection_RfcChar {
-    CR = 3u8,
-    Colon = 6u8,
-    Ctl = 2u8,
-    Delim = 7u8,
-    High = 0u8,
-    LF = 4u8,
-    Reg = 1u8,
-    WS = 5u8,
-}
-#[cfg(feature = "System+Net+WebHeaderCollection+RfcChar")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::WebHeaderCollection_RfcChar =>
-    "System.Net"."WebHeaderCollection/RfcChar"
-);
 #[cfg(feature = "System+Net+WebHeaderCollection")]
 #[repr(C)]
 #[derive(Debug)]
@@ -389,3 +371,21 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebHeaderCollecti
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+WebHeaderCollection+RfcChar")]
+#[repr(u8)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum WebHeaderCollection_RfcChar {
+    CR = 3u8,
+    Colon = 6u8,
+    Ctl = 2u8,
+    Delim = 7u8,
+    High = 0u8,
+    LF = 4u8,
+    Reg = 1u8,
+    WS = 5u8,
+}
+#[cfg(feature = "System+Net+WebHeaderCollection+RfcChar")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Net::WebHeaderCollection_RfcChar =>
+    "System.Net"."WebHeaderCollection/RfcChar"
+);

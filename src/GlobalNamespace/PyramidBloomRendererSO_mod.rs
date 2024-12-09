@@ -1,52 +1,3 @@
-#[cfg(feature = "PyramidBloomRendererSO+Level")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct PyramidBloomRendererSO_Level {
-    pub down: *mut crate::UnityEngine::RenderTexture,
-    pub up: *mut crate::UnityEngine::RenderTexture,
-}
-#[cfg(feature = "PyramidBloomRendererSO+Level")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::PyramidBloomRendererSO_Level =>
-    ""."PyramidBloomRendererSO/Level"
-);
-#[cfg(feature = "PyramidBloomRendererSO+Level")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "PyramidBloomRendererSO+Level")]
-impl crate::GlobalNamespace::PyramidBloomRendererSO_Level {}
-#[cfg(feature = "PyramidBloomRendererSO+Pass")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum PyramidBloomRendererSO_Pass {
-    Bilinear = 9i32,
-    BilinearGamma = 10i32,
-    Downsample13 = 2i32,
-    Downsample4 = 3i32,
-    DownsampleBilinearGamma = 4i32,
-    Prefilter13 = 0i32,
-    Prefilter4 = 1i32,
-    UpsampleBox = 6i32,
-    UpsampleBoxGamma = 8i32,
-    UpsampleTent = 5i32,
-    UpsampleTentAndACESToneMapping = 12i32,
-    UpsampleTentAndACESToneMappingGlobalIntensity = 13i32,
-    UpsampleTentAndReinhardToneMapping = 11i32,
-    UpsampleTentGamma = 7i32,
-}
-#[cfg(feature = "PyramidBloomRendererSO+Pass")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::PyramidBloomRendererSO_Pass =>
-    ""."PyramidBloomRendererSO/Pass"
-);
 #[cfg(feature = "PyramidBloomRendererSO")]
 #[repr(C)]
 #[derive(Debug)]
@@ -212,3 +163,52 @@ for crate::GlobalNamespace::PyramidBloomRendererSO {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "PyramidBloomRendererSO+Level")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct PyramidBloomRendererSO_Level {
+    pub down: *mut crate::UnityEngine::RenderTexture,
+    pub up: *mut crate::UnityEngine::RenderTexture,
+}
+#[cfg(feature = "PyramidBloomRendererSO+Level")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PyramidBloomRendererSO_Level =>
+    ""."PyramidBloomRendererSO/Level"
+);
+#[cfg(feature = "PyramidBloomRendererSO+Level")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "PyramidBloomRendererSO+Level")]
+impl crate::GlobalNamespace::PyramidBloomRendererSO_Level {}
+#[cfg(feature = "PyramidBloomRendererSO+Pass")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PyramidBloomRendererSO_Pass {
+    Bilinear = 9i32,
+    BilinearGamma = 10i32,
+    Downsample13 = 2i32,
+    Downsample4 = 3i32,
+    DownsampleBilinearGamma = 4i32,
+    Prefilter13 = 0i32,
+    Prefilter4 = 1i32,
+    UpsampleBox = 6i32,
+    UpsampleBoxGamma = 8i32,
+    UpsampleTent = 5i32,
+    UpsampleTentAndACESToneMapping = 12i32,
+    UpsampleTentAndACESToneMappingGlobalIntensity = 13i32,
+    UpsampleTentAndReinhardToneMapping = 11i32,
+    UpsampleTentGamma = 7i32,
+}
+#[cfg(feature = "PyramidBloomRendererSO+Pass")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PyramidBloomRendererSO_Pass =>
+    ""."PyramidBloomRendererSO/Pass"
+);

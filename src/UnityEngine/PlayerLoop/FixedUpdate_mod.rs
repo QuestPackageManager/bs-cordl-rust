@@ -1,3 +1,52 @@
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct FixedUpdate {}
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::PlayerLoop::FixedUpdate =>
+    "UnityEngine.PlayerLoop"."FixedUpdate"
+);
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::PlayerLoop::FixedUpdate {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate")]
+impl crate::UnityEngine::PlayerLoop::FixedUpdate {
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+AudioFixedUpdate")]
+    pub type AudioFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_AudioFixedUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ClearLines")]
+    pub type ClearLines = crate::UnityEngine::PlayerLoop::FixedUpdate_ClearLines;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedSampleTime")]
+    pub type DirectorFixedSampleTime = crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedSampleTime;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdate")]
+    pub type DirectorFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdatePostPhysics")]
+    pub type DirectorFixedUpdatePostPhysics = crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdatePostPhysics;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+LegacyFixedAnimationUpdate")]
+    pub type LegacyFixedAnimationUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_LegacyFixedAnimationUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+NewInputFixedUpdate")]
+    pub type NewInputFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_NewInputFixedUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+Physics2DFixedUpdate")]
+    pub type Physics2DFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_Physics2DFixedUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsClothFixedUpdate")]
+    pub type PhysicsClothFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsClothFixedUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsFixedUpdate")]
+    pub type PhysicsFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsFixedUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunBehaviourFixedUpdate")]
+    pub type ScriptRunBehaviourFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunBehaviourFixedUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunDelayedFixedFrameRate")]
+    pub type ScriptRunDelayedFixedFrameRate = crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunDelayedFixedFrameRate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+XRFixedUpdate")]
+    pub type XRFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_XRFixedUpdate;
+}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+AudioFixedUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -112,55 +161,6 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdatePostPhysics {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdatePostPhysics")]
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdatePostPhysics {}
-#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct FixedUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::PlayerLoop::FixedUpdate =>
-    "UnityEngine.PlayerLoop"."FixedUpdate"
-);
-#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::PlayerLoop::FixedUpdate {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate")]
-impl crate::UnityEngine::PlayerLoop::FixedUpdate {
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+AudioFixedUpdate")]
-    pub type AudioFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_AudioFixedUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ClearLines")]
-    pub type ClearLines = crate::UnityEngine::PlayerLoop::FixedUpdate_ClearLines;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedSampleTime")]
-    pub type DirectorFixedSampleTime = crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedSampleTime;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdate")]
-    pub type DirectorFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdatePostPhysics")]
-    pub type DirectorFixedUpdatePostPhysics = crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdatePostPhysics;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+LegacyFixedAnimationUpdate")]
-    pub type LegacyFixedAnimationUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_LegacyFixedAnimationUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+NewInputFixedUpdate")]
-    pub type NewInputFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_NewInputFixedUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+Physics2DFixedUpdate")]
-    pub type Physics2DFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_Physics2DFixedUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsClothFixedUpdate")]
-    pub type PhysicsClothFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsClothFixedUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsFixedUpdate")]
-    pub type PhysicsFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsFixedUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunBehaviourFixedUpdate")]
-    pub type ScriptRunBehaviourFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunBehaviourFixedUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunDelayedFixedFrameRate")]
-    pub type ScriptRunDelayedFixedFrameRate = crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunDelayedFixedFrameRate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+XRFixedUpdate")]
-    pub type XRFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_XRFixedUpdate;
-}
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+LegacyFixedAnimationUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone)]

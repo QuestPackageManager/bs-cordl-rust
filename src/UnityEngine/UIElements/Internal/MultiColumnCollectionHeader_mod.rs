@@ -1,157 +1,3 @@
-#[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
-)]
-#[repr(C)]
-#[derive(Debug)]
-pub struct MultiColumnCollectionHeader_ColumnData {
-    __cordl_parent: crate::System::Object,
-    pub _control_k__BackingField: *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn,
-    pub _resizeHandle_k__BackingField: *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnResizeHandle,
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
-)]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData =>
-    "UnityEngine.UIElements.Internal"."MultiColumnCollectionHeader/ColumnData"
-);
-#[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
-)]
-impl std::ops::Deref
-for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
-)]
-impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
-)]
-impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_control(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn = __cordl_object
-            .invoke("get_control", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_resizeHandle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnResizeHandle,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnResizeHandle = __cordl_object
-            .invoke("get_resizeHandle", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_control(
-        &mut self,
-        value: *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_control", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_resizeHandle(
-        &mut self,
-        value: *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnResizeHandle,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_resizeHandle", (value))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
-)]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
-)]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct ViewState_ColumnState {
-    pub index: i32,
-    pub name: *mut crate::System::String,
-    pub actualWidth: f32,
-    pub width: crate::UnityEngine::UIElements::Length,
-    pub visible: bool,
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::Internal::ViewState_ColumnState =>
-    "UnityEngine.UIElements.Internal"."MultiColumnCollectionHeader/ViewState/ColumnState"
-);
-#[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
-)]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::Internal::ViewState_ColumnState {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
-)]
-impl crate::UnityEngine::UIElements::Internal::ViewState_ColumnState {}
 #[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader")]
 #[repr(C)]
 #[derive(Debug)]
@@ -768,6 +614,123 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
     }
 }
 #[cfg(
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
+)]
+#[repr(C)]
+#[derive(Debug)]
+pub struct MultiColumnCollectionHeader_ColumnData {
+    __cordl_parent: crate::System::Object,
+    pub _control_k__BackingField: *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn,
+    pub _resizeHandle_k__BackingField: *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnResizeHandle,
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
+)]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData =>
+    "UnityEngine.UIElements.Internal"."MultiColumnCollectionHeader/ColumnData"
+);
+#[cfg(
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
+)]
+impl std::ops::Deref
+for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
+)]
+impl std::ops::DerefMut
+for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
+)]
+impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_control(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn = __cordl_object
+            .invoke("get_control", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_resizeHandle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnResizeHandle,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnResizeHandle = __cordl_object
+            .invoke("get_resizeHandle", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_control(
+        &mut self,
+        value: *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_control", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_resizeHandle(
+        &mut self,
+        value: *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnResizeHandle,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_resizeHandle", (value))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
+)]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
     feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
 )]
 #[repr(C)]
@@ -824,7 +787,7 @@ pub struct MultiColumnCollectionHeader_ViewState {
         *mut crate::UnityEngine::UIElements::SortColumnDescription,
     >,
     pub m_OrderedColumnStates: *mut crate::System::Collections::Generic::List_1<
-        crate::UnityEngine::UIElements::Internal::ViewState_ColumnState,
+        crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHeader_ColumnState,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState")]
@@ -853,7 +816,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewS
     #[cfg(
         feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
     )]
-    pub type ColumnState = crate::UnityEngine::UIElements::Internal::ViewState_ColumnState;
+    pub type ColumnState = crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHeader_ColumnState;
     pub fn Apply(
         &mut self,
         header: *mut crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader,
@@ -904,3 +867,41 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewSt
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
+)]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct ViewState_MultiColumnCollectionHeader_ColumnState {
+    pub index: i32,
+    pub name: *mut crate::System::String,
+    pub actualWidth: f32,
+    pub width: crate::UnityEngine::UIElements::Length,
+    pub visible: bool,
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHeader_ColumnState
+    => "UnityEngine.UIElements.Internal"
+    ."MultiColumnCollectionHeader/ViewState/ColumnState"
+);
+#[cfg(
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
+)]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHeader_ColumnState {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
+)]
+impl crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHeader_ColumnState {}

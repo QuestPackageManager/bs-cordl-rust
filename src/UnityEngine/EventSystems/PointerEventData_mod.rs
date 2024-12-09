@@ -1,32 +1,3 @@
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+FramePressState")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum PointerEventData_FramePressState {
-    NotChanged = 3i32,
-    Pressed = 0i32,
-    PressedAndReleased = 2i32,
-    Released = 1i32,
-}
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+FramePressState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::EventSystems::PointerEventData_FramePressState =>
-    "UnityEngine.EventSystems"."PointerEventData/FramePressState"
-);
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+InputButton")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum PointerEventData_InputButton {
-    Left = 0i32,
-    Middle = 2i32,
-    Right = 1i32,
-}
-#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+InputButton")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::EventSystems::PointerEventData_InputButton =>
-    "UnityEngine.EventSystems"."PointerEventData/InputButton"
-);
 #[cfg(feature = "UnityEngine+EventSystems+PointerEventData")]
 #[repr(C)]
 #[derive(Debug)]
@@ -821,3 +792,32 @@ for crate::UnityEngine::EventSystems::PointerEventData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+FramePressState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PointerEventData_FramePressState {
+    NotChanged = 3i32,
+    Pressed = 0i32,
+    PressedAndReleased = 2i32,
+    Released = 1i32,
+}
+#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+FramePressState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::EventSystems::PointerEventData_FramePressState =>
+    "UnityEngine.EventSystems"."PointerEventData/FramePressState"
+);
+#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+InputButton")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PointerEventData_InputButton {
+    Left = 0i32,
+    Middle = 2i32,
+    Right = 1i32,
+}
+#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+InputButton")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::EventSystems::PointerEventData_InputButton =>
+    "UnityEngine.EventSystems"."PointerEventData/InputButton"
+);

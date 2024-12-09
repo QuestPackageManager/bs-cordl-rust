@@ -1,19 +1,3 @@
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState+Button")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum JoystickState_Button {
-    HatSwitchDown = 1i32,
-    HatSwitchLeft = 2i32,
-    HatSwitchRight = 3i32,
-    HatSwitchUp = 0i32,
-    Trigger = 4i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState+Button")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::LowLevel::JoystickState_Button =>
-    "UnityEngine.InputSystem.LowLevel"."JoystickState/Button"
-);
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -55,3 +39,19 @@ impl crate::UnityEngine::InputSystem::LowLevel::JoystickState {
         Ok(__cordl_ret)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState+Button")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum JoystickState_Button {
+    HatSwitchDown = 1i32,
+    HatSwitchLeft = 2i32,
+    HatSwitchRight = 3i32,
+    HatSwitchUp = 0i32,
+    Trigger = 4i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState+Button")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::LowLevel::JoystickState_Button =>
+    "UnityEngine.InputSystem.LowLevel"."JoystickState/Button"
+);

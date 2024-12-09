@@ -1,19 +1,3 @@
-#[cfg(feature = "StandardScoreSyncState+Score")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum StandardScoreSyncState_Score {
-    Combo = 3i32,
-    Count = 5i32,
-    ImmediateMaxPossibleMultipliedScore = 2i32,
-    ModifiedScore = 0i32,
-    MultipliedScore = 1i32,
-    Multiplier = 4i32,
-}
-#[cfg(feature = "StandardScoreSyncState+Score")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::StandardScoreSyncState_Score =>
-    ""."StandardScoreSyncState/Score"
-);
 #[cfg(feature = "StandardScoreSyncState")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -176,3 +160,19 @@ impl crate::GlobalNamespace::StandardScoreSyncState {
         Ok(__cordl_ret)
     }
 }
+#[cfg(feature = "StandardScoreSyncState+Score")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum StandardScoreSyncState_Score {
+    Combo = 3i32,
+    Count = 5i32,
+    ImmediateMaxPossibleMultipliedScore = 2i32,
+    ModifiedScore = 0i32,
+    MultipliedScore = 1i32,
+    Multiplier = 4i32,
+}
+#[cfg(feature = "StandardScoreSyncState+Score")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::StandardScoreSyncState_Score =>
+    ""."StandardScoreSyncState/Score"
+);

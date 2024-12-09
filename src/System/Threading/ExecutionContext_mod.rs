@@ -1,17 +1,3 @@
-#[cfg(feature = "System+Threading+ExecutionContext+CaptureOptions")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ExecutionContext_CaptureOptions {
-    IgnoreSyncCtx = 1i32,
-    None = 0i32,
-    OptimizeDefaultCase = 2i32,
-}
-#[cfg(feature = "System+Threading+ExecutionContext+CaptureOptions")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Threading::ExecutionContext_CaptureOptions => "System.Threading"
-    ."ExecutionContext/CaptureOptions"
-);
 #[cfg(feature = "System+Threading+ExecutionContext")]
 #[repr(C)]
 #[derive(Debug)]
@@ -313,6 +299,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::ExecutionCo
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Threading+ExecutionContext+CaptureOptions")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ExecutionContext_CaptureOptions {
+    IgnoreSyncCtx = 1i32,
+    None = 0i32,
+    OptimizeDefaultCase = 2i32,
+}
+#[cfg(feature = "System+Threading+ExecutionContext+CaptureOptions")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Threading::ExecutionContext_CaptureOptions => "System.Threading"
+    ."ExecutionContext/CaptureOptions"
+);
 #[cfg(feature = "System+Threading+ExecutionContext+Flags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

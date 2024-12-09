@@ -1,27 +1,3 @@
-#[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct CurvedTextMeshPro_CurvedMeshInfo {
-    pub uvs3: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-}
-#[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::CurvedTextMeshPro_CurvedMeshInfo => "HMUI"
-    ."CurvedTextMeshPro/CurvedMeshInfo"
-);
-#[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
-impl crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {}
 #[cfg(feature = "HMUI+CurvedTextMeshPro")]
 #[repr(C)]
 #[derive(Debug)]
@@ -200,3 +176,27 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::CurvedTextMeshPro {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct CurvedTextMeshPro_CurvedMeshInfo {
+    pub uvs3: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+}
+#[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::HMUI::CurvedTextMeshPro_CurvedMeshInfo => "HMUI"
+    ."CurvedTextMeshPro/CurvedMeshInfo"
+);
+#[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
+impl crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {}

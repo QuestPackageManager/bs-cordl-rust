@@ -1,17 +1,3 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+Ocsp+RequestedCertificate+Choice")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum RequestedCertificate_Choice {
-    AttributeCertificate = 1i32,
-    Certificate = -1i32,
-    PublicKeyCertificate = 0i32,
-}
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+Ocsp+RequestedCertificate+Choice")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice =>
-    "Org.BouncyCastle.Asn1.IsisMtt.Ocsp"."RequestedCertificate/Choice"
-);
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+Ocsp+RequestedCertificate")]
 #[repr(C)]
 #[derive(Debug)]
@@ -151,3 +137,17 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+Ocsp+RequestedCertificate+Choice")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum RequestedCertificate_Choice {
+    AttributeCertificate = 1i32,
+    Certificate = -1i32,
+    PublicKeyCertificate = 0i32,
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+Ocsp+RequestedCertificate+Choice")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice =>
+    "Org.BouncyCastle.Asn1.IsisMtt.Ocsp"."RequestedCertificate/Choice"
+);

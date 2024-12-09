@@ -1,105 +1,3 @@
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocol+HandshakeMessage")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct TlsProtocol_HandshakeMessage {
-    __cordl_parent: crate::System::IO::MemoryStream,
-}
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocol+HandshakeMessage")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Crypto::Tls::TlsProtocol_HandshakeMessage =>
-    "Org.BouncyCastle.Crypto.Tls"."TlsProtocol/HandshakeMessage"
-);
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocol+HandshakeMessage")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol_HandshakeMessage {
-    type Target = crate::System::IO::MemoryStream;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocol+HandshakeMessage")]
-impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol_HandshakeMessage {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocol+HandshakeMessage")]
-impl crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol_HandshakeMessage {
-    pub fn New_i32_1(
-        handshakeType: u8,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (handshakeType, length))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_u8_0(handshakeType: u8) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (handshakeType))?;
-        Ok(__cordl_object)
-    }
-    pub fn Write(
-        &mut self,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Write", (data))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteToRecordStream(
-        &mut self,
-        protocol: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteToRecordStream", (protocol))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_1(
-        &mut self,
-        handshakeType: u8,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (handshakeType, length))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_u8_0(
-        &mut self,
-        handshakeType: u8,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (handshakeType))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocol+HandshakeMessage")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol_HandshakeMessage {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocol")]
 #[repr(C)]
 #[derive(Debug)]
@@ -812,6 +710,108 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol {
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocol")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocol+HandshakeMessage")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct TlsProtocol_HandshakeMessage {
+    __cordl_parent: crate::System::IO::MemoryStream,
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocol+HandshakeMessage")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::Org::BouncyCastle::Crypto::Tls::TlsProtocol_HandshakeMessage =>
+    "Org.BouncyCastle.Crypto.Tls"."TlsProtocol/HandshakeMessage"
+);
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocol+HandshakeMessage")]
+impl std::ops::Deref
+for crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol_HandshakeMessage {
+    type Target = crate::System::IO::MemoryStream;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocol+HandshakeMessage")]
+impl std::ops::DerefMut
+for crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol_HandshakeMessage {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocol+HandshakeMessage")]
+impl crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol_HandshakeMessage {
+    pub fn New_i32_1(
+        handshakeType: u8,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (handshakeType, length))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_u8_0(handshakeType: u8) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (handshakeType))?;
+        Ok(__cordl_object)
+    }
+    pub fn Write(
+        &mut self,
+        data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Write", (data))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteToRecordStream(
+        &mut self,
+        protocol: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteToRecordStream", (protocol))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_1(
+        &mut self,
+        handshakeType: u8,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (handshakeType, length))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_u8_0(
+        &mut self,
+        handshakeType: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (handshakeType))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocol+HandshakeMessage")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol_HandshakeMessage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

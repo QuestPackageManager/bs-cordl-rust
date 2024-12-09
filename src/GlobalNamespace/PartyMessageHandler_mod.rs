@@ -1,3 +1,127 @@
+#[cfg(feature = "PartyMessageHandler")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct PartyMessageHandler {
+    __cordl_parent: crate::System::Object,
+    pub _serializer: *mut crate::GlobalNamespace::NetworkPacketSerializer_2<
+        crate::GlobalNamespace::PartyMessageHandler_MessageType,
+        *mut crate::GlobalNamespace::IConnectedPlayer,
+    >,
+    pub _connectedPlayerManager: *mut crate::GlobalNamespace::ConnectedPlayerManager,
+    pub connectToMasterServerEvent: *mut crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate,
+}
+#[cfg(feature = "PartyMessageHandler")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PartyMessageHandler => ""
+    ."PartyMessageHandler"
+);
+#[cfg(feature = "PartyMessageHandler")]
+impl std::ops::Deref for crate::GlobalNamespace::PartyMessageHandler {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "PartyMessageHandler")]
+impl std::ops::DerefMut for crate::GlobalNamespace::PartyMessageHandler {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "PartyMessageHandler")]
+impl crate::GlobalNamespace::PartyMessageHandler {
+    #[cfg(feature = "PartyMessageHandler+ConnectToMasterServerDelegate")]
+    pub type ConnectToMasterServerDelegate = crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate;
+    #[cfg(feature = "PartyMessageHandler+ConnectToMasterServerMessage")]
+    pub type ConnectToMasterServerMessage = crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage;
+    #[cfg(feature = "PartyMessageHandler+MessageType")]
+    pub type MessageType = crate::GlobalNamespace::PartyMessageHandler_MessageType;
+    #[cfg(feature = "PartyMessageHandler+ServerStatusUpdatedDelegate")]
+    pub type ServerStatusUpdatedDelegate = crate::GlobalNamespace::PartyMessageHandler_ServerStatusUpdatedDelegate;
+    pub fn ConnectToMasterServer(
+        &mut self,
+        secret: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ConnectToMasterServer", (secret))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleConnectToMasterServer(
+        &mut self,
+        packet: *mut crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleConnectToMasterServer", (packet))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        connectedPlayerManager: *mut crate::GlobalNamespace::ConnectedPlayerManager,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (connectedPlayerManager))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        connectedPlayerManager: *mut crate::GlobalNamespace::ConnectedPlayerManager,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (connectedPlayerManager))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_connectToMasterServerEvent(
+        &mut self,
+        value: *mut crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_connectToMasterServerEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_connectToMasterServerEvent(
+        &mut self,
+        value: *mut crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_connectToMasterServerEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "PartyMessageHandler")]
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PartyMessageHandler {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "PartyMessageHandler+ConnectToMasterServerDelegate")]
 #[repr(C)]
 #[derive(Debug)]
@@ -209,130 +333,6 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate ::GlobalNamespace::PartyMessageHandler_MessageType
     => ""."PartyMessageHandler/MessageType"
 );
-#[cfg(feature = "PartyMessageHandler")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct PartyMessageHandler {
-    __cordl_parent: crate::System::Object,
-    pub _serializer: *mut crate::GlobalNamespace::NetworkPacketSerializer_2<
-        crate::GlobalNamespace::PartyMessageHandler_MessageType,
-        *mut crate::GlobalNamespace::IConnectedPlayer,
-    >,
-    pub _connectedPlayerManager: *mut crate::GlobalNamespace::ConnectedPlayerManager,
-    pub connectToMasterServerEvent: *mut crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate,
-}
-#[cfg(feature = "PartyMessageHandler")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::PartyMessageHandler => ""
-    ."PartyMessageHandler"
-);
-#[cfg(feature = "PartyMessageHandler")]
-impl std::ops::Deref for crate::GlobalNamespace::PartyMessageHandler {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "PartyMessageHandler")]
-impl std::ops::DerefMut for crate::GlobalNamespace::PartyMessageHandler {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "PartyMessageHandler")]
-impl crate::GlobalNamespace::PartyMessageHandler {
-    #[cfg(feature = "PartyMessageHandler+ConnectToMasterServerDelegate")]
-    pub type ConnectToMasterServerDelegate = crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate;
-    #[cfg(feature = "PartyMessageHandler+ConnectToMasterServerMessage")]
-    pub type ConnectToMasterServerMessage = crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage;
-    #[cfg(feature = "PartyMessageHandler+MessageType")]
-    pub type MessageType = crate::GlobalNamespace::PartyMessageHandler_MessageType;
-    #[cfg(feature = "PartyMessageHandler+ServerStatusUpdatedDelegate")]
-    pub type ServerStatusUpdatedDelegate = crate::GlobalNamespace::PartyMessageHandler_ServerStatusUpdatedDelegate;
-    pub fn ConnectToMasterServer(
-        &mut self,
-        secret: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConnectToMasterServer", (secret))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn HandleConnectToMasterServer(
-        &mut self,
-        packet: *mut crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleConnectToMasterServer", (packet))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        connectedPlayerManager: *mut crate::GlobalNamespace::ConnectedPlayerManager,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (connectedPlayerManager))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        connectedPlayerManager: *mut crate::GlobalNamespace::ConnectedPlayerManager,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (connectedPlayerManager))?;
-        Ok(__cordl_ret)
-    }
-    pub fn add_connectToMasterServerEvent(
-        &mut self,
-        value: *mut crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_connectToMasterServerEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn remove_connectToMasterServerEvent(
-        &mut self,
-        value: *mut crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_connectToMasterServerEvent", (value))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "PartyMessageHandler")]
-impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PartyMessageHandler {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "PartyMessageHandler+ServerStatusUpdatedDelegate")]
 #[repr(C)]
 #[derive(Debug)]

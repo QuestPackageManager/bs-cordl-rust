@@ -1,159 +1,3 @@
-#[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
-)]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct RecordHeader__m_StateWithControlIndex_e__FixedBuffer {
-    pub FixedElementField: u8,
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::LowLevel::RecordHeader__m_StateWithControlIndex_e__FixedBuffer
-    => "UnityEngine.InputSystem.LowLevel"
-    ."InputStateHistory/RecordHeader/<m_StateWithControlIndex>e__FixedBuffer"
-);
-#[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
-)]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::LowLevel::RecordHeader__m_StateWithControlIndex_e__FixedBuffer {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
-)]
-impl crate::UnityEngine::InputSystem::LowLevel::RecordHeader__m_StateWithControlIndex_e__FixedBuffer {}
-#[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
-)]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct RecordHeader__m_StateWithoutControlIndex_e__FixedBuffer {
-    pub FixedElementField: u8,
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::LowLevel::RecordHeader__m_StateWithoutControlIndex_e__FixedBuffer
-    => "UnityEngine.InputSystem.LowLevel"
-    ."InputStateHistory/RecordHeader/<m_StateWithoutControlIndex>e__FixedBuffer"
-);
-#[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
-)]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::LowLevel::RecordHeader__m_StateWithoutControlIndex_e__FixedBuffer {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
-)]
-impl crate::UnityEngine::InputSystem::LowLevel::RecordHeader__m_StateWithoutControlIndex_e__FixedBuffer {}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct InputStateHistory_Enumerator {
-    pub m_History: *mut crate::UnityEngine::InputSystem::LowLevel::InputStateHistory,
-    pub m_Index: i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator =>
-    "UnityEngine.InputSystem.LowLevel"."InputStateHistory/Enumerator"
-);
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
-impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveNext",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Reset",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IEnumerator_get_Current(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Collections.IEnumerator.get_Current",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        history: *mut crate::UnityEngine::InputSystem::LowLevel::InputStateHistory,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (history),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Current(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Current",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory")]
 #[repr(C)]
 #[derive(Debug)]
@@ -742,6 +586,94 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct InputStateHistory_Enumerator {
+    pub m_History: *mut crate::UnityEngine::InputSystem::LowLevel::InputStateHistory,
+    pub m_Index: i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator =>
+    "UnityEngine.InputSystem.LowLevel"."InputStateHistory/Enumerator"
+);
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
+impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MoveNext",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Reset",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IEnumerator_get_Current(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Collections.IEnumerator.get_Current",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        history: *mut crate::UnityEngine::InputSystem::LowLevel::InputStateHistory,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (history),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Current(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Current",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -1034,11 +966,11 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
     #[cfg(
         feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
     )]
-    pub type _m_StateWithControlIndex_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::RecordHeader__m_StateWithControlIndex_e__FixedBuffer;
+    pub type _m_StateWithControlIndex_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffer;
     #[cfg(
         feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
     )]
-    pub type _m_StateWithoutControlIndex_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::RecordHeader__m_StateWithoutControlIndex_e__FixedBuffer;
+    pub type _m_StateWithoutControlIndex_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithoutControlIndex_e__FixedBuffer;
     pub fn get_statePtrWithControlIndex(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
@@ -1060,3 +992,71 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
         Ok(__cordl_ret)
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
+)]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffer {
+    pub FixedElementField: u8,
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffer
+    => "UnityEngine.InputSystem.LowLevel"
+    ."InputStateHistory/RecordHeader/<m_StateWithControlIndex>e__FixedBuffer"
+);
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
+)]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffer {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
+)]
+impl crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffer {}
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
+)]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct RecordHeader_InputStateHistory__m_StateWithoutControlIndex_e__FixedBuffer {
+    pub FixedElementField: u8,
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithoutControlIndex_e__FixedBuffer
+    => "UnityEngine.InputSystem.LowLevel"
+    ."InputStateHistory/RecordHeader/<m_StateWithoutControlIndex>e__FixedBuffer"
+);
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
+)]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithoutControlIndex_e__FixedBuffer {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
+)]
+impl crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithoutControlIndex_e__FixedBuffer {}

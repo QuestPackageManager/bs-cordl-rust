@@ -1,60 +1,3 @@
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct JObject___WriteToAsync_g__AwaitProperties_0_0_d {
-    pub __1__state: i32,
-    pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
-    pub task: *mut crate::System::Threading::Tasks::Task,
-    pub __4__this: *mut crate::Newtonsoft::Json::Linq::JObject,
-    pub i: i32,
-    pub Writer: *mut crate::Newtonsoft::Json::JsonWriter,
-    pub CancellationToken: crate::System::Threading::CancellationToken,
-    pub Converters: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::Newtonsoft::Json::JsonConverter,
-    >,
-    pub __u__1: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter,
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d =>
-    "Newtonsoft.Json.Linq"."JObject/<<WriteToAsync>g__AwaitProperties|0_0>d"
-);
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
-impl crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d {
-    pub fn MoveNext(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveNext",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetStateMachine(
-        &mut self,
-        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetStateMachine",
-            (stateMachine),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
 #[repr(C)]
 #[derive(Debug)]
@@ -984,7 +927,7 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JObject_JObjectDynami
 #[cfg(feature = "Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
 impl crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicProxy {
     #[cfg(feature = "Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy+__c")]
-    pub type __c = crate::Newtonsoft::Json::Linq::JObjectDynamicProxy___c;
+    pub type __c = crate::Newtonsoft::Json::Linq::JObjectDynamicProxy_JObject___c;
     pub fn GetDynamicMemberNames(
         &mut self,
         instance: *mut crate::Newtonsoft::Json::Linq::JObject,
@@ -1053,5 +996,62 @@ for crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicProxy {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct JObject___WriteToAsync_g__AwaitProperties_0_0_d {
+    pub __1__state: i32,
+    pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
+    pub task: *mut crate::System::Threading::Tasks::Task,
+    pub __4__this: *mut crate::Newtonsoft::Json::Linq::JObject,
+    pub i: i32,
+    pub Writer: *mut crate::Newtonsoft::Json::JsonWriter,
+    pub CancellationToken: crate::System::Threading::CancellationToken,
+    pub Converters: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::Newtonsoft::Json::JsonConverter,
+    >,
+    pub __u__1: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter,
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d =>
+    "Newtonsoft.Json.Linq"."JObject/<<WriteToAsync>g__AwaitProperties|0_0>d"
+);
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
+impl crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d {
+    pub fn MoveNext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MoveNext",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetStateMachine(
+        &mut self,
+        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetStateMachine",
+            (stateMachine),
+        )?;
+        Ok(__cordl_ret)
     }
 }

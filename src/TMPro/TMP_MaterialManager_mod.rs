@@ -1,3 +1,51 @@
+#[cfg(feature = "TMPro+TMP_MaterialManager")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct TMP_MaterialManager {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "TMPro+TMP_MaterialManager")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::TMPro::TMP_MaterialManager => "TMPro"
+    ."TMP_MaterialManager"
+);
+#[cfg(feature = "TMPro+TMP_MaterialManager")]
+impl std::ops::Deref for crate::TMPro::TMP_MaterialManager {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "TMPro+TMP_MaterialManager")]
+impl std::ops::DerefMut for crate::TMPro::TMP_MaterialManager {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "TMPro+TMP_MaterialManager")]
+impl crate::TMPro::TMP_MaterialManager {
+    #[cfg(feature = "TMPro+TMP_MaterialManager+FallbackMaterial")]
+    pub type FallbackMaterial = crate::TMPro::TMP_MaterialManager_FallbackMaterial;
+    #[cfg(feature = "TMPro+TMP_MaterialManager+MaskingMaterial")]
+    pub type MaskingMaterial = crate::TMPro::TMP_MaterialManager_MaskingMaterial;
+    #[cfg(feature = "TMPro+TMP_MaterialManager+__c__DisplayClass11_0")]
+    pub type __c__DisplayClass11_0 = crate::TMPro::TMP_MaterialManager___c__DisplayClass11_0;
+    #[cfg(feature = "TMPro+TMP_MaterialManager+__c__DisplayClass12_0")]
+    pub type __c__DisplayClass12_0 = crate::TMPro::TMP_MaterialManager___c__DisplayClass12_0;
+    #[cfg(feature = "TMPro+TMP_MaterialManager+__c__DisplayClass13_0")]
+    pub type __c__DisplayClass13_0 = crate::TMPro::TMP_MaterialManager___c__DisplayClass13_0;
+    #[cfg(feature = "TMPro+TMP_MaterialManager+__c__DisplayClass9_0")]
+    pub type __c__DisplayClass9_0 = crate::TMPro::TMP_MaterialManager___c__DisplayClass9_0;
+}
+#[cfg(feature = "TMPro+TMP_MaterialManager")]
+impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_MaterialManager {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "TMPro+TMP_MaterialManager+FallbackMaterial")]
 #[repr(C)]
 #[derive(Debug)]
@@ -108,54 +156,6 @@ impl crate::TMPro::TMP_MaterialManager_MaskingMaterial {
 #[cfg(feature = "TMPro+TMP_MaterialManager+MaskingMaterial")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::TMPro::TMP_MaterialManager_MaskingMaterial {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "TMPro+TMP_MaterialManager")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct TMP_MaterialManager {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "TMPro+TMP_MaterialManager")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::TMPro::TMP_MaterialManager => "TMPro"
-    ."TMP_MaterialManager"
-);
-#[cfg(feature = "TMPro+TMP_MaterialManager")]
-impl std::ops::Deref for crate::TMPro::TMP_MaterialManager {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "TMPro+TMP_MaterialManager")]
-impl std::ops::DerefMut for crate::TMPro::TMP_MaterialManager {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "TMPro+TMP_MaterialManager")]
-impl crate::TMPro::TMP_MaterialManager {
-    #[cfg(feature = "TMPro+TMP_MaterialManager+FallbackMaterial")]
-    pub type FallbackMaterial = crate::TMPro::TMP_MaterialManager_FallbackMaterial;
-    #[cfg(feature = "TMPro+TMP_MaterialManager+MaskingMaterial")]
-    pub type MaskingMaterial = crate::TMPro::TMP_MaterialManager_MaskingMaterial;
-    #[cfg(feature = "TMPro+TMP_MaterialManager+__c__DisplayClass11_0")]
-    pub type __c__DisplayClass11_0 = crate::TMPro::TMP_MaterialManager___c__DisplayClass11_0;
-    #[cfg(feature = "TMPro+TMP_MaterialManager+__c__DisplayClass12_0")]
-    pub type __c__DisplayClass12_0 = crate::TMPro::TMP_MaterialManager___c__DisplayClass12_0;
-    #[cfg(feature = "TMPro+TMP_MaterialManager+__c__DisplayClass13_0")]
-    pub type __c__DisplayClass13_0 = crate::TMPro::TMP_MaterialManager___c__DisplayClass13_0;
-    #[cfg(feature = "TMPro+TMP_MaterialManager+__c__DisplayClass9_0")]
-    pub type __c__DisplayClass9_0 = crate::TMPro::TMP_MaterialManager___c__DisplayClass9_0;
-}
-#[cfg(feature = "TMPro+TMP_MaterialManager")]
-impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_MaterialManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

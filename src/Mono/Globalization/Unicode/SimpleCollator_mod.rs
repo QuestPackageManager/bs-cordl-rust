@@ -1,134 +1,3 @@
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct SimpleCollator_Context {
-    pub Option: crate::System::Globalization::CompareOptions,
-    pub NeverMatchFlags: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub AlwaysMatchFlags: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub Buffer1: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub Buffer2: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub PrevCode: i32,
-    pub PrevSortKey: *mut quest_hook::libil2cpp::Il2CppObject,
-}
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Globalization::Unicode::SimpleCollator_Context =>
-    "Mono.Globalization.Unicode"."SimpleCollator/Context"
-);
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
-impl crate::Mono::Globalization::Unicode::SimpleCollator_Context {
-    pub fn _ctor(
-        &mut self,
-        opt: crate::System::Globalization::CompareOptions,
-        alwaysMatchFlags: *mut quest_hook::libil2cpp::Il2CppObject,
-        neverMatchFlags: *mut quest_hook::libil2cpp::Il2CppObject,
-        buffer1: *mut quest_hook::libil2cpp::Il2CppObject,
-        buffer2: *mut quest_hook::libil2cpp::Il2CppObject,
-        prev1: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (opt, alwaysMatchFlags, neverMatchFlags, buffer1, buffer2, prev1),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct SimpleCollator_Escape {
-    pub Source: *mut crate::System::String,
-    pub Index: i32,
-    pub Start: i32,
-    pub End: i32,
-    pub Optional: i32,
-}
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Globalization::Unicode::SimpleCollator_Escape => "Mono.Globalization.Unicode"
-    ."SimpleCollator/Escape"
-);
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
-impl crate::Mono::Globalization::Unicode::SimpleCollator_Escape {}
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum SimpleCollator_ExtenderType {
-    Buggy = 4i32,
-    Conditional = 3i32,
-    None = 0i32,
-    Simple = 1i32,
-    Voiced = 2i32,
-}
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Globalization::Unicode::SimpleCollator_ExtenderType =>
-    "Mono.Globalization.Unicode"."SimpleCollator/ExtenderType"
-);
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct SimpleCollator_PreviousInfo {
-    pub Code: i32,
-    pub SortKey: *mut quest_hook::libil2cpp::Il2CppObject,
-}
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo =>
-    "Mono.Globalization.Unicode"."SimpleCollator/PreviousInfo"
-);
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
-impl crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
-    pub fn _ctor(
-        &mut self,
-        dummy: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (dummy),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator")]
 #[repr(C)]
 #[derive(Debug)]
@@ -888,5 +757,136 @@ for crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct SimpleCollator_Context {
+    pub Option: crate::System::Globalization::CompareOptions,
+    pub NeverMatchFlags: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub AlwaysMatchFlags: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub Buffer1: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub Buffer2: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub PrevCode: i32,
+    pub PrevSortKey: *mut quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::Mono::Globalization::Unicode::SimpleCollator_Context =>
+    "Mono.Globalization.Unicode"."SimpleCollator/Context"
+);
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
+impl crate::Mono::Globalization::Unicode::SimpleCollator_Context {
+    pub fn _ctor(
+        &mut self,
+        opt: crate::System::Globalization::CompareOptions,
+        alwaysMatchFlags: *mut quest_hook::libil2cpp::Il2CppObject,
+        neverMatchFlags: *mut quest_hook::libil2cpp::Il2CppObject,
+        buffer1: *mut quest_hook::libil2cpp::Il2CppObject,
+        buffer2: *mut quest_hook::libil2cpp::Il2CppObject,
+        prev1: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (opt, alwaysMatchFlags, neverMatchFlags, buffer1, buffer2, prev1),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct SimpleCollator_Escape {
+    pub Source: *mut crate::System::String,
+    pub Index: i32,
+    pub Start: i32,
+    pub End: i32,
+    pub Optional: i32,
+}
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::Mono::Globalization::Unicode::SimpleCollator_Escape => "Mono.Globalization.Unicode"
+    ."SimpleCollator/Escape"
+);
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
+impl crate::Mono::Globalization::Unicode::SimpleCollator_Escape {}
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum SimpleCollator_ExtenderType {
+    Buggy = 4i32,
+    Conditional = 3i32,
+    None = 0i32,
+    Simple = 1i32,
+    Voiced = 2i32,
+}
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::Mono::Globalization::Unicode::SimpleCollator_ExtenderType =>
+    "Mono.Globalization.Unicode"."SimpleCollator/ExtenderType"
+);
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct SimpleCollator_PreviousInfo {
+    pub Code: i32,
+    pub SortKey: *mut quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo =>
+    "Mono.Globalization.Unicode"."SimpleCollator/PreviousInfo"
+);
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
+impl crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
+    pub fn _ctor(
+        &mut self,
+        dummy: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (dummy),
+        )?;
+        Ok(__cordl_ret)
     }
 }

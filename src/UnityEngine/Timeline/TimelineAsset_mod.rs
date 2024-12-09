@@ -1,154 +1,3 @@
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+DurationMode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum TimelineAsset_DurationMode {
-    BasedOnClips = 0i32,
-    FixedLength = 1i32,
-}
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+DurationMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::Timeline::TimelineAsset_DurationMode => "UnityEngine.Timeline"
-    ."TimelineAsset/DurationMode"
-);
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct TimelineAsset_EditorSettings {
-    __cordl_parent: crate::System::Object,
-    pub m_Framerate: f64,
-    pub m_ScenePreview: bool,
-}
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::Timeline::TimelineAsset_EditorSettings => "UnityEngine.Timeline"
-    ."TimelineAsset/EditorSettings"
-);
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
-impl std::ops::Deref for crate::UnityEngine::Timeline::TimelineAsset_EditorSettings {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
-impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimelineAsset_EditorSettings {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
-impl crate::UnityEngine::Timeline::TimelineAsset_EditorSettings {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn SetStandardFrameRate(
-        &mut self,
-        enumValue: crate::UnityEngine::Timeline::StandardFrameRates,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetStandardFrameRate", (enumValue))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_fps(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_fps", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_frameRate(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object.invoke("get_frameRate", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_scenePreview(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_scenePreview", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_fps(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_fps", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_frameRate(
-        &mut self,
-        value: f64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_frameRate", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_scenePreview(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_scenePreview", (value))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::Timeline::TimelineAsset_EditorSettings {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+MediaType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum TimelineAsset_MediaType {
-    Animation = 0i32,
-    Audio = 1i32,
-    Group = 5i32,
-    Hybrid = 4i32,
-    Script = 3i32,
-    Texture = 2i32,
-}
-#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+MediaType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Timeline::TimelineAsset_MediaType
-    => "UnityEngine.Timeline"."TimelineAsset/MediaType"
-);
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset")]
 #[repr(C)]
 #[derive(Debug)]
@@ -701,6 +550,157 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::Timelin
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+DurationMode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TimelineAsset_DurationMode {
+    BasedOnClips = 0i32,
+    FixedLength = 1i32,
+}
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+DurationMode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::Timeline::TimelineAsset_DurationMode => "UnityEngine.Timeline"
+    ."TimelineAsset/DurationMode"
+);
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct TimelineAsset_EditorSettings {
+    __cordl_parent: crate::System::Object,
+    pub m_Framerate: f64,
+    pub m_ScenePreview: bool,
+}
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::Timeline::TimelineAsset_EditorSettings => "UnityEngine.Timeline"
+    ."TimelineAsset/EditorSettings"
+);
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
+impl std::ops::Deref for crate::UnityEngine::Timeline::TimelineAsset_EditorSettings {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
+impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimelineAsset_EditorSettings {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
+impl crate::UnityEngine::Timeline::TimelineAsset_EditorSettings {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SetStandardFrameRate(
+        &mut self,
+        enumValue: crate::UnityEngine::Timeline::StandardFrameRates,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetStandardFrameRate", (enumValue))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_fps(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_fps", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_frameRate(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f64 = __cordl_object.invoke("get_frameRate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_scenePreview(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_scenePreview", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_fps(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_fps", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_frameRate(
+        &mut self,
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_frameRate", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_scenePreview(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_scenePreview", (value))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::Timeline::TimelineAsset_EditorSettings {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+MediaType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TimelineAsset_MediaType {
+    Animation = 0i32,
+    Audio = 1i32,
+    Group = 5i32,
+    Hybrid = 4i32,
+    Script = 3i32,
+    Texture = 2i32,
+}
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+MediaType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::Timeline::TimelineAsset_MediaType
+    => "UnityEngine.Timeline"."TimelineAsset/MediaType"
+);
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+TimelineAssetUpgrade")]
 #[repr(C)]
 #[derive(Debug)]

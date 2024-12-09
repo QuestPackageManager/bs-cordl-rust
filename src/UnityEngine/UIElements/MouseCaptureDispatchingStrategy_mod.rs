@@ -1,17 +1,3 @@
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureDispatchingStrategy+EventBehavior")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum MouseCaptureDispatchingStrategy_EventBehavior {
-    IsCapturable = 1i32,
-    IsSentExclusivelyToCapturingElement = 2i32,
-    None = 0i32,
-}
-#[cfg(feature = "UnityEngine+UIElements+MouseCaptureDispatchingStrategy+EventBehavior")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::MouseCaptureDispatchingStrategy_EventBehavior =>
-    "UnityEngine.UIElements"."MouseCaptureDispatchingStrategy/EventBehavior"
-);
 #[cfg(feature = "UnityEngine+UIElements+MouseCaptureDispatchingStrategy")]
 #[repr(C)]
 #[derive(Debug)]
@@ -95,3 +81,17 @@ for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MouseCaptureDispatchingStrategy+EventBehavior")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum MouseCaptureDispatchingStrategy_EventBehavior {
+    IsCapturable = 1i32,
+    IsSentExclusivelyToCapturingElement = 2i32,
+    None = 0i32,
+}
+#[cfg(feature = "UnityEngine+UIElements+MouseCaptureDispatchingStrategy+EventBehavior")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::MouseCaptureDispatchingStrategy_EventBehavior =>
+    "UnityEngine.UIElements"."MouseCaptureDispatchingStrategy/EventBehavior"
+);

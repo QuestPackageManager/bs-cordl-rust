@@ -1,131 +1,3 @@
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct XmlAtomicValue_NamespacePrefixForQName {
-    __cordl_parent: crate::System::Object,
-    pub prefix: *mut crate::System::String,
-    pub ns: *mut crate::System::String,
-}
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName => "System.Xml.Schema"
-    ."XmlAtomicValue/NamespacePrefixForQName"
-);
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
-impl std::ops::Deref
-for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
-impl std::ops::DerefMut
-for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
-impl crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
-    pub fn GetNamespacesInScope(
-        &mut self,
-        scope: crate::System::Xml::XmlNamespaceScope,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
-        > = __cordl_object.invoke("GetNamespacesInScope", (scope))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LookupNamespace(
-        &mut self,
-        prefix: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("LookupNamespace", (prefix))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LookupPrefix(
-        &mut self,
-        namespaceName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("LookupPrefix", (namespaceName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        prefix: *mut crate::System::String,
-        ns: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (prefix, ns))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        prefix: *mut crate::System::String,
-        ns: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (prefix, ns))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct XmlAtomicValue_Union {
-    padding: [u8; 8usize],
-}
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::Schema::XmlAtomicValue_Union =>
-    "System.Xml.Schema"."XmlAtomicValue/Union"
-);
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Xml::Schema::XmlAtomicValue_Union {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
-impl crate::System::Xml::Schema::XmlAtomicValue_Union {}
 #[cfg(feature = "System+Xml+Schema+XmlAtomicValue")]
 #[repr(C)]
 #[derive(Debug)]
@@ -494,3 +366,131 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XmlAtomic
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct XmlAtomicValue_NamespacePrefixForQName {
+    __cordl_parent: crate::System::Object,
+    pub prefix: *mut crate::System::String,
+    pub ns: *mut crate::System::String,
+}
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName => "System.Xml.Schema"
+    ."XmlAtomicValue/NamespacePrefixForQName"
+);
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
+impl std::ops::Deref
+for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
+impl std::ops::DerefMut
+for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
+impl crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
+    pub fn GetNamespacesInScope(
+        &mut self,
+        scope: crate::System::Xml::XmlNamespaceScope,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IDictionary_2<
+            *mut crate::System::String,
+            *mut crate::System::String,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IDictionary_2<
+            *mut crate::System::String,
+            *mut crate::System::String,
+        > = __cordl_object.invoke("GetNamespacesInScope", (scope))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LookupNamespace(
+        &mut self,
+        prefix: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("LookupNamespace", (prefix))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LookupPrefix(
+        &mut self,
+        namespaceName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("LookupPrefix", (namespaceName))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        prefix: *mut crate::System::String,
+        ns: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (prefix, ns))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        prefix: *mut crate::System::String,
+        ns: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (prefix, ns))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct XmlAtomicValue_Union {
+    padding: [u8; 8usize],
+}
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::Schema::XmlAtomicValue_Union =>
+    "System.Xml.Schema"."XmlAtomicValue/Union"
+);
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::Xml::Schema::XmlAtomicValue_Union {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
+impl crate::System::Xml::Schema::XmlAtomicValue_Union {}

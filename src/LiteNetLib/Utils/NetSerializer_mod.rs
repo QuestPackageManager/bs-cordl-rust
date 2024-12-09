@@ -1,3 +1,335 @@
+#[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct NetSerializer {
+    __cordl_parent: crate::System::Object,
+    pub _writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+    pub _maxStringLength: i32,
+    pub _registeredTypes: *mut crate::System::Collections::Generic::Dictionary_2<
+        *mut crate::System::Type,
+        *mut crate::LiteNetLib::Utils::NetSerializer_CustomType,
+    >,
+}
+#[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::LiteNetLib::Utils::NetSerializer =>
+    "LiteNetLib.Utils"."NetSerializer"
+);
+#[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
+impl std::ops::Deref for crate::LiteNetLib::Utils::NetSerializer {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
+impl std::ops::DerefMut for crate::LiteNetLib::Utils::NetSerializer {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
+impl crate::LiteNetLib::Utils::NetSerializer {
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+BoolSerializer_1")]
+    pub type BoolSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_BoolSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ByteSerializer_1")]
+    pub type ByteSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_ByteSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CharSerializer_1")]
+    pub type CharSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_CharSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ClassInfo_1")]
+    pub type ClassInfo_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomType")]
+    pub type CustomType = crate::LiteNetLib::Utils::NetSerializer_CustomType;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeClass_1")]
+    pub type CustomTypeClass_1<TProperty: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_CustomTypeClass_1<
+        TProperty,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeStatic_1")]
+    pub type CustomTypeStatic_1<TProperty: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_CustomTypeStatic_1<
+        TProperty,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeStruct_1")]
+    pub type CustomTypeStruct_1<TProperty: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_CustomTypeStruct_1<
+        TProperty,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+DoubleSerializer_1")]
+    pub type DoubleSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_DoubleSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+EnumByteSerializer_1")]
+    pub type EnumByteSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_EnumByteSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+EnumIntSerializer_1")]
+    pub type EnumIntSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_EnumIntSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallClass_2")]
+    pub type FastCallClass_2<
+        TClass: quest_hook::libil2cpp::Type,
+        TProperty: quest_hook::libil2cpp::Type,
+    > = crate::LiteNetLib::Utils::NetSerializer_FastCallClass_2<TClass, TProperty>;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallSpecificAuto_2")]
+    pub type FastCallSpecificAuto_2<
+        TClass: quest_hook::libil2cpp::Type,
+        TProperty: quest_hook::libil2cpp::Type,
+    > = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecificAuto_2<
+        TClass,
+        TProperty,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallSpecific_2")]
+    pub type FastCallSpecific_2<
+        TClass: quest_hook::libil2cpp::Type,
+        TProperty: quest_hook::libil2cpp::Type,
+    > = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<TClass, TProperty>;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallStatic_2")]
+    pub type FastCallStatic_2<
+        TClass: quest_hook::libil2cpp::Type,
+        TProperty: quest_hook::libil2cpp::Type,
+    > = crate::LiteNetLib::Utils::NetSerializer_FastCallStatic_2<TClass, TProperty>;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallStruct_2")]
+    pub type FastCallStruct_2<
+        TClass: quest_hook::libil2cpp::Type,
+        TProperty: quest_hook::libil2cpp::Type,
+    > = crate::LiteNetLib::Utils::NetSerializer_FastCallStruct_2<TClass, TProperty>;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCall_1")]
+    pub type FastCall_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_FastCall_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FloatSerializer_1")]
+    pub type FloatSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_FloatSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+IPEndPointSerializer_1")]
+    pub type IPEndPointSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_IPEndPointSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+IntSerializer_1")]
+    pub type IntSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_IntSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+LongSerializer_1")]
+    pub type LongSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_LongSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+SByteSerializer_1")]
+    pub type SByteSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_SByteSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ShortSerializer_1")]
+    pub type ShortSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_ShortSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+StringSerializer_1")]
+    pub type StringSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_StringSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+UIntSerializer_1")]
+    pub type UIntSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_UIntSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ULongSerializer_1")]
+    pub type ULongSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_ULongSerializer_1<
+        T,
+    >;
+    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+UShortSerializer_1")]
+    pub type UShortSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_UShortSerializer_1<
+        T,
+    >;
+    pub fn Deserialize_NetDataReader0<T>(
+        &mut self,
+        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("Deserialize", (reader))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Deserialize_T1<T>(
+        &mut self,
+        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        target: T,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Deserialize", (reader, target))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_i32_1(maxStringLength: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (maxStringLength))?;
+        Ok(__cordl_object)
+    }
+    pub fn Register<T>(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Register", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RegisterInternal<T>(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T> = __cordl_object
+            .invoke("RegisterInternal", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RegisterNestedType_0<T>(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterNestedType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RegisterNestedType_Action_2_Func_2_2<T>(
+        &mut self,
+        writer: *mut crate::System::Action_2<
+            *mut crate::LiteNetLib::Utils::NetDataWriter,
+            T,
+        >,
+        reader: *mut crate::System::Func_2<
+            *mut crate::LiteNetLib::Utils::NetDataReader,
+            T,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterNestedType", (writer, reader))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RegisterNestedType_Func_1_1<T>(
+        &mut self,
+        constructor: *mut crate::System::Func_1<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RegisterNestedType", (constructor))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Serialize_NetDataWriter_T0<T>(
+        &mut self,
+        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
+        obj: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Serialize", (writer, obj))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Serialize_T1<T>(
+        &mut self,
+        obj: T,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("Serialize", (obj))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_1(
+        &mut self,
+        maxStringLength: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (maxStringLength))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
+impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::NetSerializer {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+BoolSerializer_1")]
 #[repr(C)]
 #[derive(Debug)]
@@ -2583,338 +2915,6 @@ impl<
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+LongSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::LiteNetLib::Utils::NetSerializer_LongSerializer_1<T> {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct NetSerializer {
-    __cordl_parent: crate::System::Object,
-    pub _writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-    pub _maxStringLength: i32,
-    pub _registeredTypes: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Type,
-        *mut crate::LiteNetLib::Utils::NetSerializer_CustomType,
-    >,
-}
-#[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::LiteNetLib::Utils::NetSerializer =>
-    "LiteNetLib.Utils"."NetSerializer"
-);
-#[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
-impl std::ops::Deref for crate::LiteNetLib::Utils::NetSerializer {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
-impl std::ops::DerefMut for crate::LiteNetLib::Utils::NetSerializer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
-impl crate::LiteNetLib::Utils::NetSerializer {
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+BoolSerializer_1")]
-    pub type BoolSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_BoolSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ByteSerializer_1")]
-    pub type ByteSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_ByteSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CharSerializer_1")]
-    pub type CharSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_CharSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ClassInfo_1")]
-    pub type ClassInfo_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomType")]
-    pub type CustomType = crate::LiteNetLib::Utils::NetSerializer_CustomType;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeClass_1")]
-    pub type CustomTypeClass_1<TProperty: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_CustomTypeClass_1<
-        TProperty,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeStatic_1")]
-    pub type CustomTypeStatic_1<TProperty: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_CustomTypeStatic_1<
-        TProperty,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeStruct_1")]
-    pub type CustomTypeStruct_1<TProperty: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_CustomTypeStruct_1<
-        TProperty,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+DoubleSerializer_1")]
-    pub type DoubleSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_DoubleSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+EnumByteSerializer_1")]
-    pub type EnumByteSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_EnumByteSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+EnumIntSerializer_1")]
-    pub type EnumIntSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_EnumIntSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallClass_2")]
-    pub type FastCallClass_2<
-        TClass: quest_hook::libil2cpp::Type,
-        TProperty: quest_hook::libil2cpp::Type,
-    > = crate::LiteNetLib::Utils::NetSerializer_FastCallClass_2<TClass, TProperty>;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallSpecificAuto_2")]
-    pub type FastCallSpecificAuto_2<
-        TClass: quest_hook::libil2cpp::Type,
-        TProperty: quest_hook::libil2cpp::Type,
-    > = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecificAuto_2<
-        TClass,
-        TProperty,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallSpecific_2")]
-    pub type FastCallSpecific_2<
-        TClass: quest_hook::libil2cpp::Type,
-        TProperty: quest_hook::libil2cpp::Type,
-    > = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<TClass, TProperty>;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallStatic_2")]
-    pub type FastCallStatic_2<
-        TClass: quest_hook::libil2cpp::Type,
-        TProperty: quest_hook::libil2cpp::Type,
-    > = crate::LiteNetLib::Utils::NetSerializer_FastCallStatic_2<TClass, TProperty>;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCallStruct_2")]
-    pub type FastCallStruct_2<
-        TClass: quest_hook::libil2cpp::Type,
-        TProperty: quest_hook::libil2cpp::Type,
-    > = crate::LiteNetLib::Utils::NetSerializer_FastCallStruct_2<TClass, TProperty>;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCall_1")]
-    pub type FastCall_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_FastCall_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FloatSerializer_1")]
-    pub type FloatSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_FloatSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+IPEndPointSerializer_1")]
-    pub type IPEndPointSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_IPEndPointSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+IntSerializer_1")]
-    pub type IntSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_IntSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+LongSerializer_1")]
-    pub type LongSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_LongSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+SByteSerializer_1")]
-    pub type SByteSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_SByteSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ShortSerializer_1")]
-    pub type ShortSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_ShortSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+StringSerializer_1")]
-    pub type StringSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_StringSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+UIntSerializer_1")]
-    pub type UIntSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_UIntSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ULongSerializer_1")]
-    pub type ULongSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_ULongSerializer_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetSerializer+UShortSerializer_1")]
-    pub type UShortSerializer_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetSerializer_UShortSerializer_1<
-        T,
-    >;
-    pub fn Deserialize_NetDataReader0<T>(
-        &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-    ) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("Deserialize", (reader))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Deserialize_T1<T>(
-        &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-        target: T,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Deserialize", (reader, target))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_i32_1(maxStringLength: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (maxStringLength))?;
-        Ok(__cordl_object)
-    }
-    pub fn Register<T>(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Register", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegisterInternal<T>(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T>,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T> = __cordl_object
-            .invoke("RegisterInternal", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegisterNestedType_0<T>(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterNestedType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegisterNestedType_Action_2_Func_2_2<T>(
-        &mut self,
-        writer: *mut crate::System::Action_2<
-            *mut crate::LiteNetLib::Utils::NetDataWriter,
-            T,
-        >,
-        reader: *mut crate::System::Func_2<
-            *mut crate::LiteNetLib::Utils::NetDataReader,
-            T,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterNestedType", (writer, reader))?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegisterNestedType_Func_1_1<T>(
-        &mut self,
-        constructor: *mut crate::System::Func_1<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RegisterNestedType", (constructor))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Serialize_NetDataWriter_T0<T>(
-        &mut self,
-        writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-        obj: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Serialize", (writer, obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Serialize_T1<T>(
-        &mut self,
-        obj: T,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
-            .invoke("Serialize", (obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_1(
-        &mut self,
-        maxStringLength: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (maxStringLength))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
-impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::NetSerializer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -1,3 +1,614 @@
+#[cfg(feature = "OVRPlugin+Media+InputVideoBufferType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Media_OVRPlugin_InputVideoBufferType {
+    EnumSize = 2147483647i32,
+    Memory = 0i32,
+    TextureHandle = 1i32,
+}
+#[cfg(feature = "OVRPlugin+Media+InputVideoBufferType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::Media_OVRPlugin_InputVideoBufferType => ""
+    ."OVRPlugin/Media/InputVideoBufferType"
+);
+#[cfg(feature = "OVRPlugin+Media+MrcActivationMode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Media_OVRPlugin_MrcActivationMode {
+    Automatic = 0i32,
+    Disabled = 1i32,
+    EnumSize = 2147483647i32,
+}
+#[cfg(feature = "OVRPlugin+Media+MrcActivationMode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::Media_OVRPlugin_MrcActivationMode => ""
+    ."OVRPlugin/Media/MrcActivationMode"
+);
+#[cfg(feature = "OVRPlugin+Media+PlatformCameraMode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Media_OVRPlugin_PlatformCameraMode {
+    Disabled = -1i32,
+    EnumSize = 2147483647i32,
+    Initialized = 0i32,
+    MobileMRC = 7i32,
+    RemoteDroneControlled = 4i32,
+    RemoteSpatialMapped = 5i32,
+    SmartNavigated = 2i32,
+    SpectatorMode = 6i32,
+    StabilizedPoV = 3i32,
+    UserControlled = 1i32,
+}
+#[cfg(feature = "OVRPlugin+Media+PlatformCameraMode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::Media_OVRPlugin_PlatformCameraMode => ""
+    ."OVRPlugin/Media/PlatformCameraMode"
+);
+#[cfg(feature = "OVRPlugin")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "OVRPlugin")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRPlugin => ""."OVRPlugin"
+);
+#[cfg(feature = "OVRPlugin")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin")]
+impl crate::GlobalNamespace::OVRPlugin {
+    pub const AppPerfFrameStatsMaxCount: i32 = 5i32;
+    pub const EventDataBufferSize: i32 = 4000i32;
+    pub const OverlayShapeFlagShift: i32 = 4i32;
+    pub const RENDER_MODEL_NULL_KEY: i32 = 0i32;
+    pub const SpaceFilterInfoComponentsMaxSize: i32 = 16i32;
+    pub const SpaceFilterInfoIdsMaxSize: i32 = 1024i32;
+    pub const SpatialEntityMaxQueryResultsPerEvent: i32 = 128i32;
+    pub const isSupportedPlatform: bool = true;
+    pub const pluginName: &'static str = "OVRPlugin";
+    #[cfg(feature = "OVRPlugin+AppPerfFrameStats")]
+    pub type AppPerfFrameStats = crate::GlobalNamespace::OVRPlugin_AppPerfFrameStats;
+    #[cfg(feature = "OVRPlugin+AppPerfStats")]
+    pub type AppPerfStats = crate::GlobalNamespace::OVRPlugin_AppPerfStats;
+    #[cfg(feature = "OVRPlugin+BatteryStatus")]
+    pub type BatteryStatus = crate::GlobalNamespace::OVRPlugin_BatteryStatus;
+    #[cfg(feature = "OVRPlugin+BlendFactor")]
+    pub type BlendFactor = crate::GlobalNamespace::OVRPlugin_BlendFactor;
+    #[cfg(feature = "OVRPlugin+BodyJointLocation")]
+    pub type BodyJointLocation = crate::GlobalNamespace::OVRPlugin_BodyJointLocation;
+    #[cfg(feature = "OVRPlugin+BodyState")]
+    pub type BodyState = crate::GlobalNamespace::OVRPlugin_BodyState;
+    #[cfg(feature = "OVRPlugin+BodyStateInternal")]
+    pub type BodyStateInternal = crate::GlobalNamespace::OVRPlugin_BodyStateInternal;
+    #[cfg(feature = "OVRPlugin+Bone")]
+    pub type Bone = crate::GlobalNamespace::OVRPlugin_Bone;
+    #[cfg(feature = "OVRPlugin+BoneCapsule")]
+    pub type BoneCapsule = crate::GlobalNamespace::OVRPlugin_BoneCapsule;
+    #[cfg(feature = "OVRPlugin+BoneId")]
+    pub type BoneId = crate::GlobalNamespace::OVRPlugin_BoneId;
+    #[cfg(feature = "OVRPlugin+Bool")]
+    pub type Bool = crate::GlobalNamespace::OVRPlugin_Bool;
+    #[cfg(feature = "OVRPlugin+BoundaryGeometry")]
+    pub type BoundaryGeometry = crate::GlobalNamespace::OVRPlugin_BoundaryGeometry;
+    #[cfg(feature = "OVRPlugin+BoundaryTestResult")]
+    pub type BoundaryTestResult = crate::GlobalNamespace::OVRPlugin_BoundaryTestResult;
+    #[cfg(feature = "OVRPlugin+BoundaryType")]
+    pub type BoundaryType = crate::GlobalNamespace::OVRPlugin_BoundaryType;
+    #[cfg(feature = "OVRPlugin+Boundsf")]
+    pub type Boundsf = crate::GlobalNamespace::OVRPlugin_Boundsf;
+    #[cfg(feature = "OVRPlugin+CameraAnchorType")]
+    pub type CameraAnchorType = crate::GlobalNamespace::OVRPlugin_CameraAnchorType;
+    #[cfg(feature = "OVRPlugin+CameraDevice")]
+    pub type CameraDevice = crate::GlobalNamespace::OVRPlugin_CameraDevice;
+    #[cfg(feature = "OVRPlugin+CameraDeviceDepthQuality")]
+    pub type CameraDeviceDepthQuality = crate::GlobalNamespace::OVRPlugin_CameraDeviceDepthQuality;
+    #[cfg(feature = "OVRPlugin+CameraDeviceDepthSensingMode")]
+    pub type CameraDeviceDepthSensingMode = crate::GlobalNamespace::OVRPlugin_CameraDeviceDepthSensingMode;
+    #[cfg(feature = "OVRPlugin+CameraDeviceIntrinsicsParameters")]
+    pub type CameraDeviceIntrinsicsParameters = crate::GlobalNamespace::OVRPlugin_CameraDeviceIntrinsicsParameters;
+    #[cfg(feature = "OVRPlugin+CameraExtrinsics")]
+    pub type CameraExtrinsics = crate::GlobalNamespace::OVRPlugin_CameraExtrinsics;
+    #[cfg(feature = "OVRPlugin+CameraIntrinsics")]
+    pub type CameraIntrinsics = crate::GlobalNamespace::OVRPlugin_CameraIntrinsics;
+    #[cfg(feature = "OVRPlugin+CameraStatus")]
+    pub type CameraStatus = crate::GlobalNamespace::OVRPlugin_CameraStatus;
+    #[cfg(feature = "OVRPlugin+ColorSpace")]
+    pub type ColorSpace = crate::GlobalNamespace::OVRPlugin_ColorSpace;
+    #[cfg(feature = "OVRPlugin+Colorf")]
+    pub type Colorf = crate::GlobalNamespace::OVRPlugin_Colorf;
+    #[cfg(feature = "OVRPlugin+Controller")]
+    pub type Controller = crate::GlobalNamespace::OVRPlugin_Controller;
+    #[cfg(feature = "OVRPlugin+ControllerState")]
+    pub type ControllerState = crate::GlobalNamespace::OVRPlugin_ControllerState;
+    #[cfg(feature = "OVRPlugin+ControllerState2")]
+    pub type ControllerState2 = crate::GlobalNamespace::OVRPlugin_ControllerState2;
+    #[cfg(feature = "OVRPlugin+ControllerState4")]
+    pub type ControllerState4 = crate::GlobalNamespace::OVRPlugin_ControllerState4;
+    #[cfg(feature = "OVRPlugin+ControllerState5")]
+    pub type ControllerState5 = crate::GlobalNamespace::OVRPlugin_ControllerState5;
+    #[cfg(feature = "OVRPlugin+ControllerState6")]
+    pub type ControllerState6 = crate::GlobalNamespace::OVRPlugin_ControllerState6;
+    #[cfg(feature = "OVRPlugin+EventDataBuffer")]
+    pub type EventDataBuffer = crate::GlobalNamespace::OVRPlugin_EventDataBuffer;
+    #[cfg(feature = "OVRPlugin+EventType")]
+    pub type EventType = crate::GlobalNamespace::OVRPlugin_EventType;
+    #[cfg(feature = "OVRPlugin+Eye")]
+    pub type Eye = crate::GlobalNamespace::OVRPlugin_Eye;
+    #[cfg(feature = "OVRPlugin+EyeGazeState")]
+    pub type EyeGazeState = crate::GlobalNamespace::OVRPlugin_EyeGazeState;
+    #[cfg(feature = "OVRPlugin+EyeGazesState")]
+    pub type EyeGazesState = crate::GlobalNamespace::OVRPlugin_EyeGazesState;
+    #[cfg(feature = "OVRPlugin+EyeGazesStateInternal")]
+    pub type EyeGazesStateInternal = crate::GlobalNamespace::OVRPlugin_EyeGazesStateInternal;
+    #[cfg(feature = "OVRPlugin+EyeTextureFormat")]
+    pub type EyeTextureFormat = crate::GlobalNamespace::OVRPlugin_EyeTextureFormat;
+    #[cfg(feature = "OVRPlugin+FaceConstants")]
+    pub type FaceConstants = crate::GlobalNamespace::OVRPlugin_FaceConstants;
+    #[cfg(feature = "OVRPlugin+FaceExpression")]
+    pub type FaceExpression = crate::GlobalNamespace::OVRPlugin_FaceExpression;
+    #[cfg(feature = "OVRPlugin+FaceExpressionStatus")]
+    pub type FaceExpressionStatus = crate::GlobalNamespace::OVRPlugin_FaceExpressionStatus;
+    #[cfg(feature = "OVRPlugin+FaceExpressionStatusInternal")]
+    pub type FaceExpressionStatusInternal = crate::GlobalNamespace::OVRPlugin_FaceExpressionStatusInternal;
+    #[cfg(feature = "OVRPlugin+FaceRegionConfidence")]
+    pub type FaceRegionConfidence = crate::GlobalNamespace::OVRPlugin_FaceRegionConfidence;
+    #[cfg(feature = "OVRPlugin+FaceState")]
+    pub type FaceState = crate::GlobalNamespace::OVRPlugin_FaceState;
+    #[cfg(feature = "OVRPlugin+FaceState2Internal")]
+    pub type FaceState2Internal = crate::GlobalNamespace::OVRPlugin_FaceState2Internal;
+    #[cfg(feature = "OVRPlugin+FaceStateInternal")]
+    pub type FaceStateInternal = crate::GlobalNamespace::OVRPlugin_FaceStateInternal;
+    #[cfg(feature = "OVRPlugin+FeatureType")]
+    pub type FeatureType = crate::GlobalNamespace::OVRPlugin_FeatureType;
+    #[cfg(feature = "OVRPlugin+FixedFoveatedRenderingLevel")]
+    pub type FixedFoveatedRenderingLevel = crate::GlobalNamespace::OVRPlugin_FixedFoveatedRenderingLevel;
+    #[cfg(feature = "OVRPlugin+FoveatedRenderingLevel")]
+    pub type FoveatedRenderingLevel = crate::GlobalNamespace::OVRPlugin_FoveatedRenderingLevel;
+    #[cfg(feature = "OVRPlugin+Fovf")]
+    pub type Fovf = crate::GlobalNamespace::OVRPlugin_Fovf;
+    #[cfg(feature = "OVRPlugin+Frustumf")]
+    pub type Frustumf = crate::GlobalNamespace::OVRPlugin_Frustumf;
+    #[cfg(feature = "OVRPlugin+Frustumf2")]
+    pub type Frustumf2 = crate::GlobalNamespace::OVRPlugin_Frustumf2;
+    #[cfg(feature = "OVRPlugin+GUID")]
+    pub type GUID = crate::GlobalNamespace::OVRPlugin_GUID;
+    #[cfg(feature = "OVRPlugin+Hand")]
+    pub type Hand = crate::GlobalNamespace::OVRPlugin_Hand;
+    #[cfg(feature = "OVRPlugin+HandFinger")]
+    pub type HandFinger = crate::GlobalNamespace::OVRPlugin_HandFinger;
+    #[cfg(feature = "OVRPlugin+HandFingerPinch")]
+    pub type HandFingerPinch = crate::GlobalNamespace::OVRPlugin_HandFingerPinch;
+    #[cfg(feature = "OVRPlugin+HandState")]
+    pub type HandState = crate::GlobalNamespace::OVRPlugin_HandState;
+    #[cfg(feature = "OVRPlugin+HandStateInternal")]
+    pub type HandStateInternal = crate::GlobalNamespace::OVRPlugin_HandStateInternal;
+    #[cfg(feature = "OVRPlugin+HandStatus")]
+    pub type HandStatus = crate::GlobalNamespace::OVRPlugin_HandStatus;
+    #[cfg(feature = "OVRPlugin+Handedness")]
+    pub type Handedness = crate::GlobalNamespace::OVRPlugin_Handedness;
+    #[cfg(feature = "OVRPlugin+HapticsAmplitudeEnvelopeVibration")]
+    pub type HapticsAmplitudeEnvelopeVibration = crate::GlobalNamespace::OVRPlugin_HapticsAmplitudeEnvelopeVibration;
+    #[cfg(feature = "OVRPlugin+HapticsBuffer")]
+    pub type HapticsBuffer = crate::GlobalNamespace::OVRPlugin_HapticsBuffer;
+    #[cfg(feature = "OVRPlugin+HapticsConstants")]
+    pub type HapticsConstants = crate::GlobalNamespace::OVRPlugin_HapticsConstants;
+    #[cfg(feature = "OVRPlugin+HapticsDesc")]
+    pub type HapticsDesc = crate::GlobalNamespace::OVRPlugin_HapticsDesc;
+    #[cfg(feature = "OVRPlugin+HapticsLocation")]
+    pub type HapticsLocation = crate::GlobalNamespace::OVRPlugin_HapticsLocation;
+    #[cfg(feature = "OVRPlugin+HapticsPcmVibration")]
+    pub type HapticsPcmVibration = crate::GlobalNamespace::OVRPlugin_HapticsPcmVibration;
+    #[cfg(feature = "OVRPlugin+HapticsState")]
+    pub type HapticsState = crate::GlobalNamespace::OVRPlugin_HapticsState;
+    #[cfg(feature = "OVRPlugin+InsightPassthroughColorMapType")]
+    pub type InsightPassthroughColorMapType = crate::GlobalNamespace::OVRPlugin_InsightPassthroughColorMapType;
+    #[cfg(feature = "OVRPlugin+InsightPassthroughKeyboardHandsIntensity")]
+    pub type InsightPassthroughKeyboardHandsIntensity = crate::GlobalNamespace::OVRPlugin_InsightPassthroughKeyboardHandsIntensity;
+    #[cfg(feature = "OVRPlugin+InsightPassthroughStyle")]
+    pub type InsightPassthroughStyle = crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle;
+    #[cfg(feature = "OVRPlugin+InsightPassthroughStyle2")]
+    pub type InsightPassthroughStyle2 = crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle2;
+    #[cfg(feature = "OVRPlugin+InsightPassthroughStyleFlags")]
+    pub type InsightPassthroughStyleFlags = crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyleFlags;
+    #[cfg(feature = "OVRPlugin+InteractionProfile")]
+    pub type InteractionProfile = crate::GlobalNamespace::OVRPlugin_InteractionProfile;
+    #[cfg(feature = "OVRPlugin+KeyboardDescription")]
+    pub type KeyboardDescription = crate::GlobalNamespace::OVRPlugin_KeyboardDescription;
+    #[cfg(feature = "OVRPlugin+KeyboardDescriptionConstants")]
+    pub type KeyboardDescriptionConstants = crate::GlobalNamespace::OVRPlugin_KeyboardDescriptionConstants;
+    #[cfg(feature = "OVRPlugin+KeyboardState")]
+    pub type KeyboardState = crate::GlobalNamespace::OVRPlugin_KeyboardState;
+    #[cfg(feature = "OVRPlugin+Ktx")]
+    pub type Ktx = crate::GlobalNamespace::OVRPlugin_Ktx;
+    #[cfg(feature = "OVRPlugin+LayerDesc")]
+    pub type LayerDesc = crate::GlobalNamespace::OVRPlugin_LayerDesc;
+    #[cfg(feature = "OVRPlugin+LayerDescInternal")]
+    pub type LayerDescInternal = crate::GlobalNamespace::OVRPlugin_LayerDescInternal;
+    #[cfg(feature = "OVRPlugin+LayerFlags")]
+    pub type LayerFlags = crate::GlobalNamespace::OVRPlugin_LayerFlags;
+    #[cfg(feature = "OVRPlugin+LayerLayout")]
+    pub type LayerLayout = crate::GlobalNamespace::OVRPlugin_LayerLayout;
+    #[cfg(feature = "OVRPlugin+LayerSharpenType")]
+    pub type LayerSharpenType = crate::GlobalNamespace::OVRPlugin_LayerSharpenType;
+    #[cfg(feature = "OVRPlugin+LayerSubmit")]
+    pub type LayerSubmit = crate::GlobalNamespace::OVRPlugin_LayerSubmit;
+    #[cfg(feature = "OVRPlugin+LayerSuperSamplingType")]
+    pub type LayerSuperSamplingType = crate::GlobalNamespace::OVRPlugin_LayerSuperSamplingType;
+    #[cfg(feature = "OVRPlugin+LogCallback2DelegateType")]
+    pub type LogCallback2DelegateType = crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType;
+    #[cfg(feature = "OVRPlugin+LogLevel")]
+    pub type LogLevel = crate::GlobalNamespace::OVRPlugin_LogLevel;
+    #[cfg(feature = "OVRPlugin+Media")]
+    pub type Media = crate::GlobalNamespace::OVRPlugin_Media;
+    #[cfg(feature = "OVRPlugin+Mesh")]
+    pub type Mesh = crate::GlobalNamespace::OVRPlugin_Mesh;
+    #[cfg(feature = "OVRPlugin+MeshConstants")]
+    pub type MeshConstants = crate::GlobalNamespace::OVRPlugin_MeshConstants;
+    #[cfg(feature = "OVRPlugin+MeshType")]
+    pub type MeshType = crate::GlobalNamespace::OVRPlugin_MeshType;
+    #[cfg(feature = "OVRPlugin+Node")]
+    pub type Node = crate::GlobalNamespace::OVRPlugin_Node;
+    #[cfg(feature = "OVRPlugin+OVRP_0_1_0")]
+    pub type OVRP_0_1_0 = crate::GlobalNamespace::OVRPlugin_OVRP_0_1_0;
+    #[cfg(feature = "OVRPlugin+OVRP_0_1_1")]
+    pub type OVRP_0_1_1 = crate::GlobalNamespace::OVRPlugin_OVRP_0_1_1;
+    #[cfg(feature = "OVRPlugin+OVRP_0_1_2")]
+    pub type OVRP_0_1_2 = crate::GlobalNamespace::OVRPlugin_OVRP_0_1_2;
+    #[cfg(feature = "OVRPlugin+OVRP_0_1_3")]
+    pub type OVRP_0_1_3 = crate::GlobalNamespace::OVRPlugin_OVRP_0_1_3;
+    #[cfg(feature = "OVRPlugin+OVRP_0_5_0")]
+    pub type OVRP_0_5_0 = crate::GlobalNamespace::OVRPlugin_OVRP_0_5_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_0_0")]
+    pub type OVRP_1_0_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_10_0")]
+    pub type OVRP_1_10_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_10_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_11_0")]
+    pub type OVRP_1_11_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_11_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_12_0")]
+    pub type OVRP_1_12_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_12_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_15_0")]
+    pub type OVRP_1_15_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_16_0")]
+    pub type OVRP_1_16_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_17_0")]
+    pub type OVRP_1_17_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_17_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_18_0")]
+    pub type OVRP_1_18_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_18_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_19_0")]
+    pub type OVRP_1_19_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_19_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_1_0")]
+    pub type OVRP_1_1_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_21_0")]
+    pub type OVRP_1_21_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_28_0")]
+    pub type OVRP_1_28_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_29_0")]
+    pub type OVRP_1_29_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_2_0")]
+    pub type OVRP_1_2_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_2_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_30_0")]
+    pub type OVRP_1_30_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_31_0")]
+    pub type OVRP_1_31_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_31_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_32_0")]
+    pub type OVRP_1_32_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_32_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_34_0")]
+    pub type OVRP_1_34_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_34_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_35_0")]
+    pub type OVRP_1_35_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_35_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_36_0")]
+    pub type OVRP_1_36_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_36_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_37_0")]
+    pub type OVRP_1_37_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_37_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_38_0")]
+    pub type OVRP_1_38_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_39_0")]
+    pub type OVRP_1_39_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_39_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_3_0")]
+    pub type OVRP_1_3_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_3_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_40_0")]
+    pub type OVRP_1_40_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_40_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_41_0")]
+    pub type OVRP_1_41_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_41_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_42_0")]
+    pub type OVRP_1_42_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_42_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_43_0")]
+    pub type OVRP_1_43_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_43_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_44_0")]
+    pub type OVRP_1_44_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_45_0")]
+    pub type OVRP_1_45_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_45_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_46_0")]
+    pub type OVRP_1_46_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_46_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_47_0")]
+    pub type OVRP_1_47_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_47_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_48_0")]
+    pub type OVRP_1_48_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_48_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_49_0")]
+    pub type OVRP_1_49_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_50_0")]
+    pub type OVRP_1_50_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_50_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_51_0")]
+    pub type OVRP_1_51_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_51_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_52_0")]
+    pub type OVRP_1_52_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_52_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_53_0")]
+    pub type OVRP_1_53_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_53_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_54_0")]
+    pub type OVRP_1_54_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_54_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_55_0")]
+    pub type OVRP_1_55_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_55_1")]
+    pub type OVRP_1_55_1 = crate::GlobalNamespace::OVRPlugin_OVRP_1_55_1;
+    #[cfg(feature = "OVRPlugin+OVRP_1_56_0")]
+    pub type OVRP_1_56_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_56_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_57_0")]
+    pub type OVRP_1_57_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_58_0")]
+    pub type OVRP_1_58_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_58_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_59_0")]
+    pub type OVRP_1_59_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_59_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_5_0")]
+    pub type OVRP_1_5_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_5_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_60_0")]
+    pub type OVRP_1_60_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_60_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_61_0")]
+    pub type OVRP_1_61_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_61_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_62_0")]
+    pub type OVRP_1_62_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_62_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_63_0")]
+    pub type OVRP_1_63_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_64_0")]
+    pub type OVRP_1_64_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_64_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_65_0")]
+    pub type OVRP_1_65_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_66_0")]
+    pub type OVRP_1_66_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_66_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_67_0")]
+    pub type OVRP_1_67_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_67_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_68_0")]
+    pub type OVRP_1_68_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_69_0")]
+    pub type OVRP_1_69_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_69_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_6_0")]
+    pub type OVRP_1_6_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_70_0")]
+    pub type OVRP_1_70_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_70_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_71_0")]
+    pub type OVRP_1_71_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_72_0")]
+    pub type OVRP_1_72_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_73_0")]
+    pub type OVRP_1_73_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_73_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_74_0")]
+    pub type OVRP_1_74_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_75_0")]
+    pub type OVRP_1_75_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_75_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_76_0")]
+    pub type OVRP_1_76_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_76_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_78_0")]
+    pub type OVRP_1_78_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_79_0")]
+    pub type OVRP_1_79_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_7_0")]
+    pub type OVRP_1_7_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_7_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_81_0")]
+    pub type OVRP_1_81_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_81_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_82_0")]
+    pub type OVRP_1_82_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_82_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_83_0")]
+    pub type OVRP_1_83_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_84_0")]
+    pub type OVRP_1_84_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_85_0")]
+    pub type OVRP_1_85_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_85_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_86_0")]
+    pub type OVRP_1_86_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_87_0")]
+    pub type OVRP_1_87_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_88_0")]
+    pub type OVRP_1_88_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_88_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_8_0")]
+    pub type OVRP_1_8_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_9_0")]
+    pub type OVRP_1_9_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0;
+    #[cfg(feature = "OVRPlugin+OverlayFlag")]
+    pub type OverlayFlag = crate::GlobalNamespace::OVRPlugin_OverlayFlag;
+    #[cfg(feature = "OVRPlugin+OverlayShape")]
+    pub type OverlayShape = crate::GlobalNamespace::OVRPlugin_OverlayShape;
+    #[cfg(feature = "OVRPlugin+PassthroughCapabilities")]
+    pub type PassthroughCapabilities = crate::GlobalNamespace::OVRPlugin_PassthroughCapabilities;
+    #[cfg(feature = "OVRPlugin+PassthroughCapabilityFields")]
+    pub type PassthroughCapabilityFields = crate::GlobalNamespace::OVRPlugin_PassthroughCapabilityFields;
+    #[cfg(feature = "OVRPlugin+PassthroughCapabilityFlags")]
+    pub type PassthroughCapabilityFlags = crate::GlobalNamespace::OVRPlugin_PassthroughCapabilityFlags;
+    #[cfg(feature = "OVRPlugin+PassthroughColorLutChannels")]
+    pub type PassthroughColorLutChannels = crate::GlobalNamespace::OVRPlugin_PassthroughColorLutChannels;
+    #[cfg(feature = "OVRPlugin+PassthroughColorLutData")]
+    pub type PassthroughColorLutData = crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData;
+    #[cfg(feature = "OVRPlugin+PassthroughPreferenceFields")]
+    pub type PassthroughPreferenceFields = crate::GlobalNamespace::OVRPlugin_PassthroughPreferenceFields;
+    #[cfg(feature = "OVRPlugin+PassthroughPreferenceFlags")]
+    pub type PassthroughPreferenceFlags = crate::GlobalNamespace::OVRPlugin_PassthroughPreferenceFlags;
+    #[cfg(feature = "OVRPlugin+PassthroughPreferences")]
+    pub type PassthroughPreferences = crate::GlobalNamespace::OVRPlugin_PassthroughPreferences;
+    #[cfg(feature = "OVRPlugin+PerfMetrics")]
+    pub type PerfMetrics = crate::GlobalNamespace::OVRPlugin_PerfMetrics;
+    #[cfg(feature = "OVRPlugin+PinnedArray_1")]
+    pub type PinnedArray_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRPlugin_PinnedArray_1<
+        T,
+    >;
+    #[cfg(feature = "OVRPlugin+PlatformUI")]
+    pub type PlatformUI = crate::GlobalNamespace::OVRPlugin_PlatformUI;
+    #[cfg(feature = "OVRPlugin+PolygonalBoundary2DInternal")]
+    pub type PolygonalBoundary2DInternal = crate::GlobalNamespace::OVRPlugin_PolygonalBoundary2DInternal;
+    #[cfg(feature = "OVRPlugin+PoseStatef")]
+    pub type PoseStatef = crate::GlobalNamespace::OVRPlugin_PoseStatef;
+    #[cfg(feature = "OVRPlugin+Posef")]
+    pub type Posef = crate::GlobalNamespace::OVRPlugin_Posef;
+    #[cfg(feature = "OVRPlugin+ProcessorPerformanceLevel")]
+    pub type ProcessorPerformanceLevel = crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel;
+    #[cfg(feature = "OVRPlugin+Qpl")]
+    pub type Qpl = crate::GlobalNamespace::OVRPlugin_Qpl;
+    #[cfg(feature = "OVRPlugin+Quatf")]
+    pub type Quatf = crate::GlobalNamespace::OVRPlugin_Quatf;
+    #[cfg(feature = "OVRPlugin+RecenterFlags")]
+    pub type RecenterFlags = crate::GlobalNamespace::OVRPlugin_RecenterFlags;
+    #[cfg(feature = "OVRPlugin+Rectf")]
+    pub type Rectf = crate::GlobalNamespace::OVRPlugin_Rectf;
+    #[cfg(feature = "OVRPlugin+Recti")]
+    pub type Recti = crate::GlobalNamespace::OVRPlugin_Recti;
+    #[cfg(feature = "OVRPlugin+RenderModelFlags")]
+    pub type RenderModelFlags = crate::GlobalNamespace::OVRPlugin_RenderModelFlags;
+    #[cfg(feature = "OVRPlugin+RenderModelProperties")]
+    pub type RenderModelProperties = crate::GlobalNamespace::OVRPlugin_RenderModelProperties;
+    #[cfg(feature = "OVRPlugin+RenderModelPropertiesInternal")]
+    pub type RenderModelPropertiesInternal = crate::GlobalNamespace::OVRPlugin_RenderModelPropertiesInternal;
+    #[cfg(feature = "OVRPlugin+Result")]
+    pub type Result = crate::GlobalNamespace::OVRPlugin_Result;
+    #[cfg(feature = "OVRPlugin+RoomLayout")]
+    pub type RoomLayout = crate::GlobalNamespace::OVRPlugin_RoomLayout;
+    #[cfg(feature = "OVRPlugin+RoomLayoutInternal")]
+    pub type RoomLayoutInternal = crate::GlobalNamespace::OVRPlugin_RoomLayoutInternal;
+    #[cfg(feature = "OVRPlugin+SceneCaptureRequestInternal")]
+    pub type SceneCaptureRequestInternal = crate::GlobalNamespace::OVRPlugin_SceneCaptureRequestInternal;
+    #[cfg(feature = "OVRPlugin+Size3f")]
+    pub type Size3f = crate::GlobalNamespace::OVRPlugin_Size3f;
+    #[cfg(feature = "OVRPlugin+Sizef")]
+    pub type Sizef = crate::GlobalNamespace::OVRPlugin_Sizef;
+    #[cfg(feature = "OVRPlugin+Sizei")]
+    pub type Sizei = crate::GlobalNamespace::OVRPlugin_Sizei;
+    #[cfg(feature = "OVRPlugin+Skeleton")]
+    pub type Skeleton = crate::GlobalNamespace::OVRPlugin_Skeleton;
+    #[cfg(feature = "OVRPlugin+Skeleton2")]
+    pub type Skeleton2 = crate::GlobalNamespace::OVRPlugin_Skeleton2;
+    #[cfg(feature = "OVRPlugin+Skeleton2Internal")]
+    pub type Skeleton2Internal = crate::GlobalNamespace::OVRPlugin_Skeleton2Internal;
+    #[cfg(feature = "OVRPlugin+SkeletonConstants")]
+    pub type SkeletonConstants = crate::GlobalNamespace::OVRPlugin_SkeletonConstants;
+    #[cfg(feature = "OVRPlugin+SkeletonType")]
+    pub type SkeletonType = crate::GlobalNamespace::OVRPlugin_SkeletonType;
+    #[cfg(feature = "OVRPlugin+SpaceComponentType")]
+    pub type SpaceComponentType = crate::GlobalNamespace::OVRPlugin_SpaceComponentType;
+    #[cfg(feature = "OVRPlugin+SpaceContainerInternal")]
+    pub type SpaceContainerInternal = crate::GlobalNamespace::OVRPlugin_SpaceContainerInternal;
+    #[cfg(feature = "OVRPlugin+SpaceFilterInfoComponents")]
+    pub type SpaceFilterInfoComponents = crate::GlobalNamespace::OVRPlugin_SpaceFilterInfoComponents;
+    #[cfg(feature = "OVRPlugin+SpaceFilterInfoIds")]
+    pub type SpaceFilterInfoIds = crate::GlobalNamespace::OVRPlugin_SpaceFilterInfoIds;
+    #[cfg(feature = "OVRPlugin+SpaceLocationFlags")]
+    pub type SpaceLocationFlags = crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags;
+    #[cfg(feature = "OVRPlugin+SpaceLocationf")]
+    pub type SpaceLocationf = crate::GlobalNamespace::OVRPlugin_SpaceLocationf;
+    #[cfg(feature = "OVRPlugin+SpaceQueryActionType")]
+    pub type SpaceQueryActionType = crate::GlobalNamespace::OVRPlugin_SpaceQueryActionType;
+    #[cfg(feature = "OVRPlugin+SpaceQueryFilterType")]
+    pub type SpaceQueryFilterType = crate::GlobalNamespace::OVRPlugin_SpaceQueryFilterType;
+    #[cfg(feature = "OVRPlugin+SpaceQueryInfo")]
+    pub type SpaceQueryInfo = crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo;
+    #[cfg(feature = "OVRPlugin+SpaceQueryResult")]
+    pub type SpaceQueryResult = crate::GlobalNamespace::OVRPlugin_SpaceQueryResult;
+    #[cfg(feature = "OVRPlugin+SpaceQueryType")]
+    pub type SpaceQueryType = crate::GlobalNamespace::OVRPlugin_SpaceQueryType;
+    #[cfg(feature = "OVRPlugin+SpaceSemanticLabelInternal")]
+    pub type SpaceSemanticLabelInternal = crate::GlobalNamespace::OVRPlugin_SpaceSemanticLabelInternal;
+    #[cfg(feature = "OVRPlugin+SpaceStorageLocation")]
+    pub type SpaceStorageLocation = crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation;
+    #[cfg(feature = "OVRPlugin+SpaceStoragePersistenceMode")]
+    pub type SpaceStoragePersistenceMode = crate::GlobalNamespace::OVRPlugin_SpaceStoragePersistenceMode;
+    #[cfg(feature = "OVRPlugin+SpatialAnchorCreateInfo")]
+    pub type SpatialAnchorCreateInfo = crate::GlobalNamespace::OVRPlugin_SpatialAnchorCreateInfo;
+    #[cfg(feature = "OVRPlugin+Step")]
+    pub type Step = crate::GlobalNamespace::OVRPlugin_Step;
+    #[cfg(feature = "OVRPlugin+SystemHeadset")]
+    pub type SystemHeadset = crate::GlobalNamespace::OVRPlugin_SystemHeadset;
+    #[cfg(feature = "OVRPlugin+SystemRegion")]
+    pub type SystemRegion = crate::GlobalNamespace::OVRPlugin_SystemRegion;
+    #[cfg(feature = "OVRPlugin+TextureRectMatrixf")]
+    pub type TextureRectMatrixf = crate::GlobalNamespace::OVRPlugin_TextureRectMatrixf;
+    #[cfg(feature = "OVRPlugin+TiledMultiResLevel")]
+    pub type TiledMultiResLevel = crate::GlobalNamespace::OVRPlugin_TiledMultiResLevel;
+    #[cfg(feature = "OVRPlugin+TrackedKeyboardFlags")]
+    pub type TrackedKeyboardFlags = crate::GlobalNamespace::OVRPlugin_TrackedKeyboardFlags;
+    #[cfg(feature = "OVRPlugin+TrackedKeyboardPresentationStyles")]
+    pub type TrackedKeyboardPresentationStyles = crate::GlobalNamespace::OVRPlugin_TrackedKeyboardPresentationStyles;
+    #[cfg(feature = "OVRPlugin+TrackedKeyboardQueryFlags")]
+    pub type TrackedKeyboardQueryFlags = crate::GlobalNamespace::OVRPlugin_TrackedKeyboardQueryFlags;
+    #[cfg(feature = "OVRPlugin+Tracker")]
+    pub type Tracker = crate::GlobalNamespace::OVRPlugin_Tracker;
+    #[cfg(feature = "OVRPlugin+TrackingConfidence")]
+    pub type TrackingConfidence = crate::GlobalNamespace::OVRPlugin_TrackingConfidence;
+    #[cfg(feature = "OVRPlugin+TrackingOrigin")]
+    pub type TrackingOrigin = crate::GlobalNamespace::OVRPlugin_TrackingOrigin;
+    #[cfg(feature = "OVRPlugin+TriangleMeshInternal")]
+    pub type TriangleMeshInternal = crate::GlobalNamespace::OVRPlugin_TriangleMeshInternal;
+    #[cfg(feature = "OVRPlugin+UnityOpenXR")]
+    pub type UnityOpenXR = crate::GlobalNamespace::OVRPlugin_UnityOpenXR;
+    #[cfg(feature = "OVRPlugin+Vector2f")]
+    pub type Vector2f = crate::GlobalNamespace::OVRPlugin_Vector2f;
+    #[cfg(feature = "OVRPlugin+Vector2i")]
+    pub type Vector2i = crate::GlobalNamespace::OVRPlugin_Vector2i;
+    #[cfg(feature = "OVRPlugin+Vector3f")]
+    pub type Vector3f = crate::GlobalNamespace::OVRPlugin_Vector3f;
+    #[cfg(feature = "OVRPlugin+Vector4f")]
+    pub type Vector4f = crate::GlobalNamespace::OVRPlugin_Vector4f;
+    #[cfg(feature = "OVRPlugin+Vector4s")]
+    pub type Vector4s = crate::GlobalNamespace::OVRPlugin_Vector4s;
+    #[cfg(feature = "OVRPlugin+VirtualKeyboardCreateInfo")]
+    pub type VirtualKeyboardCreateInfo = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardCreateInfo;
+    #[cfg(feature = "OVRPlugin+VirtualKeyboardInputInfo")]
+    pub type VirtualKeyboardInputInfo = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardInputInfo;
+    #[cfg(feature = "OVRPlugin+VirtualKeyboardInputSource")]
+    pub type VirtualKeyboardInputSource = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardInputSource;
+    #[cfg(feature = "OVRPlugin+VirtualKeyboardInputStateFlags")]
+    pub type VirtualKeyboardInputStateFlags = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardInputStateFlags;
+    #[cfg(feature = "OVRPlugin+VirtualKeyboardLocationInfo")]
+    pub type VirtualKeyboardLocationInfo = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationInfo;
+    #[cfg(feature = "OVRPlugin+VirtualKeyboardLocationType")]
+    pub type VirtualKeyboardLocationType = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationType;
+    #[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationState")]
+    pub type VirtualKeyboardModelAnimationState = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationState;
+    #[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationStates")]
+    pub type VirtualKeyboardModelAnimationStates = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStates;
+    #[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationStatesInternal")]
+    pub type VirtualKeyboardModelAnimationStatesInternal = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStatesInternal;
+    #[cfg(feature = "OVRPlugin+VirtualKeyboardModelVisibility")]
+    pub type VirtualKeyboardModelVisibility = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelVisibility;
+    #[cfg(feature = "OVRPlugin+VirtualKeyboardSpaceCreateInfo")]
+    pub type VirtualKeyboardSpaceCreateInfo = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardSpaceCreateInfo;
+    #[cfg(feature = "OVRPlugin+VirtualKeyboardTextureData")]
+    pub type VirtualKeyboardTextureData = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureData;
+    #[cfg(feature = "OVRPlugin+VirtualKeyboardTextureIds")]
+    pub type VirtualKeyboardTextureIds = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureIds;
+    #[cfg(feature = "OVRPlugin+VirtualKeyboardTextureIdsInternal")]
+    pub type VirtualKeyboardTextureIdsInternal = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureIdsInternal;
+    #[cfg(feature = "OVRPlugin+XrApi")]
+    pub type XrApi = crate::GlobalNamespace::OVRPlugin_XrApi;
+}
+#[cfg(feature = "OVRPlugin")]
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "OVRPlugin+AppPerfFrameStats")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -2115,19 +2726,6 @@ for crate::GlobalNamespace::OVRPlugin_HapticsState {
 }
 #[cfg(feature = "OVRPlugin+HapticsState")]
 impl crate::GlobalNamespace::OVRPlugin_HapticsState {}
-#[cfg(feature = "OVRPlugin+Media+InputVideoBufferType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Media_InputVideoBufferType {
-    EnumSize = 2147483647i32,
-    Memory = 0i32,
-    TextureHandle = 1i32,
-}
-#[cfg(feature = "OVRPlugin+Media+InputVideoBufferType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::Media_InputVideoBufferType =>
-    ""."OVRPlugin/Media/InputVideoBufferType"
-);
 #[cfg(feature = "OVRPlugin+InsightPassthroughColorMapType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -2742,11 +3340,11 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_Media {
 #[cfg(feature = "OVRPlugin+Media")]
 impl crate::GlobalNamespace::OVRPlugin_Media {
     #[cfg(feature = "OVRPlugin+Media+InputVideoBufferType")]
-    pub type InputVideoBufferType = crate::GlobalNamespace::Media_InputVideoBufferType;
+    pub type InputVideoBufferType = crate::GlobalNamespace::Media_OVRPlugin_InputVideoBufferType;
     #[cfg(feature = "OVRPlugin+Media+MrcActivationMode")]
-    pub type MrcActivationMode = crate::GlobalNamespace::Media_MrcActivationMode;
+    pub type MrcActivationMode = crate::GlobalNamespace::Media_OVRPlugin_MrcActivationMode;
     #[cfg(feature = "OVRPlugin+Media+PlatformCameraMode")]
-    pub type PlatformCameraMode = crate::GlobalNamespace::Media_PlatformCameraMode;
+    pub type PlatformCameraMode = crate::GlobalNamespace::Media_OVRPlugin_PlatformCameraMode;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -2870,19 +3468,6 @@ pub enum OVRPlugin_MeshType {
 quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRPlugin_MeshType => ""
     ."OVRPlugin/MeshType"
-);
-#[cfg(feature = "OVRPlugin+Media+MrcActivationMode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Media_MrcActivationMode {
-    Automatic = 0i32,
-    Disabled = 1i32,
-    EnumSize = 2147483647i32,
-}
-#[cfg(feature = "OVRPlugin+Media+MrcActivationMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::Media_MrcActivationMode => ""
-    ."OVRPlugin/Media/MrcActivationMode"
 );
 #[cfg(feature = "OVRPlugin+Node")]
 #[repr(i32)]
@@ -5855,568 +6440,6 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRPlugin")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct OVRPlugin {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "OVRPlugin")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRPlugin => ""."OVRPlugin"
-);
-#[cfg(feature = "OVRPlugin")]
-impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRPlugin")]
-impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRPlugin")]
-impl crate::GlobalNamespace::OVRPlugin {
-    pub const AppPerfFrameStatsMaxCount: i32 = 5i32;
-    pub const EventDataBufferSize: i32 = 4000i32;
-    pub const OverlayShapeFlagShift: i32 = 4i32;
-    pub const RENDER_MODEL_NULL_KEY: i32 = 0i32;
-    pub const SpaceFilterInfoComponentsMaxSize: i32 = 16i32;
-    pub const SpaceFilterInfoIdsMaxSize: i32 = 1024i32;
-    pub const SpatialEntityMaxQueryResultsPerEvent: i32 = 128i32;
-    pub const isSupportedPlatform: bool = true;
-    pub const pluginName: &'static str = "OVRPlugin";
-    #[cfg(feature = "OVRPlugin+AppPerfFrameStats")]
-    pub type AppPerfFrameStats = crate::GlobalNamespace::OVRPlugin_AppPerfFrameStats;
-    #[cfg(feature = "OVRPlugin+AppPerfStats")]
-    pub type AppPerfStats = crate::GlobalNamespace::OVRPlugin_AppPerfStats;
-    #[cfg(feature = "OVRPlugin+BatteryStatus")]
-    pub type BatteryStatus = crate::GlobalNamespace::OVRPlugin_BatteryStatus;
-    #[cfg(feature = "OVRPlugin+BlendFactor")]
-    pub type BlendFactor = crate::GlobalNamespace::OVRPlugin_BlendFactor;
-    #[cfg(feature = "OVRPlugin+BodyJointLocation")]
-    pub type BodyJointLocation = crate::GlobalNamespace::OVRPlugin_BodyJointLocation;
-    #[cfg(feature = "OVRPlugin+BodyState")]
-    pub type BodyState = crate::GlobalNamespace::OVRPlugin_BodyState;
-    #[cfg(feature = "OVRPlugin+BodyStateInternal")]
-    pub type BodyStateInternal = crate::GlobalNamespace::OVRPlugin_BodyStateInternal;
-    #[cfg(feature = "OVRPlugin+Bone")]
-    pub type Bone = crate::GlobalNamespace::OVRPlugin_Bone;
-    #[cfg(feature = "OVRPlugin+BoneCapsule")]
-    pub type BoneCapsule = crate::GlobalNamespace::OVRPlugin_BoneCapsule;
-    #[cfg(feature = "OVRPlugin+BoneId")]
-    pub type BoneId = crate::GlobalNamespace::OVRPlugin_BoneId;
-    #[cfg(feature = "OVRPlugin+Bool")]
-    pub type Bool = crate::GlobalNamespace::OVRPlugin_Bool;
-    #[cfg(feature = "OVRPlugin+BoundaryGeometry")]
-    pub type BoundaryGeometry = crate::GlobalNamespace::OVRPlugin_BoundaryGeometry;
-    #[cfg(feature = "OVRPlugin+BoundaryTestResult")]
-    pub type BoundaryTestResult = crate::GlobalNamespace::OVRPlugin_BoundaryTestResult;
-    #[cfg(feature = "OVRPlugin+BoundaryType")]
-    pub type BoundaryType = crate::GlobalNamespace::OVRPlugin_BoundaryType;
-    #[cfg(feature = "OVRPlugin+Boundsf")]
-    pub type Boundsf = crate::GlobalNamespace::OVRPlugin_Boundsf;
-    #[cfg(feature = "OVRPlugin+CameraAnchorType")]
-    pub type CameraAnchorType = crate::GlobalNamespace::OVRPlugin_CameraAnchorType;
-    #[cfg(feature = "OVRPlugin+CameraDevice")]
-    pub type CameraDevice = crate::GlobalNamespace::OVRPlugin_CameraDevice;
-    #[cfg(feature = "OVRPlugin+CameraDeviceDepthQuality")]
-    pub type CameraDeviceDepthQuality = crate::GlobalNamespace::OVRPlugin_CameraDeviceDepthQuality;
-    #[cfg(feature = "OVRPlugin+CameraDeviceDepthSensingMode")]
-    pub type CameraDeviceDepthSensingMode = crate::GlobalNamespace::OVRPlugin_CameraDeviceDepthSensingMode;
-    #[cfg(feature = "OVRPlugin+CameraDeviceIntrinsicsParameters")]
-    pub type CameraDeviceIntrinsicsParameters = crate::GlobalNamespace::OVRPlugin_CameraDeviceIntrinsicsParameters;
-    #[cfg(feature = "OVRPlugin+CameraExtrinsics")]
-    pub type CameraExtrinsics = crate::GlobalNamespace::OVRPlugin_CameraExtrinsics;
-    #[cfg(feature = "OVRPlugin+CameraIntrinsics")]
-    pub type CameraIntrinsics = crate::GlobalNamespace::OVRPlugin_CameraIntrinsics;
-    #[cfg(feature = "OVRPlugin+CameraStatus")]
-    pub type CameraStatus = crate::GlobalNamespace::OVRPlugin_CameraStatus;
-    #[cfg(feature = "OVRPlugin+ColorSpace")]
-    pub type ColorSpace = crate::GlobalNamespace::OVRPlugin_ColorSpace;
-    #[cfg(feature = "OVRPlugin+Colorf")]
-    pub type Colorf = crate::GlobalNamespace::OVRPlugin_Colorf;
-    #[cfg(feature = "OVRPlugin+Controller")]
-    pub type Controller = crate::GlobalNamespace::OVRPlugin_Controller;
-    #[cfg(feature = "OVRPlugin+ControllerState")]
-    pub type ControllerState = crate::GlobalNamespace::OVRPlugin_ControllerState;
-    #[cfg(feature = "OVRPlugin+ControllerState2")]
-    pub type ControllerState2 = crate::GlobalNamespace::OVRPlugin_ControllerState2;
-    #[cfg(feature = "OVRPlugin+ControllerState4")]
-    pub type ControllerState4 = crate::GlobalNamespace::OVRPlugin_ControllerState4;
-    #[cfg(feature = "OVRPlugin+ControllerState5")]
-    pub type ControllerState5 = crate::GlobalNamespace::OVRPlugin_ControllerState5;
-    #[cfg(feature = "OVRPlugin+ControllerState6")]
-    pub type ControllerState6 = crate::GlobalNamespace::OVRPlugin_ControllerState6;
-    #[cfg(feature = "OVRPlugin+EventDataBuffer")]
-    pub type EventDataBuffer = crate::GlobalNamespace::OVRPlugin_EventDataBuffer;
-    #[cfg(feature = "OVRPlugin+EventType")]
-    pub type EventType = crate::GlobalNamespace::OVRPlugin_EventType;
-    #[cfg(feature = "OVRPlugin+Eye")]
-    pub type Eye = crate::GlobalNamespace::OVRPlugin_Eye;
-    #[cfg(feature = "OVRPlugin+EyeGazeState")]
-    pub type EyeGazeState = crate::GlobalNamespace::OVRPlugin_EyeGazeState;
-    #[cfg(feature = "OVRPlugin+EyeGazesState")]
-    pub type EyeGazesState = crate::GlobalNamespace::OVRPlugin_EyeGazesState;
-    #[cfg(feature = "OVRPlugin+EyeGazesStateInternal")]
-    pub type EyeGazesStateInternal = crate::GlobalNamespace::OVRPlugin_EyeGazesStateInternal;
-    #[cfg(feature = "OVRPlugin+EyeTextureFormat")]
-    pub type EyeTextureFormat = crate::GlobalNamespace::OVRPlugin_EyeTextureFormat;
-    #[cfg(feature = "OVRPlugin+FaceConstants")]
-    pub type FaceConstants = crate::GlobalNamespace::OVRPlugin_FaceConstants;
-    #[cfg(feature = "OVRPlugin+FaceExpression")]
-    pub type FaceExpression = crate::GlobalNamespace::OVRPlugin_FaceExpression;
-    #[cfg(feature = "OVRPlugin+FaceExpressionStatus")]
-    pub type FaceExpressionStatus = crate::GlobalNamespace::OVRPlugin_FaceExpressionStatus;
-    #[cfg(feature = "OVRPlugin+FaceExpressionStatusInternal")]
-    pub type FaceExpressionStatusInternal = crate::GlobalNamespace::OVRPlugin_FaceExpressionStatusInternal;
-    #[cfg(feature = "OVRPlugin+FaceRegionConfidence")]
-    pub type FaceRegionConfidence = crate::GlobalNamespace::OVRPlugin_FaceRegionConfidence;
-    #[cfg(feature = "OVRPlugin+FaceState")]
-    pub type FaceState = crate::GlobalNamespace::OVRPlugin_FaceState;
-    #[cfg(feature = "OVRPlugin+FaceState2Internal")]
-    pub type FaceState2Internal = crate::GlobalNamespace::OVRPlugin_FaceState2Internal;
-    #[cfg(feature = "OVRPlugin+FaceStateInternal")]
-    pub type FaceStateInternal = crate::GlobalNamespace::OVRPlugin_FaceStateInternal;
-    #[cfg(feature = "OVRPlugin+FeatureType")]
-    pub type FeatureType = crate::GlobalNamespace::OVRPlugin_FeatureType;
-    #[cfg(feature = "OVRPlugin+FixedFoveatedRenderingLevel")]
-    pub type FixedFoveatedRenderingLevel = crate::GlobalNamespace::OVRPlugin_FixedFoveatedRenderingLevel;
-    #[cfg(feature = "OVRPlugin+FoveatedRenderingLevel")]
-    pub type FoveatedRenderingLevel = crate::GlobalNamespace::OVRPlugin_FoveatedRenderingLevel;
-    #[cfg(feature = "OVRPlugin+Fovf")]
-    pub type Fovf = crate::GlobalNamespace::OVRPlugin_Fovf;
-    #[cfg(feature = "OVRPlugin+Frustumf")]
-    pub type Frustumf = crate::GlobalNamespace::OVRPlugin_Frustumf;
-    #[cfg(feature = "OVRPlugin+Frustumf2")]
-    pub type Frustumf2 = crate::GlobalNamespace::OVRPlugin_Frustumf2;
-    #[cfg(feature = "OVRPlugin+GUID")]
-    pub type GUID = crate::GlobalNamespace::OVRPlugin_GUID;
-    #[cfg(feature = "OVRPlugin+Hand")]
-    pub type Hand = crate::GlobalNamespace::OVRPlugin_Hand;
-    #[cfg(feature = "OVRPlugin+HandFinger")]
-    pub type HandFinger = crate::GlobalNamespace::OVRPlugin_HandFinger;
-    #[cfg(feature = "OVRPlugin+HandFingerPinch")]
-    pub type HandFingerPinch = crate::GlobalNamespace::OVRPlugin_HandFingerPinch;
-    #[cfg(feature = "OVRPlugin+HandState")]
-    pub type HandState = crate::GlobalNamespace::OVRPlugin_HandState;
-    #[cfg(feature = "OVRPlugin+HandStateInternal")]
-    pub type HandStateInternal = crate::GlobalNamespace::OVRPlugin_HandStateInternal;
-    #[cfg(feature = "OVRPlugin+HandStatus")]
-    pub type HandStatus = crate::GlobalNamespace::OVRPlugin_HandStatus;
-    #[cfg(feature = "OVRPlugin+Handedness")]
-    pub type Handedness = crate::GlobalNamespace::OVRPlugin_Handedness;
-    #[cfg(feature = "OVRPlugin+HapticsAmplitudeEnvelopeVibration")]
-    pub type HapticsAmplitudeEnvelopeVibration = crate::GlobalNamespace::OVRPlugin_HapticsAmplitudeEnvelopeVibration;
-    #[cfg(feature = "OVRPlugin+HapticsBuffer")]
-    pub type HapticsBuffer = crate::GlobalNamespace::OVRPlugin_HapticsBuffer;
-    #[cfg(feature = "OVRPlugin+HapticsConstants")]
-    pub type HapticsConstants = crate::GlobalNamespace::OVRPlugin_HapticsConstants;
-    #[cfg(feature = "OVRPlugin+HapticsDesc")]
-    pub type HapticsDesc = crate::GlobalNamespace::OVRPlugin_HapticsDesc;
-    #[cfg(feature = "OVRPlugin+HapticsLocation")]
-    pub type HapticsLocation = crate::GlobalNamespace::OVRPlugin_HapticsLocation;
-    #[cfg(feature = "OVRPlugin+HapticsPcmVibration")]
-    pub type HapticsPcmVibration = crate::GlobalNamespace::OVRPlugin_HapticsPcmVibration;
-    #[cfg(feature = "OVRPlugin+HapticsState")]
-    pub type HapticsState = crate::GlobalNamespace::OVRPlugin_HapticsState;
-    #[cfg(feature = "OVRPlugin+InsightPassthroughColorMapType")]
-    pub type InsightPassthroughColorMapType = crate::GlobalNamespace::OVRPlugin_InsightPassthroughColorMapType;
-    #[cfg(feature = "OVRPlugin+InsightPassthroughKeyboardHandsIntensity")]
-    pub type InsightPassthroughKeyboardHandsIntensity = crate::GlobalNamespace::OVRPlugin_InsightPassthroughKeyboardHandsIntensity;
-    #[cfg(feature = "OVRPlugin+InsightPassthroughStyle")]
-    pub type InsightPassthroughStyle = crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle;
-    #[cfg(feature = "OVRPlugin+InsightPassthroughStyle2")]
-    pub type InsightPassthroughStyle2 = crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle2;
-    #[cfg(feature = "OVRPlugin+InsightPassthroughStyleFlags")]
-    pub type InsightPassthroughStyleFlags = crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyleFlags;
-    #[cfg(feature = "OVRPlugin+InteractionProfile")]
-    pub type InteractionProfile = crate::GlobalNamespace::OVRPlugin_InteractionProfile;
-    #[cfg(feature = "OVRPlugin+KeyboardDescription")]
-    pub type KeyboardDescription = crate::GlobalNamespace::OVRPlugin_KeyboardDescription;
-    #[cfg(feature = "OVRPlugin+KeyboardDescriptionConstants")]
-    pub type KeyboardDescriptionConstants = crate::GlobalNamespace::OVRPlugin_KeyboardDescriptionConstants;
-    #[cfg(feature = "OVRPlugin+KeyboardState")]
-    pub type KeyboardState = crate::GlobalNamespace::OVRPlugin_KeyboardState;
-    #[cfg(feature = "OVRPlugin+Ktx")]
-    pub type Ktx = crate::GlobalNamespace::OVRPlugin_Ktx;
-    #[cfg(feature = "OVRPlugin+LayerDesc")]
-    pub type LayerDesc = crate::GlobalNamespace::OVRPlugin_LayerDesc;
-    #[cfg(feature = "OVRPlugin+LayerDescInternal")]
-    pub type LayerDescInternal = crate::GlobalNamespace::OVRPlugin_LayerDescInternal;
-    #[cfg(feature = "OVRPlugin+LayerFlags")]
-    pub type LayerFlags = crate::GlobalNamespace::OVRPlugin_LayerFlags;
-    #[cfg(feature = "OVRPlugin+LayerLayout")]
-    pub type LayerLayout = crate::GlobalNamespace::OVRPlugin_LayerLayout;
-    #[cfg(feature = "OVRPlugin+LayerSharpenType")]
-    pub type LayerSharpenType = crate::GlobalNamespace::OVRPlugin_LayerSharpenType;
-    #[cfg(feature = "OVRPlugin+LayerSubmit")]
-    pub type LayerSubmit = crate::GlobalNamespace::OVRPlugin_LayerSubmit;
-    #[cfg(feature = "OVRPlugin+LayerSuperSamplingType")]
-    pub type LayerSuperSamplingType = crate::GlobalNamespace::OVRPlugin_LayerSuperSamplingType;
-    #[cfg(feature = "OVRPlugin+LogCallback2DelegateType")]
-    pub type LogCallback2DelegateType = crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType;
-    #[cfg(feature = "OVRPlugin+LogLevel")]
-    pub type LogLevel = crate::GlobalNamespace::OVRPlugin_LogLevel;
-    #[cfg(feature = "OVRPlugin+Media")]
-    pub type Media = crate::GlobalNamespace::OVRPlugin_Media;
-    #[cfg(feature = "OVRPlugin+Mesh")]
-    pub type Mesh = crate::GlobalNamespace::OVRPlugin_Mesh;
-    #[cfg(feature = "OVRPlugin+MeshConstants")]
-    pub type MeshConstants = crate::GlobalNamespace::OVRPlugin_MeshConstants;
-    #[cfg(feature = "OVRPlugin+MeshType")]
-    pub type MeshType = crate::GlobalNamespace::OVRPlugin_MeshType;
-    #[cfg(feature = "OVRPlugin+Node")]
-    pub type Node = crate::GlobalNamespace::OVRPlugin_Node;
-    #[cfg(feature = "OVRPlugin+OVRP_0_1_0")]
-    pub type OVRP_0_1_0 = crate::GlobalNamespace::OVRPlugin_OVRP_0_1_0;
-    #[cfg(feature = "OVRPlugin+OVRP_0_1_1")]
-    pub type OVRP_0_1_1 = crate::GlobalNamespace::OVRPlugin_OVRP_0_1_1;
-    #[cfg(feature = "OVRPlugin+OVRP_0_1_2")]
-    pub type OVRP_0_1_2 = crate::GlobalNamespace::OVRPlugin_OVRP_0_1_2;
-    #[cfg(feature = "OVRPlugin+OVRP_0_1_3")]
-    pub type OVRP_0_1_3 = crate::GlobalNamespace::OVRPlugin_OVRP_0_1_3;
-    #[cfg(feature = "OVRPlugin+OVRP_0_5_0")]
-    pub type OVRP_0_5_0 = crate::GlobalNamespace::OVRPlugin_OVRP_0_5_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_0_0")]
-    pub type OVRP_1_0_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_10_0")]
-    pub type OVRP_1_10_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_10_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_11_0")]
-    pub type OVRP_1_11_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_11_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_12_0")]
-    pub type OVRP_1_12_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_12_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_15_0")]
-    pub type OVRP_1_15_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_16_0")]
-    pub type OVRP_1_16_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_17_0")]
-    pub type OVRP_1_17_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_17_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_18_0")]
-    pub type OVRP_1_18_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_18_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_19_0")]
-    pub type OVRP_1_19_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_19_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_1_0")]
-    pub type OVRP_1_1_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_21_0")]
-    pub type OVRP_1_21_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_28_0")]
-    pub type OVRP_1_28_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_29_0")]
-    pub type OVRP_1_29_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_2_0")]
-    pub type OVRP_1_2_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_2_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_30_0")]
-    pub type OVRP_1_30_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_31_0")]
-    pub type OVRP_1_31_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_31_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_32_0")]
-    pub type OVRP_1_32_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_32_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_34_0")]
-    pub type OVRP_1_34_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_34_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_35_0")]
-    pub type OVRP_1_35_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_35_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_36_0")]
-    pub type OVRP_1_36_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_36_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_37_0")]
-    pub type OVRP_1_37_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_37_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_38_0")]
-    pub type OVRP_1_38_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_39_0")]
-    pub type OVRP_1_39_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_39_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_3_0")]
-    pub type OVRP_1_3_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_3_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_40_0")]
-    pub type OVRP_1_40_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_40_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_41_0")]
-    pub type OVRP_1_41_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_41_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_42_0")]
-    pub type OVRP_1_42_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_42_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_43_0")]
-    pub type OVRP_1_43_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_43_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_44_0")]
-    pub type OVRP_1_44_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_45_0")]
-    pub type OVRP_1_45_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_45_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_46_0")]
-    pub type OVRP_1_46_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_46_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_47_0")]
-    pub type OVRP_1_47_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_47_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_48_0")]
-    pub type OVRP_1_48_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_48_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_49_0")]
-    pub type OVRP_1_49_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_50_0")]
-    pub type OVRP_1_50_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_50_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_51_0")]
-    pub type OVRP_1_51_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_51_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_52_0")]
-    pub type OVRP_1_52_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_52_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_53_0")]
-    pub type OVRP_1_53_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_53_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_54_0")]
-    pub type OVRP_1_54_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_54_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_55_0")]
-    pub type OVRP_1_55_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_55_1")]
-    pub type OVRP_1_55_1 = crate::GlobalNamespace::OVRPlugin_OVRP_1_55_1;
-    #[cfg(feature = "OVRPlugin+OVRP_1_56_0")]
-    pub type OVRP_1_56_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_56_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_57_0")]
-    pub type OVRP_1_57_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_58_0")]
-    pub type OVRP_1_58_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_58_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_59_0")]
-    pub type OVRP_1_59_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_59_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_5_0")]
-    pub type OVRP_1_5_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_5_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_60_0")]
-    pub type OVRP_1_60_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_60_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_61_0")]
-    pub type OVRP_1_61_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_61_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_62_0")]
-    pub type OVRP_1_62_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_62_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_63_0")]
-    pub type OVRP_1_63_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_64_0")]
-    pub type OVRP_1_64_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_64_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_65_0")]
-    pub type OVRP_1_65_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_66_0")]
-    pub type OVRP_1_66_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_66_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_67_0")]
-    pub type OVRP_1_67_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_67_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_68_0")]
-    pub type OVRP_1_68_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_69_0")]
-    pub type OVRP_1_69_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_69_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_6_0")]
-    pub type OVRP_1_6_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_70_0")]
-    pub type OVRP_1_70_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_70_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_71_0")]
-    pub type OVRP_1_71_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_72_0")]
-    pub type OVRP_1_72_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_73_0")]
-    pub type OVRP_1_73_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_73_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_74_0")]
-    pub type OVRP_1_74_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_75_0")]
-    pub type OVRP_1_75_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_75_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_76_0")]
-    pub type OVRP_1_76_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_76_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_78_0")]
-    pub type OVRP_1_78_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_79_0")]
-    pub type OVRP_1_79_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_7_0")]
-    pub type OVRP_1_7_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_7_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_81_0")]
-    pub type OVRP_1_81_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_81_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_82_0")]
-    pub type OVRP_1_82_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_82_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_83_0")]
-    pub type OVRP_1_83_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_84_0")]
-    pub type OVRP_1_84_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_85_0")]
-    pub type OVRP_1_85_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_85_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_86_0")]
-    pub type OVRP_1_86_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_87_0")]
-    pub type OVRP_1_87_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_88_0")]
-    pub type OVRP_1_88_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_88_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_8_0")]
-    pub type OVRP_1_8_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0;
-    #[cfg(feature = "OVRPlugin+OVRP_1_9_0")]
-    pub type OVRP_1_9_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0;
-    #[cfg(feature = "OVRPlugin+OverlayFlag")]
-    pub type OverlayFlag = crate::GlobalNamespace::OVRPlugin_OverlayFlag;
-    #[cfg(feature = "OVRPlugin+OverlayShape")]
-    pub type OverlayShape = crate::GlobalNamespace::OVRPlugin_OverlayShape;
-    #[cfg(feature = "OVRPlugin+PassthroughCapabilities")]
-    pub type PassthroughCapabilities = crate::GlobalNamespace::OVRPlugin_PassthroughCapabilities;
-    #[cfg(feature = "OVRPlugin+PassthroughCapabilityFields")]
-    pub type PassthroughCapabilityFields = crate::GlobalNamespace::OVRPlugin_PassthroughCapabilityFields;
-    #[cfg(feature = "OVRPlugin+PassthroughCapabilityFlags")]
-    pub type PassthroughCapabilityFlags = crate::GlobalNamespace::OVRPlugin_PassthroughCapabilityFlags;
-    #[cfg(feature = "OVRPlugin+PassthroughColorLutChannels")]
-    pub type PassthroughColorLutChannels = crate::GlobalNamespace::OVRPlugin_PassthroughColorLutChannels;
-    #[cfg(feature = "OVRPlugin+PassthroughColorLutData")]
-    pub type PassthroughColorLutData = crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData;
-    #[cfg(feature = "OVRPlugin+PassthroughPreferenceFields")]
-    pub type PassthroughPreferenceFields = crate::GlobalNamespace::OVRPlugin_PassthroughPreferenceFields;
-    #[cfg(feature = "OVRPlugin+PassthroughPreferenceFlags")]
-    pub type PassthroughPreferenceFlags = crate::GlobalNamespace::OVRPlugin_PassthroughPreferenceFlags;
-    #[cfg(feature = "OVRPlugin+PassthroughPreferences")]
-    pub type PassthroughPreferences = crate::GlobalNamespace::OVRPlugin_PassthroughPreferences;
-    #[cfg(feature = "OVRPlugin+PerfMetrics")]
-    pub type PerfMetrics = crate::GlobalNamespace::OVRPlugin_PerfMetrics;
-    #[cfg(feature = "OVRPlugin+PinnedArray_1")]
-    pub type PinnedArray_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRPlugin_PinnedArray_1<
-        T,
-    >;
-    #[cfg(feature = "OVRPlugin+PlatformUI")]
-    pub type PlatformUI = crate::GlobalNamespace::OVRPlugin_PlatformUI;
-    #[cfg(feature = "OVRPlugin+PolygonalBoundary2DInternal")]
-    pub type PolygonalBoundary2DInternal = crate::GlobalNamespace::OVRPlugin_PolygonalBoundary2DInternal;
-    #[cfg(feature = "OVRPlugin+PoseStatef")]
-    pub type PoseStatef = crate::GlobalNamespace::OVRPlugin_PoseStatef;
-    #[cfg(feature = "OVRPlugin+Posef")]
-    pub type Posef = crate::GlobalNamespace::OVRPlugin_Posef;
-    #[cfg(feature = "OVRPlugin+ProcessorPerformanceLevel")]
-    pub type ProcessorPerformanceLevel = crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel;
-    #[cfg(feature = "OVRPlugin+Qpl")]
-    pub type Qpl = crate::GlobalNamespace::OVRPlugin_Qpl;
-    #[cfg(feature = "OVRPlugin+Quatf")]
-    pub type Quatf = crate::GlobalNamespace::OVRPlugin_Quatf;
-    #[cfg(feature = "OVRPlugin+RecenterFlags")]
-    pub type RecenterFlags = crate::GlobalNamespace::OVRPlugin_RecenterFlags;
-    #[cfg(feature = "OVRPlugin+Rectf")]
-    pub type Rectf = crate::GlobalNamespace::OVRPlugin_Rectf;
-    #[cfg(feature = "OVRPlugin+Recti")]
-    pub type Recti = crate::GlobalNamespace::OVRPlugin_Recti;
-    #[cfg(feature = "OVRPlugin+RenderModelFlags")]
-    pub type RenderModelFlags = crate::GlobalNamespace::OVRPlugin_RenderModelFlags;
-    #[cfg(feature = "OVRPlugin+RenderModelProperties")]
-    pub type RenderModelProperties = crate::GlobalNamespace::OVRPlugin_RenderModelProperties;
-    #[cfg(feature = "OVRPlugin+RenderModelPropertiesInternal")]
-    pub type RenderModelPropertiesInternal = crate::GlobalNamespace::OVRPlugin_RenderModelPropertiesInternal;
-    #[cfg(feature = "OVRPlugin+Result")]
-    pub type Result = crate::GlobalNamespace::OVRPlugin_Result;
-    #[cfg(feature = "OVRPlugin+RoomLayout")]
-    pub type RoomLayout = crate::GlobalNamespace::OVRPlugin_RoomLayout;
-    #[cfg(feature = "OVRPlugin+RoomLayoutInternal")]
-    pub type RoomLayoutInternal = crate::GlobalNamespace::OVRPlugin_RoomLayoutInternal;
-    #[cfg(feature = "OVRPlugin+SceneCaptureRequestInternal")]
-    pub type SceneCaptureRequestInternal = crate::GlobalNamespace::OVRPlugin_SceneCaptureRequestInternal;
-    #[cfg(feature = "OVRPlugin+Size3f")]
-    pub type Size3f = crate::GlobalNamespace::OVRPlugin_Size3f;
-    #[cfg(feature = "OVRPlugin+Sizef")]
-    pub type Sizef = crate::GlobalNamespace::OVRPlugin_Sizef;
-    #[cfg(feature = "OVRPlugin+Sizei")]
-    pub type Sizei = crate::GlobalNamespace::OVRPlugin_Sizei;
-    #[cfg(feature = "OVRPlugin+Skeleton")]
-    pub type Skeleton = crate::GlobalNamespace::OVRPlugin_Skeleton;
-    #[cfg(feature = "OVRPlugin+Skeleton2")]
-    pub type Skeleton2 = crate::GlobalNamespace::OVRPlugin_Skeleton2;
-    #[cfg(feature = "OVRPlugin+Skeleton2Internal")]
-    pub type Skeleton2Internal = crate::GlobalNamespace::OVRPlugin_Skeleton2Internal;
-    #[cfg(feature = "OVRPlugin+SkeletonConstants")]
-    pub type SkeletonConstants = crate::GlobalNamespace::OVRPlugin_SkeletonConstants;
-    #[cfg(feature = "OVRPlugin+SkeletonType")]
-    pub type SkeletonType = crate::GlobalNamespace::OVRPlugin_SkeletonType;
-    #[cfg(feature = "OVRPlugin+SpaceComponentType")]
-    pub type SpaceComponentType = crate::GlobalNamespace::OVRPlugin_SpaceComponentType;
-    #[cfg(feature = "OVRPlugin+SpaceContainerInternal")]
-    pub type SpaceContainerInternal = crate::GlobalNamespace::OVRPlugin_SpaceContainerInternal;
-    #[cfg(feature = "OVRPlugin+SpaceFilterInfoComponents")]
-    pub type SpaceFilterInfoComponents = crate::GlobalNamespace::OVRPlugin_SpaceFilterInfoComponents;
-    #[cfg(feature = "OVRPlugin+SpaceFilterInfoIds")]
-    pub type SpaceFilterInfoIds = crate::GlobalNamespace::OVRPlugin_SpaceFilterInfoIds;
-    #[cfg(feature = "OVRPlugin+SpaceLocationFlags")]
-    pub type SpaceLocationFlags = crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags;
-    #[cfg(feature = "OVRPlugin+SpaceLocationf")]
-    pub type SpaceLocationf = crate::GlobalNamespace::OVRPlugin_SpaceLocationf;
-    #[cfg(feature = "OVRPlugin+SpaceQueryActionType")]
-    pub type SpaceQueryActionType = crate::GlobalNamespace::OVRPlugin_SpaceQueryActionType;
-    #[cfg(feature = "OVRPlugin+SpaceQueryFilterType")]
-    pub type SpaceQueryFilterType = crate::GlobalNamespace::OVRPlugin_SpaceQueryFilterType;
-    #[cfg(feature = "OVRPlugin+SpaceQueryInfo")]
-    pub type SpaceQueryInfo = crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo;
-    #[cfg(feature = "OVRPlugin+SpaceQueryResult")]
-    pub type SpaceQueryResult = crate::GlobalNamespace::OVRPlugin_SpaceQueryResult;
-    #[cfg(feature = "OVRPlugin+SpaceQueryType")]
-    pub type SpaceQueryType = crate::GlobalNamespace::OVRPlugin_SpaceQueryType;
-    #[cfg(feature = "OVRPlugin+SpaceSemanticLabelInternal")]
-    pub type SpaceSemanticLabelInternal = crate::GlobalNamespace::OVRPlugin_SpaceSemanticLabelInternal;
-    #[cfg(feature = "OVRPlugin+SpaceStorageLocation")]
-    pub type SpaceStorageLocation = crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation;
-    #[cfg(feature = "OVRPlugin+SpaceStoragePersistenceMode")]
-    pub type SpaceStoragePersistenceMode = crate::GlobalNamespace::OVRPlugin_SpaceStoragePersistenceMode;
-    #[cfg(feature = "OVRPlugin+SpatialAnchorCreateInfo")]
-    pub type SpatialAnchorCreateInfo = crate::GlobalNamespace::OVRPlugin_SpatialAnchorCreateInfo;
-    #[cfg(feature = "OVRPlugin+Step")]
-    pub type Step = crate::GlobalNamespace::OVRPlugin_Step;
-    #[cfg(feature = "OVRPlugin+SystemHeadset")]
-    pub type SystemHeadset = crate::GlobalNamespace::OVRPlugin_SystemHeadset;
-    #[cfg(feature = "OVRPlugin+SystemRegion")]
-    pub type SystemRegion = crate::GlobalNamespace::OVRPlugin_SystemRegion;
-    #[cfg(feature = "OVRPlugin+TextureRectMatrixf")]
-    pub type TextureRectMatrixf = crate::GlobalNamespace::OVRPlugin_TextureRectMatrixf;
-    #[cfg(feature = "OVRPlugin+TiledMultiResLevel")]
-    pub type TiledMultiResLevel = crate::GlobalNamespace::OVRPlugin_TiledMultiResLevel;
-    #[cfg(feature = "OVRPlugin+TrackedKeyboardFlags")]
-    pub type TrackedKeyboardFlags = crate::GlobalNamespace::OVRPlugin_TrackedKeyboardFlags;
-    #[cfg(feature = "OVRPlugin+TrackedKeyboardPresentationStyles")]
-    pub type TrackedKeyboardPresentationStyles = crate::GlobalNamespace::OVRPlugin_TrackedKeyboardPresentationStyles;
-    #[cfg(feature = "OVRPlugin+TrackedKeyboardQueryFlags")]
-    pub type TrackedKeyboardQueryFlags = crate::GlobalNamespace::OVRPlugin_TrackedKeyboardQueryFlags;
-    #[cfg(feature = "OVRPlugin+Tracker")]
-    pub type Tracker = crate::GlobalNamespace::OVRPlugin_Tracker;
-    #[cfg(feature = "OVRPlugin+TrackingConfidence")]
-    pub type TrackingConfidence = crate::GlobalNamespace::OVRPlugin_TrackingConfidence;
-    #[cfg(feature = "OVRPlugin+TrackingOrigin")]
-    pub type TrackingOrigin = crate::GlobalNamespace::OVRPlugin_TrackingOrigin;
-    #[cfg(feature = "OVRPlugin+TriangleMeshInternal")]
-    pub type TriangleMeshInternal = crate::GlobalNamespace::OVRPlugin_TriangleMeshInternal;
-    #[cfg(feature = "OVRPlugin+UnityOpenXR")]
-    pub type UnityOpenXR = crate::GlobalNamespace::OVRPlugin_UnityOpenXR;
-    #[cfg(feature = "OVRPlugin+Vector2f")]
-    pub type Vector2f = crate::GlobalNamespace::OVRPlugin_Vector2f;
-    #[cfg(feature = "OVRPlugin+Vector2i")]
-    pub type Vector2i = crate::GlobalNamespace::OVRPlugin_Vector2i;
-    #[cfg(feature = "OVRPlugin+Vector3f")]
-    pub type Vector3f = crate::GlobalNamespace::OVRPlugin_Vector3f;
-    #[cfg(feature = "OVRPlugin+Vector4f")]
-    pub type Vector4f = crate::GlobalNamespace::OVRPlugin_Vector4f;
-    #[cfg(feature = "OVRPlugin+Vector4s")]
-    pub type Vector4s = crate::GlobalNamespace::OVRPlugin_Vector4s;
-    #[cfg(feature = "OVRPlugin+VirtualKeyboardCreateInfo")]
-    pub type VirtualKeyboardCreateInfo = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardCreateInfo;
-    #[cfg(feature = "OVRPlugin+VirtualKeyboardInputInfo")]
-    pub type VirtualKeyboardInputInfo = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardInputInfo;
-    #[cfg(feature = "OVRPlugin+VirtualKeyboardInputSource")]
-    pub type VirtualKeyboardInputSource = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardInputSource;
-    #[cfg(feature = "OVRPlugin+VirtualKeyboardInputStateFlags")]
-    pub type VirtualKeyboardInputStateFlags = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardInputStateFlags;
-    #[cfg(feature = "OVRPlugin+VirtualKeyboardLocationInfo")]
-    pub type VirtualKeyboardLocationInfo = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationInfo;
-    #[cfg(feature = "OVRPlugin+VirtualKeyboardLocationType")]
-    pub type VirtualKeyboardLocationType = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationType;
-    #[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationState")]
-    pub type VirtualKeyboardModelAnimationState = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationState;
-    #[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationStates")]
-    pub type VirtualKeyboardModelAnimationStates = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStates;
-    #[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationStatesInternal")]
-    pub type VirtualKeyboardModelAnimationStatesInternal = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStatesInternal;
-    #[cfg(feature = "OVRPlugin+VirtualKeyboardModelVisibility")]
-    pub type VirtualKeyboardModelVisibility = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelVisibility;
-    #[cfg(feature = "OVRPlugin+VirtualKeyboardSpaceCreateInfo")]
-    pub type VirtualKeyboardSpaceCreateInfo = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardSpaceCreateInfo;
-    #[cfg(feature = "OVRPlugin+VirtualKeyboardTextureData")]
-    pub type VirtualKeyboardTextureData = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureData;
-    #[cfg(feature = "OVRPlugin+VirtualKeyboardTextureIds")]
-    pub type VirtualKeyboardTextureIds = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureIds;
-    #[cfg(feature = "OVRPlugin+VirtualKeyboardTextureIdsInternal")]
-    pub type VirtualKeyboardTextureIdsInternal = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureIdsInternal;
-    #[cfg(feature = "OVRPlugin+XrApi")]
-    pub type XrApi = crate::GlobalNamespace::OVRPlugin_XrApi;
-}
-#[cfg(feature = "OVRPlugin")]
-impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "OVRPlugin+OverlayFlag")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -6691,26 +6714,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRPlugin_PinnedArr
         Ok(__cordl_ret)
     }
 }
-#[cfg(feature = "OVRPlugin+Media+PlatformCameraMode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Media_PlatformCameraMode {
-    Disabled = -1i32,
-    EnumSize = 2147483647i32,
-    Initialized = 0i32,
-    MobileMRC = 7i32,
-    RemoteDroneControlled = 4i32,
-    RemoteSpatialMapped = 5i32,
-    SmartNavigated = 2i32,
-    SpectatorMode = 6i32,
-    StabilizedPoV = 3i32,
-    UserControlled = 1i32,
-}
-#[cfg(feature = "OVRPlugin+Media+PlatformCameraMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::Media_PlatformCameraMode => ""
-    ."OVRPlugin/Media/PlatformCameraMode"
-);
 #[cfg(feature = "OVRPlugin+PlatformUI")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -6862,7 +6865,7 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
     pub const AutoSetTimestampMs: i64 = -1i64;
     pub const DefaultInstanceKey: i32 = 0i32;
     #[cfg(feature = "OVRPlugin+Qpl+ResultType")]
-    pub type ResultType = crate::GlobalNamespace::Qpl_ResultType;
+    pub type ResultType = crate::GlobalNamespace::Qpl_OVRPlugin_ResultType;
 }
 #[cfg(feature = "OVRPlugin+Qpl")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_Qpl {
@@ -7070,19 +7073,6 @@ pub enum OVRPlugin_Result {
 quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRPlugin_Result => ""
     ."OVRPlugin/Result"
-);
-#[cfg(feature = "OVRPlugin+Qpl+ResultType")]
-#[repr(i16)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Qpl_ResultType {
-    Cancel = 4i16,
-    Fail = 3i16,
-    Success = 2i16,
-}
-#[cfg(feature = "OVRPlugin+Qpl+ResultType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::Qpl_ResultType => ""
-    ."OVRPlugin/Qpl/ResultType"
 );
 #[cfg(feature = "OVRPlugin+RoomLayout")]
 #[repr(C)]
@@ -8596,4 +8586,17 @@ pub enum OVRPlugin_XrApi {
 quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRPlugin_XrApi => ""
     ."OVRPlugin/XrApi"
+);
+#[cfg(feature = "OVRPlugin+Qpl+ResultType")]
+#[repr(i16)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Qpl_OVRPlugin_ResultType {
+    Cancel = 4i16,
+    Fail = 3i16,
+    Success = 2i16,
+}
+#[cfg(feature = "OVRPlugin+Qpl+ResultType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::Qpl_OVRPlugin_ResultType => ""
+    ."OVRPlugin/Qpl/ResultType"
 );

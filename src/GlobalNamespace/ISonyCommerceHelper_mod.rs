@@ -1,70 +1,3 @@
-#[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {
-    pub result: crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlementsResult,
-    pub entitlementsLabels: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
-    >,
-}
-#[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult => ""
-    ."ISonyCommerceHelper/AdditionalContentEntitlementsAsyncResult"
-);
-#[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
-impl crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {}
-#[cfg(feature = "ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ISonyCommerceHelper_DisplayCategoryBrowseDialogResult {
-    Failed = 1i32,
-    OK = 0i32,
-}
-#[cfg(feature = "ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult => ""
-    ."ISonyCommerceHelper/DisplayCategoryBrowseDialogResult"
-);
-#[cfg(feature = "ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ISonyCommerceHelper_DisplayProductBrowseDialogResult {
-    Failed = 1i32,
-    OK = 0i32,
-}
-#[cfg(feature = "ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult => ""
-    ."ISonyCommerceHelper/DisplayProductBrowseDialogResult"
-);
-#[cfg(feature = "ISonyCommerceHelper+GetAdditionalContentEntitlementsResult")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ISonyCommerceHelper_GetAdditionalContentEntitlementsResult {
-    Failed = 1i32,
-    OK = 0i32,
-}
-#[cfg(feature = "ISonyCommerceHelper+GetAdditionalContentEntitlementsResult")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlementsResult => ""
-    ."ISonyCommerceHelper/GetAdditionalContentEntitlementsResult"
-);
 #[cfg(feature = "ISonyCommerceHelper")]
 #[repr(C)]
 #[derive(Debug)]
@@ -167,3 +100,70 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ISonyCommerce
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {
+    pub result: crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlementsResult,
+    pub entitlementsLabels: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::System::String,
+    >,
+}
+#[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult => ""
+    ."ISonyCommerceHelper/AdditionalContentEntitlementsAsyncResult"
+);
+#[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
+impl crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {}
+#[cfg(feature = "ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ISonyCommerceHelper_DisplayCategoryBrowseDialogResult {
+    Failed = 1i32,
+    OK = 0i32,
+}
+#[cfg(feature = "ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult => ""
+    ."ISonyCommerceHelper/DisplayCategoryBrowseDialogResult"
+);
+#[cfg(feature = "ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ISonyCommerceHelper_DisplayProductBrowseDialogResult {
+    Failed = 1i32,
+    OK = 0i32,
+}
+#[cfg(feature = "ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult => ""
+    ."ISonyCommerceHelper/DisplayProductBrowseDialogResult"
+);
+#[cfg(feature = "ISonyCommerceHelper+GetAdditionalContentEntitlementsResult")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ISonyCommerceHelper_GetAdditionalContentEntitlementsResult {
+    Failed = 1i32,
+    OK = 0i32,
+}
+#[cfg(feature = "ISonyCommerceHelper+GetAdditionalContentEntitlementsResult")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlementsResult => ""
+    ."ISonyCommerceHelper/GetAdditionalContentEntitlementsResult"
+);

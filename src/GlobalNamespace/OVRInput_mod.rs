@@ -1,3 +1,515 @@
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis1DMap")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRControllerBase_OVRInput_VirtualAxis1DMap {
+    __cordl_parent: crate::System::Object,
+    pub None: crate::GlobalNamespace::OVRInput_RawAxis1D,
+    pub PrimaryIndexTrigger: crate::GlobalNamespace::OVRInput_RawAxis1D,
+    pub PrimaryHandTrigger: crate::GlobalNamespace::OVRInput_RawAxis1D,
+    pub SecondaryIndexTrigger: crate::GlobalNamespace::OVRInput_RawAxis1D,
+    pub SecondaryHandTrigger: crate::GlobalNamespace::OVRInput_RawAxis1D,
+    pub PrimaryIndexTriggerCurl: crate::GlobalNamespace::OVRInput_RawAxis1D,
+    pub PrimaryIndexTriggerSlide: crate::GlobalNamespace::OVRInput_RawAxis1D,
+    pub PrimaryThumbRestForce: crate::GlobalNamespace::OVRInput_RawAxis1D,
+    pub PrimaryStylusForce: crate::GlobalNamespace::OVRInput_RawAxis1D,
+    pub SecondaryIndexTriggerCurl: crate::GlobalNamespace::OVRInput_RawAxis1D,
+    pub SecondaryIndexTriggerSlide: crate::GlobalNamespace::OVRInput_RawAxis1D,
+    pub SecondaryThumbRestForce: crate::GlobalNamespace::OVRInput_RawAxis1D,
+    pub SecondaryStylusForce: crate::GlobalNamespace::OVRInput_RawAxis1D,
+    pub PrimaryIndexTriggerForce: crate::GlobalNamespace::OVRInput_RawAxis1D,
+    pub SecondaryIndexTriggerForce: crate::GlobalNamespace::OVRInput_RawAxis1D,
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis1DMap")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap => ""
+    ."OVRInput/OVRControllerBase/VirtualAxis1DMap"
+);
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis1DMap")]
+impl std::ops::Deref
+for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis1DMap")]
+impl std::ops::DerefMut
+for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis1DMap")]
+impl crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ToRawMask(
+        &mut self,
+        virtualMask: crate::GlobalNamespace::OVRInput_Axis1D,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawAxis1D> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::OVRInput_RawAxis1D = __cordl_object
+            .invoke("ToRawMask", (virtualMask))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis1DMap")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis2DMap")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRControllerBase_OVRInput_VirtualAxis2DMap {
+    __cordl_parent: crate::System::Object,
+    pub None: crate::GlobalNamespace::OVRInput_RawAxis2D,
+    pub PrimaryThumbstick: crate::GlobalNamespace::OVRInput_RawAxis2D,
+    pub PrimaryTouchpad: crate::GlobalNamespace::OVRInput_RawAxis2D,
+    pub SecondaryThumbstick: crate::GlobalNamespace::OVRInput_RawAxis2D,
+    pub SecondaryTouchpad: crate::GlobalNamespace::OVRInput_RawAxis2D,
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis2DMap")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap => ""
+    ."OVRInput/OVRControllerBase/VirtualAxis2DMap"
+);
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis2DMap")]
+impl std::ops::Deref
+for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis2DMap")]
+impl std::ops::DerefMut
+for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis2DMap")]
+impl crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ToRawMask(
+        &mut self,
+        virtualMask: crate::GlobalNamespace::OVRInput_Axis2D,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawAxis2D> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::OVRInput_RawAxis2D = __cordl_object
+            .invoke("ToRawMask", (virtualMask))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis2DMap")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualButtonMap")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRControllerBase_OVRInput_VirtualButtonMap {
+    __cordl_parent: crate::System::Object,
+    pub None: crate::GlobalNamespace::OVRInput_RawButton,
+    pub One: crate::GlobalNamespace::OVRInput_RawButton,
+    pub Two: crate::GlobalNamespace::OVRInput_RawButton,
+    pub Three: crate::GlobalNamespace::OVRInput_RawButton,
+    pub Four: crate::GlobalNamespace::OVRInput_RawButton,
+    pub Start: crate::GlobalNamespace::OVRInput_RawButton,
+    pub Back: crate::GlobalNamespace::OVRInput_RawButton,
+    pub PrimaryShoulder: crate::GlobalNamespace::OVRInput_RawButton,
+    pub PrimaryIndexTrigger: crate::GlobalNamespace::OVRInput_RawButton,
+    pub PrimaryHandTrigger: crate::GlobalNamespace::OVRInput_RawButton,
+    pub PrimaryThumbstick: crate::GlobalNamespace::OVRInput_RawButton,
+    pub PrimaryThumbstickUp: crate::GlobalNamespace::OVRInput_RawButton,
+    pub PrimaryThumbstickDown: crate::GlobalNamespace::OVRInput_RawButton,
+    pub PrimaryThumbstickLeft: crate::GlobalNamespace::OVRInput_RawButton,
+    pub PrimaryThumbstickRight: crate::GlobalNamespace::OVRInput_RawButton,
+    pub PrimaryTouchpad: crate::GlobalNamespace::OVRInput_RawButton,
+    pub SecondaryShoulder: crate::GlobalNamespace::OVRInput_RawButton,
+    pub SecondaryIndexTrigger: crate::GlobalNamespace::OVRInput_RawButton,
+    pub SecondaryHandTrigger: crate::GlobalNamespace::OVRInput_RawButton,
+    pub SecondaryThumbstick: crate::GlobalNamespace::OVRInput_RawButton,
+    pub SecondaryThumbstickUp: crate::GlobalNamespace::OVRInput_RawButton,
+    pub SecondaryThumbstickDown: crate::GlobalNamespace::OVRInput_RawButton,
+    pub SecondaryThumbstickLeft: crate::GlobalNamespace::OVRInput_RawButton,
+    pub SecondaryThumbstickRight: crate::GlobalNamespace::OVRInput_RawButton,
+    pub SecondaryTouchpad: crate::GlobalNamespace::OVRInput_RawButton,
+    pub DpadUp: crate::GlobalNamespace::OVRInput_RawButton,
+    pub DpadDown: crate::GlobalNamespace::OVRInput_RawButton,
+    pub DpadLeft: crate::GlobalNamespace::OVRInput_RawButton,
+    pub DpadRight: crate::GlobalNamespace::OVRInput_RawButton,
+    pub Up: crate::GlobalNamespace::OVRInput_RawButton,
+    pub Down: crate::GlobalNamespace::OVRInput_RawButton,
+    pub Left: crate::GlobalNamespace::OVRInput_RawButton,
+    pub Right: crate::GlobalNamespace::OVRInput_RawButton,
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualButtonMap")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap => ""
+    ."OVRInput/OVRControllerBase/VirtualButtonMap"
+);
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualButtonMap")]
+impl std::ops::Deref
+for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualButtonMap")]
+impl std::ops::DerefMut
+for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualButtonMap")]
+impl crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ToRawMask(
+        &mut self,
+        virtualMask: crate::GlobalNamespace::OVRInput_Button,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawButton> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::OVRInput_RawButton = __cordl_object
+            .invoke("ToRawMask", (virtualMask))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualButtonMap")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRControllerBase_OVRInput_VirtualNearTouchMap {
+    __cordl_parent: crate::System::Object,
+    pub None: crate::GlobalNamespace::OVRInput_RawNearTouch,
+    pub PrimaryIndexTrigger: crate::GlobalNamespace::OVRInput_RawNearTouch,
+    pub PrimaryThumbButtons: crate::GlobalNamespace::OVRInput_RawNearTouch,
+    pub SecondaryIndexTrigger: crate::GlobalNamespace::OVRInput_RawNearTouch,
+    pub SecondaryThumbButtons: crate::GlobalNamespace::OVRInput_RawNearTouch,
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap => ""
+    ."OVRInput/OVRControllerBase/VirtualNearTouchMap"
+);
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
+impl std::ops::Deref
+for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
+impl std::ops::DerefMut
+for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
+impl crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ToRawMask(
+        &mut self,
+        virtualMask: crate::GlobalNamespace::OVRInput_NearTouch,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawNearTouch> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::OVRInput_RawNearTouch = __cordl_object
+            .invoke("ToRawMask", (virtualMask))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualTouchMap")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRControllerBase_OVRInput_VirtualTouchMap {
+    __cordl_parent: crate::System::Object,
+    pub None: crate::GlobalNamespace::OVRInput_RawTouch,
+    pub One: crate::GlobalNamespace::OVRInput_RawTouch,
+    pub Two: crate::GlobalNamespace::OVRInput_RawTouch,
+    pub Three: crate::GlobalNamespace::OVRInput_RawTouch,
+    pub Four: crate::GlobalNamespace::OVRInput_RawTouch,
+    pub PrimaryIndexTrigger: crate::GlobalNamespace::OVRInput_RawTouch,
+    pub PrimaryThumbstick: crate::GlobalNamespace::OVRInput_RawTouch,
+    pub PrimaryThumbRest: crate::GlobalNamespace::OVRInput_RawTouch,
+    pub PrimaryTouchpad: crate::GlobalNamespace::OVRInput_RawTouch,
+    pub SecondaryIndexTrigger: crate::GlobalNamespace::OVRInput_RawTouch,
+    pub SecondaryThumbstick: crate::GlobalNamespace::OVRInput_RawTouch,
+    pub SecondaryThumbRest: crate::GlobalNamespace::OVRInput_RawTouch,
+    pub SecondaryTouchpad: crate::GlobalNamespace::OVRInput_RawTouch,
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualTouchMap")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap => ""
+    ."OVRInput/OVRControllerBase/VirtualTouchMap"
+);
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualTouchMap")]
+impl std::ops::Deref
+for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualTouchMap")]
+impl std::ops::DerefMut
+for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualTouchMap")]
+impl crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn ToRawMask(
+        &mut self,
+        virtualMask: crate::GlobalNamespace::OVRInput_Touch,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawTouch> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::OVRInput_RawTouch = __cordl_object
+            .invoke("ToRawMask", (virtualMask))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "OVRInput+OVRControllerBase+VirtualTouchMap")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "OVRInput")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRInput {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "OVRInput")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRInput => ""."OVRInput"
+);
+#[cfg(feature = "OVRInput")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRInput {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRInput")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRInput")]
+impl crate::GlobalNamespace::OVRInput {
+    #[cfg(feature = "OVRInput+Axis1D")]
+    pub type Axis1D = crate::GlobalNamespace::OVRInput_Axis1D;
+    #[cfg(feature = "OVRInput+Axis2D")]
+    pub type Axis2D = crate::GlobalNamespace::OVRInput_Axis2D;
+    #[cfg(feature = "OVRInput+Button")]
+    pub type Button = crate::GlobalNamespace::OVRInput_Button;
+    #[cfg(feature = "OVRInput+Controller")]
+    pub type Controller = crate::GlobalNamespace::OVRInput_Controller;
+    #[cfg(feature = "OVRInput+ControllerInHandState")]
+    pub type ControllerInHandState = crate::GlobalNamespace::OVRInput_ControllerInHandState;
+    #[cfg(feature = "OVRInput+Hand")]
+    pub type Hand = crate::GlobalNamespace::OVRInput_Hand;
+    #[cfg(feature = "OVRInput+Handedness")]
+    pub type Handedness = crate::GlobalNamespace::OVRInput_Handedness;
+    #[cfg(feature = "OVRInput+HapticInfo")]
+    pub type HapticInfo = crate::GlobalNamespace::OVRInput_HapticInfo;
+    #[cfg(feature = "OVRInput+HapticsAmplitudeEnvelopeVibration")]
+    pub type HapticsAmplitudeEnvelopeVibration = crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration;
+    #[cfg(feature = "OVRInput+HapticsLocation")]
+    pub type HapticsLocation = crate::GlobalNamespace::OVRInput_HapticsLocation;
+    #[cfg(feature = "OVRInput+HapticsPcmVibration")]
+    pub type HapticsPcmVibration = crate::GlobalNamespace::OVRInput_HapticsPcmVibration;
+    #[cfg(feature = "OVRInput+InputDeviceShowState")]
+    pub type InputDeviceShowState = crate::GlobalNamespace::OVRInput_InputDeviceShowState;
+    #[cfg(feature = "OVRInput+InteractionProfile")]
+    pub type InteractionProfile = crate::GlobalNamespace::OVRInput_InteractionProfile;
+    #[cfg(feature = "OVRInput+NearTouch")]
+    pub type NearTouch = crate::GlobalNamespace::OVRInput_NearTouch;
+    #[cfg(feature = "OVRInput+OVRControllerBase")]
+    pub type OVRControllerBase = crate::GlobalNamespace::OVRInput_OVRControllerBase;
+    #[cfg(feature = "OVRInput+OVRControllerGamepadAndroid")]
+    pub type OVRControllerGamepadAndroid = crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid;
+    #[cfg(feature = "OVRInput+OVRControllerGamepadPC")]
+    pub type OVRControllerGamepadPC = crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC;
+    #[cfg(feature = "OVRInput+OVRControllerHands")]
+    pub type OVRControllerHands = crate::GlobalNamespace::OVRInput_OVRControllerHands;
+    #[cfg(feature = "OVRInput+OVRControllerLHand")]
+    pub type OVRControllerLHand = crate::GlobalNamespace::OVRInput_OVRControllerLHand;
+    #[cfg(feature = "OVRInput+OVRControllerLTouch")]
+    pub type OVRControllerLTouch = crate::GlobalNamespace::OVRInput_OVRControllerLTouch;
+    #[cfg(feature = "OVRInput+OVRControllerRHand")]
+    pub type OVRControllerRHand = crate::GlobalNamespace::OVRInput_OVRControllerRHand;
+    #[cfg(feature = "OVRInput+OVRControllerRTouch")]
+    pub type OVRControllerRTouch = crate::GlobalNamespace::OVRInput_OVRControllerRTouch;
+    #[cfg(feature = "OVRInput+OVRControllerRemote")]
+    pub type OVRControllerRemote = crate::GlobalNamespace::OVRInput_OVRControllerRemote;
+    #[cfg(feature = "OVRInput+OVRControllerTouch")]
+    pub type OVRControllerTouch = crate::GlobalNamespace::OVRInput_OVRControllerTouch;
+    #[cfg(feature = "OVRInput+OpenVRButton")]
+    pub type OpenVRButton = crate::GlobalNamespace::OVRInput_OpenVRButton;
+    #[cfg(feature = "OVRInput+OpenVRController")]
+    pub type OpenVRController = crate::GlobalNamespace::OVRInput_OpenVRController;
+    #[cfg(feature = "OVRInput+OpenVRControllerDetails")]
+    pub type OpenVRControllerDetails = crate::GlobalNamespace::OVRInput_OpenVRControllerDetails;
+    #[cfg(feature = "OVRInput+RawAxis1D")]
+    pub type RawAxis1D = crate::GlobalNamespace::OVRInput_RawAxis1D;
+    #[cfg(feature = "OVRInput+RawAxis2D")]
+    pub type RawAxis2D = crate::GlobalNamespace::OVRInput_RawAxis2D;
+    #[cfg(feature = "OVRInput+RawButton")]
+    pub type RawButton = crate::GlobalNamespace::OVRInput_RawButton;
+    #[cfg(feature = "OVRInput+RawNearTouch")]
+    pub type RawNearTouch = crate::GlobalNamespace::OVRInput_RawNearTouch;
+    #[cfg(feature = "OVRInput+RawTouch")]
+    pub type RawTouch = crate::GlobalNamespace::OVRInput_RawTouch;
+    #[cfg(feature = "OVRInput+Touch")]
+    pub type Touch = crate::GlobalNamespace::OVRInput_Touch;
+}
+#[cfg(feature = "OVRInput")]
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRInput {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "OVRInput+Axis1D")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -321,11 +833,11 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 pub struct OVRInput_OVRControllerBase {
     __cordl_parent: crate::System::Object,
     pub controllerType: crate::GlobalNamespace::OVRInput_Controller,
-    pub buttonMap: *mut crate::GlobalNamespace::OVRControllerBase_VirtualButtonMap,
-    pub touchMap: *mut crate::GlobalNamespace::OVRControllerBase_VirtualTouchMap,
-    pub nearTouchMap: *mut crate::GlobalNamespace::OVRControllerBase_VirtualNearTouchMap,
-    pub axis1DMap: *mut crate::GlobalNamespace::OVRControllerBase_VirtualAxis1DMap,
-    pub axis2DMap: *mut crate::GlobalNamespace::OVRControllerBase_VirtualAxis2DMap,
+    pub buttonMap: *mut crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap,
+    pub touchMap: *mut crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap,
+    pub nearTouchMap: *mut crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap,
+    pub axis1DMap: *mut crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap,
+    pub axis2DMap: *mut crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap,
     pub previousState: crate::GlobalNamespace::OVRPlugin_ControllerState6,
     pub currentState: crate::GlobalNamespace::OVRPlugin_ControllerState6,
     pub shouldApplyDeadzone: bool,
@@ -352,15 +864,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput_OVRControllerBase {
 #[cfg(feature = "OVRInput+OVRControllerBase")]
 impl crate::GlobalNamespace::OVRInput_OVRControllerBase {
     #[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis1DMap")]
-    pub type VirtualAxis1DMap = crate::GlobalNamespace::OVRControllerBase_VirtualAxis1DMap;
+    pub type VirtualAxis1DMap = crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap;
     #[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis2DMap")]
-    pub type VirtualAxis2DMap = crate::GlobalNamespace::OVRControllerBase_VirtualAxis2DMap;
+    pub type VirtualAxis2DMap = crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap;
     #[cfg(feature = "OVRInput+OVRControllerBase+VirtualButtonMap")]
-    pub type VirtualButtonMap = crate::GlobalNamespace::OVRControllerBase_VirtualButtonMap;
+    pub type VirtualButtonMap = crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap;
     #[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
-    pub type VirtualNearTouchMap = crate::GlobalNamespace::OVRControllerBase_VirtualNearTouchMap;
+    pub type VirtualNearTouchMap = crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap;
     #[cfg(feature = "OVRInput+OVRControllerBase+VirtualTouchMap")]
-    pub type VirtualTouchMap = crate::GlobalNamespace::OVRControllerBase_VirtualTouchMap;
+    pub type VirtualTouchMap = crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap;
     pub fn ConfigureAxis1DMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1561,107 +2073,6 @@ for crate::GlobalNamespace::OVRInput_OVRControllerTouch {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "OVRInput")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct OVRInput {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "OVRInput")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRInput => ""."OVRInput"
-);
-#[cfg(feature = "OVRInput")]
-impl std::ops::Deref for crate::GlobalNamespace::OVRInput {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRInput")]
-impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRInput")]
-impl crate::GlobalNamespace::OVRInput {
-    #[cfg(feature = "OVRInput+Axis1D")]
-    pub type Axis1D = crate::GlobalNamespace::OVRInput_Axis1D;
-    #[cfg(feature = "OVRInput+Axis2D")]
-    pub type Axis2D = crate::GlobalNamespace::OVRInput_Axis2D;
-    #[cfg(feature = "OVRInput+Button")]
-    pub type Button = crate::GlobalNamespace::OVRInput_Button;
-    #[cfg(feature = "OVRInput+Controller")]
-    pub type Controller = crate::GlobalNamespace::OVRInput_Controller;
-    #[cfg(feature = "OVRInput+ControllerInHandState")]
-    pub type ControllerInHandState = crate::GlobalNamespace::OVRInput_ControllerInHandState;
-    #[cfg(feature = "OVRInput+Hand")]
-    pub type Hand = crate::GlobalNamespace::OVRInput_Hand;
-    #[cfg(feature = "OVRInput+Handedness")]
-    pub type Handedness = crate::GlobalNamespace::OVRInput_Handedness;
-    #[cfg(feature = "OVRInput+HapticInfo")]
-    pub type HapticInfo = crate::GlobalNamespace::OVRInput_HapticInfo;
-    #[cfg(feature = "OVRInput+HapticsAmplitudeEnvelopeVibration")]
-    pub type HapticsAmplitudeEnvelopeVibration = crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration;
-    #[cfg(feature = "OVRInput+HapticsLocation")]
-    pub type HapticsLocation = crate::GlobalNamespace::OVRInput_HapticsLocation;
-    #[cfg(feature = "OVRInput+HapticsPcmVibration")]
-    pub type HapticsPcmVibration = crate::GlobalNamespace::OVRInput_HapticsPcmVibration;
-    #[cfg(feature = "OVRInput+InputDeviceShowState")]
-    pub type InputDeviceShowState = crate::GlobalNamespace::OVRInput_InputDeviceShowState;
-    #[cfg(feature = "OVRInput+InteractionProfile")]
-    pub type InteractionProfile = crate::GlobalNamespace::OVRInput_InteractionProfile;
-    #[cfg(feature = "OVRInput+NearTouch")]
-    pub type NearTouch = crate::GlobalNamespace::OVRInput_NearTouch;
-    #[cfg(feature = "OVRInput+OVRControllerBase")]
-    pub type OVRControllerBase = crate::GlobalNamespace::OVRInput_OVRControllerBase;
-    #[cfg(feature = "OVRInput+OVRControllerGamepadAndroid")]
-    pub type OVRControllerGamepadAndroid = crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid;
-    #[cfg(feature = "OVRInput+OVRControllerGamepadPC")]
-    pub type OVRControllerGamepadPC = crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC;
-    #[cfg(feature = "OVRInput+OVRControllerHands")]
-    pub type OVRControllerHands = crate::GlobalNamespace::OVRInput_OVRControllerHands;
-    #[cfg(feature = "OVRInput+OVRControllerLHand")]
-    pub type OVRControllerLHand = crate::GlobalNamespace::OVRInput_OVRControllerLHand;
-    #[cfg(feature = "OVRInput+OVRControllerLTouch")]
-    pub type OVRControllerLTouch = crate::GlobalNamespace::OVRInput_OVRControllerLTouch;
-    #[cfg(feature = "OVRInput+OVRControllerRHand")]
-    pub type OVRControllerRHand = crate::GlobalNamespace::OVRInput_OVRControllerRHand;
-    #[cfg(feature = "OVRInput+OVRControllerRTouch")]
-    pub type OVRControllerRTouch = crate::GlobalNamespace::OVRInput_OVRControllerRTouch;
-    #[cfg(feature = "OVRInput+OVRControllerRemote")]
-    pub type OVRControllerRemote = crate::GlobalNamespace::OVRInput_OVRControllerRemote;
-    #[cfg(feature = "OVRInput+OVRControllerTouch")]
-    pub type OVRControllerTouch = crate::GlobalNamespace::OVRInput_OVRControllerTouch;
-    #[cfg(feature = "OVRInput+OpenVRButton")]
-    pub type OpenVRButton = crate::GlobalNamespace::OVRInput_OpenVRButton;
-    #[cfg(feature = "OVRInput+OpenVRController")]
-    pub type OpenVRController = crate::GlobalNamespace::OVRInput_OpenVRController;
-    #[cfg(feature = "OVRInput+OpenVRControllerDetails")]
-    pub type OpenVRControllerDetails = crate::GlobalNamespace::OVRInput_OpenVRControllerDetails;
-    #[cfg(feature = "OVRInput+RawAxis1D")]
-    pub type RawAxis1D = crate::GlobalNamespace::OVRInput_RawAxis1D;
-    #[cfg(feature = "OVRInput+RawAxis2D")]
-    pub type RawAxis2D = crate::GlobalNamespace::OVRInput_RawAxis2D;
-    #[cfg(feature = "OVRInput+RawButton")]
-    pub type RawButton = crate::GlobalNamespace::OVRInput_RawButton;
-    #[cfg(feature = "OVRInput+RawNearTouch")]
-    pub type RawNearTouch = crate::GlobalNamespace::OVRInput_RawNearTouch;
-    #[cfg(feature = "OVRInput+RawTouch")]
-    pub type RawTouch = crate::GlobalNamespace::OVRInput_RawTouch;
-    #[cfg(feature = "OVRInput+Touch")]
-    pub type Touch = crate::GlobalNamespace::OVRInput_Touch;
-}
-#[cfg(feature = "OVRInput")]
-impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRInput {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "OVRInput+OpenVRButton")]
 #[repr(u64)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -1865,405 +2276,3 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRInput_Touch => ""
     ."OVRInput/Touch"
 );
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis1DMap")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct OVRControllerBase_VirtualAxis1DMap {
-    __cordl_parent: crate::System::Object,
-    pub None: crate::GlobalNamespace::OVRInput_RawAxis1D,
-    pub PrimaryIndexTrigger: crate::GlobalNamespace::OVRInput_RawAxis1D,
-    pub PrimaryHandTrigger: crate::GlobalNamespace::OVRInput_RawAxis1D,
-    pub SecondaryIndexTrigger: crate::GlobalNamespace::OVRInput_RawAxis1D,
-    pub SecondaryHandTrigger: crate::GlobalNamespace::OVRInput_RawAxis1D,
-    pub PrimaryIndexTriggerCurl: crate::GlobalNamespace::OVRInput_RawAxis1D,
-    pub PrimaryIndexTriggerSlide: crate::GlobalNamespace::OVRInput_RawAxis1D,
-    pub PrimaryThumbRestForce: crate::GlobalNamespace::OVRInput_RawAxis1D,
-    pub PrimaryStylusForce: crate::GlobalNamespace::OVRInput_RawAxis1D,
-    pub SecondaryIndexTriggerCurl: crate::GlobalNamespace::OVRInput_RawAxis1D,
-    pub SecondaryIndexTriggerSlide: crate::GlobalNamespace::OVRInput_RawAxis1D,
-    pub SecondaryThumbRestForce: crate::GlobalNamespace::OVRInput_RawAxis1D,
-    pub SecondaryStylusForce: crate::GlobalNamespace::OVRInput_RawAxis1D,
-    pub PrimaryIndexTriggerForce: crate::GlobalNamespace::OVRInput_RawAxis1D,
-    pub SecondaryIndexTriggerForce: crate::GlobalNamespace::OVRInput_RawAxis1D,
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis1DMap")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OVRControllerBase_VirtualAxis1DMap => ""
-    ."OVRInput/OVRControllerBase/VirtualAxis1DMap"
-);
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis1DMap")]
-impl std::ops::Deref for crate::GlobalNamespace::OVRControllerBase_VirtualAxis1DMap {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis1DMap")]
-impl std::ops::DerefMut for crate::GlobalNamespace::OVRControllerBase_VirtualAxis1DMap {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis1DMap")]
-impl crate::GlobalNamespace::OVRControllerBase_VirtualAxis1DMap {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn ToRawMask(
-        &mut self,
-        virtualMask: crate::GlobalNamespace::OVRInput_Axis1D,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawAxis1D> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRInput_RawAxis1D = __cordl_object
-            .invoke("ToRawMask", (virtualMask))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis1DMap")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRControllerBase_VirtualAxis1DMap {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis2DMap")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct OVRControllerBase_VirtualAxis2DMap {
-    __cordl_parent: crate::System::Object,
-    pub None: crate::GlobalNamespace::OVRInput_RawAxis2D,
-    pub PrimaryThumbstick: crate::GlobalNamespace::OVRInput_RawAxis2D,
-    pub PrimaryTouchpad: crate::GlobalNamespace::OVRInput_RawAxis2D,
-    pub SecondaryThumbstick: crate::GlobalNamespace::OVRInput_RawAxis2D,
-    pub SecondaryTouchpad: crate::GlobalNamespace::OVRInput_RawAxis2D,
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis2DMap")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OVRControllerBase_VirtualAxis2DMap => ""
-    ."OVRInput/OVRControllerBase/VirtualAxis2DMap"
-);
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis2DMap")]
-impl std::ops::Deref for crate::GlobalNamespace::OVRControllerBase_VirtualAxis2DMap {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis2DMap")]
-impl std::ops::DerefMut for crate::GlobalNamespace::OVRControllerBase_VirtualAxis2DMap {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis2DMap")]
-impl crate::GlobalNamespace::OVRControllerBase_VirtualAxis2DMap {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn ToRawMask(
-        &mut self,
-        virtualMask: crate::GlobalNamespace::OVRInput_Axis2D,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawAxis2D> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRInput_RawAxis2D = __cordl_object
-            .invoke("ToRawMask", (virtualMask))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis2DMap")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRControllerBase_VirtualAxis2DMap {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualButtonMap")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct OVRControllerBase_VirtualButtonMap {
-    __cordl_parent: crate::System::Object,
-    pub None: crate::GlobalNamespace::OVRInput_RawButton,
-    pub One: crate::GlobalNamespace::OVRInput_RawButton,
-    pub Two: crate::GlobalNamespace::OVRInput_RawButton,
-    pub Three: crate::GlobalNamespace::OVRInput_RawButton,
-    pub Four: crate::GlobalNamespace::OVRInput_RawButton,
-    pub Start: crate::GlobalNamespace::OVRInput_RawButton,
-    pub Back: crate::GlobalNamespace::OVRInput_RawButton,
-    pub PrimaryShoulder: crate::GlobalNamespace::OVRInput_RawButton,
-    pub PrimaryIndexTrigger: crate::GlobalNamespace::OVRInput_RawButton,
-    pub PrimaryHandTrigger: crate::GlobalNamespace::OVRInput_RawButton,
-    pub PrimaryThumbstick: crate::GlobalNamespace::OVRInput_RawButton,
-    pub PrimaryThumbstickUp: crate::GlobalNamespace::OVRInput_RawButton,
-    pub PrimaryThumbstickDown: crate::GlobalNamespace::OVRInput_RawButton,
-    pub PrimaryThumbstickLeft: crate::GlobalNamespace::OVRInput_RawButton,
-    pub PrimaryThumbstickRight: crate::GlobalNamespace::OVRInput_RawButton,
-    pub PrimaryTouchpad: crate::GlobalNamespace::OVRInput_RawButton,
-    pub SecondaryShoulder: crate::GlobalNamespace::OVRInput_RawButton,
-    pub SecondaryIndexTrigger: crate::GlobalNamespace::OVRInput_RawButton,
-    pub SecondaryHandTrigger: crate::GlobalNamespace::OVRInput_RawButton,
-    pub SecondaryThumbstick: crate::GlobalNamespace::OVRInput_RawButton,
-    pub SecondaryThumbstickUp: crate::GlobalNamespace::OVRInput_RawButton,
-    pub SecondaryThumbstickDown: crate::GlobalNamespace::OVRInput_RawButton,
-    pub SecondaryThumbstickLeft: crate::GlobalNamespace::OVRInput_RawButton,
-    pub SecondaryThumbstickRight: crate::GlobalNamespace::OVRInput_RawButton,
-    pub SecondaryTouchpad: crate::GlobalNamespace::OVRInput_RawButton,
-    pub DpadUp: crate::GlobalNamespace::OVRInput_RawButton,
-    pub DpadDown: crate::GlobalNamespace::OVRInput_RawButton,
-    pub DpadLeft: crate::GlobalNamespace::OVRInput_RawButton,
-    pub DpadRight: crate::GlobalNamespace::OVRInput_RawButton,
-    pub Up: crate::GlobalNamespace::OVRInput_RawButton,
-    pub Down: crate::GlobalNamespace::OVRInput_RawButton,
-    pub Left: crate::GlobalNamespace::OVRInput_RawButton,
-    pub Right: crate::GlobalNamespace::OVRInput_RawButton,
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualButtonMap")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OVRControllerBase_VirtualButtonMap => ""
-    ."OVRInput/OVRControllerBase/VirtualButtonMap"
-);
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualButtonMap")]
-impl std::ops::Deref for crate::GlobalNamespace::OVRControllerBase_VirtualButtonMap {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualButtonMap")]
-impl std::ops::DerefMut for crate::GlobalNamespace::OVRControllerBase_VirtualButtonMap {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualButtonMap")]
-impl crate::GlobalNamespace::OVRControllerBase_VirtualButtonMap {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn ToRawMask(
-        &mut self,
-        virtualMask: crate::GlobalNamespace::OVRInput_Button,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawButton> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRInput_RawButton = __cordl_object
-            .invoke("ToRawMask", (virtualMask))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualButtonMap")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRControllerBase_VirtualButtonMap {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct OVRControllerBase_VirtualNearTouchMap {
-    __cordl_parent: crate::System::Object,
-    pub None: crate::GlobalNamespace::OVRInput_RawNearTouch,
-    pub PrimaryIndexTrigger: crate::GlobalNamespace::OVRInput_RawNearTouch,
-    pub PrimaryThumbButtons: crate::GlobalNamespace::OVRInput_RawNearTouch,
-    pub SecondaryIndexTrigger: crate::GlobalNamespace::OVRInput_RawNearTouch,
-    pub SecondaryThumbButtons: crate::GlobalNamespace::OVRInput_RawNearTouch,
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OVRControllerBase_VirtualNearTouchMap => ""
-    ."OVRInput/OVRControllerBase/VirtualNearTouchMap"
-);
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
-impl std::ops::Deref for crate::GlobalNamespace::OVRControllerBase_VirtualNearTouchMap {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::OVRControllerBase_VirtualNearTouchMap {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
-impl crate::GlobalNamespace::OVRControllerBase_VirtualNearTouchMap {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn ToRawMask(
-        &mut self,
-        virtualMask: crate::GlobalNamespace::OVRInput_NearTouch,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawNearTouch> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRInput_RawNearTouch = __cordl_object
-            .invoke("ToRawMask", (virtualMask))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRControllerBase_VirtualNearTouchMap {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualTouchMap")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct OVRControllerBase_VirtualTouchMap {
-    __cordl_parent: crate::System::Object,
-    pub None: crate::GlobalNamespace::OVRInput_RawTouch,
-    pub One: crate::GlobalNamespace::OVRInput_RawTouch,
-    pub Two: crate::GlobalNamespace::OVRInput_RawTouch,
-    pub Three: crate::GlobalNamespace::OVRInput_RawTouch,
-    pub Four: crate::GlobalNamespace::OVRInput_RawTouch,
-    pub PrimaryIndexTrigger: crate::GlobalNamespace::OVRInput_RawTouch,
-    pub PrimaryThumbstick: crate::GlobalNamespace::OVRInput_RawTouch,
-    pub PrimaryThumbRest: crate::GlobalNamespace::OVRInput_RawTouch,
-    pub PrimaryTouchpad: crate::GlobalNamespace::OVRInput_RawTouch,
-    pub SecondaryIndexTrigger: crate::GlobalNamespace::OVRInput_RawTouch,
-    pub SecondaryThumbstick: crate::GlobalNamespace::OVRInput_RawTouch,
-    pub SecondaryThumbRest: crate::GlobalNamespace::OVRInput_RawTouch,
-    pub SecondaryTouchpad: crate::GlobalNamespace::OVRInput_RawTouch,
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualTouchMap")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OVRControllerBase_VirtualTouchMap => ""
-    ."OVRInput/OVRControllerBase/VirtualTouchMap"
-);
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualTouchMap")]
-impl std::ops::Deref for crate::GlobalNamespace::OVRControllerBase_VirtualTouchMap {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualTouchMap")]
-impl std::ops::DerefMut for crate::GlobalNamespace::OVRControllerBase_VirtualTouchMap {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualTouchMap")]
-impl crate::GlobalNamespace::OVRControllerBase_VirtualTouchMap {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn ToRawMask(
-        &mut self,
-        virtualMask: crate::GlobalNamespace::OVRInput_Touch,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_RawTouch> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRInput_RawTouch = __cordl_object
-            .invoke("ToRawMask", (virtualMask))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "OVRInput+OVRControllerBase+VirtualTouchMap")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRControllerBase_VirtualTouchMap {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}

@@ -1,90 +1,3 @@
-#[cfg(feature = "SongPackMasksModel+LocalizedText")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct SongPackMasksModel_LocalizedText {
-    pub textKey: *mut crate::System::String,
-    pub isPlural: bool,
-}
-#[cfg(feature = "SongPackMasksModel+LocalizedText")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SongPackMasksModel_LocalizedText => ""
-    ."SongPackMasksModel/LocalizedText"
-);
-#[cfg(feature = "SongPackMasksModel+LocalizedText")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "SongPackMasksModel+LocalizedText")]
-impl crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
-    pub fn _ctor(
-        &mut self,
-        textKey: *mut crate::System::String,
-        isPlural: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (textKey, isPlural),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_text(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_text",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "SongPackMasksModel+MaskInfo")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct SongPackMasksModel_MaskInfo {
-    pub localizedText: crate::GlobalNamespace::SongPackMasksModel_LocalizedText,
-    pub mask: crate::GlobalNamespace::SongPackMask,
-}
-#[cfg(feature = "SongPackMasksModel+MaskInfo")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongPackMasksModel_MaskInfo =>
-    ""."SongPackMasksModel/MaskInfo"
-);
-#[cfg(feature = "SongPackMasksModel+MaskInfo")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "SongPackMasksModel+MaskInfo")]
-impl crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
-    pub fn _ctor(
-        &mut self,
-        localizedText: crate::GlobalNamespace::SongPackMasksModel_LocalizedText,
-        mask: crate::GlobalNamespace::SongPackMask,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (localizedText, mask),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "SongPackMasksModel")]
 #[repr(C)]
 #[derive(Debug)]
@@ -214,5 +127,92 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongPackMasks
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "SongPackMasksModel+LocalizedText")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct SongPackMasksModel_LocalizedText {
+    pub textKey: *mut crate::System::String,
+    pub isPlural: bool,
+}
+#[cfg(feature = "SongPackMasksModel+LocalizedText")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SongPackMasksModel_LocalizedText => ""
+    ."SongPackMasksModel/LocalizedText"
+);
+#[cfg(feature = "SongPackMasksModel+LocalizedText")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "SongPackMasksModel+LocalizedText")]
+impl crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
+    pub fn _ctor(
+        &mut self,
+        textKey: *mut crate::System::String,
+        isPlural: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (textKey, isPlural),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_text(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_text",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "SongPackMasksModel+MaskInfo")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct SongPackMasksModel_MaskInfo {
+    pub localizedText: crate::GlobalNamespace::SongPackMasksModel_LocalizedText,
+    pub mask: crate::GlobalNamespace::SongPackMask,
+}
+#[cfg(feature = "SongPackMasksModel+MaskInfo")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongPackMasksModel_MaskInfo =>
+    ""."SongPackMasksModel/MaskInfo"
+);
+#[cfg(feature = "SongPackMasksModel+MaskInfo")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "SongPackMasksModel+MaskInfo")]
+impl crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
+    pub fn _ctor(
+        &mut self,
+        localizedText: crate::GlobalNamespace::SongPackMasksModel_LocalizedText,
+        mask: crate::GlobalNamespace::SongPackMask,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (localizedText, mask),
+        )?;
+        Ok(__cordl_ret)
     }
 }

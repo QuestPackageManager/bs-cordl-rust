@@ -1,16 +1,3 @@
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum PointerDeviceState_LocationFlag {
-    None = 0i32,
-    OutsidePanel = 1i32,
-}
-#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::PointerDeviceState_LocationFlag =>
-    "UnityEngine.UIElements"."PointerDeviceState/LocationFlag"
-);
 #[cfg(feature = "UnityEngine+UIElements+PointerDeviceState")]
 #[repr(C)]
 #[derive(Debug)]
@@ -52,6 +39,19 @@ for crate::UnityEngine::UIElements::PointerDeviceState {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PointerDeviceState_LocationFlag {
+    None = 0i32,
+    OutsidePanel = 1i32,
+}
+#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::PointerDeviceState_LocationFlag =>
+    "UnityEngine.UIElements"."PointerDeviceState/LocationFlag"
+);
 #[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
 #[repr(C)]
 #[derive(Debug, Clone)]

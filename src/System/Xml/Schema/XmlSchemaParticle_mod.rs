@@ -1,16 +1,3 @@
-#[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+Occurs")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XmlSchemaParticle_Occurs {
-    Max = 2i32,
-    Min = 1i32,
-    None = 0i32,
-}
-#[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+Occurs")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::Schema::XmlSchemaParticle_Occurs =>
-    "System.Xml.Schema"."XmlSchemaParticle/Occurs"
-);
 #[cfg(feature = "System+Xml+Schema+XmlSchemaParticle")]
 #[repr(C)]
 #[derive(Debug)]
@@ -183,3 +170,16 @@ for crate::System::Xml::Schema::XmlSchemaParticle {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+Occurs")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XmlSchemaParticle_Occurs {
+    Max = 2i32,
+    Min = 1i32,
+    None = 0i32,
+}
+#[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+Occurs")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::Schema::XmlSchemaParticle_Occurs =>
+    "System.Xml.Schema"."XmlSchemaParticle/Occurs"
+);

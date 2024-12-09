@@ -1,31 +1,3 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum InputSettings_BackgroundBehavior {
-    IgnoreFocus = 2i32,
-    ResetAndDisableAllDevices = 1i32,
-    ResetAndDisableNonBackgroundDevices = 0i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputSettings_BackgroundBehavior =>
-    "UnityEngine.InputSystem"."InputSettings/BackgroundBehavior"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum InputSettings_EditorInputBehaviorInPlayMode {
-    AllDeviceInputAlwaysGoesToGameView = 2i32,
-    AllDevicesRespectGameViewFocus = 1i32,
-    PointersAndKeyboardsRespectGameViewFocus = 0i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode =>
-    "UnityEngine.InputSystem"."InputSettings/EditorInputBehaviorInPlayMode"
-);
 #[cfg(feature = "UnityEngine+InputSystem+InputSettings")]
 #[repr(C)]
 #[derive(Debug)]
@@ -524,6 +496,34 @@ for crate::UnityEngine::InputSystem::InputSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum InputSettings_BackgroundBehavior {
+    IgnoreFocus = 2i32,
+    ResetAndDisableAllDevices = 1i32,
+    ResetAndDisableNonBackgroundDevices = 0i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputSettings_BackgroundBehavior =>
+    "UnityEngine.InputSystem"."InputSettings/BackgroundBehavior"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum InputSettings_EditorInputBehaviorInPlayMode {
+    AllDeviceInputAlwaysGoesToGameView = 2i32,
+    AllDevicesRespectGameViewFocus = 1i32,
+    PointersAndKeyboardsRespectGameViewFocus = 0i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode =>
+    "UnityEngine.InputSystem"."InputSettings/EditorInputBehaviorInPlayMode"
+);
 #[cfg(feature = "UnityEngine+InputSystem+InputSettings+UpdateMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

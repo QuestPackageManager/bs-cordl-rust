@@ -1,1402 +1,3 @@
-#[cfg(
-    feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
-)]
-#[repr(C)]
-#[derive(Debug)]
-pub struct XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(
-    feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
-)]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer =>
-    "System.Xml"."XmlTextReaderImpl/DtdDefaultAttributeInfoToNodeDataComparer"
-);
-#[cfg(
-    feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
-)]
-impl std::ops::Deref
-for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(
-    feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
-)]
-impl std::ops::DerefMut
-for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(
-    feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
-)]
-impl crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
-    pub fn Compare(
-        &mut self,
-        x: *mut crate::System::Object,
-        y: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Compare", (x, y))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(
-    feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
-)]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct XmlTextReaderImpl_DtdParserProxy {
-    __cordl_parent: crate::System::Object,
-    pub reader: *mut crate::System::Xml::XmlTextReaderImpl,
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_DtdParserProxy =>
-    "System.Xml"."XmlTextReaderImpl/DtdParserProxy"
-);
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
-impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
-impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
-impl crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
-    pub fn New(
-        reader: *mut crate::System::Xml::XmlTextReaderImpl,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (reader))?;
-        Ok(__cordl_object)
-    }
-    pub fn System_Xml_IDtdParserAdapterV1_get_Namespaces(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapterV1.get_Namespaces", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapterV1_get_Normalization(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapterV1.get_Normalization", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapterV1_get_V1CompatibilityMode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapterV1.get_V1CompatibilityMode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapterWithValidation_get_DtdValidation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapterWithValidation.get_DtdValidation", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapterWithValidation_get_ValidationEventHandling(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Xml::IValidationEventHandling,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::IValidationEventHandling = __cordl_object
-            .invoke(
-                "System.Xml.IDtdParserAdapterWithValidation.get_ValidationEventHandling",
-                (),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_OnNewLine(
-        &mut self,
-        pos: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapter.OnNewLine", (pos))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_OnPublicId(
-        &mut self,
-        publicId: *mut crate::System::String,
-        keywordLineInfo: crate::System::Xml::LineInfo,
-        publicLiteralLineInfo: crate::System::Xml::LineInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "System.Xml.IDtdParserAdapter.OnPublicId",
-                (publicId, keywordLineInfo, publicLiteralLineInfo),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_OnSystemId(
-        &mut self,
-        systemId: *mut crate::System::String,
-        keywordLineInfo: crate::System::Xml::LineInfo,
-        systemLiteralLineInfo: crate::System::Xml::LineInfo,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "System.Xml.IDtdParserAdapter.OnSystemId",
-                (systemId, keywordLineInfo, systemLiteralLineInfo),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_ParseComment(
-        &mut self,
-        sb: *mut crate::System::Text::StringBuilder,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapter.ParseComment", (sb))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_ParseNamedCharRef(
-        &mut self,
-        expand: bool,
-        internalSubsetBuilder: *mut crate::System::Text::StringBuilder,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke(
-                "System.Xml.IDtdParserAdapter.ParseNamedCharRef",
-                (expand, internalSubsetBuilder),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_ParseNumericCharRef(
-        &mut self,
-        internalSubsetBuilder: *mut crate::System::Text::StringBuilder,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke(
-                "System.Xml.IDtdParserAdapter.ParseNumericCharRef",
-                (internalSubsetBuilder),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_ParsePI(
-        &mut self,
-        sb: *mut crate::System::Text::StringBuilder,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapter.ParsePI", (sb))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_PopEntity(
-        &mut self,
-        oldEntity: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Xml::IDtdEntityInfo,
-        >,
-        newEntityId: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapter.PopEntity", (oldEntity, newEntityId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_PushEntity(
-        &mut self,
-        entity: *mut crate::System::Xml::IDtdEntityInfo,
-        entityId: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapter.PushEntity", (entity, entityId))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_PushExternalSubset(
-        &mut self,
-        systemId: *mut crate::System::String,
-        publicId: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "System.Xml.IDtdParserAdapter.PushExternalSubset",
-                (systemId, publicId),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_PushInternalDtd(
-        &mut self,
-        baseUri: *mut crate::System::String,
-        internalDtd: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "System.Xml.IDtdParserAdapter.PushInternalDtd",
-                (baseUri, internalDtd),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_ReadData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapter.ReadData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_Throw(
-        &mut self,
-        e: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapter.Throw", (e))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_get_BaseUri(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Uri = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapter.get_BaseUri", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_get_CurrentPosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapter.get_CurrentPosition", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_get_EntityStackLength(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapter.get_EntityStackLength", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_get_IsEntityEolNormalized(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapter.get_IsEntityEolNormalized", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_get_IsEof(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapter.get_IsEof", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_get_LineNo(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapter.get_LineNo", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_get_LineStartPosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapter.get_LineStartPosition", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_get_NameTable(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlNameTable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::XmlNameTable = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapter.get_NameTable", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_get_NamespaceResolver(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::IXmlNamespaceResolver> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Xml::IXmlNamespaceResolver = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapter.get_NamespaceResolver", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_get_ParsingBuffer(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<char>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<char> = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapter.get_ParsingBuffer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_get_ParsingBufferLength(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapter.get_ParsingBufferLength", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Xml_IDtdParserAdapter_set_CurrentPosition(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("System.Xml.IDtdParserAdapter.set_CurrentPosition", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        reader: *mut crate::System::Xml::XmlTextReaderImpl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (reader))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityExpandType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XmlTextReaderImpl_EntityExpandType {
-    All = 0i32,
-    OnlyCharacter = 2i32,
-    OnlyGeneral = 1i32,
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityExpandType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_EntityExpandType
-    => "System.Xml"."XmlTextReaderImpl/EntityExpandType"
-);
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XmlTextReaderImpl_EntityType {
-    CharacterDec = 0i32,
-    CharacterHex = 1i32,
-    CharacterNamed = 2i32,
-    Expanded = 3i32,
-    ExpandedInAttribute = 7i32,
-    FakeExpanded = 5i32,
-    Skipped = 4i32,
-    Unexpanded = 6i32,
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_EntityType =>
-    "System.Xml"."XmlTextReaderImpl/EntityType"
-);
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+IncrementalReadState")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XmlTextReaderImpl_IncrementalReadState {
-    AttributeValue = 6i32,
-    Attributes = 5i32,
-    CDATA = 3i32,
-    Comment = 4i32,
-    End = 9i32,
-    EndElement = 8i32,
-    PI = 2i32,
-    ReadContentAsBinary_End = 14i32,
-    ReadContentAsBinary_OnCachedValue = 12i32,
-    ReadContentAsBinary_OnPartialValue = 13i32,
-    ReadData = 7i32,
-    ReadValueChunk_OnCachedValue = 10i32,
-    ReadValueChunk_OnPartialValue = 11i32,
-    StartTag = 1i32,
-    Text = 0i32,
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+IncrementalReadState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::XmlTextReaderImpl_IncrementalReadState => "System.Xml"
-    ."XmlTextReaderImpl/IncrementalReadState"
-);
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+InitInputType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XmlTextReaderImpl_InitInputType {
-    Invalid = 3i32,
-    Stream = 1i32,
-    TextReader = 2i32,
-    UriString = 0i32,
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+InitInputType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_InitInputType =>
-    "System.Xml"."XmlTextReaderImpl/InitInputType"
-);
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct XmlTextReaderImpl_LaterInitParam {
-    __cordl_parent: crate::System::Object,
-    pub useAsync: bool,
-    pub inputStream: *mut crate::System::IO::Stream,
-    pub inputBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub inputByteCount: i32,
-    pub inputbaseUri: *mut crate::System::Uri,
-    pub inputUriStr: *mut crate::System::String,
-    pub inputUriResolver: *mut crate::System::Xml::XmlResolver,
-    pub inputContext: *mut crate::System::Xml::XmlParserContext,
-    pub inputTextReader: *mut crate::System::IO::TextReader,
-    pub initType: crate::System::Xml::XmlTextReaderImpl_InitInputType,
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_LaterInitParam =>
-    "System.Xml"."XmlTextReaderImpl/LaterInitParam"
-);
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
-impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
-impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
-impl crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct XmlTextReaderImpl_NoNamespaceManager {
-    __cordl_parent: crate::System::Xml::XmlNamespaceManager,
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::XmlTextReaderImpl_NoNamespaceManager => "System.Xml"
-    ."XmlTextReaderImpl/NoNamespaceManager"
-);
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
-impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
-    type Target = crate::System::Xml::XmlNamespaceManager;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
-impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
-impl crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
-    pub fn AddNamespace(
-        &mut self,
-        prefix: *mut crate::System::String,
-        uri: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddNamespace", (prefix, uri))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
-            .invoke("GetEnumerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetNamespacesInScope(
-        &mut self,
-        scope: crate::System::Xml::XmlNamespaceScope,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
-        > = __cordl_object.invoke("GetNamespacesInScope", (scope))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LookupNamespace(
-        &mut self,
-        prefix: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("LookupNamespace", (prefix))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LookupPrefix(
-        &mut self,
-        uri: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("LookupPrefix", (uri))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn PopScope(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("PopScope", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn PushScope(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PushScope", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveNamespace(
-        &mut self,
-        prefix: *mut crate::System::String,
-        uri: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveNamespace", (prefix, uri))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_DefaultNamespace(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_DefaultNamespace", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct XmlTextReaderImpl_NodeData {
-    __cordl_parent: crate::System::Object,
-    pub _cordl_type: crate::System::Xml::XmlNodeType,
-    pub localName: *mut crate::System::String,
-    pub prefix: *mut crate::System::String,
-    pub ns: *mut crate::System::String,
-    pub nameWPrefix: *mut crate::System::String,
-    pub value: *mut crate::System::String,
-    pub chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    pub valueStartPos: i32,
-    pub valueLength: i32,
-    pub lineInfo: crate::System::Xml::LineInfo,
-    pub lineInfo2: crate::System::Xml::LineInfo,
-    pub quoteChar: char,
-    pub depth: i32,
-    pub isEmptyOrDefault: bool,
-    pub entityId: i32,
-    pub xmlContextPushed: bool,
-    pub nextAttrValueChunk: *mut crate::System::Xml::XmlTextReaderImpl_NodeData,
-    pub schemaType: *mut crate::System::Object,
-    pub typedValue: *mut crate::System::Object,
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_NodeData =>
-    "System.Xml"."XmlTextReaderImpl/NodeData"
-);
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
-impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_NodeData {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
-impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_NodeData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
-impl crate::System::Xml::XmlTextReaderImpl_NodeData {
-    pub fn Clear(
-        &mut self,
-        _cordl_type: crate::System::Xml::XmlNodeType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", (_cordl_type))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ClearName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn CopyTo_Il2CppArray_i32_i32_1(
-        &mut self,
-        valueOffset: i32,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-        offset: i32,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("CopyTo", (valueOffset, buffer, offset, length))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CopyTo_StringBuilder0(
-        &mut self,
-        valueOffset: i32,
-        sb: *mut crate::System::Text::StringBuilder,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CopyTo", (valueOffset, sb))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CreateNameWPrefix(
-        &mut self,
-        nt: *mut crate::System::Xml::XmlNameTable,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("CreateNameWPrefix", (nt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetNameWPrefix(
-        &mut self,
-        nt: *mut crate::System::Xml::XmlNameTable,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("GetNameWPrefix", (nt))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn OnBufferInvalidated(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnBufferInvalidated", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetLineInfo(
-        &mut self,
-        lineNo: i32,
-        linePos: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetLineInfo", (lineNo, linePos))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetLineInfo2(
-        &mut self,
-        lineNo: i32,
-        linePos: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetLineInfo2", (lineNo, linePos))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetNamedNode_String_String1(
-        &mut self,
-        _cordl_type: crate::System::Xml::XmlNodeType,
-        localName: *mut crate::System::String,
-        prefix: *mut crate::System::String,
-        nameWPrefix: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetNamedNode", (_cordl_type, localName, prefix, nameWPrefix))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetNamedNode_XmlNodeType_String0(
-        &mut self,
-        _cordl_type: crate::System::Xml::XmlNodeType,
-        localName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetNamedNode", (_cordl_type, localName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetValueNode_Il2CppArray_i32_i32_1(
-        &mut self,
-        _cordl_type: crate::System::Xml::XmlNodeType,
-        chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-        startPos: i32,
-        len: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetValueNode", (_cordl_type, chars, startPos, len))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetValueNode_String0(
-        &mut self,
-        _cordl_type: crate::System::Xml::XmlNodeType,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetValueNode", (_cordl_type, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetValue_Il2CppArray_i32_i32_1(
-        &mut self,
-        chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-        startPos: i32,
-        len: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetValue", (chars, startPos, len))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetValue_String0(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetValue", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_IComparable_CompareTo(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("System.IComparable.CompareTo", (obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn TrimSpacesInValue(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TrimSpacesInValue", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsDefaultAttribute(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsDefaultAttribute", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsEmptyElement(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsEmptyElement", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_LineNo(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_LineNo", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_LinePos(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_LinePos", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_StringValue(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_StringValue", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ValueBuffered(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_ValueBuffered", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_IsDefaultAttribute(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsDefaultAttribute", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_IsEmptyElement(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsEmptyElement", (value))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Xml::XmlTextReaderImpl_NodeData {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
-    __cordl_parent: crate::System::MulticastDelegate,
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate => "System.Xml"
-    ."XmlTextReaderImpl/OnDefaultAttributeUseDelegate"
-);
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
-impl std::ops::Deref
-for crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
-    type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
-impl std::ops::DerefMut
-for crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
-impl crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
-    pub fn Invoke(
-        &mut self,
-        defaultAttribute: *mut crate::System::Xml::IDtdDefaultAttributeInfo,
-        coreReader: *mut crate::System::Xml::XmlTextReaderImpl,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (defaultAttribute, coreReader))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingFunction")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XmlTextReaderImpl_ParsingFunction {
-    AfterResolveEmptyEntityInContent = 18i32,
-    AfterResolveEntityInContent = 17i32,
-    DocumentContent = 5i32,
-    ElementContent = 0i32,
-    EntityReference = 13i32,
-    Eof = 11i32,
-    Error = 10i32,
-    FragmentAttribute = 15i32,
-    GoToEof = 20i32,
-    InIncrementalRead = 14i32,
-    InReadAttributeValue = 22i32,
-    InReadContentAsBinary = 24i32,
-    InReadElementContentAsBinary = 25i32,
-    InReadValueChunk = 23i32,
-    MoveToElementContent = 6i32,
-    NoData = 1i32,
-    OpenUrl = 2i32,
-    PartialTextValue = 21i32,
-    PopElementContext = 7i32,
-    PopEmptyElementContext = 8i32,
-    ReaderClosed = 12i32,
-    ReportEndEntity = 16i32,
-    ResetAttributesRootLevel = 9i32,
-    SwitchToInteractive = 3i32,
-    SwitchToInteractiveXmlDecl = 4i32,
-    XmlDeclarationFragment = 19i32,
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingFunction")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_ParsingFunction
-    => "System.Xml"."XmlTextReaderImpl/ParsingFunction"
-);
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingMode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XmlTextReaderImpl_ParsingMode {
-    Full = 0i32,
-    SkipContent = 2i32,
-    SkipNode = 1i32,
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_ParsingMode =>
-    "System.Xml"."XmlTextReaderImpl/ParsingMode"
-);
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct XmlTextReaderImpl_ParsingState {
-    pub chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    pub charPos: i32,
-    pub charsUsed: i32,
-    pub encoding: *mut crate::System::Text::Encoding,
-    pub appendMode: bool,
-    pub stream: *mut crate::System::IO::Stream,
-    pub decoder: *mut crate::System::Text::Decoder,
-    pub bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub bytePos: i32,
-    pub bytesUsed: i32,
-    pub textReader: *mut crate::System::IO::TextReader,
-    pub lineNo: i32,
-    pub lineStartPos: i32,
-    pub baseUriStr: *mut crate::System::String,
-    pub baseUri: *mut crate::System::Uri,
-    pub isEof: bool,
-    pub isStreamEof: bool,
-    pub entity: *mut crate::System::Xml::IDtdEntityInfo,
-    pub entityId: i32,
-    pub eolNormalized: bool,
-    pub entityResolvedManually: bool,
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_ParsingState =>
-    "System.Xml"."XmlTextReaderImpl/ParsingState"
-);
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Xml::XmlTextReaderImpl_ParsingState {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
-impl crate::System::Xml::XmlTextReaderImpl_ParsingState {
-    pub fn Clear(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Clear",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Close(
-        &mut self,
-        closeInput: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Close",
-            (closeInput),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_LineNo(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_LineNo",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_LinePos(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_LinePos",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct XmlTextReaderImpl_XmlContext {
-    __cordl_parent: crate::System::Object,
-    pub xmlSpace: crate::System::Xml::XmlSpace,
-    pub xmlLang: *mut crate::System::String,
-    pub defaultNamespace: *mut crate::System::String,
-    pub previousContext: *mut crate::System::Xml::XmlTextReaderImpl_XmlContext,
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_XmlContext =>
-    "System.Xml"."XmlTextReaderImpl/XmlContext"
-);
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
-impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_XmlContext {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
-impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_XmlContext {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
-impl crate::System::Xml::XmlTextReaderImpl_XmlContext {
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_XmlTextReaderImpl_XmlContext1(
-        previousContext: *mut crate::System::Xml::XmlTextReaderImpl_XmlContext,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (previousContext))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_XmlTextReaderImpl_XmlContext1(
-        &mut self,
-        previousContext: *mut crate::System::Xml::XmlTextReaderImpl_XmlContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (previousContext))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Xml::XmlTextReaderImpl_XmlContext {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "System+Xml+XmlTextReaderImpl")]
 #[repr(C)]
 #[derive(Debug)]
@@ -4611,6 +3212,1405 @@ impl crate::System::Xml::XmlTextReaderImpl {
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlTextReaderImpl {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
+)]
+#[repr(C)]
+#[derive(Debug)]
+pub struct XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(
+    feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
+)]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer =>
+    "System.Xml"."XmlTextReaderImpl/DtdDefaultAttributeInfoToNodeDataComparer"
+);
+#[cfg(
+    feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
+)]
+impl std::ops::Deref
+for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
+)]
+impl std::ops::DerefMut
+for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
+)]
+impl crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
+    pub fn Compare(
+        &mut self,
+        x: *mut crate::System::Object,
+        y: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Compare", (x, y))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(
+    feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
+)]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct XmlTextReaderImpl_DtdParserProxy {
+    __cordl_parent: crate::System::Object,
+    pub reader: *mut crate::System::Xml::XmlTextReaderImpl,
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_DtdParserProxy =>
+    "System.Xml"."XmlTextReaderImpl/DtdParserProxy"
+);
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
+impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
+impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
+impl crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
+    pub fn New(
+        reader: *mut crate::System::Xml::XmlTextReaderImpl,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (reader))?;
+        Ok(__cordl_object)
+    }
+    pub fn System_Xml_IDtdParserAdapterV1_get_Namespaces(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapterV1.get_Namespaces", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapterV1_get_Normalization(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapterV1.get_Normalization", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapterV1_get_V1CompatibilityMode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapterV1.get_V1CompatibilityMode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapterWithValidation_get_DtdValidation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapterWithValidation.get_DtdValidation", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapterWithValidation_get_ValidationEventHandling(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Xml::IValidationEventHandling,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::IValidationEventHandling = __cordl_object
+            .invoke(
+                "System.Xml.IDtdParserAdapterWithValidation.get_ValidationEventHandling",
+                (),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_OnNewLine(
+        &mut self,
+        pos: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapter.OnNewLine", (pos))?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_OnPublicId(
+        &mut self,
+        publicId: *mut crate::System::String,
+        keywordLineInfo: crate::System::Xml::LineInfo,
+        publicLiteralLineInfo: crate::System::Xml::LineInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "System.Xml.IDtdParserAdapter.OnPublicId",
+                (publicId, keywordLineInfo, publicLiteralLineInfo),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_OnSystemId(
+        &mut self,
+        systemId: *mut crate::System::String,
+        keywordLineInfo: crate::System::Xml::LineInfo,
+        systemLiteralLineInfo: crate::System::Xml::LineInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "System.Xml.IDtdParserAdapter.OnSystemId",
+                (systemId, keywordLineInfo, systemLiteralLineInfo),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_ParseComment(
+        &mut self,
+        sb: *mut crate::System::Text::StringBuilder,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapter.ParseComment", (sb))?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_ParseNamedCharRef(
+        &mut self,
+        expand: bool,
+        internalSubsetBuilder: *mut crate::System::Text::StringBuilder,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke(
+                "System.Xml.IDtdParserAdapter.ParseNamedCharRef",
+                (expand, internalSubsetBuilder),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_ParseNumericCharRef(
+        &mut self,
+        internalSubsetBuilder: *mut crate::System::Text::StringBuilder,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke(
+                "System.Xml.IDtdParserAdapter.ParseNumericCharRef",
+                (internalSubsetBuilder),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_ParsePI(
+        &mut self,
+        sb: *mut crate::System::Text::StringBuilder,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapter.ParsePI", (sb))?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_PopEntity(
+        &mut self,
+        oldEntity: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Xml::IDtdEntityInfo,
+        >,
+        newEntityId: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapter.PopEntity", (oldEntity, newEntityId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_PushEntity(
+        &mut self,
+        entity: *mut crate::System::Xml::IDtdEntityInfo,
+        entityId: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapter.PushEntity", (entity, entityId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_PushExternalSubset(
+        &mut self,
+        systemId: *mut crate::System::String,
+        publicId: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "System.Xml.IDtdParserAdapter.PushExternalSubset",
+                (systemId, publicId),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_PushInternalDtd(
+        &mut self,
+        baseUri: *mut crate::System::String,
+        internalDtd: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "System.Xml.IDtdParserAdapter.PushInternalDtd",
+                (baseUri, internalDtd),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_ReadData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapter.ReadData", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_Throw(
+        &mut self,
+        e: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapter.Throw", (e))?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_get_BaseUri(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Uri = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapter.get_BaseUri", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_get_CurrentPosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapter.get_CurrentPosition", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_get_EntityStackLength(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapter.get_EntityStackLength", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_get_IsEntityEolNormalized(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapter.get_IsEntityEolNormalized", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_get_IsEof(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapter.get_IsEof", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_get_LineNo(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapter.get_LineNo", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_get_LineStartPosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapter.get_LineStartPosition", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_get_NameTable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlNameTable> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::XmlNameTable = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapter.get_NameTable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_get_NamespaceResolver(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::IXmlNamespaceResolver> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Xml::IXmlNamespaceResolver = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapter.get_NamespaceResolver", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_get_ParsingBuffer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<char>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<char> = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapter.get_ParsingBuffer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_get_ParsingBufferLength(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapter.get_ParsingBufferLength", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Xml_IDtdParserAdapter_set_CurrentPosition(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("System.Xml.IDtdParserAdapter.set_CurrentPosition", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        reader: *mut crate::System::Xml::XmlTextReaderImpl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (reader))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityExpandType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XmlTextReaderImpl_EntityExpandType {
+    All = 0i32,
+    OnlyCharacter = 2i32,
+    OnlyGeneral = 1i32,
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityExpandType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_EntityExpandType
+    => "System.Xml"."XmlTextReaderImpl/EntityExpandType"
+);
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XmlTextReaderImpl_EntityType {
+    CharacterDec = 0i32,
+    CharacterHex = 1i32,
+    CharacterNamed = 2i32,
+    Expanded = 3i32,
+    ExpandedInAttribute = 7i32,
+    FakeExpanded = 5i32,
+    Skipped = 4i32,
+    Unexpanded = 6i32,
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_EntityType =>
+    "System.Xml"."XmlTextReaderImpl/EntityType"
+);
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+IncrementalReadState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XmlTextReaderImpl_IncrementalReadState {
+    AttributeValue = 6i32,
+    Attributes = 5i32,
+    CDATA = 3i32,
+    Comment = 4i32,
+    End = 9i32,
+    EndElement = 8i32,
+    PI = 2i32,
+    ReadContentAsBinary_End = 14i32,
+    ReadContentAsBinary_OnCachedValue = 12i32,
+    ReadContentAsBinary_OnPartialValue = 13i32,
+    ReadData = 7i32,
+    ReadValueChunk_OnCachedValue = 10i32,
+    ReadValueChunk_OnPartialValue = 11i32,
+    StartTag = 1i32,
+    Text = 0i32,
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+IncrementalReadState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Xml::XmlTextReaderImpl_IncrementalReadState => "System.Xml"
+    ."XmlTextReaderImpl/IncrementalReadState"
+);
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+InitInputType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XmlTextReaderImpl_InitInputType {
+    Invalid = 3i32,
+    Stream = 1i32,
+    TextReader = 2i32,
+    UriString = 0i32,
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+InitInputType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_InitInputType =>
+    "System.Xml"."XmlTextReaderImpl/InitInputType"
+);
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct XmlTextReaderImpl_LaterInitParam {
+    __cordl_parent: crate::System::Object,
+    pub useAsync: bool,
+    pub inputStream: *mut crate::System::IO::Stream,
+    pub inputBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub inputByteCount: i32,
+    pub inputbaseUri: *mut crate::System::Uri,
+    pub inputUriStr: *mut crate::System::String,
+    pub inputUriResolver: *mut crate::System::Xml::XmlResolver,
+    pub inputContext: *mut crate::System::Xml::XmlParserContext,
+    pub inputTextReader: *mut crate::System::IO::TextReader,
+    pub initType: crate::System::Xml::XmlTextReaderImpl_InitInputType,
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_LaterInitParam =>
+    "System.Xml"."XmlTextReaderImpl/LaterInitParam"
+);
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
+impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
+impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
+impl crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct XmlTextReaderImpl_NoNamespaceManager {
+    __cordl_parent: crate::System::Xml::XmlNamespaceManager,
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Xml::XmlTextReaderImpl_NoNamespaceManager => "System.Xml"
+    ."XmlTextReaderImpl/NoNamespaceManager"
+);
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
+impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
+    type Target = crate::System::Xml::XmlNamespaceManager;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
+impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
+impl crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
+    pub fn AddNamespace(
+        &mut self,
+        prefix: *mut crate::System::String,
+        uri: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddNamespace", (prefix, uri))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = __cordl_object
+            .invoke("GetEnumerator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNamespacesInScope(
+        &mut self,
+        scope: crate::System::Xml::XmlNamespaceScope,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IDictionary_2<
+            *mut crate::System::String,
+            *mut crate::System::String,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::IDictionary_2<
+            *mut crate::System::String,
+            *mut crate::System::String,
+        > = __cordl_object.invoke("GetNamespacesInScope", (scope))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LookupNamespace(
+        &mut self,
+        prefix: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("LookupNamespace", (prefix))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LookupPrefix(
+        &mut self,
+        uri: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("LookupPrefix", (uri))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn PopScope(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("PopScope", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn PushScope(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("PushScope", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveNamespace(
+        &mut self,
+        prefix: *mut crate::System::String,
+        uri: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RemoveNamespace", (prefix, uri))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_DefaultNamespace(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_DefaultNamespace", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct XmlTextReaderImpl_NodeData {
+    __cordl_parent: crate::System::Object,
+    pub _cordl_type: crate::System::Xml::XmlNodeType,
+    pub localName: *mut crate::System::String,
+    pub prefix: *mut crate::System::String,
+    pub ns: *mut crate::System::String,
+    pub nameWPrefix: *mut crate::System::String,
+    pub value: *mut crate::System::String,
+    pub chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub valueStartPos: i32,
+    pub valueLength: i32,
+    pub lineInfo: crate::System::Xml::LineInfo,
+    pub lineInfo2: crate::System::Xml::LineInfo,
+    pub quoteChar: char,
+    pub depth: i32,
+    pub isEmptyOrDefault: bool,
+    pub entityId: i32,
+    pub xmlContextPushed: bool,
+    pub nextAttrValueChunk: *mut crate::System::Xml::XmlTextReaderImpl_NodeData,
+    pub schemaType: *mut crate::System::Object,
+    pub typedValue: *mut crate::System::Object,
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_NodeData =>
+    "System.Xml"."XmlTextReaderImpl/NodeData"
+);
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
+impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_NodeData {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
+impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_NodeData {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
+impl crate::System::Xml::XmlTextReaderImpl_NodeData {
+    pub fn Clear(
+        &mut self,
+        _cordl_type: crate::System::Xml::XmlNodeType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Clear", (_cordl_type))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn CopyTo_Il2CppArray_i32_i32_1(
+        &mut self,
+        valueOffset: i32,
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        offset: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("CopyTo", (valueOffset, buffer, offset, length))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CopyTo_StringBuilder0(
+        &mut self,
+        valueOffset: i32,
+        sb: *mut crate::System::Text::StringBuilder,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CopyTo", (valueOffset, sb))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateNameWPrefix(
+        &mut self,
+        nt: *mut crate::System::Xml::XmlNameTable,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("CreateNameWPrefix", (nt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNameWPrefix(
+        &mut self,
+        nt: *mut crate::System::Xml::XmlNameTable,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetNameWPrefix", (nt))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnBufferInvalidated(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnBufferInvalidated", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetLineInfo(
+        &mut self,
+        lineNo: i32,
+        linePos: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetLineInfo", (lineNo, linePos))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetLineInfo2(
+        &mut self,
+        lineNo: i32,
+        linePos: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetLineInfo2", (lineNo, linePos))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetNamedNode_String_String1(
+        &mut self,
+        _cordl_type: crate::System::Xml::XmlNodeType,
+        localName: *mut crate::System::String,
+        prefix: *mut crate::System::String,
+        nameWPrefix: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetNamedNode", (_cordl_type, localName, prefix, nameWPrefix))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetNamedNode_XmlNodeType_String0(
+        &mut self,
+        _cordl_type: crate::System::Xml::XmlNodeType,
+        localName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetNamedNode", (_cordl_type, localName))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetValueNode_Il2CppArray_i32_i32_1(
+        &mut self,
+        _cordl_type: crate::System::Xml::XmlNodeType,
+        chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        startPos: i32,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetValueNode", (_cordl_type, chars, startPos, len))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetValueNode_String0(
+        &mut self,
+        _cordl_type: crate::System::Xml::XmlNodeType,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetValueNode", (_cordl_type, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetValue_Il2CppArray_i32_i32_1(
+        &mut self,
+        chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+        startPos: i32,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetValue", (chars, startPos, len))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetValue_String0(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetValue", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_IComparable_CompareTo(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("System.IComparable.CompareTo", (obj))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TrimSpacesInValue(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("TrimSpacesInValue", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsDefaultAttribute(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsDefaultAttribute", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsEmptyElement(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsEmptyElement", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LineNo(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_LineNo", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LinePos(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_LinePos", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_StringValue(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_StringValue", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ValueBuffered(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_ValueBuffered", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_IsDefaultAttribute(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IsDefaultAttribute", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_IsEmptyElement(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IsEmptyElement", (value))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Xml::XmlTextReaderImpl_NodeData {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
+    __cordl_parent: crate::System::MulticastDelegate,
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate => "System.Xml"
+    ."XmlTextReaderImpl/OnDefaultAttributeUseDelegate"
+);
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
+impl std::ops::Deref
+for crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
+    type Target = crate::System::MulticastDelegate;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
+impl std::ops::DerefMut
+for crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
+impl crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
+    pub fn Invoke(
+        &mut self,
+        defaultAttribute: *mut crate::System::Xml::IDtdDefaultAttributeInfo,
+        coreReader: *mut crate::System::Xml::XmlTextReaderImpl,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (defaultAttribute, coreReader))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingFunction")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XmlTextReaderImpl_ParsingFunction {
+    AfterResolveEmptyEntityInContent = 18i32,
+    AfterResolveEntityInContent = 17i32,
+    DocumentContent = 5i32,
+    ElementContent = 0i32,
+    EntityReference = 13i32,
+    Eof = 11i32,
+    Error = 10i32,
+    FragmentAttribute = 15i32,
+    GoToEof = 20i32,
+    InIncrementalRead = 14i32,
+    InReadAttributeValue = 22i32,
+    InReadContentAsBinary = 24i32,
+    InReadElementContentAsBinary = 25i32,
+    InReadValueChunk = 23i32,
+    MoveToElementContent = 6i32,
+    NoData = 1i32,
+    OpenUrl = 2i32,
+    PartialTextValue = 21i32,
+    PopElementContext = 7i32,
+    PopEmptyElementContext = 8i32,
+    ReaderClosed = 12i32,
+    ReportEndEntity = 16i32,
+    ResetAttributesRootLevel = 9i32,
+    SwitchToInteractive = 3i32,
+    SwitchToInteractiveXmlDecl = 4i32,
+    XmlDeclarationFragment = 19i32,
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingFunction")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_ParsingFunction
+    => "System.Xml"."XmlTextReaderImpl/ParsingFunction"
+);
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingMode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XmlTextReaderImpl_ParsingMode {
+    Full = 0i32,
+    SkipContent = 2i32,
+    SkipNode = 1i32,
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingMode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_ParsingMode =>
+    "System.Xml"."XmlTextReaderImpl/ParsingMode"
+);
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct XmlTextReaderImpl_ParsingState {
+    pub chars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
+    pub charPos: i32,
+    pub charsUsed: i32,
+    pub encoding: *mut crate::System::Text::Encoding,
+    pub appendMode: bool,
+    pub stream: *mut crate::System::IO::Stream,
+    pub decoder: *mut crate::System::Text::Decoder,
+    pub bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub bytePos: i32,
+    pub bytesUsed: i32,
+    pub textReader: *mut crate::System::IO::TextReader,
+    pub lineNo: i32,
+    pub lineStartPos: i32,
+    pub baseUriStr: *mut crate::System::String,
+    pub baseUri: *mut crate::System::Uri,
+    pub isEof: bool,
+    pub isStreamEof: bool,
+    pub entity: *mut crate::System::Xml::IDtdEntityInfo,
+    pub entityId: i32,
+    pub eolNormalized: bool,
+    pub entityResolvedManually: bool,
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_ParsingState =>
+    "System.Xml"."XmlTextReaderImpl/ParsingState"
+);
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::Xml::XmlTextReaderImpl_ParsingState {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
+impl crate::System::Xml::XmlTextReaderImpl_ParsingState {
+    pub fn Clear(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Clear",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Close(
+        &mut self,
+        closeInput: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Close",
+            (closeInput),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LineNo(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_LineNo",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_LinePos(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_LinePos",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct XmlTextReaderImpl_XmlContext {
+    __cordl_parent: crate::System::Object,
+    pub xmlSpace: crate::System::Xml::XmlSpace,
+    pub xmlLang: *mut crate::System::String,
+    pub defaultNamespace: *mut crate::System::String,
+    pub previousContext: *mut crate::System::Xml::XmlTextReaderImpl_XmlContext,
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlTextReaderImpl_XmlContext =>
+    "System.Xml"."XmlTextReaderImpl/XmlContext"
+);
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
+impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_XmlContext {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
+impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_XmlContext {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
+impl crate::System::Xml::XmlTextReaderImpl_XmlContext {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_XmlTextReaderImpl_XmlContext1(
+        previousContext: *mut crate::System::Xml::XmlTextReaderImpl_XmlContext,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (previousContext))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_XmlTextReaderImpl_XmlContext1(
+        &mut self,
+        previousContext: *mut crate::System::Xml::XmlTextReaderImpl_XmlContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (previousContext))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Xml::XmlTextReaderImpl_XmlContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

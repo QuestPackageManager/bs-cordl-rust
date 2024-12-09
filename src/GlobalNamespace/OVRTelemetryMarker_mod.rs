@@ -83,7 +83,7 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
     }
     pub fn SetResult(
         &mut self,
-        result: crate::GlobalNamespace::Qpl_ResultType,
+        result: crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTelemetryMarker> {
         let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -137,8 +137,10 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
     }
     pub fn get_Result(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Qpl_ResultType> {
-        let __cordl_ret: crate::GlobalNamespace::Qpl_ResultType = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::Qpl_OVRPlugin_ResultType = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Result",
             (),
@@ -182,7 +184,7 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
 #[derive(Debug, Clone)]
 pub struct OVRTelemetryMarker_OVRTelemetryMarkerState {
     pub _Sent_k__BackingField: bool,
-    pub _Result_k__BackingField: crate::GlobalNamespace::Qpl_ResultType,
+    pub _Result_k__BackingField: crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
 }
 #[cfg(feature = "OVRTelemetryMarker+OVRTelemetryMarkerState")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -206,7 +208,7 @@ impl crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
     pub fn _ctor(
         &mut self,
         sent: bool,
-        result: crate::GlobalNamespace::Qpl_ResultType,
+        result: crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -217,8 +219,10 @@ impl crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
     }
     pub fn get_Result(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Qpl_ResultType> {
-        let __cordl_ret: crate::GlobalNamespace::Qpl_ResultType = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::Qpl_OVRPlugin_ResultType = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Result",
             (),
@@ -235,7 +239,7 @@ impl crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
     }
     pub fn set_Result(
         &mut self,
-        value: crate::GlobalNamespace::Qpl_ResultType,
+        value: crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

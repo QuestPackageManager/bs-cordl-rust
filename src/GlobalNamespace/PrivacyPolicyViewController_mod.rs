@@ -1,15 +1,3 @@
-#[cfg(feature = "PrivacyPolicyViewController+ButtonType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum PrivacyPolicyViewController_ButtonType {
-    _cordl_Ok = 0i32,
-}
-#[cfg(feature = "PrivacyPolicyViewController+ButtonType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::PrivacyPolicyViewController_ButtonType => ""
-    ."PrivacyPolicyViewController/ButtonType"
-);
 #[cfg(feature = "PrivacyPolicyViewController")]
 #[repr(C)]
 #[derive(Debug)]
@@ -150,3 +138,15 @@ for crate::GlobalNamespace::PrivacyPolicyViewController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "PrivacyPolicyViewController+ButtonType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PrivacyPolicyViewController_ButtonType {
+    _cordl_Ok = 0i32,
+}
+#[cfg(feature = "PrivacyPolicyViewController+ButtonType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PrivacyPolicyViewController_ButtonType => ""
+    ."PrivacyPolicyViewController/ButtonType"
+);

@@ -1,18 +1,3 @@
-#[cfg(feature = "UnityEngine+Texture2D+EXRFlags")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Texture2D_EXRFlags {
-    CompressPIZ = 8i32,
-    CompressRLE = 4i32,
-    CompressZIP = 2i32,
-    None = 0i32,
-    OutputAsFloat = 1i32,
-}
-#[cfg(feature = "UnityEngine+Texture2D+EXRFlags")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Texture2D_EXRFlags => "UnityEngine"
-    ."Texture2D/EXRFlags"
-);
 #[cfg(feature = "UnityEngine+Texture2D")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1692,3 +1677,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Texture2D {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Texture2D+EXRFlags")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Texture2D_EXRFlags {
+    CompressPIZ = 8i32,
+    CompressRLE = 4i32,
+    CompressZIP = 2i32,
+    None = 0i32,
+    OutputAsFloat = 1i32,
+}
+#[cfg(feature = "UnityEngine+Texture2D+EXRFlags")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::Texture2D_EXRFlags => "UnityEngine"
+    ."Texture2D/EXRFlags"
+);

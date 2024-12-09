@@ -420,7 +420,7 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JProperty_JPropertyLi
 #[cfg(feature = "Newtonsoft+Json+Linq+JProperty+JPropertyList")]
 impl crate::Newtonsoft::Json::Linq::JProperty_JPropertyList {
     #[cfg(feature = "Newtonsoft+Json+Linq+JProperty+JPropertyList+_GetEnumerator_d__1")]
-    pub type _GetEnumerator_d__1 = crate::Newtonsoft::Json::Linq::JPropertyList__GetEnumerator_d__1;
+    pub type _GetEnumerator_d__1 = crate::Newtonsoft::Json::Linq::JPropertyList_JProperty__GetEnumerator_d__1;
     pub fn Add(
         &mut self,
         item: *mut crate::Newtonsoft::Json::Linq::JToken,

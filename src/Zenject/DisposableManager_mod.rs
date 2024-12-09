@@ -1,41 +1,3 @@
-#[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct DisposableManager_DisposableInfo {
-    pub Disposable: *mut crate::System::IDisposable,
-    pub Priority: i32,
-}
-#[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Zenject::DisposableManager_DisposableInfo =>
-    "Zenject"."DisposableManager/DisposableInfo"
-);
-#[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Zenject::DisposableManager_DisposableInfo {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
-impl crate::Zenject::DisposableManager_DisposableInfo {
-    pub fn _ctor(
-        &mut self,
-        disposable: *mut crate::System::IDisposable,
-        priority: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (disposable, priority),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "Zenject+DisposableManager")]
 #[repr(C)]
 #[derive(Debug)]
@@ -215,6 +177,44 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::DisposableManager {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct DisposableManager_DisposableInfo {
+    pub Disposable: *mut crate::System::IDisposable,
+    pub Priority: i32,
+}
+#[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::Zenject::DisposableManager_DisposableInfo =>
+    "Zenject"."DisposableManager/DisposableInfo"
+);
+#[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::Zenject::DisposableManager_DisposableInfo {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
+impl crate::Zenject::DisposableManager_DisposableInfo {
+    pub fn _ctor(
+        &mut self,
+        disposable: *mut crate::System::IDisposable,
+        priority: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (disposable, priority),
+        )?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "Zenject+DisposableManager+LateDisposableInfo")]

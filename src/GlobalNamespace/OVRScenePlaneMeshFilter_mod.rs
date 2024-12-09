@@ -1,97 +1,3 @@
-#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct TriangulateBoundaryJob_NList {
-    pub _Count_k__BackingField: i32,
-    pub _data: crate::Unity::Collections::NativeArray_1<i32>,
-}
-#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::TriangulateBoundaryJob_NList =>
-    ""."OVRScenePlaneMeshFilter/TriangulateBoundaryJob/NList"
-);
-#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::TriangulateBoundaryJob_NList {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
-impl crate::GlobalNamespace::TriangulateBoundaryJob_NList {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetAt(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetAt",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveAt(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "RemoveAt",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        capacity: i32,
-        allocator: crate::Unity::Collections::Allocator,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (capacity, allocator),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Count",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Item",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Count(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_Count",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "OVRScenePlaneMeshFilter")]
 #[repr(C)]
 #[derive(Debug)]
@@ -231,7 +137,7 @@ for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
 #[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
 impl crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
     #[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
-    pub type NList = crate::GlobalNamespace::TriangulateBoundaryJob_NList;
+    pub type NList = crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList;
     pub fn Execute(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -239,6 +145,101 @@ impl crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
             self,
             "Execute",
             (),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
+    pub _Count_k__BackingField: i32,
+    pub _data: crate::Unity::Collections::NativeArray_1<i32>,
+}
+#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList => ""
+    ."OVRScenePlaneMeshFilter/TriangulateBoundaryJob/NList"
+);
+#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
+impl crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetAt(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetAt",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveAt(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "RemoveAt",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        capacity: i32,
+        allocator: crate::Unity::Collections::Allocator,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (capacity, allocator),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Count",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Item",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Count(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_Count",
+            (value),
         )?;
         Ok(__cordl_ret)
     }

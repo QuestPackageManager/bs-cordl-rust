@@ -1,3 +1,41 @@
+#[cfg(feature = "System+MonoCustomAttrs")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct MonoCustomAttrs {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "System+MonoCustomAttrs")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::MonoCustomAttrs => "System"
+    ."MonoCustomAttrs"
+);
+#[cfg(feature = "System+MonoCustomAttrs")]
+impl std::ops::Deref for crate::System::MonoCustomAttrs {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+MonoCustomAttrs")]
+impl std::ops::DerefMut for crate::System::MonoCustomAttrs {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+MonoCustomAttrs")]
+impl crate::System::MonoCustomAttrs {
+    #[cfg(feature = "System+MonoCustomAttrs+AttributeInfo")]
+    pub type AttributeInfo = crate::System::MonoCustomAttrs_AttributeInfo;
+}
+#[cfg(feature = "System+MonoCustomAttrs")]
+impl quest_hook::libil2cpp::ObjectType for crate::System::MonoCustomAttrs {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "System+MonoCustomAttrs+AttributeInfo")]
 #[repr(C)]
 #[derive(Debug)]
@@ -68,44 +106,6 @@ impl crate::System::MonoCustomAttrs_AttributeInfo {
 }
 #[cfg(feature = "System+MonoCustomAttrs+AttributeInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::MonoCustomAttrs_AttributeInfo {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+MonoCustomAttrs")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct MonoCustomAttrs {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "System+MonoCustomAttrs")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::MonoCustomAttrs => "System"
-    ."MonoCustomAttrs"
-);
-#[cfg(feature = "System+MonoCustomAttrs")]
-impl std::ops::Deref for crate::System::MonoCustomAttrs {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+MonoCustomAttrs")]
-impl std::ops::DerefMut for crate::System::MonoCustomAttrs {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+MonoCustomAttrs")]
-impl crate::System::MonoCustomAttrs {
-    #[cfg(feature = "System+MonoCustomAttrs+AttributeInfo")]
-    pub type AttributeInfo = crate::System::MonoCustomAttrs_AttributeInfo;
-}
-#[cfg(feature = "System+MonoCustomAttrs")]
-impl quest_hook::libil2cpp::ObjectType for crate::System::MonoCustomAttrs {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

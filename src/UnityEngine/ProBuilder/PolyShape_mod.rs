@@ -1,17 +1,3 @@
-#[cfg(feature = "UnityEngine+ProBuilder+PolyShape+PolyEditMode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum PolyShape_PolyEditMode {
-    Edit = 3i32,
-    Height = 2i32,
-    None = 0i32,
-    Path = 1i32,
-}
-#[cfg(feature = "UnityEngine+ProBuilder+PolyShape+PolyEditMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::ProBuilder::PolyShape_PolyEditMode
-    => "UnityEngine.ProBuilder"."PolyShape/PolyEditMode"
-);
 #[cfg(feature = "UnityEngine+ProBuilder+PolyShape")]
 #[repr(C)]
 #[derive(Debug)]
@@ -192,3 +178,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::PolyS
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+PolyShape+PolyEditMode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PolyShape_PolyEditMode {
+    Edit = 3i32,
+    Height = 2i32,
+    None = 0i32,
+    Path = 1i32,
+}
+#[cfg(feature = "UnityEngine+ProBuilder+PolyShape+PolyEditMode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::ProBuilder::PolyShape_PolyEditMode
+    => "UnityEngine.ProBuilder"."PolyShape/PolyEditMode"
+);

@@ -1,105 +1,3 @@
-#[cfg(feature = "UnityEngine+UI+InputField+CharacterValidation")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum InputField_CharacterValidation {
-    Alphanumeric = 3i32,
-    Decimal = 2i32,
-    EmailAddress = 5i32,
-    Integer = 1i32,
-    Name = 4i32,
-    None = 0i32,
-}
-#[cfg(feature = "UnityEngine+UI+InputField+CharacterValidation")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::InputField_CharacterValidation
-    => "UnityEngine.UI"."InputField/CharacterValidation"
-);
-#[cfg(feature = "UnityEngine+UI+InputField+ContentType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum InputField_ContentType {
-    Alphanumeric = 4i32,
-    Autocorrected = 1i32,
-    Custom = 9i32,
-    DecimalNumber = 3i32,
-    EmailAddress = 6i32,
-    IntegerNumber = 2i32,
-    Name = 5i32,
-    Password = 7i32,
-    Pin = 8i32,
-    Standard = 0i32,
-}
-#[cfg(feature = "UnityEngine+UI+InputField+ContentType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::InputField_ContentType =>
-    "UnityEngine.UI"."InputField/ContentType"
-);
-#[cfg(feature = "UnityEngine+UI+InputField+EditState")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum InputField_EditState {
-    Continue = 0i32,
-    Finish = 1i32,
-}
-#[cfg(feature = "UnityEngine+UI+InputField+EditState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::InputField_EditState =>
-    "UnityEngine.UI"."InputField/EditState"
-);
-#[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct InputField_EndEditEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<*mut crate::System::String>,
-}
-#[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::InputField_EndEditEvent =>
-    "UnityEngine.UI"."InputField/EndEditEvent"
-);
-#[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
-impl std::ops::Deref for crate::UnityEngine::UI::InputField_EndEditEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<*mut crate::System::String>;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
-impl std::ops::DerefMut for crate::UnityEngine::UI::InputField_EndEditEvent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
-impl crate::UnityEngine::UI::InputField_EndEditEvent {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UI::InputField_EndEditEvent {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "UnityEngine+UI+InputField")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1833,6 +1731,108 @@ impl crate::UnityEngine::UI::InputField {
 }
 #[cfg(feature = "UnityEngine+UI+InputField")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::InputField {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+UI+InputField+CharacterValidation")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum InputField_CharacterValidation {
+    Alphanumeric = 3i32,
+    Decimal = 2i32,
+    EmailAddress = 5i32,
+    Integer = 1i32,
+    Name = 4i32,
+    None = 0i32,
+}
+#[cfg(feature = "UnityEngine+UI+InputField+CharacterValidation")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UI::InputField_CharacterValidation
+    => "UnityEngine.UI"."InputField/CharacterValidation"
+);
+#[cfg(feature = "UnityEngine+UI+InputField+ContentType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum InputField_ContentType {
+    Alphanumeric = 4i32,
+    Autocorrected = 1i32,
+    Custom = 9i32,
+    DecimalNumber = 3i32,
+    EmailAddress = 6i32,
+    IntegerNumber = 2i32,
+    Name = 5i32,
+    Password = 7i32,
+    Pin = 8i32,
+    Standard = 0i32,
+}
+#[cfg(feature = "UnityEngine+UI+InputField+ContentType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UI::InputField_ContentType =>
+    "UnityEngine.UI"."InputField/ContentType"
+);
+#[cfg(feature = "UnityEngine+UI+InputField+EditState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum InputField_EditState {
+    Continue = 0i32,
+    Finish = 1i32,
+}
+#[cfg(feature = "UnityEngine+UI+InputField+EditState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UI::InputField_EditState =>
+    "UnityEngine.UI"."InputField/EditState"
+);
+#[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct InputField_EndEditEvent {
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<*mut crate::System::String>,
+}
+#[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UI::InputField_EndEditEvent =>
+    "UnityEngine.UI"."InputField/EndEditEvent"
+);
+#[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
+impl std::ops::Deref for crate::UnityEngine::UI::InputField_EndEditEvent {
+    type Target = crate::UnityEngine::Events::UnityEvent_1<*mut crate::System::String>;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
+impl std::ops::DerefMut for crate::UnityEngine::UI::InputField_EndEditEvent {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
+impl crate::UnityEngine::UI::InputField_EndEditEvent {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UI::InputField_EndEditEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

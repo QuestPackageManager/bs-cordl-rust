@@ -1,3 +1,55 @@
+#[cfg(feature = "EncryptionUtility")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct EncryptionUtility {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "EncryptionUtility")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EncryptionUtility => ""
+    ."EncryptionUtility"
+);
+#[cfg(feature = "EncryptionUtility")]
+impl std::ops::Deref for crate::GlobalNamespace::EncryptionUtility {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "EncryptionUtility")]
+impl std::ops::DerefMut for crate::GlobalNamespace::EncryptionUtility {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "EncryptionUtility")]
+impl crate::GlobalNamespace::EncryptionUtility {
+    pub const kBlockSize: i32 = 16i32;
+    pub const kExtraSize: i32 = 62i32;
+    pub const kIvSize: i32 = 16i32;
+    pub const kKeySize: i32 = 32i32;
+    pub const kMacHashSize: i32 = 10i32;
+    pub const kMacKeySize: i32 = 64i32;
+    pub const kMasterKeySize: i32 = 48i32;
+    pub const kMaxPadding: i32 = 32i32;
+    pub const kRandomBlockSize: i32 = 32i32;
+    pub const kSequenceNumberSize: i32 = 4i32;
+    #[cfg(feature = "EncryptionUtility+EncryptionState")]
+    pub type EncryptionState = crate::GlobalNamespace::EncryptionUtility_EncryptionState;
+    #[cfg(feature = "EncryptionUtility+IEncryptionState")]
+    type IEncryptionState = crate::GlobalNamespace::EncryptionUtility_IEncryptionState;
+    #[cfg(feature = "EncryptionUtility+__c__DisplayClass18_0")]
+    pub type __c__DisplayClass18_0 = crate::GlobalNamespace::EncryptionUtility___c__DisplayClass18_0;
+}
+#[cfg(feature = "EncryptionUtility")]
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EncryptionUtility {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "EncryptionUtility+EncryptionState")]
 #[repr(C)]
 #[derive(Debug)]
@@ -169,58 +221,6 @@ impl crate::GlobalNamespace::EncryptionUtility_EncryptionState {
 #[cfg(feature = "EncryptionUtility+EncryptionState")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "EncryptionUtility")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct EncryptionUtility {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "EncryptionUtility")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::EncryptionUtility => ""
-    ."EncryptionUtility"
-);
-#[cfg(feature = "EncryptionUtility")]
-impl std::ops::Deref for crate::GlobalNamespace::EncryptionUtility {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "EncryptionUtility")]
-impl std::ops::DerefMut for crate::GlobalNamespace::EncryptionUtility {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "EncryptionUtility")]
-impl crate::GlobalNamespace::EncryptionUtility {
-    pub const kBlockSize: i32 = 16i32;
-    pub const kExtraSize: i32 = 62i32;
-    pub const kIvSize: i32 = 16i32;
-    pub const kKeySize: i32 = 32i32;
-    pub const kMacHashSize: i32 = 10i32;
-    pub const kMacKeySize: i32 = 64i32;
-    pub const kMasterKeySize: i32 = 48i32;
-    pub const kMaxPadding: i32 = 32i32;
-    pub const kRandomBlockSize: i32 = 32i32;
-    pub const kSequenceNumberSize: i32 = 4i32;
-    #[cfg(feature = "EncryptionUtility+EncryptionState")]
-    pub type EncryptionState = crate::GlobalNamespace::EncryptionUtility_EncryptionState;
-    #[cfg(feature = "EncryptionUtility+IEncryptionState")]
-    type IEncryptionState = crate::GlobalNamespace::EncryptionUtility_IEncryptionState;
-    #[cfg(feature = "EncryptionUtility+__c__DisplayClass18_0")]
-    pub type __c__DisplayClass18_0 = crate::GlobalNamespace::EncryptionUtility___c__DisplayClass18_0;
-}
-#[cfg(feature = "EncryptionUtility")]
-impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EncryptionUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

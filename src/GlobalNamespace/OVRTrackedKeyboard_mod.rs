@@ -1,16 +1,3 @@
-#[cfg(feature = "OVRTrackedKeyboard+KeyboardPresentation")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRTrackedKeyboard_KeyboardPresentation {
-    PreferKeyLabels = 1i32,
-    PreferOpaque = 0i32,
-}
-#[cfg(feature = "OVRTrackedKeyboard+KeyboardPresentation")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OVRTrackedKeyboard_KeyboardPresentation => ""
-    ."OVRTrackedKeyboard/KeyboardPresentation"
-);
 #[cfg(feature = "OVRTrackedKeyboard")]
 #[repr(C)]
 #[derive(Debug)]
@@ -595,6 +582,19 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTrackedKey
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRTrackedKeyboard+KeyboardPresentation")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRTrackedKeyboard_KeyboardPresentation {
+    PreferKeyLabels = 1i32,
+    PreferOpaque = 0i32,
+}
+#[cfg(feature = "OVRTrackedKeyboard+KeyboardPresentation")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRTrackedKeyboard_KeyboardPresentation => ""
+    ."OVRTrackedKeyboard/KeyboardPresentation"
+);
 #[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardSetActiveEvent")]
 #[repr(C)]
 #[derive(Debug, Clone)]

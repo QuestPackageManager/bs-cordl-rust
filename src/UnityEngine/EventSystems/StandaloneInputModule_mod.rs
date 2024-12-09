@@ -1,16 +1,3 @@
-#[cfg(feature = "UnityEngine+EventSystems+StandaloneInputModule+InputMode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum StandaloneInputModule_InputMode {
-    Buttons = 1i32,
-    Mouse = 0i32,
-}
-#[cfg(feature = "UnityEngine+EventSystems+StandaloneInputModule+InputMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::EventSystems::StandaloneInputModule_InputMode =>
-    "UnityEngine.EventSystems"."StandaloneInputModule/InputMode"
-);
 #[cfg(feature = "UnityEngine+EventSystems+StandaloneInputModule")]
 #[repr(C)]
 #[derive(Debug)]
@@ -431,3 +418,16 @@ for crate::UnityEngine::EventSystems::StandaloneInputModule {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+StandaloneInputModule+InputMode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum StandaloneInputModule_InputMode {
+    Buttons = 1i32,
+    Mouse = 0i32,
+}
+#[cfg(feature = "UnityEngine+EventSystems+StandaloneInputModule+InputMode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::EventSystems::StandaloneInputModule_InputMode =>
+    "UnityEngine.EventSystems"."StandaloneInputModule/InputMode"
+);

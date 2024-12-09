@@ -1,19 +1,3 @@
-#[cfg(feature = "OVRControllerHelper+ControllerType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRControllerHelper_ControllerType {
-    Quest2 = 3i32,
-    QuestAndRiftS = 1i32,
-    Rift = 2i32,
-    TouchPlus = 5i32,
-    TouchPro = 4i32,
-}
-#[cfg(feature = "OVRControllerHelper+ControllerType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OVRControllerHelper_ControllerType => ""
-    ."OVRControllerHelper/ControllerType"
-);
 #[cfg(feature = "OVRControllerHelper")]
 #[repr(C)]
 #[derive(Debug)]
@@ -141,3 +125,19 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRController
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRControllerHelper+ControllerType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRControllerHelper_ControllerType {
+    Quest2 = 3i32,
+    QuestAndRiftS = 1i32,
+    Rift = 2i32,
+    TouchPlus = 5i32,
+    TouchPro = 4i32,
+}
+#[cfg(feature = "OVRControllerHelper+ControllerType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRControllerHelper_ControllerType => ""
+    ."OVRControllerHelper/ControllerType"
+);

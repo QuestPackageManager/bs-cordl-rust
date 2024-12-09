@@ -1,250 +1,3 @@
-#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
-    pub __1__state: i32,
-    pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
-    pub __4__this: *mut crate::GlobalNamespace::StandardLevelDetailViewController,
-    pub token: crate::System::Threading::CancellationToken,
-    pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
-        crate::GlobalNamespace::OpenProductStoreResult,
-    >,
-}
-#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d
-    => ""."StandardLevelDetailViewController/<<BuyPackButtonWasPressed>b__55_0>d"
-);
-#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
-impl crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
-    pub fn MoveNext(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveNext",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetStateMachine(
-        &mut self,
-        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetStateMachine",
-            (stateMachine),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
-    pub __1__state: i32,
-    pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
-    pub __4__this: *mut crate::GlobalNamespace::StandardLevelDetailViewController,
-    pub token: crate::System::Threading::CancellationToken,
-    pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
-        crate::GlobalNamespace::OpenProductStoreResult,
-    >,
-}
-#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d
-    => ""."StandardLevelDetailViewController/<<OpenLevelProductStore>b__57_0>d"
-);
-#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
-impl crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
-    pub fn MoveNext(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveNext",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetStateMachine(
-        &mut self,
-        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetStateMachine",
-            (stateMachine),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(
-    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
-)]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
-    pub __1__state: i32,
-    pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
-    pub __4__this: *mut crate::GlobalNamespace::StandardLevelDetailViewController,
-    pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
-        crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
-    >,
-}
-#[cfg(
-    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d
-    => ""
-    ."StandardLevelDetailViewController/<<OpenLevelProductStoreOrShowBuyInfo>b__56_0>d"
-);
-#[cfg(
-    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
-)]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(
-    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
-)]
-impl crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
-    pub fn MoveNext(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveNext",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetStateMachine(
-        &mut self,
-        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetStateMachine",
-            (stateMachine),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(
-    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
-)]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {
-    pub __1__state: i32,
-    pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
-    pub __4__this: *mut crate::GlobalNamespace::StandardLevelDetailViewController,
-    pub token: crate::System::Threading::CancellationToken,
-    pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
-        crate::GlobalNamespace::EntitlementStatus,
-    >,
-}
-#[cfg(
-    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d
-    => ""."StandardLevelDetailViewController/<<RefreshAvailabilityIfNeeded>b__58_0>d"
-);
-#[cfg(
-    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
-)]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(
-    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
-)]
-impl crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {
-    pub fn MoveNext(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveNext",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetStateMachine(
-        &mut self,
-        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetStateMachine",
-            (stateMachine),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "StandardLevelDetailViewController+ContentType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum StandardLevelDetailViewController_ContentType {
-    Buy = 4i32,
-    BuyInfo = 5i32,
-    Error = 6i32,
-    Inactive = 7i32,
-    Loading = 0i32,
-    NoAllowedDifficultyBeatmap = 2i32,
-    OwnedAndDownloading = 3i32,
-    OwnedAndReady = 1i32,
-}
-#[cfg(feature = "StandardLevelDetailViewController+ContentType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::StandardLevelDetailViewController_ContentType => ""
-    ."StandardLevelDetailViewController/ContentType"
-);
 #[cfg(feature = "StandardLevelDetailViewController")]
 #[repr(C)]
 #[derive(Debug)]
@@ -886,5 +639,252 @@ for crate::GlobalNamespace::StandardLevelDetailViewController {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "StandardLevelDetailViewController+ContentType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum StandardLevelDetailViewController_ContentType {
+    Buy = 4i32,
+    BuyInfo = 5i32,
+    Error = 6i32,
+    Inactive = 7i32,
+    Loading = 0i32,
+    NoAllowedDifficultyBeatmap = 2i32,
+    OwnedAndDownloading = 3i32,
+    OwnedAndReady = 1i32,
+}
+#[cfg(feature = "StandardLevelDetailViewController+ContentType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::StandardLevelDetailViewController_ContentType => ""
+    ."StandardLevelDetailViewController/ContentType"
+);
+#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
+    pub __1__state: i32,
+    pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
+    pub __4__this: *mut crate::GlobalNamespace::StandardLevelDetailViewController,
+    pub token: crate::System::Threading::CancellationToken,
+    pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+        crate::GlobalNamespace::OpenProductStoreResult,
+    >,
+}
+#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d
+    => ""."StandardLevelDetailViewController/<<BuyPackButtonWasPressed>b__55_0>d"
+);
+#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
+impl crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
+    pub fn MoveNext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MoveNext",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetStateMachine(
+        &mut self,
+        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetStateMachine",
+            (stateMachine),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(
+    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
+)]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
+    pub __1__state: i32,
+    pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
+    pub __4__this: *mut crate::GlobalNamespace::StandardLevelDetailViewController,
+    pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+        crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
+    >,
+}
+#[cfg(
+    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d
+    => ""
+    ."StandardLevelDetailViewController/<<OpenLevelProductStoreOrShowBuyInfo>b__56_0>d"
+);
+#[cfg(
+    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
+)]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(
+    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
+)]
+impl crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
+    pub fn MoveNext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MoveNext",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetStateMachine(
+        &mut self,
+        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetStateMachine",
+            (stateMachine),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
+    pub __1__state: i32,
+    pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
+    pub __4__this: *mut crate::GlobalNamespace::StandardLevelDetailViewController,
+    pub token: crate::System::Threading::CancellationToken,
+    pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+        crate::GlobalNamespace::OpenProductStoreResult,
+    >,
+}
+#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d
+    => ""."StandardLevelDetailViewController/<<OpenLevelProductStore>b__57_0>d"
+);
+#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
+impl crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
+    pub fn MoveNext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MoveNext",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetStateMachine(
+        &mut self,
+        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetStateMachine",
+            (stateMachine),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(
+    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
+)]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {
+    pub __1__state: i32,
+    pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder,
+    pub __4__this: *mut crate::GlobalNamespace::StandardLevelDetailViewController,
+    pub token: crate::System::Threading::CancellationToken,
+    pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+        crate::GlobalNamespace::EntitlementStatus,
+    >,
+}
+#[cfg(
+    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d
+    => ""."StandardLevelDetailViewController/<<RefreshAvailabilityIfNeeded>b__58_0>d"
+);
+#[cfg(
+    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
+)]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(
+    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
+)]
+impl crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {
+    pub fn MoveNext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MoveNext",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetStateMachine(
+        &mut self,
+        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetStateMachine",
+            (stateMachine),
+        )?;
+        Ok(__cordl_ret)
     }
 }

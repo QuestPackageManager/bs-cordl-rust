@@ -1,7 +1,7 @@
 #[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum HEU_ColliderInfo_ColliderType {
+pub enum HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderType {
     BOX = 1i32,
     MESH = 3i32,
     NONE = 0i32,
@@ -13,82 +13,9 @@ pub enum HEU_ColliderInfo_ColliderType {
 #[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_ColliderInfo_ColliderType => "HoudiniEngineUnity"
-    ."HEU_GenerateGeoCache/HEU_ColliderInfo/ColliderType"
+    ::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderType =>
+    "HoudiniEngineUnity"."HEU_GenerateGeoCache/HEU_ColliderInfo/ColliderType"
 );
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct HEU_GenerateGeoCache_HEU_ColliderInfo {
-    __cordl_parent: crate::System::Object,
-    pub _colliderType: crate::HoudiniEngineUnity::HEU_ColliderInfo_ColliderType,
-    pub _colliderCenter: crate::UnityEngine::Vector3,
-    pub _colliderSize: crate::UnityEngine::Vector3,
-    pub _colliderRadius: f32,
-    pub _convexCollider: bool,
-    pub _collisionGroupName: *mut crate::System::String,
-    pub _collisionVertices: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::Vector3,
-    >,
-    pub _collisionIndices: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _meshTopology: crate::UnityEngine::MeshTopology,
-    pub _isTrigger: bool,
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo => "HoudiniEngineUnity"
-    ."HEU_GenerateGeoCache/HEU_ColliderInfo"
-);
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
-impl std::ops::Deref
-for crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
-impl std::ops::DerefMut
-for crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
-impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
-    #[cfg(
-        feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType"
-    )]
-    pub type ColliderType = crate::HoudiniEngineUnity::HEU_ColliderInfo_ColliderType;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache")]
 #[repr(C)]
 #[derive(Debug)]
@@ -273,6 +200,79 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
 #[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct HEU_GenerateGeoCache_HEU_ColliderInfo {
+    __cordl_parent: crate::System::Object,
+    pub _colliderType: crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderType,
+    pub _colliderCenter: crate::UnityEngine::Vector3,
+    pub _colliderSize: crate::UnityEngine::Vector3,
+    pub _colliderRadius: f32,
+    pub _convexCollider: bool,
+    pub _collisionGroupName: *mut crate::System::String,
+    pub _collisionVertices: *mut quest_hook::libil2cpp::Il2CppArray<
+        crate::UnityEngine::Vector3,
+    >,
+    pub _collisionIndices: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub _meshTopology: crate::UnityEngine::MeshTopology,
+    pub _isTrigger: bool,
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo => "HoudiniEngineUnity"
+    ."HEU_GenerateGeoCache/HEU_ColliderInfo"
+);
+#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
+impl std::ops::Deref
+for crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
+impl std::ops::DerefMut
+for crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
+impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
+    #[cfg(
+        feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType"
+    )]
+    pub type ColliderType = crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderType;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

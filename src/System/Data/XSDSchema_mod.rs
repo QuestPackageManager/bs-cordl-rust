@@ -1,73 +1,3 @@
-#[cfg(feature = "System+Data+XSDSchema+NameType")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct XSDSchema_NameType {
-    __cordl_parent: crate::System::Object,
-    pub name: *mut crate::System::String,
-    pub _cordl_type: *mut crate::System::Type,
-}
-#[cfg(feature = "System+Data+XSDSchema+NameType")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::XSDSchema_NameType =>
-    "System.Data"."XSDSchema/NameType"
-);
-#[cfg(feature = "System+Data+XSDSchema+NameType")]
-impl std::ops::Deref for crate::System::Data::XSDSchema_NameType {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Data+XSDSchema+NameType")]
-impl std::ops::DerefMut for crate::System::Data::XSDSchema_NameType {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Data+XSDSchema+NameType")]
-impl crate::System::Data::XSDSchema_NameType {
-    pub fn CompareTo(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        n: *mut crate::System::String,
-        t: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (n, t))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        n: *mut crate::System::String,
-        t: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (n, t))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Data+XSDSchema+NameType")]
-impl quest_hook::libil2cpp::ObjectType for crate::System::Data::XSDSchema_NameType {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "System+Data+XSDSchema")]
 #[repr(C)]
 #[derive(Debug)]
@@ -670,6 +600,76 @@ impl crate::System::Data::XSDSchema {
 }
 #[cfg(feature = "System+Data+XSDSchema")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Data::XSDSchema {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Data+XSDSchema+NameType")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct XSDSchema_NameType {
+    __cordl_parent: crate::System::Object,
+    pub name: *mut crate::System::String,
+    pub _cordl_type: *mut crate::System::Type,
+}
+#[cfg(feature = "System+Data+XSDSchema+NameType")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::Data::XSDSchema_NameType =>
+    "System.Data"."XSDSchema/NameType"
+);
+#[cfg(feature = "System+Data+XSDSchema+NameType")]
+impl std::ops::Deref for crate::System::Data::XSDSchema_NameType {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Data+XSDSchema+NameType")]
+impl std::ops::DerefMut for crate::System::Data::XSDSchema_NameType {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Data+XSDSchema+NameType")]
+impl crate::System::Data::XSDSchema_NameType {
+    pub fn CompareTo(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (obj))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        n: *mut crate::System::String,
+        t: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (n, t))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        n: *mut crate::System::String,
+        t: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (n, t))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Data+XSDSchema+NameType")]
+impl quest_hook::libil2cpp::ObjectType for crate::System::Data::XSDSchema_NameType {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -1,38 +1,3 @@
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemBaseAlg")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum PemUtilities_PemBaseAlg {
-    AES_128 = 0i32,
-    AES_192 = 1i32,
-    AES_256 = 2i32,
-    BF = 3i32,
-    DES = 4i32,
-    DES_EDE = 5i32,
-    DES_EDE3 = 6i32,
-    RC2 = 7i32,
-    RC2_40 = 8i32,
-    RC2_64 = 9i32,
-}
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemBaseAlg")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::OpenSsl::PemUtilities_PemBaseAlg => "Org.BouncyCastle.OpenSsl"
-    ."PemUtilities/PemBaseAlg"
-);
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemMode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum PemUtilities_PemMode {
-    CBC = 0i32,
-    CFB = 1i32,
-    ECB = 2i32,
-    OFB = 3i32,
-}
-#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::OpenSsl::PemUtilities_PemMode
-    => "Org.BouncyCastle.OpenSsl"."PemUtilities/PemMode"
-);
 #[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities")]
 #[repr(C)]
 #[derive(Debug)]
@@ -91,3 +56,38 @@ for crate::Org::BouncyCastle::OpenSsl::PemUtilities {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemBaseAlg")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PemUtilities_PemBaseAlg {
+    AES_128 = 0i32,
+    AES_192 = 1i32,
+    AES_256 = 2i32,
+    BF = 3i32,
+    DES = 4i32,
+    DES_EDE = 5i32,
+    DES_EDE3 = 6i32,
+    RC2 = 7i32,
+    RC2_40 = 8i32,
+    RC2_64 = 9i32,
+}
+#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemBaseAlg")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::Org::BouncyCastle::OpenSsl::PemUtilities_PemBaseAlg => "Org.BouncyCastle.OpenSsl"
+    ."PemUtilities/PemBaseAlg"
+);
+#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemMode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum PemUtilities_PemMode {
+    CBC = 0i32,
+    CFB = 1i32,
+    ECB = 2i32,
+    OFB = 3i32,
+}
+#[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemMode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::OpenSsl::PemUtilities_PemMode
+    => "Org.BouncyCastle.OpenSsl"."PemUtilities/PemMode"
+);

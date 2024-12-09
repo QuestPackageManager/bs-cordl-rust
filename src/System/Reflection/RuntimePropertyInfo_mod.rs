@@ -1,166 +1,3 @@
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct RuntimePropertyInfo_GetterAdapter {
-    __cordl_parent: crate::System::MulticastDelegate,
-}
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Reflection::RuntimePropertyInfo_GetterAdapter => "System.Reflection"
-    ."RuntimePropertyInfo/GetterAdapter"
-);
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
-impl std::ops::Deref for crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
-    type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
-impl std::ops::DerefMut
-for crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
-impl crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
-    pub fn Invoke(
-        &mut self,
-        _this: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("Invoke", (_this))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct RuntimePropertyInfo_Getter_2<
-    T: quest_hook::libil2cpp::Type,
-    R: quest_hook::libil2cpp::Type,
-> {
-    __cordl_parent: crate::System::MulticastDelegate,
-    __cordl_phantom_T: std::marker::PhantomData<T>,
-    __cordl_phantom_R: std::marker::PhantomData<R>,
-}
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Reflection::RuntimePropertyInfo_Getter_2
-    < T, R > => "System.Reflection"."RuntimePropertyInfo/Getter`2" < T, R >
-);
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
-impl<T: quest_hook::libil2cpp::Type, R: quest_hook::libil2cpp::Type> std::ops::Deref
-for crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
-    type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
-impl<T: quest_hook::libil2cpp::Type, R: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-    R: quest_hook::libil2cpp::Type,
-> crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
-    pub fn Invoke(&mut self, _this: T) -> quest_hook::libil2cpp::Result<R>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        R: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: R = __cordl_object.invoke("Invoke", (_this))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (object, method))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        object: *mut crate::System::Object,
-        method: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        R: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-    R: quest_hook::libil2cpp::Type,
-> quest_hook::libil2cpp::ObjectType
-for crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo")]
 #[repr(C)]
 #[derive(Debug)]
@@ -510,6 +347,169 @@ impl crate::System::Reflection::RuntimePropertyInfo {
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Reflection::RuntimePropertyInfo {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct RuntimePropertyInfo_GetterAdapter {
+    __cordl_parent: crate::System::MulticastDelegate,
+}
+#[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Reflection::RuntimePropertyInfo_GetterAdapter => "System.Reflection"
+    ."RuntimePropertyInfo/GetterAdapter"
+);
+#[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
+impl std::ops::Deref for crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
+    type Target = crate::System::MulticastDelegate;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
+impl std::ops::DerefMut
+for crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
+impl crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
+    pub fn Invoke(
+        &mut self,
+        _this: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("Invoke", (_this))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct RuntimePropertyInfo_Getter_2<
+    T: quest_hook::libil2cpp::Type,
+    R: quest_hook::libil2cpp::Type,
+> {
+    __cordl_parent: crate::System::MulticastDelegate,
+    __cordl_phantom_T: std::marker::PhantomData<T>,
+    __cordl_phantom_R: std::marker::PhantomData<R>,
+}
+#[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::Reflection::RuntimePropertyInfo_Getter_2
+    < T, R > => "System.Reflection"."RuntimePropertyInfo/Getter`2" < T, R >
+);
+#[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
+impl<T: quest_hook::libil2cpp::Type, R: quest_hook::libil2cpp::Type> std::ops::Deref
+for crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
+    type Target = crate::System::MulticastDelegate;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
+impl<T: quest_hook::libil2cpp::Type, R: quest_hook::libil2cpp::Type> std::ops::DerefMut
+for crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+    R: quest_hook::libil2cpp::Type,
+> crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
+    pub fn Invoke(&mut self, _this: T) -> quest_hook::libil2cpp::Result<R>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        R: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: R = __cordl_object.invoke("Invoke", (_this))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        object: *mut crate::System::Object,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        R: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (object, method))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+    R: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::ObjectType
+for crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

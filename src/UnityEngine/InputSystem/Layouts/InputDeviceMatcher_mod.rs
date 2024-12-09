@@ -1,37 +1,3 @@
-#[cfg(
-    feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
-)]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct MatcherJson_Capability {
-    pub path: *mut crate::System::String,
-    pub value: *mut crate::System::String,
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::Layouts::MatcherJson_Capability =>
-    "UnityEngine.InputSystem.Layouts"."InputDeviceMatcher/MatcherJson/Capability"
-);
-#[cfg(
-    feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
-)]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::Layouts::MatcherJson_Capability {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
-)]
-impl crate::UnityEngine::InputSystem::Layouts::MatcherJson_Capability {}
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -270,7 +236,7 @@ pub struct InputDeviceMatcher_MatcherJson {
     pub version: *mut crate::System::String,
     pub versions: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
     pub capabilities: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::InputSystem::Layouts::MatcherJson_Capability,
+        crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Capability,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson")]
@@ -295,7 +261,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
     #[cfg(
         feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
     )]
-    pub type Capability = crate::UnityEngine::InputSystem::Layouts::MatcherJson_Capability;
+    pub type Capability = crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Capability;
     pub fn ToMatcher(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -309,3 +275,37 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
         Ok(__cordl_ret)
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
+)]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct MatcherJson_InputDeviceMatcher_Capability {
+    pub path: *mut crate::System::String,
+    pub value: *mut crate::System::String,
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Capability =>
+    "UnityEngine.InputSystem.Layouts"."InputDeviceMatcher/MatcherJson/Capability"
+);
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
+)]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Capability {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
+)]
+impl crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Capability {}

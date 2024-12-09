@@ -40,7 +40,7 @@ impl crate::GlobalNamespace::CancellationTokenSource_LinkedNCancellationTokenSou
     #[cfg(
         feature = "System+Threading+CancellationTokenSource+LinkedNCancellationTokenSource+__c"
     )]
-    pub type __c = crate::System::Threading::LinkedNCancellationTokenSource___c;
+    pub type __c = crate::System::Threading::LinkedNCancellationTokenSource_CancellationTokenSource___c;
 }
 #[cfg(
     feature = "System+Threading+CancellationTokenSource+LinkedNCancellationTokenSource"

@@ -1,18 +1,3 @@
-#[cfg(feature = "HMUI+ToggleWithCallbacks+SelectionState")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ToggleWithCallbacks_SelectionState {
-    Disabled = 4i32,
-    Highlighted = 1i32,
-    Normal = 0i32,
-    Pressed = 2i32,
-    Selected = 3i32,
-}
-#[cfg(feature = "HMUI+ToggleWithCallbacks+SelectionState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::ToggleWithCallbacks_SelectionState =>
-    "HMUI"."ToggleWithCallbacks/SelectionState"
-);
 #[cfg(feature = "HMUI+ToggleWithCallbacks")]
 #[repr(C)]
 #[derive(Debug)]
@@ -119,3 +104,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ToggleWithCallbacks {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HMUI+ToggleWithCallbacks+SelectionState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ToggleWithCallbacks_SelectionState {
+    Disabled = 4i32,
+    Highlighted = 1i32,
+    Normal = 0i32,
+    Pressed = 2i32,
+    Selected = 3i32,
+}
+#[cfg(feature = "HMUI+ToggleWithCallbacks+SelectionState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::HMUI::ToggleWithCallbacks_SelectionState =>
+    "HMUI"."ToggleWithCallbacks/SelectionState"
+);

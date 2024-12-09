@@ -1,117 +1,3 @@
-#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct F2mCurve_DefaultF2mLookupTable {
-    __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
-    pub m_outer: *mut crate::Org::BouncyCastle::Math::EC::F2mCurve,
-    pub m_table: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
-    pub m_size: i32,
-}
-#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable =>
-    "Org.BouncyCastle.Math.EC"."F2mCurve/DefaultF2mLookupTable"
-);
-#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
-    type Target = crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
-impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
-impl crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
-    pub fn CreatePoint(
-        &mut self,
-        x: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
-        y: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("CreatePoint", (x, y))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Lookup(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("Lookup", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn LookupVar(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
-            .invoke("LookupVar", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        outer: *mut crate::Org::BouncyCastle::Math::EC::F2mCurve,
-        table: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (outer, table, _cordl_size))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        outer: *mut crate::Org::BouncyCastle::Math::EC::F2mCurve,
-        table: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
-        _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (outer, table, _cordl_size))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Size(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Size", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve")]
 #[repr(C)]
 #[derive(Debug)]
@@ -455,6 +341,120 @@ impl crate::Org::BouncyCastle::Math::EC::F2mCurve {
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve")]
 impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::EC::F2mCurve {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct F2mCurve_DefaultF2mLookupTable {
+    __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
+    pub m_outer: *mut crate::Org::BouncyCastle::Math::EC::F2mCurve,
+    pub m_table: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+    pub m_size: i32,
+}
+#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable =>
+    "Org.BouncyCastle.Math.EC"."F2mCurve/DefaultF2mLookupTable"
+);
+#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
+impl std::ops::Deref
+for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
+    type Target = crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
+impl std::ops::DerefMut
+for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
+impl crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
+    pub fn CreatePoint(
+        &mut self,
+        x: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+        y: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("CreatePoint", (x, y))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Lookup(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("Lookup", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn LookupVar(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::EC::ECPoint = __cordl_object
+            .invoke("LookupVar", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        outer: *mut crate::Org::BouncyCastle::Math::EC::F2mCurve,
+        table: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (outer, table, _cordl_size))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        outer: *mut crate::Org::BouncyCastle::Math::EC::F2mCurve,
+        table: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (outer, table, _cordl_size))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Size(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Size", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

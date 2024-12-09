@@ -1,156 +1,3 @@
-#[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct HttpWebRequest___GetRewriteHandler_b__271_0_d {
-    pub __1__state: i32,
-    pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<
-        *mut crate::System::Net::BufferOffsetSize,
-    >,
-    pub __4__this: *mut crate::System::Net::HttpWebRequest,
-    pub _ms_5__2: *mut crate::System::IO::MemoryStream,
-    pub __u__1: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter,
-}
-#[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d => "System.Net"
-    ."HttpWebRequest/<<GetRewriteHandler>b__271_0>d"
-);
-#[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
-impl crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
-    pub fn MoveNext(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveNext",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetStateMachine(
-        &mut self,
-        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetStateMachine",
-            (stateMachine),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct HttpWebRequest_AuthorizationState {
-    pub request: *mut crate::System::Net::HttpWebRequest,
-    pub isProxy: bool,
-    pub isCompleted: bool,
-    pub ntlm_auth_state: crate::System::Net::HttpWebRequest_NtlmAuthState,
-}
-#[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::HttpWebRequest_AuthorizationState
-    => "System.Net"."HttpWebRequest/AuthorizationState"
-);
-#[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Net::HttpWebRequest_AuthorizationState {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
-impl crate::System::Net::HttpWebRequest_AuthorizationState {
-    pub fn CheckAuthorization(
-        &mut self,
-        response: *mut crate::System::Net::WebResponse,
-        code: crate::System::Net::HttpStatusCode,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CheckAuthorization",
-            (response, code),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Reset",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        request: *mut crate::System::Net::HttpWebRequest,
-        isProxy: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (request, isProxy),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsCompleted",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsNtlmAuthenticated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsNtlmAuthenticated",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_NtlmAuthState(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Net::HttpWebRequest_NtlmAuthState,
-    > {
-        let __cordl_ret: crate::System::Net::HttpWebRequest_NtlmAuthState = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_NtlmAuthState",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "System+Net+HttpWebRequest")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1291,6 +1138,106 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::HttpWebRequest {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct HttpWebRequest_AuthorizationState {
+    pub request: *mut crate::System::Net::HttpWebRequest,
+    pub isProxy: bool,
+    pub isCompleted: bool,
+    pub ntlm_auth_state: crate::System::Net::HttpWebRequest_NtlmAuthState,
+}
+#[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Net::HttpWebRequest_AuthorizationState
+    => "System.Net"."HttpWebRequest/AuthorizationState"
+);
+#[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::Net::HttpWebRequest_AuthorizationState {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Net+HttpWebRequest+AuthorizationState")]
+impl crate::System::Net::HttpWebRequest_AuthorizationState {
+    pub fn CheckAuthorization(
+        &mut self,
+        response: *mut crate::System::Net::WebResponse,
+        code: crate::System::Net::HttpStatusCode,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CheckAuthorization",
+            (response, code),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Reset",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        request: *mut crate::System::Net::HttpWebRequest,
+        isProxy: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (request, isProxy),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsCompleted",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsNtlmAuthenticated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsNtlmAuthenticated",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NtlmAuthState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Net::HttpWebRequest_NtlmAuthState,
+    > {
+        let __cordl_ret: crate::System::Net::HttpWebRequest_NtlmAuthState = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_NtlmAuthState",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
 #[cfg(feature = "System+Net+HttpWebRequest+NtlmAuthState")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -1304,3 +1251,56 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
     in quest_hook::libil2cpp for crate ::System::Net::HttpWebRequest_NtlmAuthState =>
     "System.Net"."HttpWebRequest/NtlmAuthState"
 );
+#[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct HttpWebRequest___GetRewriteHandler_b__271_0_d {
+    pub __1__state: i32,
+    pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<
+        *mut crate::System::Net::BufferOffsetSize,
+    >,
+    pub __4__this: *mut crate::System::Net::HttpWebRequest,
+    pub _ms_5__2: *mut crate::System::IO::MemoryStream,
+    pub __u__1: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter,
+}
+#[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d => "System.Net"
+    ."HttpWebRequest/<<GetRewriteHandler>b__271_0>d"
+);
+#[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
+impl crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
+    pub fn MoveNext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MoveNext",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetStateMachine(
+        &mut self,
+        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetStateMachine",
+            (stateMachine),
+        )?;
+        Ok(__cordl_ret)
+    }
+}

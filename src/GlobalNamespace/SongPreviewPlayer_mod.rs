@@ -1,248 +1,3 @@
-#[cfg(feature = "SongPreviewPlayer+AudioSourceParams")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct SongPreviewPlayer_AudioSourceParams {
-    __cordl_parent: crate::System::Object,
-    pub _position: crate::UnityEngine::Vector3,
-    pub _reverbZoneMix: f32,
-    pub _spatialBlend: f32,
-    pub _spread: f32,
-}
-#[cfg(feature = "SongPreviewPlayer+AudioSourceParams")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SongPreviewPlayer_AudioSourceParams => ""
-    ."SongPreviewPlayer/AudioSourceParams"
-);
-#[cfg(feature = "SongPreviewPlayer+AudioSourceParams")]
-impl std::ops::Deref for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "SongPreviewPlayer+AudioSourceParams")]
-impl std::ops::DerefMut for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "SongPreviewPlayer+AudioSourceParams")]
-impl crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_position(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("get_position", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_reverbZoneMix(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_reverbZoneMix", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_spatialBlend(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_spatialBlend", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_spread(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_spread", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "SongPreviewPlayer+AudioSourceParams")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct SongPreviewPlayer_AudioSourceVolumeController {
-    __cordl_parent: crate::System::Object,
-    pub audioSource: *mut crate::UnityEngine::AudioSource,
-    pub _maxVolume_k__BackingField: f32,
-    pub _volume: f32,
-}
-#[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController => ""
-    ."SongPreviewPlayer/AudioSourceVolumeController"
-);
-#[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
-impl std::ops::Deref
-for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
-impl crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
-    pub fn New(
-        audioSource: *mut crate::UnityEngine::AudioSource,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (audioSource))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        audioSource: *mut crate::UnityEngine::AudioSource,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (audioSource))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_maxVolume(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_maxVolume", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_volume(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_volume", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_maxVolume(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_maxVolume", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_volume(
-        &mut self,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_volume", (value))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "SongPreviewPlayer+InitData")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct SongPreviewPlayer_InitData {
-    __cordl_parent: crate::System::Object,
-    pub ambientVolumeScale: f32,
-}
-#[cfg(feature = "SongPreviewPlayer+InitData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongPreviewPlayer_InitData =>
-    ""."SongPreviewPlayer/InitData"
-);
-#[cfg(feature = "SongPreviewPlayer+InitData")]
-impl std::ops::Deref for crate::GlobalNamespace::SongPreviewPlayer_InitData {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "SongPreviewPlayer+InitData")]
-impl std::ops::DerefMut for crate::GlobalNamespace::SongPreviewPlayer_InitData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "SongPreviewPlayer+InitData")]
-impl crate::GlobalNamespace::SongPreviewPlayer_InitData {
-    pub fn New(ambientVolumeScale: f32) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (ambientVolumeScale))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        ambientVolumeScale: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (ambientVolumeScale))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "SongPreviewPlayer+InitData")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::SongPreviewPlayer_InitData {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "SongPreviewPlayer")]
 #[repr(C)]
 #[derive(Debug)]
@@ -500,6 +255,251 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
 }
 #[cfg(feature = "SongPreviewPlayer")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongPreviewPlayer {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "SongPreviewPlayer+AudioSourceParams")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct SongPreviewPlayer_AudioSourceParams {
+    __cordl_parent: crate::System::Object,
+    pub _position: crate::UnityEngine::Vector3,
+    pub _reverbZoneMix: f32,
+    pub _spatialBlend: f32,
+    pub _spread: f32,
+}
+#[cfg(feature = "SongPreviewPlayer+AudioSourceParams")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SongPreviewPlayer_AudioSourceParams => ""
+    ."SongPreviewPlayer/AudioSourceParams"
+);
+#[cfg(feature = "SongPreviewPlayer+AudioSourceParams")]
+impl std::ops::Deref for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "SongPreviewPlayer+AudioSourceParams")]
+impl std::ops::DerefMut for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "SongPreviewPlayer+AudioSourceParams")]
+impl crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_position(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
+            .invoke("get_position", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_reverbZoneMix(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_reverbZoneMix", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_spatialBlend(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_spatialBlend", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_spread(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_spread", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "SongPreviewPlayer+AudioSourceParams")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct SongPreviewPlayer_AudioSourceVolumeController {
+    __cordl_parent: crate::System::Object,
+    pub audioSource: *mut crate::UnityEngine::AudioSource,
+    pub _maxVolume_k__BackingField: f32,
+    pub _volume: f32,
+}
+#[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController => ""
+    ."SongPreviewPlayer/AudioSourceVolumeController"
+);
+#[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
+impl std::ops::Deref
+for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
+impl std::ops::DerefMut
+for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
+impl crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
+    pub fn New(
+        audioSource: *mut crate::UnityEngine::AudioSource,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (audioSource))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        audioSource: *mut crate::UnityEngine::AudioSource,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (audioSource))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_maxVolume(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_maxVolume", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_volume(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_volume", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_maxVolume(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_maxVolume", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_volume(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_volume", (value))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "SongPreviewPlayer+InitData")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct SongPreviewPlayer_InitData {
+    __cordl_parent: crate::System::Object,
+    pub ambientVolumeScale: f32,
+}
+#[cfg(feature = "SongPreviewPlayer+InitData")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SongPreviewPlayer_InitData =>
+    ""."SongPreviewPlayer/InitData"
+);
+#[cfg(feature = "SongPreviewPlayer+InitData")]
+impl std::ops::Deref for crate::GlobalNamespace::SongPreviewPlayer_InitData {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "SongPreviewPlayer+InitData")]
+impl std::ops::DerefMut for crate::GlobalNamespace::SongPreviewPlayer_InitData {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "SongPreviewPlayer+InitData")]
+impl crate::GlobalNamespace::SongPreviewPlayer_InitData {
+    pub fn New(ambientVolumeScale: f32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (ambientVolumeScale))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        ambientVolumeScale: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (ambientVolumeScale))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "SongPreviewPlayer+InitData")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SongPreviewPlayer_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

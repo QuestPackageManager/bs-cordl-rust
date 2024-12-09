@@ -1,18 +1,3 @@
-#[cfg(feature = "UnityEngine+UI+Navigation+Mode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Navigation_Mode {
-    Automatic = 3i32,
-    Explicit = 4i32,
-    Horizontal = 1i32,
-    None = 0i32,
-    Vertical = 2i32,
-}
-#[cfg(feature = "UnityEngine+UI+Navigation+Mode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Navigation_Mode =>
-    "UnityEngine.UI"."Navigation/Mode"
-);
 #[cfg(feature = "UnityEngine+UI+Navigation")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -179,3 +164,18 @@ impl crate::UnityEngine::UI::Navigation {
         Ok(__cordl_ret)
     }
 }
+#[cfg(feature = "UnityEngine+UI+Navigation+Mode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Navigation_Mode {
+    Automatic = 3i32,
+    Explicit = 4i32,
+    Horizontal = 1i32,
+    None = 0i32,
+    Vertical = 2i32,
+}
+#[cfg(feature = "UnityEngine+UI+Navigation+Mode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Navigation_Mode =>
+    "UnityEngine.UI"."Navigation/Mode"
+);

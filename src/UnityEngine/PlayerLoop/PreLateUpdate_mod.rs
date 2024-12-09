@@ -1,3 +1,56 @@
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct PreLateUpdate {}
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::PlayerLoop::PreLateUpdate =>
+    "UnityEngine.PlayerLoop"."PreLateUpdate"
+);
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::PlayerLoop::PreLateUpdate {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate")]
+impl crate::UnityEngine::PlayerLoop::PreLateUpdate {
+    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+AIUpdatePostScript")]
+    pub type AIUpdatePostScript = crate::UnityEngine::PlayerLoop::PreLateUpdate_AIUpdatePostScript;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ConstraintManagerUpdate")]
+    pub type ConstraintManagerUpdate = crate::UnityEngine::PlayerLoop::PreLateUpdate_ConstraintManagerUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorDeferredEvaluate")]
+    pub type DirectorDeferredEvaluate = crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorDeferredEvaluate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationBegin")]
+    pub type DirectorUpdateAnimationBegin = crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationBegin;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationEnd")]
+    pub type DirectorUpdateAnimationEnd = crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationEnd;
+    #[cfg(
+        feature = "UnityEngine+PlayerLoop+PreLateUpdate+EndGraphicsJobsAfterScriptUpdate"
+    )]
+    pub type EndGraphicsJobsAfterScriptUpdate = crate::UnityEngine::PlayerLoop::PreLateUpdate_EndGraphicsJobsAfterScriptUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+LegacyAnimationUpdate")]
+    pub type LegacyAnimationUpdate = crate::UnityEngine::PlayerLoop::PreLateUpdate_LegacyAnimationUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ParticleSystemBeginUpdateAll")]
+    pub type ParticleSystemBeginUpdateAll = crate::UnityEngine::PlayerLoop::PreLateUpdate_ParticleSystemBeginUpdateAll;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+Physics2DLateUpdate")]
+    pub type Physics2DLateUpdate = crate::UnityEngine::PlayerLoop::PreLateUpdate_Physics2DLateUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+PhysicsLateUpdate")]
+    pub type PhysicsLateUpdate = crate::UnityEngine::PlayerLoop::PreLateUpdate_PhysicsLateUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ScriptRunBehaviourLateUpdate")]
+    pub type ScriptRunBehaviourLateUpdate = crate::UnityEngine::PlayerLoop::PreLateUpdate_ScriptRunBehaviourLateUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UIElementsUpdatePanels")]
+    pub type UIElementsUpdatePanels = crate::UnityEngine::PlayerLoop::PreLateUpdate_UIElementsUpdatePanels;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UpdateMasterServerInterface")]
+    pub type UpdateMasterServerInterface = crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateMasterServerInterface;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UpdateNetworkManager")]
+    pub type UpdateNetworkManager = crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateNetworkManager;
+}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+AIUpdatePostScript")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -228,59 +281,6 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_PhysicsLateUpdate {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+PhysicsLateUpdate")]
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_PhysicsLateUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct PreLateUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::PlayerLoop::PreLateUpdate =>
-    "UnityEngine.PlayerLoop"."PreLateUpdate"
-);
-#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::PlayerLoop::PreLateUpdate {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate")]
-impl crate::UnityEngine::PlayerLoop::PreLateUpdate {
-    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+AIUpdatePostScript")]
-    pub type AIUpdatePostScript = crate::UnityEngine::PlayerLoop::PreLateUpdate_AIUpdatePostScript;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ConstraintManagerUpdate")]
-    pub type ConstraintManagerUpdate = crate::UnityEngine::PlayerLoop::PreLateUpdate_ConstraintManagerUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorDeferredEvaluate")]
-    pub type DirectorDeferredEvaluate = crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorDeferredEvaluate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationBegin")]
-    pub type DirectorUpdateAnimationBegin = crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationBegin;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationEnd")]
-    pub type DirectorUpdateAnimationEnd = crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationEnd;
-    #[cfg(
-        feature = "UnityEngine+PlayerLoop+PreLateUpdate+EndGraphicsJobsAfterScriptUpdate"
-    )]
-    pub type EndGraphicsJobsAfterScriptUpdate = crate::UnityEngine::PlayerLoop::PreLateUpdate_EndGraphicsJobsAfterScriptUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+LegacyAnimationUpdate")]
-    pub type LegacyAnimationUpdate = crate::UnityEngine::PlayerLoop::PreLateUpdate_LegacyAnimationUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ParticleSystemBeginUpdateAll")]
-    pub type ParticleSystemBeginUpdateAll = crate::UnityEngine::PlayerLoop::PreLateUpdate_ParticleSystemBeginUpdateAll;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+Physics2DLateUpdate")]
-    pub type Physics2DLateUpdate = crate::UnityEngine::PlayerLoop::PreLateUpdate_Physics2DLateUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+PhysicsLateUpdate")]
-    pub type PhysicsLateUpdate = crate::UnityEngine::PlayerLoop::PreLateUpdate_PhysicsLateUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ScriptRunBehaviourLateUpdate")]
-    pub type ScriptRunBehaviourLateUpdate = crate::UnityEngine::PlayerLoop::PreLateUpdate_ScriptRunBehaviourLateUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UIElementsUpdatePanels")]
-    pub type UIElementsUpdatePanels = crate::UnityEngine::PlayerLoop::PreLateUpdate_UIElementsUpdatePanels;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UpdateMasterServerInterface")]
-    pub type UpdateMasterServerInterface = crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateMasterServerInterface;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UpdateNetworkManager")]
-    pub type UpdateNetworkManager = crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateNetworkManager;
-}
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ScriptRunBehaviourLateUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone)]

@@ -1,3 +1,138 @@
+#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct PostLateUpdate {}
+#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::PlayerLoop::PostLateUpdate =>
+    "UnityEngine.PlayerLoop"."PostLateUpdate"
+);
+#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::PlayerLoop::PostLateUpdate {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate")]
+impl crate::UnityEngine::PlayerLoop::PostLateUpdate {
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
+    pub type BatchModeUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_BatchModeUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ClearImmediateRenderers")]
+    pub type ClearImmediateRenderers = crate::UnityEngine::PlayerLoop::PostLateUpdate_ClearImmediateRenderers;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorLateUpdate")]
+    pub type DirectorLateUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorLateUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorRenderImage")]
+    pub type DirectorRenderImage = crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorRenderImage;
+    #[cfg(
+        feature = "UnityEngine+PlayerLoop+PostLateUpdate+EndGraphicsJobsAfterScriptLateUpdate"
+    )]
+    pub type EndGraphicsJobsAfterScriptLateUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_EndGraphicsJobsAfterScriptLateUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+EnlightenRuntimeUpdate")]
+    pub type EnlightenRuntimeUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_EnlightenRuntimeUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ExecuteGameCenterCallbacks")]
+    pub type ExecuteGameCenterCallbacks = crate::UnityEngine::PlayerLoop::PostLateUpdate_ExecuteGameCenterCallbacks;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+FinishFrameRendering")]
+    pub type FinishFrameRendering = crate::UnityEngine::PlayerLoop::PostLateUpdate_FinishFrameRendering;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GUIClearEvents")]
+    pub type GUIClearEvents = crate::UnityEngine::PlayerLoop::PostLateUpdate_GUIClearEvents;
+    #[cfg(
+        feature = "UnityEngine+PlayerLoop+PostLateUpdate+GraphicsWarmupPreloadedShaders"
+    )]
+    pub type GraphicsWarmupPreloadedShaders = crate::UnityEngine::PlayerLoop::PostLateUpdate_GraphicsWarmupPreloadedShaders;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+InputEndFrame")]
+    pub type InputEndFrame = crate::UnityEngine::PlayerLoop::PostLateUpdate_InputEndFrame;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+MemoryFrameMaintenance")]
+    pub type MemoryFrameMaintenance = crate::UnityEngine::PlayerLoop::PostLateUpdate_MemoryFrameMaintenance;
+    #[cfg(
+        feature = "UnityEngine+PlayerLoop+PostLateUpdate+ObjectDispatcherPostLateUpdate"
+    )]
+    pub type ObjectDispatcherPostLateUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_ObjectDispatcherPostLateUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ParticleSystemEndUpdateAll")]
+    pub type ParticleSystemEndUpdateAll = crate::UnityEngine::PlayerLoop::PostLateUpdate_ParticleSystemEndUpdateAll;
+    #[cfg(
+        feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothBeginUpdate"
+    )]
+    pub type PhysicsSkinnedClothBeginUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothBeginUpdate;
+    #[cfg(
+        feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothFinishUpdate"
+    )]
+    pub type PhysicsSkinnedClothFinishUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothFinishUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerEmitCanvasGeometry")]
+    pub type PlayerEmitCanvasGeometry = crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerEmitCanvasGeometry;
+    #[cfg(
+        feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerRenderUIEBatchModeOffscreen"
+    )]
+    pub type PlayerRenderUIEBatchModeOffscreen = crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerRenderUIEBatchModeOffscreen;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameComplete")]
+    pub type PlayerSendFrameComplete = crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameComplete;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFramePostPresent")]
+    pub type PlayerSendFramePostPresent = crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFramePostPresent;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameStarted")]
+    pub type PlayerSendFrameStarted = crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameStarted;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases")]
+    pub type PlayerUpdateCanvases = crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
+    pub type PresentAfterDraw = crate::UnityEngine::PlayerLoop::PostLateUpdate_PresentAfterDraw;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProcessWebSendMessages")]
+    pub type ProcessWebSendMessages = crate::UnityEngine::PlayerLoop::PostLateUpdate_ProcessWebSendMessages;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerEndFrame")]
+    pub type ProfilerEndFrame = crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerEndFrame;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerSynchronizeStats")]
+    pub type ProfilerSynchronizeStats = crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerSynchronizeStats;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ResetInputAxis")]
+    pub type ResetInputAxis = crate::UnityEngine::PlayerLoop::PostLateUpdate_ResetInputAxis;
+    #[cfg(
+        feature = "UnityEngine+PlayerLoop+PostLateUpdate+ScriptRunDelayedDynamicFrameRate"
+    )]
+    pub type ScriptRunDelayedDynamicFrameRate = crate::UnityEngine::PlayerLoop::PostLateUpdate_ScriptRunDelayedDynamicFrameRate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ShaderHandleErrors")]
+    pub type ShaderHandleErrors = crate::UnityEngine::PlayerLoop::PostLateUpdate_ShaderHandleErrors;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+SortingGroupsUpdate")]
+    pub type SortingGroupsUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_SortingGroupsUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ThreadedLoadingDebug")]
+    pub type ThreadedLoadingDebug = crate::UnityEngine::PlayerLoop::PostLateUpdate_ThreadedLoadingDebug;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+TriggerEndOfFrameCallbacks")]
+    pub type TriggerEndOfFrameCallbacks = crate::UnityEngine::PlayerLoop::PostLateUpdate_TriggerEndOfFrameCallbacks;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllRenderers")]
+    pub type UpdateAllRenderers = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllRenderers;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllSkinnedMeshes")]
+    pub type UpdateAllSkinnedMeshes = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllSkinnedMeshes;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAudio")]
+    pub type UpdateAudio = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAudio;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCanvasRectTransform")]
+    pub type UpdateCanvasRectTransform = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCanvasRectTransform;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCaptureScreenshot")]
+    pub type UpdateCaptureScreenshot = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCaptureScreenshot;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCustomRenderTextures")]
+    pub type UpdateCustomRenderTextures = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCustomRenderTextures;
+    #[cfg(
+        feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateLightProbeProxyVolumes"
+    )]
+    pub type UpdateLightProbeProxyVolumes = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateLightProbeProxyVolumes;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateRectTransform")]
+    pub type UpdateRectTransform = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateRectTransform;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateResolution")]
+    pub type UpdateResolution = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateResolution;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateSubstance")]
+    pub type UpdateSubstance = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateSubstance;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideo")]
+    pub type UpdateVideo = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideo;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideoTextures")]
+    pub type UpdateVideoTextures = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideoTextures;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+VFXUpdate")]
+    pub type VFXUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_VFXUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostLateUpdate")]
+    pub type XRPostLateUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostLateUpdate;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostPresent")]
+    pub type XRPostPresent = crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostPresent;
+    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPreEndFrame")]
+    pub type XRPreEndFrame = crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPreEndFrame;
+}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -520,141 +655,6 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases {
 }
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases")]
 impl crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct PostLateUpdate {}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::PlayerLoop::PostLateUpdate =>
-    "UnityEngine.PlayerLoop"."PostLateUpdate"
-);
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::PlayerLoop::PostLateUpdate {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate")]
-impl crate::UnityEngine::PlayerLoop::PostLateUpdate {
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+BatchModeUpdate")]
-    pub type BatchModeUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_BatchModeUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ClearImmediateRenderers")]
-    pub type ClearImmediateRenderers = crate::UnityEngine::PlayerLoop::PostLateUpdate_ClearImmediateRenderers;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorLateUpdate")]
-    pub type DirectorLateUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorLateUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+DirectorRenderImage")]
-    pub type DirectorRenderImage = crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorRenderImage;
-    #[cfg(
-        feature = "UnityEngine+PlayerLoop+PostLateUpdate+EndGraphicsJobsAfterScriptLateUpdate"
-    )]
-    pub type EndGraphicsJobsAfterScriptLateUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_EndGraphicsJobsAfterScriptLateUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+EnlightenRuntimeUpdate")]
-    pub type EnlightenRuntimeUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_EnlightenRuntimeUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ExecuteGameCenterCallbacks")]
-    pub type ExecuteGameCenterCallbacks = crate::UnityEngine::PlayerLoop::PostLateUpdate_ExecuteGameCenterCallbacks;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+FinishFrameRendering")]
-    pub type FinishFrameRendering = crate::UnityEngine::PlayerLoop::PostLateUpdate_FinishFrameRendering;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+GUIClearEvents")]
-    pub type GUIClearEvents = crate::UnityEngine::PlayerLoop::PostLateUpdate_GUIClearEvents;
-    #[cfg(
-        feature = "UnityEngine+PlayerLoop+PostLateUpdate+GraphicsWarmupPreloadedShaders"
-    )]
-    pub type GraphicsWarmupPreloadedShaders = crate::UnityEngine::PlayerLoop::PostLateUpdate_GraphicsWarmupPreloadedShaders;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+InputEndFrame")]
-    pub type InputEndFrame = crate::UnityEngine::PlayerLoop::PostLateUpdate_InputEndFrame;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+MemoryFrameMaintenance")]
-    pub type MemoryFrameMaintenance = crate::UnityEngine::PlayerLoop::PostLateUpdate_MemoryFrameMaintenance;
-    #[cfg(
-        feature = "UnityEngine+PlayerLoop+PostLateUpdate+ObjectDispatcherPostLateUpdate"
-    )]
-    pub type ObjectDispatcherPostLateUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_ObjectDispatcherPostLateUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ParticleSystemEndUpdateAll")]
-    pub type ParticleSystemEndUpdateAll = crate::UnityEngine::PlayerLoop::PostLateUpdate_ParticleSystemEndUpdateAll;
-    #[cfg(
-        feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothBeginUpdate"
-    )]
-    pub type PhysicsSkinnedClothBeginUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothBeginUpdate;
-    #[cfg(
-        feature = "UnityEngine+PlayerLoop+PostLateUpdate+PhysicsSkinnedClothFinishUpdate"
-    )]
-    pub type PhysicsSkinnedClothFinishUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothFinishUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerEmitCanvasGeometry")]
-    pub type PlayerEmitCanvasGeometry = crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerEmitCanvasGeometry;
-    #[cfg(
-        feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerRenderUIEBatchModeOffscreen"
-    )]
-    pub type PlayerRenderUIEBatchModeOffscreen = crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerRenderUIEBatchModeOffscreen;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameComplete")]
-    pub type PlayerSendFrameComplete = crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameComplete;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFramePostPresent")]
-    pub type PlayerSendFramePostPresent = crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFramePostPresent;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerSendFrameStarted")]
-    pub type PlayerSendFrameStarted = crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameStarted;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PlayerUpdateCanvases")]
-    pub type PlayerUpdateCanvases = crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
-    pub type PresentAfterDraw = crate::UnityEngine::PlayerLoop::PostLateUpdate_PresentAfterDraw;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProcessWebSendMessages")]
-    pub type ProcessWebSendMessages = crate::UnityEngine::PlayerLoop::PostLateUpdate_ProcessWebSendMessages;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerEndFrame")]
-    pub type ProfilerEndFrame = crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerEndFrame;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ProfilerSynchronizeStats")]
-    pub type ProfilerSynchronizeStats = crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerSynchronizeStats;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ResetInputAxis")]
-    pub type ResetInputAxis = crate::UnityEngine::PlayerLoop::PostLateUpdate_ResetInputAxis;
-    #[cfg(
-        feature = "UnityEngine+PlayerLoop+PostLateUpdate+ScriptRunDelayedDynamicFrameRate"
-    )]
-    pub type ScriptRunDelayedDynamicFrameRate = crate::UnityEngine::PlayerLoop::PostLateUpdate_ScriptRunDelayedDynamicFrameRate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ShaderHandleErrors")]
-    pub type ShaderHandleErrors = crate::UnityEngine::PlayerLoop::PostLateUpdate_ShaderHandleErrors;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+SortingGroupsUpdate")]
-    pub type SortingGroupsUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_SortingGroupsUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+ThreadedLoadingDebug")]
-    pub type ThreadedLoadingDebug = crate::UnityEngine::PlayerLoop::PostLateUpdate_ThreadedLoadingDebug;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+TriggerEndOfFrameCallbacks")]
-    pub type TriggerEndOfFrameCallbacks = crate::UnityEngine::PlayerLoop::PostLateUpdate_TriggerEndOfFrameCallbacks;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllRenderers")]
-    pub type UpdateAllRenderers = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllRenderers;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAllSkinnedMeshes")]
-    pub type UpdateAllSkinnedMeshes = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllSkinnedMeshes;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateAudio")]
-    pub type UpdateAudio = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAudio;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCanvasRectTransform")]
-    pub type UpdateCanvasRectTransform = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCanvasRectTransform;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCaptureScreenshot")]
-    pub type UpdateCaptureScreenshot = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCaptureScreenshot;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateCustomRenderTextures")]
-    pub type UpdateCustomRenderTextures = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCustomRenderTextures;
-    #[cfg(
-        feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateLightProbeProxyVolumes"
-    )]
-    pub type UpdateLightProbeProxyVolumes = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateLightProbeProxyVolumes;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateRectTransform")]
-    pub type UpdateRectTransform = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateRectTransform;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateResolution")]
-    pub type UpdateResolution = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateResolution;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateSubstance")]
-    pub type UpdateSubstance = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateSubstance;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideo")]
-    pub type UpdateVideo = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideo;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+UpdateVideoTextures")]
-    pub type UpdateVideoTextures = crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideoTextures;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+VFXUpdate")]
-    pub type VFXUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_VFXUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostLateUpdate")]
-    pub type XRPostLateUpdate = crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostLateUpdate;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPostPresent")]
-    pub type XRPostPresent = crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostPresent;
-    #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+XRPreEndFrame")]
-    pub type XRPreEndFrame = crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPreEndFrame;
-}
 #[cfg(feature = "UnityEngine+PlayerLoop+PostLateUpdate+PresentAfterDraw")]
 #[repr(C)]
 #[derive(Debug, Clone)]

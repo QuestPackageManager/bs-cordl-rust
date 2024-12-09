@@ -1,17 +1,3 @@
-#[cfg(feature = "TrackLaneRingsRotationEffectSpawner+RotationStepType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum TrackLaneRingsRotationEffectSpawner_RotationStepType {
-    MaxOr0 = 2i32,
-    Range = 1i32,
-    Range0ToMax = 0i32,
-}
-#[cfg(feature = "TrackLaneRingsRotationEffectSpawner+RotationStepType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType => ""
-    ."TrackLaneRingsRotationEffectSpawner/RotationStepType"
-);
 #[cfg(feature = "TrackLaneRingsRotationEffectSpawner")]
 #[repr(C)]
 #[derive(Debug)]
@@ -109,3 +95,17 @@ for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "TrackLaneRingsRotationEffectSpawner+RotationStepType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TrackLaneRingsRotationEffectSpawner_RotationStepType {
+    MaxOr0 = 2i32,
+    Range = 1i32,
+    Range0ToMax = 0i32,
+}
+#[cfg(feature = "TrackLaneRingsRotationEffectSpawner+RotationStepType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::TrackLaneRingsRotationEffectSpawner_RotationStepType => ""
+    ."TrackLaneRingsRotationEffectSpawner/RotationStepType"
+);

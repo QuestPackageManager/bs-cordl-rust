@@ -1,42 +1,3 @@
-#[cfg(feature = "System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct XmlNodeReaderNavigator_VirtualAttribute {
-    pub name: *mut crate::System::String,
-    pub value: *mut crate::System::String,
-}
-#[cfg(feature = "System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::XmlNodeReaderNavigator_VirtualAttribute => "System.Xml"
-    ."XmlNodeReaderNavigator/VirtualAttribute"
-);
-#[cfg(feature = "System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Xml::XmlNodeReaderNavigator_VirtualAttribute {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
-impl crate::System::Xml::XmlNodeReaderNavigator_VirtualAttribute {
-    pub fn _ctor(
-        &mut self,
-        name: *mut crate::System::String,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (name, value),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "System+Xml+XmlNodeReaderNavigator")]
 #[repr(C)]
 #[derive(Debug)]
@@ -638,5 +599,44 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlNodeReaderNavi
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct XmlNodeReaderNavigator_VirtualAttribute {
+    pub name: *mut crate::System::String,
+    pub value: *mut crate::System::String,
+}
+#[cfg(feature = "System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Xml::XmlNodeReaderNavigator_VirtualAttribute => "System.Xml"
+    ."XmlNodeReaderNavigator/VirtualAttribute"
+);
+#[cfg(feature = "System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::Xml::XmlNodeReaderNavigator_VirtualAttribute {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Xml+XmlNodeReaderNavigator+VirtualAttribute")]
+impl crate::System::Xml::XmlNodeReaderNavigator_VirtualAttribute {
+    pub fn _ctor(
+        &mut self,
+        name: *mut crate::System::String,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (name, value),
+        )?;
+        Ok(__cordl_ret)
     }
 }

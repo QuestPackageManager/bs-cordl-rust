@@ -1,18 +1,3 @@
-#[cfg(feature = "UnityEngine+ModifiableContactPatch+Flags")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ModifiableContactPatch_Flags {
-    HasFaceIndices = 1i32,
-    HasMaxImpulse = 32i32,
-    HasModifiedMassRatios = 8i32,
-    HasTargetVelocity = 16i32,
-    RegeneratePatches = 64i32,
-}
-#[cfg(feature = "UnityEngine+ModifiableContactPatch+Flags")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::ModifiableContactPatch_Flags =>
-    "UnityEngine"."ModifiableContactPatch/Flags"
-);
 #[cfg(feature = "UnityEngine+ModifiableContactPatch")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -50,3 +35,18 @@ impl crate::UnityEngine::ModifiableContactPatch {
     #[cfg(feature = "UnityEngine+ModifiableContactPatch+Flags")]
     pub type Flags = crate::UnityEngine::ModifiableContactPatch_Flags;
 }
+#[cfg(feature = "UnityEngine+ModifiableContactPatch+Flags")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ModifiableContactPatch_Flags {
+    HasFaceIndices = 1i32,
+    HasMaxImpulse = 32i32,
+    HasModifiedMassRatios = 8i32,
+    HasTargetVelocity = 16i32,
+    RegeneratePatches = 64i32,
+}
+#[cfg(feature = "UnityEngine+ModifiableContactPatch+Flags")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::ModifiableContactPatch_Flags =>
+    "UnityEngine"."ModifiableContactPatch/Flags"
+);

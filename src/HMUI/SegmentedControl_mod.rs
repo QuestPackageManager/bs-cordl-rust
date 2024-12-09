@@ -1,62 +1,3 @@
-#[cfg(feature = "HMUI+SegmentedControl+IDataSource")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct SegmentedControl_IDataSource {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-}
-#[cfg(feature = "HMUI+SegmentedControl+IDataSource")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::SegmentedControl_IDataSource => "HMUI"
-    ."SegmentedControl/IDataSource"
-);
-#[cfg(feature = "HMUI+SegmentedControl+IDataSource")]
-impl std::ops::Deref for crate::HMUI::SegmentedControl_IDataSource {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "HMUI+SegmentedControl+IDataSource")]
-impl std::ops::DerefMut for crate::HMUI::SegmentedControl_IDataSource {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "HMUI+SegmentedControl+IDataSource")]
-impl crate::HMUI::SegmentedControl_IDataSource {
-    pub fn CellForCellNumber(
-        &mut self,
-        cellNumber: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::SegmentedControlCell> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::SegmentedControlCell = __cordl_object
-            .invoke("CellForCellNumber", (cellNumber))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
-    }
-}
-#[cfg(feature = "HMUI+SegmentedControl+IDataSource")]
-impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SegmentedControl_IDataSource {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "HMUI+SegmentedControl")]
 #[repr(C)]
 #[derive(Debug)]
@@ -272,6 +213,65 @@ impl crate::HMUI::SegmentedControl {
 }
 #[cfg(feature = "HMUI+SegmentedControl")]
 impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SegmentedControl {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "HMUI+SegmentedControl+IDataSource")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct SegmentedControl_IDataSource {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "HMUI+SegmentedControl+IDataSource")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::HMUI::SegmentedControl_IDataSource => "HMUI"
+    ."SegmentedControl/IDataSource"
+);
+#[cfg(feature = "HMUI+SegmentedControl+IDataSource")]
+impl std::ops::Deref for crate::HMUI::SegmentedControl_IDataSource {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "HMUI+SegmentedControl+IDataSource")]
+impl std::ops::DerefMut for crate::HMUI::SegmentedControl_IDataSource {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "HMUI+SegmentedControl+IDataSource")]
+impl crate::HMUI::SegmentedControl_IDataSource {
+    pub fn CellForCellNumber(
+        &mut self,
+        cellNumber: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::SegmentedControlCell> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::SegmentedControlCell = __cordl_object
+            .invoke("CellForCellNumber", (cellNumber))?;
+        Ok(__cordl_ret)
+    }
+    pub fn NumberOfCells(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfCells", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+}
+#[cfg(feature = "HMUI+SegmentedControl+IDataSource")]
+impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SegmentedControl_IDataSource {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

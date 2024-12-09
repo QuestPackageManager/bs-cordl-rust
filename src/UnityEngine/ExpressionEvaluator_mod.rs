@@ -1,3 +1,51 @@
+#[cfg(feature = "UnityEngine+ExpressionEvaluator")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct ExpressionEvaluator {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "UnityEngine+ExpressionEvaluator")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::ExpressionEvaluator =>
+    "UnityEngine"."ExpressionEvaluator"
+);
+#[cfg(feature = "UnityEngine+ExpressionEvaluator")]
+impl std::ops::Deref for crate::UnityEngine::ExpressionEvaluator {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+ExpressionEvaluator")]
+impl std::ops::DerefMut for crate::UnityEngine::ExpressionEvaluator {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+ExpressionEvaluator")]
+impl crate::UnityEngine::ExpressionEvaluator {
+    #[cfg(feature = "UnityEngine+ExpressionEvaluator+Associativity")]
+    pub type Associativity = crate::UnityEngine::ExpressionEvaluator_Associativity;
+    #[cfg(feature = "UnityEngine+ExpressionEvaluator+Expression")]
+    pub type Expression = crate::UnityEngine::ExpressionEvaluator_Expression;
+    #[cfg(feature = "UnityEngine+ExpressionEvaluator+Op")]
+    pub type Op = crate::UnityEngine::ExpressionEvaluator_Op;
+    #[cfg(feature = "UnityEngine+ExpressionEvaluator+Operator")]
+    pub type Operator = crate::UnityEngine::ExpressionEvaluator_Operator;
+    #[cfg(feature = "UnityEngine+ExpressionEvaluator+PcgRandom")]
+    pub type PcgRandom = crate::UnityEngine::ExpressionEvaluator_PcgRandom;
+    #[cfg(feature = "UnityEngine+ExpressionEvaluator+__c")]
+    pub type __c = crate::UnityEngine::ExpressionEvaluator___c;
+}
+#[cfg(feature = "UnityEngine+ExpressionEvaluator")]
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ExpressionEvaluator {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "UnityEngine+ExpressionEvaluator+Associativity")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -79,54 +127,6 @@ impl crate::UnityEngine::ExpressionEvaluator_Expression {
 #[cfg(feature = "UnityEngine+ExpressionEvaluator+Expression")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ExpressionEvaluator_Expression {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+ExpressionEvaluator")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct ExpressionEvaluator {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "UnityEngine+ExpressionEvaluator")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::ExpressionEvaluator =>
-    "UnityEngine"."ExpressionEvaluator"
-);
-#[cfg(feature = "UnityEngine+ExpressionEvaluator")]
-impl std::ops::Deref for crate::UnityEngine::ExpressionEvaluator {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+ExpressionEvaluator")]
-impl std::ops::DerefMut for crate::UnityEngine::ExpressionEvaluator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+ExpressionEvaluator")]
-impl crate::UnityEngine::ExpressionEvaluator {
-    #[cfg(feature = "UnityEngine+ExpressionEvaluator+Associativity")]
-    pub type Associativity = crate::UnityEngine::ExpressionEvaluator_Associativity;
-    #[cfg(feature = "UnityEngine+ExpressionEvaluator+Expression")]
-    pub type Expression = crate::UnityEngine::ExpressionEvaluator_Expression;
-    #[cfg(feature = "UnityEngine+ExpressionEvaluator+Op")]
-    pub type Op = crate::UnityEngine::ExpressionEvaluator_Op;
-    #[cfg(feature = "UnityEngine+ExpressionEvaluator+Operator")]
-    pub type Operator = crate::UnityEngine::ExpressionEvaluator_Operator;
-    #[cfg(feature = "UnityEngine+ExpressionEvaluator+PcgRandom")]
-    pub type PcgRandom = crate::UnityEngine::ExpressionEvaluator_PcgRandom;
-    #[cfg(feature = "UnityEngine+ExpressionEvaluator+__c")]
-    pub type __c = crate::UnityEngine::ExpressionEvaluator___c;
-}
-#[cfg(feature = "UnityEngine+ExpressionEvaluator")]
-impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ExpressionEvaluator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

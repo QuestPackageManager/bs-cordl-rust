@@ -1,77 +1,3 @@
-#[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct GameLiftConnectionManager_ConnectToServerParams {
-    __cordl_parent: crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase,
-    pub secret: *mut crate::System::String,
-    pub code: *mut crate::System::String,
-}
-#[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams => ""
-    ."GameLiftConnectionManager/ConnectToServerParams"
-);
-#[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
-impl std::ops::Deref
-for crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
-    type Target = crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
-impl crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "GameLiftConnectionManager+ConnectionState")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum GameLiftConnectionManager_ConnectionState {
-    Connected = 2i32,
-    Connecting = 1i32,
-    Disconnecting = 3i32,
-    Unconnected = 0i32,
-}
-#[cfg(feature = "GameLiftConnectionManager+ConnectionState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GameLiftConnectionManager_ConnectionState => ""
-    ."GameLiftConnectionManager/ConnectionState"
-);
 #[cfg(feature = "GameLiftConnectionManager")]
 #[repr(C)]
 #[derive(Debug)]
@@ -730,6 +656,80 @@ for crate::GlobalNamespace::GameLiftConnectionManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct GameLiftConnectionManager_ConnectToServerParams {
+    __cordl_parent: crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase,
+    pub secret: *mut crate::System::String,
+    pub code: *mut crate::System::String,
+}
+#[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams => ""
+    ."GameLiftConnectionManager/ConnectToServerParams"
+);
+#[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
+impl std::ops::Deref
+for crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
+    type Target = crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
+impl std::ops::DerefMut
+for crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
+impl crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "GameLiftConnectionManager+ConnectionState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum GameLiftConnectionManager_ConnectionState {
+    Connected = 2i32,
+    Connecting = 1i32,
+    Disconnecting = 3i32,
+    Unconnected = 0i32,
+}
+#[cfg(feature = "GameLiftConnectionManager+ConnectionState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::GameLiftConnectionManager_ConnectionState => ""
+    ."GameLiftConnectionManager/ConnectionState"
+);
 #[cfg(feature = "GameLiftConnectionManager+GameLiftConnectionManagerParamsBase")]
 #[repr(C)]
 #[derive(Debug)]

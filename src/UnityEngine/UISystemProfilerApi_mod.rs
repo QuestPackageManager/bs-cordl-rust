@@ -1,15 +1,3 @@
-#[cfg(feature = "UnityEngine+UISystemProfilerApi+SampleType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum UISystemProfilerApi_SampleType {
-    Layout = 0i32,
-    Render = 1i32,
-}
-#[cfg(feature = "UnityEngine+UISystemProfilerApi+SampleType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UISystemProfilerApi_SampleType =>
-    "UnityEngine"."UISystemProfilerApi/SampleType"
-);
 #[cfg(feature = "UnityEngine+UISystemProfilerApi")]
 #[repr(C)]
 #[derive(Debug)]
@@ -48,3 +36,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UISystemProfilerA
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UISystemProfilerApi+SampleType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum UISystemProfilerApi_SampleType {
+    Layout = 0i32,
+    Render = 1i32,
+}
+#[cfg(feature = "UnityEngine+UISystemProfilerApi+SampleType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UISystemProfilerApi_SampleType =>
+    "UnityEngine"."UISystemProfilerApi/SampleType"
+);

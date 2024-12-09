@@ -1,156 +1,3 @@
-#[cfg(
-    feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1+Enumerator"
-)]
-#[repr(C)]
-#[derive(Debug)]
-pub struct ReadOnlyCollectionBuilder_1_Enumerator<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
-    pub _builder: *mut crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<
-        T,
-    >,
-    pub _version: i32,
-    pub _index: i32,
-    pub _current: T,
-    __cordl_phantom_T: std::marker::PhantomData<T>,
-}
-#[cfg(
-    feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1+Enumerator"
-)]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1_Enumerator < T > =>
-    "System.Runtime.CompilerServices"."ReadOnlyCollectionBuilder`1/Enumerator" < T >
-);
-#[cfg(
-    feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1+Enumerator"
-)]
-impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
-for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1_Enumerator<T> {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(
-    feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1+Enumerator"
-)]
-impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1_Enumerator<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(
-    feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1+Enumerator"
-)]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1_Enumerator<T> {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        builder: *mut crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<
-            T,
-        >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (builder))?;
-        Ok(__cordl_object)
-    }
-    pub fn System_Collections_IEnumerator_Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("System.Collections.IEnumerator.Reset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IEnumerator_get_Current(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
-            .invoke("System.Collections.IEnumerator.get_Current", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        builder: *mut crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<
-            T,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (builder))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("get_Current", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(
-    feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1+Enumerator"
-)]
-impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1_Enumerator<T> {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1")]
 #[repr(C)]
 #[derive(Debug)]
@@ -668,6 +515,159 @@ impl<
 #[cfg(feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<T> {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1+Enumerator"
+)]
+#[repr(C)]
+#[derive(Debug)]
+pub struct ReadOnlyCollectionBuilder_1_Enumerator<T: quest_hook::libil2cpp::Type> {
+    __cordl_parent: crate::System::Object,
+    pub _builder: *mut crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<
+        T,
+    >,
+    pub _version: i32,
+    pub _index: i32,
+    pub _current: T,
+    __cordl_phantom_T: std::marker::PhantomData<T>,
+}
+#[cfg(
+    feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1+Enumerator"
+)]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1_Enumerator < T > =>
+    "System.Runtime.CompilerServices"."ReadOnlyCollectionBuilder`1/Enumerator" < T >
+);
+#[cfg(
+    feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1+Enumerator"
+)]
+impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1_Enumerator<T> {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1+Enumerator"
+)]
+impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1_Enumerator<T> {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1+Enumerator"
+)]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1_Enumerator<T> {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("MoveNext", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        builder: *mut crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<
+            T,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (builder))?;
+        Ok(__cordl_object)
+    }
+    pub fn System_Collections_IEnumerator_Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("System.Collections.IEnumerator.Reset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IEnumerator_get_Current(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("System.Collections.IEnumerator.get_Current", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        builder: *mut crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1<
+            T,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (builder))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: T = __cordl_object.invoke("get_Current", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(
+    feature = "System+Runtime+CompilerServices+ReadOnlyCollectionBuilder_1+Enumerator"
+)]
+impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
+for crate::System::Runtime::CompilerServices::ReadOnlyCollectionBuilder_1_Enumerator<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

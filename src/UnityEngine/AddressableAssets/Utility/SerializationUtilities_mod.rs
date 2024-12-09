@@ -1,26 +1,3 @@
-#[cfg(
-    feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
-)]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum SerializationUtilities_ObjectType {
-    AsciiString = 0i32,
-    Hash128 = 5i32,
-    Int32 = 4i32,
-    JsonObject = 7i32,
-    Type = 6i32,
-    UInt16 = 2i32,
-    UInt32 = 3i32,
-    UnicodeString = 1i32,
-}
-#[cfg(
-    feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::AddressableAssets::Utility::SerializationUtilities_ObjectType =>
-    "UnityEngine.AddressableAssets.Utility"."SerializationUtilities/ObjectType"
-);
 #[cfg(feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities")]
 #[repr(C)]
 #[derive(Debug)]
@@ -65,3 +42,26 @@ for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
+)]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum SerializationUtilities_ObjectType {
+    AsciiString = 0i32,
+    Hash128 = 5i32,
+    Int32 = 4i32,
+    JsonObject = 7i32,
+    Type = 6i32,
+    UInt16 = 2i32,
+    UInt32 = 3i32,
+    UnicodeString = 1i32,
+}
+#[cfg(
+    feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::AddressableAssets::Utility::SerializationUtilities_ObjectType =>
+    "UnityEngine.AddressableAssets.Utility"."SerializationUtilities/ObjectType"
+);

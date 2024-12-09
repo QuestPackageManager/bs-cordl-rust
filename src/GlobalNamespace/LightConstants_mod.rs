@@ -1,19 +1,3 @@
-#[cfg(feature = "LightConstants+BakeId")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum LightConstants_BakeId {
-    A = 1i32,
-    B = 2i32,
-    C = 3i32,
-    D = 4i32,
-    E = 5i32,
-    F = 6i32,
-}
-#[cfg(feature = "LightConstants+BakeId")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightConstants_BakeId => ""
-    ."LightConstants/BakeId"
-);
 #[cfg(feature = "LightConstants")]
 #[repr(C)]
 #[derive(Debug)]
@@ -54,3 +38,19 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightConstant
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LightConstants+BakeId")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum LightConstants_BakeId {
+    A = 1i32,
+    B = 2i32,
+    C = 3i32,
+    D = 4i32,
+    E = 5i32,
+    F = 6i32,
+}
+#[cfg(feature = "LightConstants+BakeId")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::LightConstants_BakeId => ""
+    ."LightConstants/BakeId"
+);

@@ -1,3 +1,42 @@
+#[cfg(feature = "IgnoranceThirdparty+Volatile")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct Volatile {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "IgnoranceThirdparty+Volatile")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::IgnoranceThirdparty::Volatile =>
+    "IgnoranceThirdparty"."Volatile"
+);
+#[cfg(feature = "IgnoranceThirdparty+Volatile")]
+impl std::ops::Deref for crate::IgnoranceThirdparty::Volatile {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "IgnoranceThirdparty+Volatile")]
+impl std::ops::DerefMut for crate::IgnoranceThirdparty::Volatile {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "IgnoranceThirdparty+Volatile")]
+impl crate::IgnoranceThirdparty::Volatile {
+    pub const CacheLineSize: i32 = 64i32;
+    #[cfg(feature = "IgnoranceThirdparty+Volatile+PaddedLong")]
+    pub type PaddedLong = crate::IgnoranceThirdparty::Volatile_PaddedLong;
+}
+#[cfg(feature = "IgnoranceThirdparty+Volatile")]
+impl quest_hook::libil2cpp::ObjectType for crate::IgnoranceThirdparty::Volatile {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "IgnoranceThirdparty+Volatile+PaddedLong")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -165,44 +204,5 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
             (value),
         )?;
         Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "IgnoranceThirdparty+Volatile")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct Volatile {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "IgnoranceThirdparty+Volatile")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::IgnoranceThirdparty::Volatile =>
-    "IgnoranceThirdparty"."Volatile"
-);
-#[cfg(feature = "IgnoranceThirdparty+Volatile")]
-impl std::ops::Deref for crate::IgnoranceThirdparty::Volatile {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "IgnoranceThirdparty+Volatile")]
-impl std::ops::DerefMut for crate::IgnoranceThirdparty::Volatile {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "IgnoranceThirdparty+Volatile")]
-impl crate::IgnoranceThirdparty::Volatile {
-    pub const CacheLineSize: i32 = 64i32;
-    #[cfg(feature = "IgnoranceThirdparty+Volatile+PaddedLong")]
-    pub type PaddedLong = crate::IgnoranceThirdparty::Volatile_PaddedLong;
-}
-#[cfg(feature = "IgnoranceThirdparty+Volatile")]
-impl quest_hook::libil2cpp::ObjectType for crate::IgnoranceThirdparty::Volatile {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }

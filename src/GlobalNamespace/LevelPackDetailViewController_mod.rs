@@ -1,18 +1,3 @@
-#[cfg(feature = "LevelPackDetailViewController+ContentType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum LevelPackDetailViewController_ContentType {
-    Buy = 2i32,
-    Error = 3i32,
-    Loading = 0i32,
-    Owned = 1i32,
-}
-#[cfg(feature = "LevelPackDetailViewController+ContentType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::LevelPackDetailViewController_ContentType => ""
-    ."LevelPackDetailViewController/ContentType"
-);
 #[cfg(feature = "LevelPackDetailViewController")]
 #[repr(C)]
 #[derive(Debug)]
@@ -223,3 +208,18 @@ for crate::GlobalNamespace::LevelPackDetailViewController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LevelPackDetailViewController+ContentType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum LevelPackDetailViewController_ContentType {
+    Buy = 2i32,
+    Error = 3i32,
+    Loading = 0i32,
+    Owned = 1i32,
+}
+#[cfg(feature = "LevelPackDetailViewController+ContentType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::LevelPackDetailViewController_ContentType => ""
+    ."LevelPackDetailViewController/ContentType"
+);

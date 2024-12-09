@@ -1,46 +1,3 @@
-#[cfg(feature = "System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct XmlNamespaceManager_NamespaceDeclaration {
-    pub prefix: *mut crate::System::String,
-    pub uri: *mut crate::System::String,
-    pub scopeId: i32,
-    pub previousNsIndex: i32,
-}
-#[cfg(feature = "System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::XmlNamespaceManager_NamespaceDeclaration => "System.Xml"
-    ."XmlNamespaceManager/NamespaceDeclaration"
-);
-#[cfg(feature = "System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Xml::XmlNamespaceManager_NamespaceDeclaration {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
-impl crate::System::Xml::XmlNamespaceManager_NamespaceDeclaration {
-    pub fn Set(
-        &mut self,
-        prefix: *mut crate::System::String,
-        uri: *mut crate::System::String,
-        scopeId: i32,
-        previousNsIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Set",
-            (prefix, uri, scopeId, previousNsIndex),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "System+Xml+XmlNamespaceManager")]
 #[repr(C)]
 #[derive(Debug)]
@@ -248,5 +205,48 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlNamespaceManag
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct XmlNamespaceManager_NamespaceDeclaration {
+    pub prefix: *mut crate::System::String,
+    pub uri: *mut crate::System::String,
+    pub scopeId: i32,
+    pub previousNsIndex: i32,
+}
+#[cfg(feature = "System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Xml::XmlNamespaceManager_NamespaceDeclaration => "System.Xml"
+    ."XmlNamespaceManager/NamespaceDeclaration"
+);
+#[cfg(feature = "System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::Xml::XmlNamespaceManager_NamespaceDeclaration {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Xml+XmlNamespaceManager+NamespaceDeclaration")]
+impl crate::System::Xml::XmlNamespaceManager_NamespaceDeclaration {
+    pub fn Set(
+        &mut self,
+        prefix: *mut crate::System::String,
+        uri: *mut crate::System::String,
+        scopeId: i32,
+        previousNsIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Set",
+            (prefix, uri, scopeId, previousNsIndex),
+        )?;
+        Ok(__cordl_ret)
     }
 }

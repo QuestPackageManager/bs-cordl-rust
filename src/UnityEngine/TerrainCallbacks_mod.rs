@@ -1,3 +1,43 @@
+#[cfg(feature = "UnityEngine+TerrainCallbacks")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct TerrainCallbacks {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "UnityEngine+TerrainCallbacks")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::TerrainCallbacks => "UnityEngine"
+    ."TerrainCallbacks"
+);
+#[cfg(feature = "UnityEngine+TerrainCallbacks")]
+impl std::ops::Deref for crate::UnityEngine::TerrainCallbacks {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+TerrainCallbacks")]
+impl std::ops::DerefMut for crate::UnityEngine::TerrainCallbacks {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+TerrainCallbacks")]
+impl crate::UnityEngine::TerrainCallbacks {
+    #[cfg(feature = "UnityEngine+TerrainCallbacks+HeightmapChangedCallback")]
+    pub type HeightmapChangedCallback = crate::UnityEngine::TerrainCallbacks_HeightmapChangedCallback;
+    #[cfg(feature = "UnityEngine+TerrainCallbacks+TextureChangedCallback")]
+    pub type TextureChangedCallback = crate::UnityEngine::TerrainCallbacks_TextureChangedCallback;
+}
+#[cfg(feature = "UnityEngine+TerrainCallbacks")]
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TerrainCallbacks {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "UnityEngine+TerrainCallbacks+HeightmapChangedCallback")]
 #[repr(C)]
 #[derive(Debug)]
@@ -65,46 +105,6 @@ impl crate::UnityEngine::TerrainCallbacks_HeightmapChangedCallback {
 #[cfg(feature = "UnityEngine+TerrainCallbacks+HeightmapChangedCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::TerrainCallbacks_HeightmapChangedCallback {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+TerrainCallbacks")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct TerrainCallbacks {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "UnityEngine+TerrainCallbacks")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::TerrainCallbacks => "UnityEngine"
-    ."TerrainCallbacks"
-);
-#[cfg(feature = "UnityEngine+TerrainCallbacks")]
-impl std::ops::Deref for crate::UnityEngine::TerrainCallbacks {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+TerrainCallbacks")]
-impl std::ops::DerefMut for crate::UnityEngine::TerrainCallbacks {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+TerrainCallbacks")]
-impl crate::UnityEngine::TerrainCallbacks {
-    #[cfg(feature = "UnityEngine+TerrainCallbacks+HeightmapChangedCallback")]
-    pub type HeightmapChangedCallback = crate::UnityEngine::TerrainCallbacks_HeightmapChangedCallback;
-    #[cfg(feature = "UnityEngine+TerrainCallbacks+TextureChangedCallback")]
-    pub type TextureChangedCallback = crate::UnityEngine::TerrainCallbacks_TextureChangedCallback;
-}
-#[cfg(feature = "UnityEngine+TerrainCallbacks")]
-impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TerrainCallbacks {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

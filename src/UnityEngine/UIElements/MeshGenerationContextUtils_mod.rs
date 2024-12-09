@@ -1,3 +1,45 @@
+#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct MeshGenerationContextUtils {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::MeshGenerationContextUtils => "UnityEngine.UIElements"
+    ."MeshGenerationContextUtils"
+);
+#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
+impl std::ops::Deref for crate::UnityEngine::UIElements::MeshGenerationContextUtils {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
+impl std::ops::DerefMut for crate::UnityEngine::UIElements::MeshGenerationContextUtils {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
+impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
+    #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams")]
+    pub type BorderParams = crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams;
+    #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams")]
+    pub type RectangleParams = crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams;
+}
+#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UIElements::MeshGenerationContextUtils {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -52,48 +94,6 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
             (),
         )?;
         Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct MeshGenerationContextUtils {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::MeshGenerationContextUtils => "UnityEngine.UIElements"
-    ."MeshGenerationContextUtils"
-);
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
-impl std::ops::Deref for crate::UnityEngine::UIElements::MeshGenerationContextUtils {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
-impl std::ops::DerefMut for crate::UnityEngine::UIElements::MeshGenerationContextUtils {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
-impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
-    #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+BorderParams")]
-    pub type BorderParams = crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams;
-    #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams")]
-    pub type RectangleParams = crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams;
-}
-#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::MeshGenerationContextUtils {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams")]

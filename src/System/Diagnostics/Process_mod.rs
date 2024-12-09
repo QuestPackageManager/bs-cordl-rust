@@ -1,35 +1,3 @@
-#[cfg(feature = "System+Diagnostics+Process+ProcInfo")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct Process_ProcInfo {
-    pub process_handle: crate::System::IntPtr,
-    pub pid: i32,
-    pub envVariables: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
-    >,
-    pub UserName: *mut crate::System::String,
-    pub Domain: *mut crate::System::String,
-    pub Password: crate::System::IntPtr,
-    pub LoadUserProfile: bool,
-}
-#[cfg(feature = "System+Diagnostics+Process+ProcInfo")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Diagnostics::Process_ProcInfo =>
-    "System.Diagnostics"."Process/ProcInfo"
-);
-#[cfg(feature = "System+Diagnostics+Process+ProcInfo")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Diagnostics::Process_ProcInfo {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Diagnostics+Process+ProcInfo")]
-impl crate::System::Diagnostics::Process_ProcInfo {}
 #[cfg(feature = "System+Diagnostics+Process")]
 #[repr(C)]
 #[derive(Debug)]
@@ -504,6 +472,38 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Diagnostics::Process {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Diagnostics+Process+ProcInfo")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct Process_ProcInfo {
+    pub process_handle: crate::System::IntPtr,
+    pub pid: i32,
+    pub envVariables: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::System::String,
+    >,
+    pub UserName: *mut crate::System::String,
+    pub Domain: *mut crate::System::String,
+    pub Password: crate::System::IntPtr,
+    pub LoadUserProfile: bool,
+}
+#[cfg(feature = "System+Diagnostics+Process+ProcInfo")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Diagnostics::Process_ProcInfo =>
+    "System.Diagnostics"."Process/ProcInfo"
+);
+#[cfg(feature = "System+Diagnostics+Process+ProcInfo")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::Diagnostics::Process_ProcInfo {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Diagnostics+Process+ProcInfo")]
+impl crate::System::Diagnostics::Process_ProcInfo {}
 #[cfg(feature = "System+Diagnostics+Process+State")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

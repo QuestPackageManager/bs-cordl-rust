@@ -1,17 +1,3 @@
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard+Status")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum TouchScreenKeyboard_Status {
-    Canceled = 2i32,
-    Done = 1i32,
-    LostFocus = 3i32,
-    Visible = 0i32,
-}
-#[cfg(feature = "UnityEngine+TouchScreenKeyboard+Status")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::TouchScreenKeyboard_Status =>
-    "UnityEngine"."TouchScreenKeyboard/Status"
-);
 #[cfg(feature = "UnityEngine+TouchScreenKeyboard")]
 #[repr(C)]
 #[derive(Debug)]
@@ -224,3 +210,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TouchScreenKeyboa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+TouchScreenKeyboard+Status")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TouchScreenKeyboard_Status {
+    Canceled = 2i32,
+    Done = 1i32,
+    LostFocus = 3i32,
+    Visible = 0i32,
+}
+#[cfg(feature = "UnityEngine+TouchScreenKeyboard+Status")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::TouchScreenKeyboard_Status =>
+    "UnityEngine"."TouchScreenKeyboard/Status"
+);

@@ -1,83 +1,3 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct RenderChain_DepthOrderedDirtyTracking {
-    pub heads: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-    >,
-    pub tails: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::VisualElement,
-    >,
-    pub minDepths: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub maxDepths: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub dirtyID: u32,
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking =>
-    "UnityEngine.UIElements.UIR"."RenderChain/DepthOrderedDirtyTracking"
-);
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking")]
-impl crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking {
-    pub fn ClearDirty(
-        &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-        dirtyTypesInverse: crate::UnityEngine::UIElements::UIR::RenderDataDirtyTypes,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ClearDirty",
-            (ve, dirtyTypesInverse),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn EnsureFits(
-        &mut self,
-        maxDepth: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "EnsureFits",
-            (maxDepth),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RegisterDirty(
-        &mut self,
-        ve: *mut crate::UnityEngine::UIElements::VisualElement,
-        dirtyTypes: crate::UnityEngine::UIElements::UIR::RenderDataDirtyTypes,
-        dirtyTypeClass: crate::UnityEngine::UIElements::UIR::RenderDataDirtyTypeClasses,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "RegisterDirty",
-            (ve, dirtyTypes, dirtyTypeClass),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Reset",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain")]
 #[repr(C)]
 #[derive(Debug)]
@@ -786,6 +706,86 @@ for crate::UnityEngine::UIElements::UIR::RenderChain {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct RenderChain_DepthOrderedDirtyTracking {
+    pub heads: *mut crate::System::Collections::Generic::List_1<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub tails: *mut crate::System::Collections::Generic::List_1<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+    >,
+    pub minDepths: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub maxDepths: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+    pub dirtyID: u32,
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking =>
+    "UnityEngine.UIElements.UIR"."RenderChain/DepthOrderedDirtyTracking"
+);
+#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking")]
+impl crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking {
+    pub fn ClearDirty(
+        &mut self,
+        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        dirtyTypesInverse: crate::UnityEngine::UIElements::UIR::RenderDataDirtyTypes,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ClearDirty",
+            (ve, dirtyTypesInverse),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn EnsureFits(
+        &mut self,
+        maxDepth: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "EnsureFits",
+            (maxDepth),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn RegisterDirty(
+        &mut self,
+        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+        dirtyTypes: crate::UnityEngine::UIElements::UIR::RenderDataDirtyTypes,
+        dirtyTypeClass: crate::UnityEngine::UIElements::UIR::RenderDataDirtyTypeClasses,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "RegisterDirty",
+            (ve, dirtyTypes, dirtyTypeClass),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Reset",
+            (),
+        )?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(

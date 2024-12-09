@@ -1,258 +1,3 @@
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct VisualTreeAsset_AssetEntry {
-    pub path: *mut crate::System::String,
-    pub typeFullName: *mut crate::System::String,
-    pub asset: *mut crate::UnityEngine::Object,
-    pub m_CachedType: *mut crate::System::Type,
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::VisualTreeAsset_AssetEntry => "UnityEngine.UIElements"
-    ."VisualTreeAsset/AssetEntry"
-);
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
-impl crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
-    pub fn _ctor(
-        &mut self,
-        path: *mut crate::System::String,
-        _cordl_type: *mut crate::System::Type,
-        asset: *mut crate::UnityEngine::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (path, _cordl_type, asset),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_type",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct VisualTreeAsset_SlotDefinition {
-    pub name: *mut crate::System::String,
-    pub insertionPointId: i32,
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition => "UnityEngine.UIElements"
-    ."VisualTreeAsset/SlotDefinition"
-);
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
-impl crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct VisualTreeAsset_SlotUsageEntry {
-    pub slotName: *mut crate::System::String,
-    pub assetId: i32,
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry => "UnityEngine.UIElements"
-    ."VisualTreeAsset/SlotUsageEntry"
-);
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
-impl crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct VisualTreeAsset_UsingEntry {
-    pub alias: *mut crate::System::String,
-    pub path: *mut crate::System::String,
-    pub asset: *mut crate::UnityEngine::UIElements::VisualTreeAsset,
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::VisualTreeAsset_UsingEntry => "UnityEngine.UIElements"
-    ."VisualTreeAsset/UsingEntry"
-);
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
-impl crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
-    pub fn _ctor(
-        &mut self,
-        alias: *mut crate::System::String,
-        path: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (alias, path),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct VisualTreeAsset_UsingEntryComparer {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer =>
-    "UnityEngine.UIElements"."VisualTreeAsset/UsingEntryComparer"
-);
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
-impl std::ops::Deref
-for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
-impl std::ops::DerefMut
-for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
-impl crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
-    pub fn Compare(
-        &mut self,
-        x: crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
-        y: crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Compare", (x, y))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct VisualTreeAsset_UxmlObjectEntry {
-    pub parentId: i32,
-    pub uxmlObjectAssets: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::UIElements::UxmlObjectAsset,
-    >,
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry =>
-    "UnityEngine.UIElements"."VisualTreeAsset/UxmlObjectEntry"
-);
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
-impl crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
-    pub fn _ctor(
-        &mut self,
-        parentId: i32,
-        uxmlObjectAssets: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::UnityEngine::UIElements::UxmlObjectAsset,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (parentId, uxmlObjectAssets),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset")]
 #[repr(C)]
 #[derive(Debug)]
@@ -802,5 +547,260 @@ for crate::UnityEngine::UIElements::VisualTreeAsset {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct VisualTreeAsset_AssetEntry {
+    pub path: *mut crate::System::String,
+    pub typeFullName: *mut crate::System::String,
+    pub asset: *mut crate::UnityEngine::Object,
+    pub m_CachedType: *mut crate::System::Type,
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::VisualTreeAsset_AssetEntry => "UnityEngine.UIElements"
+    ."VisualTreeAsset/AssetEntry"
+);
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
+impl crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
+    pub fn _ctor(
+        &mut self,
+        path: *mut crate::System::String,
+        _cordl_type: *mut crate::System::Type,
+        asset: *mut crate::UnityEngine::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (path, _cordl_type, asset),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_type",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct VisualTreeAsset_SlotDefinition {
+    pub name: *mut crate::System::String,
+    pub insertionPointId: i32,
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition => "UnityEngine.UIElements"
+    ."VisualTreeAsset/SlotDefinition"
+);
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
+impl crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct VisualTreeAsset_SlotUsageEntry {
+    pub slotName: *mut crate::System::String,
+    pub assetId: i32,
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry => "UnityEngine.UIElements"
+    ."VisualTreeAsset/SlotUsageEntry"
+);
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
+impl crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct VisualTreeAsset_UsingEntry {
+    pub alias: *mut crate::System::String,
+    pub path: *mut crate::System::String,
+    pub asset: *mut crate::UnityEngine::UIElements::VisualTreeAsset,
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::VisualTreeAsset_UsingEntry => "UnityEngine.UIElements"
+    ."VisualTreeAsset/UsingEntry"
+);
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
+impl crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
+    pub fn _ctor(
+        &mut self,
+        alias: *mut crate::System::String,
+        path: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (alias, path),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct VisualTreeAsset_UsingEntryComparer {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer =>
+    "UnityEngine.UIElements"."VisualTreeAsset/UsingEntryComparer"
+);
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
+impl std::ops::Deref
+for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
+impl std::ops::DerefMut
+for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
+impl crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
+    pub fn Compare(
+        &mut self,
+        x: crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
+        y: crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("Compare", (x, y))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct VisualTreeAsset_UxmlObjectEntry {
+    pub parentId: i32,
+    pub uxmlObjectAssets: *mut crate::System::Collections::Generic::List_1<
+        *mut crate::UnityEngine::UIElements::UxmlObjectAsset,
+    >,
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry =>
+    "UnityEngine.UIElements"."VisualTreeAsset/UxmlObjectEntry"
+);
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
+impl crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
+    pub fn _ctor(
+        &mut self,
+        parentId: i32,
+        uxmlObjectAssets: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::UnityEngine::UIElements::UxmlObjectAsset,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (parentId, uxmlObjectAssets),
+        )?;
+        Ok(__cordl_ret)
     }
 }

@@ -1,176 +1,3 @@
-#[cfg(feature = "Tayx+Graphy+GraphyDebugger+ConditionEvaluation")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum GraphyDebugger_ConditionEvaluation {
-    All_conditions_must_be_met = 0i32,
-    Only_one_condition_has_to_be_met = 1i32,
-}
-#[cfg(feature = "Tayx+Graphy+GraphyDebugger+ConditionEvaluation")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Tayx::Graphy::GraphyDebugger_ConditionEvaluation
-    => "Tayx.Graphy"."GraphyDebugger/ConditionEvaluation"
-);
-#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugComparer")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum GraphyDebugger_DebugComparer {
-    Equals = 2i32,
-    Equals_or_greater_than = 3i32,
-    Equals_or_less_than = 1i32,
-    Greater_than = 4i32,
-    Less_than = 0i32,
-}
-#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugComparer")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Tayx::Graphy::GraphyDebugger_DebugComparer =>
-    "Tayx.Graphy"."GraphyDebugger/DebugComparer"
-);
-#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugCondition")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct GraphyDebugger_DebugCondition {
-    pub Variable: crate::Tayx::Graphy::GraphyDebugger_DebugVariable,
-    pub Comparer: crate::Tayx::Graphy::GraphyDebugger_DebugComparer,
-    pub Value: f32,
-}
-#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugCondition")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Tayx::Graphy::GraphyDebugger_DebugCondition =>
-    "Tayx.Graphy"."GraphyDebugger/DebugCondition"
-);
-#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugCondition")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Tayx::Graphy::GraphyDebugger_DebugCondition {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugCondition")]
-impl crate::Tayx::Graphy::GraphyDebugger_DebugCondition {}
-#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugPacket")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct GraphyDebugger_DebugPacket {
-    __cordl_parent: crate::System::Object,
-    pub Active: bool,
-    pub Id: i32,
-    pub ExecuteOnce: bool,
-    pub InitSleepTime: f32,
-    pub ExecuteSleepTime: f32,
-    pub ConditionEvaluation: crate::Tayx::Graphy::GraphyDebugger_ConditionEvaluation,
-    pub DebugConditions: *mut crate::System::Collections::Generic::List_1<
-        crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
-    >,
-    pub MessageType: crate::Tayx::Graphy::GraphyDebugger_MessageType,
-    pub Message: *mut crate::System::String,
-    pub TakeScreenshot: bool,
-    pub ScreenshotFileName: *mut crate::System::String,
-    pub DebugBreak: bool,
-    pub UnityEvents: *mut crate::UnityEngine::Events::UnityEvent,
-    pub Callbacks: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Action,
-    >,
-    pub canBeChecked: bool,
-    pub executed: bool,
-    pub timePassed: f32,
-}
-#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugPacket")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Tayx::Graphy::GraphyDebugger_DebugPacket =>
-    "Tayx.Graphy"."GraphyDebugger/DebugPacket"
-);
-#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugPacket")]
-impl std::ops::Deref for crate::Tayx::Graphy::GraphyDebugger_DebugPacket {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugPacket")]
-impl std::ops::DerefMut for crate::Tayx::Graphy::GraphyDebugger_DebugPacket {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugPacket")]
-impl crate::Tayx::Graphy::GraphyDebugger_DebugPacket {
-    pub fn Executed(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Executed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Check(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_Check", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugPacket")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Tayx::Graphy::GraphyDebugger_DebugPacket {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugVariable")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum GraphyDebugger_DebugVariable {
-    Audio_DB = 7i32,
-    Fps = 0i32,
-    Fps_Avg = 3i32,
-    Fps_Max = 2i32,
-    Fps_Min = 1i32,
-    Ram_Allocated = 4i32,
-    Ram_Mono = 6i32,
-    Ram_Reserved = 5i32,
-}
-#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugVariable")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Tayx::Graphy::GraphyDebugger_DebugVariable =>
-    "Tayx.Graphy"."GraphyDebugger/DebugVariable"
-);
 #[cfg(feature = "Tayx+Graphy+GraphyDebugger")]
 #[repr(C)]
 #[derive(Debug)]
@@ -515,6 +342,179 @@ impl quest_hook::libil2cpp::ObjectType for crate::Tayx::Graphy::GraphyDebugger {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+ConditionEvaluation")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum GraphyDebugger_ConditionEvaluation {
+    All_conditions_must_be_met = 0i32,
+    Only_one_condition_has_to_be_met = 1i32,
+}
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+ConditionEvaluation")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::Tayx::Graphy::GraphyDebugger_ConditionEvaluation
+    => "Tayx.Graphy"."GraphyDebugger/ConditionEvaluation"
+);
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugComparer")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum GraphyDebugger_DebugComparer {
+    Equals = 2i32,
+    Equals_or_greater_than = 3i32,
+    Equals_or_less_than = 1i32,
+    Greater_than = 4i32,
+    Less_than = 0i32,
+}
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugComparer")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::Tayx::Graphy::GraphyDebugger_DebugComparer =>
+    "Tayx.Graphy"."GraphyDebugger/DebugComparer"
+);
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugCondition")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct GraphyDebugger_DebugCondition {
+    pub Variable: crate::Tayx::Graphy::GraphyDebugger_DebugVariable,
+    pub Comparer: crate::Tayx::Graphy::GraphyDebugger_DebugComparer,
+    pub Value: f32,
+}
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugCondition")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::Tayx::Graphy::GraphyDebugger_DebugCondition =>
+    "Tayx.Graphy"."GraphyDebugger/DebugCondition"
+);
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugCondition")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::Tayx::Graphy::GraphyDebugger_DebugCondition {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugCondition")]
+impl crate::Tayx::Graphy::GraphyDebugger_DebugCondition {}
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugPacket")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct GraphyDebugger_DebugPacket {
+    __cordl_parent: crate::System::Object,
+    pub Active: bool,
+    pub Id: i32,
+    pub ExecuteOnce: bool,
+    pub InitSleepTime: f32,
+    pub ExecuteSleepTime: f32,
+    pub ConditionEvaluation: crate::Tayx::Graphy::GraphyDebugger_ConditionEvaluation,
+    pub DebugConditions: *mut crate::System::Collections::Generic::List_1<
+        crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
+    >,
+    pub MessageType: crate::Tayx::Graphy::GraphyDebugger_MessageType,
+    pub Message: *mut crate::System::String,
+    pub TakeScreenshot: bool,
+    pub ScreenshotFileName: *mut crate::System::String,
+    pub DebugBreak: bool,
+    pub UnityEvents: *mut crate::UnityEngine::Events::UnityEvent,
+    pub Callbacks: *mut crate::System::Collections::Generic::List_1<
+        *mut crate::System::Action,
+    >,
+    pub canBeChecked: bool,
+    pub executed: bool,
+    pub timePassed: f32,
+}
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugPacket")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::Tayx::Graphy::GraphyDebugger_DebugPacket =>
+    "Tayx.Graphy"."GraphyDebugger/DebugPacket"
+);
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugPacket")]
+impl std::ops::Deref for crate::Tayx::Graphy::GraphyDebugger_DebugPacket {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugPacket")]
+impl std::ops::DerefMut for crate::Tayx::Graphy::GraphyDebugger_DebugPacket {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugPacket")]
+impl crate::Tayx::Graphy::GraphyDebugger_DebugPacket {
+    pub fn Executed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Executed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Check(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_Check", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugPacket")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::Tayx::Graphy::GraphyDebugger_DebugPacket {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugVariable")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum GraphyDebugger_DebugVariable {
+    Audio_DB = 7i32,
+    Fps = 0i32,
+    Fps_Avg = 3i32,
+    Fps_Max = 2i32,
+    Fps_Min = 1i32,
+    Ram_Allocated = 4i32,
+    Ram_Mono = 6i32,
+    Ram_Reserved = 5i32,
+}
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugVariable")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::Tayx::Graphy::GraphyDebugger_DebugVariable =>
+    "Tayx.Graphy"."GraphyDebugger/DebugVariable"
+);
 #[cfg(feature = "Tayx+Graphy+GraphyDebugger+MessageType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

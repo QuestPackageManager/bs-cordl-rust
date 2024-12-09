@@ -1,17 +1,3 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum InputControlPath_HumanReadableStringOptions {
-    None = 0i32,
-    OmitDevice = 2i32,
-    UseShortNames = 4i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions =>
-    "UnityEngine.InputSystem"."InputControlPath/HumanReadableStringOptions"
-);
 #[cfg(feature = "UnityEngine+InputSystem+InputControlPath")]
 #[repr(C)]
 #[derive(Debug)]
@@ -67,6 +53,20 @@ for crate::UnityEngine::InputSystem::InputControlPath {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum InputControlPath_HumanReadableStringOptions {
+    None = 0i32,
+    OmitDevice = 2i32,
+    UseShortNames = 4i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions =>
+    "UnityEngine.InputSystem"."InputControlPath/HumanReadableStringOptions"
+);
 #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -98,7 +98,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
 #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent")]
 impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::ParsedPathComponent___c;
+    pub type __c = crate::UnityEngine::InputSystem::ParsedPathComponent_InputControlPath___c;
     pub fn Matches(
         &mut self,
         control: *mut crate::UnityEngine::InputSystem::InputControl,

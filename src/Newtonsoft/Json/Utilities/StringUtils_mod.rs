@@ -1,18 +1,3 @@
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils+SeparatedCaseState")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum StringUtils_SeparatedCaseState {
-    Lower = 1i32,
-    NewWord = 3i32,
-    Start = 0i32,
-    Upper = 2i32,
-}
-#[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils+SeparatedCaseState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::Newtonsoft::Json::Utilities::StringUtils_SeparatedCaseState =>
-    "Newtonsoft.Json.Utilities"."StringUtils/SeparatedCaseState"
-);
 #[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils")]
 #[repr(C)]
 #[derive(Debug)]
@@ -61,3 +46,18 @@ for crate::Newtonsoft::Json::Utilities::StringUtils {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils+SeparatedCaseState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum StringUtils_SeparatedCaseState {
+    Lower = 1i32,
+    NewWord = 3i32,
+    Start = 0i32,
+    Upper = 2i32,
+}
+#[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils+SeparatedCaseState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::Newtonsoft::Json::Utilities::StringUtils_SeparatedCaseState =>
+    "Newtonsoft.Json.Utilities"."StringUtils/SeparatedCaseState"
+);

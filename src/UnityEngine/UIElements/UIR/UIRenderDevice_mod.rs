@@ -1,163 +1,3 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct UIRenderDevice_AllocToFree {
-    pub alloc: crate::UnityEngine::UIElements::UIR::Alloc,
-    pub page: *mut crate::UnityEngine::UIElements::UIR::Page,
-    pub vertices: bool,
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree =>
-    "UnityEngine.UIElements.UIR"."UIRenderDevice/AllocToFree"
-);
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
-impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree {}
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct UIRenderDevice_AllocToUpdate {
-    pub id: u32,
-    pub allocTime: u32,
-    pub meshHandle: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
-    pub permAllocVerts: crate::UnityEngine::UIElements::UIR::Alloc,
-    pub permAllocIndices: crate::UnityEngine::UIElements::UIR::Alloc,
-    pub permPage: *mut crate::UnityEngine::UIElements::UIR::Page,
-    pub copyBackIndices: bool,
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate =>
-    "UnityEngine.UIElements.UIR"."UIRenderDevice/AllocToUpdate"
-);
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
-impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate {}
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DeviceToFree")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct UIRenderDevice_DeviceToFree {
-    pub handle: u32,
-    pub page: *mut crate::UnityEngine::UIElements::UIR::Page,
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DeviceToFree")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree =>
-    "UnityEngine.UIElements.UIR"."UIRenderDevice/DeviceToFree"
-);
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DeviceToFree")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DeviceToFree")]
-impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct UIRenderDevice_DrawStatistics {
-    pub currentFrameIndex: i32,
-    pub totalIndices: u32,
-    pub commandCount: u32,
-    pub drawCommandCount: u32,
-    pub materialSetCount: u32,
-    pub drawRangeCount: u32,
-    pub drawRangeCallCount: u32,
-    pub immediateDraws: u32,
-    pub stencilRefChanges: u32,
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics =>
-    "UnityEngine.UIElements.UIR"."UIRenderDevice/DrawStatistics"
-);
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
-impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics {}
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+EvaluationState")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct UIRenderDevice_EvaluationState {
-    pub stateMatProps: *mut crate::UnityEngine::MaterialPropertyBlock,
-    pub defaultMat: *mut crate::UnityEngine::Material,
-    pub curState: crate::UnityEngine::UIElements::UIR::State,
-    pub curPage: *mut crate::UnityEngine::UIElements::UIR::Page,
-    pub mustApplyMaterial: bool,
-    pub mustApplyCommonBlock: bool,
-    pub mustApplyStateBlock: bool,
-    pub mustApplyStencil: bool,
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+EvaluationState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState =>
-    "UnityEngine.UIElements.UIR"."UIRenderDevice/EvaluationState"
-);
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+EvaluationState")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+EvaluationState")]
-impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState {}
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice")]
 #[repr(C)]
 #[derive(Debug)]
@@ -742,3 +582,163 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct UIRenderDevice_AllocToFree {
+    pub alloc: crate::UnityEngine::UIElements::UIR::Alloc,
+    pub page: *mut crate::UnityEngine::UIElements::UIR::Page,
+    pub vertices: bool,
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree =>
+    "UnityEngine.UIElements.UIR"."UIRenderDevice/AllocToFree"
+);
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
+impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree {}
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct UIRenderDevice_AllocToUpdate {
+    pub id: u32,
+    pub allocTime: u32,
+    pub meshHandle: *mut crate::UnityEngine::UIElements::UIR::MeshHandle,
+    pub permAllocVerts: crate::UnityEngine::UIElements::UIR::Alloc,
+    pub permAllocIndices: crate::UnityEngine::UIElements::UIR::Alloc,
+    pub permPage: *mut crate::UnityEngine::UIElements::UIR::Page,
+    pub copyBackIndices: bool,
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate =>
+    "UnityEngine.UIElements.UIR"."UIRenderDevice/AllocToUpdate"
+);
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
+impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate {}
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DeviceToFree")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct UIRenderDevice_DeviceToFree {
+    pub handle: u32,
+    pub page: *mut crate::UnityEngine::UIElements::UIR::Page,
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DeviceToFree")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree =>
+    "UnityEngine.UIElements.UIR"."UIRenderDevice/DeviceToFree"
+);
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DeviceToFree")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DeviceToFree")]
+impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct UIRenderDevice_DrawStatistics {
+    pub currentFrameIndex: i32,
+    pub totalIndices: u32,
+    pub commandCount: u32,
+    pub drawCommandCount: u32,
+    pub materialSetCount: u32,
+    pub drawRangeCount: u32,
+    pub drawRangeCallCount: u32,
+    pub immediateDraws: u32,
+    pub stencilRefChanges: u32,
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics =>
+    "UnityEngine.UIElements.UIR"."UIRenderDevice/DrawStatistics"
+);
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
+impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics {}
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+EvaluationState")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct UIRenderDevice_EvaluationState {
+    pub stateMatProps: *mut crate::UnityEngine::MaterialPropertyBlock,
+    pub defaultMat: *mut crate::UnityEngine::Material,
+    pub curState: crate::UnityEngine::UIElements::UIR::State,
+    pub curPage: *mut crate::UnityEngine::UIElements::UIR::Page,
+    pub mustApplyMaterial: bool,
+    pub mustApplyCommonBlock: bool,
+    pub mustApplyStateBlock: bool,
+    pub mustApplyStencil: bool,
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+EvaluationState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState =>
+    "UnityEngine.UIElements.UIR"."UIRenderDevice/EvaluationState"
+);
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+EvaluationState")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+EvaluationState")]
+impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState {}

@@ -1,3 +1,88 @@
+#[cfg(feature = "PerformanceConfigurationStats")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct PerformanceConfigurationStats {
+    __cordl_parent: crate::System::Object,
+    pub processorFrequency: crate::GlobalNamespace::PerformanceConfigurationStats_IntStats,
+    pub batteryStatus: crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<
+        crate::UnityEngine::BatteryStatus,
+    >,
+    pub batteryLevel: crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats,
+    pub internetReachability: crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<
+        crate::UnityEngine::NetworkReachability,
+    >,
+    pub gpuUtilLevel: crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats,
+    pub powerSaving: crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats,
+    pub boundaryVisible: crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats,
+}
+#[cfg(feature = "PerformanceConfigurationStats")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PerformanceConfigurationStats
+    => ""."PerformanceConfigurationStats"
+);
+#[cfg(feature = "PerformanceConfigurationStats")]
+impl std::ops::Deref for crate::GlobalNamespace::PerformanceConfigurationStats {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "PerformanceConfigurationStats")]
+impl std::ops::DerefMut for crate::GlobalNamespace::PerformanceConfigurationStats {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "PerformanceConfigurationStats")]
+impl crate::GlobalNamespace::PerformanceConfigurationStats {
+    #[cfg(feature = "PerformanceConfigurationStats+BoolStats")]
+    pub type BoolStats = crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats;
+    #[cfg(feature = "PerformanceConfigurationStats+EnumStats_1")]
+    pub type EnumStats_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<
+        T,
+    >;
+    #[cfg(feature = "PerformanceConfigurationStats+FloatStats")]
+    pub type FloatStats = crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats;
+    #[cfg(feature = "PerformanceConfigurationStats+IntStats")]
+    pub type IntStats = crate::GlobalNamespace::PerformanceConfigurationStats_IntStats;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "PerformanceConfigurationStats")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PerformanceConfigurationStats {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "PerformanceConfigurationStats+BoolStats")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -198,90 +283,5 @@ impl crate::GlobalNamespace::PerformanceConfigurationStats_IntStats {
             (value),
         )?;
         Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "PerformanceConfigurationStats")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct PerformanceConfigurationStats {
-    __cordl_parent: crate::System::Object,
-    pub processorFrequency: crate::GlobalNamespace::PerformanceConfigurationStats_IntStats,
-    pub batteryStatus: crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<
-        crate::UnityEngine::BatteryStatus,
-    >,
-    pub batteryLevel: crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats,
-    pub internetReachability: crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<
-        crate::UnityEngine::NetworkReachability,
-    >,
-    pub gpuUtilLevel: crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats,
-    pub powerSaving: crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats,
-    pub boundaryVisible: crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats,
-}
-#[cfg(feature = "PerformanceConfigurationStats")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::PerformanceConfigurationStats
-    => ""."PerformanceConfigurationStats"
-);
-#[cfg(feature = "PerformanceConfigurationStats")]
-impl std::ops::Deref for crate::GlobalNamespace::PerformanceConfigurationStats {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "PerformanceConfigurationStats")]
-impl std::ops::DerefMut for crate::GlobalNamespace::PerformanceConfigurationStats {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "PerformanceConfigurationStats")]
-impl crate::GlobalNamespace::PerformanceConfigurationStats {
-    #[cfg(feature = "PerformanceConfigurationStats+BoolStats")]
-    pub type BoolStats = crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats;
-    #[cfg(feature = "PerformanceConfigurationStats+EnumStats_1")]
-    pub type EnumStats_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<
-        T,
-    >;
-    #[cfg(feature = "PerformanceConfigurationStats+FloatStats")]
-    pub type FloatStats = crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats;
-    #[cfg(feature = "PerformanceConfigurationStats+IntStats")]
-    pub type IntStats = crate::GlobalNamespace::PerformanceConfigurationStats_IntStats;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "PerformanceConfigurationStats")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::PerformanceConfigurationStats {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }

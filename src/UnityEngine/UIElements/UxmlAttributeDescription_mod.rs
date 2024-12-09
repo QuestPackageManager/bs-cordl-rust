@@ -1,18 +1,3 @@
-#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeDescription+Use")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum UxmlAttributeDescription_Use {
-    None = 0i32,
-    Optional = 1i32,
-    Prohibited = 2i32,
-    Required = 3i32,
-}
-#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeDescription+Use")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::UxmlAttributeDescription_Use => "UnityEngine.UIElements"
-    ."UxmlAttributeDescription/Use"
-);
 #[cfg(feature = "UnityEngine+UIElements+UxmlAttributeDescription")]
 #[repr(C)]
 #[derive(Debug)]
@@ -209,3 +194,18 @@ for crate::UnityEngine::UIElements::UxmlAttributeDescription {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeDescription+Use")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum UxmlAttributeDescription_Use {
+    None = 0i32,
+    Optional = 1i32,
+    Prohibited = 2i32,
+    Required = 3i32,
+}
+#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeDescription+Use")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::UxmlAttributeDescription_Use => "UnityEngine.UIElements"
+    ."UxmlAttributeDescription/Use"
+);

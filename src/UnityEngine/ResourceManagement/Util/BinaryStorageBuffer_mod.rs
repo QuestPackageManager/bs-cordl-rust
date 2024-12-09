@@ -130,11 +130,11 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTy
     #[cfg(
         feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
     )]
-    pub type ObjectToStringRemap = crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_ObjectToStringRemap;
+    pub type ObjectToStringRemap = crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap;
     #[cfg(
         feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+__c__DisplayClass4_0"
     )]
-    pub type __c__DisplayClass4_0 = crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer___c__DisplayClass4_0;
+    pub type __c__DisplayClass4_0 = crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer___c__DisplayClass4_0;
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader,
@@ -215,97 +215,6 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTyp
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct Writer_Chunk {
-    __cordl_parent: crate::System::Object,
-    pub position: u32,
-    pub data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::Util::Writer_Chunk =>
-    "UnityEngine.ResourceManagement.Util"."BinaryStorageBuffer/Writer/Chunk"
-);
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
-impl std::ops::Deref for crate::UnityEngine::ResourceManagement::Util::Writer_Chunk {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
-impl std::ops::DerefMut for crate::UnityEngine::ResourceManagement::Util::Writer_Chunk {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
-impl crate::UnityEngine::ResourceManagement::Util::Writer_Chunk {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::ResourceManagement::Util::Writer_Chunk {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
-)]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct TypeSerializer_Data {
-    pub assemblyId: u32,
-    pub classId: u32,
-}
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::Util::TypeSerializer_Data =>
-    "UnityEngine.ResourceManagement.Util"."BinaryStorageBuffer/TypeSerializer/Data"
-);
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
-)]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_Data {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
-)]
-impl crate::UnityEngine::ResourceManagement::Util::TypeSerializer_Data {}
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -497,41 +406,6 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
-)]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct BuiltinTypesSerializer_ObjectToStringRemap {
-    pub stringId: u32,
-    pub separator: char,
-}
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_ObjectToStringRemap
-    => "UnityEngine.ResourceManagement.Util"
-    ."BinaryStorageBuffer/BuiltinTypesSerializer/ObjectToStringRemap"
-);
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
-)]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_ObjectToStringRemap {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
-)]
-impl crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_ObjectToStringRemap {}
 #[cfg(
     feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
 )]
@@ -895,41 +769,6 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
     }
 }
 #[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
-)]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct Writer_StringParts {
-    pub str: *mut crate::System::String,
-    pub dataSize: u32,
-    pub isUnicode: bool,
-}
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::ResourceManagement::Util::Writer_StringParts =>
-    "UnityEngine.ResourceManagement.Util"."BinaryStorageBuffer/Writer/StringParts"
-);
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
-)]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::ResourceManagement::Util::Writer_StringParts {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
-)]
-impl crate::UnityEngine::ResourceManagement::Util::Writer_StringParts {}
-#[cfg(
     feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
 )]
 #[repr(C)]
@@ -971,7 +810,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSeria
     #[cfg(
         feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
     )]
-    pub type Data = crate::UnityEngine::ResourceManagement::Util::TypeSerializer_Data;
+    pub type Data = crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data;
     pub fn Deserialize(
         &mut self,
         reader: *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader,
@@ -1049,7 +888,7 @@ pub struct BinaryStorageBuffer_Writer {
     pub totalBytes: u32,
     pub defaulChunkSize: u32,
     pub chunks: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::UnityEngine::ResourceManagement::Util::Writer_Chunk,
+        *mut crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk,
     >,
     pub existingValues: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::UnityEngine::Hash128,
@@ -1086,21 +925,21 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
     #[cfg(
         feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk"
     )]
-    pub type Chunk = crate::UnityEngine::ResourceManagement::Util::Writer_Chunk;
+    pub type Chunk = crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk;
     #[cfg(
         feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
     )]
-    pub type StringParts = crate::UnityEngine::ResourceManagement::Util::Writer_StringParts;
+    pub type StringParts = crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts;
     pub fn FindChunkWithSpace(
         &mut self,
         length: u32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::ResourceManagement::Util::Writer_Chunk,
+        *mut crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::UnityEngine::ResourceManagement::Util::Writer_Chunk = __cordl_object
+        let __cordl_ret: *mut crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk = __cordl_object
             .invoke("FindChunkWithSpace", (length))?;
         Ok(__cordl_ret)
     }
@@ -1119,7 +958,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
     pub fn RecurseDynamicStringParts(
         &mut self,
         parts: *mut quest_hook::libil2cpp::Il2CppArray<
-            crate::UnityEngine::ResourceManagement::Util::Writer_StringParts,
+            crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts,
         >,
         index: i32,
         sep: char,
@@ -1413,3 +1252,166 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
+)]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap {
+    pub stringId: u32,
+    pub separator: char,
+}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap
+    => "UnityEngine.ResourceManagement.Util"
+    ."BinaryStorageBuffer/BuiltinTypesSerializer/ObjectToStringRemap"
+);
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
+)]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
+)]
+impl crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap {}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
+)]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct TypeSerializer_BinaryStorageBuffer_Data {
+    pub assemblyId: u32,
+    pub classId: u32,
+}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data =>
+    "UnityEngine.ResourceManagement.Util"."BinaryStorageBuffer/TypeSerializer/Data"
+);
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
+)]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
+)]
+impl crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {}
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct Writer_BinaryStorageBuffer_Chunk {
+    __cordl_parent: crate::System::Object,
+    pub position: u32,
+    pub data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk =>
+    "UnityEngine.ResourceManagement.Util"."BinaryStorageBuffer/Writer/Chunk"
+);
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
+impl std::ops::Deref
+for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
+impl std::ops::DerefMut
+for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
+impl crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
+)]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct Writer_BinaryStorageBuffer_StringParts {
+    pub str: *mut crate::System::String,
+    pub dataSize: u32,
+    pub isUnicode: bool,
+}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts =>
+    "UnityEngine.ResourceManagement.Util"."BinaryStorageBuffer/Writer/StringParts"
+);
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
+)]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
+)]
+impl crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts {}

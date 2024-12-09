@@ -1,15 +1,3 @@
-#[cfg(feature = "EulaViewController+ButtonType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum EulaViewController_ButtonType {
-    Agree = 0i32,
-    DoNotAgree = 1i32,
-}
-#[cfg(feature = "EulaViewController+ButtonType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::EulaViewController_ButtonType
-    => ""."EulaViewController/ButtonType"
-);
 #[cfg(feature = "EulaViewController")]
 #[repr(C)]
 #[derive(Debug)]
@@ -192,6 +180,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EulaViewContr
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "EulaViewController+ButtonType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum EulaViewController_ButtonType {
+    Agree = 0i32,
+    DoNotAgree = 1i32,
+}
+#[cfg(feature = "EulaViewController+ButtonType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::EulaViewController_ButtonType
+    => ""."EulaViewController/ButtonType"
+);
 #[cfg(feature = "EulaViewController+InitData")]
 #[repr(C)]
 #[derive(Debug)]

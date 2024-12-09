@@ -1,3 +1,103 @@
+#[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct X962NamedCurves {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Asn1::X9::X962NamedCurves =>
+    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves"
+);
+#[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves")]
+impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves")]
+impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves")]
+impl crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves {
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb163v1Holder")]
+    pub type C2pnb163v1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb163v2Holder")]
+    pub type C2pnb163v2Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v2Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb163v3Holder")]
+    pub type C2pnb163v3Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v3Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb176w1Holder")]
+    pub type C2pnb176w1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb176w1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb208w1Holder")]
+    pub type C2pnb208w1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb208w1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb272w1Holder")]
+    pub type C2pnb272w1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb272w1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb304w1Holder")]
+    pub type C2pnb304w1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb304w1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb368w1Holder")]
+    pub type C2pnb368w1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb368w1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb191v1Holder")]
+    pub type C2tnb191v1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb191v2Holder")]
+    pub type C2tnb191v2Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v2Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb191v3Holder")]
+    pub type C2tnb191v3Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v3Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb239v1Holder")]
+    pub type C2tnb239v1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb239v2Holder")]
+    pub type C2tnb239v2Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v2Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb239v3Holder")]
+    pub type C2tnb239v3Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v3Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb359v1Holder")]
+    pub type C2tnb359v1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb359v1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb431r1Holder")]
+    pub type C2tnb431r1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb431r1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime192v1Holder")]
+    pub type Prime192v1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime192v2Holder")]
+    pub type Prime192v2Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v2Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime192v3Holder")]
+    pub type Prime192v3Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v3Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime239v1Holder")]
+    pub type Prime239v1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v1Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime239v2Holder")]
+    pub type Prime239v2Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v2Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime239v3Holder")]
+    pub type Prime239v3Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v3Holder;
+    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime256v1Holder")]
+    pub type Prime256v1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime256v1Holder;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb163v1Holder")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1578,106 +1678,6 @@ impl crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime256v1Holder {
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime256v1Holder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime256v1Holder {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct X962NamedCurves {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Asn1::X9::X962NamedCurves =>
-    "Org.BouncyCastle.Asn1.X9"."X962NamedCurves"
-);
-#[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves")]
-impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves")]
-impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves")]
-impl crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves {
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb163v1Holder")]
-    pub type C2pnb163v1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb163v2Holder")]
-    pub type C2pnb163v2Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v2Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb163v3Holder")]
-    pub type C2pnb163v3Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb163v3Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb176w1Holder")]
-    pub type C2pnb176w1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb176w1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb208w1Holder")]
-    pub type C2pnb208w1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb208w1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb272w1Holder")]
-    pub type C2pnb272w1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb272w1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb304w1Holder")]
-    pub type C2pnb304w1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb304w1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2pnb368w1Holder")]
-    pub type C2pnb368w1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2pnb368w1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb191v1Holder")]
-    pub type C2tnb191v1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb191v2Holder")]
-    pub type C2tnb191v2Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v2Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb191v3Holder")]
-    pub type C2tnb191v3Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb191v3Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb239v1Holder")]
-    pub type C2tnb239v1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb239v2Holder")]
-    pub type C2tnb239v2Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v2Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb239v3Holder")]
-    pub type C2tnb239v3Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb239v3Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb359v1Holder")]
-    pub type C2tnb359v1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb359v1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+C2tnb431r1Holder")]
-    pub type C2tnb431r1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_C2tnb431r1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime192v1Holder")]
-    pub type Prime192v1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime192v2Holder")]
-    pub type Prime192v2Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v2Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime192v3Holder")]
-    pub type Prime192v3Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime192v3Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime239v1Holder")]
-    pub type Prime239v1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v1Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime239v2Holder")]
-    pub type Prime239v2Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v2Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime239v3Holder")]
-    pub type Prime239v3Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime239v3Holder;
-    #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves+Prime256v1Holder")]
-    pub type Prime256v1Holder = crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves_Prime256v1Holder;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "Org+BouncyCastle+Asn1+X9+X962NamedCurves")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Asn1::X9::X962NamedCurves {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

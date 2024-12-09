@@ -1,16 +1,3 @@
-#[cfg(feature = "System+Xml+Schema+SchemaAttDef+Reserve")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum SchemaAttDef_Reserve {
-    None = 0i32,
-    XmlLang = 2i32,
-    XmlSpace = 1i32,
-}
-#[cfg(feature = "System+Xml+Schema+SchemaAttDef+Reserve")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::Schema::SchemaAttDef_Reserve =>
-    "System.Xml.Schema"."SchemaAttDef/Reserve"
-);
 #[cfg(feature = "System+Xml+Schema+SchemaAttDef")]
 #[repr(C)]
 #[derive(Debug)]
@@ -414,3 +401,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::SchemaAtt
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+Schema+SchemaAttDef+Reserve")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum SchemaAttDef_Reserve {
+    None = 0i32,
+    XmlLang = 2i32,
+    XmlSpace = 1i32,
+}
+#[cfg(feature = "System+Xml+Schema+SchemaAttDef+Reserve")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::Schema::SchemaAttDef_Reserve =>
+    "System.Xml.Schema"."SchemaAttDef/Reserve"
+);

@@ -1,3 +1,224 @@
+#[cfg(feature = "OVRSkeletonRenderer")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRSkeletonRenderer {
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    pub _dataProvider: *mut crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider,
+    pub _confidenceBehavior: crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior,
+    pub _systemGestureBehavior: crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior,
+    pub _renderPhysicsCapsules: bool,
+    pub _skeletonMaterial: *mut crate::UnityEngine::Material,
+    pub _skeletonDefaultMaterial: *mut crate::UnityEngine::Material,
+    pub _capsuleMaterial: *mut crate::UnityEngine::Material,
+    pub _capsuleDefaultMaterial: *mut crate::UnityEngine::Material,
+    pub _systemGestureMaterial: *mut crate::UnityEngine::Material,
+    pub _systemGestureDefaultMaterial: *mut crate::UnityEngine::Material,
+    pub _boneVisualizations: *mut crate::System::Collections::Generic::List_1<
+        *mut crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization,
+    >,
+    pub _capsuleVisualizations: *mut crate::System::Collections::Generic::List_1<
+        *mut crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization,
+    >,
+    pub _ovrSkeleton: *mut crate::GlobalNamespace::OVRSkeleton,
+    pub _skeletonGO: *mut crate::UnityEngine::GameObject,
+    pub _scale: f32,
+    pub _IsInitialized_k__BackingField: bool,
+    pub _IsDataValid_k__BackingField: bool,
+    pub _IsDataHighConfidence_k__BackingField: bool,
+    pub _ShouldUseSystemGestureMaterial_k__BackingField: bool,
+}
+#[cfg(feature = "OVRSkeletonRenderer")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRSkeletonRenderer => ""
+    ."OVRSkeletonRenderer"
+);
+#[cfg(feature = "OVRSkeletonRenderer")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRSkeletonRenderer {
+    type Target = crate::UnityEngine::MonoBehaviour;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRSkeletonRenderer")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRSkeletonRenderer {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRSkeletonRenderer")]
+impl crate::GlobalNamespace::OVRSkeletonRenderer {
+    pub const LINE_RENDERER_WIDTH: f32 = 0.005f32;
+    #[cfg(feature = "OVRSkeletonRenderer+BoneVisualization")]
+    pub type BoneVisualization = crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization;
+    #[cfg(feature = "OVRSkeletonRenderer+CapsuleVisualization")]
+    pub type CapsuleVisualization = crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization;
+    #[cfg(feature = "OVRSkeletonRenderer+ConfidenceBehavior")]
+    pub type ConfidenceBehavior = crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior;
+    #[cfg(feature = "OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
+    type IOVRSkeletonRendererDataProvider = crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider;
+    #[cfg(feature = "OVRSkeletonRenderer+SkeletonRendererData")]
+    pub type SkeletonRendererData = crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData;
+    #[cfg(feature = "OVRSkeletonRenderer+SystemGestureBehavior")]
+    pub type SystemGestureBehavior = crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior;
+    pub fn Awake(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Awake", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Initialize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Initialize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ShouldInitialize(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ShouldInitialize", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Start(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Start", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsDataHighConfidence(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsDataHighConfidence", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsDataValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsDataValid", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsInitialized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_IsInitialized", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_ShouldUseSystemGestureMaterial(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_ShouldUseSystemGestureMaterial", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_IsDataHighConfidence(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IsDataHighConfidence", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_IsDataValid(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IsDataValid", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_IsInitialized(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IsInitialized", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_ShouldUseSystemGestureMaterial(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_ShouldUseSystemGestureMaterial", (value))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "OVRSkeletonRenderer")]
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSkeletonRenderer {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "OVRSkeletonRenderer+BoneVisualization")]
 #[repr(C)]
 #[derive(Debug)]
@@ -264,227 +485,6 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvide
 #[cfg(feature = "OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "OVRSkeletonRenderer")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct OVRSkeletonRenderer {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _dataProvider: *mut crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider,
-    pub _confidenceBehavior: crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior,
-    pub _systemGestureBehavior: crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior,
-    pub _renderPhysicsCapsules: bool,
-    pub _skeletonMaterial: *mut crate::UnityEngine::Material,
-    pub _skeletonDefaultMaterial: *mut crate::UnityEngine::Material,
-    pub _capsuleMaterial: *mut crate::UnityEngine::Material,
-    pub _capsuleDefaultMaterial: *mut crate::UnityEngine::Material,
-    pub _systemGestureMaterial: *mut crate::UnityEngine::Material,
-    pub _systemGestureDefaultMaterial: *mut crate::UnityEngine::Material,
-    pub _boneVisualizations: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization,
-    >,
-    pub _capsuleVisualizations: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization,
-    >,
-    pub _ovrSkeleton: *mut crate::GlobalNamespace::OVRSkeleton,
-    pub _skeletonGO: *mut crate::UnityEngine::GameObject,
-    pub _scale: f32,
-    pub _IsInitialized_k__BackingField: bool,
-    pub _IsDataValid_k__BackingField: bool,
-    pub _IsDataHighConfidence_k__BackingField: bool,
-    pub _ShouldUseSystemGestureMaterial_k__BackingField: bool,
-}
-#[cfg(feature = "OVRSkeletonRenderer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRSkeletonRenderer => ""
-    ."OVRSkeletonRenderer"
-);
-#[cfg(feature = "OVRSkeletonRenderer")]
-impl std::ops::Deref for crate::GlobalNamespace::OVRSkeletonRenderer {
-    type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRSkeletonRenderer")]
-impl std::ops::DerefMut for crate::GlobalNamespace::OVRSkeletonRenderer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRSkeletonRenderer")]
-impl crate::GlobalNamespace::OVRSkeletonRenderer {
-    pub const LINE_RENDERER_WIDTH: f32 = 0.005f32;
-    #[cfg(feature = "OVRSkeletonRenderer+BoneVisualization")]
-    pub type BoneVisualization = crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization;
-    #[cfg(feature = "OVRSkeletonRenderer+CapsuleVisualization")]
-    pub type CapsuleVisualization = crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization;
-    #[cfg(feature = "OVRSkeletonRenderer+ConfidenceBehavior")]
-    pub type ConfidenceBehavior = crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior;
-    #[cfg(feature = "OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
-    type IOVRSkeletonRendererDataProvider = crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider;
-    #[cfg(feature = "OVRSkeletonRenderer+SkeletonRendererData")]
-    pub type SkeletonRendererData = crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData;
-    #[cfg(feature = "OVRSkeletonRenderer+SystemGestureBehavior")]
-    pub type SystemGestureBehavior = crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior;
-    pub fn Awake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Awake", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Initialize(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Initialize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn OnDestroy(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDestroy", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ShouldInitialize(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ShouldInitialize", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Update(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsDataHighConfidence(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsDataHighConfidence", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsDataValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsDataValid", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsInitialized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_IsInitialized", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_ShouldUseSystemGestureMaterial(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_ShouldUseSystemGestureMaterial", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_IsDataHighConfidence(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsDataHighConfidence", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_IsDataValid(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsDataValid", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_IsInitialized(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_IsInitialized", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_ShouldUseSystemGestureMaterial(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ShouldUseSystemGestureMaterial", (value))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "OVRSkeletonRenderer")]
-impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSkeletonRenderer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

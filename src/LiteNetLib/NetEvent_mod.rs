@@ -1,22 +1,3 @@
-#[cfg(feature = "LiteNetLib+NetEvent+EType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum NetEvent_EType {
-    Broadcast = 6i32,
-    Connect = 0i32,
-    ConnectionLatencyUpdated = 5i32,
-    ConnectionRequest = 7i32,
-    Disconnect = 1i32,
-    Error = 4i32,
-    MessageDelivered = 8i32,
-    Receive = 2i32,
-    ReceiveUnconnected = 3i32,
-}
-#[cfg(feature = "LiteNetLib+NetEvent+EType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::LiteNetLib::NetEvent_EType => "LiteNetLib"
-    ."NetEvent/EType"
-);
 #[cfg(feature = "LiteNetLib+NetEvent")]
 #[repr(C)]
 #[derive(Debug)]
@@ -84,3 +65,22 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NetEvent {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "LiteNetLib+NetEvent+EType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum NetEvent_EType {
+    Broadcast = 6i32,
+    Connect = 0i32,
+    ConnectionLatencyUpdated = 5i32,
+    ConnectionRequest = 7i32,
+    Disconnect = 1i32,
+    Error = 4i32,
+    MessageDelivered = 8i32,
+    Receive = 2i32,
+    ReceiveUnconnected = 3i32,
+}
+#[cfg(feature = "LiteNetLib+NetEvent+EType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::LiteNetLib::NetEvent_EType => "LiteNetLib"
+    ."NetEvent/EType"
+);

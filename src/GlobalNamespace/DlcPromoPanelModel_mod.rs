@@ -427,7 +427,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DlcPromoPanel
 #[derive(Debug)]
 pub struct DlcPromoPanelModel_PromoInfo {
     __cordl_parent: crate::System::Object,
-    pub promoType: crate::GlobalNamespace::PromoInfo_PromoType,
+    pub promoType: crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType,
     pub id: *mut crate::System::String,
     pub contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
     pub bannerImage: *mut crate::UnityEngine::Sprite,
@@ -455,7 +455,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo
 #[cfg(feature = "DlcPromoPanelModel+PromoInfo")]
 impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
     #[cfg(feature = "DlcPromoPanelModel+PromoInfo+PromoType")]
-    pub type PromoType = crate::GlobalNamespace::PromoInfo_PromoType;
+    pub type PromoType = crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType;
     pub fn New_PackPromoInfoSO_LevelPromoInfo_PlayerSensitivityFlag1(
         levelPromoInfo: *mut crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
         contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
@@ -516,12 +516,13 @@ for crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
 #[cfg(feature = "DlcPromoPanelModel+PromoInfo+PromoType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum PromoInfo_PromoType {
+pub enum PromoInfo_DlcPromoPanelModel_PromoType {
     Level = 1i32,
     Pack = 0i32,
 }
 #[cfg(feature = "DlcPromoPanelModel+PromoInfo+PromoType")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::PromoInfo_PromoType => ""
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType => ""
     ."DlcPromoPanelModel/PromoInfo/PromoType"
 );

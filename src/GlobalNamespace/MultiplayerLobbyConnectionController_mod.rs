@@ -1,33 +1,3 @@
-#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionState")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum MultiplayerLobbyConnectionController_LobbyConnectionState {
-    Connected = 2i32,
-    Connecting = 1i32,
-    ConnectionFailed = 3i32,
-    None = 0i32,
-}
-#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionState => ""
-    ."MultiplayerLobbyConnectionController/LobbyConnectionState"
-);
-#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum MultiplayerLobbyConnectionController_LobbyConnectionType {
-    None = 0i32,
-    PartyClient = 2i32,
-    PartyHost = 1i32,
-    QuickPlay = 3i32,
-}
-#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType => ""
-    ."MultiplayerLobbyConnectionController/LobbyConnectionType"
-);
 #[cfg(feature = "MultiplayerLobbyConnectionController")]
 #[repr(C)]
 #[derive(Debug)]
@@ -333,3 +303,33 @@ for crate::GlobalNamespace::MultiplayerLobbyConnectionController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum MultiplayerLobbyConnectionController_LobbyConnectionState {
+    Connected = 2i32,
+    Connecting = 1i32,
+    ConnectionFailed = 3i32,
+    None = 0i32,
+}
+#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionState => ""
+    ."MultiplayerLobbyConnectionController/LobbyConnectionState"
+);
+#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum MultiplayerLobbyConnectionController_LobbyConnectionType {
+    None = 0i32,
+    PartyClient = 2i32,
+    PartyHost = 1i32,
+    QuickPlay = 3i32,
+}
+#[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType => ""
+    ."MultiplayerLobbyConnectionController/LobbyConnectionType"
+);

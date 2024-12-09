@@ -1,3 +1,201 @@
+#[cfg(feature = "System+Linq+Expressions+Expression")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct Expression {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "System+Linq+Expressions+Expression")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::Linq::Expressions::Expression =>
+    "System.Linq.Expressions"."Expression"
+);
+#[cfg(feature = "System+Linq+Expressions+Expression")]
+impl std::ops::Deref for crate::System::Linq::Expressions::Expression {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Linq+Expressions+Expression")]
+impl std::ops::DerefMut for crate::System::Linq::Expressions::Expression {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Linq+Expressions+Expression")]
+impl crate::System::Linq::Expressions::Expression {
+    #[cfg(feature = "System+Linq+Expressions+Expression+BinaryExpressionProxy")]
+    pub type BinaryExpressionProxy = crate::System::Linq::Expressions::Expression_BinaryExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+BlockExpressionProxy")]
+    pub type BlockExpressionProxy = crate::System::Linq::Expressions::Expression_BlockExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+CatchBlockProxy")]
+    pub type CatchBlockProxy = crate::System::Linq::Expressions::Expression_CatchBlockProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+ConditionalExpressionProxy")]
+    pub type ConditionalExpressionProxy = crate::System::Linq::Expressions::Expression_ConditionalExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+ConstantExpressionProxy")]
+    pub type ConstantExpressionProxy = crate::System::Linq::Expressions::Expression_ConstantExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+DebugInfoExpressionProxy")]
+    pub type DebugInfoExpressionProxy = crate::System::Linq::Expressions::Expression_DebugInfoExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+DefaultExpressionProxy")]
+    pub type DefaultExpressionProxy = crate::System::Linq::Expressions::Expression_DefaultExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+ExtensionInfo")]
+    pub type ExtensionInfo = crate::System::Linq::Expressions::Expression_ExtensionInfo;
+    #[cfg(feature = "System+Linq+Expressions+Expression+GotoExpressionProxy")]
+    pub type GotoExpressionProxy = crate::System::Linq::Expressions::Expression_GotoExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+IndexExpressionProxy")]
+    pub type IndexExpressionProxy = crate::System::Linq::Expressions::Expression_IndexExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+InvocationExpressionProxy")]
+    pub type InvocationExpressionProxy = crate::System::Linq::Expressions::Expression_InvocationExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+LabelExpressionProxy")]
+    pub type LabelExpressionProxy = crate::System::Linq::Expressions::Expression_LabelExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+LambdaExpressionProxy")]
+    pub type LambdaExpressionProxy = crate::System::Linq::Expressions::Expression_LambdaExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+ListInitExpressionProxy")]
+    pub type ListInitExpressionProxy = crate::System::Linq::Expressions::Expression_ListInitExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+LoopExpressionProxy")]
+    pub type LoopExpressionProxy = crate::System::Linq::Expressions::Expression_LoopExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+MemberExpressionProxy")]
+    pub type MemberExpressionProxy = crate::System::Linq::Expressions::Expression_MemberExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+MemberInitExpressionProxy")]
+    pub type MemberInitExpressionProxy = crate::System::Linq::Expressions::Expression_MemberInitExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+MethodCallExpressionProxy")]
+    pub type MethodCallExpressionProxy = crate::System::Linq::Expressions::Expression_MethodCallExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+NewArrayExpressionProxy")]
+    pub type NewArrayExpressionProxy = crate::System::Linq::Expressions::Expression_NewArrayExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+NewExpressionProxy")]
+    pub type NewExpressionProxy = crate::System::Linq::Expressions::Expression_NewExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+ParameterExpressionProxy")]
+    pub type ParameterExpressionProxy = crate::System::Linq::Expressions::Expression_ParameterExpressionProxy;
+    #[cfg(
+        feature = "System+Linq+Expressions+Expression+RuntimeVariablesExpressionProxy"
+    )]
+    pub type RuntimeVariablesExpressionProxy = crate::System::Linq::Expressions::Expression_RuntimeVariablesExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+SwitchCaseProxy")]
+    pub type SwitchCaseProxy = crate::System::Linq::Expressions::Expression_SwitchCaseProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+SwitchExpressionProxy")]
+    pub type SwitchExpressionProxy = crate::System::Linq::Expressions::Expression_SwitchExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+TryExpressionProxy")]
+    pub type TryExpressionProxy = crate::System::Linq::Expressions::Expression_TryExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+TypeBinaryExpressionProxy")]
+    pub type TypeBinaryExpressionProxy = crate::System::Linq::Expressions::Expression_TypeBinaryExpressionProxy;
+    #[cfg(feature = "System+Linq+Expressions+Expression+UnaryExpressionProxy")]
+    pub type UnaryExpressionProxy = crate::System::Linq::Expressions::Expression_UnaryExpressionProxy;
+    pub fn Accept(
+        &mut self,
+        visitor: *mut crate::System::Linq::Expressions::ExpressionVisitor,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Linq::Expressions::Expression,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
+            .invoke("Accept", (visitor))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn Reduce(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Linq::Expressions::Expression,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
+            .invoke("Reduce", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReduceAndCheck(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Linq::Expressions::Expression,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
+            .invoke("ReduceAndCheck", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn VisitChildren(
+        &mut self,
+        visitor: *mut crate::System::Linq::Expressions::ExpressionVisitor,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Linq::Expressions::Expression,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
+            .invoke("VisitChildren", (visitor))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CanReduce(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_CanReduce", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_NodeType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Linq::Expressions::ExpressionType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::Linq::Expressions::ExpressionType = __cordl_object
+            .invoke("get_NodeType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Type(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Type = __cordl_object
+            .invoke("get_Type", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Linq+Expressions+Expression")]
+impl quest_hook::libil2cpp::ObjectType for crate::System::Linq::Expressions::Expression {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Expression+BinaryExpressionProxy")]
 #[repr(C)]
 #[derive(Debug)]
@@ -263,204 +461,6 @@ impl crate::System::Linq::Expressions::Expression_DefaultExpressionProxy {}
 #[cfg(feature = "System+Linq+Expressions+Expression+DefaultExpressionProxy")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Expression_DefaultExpressionProxy {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+Linq+Expressions+Expression")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct Expression {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "System+Linq+Expressions+Expression")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Linq::Expressions::Expression =>
-    "System.Linq.Expressions"."Expression"
-);
-#[cfg(feature = "System+Linq+Expressions+Expression")]
-impl std::ops::Deref for crate::System::Linq::Expressions::Expression {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Linq+Expressions+Expression")]
-impl std::ops::DerefMut for crate::System::Linq::Expressions::Expression {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Linq+Expressions+Expression")]
-impl crate::System::Linq::Expressions::Expression {
-    #[cfg(feature = "System+Linq+Expressions+Expression+BinaryExpressionProxy")]
-    pub type BinaryExpressionProxy = crate::System::Linq::Expressions::Expression_BinaryExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+BlockExpressionProxy")]
-    pub type BlockExpressionProxy = crate::System::Linq::Expressions::Expression_BlockExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+CatchBlockProxy")]
-    pub type CatchBlockProxy = crate::System::Linq::Expressions::Expression_CatchBlockProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+ConditionalExpressionProxy")]
-    pub type ConditionalExpressionProxy = crate::System::Linq::Expressions::Expression_ConditionalExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+ConstantExpressionProxy")]
-    pub type ConstantExpressionProxy = crate::System::Linq::Expressions::Expression_ConstantExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+DebugInfoExpressionProxy")]
-    pub type DebugInfoExpressionProxy = crate::System::Linq::Expressions::Expression_DebugInfoExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+DefaultExpressionProxy")]
-    pub type DefaultExpressionProxy = crate::System::Linq::Expressions::Expression_DefaultExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+ExtensionInfo")]
-    pub type ExtensionInfo = crate::System::Linq::Expressions::Expression_ExtensionInfo;
-    #[cfg(feature = "System+Linq+Expressions+Expression+GotoExpressionProxy")]
-    pub type GotoExpressionProxy = crate::System::Linq::Expressions::Expression_GotoExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+IndexExpressionProxy")]
-    pub type IndexExpressionProxy = crate::System::Linq::Expressions::Expression_IndexExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+InvocationExpressionProxy")]
-    pub type InvocationExpressionProxy = crate::System::Linq::Expressions::Expression_InvocationExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+LabelExpressionProxy")]
-    pub type LabelExpressionProxy = crate::System::Linq::Expressions::Expression_LabelExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+LambdaExpressionProxy")]
-    pub type LambdaExpressionProxy = crate::System::Linq::Expressions::Expression_LambdaExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+ListInitExpressionProxy")]
-    pub type ListInitExpressionProxy = crate::System::Linq::Expressions::Expression_ListInitExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+LoopExpressionProxy")]
-    pub type LoopExpressionProxy = crate::System::Linq::Expressions::Expression_LoopExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+MemberExpressionProxy")]
-    pub type MemberExpressionProxy = crate::System::Linq::Expressions::Expression_MemberExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+MemberInitExpressionProxy")]
-    pub type MemberInitExpressionProxy = crate::System::Linq::Expressions::Expression_MemberInitExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+MethodCallExpressionProxy")]
-    pub type MethodCallExpressionProxy = crate::System::Linq::Expressions::Expression_MethodCallExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+NewArrayExpressionProxy")]
-    pub type NewArrayExpressionProxy = crate::System::Linq::Expressions::Expression_NewArrayExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+NewExpressionProxy")]
-    pub type NewExpressionProxy = crate::System::Linq::Expressions::Expression_NewExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+ParameterExpressionProxy")]
-    pub type ParameterExpressionProxy = crate::System::Linq::Expressions::Expression_ParameterExpressionProxy;
-    #[cfg(
-        feature = "System+Linq+Expressions+Expression+RuntimeVariablesExpressionProxy"
-    )]
-    pub type RuntimeVariablesExpressionProxy = crate::System::Linq::Expressions::Expression_RuntimeVariablesExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+SwitchCaseProxy")]
-    pub type SwitchCaseProxy = crate::System::Linq::Expressions::Expression_SwitchCaseProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+SwitchExpressionProxy")]
-    pub type SwitchExpressionProxy = crate::System::Linq::Expressions::Expression_SwitchExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+TryExpressionProxy")]
-    pub type TryExpressionProxy = crate::System::Linq::Expressions::Expression_TryExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+TypeBinaryExpressionProxy")]
-    pub type TypeBinaryExpressionProxy = crate::System::Linq::Expressions::Expression_TypeBinaryExpressionProxy;
-    #[cfg(feature = "System+Linq+Expressions+Expression+UnaryExpressionProxy")]
-    pub type UnaryExpressionProxy = crate::System::Linq::Expressions::Expression_UnaryExpressionProxy;
-    pub fn Accept(
-        &mut self,
-        visitor: *mut crate::System::Linq::Expressions::ExpressionVisitor,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Expression,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
-            .invoke("Accept", (visitor))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn Reduce(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Expression,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
-            .invoke("Reduce", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReduceAndCheck(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Expression,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
-            .invoke("ReduceAndCheck", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn VisitChildren(
-        &mut self,
-        visitor: *mut crate::System::Linq::Expressions::ExpressionVisitor,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Linq::Expressions::Expression,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Linq::Expressions::Expression = __cordl_object
-            .invoke("VisitChildren", (visitor))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_CanReduce(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanReduce", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_NodeType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Linq::Expressions::ExpressionType,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Linq::Expressions::ExpressionType = __cordl_object
-            .invoke("get_NodeType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Type(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Type = __cordl_object
-            .invoke("get_Type", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Linq+Expressions+Expression")]
-impl quest_hook::libil2cpp::ObjectType for crate::System::Linq::Expressions::Expression {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -1,30 +1,3 @@
-#[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct TemplateAsset_AttributeOverride {
-    pub m_ElementName: *mut crate::System::String,
-    pub m_AttributeName: *mut crate::System::String,
-    pub m_Value: *mut crate::System::String,
-}
-#[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::TemplateAsset_AttributeOverride =>
-    "UnityEngine.UIElements"."TemplateAsset/AttributeOverride"
-);
-#[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
-impl crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {}
 #[cfg(feature = "UnityEngine+UIElements+TemplateAsset")]
 #[repr(C)]
 #[derive(Debug)]
@@ -101,3 +74,30 @@ for crate::UnityEngine::UIElements::TemplateAsset {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct TemplateAsset_AttributeOverride {
+    pub m_ElementName: *mut crate::System::String,
+    pub m_AttributeName: *mut crate::System::String,
+    pub m_Value: *mut crate::System::String,
+}
+#[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::TemplateAsset_AttributeOverride =>
+    "UnityEngine.UIElements"."TemplateAsset/AttributeOverride"
+);
+#[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
+impl crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {}

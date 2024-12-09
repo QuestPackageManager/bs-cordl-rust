@@ -1,94 +1,16 @@
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct JSONNode_Enumerator {
-    pub _cordl_type: crate::HoudiniEngineUnity::Enumerator_Type,
-    pub m_Object: crate::System::Collections::Generic::Dictionary_2_Enumerator<
-        *mut crate::System::String,
-        *mut crate::HoudiniEngineUnity::JSONNode,
-    >,
-    pub m_Array: crate::System::Collections::Generic::List_1_Enumerator<
-        *mut crate::HoudiniEngineUnity::JSONNode,
-    >,
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator+Type")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Enumerator_JSONNode_Type {
+    Array = 1i32,
+    None = 0i32,
+    Object = 2i32,
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator+Type")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::HoudiniEngineUnity::JSONNode_Enumerator =>
-    "HoudiniEngineUnity"."JSONNode/Enumerator"
+    in quest_hook::libil2cpp for crate ::HoudiniEngineUnity::Enumerator_JSONNode_Type =>
+    "HoudiniEngineUnity"."JSONNode/Enumerator/Type"
 );
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::HoudiniEngineUnity::JSONNode_Enumerator {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
-impl crate::HoudiniEngineUnity::JSONNode_Enumerator {
-    #[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator+Type")]
-    pub type Type = crate::HoudiniEngineUnity::Enumerator_Type;
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveNext",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Dictionary_2_Enumerator1(
-        &mut self,
-        aDictEnum: crate::System::Collections::Generic::Dictionary_2_Enumerator<
-            *mut crate::System::String,
-            *mut crate::HoudiniEngineUnity::JSONNode,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (aDictEnum),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_List_1_Enumerator0(
-        &mut self,
-        aArrayEnum: crate::System::Collections::Generic::List_1_Enumerator<
-            *mut crate::HoudiniEngineUnity::JSONNode,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (aArrayEnum),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Current(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            *mut crate::System::String,
-            *mut crate::HoudiniEngineUnity::JSONNode,
-        >,
-    > {
-        let __cordl_ret: crate::System::Collections::Generic::KeyValuePair_2<
-            *mut crate::System::String,
-            *mut crate::HoudiniEngineUnity::JSONNode,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Current", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsValid",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "HoudiniEngineUnity+JSONNode")]
 #[repr(C)]
 #[derive(Debug)]
@@ -844,6 +766,97 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::JSONNode {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct JSONNode_Enumerator {
+    pub _cordl_type: crate::HoudiniEngineUnity::Enumerator_JSONNode_Type,
+    pub m_Object: crate::System::Collections::Generic::Dictionary_2_Enumerator<
+        *mut crate::System::String,
+        *mut crate::HoudiniEngineUnity::JSONNode,
+    >,
+    pub m_Array: crate::System::Collections::Generic::List_1_Enumerator<
+        *mut crate::HoudiniEngineUnity::JSONNode,
+    >,
+}
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::HoudiniEngineUnity::JSONNode_Enumerator =>
+    "HoudiniEngineUnity"."JSONNode/Enumerator"
+);
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::HoudiniEngineUnity::JSONNode_Enumerator {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
+impl crate::HoudiniEngineUnity::JSONNode_Enumerator {
+    #[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator+Type")]
+    pub type Type = crate::HoudiniEngineUnity::Enumerator_JSONNode_Type;
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MoveNext",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Dictionary_2_Enumerator1(
+        &mut self,
+        aDictEnum: crate::System::Collections::Generic::Dictionary_2_Enumerator<
+            *mut crate::System::String,
+            *mut crate::HoudiniEngineUnity::JSONNode,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (aDictEnum),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_List_1_Enumerator0(
+        &mut self,
+        aArrayEnum: crate::System::Collections::Generic::List_1_Enumerator<
+            *mut crate::HoudiniEngineUnity::JSONNode,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (aArrayEnum),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Current(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            *mut crate::System::String,
+            *mut crate::HoudiniEngineUnity::JSONNode,
+        >,
+    > {
+        let __cordl_ret: crate::System::Collections::Generic::KeyValuePair_2<
+            *mut crate::System::String,
+            *mut crate::HoudiniEngineUnity::JSONNode,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Current", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsValid",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+JSONNode+KeyEnumerator")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -1081,19 +1094,6 @@ for crate::HoudiniEngineUnity::JSONNode_LinqEnumerator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator+Type")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Enumerator_Type {
-    Array = 1i32,
-    None = 0i32,
-    Object = 2i32,
-}
-#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator+Type")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::HoudiniEngineUnity::Enumerator_Type =>
-    "HoudiniEngineUnity"."JSONNode/Enumerator/Type"
-);
 #[cfg(feature = "HoudiniEngineUnity+JSONNode+ValueEnumerator")]
 #[repr(C)]
 #[derive(Debug, Clone)]

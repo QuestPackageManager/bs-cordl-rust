@@ -1,16 +1,3 @@
-#[cfg(feature = "HMUI+MouseBinder+ButtonType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum MouseBinder_ButtonType {
-    Middle = 2i32,
-    Primary = 0i32,
-    Secondary = 1i32,
-}
-#[cfg(feature = "HMUI+MouseBinder+ButtonType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::MouseBinder_ButtonType => "HMUI"
-    ."MouseBinder/ButtonType"
-);
 #[cfg(feature = "HMUI+MouseBinder")]
 #[repr(C)]
 #[derive(Debug)]
@@ -204,6 +191,19 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::MouseBinder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HMUI+MouseBinder+ButtonType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum MouseBinder_ButtonType {
+    Middle = 2i32,
+    Primary = 0i32,
+    Secondary = 1i32,
+}
+#[cfg(feature = "HMUI+MouseBinder+ButtonType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::HMUI::MouseBinder_ButtonType => "HMUI"
+    ."MouseBinder/ButtonType"
+);
 #[cfg(feature = "HMUI+MouseBinder+MouseEventType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

@@ -1,3 +1,40 @@
+#[cfg(feature = "System+TypeNames")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct TypeNames {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "System+TypeNames")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::TypeNames => "System"."TypeNames"
+);
+#[cfg(feature = "System+TypeNames")]
+impl std::ops::Deref for crate::System::TypeNames {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+TypeNames")]
+impl std::ops::DerefMut for crate::System::TypeNames {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+TypeNames")]
+impl crate::System::TypeNames {
+    #[cfg(feature = "System+TypeNames+ATypeName")]
+    pub type ATypeName = crate::System::TypeNames_ATypeName;
+}
+#[cfg(feature = "System+TypeNames")]
+impl quest_hook::libil2cpp::ObjectType for crate::System::TypeNames {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "System+TypeNames+ATypeName")]
 #[repr(C)]
 #[derive(Debug)]
@@ -81,43 +118,6 @@ impl crate::System::TypeNames_ATypeName {
 }
 #[cfg(feature = "System+TypeNames+ATypeName")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::TypeNames_ATypeName {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+TypeNames")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct TypeNames {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "System+TypeNames")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::TypeNames => "System"."TypeNames"
-);
-#[cfg(feature = "System+TypeNames")]
-impl std::ops::Deref for crate::System::TypeNames {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+TypeNames")]
-impl std::ops::DerefMut for crate::System::TypeNames {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+TypeNames")]
-impl crate::System::TypeNames {
-    #[cfg(feature = "System+TypeNames+ATypeName")]
-    pub type ATypeName = crate::System::TypeNames_ATypeName;
-}
-#[cfg(feature = "System+TypeNames")]
-impl quest_hook::libil2cpp::ObjectType for crate::System::TypeNames {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

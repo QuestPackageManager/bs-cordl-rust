@@ -1,3 +1,51 @@
+#[cfg(feature = "UnityEngine+UIElements+UQuery")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct UQuery {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "UnityEngine+UIElements+UQuery")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::UQuery =>
+    "UnityEngine.UIElements"."UQuery"
+);
+#[cfg(feature = "UnityEngine+UIElements+UQuery")]
+impl std::ops::Deref for crate::UnityEngine::UIElements::UQuery {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UQuery")]
+impl std::ops::DerefMut for crate::UnityEngine::UIElements::UQuery {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UQuery")]
+impl crate::UnityEngine::UIElements::UQuery {
+    #[cfg(feature = "UnityEngine+UIElements+UQuery+FirstQueryMatcher")]
+    pub type FirstQueryMatcher = crate::UnityEngine::UIElements::UQuery_FirstQueryMatcher;
+    #[cfg(feature = "UnityEngine+UIElements+UQuery+IVisualPredicateWrapper")]
+    type IVisualPredicateWrapper = crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper;
+    #[cfg(feature = "UnityEngine+UIElements+UQuery+IsOfType_1")]
+    pub type IsOfType_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::UQuery_IsOfType_1<
+        T,
+    >;
+    #[cfg(feature = "UnityEngine+UIElements+UQuery+SingleQueryMatcher")]
+    pub type SingleQueryMatcher = crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher;
+    #[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher")]
+    pub type UQueryMatcher = crate::UnityEngine::UIElements::UQuery_UQueryMatcher;
+}
+#[cfg(feature = "UnityEngine+UIElements+UQuery")]
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UQuery {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UQuery+FirstQueryMatcher")]
 #[repr(C)]
 #[derive(Debug)]
@@ -318,54 +366,6 @@ for crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQuery")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct UQuery {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "UnityEngine+UIElements+UQuery")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::UQuery =>
-    "UnityEngine.UIElements"."UQuery"
-);
-#[cfg(feature = "UnityEngine+UIElements+UQuery")]
-impl std::ops::Deref for crate::UnityEngine::UIElements::UQuery {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UQuery")]
-impl std::ops::DerefMut for crate::UnityEngine::UIElements::UQuery {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UQuery")]
-impl crate::UnityEngine::UIElements::UQuery {
-    #[cfg(feature = "UnityEngine+UIElements+UQuery+FirstQueryMatcher")]
-    pub type FirstQueryMatcher = crate::UnityEngine::UIElements::UQuery_FirstQueryMatcher;
-    #[cfg(feature = "UnityEngine+UIElements+UQuery+IVisualPredicateWrapper")]
-    type IVisualPredicateWrapper = crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper;
-    #[cfg(feature = "UnityEngine+UIElements+UQuery+IsOfType_1")]
-    pub type IsOfType_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::UQuery_IsOfType_1<
-        T,
-    >;
-    #[cfg(feature = "UnityEngine+UIElements+UQuery+SingleQueryMatcher")]
-    pub type SingleQueryMatcher = crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher;
-    #[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher")]
-    pub type UQueryMatcher = crate::UnityEngine::UIElements::UQuery_UQueryMatcher;
-}
-#[cfg(feature = "UnityEngine+UIElements+UQuery")]
-impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UQuery {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher")]
 #[repr(C)]
 #[derive(Debug)]
@@ -396,7 +396,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UQuery_UQueryMatcher
 #[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher")]
 impl crate::UnityEngine::UIElements::UQuery_UQueryMatcher {
     #[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UQueryMatcher___c;
+    pub type __c = crate::UnityEngine::UIElements::UQueryMatcher_UQuery___c;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

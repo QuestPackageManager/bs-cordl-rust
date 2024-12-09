@@ -1,71 +1,3 @@
-#[cfg(feature = "OrderedSet_1+Node")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct OrderedSet_1_Node<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
-    pub value: T,
-    pub previous: *mut crate::GlobalNamespace::OrderedSet_1_Node<T>,
-    pub next: *mut crate::GlobalNamespace::OrderedSet_1_Node<T>,
-    pub isRemoved: bool,
-    pub clearCount: i32,
-    __cordl_phantom_T: std::marker::PhantomData<T>,
-}
-#[cfg(feature = "OrderedSet_1+Node")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OrderedSet_1_Node < T > => ""
-    ."OrderedSet`1/Node" < T >
-);
-#[cfg(feature = "OrderedSet_1+Node")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
-for crate::GlobalNamespace::OrderedSet_1_Node<T> {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OrderedSet_1+Node")]
-impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for crate::GlobalNamespace::OrderedSet_1_Node<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OrderedSet_1+Node")]
-impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1_Node<T> {
-    pub fn New(value: T, clearCount: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (value, clearCount))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        value: T,
-        clearCount: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value, clearCount))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "OrderedSet_1+Node")]
-impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OrderedSet_1_Node<T> {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "OrderedSet_1")]
 #[repr(C)]
 #[derive(Debug)]
@@ -378,6 +310,74 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
 #[cfg(feature = "OrderedSet_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OrderedSet_1<T> {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "OrderedSet_1+Node")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OrderedSet_1_Node<T: quest_hook::libil2cpp::Type> {
+    __cordl_parent: crate::System::Object,
+    pub value: T,
+    pub previous: *mut crate::GlobalNamespace::OrderedSet_1_Node<T>,
+    pub next: *mut crate::GlobalNamespace::OrderedSet_1_Node<T>,
+    pub isRemoved: bool,
+    pub clearCount: i32,
+    __cordl_phantom_T: std::marker::PhantomData<T>,
+}
+#[cfg(feature = "OrderedSet_1+Node")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OrderedSet_1_Node < T > => ""
+    ."OrderedSet`1/Node" < T >
+);
+#[cfg(feature = "OrderedSet_1+Node")]
+impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
+for crate::GlobalNamespace::OrderedSet_1_Node<T> {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OrderedSet_1+Node")]
+impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
+for crate::GlobalNamespace::OrderedSet_1_Node<T> {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OrderedSet_1+Node")]
+impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1_Node<T> {
+    pub fn New(value: T, clearCount: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (value, clearCount))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        value: T,
+        clearCount: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (value, clearCount))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "OrderedSet_1+Node")]
+impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OrderedSet_1_Node<T> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

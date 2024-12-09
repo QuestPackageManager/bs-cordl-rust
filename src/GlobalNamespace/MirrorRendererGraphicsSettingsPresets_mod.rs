@@ -87,25 +87,12 @@ for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Preset_MirrorType {
-    FakeMirror = 1i32,
-    None = 0i32,
-    RenderedMirror = 2i32,
-}
-#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::Preset_MirrorType => ""
-    ."MirrorRendererGraphicsSettingsPresets/Preset/MirrorType"
-);
 #[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirrorRendererGraphicsSettingsPresets_Preset {
     __cordl_parent: crate::GlobalNamespace::NamedPreset,
-    pub mirrorType: crate::GlobalNamespace::Preset_MirrorType,
+    pub mirrorType: crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType,
     pub reflectLayers: crate::UnityEngine::LayerMask,
     pub stereoTextureWidth: i32,
     pub stereoTextureHeight: i32,
@@ -138,7 +125,7 @@ for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
 #[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset")]
 impl crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
     #[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
-    pub type MirrorType = crate::GlobalNamespace::Preset_MirrorType;
+    pub type MirrorType = crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -167,3 +154,17 @@ for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
+    FakeMirror = 1i32,
+    None = 0i32,
+    RenderedMirror = 2i32,
+}
+#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType => ""
+    ."MirrorRendererGraphicsSettingsPresets/Preset/MirrorType"
+);

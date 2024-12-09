@@ -1,55 +1,3 @@
-#[cfg(feature = "OVRNetwork+OVRNetworkTcpClient+ConnectionState")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRNetworkTcpClient_ConnectionState {
-    Connected = 1i32,
-    Connecting = 2i32,
-    Disconnected = 0i32,
-}
-#[cfg(feature = "OVRNetwork+OVRNetworkTcpClient+ConnectionState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OVRNetworkTcpClient_ConnectionState => ""
-    ."OVRNetwork/OVRNetworkTcpClient/ConnectionState"
-);
-#[cfg(feature = "OVRNetwork+FrameHeader")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct OVRNetwork_FrameHeader {
-    pub protocolIdentifier: u32,
-    pub payloadType: i32,
-    pub payloadLength: i32,
-}
-#[cfg(feature = "OVRNetwork+FrameHeader")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRNetwork_FrameHeader => ""
-    ."OVRNetwork/FrameHeader"
-);
-#[cfg(feature = "OVRNetwork+FrameHeader")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRNetwork_FrameHeader {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "OVRNetwork+FrameHeader")]
-impl crate::GlobalNamespace::OVRNetwork_FrameHeader {
-    pub const StructSize: i32 = 12i32;
-    pub fn ToBytes(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToBytes",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "OVRNetwork")]
 #[repr(C)]
 #[derive(Debug)]
@@ -111,6 +59,58 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRNetwork {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRNetwork+OVRNetworkTcpClient+ConnectionState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRNetworkTcpClient_OVRNetwork_ConnectionState {
+    Connected = 1i32,
+    Connecting = 2i32,
+    Disconnected = 0i32,
+}
+#[cfg(feature = "OVRNetwork+OVRNetworkTcpClient+ConnectionState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRNetworkTcpClient_OVRNetwork_ConnectionState => ""
+    ."OVRNetwork/OVRNetworkTcpClient/ConnectionState"
+);
+#[cfg(feature = "OVRNetwork+FrameHeader")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct OVRNetwork_FrameHeader {
+    pub protocolIdentifier: u32,
+    pub payloadType: i32,
+    pub payloadLength: i32,
+}
+#[cfg(feature = "OVRNetwork+FrameHeader")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRNetwork_FrameHeader => ""
+    ."OVRNetwork/FrameHeader"
+);
+#[cfg(feature = "OVRNetwork+FrameHeader")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRNetwork_FrameHeader {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRNetwork+FrameHeader")]
+impl crate::GlobalNamespace::OVRNetwork_FrameHeader {
+    pub const StructSize: i32 = 12i32;
+    pub fn ToBytes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToBytes",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
 #[cfg(feature = "OVRNetwork+OVRNetworkTcpClient")]
 #[repr(C)]
 #[derive(Debug)]
@@ -152,7 +152,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClie
 #[cfg(feature = "OVRNetwork+OVRNetworkTcpClient")]
 impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
     #[cfg(feature = "OVRNetwork+OVRNetworkTcpClient+ConnectionState")]
-    pub type ConnectionState = crate::GlobalNamespace::OVRNetworkTcpClient_ConnectionState;
+    pub type ConnectionState = crate::GlobalNamespace::OVRNetworkTcpClient_OVRNetwork_ConnectionState;
     pub fn Connect(
         &mut self,
         listeningPort: i32,
@@ -233,12 +233,12 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
     pub fn get_connectionState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRNetworkTcpClient_ConnectionState,
+        crate::GlobalNamespace::OVRNetworkTcpClient_OVRNetwork_ConnectionState,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: crate::GlobalNamespace::OVRNetworkTcpClient_ConnectionState = __cordl_object
+        let __cordl_ret: crate::GlobalNamespace::OVRNetworkTcpClient_OVRNetwork_ConnectionState = __cordl_object
             .invoke("get_connectionState", ())?;
         Ok(__cordl_ret)
     }

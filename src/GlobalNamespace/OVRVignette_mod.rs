@@ -1,30 +1,3 @@
-#[cfg(feature = "OVRVignette+FalloffType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRVignette_FalloffType {
-    Linear = 0i32,
-    Quadratic = 1i32,
-}
-#[cfg(feature = "OVRVignette+FalloffType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRVignette_FalloffType => ""
-    ."OVRVignette/FalloffType"
-);
-#[cfg(feature = "OVRVignette+MeshComplexityLevel")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRVignette_MeshComplexityLevel {
-    Detailed = 3i32,
-    Normal = 2i32,
-    Simple = 1i32,
-    VeryDetailed = 4i32,
-    VerySimple = 0i32,
-}
-#[cfg(feature = "OVRVignette+MeshComplexityLevel")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRVignette_MeshComplexityLevel
-    => ""."OVRVignette/MeshComplexityLevel"
-);
 #[cfg(feature = "OVRVignette")]
 #[repr(C)]
 #[derive(Debug)]
@@ -281,3 +254,30 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRVignette {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRVignette+FalloffType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRVignette_FalloffType {
+    Linear = 0i32,
+    Quadratic = 1i32,
+}
+#[cfg(feature = "OVRVignette+FalloffType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRVignette_FalloffType => ""
+    ."OVRVignette/FalloffType"
+);
+#[cfg(feature = "OVRVignette+MeshComplexityLevel")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRVignette_MeshComplexityLevel {
+    Detailed = 3i32,
+    Normal = 2i32,
+    Simple = 1i32,
+    VeryDetailed = 4i32,
+    VerySimple = 0i32,
+}
+#[cfg(feature = "OVRVignette+MeshComplexityLevel")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRVignette_MeshComplexityLevel
+    => ""."OVRVignette/MeshComplexityLevel"
+);

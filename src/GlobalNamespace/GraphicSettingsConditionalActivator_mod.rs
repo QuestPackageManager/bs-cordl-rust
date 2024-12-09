@@ -1,18 +1,3 @@
-#[cfg(feature = "GraphicSettingsConditionalActivator+ActivatorType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum GraphicSettingsConditionalActivator_ActivatorType {
-    burnmarkTrails = 2i32,
-    depthTexture = 1i32,
-    screenDisplacement = 3i32,
-    smoke = 0i32,
-}
-#[cfg(feature = "GraphicSettingsConditionalActivator+ActivatorType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType => ""
-    ."GraphicSettingsConditionalActivator/ActivatorType"
-);
 #[cfg(feature = "GraphicSettingsConditionalActivator")]
 #[repr(C)]
 #[derive(Debug)]
@@ -91,3 +76,18 @@ for crate::GlobalNamespace::GraphicSettingsConditionalActivator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "GraphicSettingsConditionalActivator+ActivatorType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum GraphicSettingsConditionalActivator_ActivatorType {
+    burnmarkTrails = 2i32,
+    depthTexture = 1i32,
+    screenDisplacement = 3i32,
+    smoke = 0i32,
+}
+#[cfg(feature = "GraphicSettingsConditionalActivator+ActivatorType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType => ""
+    ."GraphicSettingsConditionalActivator/ActivatorType"
+);

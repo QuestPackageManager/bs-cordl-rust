@@ -193,7 +193,7 @@ for crate::System::Threading::Tasks::ValueTask_ValueTaskSourceAsTask {
 #[cfg(feature = "System+Threading+Tasks+ValueTask+ValueTaskSourceAsTask")]
 impl crate::System::Threading::Tasks::ValueTask_ValueTaskSourceAsTask {
     #[cfg(feature = "System+Threading+Tasks+ValueTask+ValueTaskSourceAsTask+__c")]
-    pub type __c = crate::System::Threading::Tasks::ValueTaskSourceAsTask___c;
+    pub type __c = crate::System::Threading::Tasks::ValueTaskSourceAsTask_ValueTask___c;
     pub fn New(
         source: *mut crate::System::Threading::Tasks::Sources::IValueTaskSource,
         token: i16,

@@ -1,17 +1,3 @@
-#[cfg(feature = "Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OculusLoader_DeviceSupportedResult {
-    ExitApplication = 2i32,
-    NotSupported = 1i32,
-    Supported = 0i32,
-}
-#[cfg(feature = "Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult => "Unity.XR.Oculus"
-    ."OculusLoader/DeviceSupportedResult"
-);
 #[cfg(feature = "Unity+XR+Oculus+OculusLoader")]
 #[repr(C)]
 #[derive(Debug)]
@@ -135,3 +121,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::OculusLoade
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OculusLoader_DeviceSupportedResult {
+    ExitApplication = 2i32,
+    NotSupported = 1i32,
+    Supported = 0i32,
+}
+#[cfg(feature = "Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult => "Unity.XR.Oculus"
+    ."OculusLoader/DeviceSupportedResult"
+);

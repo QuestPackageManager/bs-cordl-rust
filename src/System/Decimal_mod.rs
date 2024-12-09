@@ -1,16 +1,17 @@
 #[cfg(feature = "System+Decimal+DecCalc+Buf12")]
 #[repr(C)]
 #[derive(Debug, Clone)]
-pub struct DecCalc_Buf12 {
+pub struct DecCalc_Decimal_Buf12 {
     padding: [u8; 16usize],
 }
 #[cfg(feature = "System+Decimal+DecCalc+Buf12")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::DecCalc_Buf12 => "System"
+    in quest_hook::libil2cpp for crate ::System::DecCalc_Decimal_Buf12 => "System"
     ."Decimal/DecCalc/Buf12"
 );
 #[cfg(feature = "System+Decimal+DecCalc+Buf12")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::DecCalc_Buf12 {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::DecCalc_Decimal_Buf12 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -20,7 +21,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::DecCalc_Buf12
     }
 }
 #[cfg(feature = "System+Decimal+DecCalc+Buf12")]
-impl crate::System::DecCalc_Buf12 {
+impl crate::System::DecCalc_Decimal_Buf12 {
     pub fn get_High64(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -63,16 +64,17 @@ impl crate::System::DecCalc_Buf12 {
 #[cfg(feature = "System+Decimal+DecCalc+Buf16")]
 #[repr(C)]
 #[derive(Debug, Clone)]
-pub struct DecCalc_Buf16 {
+pub struct DecCalc_Decimal_Buf16 {
     padding: [u8; 16usize],
 }
 #[cfg(feature = "System+Decimal+DecCalc+Buf16")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::DecCalc_Buf16 => "System"
+    in quest_hook::libil2cpp for crate ::System::DecCalc_Decimal_Buf16 => "System"
     ."Decimal/DecCalc/Buf16"
 );
 #[cfg(feature = "System+Decimal+DecCalc+Buf16")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::DecCalc_Buf16 {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::DecCalc_Decimal_Buf16 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -82,7 +84,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::DecCalc_Buf16
     }
 }
 #[cfg(feature = "System+Decimal+DecCalc+Buf16")]
-impl crate::System::DecCalc_Buf16 {
+impl crate::System::DecCalc_Decimal_Buf16 {
     pub fn get_High64(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -125,16 +127,17 @@ impl crate::System::DecCalc_Buf16 {
 #[cfg(feature = "System+Decimal+DecCalc+Buf24")]
 #[repr(C)]
 #[derive(Debug, Clone)]
-pub struct DecCalc_Buf24 {
+pub struct DecCalc_Decimal_Buf24 {
     padding: [u8; 24usize],
 }
 #[cfg(feature = "System+Decimal+DecCalc+Buf24")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::DecCalc_Buf24 => "System"
+    in quest_hook::libil2cpp for crate ::System::DecCalc_Decimal_Buf24 => "System"
     ."Decimal/DecCalc/Buf24"
 );
 #[cfg(feature = "System+Decimal+DecCalc+Buf24")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::DecCalc_Buf24 {
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::DecCalc_Decimal_Buf24 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -144,7 +147,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::DecCalc_Buf24
     }
 }
 #[cfg(feature = "System+Decimal+DecCalc+Buf24")]
-impl crate::System::DecCalc_Buf24 {
+impl crate::System::DecCalc_Decimal_Buf24 {
     pub fn get_Low64(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -187,19 +190,21 @@ impl crate::System::DecCalc_Buf24 {
         Ok(__cordl_ret)
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc")]
+#[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
 #[repr(C)]
 #[derive(Debug, Clone)]
-pub struct Decimal_DecCalc {
-    padding: [u8; 16usize],
+pub struct DecCalc_Decimal_PowerOvfl {
+    pub Hi: u32,
+    pub MidLo: u64,
 }
-#[cfg(feature = "System+Decimal+DecCalc")]
+#[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Decimal_DecCalc => "System"
-    ."Decimal/DecCalc"
+    in quest_hook::libil2cpp for crate ::System::DecCalc_Decimal_PowerOvfl => "System"
+    ."Decimal/DecCalc/PowerOvfl"
 );
-#[cfg(feature = "System+Decimal+DecCalc")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Decimal_DecCalc {
+#[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::DecCalc_Decimal_PowerOvfl {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -208,103 +213,37 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Decimal_DecCa
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc")]
-impl crate::System::Decimal_DecCalc {
-    #[cfg(feature = "System+Decimal+DecCalc+Buf12")]
-    pub type Buf12 = crate::System::DecCalc_Buf12;
-    #[cfg(feature = "System+Decimal+DecCalc+Buf16")]
-    pub type Buf16 = crate::System::DecCalc_Buf16;
-    #[cfg(feature = "System+Decimal+DecCalc+Buf24")]
-    pub type Buf24 = crate::System::DecCalc_Buf24;
-    #[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
-    pub type PowerOvfl = crate::System::DecCalc_PowerOvfl;
-    #[cfg(feature = "System+Decimal+DecCalc+RoundingMode")]
-    pub type RoundingMode = crate::System::DecCalc_RoundingMode;
-    pub fn get_High(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_High",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_IsNegative(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsNegative",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Low(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Low",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Low64(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Low64",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Mid(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Mid",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_High(
+#[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
+impl crate::System::DecCalc_Decimal_PowerOvfl {
+    pub fn _ctor(
         &mut self,
-        value: u32,
+        hi: u32,
+        mid: u32,
+        lo: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            "set_High",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Low(
-        &mut self,
-        value: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_Low",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Low64(
-        &mut self,
-        value: u64,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_Low64",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_Mid(
-        &mut self,
-        value: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_Mid",
-            (value),
+            ".ctor",
+            (hi, mid, lo),
         )?;
         Ok(__cordl_ret)
     }
 }
+#[cfg(feature = "System+Decimal+DecCalc+RoundingMode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum DecCalc_Decimal_RoundingMode {
+    AwayFromZero = 1i32,
+    Ceiling = 4i32,
+    Floor = 3i32,
+    ToEven = 0i32,
+    Truncate = 2i32,
+}
+#[cfg(feature = "System+Decimal+DecCalc+RoundingMode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::DecCalc_Decimal_RoundingMode => "System"
+    ."Decimal/DecCalc/RoundingMode"
+);
 #[cfg(feature = "System+Decimal")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -771,20 +710,19 @@ impl crate::System::Decimal {
         Ok(__cordl_ret)
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
+#[cfg(feature = "System+Decimal+DecCalc")]
 #[repr(C)]
 #[derive(Debug, Clone)]
-pub struct DecCalc_PowerOvfl {
-    pub Hi: u32,
-    pub MidLo: u64,
+pub struct Decimal_DecCalc {
+    padding: [u8; 16usize],
 }
-#[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
+#[cfg(feature = "System+Decimal+DecCalc")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::DecCalc_PowerOvfl => "System"
-    ."Decimal/DecCalc/PowerOvfl"
+    in quest_hook::libil2cpp for crate ::System::Decimal_DecCalc => "System"
+    ."Decimal/DecCalc"
 );
-#[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::DecCalc_PowerOvfl {
+#[cfg(feature = "System+Decimal+DecCalc")]
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Decimal_DecCalc {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -793,34 +731,100 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::DecCalc_Power
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
-impl crate::System::DecCalc_PowerOvfl {
-    pub fn _ctor(
+#[cfg(feature = "System+Decimal+DecCalc")]
+impl crate::System::Decimal_DecCalc {
+    #[cfg(feature = "System+Decimal+DecCalc+Buf12")]
+    pub type Buf12 = crate::System::DecCalc_Decimal_Buf12;
+    #[cfg(feature = "System+Decimal+DecCalc+Buf16")]
+    pub type Buf16 = crate::System::DecCalc_Decimal_Buf16;
+    #[cfg(feature = "System+Decimal+DecCalc+Buf24")]
+    pub type Buf24 = crate::System::DecCalc_Decimal_Buf24;
+    #[cfg(feature = "System+Decimal+DecCalc+PowerOvfl")]
+    pub type PowerOvfl = crate::System::DecCalc_Decimal_PowerOvfl;
+    #[cfg(feature = "System+Decimal+DecCalc+RoundingMode")]
+    pub type RoundingMode = crate::System::DecCalc_Decimal_RoundingMode;
+    pub fn get_High(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_High",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IsNegative(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_IsNegative",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Low(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Low",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Low64(&mut self) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Low64",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Mid(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Mid",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_High(
         &mut self,
-        hi: u32,
-        mid: u32,
-        lo: u32,
+        value: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
-            ".ctor",
-            (hi, mid, lo),
+            "set_High",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Low(
+        &mut self,
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_Low",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Low64(
+        &mut self,
+        value: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_Low64",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Mid(
+        &mut self,
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "set_Mid",
+            (value),
         )?;
         Ok(__cordl_ret)
     }
 }
-#[cfg(feature = "System+Decimal+DecCalc+RoundingMode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum DecCalc_RoundingMode {
-    AwayFromZero = 1i32,
-    Ceiling = 4i32,
-    Floor = 3i32,
-    ToEven = 0i32,
-    Truncate = 2i32,
-}
-#[cfg(feature = "System+Decimal+DecCalc+RoundingMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::DecCalc_RoundingMode => "System"
-    ."Decimal/DecCalc/RoundingMode"
-);

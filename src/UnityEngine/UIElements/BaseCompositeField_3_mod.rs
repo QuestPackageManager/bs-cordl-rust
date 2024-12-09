@@ -254,7 +254,7 @@ pub struct BaseCompositeField_3_FieldDescription<
     pub name: *mut crate::System::String,
     pub ussName: *mut crate::System::String,
     pub read: *mut crate::System::Func_2<TValueType, TFieldValue>,
-    pub write: *mut crate::UnityEngine::UIElements::FieldDescription_WriteDelegate<
+    pub write: *mut crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteDelegate<
         TValueType,
         TField,
         TFieldValue,
@@ -303,7 +303,7 @@ impl<
     #[cfg(
         feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription+WriteDelegate"
     )]
-    pub type WriteDelegate = crate::UnityEngine::UIElements::FieldDescription_WriteDelegate<
+    pub type WriteDelegate = crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteDelegate<
         TValueType,
         TField,
         TFieldValue,
@@ -313,7 +313,7 @@ impl<
         name: *mut crate::System::String,
         ussName: *mut crate::System::String,
         read: *mut crate::System::Func_2<TValueType, TFieldValue>,
-        write: *mut crate::UnityEngine::UIElements::FieldDescription_WriteDelegate<
+        write: *mut crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteDelegate<
             TValueType,
             TField,
             TFieldValue,
@@ -340,7 +340,7 @@ impl<
 )]
 #[repr(C)]
 #[derive(Debug)]
-pub struct FieldDescription_WriteDelegate<
+pub struct FieldDescription_BaseCompositeField_3_WriteDelegate<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,
     TFieldValue: quest_hook::libil2cpp::Type,
@@ -355,8 +355,8 @@ pub struct FieldDescription_WriteDelegate<
 )]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
     in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::FieldDescription_WriteDelegate < TValueType, TField,
-    TFieldValue > => "UnityEngine.UIElements"
+    ::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteDelegate <
+    TValueType, TField, TFieldValue > => "UnityEngine.UIElements"
     ."BaseCompositeField`3/FieldDescription/WriteDelegate" < TValueType, TField,
     TFieldValue >
 );
@@ -368,7 +368,7 @@ impl<
     TField: quest_hook::libil2cpp::Type,
     TFieldValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref
-for crate::UnityEngine::UIElements::FieldDescription_WriteDelegate<
+for crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteDelegate<
     TValueType,
     TField,
     TFieldValue,
@@ -386,7 +386,7 @@ impl<
     TField: quest_hook::libil2cpp::Type,
     TFieldValue: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut
-for crate::UnityEngine::UIElements::FieldDescription_WriteDelegate<
+for crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteDelegate<
     TValueType,
     TField,
     TFieldValue,
@@ -402,7 +402,7 @@ impl<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,
     TFieldValue: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::UIElements::FieldDescription_WriteDelegate<
+> crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteDelegate<
     TValueType,
     TField,
     TFieldValue,
@@ -466,7 +466,7 @@ impl<
     TField: quest_hook::libil2cpp::Type,
     TFieldValue: quest_hook::libil2cpp::Type,
 > quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::FieldDescription_WriteDelegate<
+for crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteDelegate<
     TValueType,
     TField,
     TFieldValue,

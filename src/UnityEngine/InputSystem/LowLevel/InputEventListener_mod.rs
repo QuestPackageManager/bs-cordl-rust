@@ -1,3 +1,46 @@
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct InputEventListener {}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::LowLevel::InputEventListener =>
+    "UnityEngine.InputSystem.LowLevel"."InputEventListener"
+);
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
+impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
+    #[cfg(
+        feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
+    )]
+    pub type DisposableObserver = crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObserver;
+    #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState")]
+    pub type ObserverState = crate::UnityEngine::InputSystem::LowLevel::InputEventListener_ObserverState;
+    pub fn Subscribe(
+        &mut self,
+        observer: *mut crate::System::IObserver_1<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IDisposable> {
+        let __cordl_ret: *mut crate::System::IDisposable = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Subscribe",
+            (observer),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
 #[cfg(
     feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
 )]
@@ -78,49 +121,6 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObse
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct InputEventListener {}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::LowLevel::InputEventListener =>
-    "UnityEngine.InputSystem.LowLevel"."InputEventListener"
-);
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
-impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
-    #[cfg(
-        feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
-    )]
-    pub type DisposableObserver = crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObserver;
-    #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState")]
-    pub type ObserverState = crate::UnityEngine::InputSystem::LowLevel::InputEventListener_ObserverState;
-    pub fn Subscribe(
-        &mut self,
-        observer: *mut crate::System::IObserver_1<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IDisposable> {
-        let __cordl_ret: *mut crate::System::IDisposable = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Subscribe",
-            (observer),
-        )?;
-        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState")]

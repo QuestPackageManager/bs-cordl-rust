@@ -1,18 +1,3 @@
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+Result")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum UnityWebRequest_Result {
-    ConnectionError = 2i32,
-    DataProcessingError = 4i32,
-    InProgress = 0i32,
-    ProtocolError = 3i32,
-    Success = 1i32,
-}
-#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+Result")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Networking::UnityWebRequest_Result
-    => "UnityEngine.Networking"."UnityWebRequest/Result"
-);
 #[cfg(feature = "UnityEngine+Networking+UnityWebRequest")]
 #[repr(C)]
 #[derive(Debug)]
@@ -685,6 +670,21 @@ for crate::UnityEngine::Networking::UnityWebRequest {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+Result")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum UnityWebRequest_Result {
+    ConnectionError = 2i32,
+    DataProcessingError = 4i32,
+    InProgress = 0i32,
+    ProtocolError = 3i32,
+    Success = 1i32,
+}
+#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+Result")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::Networking::UnityWebRequest_Result
+    => "UnityEngine.Networking"."UnityWebRequest/Result"
+);
 #[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestError")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

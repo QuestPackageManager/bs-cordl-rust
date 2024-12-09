@@ -1,351 +1,3 @@
-#[cfg(feature = "System+Text+UTF7Encoding+Decoder")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct UTF7Encoding_Decoder {
-    __cordl_parent: crate::System::Text::DecoderNLS,
-    pub bits: i32,
-    pub bitCount: i32,
-    pub firstByte: bool,
-}
-#[cfg(feature = "System+Text+UTF7Encoding+Decoder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Text::UTF7Encoding_Decoder =>
-    "System.Text"."UTF7Encoding/Decoder"
-);
-#[cfg(feature = "System+Text+UTF7Encoding+Decoder")]
-impl std::ops::Deref for crate::System::Text::UTF7Encoding_Decoder {
-    type Target = crate::System::Text::DecoderNLS;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Text+UTF7Encoding+Decoder")]
-impl std::ops::DerefMut for crate::System::Text::UTF7Encoding_Decoder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Text+UTF7Encoding+Decoder")]
-impl crate::System::Text::UTF7Encoding_Decoder {
-    pub fn New(
-        encoding: *mut crate::System::Text::UTF7Encoding,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (encoding))?;
-        Ok(__cordl_object)
-    }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        encoding: *mut crate::System::Text::UTF7Encoding,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (encoding))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_HasState(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_HasState", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Text+UTF7Encoding+Decoder")]
-impl quest_hook::libil2cpp::ObjectType for crate::System::Text::UTF7Encoding_Decoder {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7Fallback")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct UTF7Encoding_DecoderUTF7Fallback {
-    __cordl_parent: crate::System::Text::DecoderFallback,
-}
-#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7Fallback")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Text::UTF7Encoding_DecoderUTF7Fallback
-    => "System.Text"."UTF7Encoding/DecoderUTF7Fallback"
-);
-#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7Fallback")]
-impl std::ops::Deref for crate::System::Text::UTF7Encoding_DecoderUTF7Fallback {
-    type Target = crate::System::Text::DecoderFallback;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7Fallback")]
-impl std::ops::DerefMut for crate::System::Text::UTF7Encoding_DecoderUTF7Fallback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7Fallback")]
-impl crate::System::Text::UTF7Encoding_DecoderUTF7Fallback {
-    pub fn CreateFallbackBuffer(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Text::DecoderFallbackBuffer> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Text::DecoderFallbackBuffer = __cordl_object
-            .invoke("CreateFallbackBuffer", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_MaxCharCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_MaxCharCount", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7Fallback")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Text::UTF7Encoding_DecoderUTF7Fallback {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct UTF7Encoding_DecoderUTF7FallbackBuffer {
-    __cordl_parent: crate::System::Text::DecoderFallbackBuffer,
-    pub cFallback: char,
-    pub iCount: i32,
-    pub iSize: i32,
-}
-#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Text::UTF7Encoding_DecoderUTF7FallbackBuffer => "System.Text"
-    ."UTF7Encoding/DecoderUTF7FallbackBuffer"
-);
-#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
-impl std::ops::Deref for crate::System::Text::UTF7Encoding_DecoderUTF7FallbackBuffer {
-    type Target = crate::System::Text::DecoderFallbackBuffer;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
-impl std::ops::DerefMut for crate::System::Text::UTF7Encoding_DecoderUTF7FallbackBuffer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
-impl crate::System::Text::UTF7Encoding_DecoderUTF7FallbackBuffer {
-    pub fn Fallback(
-        &mut self,
-        bytesUnknown: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("Fallback", (bytesUnknown, index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetNextChar(&mut self) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: char = __cordl_object.invoke("GetNextChar", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn InternalFallback(
-        &mut self,
-        bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        pBytes: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("InternalFallback", (bytes, pBytes))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        fallback: *mut crate::System::Text::UTF7Encoding_DecoderUTF7Fallback,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (fallback))?;
-        Ok(__cordl_object)
-    }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        fallback: *mut crate::System::Text::UTF7Encoding_DecoderUTF7Fallback,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (fallback))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Remaining(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_Remaining", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Text::UTF7Encoding_DecoderUTF7FallbackBuffer {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+Text+UTF7Encoding+Encoder")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct UTF7Encoding_Encoder {
-    __cordl_parent: crate::System::Text::EncoderNLS,
-    pub bits: i32,
-    pub bitCount: i32,
-}
-#[cfg(feature = "System+Text+UTF7Encoding+Encoder")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Text::UTF7Encoding_Encoder =>
-    "System.Text"."UTF7Encoding/Encoder"
-);
-#[cfg(feature = "System+Text+UTF7Encoding+Encoder")]
-impl std::ops::Deref for crate::System::Text::UTF7Encoding_Encoder {
-    type Target = crate::System::Text::EncoderNLS;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Text+UTF7Encoding+Encoder")]
-impl std::ops::DerefMut for crate::System::Text::UTF7Encoding_Encoder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Text+UTF7Encoding+Encoder")]
-impl crate::System::Text::UTF7Encoding_Encoder {
-    pub fn New(
-        encoding: *mut crate::System::Text::UTF7Encoding,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (encoding))?;
-        Ok(__cordl_object)
-    }
-    pub fn Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        encoding: *mut crate::System::Text::UTF7Encoding,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (encoding))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_HasState(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_HasState", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Text+UTF7Encoding+Encoder")]
-impl quest_hook::libil2cpp::ObjectType for crate::System::Text::UTF7Encoding_Encoder {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "System+Text+UTF7Encoding")]
 #[repr(C)]
 #[derive(Debug)]
@@ -701,6 +353,354 @@ impl crate::System::Text::UTF7Encoding {
 }
 #[cfg(feature = "System+Text+UTF7Encoding")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Text::UTF7Encoding {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Text+UTF7Encoding+Decoder")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct UTF7Encoding_Decoder {
+    __cordl_parent: crate::System::Text::DecoderNLS,
+    pub bits: i32,
+    pub bitCount: i32,
+    pub firstByte: bool,
+}
+#[cfg(feature = "System+Text+UTF7Encoding+Decoder")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::Text::UTF7Encoding_Decoder =>
+    "System.Text"."UTF7Encoding/Decoder"
+);
+#[cfg(feature = "System+Text+UTF7Encoding+Decoder")]
+impl std::ops::Deref for crate::System::Text::UTF7Encoding_Decoder {
+    type Target = crate::System::Text::DecoderNLS;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Text+UTF7Encoding+Decoder")]
+impl std::ops::DerefMut for crate::System::Text::UTF7Encoding_Decoder {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Text+UTF7Encoding+Decoder")]
+impl crate::System::Text::UTF7Encoding_Decoder {
+    pub fn New(
+        encoding: *mut crate::System::Text::UTF7Encoding,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (encoding))?;
+        Ok(__cordl_object)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        encoding: *mut crate::System::Text::UTF7Encoding,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (encoding))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_HasState(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_HasState", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Text+UTF7Encoding+Decoder")]
+impl quest_hook::libil2cpp::ObjectType for crate::System::Text::UTF7Encoding_Decoder {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7Fallback")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct UTF7Encoding_DecoderUTF7Fallback {
+    __cordl_parent: crate::System::Text::DecoderFallback,
+}
+#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7Fallback")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::Text::UTF7Encoding_DecoderUTF7Fallback
+    => "System.Text"."UTF7Encoding/DecoderUTF7Fallback"
+);
+#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7Fallback")]
+impl std::ops::Deref for crate::System::Text::UTF7Encoding_DecoderUTF7Fallback {
+    type Target = crate::System::Text::DecoderFallback;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7Fallback")]
+impl std::ops::DerefMut for crate::System::Text::UTF7Encoding_DecoderUTF7Fallback {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7Fallback")]
+impl crate::System::Text::UTF7Encoding_DecoderUTF7Fallback {
+    pub fn CreateFallbackBuffer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Text::DecoderFallbackBuffer> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Text::DecoderFallbackBuffer = __cordl_object
+            .invoke("CreateFallbackBuffer", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MaxCharCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_MaxCharCount", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7Fallback")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Text::UTF7Encoding_DecoderUTF7Fallback {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct UTF7Encoding_DecoderUTF7FallbackBuffer {
+    __cordl_parent: crate::System::Text::DecoderFallbackBuffer,
+    pub cFallback: char,
+    pub iCount: i32,
+    pub iSize: i32,
+}
+#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Text::UTF7Encoding_DecoderUTF7FallbackBuffer => "System.Text"
+    ."UTF7Encoding/DecoderUTF7FallbackBuffer"
+);
+#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
+impl std::ops::Deref for crate::System::Text::UTF7Encoding_DecoderUTF7FallbackBuffer {
+    type Target = crate::System::Text::DecoderFallbackBuffer;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
+impl std::ops::DerefMut for crate::System::Text::UTF7Encoding_DecoderUTF7FallbackBuffer {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
+impl crate::System::Text::UTF7Encoding_DecoderUTF7FallbackBuffer {
+    pub fn Fallback(
+        &mut self,
+        bytesUnknown: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("Fallback", (bytesUnknown, index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetNextChar(&mut self) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: char = __cordl_object.invoke("GetNextChar", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn InternalFallback(
+        &mut self,
+        bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        pBytes: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("InternalFallback", (bytes, pBytes))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        fallback: *mut crate::System::Text::UTF7Encoding_DecoderUTF7Fallback,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (fallback))?;
+        Ok(__cordl_object)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        fallback: *mut crate::System::Text::UTF7Encoding_DecoderUTF7Fallback,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (fallback))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Remaining(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_Remaining", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Text::UTF7Encoding_DecoderUTF7FallbackBuffer {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Text+UTF7Encoding+Encoder")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct UTF7Encoding_Encoder {
+    __cordl_parent: crate::System::Text::EncoderNLS,
+    pub bits: i32,
+    pub bitCount: i32,
+}
+#[cfg(feature = "System+Text+UTF7Encoding+Encoder")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::Text::UTF7Encoding_Encoder =>
+    "System.Text"."UTF7Encoding/Encoder"
+);
+#[cfg(feature = "System+Text+UTF7Encoding+Encoder")]
+impl std::ops::Deref for crate::System::Text::UTF7Encoding_Encoder {
+    type Target = crate::System::Text::EncoderNLS;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Text+UTF7Encoding+Encoder")]
+impl std::ops::DerefMut for crate::System::Text::UTF7Encoding_Encoder {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Text+UTF7Encoding+Encoder")]
+impl crate::System::Text::UTF7Encoding_Encoder {
+    pub fn New(
+        encoding: *mut crate::System::Text::UTF7Encoding,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (encoding))?;
+        Ok(__cordl_object)
+    }
+    pub fn Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        encoding: *mut crate::System::Text::UTF7Encoding,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (encoding))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_HasState(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_HasState", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Text+UTF7Encoding+Encoder")]
+impl quest_hook::libil2cpp::ObjectType for crate::System::Text::UTF7Encoding_Encoder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -1,16 +1,3 @@
-#[cfg(feature = "HMUI+KeyboardBinder+KeyBindingType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum KeyboardBinder_KeyBindingType {
-    KeyDown = 0i32,
-    KeyPress = 2i32,
-    KeyUp = 1i32,
-}
-#[cfg(feature = "HMUI+KeyboardBinder+KeyBindingType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::KeyboardBinder_KeyBindingType => "HMUI"
-    ."KeyboardBinder/KeyBindingType"
-);
 #[cfg(feature = "HMUI+KeyboardBinder")]
 #[repr(C)]
 #[derive(Debug)]
@@ -215,3 +202,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::KeyboardBinder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HMUI+KeyboardBinder+KeyBindingType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum KeyboardBinder_KeyBindingType {
+    KeyDown = 0i32,
+    KeyPress = 2i32,
+    KeyUp = 1i32,
+}
+#[cfg(feature = "HMUI+KeyboardBinder+KeyBindingType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::HMUI::KeyboardBinder_KeyBindingType => "HMUI"
+    ."KeyboardBinder/KeyBindingType"
+);

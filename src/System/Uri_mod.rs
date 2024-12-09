@@ -1,170 +1,3 @@
-#[cfg(feature = "System+Uri+Check")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Uri_Check {
-    BackslashInPath = 16i32,
-    DisplayCanonical = 2i32,
-    DotSlashAttn = 4i32,
-    DotSlashEscaped = 128i32,
-    EscapedCanonical = 1i32,
-    FoundNonAscii = 8i32,
-    None = 0i32,
-    NotIriCanonical = 64i32,
-    ReservedFound = 32i32,
-}
-#[cfg(feature = "System+Uri+Check")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Uri_Check => "System"."Uri/Check"
-);
-#[cfg(feature = "System+Uri+Flags")]
-#[repr(u64)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Uri_Flags {
-    AllUriInfoSet = 2147483648u64,
-    AuthorityFound = 1048576u64,
-    BackslashInPath = 32768u64,
-    BasicHostType = 327680u64,
-    CannotDisplayCanonical = 127u64,
-    CanonicalDnsHost = 33554432u64,
-    CompressedSlashes = 17592186044416u64,
-    DnsHostType = 196608u64,
-    DosPath = 134217728u64,
-    E_CannotDisplayCanonical = 8064u64,
-    E_FragmentNotCanonical = 4096u64,
-    E_HostNotCanonical = 256u64,
-    E_PathNotCanonical = 1024u64,
-    E_PortNotCanonical = 512u64,
-    E_QueryNotCanonical = 2048u64,
-    E_UserNotCanonical = 128u64,
-    ErrorOrParsingRecursion = 67108864u64,
-    FirstSlashAbsent = 16384u64,
-    FragmentIriCanonical = 4398046511104u64,
-    FragmentNotCanonical = 64u64,
-    HasUnicode = 8589934592u64,
-    HasUserInfo = 2097152u64,
-    HostNotCanonical = 4u64,
-    HostNotParsed = 0u64,
-    HostTypeMask = 458752u64,
-    HostUnicodeNormalized = 17179869184u64,
-    IPv4HostType = 131072u64,
-    IPv6HostType = 65536u64,
-    IdnHost = 4294967296u64,
-    ImplicitFile = 536870912u64,
-    IndexMask = 65535u64,
-    IntranetUri = 137438953472u64,
-    IriCanonical = 8246337208320u64,
-    LoopbackHost = 4194304u64,
-    MinimalUriInfoSet = 1073741824u64,
-    NotDefaultPort = 8388608u64,
-    PathIriCanonical = 1099511627776u64,
-    PathNotCanonical = 16u64,
-    PortNotCanonical = 8u64,
-    QueryIriCanonical = 2199023255552u64,
-    QueryNotCanonical = 32u64,
-    RestUnicodeNormalized = 34359738368u64,
-    SchemeNotCanonical = 1u64,
-    ShouldBeCompressed = 8192u64,
-    UncHostType = 262144u64,
-    UncPath = 268435456u64,
-    UnicodeHost = 68719476736u64,
-    UnusedHostType = 393216u64,
-    UseOrigUncdStrOffset = 274877906944u64,
-    UserDrivenParsing = 16777216u64,
-    UserEscaped = 524288u64,
-    UserIriCanonical = 549755813888u64,
-    UserNotCanonical = 2u64,
-}
-#[cfg(feature = "System+Uri+Flags")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Uri_Flags => "System"."Uri/Flags"
-);
-#[cfg(feature = "System+Uri+MoreInfo")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct Uri_MoreInfo {
-    __cordl_parent: crate::System::Object,
-    pub Path: *mut crate::System::String,
-    pub Query: *mut crate::System::String,
-    pub Fragment: *mut crate::System::String,
-    pub AbsoluteUri: *mut crate::System::String,
-    pub Hash: i32,
-    pub RemoteUrl: *mut crate::System::String,
-}
-#[cfg(feature = "System+Uri+MoreInfo")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Uri_MoreInfo => "System"."Uri/MoreInfo"
-);
-#[cfg(feature = "System+Uri+MoreInfo")]
-impl std::ops::Deref for crate::System::Uri_MoreInfo {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Uri+MoreInfo")]
-impl std::ops::DerefMut for crate::System::Uri_MoreInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Uri+MoreInfo")]
-impl crate::System::Uri_MoreInfo {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Uri+MoreInfo")]
-impl quest_hook::libil2cpp::ObjectType for crate::System::Uri_MoreInfo {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+Uri+Offset")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct Uri_Offset {
-    pub Scheme: u16,
-    pub User: u16,
-    pub Host: u16,
-    pub PortValue: u16,
-    pub Path: u16,
-    pub Query: u16,
-    pub Fragment: u16,
-    pub End: u16,
-}
-#[cfg(feature = "System+Uri+Offset")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Uri_Offset => "System"."Uri/Offset"
-);
-#[cfg(feature = "System+Uri+Offset")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Uri_Offset {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Uri+Offset")]
-impl crate::System::Uri_Offset {}
 #[cfg(feature = "System+Uri")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1237,6 +1070,173 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Uri {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Uri+Check")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Uri_Check {
+    BackslashInPath = 16i32,
+    DisplayCanonical = 2i32,
+    DotSlashAttn = 4i32,
+    DotSlashEscaped = 128i32,
+    EscapedCanonical = 1i32,
+    FoundNonAscii = 8i32,
+    None = 0i32,
+    NotIriCanonical = 64i32,
+    ReservedFound = 32i32,
+}
+#[cfg(feature = "System+Uri+Check")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Uri_Check => "System"."Uri/Check"
+);
+#[cfg(feature = "System+Uri+Flags")]
+#[repr(u64)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Uri_Flags {
+    AllUriInfoSet = 2147483648u64,
+    AuthorityFound = 1048576u64,
+    BackslashInPath = 32768u64,
+    BasicHostType = 327680u64,
+    CannotDisplayCanonical = 127u64,
+    CanonicalDnsHost = 33554432u64,
+    CompressedSlashes = 17592186044416u64,
+    DnsHostType = 196608u64,
+    DosPath = 134217728u64,
+    E_CannotDisplayCanonical = 8064u64,
+    E_FragmentNotCanonical = 4096u64,
+    E_HostNotCanonical = 256u64,
+    E_PathNotCanonical = 1024u64,
+    E_PortNotCanonical = 512u64,
+    E_QueryNotCanonical = 2048u64,
+    E_UserNotCanonical = 128u64,
+    ErrorOrParsingRecursion = 67108864u64,
+    FirstSlashAbsent = 16384u64,
+    FragmentIriCanonical = 4398046511104u64,
+    FragmentNotCanonical = 64u64,
+    HasUnicode = 8589934592u64,
+    HasUserInfo = 2097152u64,
+    HostNotCanonical = 4u64,
+    HostNotParsed = 0u64,
+    HostTypeMask = 458752u64,
+    HostUnicodeNormalized = 17179869184u64,
+    IPv4HostType = 131072u64,
+    IPv6HostType = 65536u64,
+    IdnHost = 4294967296u64,
+    ImplicitFile = 536870912u64,
+    IndexMask = 65535u64,
+    IntranetUri = 137438953472u64,
+    IriCanonical = 8246337208320u64,
+    LoopbackHost = 4194304u64,
+    MinimalUriInfoSet = 1073741824u64,
+    NotDefaultPort = 8388608u64,
+    PathIriCanonical = 1099511627776u64,
+    PathNotCanonical = 16u64,
+    PortNotCanonical = 8u64,
+    QueryIriCanonical = 2199023255552u64,
+    QueryNotCanonical = 32u64,
+    RestUnicodeNormalized = 34359738368u64,
+    SchemeNotCanonical = 1u64,
+    ShouldBeCompressed = 8192u64,
+    UncHostType = 262144u64,
+    UncPath = 268435456u64,
+    UnicodeHost = 68719476736u64,
+    UnusedHostType = 393216u64,
+    UseOrigUncdStrOffset = 274877906944u64,
+    UserDrivenParsing = 16777216u64,
+    UserEscaped = 524288u64,
+    UserIriCanonical = 549755813888u64,
+    UserNotCanonical = 2u64,
+}
+#[cfg(feature = "System+Uri+Flags")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Uri_Flags => "System"."Uri/Flags"
+);
+#[cfg(feature = "System+Uri+MoreInfo")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct Uri_MoreInfo {
+    __cordl_parent: crate::System::Object,
+    pub Path: *mut crate::System::String,
+    pub Query: *mut crate::System::String,
+    pub Fragment: *mut crate::System::String,
+    pub AbsoluteUri: *mut crate::System::String,
+    pub Hash: i32,
+    pub RemoteUrl: *mut crate::System::String,
+}
+#[cfg(feature = "System+Uri+MoreInfo")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::Uri_MoreInfo => "System"."Uri/MoreInfo"
+);
+#[cfg(feature = "System+Uri+MoreInfo")]
+impl std::ops::Deref for crate::System::Uri_MoreInfo {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Uri+MoreInfo")]
+impl std::ops::DerefMut for crate::System::Uri_MoreInfo {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Uri+MoreInfo")]
+impl crate::System::Uri_MoreInfo {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Uri+MoreInfo")]
+impl quest_hook::libil2cpp::ObjectType for crate::System::Uri_MoreInfo {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Uri+Offset")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct Uri_Offset {
+    pub Scheme: u16,
+    pub User: u16,
+    pub Host: u16,
+    pub PortValue: u16,
+    pub Path: u16,
+    pub Query: u16,
+    pub Fragment: u16,
+    pub End: u16,
+}
+#[cfg(feature = "System+Uri+Offset")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Uri_Offset => "System"."Uri/Offset"
+);
+#[cfg(feature = "System+Uri+Offset")]
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Uri_Offset {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Uri+Offset")]
+impl crate::System::Uri_Offset {}
 #[cfg(feature = "System+Uri+UriInfo")]
 #[repr(C)]
 #[derive(Debug)]

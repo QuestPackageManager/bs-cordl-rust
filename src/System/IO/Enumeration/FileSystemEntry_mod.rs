@@ -1,33 +1,8 @@
-#[cfg(feature = "System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct FileSystemEntry___fileNameBuffer_e__FixedBuffer {
-    pub FixedElementField: char,
-}
-#[cfg(feature = "System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuffer =>
-    "System.IO.Enumeration"."FileSystemEntry/<_fileNameBuffer>e__FixedBuffer"
-);
-#[cfg(feature = "System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuffer {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer")]
-impl crate::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuffer {}
 #[cfg(feature = "System+IO+Enumeration+FileSystemEntry")]
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct FileSystemEntry {
-    pub _directoryEntry: crate::GlobalNamespace::Sys_DirectoryEntry,
+    pub _directoryEntry: crate::GlobalNamespace::Sys_Interop_DirectoryEntry,
     pub _status: crate::System::IO::FileStatus,
     pub _pathBuffer: crate::System::Span_1<char>,
     pub _fullPath: crate::System::ReadOnlySpan_1<char>,
@@ -192,3 +167,28 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
         Ok(__cordl_ret)
     }
 }
+#[cfg(feature = "System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct FileSystemEntry___fileNameBuffer_e__FixedBuffer {
+    pub FixedElementField: char,
+}
+#[cfg(feature = "System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuffer =>
+    "System.IO.Enumeration"."FileSystemEntry/<_fileNameBuffer>e__FixedBuffer"
+);
+#[cfg(feature = "System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuffer {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer")]
+impl crate::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuffer {}

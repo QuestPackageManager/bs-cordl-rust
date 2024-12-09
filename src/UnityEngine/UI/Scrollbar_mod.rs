@@ -1,83 +1,3 @@
-#[cfg(feature = "UnityEngine+UI+Scrollbar+Axis")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Scrollbar_Axis {
-    Horizontal = 0i32,
-    Vertical = 1i32,
-}
-#[cfg(feature = "UnityEngine+UI+Scrollbar+Axis")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Scrollbar_Axis =>
-    "UnityEngine.UI"."Scrollbar/Axis"
-);
-#[cfg(feature = "UnityEngine+UI+Scrollbar+Direction")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Scrollbar_Direction {
-    BottomToTop = 2i32,
-    LeftToRight = 0i32,
-    RightToLeft = 1i32,
-    TopToBottom = 3i32,
-}
-#[cfg(feature = "UnityEngine+UI+Scrollbar+Direction")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Scrollbar_Direction =>
-    "UnityEngine.UI"."Scrollbar/Direction"
-);
-#[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct Scrollbar_ScrollEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<f32>,
-}
-#[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Scrollbar_ScrollEvent =>
-    "UnityEngine.UI"."Scrollbar/ScrollEvent"
-);
-#[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]
-impl std::ops::Deref for crate::UnityEngine::UI::Scrollbar_ScrollEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<f32>;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]
-impl std::ops::DerefMut for crate::UnityEngine::UI::Scrollbar_ScrollEvent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]
-impl crate::UnityEngine::UI::Scrollbar_ScrollEvent {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UI::Scrollbar_ScrollEvent {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "UnityEngine+UI+Scrollbar")]
 #[repr(C)]
 #[derive(Debug)]
@@ -585,6 +505,86 @@ impl crate::UnityEngine::UI::Scrollbar {
 }
 #[cfg(feature = "UnityEngine+UI+Scrollbar")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Scrollbar {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Scrollbar+Axis")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Scrollbar_Axis {
+    Horizontal = 0i32,
+    Vertical = 1i32,
+}
+#[cfg(feature = "UnityEngine+UI+Scrollbar+Axis")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Scrollbar_Axis =>
+    "UnityEngine.UI"."Scrollbar/Axis"
+);
+#[cfg(feature = "UnityEngine+UI+Scrollbar+Direction")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Scrollbar_Direction {
+    BottomToTop = 2i32,
+    LeftToRight = 0i32,
+    RightToLeft = 1i32,
+    TopToBottom = 3i32,
+}
+#[cfg(feature = "UnityEngine+UI+Scrollbar+Direction")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Scrollbar_Direction =>
+    "UnityEngine.UI"."Scrollbar/Direction"
+);
+#[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct Scrollbar_ScrollEvent {
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<f32>,
+}
+#[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Scrollbar_ScrollEvent =>
+    "UnityEngine.UI"."Scrollbar/ScrollEvent"
+);
+#[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]
+impl std::ops::Deref for crate::UnityEngine::UI::Scrollbar_ScrollEvent {
+    type Target = crate::UnityEngine::Events::UnityEvent_1<f32>;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]
+impl std::ops::DerefMut for crate::UnityEngine::UI::Scrollbar_ScrollEvent {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]
+impl crate::UnityEngine::UI::Scrollbar_ScrollEvent {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UI::Scrollbar_ScrollEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

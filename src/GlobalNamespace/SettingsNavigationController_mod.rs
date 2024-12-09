@@ -1,17 +1,3 @@
-#[cfg(feature = "SettingsNavigationController+FinishAction")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum SettingsNavigationController_FinishAction {
-    Apply = 2i32,
-    Cancel = 1i32,
-    _cordl_Ok = 0i32,
-}
-#[cfg(feature = "SettingsNavigationController+FinishAction")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SettingsNavigationController_FinishAction => ""
-    ."SettingsNavigationController/FinishAction"
-);
 #[cfg(feature = "SettingsNavigationController")]
 #[repr(C)]
 #[derive(Debug)]
@@ -157,3 +143,17 @@ for crate::GlobalNamespace::SettingsNavigationController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "SettingsNavigationController+FinishAction")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum SettingsNavigationController_FinishAction {
+    Apply = 2i32,
+    Cancel = 1i32,
+    _cordl_Ok = 0i32,
+}
+#[cfg(feature = "SettingsNavigationController+FinishAction")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SettingsNavigationController_FinishAction => ""
+    ."SettingsNavigationController/FinishAction"
+);

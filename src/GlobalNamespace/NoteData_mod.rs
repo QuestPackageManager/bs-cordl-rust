@@ -1,17 +1,3 @@
-#[cfg(feature = "NoteData+GameplayType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum NoteData_GameplayType {
-    Bomb = 1i32,
-    BurstSliderElement = 3i32,
-    BurstSliderHead = 2i32,
-    Normal = 0i32,
-}
-#[cfg(feature = "NoteData+GameplayType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteData_GameplayType => ""
-    ."NoteData/GameplayType"
-);
 #[cfg(feature = "NoteData")]
 #[repr(C)]
 #[derive(Debug)]
@@ -628,6 +614,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "NoteData+GameplayType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum NoteData_GameplayType {
+    Bomb = 1i32,
+    BurstSliderElement = 3i32,
+    BurstSliderHead = 2i32,
+    Normal = 0i32,
+}
+#[cfg(feature = "NoteData+GameplayType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::NoteData_GameplayType => ""
+    ."NoteData/GameplayType"
+);
 #[cfg(feature = "NoteData+ScoringType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

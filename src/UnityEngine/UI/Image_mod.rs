@@ -1,18 +1,3 @@
-#[cfg(feature = "UnityEngine+UI+Image+FillMethod")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Image_FillMethod {
-    Horizontal = 0i32,
-    Radial180 = 3i32,
-    Radial360 = 4i32,
-    Radial90 = 2i32,
-    Vertical = 1i32,
-}
-#[cfg(feature = "UnityEngine+UI+Image+FillMethod")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Image_FillMethod =>
-    "UnityEngine.UI"."Image/FillMethod"
-);
 #[cfg(feature = "UnityEngine+UI+Image")]
 #[repr(C)]
 #[derive(Debug)]
@@ -722,6 +707,21 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Image {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+FillMethod")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Image_FillMethod {
+    Horizontal = 0i32,
+    Radial180 = 3i32,
+    Radial360 = 4i32,
+    Radial90 = 2i32,
+    Vertical = 1i32,
+}
+#[cfg(feature = "UnityEngine+UI+Image+FillMethod")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UI::Image_FillMethod =>
+    "UnityEngine.UI"."Image/FillMethod"
+);
 #[cfg(feature = "UnityEngine+UI+Image+Origin180")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

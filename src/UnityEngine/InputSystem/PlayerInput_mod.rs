@@ -1,308 +1,3 @@
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct PlayerInput_ActionEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-    >,
-    pub m_ActionId: *mut crate::System::String,
-    pub m_ActionName: *mut crate::System::String,
-}
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::PlayerInput_ActionEvent => "UnityEngine.InputSystem"
-    ."PlayerInput/ActionEvent"
-);
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
-impl std::ops::Deref for crate::UnityEngine::InputSystem::PlayerInput_ActionEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-    >;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
-impl std::ops::DerefMut for crate::UnityEngine::InputSystem::PlayerInput_ActionEvent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
-impl crate::UnityEngine::InputSystem::PlayerInput_ActionEvent {
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Guid_String2(
-        actionGUID: crate::System::Guid,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (actionGUID, name))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_InputAction1(
-        action: *mut crate::UnityEngine::InputSystem::InputAction,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (action))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Guid_String2(
-        &mut self,
-        actionGUID: crate::System::Guid,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (actionGUID, name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_InputAction1(
-        &mut self,
-        action: *mut crate::UnityEngine::InputSystem::InputAction,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (action))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_actionId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_actionId", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_actionName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_actionName", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::PlayerInput_ActionEvent {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct PlayerInput_ControlsChangedEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
-        *mut crate::UnityEngine::InputSystem::PlayerInput,
-    >,
-}
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent =>
-    "UnityEngine.InputSystem"."PlayerInput/ControlsChangedEvent"
-);
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
-impl std::ops::Deref
-for crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
-        *mut crate::UnityEngine::InputSystem::PlayerInput,
-    >;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
-impl std::ops::DerefMut
-for crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
-impl crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct PlayerInput_DeviceLostEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
-        *mut crate::UnityEngine::InputSystem::PlayerInput,
-    >,
-}
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent => "UnityEngine.InputSystem"
-    ."PlayerInput/DeviceLostEvent"
-);
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
-impl std::ops::Deref for crate::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
-        *mut crate::UnityEngine::InputSystem::PlayerInput,
-    >;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
-impl std::ops::DerefMut
-for crate::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
-impl crate::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct PlayerInput_DeviceRegainedEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
-        *mut crate::UnityEngine::InputSystem::PlayerInput,
-    >,
-}
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent =>
-    "UnityEngine.InputSystem"."PlayerInput/DeviceRegainedEvent"
-);
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
-impl std::ops::Deref
-for crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
-        *mut crate::UnityEngine::InputSystem::PlayerInput,
-    >;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
-impl std::ops::DerefMut
-for crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
-impl crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1178,6 +873,311 @@ impl crate::UnityEngine::InputSystem::PlayerInput {
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::PlayerInput {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct PlayerInput_ActionEvent {
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
+        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    >,
+    pub m_ActionId: *mut crate::System::String,
+    pub m_ActionName: *mut crate::System::String,
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::PlayerInput_ActionEvent => "UnityEngine.InputSystem"
+    ."PlayerInput/ActionEvent"
+);
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
+impl std::ops::Deref for crate::UnityEngine::InputSystem::PlayerInput_ActionEvent {
+    type Target = crate::UnityEngine::Events::UnityEvent_1<
+        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    >;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
+impl std::ops::DerefMut for crate::UnityEngine::InputSystem::PlayerInput_ActionEvent {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
+impl crate::UnityEngine::InputSystem::PlayerInput_ActionEvent {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Guid_String2(
+        actionGUID: crate::System::Guid,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (actionGUID, name))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_InputAction1(
+        action: *mut crate::UnityEngine::InputSystem::InputAction,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (action))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Guid_String2(
+        &mut self,
+        actionGUID: crate::System::Guid,
+        name: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (actionGUID, name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_InputAction1(
+        &mut self,
+        action: *mut crate::UnityEngine::InputSystem::InputAction,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (action))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_actionId(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_actionId", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_actionName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_actionName", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::InputSystem::PlayerInput_ActionEvent {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct PlayerInput_ControlsChangedEvent {
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
+        *mut crate::UnityEngine::InputSystem::PlayerInput,
+    >,
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent =>
+    "UnityEngine.InputSystem"."PlayerInput/ControlsChangedEvent"
+);
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
+impl std::ops::Deref
+for crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent {
+    type Target = crate::UnityEngine::Events::UnityEvent_1<
+        *mut crate::UnityEngine::InputSystem::PlayerInput,
+    >;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
+impl std::ops::DerefMut
+for crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
+impl crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct PlayerInput_DeviceLostEvent {
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
+        *mut crate::UnityEngine::InputSystem::PlayerInput,
+    >,
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent => "UnityEngine.InputSystem"
+    ."PlayerInput/DeviceLostEvent"
+);
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
+impl std::ops::Deref for crate::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent {
+    type Target = crate::UnityEngine::Events::UnityEvent_1<
+        *mut crate::UnityEngine::InputSystem::PlayerInput,
+    >;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
+impl std::ops::DerefMut
+for crate::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
+impl crate::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct PlayerInput_DeviceRegainedEvent {
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
+        *mut crate::UnityEngine::InputSystem::PlayerInput,
+    >,
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent =>
+    "UnityEngine.InputSystem"."PlayerInput/DeviceRegainedEvent"
+);
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
+impl std::ops::Deref
+for crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent {
+    type Target = crate::UnityEngine::Events::UnityEvent_1<
+        *mut crate::UnityEngine::InputSystem::PlayerInput,
+    >;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
+impl std::ops::DerefMut
+for crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
+impl crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

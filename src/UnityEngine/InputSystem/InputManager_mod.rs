@@ -1,45 +1,3 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+AvailableDevice")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct InputManager_AvailableDevice {
-    pub description: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
-    pub deviceId: i32,
-    pub isNative: bool,
-    pub isRemoved: bool,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+AvailableDevice")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputManager_AvailableDevice => "UnityEngine.InputSystem"
-    ."InputManager/AvailableDevice"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+AvailableDevice")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::InputManager_AvailableDevice {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+AvailableDevice")]
-impl crate::UnityEngine::InputSystem::InputManager_AvailableDevice {}
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+DeviceDisableScope")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum InputManager_DeviceDisableScope {
-    Everywhere = 0i32,
-    InFrontendOnly = 1i32,
-    TemporaryWhilePlayerIsInBackground = 2i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputManager+DeviceDisableScope")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputManager_DeviceDisableScope =>
-    "UnityEngine.InputSystem"."InputManager/DeviceDisableScope"
-);
 #[cfg(feature = "UnityEngine+InputSystem+InputManager")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1743,6 +1701,48 @@ for crate::UnityEngine::InputSystem::InputManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputManager+AvailableDevice")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct InputManager_AvailableDevice {
+    pub description: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+    pub deviceId: i32,
+    pub isNative: bool,
+    pub isRemoved: bool,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputManager+AvailableDevice")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputManager_AvailableDevice => "UnityEngine.InputSystem"
+    ."InputManager/AvailableDevice"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputManager+AvailableDevice")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::InputManager_AvailableDevice {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputManager+AvailableDevice")]
+impl crate::UnityEngine::InputSystem::InputManager_AvailableDevice {}
+#[cfg(feature = "UnityEngine+InputSystem+InputManager+DeviceDisableScope")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum InputManager_DeviceDisableScope {
+    Everywhere = 0i32,
+    InFrontendOnly = 1i32,
+    TemporaryWhilePlayerIsInBackground = 2i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputManager+DeviceDisableScope")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputManager_DeviceDisableScope =>
+    "UnityEngine.InputSystem"."InputManager/DeviceDisableScope"
+);
 #[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorListener")]
 #[repr(C)]
 #[derive(Debug, Clone)]

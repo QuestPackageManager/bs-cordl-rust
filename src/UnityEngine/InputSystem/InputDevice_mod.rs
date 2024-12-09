@@ -1,68 +1,3 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputDevice+ControlBitRangeNode")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct InputDevice_ControlBitRangeNode {
-    pub endBitOffset: u16,
-    pub leftChildIndex: i16,
-    pub controlStartIndex: u16,
-    pub controlCount: u8,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputDevice+ControlBitRangeNode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode =>
-    "UnityEngine.InputSystem"."InputDevice/ControlBitRangeNode"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputDevice+ControlBitRangeNode")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputDevice+ControlBitRangeNode")]
-impl crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode {
-    pub fn _ctor(
-        &mut self,
-        endOffset: u16,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (endOffset),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputDevice+DeviceFlags")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum InputDevice_DeviceFlags {
-    CanRunInBackground = 2048i32,
-    CanRunInBackgroundHasBeenQueried = 4096i32,
-    DisabledInFrontend = 32i32,
-    DisabledInRuntime = 128i32,
-    DisabledStateHasBeenQueriedFromRuntime = 64i32,
-    DisabledWhileInBackground = 256i32,
-    HasControlsWithDefaultState = 4i32,
-    HasDontResetControls = 1024i32,
-    HasEventMerger = 8192i32,
-    HasEventPreProcessor = 16384i32,
-    HasStateCallbacks = 2i32,
-    Native = 16i32,
-    Remote = 8i32,
-    UpdateBeforeRender = 1i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputDevice+DeviceFlags")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputDevice_DeviceFlags => "UnityEngine.InputSystem"
-    ."InputDevice/DeviceFlags"
-);
 #[cfg(feature = "UnityEngine+InputSystem+InputDevice")]
 #[repr(C)]
 #[derive(Debug)]
@@ -725,3 +660,68 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Inpu
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputDevice+ControlBitRangeNode")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct InputDevice_ControlBitRangeNode {
+    pub endBitOffset: u16,
+    pub leftChildIndex: i16,
+    pub controlStartIndex: u16,
+    pub controlCount: u8,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputDevice+ControlBitRangeNode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode =>
+    "UnityEngine.InputSystem"."InputDevice/ControlBitRangeNode"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputDevice+ControlBitRangeNode")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputDevice+ControlBitRangeNode")]
+impl crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode {
+    pub fn _ctor(
+        &mut self,
+        endOffset: u16,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (endOffset),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputDevice+DeviceFlags")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum InputDevice_DeviceFlags {
+    CanRunInBackground = 2048i32,
+    CanRunInBackgroundHasBeenQueried = 4096i32,
+    DisabledInFrontend = 32i32,
+    DisabledInRuntime = 128i32,
+    DisabledStateHasBeenQueriedFromRuntime = 64i32,
+    DisabledWhileInBackground = 256i32,
+    HasControlsWithDefaultState = 4i32,
+    HasDontResetControls = 1024i32,
+    HasEventMerger = 8192i32,
+    HasEventPreProcessor = 16384i32,
+    HasStateCallbacks = 2i32,
+    Native = 16i32,
+    Remote = 8i32,
+    UpdateBeforeRender = 1i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputDevice+DeviceFlags")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputDevice_DeviceFlags => "UnityEngine.InputSystem"
+    ."InputDevice/DeviceFlags"
+);

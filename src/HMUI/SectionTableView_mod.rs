@@ -1,119 +1,3 @@
-#[cfg(feature = "HMUI+SectionTableView+IDataSource")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct SectionTableView_IDataSource {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-}
-#[cfg(feature = "HMUI+SectionTableView+IDataSource")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::SectionTableView_IDataSource => "HMUI"
-    ."SectionTableView/IDataSource"
-);
-#[cfg(feature = "HMUI+SectionTableView+IDataSource")]
-impl std::ops::Deref for crate::HMUI::SectionTableView_IDataSource {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "HMUI+SectionTableView+IDataSource")]
-impl std::ops::DerefMut for crate::HMUI::SectionTableView_IDataSource {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "HMUI+SectionTableView+IDataSource")]
-impl crate::HMUI::SectionTableView_IDataSource {
-    pub fn CellForRowInSection(
-        &mut self,
-        section: i32,
-        row: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
-            .invoke("CellForRowInSection", (section, row))?;
-        Ok(__cordl_ret)
-    }
-    pub fn CellForSectionHeader(
-        &mut self,
-        section: i32,
-        unfolded: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
-            .invoke("CellForSectionHeader", (section, unfolded))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NumberOfRowsInSection(
-        &mut self,
-        section: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("NumberOfRowsInSection", (section))?;
-        Ok(__cordl_ret)
-    }
-    pub fn NumberOfSections(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfSections", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn RowHeight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("RowHeight", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
-    }
-}
-#[cfg(feature = "HMUI+SectionTableView+IDataSource")]
-impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SectionTableView_IDataSource {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "HMUI+SectionTableView+Section")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct SectionTableView_Section {
-    pub unfolded: bool,
-    pub startBaseRow: i32,
-    pub numberOfBaseRows: i32,
-}
-#[cfg(feature = "HMUI+SectionTableView+Section")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::SectionTableView_Section => "HMUI"
-    ."SectionTableView/Section"
-);
-#[cfg(feature = "HMUI+SectionTableView+Section")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::HMUI::SectionTableView_Section {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "HMUI+SectionTableView+Section")]
-impl crate::HMUI::SectionTableView_Section {}
 #[cfg(feature = "HMUI+SectionTableView")]
 #[repr(C)]
 #[derive(Debug)]
@@ -391,3 +275,119 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SectionTableView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HMUI+SectionTableView+IDataSource")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct SectionTableView_IDataSource {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "HMUI+SectionTableView+IDataSource")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::HMUI::SectionTableView_IDataSource => "HMUI"
+    ."SectionTableView/IDataSource"
+);
+#[cfg(feature = "HMUI+SectionTableView+IDataSource")]
+impl std::ops::Deref for crate::HMUI::SectionTableView_IDataSource {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "HMUI+SectionTableView+IDataSource")]
+impl std::ops::DerefMut for crate::HMUI::SectionTableView_IDataSource {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "HMUI+SectionTableView+IDataSource")]
+impl crate::HMUI::SectionTableView_IDataSource {
+    pub fn CellForRowInSection(
+        &mut self,
+        section: i32,
+        row: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
+            .invoke("CellForRowInSection", (section, row))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CellForSectionHeader(
+        &mut self,
+        section: i32,
+        unfolded: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HMUI::TableCell = __cordl_object
+            .invoke("CellForSectionHeader", (section, unfolded))?;
+        Ok(__cordl_ret)
+    }
+    pub fn NumberOfRowsInSection(
+        &mut self,
+        section: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object
+            .invoke("NumberOfRowsInSection", (section))?;
+        Ok(__cordl_ret)
+    }
+    pub fn NumberOfSections(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("NumberOfSections", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn RowHeight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("RowHeight", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+}
+#[cfg(feature = "HMUI+SectionTableView+IDataSource")]
+impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SectionTableView_IDataSource {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "HMUI+SectionTableView+Section")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct SectionTableView_Section {
+    pub unfolded: bool,
+    pub startBaseRow: i32,
+    pub numberOfBaseRows: i32,
+}
+#[cfg(feature = "HMUI+SectionTableView+Section")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::HMUI::SectionTableView_Section => "HMUI"
+    ."SectionTableView/Section"
+);
+#[cfg(feature = "HMUI+SectionTableView+Section")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::HMUI::SectionTableView_Section {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "HMUI+SectionTableView+Section")]
+impl crate::HMUI::SectionTableView_Section {}

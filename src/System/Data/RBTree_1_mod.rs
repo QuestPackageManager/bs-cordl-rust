@@ -1,217 +1,3 @@
-#[cfg(feature = "System+Data+RBTree_1+Node")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct RBTree_1_Node<K: quest_hook::libil2cpp::Type> {
-    pub _selfId: i32,
-    pub _leftId: i32,
-    pub _rightId: i32,
-    pub _parentId: i32,
-    pub _nextId: i32,
-    pub _subTreeSize: i32,
-    pub _keyOfNode: K,
-    pub _nodeColor: crate::System::Data::RBTree_1_NodeColor<K>,
-    __cordl_phantom_K: std::marker::PhantomData<K>,
-}
-#[cfg(feature = "System+Data+RBTree_1+Node")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::RBTree_1_Node < K > =>
-    "System.Data"."RBTree`1/Node<K>" < K >
-);
-#[cfg(feature = "System+Data+RBTree_1+Node")]
-unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
-for crate::System::Data::RBTree_1_Node<K> {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Data+RBTree_1+Node")]
-impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_Node<K> {}
-#[cfg(feature = "System+Data+RBTree_1+NodeColor")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum RBTree_1_NodeColor {
-    black = 1i32,
-    red = 0i32,
-}
-#[cfg(feature = "System+Data+RBTree_1+NodeColor")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::RBTree_1_NodeColor =>
-    "System.Data"."RBTree`1/NodeColor<K>"
-);
-#[cfg(feature = "System+Data+RBTree_1+NodePath")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct RBTree_1_NodePath<K: quest_hook::libil2cpp::Type> {
-    pub _nodeID: i32,
-    pub _mainTreeNodeID: i32,
-    __cordl_phantom_K: std::marker::PhantomData<K>,
-}
-#[cfg(feature = "System+Data+RBTree_1+NodePath")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::RBTree_1_NodePath < K > =>
-    "System.Data"."RBTree`1/NodePath<K>" < K >
-);
-#[cfg(feature = "System+Data+RBTree_1+NodePath")]
-unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
-for crate::System::Data::RBTree_1_NodePath<K> {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Data+RBTree_1+NodePath")]
-impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_NodePath<K> {
-    pub fn _ctor(
-        &mut self,
-        nodeID: i32,
-        mainTreeNodeID: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (nodeID, mainTreeNodeID),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct RBTree_1_RBTreeEnumerator<K: quest_hook::libil2cpp::Type> {
-    pub _tree: *mut crate::System::Data::RBTree_1<K>,
-    pub _version: i32,
-    pub _index: i32,
-    pub _mainTreeNodeId: i32,
-    pub _current: K,
-    __cordl_phantom_K: std::marker::PhantomData<K>,
-}
-#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::RBTree_1_RBTreeEnumerator < K > =>
-    "System.Data"."RBTree`1/RBTreeEnumerator<K>" < K >
-);
-#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
-unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
-for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
-impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
-    pub fn Dispose(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveNext",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IEnumerator_Reset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Collections.IEnumerator.Reset",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IEnumerator_get_Current(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
-    where
-        K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Collections.IEnumerator.get_Current",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_RBTree_1_0(
-        &mut self,
-        tree: *mut crate::System::Data::RBTree_1<K>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (tree),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_i32_1(
-        &mut self,
-        tree: *mut crate::System::Data::RBTree_1<K>,
-        position: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (tree, position),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<K>
-    where
-        K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: K = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Current",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "System+Data+RBTree_1")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1156,6 +942,220 @@ for crate::System::Data::RBTree_1<K> {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Data+RBTree_1+Node")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct RBTree_1_Node<K: quest_hook::libil2cpp::Type> {
+    pub _selfId: i32,
+    pub _leftId: i32,
+    pub _rightId: i32,
+    pub _parentId: i32,
+    pub _nextId: i32,
+    pub _subTreeSize: i32,
+    pub _keyOfNode: K,
+    pub _nodeColor: crate::System::Data::RBTree_1_NodeColor<K>,
+    __cordl_phantom_K: std::marker::PhantomData<K>,
+}
+#[cfg(feature = "System+Data+RBTree_1+Node")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Data::RBTree_1_Node < K > =>
+    "System.Data"."RBTree`1/Node<K>" < K >
+);
+#[cfg(feature = "System+Data+RBTree_1+Node")]
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
+for crate::System::Data::RBTree_1_Node<K> {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Data+RBTree_1+Node")]
+impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_Node<K> {}
+#[cfg(feature = "System+Data+RBTree_1+NodeColor")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum RBTree_1_NodeColor {
+    black = 1i32,
+    red = 0i32,
+}
+#[cfg(feature = "System+Data+RBTree_1+NodeColor")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Data::RBTree_1_NodeColor =>
+    "System.Data"."RBTree`1/NodeColor<K>"
+);
+#[cfg(feature = "System+Data+RBTree_1+NodePath")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct RBTree_1_NodePath<K: quest_hook::libil2cpp::Type> {
+    pub _nodeID: i32,
+    pub _mainTreeNodeID: i32,
+    __cordl_phantom_K: std::marker::PhantomData<K>,
+}
+#[cfg(feature = "System+Data+RBTree_1+NodePath")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Data::RBTree_1_NodePath < K > =>
+    "System.Data"."RBTree`1/NodePath<K>" < K >
+);
+#[cfg(feature = "System+Data+RBTree_1+NodePath")]
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
+for crate::System::Data::RBTree_1_NodePath<K> {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Data+RBTree_1+NodePath")]
+impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_NodePath<K> {
+    pub fn _ctor(
+        &mut self,
+        nodeID: i32,
+        mainTreeNodeID: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (nodeID, mainTreeNodeID),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct RBTree_1_RBTreeEnumerator<K: quest_hook::libil2cpp::Type> {
+    pub _tree: *mut crate::System::Data::RBTree_1<K>,
+    pub _version: i32,
+    pub _index: i32,
+    pub _mainTreeNodeId: i32,
+    pub _current: K,
+    __cordl_phantom_K: std::marker::PhantomData<K>,
+}
+#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Data::RBTree_1_RBTreeEnumerator < K > =>
+    "System.Data"."RBTree`1/RBTreeEnumerator<K>" < K >
+);
+#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
+for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Dispose",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MoveNext",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IEnumerator_Reset(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Collections.IEnumerator.Reset",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IEnumerator_get_Current(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
+    where
+        K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Collections.IEnumerator.get_Current",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_RBTree_1_0(
+        &mut self,
+        tree: *mut crate::System::Data::RBTree_1<K>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (tree),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_i32_1(
+        &mut self,
+        tree: *mut crate::System::Data::RBTree_1<K>,
+        position: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (tree, position),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Current(&mut self) -> quest_hook::libil2cpp::Result<K>
+    where
+        K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: K = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Current",
+            (),
+        )?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Data+RBTree_1+TreePage")]

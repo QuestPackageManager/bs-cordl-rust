@@ -1,16 +1,3 @@
-#[cfg(feature = "HowToPlayViewController+HowToPlayOptions")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum HowToPlayViewController_HowToPlayOptions {
-    Credits = 1i32,
-    HowToPlay = 0i32,
-}
-#[cfg(feature = "HowToPlayViewController+HowToPlayOptions")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::HowToPlayViewController_HowToPlayOptions => ""
-    ."HowToPlayViewController/HowToPlayOptions"
-);
 #[cfg(feature = "HowToPlayViewController")]
 #[repr(C)]
 #[derive(Debug)]
@@ -145,3 +132,16 @@ for crate::GlobalNamespace::HowToPlayViewController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HowToPlayViewController+HowToPlayOptions")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum HowToPlayViewController_HowToPlayOptions {
+    Credits = 1i32,
+    HowToPlay = 0i32,
+}
+#[cfg(feature = "HowToPlayViewController+HowToPlayOptions")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::HowToPlayViewController_HowToPlayOptions => ""
+    ."HowToPlayViewController/HowToPlayOptions"
+);

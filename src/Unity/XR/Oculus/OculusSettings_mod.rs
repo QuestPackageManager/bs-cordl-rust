@@ -1,16 +1,3 @@
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+FoveationMethod")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OculusSettings_FoveationMethod {
-    EyeTrackedFoveatedRendering = 1i32,
-    FixedFoveatedRendering = 0i32,
-}
-#[cfg(feature = "Unity+XR+Oculus+OculusSettings+FoveationMethod")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::Unity::XR::Oculus::OculusSettings_FoveationMethod => "Unity.XR.Oculus"
-    ."OculusSettings/FoveationMethod"
-);
 #[cfg(feature = "Unity+XR+Oculus+OculusSettings")]
 #[repr(C)]
 #[derive(Debug)]
@@ -106,6 +93,19 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::OculusSetti
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+OculusSettings+FoveationMethod")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OculusSettings_FoveationMethod {
+    EyeTrackedFoveatedRendering = 1i32,
+    FixedFoveatedRendering = 0i32,
+}
+#[cfg(feature = "Unity+XR+Oculus+OculusSettings+FoveationMethod")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::Unity::XR::Oculus::OculusSettings_FoveationMethod => "Unity.XR.Oculus"
+    ."OculusSettings/FoveationMethod"
+);
 #[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeAndroid")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

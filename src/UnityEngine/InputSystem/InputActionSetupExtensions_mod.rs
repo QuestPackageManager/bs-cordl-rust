@@ -1,3 +1,55 @@
+#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct InputActionSetupExtensions {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputActionSetupExtensions => "UnityEngine.InputSystem"
+    ."InputActionSetupExtensions"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
+impl std::ops::Deref for crate::UnityEngine::InputSystem::InputActionSetupExtensions {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
+impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputActionSetupExtensions {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
+impl crate::UnityEngine::InputSystem::InputActionSetupExtensions {
+    #[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax")]
+    pub type BindingSyntax = crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax"
+    )]
+    pub type CompositeSyntax = crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
+    )]
+    pub type ControlSchemeSyntax = crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputActionSetupExtensions+__c__DisplayClass5_0"
+    )]
+    pub type __c__DisplayClass5_0 = crate::UnityEngine::InputSystem::InputActionSetupExtensions___c__DisplayClass5_0;
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::InputSystem::InputActionSetupExtensions {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -471,7 +523,7 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSy
     pub fn AddDeviceEntry(
         &mut self,
         controlPath: *mut crate::System::String,
-        flags: crate::UnityEngine::InputSystem::DeviceRequirement_Flags,
+        flags: crate::UnityEngine::InputSystem::DeviceRequirement_InputControlScheme_Flags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -657,57 +709,5 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSy
             (controlScheme),
         )?;
         Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct InputActionSetupExtensions {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputActionSetupExtensions => "UnityEngine.InputSystem"
-    ."InputActionSetupExtensions"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
-impl std::ops::Deref for crate::UnityEngine::InputSystem::InputActionSetupExtensions {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
-impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputActionSetupExtensions {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
-impl crate::UnityEngine::InputSystem::InputActionSetupExtensions {
-    #[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions+BindingSyntax")]
-    pub type BindingSyntax = crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputActionSetupExtensions+CompositeSyntax"
-    )]
-    pub type CompositeSyntax = crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputActionSetupExtensions+ControlSchemeSyntax"
-    )]
-    pub type ControlSchemeSyntax = crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputActionSetupExtensions+__c__DisplayClass5_0"
-    )]
-    pub type __c__DisplayClass5_0 = crate::UnityEngine::InputSystem::InputActionSetupExtensions___c__DisplayClass5_0;
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::InputSystem::InputActionSetupExtensions {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }

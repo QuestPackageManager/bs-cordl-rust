@@ -1,36 +1,3 @@
-#[cfg(feature = "MultiplayerSessionManager+ConnectionState")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum MultiplayerSessionManager_ConnectionState {
-    Connected = 2i32,
-    Connecting = 1i32,
-    Disconnected = 0i32,
-    Disconnecting = 3i32,
-}
-#[cfg(feature = "MultiplayerSessionManager+ConnectionState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::MultiplayerSessionManager_ConnectionState => ""
-    ."MultiplayerSessionManager/ConnectionState"
-);
-#[cfg(feature = "MultiplayerSessionManager+MessageType")]
-#[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum MultiplayerSessionManager_MessageType {
-    GameplayRpc = 1u8,
-    MenuRpc = 0u8,
-    NodePoseSyncState = 2u8,
-    NodePoseSyncStateDelta = 4u8,
-    OptionalAvatarData = 6u8,
-    ScoreSyncState = 3u8,
-    ScoreSyncStateDelta = 5u8,
-}
-#[cfg(feature = "MultiplayerSessionManager+MessageType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::MultiplayerSessionManager_MessageType => ""
-    ."MultiplayerSessionManager/MessageType"
-);
 #[cfg(feature = "MultiplayerSessionManager")]
 #[repr(C)]
 #[derive(Debug)]
@@ -949,6 +916,39 @@ for crate::GlobalNamespace::MultiplayerSessionManager {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerSessionManager+ConnectionState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum MultiplayerSessionManager_ConnectionState {
+    Connected = 2i32,
+    Connecting = 1i32,
+    Disconnected = 0i32,
+    Disconnecting = 3i32,
+}
+#[cfg(feature = "MultiplayerSessionManager+ConnectionState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerSessionManager_ConnectionState => ""
+    ."MultiplayerSessionManager/ConnectionState"
+);
+#[cfg(feature = "MultiplayerSessionManager+MessageType")]
+#[repr(u8)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum MultiplayerSessionManager_MessageType {
+    GameplayRpc = 1u8,
+    MenuRpc = 0u8,
+    NodePoseSyncState = 2u8,
+    NodePoseSyncStateDelta = 4u8,
+    OptionalAvatarData = 6u8,
+    ScoreSyncState = 3u8,
+    ScoreSyncStateDelta = 5u8,
+}
+#[cfg(feature = "MultiplayerSessionManager+MessageType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerSessionManager_MessageType => ""
+    ."MultiplayerSessionManager/MessageType"
+);
 #[cfg(feature = "MultiplayerSessionManager+SessionType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

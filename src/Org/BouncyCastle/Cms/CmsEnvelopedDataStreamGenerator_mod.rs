@@ -1,123 +1,3 @@
-#[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
-)]
-#[repr(C)]
-#[derive(Debug)]
-pub struct CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream {
-    __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
-    pub _outer: *mut crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator,
-    pub _out: *mut crate::Org::BouncyCastle::Crypto::IO::CipherStream,
-    pub _cGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-    pub _envGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-    pub _eiGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-}
-#[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
-)]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream
-    => "Org.BouncyCastle.Cms"
-    ."CmsEnvelopedDataStreamGenerator/CmsEnvelopedDataOutputStream"
-);
-#[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
-)]
-impl std::ops::Deref
-for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream {
-    type Target = crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
-)]
-impl std::ops::DerefMut
-for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
-)]
-impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream {
-    pub fn Close(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        outer: *mut crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator,
-        outStream: *mut crate::Org::BouncyCastle::Crypto::IO::CipherStream,
-        cGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-        envGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-        eiGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (outer, outStream, cGen, envGen, eiGen))?;
-        Ok(__cordl_object)
-    }
-    pub fn Write(
-        &mut self,
-        bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        off: i32,
-        len: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Write", (bytes, off, len))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteByte(
-        &mut self,
-        b: u8,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteByte", (b))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        outer: *mut crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator,
-        outStream: *mut crate::Org::BouncyCastle::Crypto::IO::CipherStream,
-        cGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-        envGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-        eiGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (outer, outStream, cGen, envGen, eiGen))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(
-    feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
-)]
-impl quest_hook::libil2cpp::ObjectType
-for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator")]
 #[repr(C)]
 #[derive(Debug)]
@@ -279,6 +159,126 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator {
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
+)]
+#[repr(C)]
+#[derive(Debug)]
+pub struct CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream {
+    __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
+    pub _outer: *mut crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator,
+    pub _out: *mut crate::Org::BouncyCastle::Crypto::IO::CipherStream,
+    pub _cGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    pub _envGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    pub _eiGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
+)]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream
+    => "Org.BouncyCastle.Cms"
+    ."CmsEnvelopedDataStreamGenerator/CmsEnvelopedDataOutputStream"
+);
+#[cfg(
+    feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
+)]
+impl std::ops::Deref
+for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream {
+    type Target = crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
+)]
+impl std::ops::DerefMut
+for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
+)]
+impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream {
+    pub fn Close(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Close", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        outer: *mut crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator,
+        outStream: *mut crate::Org::BouncyCastle::Crypto::IO::CipherStream,
+        cGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+        envGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+        eiGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (outer, outStream, cGen, envGen, eiGen))?;
+        Ok(__cordl_object)
+    }
+    pub fn Write(
+        &mut self,
+        bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        off: i32,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Write", (bytes, off, len))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteByte(
+        &mut self,
+        b: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteByte", (b))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        outer: *mut crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator,
+        outStream: *mut crate::Org::BouncyCastle::Crypto::IO::CipherStream,
+        cGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+        envGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+        eiGen: *mut crate::Org::BouncyCastle::Asn1::BerSequenceGenerator,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (outer, outStream, cGen, envGen, eiGen))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(
+    feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
+)]
+impl quest_hook::libil2cpp::ObjectType
+for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

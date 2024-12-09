@@ -1,31 +1,3 @@
-#[cfg(feature = "HMUI+ScrollView+ScrollDirection")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ScrollView_ScrollDirection {
-    Down = 2i32,
-    Left = 3i32,
-    None = 0i32,
-    Right = 4i32,
-    Up = 1i32,
-}
-#[cfg(feature = "HMUI+ScrollView+ScrollDirection")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::ScrollView_ScrollDirection => "HMUI"
-    ."ScrollView/ScrollDirection"
-);
-#[cfg(feature = "HMUI+ScrollView+ScrollType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ScrollView_ScrollType {
-    FixedCellSize = 1i32,
-    FocusItems = 2i32,
-    PageSize = 0i32,
-}
-#[cfg(feature = "HMUI+ScrollView+ScrollType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::ScrollView_ScrollType => "HMUI"
-    ."ScrollView/ScrollType"
-);
 #[cfg(feature = "HMUI+ScrollView")]
 #[repr(C)]
 #[derive(Debug)]
@@ -450,6 +422,34 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ScrollView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HMUI+ScrollView+ScrollDirection")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ScrollView_ScrollDirection {
+    Down = 2i32,
+    Left = 3i32,
+    None = 0i32,
+    Right = 4i32,
+    Up = 1i32,
+}
+#[cfg(feature = "HMUI+ScrollView+ScrollDirection")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::HMUI::ScrollView_ScrollDirection => "HMUI"
+    ."ScrollView/ScrollDirection"
+);
+#[cfg(feature = "HMUI+ScrollView+ScrollType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ScrollView_ScrollType {
+    FixedCellSize = 1i32,
+    FocusItems = 2i32,
+    PageSize = 0i32,
+}
+#[cfg(feature = "HMUI+ScrollView+ScrollType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::HMUI::ScrollView_ScrollType => "HMUI"
+    ."ScrollView/ScrollType"
+);
 #[cfg(feature = "HMUI+ScrollView+ScrollViewDirection")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

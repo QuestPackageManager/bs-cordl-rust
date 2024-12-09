@@ -1,208 +1,3 @@
-#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct Stream___ReadAsync_g__FinishReadAsync_44_0_d {
-    pub __1__state: i32,
-    pub __t__builder: crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder_1<
-        i32,
-    >,
-    pub readTask: *mut crate::System::Threading::Tasks::Task_1<i32>,
-    pub localBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub localDestination: crate::System::Memory_1<u8>,
-    pub __u__1: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<
-        i32,
-    >,
-}
-#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d => "System.IO"
-    ."Stream/<<ReadAsync>g__FinishReadAsync|44_0>d"
-);
-#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
-impl crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
-    pub fn MoveNext(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveNext",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetStateMachine(
-        &mut self,
-        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetStateMachine",
-            (stateMachine),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct Stream_ReadWriteParameters {
-    pub Buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub Offset: i32,
-    pub Count: i32,
-}
-#[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::IO::Stream_ReadWriteParameters =>
-    "System.IO"."Stream/ReadWriteParameters"
-);
-#[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::IO::Stream_ReadWriteParameters {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
-impl crate::System::IO::Stream_ReadWriteParameters {}
-#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct Stream_ReadWriteTask {
-    __cordl_parent: crate::System::Threading::Tasks::Task_1<i32>,
-    pub _isRead: bool,
-    pub _apm: bool,
-    pub _stream: *mut crate::System::IO::Stream,
-    pub _buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _offset: i32,
-    pub _count: i32,
-    pub _callback: *mut crate::System::AsyncCallback,
-    pub _context: *mut crate::System::Threading::ExecutionContext,
-}
-#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::IO::Stream_ReadWriteTask => "System.IO"
-    ."Stream/ReadWriteTask"
-);
-#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
-impl std::ops::Deref for crate::System::IO::Stream_ReadWriteTask {
-    type Target = crate::System::Threading::Tasks::Task_1<i32>;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
-impl std::ops::DerefMut for crate::System::IO::Stream_ReadWriteTask {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
-impl crate::System::IO::Stream_ReadWriteTask {
-    pub fn ClearBeginState(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearBeginState", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        isRead: bool,
-        apm: bool,
-        function: *mut crate::System::Func_2<*mut crate::System::Object, i32>,
-        state: *mut crate::System::Object,
-        stream: *mut crate::System::IO::Stream,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        count: i32,
-        callback: *mut crate::System::AsyncCallback,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (isRead, apm, function, state, stream, buffer, offset, count, callback),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn System_Threading_Tasks_ITaskCompletionAction_Invoke(
-        &mut self,
-        completingTask: *mut crate::System::Threading::Tasks::Task,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "System.Threading.Tasks.ITaskCompletionAction.Invoke",
-                (completingTask),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Threading_Tasks_ITaskCompletionAction_get_InvokeMayRunArbitraryCode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "System.Threading.Tasks.ITaskCompletionAction.get_InvokeMayRunArbitraryCode",
-                (),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        isRead: bool,
-        apm: bool,
-        function: *mut crate::System::Func_2<*mut crate::System::Object, i32>,
-        state: *mut crate::System::Object,
-        stream: *mut crate::System::IO::Stream,
-        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        offset: i32,
-        count: i32,
-        callback: *mut crate::System::AsyncCallback,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (isRead, apm, function, state, stream, buffer, offset, count, callback),
-            )?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
-impl quest_hook::libil2cpp::ObjectType for crate::System::IO::Stream_ReadWriteTask {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "System+IO+Stream")]
 #[repr(C)]
 #[derive(Debug)]
@@ -905,6 +700,155 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::IO::Stream {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct Stream_ReadWriteParameters {
+    pub Buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub Offset: i32,
+    pub Count: i32,
+}
+#[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::IO::Stream_ReadWriteParameters =>
+    "System.IO"."Stream/ReadWriteParameters"
+);
+#[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::IO::Stream_ReadWriteParameters {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
+impl crate::System::IO::Stream_ReadWriteParameters {}
+#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct Stream_ReadWriteTask {
+    __cordl_parent: crate::System::Threading::Tasks::Task_1<i32>,
+    pub _isRead: bool,
+    pub _apm: bool,
+    pub _stream: *mut crate::System::IO::Stream,
+    pub _buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub _offset: i32,
+    pub _count: i32,
+    pub _callback: *mut crate::System::AsyncCallback,
+    pub _context: *mut crate::System::Threading::ExecutionContext,
+}
+#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::IO::Stream_ReadWriteTask => "System.IO"
+    ."Stream/ReadWriteTask"
+);
+#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
+impl std::ops::Deref for crate::System::IO::Stream_ReadWriteTask {
+    type Target = crate::System::Threading::Tasks::Task_1<i32>;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
+impl std::ops::DerefMut for crate::System::IO::Stream_ReadWriteTask {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
+impl crate::System::IO::Stream_ReadWriteTask {
+    pub fn ClearBeginState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearBeginState", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        isRead: bool,
+        apm: bool,
+        function: *mut crate::System::Func_2<*mut crate::System::Object, i32>,
+        state: *mut crate::System::Object,
+        stream: *mut crate::System::IO::Stream,
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        count: i32,
+        callback: *mut crate::System::AsyncCallback,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (isRead, apm, function, state, stream, buffer, offset, count, callback),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn System_Threading_Tasks_ITaskCompletionAction_Invoke(
+        &mut self,
+        completingTask: *mut crate::System::Threading::Tasks::Task,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "System.Threading.Tasks.ITaskCompletionAction.Invoke",
+                (completingTask),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Threading_Tasks_ITaskCompletionAction_get_InvokeMayRunArbitraryCode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke(
+                "System.Threading.Tasks.ITaskCompletionAction.get_InvokeMayRunArbitraryCode",
+                (),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        isRead: bool,
+        apm: bool,
+        function: *mut crate::System::Func_2<*mut crate::System::Object, i32>,
+        state: *mut crate::System::Object,
+        stream: *mut crate::System::IO::Stream,
+        buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        offset: i32,
+        count: i32,
+        callback: *mut crate::System::AsyncCallback,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (isRead, apm, function, state, stream, buffer, offset, count, callback),
+            )?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
+impl quest_hook::libil2cpp::ObjectType for crate::System::IO::Stream_ReadWriteTask {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "System+IO+Stream+SynchronousAsyncResult")]
 #[repr(C)]
 #[derive(Debug)]
@@ -938,7 +882,7 @@ impl std::ops::DerefMut for crate::System::IO::Stream_SynchronousAsyncResult {
 #[cfg(feature = "System+IO+Stream+SynchronousAsyncResult")]
 impl crate::System::IO::Stream_SynchronousAsyncResult {
     #[cfg(feature = "System+IO+Stream+SynchronousAsyncResult+__c")]
-    pub type __c = crate::System::IO::SynchronousAsyncResult___c;
+    pub type __c = crate::System::IO::SynchronousAsyncResult_Stream___c;
     pub fn New_Exception_Object__cordl_bool2(
         ex: *mut crate::System::Exception,
         asyncStateObject: *mut crate::System::Object,
@@ -1058,5 +1002,61 @@ for crate::System::IO::Stream_SynchronousAsyncResult {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct Stream___ReadAsync_g__FinishReadAsync_44_0_d {
+    pub __1__state: i32,
+    pub __t__builder: crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder_1<
+        i32,
+    >,
+    pub readTask: *mut crate::System::Threading::Tasks::Task_1<i32>,
+    pub localBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub localDestination: crate::System::Memory_1<u8>,
+    pub __u__1: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<
+        i32,
+    >,
+}
+#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d => "System.IO"
+    ."Stream/<<ReadAsync>g__FinishReadAsync|44_0>d"
+);
+#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
+impl crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
+    pub fn MoveNext(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "MoveNext",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetStateMachine(
+        &mut self,
+        stateMachine: *mut crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "SetStateMachine",
+            (stateMachine),
+        )?;
+        Ok(__cordl_ret)
     }
 }

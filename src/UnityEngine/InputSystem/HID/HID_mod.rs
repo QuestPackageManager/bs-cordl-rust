@@ -1,3 +1,98 @@
+#[cfg(feature = "UnityEngine+InputSystem+HID+HID")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct HID {
+    __cordl_parent: crate::UnityEngine::InputSystem::InputDevice,
+    pub m_HaveParsedHIDDescriptor: bool,
+    pub m_HIDDescriptor: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
+}
+#[cfg(feature = "UnityEngine+InputSystem+HID+HID")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::HID::HID =>
+    "UnityEngine.InputSystem.HID"."HID"
+);
+#[cfg(feature = "UnityEngine+InputSystem+HID+HID")]
+impl std::ops::Deref for crate::UnityEngine::InputSystem::HID::HID {
+    type Target = crate::UnityEngine::InputSystem::InputDevice;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+HID+HID")]
+impl std::ops::DerefMut for crate::UnityEngine::InputSystem::HID::HID {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+HID+HID")]
+impl crate::UnityEngine::InputSystem::HID::HID {
+    pub const kHIDInterface: &'static str = "HID";
+    pub const kHIDNamespace: &'static str = "HID";
+    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+Button")]
+    pub type Button = crate::UnityEngine::InputSystem::HID::HID_Button;
+    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+GenericDesktop")]
+    pub type GenericDesktop = crate::UnityEngine::InputSystem::HID::HID_GenericDesktop;
+    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDCollectionDescriptor")]
+    pub type HIDCollectionDescriptor = crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor;
+    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDCollectionType")]
+    pub type HIDCollectionType = crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType;
+    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptor")]
+    pub type HIDDeviceDescriptor = crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor;
+    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptorBuilder")]
+    pub type HIDDeviceDescriptorBuilder = crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder;
+    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDElementDescriptor")]
+    pub type HIDElementDescriptor = crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor;
+    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDElementFlags")]
+    pub type HIDElementFlags = crate::UnityEngine::InputSystem::HID::HID_HIDElementFlags;
+    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDLayoutBuilder")]
+    pub type HIDLayoutBuilder = crate::UnityEngine::InputSystem::HID::HID_HIDLayoutBuilder;
+    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDReportType")]
+    pub type HIDReportType = crate::UnityEngine::InputSystem::HID::HID_HIDReportType;
+    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+Simulation")]
+    pub type Simulation = crate::UnityEngine::InputSystem::HID::HID_Simulation;
+    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+UsagePage")]
+    pub type UsagePage = crate::UnityEngine::InputSystem::HID::HID_UsagePage;
+    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+__c__DisplayClass12_0")]
+    pub type __c__DisplayClass12_0 = crate::UnityEngine::InputSystem::HID::HID___c__DisplayClass12_0;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_hidDescriptor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor = __cordl_object
+            .invoke("get_hidDescriptor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+HID+HID")]
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::HID::HID {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+Button")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -94,101 +189,6 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
     ::UnityEngine::InputSystem::HID::HID_GenericDesktop => "UnityEngine.InputSystem.HID"
     ."HID/GenericDesktop"
 );
-#[cfg(feature = "UnityEngine+InputSystem+HID+HID")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct HID {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputDevice,
-    pub m_HaveParsedHIDDescriptor: bool,
-    pub m_HIDDescriptor: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
-}
-#[cfg(feature = "UnityEngine+InputSystem+HID+HID")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::InputSystem::HID::HID =>
-    "UnityEngine.InputSystem.HID"."HID"
-);
-#[cfg(feature = "UnityEngine+InputSystem+HID+HID")]
-impl std::ops::Deref for crate::UnityEngine::InputSystem::HID::HID {
-    type Target = crate::UnityEngine::InputSystem::InputDevice;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+HID+HID")]
-impl std::ops::DerefMut for crate::UnityEngine::InputSystem::HID::HID {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+HID+HID")]
-impl crate::UnityEngine::InputSystem::HID::HID {
-    pub const kHIDInterface: &'static str = "HID";
-    pub const kHIDNamespace: &'static str = "HID";
-    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+Button")]
-    pub type Button = crate::UnityEngine::InputSystem::HID::HID_Button;
-    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+GenericDesktop")]
-    pub type GenericDesktop = crate::UnityEngine::InputSystem::HID::HID_GenericDesktop;
-    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDCollectionDescriptor")]
-    pub type HIDCollectionDescriptor = crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor;
-    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDCollectionType")]
-    pub type HIDCollectionType = crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType;
-    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptor")]
-    pub type HIDDeviceDescriptor = crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor;
-    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptorBuilder")]
-    pub type HIDDeviceDescriptorBuilder = crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder;
-    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDElementDescriptor")]
-    pub type HIDElementDescriptor = crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor;
-    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDElementFlags")]
-    pub type HIDElementFlags = crate::UnityEngine::InputSystem::HID::HID_HIDElementFlags;
-    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDLayoutBuilder")]
-    pub type HIDLayoutBuilder = crate::UnityEngine::InputSystem::HID::HID_HIDLayoutBuilder;
-    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDReportType")]
-    pub type HIDReportType = crate::UnityEngine::InputSystem::HID::HID_HIDReportType;
-    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+Simulation")]
-    pub type Simulation = crate::UnityEngine::InputSystem::HID::HID_Simulation;
-    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+UsagePage")]
-    pub type UsagePage = crate::UnityEngine::InputSystem::HID::HID_UsagePage;
-    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+__c__DisplayClass12_0")]
-    pub type __c__DisplayClass12_0 = crate::UnityEngine::InputSystem::HID::HID___c__DisplayClass12_0;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_hidDescriptor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor = __cordl_object
-            .invoke("get_hidDescriptor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+HID+HID")]
-impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::HID::HID {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDCollectionDescriptor")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -736,7 +736,7 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::HID::HID_HIDLayoutB
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDLayoutBuilder")]
 impl crate::UnityEngine::InputSystem::HID::HID_HIDLayoutBuilder {
     #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDLayoutBuilder+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::HID::HIDLayoutBuilder___c;
+    pub type __c = crate::UnityEngine::InputSystem::HID::HIDLayoutBuilder_HID___c;
     pub fn Build(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

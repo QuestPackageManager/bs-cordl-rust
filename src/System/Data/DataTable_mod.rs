@@ -1,39 +1,3 @@
-#[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct DataTable_DSRowDiffIdUsageSection {
-    pub _targetDS: *mut crate::System::Data::DataSet,
-}
-#[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Data::DataTable_DSRowDiffIdUsageSection
-    => "System.Data"."DataTable/DSRowDiffIdUsageSection"
-);
-#[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
-impl crate::System::Data::DataTable_DSRowDiffIdUsageSection {
-    pub fn Prepare(
-        &mut self,
-        ds: *mut crate::System::Data::DataSet,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Prepare",
-            (ds),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "System+Data+DataTable")]
 #[repr(C)]
 #[derive(Debug)]
@@ -2565,6 +2529,42 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataTable {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct DataTable_DSRowDiffIdUsageSection {
+    pub _targetDS: *mut crate::System::Data::DataSet,
+}
+#[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Data::DataTable_DSRowDiffIdUsageSection
+    => "System.Data"."DataTable/DSRowDiffIdUsageSection"
+);
+#[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
+impl crate::System::Data::DataTable_DSRowDiffIdUsageSection {
+    pub fn Prepare(
+        &mut self,
+        ds: *mut crate::System::Data::DataSet,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Prepare",
+            (ds),
+        )?;
+        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Data+DataTable+RowDiffIdUsageSection")]

@@ -1,29 +1,3 @@
-#[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct CertificateData_AlgorithmIdentifier {
-    pub AlgorithmId: *mut crate::System::String,
-    pub Parameters: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-}
-#[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier =>
-    "Internal.Cryptography.Pal"."CertificateData/AlgorithmIdentifier"
-);
-#[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
-impl crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {}
 #[cfg(feature = "Internal+Cryptography+Pal+CertificateData")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -93,3 +67,29 @@ impl crate::Internal::Cryptography::Pal::CertificateData {
         Ok(__cordl_ret)
     }
 }
+#[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct CertificateData_AlgorithmIdentifier {
+    pub AlgorithmId: *mut crate::System::String,
+    pub Parameters: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+}
+#[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier =>
+    "Internal.Cryptography.Pal"."CertificateData/AlgorithmIdentifier"
+);
+#[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
+impl crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {}

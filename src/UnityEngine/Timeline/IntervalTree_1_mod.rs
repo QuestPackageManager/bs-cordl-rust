@@ -1,32 +1,3 @@
-#[cfg(feature = "UnityEngine+Timeline+IntervalTree_1+Entry")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct IntervalTree_1_Entry<T: quest_hook::libil2cpp::Type> {
-    pub intervalStart: i64,
-    pub intervalEnd: i64,
-    pub item: T,
-    __cordl_phantom_T: std::marker::PhantomData<T>,
-}
-#[cfg(feature = "UnityEngine+Timeline+IntervalTree_1+Entry")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Timeline::IntervalTree_1_Entry < T
-    > => "UnityEngine.Timeline"."IntervalTree`1/Entry<T>" < T >
-);
-#[cfg(feature = "UnityEngine+Timeline+IntervalTree_1+Entry")]
-unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Timeline::IntervalTree_1_Entry<T> {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+Timeline+IntervalTree_1+Entry")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::Timeline::IntervalTree_1_Entry<T> {}
 #[cfg(feature = "UnityEngine+Timeline+IntervalTree_1")]
 #[repr(C)]
 #[derive(Debug)]
@@ -262,3 +233,32 @@ for crate::UnityEngine::Timeline::IntervalTree_1<T> {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+IntervalTree_1+Entry")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct IntervalTree_1_Entry<T: quest_hook::libil2cpp::Type> {
+    pub intervalStart: i64,
+    pub intervalEnd: i64,
+    pub item: T,
+    __cordl_phantom_T: std::marker::PhantomData<T>,
+}
+#[cfg(feature = "UnityEngine+Timeline+IntervalTree_1+Entry")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::Timeline::IntervalTree_1_Entry < T
+    > => "UnityEngine.Timeline"."IntervalTree`1/Entry<T>" < T >
+);
+#[cfg(feature = "UnityEngine+Timeline+IntervalTree_1+Entry")]
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::Timeline::IntervalTree_1_Entry<T> {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+Timeline+IntervalTree_1+Entry")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> crate::UnityEngine::Timeline::IntervalTree_1_Entry<T> {}

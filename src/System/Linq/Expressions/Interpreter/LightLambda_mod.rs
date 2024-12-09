@@ -1,145 +1,3 @@
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct LightLambda_DebugViewPrinter {
-    __cordl_parent: crate::System::Object,
-    pub _interpreter: *mut crate::System::Linq::Expressions::Interpreter::Interpreter,
-    pub _tryStart: *mut crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-    pub _handlerEnter: *mut crate::System::Collections::Generic::Dictionary_2<
-        i32,
-        *mut crate::System::String,
-    >,
-    pub _handlerExit: *mut crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-    pub _indent: *mut crate::System::String,
-}
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter =>
-    "System.Linq.Expressions.Interpreter"."LightLambda/DebugViewPrinter"
-);
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
-impl std::ops::Deref
-for crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
-impl std::ops::DerefMut
-for crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
-impl crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter {
-    pub fn AddHandlerExit(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddHandlerExit", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddTryStart(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddTryStart", (index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Analyze(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Analyze", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn Dedent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dedent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn EmitExits(
-        &mut self,
-        sb: *mut crate::System::Text::StringBuilder,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EmitExits", (sb, index))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Indent(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Indent", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        interpreter: *mut crate::System::Linq::Expressions::Interpreter::Interpreter,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (interpreter))?;
-        Ok(__cordl_object)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("ToString", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        interpreter: *mut crate::System::Linq::Expressions::Interpreter::Interpreter,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (interpreter))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1568,6 +1426,148 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::LightLambda {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct LightLambda_DebugViewPrinter {
+    __cordl_parent: crate::System::Object,
+    pub _interpreter: *mut crate::System::Linq::Expressions::Interpreter::Interpreter,
+    pub _tryStart: *mut crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+    pub _handlerEnter: *mut crate::System::Collections::Generic::Dictionary_2<
+        i32,
+        *mut crate::System::String,
+    >,
+    pub _handlerExit: *mut crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+    pub _indent: *mut crate::System::String,
+}
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter =>
+    "System.Linq.Expressions.Interpreter"."LightLambda/DebugViewPrinter"
+);
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
+impl std::ops::Deref
+for crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
+impl std::ops::DerefMut
+for crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
+impl crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter {
+    pub fn AddHandlerExit(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddHandlerExit", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddTryStart(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddTryStart", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Analyze(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Analyze", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Dedent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Dedent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn EmitExits(
+        &mut self,
+        sb: *mut crate::System::Text::StringBuilder,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("EmitExits", (sb, index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Indent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Indent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        interpreter: *mut crate::System::Linq::Expressions::Interpreter::Interpreter,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (interpreter))?;
+        Ok(__cordl_object)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        interpreter: *mut crate::System::Linq::Expressions::Interpreter::Interpreter,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (interpreter))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -1,30 +1,3 @@
-#[cfg(feature = "ISonyPSPremiumHelper+DisplayJoinPremiumDialogResult")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult {
-    Failed = 1i32,
-    OK = 0i32,
-}
-#[cfg(feature = "ISonyPSPremiumHelper+DisplayJoinPremiumDialogResult")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult => ""
-    ."ISonyPSPremiumHelper/DisplayJoinPremiumDialogResult"
-);
-#[cfg(feature = "ISonyPSPremiumHelper+GetPremiumStatusResult")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ISonyPSPremiumHelper_GetPremiumStatusResult {
-    Authorized = 0i32,
-    Failed = 2i32,
-    Unauthorized = 1i32,
-}
-#[cfg(feature = "ISonyPSPremiumHelper+GetPremiumStatusResult")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult => ""
-    ."ISonyPSPremiumHelper/GetPremiumStatusResult"
-);
 #[cfg(feature = "ISonyPSPremiumHelper")]
 #[repr(C)]
 #[derive(Debug)]
@@ -113,3 +86,30 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ISonyPSPremiu
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ISonyPSPremiumHelper+DisplayJoinPremiumDialogResult")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult {
+    Failed = 1i32,
+    OK = 0i32,
+}
+#[cfg(feature = "ISonyPSPremiumHelper+DisplayJoinPremiumDialogResult")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult => ""
+    ."ISonyPSPremiumHelper/DisplayJoinPremiumDialogResult"
+);
+#[cfg(feature = "ISonyPSPremiumHelper+GetPremiumStatusResult")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ISonyPSPremiumHelper_GetPremiumStatusResult {
+    Authorized = 0i32,
+    Failed = 2i32,
+    Unauthorized = 1i32,
+}
+#[cfg(feature = "ISonyPSPremiumHelper+GetPremiumStatusResult")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult => ""
+    ."ISonyPSPremiumHelper/GetPremiumStatusResult"
+);

@@ -1,19 +1,3 @@
-#[cfg(feature = "TimelineArrayReference+ArrayTypes")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum TimelineArrayReference_ArrayTypes {
-    Canvas = 2i32,
-    DirectionalLight = 4i32,
-    TextMeshPro = 3i32,
-    Transform = 1i32,
-    TubeLight = 0i32,
-}
-#[cfg(feature = "TimelineArrayReference+ArrayTypes")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::TimelineArrayReference_ArrayTypes => ""
-    ."TimelineArrayReference/ArrayTypes"
-);
 #[cfg(feature = "TimelineArrayReference")]
 #[repr(C)]
 #[derive(Debug)]
@@ -86,3 +70,19 @@ for crate::GlobalNamespace::TimelineArrayReference {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "TimelineArrayReference+ArrayTypes")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TimelineArrayReference_ArrayTypes {
+    Canvas = 2i32,
+    DirectionalLight = 4i32,
+    TextMeshPro = 3i32,
+    Transform = 1i32,
+    TubeLight = 0i32,
+}
+#[cfg(feature = "TimelineArrayReference+ArrayTypes")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::TimelineArrayReference_ArrayTypes => ""
+    ."TimelineArrayReference/ArrayTypes"
+);

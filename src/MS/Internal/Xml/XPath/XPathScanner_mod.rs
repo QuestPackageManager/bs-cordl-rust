@@ -1,44 +1,3 @@
-#[cfg(feature = "MS+Internal+Xml+XPath+XPathScanner+LexKind")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XPathScanner_LexKind {
-    And = 65i32,
-    Apos = 39i32,
-    At = 64i32,
-    Axe = 97i32,
-    Bang = 33i32,
-    Comma = 44i32,
-    Dollar = 36i32,
-    Dot = 46i32,
-    DotDot = 68i32,
-    Eof = 69i32,
-    Eq = 61i32,
-    Ge = 71i32,
-    Gt = 62i32,
-    LBracket = 91i32,
-    LParens = 40i32,
-    Le = 76i32,
-    Lt = 60i32,
-    Minus = 45i32,
-    Name = 110i32,
-    Ne = 78i32,
-    Number = 100i32,
-    Or = 79i32,
-    Plus = 43i32,
-    Quote = 34i32,
-    RBracket = 93i32,
-    RParens = 41i32,
-    Slash = 47i32,
-    SlashSlash = 83i32,
-    Star = 42i32,
-    String = 115i32,
-    Union = 124i32,
-}
-#[cfg(feature = "MS+Internal+Xml+XPath+XPathScanner+LexKind")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::MS::Internal::Xml::XPath::XPathScanner_LexKind
-    => "MS.Internal.Xml.XPath"."XPathScanner/LexKind"
-);
 #[cfg(feature = "MS+Internal+Xml+XPath+XPathScanner")]
 #[repr(C)]
 #[derive(Debug)]
@@ -239,3 +198,44 @@ for crate::MS::Internal::Xml::XPath::XPathScanner {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+XPathScanner+LexKind")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XPathScanner_LexKind {
+    And = 65i32,
+    Apos = 39i32,
+    At = 64i32,
+    Axe = 97i32,
+    Bang = 33i32,
+    Comma = 44i32,
+    Dollar = 36i32,
+    Dot = 46i32,
+    DotDot = 68i32,
+    Eof = 69i32,
+    Eq = 61i32,
+    Ge = 71i32,
+    Gt = 62i32,
+    LBracket = 91i32,
+    LParens = 40i32,
+    Le = 76i32,
+    Lt = 60i32,
+    Minus = 45i32,
+    Name = 110i32,
+    Ne = 78i32,
+    Number = 100i32,
+    Or = 79i32,
+    Plus = 43i32,
+    Quote = 34i32,
+    RBracket = 93i32,
+    RParens = 41i32,
+    Slash = 47i32,
+    SlashSlash = 83i32,
+    Star = 42i32,
+    String = 115i32,
+    Union = 124i32,
+}
+#[cfg(feature = "MS+Internal+Xml+XPath+XPathScanner+LexKind")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::MS::Internal::Xml::XPath::XPathScanner_LexKind
+    => "MS.Internal.Xml.XPath"."XPathScanner/LexKind"
+);

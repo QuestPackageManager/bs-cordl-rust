@@ -1,27 +1,3 @@
-#[cfg(feature = "System+Xml+XsdValidatingReader+ValidatingReaderState")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XsdValidatingReader_ValidatingReaderState {
-    ClearAttributes = 4i32,
-    _cordl_EOF = 9i32,
-    Error = 10i32,
-    Init = 1i32,
-    None = 0i32,
-    OnAttribute = 3i32,
-    OnDefaultAttribute = -1i32,
-    OnReadAttributeValue = -2i32,
-    OnReadBinaryContent = 7i32,
-    ParseInlineSchema = 5i32,
-    Read = 2i32,
-    ReadAhead = 6i32,
-    ReaderClosed = 8i32,
-}
-#[cfg(feature = "System+Xml+XsdValidatingReader+ValidatingReaderState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::XsdValidatingReader_ValidatingReaderState => "System.Xml"
-    ."XsdValidatingReader/ValidatingReaderState"
-);
 #[cfg(feature = "System+Xml+XsdValidatingReader")]
 #[repr(C)]
 #[derive(Debug)]
@@ -859,3 +835,27 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XsdValidatingRead
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+XsdValidatingReader+ValidatingReaderState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XsdValidatingReader_ValidatingReaderState {
+    ClearAttributes = 4i32,
+    _cordl_EOF = 9i32,
+    Error = 10i32,
+    Init = 1i32,
+    None = 0i32,
+    OnAttribute = 3i32,
+    OnDefaultAttribute = -1i32,
+    OnReadAttributeValue = -2i32,
+    OnReadBinaryContent = 7i32,
+    ParseInlineSchema = 5i32,
+    Read = 2i32,
+    ReadAhead = 6i32,
+    ReaderClosed = 8i32,
+}
+#[cfg(feature = "System+Xml+XsdValidatingReader+ValidatingReaderState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Xml::XsdValidatingReader_ValidatingReaderState => "System.Xml"
+    ."XsdValidatingReader/ValidatingReaderState"
+);

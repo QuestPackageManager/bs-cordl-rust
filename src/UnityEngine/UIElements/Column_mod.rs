@@ -711,13 +711,13 @@ impl<
     #[cfg(
         feature = "UnityEngine+UIElements+Column+UxmlObjectTraits_1+__c__DisplayClass15_0"
     )]
-    pub type __c__DisplayClass15_0 = crate::UnityEngine::UIElements::UxmlObjectTraits_1___c__DisplayClass15_0<
+    pub type __c__DisplayClass15_0 = crate::UnityEngine::UIElements::UxmlObjectTraits_1_Column___c__DisplayClass15_0<
         T,
     >;
     #[cfg(
         feature = "UnityEngine+UIElements+Column+UxmlObjectTraits_1+__c__DisplayClass15_1"
     )]
-    pub type __c__DisplayClass15_1 = crate::UnityEngine::UIElements::UxmlObjectTraits_1___c__DisplayClass15_1<
+    pub type __c__DisplayClass15_1 = crate::UnityEngine::UIElements::UxmlObjectTraits_1_Column___c__DisplayClass15_1<
         T,
     >;
     pub fn Init(

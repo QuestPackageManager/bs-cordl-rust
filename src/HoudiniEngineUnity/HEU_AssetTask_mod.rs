@@ -1,17 +1,3 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetTask+BuildType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum HEU_AssetTask_BuildType {
-    COOK = 2i32,
-    LOAD = 1i32,
-    NONE = 0i32,
-    RELOAD = 3i32,
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_AssetTask+BuildType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::HoudiniEngineUnity::HEU_AssetTask_BuildType =>
-    "HoudiniEngineUnity"."HEU_AssetTask/BuildType"
-);
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetTask")]
 #[repr(C)]
 #[derive(Debug)]
@@ -151,3 +137,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_AssetT
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_AssetTask+BuildType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum HEU_AssetTask_BuildType {
+    COOK = 2i32,
+    LOAD = 1i32,
+    NONE = 0i32,
+    RELOAD = 3i32,
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_AssetTask+BuildType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::HoudiniEngineUnity::HEU_AssetTask_BuildType =>
+    "HoudiniEngineUnity"."HEU_AssetTask/BuildType"
+);

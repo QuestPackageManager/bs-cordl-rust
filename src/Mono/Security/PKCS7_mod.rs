@@ -1,3 +1,46 @@
+#[cfg(feature = "Mono+Security+PKCS7")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct PKCS7 {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "Mono+Security+PKCS7")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::Mono::Security::PKCS7 => "Mono.Security"."PKCS7"
+);
+#[cfg(feature = "Mono+Security+PKCS7")]
+impl std::ops::Deref for crate::Mono::Security::PKCS7 {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Mono+Security+PKCS7")]
+impl std::ops::DerefMut for crate::Mono::Security::PKCS7 {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Mono+Security+PKCS7")]
+impl crate::Mono::Security::PKCS7 {
+    #[cfg(feature = "Mono+Security+PKCS7+ContentInfo")]
+    pub type ContentInfo = crate::Mono::Security::PKCS7_ContentInfo;
+    #[cfg(feature = "Mono+Security+PKCS7+EncryptedData")]
+    pub type EncryptedData = crate::Mono::Security::PKCS7_EncryptedData;
+    #[cfg(feature = "Mono+Security+PKCS7+SignedData")]
+    pub type SignedData = crate::Mono::Security::PKCS7_SignedData;
+    #[cfg(feature = "Mono+Security+PKCS7+SignerInfo")]
+    pub type SignerInfo = crate::Mono::Security::PKCS7_SignerInfo;
+}
+#[cfg(feature = "Mono+Security+PKCS7")]
+impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "Mono+Security+PKCS7+ContentInfo")]
 #[repr(C)]
 #[derive(Debug)]
@@ -265,49 +308,6 @@ impl crate::Mono::Security::PKCS7_EncryptedData {
 }
 #[cfg(feature = "Mono+Security+PKCS7+EncryptedData")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7_EncryptedData {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "Mono+Security+PKCS7")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct PKCS7 {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "Mono+Security+PKCS7")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::Mono::Security::PKCS7 => "Mono.Security"."PKCS7"
-);
-#[cfg(feature = "Mono+Security+PKCS7")]
-impl std::ops::Deref for crate::Mono::Security::PKCS7 {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Mono+Security+PKCS7")]
-impl std::ops::DerefMut for crate::Mono::Security::PKCS7 {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "Mono+Security+PKCS7")]
-impl crate::Mono::Security::PKCS7 {
-    #[cfg(feature = "Mono+Security+PKCS7+ContentInfo")]
-    pub type ContentInfo = crate::Mono::Security::PKCS7_ContentInfo;
-    #[cfg(feature = "Mono+Security+PKCS7+EncryptedData")]
-    pub type EncryptedData = crate::Mono::Security::PKCS7_EncryptedData;
-    #[cfg(feature = "Mono+Security+PKCS7+SignedData")]
-    pub type SignedData = crate::Mono::Security::PKCS7_SignedData;
-    #[cfg(feature = "Mono+Security+PKCS7+SignerInfo")]
-    pub type SignerInfo = crate::Mono::Security::PKCS7_SignerInfo;
-}
-#[cfg(feature = "Mono+Security+PKCS7")]
-impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

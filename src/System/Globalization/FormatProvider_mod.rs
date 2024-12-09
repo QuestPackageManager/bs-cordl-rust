@@ -63,7 +63,7 @@ impl std::ops::DerefMut for crate::System::Globalization::FormatProvider_Number 
 #[cfg(feature = "System+Globalization+FormatProvider+Number")]
 impl crate::System::Globalization::FormatProvider_Number {
     #[cfg(feature = "System+Globalization+FormatProvider+Number+NumberBuffer")]
-    pub type NumberBuffer = crate::System::Globalization::Number_NumberBuffer;
+    pub type NumberBuffer = crate::System::Globalization::Number_FormatProvider_NumberBuffer;
 }
 #[cfg(feature = "System+Globalization+FormatProvider+Number")]
 impl quest_hook::libil2cpp::ObjectType
@@ -78,7 +78,7 @@ for crate::System::Globalization::FormatProvider_Number {
 #[cfg(feature = "System+Globalization+FormatProvider+Number+NumberBuffer")]
 #[repr(C)]
 #[derive(Debug, Clone)]
-pub struct Number_NumberBuffer {
+pub struct Number_FormatProvider_NumberBuffer {
     pub precision: i32,
     pub scale: i32,
     pub sign: bool,
@@ -86,12 +86,13 @@ pub struct Number_NumberBuffer {
 }
 #[cfg(feature = "System+Globalization+FormatProvider+Number+NumberBuffer")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Globalization::Number_NumberBuffer =>
-    "System.Globalization"."FormatProvider/Number/NumberBuffer"
+    in quest_hook::libil2cpp for crate
+    ::System::Globalization::Number_FormatProvider_NumberBuffer => "System.Globalization"
+    ."FormatProvider/Number/NumberBuffer"
 );
 #[cfg(feature = "System+Globalization+FormatProvider+Number+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Globalization::Number_NumberBuffer {
+for crate::System::Globalization::Number_FormatProvider_NumberBuffer {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -101,7 +102,7 @@ for crate::System::Globalization::Number_NumberBuffer {
     }
 }
 #[cfg(feature = "System+Globalization+FormatProvider+Number+NumberBuffer")]
-impl crate::System::Globalization::Number_NumberBuffer {
+impl crate::System::Globalization::Number_FormatProvider_NumberBuffer {
     pub fn get_digits(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {

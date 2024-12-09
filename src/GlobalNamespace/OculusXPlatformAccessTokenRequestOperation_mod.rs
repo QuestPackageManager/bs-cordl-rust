@@ -1,22 +1,3 @@
-#[cfg(
-    feature = "OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
-)]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState {
-    Failed = 3i32,
-    NotStarted = 0i32,
-    Requesting = 1i32,
-    Succeeded = 2i32,
-}
-#[cfg(
-    feature = "OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState
-    => ""."OculusXPlatformAccessTokenRequestOperation/OculusTokenRequestOperationState"
-);
 #[cfg(feature = "OculusXPlatformAccessTokenRequestOperation")]
 #[repr(C)]
 #[derive(Debug)]
@@ -123,3 +104,22 @@ for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(
+    feature = "OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
+)]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState {
+    Failed = 3i32,
+    NotStarted = 0i32,
+    Requesting = 1i32,
+    Succeeded = 2i32,
+}
+#[cfg(
+    feature = "OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState
+    => ""."OculusXPlatformAccessTokenRequestOperation/OculusTokenRequestOperationState"
+);

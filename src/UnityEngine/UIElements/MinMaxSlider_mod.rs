@@ -1,17 +1,3 @@
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+DragState")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum MinMaxSlider_DragState {
-    MaxThumb = 3i32,
-    MiddleThumb = 2i32,
-    MinThumb = 1i32,
-    NoThumb = 0i32,
-}
-#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+DragState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::MinMaxSlider_DragState
-    => "UnityEngine.UIElements"."MinMaxSlider/DragState"
-);
 #[cfg(feature = "UnityEngine+UIElements+MinMaxSlider")]
 #[repr(C)]
 #[derive(Debug)]
@@ -467,6 +453,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::MinMa
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+DragState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum MinMaxSlider_DragState {
+    MaxThumb = 3i32,
+    MiddleThumb = 2i32,
+    MinThumb = 1i32,
+    NoThumb = 0i32,
+}
+#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+DragState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::MinMaxSlider_DragState
+    => "UnityEngine.UIElements"."MinMaxSlider/DragState"
+);
 #[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]

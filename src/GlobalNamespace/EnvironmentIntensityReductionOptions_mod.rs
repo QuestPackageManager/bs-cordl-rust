@@ -1,16 +1,3 @@
-#[cfg(feature = "EnvironmentIntensityReductionOptions+CompressExpandReductionType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum EnvironmentIntensityReductionOptions_CompressExpandReductionType {
-    Keep = 0i32,
-    RemoveWithStrobeFilter = 1i32,
-}
-#[cfg(feature = "EnvironmentIntensityReductionOptions+CompressExpandReductionType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::EnvironmentIntensityReductionOptions_CompressExpandReductionType
-    => ""."EnvironmentIntensityReductionOptions/CompressExpandReductionType"
-);
 #[cfg(feature = "EnvironmentIntensityReductionOptions")]
 #[repr(C)]
 #[derive(Debug)]
@@ -97,6 +84,19 @@ for crate::GlobalNamespace::EnvironmentIntensityReductionOptions {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "EnvironmentIntensityReductionOptions+CompressExpandReductionType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum EnvironmentIntensityReductionOptions_CompressExpandReductionType {
+    Keep = 0i32,
+    RemoveWithStrobeFilter = 1i32,
+}
+#[cfg(feature = "EnvironmentIntensityReductionOptions+CompressExpandReductionType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::EnvironmentIntensityReductionOptions_CompressExpandReductionType
+    => ""."EnvironmentIntensityReductionOptions/CompressExpandReductionType"
+);
 #[cfg(feature = "EnvironmentIntensityReductionOptions+RotateRingsReductionType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

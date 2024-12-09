@@ -628,7 +628,7 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonValidatingReader_Schema
 #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
 impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
     #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+SchemaScope+__c")]
-    pub type __c = crate::Newtonsoft::Json::SchemaScope___c;
+    pub type __c = crate::Newtonsoft::Json::SchemaScope_JsonValidatingReader___c;
     pub fn GetRequiredProperties(
         &mut self,
         schema: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,

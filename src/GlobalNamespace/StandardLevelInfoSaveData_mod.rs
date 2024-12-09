@@ -1,254 +1,3 @@
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct StandardLevelInfoSaveData_DifficultyBeatmap {
-    __cordl_parent: crate::System::Object,
-    pub _difficulty: *mut crate::System::String,
-    pub _difficultyRank: i32,
-    pub _beatmapFilename: *mut crate::System::String,
-    pub _noteJumpMovementSpeed: f32,
-    pub _noteJumpStartBeatOffset: f32,
-    pub _beatmapColorSchemeIdx: i32,
-    pub _environmentNameIdx: i32,
-}
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap => ""
-    ."StandardLevelInfoSaveData/DifficultyBeatmap"
-);
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
-impl std::ops::Deref
-for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
-impl crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap {
-    pub fn New(
-        difficultyName: *mut crate::System::String,
-        difficultyRank: i32,
-        beatmapFilename: *mut crate::System::String,
-        noteJumpMovementSpeed: f32,
-        noteJumpStartBeatOffset: f32,
-        beatmapColorSchemeIdx: i32,
-        environmentNameIdx: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (
-                    difficultyName,
-                    difficultyRank,
-                    beatmapFilename,
-                    noteJumpMovementSpeed,
-                    noteJumpStartBeatOffset,
-                    beatmapColorSchemeIdx,
-                    environmentNameIdx,
-                ),
-            )?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        difficultyName: *mut crate::System::String,
-        difficultyRank: i32,
-        beatmapFilename: *mut crate::System::String,
-        noteJumpMovementSpeed: f32,
-        noteJumpStartBeatOffset: f32,
-        beatmapColorSchemeIdx: i32,
-        environmentNameIdx: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (
-                    difficultyName,
-                    difficultyRank,
-                    beatmapFilename,
-                    noteJumpMovementSpeed,
-                    noteJumpStartBeatOffset,
-                    beatmapColorSchemeIdx,
-                    environmentNameIdx,
-                ),
-            )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_beatmapColorSchemeIdx(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_beatmapColorSchemeIdx", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_beatmapFilename(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_beatmapFilename", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_difficulty(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_difficulty", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_difficultyRank(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_difficultyRank", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_environmentNameIdx(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_environmentNameIdx", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_noteJumpMovementSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_noteJumpMovementSpeed", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_noteJumpStartBeatOffset(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_noteJumpStartBeatOffset", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct StandardLevelInfoSaveData_DifficultyBeatmapSet {
-    __cordl_parent: crate::System::Object,
-    pub _beatmapCharacteristicName: *mut crate::System::String,
-    pub _difficultyBeatmaps: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
-    >,
-}
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet => ""
-    ."StandardLevelInfoSaveData/DifficultyBeatmapSet"
-);
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
-impl std::ops::Deref
-for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
-impl crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
-    pub fn New(
-        beatmapCharacteristicName: *mut crate::System::String,
-        difficultyBeatmaps: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
-        >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (beatmapCharacteristicName, difficultyBeatmaps))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        beatmapCharacteristicName: *mut crate::System::String,
-        difficultyBeatmaps: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (beatmapCharacteristicName, difficultyBeatmaps))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_beatmapCharacteristicName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_beatmapCharacteristicName", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_difficultyBeatmaps(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
-        > = __cordl_object.invoke("get_difficultyBeatmaps", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "StandardLevelInfoSaveData")]
 #[repr(C)]
 #[derive(Debug)]
@@ -597,6 +346,257 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData {
 #[cfg(feature = "StandardLevelInfoSaveData")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::StandardLevelInfoSaveData {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct StandardLevelInfoSaveData_DifficultyBeatmap {
+    __cordl_parent: crate::System::Object,
+    pub _difficulty: *mut crate::System::String,
+    pub _difficultyRank: i32,
+    pub _beatmapFilename: *mut crate::System::String,
+    pub _noteJumpMovementSpeed: f32,
+    pub _noteJumpStartBeatOffset: f32,
+    pub _beatmapColorSchemeIdx: i32,
+    pub _environmentNameIdx: i32,
+}
+#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap => ""
+    ."StandardLevelInfoSaveData/DifficultyBeatmap"
+);
+#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
+impl std::ops::Deref
+for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
+impl std::ops::DerefMut
+for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
+impl crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap {
+    pub fn New(
+        difficultyName: *mut crate::System::String,
+        difficultyRank: i32,
+        beatmapFilename: *mut crate::System::String,
+        noteJumpMovementSpeed: f32,
+        noteJumpStartBeatOffset: f32,
+        beatmapColorSchemeIdx: i32,
+        environmentNameIdx: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (
+                    difficultyName,
+                    difficultyRank,
+                    beatmapFilename,
+                    noteJumpMovementSpeed,
+                    noteJumpStartBeatOffset,
+                    beatmapColorSchemeIdx,
+                    environmentNameIdx,
+                ),
+            )?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        difficultyName: *mut crate::System::String,
+        difficultyRank: i32,
+        beatmapFilename: *mut crate::System::String,
+        noteJumpMovementSpeed: f32,
+        noteJumpStartBeatOffset: f32,
+        beatmapColorSchemeIdx: i32,
+        environmentNameIdx: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                ".ctor",
+                (
+                    difficultyName,
+                    difficultyRank,
+                    beatmapFilename,
+                    noteJumpMovementSpeed,
+                    noteJumpStartBeatOffset,
+                    beatmapColorSchemeIdx,
+                    environmentNameIdx,
+                ),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_beatmapColorSchemeIdx(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_beatmapColorSchemeIdx", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_beatmapFilename(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_beatmapFilename", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_difficulty(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_difficulty", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_difficultyRank(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_difficultyRank", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_environmentNameIdx(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i32 = __cordl_object.invoke("get_environmentNameIdx", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_noteJumpMovementSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_noteJumpMovementSpeed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_noteJumpStartBeatOffset(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_noteJumpStartBeatOffset", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmap")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct StandardLevelInfoSaveData_DifficultyBeatmapSet {
+    __cordl_parent: crate::System::Object,
+    pub _beatmapCharacteristicName: *mut crate::System::String,
+    pub _difficultyBeatmaps: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
+    >,
+}
+#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet => ""
+    ."StandardLevelInfoSaveData/DifficultyBeatmapSet"
+);
+#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
+impl std::ops::Deref
+for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
+impl std::ops::DerefMut
+for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
+impl crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
+    pub fn New(
+        beatmapCharacteristicName: *mut crate::System::String,
+        difficultyBeatmaps: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (beatmapCharacteristicName, difficultyBeatmaps))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        beatmapCharacteristicName: *mut crate::System::String,
+        difficultyBeatmaps: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (beatmapCharacteristicName, difficultyBeatmaps))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_beatmapCharacteristicName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_beatmapCharacteristicName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_difficultyBeatmaps(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap,
+        > = __cordl_object.invoke("get_difficultyBeatmaps", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

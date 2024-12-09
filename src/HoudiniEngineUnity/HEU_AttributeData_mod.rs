@@ -1,34 +1,3 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum HEU_AttributeData_AttributeState {
-    INVALID = 0i32,
-    LOCAL_DIRTY = 2i32,
-    SYNCED = 1i32,
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_AttributeData_AttributeState => "HoudiniEngineUnity"
-    ."HEU_AttributeData/AttributeState"
-);
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum HEU_AttributeData_AttributeType {
-    BOOL = 0i32,
-    FLOAT = 2i32,
-    INT = 1i32,
-    MAX = 4i32,
-    STRING = 3i32,
-    UNDEFINED = -1i32,
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_AttributeData_AttributeType => "HoudiniEngineUnity"
-    ."HEU_AttributeData/AttributeType"
-);
 #[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData")]
 #[repr(C)]
 #[derive(Debug)]
@@ -123,3 +92,34 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_Attrib
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum HEU_AttributeData_AttributeState {
+    INVALID = 0i32,
+    LOCAL_DIRTY = 2i32,
+    SYNCED = 1i32,
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::HoudiniEngineUnity::HEU_AttributeData_AttributeState => "HoudiniEngineUnity"
+    ."HEU_AttributeData/AttributeState"
+);
+#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum HEU_AttributeData_AttributeType {
+    BOOL = 0i32,
+    FLOAT = 2i32,
+    INT = 1i32,
+    MAX = 4i32,
+    STRING = 3i32,
+    UNDEFINED = -1i32,
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::HoudiniEngineUnity::HEU_AttributeData_AttributeType => "HoudiniEngineUnity"
+    ."HEU_AttributeData/AttributeType"
+);

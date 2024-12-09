@@ -1,3 +1,45 @@
+#[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct Utility {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::UIR::Utility =>
+    "UnityEngine.UIElements.UIR"."Utility"
+);
+#[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
+impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Utility {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
+impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::Utility {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
+impl crate::UnityEngine::UIElements::UIR::Utility {
+    #[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBufferType")]
+    pub type GPUBufferType = crate::UnityEngine::UIElements::UIR::Utility_GPUBufferType;
+    #[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBuffer_1")]
+    pub type GPUBuffer_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<
+        T,
+    >;
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
+impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UIR::Utility {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBufferType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -134,48 +176,6 @@ impl<
 #[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBuffer_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T> {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct Utility {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UIElements::UIR::Utility =>
-    "UnityEngine.UIElements.UIR"."Utility"
-);
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
-impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Utility {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
-impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::Utility {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
-impl crate::UnityEngine::UIElements::UIR::Utility {
-    #[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBufferType")]
-    pub type GPUBufferType = crate::UnityEngine::UIElements::UIR::Utility_GPUBufferType;
-    #[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBuffer_1")]
-    pub type GPUBuffer_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<
-        T,
-    >;
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+Utility")]
-impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UIR::Utility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

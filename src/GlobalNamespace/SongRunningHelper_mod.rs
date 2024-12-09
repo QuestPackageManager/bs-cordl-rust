@@ -1,66 +1,3 @@
-#[cfg(feature = "SongRunningHelper+QueuedSongParams")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct SongRunningHelper_QueuedSongParams {
-    pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-    pub difficulty: crate::GlobalNamespace::BeatmapDifficulty,
-    pub characteristic: *mut crate::System::String,
-    pub advancedHud: bool,
-    pub songSpeed: crate::GlobalNamespace::GameplayModifiers_SongSpeed,
-    pub recordingToolData: crate::GlobalNamespace::RecordingToolManager_SetupData,
-    pub songFinishedCallback: *mut crate::System::Action_2<
-        *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-        *mut crate::GlobalNamespace::LevelCompletionResults,
-    >,
-}
-#[cfg(feature = "SongRunningHelper+QueuedSongParams")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::SongRunningHelper_QueuedSongParams => ""
-    ."SongRunningHelper/QueuedSongParams"
-);
-#[cfg(feature = "SongRunningHelper+QueuedSongParams")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "SongRunningHelper+QueuedSongParams")]
-impl crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
-    pub fn _ctor(
-        &mut self,
-        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-        characteristic: *mut crate::System::String,
-        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
-        advancedHud: bool,
-        songSpeed: crate::GlobalNamespace::GameplayModifiers_SongSpeed,
-        recordingToolData: crate::GlobalNamespace::RecordingToolManager_SetupData,
-        songFinishedCallback: *mut crate::System::Action_2<
-            *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-            *mut crate::GlobalNamespace::LevelCompletionResults,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (
-                beatmapLevel,
-                characteristic,
-                difficulty,
-                advancedHud,
-                songSpeed,
-                recordingToolData,
-                songFinishedCallback,
-            ),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "SongRunningHelper")]
 #[repr(C)]
 #[derive(Debug)]
@@ -197,5 +134,68 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongRunningHe
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "SongRunningHelper+QueuedSongParams")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct SongRunningHelper_QueuedSongParams {
+    pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+    pub difficulty: crate::GlobalNamespace::BeatmapDifficulty,
+    pub characteristic: *mut crate::System::String,
+    pub advancedHud: bool,
+    pub songSpeed: crate::GlobalNamespace::GameplayModifiers_SongSpeed,
+    pub recordingToolData: crate::GlobalNamespace::RecordingToolManager_SetupData,
+    pub songFinishedCallback: *mut crate::System::Action_2<
+        *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+        *mut crate::GlobalNamespace::LevelCompletionResults,
+    >,
+}
+#[cfg(feature = "SongRunningHelper+QueuedSongParams")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::SongRunningHelper_QueuedSongParams => ""
+    ."SongRunningHelper/QueuedSongParams"
+);
+#[cfg(feature = "SongRunningHelper+QueuedSongParams")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "SongRunningHelper+QueuedSongParams")]
+impl crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
+    pub fn _ctor(
+        &mut self,
+        beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
+        characteristic: *mut crate::System::String,
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
+        advancedHud: bool,
+        songSpeed: crate::GlobalNamespace::GameplayModifiers_SongSpeed,
+        recordingToolData: crate::GlobalNamespace::RecordingToolManager_SetupData,
+        songFinishedCallback: *mut crate::System::Action_2<
+            *mut crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+            *mut crate::GlobalNamespace::LevelCompletionResults,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (
+                beatmapLevel,
+                characteristic,
+                difficulty,
+                advancedHud,
+                songSpeed,
+                recordingToolData,
+                songFinishedCallback,
+            ),
+        )?;
+        Ok(__cordl_ret)
     }
 }

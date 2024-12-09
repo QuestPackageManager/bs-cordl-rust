@@ -1,18 +1,3 @@
-#[cfg(feature = "UnityEngine+UI+AspectRatioFitter+AspectMode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum AspectRatioFitter_AspectMode {
-    EnvelopeParent = 4i32,
-    FitInParent = 3i32,
-    HeightControlsWidth = 2i32,
-    None = 0i32,
-    WidthControlsHeight = 1i32,
-}
-#[cfg(feature = "UnityEngine+UI+AspectRatioFitter+AspectMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::UI::AspectRatioFitter_AspectMode =>
-    "UnityEngine.UI"."AspectRatioFitter/AspectMode"
-);
 #[cfg(feature = "UnityEngine+UI+AspectRatioFitter")]
 #[repr(C)]
 #[derive(Debug)]
@@ -268,3 +253,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::AspectRatioFi
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+AspectRatioFitter+AspectMode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum AspectRatioFitter_AspectMode {
+    EnvelopeParent = 4i32,
+    FitInParent = 3i32,
+    HeightControlsWidth = 2i32,
+    None = 0i32,
+    WidthControlsHeight = 1i32,
+}
+#[cfg(feature = "UnityEngine+UI+AspectRatioFitter+AspectMode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::UI::AspectRatioFitter_AspectMode =>
+    "UnityEngine.UI"."AspectRatioFitter/AspectMode"
+);

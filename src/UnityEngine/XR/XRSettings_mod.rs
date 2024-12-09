@@ -1,17 +1,3 @@
-#[cfg(feature = "UnityEngine+XR+XRSettings+StereoRenderingMode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XRSettings_StereoRenderingMode {
-    MultiPass = 0i32,
-    SinglePass = 1i32,
-    SinglePassInstanced = 2i32,
-    SinglePassMultiview = 3i32,
-}
-#[cfg(feature = "UnityEngine+XR+XRSettings+StereoRenderingMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::XR::XRSettings_StereoRenderingMode
-    => "UnityEngine.XR"."XRSettings/StereoRenderingMode"
-);
 #[cfg(feature = "UnityEngine+XR+XRSettings")]
 #[repr(C)]
 #[derive(Debug)]
@@ -50,3 +36,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::XR::XRSettings {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+XR+XRSettings+StereoRenderingMode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XRSettings_StereoRenderingMode {
+    MultiPass = 0i32,
+    SinglePass = 1i32,
+    SinglePassInstanced = 2i32,
+    SinglePassMultiview = 3i32,
+}
+#[cfg(feature = "UnityEngine+XR+XRSettings+StereoRenderingMode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::XR::XRSettings_StereoRenderingMode
+    => "UnityEngine.XR"."XRSettings/StereoRenderingMode"
+);

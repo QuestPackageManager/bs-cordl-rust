@@ -1,52 +1,3 @@
-#[cfg(feature = "DebugConsoleController+ConsoleMessage")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct DebugConsoleController_ConsoleMessage {
-    pub Message: *mut crate::System::String,
-    pub Type: crate::UnityEngine::LogType,
-}
-#[cfg(feature = "DebugConsoleController+ConsoleMessage")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::DebugConsoleController_ConsoleMessage => ""
-    ."DebugConsoleController/ConsoleMessage"
-);
-#[cfg(feature = "DebugConsoleController+ConsoleMessage")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "DebugConsoleController+ConsoleMessage")]
-impl crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        message: *mut crate::System::String,
-        _cordl_type: crate::UnityEngine::LogType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (message, _cordl_type),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "DebugConsoleController")]
 #[repr(C)]
 #[derive(Debug)]
@@ -297,5 +248,54 @@ for crate::GlobalNamespace::DebugConsoleController {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "DebugConsoleController+ConsoleMessage")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct DebugConsoleController_ConsoleMessage {
+    pub Message: *mut crate::System::String,
+    pub Type: crate::UnityEngine::LogType,
+}
+#[cfg(feature = "DebugConsoleController+ConsoleMessage")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::DebugConsoleController_ConsoleMessage => ""
+    ."DebugConsoleController/ConsoleMessage"
+);
+#[cfg(feature = "DebugConsoleController+ConsoleMessage")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "DebugConsoleController+ConsoleMessage")]
+impl crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        message: *mut crate::System::String,
+        _cordl_type: crate::UnityEngine::LogType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (message, _cordl_type),
+        )?;
+        Ok(__cordl_ret)
     }
 }

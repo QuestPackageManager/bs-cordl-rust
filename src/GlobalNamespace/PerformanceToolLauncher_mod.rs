@@ -1,54 +1,3 @@
-#[cfg(feature = "PerformanceToolLauncher+Assets")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct PerformanceToolLauncher_Assets {
-    pub visualizer: *mut crate::GlobalNamespace::PerformanceVisualizer,
-    pub recorder: *mut crate::GlobalNamespace::PerformanceRecorder,
-}
-#[cfg(feature = "PerformanceToolLauncher+Assets")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::PerformanceToolLauncher_Assets
-    => ""."PerformanceToolLauncher/Assets"
-);
-#[cfg(feature = "PerformanceToolLauncher+Assets")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "PerformanceToolLauncher+Assets")]
-impl crate::GlobalNamespace::PerformanceToolLauncher_Assets {}
-#[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct PerformanceToolLauncher_OverrideConfig {
-    pub enableAutoplay: bool,
-    pub enableRecording: bool,
-}
-#[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::PerformanceToolLauncher_OverrideConfig => ""
-    ."PerformanceToolLauncher/OverrideConfig"
-);
-#[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
-impl crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {}
 #[cfg(feature = "PerformanceToolLauncher")]
 #[repr(C)]
 #[derive(Debug)]
@@ -144,3 +93,54 @@ for crate::GlobalNamespace::PerformanceToolLauncher {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "PerformanceToolLauncher+Assets")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct PerformanceToolLauncher_Assets {
+    pub visualizer: *mut crate::GlobalNamespace::PerformanceVisualizer,
+    pub recorder: *mut crate::GlobalNamespace::PerformanceRecorder,
+}
+#[cfg(feature = "PerformanceToolLauncher+Assets")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::PerformanceToolLauncher_Assets
+    => ""."PerformanceToolLauncher/Assets"
+);
+#[cfg(feature = "PerformanceToolLauncher+Assets")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "PerformanceToolLauncher+Assets")]
+impl crate::GlobalNamespace::PerformanceToolLauncher_Assets {}
+#[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct PerformanceToolLauncher_OverrideConfig {
+    pub enableAutoplay: bool,
+    pub enableRecording: bool,
+}
+#[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::PerformanceToolLauncher_OverrideConfig => ""
+    ."PerformanceToolLauncher/OverrideConfig"
+);
+#[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
+impl crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {}

@@ -1,18 +1,3 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+DataType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum HEU_PluginStorage_DataType {
-    BOOL = 0i32,
-    FLOAT = 3i32,
-    INT = 1i32,
-    LONG = 2i32,
-    STRING = 4i32,
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+DataType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::HoudiniEngineUnity::HEU_PluginStorage_DataType
-    => "HoudiniEngineUnity"."HEU_PluginStorage/DataType"
-);
 #[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage")]
 #[repr(C)]
 #[derive(Debug)]
@@ -342,6 +327,21 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_Plugin
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+DataType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum HEU_PluginStorage_DataType {
+    BOOL = 0i32,
+    FLOAT = 3i32,
+    INT = 1i32,
+    LONG = 2i32,
+    STRING = 4i32,
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+DataType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::HoudiniEngineUnity::HEU_PluginStorage_DataType
+    => "HoudiniEngineUnity"."HEU_PluginStorage/DataType"
+);
 #[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+StoreData")]
 #[repr(C)]
 #[derive(Debug)]

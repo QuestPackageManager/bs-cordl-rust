@@ -1,18 +1,3 @@
-#[cfg(feature = "UserInfo+Platform")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum UserInfo_Platform {
-    Oculus = 2i32,
-    PS4 = 3i32,
-    PS5 = 4i32,
-    Steam = 1i32,
-    Test = 0i32,
-}
-#[cfg(feature = "UserInfo+Platform")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::UserInfo_Platform => ""
-    ."UserInfo/Platform"
-);
 #[cfg(feature = "UserInfo")]
 #[repr(C)]
 #[derive(Debug)]
@@ -77,3 +62,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UserInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UserInfo+Platform")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum UserInfo_Platform {
+    Oculus = 2i32,
+    PS4 = 3i32,
+    PS5 = 4i32,
+    Steam = 1i32,
+    Test = 0i32,
+}
+#[cfg(feature = "UserInfo+Platform")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::UserInfo_Platform => ""
+    ."UserInfo/Platform"
+);

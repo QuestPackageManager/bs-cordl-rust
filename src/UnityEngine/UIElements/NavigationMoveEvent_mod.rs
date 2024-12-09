@@ -1,21 +1,3 @@
-#[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent+Direction")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum NavigationMoveEvent_Direction {
-    Down = 4i32,
-    Left = 1i32,
-    Next = 5i32,
-    None = 0i32,
-    Previous = 6i32,
-    Right = 3i32,
-    Up = 2i32,
-}
-#[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent+Direction")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::NavigationMoveEvent_Direction => "UnityEngine.UIElements"
-    ."NavigationMoveEvent/Direction"
-);
 #[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent")]
 #[repr(C)]
 #[derive(Debug)]
@@ -134,3 +116,21 @@ for crate::UnityEngine::UIElements::NavigationMoveEvent {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent+Direction")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum NavigationMoveEvent_Direction {
+    Down = 4i32,
+    Left = 1i32,
+    Next = 5i32,
+    None = 0i32,
+    Previous = 6i32,
+    Right = 3i32,
+    Up = 2i32,
+}
+#[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent+Direction")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::NavigationMoveEvent_Direction => "UnityEngine.UIElements"
+    ."NavigationMoveEvent/Direction"
+);

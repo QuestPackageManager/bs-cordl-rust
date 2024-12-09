@@ -1,20 +1,3 @@
-#[cfg(feature = "ScreenshotRecorder+RecordingType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ScreenshotRecorder_RecordingType {
-    F10ForScreenshot = 3i32,
-    Interval = 4i32,
-    Mono360Sequence = 2i32,
-    ScreenshotOnPause = 5i32,
-    Sequence = 0i32,
-    Stereo360Sequence = 1i32,
-}
-#[cfg(feature = "ScreenshotRecorder+RecordingType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ScreenshotRecorder_RecordingType => ""
-    ."ScreenshotRecorder/RecordingType"
-);
 #[cfg(feature = "ScreenshotRecorder")]
 #[repr(C)]
 #[derive(Debug)]
@@ -182,3 +165,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScreenshotRec
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ScreenshotRecorder+RecordingType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ScreenshotRecorder_RecordingType {
+    F10ForScreenshot = 3i32,
+    Interval = 4i32,
+    Mono360Sequence = 2i32,
+    ScreenshotOnPause = 5i32,
+    Sequence = 0i32,
+    Stereo360Sequence = 1i32,
+}
+#[cfg(feature = "ScreenshotRecorder+RecordingType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ScreenshotRecorder_RecordingType => ""
+    ."ScreenshotRecorder/RecordingType"
+);

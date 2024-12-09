@@ -1,3 +1,49 @@
+#[cfg(feature = "DiffieHellmanUtility")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct DiffieHellmanUtility {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "DiffieHellmanUtility")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::DiffieHellmanUtility => ""
+    ."DiffieHellmanUtility"
+);
+#[cfg(feature = "DiffieHellmanUtility")]
+impl std::ops::Deref for crate::GlobalNamespace::DiffieHellmanUtility {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "DiffieHellmanUtility")]
+impl std::ops::DerefMut for crate::GlobalNamespace::DiffieHellmanUtility {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "DiffieHellmanUtility")]
+impl crate::GlobalNamespace::DiffieHellmanUtility {
+    pub const kMaxDiffieHellmanPublicKeyLength: i32 = 2048i32;
+    pub const kMaxElipticalCurvePublicKeyLength: i32 = 256i32;
+    #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
+    pub type DiffieHellmanKeyPair = crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair;
+    #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
+    pub type ElipticalCurveKeyPair = crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair;
+    #[cfg(feature = "DiffieHellmanUtility+KeyType")]
+    pub type KeyType = crate::GlobalNamespace::DiffieHellmanUtility_KeyType;
+    #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
+    pub type OperationTimer = crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer;
+}
+#[cfg(feature = "DiffieHellmanUtility")]
+impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DiffieHellmanUtility {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
 #[repr(C)]
 #[derive(Debug)]
@@ -30,7 +76,7 @@ for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
 #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
 impl crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
     #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair+__c__DisplayClass5_0")]
-    pub type __c__DisplayClass5_0 = crate::GlobalNamespace::DiffieHellmanKeyPair___c__DisplayClass5_0;
+    pub type __c__DisplayClass5_0 = crate::GlobalNamespace::DiffieHellmanKeyPair_DiffieHellmanUtility___c__DisplayClass5_0;
     pub fn GetPreMasterSecret(
         &mut self,
         clientPublicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -103,52 +149,6 @@ for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
-#[cfg(feature = "DiffieHellmanUtility")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct DiffieHellmanUtility {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "DiffieHellmanUtility")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::DiffieHellmanUtility => ""
-    ."DiffieHellmanUtility"
-);
-#[cfg(feature = "DiffieHellmanUtility")]
-impl std::ops::Deref for crate::GlobalNamespace::DiffieHellmanUtility {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "DiffieHellmanUtility")]
-impl std::ops::DerefMut for crate::GlobalNamespace::DiffieHellmanUtility {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "DiffieHellmanUtility")]
-impl crate::GlobalNamespace::DiffieHellmanUtility {
-    pub const kMaxDiffieHellmanPublicKeyLength: i32 = 2048i32;
-    pub const kMaxElipticalCurvePublicKeyLength: i32 = 256i32;
-    #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
-    pub type DiffieHellmanKeyPair = crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair;
-    #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
-    pub type ElipticalCurveKeyPair = crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair;
-    #[cfg(feature = "DiffieHellmanUtility+KeyType")]
-    pub type KeyType = crate::GlobalNamespace::DiffieHellmanUtility_KeyType;
-    #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
-    pub type OperationTimer = crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer;
-}
-#[cfg(feature = "DiffieHellmanUtility")]
-impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DiffieHellmanUtility {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
 #[repr(C)]
 #[derive(Debug)]
@@ -181,7 +181,7 @@ for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
 #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
 impl crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
     #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair+__c__DisplayClass5_0")]
-    pub type __c__DisplayClass5_0 = crate::GlobalNamespace::ElipticalCurveKeyPair___c__DisplayClass5_0;
+    pub type __c__DisplayClass5_0 = crate::GlobalNamespace::ElipticalCurveKeyPair_DiffieHellmanUtility___c__DisplayClass5_0;
     pub fn GetPreMasterSecret(
         &mut self,
         clientPublicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,

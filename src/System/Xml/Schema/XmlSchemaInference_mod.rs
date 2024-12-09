@@ -1,16 +1,3 @@
-#[cfg(feature = "System+Xml+Schema+XmlSchemaInference+InferenceOption")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum XmlSchemaInference_InferenceOption {
-    Relaxed = 1i32,
-    Restricted = 0i32,
-}
-#[cfg(feature = "System+Xml+Schema+XmlSchemaInference+InferenceOption")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::Schema::XmlSchemaInference_InferenceOption => "System.Xml.Schema"
-    ."XmlSchemaInference/InferenceOption"
-);
 #[cfg(feature = "System+Xml+Schema+XmlSchemaInference")]
 #[repr(C)]
 #[derive(Debug)]
@@ -452,3 +439,16 @@ for crate::System::Xml::Schema::XmlSchemaInference {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaInference+InferenceOption")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum XmlSchemaInference_InferenceOption {
+    Relaxed = 1i32,
+    Restricted = 0i32,
+}
+#[cfg(feature = "System+Xml+Schema+XmlSchemaInference+InferenceOption")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Xml::Schema::XmlSchemaInference_InferenceOption => "System.Xml.Schema"
+    ."XmlSchemaInference/InferenceOption"
+);

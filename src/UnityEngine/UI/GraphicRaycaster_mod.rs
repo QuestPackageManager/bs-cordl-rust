@@ -1,18 +1,3 @@
-#[cfg(feature = "UnityEngine+UI+GraphicRaycaster+BlockingObjects")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum GraphicRaycaster_BlockingObjects {
-    All = 3i32,
-    None = 0i32,
-    ThreeD = 2i32,
-    TwoD = 1i32,
-}
-#[cfg(feature = "UnityEngine+UI+GraphicRaycaster+BlockingObjects")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UI::GraphicRaycaster_BlockingObjects => "UnityEngine.UI"
-    ."GraphicRaycaster/BlockingObjects"
-);
 #[cfg(feature = "UnityEngine+UI+GraphicRaycaster")]
 #[repr(C)]
 #[derive(Debug)]
@@ -188,3 +173,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::GraphicRaycas
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UI+GraphicRaycaster+BlockingObjects")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum GraphicRaycaster_BlockingObjects {
+    All = 3i32,
+    None = 0i32,
+    ThreeD = 2i32,
+    TwoD = 1i32,
+}
+#[cfg(feature = "UnityEngine+UI+GraphicRaycaster+BlockingObjects")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UI::GraphicRaycaster_BlockingObjects => "UnityEngine.UI"
+    ."GraphicRaycaster/BlockingObjects"
+);

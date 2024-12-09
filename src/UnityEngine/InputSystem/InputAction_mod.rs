@@ -1,236 +1,3 @@
-#[cfg(feature = "UnityEngine+InputSystem+InputAction+ActionFlags")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum InputAction_ActionFlags {
-    WantsInitialStateCheck = 1i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputAction+ActionFlags")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputAction_ActionFlags => "UnityEngine.InputSystem"
-    ."InputAction/ActionFlags"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputAction+CallbackContext")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct InputAction_CallbackContext {
-    pub m_State: *mut crate::UnityEngine::InputSystem::InputActionState,
-    pub m_ActionIndex: i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputAction+CallbackContext")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::InputAction_CallbackContext => "UnityEngine.InputSystem"
-    ."InputAction/CallbackContext"
-);
-#[cfg(feature = "UnityEngine+InputSystem+InputAction+CallbackContext")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::InputAction_CallbackContext {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputAction+CallbackContext")]
-impl crate::UnityEngine::InputSystem::InputAction_CallbackContext {
-    pub fn ReadValueAsButton(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ReadValueAsButton",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadValueAsObject(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ReadValueAsObject",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadValue_1<TValue>(&mut self) -> quest_hook::libil2cpp::Result<TValue>
-    where
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: TValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ReadValue",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadValue_Il2CppObject_i32_0(
-        &mut self,
-        buffer: *mut quest_hook::libil2cpp::Il2CppObject,
-        bufferSize: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ReadValue",
-            (buffer, bufferSize),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ToString(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_action(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputAction,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_action",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_actionIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_actionIndex",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_bindingIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_bindingIndex",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_canceled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_canceled",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_control(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputControl,
-    > {
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputControl = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_control",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_controlIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_controlIndex",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_duration",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_interaction(&mut self) -> quest_hook::libil2cpp::Result<Blacklisted> {
-        let __cordl_ret: Blacklisted = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_interaction",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_interactionIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_interactionIndex",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_performed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_performed",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_phase(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::InputActionPhase,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionPhase = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_phase",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_startTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_startTime",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_started(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_started",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_time",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_valueSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_valueSizeInBytes",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_valueType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
-        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_valueType",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "UnityEngine+InputSystem+InputAction")]
 #[repr(C)]
 #[derive(Debug)]
@@ -915,5 +682,238 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Inpu
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputAction+ActionFlags")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum InputAction_ActionFlags {
+    WantsInitialStateCheck = 1i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputAction+ActionFlags")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputAction_ActionFlags => "UnityEngine.InputSystem"
+    ."InputAction/ActionFlags"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputAction+CallbackContext")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct InputAction_CallbackContext {
+    pub m_State: *mut crate::UnityEngine::InputSystem::InputActionState,
+    pub m_ActionIndex: i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputAction+CallbackContext")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::InputAction_CallbackContext => "UnityEngine.InputSystem"
+    ."InputAction/CallbackContext"
+);
+#[cfg(feature = "UnityEngine+InputSystem+InputAction+CallbackContext")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::InputAction_CallbackContext {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputAction+CallbackContext")]
+impl crate::UnityEngine::InputSystem::InputAction_CallbackContext {
+    pub fn ReadValueAsButton(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ReadValueAsButton",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadValueAsObject(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ReadValueAsObject",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadValue_1<TValue>(&mut self) -> quest_hook::libil2cpp::Result<TValue>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ReadValue",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ReadValue_Il2CppObject_i32_0(
+        &mut self,
+        buffer: *mut quest_hook::libil2cpp::Il2CppObject,
+        bufferSize: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ReadValue",
+            (buffer, bufferSize),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ToString",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_action(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputAction,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputAction = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_action",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_actionIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_actionIndex",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_bindingIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_bindingIndex",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_canceled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_canceled",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_control(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputControl,
+    > {
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputControl = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_control",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_controlIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_controlIndex",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_duration(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_duration",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_interaction(&mut self) -> quest_hook::libil2cpp::Result<Blacklisted> {
+        let __cordl_ret: Blacklisted = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_interaction",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_interactionIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_interactionIndex",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_performed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_performed",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_phase(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionPhase,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionPhase = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_phase",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_startTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_startTime",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_started(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_started",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_time(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_time",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_valueSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_valueSizeInBytes",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_valueType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
+        let __cordl_ret: *mut crate::System::Type = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_valueType",
+            (),
+        )?;
+        Ok(__cordl_ret)
     }
 }

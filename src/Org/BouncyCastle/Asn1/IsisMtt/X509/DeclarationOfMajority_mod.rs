@@ -1,17 +1,3 @@
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority+Choice")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum DeclarationOfMajority_Choice {
-    DateOfBirth = 2i32,
-    FullAgeAtCountry = 1i32,
-    NotYoungerThan = 0i32,
-}
-#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority+Choice")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority_Choice =>
-    "Org.BouncyCastle.Asn1.IsisMtt.X509"."DeclarationOfMajority/Choice"
-);
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority")]
 #[repr(C)]
 #[derive(Debug)]
@@ -188,3 +174,17 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority+Choice")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum DeclarationOfMajority_Choice {
+    DateOfBirth = 2i32,
+    FullAgeAtCountry = 1i32,
+    NotYoungerThan = 0i32,
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority+Choice")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority_Choice =>
+    "Org.BouncyCastle.Asn1.IsisMtt.X509"."DeclarationOfMajority/Choice"
+);

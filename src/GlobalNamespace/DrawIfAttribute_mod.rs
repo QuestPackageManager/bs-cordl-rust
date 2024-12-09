@@ -1,15 +1,3 @@
-#[cfg(feature = "DrawIfAttribute+DisablingType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum DrawIfAttribute_DisablingType {
-    DontDraw = 1i32,
-    ReadOnly = 0i32,
-}
-#[cfg(feature = "DrawIfAttribute+DisablingType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::DrawIfAttribute_DisablingType
-    => ""."DrawIfAttribute/DisablingType"
-);
 #[cfg(feature = "DrawIfAttribute")]
 #[repr(C)]
 #[derive(Debug)]
@@ -102,3 +90,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DrawIfAttribu
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "DrawIfAttribute+DisablingType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum DrawIfAttribute_DisablingType {
+    DontDraw = 1i32,
+    ReadOnly = 0i32,
+}
+#[cfg(feature = "DrawIfAttribute+DisablingType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::DrawIfAttribute_DisablingType
+    => ""."DrawIfAttribute/DisablingType"
+);

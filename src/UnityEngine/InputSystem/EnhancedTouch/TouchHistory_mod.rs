@@ -1,3 +1,106 @@
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct TouchHistory {
+    pub m_History: *mut crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<
+        crate::UnityEngine::InputSystem::LowLevel::TouchState,
+    >,
+    pub m_Finger: *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
+    pub m_Count: i32,
+    pub m_StartIndex: i32,
+    pub m_Version: u32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::EnhancedTouch::TouchHistory =>
+    "UnityEngine.InputSystem.EnhancedTouch"."TouchHistory"
+);
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
+impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
+    #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
+    pub type Enumerator = crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator;
+    pub fn CheckValid(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "CheckValid",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::IEnumerator_1<
+            crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+        >,
+    > {
+        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
+            crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetEnumerator", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn System_Collections_IEnumerable_GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "System.Collections.IEnumerable.GetEnumerator",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        finger: *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
+        history: *mut crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<
+            crate::UnityEngine::InputSystem::LowLevel::TouchState,
+        >,
+        startIndex: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (finger, history, startIndex, count),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Count",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::Touch = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Item",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
 #[repr(C)]
 #[derive(Debug)]
@@ -107,108 +210,5 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct TouchHistory {
-    pub m_History: *mut crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<
-        crate::UnityEngine::InputSystem::LowLevel::TouchState,
-    >,
-    pub m_Finger: *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-    pub m_Count: i32,
-    pub m_StartIndex: i32,
-    pub m_Version: u32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::EnhancedTouch::TouchHistory =>
-    "UnityEngine.InputSystem.EnhancedTouch"."TouchHistory"
-);
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory {
-    #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
-    pub type Enumerator = crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator;
-    pub fn CheckValid(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CheckValid",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-        >,
-    > {
-        let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetEnumerator", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn System_Collections_IEnumerable_GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Collections.IEnumerable.GetEnumerator",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        finger: *mut crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-        history: *mut crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<
-            crate::UnityEngine::InputSystem::LowLevel::TouchState,
-        >,
-        startIndex: i32,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (finger, history, startIndex, count),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Count",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::EnhancedTouch::Touch = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Item",
-            (index),
-        )?;
-        Ok(__cordl_ret)
     }
 }

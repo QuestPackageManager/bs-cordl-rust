@@ -1,31 +1,18 @@
-#[cfg(feature = "SliderController+LengthType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum SliderController_LengthType {
-    Long = 2i32,
-    Medium = 1i32,
-    Short = 0i32,
-}
-#[cfg(feature = "SliderController+LengthType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::SliderController_LengthType =>
-    ""."SliderController/LengthType"
-);
 #[cfg(feature = "SliderController+Pool+Long")]
 #[repr(C)]
 #[derive(Debug)]
-pub struct Pool_Long {
+pub struct Pool_SliderController_Long {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         *mut crate::GlobalNamespace::SliderController,
     >,
 }
 #[cfg(feature = "SliderController+Pool+Long")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::Pool_Long => ""
-    ."SliderController/Pool/Long"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::Pool_SliderController_Long =>
+    ""."SliderController/Pool/Long"
 );
 #[cfg(feature = "SliderController+Pool+Long")]
-impl std::ops::Deref for crate::GlobalNamespace::Pool_Long {
+impl std::ops::Deref for crate::GlobalNamespace::Pool_SliderController_Long {
     type Target = crate::Zenject::MonoMemoryPool_1<
         *mut crate::GlobalNamespace::SliderController,
     >;
@@ -34,13 +21,13 @@ impl std::ops::Deref for crate::GlobalNamespace::Pool_Long {
     }
 }
 #[cfg(feature = "SliderController+Pool+Long")]
-impl std::ops::DerefMut for crate::GlobalNamespace::Pool_Long {
+impl std::ops::DerefMut for crate::GlobalNamespace::Pool_SliderController_Long {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderController+Pool+Long")]
-impl crate::GlobalNamespace::Pool_Long {
+impl crate::GlobalNamespace::Pool_SliderController_Long {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -60,152 +47,66 @@ impl crate::GlobalNamespace::Pool_Long {
     }
 }
 #[cfg(feature = "SliderController+Pool+Long")]
-impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Pool_Long {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "SliderController+Pool+Medium")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct Pool_Medium {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
-        *mut crate::GlobalNamespace::SliderController,
-    >,
-}
-#[cfg(feature = "SliderController+Pool+Medium")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::Pool_Medium => ""
-    ."SliderController/Pool/Medium"
-);
-#[cfg(feature = "SliderController+Pool+Medium")]
-impl std::ops::Deref for crate::GlobalNamespace::Pool_Medium {
-    type Target = crate::Zenject::MonoMemoryPool_1<
-        *mut crate::GlobalNamespace::SliderController,
-    >;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "SliderController+Pool+Medium")]
-impl std::ops::DerefMut for crate::GlobalNamespace::Pool_Medium {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "SliderController+Pool+Medium")]
-impl crate::GlobalNamespace::Pool_Medium {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "SliderController+Pool+Medium")]
-impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Pool_Medium {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "SliderController+Pool")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct SliderController_Pool {
-    __cordl_parent: crate::System::Object,
-    pub _shortPool: *mut crate::GlobalNamespace::Pool_Short,
-    pub _mediumPool: *mut crate::GlobalNamespace::Pool_Medium,
-    pub _longPool: *mut crate::GlobalNamespace::Pool_Long,
-}
-#[cfg(feature = "SliderController+Pool")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::SliderController_Pool => ""
-    ."SliderController/Pool"
-);
-#[cfg(feature = "SliderController+Pool")]
-impl std::ops::Deref for crate::GlobalNamespace::SliderController_Pool {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "SliderController+Pool")]
-impl std::ops::DerefMut for crate::GlobalNamespace::SliderController_Pool {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "SliderController+Pool")]
-impl crate::GlobalNamespace::SliderController_Pool {
-    pub const kMinDistanceToUseLong: f32 = 15f32;
-    pub const kMinDistanceToUseMedium: f32 = 5f32;
-    #[cfg(feature = "SliderController+Pool+Long")]
-    pub type Long = crate::GlobalNamespace::Pool_Long;
-    #[cfg(feature = "SliderController+Pool+Medium")]
-    pub type Medium = crate::GlobalNamespace::Pool_Medium;
-    #[cfg(feature = "SliderController+Pool+Short")]
-    pub type Short = crate::GlobalNamespace::Pool_Short;
-    pub fn GetPool(
-        &mut self,
-        lengthType: crate::GlobalNamespace::SliderController_LengthType,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::MonoMemoryPool_1<
-            *mut crate::GlobalNamespace::SliderController,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Zenject::MonoMemoryPool_1<
-            *mut crate::GlobalNamespace::SliderController,
-        > = __cordl_object.invoke("GetPool", (lengthType))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New(
-        shortPool: *mut crate::GlobalNamespace::Pool_Short,
-        mediumPool: *mut crate::GlobalNamespace::Pool_Medium,
-        longPool: *mut crate::GlobalNamespace::Pool_Long,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (shortPool, mediumPool, longPool))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-        shortPool: *mut crate::GlobalNamespace::Pool_Short,
-        mediumPool: *mut crate::GlobalNamespace::Pool_Medium,
-        longPool: *mut crate::GlobalNamespace::Pool_Long,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (shortPool, mediumPool, longPool))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "SliderController+Pool")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::SliderController_Pool {
+for crate::GlobalNamespace::Pool_SliderController_Long {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "SliderController+Pool+Medium")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct Pool_SliderController_Medium {
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::SliderController,
+    >,
+}
+#[cfg(feature = "SliderController+Pool+Medium")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::Pool_SliderController_Medium =>
+    ""."SliderController/Pool/Medium"
+);
+#[cfg(feature = "SliderController+Pool+Medium")]
+impl std::ops::Deref for crate::GlobalNamespace::Pool_SliderController_Medium {
+    type Target = crate::Zenject::MonoMemoryPool_1<
+        *mut crate::GlobalNamespace::SliderController,
+    >;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "SliderController+Pool+Medium")]
+impl std::ops::DerefMut for crate::GlobalNamespace::Pool_SliderController_Medium {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "SliderController+Pool+Medium")]
+impl crate::GlobalNamespace::Pool_SliderController_Medium {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "SliderController+Pool+Medium")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::Pool_SliderController_Medium {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -216,18 +117,18 @@ for crate::GlobalNamespace::SliderController_Pool {
 #[cfg(feature = "SliderController+Pool+Short")]
 #[repr(C)]
 #[derive(Debug)]
-pub struct Pool_Short {
+pub struct Pool_SliderController_Short {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         *mut crate::GlobalNamespace::SliderController,
     >,
 }
 #[cfg(feature = "SliderController+Pool+Short")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::Pool_Short => ""
-    ."SliderController/Pool/Short"
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::Pool_SliderController_Short =>
+    ""."SliderController/Pool/Short"
 );
 #[cfg(feature = "SliderController+Pool+Short")]
-impl std::ops::Deref for crate::GlobalNamespace::Pool_Short {
+impl std::ops::Deref for crate::GlobalNamespace::Pool_SliderController_Short {
     type Target = crate::Zenject::MonoMemoryPool_1<
         *mut crate::GlobalNamespace::SliderController,
     >;
@@ -236,13 +137,13 @@ impl std::ops::Deref for crate::GlobalNamespace::Pool_Short {
     }
 }
 #[cfg(feature = "SliderController+Pool+Short")]
-impl std::ops::DerefMut for crate::GlobalNamespace::Pool_Short {
+impl std::ops::DerefMut for crate::GlobalNamespace::Pool_SliderController_Short {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderController+Pool+Short")]
-impl crate::GlobalNamespace::Pool_Short {
+impl crate::GlobalNamespace::Pool_SliderController_Short {
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -262,7 +163,8 @@ impl crate::GlobalNamespace::Pool_Short {
     }
 }
 #[cfg(feature = "SliderController+Pool+Short")]
-impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Pool_Short {
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::Pool_SliderController_Short {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -788,6 +690,107 @@ impl crate::GlobalNamespace::SliderController {
 }
 #[cfg(feature = "SliderController")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SliderController {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "SliderController+LengthType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum SliderController_LengthType {
+    Long = 2i32,
+    Medium = 1i32,
+    Short = 0i32,
+}
+#[cfg(feature = "SliderController+LengthType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SliderController_LengthType =>
+    ""."SliderController/LengthType"
+);
+#[cfg(feature = "SliderController+Pool")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct SliderController_Pool {
+    __cordl_parent: crate::System::Object,
+    pub _shortPool: *mut crate::GlobalNamespace::Pool_SliderController_Short,
+    pub _mediumPool: *mut crate::GlobalNamespace::Pool_SliderController_Medium,
+    pub _longPool: *mut crate::GlobalNamespace::Pool_SliderController_Long,
+}
+#[cfg(feature = "SliderController+Pool")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::SliderController_Pool => ""
+    ."SliderController/Pool"
+);
+#[cfg(feature = "SliderController+Pool")]
+impl std::ops::Deref for crate::GlobalNamespace::SliderController_Pool {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "SliderController+Pool")]
+impl std::ops::DerefMut for crate::GlobalNamespace::SliderController_Pool {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "SliderController+Pool")]
+impl crate::GlobalNamespace::SliderController_Pool {
+    pub const kMinDistanceToUseLong: f32 = 15f32;
+    pub const kMinDistanceToUseMedium: f32 = 5f32;
+    #[cfg(feature = "SliderController+Pool+Long")]
+    pub type Long = crate::GlobalNamespace::Pool_SliderController_Long;
+    #[cfg(feature = "SliderController+Pool+Medium")]
+    pub type Medium = crate::GlobalNamespace::Pool_SliderController_Medium;
+    #[cfg(feature = "SliderController+Pool+Short")]
+    pub type Short = crate::GlobalNamespace::Pool_SliderController_Short;
+    pub fn GetPool(
+        &mut self,
+        lengthType: crate::GlobalNamespace::SliderController_LengthType,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Zenject::MonoMemoryPool_1<
+            *mut crate::GlobalNamespace::SliderController,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Zenject::MonoMemoryPool_1<
+            *mut crate::GlobalNamespace::SliderController,
+        > = __cordl_object.invoke("GetPool", (lengthType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        shortPool: *mut crate::GlobalNamespace::Pool_SliderController_Short,
+        mediumPool: *mut crate::GlobalNamespace::Pool_SliderController_Medium,
+        longPool: *mut crate::GlobalNamespace::Pool_SliderController_Long,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (shortPool, mediumPool, longPool))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+        shortPool: *mut crate::GlobalNamespace::Pool_SliderController_Short,
+        mediumPool: *mut crate::GlobalNamespace::Pool_SliderController_Medium,
+        longPool: *mut crate::GlobalNamespace::Pool_SliderController_Long,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (shortPool, mediumPool, longPool))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "SliderController+Pool")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SliderController_Pool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

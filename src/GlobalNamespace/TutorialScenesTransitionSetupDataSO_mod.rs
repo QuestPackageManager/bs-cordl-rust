@@ -1,17 +1,3 @@
-#[cfg(feature = "TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum TutorialScenesTransitionSetupDataSO_TutorialEndStateType {
-    Completed = 0i32,
-    Restart = 2i32,
-    ReturnToMenu = 1i32,
-}
-#[cfg(feature = "TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType => ""
-    ."TutorialScenesTransitionSetupDataSO/TutorialEndStateType"
-);
 #[cfg(feature = "TutorialScenesTransitionSetupDataSO")]
 #[repr(C)]
 #[derive(Debug)]
@@ -156,3 +142,17 @@ for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TutorialScenesTransitionSetupDataSO_TutorialEndStateType {
+    Completed = 0i32,
+    Restart = 2i32,
+    ReturnToMenu = 1i32,
+}
+#[cfg(feature = "TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType => ""
+    ."TutorialScenesTransitionSetupDataSO/TutorialEndStateType"
+);

@@ -1,462 +1,3 @@
-#[cfg(feature = "TMPro+TMP_Dropdown+DropdownEvent")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct TMP_Dropdown_DropdownEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<i32>,
-}
-#[cfg(feature = "TMPro+TMP_Dropdown+DropdownEvent")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::TMPro::TMP_Dropdown_DropdownEvent => "TMPro"
-    ."TMP_Dropdown/DropdownEvent"
-);
-#[cfg(feature = "TMPro+TMP_Dropdown+DropdownEvent")]
-impl std::ops::Deref for crate::TMPro::TMP_Dropdown_DropdownEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<i32>;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "TMPro+TMP_Dropdown+DropdownEvent")]
-impl std::ops::DerefMut for crate::TMPro::TMP_Dropdown_DropdownEvent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "TMPro+TMP_Dropdown+DropdownEvent")]
-impl crate::TMPro::TMP_Dropdown_DropdownEvent {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "TMPro+TMP_Dropdown+DropdownEvent")]
-impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Dropdown_DropdownEvent {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "TMPro+TMP_Dropdown+DropdownItem")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct TMP_Dropdown_DropdownItem {
-    __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub m_Text: *mut crate::TMPro::TMP_Text,
-    pub m_Image: *mut crate::UnityEngine::UI::Image,
-    pub m_RectTransform: *mut crate::UnityEngine::RectTransform,
-    pub m_Toggle: *mut crate::UnityEngine::UI::Toggle,
-}
-#[cfg(feature = "TMPro+TMP_Dropdown+DropdownItem")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::TMPro::TMP_Dropdown_DropdownItem => "TMPro"
-    ."TMP_Dropdown/DropdownItem"
-);
-#[cfg(feature = "TMPro+TMP_Dropdown+DropdownItem")]
-impl std::ops::Deref for crate::TMPro::TMP_Dropdown_DropdownItem {
-    type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "TMPro+TMP_Dropdown+DropdownItem")]
-impl std::ops::DerefMut for crate::TMPro::TMP_Dropdown_DropdownItem {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "TMPro+TMP_Dropdown+DropdownItem")]
-impl crate::TMPro::TMP_Dropdown_DropdownItem {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn OnCancel(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::BaseEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnCancel", (eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn OnPointerEnter(
-        &mut self,
-        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPointerEnter", (eventData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_image(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Image> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UI::Image = __cordl_object
-            .invoke("get_image", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_rectTransform(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::RectTransform> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::RectTransform = __cordl_object
-            .invoke("get_rectTransform", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_text(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::TMPro::TMP_Text> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::TMPro::TMP_Text = __cordl_object
-            .invoke("get_text", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_toggle(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Toggle> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::UI::Toggle = __cordl_object
-            .invoke("get_toggle", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_image(
-        &mut self,
-        value: *mut crate::UnityEngine::UI::Image,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_image", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_rectTransform(
-        &mut self,
-        value: *mut crate::UnityEngine::RectTransform,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_rectTransform", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_text(
-        &mut self,
-        value: *mut crate::TMPro::TMP_Text,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_text", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_toggle(
-        &mut self,
-        value: *mut crate::UnityEngine::UI::Toggle,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_toggle", (value))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "TMPro+TMP_Dropdown+DropdownItem")]
-impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Dropdown_DropdownItem {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "TMPro+TMP_Dropdown+OptionData")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct TMP_Dropdown_OptionData {
-    __cordl_parent: crate::System::Object,
-    pub m_Text: *mut crate::System::String,
-    pub m_Image: *mut crate::UnityEngine::Sprite,
-}
-#[cfg(feature = "TMPro+TMP_Dropdown+OptionData")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::TMPro::TMP_Dropdown_OptionData => "TMPro"
-    ."TMP_Dropdown/OptionData"
-);
-#[cfg(feature = "TMPro+TMP_Dropdown+OptionData")]
-impl std::ops::Deref for crate::TMPro::TMP_Dropdown_OptionData {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "TMPro+TMP_Dropdown+OptionData")]
-impl std::ops::DerefMut for crate::TMPro::TMP_Dropdown_OptionData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "TMPro+TMP_Dropdown+OptionData")]
-impl crate::TMPro::TMP_Dropdown_OptionData {
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Sprite2(
-        image: *mut crate::UnityEngine::Sprite,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (image))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String1(
-        text: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (text))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_Sprite3(
-        text: *mut crate::System::String,
-        image: *mut crate::UnityEngine::Sprite,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (text, image))?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Sprite2(
-        &mut self,
-        image: *mut crate::UnityEngine::Sprite,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (image))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String1(
-        &mut self,
-        text: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (text))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String_Sprite3(
-        &mut self,
-        text: *mut crate::System::String,
-        image: *mut crate::UnityEngine::Sprite,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (text, image))?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_image(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
-            .invoke("get_image", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_text(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
-            .invoke("get_text", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_image(
-        &mut self,
-        value: *mut crate::UnityEngine::Sprite,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_image", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_text(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_text", (value))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "TMPro+TMP_Dropdown+OptionData")]
-impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Dropdown_OptionData {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "TMPro+TMP_Dropdown+OptionDataList")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct TMP_Dropdown_OptionDataList {
-    __cordl_parent: crate::System::Object,
-    pub m_Options: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::TMPro::TMP_Dropdown_OptionData,
-    >,
-}
-#[cfg(feature = "TMPro+TMP_Dropdown+OptionDataList")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::TMPro::TMP_Dropdown_OptionDataList => "TMPro"
-    ."TMP_Dropdown/OptionDataList"
-);
-#[cfg(feature = "TMPro+TMP_Dropdown+OptionDataList")]
-impl std::ops::Deref for crate::TMPro::TMP_Dropdown_OptionDataList {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "TMPro+TMP_Dropdown+OptionDataList")]
-impl std::ops::DerefMut for crate::TMPro::TMP_Dropdown_OptionDataList {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "TMPro+TMP_Dropdown+OptionDataList")]
-impl crate::TMPro::TMP_Dropdown_OptionDataList {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_options(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<
-            *mut crate::TMPro::TMP_Dropdown_OptionData,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::TMPro::TMP_Dropdown_OptionData,
-        > = __cordl_object.invoke("get_options", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn set_options(
-        &mut self,
-        value: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::TMPro::TMP_Dropdown_OptionData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_options", (value))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "TMPro+TMP_Dropdown+OptionDataList")]
-impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Dropdown_OptionDataList {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "TMPro+TMP_Dropdown")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1075,6 +616,465 @@ impl crate::TMPro::TMP_Dropdown {
 }
 #[cfg(feature = "TMPro+TMP_Dropdown")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Dropdown {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+DropdownEvent")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct TMP_Dropdown_DropdownEvent {
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<i32>,
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+DropdownEvent")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::TMPro::TMP_Dropdown_DropdownEvent => "TMPro"
+    ."TMP_Dropdown/DropdownEvent"
+);
+#[cfg(feature = "TMPro+TMP_Dropdown+DropdownEvent")]
+impl std::ops::Deref for crate::TMPro::TMP_Dropdown_DropdownEvent {
+    type Target = crate::UnityEngine::Events::UnityEvent_1<i32>;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+DropdownEvent")]
+impl std::ops::DerefMut for crate::TMPro::TMP_Dropdown_DropdownEvent {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+DropdownEvent")]
+impl crate::TMPro::TMP_Dropdown_DropdownEvent {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+DropdownEvent")]
+impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Dropdown_DropdownEvent {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+DropdownItem")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct TMP_Dropdown_DropdownItem {
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    pub m_Text: *mut crate::TMPro::TMP_Text,
+    pub m_Image: *mut crate::UnityEngine::UI::Image,
+    pub m_RectTransform: *mut crate::UnityEngine::RectTransform,
+    pub m_Toggle: *mut crate::UnityEngine::UI::Toggle,
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+DropdownItem")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::TMPro::TMP_Dropdown_DropdownItem => "TMPro"
+    ."TMP_Dropdown/DropdownItem"
+);
+#[cfg(feature = "TMPro+TMP_Dropdown+DropdownItem")]
+impl std::ops::Deref for crate::TMPro::TMP_Dropdown_DropdownItem {
+    type Target = crate::UnityEngine::MonoBehaviour;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+DropdownItem")]
+impl std::ops::DerefMut for crate::TMPro::TMP_Dropdown_DropdownItem {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+DropdownItem")]
+impl crate::TMPro::TMP_Dropdown_DropdownItem {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn OnCancel(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::BaseEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnCancel", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnPointerEnter(
+        &mut self,
+        eventData: *mut crate::UnityEngine::EventSystems::PointerEventData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnPointerEnter", (eventData))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_image(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Image> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UI::Image = __cordl_object
+            .invoke("get_image", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_rectTransform(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::RectTransform> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::RectTransform = __cordl_object
+            .invoke("get_rectTransform", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_text(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::TMPro::TMP_Text> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::TMPro::TMP_Text = __cordl_object
+            .invoke("get_text", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_toggle(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UI::Toggle> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UI::Toggle = __cordl_object
+            .invoke("get_toggle", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_image(
+        &mut self,
+        value: *mut crate::UnityEngine::UI::Image,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_image", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_rectTransform(
+        &mut self,
+        value: *mut crate::UnityEngine::RectTransform,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_rectTransform", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_text(
+        &mut self,
+        value: *mut crate::TMPro::TMP_Text,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_text", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_toggle(
+        &mut self,
+        value: *mut crate::UnityEngine::UI::Toggle,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_toggle", (value))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+DropdownItem")]
+impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Dropdown_DropdownItem {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+OptionData")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct TMP_Dropdown_OptionData {
+    __cordl_parent: crate::System::Object,
+    pub m_Text: *mut crate::System::String,
+    pub m_Image: *mut crate::UnityEngine::Sprite,
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+OptionData")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::TMPro::TMP_Dropdown_OptionData => "TMPro"
+    ."TMP_Dropdown/OptionData"
+);
+#[cfg(feature = "TMPro+TMP_Dropdown+OptionData")]
+impl std::ops::Deref for crate::TMPro::TMP_Dropdown_OptionData {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+OptionData")]
+impl std::ops::DerefMut for crate::TMPro::TMP_Dropdown_OptionData {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+OptionData")]
+impl crate::TMPro::TMP_Dropdown_OptionData {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Sprite2(
+        image: *mut crate::UnityEngine::Sprite,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (image))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String1(
+        text: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (text))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_String_Sprite3(
+        text: *mut crate::System::String,
+        image: *mut crate::UnityEngine::Sprite,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (text, image))?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Sprite2(
+        &mut self,
+        image: *mut crate::UnityEngine::Sprite,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (image))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_String1(
+        &mut self,
+        text: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (text))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_String_Sprite3(
+        &mut self,
+        text: *mut crate::System::String,
+        image: *mut crate::UnityEngine::Sprite,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (text, image))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_image(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Sprite> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::Sprite = __cordl_object
+            .invoke("get_image", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_text(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_text", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_image(
+        &mut self,
+        value: *mut crate::UnityEngine::Sprite,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_image", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_text(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_text", (value))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+OptionData")]
+impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Dropdown_OptionData {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+OptionDataList")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct TMP_Dropdown_OptionDataList {
+    __cordl_parent: crate::System::Object,
+    pub m_Options: *mut crate::System::Collections::Generic::List_1<
+        *mut crate::TMPro::TMP_Dropdown_OptionData,
+    >,
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+OptionDataList")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::TMPro::TMP_Dropdown_OptionDataList => "TMPro"
+    ."TMP_Dropdown/OptionDataList"
+);
+#[cfg(feature = "TMPro+TMP_Dropdown+OptionDataList")]
+impl std::ops::Deref for crate::TMPro::TMP_Dropdown_OptionDataList {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+OptionDataList")]
+impl std::ops::DerefMut for crate::TMPro::TMP_Dropdown_OptionDataList {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+OptionDataList")]
+impl crate::TMPro::TMP_Dropdown_OptionDataList {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_options(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::List_1<
+            *mut crate::TMPro::TMP_Dropdown_OptionData,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::TMPro::TMP_Dropdown_OptionData,
+        > = __cordl_object.invoke("get_options", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_options(
+        &mut self,
+        value: *mut crate::System::Collections::Generic::List_1<
+            *mut crate::TMPro::TMP_Dropdown_OptionData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_options", (value))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "TMPro+TMP_Dropdown+OptionDataList")]
+impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Dropdown_OptionDataList {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

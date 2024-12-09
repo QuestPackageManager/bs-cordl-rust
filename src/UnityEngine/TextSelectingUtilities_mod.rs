@@ -1,31 +1,3 @@
-#[cfg(feature = "UnityEngine+TextSelectingUtilities+CharacterType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum TextSelectingUtilities_CharacterType {
-    LetterLike = 0i32,
-    NewLine = 4i32,
-    Symbol = 1i32,
-    Symbol2 = 2i32,
-    WhiteSpace = 3i32,
-}
-#[cfg(feature = "UnityEngine+TextSelectingUtilities+CharacterType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::TextSelectingUtilities_CharacterType => "UnityEngine"
-    ."TextSelectingUtilities/CharacterType"
-);
-#[cfg(feature = "UnityEngine+TextSelectingUtilities+Direction")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum TextSelectingUtilities_Direction {
-    Backward = 1i32,
-    Forward = 0i32,
-}
-#[cfg(feature = "UnityEngine+TextSelectingUtilities+Direction")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::TextSelectingUtilities_Direction =>
-    "UnityEngine"."TextSelectingUtilities/Direction"
-);
 #[cfg(feature = "UnityEngine+TextSelectingUtilities")]
 #[repr(C)]
 #[derive(Debug)]
@@ -827,3 +799,31 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TextSelectingUtil
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+TextSelectingUtilities+CharacterType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TextSelectingUtilities_CharacterType {
+    LetterLike = 0i32,
+    NewLine = 4i32,
+    Symbol = 1i32,
+    Symbol2 = 2i32,
+    WhiteSpace = 3i32,
+}
+#[cfg(feature = "UnityEngine+TextSelectingUtilities+CharacterType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::TextSelectingUtilities_CharacterType => "UnityEngine"
+    ."TextSelectingUtilities/CharacterType"
+);
+#[cfg(feature = "UnityEngine+TextSelectingUtilities+Direction")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum TextSelectingUtilities_Direction {
+    Backward = 1i32,
+    Forward = 0i32,
+}
+#[cfg(feature = "UnityEngine+TextSelectingUtilities+Direction")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::TextSelectingUtilities_Direction =>
+    "UnityEngine"."TextSelectingUtilities/Direction"
+);

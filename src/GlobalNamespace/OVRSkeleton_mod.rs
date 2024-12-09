@@ -1,160 +1,3 @@
-#[cfg(feature = "OVRSkeleton+BoneId")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRSkeleton_BoneId {
-    Body_Chest = 5i32,
-    Body_End = 70i32,
-    Body_Head = 7i32,
-    Body_Hips = 1i32,
-    Body_LeftArmLower = 11i32,
-    Body_LeftArmUpper = 10i32,
-    Body_LeftHandIndexDistal = 27i32,
-    Body_LeftHandIndexIntermediate = 26i32,
-    Body_LeftHandIndexMetacarpal = 24i32,
-    Body_LeftHandIndexProximal = 25i32,
-    Body_LeftHandIndexTip = 28i32,
-    Body_LeftHandLittleDistal = 42i32,
-    Body_LeftHandLittleIntermediate = 41i32,
-    Body_LeftHandLittleMetacarpal = 39i32,
-    Body_LeftHandLittleProximal = 40i32,
-    Body_LeftHandLittleTip = 43i32,
-    Body_LeftHandMiddleDistal = 32i32,
-    Body_LeftHandMiddleIntermediate = 31i32,
-    Body_LeftHandMiddleMetacarpal = 29i32,
-    Body_LeftHandMiddleProximal = 30i32,
-    Body_LeftHandMiddleTip = 33i32,
-    Body_LeftHandPalm = 18i32,
-    Body_LeftHandRingDistal = 37i32,
-    Body_LeftHandRingIntermediate = 36i32,
-    Body_LeftHandRingMetacarpal = 34i32,
-    Body_LeftHandRingProximal = 35i32,
-    Body_LeftHandRingTip = 38i32,
-    Body_LeftHandThumbDistal = 22i32,
-    Body_LeftHandThumbMetacarpal = 20i32,
-    Body_LeftHandThumbProximal = 21i32,
-    Body_LeftHandThumbTip = 23i32,
-    Body_LeftHandWrist = 19i32,
-    Body_LeftHandWristTwist = 12i32,
-    Body_LeftScapula = 9i32,
-    Body_LeftShoulder = 8i32,
-    Body_Neck = 6i32,
-    Body_RightArmLower = 16i32,
-    Body_RightArmUpper = 15i32,
-    Body_RightHandIndexDistal = 53i32,
-    Body_RightHandIndexIntermediate = 52i32,
-    Body_RightHandIndexMetacarpal = 50i32,
-    Body_RightHandIndexProximal = 51i32,
-    Body_RightHandIndexTip = 54i32,
-    Body_RightHandLittleDistal = 68i32,
-    Body_RightHandLittleIntermediate = 67i32,
-    Body_RightHandLittleMetacarpal = 65i32,
-    Body_RightHandLittleProximal = 66i32,
-    Body_RightHandLittleTip = 69i32,
-    Body_RightHandMiddleDistal = 58i32,
-    Body_RightHandMiddleIntermediate = 57i32,
-    Body_RightHandMiddleMetacarpal = 55i32,
-    Body_RightHandMiddleProximal = 56i32,
-    Body_RightHandMiddleTip = 59i32,
-    Body_RightHandPalm = 44i32,
-    Body_RightHandRingDistal = 63i32,
-    Body_RightHandRingIntermediate = 62i32,
-    Body_RightHandRingMetacarpal = 60i32,
-    Body_RightHandRingProximal = 61i32,
-    Body_RightHandRingTip = 64i32,
-    Body_RightHandThumbDistal = 48i32,
-    Body_RightHandThumbMetacarpal = 46i32,
-    Body_RightHandThumbProximal = 47i32,
-    Body_RightHandThumbTip = 49i32,
-    Body_RightHandWrist = 45i32,
-    Body_RightHandWristTwist = 17i32,
-    Body_RightScapula = 14i32,
-    Body_RightShoulder = 13i32,
-    Body_Root = 0i32,
-    Body_SpineLower = 2i32,
-    Body_SpineMiddle = 3i32,
-    Body_SpineUpper = 4i32,
-    Invalid = -1i32,
-}
-#[cfg(feature = "OVRSkeleton+BoneId")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRSkeleton_BoneId => ""
-    ."OVRSkeleton/BoneId"
-);
-#[cfg(feature = "OVRSkeleton+IOVRSkeletonDataProvider")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct OVRSkeleton_IOVRSkeletonDataProvider {
-    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-}
-#[cfg(feature = "OVRSkeleton+IOVRSkeletonDataProvider")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider => ""
-    ."OVRSkeleton/IOVRSkeletonDataProvider"
-);
-#[cfg(feature = "OVRSkeleton+IOVRSkeletonDataProvider")]
-impl std::ops::Deref for crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
-    type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRSkeleton+IOVRSkeletonDataProvider")]
-impl std::ops::DerefMut
-for crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "OVRSkeleton+IOVRSkeletonDataProvider")]
-impl crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
-    pub fn GetSkeletonPoseData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData = __cordl_object
-            .invoke("GetSkeletonPoseData", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetSkeletonType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::OVRSkeleton_SkeletonType,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRSkeleton_SkeletonType = __cordl_object
-            .invoke("GetSkeletonType", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn from_object_mut(
-        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> *mut Self {
-        unsafe { (object_param as *mut Self) }
-    }
-    pub fn get_enabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_enabled", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "OVRSkeleton+IOVRSkeletonDataProvider")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "OVRSkeleton")]
 #[repr(C)]
 #[derive(Debug)]
@@ -594,6 +437,163 @@ impl crate::GlobalNamespace::OVRSkeleton {
 }
 #[cfg(feature = "OVRSkeleton")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSkeleton {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "OVRSkeleton+BoneId")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRSkeleton_BoneId {
+    Body_Chest = 5i32,
+    Body_End = 70i32,
+    Body_Head = 7i32,
+    Body_Hips = 1i32,
+    Body_LeftArmLower = 11i32,
+    Body_LeftArmUpper = 10i32,
+    Body_LeftHandIndexDistal = 27i32,
+    Body_LeftHandIndexIntermediate = 26i32,
+    Body_LeftHandIndexMetacarpal = 24i32,
+    Body_LeftHandIndexProximal = 25i32,
+    Body_LeftHandIndexTip = 28i32,
+    Body_LeftHandLittleDistal = 42i32,
+    Body_LeftHandLittleIntermediate = 41i32,
+    Body_LeftHandLittleMetacarpal = 39i32,
+    Body_LeftHandLittleProximal = 40i32,
+    Body_LeftHandLittleTip = 43i32,
+    Body_LeftHandMiddleDistal = 32i32,
+    Body_LeftHandMiddleIntermediate = 31i32,
+    Body_LeftHandMiddleMetacarpal = 29i32,
+    Body_LeftHandMiddleProximal = 30i32,
+    Body_LeftHandMiddleTip = 33i32,
+    Body_LeftHandPalm = 18i32,
+    Body_LeftHandRingDistal = 37i32,
+    Body_LeftHandRingIntermediate = 36i32,
+    Body_LeftHandRingMetacarpal = 34i32,
+    Body_LeftHandRingProximal = 35i32,
+    Body_LeftHandRingTip = 38i32,
+    Body_LeftHandThumbDistal = 22i32,
+    Body_LeftHandThumbMetacarpal = 20i32,
+    Body_LeftHandThumbProximal = 21i32,
+    Body_LeftHandThumbTip = 23i32,
+    Body_LeftHandWrist = 19i32,
+    Body_LeftHandWristTwist = 12i32,
+    Body_LeftScapula = 9i32,
+    Body_LeftShoulder = 8i32,
+    Body_Neck = 6i32,
+    Body_RightArmLower = 16i32,
+    Body_RightArmUpper = 15i32,
+    Body_RightHandIndexDistal = 53i32,
+    Body_RightHandIndexIntermediate = 52i32,
+    Body_RightHandIndexMetacarpal = 50i32,
+    Body_RightHandIndexProximal = 51i32,
+    Body_RightHandIndexTip = 54i32,
+    Body_RightHandLittleDistal = 68i32,
+    Body_RightHandLittleIntermediate = 67i32,
+    Body_RightHandLittleMetacarpal = 65i32,
+    Body_RightHandLittleProximal = 66i32,
+    Body_RightHandLittleTip = 69i32,
+    Body_RightHandMiddleDistal = 58i32,
+    Body_RightHandMiddleIntermediate = 57i32,
+    Body_RightHandMiddleMetacarpal = 55i32,
+    Body_RightHandMiddleProximal = 56i32,
+    Body_RightHandMiddleTip = 59i32,
+    Body_RightHandPalm = 44i32,
+    Body_RightHandRingDistal = 63i32,
+    Body_RightHandRingIntermediate = 62i32,
+    Body_RightHandRingMetacarpal = 60i32,
+    Body_RightHandRingProximal = 61i32,
+    Body_RightHandRingTip = 64i32,
+    Body_RightHandThumbDistal = 48i32,
+    Body_RightHandThumbMetacarpal = 46i32,
+    Body_RightHandThumbProximal = 47i32,
+    Body_RightHandThumbTip = 49i32,
+    Body_RightHandWrist = 45i32,
+    Body_RightHandWristTwist = 17i32,
+    Body_RightScapula = 14i32,
+    Body_RightShoulder = 13i32,
+    Body_Root = 0i32,
+    Body_SpineLower = 2i32,
+    Body_SpineMiddle = 3i32,
+    Body_SpineUpper = 4i32,
+    Invalid = -1i32,
+}
+#[cfg(feature = "OVRSkeleton+BoneId")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRSkeleton_BoneId => ""
+    ."OVRSkeleton/BoneId"
+);
+#[cfg(feature = "OVRSkeleton+IOVRSkeletonDataProvider")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRSkeleton_IOVRSkeletonDataProvider {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "OVRSkeleton+IOVRSkeletonDataProvider")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider => ""
+    ."OVRSkeleton/IOVRSkeletonDataProvider"
+);
+#[cfg(feature = "OVRSkeleton+IOVRSkeletonDataProvider")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRSkeleton+IOVRSkeletonDataProvider")]
+impl std::ops::DerefMut
+for crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRSkeleton+IOVRSkeletonDataProvider")]
+impl crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
+    pub fn GetSkeletonPoseData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData = __cordl_object
+            .invoke("GetSkeletonPoseData", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSkeletonType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRSkeleton_SkeletonType,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::OVRSkeleton_SkeletonType = __cordl_object
+            .invoke("GetSkeletonType", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+    pub fn get_enabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_enabled", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "OVRSkeleton+IOVRSkeletonDataProvider")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRSkeleton_IOVRSkeletonDataProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -852,7 +852,7 @@ impl<
     #[cfg(
         feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2+_GetEnumerator_d__2"
     )]
-    pub type _GetEnumerator_d__2 = crate::Newtonsoft::Json::Serialization::EnumerableDictionaryWrapper_2__GetEnumerator_d__2<
+    pub type _GetEnumerator_d__2 = crate::Newtonsoft::Json::Serialization::EnumerableDictionaryWrapper_2_DefaultContractResolver__GetEnumerator_d__2<
         TEnumeratorKey,
         TEnumeratorValue,
     >;

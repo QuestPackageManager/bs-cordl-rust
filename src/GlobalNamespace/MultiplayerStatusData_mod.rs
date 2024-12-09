@@ -1,73 +1,3 @@
-#[cfg(feature = "MultiplayerStatusData+AvailabilityStatus")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum MultiplayerStatusData_AvailabilityStatus {
-    MaintenanceUpcoming = 1i32,
-    Offline = 2i32,
-    Online = 0i32,
-}
-#[cfg(feature = "MultiplayerStatusData+AvailabilityStatus")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus => ""
-    ."MultiplayerStatusData/AvailabilityStatus"
-);
-#[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct UserMessage_LocalizedMessage {
-    __cordl_parent: crate::System::Object,
-    pub language: *mut crate::System::String,
-    pub message: *mut crate::System::String,
-}
-#[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::UserMessage_LocalizedMessage =>
-    ""."MultiplayerStatusData/UserMessage/LocalizedMessage"
-);
-#[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
-impl std::ops::Deref for crate::GlobalNamespace::UserMessage_LocalizedMessage {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
-impl std::ops::DerefMut for crate::GlobalNamespace::UserMessage_LocalizedMessage {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
-impl crate::GlobalNamespace::UserMessage_LocalizedMessage {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::GlobalNamespace::UserMessage_LocalizedMessage {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "MultiplayerStatusData")]
 #[repr(C)]
 #[derive(Debug)]
@@ -249,13 +179,27 @@ for crate::GlobalNamespace::MultiplayerStatusData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MultiplayerStatusData+AvailabilityStatus")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum MultiplayerStatusData_AvailabilityStatus {
+    MaintenanceUpcoming = 1i32,
+    Offline = 2i32,
+    Online = 0i32,
+}
+#[cfg(feature = "MultiplayerStatusData+AvailabilityStatus")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus => ""
+    ."MultiplayerStatusData/AvailabilityStatus"
+);
 #[cfg(feature = "MultiplayerStatusData+UserMessage")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerStatusData_UserMessage {
     __cordl_parent: crate::System::Object,
     pub localizations: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::GlobalNamespace::UserMessage_LocalizedMessage,
+        *mut crate::GlobalNamespace::UserMessage_MultiplayerStatusData_LocalizedMessage,
     >,
 }
 #[cfg(feature = "MultiplayerStatusData+UserMessage")]
@@ -280,7 +224,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerStatusData_UserMe
 #[cfg(feature = "MultiplayerStatusData+UserMessage")]
 impl crate::GlobalNamespace::MultiplayerStatusData_UserMessage {
     #[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
-    pub type LocalizedMessage = crate::GlobalNamespace::UserMessage_LocalizedMessage;
+    pub type LocalizedMessage = crate::GlobalNamespace::UserMessage_MultiplayerStatusData_LocalizedMessage;
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -302,6 +246,65 @@ impl crate::GlobalNamespace::MultiplayerStatusData_UserMessage {
 #[cfg(feature = "MultiplayerStatusData+UserMessage")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerStatusData_UserMessage {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct UserMessage_MultiplayerStatusData_LocalizedMessage {
+    __cordl_parent: crate::System::Object,
+    pub language: *mut crate::System::String,
+    pub message: *mut crate::System::String,
+}
+#[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::UserMessage_MultiplayerStatusData_LocalizedMessage => ""
+    ."MultiplayerStatusData/UserMessage/LocalizedMessage"
+);
+#[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
+impl std::ops::Deref
+for crate::GlobalNamespace::UserMessage_MultiplayerStatusData_LocalizedMessage {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
+impl std::ops::DerefMut
+for crate::GlobalNamespace::UserMessage_MultiplayerStatusData_LocalizedMessage {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
+impl crate::GlobalNamespace::UserMessage_MultiplayerStatusData_LocalizedMessage {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "MultiplayerStatusData+UserMessage+LocalizedMessage")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::UserMessage_MultiplayerStatusData_LocalizedMessage {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

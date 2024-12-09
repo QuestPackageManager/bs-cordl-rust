@@ -1,163 +1,3 @@
-#[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct Task_ContingentProperties {
-    __cordl_parent: crate::System::Object,
-    pub m_capturedContext: *mut crate::System::Threading::ExecutionContext,
-    pub m_completionEvent: *mut crate::System::Threading::ManualResetEventSlim,
-    pub m_exceptionsHolder: *mut crate::System::Threading::Tasks::TaskExceptionHolder,
-    pub m_cancellationToken: crate::System::Threading::CancellationToken,
-    pub m_cancellationRegistration: *mut crate::System::Object,
-    pub m_internalCancellationRequested: i32,
-    pub m_completionCountdown: i32,
-    pub m_exceptionalChildren: *mut crate::System::Collections::Generic::LowLevelListWithIList_1<
-        *mut crate::System::Threading::Tasks::Task,
-    >,
-}
-#[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Threading::Tasks::Task_ContingentProperties => "System.Threading.Tasks"
-    ."Task/ContingentProperties"
-);
-#[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
-impl std::ops::Deref for crate::System::Threading::Tasks::Task_ContingentProperties {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
-impl std::ops::DerefMut for crate::System::Threading::Tasks::Task_ContingentProperties {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
-impl crate::System::Threading::Tasks::Task_ContingentProperties {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn SetCompleted(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetCompleted", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn UnregisterCancellationCallback(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnregisterCancellationCallback", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Threading::Tasks::Task_ContingentProperties {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+Threading+Tasks+Task+SetOnInvokeMres")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct Task_SetOnInvokeMres {
-    __cordl_parent: crate::System::Threading::ManualResetEventSlim,
-}
-#[cfg(feature = "System+Threading+Tasks+Task+SetOnInvokeMres")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Threading::Tasks::Task_SetOnInvokeMres
-    => "System.Threading.Tasks"."Task/SetOnInvokeMres"
-);
-#[cfg(feature = "System+Threading+Tasks+Task+SetOnInvokeMres")]
-impl std::ops::Deref for crate::System::Threading::Tasks::Task_SetOnInvokeMres {
-    type Target = crate::System::Threading::ManualResetEventSlim;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Threading+Tasks+Task+SetOnInvokeMres")]
-impl std::ops::DerefMut for crate::System::Threading::Tasks::Task_SetOnInvokeMres {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Threading+Tasks+Task+SetOnInvokeMres")]
-impl crate::System::Threading::Tasks::Task_SetOnInvokeMres {
-    pub fn Invoke(
-        &mut self,
-        completingTask: *mut crate::System::Threading::Tasks::Task,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (completingTask))?;
-        Ok(__cordl_ret)
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_InvokeMayRunArbitraryCode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_InvokeMayRunArbitraryCode", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "System+Threading+Tasks+Task+SetOnInvokeMres")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Threading::Tasks::Task_SetOnInvokeMres {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "System+Threading+Tasks+Task")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1387,6 +1227,166 @@ impl crate::System::Threading::Tasks::Task {
 }
 #[cfg(feature = "System+Threading+Tasks+Task")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Tasks::Task {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct Task_ContingentProperties {
+    __cordl_parent: crate::System::Object,
+    pub m_capturedContext: *mut crate::System::Threading::ExecutionContext,
+    pub m_completionEvent: *mut crate::System::Threading::ManualResetEventSlim,
+    pub m_exceptionsHolder: *mut crate::System::Threading::Tasks::TaskExceptionHolder,
+    pub m_cancellationToken: crate::System::Threading::CancellationToken,
+    pub m_cancellationRegistration: *mut crate::System::Object,
+    pub m_internalCancellationRequested: i32,
+    pub m_completionCountdown: i32,
+    pub m_exceptionalChildren: *mut crate::System::Collections::Generic::LowLevelListWithIList_1<
+        *mut crate::System::Threading::Tasks::Task,
+    >,
+}
+#[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Threading::Tasks::Task_ContingentProperties => "System.Threading.Tasks"
+    ."Task/ContingentProperties"
+);
+#[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
+impl std::ops::Deref for crate::System::Threading::Tasks::Task_ContingentProperties {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
+impl std::ops::DerefMut for crate::System::Threading::Tasks::Task_ContingentProperties {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
+impl crate::System::Threading::Tasks::Task_ContingentProperties {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn SetCompleted(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetCompleted", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnregisterCancellationCallback(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UnregisterCancellationCallback", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Threading::Tasks::Task_ContingentProperties {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+Task+SetOnInvokeMres")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct Task_SetOnInvokeMres {
+    __cordl_parent: crate::System::Threading::ManualResetEventSlim,
+}
+#[cfg(feature = "System+Threading+Tasks+Task+SetOnInvokeMres")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::Threading::Tasks::Task_SetOnInvokeMres
+    => "System.Threading.Tasks"."Task/SetOnInvokeMres"
+);
+#[cfg(feature = "System+Threading+Tasks+Task+SetOnInvokeMres")]
+impl std::ops::Deref for crate::System::Threading::Tasks::Task_SetOnInvokeMres {
+    type Target = crate::System::Threading::ManualResetEventSlim;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+Task+SetOnInvokeMres")]
+impl std::ops::DerefMut for crate::System::Threading::Tasks::Task_SetOnInvokeMres {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+Task+SetOnInvokeMres")]
+impl crate::System::Threading::Tasks::Task_SetOnInvokeMres {
+    pub fn Invoke(
+        &mut self,
+        completingTask: *mut crate::System::Threading::Tasks::Task,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Invoke", (completingTask))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_InvokeMayRunArbitraryCode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_InvokeMayRunArbitraryCode", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Threading+Tasks+Task+SetOnInvokeMres")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Threading::Tasks::Task_SetOnInvokeMres {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

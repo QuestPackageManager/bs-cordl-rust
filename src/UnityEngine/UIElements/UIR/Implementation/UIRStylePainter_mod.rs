@@ -1,112 +1,3 @@
-#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+ClosingInfo")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct UIRStylePainter_ClosingInfo {
-    pub needsClosing: bool,
-    pub popViewMatrix: bool,
-    pub popScissorClip: bool,
-    pub blitAndPopRenderTexture: bool,
-    pub PopDefaultMaterial: bool,
-    pub clipUnregisterDrawCommand: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
-    pub clipperRegisterVertices: crate::Unity::Collections::NativeSlice_1<
-        crate::UnityEngine::UIElements::Vertex,
-    >,
-    pub clipperRegisterIndices: crate::Unity::Collections::NativeSlice_1<u16>,
-    pub clipperRegisterIndexOffset: i32,
-    pub maskStencilRef: i32,
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+ClosingInfo")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo =>
-    "UnityEngine.UIElements.UIR.Implementation"."UIRStylePainter/ClosingInfo"
-);
-#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+ClosingInfo")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+ClosingInfo")]
-impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo {}
-#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+Entry")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct UIRStylePainter_Entry {
-    pub vertices: crate::Unity::Collections::NativeSlice_1<
-        crate::UnityEngine::UIElements::Vertex,
-    >,
-    pub indices: crate::Unity::Collections::NativeSlice_1<u16>,
-    pub material: *mut crate::UnityEngine::Material,
-    pub fontTexSDFScale: f32,
-    pub texture: crate::UnityEngine::UIElements::TextureId,
-    pub customCommand: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
-    pub clipRectID: crate::UnityEngine::UIElements::UIR::BMPAlloc,
-    pub addFlags: crate::UnityEngine::UIElements::UIR::VertexFlags,
-    pub uvIsDisplacement: bool,
-    pub isTextEntry: bool,
-    pub isClipRegisterEntry: bool,
-    pub stencilRef: i32,
-    pub maskDepth: i32,
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+Entry")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry =>
-    "UnityEngine.UIElements.UIR.Implementation"."UIRStylePainter/Entry"
-);
-#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+Entry")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+Entry")]
-impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry {}
-#[cfg(
-    feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+RepeatRectUV"
-)]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct UIRStylePainter_RepeatRectUV {
-    pub rect: crate::UnityEngine::Rect,
-    pub uv: crate::UnityEngine::Rect,
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+RepeatRectUV"
-)]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV =>
-    "UnityEngine.UIElements.UIR.Implementation"."UIRStylePainter/RepeatRectUV"
-);
-#[cfg(
-    feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+RepeatRectUV"
-)]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+RepeatRectUV"
-)]
-impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV {}
 #[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter")]
 #[repr(C)]
 #[derive(Debug)]
@@ -137,8 +28,8 @@ pub struct UIRStylePainter {
             crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV,
         >,
     >,
-    pub m_AllocRawVertsIndicesDelegate: *mut crate::UnityEngine::UIElements::UIR::AllocMeshData_Allocator,
-    pub m_AllocThroughDrawMeshDelegate: *mut crate::UnityEngine::UIElements::UIR::AllocMeshData_Allocator,
+    pub m_AllocRawVertsIndicesDelegate: *mut crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator,
+    pub m_AllocThroughDrawMeshDelegate: *mut crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator,
     pub _meshGenerationContext_k__BackingField: *mut crate::UnityEngine::UIElements::MeshGenerationContext,
     pub _currentElement_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
     pub _totalVertices_k__BackingField: i32,
@@ -726,3 +617,112 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+ClosingInfo")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct UIRStylePainter_ClosingInfo {
+    pub needsClosing: bool,
+    pub popViewMatrix: bool,
+    pub popScissorClip: bool,
+    pub blitAndPopRenderTexture: bool,
+    pub PopDefaultMaterial: bool,
+    pub clipUnregisterDrawCommand: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+    pub clipperRegisterVertices: crate::Unity::Collections::NativeSlice_1<
+        crate::UnityEngine::UIElements::Vertex,
+    >,
+    pub clipperRegisterIndices: crate::Unity::Collections::NativeSlice_1<u16>,
+    pub clipperRegisterIndexOffset: i32,
+    pub maskStencilRef: i32,
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+ClosingInfo")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo =>
+    "UnityEngine.UIElements.UIR.Implementation"."UIRStylePainter/ClosingInfo"
+);
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+ClosingInfo")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+ClosingInfo")]
+impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo {}
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+Entry")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct UIRStylePainter_Entry {
+    pub vertices: crate::Unity::Collections::NativeSlice_1<
+        crate::UnityEngine::UIElements::Vertex,
+    >,
+    pub indices: crate::Unity::Collections::NativeSlice_1<u16>,
+    pub material: *mut crate::UnityEngine::Material,
+    pub fontTexSDFScale: f32,
+    pub texture: crate::UnityEngine::UIElements::TextureId,
+    pub customCommand: *mut crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+    pub clipRectID: crate::UnityEngine::UIElements::UIR::BMPAlloc,
+    pub addFlags: crate::UnityEngine::UIElements::UIR::VertexFlags,
+    pub uvIsDisplacement: bool,
+    pub isTextEntry: bool,
+    pub isClipRegisterEntry: bool,
+    pub stencilRef: i32,
+    pub maskDepth: i32,
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+Entry")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry =>
+    "UnityEngine.UIElements.UIR.Implementation"."UIRStylePainter/Entry"
+);
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+Entry")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+Entry")]
+impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry {}
+#[cfg(
+    feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+RepeatRectUV"
+)]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct UIRStylePainter_RepeatRectUV {
+    pub rect: crate::UnityEngine::Rect,
+    pub uv: crate::UnityEngine::Rect,
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+RepeatRectUV"
+)]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV =>
+    "UnityEngine.UIElements.UIR.Implementation"."UIRStylePainter/RepeatRectUV"
+);
+#[cfg(
+    feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+RepeatRectUV"
+)]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+RepeatRectUV"
+)]
+impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV {}

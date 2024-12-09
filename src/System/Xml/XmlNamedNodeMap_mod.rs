@@ -1,7 +1,7 @@
 #[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator")]
 #[repr(C)]
 #[derive(Debug)]
-pub struct SmallXmlNodeList_SingleObjectEnumerator {
+pub struct SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator {
     __cordl_parent: crate::System::Object,
     pub loneValue: *mut crate::System::Object,
     pub position: i32,
@@ -9,24 +9,26 @@ pub struct SmallXmlNodeList_SingleObjectEnumerator {
 #[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
     in quest_hook::libil2cpp for crate
-    ::System::Xml::SmallXmlNodeList_SingleObjectEnumerator => "System.Xml"
-    ."XmlNamedNodeMap/SmallXmlNodeList/SingleObjectEnumerator"
+    ::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator =>
+    "System.Xml"."XmlNamedNodeMap/SmallXmlNodeList/SingleObjectEnumerator"
 );
 #[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator")]
-impl std::ops::Deref for crate::System::Xml::SmallXmlNodeList_SingleObjectEnumerator {
+impl std::ops::Deref
+for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator {
     type Target = crate::System::Object;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator")]
-impl std::ops::DerefMut for crate::System::Xml::SmallXmlNodeList_SingleObjectEnumerator {
+impl std::ops::DerefMut
+for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator {
     fn deref_mut(&mut self) -> &mut Self::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator")]
-impl crate::System::Xml::SmallXmlNodeList_SingleObjectEnumerator {
+impl crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator {
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -77,104 +79,12 @@ impl crate::System::Xml::SmallXmlNodeList_SingleObjectEnumerator {
 }
 #[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator")]
 impl quest_hook::libil2cpp::ObjectType
-for crate::System::Xml::SmallXmlNodeList_SingleObjectEnumerator {
+for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct XmlNamedNodeMap_SmallXmlNodeList {
-    pub field: *mut crate::System::Object,
-}
-#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::XmlNamedNodeMap_SmallXmlNodeList =>
-    "System.Xml"."XmlNamedNodeMap/SmallXmlNodeList"
-);
-#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
-impl crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList {
-    #[cfg(
-        feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator"
-    )]
-    pub type SingleObjectEnumerator = crate::System::Xml::SmallXmlNodeList_SingleObjectEnumerator;
-    pub fn Add(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Add",
-            (value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetEnumerator(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
-        let __cordl_ret: *mut crate::System::Collections::IEnumerator = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetEnumerator",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Insert(
-        &mut self,
-        index: i32,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Insert",
-            (index, value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn RemoveAt(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "RemoveAt",
-            (index),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Count",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn get_Item(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Item",
-            (index),
-        )?;
-        Ok(__cordl_ret)
     }
 }
 #[cfg(feature = "System+Xml+XmlNamedNodeMap")]
@@ -354,5 +264,97 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlNamedNodeMap {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct XmlNamedNodeMap_SmallXmlNodeList {
+    pub field: *mut crate::System::Object,
+}
+#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::XmlNamedNodeMap_SmallXmlNodeList =>
+    "System.Xml"."XmlNamedNodeMap/SmallXmlNodeList"
+);
+#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
+impl crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList {
+    #[cfg(
+        feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator"
+    )]
+    pub type SingleObjectEnumerator = crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator;
+    pub fn Add(
+        &mut self,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Add",
+            (value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
+        let __cordl_ret: *mut crate::System::Collections::IEnumerator = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetEnumerator",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Insert(
+        &mut self,
+        index: i32,
+        value: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Insert",
+            (index, value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn RemoveAt(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "RemoveAt",
+            (index),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Count",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Item",
+            (index),
+        )?;
+        Ok(__cordl_ret)
     }
 }

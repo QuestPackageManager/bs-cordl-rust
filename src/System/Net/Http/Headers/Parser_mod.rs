@@ -1,3 +1,57 @@
+#[cfg(feature = "System+Net+Http+Headers+Parser")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct Parser {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "System+Net+Http+Headers+Parser")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::Net::Http::Headers::Parser =>
+    "System.Net.Http.Headers"."Parser"
+);
+#[cfg(feature = "System+Net+Http+Headers+Parser")]
+impl std::ops::Deref for crate::System::Net::Http::Headers::Parser {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Net+Http+Headers+Parser")]
+impl std::ops::DerefMut for crate::System::Net::Http::Headers::Parser {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Net+Http+Headers+Parser")]
+impl crate::System::Net::Http::Headers::Parser {
+    #[cfg(feature = "System+Net+Http+Headers+Parser+DateTime")]
+    pub type DateTime = crate::System::Net::Http::Headers::Parser_DateTime;
+    #[cfg(feature = "System+Net+Http+Headers+Parser+EmailAddress")]
+    pub type EmailAddress = crate::System::Net::Http::Headers::Parser_EmailAddress;
+    #[cfg(feature = "System+Net+Http+Headers+Parser+Host")]
+    pub type Host = crate::System::Net::Http::Headers::Parser_Host;
+    #[cfg(feature = "System+Net+Http+Headers+Parser+Int")]
+    pub type Int = crate::System::Net::Http::Headers::Parser_Int;
+    #[cfg(feature = "System+Net+Http+Headers+Parser+Long")]
+    pub type Long = crate::System::Net::Http::Headers::Parser_Long;
+    #[cfg(feature = "System+Net+Http+Headers+Parser+MD5")]
+    pub type MD5 = crate::System::Net::Http::Headers::Parser_MD5;
+    #[cfg(feature = "System+Net+Http+Headers+Parser+TimeSpanSeconds")]
+    pub type TimeSpanSeconds = crate::System::Net::Http::Headers::Parser_TimeSpanSeconds;
+    #[cfg(feature = "System+Net+Http+Headers+Parser+Token")]
+    pub type Token = crate::System::Net::Http::Headers::Parser_Token;
+    #[cfg(feature = "System+Net+Http+Headers+Parser+Uri")]
+    pub type Uri = crate::System::Net::Http::Headers::Parser_Uri;
+}
+#[cfg(feature = "System+Net+Http+Headers+Parser")]
+impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Http::Headers::Parser {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+Parser+DateTime")]
 #[repr(C)]
 #[derive(Debug)]
@@ -25,7 +79,7 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::Parser_DateTime {
 #[cfg(feature = "System+Net+Http+Headers+Parser+DateTime")]
 impl crate::System::Net::Http::Headers::Parser_DateTime {
     #[cfg(feature = "System+Net+Http+Headers+Parser+DateTime+__c")]
-    pub type __c = crate::System::Net::Http::Headers::DateTime___c;
+    pub type __c = crate::System::Net::Http::Headers::DateTime_Parser___c;
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+DateTime")]
 impl quest_hook::libil2cpp::ObjectType
@@ -208,65 +262,11 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::Parser_MD5 {
 #[cfg(feature = "System+Net+Http+Headers+Parser+MD5")]
 impl crate::System::Net::Http::Headers::Parser_MD5 {
     #[cfg(feature = "System+Net+Http+Headers+Parser+MD5+__c")]
-    pub type __c = crate::System::Net::Http::Headers::MD5___c;
+    pub type __c = crate::System::Net::Http::Headers::MD5_Parser___c;
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+MD5")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Http::Headers::Parser_MD5 {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "System+Net+Http+Headers+Parser")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct Parser {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "System+Net+Http+Headers+Parser")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::System::Net::Http::Headers::Parser =>
-    "System.Net.Http.Headers"."Parser"
-);
-#[cfg(feature = "System+Net+Http+Headers+Parser")]
-impl std::ops::Deref for crate::System::Net::Http::Headers::Parser {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Net+Http+Headers+Parser")]
-impl std::ops::DerefMut for crate::System::Net::Http::Headers::Parser {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "System+Net+Http+Headers+Parser")]
-impl crate::System::Net::Http::Headers::Parser {
-    #[cfg(feature = "System+Net+Http+Headers+Parser+DateTime")]
-    pub type DateTime = crate::System::Net::Http::Headers::Parser_DateTime;
-    #[cfg(feature = "System+Net+Http+Headers+Parser+EmailAddress")]
-    pub type EmailAddress = crate::System::Net::Http::Headers::Parser_EmailAddress;
-    #[cfg(feature = "System+Net+Http+Headers+Parser+Host")]
-    pub type Host = crate::System::Net::Http::Headers::Parser_Host;
-    #[cfg(feature = "System+Net+Http+Headers+Parser+Int")]
-    pub type Int = crate::System::Net::Http::Headers::Parser_Int;
-    #[cfg(feature = "System+Net+Http+Headers+Parser+Long")]
-    pub type Long = crate::System::Net::Http::Headers::Parser_Long;
-    #[cfg(feature = "System+Net+Http+Headers+Parser+MD5")]
-    pub type MD5 = crate::System::Net::Http::Headers::Parser_MD5;
-    #[cfg(feature = "System+Net+Http+Headers+Parser+TimeSpanSeconds")]
-    pub type TimeSpanSeconds = crate::System::Net::Http::Headers::Parser_TimeSpanSeconds;
-    #[cfg(feature = "System+Net+Http+Headers+Parser+Token")]
-    pub type Token = crate::System::Net::Http::Headers::Parser_Token;
-    #[cfg(feature = "System+Net+Http+Headers+Parser+Uri")]
-    pub type Uri = crate::System::Net::Http::Headers::Parser_Uri;
-}
-#[cfg(feature = "System+Net+Http+Headers+Parser")]
-impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Http::Headers::Parser {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

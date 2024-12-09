@@ -1,28 +1,3 @@
-#[cfg(feature = "MS+Internal+Xml+XPath+Operator+Op")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum Operator_Op {
-    AND = 2i32,
-    DIV = 12i32,
-    EQ = 3i32,
-    GE = 8i32,
-    GT = 7i32,
-    INVALID = 0i32,
-    LE = 6i32,
-    LT = 5i32,
-    MINUS = 10i32,
-    _cordl_MOD = 13i32,
-    MUL = 11i32,
-    NE = 4i32,
-    OR = 1i32,
-    PLUS = 9i32,
-    UNION = 14i32,
-}
-#[cfg(feature = "MS+Internal+Xml+XPath+Operator+Op")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::MS::Internal::Xml::XPath::Operator_Op =>
-    "MS.Internal.Xml.XPath"."Operator/Op"
-);
 #[cfg(feature = "MS+Internal+Xml+XPath+Operator")]
 #[repr(C)]
 #[derive(Debug)]
@@ -110,3 +85,28 @@ impl quest_hook::libil2cpp::ObjectType for crate::MS::Internal::Xml::XPath::Oper
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+Operator+Op")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Operator_Op {
+    AND = 2i32,
+    DIV = 12i32,
+    EQ = 3i32,
+    GE = 8i32,
+    GT = 7i32,
+    INVALID = 0i32,
+    LE = 6i32,
+    LT = 5i32,
+    MINUS = 10i32,
+    _cordl_MOD = 13i32,
+    MUL = 11i32,
+    NE = 4i32,
+    OR = 1i32,
+    PLUS = 9i32,
+    UNION = 14i32,
+}
+#[cfg(feature = "MS+Internal+Xml+XPath+Operator+Op")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::MS::Internal::Xml::XPath::Operator_Op =>
+    "MS.Internal.Xml.XPath"."Operator/Op"
+);

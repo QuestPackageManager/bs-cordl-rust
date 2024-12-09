@@ -1,16 +1,3 @@
-#[cfg(feature = "System+Xml+Schema+NamespaceList+ListType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum NamespaceList_ListType {
-    Any = 0i32,
-    Other = 1i32,
-    Set = 2i32,
-}
-#[cfg(feature = "System+Xml+Schema+NamespaceList+ListType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::System::Xml::Schema::NamespaceList_ListType =>
-    "System.Xml.Schema"."NamespaceList/ListType"
-);
 #[cfg(feature = "System+Xml+Schema+NamespaceList")]
 #[repr(C)]
 #[derive(Debug)]
@@ -185,3 +172,16 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::Namespace
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "System+Xml+Schema+NamespaceList+ListType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum NamespaceList_ListType {
+    Any = 0i32,
+    Other = 1i32,
+    Set = 2i32,
+}
+#[cfg(feature = "System+Xml+Schema+NamespaceList+ListType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::System::Xml::Schema::NamespaceList_ListType =>
+    "System.Xml.Schema"."NamespaceList/ListType"
+);

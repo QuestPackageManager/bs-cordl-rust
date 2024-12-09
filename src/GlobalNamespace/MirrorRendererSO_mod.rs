@@ -1,62 +1,3 @@
-#[cfg(feature = "MirrorRendererSO+CameraTransformData")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct MirrorRendererSO_CameraTransformData {
-    pub position: crate::UnityEngine::Vector3,
-    pub rotation: crate::UnityEngine::Quaternion,
-    pub fov: f32,
-    pub stereoEnabled: bool,
-}
-#[cfg(feature = "MirrorRendererSO+CameraTransformData")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::MirrorRendererSO_CameraTransformData => ""
-    ."MirrorRendererSO/CameraTransformData"
-);
-#[cfg(feature = "MirrorRendererSO+CameraTransformData")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "MirrorRendererSO+CameraTransformData")]
-impl crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
-    pub fn Equals_MirrorRendererSO_CameraTransformData0(
-        &mut self,
-        other: crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "MirrorRendererSO")]
 #[repr(C)]
 #[derive(Debug)]
@@ -260,5 +201,64 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MirrorRendere
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "MirrorRendererSO+CameraTransformData")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct MirrorRendererSO_CameraTransformData {
+    pub position: crate::UnityEngine::Vector3,
+    pub rotation: crate::UnityEngine::Quaternion,
+    pub fov: f32,
+    pub stereoEnabled: bool,
+}
+#[cfg(feature = "MirrorRendererSO+CameraTransformData")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::MirrorRendererSO_CameraTransformData => ""
+    ."MirrorRendererSO/CameraTransformData"
+);
+#[cfg(feature = "MirrorRendererSO+CameraTransformData")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "MirrorRendererSO+CameraTransformData")]
+impl crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
+    pub fn Equals_MirrorRendererSO_CameraTransformData0(
+        &mut self,
+        other: crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_Object1(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "GetHashCode",
+            (),
+        )?;
+        Ok(__cordl_ret)
     }
 }

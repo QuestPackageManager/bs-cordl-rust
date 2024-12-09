@@ -1,34 +1,3 @@
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct IMGUIContainer_GUIGlobals {
-    pub matrix: crate::UnityEngine::Matrix4x4,
-    pub color: crate::UnityEngine::Color,
-    pub contentColor: crate::UnityEngine::Color,
-    pub backgroundColor: crate::UnityEngine::Color,
-    pub enabled: bool,
-    pub changed: bool,
-    pub displayIndex: i32,
-}
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::IMGUIContainer_GUIGlobals => "UnityEngine.UIElements"
-    ."IMGUIContainer/GUIGlobals"
-);
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
-impl crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {}
 #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer")]
 #[repr(C)]
 #[derive(Debug)]
@@ -526,6 +495,37 @@ for crate::UnityEngine::UIElements::IMGUIContainer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct IMGUIContainer_GUIGlobals {
+    pub matrix: crate::UnityEngine::Matrix4x4,
+    pub color: crate::UnityEngine::Color,
+    pub contentColor: crate::UnityEngine::Color,
+    pub backgroundColor: crate::UnityEngine::Color,
+    pub enabled: bool,
+    pub changed: bool,
+    pub displayIndex: i32,
+}
+#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::IMGUIContainer_GUIGlobals => "UnityEngine.UIElements"
+    ."IMGUIContainer/GUIGlobals"
+);
+#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
+impl crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {}
 #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlFactory")]
 #[repr(C)]
 #[derive(Debug)]

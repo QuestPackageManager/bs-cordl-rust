@@ -1,43 +1,3 @@
-#[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct BpmTimeProcessor_BpmChangeData {
-    pub bpmChangeStartTime: f32,
-    pub bpmChangeStartBpmTime: f32,
-    pub bpm: f32,
-}
-#[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::BpmTimeProcessor_BpmChangeData
-    => ""."BpmTimeProcessor/BpmChangeData"
-);
-#[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
-impl crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData {
-    pub fn _ctor(
-        &mut self,
-        bpmChangeStartTime: f32,
-        bpmChangeStartBpmTime: f32,
-        bpm: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (bpmChangeStartTime, bpmChangeStartBpmTime, bpm),
-        )?;
-        Ok(__cordl_ret)
-    }
-}
 #[cfg(feature = "BpmTimeProcessor")]
 #[repr(C)]
 #[derive(Debug)]
@@ -172,5 +132,45 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BpmTimeProces
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct BpmTimeProcessor_BpmChangeData {
+    pub bpmChangeStartTime: f32,
+    pub bpmChangeStartBpmTime: f32,
+    pub bpm: f32,
+}
+#[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::BpmTimeProcessor_BpmChangeData
+    => ""."BpmTimeProcessor/BpmChangeData"
+);
+#[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
+impl crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData {
+    pub fn _ctor(
+        &mut self,
+        bpmChangeStartTime: f32,
+        bpmChangeStartBpmTime: f32,
+        bpm: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (bpmChangeStartTime, bpmChangeStartBpmTime, bpm),
+        )?;
+        Ok(__cordl_ret)
     }
 }

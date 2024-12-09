@@ -1,45 +1,3 @@
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct StyleVariableResolver_ResolveContext {
-    pub sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
-    pub handles: *mut quest_hook::libil2cpp::Il2CppArray<
-        crate::UnityEngine::UIElements::StyleValueHandle,
-    >,
-}
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::StyleVariableResolver_ResolveContext =>
-    "UnityEngine.UIElements"."StyleVariableResolver/ResolveContext"
-);
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
-impl crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {}
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+Result")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum StyleVariableResolver_Result {
-    Invalid = 1i32,
-    NotFound = 2i32,
-    Valid = 0i32,
-}
-#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+Result")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::UIElements::StyleVariableResolver_Result => "UnityEngine.UIElements"
-    ."StyleVariableResolver/Result"
-);
 #[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver")]
 #[repr(C)]
 #[derive(Debug)]
@@ -283,3 +241,45 @@ for crate::UnityEngine::UIElements::StyleVariableResolver {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct StyleVariableResolver_ResolveContext {
+    pub sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
+    pub handles: *mut quest_hook::libil2cpp::Il2CppArray<
+        crate::UnityEngine::UIElements::StyleValueHandle,
+    >,
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::StyleVariableResolver_ResolveContext =>
+    "UnityEngine.UIElements"."StyleVariableResolver/ResolveContext"
+);
+#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
+impl crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {}
+#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+Result")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum StyleVariableResolver_Result {
+    Invalid = 1i32,
+    NotFound = 2i32,
+    Valid = 0i32,
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+Result")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::StyleVariableResolver_Result => "UnityEngine.UIElements"
+    ."StyleVariableResolver/Result"
+);

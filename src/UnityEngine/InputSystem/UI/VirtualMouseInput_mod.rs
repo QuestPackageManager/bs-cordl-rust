@@ -1,16 +1,3 @@
-#[cfg(feature = "UnityEngine+InputSystem+UI+VirtualMouseInput+CursorMode")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum VirtualMouseInput_CursorMode {
-    HardwareCursorIfAvailable = 1i32,
-    SoftwareCursor = 0i32,
-}
-#[cfg(feature = "UnityEngine+InputSystem+UI+VirtualMouseInput+CursorMode")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::InputSystem::UI::VirtualMouseInput_CursorMode =>
-    "UnityEngine.InputSystem.UI"."VirtualMouseInput/CursorMode"
-);
 #[cfg(feature = "UnityEngine+InputSystem+UI+VirtualMouseInput")]
 #[repr(C)]
 #[derive(Debug)]
@@ -431,3 +418,16 @@ for crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+UI+VirtualMouseInput+CursorMode")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum VirtualMouseInput_CursorMode {
+    HardwareCursorIfAvailable = 1i32,
+    SoftwareCursor = 0i32,
+}
+#[cfg(feature = "UnityEngine+InputSystem+UI+VirtualMouseInput+CursorMode")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::UI::VirtualMouseInput_CursorMode =>
+    "UnityEngine.InputSystem.UI"."VirtualMouseInput/CursorMode"
+);

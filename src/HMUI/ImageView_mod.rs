@@ -1,15 +1,3 @@
-#[cfg(feature = "HMUI+ImageView+GradientDirection")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ImageView_GradientDirection {
-    Horizontal = 0i32,
-    Vertical = 1i32,
-}
-#[cfg(feature = "HMUI+ImageView+GradientDirection")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::HMUI::ImageView_GradientDirection => "HMUI"
-    ."ImageView/GradientDirection"
-);
 #[cfg(feature = "HMUI+ImageView")]
 #[repr(C)]
 #[derive(Debug)]
@@ -276,3 +264,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ImageView {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HMUI+ImageView+GradientDirection")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ImageView_GradientDirection {
+    Horizontal = 0i32,
+    Vertical = 1i32,
+}
+#[cfg(feature = "HMUI+ImageView+GradientDirection")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::HMUI::ImageView_GradientDirection => "HMUI"
+    ."ImageView/GradientDirection"
+);

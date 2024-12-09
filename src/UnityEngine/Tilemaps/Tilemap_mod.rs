@@ -1,56 +1,3 @@
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTile")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct Tilemap_SyncTile {
-    pub m_Position: crate::UnityEngine::Vector3Int,
-    pub m_Tile: *mut crate::UnityEngine::Tilemaps::TileBase,
-    pub m_TileData: crate::UnityEngine::Tilemaps::TileData,
-}
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTile")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::UnityEngine::Tilemaps::Tilemap_SyncTile =>
-    "UnityEngine.Tilemaps"."Tilemap/SyncTile"
-);
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTile")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Tilemaps::Tilemap_SyncTile {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTile")]
-impl crate::UnityEngine::Tilemaps::Tilemap_SyncTile {}
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
-#[repr(C)]
-#[derive(Debug, Clone)]
-pub struct Tilemap_SyncTileCallbackSettings {
-    pub hasSyncTileCallback: bool,
-    pub hasPositionsChangedCallback: bool,
-    pub isBufferSyncTile: bool,
-}
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings => "UnityEngine.Tilemaps"
-    ."Tilemap/SyncTileCallbackSettings"
-);
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
-impl crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings {}
 #[cfg(feature = "UnityEngine+Tilemaps+Tilemap")]
 #[repr(C)]
 #[derive(Debug)]
@@ -452,3 +399,56 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Tilemaps::Tilemap
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTile")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct Tilemap_SyncTile {
+    pub m_Position: crate::UnityEngine::Vector3Int,
+    pub m_Tile: *mut crate::UnityEngine::Tilemaps::TileBase,
+    pub m_TileData: crate::UnityEngine::Tilemaps::TileData,
+}
+#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTile")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::UnityEngine::Tilemaps::Tilemap_SyncTile =>
+    "UnityEngine.Tilemaps"."Tilemap/SyncTile"
+);
+#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTile")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::Tilemaps::Tilemap_SyncTile {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTile")]
+impl crate::UnityEngine::Tilemaps::Tilemap_SyncTile {}
+#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct Tilemap_SyncTileCallbackSettings {
+    pub hasSyncTileCallback: bool,
+    pub hasPositionsChangedCallback: bool,
+    pub isBufferSyncTile: bool,
+}
+#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings => "UnityEngine.Tilemaps"
+    ."Tilemap/SyncTileCallbackSettings"
+);
+#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+Tilemaps+Tilemap+SyncTileCallbackSettings")]
+impl crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings {}

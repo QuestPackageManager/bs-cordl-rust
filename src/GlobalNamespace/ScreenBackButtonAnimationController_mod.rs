@@ -1,20 +1,3 @@
-#[cfg(feature = "ScreenBackButtonAnimationController+AnimationType")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ScreenBackButtonAnimationController_AnimationType {
-    FadeIn = 0i32,
-    FadeOut = 1i32,
-    MoveIn = 2i32,
-    MoveIn2 = 4i32,
-    MoveOut = 3i32,
-    MoveOut2 = 5i32,
-}
-#[cfg(feature = "ScreenBackButtonAnimationController+AnimationType")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType => ""
-    ."ScreenBackButtonAnimationController/AnimationType"
-);
 #[cfg(feature = "ScreenBackButtonAnimationController")]
 #[repr(C)]
 #[derive(Debug)]
@@ -98,3 +81,20 @@ for crate::GlobalNamespace::ScreenBackButtonAnimationController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "ScreenBackButtonAnimationController+AnimationType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ScreenBackButtonAnimationController_AnimationType {
+    FadeIn = 0i32,
+    FadeOut = 1i32,
+    MoveIn = 2i32,
+    MoveIn2 = 4i32,
+    MoveOut = 3i32,
+    MoveOut2 = 5i32,
+}
+#[cfg(feature = "ScreenBackButtonAnimationController+AnimationType")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType => ""
+    ."ScreenBackButtonAnimationController/AnimationType"
+);

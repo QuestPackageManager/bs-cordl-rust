@@ -1,101 +1,3 @@
-#[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
-)]
-#[repr(C)]
-#[derive(Debug)]
-pub struct XmlSerializationWriterInterpreter_CallbackInfo {
-    __cordl_parent: crate::System::Object,
-    pub _swi: *mut crate::System::Xml::Serialization::XmlSerializationWriterInterpreter,
-    pub _typeMap: *mut crate::System::Xml::Serialization::XmlTypeMapping,
-}
-#[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
-)]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate
-    ::System::Xml::Serialization::XmlSerializationWriterInterpreter_CallbackInfo =>
-    "System.Xml.Serialization"."XmlSerializationWriterInterpreter/CallbackInfo"
-);
-#[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
-)]
-impl std::ops::Deref
-for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_CallbackInfo {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
-)]
-impl std::ops::DerefMut
-for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_CallbackInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
-)]
-impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_CallbackInfo {
-    pub fn New(
-        swi: *mut crate::System::Xml::Serialization::XmlSerializationWriterInterpreter,
-        typeMap: *mut crate::System::Xml::Serialization::XmlTypeMapping,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (swi, typeMap))?;
-        Ok(__cordl_object)
-    }
-    pub fn WriteEnum(
-        &mut self,
-        ob: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteEnum", (ob))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteObject(
-        &mut self,
-        ob: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteObject", (ob))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor(
-        &mut self,
-        swi: *mut crate::System::Xml::Serialization::XmlSerializationWriterInterpreter,
-        typeMap: *mut crate::System::Xml::Serialization::XmlTypeMapping,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (swi, typeMap))?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(
-    feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
-)]
-impl quest_hook::libil2cpp::ObjectType
-for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_CallbackInfo {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter")]
 #[repr(C)]
 #[derive(Debug)]
@@ -478,6 +380,104 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
+)]
+#[repr(C)]
+#[derive(Debug)]
+pub struct XmlSerializationWriterInterpreter_CallbackInfo {
+    __cordl_parent: crate::System::Object,
+    pub _swi: *mut crate::System::Xml::Serialization::XmlSerializationWriterInterpreter,
+    pub _typeMap: *mut crate::System::Xml::Serialization::XmlTypeMapping,
+}
+#[cfg(
+    feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
+)]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Xml::Serialization::XmlSerializationWriterInterpreter_CallbackInfo =>
+    "System.Xml.Serialization"."XmlSerializationWriterInterpreter/CallbackInfo"
+);
+#[cfg(
+    feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
+)]
+impl std::ops::Deref
+for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_CallbackInfo {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
+)]
+impl std::ops::DerefMut
+for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_CallbackInfo {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
+)]
+impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_CallbackInfo {
+    pub fn New(
+        swi: *mut crate::System::Xml::Serialization::XmlSerializationWriterInterpreter,
+        typeMap: *mut crate::System::Xml::Serialization::XmlTypeMapping,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (swi, typeMap))?;
+        Ok(__cordl_object)
+    }
+    pub fn WriteEnum(
+        &mut self,
+        ob: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteEnum", (ob))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteObject(
+        &mut self,
+        ob: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteObject", (ob))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        swi: *mut crate::System::Xml::Serialization::XmlSerializationWriterInterpreter,
+        typeMap: *mut crate::System::Xml::Serialization::XmlTypeMapping,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (swi, typeMap))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(
+    feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
+)]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_CallbackInfo {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

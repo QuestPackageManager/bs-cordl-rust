@@ -1,3 +1,82 @@
+#[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct HEU_GeneralUtility {
+    __cordl_parent: crate::System::Object,
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::HoudiniEngineUnity::HEU_GeneralUtility =>
+    "HoudiniEngineUnity"."HEU_GeneralUtility"
+);
+#[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility")]
+impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_GeneralUtility {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility")]
+impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_GeneralUtility {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility")]
+impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
+    #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetArray1ArgDel_1")]
+    pub type GetArray1ArgDel_1<T: quest_hook::libil2cpp::Type> = crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray1ArgDel_1<
+        T,
+    >;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetArray2ArgDel_2")]
+    pub type GetArray2ArgDel_2<
+        ARG2: quest_hook::libil2cpp::Type,
+        T: quest_hook::libil2cpp::Type,
+    > = crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2<ARG2, T>;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetArray3ArgDel_3")]
+    pub type GetArray3ArgDel_3<
+        ARG3: quest_hook::libil2cpp::Type,
+        ARG2: quest_hook::libil2cpp::Type,
+        T: quest_hook::libil2cpp::Type,
+    > = crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray3ArgDel_3<ARG3, ARG2, T>;
+    #[cfg(
+        feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetAttributeArrayInputFunc_1"
+    )]
+    pub type GetAttributeArrayInputFunc_1<T: quest_hook::libil2cpp::Type> = crate::HoudiniEngineUnity::HEU_GeneralUtility_GetAttributeArrayInputFunc_1<
+        T,
+    >;
+    #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+SetAttributeArrayFunc_1")]
+    pub type SetAttributeArrayFunc_1<T: quest_hook::libil2cpp::Type> = crate::HoudiniEngineUnity::HEU_GeneralUtility_SetAttributeArrayFunc_1<
+        T,
+    >;
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::HoudiniEngineUnity::HEU_GeneralUtility {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetArray1ArgDel_1")]
 #[repr(C)]
 #[derive(Debug)]
@@ -573,85 +652,6 @@ impl<
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetAttributeArrayInputFunc_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetAttributeArrayInputFunc_1<T> {
-    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
-    }
-    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
-        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility")]
-#[repr(C)]
-#[derive(Debug)]
-pub struct HEU_GeneralUtility {
-    __cordl_parent: crate::System::Object,
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility")]
-quest_hook::libil2cpp::unsafe_impl_reference_type!(
-    in quest_hook::libil2cpp for crate ::HoudiniEngineUnity::HEU_GeneralUtility =>
-    "HoudiniEngineUnity"."HEU_GeneralUtility"
-);
-#[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility")]
-impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_GeneralUtility {
-    type Target = crate::System::Object;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &self.__cordl_parent }
-    }
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility")]
-impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_GeneralUtility {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        unsafe { &mut self.__cordl_parent }
-    }
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility")]
-impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
-    #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetArray1ArgDel_1")]
-    pub type GetArray1ArgDel_1<T: quest_hook::libil2cpp::Type> = crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray1ArgDel_1<
-        T,
-    >;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetArray2ArgDel_2")]
-    pub type GetArray2ArgDel_2<
-        ARG2: quest_hook::libil2cpp::Type,
-        T: quest_hook::libil2cpp::Type,
-    > = crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2<ARG2, T>;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetArray3ArgDel_3")]
-    pub type GetArray3ArgDel_3<
-        ARG3: quest_hook::libil2cpp::Type,
-        ARG2: quest_hook::libil2cpp::Type,
-        T: quest_hook::libil2cpp::Type,
-    > = crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray3ArgDel_3<ARG3, ARG2, T>;
-    #[cfg(
-        feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetAttributeArrayInputFunc_1"
-    )]
-    pub type GetAttributeArrayInputFunc_1<T: quest_hook::libil2cpp::Type> = crate::HoudiniEngineUnity::HEU_GeneralUtility_GetAttributeArrayInputFunc_1<
-        T,
-    >;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+SetAttributeArrayFunc_1")]
-    pub type SetAttributeArrayFunc_1<T: quest_hook::libil2cpp::Type> = crate::HoudiniEngineUnity::HEU_GeneralUtility_SetAttributeArrayFunc_1<
-        T,
-    >;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object)
-    }
-    pub fn _ctor(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
-        Ok(__cordl_ret)
-    }
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility")]
-impl quest_hook::libil2cpp::ObjectType
-for crate::HoudiniEngineUnity::HEU_GeneralUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

@@ -1,17 +1,3 @@
-#[cfg(feature = "Zenject+ZenjectBinding+BindTypes")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ZenjectBinding_BindTypes {
-    AllInterfaces = 1i32,
-    AllInterfacesAndSelf = 2i32,
-    BaseType = 3i32,
-    _cordl_Self = 0i32,
-}
-#[cfg(feature = "Zenject+ZenjectBinding+BindTypes")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::Zenject::ZenjectBinding_BindTypes => "Zenject"
-    ."ZenjectBinding/BindTypes"
-);
 #[cfg(feature = "Zenject+ZenjectBinding")]
 #[repr(C)]
 #[derive(Debug)]
@@ -153,3 +139,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ZenjectBinding {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "Zenject+ZenjectBinding+BindTypes")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ZenjectBinding_BindTypes {
+    AllInterfaces = 1i32,
+    AllInterfacesAndSelf = 2i32,
+    BaseType = 3i32,
+    _cordl_Self = 0i32,
+}
+#[cfg(feature = "Zenject+ZenjectBinding+BindTypes")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::Zenject::ZenjectBinding_BindTypes => "Zenject"
+    ."ZenjectBinding/BindTypes"
+);

@@ -1,32 +1,3 @@
-#[cfg(feature = "OVRHand+Hand")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRHand_Hand {
-    HandLeft = 0i32,
-    HandRight = 1i32,
-    None = -1i32,
-}
-#[cfg(feature = "OVRHand+Hand")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRHand_Hand => ""
-    ."OVRHand/Hand"
-);
-#[cfg(feature = "OVRHand+HandFinger")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum OVRHand_HandFinger {
-    Index = 1i32,
-    Max = 5i32,
-    Middle = 2i32,
-    Pinky = 4i32,
-    Ring = 3i32,
-    Thumb = 0i32,
-}
-#[cfg(feature = "OVRHand+HandFinger")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRHand_HandFinger => ""
-    ."OVRHand/HandFinger"
-);
 #[cfg(feature = "OVRHand")]
 #[repr(C)]
 #[derive(Debug)]
@@ -432,6 +403,35 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHand {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "OVRHand+Hand")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRHand_Hand {
+    HandLeft = 0i32,
+    HandRight = 1i32,
+    None = -1i32,
+}
+#[cfg(feature = "OVRHand+Hand")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRHand_Hand => ""
+    ."OVRHand/Hand"
+);
+#[cfg(feature = "OVRHand+HandFinger")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum OVRHand_HandFinger {
+    Index = 1i32,
+    Max = 5i32,
+    Middle = 2i32,
+    Pinky = 4i32,
+    Ring = 3i32,
+    Thumb = 0i32,
+}
+#[cfg(feature = "OVRHand+HandFinger")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::OVRHand_HandFinger => ""
+    ."OVRHand/HandFinger"
+);
 #[cfg(feature = "OVRHand+TrackingConfidence")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

@@ -1,17 +1,3 @@
-#[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum HEU_PDGSession_EventMessageColor {
-    DEFAULT = 0i32,
-    ERROR = 2i32,
-    WARNING = 1i32,
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
-quest_hook::libil2cpp::unsafe_impl_value_type!(
-    in quest_hook::libil2cpp for crate
-    ::HoudiniEngineUnity::HEU_PDGSession_EventMessageColor => "HoudiniEngineUnity"
-    ."HEU_PDGSession/EventMessageColor"
-);
 #[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession")]
 #[repr(C)]
 #[derive(Debug)]
@@ -410,3 +396,17 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_PDGSes
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum HEU_PDGSession_EventMessageColor {
+    DEFAULT = 0i32,
+    ERROR = 2i32,
+    WARNING = 1i32,
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::HoudiniEngineUnity::HEU_PDGSession_EventMessageColor => "HoudiniEngineUnity"
+    ."HEU_PDGSession/EventMessageColor"
+);
